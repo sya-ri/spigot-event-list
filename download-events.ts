@@ -39,6 +39,17 @@ const main = () => {
                 }
             })
 
+            // データを並び替え
+            data.sort((a, b) => {
+                if (a.name < b.name) {
+                    return -1
+                } else if (a.name > b.name) {
+                    return 1
+                } else {
+                    return 0
+                }
+            })
+
             // events.yaml に保存
             fs.writeFile(EventsYaml, yaml.dump(data), 'utf8', (err) => {
                 if (err) {
