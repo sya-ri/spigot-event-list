@@ -5,6 +5,7 @@ import {
   OutputFileName,
   OutputTemplateFileName,
   EventsYaml,
+  DoNotEditMessage,
 } from "./constants";
 
 const main = () => {
@@ -17,8 +18,6 @@ const main = () => {
   );
 
   // テンプレートに値を当てはめて保存
-  const DoNotEditMessage =
-    "<!--\n\n自動生成です。直接編集せず、README-template.md を編集してください。\n\n-->\n";
   fs.writeFileSync(
     OutputFileName,
     DoNotEditMessage +
