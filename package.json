@@ -2,9 +2,9 @@
   "name": "spigot-event-list",
   "version": "1.0.0",
   "description": "Spigot Event List",
-  "main": "index.ts",
   "scripts": {
-    "run": "ts-node index.ts"
+    "download": "ts-node download-events.ts",
+    "generate": "ts-node generate-markdown.ts"
   },
   "keywords": [],
   "author": "sya_ri",
