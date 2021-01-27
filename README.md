@@ -4,667 +4,667 @@ Bukkit, Spigot, Paper のイベント一覧です。
 https://papermc.io/javadocs/paper/1.16/ を元に作成しています。
 
 ## イベント一覧
-### com/destroystokyo/paper/event/block/AnvilDamagedEvent
+### [AnvilDamagedEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/block/AnvilDamagedEvent.html)
 
-### com/destroystokyo/paper/event/block/BeaconEffectEvent
+### [AreaEffectCloudApplyEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/AreaEffectCloudApplyEvent.html)
 
-### com/destroystokyo/paper/event/block/BlockDestroyEvent
+### [ArrowBodyCountChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ArrowBodyCountChangeEvent.html)
 
-### com/destroystokyo/paper/event/block/TNTPrimeEvent
+### [AsyncPlayerChatEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/AsyncPlayerChatEvent.html)
 
-### com/destroystokyo/paper/event/entity/CreeperIgniteEvent
+### [AsyncPlayerPreLoginEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/AsyncPlayerPreLoginEvent.html)
 
-### com/destroystokyo/paper/event/entity/EnderDragonFireballHitEvent
+### [AsyncTabCompleteEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/server/AsyncTabCompleteEvent.html)
 
-### com/destroystokyo/paper/event/entity/EnderDragonFlameEvent
+### [BatToggleSleepEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/BatToggleSleepEvent.html)
 
-### com/destroystokyo/paper/event/entity/EnderDragonShootFireballEvent
+### [BeaconEffectEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/block/BeaconEffectEvent.html)
 
-### com/destroystokyo/paper/event/entity/EndermanAttackPlayerEvent
+### [BellRingEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/BellRingEvent.html)
 
-### com/destroystokyo/paper/event/entity/EndermanEscapeEvent
+### [BlockBreakEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockBreakEvent.html)
 
-### com/destroystokyo/paper/event/entity/EntityAddToWorldEvent
+### [BlockBurnEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockBurnEvent.html)
 
-### com/destroystokyo/paper/event/entity/EntityJumpEvent
+### [BlockCanBuildEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockCanBuildEvent.html)
 
-### com/destroystokyo/paper/event/entity/EntityKnockbackByEntityEvent
+### [BlockCookEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockCookEvent.html)
 
-### com/destroystokyo/paper/event/entity/EntityPathfindEvent
+### [BlockDamageEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockDamageEvent.html)
 
-### com/destroystokyo/paper/event/entity/EntityRemoveFromWorldEvent
+### [BlockDestroyEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/block/BlockDestroyEvent.html)
 
-### com/destroystokyo/paper/event/entity/EntityTeleportEndGatewayEvent
+### [BlockDispenseArmorEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockDispenseArmorEvent.html)
 
-### com/destroystokyo/paper/event/entity/EntityTransformedEvent
+### [BlockDispenseEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockDispenseEvent.html)
 
-### com/destroystokyo/paper/event/entity/EntityZapEvent
+### [BlockDropItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockDropItemEvent.html)
 
-### com/destroystokyo/paper/event/entity/ExperienceOrbMergeEvent
+### [BlockEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockEvent.html)
 
-### com/destroystokyo/paper/event/entity/PhantomPreSpawnEvent
+### [BlockExpEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockExpEvent.html)
 
-### com/destroystokyo/paper/event/entity/PlayerNaturallySpawnCreaturesEvent
+### [BlockExplodeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockExplodeEvent.html)
 
-### com/destroystokyo/paper/event/entity/PreCreatureSpawnEvent
+### [BlockFadeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockFadeEvent.html)
 
-### com/destroystokyo/paper/event/entity/PreSpawnerSpawnEvent
+### [BlockFailedDispenseEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/BlockFailedDispenseEvent.html)
 
-### com/destroystokyo/paper/event/entity/ProjectileCollideEvent
+### [BlockFertilizeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockFertilizeEvent.html)
 
-### com/destroystokyo/paper/event/entity/SkeletonHorseTrapEvent
+### [BlockFormEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockFormEvent.html)
 
-### com/destroystokyo/paper/event/entity/SlimeChangeDirectionEvent
+### [BlockFromToEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockFromToEvent.html)
 
-### com/destroystokyo/paper/event/entity/SlimePathfindEvent
+### [BlockGrowEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockGrowEvent.html)
 
-### com/destroystokyo/paper/event/entity/SlimeSwimEvent
+### [BlockIgniteEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockIgniteEvent.html)
 
-### com/destroystokyo/paper/event/entity/SlimeTargetLivingEntityEvent
+### [BlockMultiPlaceEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockMultiPlaceEvent.html)
 
-### com/destroystokyo/paper/event/entity/SlimeWanderEvent
+### [BlockPhysicsEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockPhysicsEvent.html)
 
-### com/destroystokyo/paper/event/entity/ThrownEggHatchEvent
+### [BlockPistonEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockPistonEvent.html)
 
-### com/destroystokyo/paper/event/entity/TurtleGoHomeEvent
+### [BlockPistonExtendEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockPistonExtendEvent.html)
 
-### com/destroystokyo/paper/event/entity/TurtleLayEggEvent
+### [BlockPistonRetractEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockPistonRetractEvent.html)
 
-### com/destroystokyo/paper/event/entity/TurtleStartDiggingEvent
+### [BlockPlaceEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockPlaceEvent.html)
 
-### com/destroystokyo/paper/event/entity/WitchConsumePotionEvent
+### [BlockPreDispenseEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/BlockPreDispenseEvent.html)
 
-### com/destroystokyo/paper/event/entity/WitchReadyPotionEvent
+### [BlockRedstoneEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockRedstoneEvent.html)
 
-### com/destroystokyo/paper/event/entity/WitchThrowPotionEvent
+### [BlockShearEntityEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockShearEntityEvent.html)
 
-### com/destroystokyo/paper/event/inventory/PrepareGrindstoneEvent
+### [BlockSpreadEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockSpreadEvent.html)
 
-### com/destroystokyo/paper/event/inventory/PrepareResultEvent
+### [BrewEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/BrewEvent.html)
 
-### com/destroystokyo/paper/event/player/IllegalPacketEvent
+### [BrewingStandFuelEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/BrewingStandFuelEvent.html)
 
-### com/destroystokyo/paper/event/player/PlayerAdvancementCriterionGrantEvent
+### [BroadcastMessageEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/BroadcastMessageEvent.html)
 
-### com/destroystokyo/paper/event/player/PlayerArmorChangeEvent
+### [CauldronLevelChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/CauldronLevelChangeEvent.html)
 
-### com/destroystokyo/paper/event/player/PlayerAttackEntityCooldownResetEvent
+### [ChunkEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/ChunkEvent.html)
 
-### com/destroystokyo/paper/event/player/PlayerClientOptionsChangeEvent
+### [ChunkLoadEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/ChunkLoadEvent.html)
 
-### com/destroystokyo/paper/event/player/PlayerConnectionCloseEvent
+### [ChunkPopulateEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/ChunkPopulateEvent.html)
 
-### com/destroystokyo/paper/event/player/PlayerElytraBoostEvent
+### [ChunkUnloadEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/ChunkUnloadEvent.html)
 
-### com/destroystokyo/paper/event/player/PlayerHandshakeEvent
+### [ConversationAbandonedEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/conversations/ConversationAbandonedEvent.html)
 
-### com/destroystokyo/paper/event/player/PlayerInitialSpawnEvent
+### [CraftItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/CraftItemEvent.html)
 
-### com/destroystokyo/paper/event/player/PlayerJumpEvent
+### [CreatureSpawnEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/CreatureSpawnEvent.html)
 
-### com/destroystokyo/paper/event/player/PlayerLaunchProjectileEvent
+### [CreeperIgniteEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/CreeperIgniteEvent.html)
 
-### com/destroystokyo/paper/event/player/PlayerLocaleChangeEvent
+### [CreeperPowerEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/CreeperPowerEvent.html)
 
-### com/destroystokyo/paper/event/player/PlayerPickupExperienceEvent
+### [EnchantItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/enchantment/EnchantItemEvent.html)
 
-### com/destroystokyo/paper/event/player/PlayerPostRespawnEvent
+### [EnderDragonChangePhaseEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EnderDragonChangePhaseEvent.html)
 
-### com/destroystokyo/paper/event/player/PlayerReadyArrowEvent
+### [EnderDragonFireballHitEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EnderDragonFireballHitEvent.html)
 
-### com/destroystokyo/paper/event/player/PlayerRecipeBookClickEvent
+### [EnderDragonFlameEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EnderDragonFlameEvent.html)
 
-### com/destroystokyo/paper/event/player/PlayerStartSpectatingEntityEvent
+### [EnderDragonShootFireballEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EnderDragonShootFireballEvent.html)
 
-### com/destroystokyo/paper/event/player/PlayerStopSpectatingEntityEvent
+### [EndermanAttackPlayerEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EndermanAttackPlayerEvent.html)
 
-### com/destroystokyo/paper/event/player/PlayerTeleportEndGatewayEvent
+### [EndermanEscapeEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EndermanEscapeEvent.html)
 
-### com/destroystokyo/paper/event/player/PlayerUseUnknownEntityEvent
+### [EntityAddToWorldEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityAddToWorldEvent.html)
 
-### com/destroystokyo/paper/event/profile/FillProfileEvent
+### [EntityAirChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityAirChangeEvent.html)
 
-### com/destroystokyo/paper/event/profile/LookupProfileEvent
+### [EntityBlockFormEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/EntityBlockFormEvent.html)
 
-### com/destroystokyo/paper/event/profile/PreFillProfileEvent
+### [EntityBreakDoorEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityBreakDoorEvent.html)
 
-### com/destroystokyo/paper/event/profile/PreLookupProfileEvent
+### [EntityBreedEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityBreedEvent.html)
 
-### com/destroystokyo/paper/event/profile/ProfileWhitelistVerifyEvent
+### [EntityChangeBlockEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityChangeBlockEvent.html)
 
-### com/destroystokyo/paper/event/server/AsyncTabCompleteEvent
+### [EntityCombustByBlockEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityCombustByBlockEvent.html)
 
-### com/destroystokyo/paper/event/server/GS4QueryEvent
+### [EntityCombustByEntityEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityCombustByEntityEvent.html)
 
-### com/destroystokyo/paper/event/server/PaperServerListPingEvent
+### [EntityCombustEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityCombustEvent.html)
 
-### com/destroystokyo/paper/event/server/ServerExceptionEvent
+### [EntityCreatePortalEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityCreatePortalEvent.html)
 
-### com/destroystokyo/paper/event/server/ServerTickEndEvent
+### [EntityDamageByBlockEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityDamageByBlockEvent.html)
 
-### com/destroystokyo/paper/event/server/ServerTickStartEvent
+### [EntityDamageByEntityEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityDamageByEntityEvent.html)
 
-### com/destroystokyo/paper/event/server/WhitelistToggleEvent
+### [EntityDamageEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityDamageEvent.html)
 
-### com/destroystokyo/paper/loottable/LootableInventoryReplenishEvent
+### [EntityDeathEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityDeathEvent.html)
 
-### io/papermc/paper/event/block/BellRingEvent
+### [EntityDismountEvent](https://papermc.io/javadocs/paper/1.16/org/spigotmc/event/entity/EntityDismountEvent.html)
 
-### io/papermc/paper/event/block/BlockFailedDispenseEvent
+### [EntityDropItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityDropItemEvent.html)
 
-### io/papermc/paper/event/block/BlockPreDispenseEvent
+### [EntityEnterBlockEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityEnterBlockEvent.html)
 
-### io/papermc/paper/event/block/PlayerShearBlockEvent
+### [EntityEnterLoveModeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityEnterLoveModeEvent.html)
 
-### io/papermc/paper/event/block/TargetHitEvent
+### [EntityEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityEvent.html)
 
-### io/papermc/paper/event/entity/EntityLoadCrossbowEvent
+### [EntityExplodeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityExplodeEvent.html)
 
-### io/papermc/paper/event/packet/PlayerChunkLoadEvent
+### [EntityInteractEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityInteractEvent.html)
 
-### io/papermc/paper/event/packet/PlayerChunkUnloadEvent
+### [EntityJumpEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityJumpEvent.html)
 
-### io/papermc/paper/event/player/PlayerChangeBeaconEffectEvent
+### [EntityKnockbackByEntityEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityKnockbackByEntityEvent.html)
 
-### io/papermc/paper/event/player/PlayerFlowerPotManipulateEvent
+### [EntityLoadCrossbowEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/entity/EntityLoadCrossbowEvent.html)
 
-### io/papermc/paper/event/player/PlayerItemCooldownEvent
+### [EntityMountEvent](https://papermc.io/javadocs/paper/1.16/org/spigotmc/event/entity/EntityMountEvent.html)
 
-### io/papermc/paper/event/player/PlayerLecternPageChangeEvent
+### [EntityPathfindEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityPathfindEvent.html)
 
-### io/papermc/paper/event/player/PlayerLoomPatternSelectEvent
+### [EntityPickupItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPickupItemEvent.html)
 
-### io/papermc/paper/event/player/PlayerStonecutterRecipeSelectEvent
+### [EntityPlaceEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPlaceEvent.html)
 
-### io/papermc/paper/event/player/PlayerTradeEvent
+### [EntityPortalEnterEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPortalEnterEvent.html)
 
-### io/papermc/paper/event/server/ServerResourcesReloadedEvent
+### [EntityPortalEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPortalEvent.html)
 
-### io/papermc/paper/event/world/StructureLocateEvent
+### [EntityPortalExitEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPortalExitEvent.html)
 
-### io/papermc/paper/event/world/WorldGameRuleChangeEvent
+### [EntityPoseChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPoseChangeEvent.html)
 
-### org/bukkit/conversations/ConversationAbandonedEvent
+### [EntityPotionEffectEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPotionEffectEvent.html)
 
-### org/bukkit/event/Event
+### [EntityRegainHealthEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityRegainHealthEvent.html)
 
-### org/bukkit/event/block/BlockBreakEvent
+### [EntityRemoveFromWorldEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityRemoveFromWorldEvent.html)
 
-### org/bukkit/event/block/BlockBurnEvent
+### [EntityResurrectEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityResurrectEvent.html)
 
-### org/bukkit/event/block/BlockCanBuildEvent
+### [EntityShootBowEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityShootBowEvent.html)
 
-### org/bukkit/event/block/BlockCookEvent
+### [EntitySpawnEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntitySpawnEvent.html)
 
-### org/bukkit/event/block/BlockDamageEvent
+### [EntitySpellCastEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntitySpellCastEvent.html)
 
-### org/bukkit/event/block/BlockDispenseArmorEvent
+### [EntityTameEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityTameEvent.html)
 
-### org/bukkit/event/block/BlockDispenseEvent
+### [EntityTargetEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityTargetEvent.html)
 
-### org/bukkit/event/block/BlockDropItemEvent
+### [EntityTargetLivingEntityEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityTargetLivingEntityEvent.html)
 
-### org/bukkit/event/block/BlockEvent
+### [EntityTeleportEndGatewayEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityTeleportEndGatewayEvent.html)
 
-### org/bukkit/event/block/BlockExpEvent
+### [EntityTeleportEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityTeleportEvent.html)
 
-### org/bukkit/event/block/BlockExplodeEvent
+### [EntityToggleGlideEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityToggleGlideEvent.html)
 
-### org/bukkit/event/block/BlockFadeEvent
+### [EntityToggleSwimEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityToggleSwimEvent.html)
 
-### org/bukkit/event/block/BlockFertilizeEvent
+### [EntityTransformEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityTransformEvent.html)
 
-### org/bukkit/event/block/BlockFormEvent
+### [EntityTransformedEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityTransformedEvent.html)
 
-### org/bukkit/event/block/BlockFromToEvent
+### [EntityUnleashEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityUnleashEvent.html)
 
-### org/bukkit/event/block/BlockGrowEvent
+### [EntityZapEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityZapEvent.html)
 
-### org/bukkit/event/block/BlockIgniteEvent
+### [Event](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/Event.html)
 
-### org/bukkit/event/block/BlockMultiPlaceEvent
+### [ExpBottleEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ExpBottleEvent.html)
 
-### org/bukkit/event/block/BlockPhysicsEvent
+### [ExperienceOrbMergeEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/ExperienceOrbMergeEvent.html)
 
-### org/bukkit/event/block/BlockPistonEvent
+### [ExplosionPrimeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ExplosionPrimeEvent.html)
 
-### org/bukkit/event/block/BlockPistonExtendEvent
+### [FillProfileEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/profile/FillProfileEvent.html)
 
-### org/bukkit/event/block/BlockPistonRetractEvent
+### [FireworkExplodeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/FireworkExplodeEvent.html)
 
-### org/bukkit/event/block/BlockPlaceEvent
+### [FluidLevelChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/FluidLevelChangeEvent.html)
 
-### org/bukkit/event/block/BlockRedstoneEvent
+### [FoodLevelChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/FoodLevelChangeEvent.html)
 
-### org/bukkit/event/block/BlockShearEntityEvent
+### [FurnaceBurnEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/FurnaceBurnEvent.html)
 
-### org/bukkit/event/block/BlockSpreadEvent
+### [FurnaceExtractEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/FurnaceExtractEvent.html)
 
-### org/bukkit/event/block/CauldronLevelChangeEvent
+### [FurnaceSmeltEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/FurnaceSmeltEvent.html)
 
-### org/bukkit/event/block/EntityBlockFormEvent
+### [GS4QueryEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/server/GS4QueryEvent.html)
 
-### org/bukkit/event/block/FluidLevelChangeEvent
+### [HangingBreakByEntityEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/hanging/HangingBreakByEntityEvent.html)
 
-### org/bukkit/event/block/LeavesDecayEvent
+### [HangingBreakEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/hanging/HangingBreakEvent.html)
 
-### org/bukkit/event/block/MoistureChangeEvent
+### [HangingEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/hanging/HangingEvent.html)
 
-### org/bukkit/event/block/NotePlayEvent
+### [HangingPlaceEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/hanging/HangingPlaceEvent.html)
 
-### org/bukkit/event/block/SignChangeEvent
+### [HorseJumpEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/HorseJumpEvent.html)
 
-### org/bukkit/event/block/SpongeAbsorbEvent
+### [IllegalPacketEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/IllegalPacketEvent.html)
 
-### org/bukkit/event/command/UnknownCommandEvent
+### [InventoryClickEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryClickEvent.html)
 
-### org/bukkit/event/enchantment/EnchantItemEvent
+### [InventoryCloseEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryCloseEvent.html)
 
-### org/bukkit/event/enchantment/PrepareItemEnchantEvent
+### [InventoryCreativeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryCreativeEvent.html)
 
-### org/bukkit/event/entity/AreaEffectCloudApplyEvent
+### [InventoryDragEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryDragEvent.html)
 
-### org/bukkit/event/entity/ArrowBodyCountChangeEvent
+### [InventoryEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryEvent.html)
 
-### org/bukkit/event/entity/BatToggleSleepEvent
+### [InventoryInteractEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryInteractEvent.html)
 
-### org/bukkit/event/entity/CreatureSpawnEvent
+### [InventoryMoveItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryMoveItemEvent.html)
 
-### org/bukkit/event/entity/CreeperPowerEvent
+### [InventoryOpenEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryOpenEvent.html)
 
-### org/bukkit/event/entity/EnderDragonChangePhaseEvent
+### [InventoryPickupItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryPickupItemEvent.html)
 
-### org/bukkit/event/entity/EntityAirChangeEvent
+### [ItemDespawnEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ItemDespawnEvent.html)
 
-### org/bukkit/event/entity/EntityBreakDoorEvent
+### [ItemMergeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ItemMergeEvent.html)
 
-### org/bukkit/event/entity/EntityBreedEvent
+### [ItemSpawnEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ItemSpawnEvent.html)
 
-### org/bukkit/event/entity/EntityChangeBlockEvent
+### [LeavesDecayEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/LeavesDecayEvent.html)
 
-### org/bukkit/event/entity/EntityCombustByBlockEvent
+### [LightningStrikeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/weather/LightningStrikeEvent.html)
 
-### org/bukkit/event/entity/EntityCombustByEntityEvent
+### [LingeringPotionSplashEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/LingeringPotionSplashEvent.html)
 
-### org/bukkit/event/entity/EntityCombustEvent
+### [LookupProfileEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/profile/LookupProfileEvent.html)
 
-### org/bukkit/event/entity/EntityCreatePortalEvent
+### [LootGenerateEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/LootGenerateEvent.html)
 
-### org/bukkit/event/entity/EntityDamageByBlockEvent
+### [LootableInventoryReplenishEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/loottable/LootableInventoryReplenishEvent.html)
 
-### org/bukkit/event/entity/EntityDamageByEntityEvent
+### [MapInitializeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/MapInitializeEvent.html)
 
-### org/bukkit/event/entity/EntityDamageEvent
+### [MoistureChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/MoistureChangeEvent.html)
 
-### org/bukkit/event/entity/EntityDeathEvent
+### [NotePlayEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/NotePlayEvent.html)
 
-### org/bukkit/event/entity/EntityDropItemEvent
+### [PaperServerListPingEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/server/PaperServerListPingEvent.html)
 
-### org/bukkit/event/entity/EntityEnterBlockEvent
+### [PhantomPreSpawnEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/PhantomPreSpawnEvent.html)
 
-### org/bukkit/event/entity/EntityEnterLoveModeEvent
+### [PigZapEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/PigZapEvent.html)
 
-### org/bukkit/event/entity/EntityEvent
+### [PigZombieAngerEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/PigZombieAngerEvent.html)
 
-### org/bukkit/event/entity/EntityExplodeEvent
+### [PlayerAdvancementCriterionGrantEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerAdvancementCriterionGrantEvent.html)
 
-### org/bukkit/event/entity/EntityInteractEvent
+### [PlayerAdvancementDoneEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerAdvancementDoneEvent.html)
 
-### org/bukkit/event/entity/EntityPickupItemEvent
+### [PlayerAnimationEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerAnimationEvent.html)
 
-### org/bukkit/event/entity/EntityPlaceEvent
+### [PlayerArmorChangeEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerArmorChangeEvent.html)
 
-### org/bukkit/event/entity/EntityPortalEnterEvent
+### [PlayerArmorStandManipulateEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerArmorStandManipulateEvent.html)
 
-### org/bukkit/event/entity/EntityPortalEvent
+### [PlayerAttackEntityCooldownResetEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerAttackEntityCooldownResetEvent.html)
 
-### org/bukkit/event/entity/EntityPortalExitEvent
+### [PlayerAttemptPickupItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerAttemptPickupItemEvent.html)
 
-### org/bukkit/event/entity/EntityPoseChangeEvent
+### [PlayerBedEnterEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBedEnterEvent.html)
 
-### org/bukkit/event/entity/EntityPotionEffectEvent
+### [PlayerBedLeaveEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBedLeaveEvent.html)
 
-### org/bukkit/event/entity/EntityRegainHealthEvent
+### [PlayerBucketEmptyEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketEmptyEvent.html)
 
-### org/bukkit/event/entity/EntityResurrectEvent
+### [PlayerBucketEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketEvent.html)
 
-### org/bukkit/event/entity/EntityShootBowEvent
+### [PlayerBucketFillEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketFillEvent.html)
 
-### org/bukkit/event/entity/EntitySpawnEvent
+### [PlayerChangeBeaconEffectEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerChangeBeaconEffectEvent.html)
 
-### org/bukkit/event/entity/EntitySpellCastEvent
+### [PlayerChangedMainHandEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChangedMainHandEvent.html)
 
-### org/bukkit/event/entity/EntityTameEvent
+### [PlayerChangedWorldEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChangedWorldEvent.html)
 
-### org/bukkit/event/entity/EntityTargetEvent
+### [PlayerChannelEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChannelEvent.html)
 
-### org/bukkit/event/entity/EntityTargetLivingEntityEvent
+### [PlayerChatEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChatEvent.html)
 
-### org/bukkit/event/entity/EntityTeleportEvent
+### [PlayerChatTabCompleteEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChatTabCompleteEvent.html)
 
-### org/bukkit/event/entity/EntityToggleGlideEvent
+### [PlayerChunkLoadEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/packet/PlayerChunkLoadEvent.html)
 
-### org/bukkit/event/entity/EntityToggleSwimEvent
+### [PlayerChunkUnloadEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/packet/PlayerChunkUnloadEvent.html)
 
-### org/bukkit/event/entity/EntityTransformEvent
+### [PlayerClientOptionsChangeEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerClientOptionsChangeEvent.html)
 
-### org/bukkit/event/entity/EntityUnleashEvent
+### [PlayerCommandPreprocessEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerCommandPreprocessEvent.html)
 
-### org/bukkit/event/entity/ExpBottleEvent
+### [PlayerCommandSendEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerCommandSendEvent.html)
 
-### org/bukkit/event/entity/ExplosionPrimeEvent
+### [PlayerConnectionCloseEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerConnectionCloseEvent.html)
 
-### org/bukkit/event/entity/FireworkExplodeEvent
+### [PlayerDeathEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/PlayerDeathEvent.html)
 
-### org/bukkit/event/entity/FoodLevelChangeEvent
+### [PlayerDropItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerDropItemEvent.html)
 
-### org/bukkit/event/entity/HorseJumpEvent
+### [PlayerEditBookEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerEditBookEvent.html)
 
-### org/bukkit/event/entity/ItemDespawnEvent
+### [PlayerEggThrowEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerEggThrowEvent.html)
 
-### org/bukkit/event/entity/ItemMergeEvent
+### [PlayerElytraBoostEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerElytraBoostEvent.html)
 
-### org/bukkit/event/entity/ItemSpawnEvent
+### [PlayerEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerEvent.html)
 
-### org/bukkit/event/entity/LingeringPotionSplashEvent
+### [PlayerExpChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerExpChangeEvent.html)
 
-### org/bukkit/event/entity/PigZapEvent
+### [PlayerFishEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerFishEvent.html)
 
-### org/bukkit/event/entity/PigZombieAngerEvent
+### [PlayerFlowerPotManipulateEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerFlowerPotManipulateEvent.html)
 
-### org/bukkit/event/entity/PlayerDeathEvent
+### [PlayerGameModeChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerGameModeChangeEvent.html)
 
-### org/bukkit/event/entity/PlayerLeashEntityEvent
+### [PlayerHandshakeEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerHandshakeEvent.html)
 
-### org/bukkit/event/entity/PotionSplashEvent
+### [PlayerHarvestBlockEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerHarvestBlockEvent.html)
 
-### org/bukkit/event/entity/ProjectileHitEvent
+### [PlayerInitialSpawnEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerInitialSpawnEvent.html)
 
-### org/bukkit/event/entity/ProjectileLaunchEvent
+### [PlayerInteractAtEntityEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerInteractAtEntityEvent.html)
 
-### org/bukkit/event/entity/SheepDyeWoolEvent
+### [PlayerInteractEntityEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerInteractEntityEvent.html)
 
-### org/bukkit/event/entity/SheepRegrowWoolEvent
+### [PlayerInteractEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerInteractEvent.html)
 
-### org/bukkit/event/entity/SlimeSplitEvent
+### [PlayerItemBreakEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerItemBreakEvent.html)
 
-### org/bukkit/event/entity/SpawnerSpawnEvent
+### [PlayerItemConsumeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerItemConsumeEvent.html)
 
-### org/bukkit/event/entity/StriderTemperatureChangeEvent
+### [PlayerItemCooldownEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerItemCooldownEvent.html)
 
-### org/bukkit/event/entity/VillagerAcquireTradeEvent
+### [PlayerItemDamageEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerItemDamageEvent.html)
 
-### org/bukkit/event/entity/VillagerCareerChangeEvent
+### [PlayerItemHeldEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerItemHeldEvent.html)
 
-### org/bukkit/event/entity/VillagerReplenishTradeEvent
+### [PlayerItemMendEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerItemMendEvent.html)
 
-### org/bukkit/event/hanging/HangingBreakByEntityEvent
+### [PlayerJoinEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerJoinEvent.html)
 
-### org/bukkit/event/hanging/HangingBreakEvent
+### [PlayerJumpEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerJumpEvent.html)
 
-### org/bukkit/event/hanging/HangingEvent
+### [PlayerKickEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerKickEvent.html)
 
-### org/bukkit/event/hanging/HangingPlaceEvent
+### [PlayerLaunchProjectileEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerLaunchProjectileEvent.html)
 
-### org/bukkit/event/inventory/BrewEvent
+### [PlayerLeashEntityEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/PlayerLeashEntityEvent.html)
 
-### org/bukkit/event/inventory/BrewingStandFuelEvent
+### [PlayerLecternPageChangeEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerLecternPageChangeEvent.html)
 
-### org/bukkit/event/inventory/CraftItemEvent
+### [PlayerLevelChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerLevelChangeEvent.html)
 
-### org/bukkit/event/inventory/FurnaceBurnEvent
+### [PlayerLocaleChangeEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerLocaleChangeEvent.html)
 
-### org/bukkit/event/inventory/FurnaceExtractEvent
+### [PlayerLocaleChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerLocaleChangeEvent.html)
 
-### org/bukkit/event/inventory/FurnaceSmeltEvent
+### [PlayerLoginEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerLoginEvent.html)
 
-### org/bukkit/event/inventory/InventoryClickEvent
+### [PlayerLoomPatternSelectEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerLoomPatternSelectEvent.html)
 
-### org/bukkit/event/inventory/InventoryCloseEvent
+### [PlayerMoveEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerMoveEvent.html)
 
-### org/bukkit/event/inventory/InventoryCreativeEvent
+### [PlayerNaturallySpawnCreaturesEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/PlayerNaturallySpawnCreaturesEvent.html)
 
-### org/bukkit/event/inventory/InventoryDragEvent
+### [PlayerPickupArrowEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerPickupArrowEvent.html)
 
-### org/bukkit/event/inventory/InventoryEvent
+### [PlayerPickupExperienceEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerPickupExperienceEvent.html)
 
-### org/bukkit/event/inventory/InventoryInteractEvent
+### [PlayerPickupItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerPickupItemEvent.html)
 
-### org/bukkit/event/inventory/InventoryMoveItemEvent
+### [PlayerPortalEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerPortalEvent.html)
 
-### org/bukkit/event/inventory/InventoryOpenEvent
+### [PlayerPostRespawnEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerPostRespawnEvent.html)
 
-### org/bukkit/event/inventory/InventoryPickupItemEvent
+### [PlayerPreLoginEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerPreLoginEvent.html)
 
-### org/bukkit/event/inventory/PrepareAnvilEvent
+### [PlayerQuitEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerQuitEvent.html)
 
-### org/bukkit/event/inventory/PrepareItemCraftEvent
+### [PlayerReadyArrowEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerReadyArrowEvent.html)
 
-### org/bukkit/event/inventory/PrepareSmithingEvent
+### [PlayerRecipeBookClickEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerRecipeBookClickEvent.html)
 
-### org/bukkit/event/inventory/TradeSelectEvent
+### [PlayerRecipeDiscoverEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerRecipeDiscoverEvent.html)
 
-### org/bukkit/event/player/AsyncPlayerChatEvent
+### [PlayerRegisterChannelEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerRegisterChannelEvent.html)
 
-### org/bukkit/event/player/AsyncPlayerPreLoginEvent
+### [PlayerResourcePackStatusEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerResourcePackStatusEvent.html)
 
-### org/bukkit/event/player/PlayerAdvancementDoneEvent
+### [PlayerRespawnEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerRespawnEvent.html)
 
-### org/bukkit/event/player/PlayerAnimationEvent
+### [PlayerRiptideEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerRiptideEvent.html)
 
-### org/bukkit/event/player/PlayerArmorStandManipulateEvent
+### [PlayerShearBlockEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/PlayerShearBlockEvent.html)
 
-### org/bukkit/event/player/PlayerAttemptPickupItemEvent
+### [PlayerShearEntityEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerShearEntityEvent.html)
 
-### org/bukkit/event/player/PlayerBedEnterEvent
+### [PlayerSpawnLocationEvent](https://papermc.io/javadocs/paper/1.16/org/spigotmc/event/player/PlayerSpawnLocationEvent.html)
 
-### org/bukkit/event/player/PlayerBedLeaveEvent
+### [PlayerStartSpectatingEntityEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerStartSpectatingEntityEvent.html)
 
-### org/bukkit/event/player/PlayerBucketEmptyEvent
+### [PlayerStatisticIncrementEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerStatisticIncrementEvent.html)
 
-### org/bukkit/event/player/PlayerBucketEvent
+### [PlayerStonecutterRecipeSelectEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerStonecutterRecipeSelectEvent.html)
 
-### org/bukkit/event/player/PlayerBucketFillEvent
+### [PlayerStopSpectatingEntityEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerStopSpectatingEntityEvent.html)
 
-### org/bukkit/event/player/PlayerChangedMainHandEvent
+### [PlayerSwapHandItemsEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerSwapHandItemsEvent.html)
 
-### org/bukkit/event/player/PlayerChangedWorldEvent
+### [PlayerTakeLecternBookEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerTakeLecternBookEvent.html)
 
-### org/bukkit/event/player/PlayerChannelEvent
+### [PlayerTeleportEndGatewayEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerTeleportEndGatewayEvent.html)
 
-### org/bukkit/event/player/PlayerChatEvent
+### [PlayerTeleportEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerTeleportEvent.html)
 
-### org/bukkit/event/player/PlayerChatTabCompleteEvent
+### [PlayerToggleFlightEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerToggleFlightEvent.html)
 
-### org/bukkit/event/player/PlayerCommandPreprocessEvent
+### [PlayerToggleSneakEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerToggleSneakEvent.html)
 
-### org/bukkit/event/player/PlayerCommandSendEvent
+### [PlayerToggleSprintEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerToggleSprintEvent.html)
 
-### org/bukkit/event/player/PlayerDropItemEvent
+### [PlayerTradeEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerTradeEvent.html)
 
-### org/bukkit/event/player/PlayerEditBookEvent
+### [PlayerUnleashEntityEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerUnleashEntityEvent.html)
 
-### org/bukkit/event/player/PlayerEggThrowEvent
+### [PlayerUnregisterChannelEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerUnregisterChannelEvent.html)
 
-### org/bukkit/event/player/PlayerEvent
+### [PlayerUseUnknownEntityEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerUseUnknownEntityEvent.html)
 
-### org/bukkit/event/player/PlayerExpChangeEvent
+### [PlayerVelocityEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerVelocityEvent.html)
 
-### org/bukkit/event/player/PlayerFishEvent
+### [PluginDisableEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/PluginDisableEvent.html)
 
-### org/bukkit/event/player/PlayerGameModeChangeEvent
+### [PluginEnableEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/PluginEnableEvent.html)
 
-### org/bukkit/event/player/PlayerHarvestBlockEvent
+### [PluginEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/PluginEvent.html)
 
-### org/bukkit/event/player/PlayerInteractAtEntityEvent
+### [PortalCreateEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/PortalCreateEvent.html)
 
-### org/bukkit/event/player/PlayerInteractEntityEvent
+### [PotionSplashEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/PotionSplashEvent.html)
 
-### org/bukkit/event/player/PlayerInteractEvent
+### [PreCreatureSpawnEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/PreCreatureSpawnEvent.html)
 
-### org/bukkit/event/player/PlayerItemBreakEvent
+### [PreFillProfileEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/profile/PreFillProfileEvent.html)
 
-### org/bukkit/event/player/PlayerItemConsumeEvent
+### [PreLookupProfileEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/profile/PreLookupProfileEvent.html)
 
-### org/bukkit/event/player/PlayerItemDamageEvent
+### [PreSpawnerSpawnEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/PreSpawnerSpawnEvent.html)
 
-### org/bukkit/event/player/PlayerItemHeldEvent
+### [PrepareAnvilEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/PrepareAnvilEvent.html)
 
-### org/bukkit/event/player/PlayerItemMendEvent
+### [PrepareGrindstoneEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/inventory/PrepareGrindstoneEvent.html)
 
-### org/bukkit/event/player/PlayerJoinEvent
+### [PrepareItemCraftEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/PrepareItemCraftEvent.html)
 
-### org/bukkit/event/player/PlayerKickEvent
+### [PrepareItemEnchantEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/enchantment/PrepareItemEnchantEvent.html)
 
-### org/bukkit/event/player/PlayerLevelChangeEvent
+### [PrepareResultEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/inventory/PrepareResultEvent.html)
 
-### org/bukkit/event/player/PlayerLocaleChangeEvent
+### [PrepareSmithingEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/PrepareSmithingEvent.html)
 
-### org/bukkit/event/player/PlayerLoginEvent
+### [ProfileWhitelistVerifyEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/profile/ProfileWhitelistVerifyEvent.html)
 
-### org/bukkit/event/player/PlayerMoveEvent
+### [ProjectileCollideEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/ProjectileCollideEvent.html)
 
-### org/bukkit/event/player/PlayerPickupArrowEvent
+### [ProjectileHitEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ProjectileHitEvent.html)
 
-### org/bukkit/event/player/PlayerPickupItemEvent
+### [ProjectileLaunchEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ProjectileLaunchEvent.html)
 
-### org/bukkit/event/player/PlayerPortalEvent
+### [RaidEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/raid/RaidEvent.html)
 
-### org/bukkit/event/player/PlayerPreLoginEvent
+### [RaidFinishEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/raid/RaidFinishEvent.html)
 
-### org/bukkit/event/player/PlayerQuitEvent
+### [RaidSpawnWaveEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/raid/RaidSpawnWaveEvent.html)
 
-### org/bukkit/event/player/PlayerRecipeDiscoverEvent
+### [RaidStopEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/raid/RaidStopEvent.html)
 
-### org/bukkit/event/player/PlayerRegisterChannelEvent
+### [RaidTriggerEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/raid/RaidTriggerEvent.html)
 
-### org/bukkit/event/player/PlayerResourcePackStatusEvent
+### [RemoteServerCommandEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/RemoteServerCommandEvent.html)
 
-### org/bukkit/event/player/PlayerRespawnEvent
+### [ServerCommandEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/ServerCommandEvent.html)
 
-### org/bukkit/event/player/PlayerRiptideEvent
+### [ServerEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/ServerEvent.html)
 
-### org/bukkit/event/player/PlayerShearEntityEvent
+### [ServerExceptionEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/server/ServerExceptionEvent.html)
 
-### org/bukkit/event/player/PlayerStatisticIncrementEvent
+### [ServerListPingEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/ServerListPingEvent.html)
 
-### org/bukkit/event/player/PlayerSwapHandItemsEvent
+### [ServerLoadEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/ServerLoadEvent.html)
 
-### org/bukkit/event/player/PlayerTakeLecternBookEvent
+### [ServerResourcesReloadedEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/server/ServerResourcesReloadedEvent.html)
 
-### org/bukkit/event/player/PlayerTeleportEvent
+### [ServerTickEndEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/server/ServerTickEndEvent.html)
 
-### org/bukkit/event/player/PlayerToggleFlightEvent
+### [ServerTickStartEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/server/ServerTickStartEvent.html)
 
-### org/bukkit/event/player/PlayerToggleSneakEvent
+### [ServiceEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/ServiceEvent.html)
 
-### org/bukkit/event/player/PlayerToggleSprintEvent
+### [ServiceRegisterEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/ServiceRegisterEvent.html)
 
-### org/bukkit/event/player/PlayerUnleashEntityEvent
+### [ServiceUnregisterEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/ServiceUnregisterEvent.html)
 
-### org/bukkit/event/player/PlayerUnregisterChannelEvent
+### [SheepDyeWoolEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/SheepDyeWoolEvent.html)
 
-### org/bukkit/event/player/PlayerVelocityEvent
+### [SheepRegrowWoolEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/SheepRegrowWoolEvent.html)
 
-### org/bukkit/event/raid/RaidEvent
+### [SignChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/SignChangeEvent.html)
 
-### org/bukkit/event/raid/RaidFinishEvent
+### [SkeletonHorseTrapEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/SkeletonHorseTrapEvent.html)
 
-### org/bukkit/event/raid/RaidSpawnWaveEvent
+### [SlimeChangeDirectionEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/SlimeChangeDirectionEvent.html)
 
-### org/bukkit/event/raid/RaidStopEvent
+### [SlimePathfindEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/SlimePathfindEvent.html)
 
-### org/bukkit/event/raid/RaidTriggerEvent
+### [SlimeSplitEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/SlimeSplitEvent.html)
 
-### org/bukkit/event/server/BroadcastMessageEvent
+### [SlimeSwimEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/SlimeSwimEvent.html)
 
-### org/bukkit/event/server/MapInitializeEvent
+### [SlimeTargetLivingEntityEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/SlimeTargetLivingEntityEvent.html)
 
-### org/bukkit/event/server/PluginDisableEvent
+### [SlimeWanderEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/SlimeWanderEvent.html)
 
-### org/bukkit/event/server/PluginEnableEvent
+### [SpawnChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/SpawnChangeEvent.html)
 
-### org/bukkit/event/server/PluginEvent
+### [SpawnerSpawnEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/SpawnerSpawnEvent.html)
 
-### org/bukkit/event/server/RemoteServerCommandEvent
+### [SpongeAbsorbEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/SpongeAbsorbEvent.html)
 
-### org/bukkit/event/server/ServerCommandEvent
+### [StriderTemperatureChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/StriderTemperatureChangeEvent.html)
 
-### org/bukkit/event/server/ServerEvent
+### [StructureGrowEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/StructureGrowEvent.html)
 
-### org/bukkit/event/server/ServerListPingEvent
+### [StructureLocateEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/world/StructureLocateEvent.html)
 
-### org/bukkit/event/server/ServerLoadEvent
+### [TNTPrimeEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/block/TNTPrimeEvent.html)
 
-### org/bukkit/event/server/ServiceEvent
+### [TabCompleteEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/TabCompleteEvent.html)
 
-### org/bukkit/event/server/ServiceRegisterEvent
+### [TargetHitEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/TargetHitEvent.html)
 
-### org/bukkit/event/server/ServiceUnregisterEvent
+### [ThrownEggHatchEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/ThrownEggHatchEvent.html)
 
-### org/bukkit/event/server/TabCompleteEvent
+### [ThunderChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/weather/ThunderChangeEvent.html)
 
-### org/bukkit/event/vehicle/VehicleBlockCollisionEvent
+### [TimeSkipEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/TimeSkipEvent.html)
 
-### org/bukkit/event/vehicle/VehicleCollisionEvent
+### [TradeSelectEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/TradeSelectEvent.html)
 
-### org/bukkit/event/vehicle/VehicleCreateEvent
+### [TurtleGoHomeEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/TurtleGoHomeEvent.html)
 
-### org/bukkit/event/vehicle/VehicleDamageEvent
+### [TurtleLayEggEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/TurtleLayEggEvent.html)
 
-### org/bukkit/event/vehicle/VehicleDestroyEvent
+### [TurtleStartDiggingEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/TurtleStartDiggingEvent.html)
 
-### org/bukkit/event/vehicle/VehicleEnterEvent
+### [UnknownCommandEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/command/UnknownCommandEvent.html)
 
-### org/bukkit/event/vehicle/VehicleEntityCollisionEvent
+### [VehicleBlockCollisionEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleBlockCollisionEvent.html)
 
-### org/bukkit/event/vehicle/VehicleEvent
+### [VehicleCollisionEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleCollisionEvent.html)
 
-### org/bukkit/event/vehicle/VehicleExitEvent
+### [VehicleCreateEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleCreateEvent.html)
 
-### org/bukkit/event/vehicle/VehicleMoveEvent
+### [VehicleDamageEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleDamageEvent.html)
 
-### org/bukkit/event/vehicle/VehicleUpdateEvent
+### [VehicleDestroyEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleDestroyEvent.html)
 
-### org/bukkit/event/weather/LightningStrikeEvent
+### [VehicleEnterEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleEnterEvent.html)
 
-### org/bukkit/event/weather/ThunderChangeEvent
+### [VehicleEntityCollisionEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleEntityCollisionEvent.html)
 
-### org/bukkit/event/weather/WeatherChangeEvent
+### [VehicleEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleEvent.html)
 
-### org/bukkit/event/weather/WeatherEvent
+### [VehicleExitEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleExitEvent.html)
 
-### org/bukkit/event/world/ChunkEvent
+### [VehicleMoveEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleMoveEvent.html)
 
-### org/bukkit/event/world/ChunkLoadEvent
+### [VehicleUpdateEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleUpdateEvent.html)
 
-### org/bukkit/event/world/ChunkPopulateEvent
+### [VillagerAcquireTradeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/VillagerAcquireTradeEvent.html)
 
-### org/bukkit/event/world/ChunkUnloadEvent
+### [VillagerCareerChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/VillagerCareerChangeEvent.html)
 
-### org/bukkit/event/world/LootGenerateEvent
+### [VillagerReplenishTradeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/VillagerReplenishTradeEvent.html)
 
-### org/bukkit/event/world/PortalCreateEvent
+### [WeatherChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/weather/WeatherChangeEvent.html)
 
-### org/bukkit/event/world/SpawnChangeEvent
+### [WeatherEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/weather/WeatherEvent.html)
 
-### org/bukkit/event/world/StructureGrowEvent
+### [WhitelistToggleEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/server/WhitelistToggleEvent.html)
 
-### org/bukkit/event/world/TimeSkipEvent
+### [WitchConsumePotionEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/WitchConsumePotionEvent.html)
 
-### org/bukkit/event/world/WorldEvent
+### [WitchReadyPotionEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/WitchReadyPotionEvent.html)
 
-### org/bukkit/event/world/WorldInitEvent
+### [WitchThrowPotionEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/WitchThrowPotionEvent.html)
 
-### org/bukkit/event/world/WorldLoadEvent
+### [WorldEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/WorldEvent.html)
 
-### org/bukkit/event/world/WorldSaveEvent
+### [WorldGameRuleChangeEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/world/WorldGameRuleChangeEvent.html)
 
-### org/bukkit/event/world/WorldUnloadEvent
+### [WorldInitEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/WorldInitEvent.html)
 
-### org/spigotmc/event/entity/EntityDismountEvent
+### [WorldLoadEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/WorldLoadEvent.html)
 
-### org/spigotmc/event/entity/EntityMountEvent
+### [WorldSaveEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/WorldSaveEvent.html)
 
-### org/spigotmc/event/player/PlayerSpawnLocationEvent
+### [WorldUnloadEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/WorldUnloadEvent.html)
 

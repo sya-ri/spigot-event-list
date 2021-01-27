@@ -1,664 +1,1326 @@
-- name: com/destroystokyo/paper/event/block/AnvilDamagedEvent
+- name: AnvilDamagedEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/block/AnvilDamagedEvent.html
+  description: ''
+- name: AreaEffectCloudApplyEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/AreaEffectCloudApplyEvent.html
+  description: ''
+- name: ArrowBodyCountChangeEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ArrowBodyCountChangeEvent.html
+  description: ''
+- name: AsyncPlayerChatEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/AsyncPlayerChatEvent.html
+  description: ''
+- name: AsyncPlayerPreLoginEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/AsyncPlayerPreLoginEvent.html
+  description: ''
+- name: AsyncTabCompleteEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/server/AsyncTabCompleteEvent.html
+  description: ''
+- name: BatToggleSleepEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/BatToggleSleepEvent.html
+  description: ''
+- name: BeaconEffectEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/block/BeaconEffectEvent.html
+  description: ''
+- name: BellRingEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/BellRingEvent.html
+  description: ''
+- name: BlockBreakEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockBreakEvent.html
+  description: ''
+- name: BlockBurnEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockBurnEvent.html
+  description: ''
+- name: BlockCanBuildEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockCanBuildEvent.html
+  description: ''
+- name: BlockCookEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockCookEvent.html
+  description: ''
+- name: BlockDamageEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockDamageEvent.html
+  description: ''
+- name: BlockDestroyEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/block/BlockDestroyEvent.html
+  description: ''
+- name: BlockDispenseArmorEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockDispenseArmorEvent.html
+  description: ''
+- name: BlockDispenseEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockDispenseEvent.html
+  description: ''
+- name: BlockDropItemEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockDropItemEvent.html
+  description: ''
+- name: BlockEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockEvent.html
+  description: ''
+- name: BlockExpEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockExpEvent.html
+  description: ''
+- name: BlockExplodeEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockExplodeEvent.html
+  description: ''
+- name: BlockFadeEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockFadeEvent.html
+  description: ''
+- name: BlockFailedDispenseEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/BlockFailedDispenseEvent.html
+  description: ''
+- name: BlockFertilizeEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockFertilizeEvent.html
+  description: ''
+- name: BlockFormEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockFormEvent.html
+  description: ''
+- name: BlockFromToEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockFromToEvent.html
+  description: ''
+- name: BlockGrowEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockGrowEvent.html
+  description: ''
+- name: BlockIgniteEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockIgniteEvent.html
+  description: ''
+- name: BlockMultiPlaceEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockMultiPlaceEvent.html
+  description: ''
+- name: BlockPhysicsEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockPhysicsEvent.html
+  description: ''
+- name: BlockPistonEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockPistonEvent.html
+  description: ''
+- name: BlockPistonExtendEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockPistonExtendEvent.html
+  description: ''
+- name: BlockPistonRetractEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockPistonRetractEvent.html
+  description: ''
+- name: BlockPlaceEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockPlaceEvent.html
+  description: ''
+- name: BlockPreDispenseEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/BlockPreDispenseEvent.html
+  description: ''
+- name: BlockRedstoneEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockRedstoneEvent.html
+  description: ''
+- name: BlockShearEntityEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockShearEntityEvent.html
+  description: ''
+- name: BlockSpreadEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockSpreadEvent.html
+  description: ''
+- name: BrewEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/BrewEvent.html
+  description: ''
+- name: BrewingStandFuelEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/BrewingStandFuelEvent.html
+  description: ''
+- name: BroadcastMessageEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/BroadcastMessageEvent.html
+  description: ''
+- name: CauldronLevelChangeEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/CauldronLevelChangeEvent.html
+  description: ''
+- name: ChunkEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/ChunkEvent.html
+  description: ''
+- name: ChunkLoadEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/ChunkLoadEvent.html
+  description: ''
+- name: ChunkPopulateEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/ChunkPopulateEvent.html
+  description: ''
+- name: ChunkUnloadEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/ChunkUnloadEvent.html
+  description: ''
+- name: ConversationAbandonedEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/conversations/ConversationAbandonedEvent.html
+  description: ''
+- name: CraftItemEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/CraftItemEvent.html
+  description: ''
+- name: CreatureSpawnEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/CreatureSpawnEvent.html
+  description: ''
+- name: CreeperIgniteEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/CreeperIgniteEvent.html
+  description: ''
+- name: CreeperPowerEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/CreeperPowerEvent.html
+  description: ''
+- name: EnchantItemEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/enchantment/EnchantItemEvent.html
+  description: ''
+- name: EnderDragonChangePhaseEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EnderDragonChangePhaseEvent.html
+  description: ''
+- name: EnderDragonFireballHitEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EnderDragonFireballHitEvent.html
+  description: ''
+- name: EnderDragonFlameEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EnderDragonFlameEvent.html
+  description: ''
+- name: EnderDragonShootFireballEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EnderDragonShootFireballEvent.html
+  description: ''
+- name: EndermanAttackPlayerEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EndermanAttackPlayerEvent.html
+  description: ''
+- name: EndermanEscapeEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EndermanEscapeEvent.html
+  description: ''
+- name: EntityAddToWorldEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityAddToWorldEvent.html
+  description: ''
+- name: EntityAirChangeEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityAirChangeEvent.html
+  description: ''
+- name: EntityBlockFormEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/EntityBlockFormEvent.html
+  description: ''
+- name: EntityBreakDoorEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityBreakDoorEvent.html
+  description: ''
+- name: EntityBreedEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityBreedEvent.html
+  description: ''
+- name: EntityChangeBlockEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityChangeBlockEvent.html
+  description: ''
+- name: EntityCombustByBlockEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityCombustByBlockEvent.html
+  description: ''
+- name: EntityCombustByEntityEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityCombustByEntityEvent.html
+  description: ''
+- name: EntityCombustEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityCombustEvent.html
+  description: ''
+- name: EntityCreatePortalEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityCreatePortalEvent.html
+  description: ''
+- name: EntityDamageByBlockEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityDamageByBlockEvent.html
+  description: ''
+- name: EntityDamageByEntityEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityDamageByEntityEvent.html
+  description: ''
+- name: EntityDamageEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityDamageEvent.html
+  description: ''
+- name: EntityDeathEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityDeathEvent.html
+  description: ''
+- name: EntityDismountEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/spigotmc/event/entity/EntityDismountEvent.html
+  description: ''
+- name: EntityDropItemEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityDropItemEvent.html
+  description: ''
+- name: EntityEnterBlockEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityEnterBlockEvent.html
+  description: ''
+- name: EntityEnterLoveModeEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityEnterLoveModeEvent.html
+  description: ''
+- name: EntityEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityEvent.html
+  description: ''
+- name: EntityExplodeEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityExplodeEvent.html
+  description: ''
+- name: EntityInteractEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityInteractEvent.html
+  description: ''
+- name: EntityJumpEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityJumpEvent.html
+  description: ''
+- name: EntityKnockbackByEntityEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityKnockbackByEntityEvent.html
+  description: ''
+- name: EntityLoadCrossbowEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/entity/EntityLoadCrossbowEvent.html
+  description: ''
+- name: EntityMountEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/spigotmc/event/entity/EntityMountEvent.html
+  description: ''
+- name: EntityPathfindEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityPathfindEvent.html
   description: ''
-- name: com/destroystokyo/paper/event/block/BeaconEffectEvent
+- name: EntityPickupItemEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPickupItemEvent.html
   description: ''
-- name: com/destroystokyo/paper/event/block/BlockDestroyEvent
+- name: EntityPlaceEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPlaceEvent.html
   description: ''
-- name: com/destroystokyo/paper/event/block/TNTPrimeEvent
+- name: EntityPortalEnterEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPortalEnterEvent.html
   description: ''
-- name: com/destroystokyo/paper/event/entity/CreeperIgniteEvent
+- name: EntityPortalEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPortalEvent.html
   description: ''
-- name: com/destroystokyo/paper/event/entity/EnderDragonFireballHitEvent
+- name: EntityPortalExitEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPortalExitEvent.html
   description: ''
-- name: com/destroystokyo/paper/event/entity/EnderDragonFlameEvent
+- name: EntityPoseChangeEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPoseChangeEvent.html
   description: ''
-- name: com/destroystokyo/paper/event/entity/EnderDragonShootFireballEvent
+- name: EntityPotionEffectEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPotionEffectEvent.html
   description: ''
-- name: com/destroystokyo/paper/event/entity/EndermanAttackPlayerEvent
+- name: EntityRegainHealthEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityRegainHealthEvent.html
   description: ''
-- name: com/destroystokyo/paper/event/entity/EndermanEscapeEvent
+- name: EntityRemoveFromWorldEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityRemoveFromWorldEvent.html
   description: ''
-- name: com/destroystokyo/paper/event/entity/EntityAddToWorldEvent
+- name: EntityResurrectEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityResurrectEvent.html
   description: ''
-- name: com/destroystokyo/paper/event/entity/EntityJumpEvent
+- name: EntityShootBowEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityShootBowEvent.html
   description: ''
-- name: com/destroystokyo/paper/event/entity/EntityKnockbackByEntityEvent
+- name: EntitySpawnEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntitySpawnEvent.html
   description: ''
-- name: com/destroystokyo/paper/event/entity/EntityPathfindEvent
+- name: EntitySpellCastEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntitySpellCastEvent.html
   description: ''
-- name: com/destroystokyo/paper/event/entity/EntityRemoveFromWorldEvent
+- name: EntityTameEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityTameEvent.html
   description: ''
-- name: com/destroystokyo/paper/event/entity/EntityTeleportEndGatewayEvent
+- name: EntityTargetEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityTargetEvent.html
   description: ''
-- name: com/destroystokyo/paper/event/entity/EntityTransformedEvent
+- name: EntityTargetLivingEntityEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityTargetLivingEntityEvent.html
   description: ''
-- name: com/destroystokyo/paper/event/entity/EntityZapEvent
+- name: EntityTeleportEndGatewayEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityTeleportEndGatewayEvent.html
   description: ''
-- name: com/destroystokyo/paper/event/entity/ExperienceOrbMergeEvent
+- name: EntityTeleportEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityTeleportEvent.html
   description: ''
-- name: com/destroystokyo/paper/event/entity/PhantomPreSpawnEvent
+- name: EntityToggleGlideEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityToggleGlideEvent.html
   description: ''
-- name: com/destroystokyo/paper/event/entity/PlayerNaturallySpawnCreaturesEvent
+- name: EntityToggleSwimEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityToggleSwimEvent.html
   description: ''
-- name: com/destroystokyo/paper/event/entity/PreCreatureSpawnEvent
+- name: EntityTransformEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityTransformEvent.html
   description: ''
-- name: com/destroystokyo/paper/event/entity/PreSpawnerSpawnEvent
+- name: EntityTransformedEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityTransformedEvent.html
   description: ''
-- name: com/destroystokyo/paper/event/entity/ProjectileCollideEvent
+- name: EntityUnleashEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityUnleashEvent.html
   description: ''
-- name: com/destroystokyo/paper/event/entity/SkeletonHorseTrapEvent
+- name: EntityZapEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityZapEvent.html
   description: ''
-- name: com/destroystokyo/paper/event/entity/SlimeChangeDirectionEvent
+- name: Event
+  link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/Event.html
+  description: ''
+- name: ExpBottleEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ExpBottleEvent.html
+  description: ''
+- name: ExperienceOrbMergeEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/ExperienceOrbMergeEvent.html
+  description: ''
+- name: ExplosionPrimeEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ExplosionPrimeEvent.html
+  description: ''
+- name: FillProfileEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/profile/FillProfileEvent.html
+  description: ''
+- name: FireworkExplodeEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/FireworkExplodeEvent.html
+  description: ''
+- name: FluidLevelChangeEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/FluidLevelChangeEvent.html
+  description: ''
+- name: FoodLevelChangeEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/FoodLevelChangeEvent.html
+  description: ''
+- name: FurnaceBurnEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/FurnaceBurnEvent.html
+  description: ''
+- name: FurnaceExtractEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/FurnaceExtractEvent.html
+  description: ''
+- name: FurnaceSmeltEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/FurnaceSmeltEvent.html
+  description: ''
+- name: GS4QueryEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/server/GS4QueryEvent.html
+  description: ''
+- name: HangingBreakByEntityEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/hanging/HangingBreakByEntityEvent.html
+  description: ''
+- name: HangingBreakEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/hanging/HangingBreakEvent.html
+  description: ''
+- name: HangingEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/hanging/HangingEvent.html
+  description: ''
+- name: HangingPlaceEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/hanging/HangingPlaceEvent.html
+  description: ''
+- name: HorseJumpEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/HorseJumpEvent.html
+  description: ''
+- name: IllegalPacketEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/IllegalPacketEvent.html
+  description: ''
+- name: InventoryClickEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryClickEvent.html
+  description: ''
+- name: InventoryCloseEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryCloseEvent.html
+  description: ''
+- name: InventoryCreativeEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryCreativeEvent.html
+  description: ''
+- name: InventoryDragEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryDragEvent.html
+  description: ''
+- name: InventoryEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryEvent.html
+  description: ''
+- name: InventoryInteractEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryInteractEvent.html
+  description: ''
+- name: InventoryMoveItemEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryMoveItemEvent.html
+  description: ''
+- name: InventoryOpenEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryOpenEvent.html
+  description: ''
+- name: InventoryPickupItemEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryPickupItemEvent.html
+  description: ''
+- name: ItemDespawnEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ItemDespawnEvent.html
+  description: ''
+- name: ItemMergeEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ItemMergeEvent.html
+  description: ''
+- name: ItemSpawnEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ItemSpawnEvent.html
+  description: ''
+- name: LeavesDecayEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/LeavesDecayEvent.html
+  description: ''
+- name: LightningStrikeEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/weather/LightningStrikeEvent.html
+  description: ''
+- name: LingeringPotionSplashEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/LingeringPotionSplashEvent.html
+  description: ''
+- name: LookupProfileEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/profile/LookupProfileEvent.html
+  description: ''
+- name: LootGenerateEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/LootGenerateEvent.html
+  description: ''
+- name: LootableInventoryReplenishEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/loottable/LootableInventoryReplenishEvent.html
+  description: ''
+- name: MapInitializeEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/MapInitializeEvent.html
+  description: ''
+- name: MoistureChangeEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/MoistureChangeEvent.html
+  description: ''
+- name: NotePlayEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/NotePlayEvent.html
+  description: ''
+- name: PaperServerListPingEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/server/PaperServerListPingEvent.html
+  description: ''
+- name: PhantomPreSpawnEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/PhantomPreSpawnEvent.html
+  description: ''
+- name: PigZapEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/PigZapEvent.html
+  description: ''
+- name: PigZombieAngerEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/PigZombieAngerEvent.html
+  description: ''
+- name: PlayerAdvancementCriterionGrantEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerAdvancementCriterionGrantEvent.html
+  description: ''
+- name: PlayerAdvancementDoneEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerAdvancementDoneEvent.html
+  description: ''
+- name: PlayerAnimationEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerAnimationEvent.html
+  description: ''
+- name: PlayerArmorChangeEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerArmorChangeEvent.html
+  description: ''
+- name: PlayerArmorStandManipulateEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerArmorStandManipulateEvent.html
+  description: ''
+- name: PlayerAttackEntityCooldownResetEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerAttackEntityCooldownResetEvent.html
+  description: ''
+- name: PlayerAttemptPickupItemEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerAttemptPickupItemEvent.html
+  description: ''
+- name: PlayerBedEnterEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBedEnterEvent.html
+  description: ''
+- name: PlayerBedLeaveEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBedLeaveEvent.html
+  description: ''
+- name: PlayerBucketEmptyEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketEmptyEvent.html
+  description: ''
+- name: PlayerBucketEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketEvent.html
+  description: ''
+- name: PlayerBucketFillEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketFillEvent.html
+  description: ''
+- name: PlayerChangeBeaconEffectEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerChangeBeaconEffectEvent.html
+  description: ''
+- name: PlayerChangedMainHandEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChangedMainHandEvent.html
+  description: ''
+- name: PlayerChangedWorldEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChangedWorldEvent.html
+  description: ''
+- name: PlayerChannelEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChannelEvent.html
+  description: ''
+- name: PlayerChatEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChatEvent.html
+  description: ''
+- name: PlayerChatTabCompleteEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChatTabCompleteEvent.html
+  description: ''
+- name: PlayerChunkLoadEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/packet/PlayerChunkLoadEvent.html
+  description: ''
+- name: PlayerChunkUnloadEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/packet/PlayerChunkUnloadEvent.html
+  description: ''
+- name: PlayerClientOptionsChangeEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerClientOptionsChangeEvent.html
+  description: ''
+- name: PlayerCommandPreprocessEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerCommandPreprocessEvent.html
+  description: ''
+- name: PlayerCommandSendEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerCommandSendEvent.html
+  description: ''
+- name: PlayerConnectionCloseEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerConnectionCloseEvent.html
+  description: ''
+- name: PlayerDeathEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/PlayerDeathEvent.html
+  description: ''
+- name: PlayerDropItemEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerDropItemEvent.html
+  description: ''
+- name: PlayerEditBookEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerEditBookEvent.html
+  description: ''
+- name: PlayerEggThrowEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerEggThrowEvent.html
+  description: ''
+- name: PlayerElytraBoostEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerElytraBoostEvent.html
+  description: ''
+- name: PlayerEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerEvent.html
+  description: ''
+- name: PlayerExpChangeEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerExpChangeEvent.html
+  description: ''
+- name: PlayerFishEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerFishEvent.html
+  description: ''
+- name: PlayerFlowerPotManipulateEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerFlowerPotManipulateEvent.html
+  description: ''
+- name: PlayerGameModeChangeEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerGameModeChangeEvent.html
+  description: ''
+- name: PlayerHandshakeEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerHandshakeEvent.html
+  description: ''
+- name: PlayerHarvestBlockEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerHarvestBlockEvent.html
+  description: ''
+- name: PlayerInitialSpawnEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerInitialSpawnEvent.html
+  description: ''
+- name: PlayerInteractAtEntityEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerInteractAtEntityEvent.html
+  description: ''
+- name: PlayerInteractEntityEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerInteractEntityEvent.html
+  description: ''
+- name: PlayerInteractEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerInteractEvent.html
+  description: ''
+- name: PlayerItemBreakEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerItemBreakEvent.html
+  description: ''
+- name: PlayerItemConsumeEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerItemConsumeEvent.html
+  description: ''
+- name: PlayerItemCooldownEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerItemCooldownEvent.html
+  description: ''
+- name: PlayerItemDamageEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerItemDamageEvent.html
+  description: ''
+- name: PlayerItemHeldEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerItemHeldEvent.html
+  description: ''
+- name: PlayerItemMendEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerItemMendEvent.html
+  description: ''
+- name: PlayerJoinEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerJoinEvent.html
+  description: ''
+- name: PlayerJumpEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerJumpEvent.html
+  description: ''
+- name: PlayerKickEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerKickEvent.html
+  description: ''
+- name: PlayerLaunchProjectileEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerLaunchProjectileEvent.html
+  description: ''
+- name: PlayerLeashEntityEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/PlayerLeashEntityEvent.html
+  description: ''
+- name: PlayerLecternPageChangeEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerLecternPageChangeEvent.html
+  description: ''
+- name: PlayerLevelChangeEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerLevelChangeEvent.html
+  description: ''
+- name: PlayerLocaleChangeEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerLocaleChangeEvent.html
+  description: ''
+- name: PlayerLocaleChangeEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerLocaleChangeEvent.html
+  description: ''
+- name: PlayerLoginEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerLoginEvent.html
+  description: ''
+- name: PlayerLoomPatternSelectEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerLoomPatternSelectEvent.html
+  description: ''
+- name: PlayerMoveEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerMoveEvent.html
+  description: ''
+- name: PlayerNaturallySpawnCreaturesEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/PlayerNaturallySpawnCreaturesEvent.html
+  description: ''
+- name: PlayerPickupArrowEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerPickupArrowEvent.html
+  description: ''
+- name: PlayerPickupExperienceEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerPickupExperienceEvent.html
+  description: ''
+- name: PlayerPickupItemEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerPickupItemEvent.html
+  description: ''
+- name: PlayerPortalEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerPortalEvent.html
+  description: ''
+- name: PlayerPostRespawnEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerPostRespawnEvent.html
+  description: ''
+- name: PlayerPreLoginEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerPreLoginEvent.html
+  description: ''
+- name: PlayerQuitEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerQuitEvent.html
+  description: ''
+- name: PlayerReadyArrowEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerReadyArrowEvent.html
+  description: ''
+- name: PlayerRecipeBookClickEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerRecipeBookClickEvent.html
+  description: ''
+- name: PlayerRecipeDiscoverEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerRecipeDiscoverEvent.html
+  description: ''
+- name: PlayerRegisterChannelEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerRegisterChannelEvent.html
+  description: ''
+- name: PlayerResourcePackStatusEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerResourcePackStatusEvent.html
+  description: ''
+- name: PlayerRespawnEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerRespawnEvent.html
+  description: ''
+- name: PlayerRiptideEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerRiptideEvent.html
+  description: ''
+- name: PlayerShearBlockEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/PlayerShearBlockEvent.html
+  description: ''
+- name: PlayerShearEntityEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerShearEntityEvent.html
+  description: ''
+- name: PlayerSpawnLocationEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/spigotmc/event/player/PlayerSpawnLocationEvent.html
+  description: ''
+- name: PlayerStartSpectatingEntityEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerStartSpectatingEntityEvent.html
+  description: ''
+- name: PlayerStatisticIncrementEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerStatisticIncrementEvent.html
+  description: ''
+- name: PlayerStonecutterRecipeSelectEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerStonecutterRecipeSelectEvent.html
+  description: ''
+- name: PlayerStopSpectatingEntityEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerStopSpectatingEntityEvent.html
+  description: ''
+- name: PlayerSwapHandItemsEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerSwapHandItemsEvent.html
+  description: ''
+- name: PlayerTakeLecternBookEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerTakeLecternBookEvent.html
+  description: ''
+- name: PlayerTeleportEndGatewayEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerTeleportEndGatewayEvent.html
+  description: ''
+- name: PlayerTeleportEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerTeleportEvent.html
+  description: ''
+- name: PlayerToggleFlightEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerToggleFlightEvent.html
+  description: ''
+- name: PlayerToggleSneakEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerToggleSneakEvent.html
+  description: ''
+- name: PlayerToggleSprintEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerToggleSprintEvent.html
   description: ''
-- name: com/destroystokyo/paper/event/entity/SlimePathfindEvent
+- name: PlayerTradeEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerTradeEvent.html
   description: ''
-- name: com/destroystokyo/paper/event/entity/SlimeSwimEvent
+- name: PlayerUnleashEntityEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerUnleashEntityEvent.html
   description: ''
-- name: com/destroystokyo/paper/event/entity/SlimeTargetLivingEntityEvent
+- name: PlayerUnregisterChannelEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerUnregisterChannelEvent.html
   description: ''
-- name: com/destroystokyo/paper/event/entity/SlimeWanderEvent
+- name: PlayerUseUnknownEntityEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerUseUnknownEntityEvent.html
   description: ''
-- name: com/destroystokyo/paper/event/entity/ThrownEggHatchEvent
+- name: PlayerVelocityEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerVelocityEvent.html
   description: ''
-- name: com/destroystokyo/paper/event/entity/TurtleGoHomeEvent
+- name: PluginDisableEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/PluginDisableEvent.html
   description: ''
-- name: com/destroystokyo/paper/event/entity/TurtleLayEggEvent
+- name: PluginEnableEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/PluginEnableEvent.html
   description: ''
-- name: com/destroystokyo/paper/event/entity/TurtleStartDiggingEvent
+- name: PluginEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/PluginEvent.html
   description: ''
-- name: com/destroystokyo/paper/event/entity/WitchConsumePotionEvent
+- name: PortalCreateEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/PortalCreateEvent.html
   description: ''
-- name: com/destroystokyo/paper/event/entity/WitchReadyPotionEvent
+- name: PotionSplashEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/PotionSplashEvent.html
   description: ''
-- name: com/destroystokyo/paper/event/entity/WitchThrowPotionEvent
+- name: PreCreatureSpawnEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/PreCreatureSpawnEvent.html
   description: ''
-- name: com/destroystokyo/paper/event/inventory/PrepareGrindstoneEvent
+- name: PreFillProfileEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/profile/PreFillProfileEvent.html
   description: ''
-- name: com/destroystokyo/paper/event/inventory/PrepareResultEvent
+- name: PreLookupProfileEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/profile/PreLookupProfileEvent.html
   description: ''
-- name: com/destroystokyo/paper/event/player/IllegalPacketEvent
+- name: PreSpawnerSpawnEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/PreSpawnerSpawnEvent.html
   description: ''
-- name: com/destroystokyo/paper/event/player/PlayerAdvancementCriterionGrantEvent
+- name: PrepareAnvilEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/PrepareAnvilEvent.html
   description: ''
-- name: com/destroystokyo/paper/event/player/PlayerArmorChangeEvent
+- name: PrepareGrindstoneEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/inventory/PrepareGrindstoneEvent.html
   description: ''
-- name: com/destroystokyo/paper/event/player/PlayerAttackEntityCooldownResetEvent
+- name: PrepareItemCraftEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/PrepareItemCraftEvent.html
   description: ''
-- name: com/destroystokyo/paper/event/player/PlayerClientOptionsChangeEvent
+- name: PrepareItemEnchantEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/enchantment/PrepareItemEnchantEvent.html
   description: ''
-- name: com/destroystokyo/paper/event/player/PlayerConnectionCloseEvent
+- name: PrepareResultEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/inventory/PrepareResultEvent.html
   description: ''
-- name: com/destroystokyo/paper/event/player/PlayerElytraBoostEvent
+- name: PrepareSmithingEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/PrepareSmithingEvent.html
   description: ''
-- name: com/destroystokyo/paper/event/player/PlayerHandshakeEvent
+- name: ProfileWhitelistVerifyEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/profile/ProfileWhitelistVerifyEvent.html
   description: ''
-- name: com/destroystokyo/paper/event/player/PlayerInitialSpawnEvent
+- name: ProjectileCollideEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/ProjectileCollideEvent.html
   description: ''
-- name: com/destroystokyo/paper/event/player/PlayerJumpEvent
+- name: ProjectileHitEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ProjectileHitEvent.html
   description: ''
-- name: com/destroystokyo/paper/event/player/PlayerLaunchProjectileEvent
+- name: ProjectileLaunchEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ProjectileLaunchEvent.html
   description: ''
-- name: com/destroystokyo/paper/event/player/PlayerLocaleChangeEvent
-  description: ''
-- name: com/destroystokyo/paper/event/player/PlayerPickupExperienceEvent
-  description: ''
-- name: com/destroystokyo/paper/event/player/PlayerPostRespawnEvent
-  description: ''
-- name: com/destroystokyo/paper/event/player/PlayerReadyArrowEvent
-  description: ''
-- name: com/destroystokyo/paper/event/player/PlayerRecipeBookClickEvent
-  description: ''
-- name: com/destroystokyo/paper/event/player/PlayerStartSpectatingEntityEvent
-  description: ''
-- name: com/destroystokyo/paper/event/player/PlayerStopSpectatingEntityEvent
-  description: ''
-- name: com/destroystokyo/paper/event/player/PlayerTeleportEndGatewayEvent
-  description: ''
-- name: com/destroystokyo/paper/event/player/PlayerUseUnknownEntityEvent
-  description: ''
-- name: com/destroystokyo/paper/event/profile/FillProfileEvent
-  description: ''
-- name: com/destroystokyo/paper/event/profile/LookupProfileEvent
-  description: ''
-- name: com/destroystokyo/paper/event/profile/PreFillProfileEvent
-  description: ''
-- name: com/destroystokyo/paper/event/profile/PreLookupProfileEvent
-  description: ''
-- name: com/destroystokyo/paper/event/profile/ProfileWhitelistVerifyEvent
-  description: ''
-- name: com/destroystokyo/paper/event/server/AsyncTabCompleteEvent
-  description: ''
-- name: com/destroystokyo/paper/event/server/GS4QueryEvent
-  description: ''
-- name: com/destroystokyo/paper/event/server/PaperServerListPingEvent
-  description: ''
-- name: com/destroystokyo/paper/event/server/ServerExceptionEvent
-  description: ''
-- name: com/destroystokyo/paper/event/server/ServerTickEndEvent
-  description: ''
-- name: com/destroystokyo/paper/event/server/ServerTickStartEvent
-  description: ''
-- name: com/destroystokyo/paper/event/server/WhitelistToggleEvent
-  description: ''
-- name: com/destroystokyo/paper/loottable/LootableInventoryReplenishEvent
-  description: ''
-- name: io/papermc/paper/event/block/BellRingEvent
-  description: ''
-- name: io/papermc/paper/event/block/BlockFailedDispenseEvent
-  description: ''
-- name: io/papermc/paper/event/block/BlockPreDispenseEvent
-  description: ''
-- name: io/papermc/paper/event/block/PlayerShearBlockEvent
-  description: ''
-- name: io/papermc/paper/event/block/TargetHitEvent
-  description: ''
-- name: io/papermc/paper/event/entity/EntityLoadCrossbowEvent
-  description: ''
-- name: io/papermc/paper/event/packet/PlayerChunkLoadEvent
-  description: ''
-- name: io/papermc/paper/event/packet/PlayerChunkUnloadEvent
-  description: ''
-- name: io/papermc/paper/event/player/PlayerChangeBeaconEffectEvent
-  description: ''
-- name: io/papermc/paper/event/player/PlayerFlowerPotManipulateEvent
-  description: ''
-- name: io/papermc/paper/event/player/PlayerItemCooldownEvent
-  description: ''
-- name: io/papermc/paper/event/player/PlayerLecternPageChangeEvent
-  description: ''
-- name: io/papermc/paper/event/player/PlayerLoomPatternSelectEvent
-  description: ''
-- name: io/papermc/paper/event/player/PlayerStonecutterRecipeSelectEvent
-  description: ''
-- name: io/papermc/paper/event/player/PlayerTradeEvent
-  description: ''
-- name: io/papermc/paper/event/server/ServerResourcesReloadedEvent
-  description: ''
-- name: io/papermc/paper/event/world/StructureLocateEvent
-  description: ''
-- name: io/papermc/paper/event/world/WorldGameRuleChangeEvent
-  description: ''
-- name: org/bukkit/conversations/ConversationAbandonedEvent
-  description: ''
-- name: org/bukkit/event/Event
-  description: ''
-- name: org/bukkit/event/block/BlockBreakEvent
-  description: ''
-- name: org/bukkit/event/block/BlockBurnEvent
-  description: ''
-- name: org/bukkit/event/block/BlockCanBuildEvent
-  description: ''
-- name: org/bukkit/event/block/BlockCookEvent
-  description: ''
-- name: org/bukkit/event/block/BlockDamageEvent
-  description: ''
-- name: org/bukkit/event/block/BlockDispenseArmorEvent
-  description: ''
-- name: org/bukkit/event/block/BlockDispenseEvent
-  description: ''
-- name: org/bukkit/event/block/BlockDropItemEvent
-  description: ''
-- name: org/bukkit/event/block/BlockEvent
-  description: ''
-- name: org/bukkit/event/block/BlockExpEvent
-  description: ''
-- name: org/bukkit/event/block/BlockExplodeEvent
-  description: ''
-- name: org/bukkit/event/block/BlockFadeEvent
-  description: ''
-- name: org/bukkit/event/block/BlockFertilizeEvent
-  description: ''
-- name: org/bukkit/event/block/BlockFormEvent
-  description: ''
-- name: org/bukkit/event/block/BlockFromToEvent
-  description: ''
-- name: org/bukkit/event/block/BlockGrowEvent
-  description: ''
-- name: org/bukkit/event/block/BlockIgniteEvent
-  description: ''
-- name: org/bukkit/event/block/BlockMultiPlaceEvent
-  description: ''
-- name: org/bukkit/event/block/BlockPhysicsEvent
-  description: ''
-- name: org/bukkit/event/block/BlockPistonEvent
-  description: ''
-- name: org/bukkit/event/block/BlockPistonExtendEvent
-  description: ''
-- name: org/bukkit/event/block/BlockPistonRetractEvent
-  description: ''
-- name: org/bukkit/event/block/BlockPlaceEvent
-  description: ''
-- name: org/bukkit/event/block/BlockRedstoneEvent
-  description: ''
-- name: org/bukkit/event/block/BlockShearEntityEvent
-  description: ''
-- name: org/bukkit/event/block/BlockSpreadEvent
-  description: ''
-- name: org/bukkit/event/block/CauldronLevelChangeEvent
-  description: ''
-- name: org/bukkit/event/block/EntityBlockFormEvent
-  description: ''
-- name: org/bukkit/event/block/FluidLevelChangeEvent
-  description: ''
-- name: org/bukkit/event/block/LeavesDecayEvent
-  description: ''
-- name: org/bukkit/event/block/MoistureChangeEvent
-  description: ''
-- name: org/bukkit/event/block/NotePlayEvent
-  description: ''
-- name: org/bukkit/event/block/SignChangeEvent
-  description: ''
-- name: org/bukkit/event/block/SpongeAbsorbEvent
-  description: ''
-- name: org/bukkit/event/command/UnknownCommandEvent
-  description: ''
-- name: org/bukkit/event/enchantment/EnchantItemEvent
-  description: ''
-- name: org/bukkit/event/enchantment/PrepareItemEnchantEvent
-  description: ''
-- name: org/bukkit/event/entity/AreaEffectCloudApplyEvent
-  description: ''
-- name: org/bukkit/event/entity/ArrowBodyCountChangeEvent
-  description: ''
-- name: org/bukkit/event/entity/BatToggleSleepEvent
-  description: ''
-- name: org/bukkit/event/entity/CreatureSpawnEvent
-  description: ''
-- name: org/bukkit/event/entity/CreeperPowerEvent
-  description: ''
-- name: org/bukkit/event/entity/EnderDragonChangePhaseEvent
-  description: ''
-- name: org/bukkit/event/entity/EntityAirChangeEvent
-  description: ''
-- name: org/bukkit/event/entity/EntityBreakDoorEvent
-  description: ''
-- name: org/bukkit/event/entity/EntityBreedEvent
-  description: ''
-- name: org/bukkit/event/entity/EntityChangeBlockEvent
-  description: ''
-- name: org/bukkit/event/entity/EntityCombustByBlockEvent
-  description: ''
-- name: org/bukkit/event/entity/EntityCombustByEntityEvent
-  description: ''
-- name: org/bukkit/event/entity/EntityCombustEvent
-  description: ''
-- name: org/bukkit/event/entity/EntityCreatePortalEvent
-  description: ''
-- name: org/bukkit/event/entity/EntityDamageByBlockEvent
-  description: ''
-- name: org/bukkit/event/entity/EntityDamageByEntityEvent
-  description: ''
-- name: org/bukkit/event/entity/EntityDamageEvent
-  description: ''
-- name: org/bukkit/event/entity/EntityDeathEvent
-  description: ''
-- name: org/bukkit/event/entity/EntityDropItemEvent
-  description: ''
-- name: org/bukkit/event/entity/EntityEnterBlockEvent
-  description: ''
-- name: org/bukkit/event/entity/EntityEnterLoveModeEvent
-  description: ''
-- name: org/bukkit/event/entity/EntityEvent
-  description: ''
-- name: org/bukkit/event/entity/EntityExplodeEvent
-  description: ''
-- name: org/bukkit/event/entity/EntityInteractEvent
-  description: ''
-- name: org/bukkit/event/entity/EntityPickupItemEvent
-  description: ''
-- name: org/bukkit/event/entity/EntityPlaceEvent
-  description: ''
-- name: org/bukkit/event/entity/EntityPortalEnterEvent
-  description: ''
-- name: org/bukkit/event/entity/EntityPortalEvent
-  description: ''
-- name: org/bukkit/event/entity/EntityPortalExitEvent
-  description: ''
-- name: org/bukkit/event/entity/EntityPoseChangeEvent
-  description: ''
-- name: org/bukkit/event/entity/EntityPotionEffectEvent
-  description: ''
-- name: org/bukkit/event/entity/EntityRegainHealthEvent
-  description: ''
-- name: org/bukkit/event/entity/EntityResurrectEvent
-  description: ''
-- name: org/bukkit/event/entity/EntityShootBowEvent
-  description: ''
-- name: org/bukkit/event/entity/EntitySpawnEvent
-  description: ''
-- name: org/bukkit/event/entity/EntitySpellCastEvent
-  description: ''
-- name: org/bukkit/event/entity/EntityTameEvent
-  description: ''
-- name: org/bukkit/event/entity/EntityTargetEvent
-  description: ''
-- name: org/bukkit/event/entity/EntityTargetLivingEntityEvent
-  description: ''
-- name: org/bukkit/event/entity/EntityTeleportEvent
-  description: ''
-- name: org/bukkit/event/entity/EntityToggleGlideEvent
-  description: ''
-- name: org/bukkit/event/entity/EntityToggleSwimEvent
-  description: ''
-- name: org/bukkit/event/entity/EntityTransformEvent
-  description: ''
-- name: org/bukkit/event/entity/EntityUnleashEvent
-  description: ''
-- name: org/bukkit/event/entity/ExpBottleEvent
-  description: ''
-- name: org/bukkit/event/entity/ExplosionPrimeEvent
-  description: ''
-- name: org/bukkit/event/entity/FireworkExplodeEvent
-  description: ''
-- name: org/bukkit/event/entity/FoodLevelChangeEvent
-  description: ''
-- name: org/bukkit/event/entity/HorseJumpEvent
-  description: ''
-- name: org/bukkit/event/entity/ItemDespawnEvent
-  description: ''
-- name: org/bukkit/event/entity/ItemMergeEvent
-  description: ''
-- name: org/bukkit/event/entity/ItemSpawnEvent
-  description: ''
-- name: org/bukkit/event/entity/LingeringPotionSplashEvent
-  description: ''
-- name: org/bukkit/event/entity/PigZapEvent
-  description: ''
-- name: org/bukkit/event/entity/PigZombieAngerEvent
-  description: ''
-- name: org/bukkit/event/entity/PlayerDeathEvent
-  description: ''
-- name: org/bukkit/event/entity/PlayerLeashEntityEvent
-  description: ''
-- name: org/bukkit/event/entity/PotionSplashEvent
-  description: ''
-- name: org/bukkit/event/entity/ProjectileHitEvent
-  description: ''
-- name: org/bukkit/event/entity/ProjectileLaunchEvent
-  description: ''
-- name: org/bukkit/event/entity/SheepDyeWoolEvent
-  description: ''
-- name: org/bukkit/event/entity/SheepRegrowWoolEvent
-  description: ''
-- name: org/bukkit/event/entity/SlimeSplitEvent
-  description: ''
-- name: org/bukkit/event/entity/SpawnerSpawnEvent
-  description: ''
-- name: org/bukkit/event/entity/StriderTemperatureChangeEvent
-  description: ''
-- name: org/bukkit/event/entity/VillagerAcquireTradeEvent
-  description: ''
-- name: org/bukkit/event/entity/VillagerCareerChangeEvent
-  description: ''
-- name: org/bukkit/event/entity/VillagerReplenishTradeEvent
-  description: ''
-- name: org/bukkit/event/hanging/HangingBreakByEntityEvent
-  description: ''
-- name: org/bukkit/event/hanging/HangingBreakEvent
-  description: ''
-- name: org/bukkit/event/hanging/HangingEvent
-  description: ''
-- name: org/bukkit/event/hanging/HangingPlaceEvent
-  description: ''
-- name: org/bukkit/event/inventory/BrewEvent
-  description: ''
-- name: org/bukkit/event/inventory/BrewingStandFuelEvent
-  description: ''
-- name: org/bukkit/event/inventory/CraftItemEvent
-  description: ''
-- name: org/bukkit/event/inventory/FurnaceBurnEvent
-  description: ''
-- name: org/bukkit/event/inventory/FurnaceExtractEvent
-  description: ''
-- name: org/bukkit/event/inventory/FurnaceSmeltEvent
-  description: ''
-- name: org/bukkit/event/inventory/InventoryClickEvent
-  description: ''
-- name: org/bukkit/event/inventory/InventoryCloseEvent
-  description: ''
-- name: org/bukkit/event/inventory/InventoryCreativeEvent
-  description: ''
-- name: org/bukkit/event/inventory/InventoryDragEvent
-  description: ''
-- name: org/bukkit/event/inventory/InventoryEvent
-  description: ''
-- name: org/bukkit/event/inventory/InventoryInteractEvent
-  description: ''
-- name: org/bukkit/event/inventory/InventoryMoveItemEvent
-  description: ''
-- name: org/bukkit/event/inventory/InventoryOpenEvent
-  description: ''
-- name: org/bukkit/event/inventory/InventoryPickupItemEvent
-  description: ''
-- name: org/bukkit/event/inventory/PrepareAnvilEvent
-  description: ''
-- name: org/bukkit/event/inventory/PrepareItemCraftEvent
-  description: ''
-- name: org/bukkit/event/inventory/PrepareSmithingEvent
-  description: ''
-- name: org/bukkit/event/inventory/TradeSelectEvent
-  description: ''
-- name: org/bukkit/event/player/AsyncPlayerChatEvent
-  description: ''
-- name: org/bukkit/event/player/AsyncPlayerPreLoginEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerAdvancementDoneEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerAnimationEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerArmorStandManipulateEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerAttemptPickupItemEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerBedEnterEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerBedLeaveEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerBucketEmptyEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerBucketEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerBucketFillEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerChangedMainHandEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerChangedWorldEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerChannelEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerChatEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerChatTabCompleteEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerCommandPreprocessEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerCommandSendEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerDropItemEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerEditBookEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerEggThrowEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerExpChangeEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerFishEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerGameModeChangeEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerHarvestBlockEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerInteractAtEntityEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerInteractEntityEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerInteractEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerItemBreakEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerItemConsumeEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerItemDamageEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerItemHeldEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerItemMendEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerJoinEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerKickEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerLevelChangeEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerLocaleChangeEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerLoginEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerMoveEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerPickupArrowEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerPickupItemEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerPortalEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerPreLoginEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerQuitEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerRecipeDiscoverEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerRegisterChannelEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerResourcePackStatusEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerRespawnEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerRiptideEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerShearEntityEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerStatisticIncrementEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerSwapHandItemsEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerTakeLecternBookEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerTeleportEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerToggleFlightEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerToggleSneakEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerToggleSprintEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerUnleashEntityEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerUnregisterChannelEvent
-  description: ''
-- name: org/bukkit/event/player/PlayerVelocityEvent
-  description: ''
-- name: org/bukkit/event/raid/RaidEvent
-  description: ''
-- name: org/bukkit/event/raid/RaidFinishEvent
-  description: ''
-- name: org/bukkit/event/raid/RaidSpawnWaveEvent
-  description: ''
-- name: org/bukkit/event/raid/RaidStopEvent
-  description: ''
-- name: org/bukkit/event/raid/RaidTriggerEvent
-  description: ''
-- name: org/bukkit/event/server/BroadcastMessageEvent
-  description: ''
-- name: org/bukkit/event/server/MapInitializeEvent
-  description: ''
-- name: org/bukkit/event/server/PluginDisableEvent
-  description: ''
-- name: org/bukkit/event/server/PluginEnableEvent
-  description: ''
-- name: org/bukkit/event/server/PluginEvent
-  description: ''
-- name: org/bukkit/event/server/RemoteServerCommandEvent
-  description: ''
-- name: org/bukkit/event/server/ServerCommandEvent
-  description: ''
-- name: org/bukkit/event/server/ServerEvent
-  description: ''
-- name: org/bukkit/event/server/ServerListPingEvent
-  description: ''
-- name: org/bukkit/event/server/ServerLoadEvent
-  description: ''
-- name: org/bukkit/event/server/ServiceEvent
-  description: ''
-- name: org/bukkit/event/server/ServiceRegisterEvent
-  description: ''
-- name: org/bukkit/event/server/ServiceUnregisterEvent
-  description: ''
-- name: org/bukkit/event/server/TabCompleteEvent
-  description: ''
-- name: org/bukkit/event/vehicle/VehicleBlockCollisionEvent
-  description: ''
-- name: org/bukkit/event/vehicle/VehicleCollisionEvent
-  description: ''
-- name: org/bukkit/event/vehicle/VehicleCreateEvent
-  description: ''
-- name: org/bukkit/event/vehicle/VehicleDamageEvent
-  description: ''
-- name: org/bukkit/event/vehicle/VehicleDestroyEvent
-  description: ''
-- name: org/bukkit/event/vehicle/VehicleEnterEvent
-  description: ''
-- name: org/bukkit/event/vehicle/VehicleEntityCollisionEvent
-  description: ''
-- name: org/bukkit/event/vehicle/VehicleEvent
-  description: ''
-- name: org/bukkit/event/vehicle/VehicleExitEvent
-  description: ''
-- name: org/bukkit/event/vehicle/VehicleMoveEvent
-  description: ''
-- name: org/bukkit/event/vehicle/VehicleUpdateEvent
-  description: ''
-- name: org/bukkit/event/weather/LightningStrikeEvent
-  description: ''
-- name: org/bukkit/event/weather/ThunderChangeEvent
-  description: ''
-- name: org/bukkit/event/weather/WeatherChangeEvent
-  description: ''
-- name: org/bukkit/event/weather/WeatherEvent
-  description: ''
-- name: org/bukkit/event/world/ChunkEvent
-  description: ''
-- name: org/bukkit/event/world/ChunkLoadEvent
-  description: ''
-- name: org/bukkit/event/world/ChunkPopulateEvent
-  description: ''
-- name: org/bukkit/event/world/ChunkUnloadEvent
-  description: ''
-- name: org/bukkit/event/world/LootGenerateEvent
-  description: ''
-- name: org/bukkit/event/world/PortalCreateEvent
-  description: ''
-- name: org/bukkit/event/world/SpawnChangeEvent
-  description: ''
-- name: org/bukkit/event/world/StructureGrowEvent
-  description: ''
-- name: org/bukkit/event/world/TimeSkipEvent
-  description: ''
-- name: org/bukkit/event/world/WorldEvent
-  description: ''
-- name: org/bukkit/event/world/WorldInitEvent
-  description: ''
-- name: org/bukkit/event/world/WorldLoadEvent
-  description: ''
-- name: org/bukkit/event/world/WorldSaveEvent
-  description: ''
-- name: org/bukkit/event/world/WorldUnloadEvent
-  description: ''
-- name: org/spigotmc/event/entity/EntityDismountEvent
-  description: ''
-- name: org/spigotmc/event/entity/EntityMountEvent
-  description: ''
-- name: org/spigotmc/event/player/PlayerSpawnLocationEvent
+- name: RaidEvent
+  link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/raid/RaidEvent.html
+  description: ''
+- name: RaidFinishEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/raid/RaidFinishEvent.html
+  description: ''
+- name: RaidSpawnWaveEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/raid/RaidSpawnWaveEvent.html
+  description: ''
+- name: RaidStopEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/raid/RaidStopEvent.html
+  description: ''
+- name: RaidTriggerEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/raid/RaidTriggerEvent.html
+  description: ''
+- name: RemoteServerCommandEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/RemoteServerCommandEvent.html
+  description: ''
+- name: ServerCommandEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/ServerCommandEvent.html
+  description: ''
+- name: ServerEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/ServerEvent.html
+  description: ''
+- name: ServerExceptionEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/server/ServerExceptionEvent.html
+  description: ''
+- name: ServerListPingEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/ServerListPingEvent.html
+  description: ''
+- name: ServerLoadEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/ServerLoadEvent.html
+  description: ''
+- name: ServerResourcesReloadedEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/server/ServerResourcesReloadedEvent.html
+  description: ''
+- name: ServerTickEndEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/server/ServerTickEndEvent.html
+  description: ''
+- name: ServerTickStartEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/server/ServerTickStartEvent.html
+  description: ''
+- name: ServiceEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/ServiceEvent.html
+  description: ''
+- name: ServiceRegisterEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/ServiceRegisterEvent.html
+  description: ''
+- name: ServiceUnregisterEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/ServiceUnregisterEvent.html
+  description: ''
+- name: SheepDyeWoolEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/SheepDyeWoolEvent.html
+  description: ''
+- name: SheepRegrowWoolEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/SheepRegrowWoolEvent.html
+  description: ''
+- name: SignChangeEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/SignChangeEvent.html
+  description: ''
+- name: SkeletonHorseTrapEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/SkeletonHorseTrapEvent.html
+  description: ''
+- name: SlimeChangeDirectionEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/SlimeChangeDirectionEvent.html
+  description: ''
+- name: SlimePathfindEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/SlimePathfindEvent.html
+  description: ''
+- name: SlimeSplitEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/SlimeSplitEvent.html
+  description: ''
+- name: SlimeSwimEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/SlimeSwimEvent.html
+  description: ''
+- name: SlimeTargetLivingEntityEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/SlimeTargetLivingEntityEvent.html
+  description: ''
+- name: SlimeWanderEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/SlimeWanderEvent.html
+  description: ''
+- name: SpawnChangeEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/SpawnChangeEvent.html
+  description: ''
+- name: SpawnerSpawnEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/SpawnerSpawnEvent.html
+  description: ''
+- name: SpongeAbsorbEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/SpongeAbsorbEvent.html
+  description: ''
+- name: StriderTemperatureChangeEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/StriderTemperatureChangeEvent.html
+  description: ''
+- name: StructureGrowEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/StructureGrowEvent.html
+  description: ''
+- name: StructureLocateEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/world/StructureLocateEvent.html
+  description: ''
+- name: TNTPrimeEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/block/TNTPrimeEvent.html
+  description: ''
+- name: TabCompleteEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/TabCompleteEvent.html
+  description: ''
+- name: TargetHitEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/TargetHitEvent.html
+  description: ''
+- name: ThrownEggHatchEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/ThrownEggHatchEvent.html
+  description: ''
+- name: ThunderChangeEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/weather/ThunderChangeEvent.html
+  description: ''
+- name: TimeSkipEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/TimeSkipEvent.html
+  description: ''
+- name: TradeSelectEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/TradeSelectEvent.html
+  description: ''
+- name: TurtleGoHomeEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/TurtleGoHomeEvent.html
+  description: ''
+- name: TurtleLayEggEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/TurtleLayEggEvent.html
+  description: ''
+- name: TurtleStartDiggingEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/TurtleStartDiggingEvent.html
+  description: ''
+- name: UnknownCommandEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/command/UnknownCommandEvent.html
+  description: ''
+- name: VehicleBlockCollisionEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleBlockCollisionEvent.html
+  description: ''
+- name: VehicleCollisionEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleCollisionEvent.html
+  description: ''
+- name: VehicleCreateEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleCreateEvent.html
+  description: ''
+- name: VehicleDamageEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleDamageEvent.html
+  description: ''
+- name: VehicleDestroyEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleDestroyEvent.html
+  description: ''
+- name: VehicleEnterEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleEnterEvent.html
+  description: ''
+- name: VehicleEntityCollisionEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleEntityCollisionEvent.html
+  description: ''
+- name: VehicleEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleEvent.html
+  description: ''
+- name: VehicleExitEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleExitEvent.html
+  description: ''
+- name: VehicleMoveEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleMoveEvent.html
+  description: ''
+- name: VehicleUpdateEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleUpdateEvent.html
+  description: ''
+- name: VillagerAcquireTradeEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/VillagerAcquireTradeEvent.html
+  description: ''
+- name: VillagerCareerChangeEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/VillagerCareerChangeEvent.html
+  description: ''
+- name: VillagerReplenishTradeEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/VillagerReplenishTradeEvent.html
+  description: ''
+- name: WeatherChangeEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/weather/WeatherChangeEvent.html
+  description: ''
+- name: WeatherEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/weather/WeatherEvent.html
+  description: ''
+- name: WhitelistToggleEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/server/WhitelistToggleEvent.html
+  description: ''
+- name: WitchConsumePotionEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/WitchConsumePotionEvent.html
+  description: ''
+- name: WitchReadyPotionEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/WitchReadyPotionEvent.html
+  description: ''
+- name: WitchThrowPotionEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/WitchThrowPotionEvent.html
+  description: ''
+- name: WorldEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/WorldEvent.html
+  description: ''
+- name: WorldGameRuleChangeEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/world/WorldGameRuleChangeEvent.html
+  description: ''
+- name: WorldInitEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/WorldInitEvent.html
+  description: ''
+- name: WorldLoadEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/WorldLoadEvent.html
+  description: ''
+- name: WorldSaveEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/WorldSaveEvent.html
+  description: ''
+- name: WorldUnloadEvent
+  link: >-
+    https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/WorldUnloadEvent.html
   description: ''
