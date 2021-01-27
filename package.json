@@ -2,16 +2,16 @@
   "name": "spigot-event-list",
   "version": "1.0.0",
   "description": "Spigot Event List",
+  "keywords": [],
+  "license": "ISC",
+  "author": "sya_ri",
   "scripts": {
     "download": "ts-node download-events.ts",
     "generate": "ts-node generate-output.ts",
-    "update": "npm run download && npm run generate",
     "lint": "eslint .",
-    "lint:fix": "eslint --fix ."
+    "lint:fix": "eslint --fix .",
+    "update": "npm run download && npm run generate"
   },
-  "keywords": [],
-  "author": "sya_ri",
-  "license": "ISC",
   "dependencies": {
     "cheerio": "^1.0.0-rc.5",
     "handlebars": "^4.7.6",
