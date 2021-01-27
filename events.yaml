@@ -7,7 +7,7 @@
   link: >-
     https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/AreaEffectCloudApplyEvent.html
   source: bukkit
-  description: AreaEffectCloud の効果が付与される際に読み出される。5ティック毎に1回発生する。
+  description: AreaEffectCloud の効果が付与される際に呼び出される。5ティック毎に1回発生する。
 - name: ArrowBodyCountChangeEvent
   link: >-
     https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ArrowBodyCountChangeEvent.html
