@@ -1,10 +1,7 @@
 import fs = require('fs')
 import yaml = require('js-yaml')
 import Handlebars = require('handlebars')
-
-const EventsYaml = 'events.yaml'
-const EventsTemplateHtml = 'events-template.html'
-const EventsHtml = 'events.html'
+import {EventsHtml, EventsTemplateHtml, EventsYaml} from "./constants"
 
 const main = () => {
     // events.yaml をロード

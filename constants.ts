@@ -1,0 +1,5 @@
+export const JavaDocUrl = 'https://papermc.io/javadocs/paper/1.16/'
+export const AllClassesNoFrame = 'allclasses-noframe.html'
+export const EventsYaml = 'events.yaml'
+export const EventsTemplateHtml = 'events-template.html'
+export const EventsHtml = 'events.html'

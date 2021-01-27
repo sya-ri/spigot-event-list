@@ -2,10 +2,7 @@ import request = require('request')
 import cheerio = require('cheerio')
 import fs = require('fs')
 import yaml = require('js-yaml')
-
-const JavaDocUrl = 'https://papermc.io/javadocs/paper/1.16/'
-const AllClassesNoFrame = 'allclasses-noframe.html'
-const EventsYaml = 'events.yaml'
+import {JavaDocUrl, AllClassesNoFrame, EventsYaml} from "./constants"
 
 const main = () => {
     request(JavaDocUrl + AllClassesNoFrame, function (e, response, body) {
