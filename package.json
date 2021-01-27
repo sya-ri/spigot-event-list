@@ -4,7 +4,7 @@
   "description": "Spigot Event List",
   "scripts": {
     "download": "ts-node download-events.ts",
-    "generate": "ts-node generate-markdown.ts"
+    "generate": "ts-node generate-output.ts"
   },
   "keywords": [],
   "author": "sya_ri",
