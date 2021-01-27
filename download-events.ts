@@ -29,14 +29,18 @@ const main = () => {
             const data = yaml.load(fs.readFileSync(EventsYaml, 'utf8'))
 
             // events.yaml に存在しない新しいイベントを追加
+            const lastEventLinks = data.map(value => value.name)
             eventLinks.forEach((href) => {
-                if (!(href in data)) {
-                    data[href] = ''
+                if (!lastEventLinks.includes(href)) {
+                    data.push({
+                        name: href,
+                        description: ''
+                    })
                 }
             })
 
             // events.yaml に保存
-            fs.writeFile(EventsYaml, yaml.dump(data, { sortKeys: true }), 'utf8', (err) => {
+            fs.writeFile(EventsYaml, yaml.dump(data), 'utf8', (err) => {
                 if (err) {
                     console.error(err.message);
                 }
