@@ -20,7 +20,7 @@ https://papermc.io/javadocs/paper/1.16/ を元に作成しています。
 
 ### [BeaconEffectEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/block/BeaconEffectEvent.html) `paper`
 
-### [BellRingEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/BellRingEvent.html) ``
+### [BellRingEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/BellRingEvent.html) `paper`
 
 ### [BlockBreakEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockBreakEvent.html) `bukkit`
 
@@ -48,7 +48,7 @@ https://papermc.io/javadocs/paper/1.16/ を元に作成しています。
 
 ### [BlockFadeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockFadeEvent.html) `bukkit`
 
-### [BlockFailedDispenseEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/BlockFailedDispenseEvent.html) ``
+### [BlockFailedDispenseEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/BlockFailedDispenseEvent.html) `paper`
 
 ### [BlockFertilizeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockFertilizeEvent.html) `bukkit`
 
@@ -72,7 +72,7 @@ https://papermc.io/javadocs/paper/1.16/ を元に作成しています。
 
 ### [BlockPlaceEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockPlaceEvent.html) `bukkit`
 
-### [BlockPreDispenseEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/BlockPreDispenseEvent.html) ``
+### [BlockPreDispenseEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/BlockPreDispenseEvent.html) `paper`
 
 ### [BlockRedstoneEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockRedstoneEvent.html) `bukkit`
 
@@ -166,7 +166,7 @@ https://papermc.io/javadocs/paper/1.16/ を元に作成しています。
 
 ### [EntityKnockbackByEntityEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityKnockbackByEntityEvent.html) `paper`
 
-### [EntityLoadCrossbowEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/entity/EntityLoadCrossbowEvent.html) ``
+### [EntityLoadCrossbowEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/entity/EntityLoadCrossbowEvent.html) `paper`
 
 ### [EntityMountEvent](https://papermc.io/javadocs/paper/1.16/org/spigotmc/event/entity/EntityMountEvent.html) `spigot`
 
@@ -330,7 +330,7 @@ https://papermc.io/javadocs/paper/1.16/ を元に作成しています。
 
 ### [PlayerBucketFillEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketFillEvent.html) `bukkit`
 
-### [PlayerChangeBeaconEffectEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerChangeBeaconEffectEvent.html) ``
+### [PlayerChangeBeaconEffectEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerChangeBeaconEffectEvent.html) `paper`
 
 ### [PlayerChangedMainHandEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChangedMainHandEvent.html) `bukkit`
 
@@ -342,9 +342,9 @@ https://papermc.io/javadocs/paper/1.16/ を元に作成しています。
 
 ### [PlayerChatTabCompleteEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChatTabCompleteEvent.html) `bukkit`
 
-### [PlayerChunkLoadEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/packet/PlayerChunkLoadEvent.html) ``
+### [PlayerChunkLoadEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/packet/PlayerChunkLoadEvent.html) `paper`
 
-### [PlayerChunkUnloadEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/packet/PlayerChunkUnloadEvent.html) ``
+### [PlayerChunkUnloadEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/packet/PlayerChunkUnloadEvent.html) `paper`
 
 ### [PlayerClientOptionsChangeEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerClientOptionsChangeEvent.html) `paper`
 
@@ -370,7 +370,7 @@ https://papermc.io/javadocs/paper/1.16/ を元に作成しています。
 
 ### [PlayerFishEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerFishEvent.html) `bukkit`
 
-### [PlayerFlowerPotManipulateEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerFlowerPotManipulateEvent.html) ``
+### [PlayerFlowerPotManipulateEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerFlowerPotManipulateEvent.html) `paper`
 
 ### [PlayerGameModeChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerGameModeChangeEvent.html) `bukkit`
 
@@ -390,7 +390,7 @@ https://papermc.io/javadocs/paper/1.16/ を元に作成しています。
 
 ### [PlayerItemConsumeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerItemConsumeEvent.html) `bukkit`
 
-### [PlayerItemCooldownEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerItemCooldownEvent.html) ``
+### [PlayerItemCooldownEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerItemCooldownEvent.html) `paper`
 
 ### [PlayerItemDamageEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerItemDamageEvent.html) `bukkit`
 
@@ -408,7 +408,7 @@ https://papermc.io/javadocs/paper/1.16/ を元に作成しています。
 
 ### [PlayerLeashEntityEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/PlayerLeashEntityEvent.html) `bukkit`
 
-### [PlayerLecternPageChangeEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerLecternPageChangeEvent.html) ``
+### [PlayerLecternPageChangeEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerLecternPageChangeEvent.html) `paper`
 
 ### [PlayerLevelChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerLevelChangeEvent.html) `bukkit`
 
@@ -418,7 +418,7 @@ https://papermc.io/javadocs/paper/1.16/ を元に作成しています。
 
 ### [PlayerLoginEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerLoginEvent.html) `bukkit`
 
-### [PlayerLoomPatternSelectEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerLoomPatternSelectEvent.html) ``
+### [PlayerLoomPatternSelectEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerLoomPatternSelectEvent.html) `paper`
 
 ### [PlayerMoveEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerMoveEvent.html) `bukkit`
 
@@ -452,7 +452,7 @@ https://papermc.io/javadocs/paper/1.16/ を元に作成しています。
 
 ### [PlayerRiptideEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerRiptideEvent.html) `bukkit`
 
-### [PlayerShearBlockEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/PlayerShearBlockEvent.html) ``
+### [PlayerShearBlockEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/PlayerShearBlockEvent.html) `paper`
 
 ### [PlayerShearEntityEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerShearEntityEvent.html) `bukkit`
 
@@ -462,7 +462,7 @@ https://papermc.io/javadocs/paper/1.16/ を元に作成しています。
 
 ### [PlayerStatisticIncrementEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerStatisticIncrementEvent.html) `bukkit`
 
-### [PlayerStonecutterRecipeSelectEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerStonecutterRecipeSelectEvent.html) ``
+### [PlayerStonecutterRecipeSelectEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerStonecutterRecipeSelectEvent.html) `paper`
 
 ### [PlayerStopSpectatingEntityEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerStopSpectatingEntityEvent.html) `paper`
 
@@ -480,7 +480,7 @@ https://papermc.io/javadocs/paper/1.16/ を元に作成しています。
 
 ### [PlayerToggleSprintEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerToggleSprintEvent.html) `bukkit`
 
-### [PlayerTradeEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerTradeEvent.html) ``
+### [PlayerTradeEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerTradeEvent.html) `paper`
 
 ### [PlayerUnleashEntityEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerUnleashEntityEvent.html) `bukkit`
 
@@ -550,7 +550,7 @@ https://papermc.io/javadocs/paper/1.16/ を元に作成しています。
 
 ### [ServerLoadEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/ServerLoadEvent.html) `bukkit`
 
-### [ServerResourcesReloadedEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/server/ServerResourcesReloadedEvent.html) ``
+### [ServerResourcesReloadedEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/server/ServerResourcesReloadedEvent.html) `paper`
 
 ### [ServerTickEndEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/server/ServerTickEndEvent.html) `paper`
 
@@ -592,13 +592,13 @@ https://papermc.io/javadocs/paper/1.16/ を元に作成しています。
 
 ### [StructureGrowEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/StructureGrowEvent.html) `bukkit`
 
-### [StructureLocateEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/world/StructureLocateEvent.html) ``
+### [StructureLocateEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/world/StructureLocateEvent.html) `paper`
 
 ### [TNTPrimeEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/block/TNTPrimeEvent.html) `paper`
 
 ### [TabCompleteEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/TabCompleteEvent.html) `bukkit`
 
-### [TargetHitEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/TargetHitEvent.html) ``
+### [TargetHitEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/TargetHitEvent.html) `paper`
 
 ### [ThrownEggHatchEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/ThrownEggHatchEvent.html) `paper`
 
@@ -658,7 +658,7 @@ https://papermc.io/javadocs/paper/1.16/ を元に作成しています。
 
 ### [WorldEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/WorldEvent.html) `bukkit`
 
-### [WorldGameRuleChangeEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/world/WorldGameRuleChangeEvent.html) ``
+### [WorldGameRuleChangeEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/world/WorldGameRuleChangeEvent.html) `paper`
 
 ### [WorldInitEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/WorldInitEvent.html) `bukkit`
 

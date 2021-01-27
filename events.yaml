@@ -41,6 +41,7 @@
 - name: BellRingEvent
   link: >-
     https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/BellRingEvent.html
+  source: paper
   description: ''
 - name: BlockBreakEvent
   link: >-
@@ -110,6 +111,7 @@
 - name: BlockFailedDispenseEvent
   link: >-
     https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/BlockFailedDispenseEvent.html
+  source: paper
   description: ''
 - name: BlockFertilizeEvent
   link: >-
@@ -169,6 +171,7 @@
 - name: BlockPreDispenseEvent
   link: >-
     https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/BlockPreDispenseEvent.html
+  source: paper
   description: ''
 - name: BlockRedstoneEvent
   link: >-
@@ -403,6 +406,7 @@
 - name: EntityLoadCrossbowEvent
   link: >-
     https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/entity/EntityLoadCrossbowEvent.html
+  source: paper
   description: ''
 - name: EntityMountEvent
   link: >-
@@ -811,6 +815,7 @@
 - name: PlayerChangeBeaconEffectEvent
   link: >-
     https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerChangeBeaconEffectEvent.html
+  source: paper
   description: ''
 - name: PlayerChangedMainHandEvent
   link: >-
@@ -840,10 +845,12 @@
 - name: PlayerChunkLoadEvent
   link: >-
     https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/packet/PlayerChunkLoadEvent.html
+  source: paper
   description: ''
 - name: PlayerChunkUnloadEvent
   link: >-
     https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/packet/PlayerChunkUnloadEvent.html
+  source: paper
   description: ''
 - name: PlayerClientOptionsChangeEvent
   link: >-
@@ -908,6 +915,7 @@
 - name: PlayerFlowerPotManipulateEvent
   link: >-
     https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerFlowerPotManipulateEvent.html
+  source: paper
   description: ''
 - name: PlayerGameModeChangeEvent
   link: >-
@@ -957,6 +965,7 @@
 - name: PlayerItemCooldownEvent
   link: >-
     https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerItemCooldownEvent.html
+  source: paper
   description: ''
 - name: PlayerItemDamageEvent
   link: >-
@@ -1001,6 +1010,7 @@
 - name: PlayerLecternPageChangeEvent
   link: >-
     https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerLecternPageChangeEvent.html
+  source: paper
   description: ''
 - name: PlayerLevelChangeEvent
   link: >-
@@ -1025,6 +1035,7 @@
 - name: PlayerLoomPatternSelectEvent
   link: >-
     https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerLoomPatternSelectEvent.html
+  source: paper
   description: ''
 - name: PlayerMoveEvent
   link: >-
@@ -1109,6 +1120,7 @@
 - name: PlayerShearBlockEvent
   link: >-
     https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/PlayerShearBlockEvent.html
+  source: paper
   description: ''
 - name: PlayerShearEntityEvent
   link: >-
@@ -1133,6 +1145,7 @@
 - name: PlayerStonecutterRecipeSelectEvent
   link: >-
     https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerStonecutterRecipeSelectEvent.html
+  source: paper
   description: ''
 - name: PlayerStopSpectatingEntityEvent
   link: >-
@@ -1177,6 +1190,7 @@
 - name: PlayerTradeEvent
   link: >-
     https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerTradeEvent.html
+  source: paper
   description: ''
 - name: PlayerUnleashEntityEvent
   link: >-
@@ -1350,6 +1364,7 @@
 - name: ServerResourcesReloadedEvent
   link: >-
     https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/server/ServerResourcesReloadedEvent.html
+  source: paper
   description: ''
 - name: ServerTickEndEvent
   link: >-
@@ -1454,6 +1469,7 @@
 - name: StructureLocateEvent
   link: >-
     https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/world/StructureLocateEvent.html
+  source: paper
   description: ''
 - name: TNTPrimeEvent
   link: >-
@@ -1468,6 +1484,7 @@
 - name: TargetHitEvent
   link: >-
     https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/TargetHitEvent.html
+  source: paper
   description: ''
 - name: ThrownEggHatchEvent
   link: >-
@@ -1617,6 +1634,7 @@
 - name: WorldGameRuleChangeEvent
   link: >-
     https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/world/WorldGameRuleChangeEvent.html
+  source: paper
   description: ''
 - name: WorldInitEvent
   link: >-

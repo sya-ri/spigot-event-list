@@ -5,5 +5,7 @@ export function getEventSource(href: string): string {
         return 'spigot'
     } else if (href.startsWith('com/destroystokyo/paper')) {
         return 'paper'
+    } else if (href.startsWith('io/papermc/paper')) {
+        return 'paper'
     }
 }
