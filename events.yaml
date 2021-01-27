@@ -2,32 +2,34 @@
   link: >-
     https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/block/AnvilDamagedEvent.html
   source: paper
-  description: ''
+  description: 使用時に金床が損傷した際に呼び出される。
 - name: AreaEffectCloudApplyEvent
   link: >-
     https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/AreaEffectCloudApplyEvent.html
   source: bukkit
-  description: ''
+  description: AreaEffectCloud の効果が付与される際に読み出される。5ティック毎に1回発生する。
 - name: ArrowBodyCountChangeEvent
   link: >-
     https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ArrowBodyCountChangeEvent.html
   source: bukkit
-  description: ''
+  description: 矢がエンティティの本体に入る・存在する際に呼び出される。
 - name: AsyncPlayerChatEvent
   link: >-
     https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/AsyncPlayerChatEvent.html
   source: bukkit
-  description: ''
+  description: プレイヤーがチャットした際に呼び出される。非同期でも同期でも呼び出されることがある。
 - name: AsyncPlayerPreLoginEvent
   link: >-
     https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/AsyncPlayerPreLoginEvent.html
   source: bukkit
-  description: ''
+  description: プレイヤーがログインしようとしている際に呼び出される。非同期で処理される。
 - name: AsyncTabCompleteEvent
   link: >-
     https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/server/AsyncTabCompleteEvent.html
   source: paper
-  description: ''
+  description: >-
+    タブ補完を行う際に呼び出される。非同期で処理される。このイベントが結果を返す時、標準のタブ補完処理は発生しない。ただし、
+    [TabCompleteEvent](#bukkit-tabcompleteevent) は非同期の結果と共に呼び出される。
 - name: BatToggleSleepEvent
   link: >-
     https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/BatToggleSleepEvent.html
