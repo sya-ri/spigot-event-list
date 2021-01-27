@@ -6,6 +6,7 @@ import {
   OutputTemplateFileName,
   EventsYaml,
   DoNotEditMessage,
+  JavaDocUrl,
 } from "./constants";
 
 const main = () => {
@@ -22,6 +23,7 @@ const main = () => {
     OutputFileName,
     DoNotEditMessage +
       template({
+        javadoc: JavaDocUrl,
         list: data,
       }),
     "utf8"
