@@ -11,7 +11,8 @@ const main = () => {
     const template = Handlebars.compile(fs.readFileSync(OutputTemplateFileName, 'utf8'))
 
     // テンプレートに値を当てはめて保存
-    fs.writeFileSync(OutputFileName, template({
+    const DoNotEditMessage = "<!--\n\n自動生成です。直接編集せず、README-template.md を編集してください。\n\n-->\n"
+    fs.writeFileSync(OutputFileName, DoNotEditMessage + template({
         list: data
     }), 'utf8')
 }

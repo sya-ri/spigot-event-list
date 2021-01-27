@@ -1,3 +1,8 @@
+<!--
+
+自動生成です。直接編集せず、README-template.md を編集してください。
+
+-->
 # Spigot Event List
 Bukkit, Spigot, Paper のイベント一覧です。
 
