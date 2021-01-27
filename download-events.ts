@@ -3,6 +3,7 @@ import cheerio = require('cheerio')
 import fs = require('fs')
 import yaml = require('js-yaml')
 import {JavaDocUrl, AllClassesNoFrame, EventsYaml} from "./constants"
+import {getEventSource} from "./get-type";
 
 const main = () => {
     request(JavaDocUrl + AllClassesNoFrame, function (e, response, body) {
@@ -20,7 +21,8 @@ const main = () => {
                 if (href.endsWith('Event.html')) {
                     events.push({
                         name: href.substring(0, href.length - 5).split('/').pop(),
-                        link: JavaDocUrl + href
+                        link: JavaDocUrl + href,
+                        source: getEventSource(href)
                     })
                 }
             })
@@ -35,6 +37,7 @@ const main = () => {
                     data.push({
                         name: event.name,
                         link: event.link,
+                        source: event.source,
                         description: ''
                     })
                 }
