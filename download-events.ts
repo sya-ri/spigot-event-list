@@ -2,8 +2,7 @@ import request = require('request')
 import cheerio = require('cheerio')
 import fs = require('fs')
 import yaml = require('js-yaml')
-import {JavaDocUrl, AllClassesNoFrame, EventsYaml} from "./constants"
-import {getEventSource} from "./get-type";
+import {JavaDocUrl, AllClassesNoFrame, EventsYaml, getEventSource} from "./constants"
 
 const main = () => {
     request(JavaDocUrl + AllClassesNoFrame, function (e, response, body) {
