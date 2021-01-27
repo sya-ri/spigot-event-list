@@ -13,12 +13,12 @@ const main = () => {
         try {
             // javadoc から イベント一覧を作成
             const $ = cheerio.load(body)
-            const eventLinks = []
+            const eventNames = []
             $('a').each(function (_, element) {
                 const a = $(element)
                 const href = a.prop("href")
                 if (href.endsWith('Event.html')) {
-                    eventLinks.push(href)
+                    eventNames.push(href.substring(0, href.length - 5))
                 }
             })
 
@@ -26,11 +26,11 @@ const main = () => {
             const data = yaml.load(fs.readFileSync(EventsYaml, 'utf8'))
 
             // events.yaml に存在しない新しいイベントを追加
-            const lastEventLinks = data.map(value => value.name)
-            eventLinks.forEach((href) => {
-                if (!lastEventLinks.includes(href)) {
+            const lastEventNames = data.map(value => value.name)
+            eventNames.forEach((name) => {
+                if (!lastEventNames.includes(name)) {
                     data.push({
-                        name: href,
+                        name: name,
                         description: ''
                     })
                 }

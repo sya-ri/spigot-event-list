@@ -1,666 +1,664 @@
-- name: com/destroystokyo/paper/event/block/AnvilDamagedEvent.html
+- name: com/destroystokyo/paper/event/block/AnvilDamagedEvent
   description: ''
-- name: com/destroystokyo/paper/event/block/BeaconEffectEvent.html
+- name: com/destroystokyo/paper/event/block/BeaconEffectEvent
   description: ''
-- name: com/destroystokyo/paper/event/block/BlockDestroyEvent.html
+- name: com/destroystokyo/paper/event/block/BlockDestroyEvent
   description: ''
-- name: com/destroystokyo/paper/event/block/TNTPrimeEvent.html
+- name: com/destroystokyo/paper/event/block/TNTPrimeEvent
   description: ''
-- name: com/destroystokyo/paper/event/entity/CreeperIgniteEvent.html
+- name: com/destroystokyo/paper/event/entity/CreeperIgniteEvent
   description: ''
-- name: com/destroystokyo/paper/event/entity/EnderDragonFireballHitEvent.html
+- name: com/destroystokyo/paper/event/entity/EnderDragonFireballHitEvent
   description: ''
-- name: com/destroystokyo/paper/event/entity/EnderDragonFlameEvent.html
+- name: com/destroystokyo/paper/event/entity/EnderDragonFlameEvent
   description: ''
-- name: com/destroystokyo/paper/event/entity/EnderDragonShootFireballEvent.html
+- name: com/destroystokyo/paper/event/entity/EnderDragonShootFireballEvent
   description: ''
-- name: com/destroystokyo/paper/event/entity/EndermanAttackPlayerEvent.html
+- name: com/destroystokyo/paper/event/entity/EndermanAttackPlayerEvent
   description: ''
-- name: com/destroystokyo/paper/event/entity/EndermanEscapeEvent.html
+- name: com/destroystokyo/paper/event/entity/EndermanEscapeEvent
   description: ''
-- name: com/destroystokyo/paper/event/entity/EntityAddToWorldEvent.html
+- name: com/destroystokyo/paper/event/entity/EntityAddToWorldEvent
   description: ''
-- name: com/destroystokyo/paper/event/entity/EntityJumpEvent.html
+- name: com/destroystokyo/paper/event/entity/EntityJumpEvent
   description: ''
-- name: com/destroystokyo/paper/event/entity/EntityKnockbackByEntityEvent.html
+- name: com/destroystokyo/paper/event/entity/EntityKnockbackByEntityEvent
   description: ''
-- name: com/destroystokyo/paper/event/entity/EntityPathfindEvent.html
+- name: com/destroystokyo/paper/event/entity/EntityPathfindEvent
   description: ''
-- name: com/destroystokyo/paper/event/entity/EntityRemoveFromWorldEvent.html
+- name: com/destroystokyo/paper/event/entity/EntityRemoveFromWorldEvent
   description: ''
-- name: com/destroystokyo/paper/event/entity/EntityTeleportEndGatewayEvent.html
+- name: com/destroystokyo/paper/event/entity/EntityTeleportEndGatewayEvent
   description: ''
-- name: com/destroystokyo/paper/event/entity/EntityTransformedEvent.html
+- name: com/destroystokyo/paper/event/entity/EntityTransformedEvent
   description: ''
-- name: com/destroystokyo/paper/event/entity/EntityZapEvent.html
+- name: com/destroystokyo/paper/event/entity/EntityZapEvent
   description: ''
-- name: com/destroystokyo/paper/event/entity/ExperienceOrbMergeEvent.html
+- name: com/destroystokyo/paper/event/entity/ExperienceOrbMergeEvent
   description: ''
-- name: com/destroystokyo/paper/event/entity/PhantomPreSpawnEvent.html
+- name: com/destroystokyo/paper/event/entity/PhantomPreSpawnEvent
   description: ''
-- name: com/destroystokyo/paper/event/entity/PlayerNaturallySpawnCreaturesEvent.html
+- name: com/destroystokyo/paper/event/entity/PlayerNaturallySpawnCreaturesEvent
   description: ''
-- name: com/destroystokyo/paper/event/entity/PreCreatureSpawnEvent.html
+- name: com/destroystokyo/paper/event/entity/PreCreatureSpawnEvent
   description: ''
-- name: com/destroystokyo/paper/event/entity/PreSpawnerSpawnEvent.html
+- name: com/destroystokyo/paper/event/entity/PreSpawnerSpawnEvent
   description: ''
-- name: com/destroystokyo/paper/event/entity/ProjectileCollideEvent.html
+- name: com/destroystokyo/paper/event/entity/ProjectileCollideEvent
   description: ''
-- name: com/destroystokyo/paper/event/entity/SkeletonHorseTrapEvent.html
+- name: com/destroystokyo/paper/event/entity/SkeletonHorseTrapEvent
   description: ''
-- name: com/destroystokyo/paper/event/entity/SlimeChangeDirectionEvent.html
+- name: com/destroystokyo/paper/event/entity/SlimeChangeDirectionEvent
   description: ''
-- name: com/destroystokyo/paper/event/entity/SlimePathfindEvent.html
+- name: com/destroystokyo/paper/event/entity/SlimePathfindEvent
   description: ''
-- name: com/destroystokyo/paper/event/entity/SlimeSwimEvent.html
+- name: com/destroystokyo/paper/event/entity/SlimeSwimEvent
   description: ''
-- name: com/destroystokyo/paper/event/entity/SlimeTargetLivingEntityEvent.html
+- name: com/destroystokyo/paper/event/entity/SlimeTargetLivingEntityEvent
   description: ''
-- name: com/destroystokyo/paper/event/entity/SlimeWanderEvent.html
+- name: com/destroystokyo/paper/event/entity/SlimeWanderEvent
   description: ''
-- name: com/destroystokyo/paper/event/entity/ThrownEggHatchEvent.html
+- name: com/destroystokyo/paper/event/entity/ThrownEggHatchEvent
   description: ''
-- name: com/destroystokyo/paper/event/entity/TurtleGoHomeEvent.html
+- name: com/destroystokyo/paper/event/entity/TurtleGoHomeEvent
   description: ''
-- name: com/destroystokyo/paper/event/entity/TurtleLayEggEvent.html
+- name: com/destroystokyo/paper/event/entity/TurtleLayEggEvent
   description: ''
-- name: com/destroystokyo/paper/event/entity/TurtleStartDiggingEvent.html
+- name: com/destroystokyo/paper/event/entity/TurtleStartDiggingEvent
   description: ''
-- name: com/destroystokyo/paper/event/entity/WitchConsumePotionEvent.html
+- name: com/destroystokyo/paper/event/entity/WitchConsumePotionEvent
   description: ''
-- name: com/destroystokyo/paper/event/entity/WitchReadyPotionEvent.html
+- name: com/destroystokyo/paper/event/entity/WitchReadyPotionEvent
   description: ''
-- name: com/destroystokyo/paper/event/entity/WitchThrowPotionEvent.html
+- name: com/destroystokyo/paper/event/entity/WitchThrowPotionEvent
   description: ''
-- name: com/destroystokyo/paper/event/inventory/PrepareGrindstoneEvent.html
+- name: com/destroystokyo/paper/event/inventory/PrepareGrindstoneEvent
   description: ''
-- name: com/destroystokyo/paper/event/inventory/PrepareResultEvent.html
+- name: com/destroystokyo/paper/event/inventory/PrepareResultEvent
   description: ''
-- name: com/destroystokyo/paper/event/player/IllegalPacketEvent.html
+- name: com/destroystokyo/paper/event/player/IllegalPacketEvent
   description: ''
-- name: >-
-    com/destroystokyo/paper/event/player/PlayerAdvancementCriterionGrantEvent.html
+- name: com/destroystokyo/paper/event/player/PlayerAdvancementCriterionGrantEvent
   description: ''
-- name: com/destroystokyo/paper/event/player/PlayerArmorChangeEvent.html
+- name: com/destroystokyo/paper/event/player/PlayerArmorChangeEvent
   description: ''
-- name: >-
-    com/destroystokyo/paper/event/player/PlayerAttackEntityCooldownResetEvent.html
+- name: com/destroystokyo/paper/event/player/PlayerAttackEntityCooldownResetEvent
   description: ''
-- name: com/destroystokyo/paper/event/player/PlayerClientOptionsChangeEvent.html
+- name: com/destroystokyo/paper/event/player/PlayerClientOptionsChangeEvent
   description: ''
-- name: com/destroystokyo/paper/event/player/PlayerConnectionCloseEvent.html
+- name: com/destroystokyo/paper/event/player/PlayerConnectionCloseEvent
   description: ''
-- name: com/destroystokyo/paper/event/player/PlayerElytraBoostEvent.html
+- name: com/destroystokyo/paper/event/player/PlayerElytraBoostEvent
   description: ''
-- name: com/destroystokyo/paper/event/player/PlayerHandshakeEvent.html
+- name: com/destroystokyo/paper/event/player/PlayerHandshakeEvent
   description: ''
-- name: com/destroystokyo/paper/event/player/PlayerInitialSpawnEvent.html
+- name: com/destroystokyo/paper/event/player/PlayerInitialSpawnEvent
   description: ''
-- name: com/destroystokyo/paper/event/player/PlayerJumpEvent.html
+- name: com/destroystokyo/paper/event/player/PlayerJumpEvent
   description: ''
-- name: com/destroystokyo/paper/event/player/PlayerLaunchProjectileEvent.html
+- name: com/destroystokyo/paper/event/player/PlayerLaunchProjectileEvent
   description: ''
-- name: com/destroystokyo/paper/event/player/PlayerLocaleChangeEvent.html
+- name: com/destroystokyo/paper/event/player/PlayerLocaleChangeEvent
   description: ''
-- name: com/destroystokyo/paper/event/player/PlayerPickupExperienceEvent.html
+- name: com/destroystokyo/paper/event/player/PlayerPickupExperienceEvent
   description: ''
-- name: com/destroystokyo/paper/event/player/PlayerPostRespawnEvent.html
+- name: com/destroystokyo/paper/event/player/PlayerPostRespawnEvent
   description: ''
-- name: com/destroystokyo/paper/event/player/PlayerReadyArrowEvent.html
+- name: com/destroystokyo/paper/event/player/PlayerReadyArrowEvent
   description: ''
-- name: com/destroystokyo/paper/event/player/PlayerRecipeBookClickEvent.html
+- name: com/destroystokyo/paper/event/player/PlayerRecipeBookClickEvent
   description: ''
-- name: com/destroystokyo/paper/event/player/PlayerStartSpectatingEntityEvent.html
+- name: com/destroystokyo/paper/event/player/PlayerStartSpectatingEntityEvent
   description: ''
-- name: com/destroystokyo/paper/event/player/PlayerStopSpectatingEntityEvent.html
+- name: com/destroystokyo/paper/event/player/PlayerStopSpectatingEntityEvent
   description: ''
-- name: com/destroystokyo/paper/event/player/PlayerTeleportEndGatewayEvent.html
+- name: com/destroystokyo/paper/event/player/PlayerTeleportEndGatewayEvent
   description: ''
-- name: com/destroystokyo/paper/event/player/PlayerUseUnknownEntityEvent.html
+- name: com/destroystokyo/paper/event/player/PlayerUseUnknownEntityEvent
   description: ''
-- name: com/destroystokyo/paper/event/profile/FillProfileEvent.html
+- name: com/destroystokyo/paper/event/profile/FillProfileEvent
   description: ''
-- name: com/destroystokyo/paper/event/profile/LookupProfileEvent.html
+- name: com/destroystokyo/paper/event/profile/LookupProfileEvent
   description: ''
-- name: com/destroystokyo/paper/event/profile/PreFillProfileEvent.html
+- name: com/destroystokyo/paper/event/profile/PreFillProfileEvent
   description: ''
-- name: com/destroystokyo/paper/event/profile/PreLookupProfileEvent.html
+- name: com/destroystokyo/paper/event/profile/PreLookupProfileEvent
   description: ''
-- name: com/destroystokyo/paper/event/profile/ProfileWhitelistVerifyEvent.html
+- name: com/destroystokyo/paper/event/profile/ProfileWhitelistVerifyEvent
   description: ''
-- name: com/destroystokyo/paper/event/server/AsyncTabCompleteEvent.html
+- name: com/destroystokyo/paper/event/server/AsyncTabCompleteEvent
   description: ''
-- name: com/destroystokyo/paper/event/server/GS4QueryEvent.html
+- name: com/destroystokyo/paper/event/server/GS4QueryEvent
   description: ''
-- name: com/destroystokyo/paper/event/server/PaperServerListPingEvent.html
+- name: com/destroystokyo/paper/event/server/PaperServerListPingEvent
   description: ''
-- name: com/destroystokyo/paper/event/server/ServerExceptionEvent.html
+- name: com/destroystokyo/paper/event/server/ServerExceptionEvent
   description: ''
-- name: com/destroystokyo/paper/event/server/ServerTickEndEvent.html
+- name: com/destroystokyo/paper/event/server/ServerTickEndEvent
   description: ''
-- name: com/destroystokyo/paper/event/server/ServerTickStartEvent.html
+- name: com/destroystokyo/paper/event/server/ServerTickStartEvent
   description: ''
-- name: com/destroystokyo/paper/event/server/WhitelistToggleEvent.html
+- name: com/destroystokyo/paper/event/server/WhitelistToggleEvent
   description: ''
-- name: com/destroystokyo/paper/loottable/LootableInventoryReplenishEvent.html
+- name: com/destroystokyo/paper/loottable/LootableInventoryReplenishEvent
   description: ''
-- name: io/papermc/paper/event/block/BellRingEvent.html
+- name: io/papermc/paper/event/block/BellRingEvent
   description: ''
-- name: io/papermc/paper/event/block/BlockFailedDispenseEvent.html
+- name: io/papermc/paper/event/block/BlockFailedDispenseEvent
   description: ''
-- name: io/papermc/paper/event/block/BlockPreDispenseEvent.html
+- name: io/papermc/paper/event/block/BlockPreDispenseEvent
   description: ''
-- name: io/papermc/paper/event/block/PlayerShearBlockEvent.html
+- name: io/papermc/paper/event/block/PlayerShearBlockEvent
   description: ''
-- name: io/papermc/paper/event/block/TargetHitEvent.html
+- name: io/papermc/paper/event/block/TargetHitEvent
   description: ''
-- name: io/papermc/paper/event/entity/EntityLoadCrossbowEvent.html
+- name: io/papermc/paper/event/entity/EntityLoadCrossbowEvent
   description: ''
-- name: io/papermc/paper/event/packet/PlayerChunkLoadEvent.html
+- name: io/papermc/paper/event/packet/PlayerChunkLoadEvent
   description: ''
-- name: io/papermc/paper/event/packet/PlayerChunkUnloadEvent.html
+- name: io/papermc/paper/event/packet/PlayerChunkUnloadEvent
   description: ''
-- name: io/papermc/paper/event/player/PlayerChangeBeaconEffectEvent.html
+- name: io/papermc/paper/event/player/PlayerChangeBeaconEffectEvent
   description: ''
-- name: io/papermc/paper/event/player/PlayerFlowerPotManipulateEvent.html
+- name: io/papermc/paper/event/player/PlayerFlowerPotManipulateEvent
   description: ''
-- name: io/papermc/paper/event/player/PlayerItemCooldownEvent.html
+- name: io/papermc/paper/event/player/PlayerItemCooldownEvent
   description: ''
-- name: io/papermc/paper/event/player/PlayerLecternPageChangeEvent.html
+- name: io/papermc/paper/event/player/PlayerLecternPageChangeEvent
   description: ''
-- name: io/papermc/paper/event/player/PlayerLoomPatternSelectEvent.html
+- name: io/papermc/paper/event/player/PlayerLoomPatternSelectEvent
   description: ''
-- name: io/papermc/paper/event/player/PlayerStonecutterRecipeSelectEvent.html
+- name: io/papermc/paper/event/player/PlayerStonecutterRecipeSelectEvent
   description: ''
-- name: io/papermc/paper/event/player/PlayerTradeEvent.html
+- name: io/papermc/paper/event/player/PlayerTradeEvent
   description: ''
-- name: io/papermc/paper/event/server/ServerResourcesReloadedEvent.html
+- name: io/papermc/paper/event/server/ServerResourcesReloadedEvent
   description: ''
-- name: io/papermc/paper/event/world/StructureLocateEvent.html
+- name: io/papermc/paper/event/world/StructureLocateEvent
   description: ''
-- name: io/papermc/paper/event/world/WorldGameRuleChangeEvent.html
+- name: io/papermc/paper/event/world/WorldGameRuleChangeEvent
   description: ''
-- name: org/bukkit/conversations/ConversationAbandonedEvent.html
+- name: org/bukkit/conversations/ConversationAbandonedEvent
   description: ''
-- name: org/bukkit/event/Event.html
+- name: org/bukkit/event/Event
   description: ''
-- name: org/bukkit/event/block/BlockBreakEvent.html
+- name: org/bukkit/event/block/BlockBreakEvent
   description: ''
-- name: org/bukkit/event/block/BlockBurnEvent.html
+- name: org/bukkit/event/block/BlockBurnEvent
   description: ''
-- name: org/bukkit/event/block/BlockCanBuildEvent.html
+- name: org/bukkit/event/block/BlockCanBuildEvent
   description: ''
-- name: org/bukkit/event/block/BlockCookEvent.html
+- name: org/bukkit/event/block/BlockCookEvent
   description: ''
-- name: org/bukkit/event/block/BlockDamageEvent.html
+- name: org/bukkit/event/block/BlockDamageEvent
   description: ''
-- name: org/bukkit/event/block/BlockDispenseArmorEvent.html
+- name: org/bukkit/event/block/BlockDispenseArmorEvent
   description: ''
-- name: org/bukkit/event/block/BlockDispenseEvent.html
+- name: org/bukkit/event/block/BlockDispenseEvent
   description: ''
-- name: org/bukkit/event/block/BlockDropItemEvent.html
+- name: org/bukkit/event/block/BlockDropItemEvent
   description: ''
-- name: org/bukkit/event/block/BlockEvent.html
+- name: org/bukkit/event/block/BlockEvent
   description: ''
-- name: org/bukkit/event/block/BlockExpEvent.html
+- name: org/bukkit/event/block/BlockExpEvent
   description: ''
-- name: org/bukkit/event/block/BlockExplodeEvent.html
+- name: org/bukkit/event/block/BlockExplodeEvent
   description: ''
-- name: org/bukkit/event/block/BlockFadeEvent.html
+- name: org/bukkit/event/block/BlockFadeEvent
   description: ''
-- name: org/bukkit/event/block/BlockFertilizeEvent.html
+- name: org/bukkit/event/block/BlockFertilizeEvent
   description: ''
-- name: org/bukkit/event/block/BlockFormEvent.html
+- name: org/bukkit/event/block/BlockFormEvent
   description: ''
-- name: org/bukkit/event/block/BlockFromToEvent.html
+- name: org/bukkit/event/block/BlockFromToEvent
   description: ''
-- name: org/bukkit/event/block/BlockGrowEvent.html
+- name: org/bukkit/event/block/BlockGrowEvent
   description: ''
-- name: org/bukkit/event/block/BlockIgniteEvent.html
+- name: org/bukkit/event/block/BlockIgniteEvent
   description: ''
-- name: org/bukkit/event/block/BlockMultiPlaceEvent.html
+- name: org/bukkit/event/block/BlockMultiPlaceEvent
   description: ''
-- name: org/bukkit/event/block/BlockPhysicsEvent.html
+- name: org/bukkit/event/block/BlockPhysicsEvent
   description: ''
-- name: org/bukkit/event/block/BlockPistonEvent.html
+- name: org/bukkit/event/block/BlockPistonEvent
   description: ''
-- name: org/bukkit/event/block/BlockPistonExtendEvent.html
+- name: org/bukkit/event/block/BlockPistonExtendEvent
   description: ''
-- name: org/bukkit/event/block/BlockPistonRetractEvent.html
+- name: org/bukkit/event/block/BlockPistonRetractEvent
   description: ''
-- name: org/bukkit/event/block/BlockPlaceEvent.html
+- name: org/bukkit/event/block/BlockPlaceEvent
   description: ''
-- name: org/bukkit/event/block/BlockRedstoneEvent.html
+- name: org/bukkit/event/block/BlockRedstoneEvent
   description: ''
-- name: org/bukkit/event/block/BlockShearEntityEvent.html
+- name: org/bukkit/event/block/BlockShearEntityEvent
   description: ''
-- name: org/bukkit/event/block/BlockSpreadEvent.html
+- name: org/bukkit/event/block/BlockSpreadEvent
   description: ''
-- name: org/bukkit/event/block/CauldronLevelChangeEvent.html
+- name: org/bukkit/event/block/CauldronLevelChangeEvent
   description: ''
-- name: org/bukkit/event/block/EntityBlockFormEvent.html
+- name: org/bukkit/event/block/EntityBlockFormEvent
   description: ''
-- name: org/bukkit/event/block/FluidLevelChangeEvent.html
+- name: org/bukkit/event/block/FluidLevelChangeEvent
   description: ''
-- name: org/bukkit/event/block/LeavesDecayEvent.html
+- name: org/bukkit/event/block/LeavesDecayEvent
   description: ''
-- name: org/bukkit/event/block/MoistureChangeEvent.html
+- name: org/bukkit/event/block/MoistureChangeEvent
   description: ''
-- name: org/bukkit/event/block/NotePlayEvent.html
+- name: org/bukkit/event/block/NotePlayEvent
   description: ''
-- name: org/bukkit/event/block/SignChangeEvent.html
+- name: org/bukkit/event/block/SignChangeEvent
   description: ''
-- name: org/bukkit/event/block/SpongeAbsorbEvent.html
+- name: org/bukkit/event/block/SpongeAbsorbEvent
   description: ''
-- name: org/bukkit/event/command/UnknownCommandEvent.html
+- name: org/bukkit/event/command/UnknownCommandEvent
   description: ''
-- name: org/bukkit/event/enchantment/EnchantItemEvent.html
+- name: org/bukkit/event/enchantment/EnchantItemEvent
   description: ''
-- name: org/bukkit/event/enchantment/PrepareItemEnchantEvent.html
+- name: org/bukkit/event/enchantment/PrepareItemEnchantEvent
   description: ''
-- name: org/bukkit/event/entity/AreaEffectCloudApplyEvent.html
+- name: org/bukkit/event/entity/AreaEffectCloudApplyEvent
   description: ''
-- name: org/bukkit/event/entity/ArrowBodyCountChangeEvent.html
+- name: org/bukkit/event/entity/ArrowBodyCountChangeEvent
   description: ''
-- name: org/bukkit/event/entity/BatToggleSleepEvent.html
+- name: org/bukkit/event/entity/BatToggleSleepEvent
   description: ''
-- name: org/bukkit/event/entity/CreatureSpawnEvent.html
+- name: org/bukkit/event/entity/CreatureSpawnEvent
   description: ''
-- name: org/bukkit/event/entity/CreeperPowerEvent.html
+- name: org/bukkit/event/entity/CreeperPowerEvent
   description: ''
-- name: org/bukkit/event/entity/EnderDragonChangePhaseEvent.html
+- name: org/bukkit/event/entity/EnderDragonChangePhaseEvent
   description: ''
-- name: org/bukkit/event/entity/EntityAirChangeEvent.html
+- name: org/bukkit/event/entity/EntityAirChangeEvent
   description: ''
-- name: org/bukkit/event/entity/EntityBreakDoorEvent.html
+- name: org/bukkit/event/entity/EntityBreakDoorEvent
   description: ''
-- name: org/bukkit/event/entity/EntityBreedEvent.html
+- name: org/bukkit/event/entity/EntityBreedEvent
   description: ''
-- name: org/bukkit/event/entity/EntityChangeBlockEvent.html
+- name: org/bukkit/event/entity/EntityChangeBlockEvent
   description: ''
-- name: org/bukkit/event/entity/EntityCombustByBlockEvent.html
+- name: org/bukkit/event/entity/EntityCombustByBlockEvent
   description: ''
-- name: org/bukkit/event/entity/EntityCombustByEntityEvent.html
+- name: org/bukkit/event/entity/EntityCombustByEntityEvent
   description: ''
-- name: org/bukkit/event/entity/EntityCombustEvent.html
+- name: org/bukkit/event/entity/EntityCombustEvent
   description: ''
-- name: org/bukkit/event/entity/EntityCreatePortalEvent.html
+- name: org/bukkit/event/entity/EntityCreatePortalEvent
   description: ''
-- name: org/bukkit/event/entity/EntityDamageByBlockEvent.html
+- name: org/bukkit/event/entity/EntityDamageByBlockEvent
   description: ''
-- name: org/bukkit/event/entity/EntityDamageByEntityEvent.html
+- name: org/bukkit/event/entity/EntityDamageByEntityEvent
   description: ''
-- name: org/bukkit/event/entity/EntityDamageEvent.html
+- name: org/bukkit/event/entity/EntityDamageEvent
   description: ''
-- name: org/bukkit/event/entity/EntityDeathEvent.html
+- name: org/bukkit/event/entity/EntityDeathEvent
   description: ''
-- name: org/bukkit/event/entity/EntityDropItemEvent.html
+- name: org/bukkit/event/entity/EntityDropItemEvent
   description: ''
-- name: org/bukkit/event/entity/EntityEnterBlockEvent.html
+- name: org/bukkit/event/entity/EntityEnterBlockEvent
   description: ''
-- name: org/bukkit/event/entity/EntityEnterLoveModeEvent.html
+- name: org/bukkit/event/entity/EntityEnterLoveModeEvent
   description: ''
-- name: org/bukkit/event/entity/EntityEvent.html
+- name: org/bukkit/event/entity/EntityEvent
   description: ''
-- name: org/bukkit/event/entity/EntityExplodeEvent.html
+- name: org/bukkit/event/entity/EntityExplodeEvent
   description: ''
-- name: org/bukkit/event/entity/EntityInteractEvent.html
+- name: org/bukkit/event/entity/EntityInteractEvent
   description: ''
-- name: org/bukkit/event/entity/EntityPickupItemEvent.html
+- name: org/bukkit/event/entity/EntityPickupItemEvent
   description: ''
-- name: org/bukkit/event/entity/EntityPlaceEvent.html
+- name: org/bukkit/event/entity/EntityPlaceEvent
   description: ''
-- name: org/bukkit/event/entity/EntityPortalEnterEvent.html
+- name: org/bukkit/event/entity/EntityPortalEnterEvent
   description: ''
-- name: org/bukkit/event/entity/EntityPortalEvent.html
+- name: org/bukkit/event/entity/EntityPortalEvent
   description: ''
-- name: org/bukkit/event/entity/EntityPortalExitEvent.html
+- name: org/bukkit/event/entity/EntityPortalExitEvent
   description: ''
-- name: org/bukkit/event/entity/EntityPoseChangeEvent.html
+- name: org/bukkit/event/entity/EntityPoseChangeEvent
   description: ''
-- name: org/bukkit/event/entity/EntityPotionEffectEvent.html
+- name: org/bukkit/event/entity/EntityPotionEffectEvent
   description: ''
-- name: org/bukkit/event/entity/EntityRegainHealthEvent.html
+- name: org/bukkit/event/entity/EntityRegainHealthEvent
   description: ''
-- name: org/bukkit/event/entity/EntityResurrectEvent.html
+- name: org/bukkit/event/entity/EntityResurrectEvent
   description: ''
-- name: org/bukkit/event/entity/EntityShootBowEvent.html
+- name: org/bukkit/event/entity/EntityShootBowEvent
   description: ''
-- name: org/bukkit/event/entity/EntitySpawnEvent.html
+- name: org/bukkit/event/entity/EntitySpawnEvent
   description: ''
-- name: org/bukkit/event/entity/EntitySpellCastEvent.html
+- name: org/bukkit/event/entity/EntitySpellCastEvent
   description: ''
-- name: org/bukkit/event/entity/EntityTameEvent.html
+- name: org/bukkit/event/entity/EntityTameEvent
   description: ''
-- name: org/bukkit/event/entity/EntityTargetEvent.html
+- name: org/bukkit/event/entity/EntityTargetEvent
   description: ''
-- name: org/bukkit/event/entity/EntityTargetLivingEntityEvent.html
+- name: org/bukkit/event/entity/EntityTargetLivingEntityEvent
   description: ''
-- name: org/bukkit/event/entity/EntityTeleportEvent.html
+- name: org/bukkit/event/entity/EntityTeleportEvent
   description: ''
-- name: org/bukkit/event/entity/EntityToggleGlideEvent.html
+- name: org/bukkit/event/entity/EntityToggleGlideEvent
   description: ''
-- name: org/bukkit/event/entity/EntityToggleSwimEvent.html
+- name: org/bukkit/event/entity/EntityToggleSwimEvent
   description: ''
-- name: org/bukkit/event/entity/EntityTransformEvent.html
+- name: org/bukkit/event/entity/EntityTransformEvent
   description: ''
-- name: org/bukkit/event/entity/EntityUnleashEvent.html
+- name: org/bukkit/event/entity/EntityUnleashEvent
   description: ''
-- name: org/bukkit/event/entity/ExpBottleEvent.html
+- name: org/bukkit/event/entity/ExpBottleEvent
   description: ''
-- name: org/bukkit/event/entity/ExplosionPrimeEvent.html
+- name: org/bukkit/event/entity/ExplosionPrimeEvent
   description: ''
-- name: org/bukkit/event/entity/FireworkExplodeEvent.html
+- name: org/bukkit/event/entity/FireworkExplodeEvent
   description: ''
-- name: org/bukkit/event/entity/FoodLevelChangeEvent.html
+- name: org/bukkit/event/entity/FoodLevelChangeEvent
   description: ''
-- name: org/bukkit/event/entity/HorseJumpEvent.html
+- name: org/bukkit/event/entity/HorseJumpEvent
   description: ''
-- name: org/bukkit/event/entity/ItemDespawnEvent.html
+- name: org/bukkit/event/entity/ItemDespawnEvent
   description: ''
-- name: org/bukkit/event/entity/ItemMergeEvent.html
+- name: org/bukkit/event/entity/ItemMergeEvent
   description: ''
-- name: org/bukkit/event/entity/ItemSpawnEvent.html
+- name: org/bukkit/event/entity/ItemSpawnEvent
   description: ''
-- name: org/bukkit/event/entity/LingeringPotionSplashEvent.html
+- name: org/bukkit/event/entity/LingeringPotionSplashEvent
   description: ''
-- name: org/bukkit/event/entity/PigZapEvent.html
+- name: org/bukkit/event/entity/PigZapEvent
   description: ''
-- name: org/bukkit/event/entity/PigZombieAngerEvent.html
+- name: org/bukkit/event/entity/PigZombieAngerEvent
   description: ''
-- name: org/bukkit/event/entity/PlayerDeathEvent.html
+- name: org/bukkit/event/entity/PlayerDeathEvent
   description: ''
-- name: org/bukkit/event/entity/PlayerLeashEntityEvent.html
+- name: org/bukkit/event/entity/PlayerLeashEntityEvent
   description: ''
-- name: org/bukkit/event/entity/PotionSplashEvent.html
+- name: org/bukkit/event/entity/PotionSplashEvent
   description: ''
-- name: org/bukkit/event/entity/ProjectileHitEvent.html
+- name: org/bukkit/event/entity/ProjectileHitEvent
   description: ''
-- name: org/bukkit/event/entity/ProjectileLaunchEvent.html
+- name: org/bukkit/event/entity/ProjectileLaunchEvent
   description: ''
-- name: org/bukkit/event/entity/SheepDyeWoolEvent.html
+- name: org/bukkit/event/entity/SheepDyeWoolEvent
   description: ''
-- name: org/bukkit/event/entity/SheepRegrowWoolEvent.html
+- name: org/bukkit/event/entity/SheepRegrowWoolEvent
   description: ''
-- name: org/bukkit/event/entity/SlimeSplitEvent.html
+- name: org/bukkit/event/entity/SlimeSplitEvent
   description: ''
-- name: org/bukkit/event/entity/SpawnerSpawnEvent.html
+- name: org/bukkit/event/entity/SpawnerSpawnEvent
   description: ''
-- name: org/bukkit/event/entity/StriderTemperatureChangeEvent.html
+- name: org/bukkit/event/entity/StriderTemperatureChangeEvent
   description: ''
-- name: org/bukkit/event/entity/VillagerAcquireTradeEvent.html
+- name: org/bukkit/event/entity/VillagerAcquireTradeEvent
   description: ''
-- name: org/bukkit/event/entity/VillagerCareerChangeEvent.html
+- name: org/bukkit/event/entity/VillagerCareerChangeEvent
   description: ''
-- name: org/bukkit/event/entity/VillagerReplenishTradeEvent.html
+- name: org/bukkit/event/entity/VillagerReplenishTradeEvent
   description: ''
-- name: org/bukkit/event/hanging/HangingBreakByEntityEvent.html
+- name: org/bukkit/event/hanging/HangingBreakByEntityEvent
   description: ''
-- name: org/bukkit/event/hanging/HangingBreakEvent.html
+- name: org/bukkit/event/hanging/HangingBreakEvent
   description: ''
-- name: org/bukkit/event/hanging/HangingEvent.html
+- name: org/bukkit/event/hanging/HangingEvent
   description: ''
-- name: org/bukkit/event/hanging/HangingPlaceEvent.html
+- name: org/bukkit/event/hanging/HangingPlaceEvent
   description: ''
-- name: org/bukkit/event/inventory/BrewEvent.html
+- name: org/bukkit/event/inventory/BrewEvent
   description: ''
-- name: org/bukkit/event/inventory/BrewingStandFuelEvent.html
+- name: org/bukkit/event/inventory/BrewingStandFuelEvent
   description: ''
-- name: org/bukkit/event/inventory/CraftItemEvent.html
+- name: org/bukkit/event/inventory/CraftItemEvent
   description: ''
-- name: org/bukkit/event/inventory/FurnaceBurnEvent.html
+- name: org/bukkit/event/inventory/FurnaceBurnEvent
   description: ''
-- name: org/bukkit/event/inventory/FurnaceExtractEvent.html
+- name: org/bukkit/event/inventory/FurnaceExtractEvent
   description: ''
-- name: org/bukkit/event/inventory/FurnaceSmeltEvent.html
+- name: org/bukkit/event/inventory/FurnaceSmeltEvent
   description: ''
-- name: org/bukkit/event/inventory/InventoryClickEvent.html
+- name: org/bukkit/event/inventory/InventoryClickEvent
   description: ''
-- name: org/bukkit/event/inventory/InventoryCloseEvent.html
+- name: org/bukkit/event/inventory/InventoryCloseEvent
   description: ''
-- name: org/bukkit/event/inventory/InventoryCreativeEvent.html
+- name: org/bukkit/event/inventory/InventoryCreativeEvent
   description: ''
-- name: org/bukkit/event/inventory/InventoryDragEvent.html
+- name: org/bukkit/event/inventory/InventoryDragEvent
   description: ''
-- name: org/bukkit/event/inventory/InventoryEvent.html
+- name: org/bukkit/event/inventory/InventoryEvent
   description: ''
-- name: org/bukkit/event/inventory/InventoryInteractEvent.html
+- name: org/bukkit/event/inventory/InventoryInteractEvent
   description: ''
-- name: org/bukkit/event/inventory/InventoryMoveItemEvent.html
+- name: org/bukkit/event/inventory/InventoryMoveItemEvent
   description: ''
-- name: org/bukkit/event/inventory/InventoryOpenEvent.html
+- name: org/bukkit/event/inventory/InventoryOpenEvent
   description: ''
-- name: org/bukkit/event/inventory/InventoryPickupItemEvent.html
+- name: org/bukkit/event/inventory/InventoryPickupItemEvent
   description: ''
-- name: org/bukkit/event/inventory/PrepareAnvilEvent.html
+- name: org/bukkit/event/inventory/PrepareAnvilEvent
   description: ''
-- name: org/bukkit/event/inventory/PrepareItemCraftEvent.html
+- name: org/bukkit/event/inventory/PrepareItemCraftEvent
   description: ''
-- name: org/bukkit/event/inventory/PrepareSmithingEvent.html
+- name: org/bukkit/event/inventory/PrepareSmithingEvent
   description: ''
-- name: org/bukkit/event/inventory/TradeSelectEvent.html
+- name: org/bukkit/event/inventory/TradeSelectEvent
   description: ''
-- name: org/bukkit/event/player/AsyncPlayerChatEvent.html
+- name: org/bukkit/event/player/AsyncPlayerChatEvent
   description: ''
-- name: org/bukkit/event/player/AsyncPlayerPreLoginEvent.html
+- name: org/bukkit/event/player/AsyncPlayerPreLoginEvent
   description: ''
-- name: org/bukkit/event/player/PlayerAdvancementDoneEvent.html
+- name: org/bukkit/event/player/PlayerAdvancementDoneEvent
   description: ''
-- name: org/bukkit/event/player/PlayerAnimationEvent.html
+- name: org/bukkit/event/player/PlayerAnimationEvent
   description: ''
-- name: org/bukkit/event/player/PlayerArmorStandManipulateEvent.html
+- name: org/bukkit/event/player/PlayerArmorStandManipulateEvent
   description: ''
-- name: org/bukkit/event/player/PlayerAttemptPickupItemEvent.html
+- name: org/bukkit/event/player/PlayerAttemptPickupItemEvent
   description: ''
-- name: org/bukkit/event/player/PlayerBedEnterEvent.html
+- name: org/bukkit/event/player/PlayerBedEnterEvent
   description: ''
-- name: org/bukkit/event/player/PlayerBedLeaveEvent.html
+- name: org/bukkit/event/player/PlayerBedLeaveEvent
   description: ''
-- name: org/bukkit/event/player/PlayerBucketEmptyEvent.html
+- name: org/bukkit/event/player/PlayerBucketEmptyEvent
   description: ''
-- name: org/bukkit/event/player/PlayerBucketEvent.html
+- name: org/bukkit/event/player/PlayerBucketEvent
   description: ''
-- name: org/bukkit/event/player/PlayerBucketFillEvent.html
+- name: org/bukkit/event/player/PlayerBucketFillEvent
   description: ''
-- name: org/bukkit/event/player/PlayerChangedMainHandEvent.html
+- name: org/bukkit/event/player/PlayerChangedMainHandEvent
   description: ''
-- name: org/bukkit/event/player/PlayerChangedWorldEvent.html
+- name: org/bukkit/event/player/PlayerChangedWorldEvent
   description: ''
-- name: org/bukkit/event/player/PlayerChannelEvent.html
+- name: org/bukkit/event/player/PlayerChannelEvent
   description: ''
-- name: org/bukkit/event/player/PlayerChatEvent.html
+- name: org/bukkit/event/player/PlayerChatEvent
   description: ''
-- name: org/bukkit/event/player/PlayerChatTabCompleteEvent.html
+- name: org/bukkit/event/player/PlayerChatTabCompleteEvent
   description: ''
-- name: org/bukkit/event/player/PlayerCommandPreprocessEvent.html
+- name: org/bukkit/event/player/PlayerCommandPreprocessEvent
   description: ''
-- name: org/bukkit/event/player/PlayerCommandSendEvent.html
+- name: org/bukkit/event/player/PlayerCommandSendEvent
   description: ''
-- name: org/bukkit/event/player/PlayerDropItemEvent.html
+- name: org/bukkit/event/player/PlayerDropItemEvent
   description: ''
-- name: org/bukkit/event/player/PlayerEditBookEvent.html
+- name: org/bukkit/event/player/PlayerEditBookEvent
   description: ''
-- name: org/bukkit/event/player/PlayerEggThrowEvent.html
+- name: org/bukkit/event/player/PlayerEggThrowEvent
   description: ''
-- name: org/bukkit/event/player/PlayerEvent.html
+- name: org/bukkit/event/player/PlayerEvent
   description: ''
-- name: org/bukkit/event/player/PlayerExpChangeEvent.html
+- name: org/bukkit/event/player/PlayerExpChangeEvent
   description: ''
-- name: org/bukkit/event/player/PlayerFishEvent.html
+- name: org/bukkit/event/player/PlayerFishEvent
   description: ''
-- name: org/bukkit/event/player/PlayerGameModeChangeEvent.html
+- name: org/bukkit/event/player/PlayerGameModeChangeEvent
   description: ''
-- name: org/bukkit/event/player/PlayerHarvestBlockEvent.html
+- name: org/bukkit/event/player/PlayerHarvestBlockEvent
   description: ''
-- name: org/bukkit/event/player/PlayerInteractAtEntityEvent.html
+- name: org/bukkit/event/player/PlayerInteractAtEntityEvent
   description: ''
-- name: org/bukkit/event/player/PlayerInteractEntityEvent.html
+- name: org/bukkit/event/player/PlayerInteractEntityEvent
   description: ''
-- name: org/bukkit/event/player/PlayerInteractEvent.html
+- name: org/bukkit/event/player/PlayerInteractEvent
   description: ''
-- name: org/bukkit/event/player/PlayerItemBreakEvent.html
+- name: org/bukkit/event/player/PlayerItemBreakEvent
   description: ''
-- name: org/bukkit/event/player/PlayerItemConsumeEvent.html
+- name: org/bukkit/event/player/PlayerItemConsumeEvent
   description: ''
-- name: org/bukkit/event/player/PlayerItemDamageEvent.html
+- name: org/bukkit/event/player/PlayerItemDamageEvent
   description: ''
-- name: org/bukkit/event/player/PlayerItemHeldEvent.html
+- name: org/bukkit/event/player/PlayerItemHeldEvent
   description: ''
-- name: org/bukkit/event/player/PlayerItemMendEvent.html
+- name: org/bukkit/event/player/PlayerItemMendEvent
   description: ''
-- name: org/bukkit/event/player/PlayerJoinEvent.html
+- name: org/bukkit/event/player/PlayerJoinEvent
   description: ''
-- name: org/bukkit/event/player/PlayerKickEvent.html
+- name: org/bukkit/event/player/PlayerKickEvent
   description: ''
-- name: org/bukkit/event/player/PlayerLevelChangeEvent.html
+- name: org/bukkit/event/player/PlayerLevelChangeEvent
   description: ''
-- name: org/bukkit/event/player/PlayerLocaleChangeEvent.html
+- name: org/bukkit/event/player/PlayerLocaleChangeEvent
   description: ''
-- name: org/bukkit/event/player/PlayerLoginEvent.html
+- name: org/bukkit/event/player/PlayerLoginEvent
   description: ''
-- name: org/bukkit/event/player/PlayerMoveEvent.html
+- name: org/bukkit/event/player/PlayerMoveEvent
   description: ''
-- name: org/bukkit/event/player/PlayerPickupArrowEvent.html
+- name: org/bukkit/event/player/PlayerPickupArrowEvent
   description: ''
-- name: org/bukkit/event/player/PlayerPickupItemEvent.html
+- name: org/bukkit/event/player/PlayerPickupItemEvent
   description: ''
-- name: org/bukkit/event/player/PlayerPortalEvent.html
+- name: org/bukkit/event/player/PlayerPortalEvent
   description: ''
-- name: org/bukkit/event/player/PlayerPreLoginEvent.html
+- name: org/bukkit/event/player/PlayerPreLoginEvent
   description: ''
-- name: org/bukkit/event/player/PlayerQuitEvent.html
+- name: org/bukkit/event/player/PlayerQuitEvent
   description: ''
-- name: org/bukkit/event/player/PlayerRecipeDiscoverEvent.html
+- name: org/bukkit/event/player/PlayerRecipeDiscoverEvent
   description: ''
-- name: org/bukkit/event/player/PlayerRegisterChannelEvent.html
+- name: org/bukkit/event/player/PlayerRegisterChannelEvent
   description: ''
-- name: org/bukkit/event/player/PlayerResourcePackStatusEvent.html
+- name: org/bukkit/event/player/PlayerResourcePackStatusEvent
   description: ''
-- name: org/bukkit/event/player/PlayerRespawnEvent.html
+- name: org/bukkit/event/player/PlayerRespawnEvent
   description: ''
-- name: org/bukkit/event/player/PlayerRiptideEvent.html
+- name: org/bukkit/event/player/PlayerRiptideEvent
   description: ''
-- name: org/bukkit/event/player/PlayerShearEntityEvent.html
+- name: org/bukkit/event/player/PlayerShearEntityEvent
   description: ''
-- name: org/bukkit/event/player/PlayerStatisticIncrementEvent.html
+- name: org/bukkit/event/player/PlayerStatisticIncrementEvent
   description: ''
-- name: org/bukkit/event/player/PlayerSwapHandItemsEvent.html
+- name: org/bukkit/event/player/PlayerSwapHandItemsEvent
   description: ''
-- name: org/bukkit/event/player/PlayerTakeLecternBookEvent.html
+- name: org/bukkit/event/player/PlayerTakeLecternBookEvent
   description: ''
-- name: org/bukkit/event/player/PlayerTeleportEvent.html
+- name: org/bukkit/event/player/PlayerTeleportEvent
   description: ''
-- name: org/bukkit/event/player/PlayerToggleFlightEvent.html
+- name: org/bukkit/event/player/PlayerToggleFlightEvent
   description: ''
-- name: org/bukkit/event/player/PlayerToggleSneakEvent.html
+- name: org/bukkit/event/player/PlayerToggleSneakEvent
   description: ''
-- name: org/bukkit/event/player/PlayerToggleSprintEvent.html
+- name: org/bukkit/event/player/PlayerToggleSprintEvent
   description: ''
-- name: org/bukkit/event/player/PlayerUnleashEntityEvent.html
+- name: org/bukkit/event/player/PlayerUnleashEntityEvent
   description: ''
-- name: org/bukkit/event/player/PlayerUnregisterChannelEvent.html
+- name: org/bukkit/event/player/PlayerUnregisterChannelEvent
   description: ''
-- name: org/bukkit/event/player/PlayerVelocityEvent.html
+- name: org/bukkit/event/player/PlayerVelocityEvent
   description: ''
-- name: org/bukkit/event/raid/RaidEvent.html
+- name: org/bukkit/event/raid/RaidEvent
   description: ''
-- name: org/bukkit/event/raid/RaidFinishEvent.html
+- name: org/bukkit/event/raid/RaidFinishEvent
   description: ''
-- name: org/bukkit/event/raid/RaidSpawnWaveEvent.html
+- name: org/bukkit/event/raid/RaidSpawnWaveEvent
   description: ''
-- name: org/bukkit/event/raid/RaidStopEvent.html
+- name: org/bukkit/event/raid/RaidStopEvent
   description: ''
-- name: org/bukkit/event/raid/RaidTriggerEvent.html
+- name: org/bukkit/event/raid/RaidTriggerEvent
   description: ''
-- name: org/bukkit/event/server/BroadcastMessageEvent.html
+- name: org/bukkit/event/server/BroadcastMessageEvent
   description: ''
-- name: org/bukkit/event/server/MapInitializeEvent.html
+- name: org/bukkit/event/server/MapInitializeEvent
   description: ''
-- name: org/bukkit/event/server/PluginDisableEvent.html
+- name: org/bukkit/event/server/PluginDisableEvent
   description: ''
-- name: org/bukkit/event/server/PluginEnableEvent.html
+- name: org/bukkit/event/server/PluginEnableEvent
   description: ''
-- name: org/bukkit/event/server/PluginEvent.html
+- name: org/bukkit/event/server/PluginEvent
   description: ''
-- name: org/bukkit/event/server/RemoteServerCommandEvent.html
+- name: org/bukkit/event/server/RemoteServerCommandEvent
   description: ''
-- name: org/bukkit/event/server/ServerCommandEvent.html
+- name: org/bukkit/event/server/ServerCommandEvent
   description: ''
-- name: org/bukkit/event/server/ServerEvent.html
+- name: org/bukkit/event/server/ServerEvent
   description: ''
-- name: org/bukkit/event/server/ServerListPingEvent.html
+- name: org/bukkit/event/server/ServerListPingEvent
   description: ''
-- name: org/bukkit/event/server/ServerLoadEvent.html
+- name: org/bukkit/event/server/ServerLoadEvent
   description: ''
-- name: org/bukkit/event/server/ServiceEvent.html
+- name: org/bukkit/event/server/ServiceEvent
   description: ''
-- name: org/bukkit/event/server/ServiceRegisterEvent.html
+- name: org/bukkit/event/server/ServiceRegisterEvent
   description: ''
-- name: org/bukkit/event/server/ServiceUnregisterEvent.html
+- name: org/bukkit/event/server/ServiceUnregisterEvent
   description: ''
-- name: org/bukkit/event/server/TabCompleteEvent.html
+- name: org/bukkit/event/server/TabCompleteEvent
   description: ''
-- name: org/bukkit/event/vehicle/VehicleBlockCollisionEvent.html
+- name: org/bukkit/event/vehicle/VehicleBlockCollisionEvent
   description: ''
-- name: org/bukkit/event/vehicle/VehicleCollisionEvent.html
+- name: org/bukkit/event/vehicle/VehicleCollisionEvent
   description: ''
-- name: org/bukkit/event/vehicle/VehicleCreateEvent.html
+- name: org/bukkit/event/vehicle/VehicleCreateEvent
   description: ''
-- name: org/bukkit/event/vehicle/VehicleDamageEvent.html
+- name: org/bukkit/event/vehicle/VehicleDamageEvent
   description: ''
-- name: org/bukkit/event/vehicle/VehicleDestroyEvent.html
+- name: org/bukkit/event/vehicle/VehicleDestroyEvent
   description: ''
-- name: org/bukkit/event/vehicle/VehicleEnterEvent.html
+- name: org/bukkit/event/vehicle/VehicleEnterEvent
   description: ''
-- name: org/bukkit/event/vehicle/VehicleEntityCollisionEvent.html
+- name: org/bukkit/event/vehicle/VehicleEntityCollisionEvent
   description: ''
-- name: org/bukkit/event/vehicle/VehicleEvent.html
+- name: org/bukkit/event/vehicle/VehicleEvent
   description: ''
-- name: org/bukkit/event/vehicle/VehicleExitEvent.html
+- name: org/bukkit/event/vehicle/VehicleExitEvent
   description: ''
-- name: org/bukkit/event/vehicle/VehicleMoveEvent.html
+- name: org/bukkit/event/vehicle/VehicleMoveEvent
   description: ''
-- name: org/bukkit/event/vehicle/VehicleUpdateEvent.html
+- name: org/bukkit/event/vehicle/VehicleUpdateEvent
   description: ''
-- name: org/bukkit/event/weather/LightningStrikeEvent.html
+- name: org/bukkit/event/weather/LightningStrikeEvent
   description: ''
-- name: org/bukkit/event/weather/ThunderChangeEvent.html
+- name: org/bukkit/event/weather/ThunderChangeEvent
   description: ''
-- name: org/bukkit/event/weather/WeatherChangeEvent.html
+- name: org/bukkit/event/weather/WeatherChangeEvent
   description: ''
-- name: org/bukkit/event/weather/WeatherEvent.html
+- name: org/bukkit/event/weather/WeatherEvent
   description: ''
-- name: org/bukkit/event/world/ChunkEvent.html
+- name: org/bukkit/event/world/ChunkEvent
   description: ''
-- name: org/bukkit/event/world/ChunkLoadEvent.html
+- name: org/bukkit/event/world/ChunkLoadEvent
   description: ''
-- name: org/bukkit/event/world/ChunkPopulateEvent.html
+- name: org/bukkit/event/world/ChunkPopulateEvent
   description: ''
-- name: org/bukkit/event/world/ChunkUnloadEvent.html
+- name: org/bukkit/event/world/ChunkUnloadEvent
   description: ''
-- name: org/bukkit/event/world/LootGenerateEvent.html
+- name: org/bukkit/event/world/LootGenerateEvent
   description: ''
-- name: org/bukkit/event/world/PortalCreateEvent.html
+- name: org/bukkit/event/world/PortalCreateEvent
   description: ''
-- name: org/bukkit/event/world/SpawnChangeEvent.html
+- name: org/bukkit/event/world/SpawnChangeEvent
   description: ''
-- name: org/bukkit/event/world/StructureGrowEvent.html
+- name: org/bukkit/event/world/StructureGrowEvent
   description: ''
-- name: org/bukkit/event/world/TimeSkipEvent.html
+- name: org/bukkit/event/world/TimeSkipEvent
   description: ''
-- name: org/bukkit/event/world/WorldEvent.html
+- name: org/bukkit/event/world/WorldEvent
   description: ''
-- name: org/bukkit/event/world/WorldInitEvent.html
+- name: org/bukkit/event/world/WorldInitEvent
   description: ''
-- name: org/bukkit/event/world/WorldLoadEvent.html
+- name: org/bukkit/event/world/WorldLoadEvent
   description: ''
-- name: org/bukkit/event/world/WorldSaveEvent.html
+- name: org/bukkit/event/world/WorldSaveEvent
   description: ''
-- name: org/bukkit/event/world/WorldUnloadEvent.html
+- name: org/bukkit/event/world/WorldUnloadEvent
   description: ''
-- name: org/spigotmc/event/entity/EntityDismountEvent.html
+- name: org/spigotmc/event/entity/EntityDismountEvent
   description: ''
-- name: org/spigotmc/event/entity/EntityMountEvent.html
+- name: org/spigotmc/event/entity/EntityMountEvent
   description: ''
-- name: org/spigotmc/event/player/PlayerSpawnLocationEvent.html
+- name: org/spigotmc/event/player/PlayerSpawnLocationEvent
   description: ''
