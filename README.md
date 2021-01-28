@@ -58,15 +58,25 @@ AreaEffectCloud の効果が付与される際に呼び出される。5ティッ
 - 水不足によってサンゴが死んだサンゴに変わる時。
 - カメが孵化し、カメの卵が破裂する時。
 ### `paper` [BlockFailedDispenseEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/BlockFailedDispenseEvent.html)
-
+ディスペンサーにアイテムが存在せず、射出されなかった際に呼び出される。
 ### `bukkit` [BlockFertilizeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockFertilizeEvent.html)
-
+プレイヤーが骨粉を使用し、ブロックに変更が生じる際に呼び出される。[StructureGrowEvent](#bukkit-structuregrowevent) の後に呼び出される。
 ### `bukkit` [BlockFormEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockFormEvent.html)
-
+自然にブロックが形成される際に呼び出される。[BlockSpreadEvent](#bukkit-blockspreadevent) とは違い、ランダムに形成されないブロックに対して呼び出される。以下に例を示す。
+- 吹雪により雪が積もる時。
+- 雪に覆われたバイオームで氷が形成される時。
+- 水との接触による黒曜石や丸石の形成される時。
+- コンクリートパウダーと水の混合によるコンクリートが成形される時。
 ### `bukkit` [BlockFromToEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockFromToEvent.html)
-
+ブロックの変更が起こる際に呼び出される。液体が流れる時とドラゴンの卵がテレポートする時のみ呼び出される。
 ### `bukkit` [BlockGrowEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockGrowEvent.html)
-
+自然に作物等が成長する際に呼び出される。以下に例を示す。
+- 小麦
+- サトウキビ
+- サボテン
+- スイカ
+- かぼちゃ
+- カメの卵
 ### `bukkit` [BlockIgniteEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockIgniteEvent.html)
 
 ### `bukkit` [BlockMultiPlaceEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockMultiPlaceEvent.html)

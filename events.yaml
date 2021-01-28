@@ -119,27 +119,46 @@
   link: >-
     https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/BlockFailedDispenseEvent.html
   source: paper
-  description: ''
+  description: ディスペンサーにアイテムが存在せず、射出されなかった際に呼び出される。
 - name: BlockFertilizeEvent
   link: >-
     https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockFertilizeEvent.html
   source: bukkit
-  description: ''
+  description: >-
+    プレイヤーが骨粉を使用し、ブロックに変更が生じる際に呼び出される。[StructureGrowEvent](#bukkit-structuregrowevent)
+    の後に呼び出される。
 - name: BlockFormEvent
   link: >-
     https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockFormEvent.html
   source: bukkit
-  description: ''
+  description: >-
+    自然にブロックが形成される際に呼び出される。[BlockSpreadEvent](#bukkit-blockspreadevent)
+    とは違い、ランダムに形成されないブロックに対して呼び出される。以下に例を示す。
+
+    - 吹雪により雪が積もる時。
+
+    - 雪に覆われたバイオームで氷が形成される時。
+
+    - 水との接触による黒曜石や丸石の形成される時。
+
+    - コンクリートパウダーと水の混合によるコンクリートが成形される時。
 - name: BlockFromToEvent
   link: >-
     https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockFromToEvent.html
   source: bukkit
-  description: ''
+  description: ブロックの変更が起こる際に呼び出される。液体が流れる時とドラゴンの卵がテレポートする時のみ呼び出される。
 - name: BlockGrowEvent
   link: >-
     https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockGrowEvent.html
   source: bukkit
-  description: ''
+  description: |-
+    自然に作物等が成長する際に呼び出される。以下に例を示す。
+    - 小麦
+    - サトウキビ
+    - サボテン
+    - スイカ
+    - かぼちゃ
+    - カメの卵
 - name: BlockIgniteEvent
   link: >-
     https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockIgniteEvent.html
