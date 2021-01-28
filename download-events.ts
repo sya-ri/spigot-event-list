@@ -37,23 +37,23 @@ const main = () => {
       // 前回のデータをロード
       const lastData = yaml.load(fs.readFileSync(EventsYaml, "utf8"));
       const lastEvents = lastData.reduce((map, value) => {
-        map[value.name] = value
-        return map
+        map[value.name] = value;
+        return map;
       }, {});
 
       // 取得したイベント一覧からデータを作成
       const data = events.map((event) => {
-        let description = ""
-        const lastEvent = lastEvents[event.name]
+        let description = "";
+        const lastEvent = lastEvents[event.name];
         if (lastEvent) {
-          description = lastEvent.description
+          description = lastEvent.description;
         }
         return {
           name: event.name,
           link: event.link,
           source: event.source,
           description: description,
-        }
+        };
       });
 
       // データを並び替え
