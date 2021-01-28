@@ -62,11 +62,18 @@ const main = () => {
       });
 
       // events.yaml に保存
-      fs.writeFile(EventsYaml, yaml.dump(data), "utf8", (err) => {
-        if (err) {
-          console.error(err.message);
+      fs.writeFile(
+        EventsYaml,
+        yaml.dump(data, {
+          lineWidth: 200,
+        }),
+        "utf8",
+        (err) => {
+          if (err) {
+            console.error(err.message);
+          }
         }
-      });
+      );
     } catch (e) {
       console.error(e);
     }
