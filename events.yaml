@@ -34,67 +34,67 @@
   link: >-
     https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/BatToggleSleepEvent.html
   source: bukkit
-  description: ''
+  description: コウモリが眠ったり起きたりする際に呼び出される。
 - name: BeaconEffectEvent
   link: >-
     https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/block/BeaconEffectEvent.html
   source: paper
-  description: ''
+  description: ビーコンの効果がプレイヤーに適用される際に呼び出される。
 - name: BellRingEvent
   link: >-
     https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/BellRingEvent.html
   source: paper
-  description: ''
+  description: ベルが鳴った際に呼び出される。
 - name: BlockBreakEvent
   link: >-
     https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockBreakEvent.html
   source: bukkit
-  description: ''
+  description: プレイヤーがブロックを破壊した際に呼び出される。
 - name: BlockBurnEvent
   link: >-
     https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockBurnEvent.html
   source: bukkit
-  description: ''
+  description: ブロックが燃え尽きて破壊された際に呼び出される。
 - name: BlockCanBuildEvent
   link: >-
     https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockCanBuildEvent.html
   source: bukkit
-  description: ''
+  description: ブロックを設置しようとした際に呼び出される。設置可能かどうかを確認する。
 - name: BlockCookEvent
   link: >-
     https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockCookEvent.html
   source: bukkit
-  description: ''
+  description: アイテムがブロックを用いて調理された際に呼び出される。
 - name: BlockDamageEvent
   link: >-
     https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockDamageEvent.html
   source: bukkit
-  description: ''
+  description: プレイヤーがブロックを損傷させた際に呼び出される。
 - name: BlockDestroyEvent
   link: >-
     https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/block/BlockDestroyEvent.html
   source: paper
-  description: ''
+  description: サーバーがブロックを破棄する際に呼び出される。
 - name: BlockDispenseArmorEvent
   link: >-
     https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockDispenseArmorEvent.html
   source: bukkit
-  description: ''
+  description: ディスペンサーから装備可能なアイテムが射出され、エンティティに装備される際に呼び出される。
 - name: BlockDispenseEvent
   link: >-
     https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockDispenseEvent.html
   source: bukkit
-  description: ''
+  description: ディスペンサーからアイテムが射出される際に呼び出される。
 - name: BlockDropItemEvent
   link: >-
     https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockDropItemEvent.html
   source: bukkit
-  description: ''
+  description: プレイヤーによって破壊されたブロックがアイテムとしてドロップした際に呼び出される。
 - name: BlockEvent
   link: >-
     https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockEvent.html
   source: bukkit
-  description: ''
+  description: ブロック関連のイベントを表す。
 - name: BlockExpEvent
   link: >-
     https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockExpEvent.html
