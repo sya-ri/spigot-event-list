@@ -10,7 +10,7 @@ https://papermc.io/javadocs/paper/1.16/ を元に作成しています。
 
 ## イベント一覧
 ### `paper` [AnvilDamagedEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/block/AnvilDamagedEvent.html)
-使用時に金床が損傷した際に呼び出される。
+使用したことで金床が損傷する際に呼び出される。
 ### `bukkit` [AreaEffectCloudApplyEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/AreaEffectCloudApplyEvent.html)
 AreaEffectCloud の効果が付与される際に呼び出される。5ティック毎に1回発生する。
 ### `bukkit` [ArrowBodyCountChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ArrowBodyCountChangeEvent.html)
@@ -26,17 +26,17 @@ AreaEffectCloud の効果が付与される際に呼び出される。5ティッ
 ### `paper` [BeaconEffectEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/block/BeaconEffectEvent.html)
 ビーコンの効果がプレイヤーに適用される際に呼び出される。
 ### `paper` [BellRingEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/BellRingEvent.html)
-ベルが鳴った際に呼び出される。
+ベルが鳴る際に呼び出される。
 ### `bukkit` [BlockBreakEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockBreakEvent.html)
-プレイヤーがブロックを破壊した際に呼び出される。
+プレイヤーがブロックを破壊する際に呼び出される。
 ### `bukkit` [BlockBurnEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockBurnEvent.html)
-ブロックが燃え尽きて破壊された際に呼び出される。
+ブロックが燃え尽きて破壊される際に呼び出される。
 ### `bukkit` [BlockCanBuildEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockCanBuildEvent.html)
 ブロックを設置しようとした際に呼び出される。設置可能かどうかを確認する。
 ### `bukkit` [BlockCookEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockCookEvent.html)
-アイテムがブロックを用いて調理された際に呼び出される。
+アイテムがブロックを用いて調理される際に呼び出される。
 ### `bukkit` [BlockDamageEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockDamageEvent.html)
-プレイヤーがブロックを損傷させた際に呼び出される。
+プレイヤーがブロックを損傷させる際に呼び出される。
 ### `paper` [BlockDestroyEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/block/BlockDestroyEvent.html)
 サーバーがブロックを破棄する際に呼び出される。
 ### `bukkit` [BlockDispenseArmorEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockDispenseArmorEvent.html)
@@ -44,7 +44,7 @@ AreaEffectCloud の効果が付与される際に呼び出される。5ティッ
 ### `bukkit` [BlockDispenseEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockDispenseEvent.html)
 ディスペンサーからアイテムが射出される際に呼び出される。
 ### `bukkit` [BlockDropItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockDropItemEvent.html)
-プレイヤーによって破壊されたブロックがアイテムとしてドロップした際に呼び出される。
+プレイヤーによって破壊されたブロックがアイテムとしてドロップする際に呼び出される。
 ### `bukkit` [BlockEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockEvent.html)
 ブロック関連のイベントを表す。
 ### `bukkit` [BlockExpEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockExpEvent.html)
@@ -52,7 +52,7 @@ AreaEffectCloud の効果が付与される際に呼び出される。5ティッ
 ### `bukkit` [BlockExplodeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockExplodeEvent.html)
 ブロックが爆発する際に呼び出される。
 ### `bukkit` [BlockFadeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockFadeEvent.html)
-自然にブロックが溶けたり消滅したりする際に呼び出される。
+自然にブロックが溶けたり消滅したりする際に呼び出される。例を以下に示す。
 - 光源によって雪や氷が溶ける時。
 - 燃料ブロックを破壊することなく、時間の経過によって火が消える時。
 - 水不足によってサンゴが死んだサンゴに変わる時。

@@ -2,7 +2,7 @@
   link: >-
     https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/block/AnvilDamagedEvent.html
   source: paper
-  description: 使用時に金床が損傷した際に呼び出される。
+  description: 使用したことで金床が損傷する際に呼び出される。
 - name: AreaEffectCloudApplyEvent
   link: >-
     https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/AreaEffectCloudApplyEvent.html
@@ -44,17 +44,17 @@
   link: >-
     https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/BellRingEvent.html
   source: paper
-  description: ベルが鳴った際に呼び出される。
+  description: ベルが鳴る際に呼び出される。
 - name: BlockBreakEvent
   link: >-
     https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockBreakEvent.html
   source: bukkit
-  description: プレイヤーがブロックを破壊した際に呼び出される。
+  description: プレイヤーがブロックを破壊する際に呼び出される。
 - name: BlockBurnEvent
   link: >-
     https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockBurnEvent.html
   source: bukkit
-  description: ブロックが燃え尽きて破壊された際に呼び出される。
+  description: ブロックが燃え尽きて破壊される際に呼び出される。
 - name: BlockCanBuildEvent
   link: >-
     https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockCanBuildEvent.html
@@ -64,12 +64,12 @@
   link: >-
     https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockCookEvent.html
   source: bukkit
-  description: アイテムがブロックを用いて調理された際に呼び出される。
+  description: アイテムがブロックを用いて調理される際に呼び出される。
 - name: BlockDamageEvent
   link: >-
     https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockDamageEvent.html
   source: bukkit
-  description: プレイヤーがブロックを損傷させた際に呼び出される。
+  description: プレイヤーがブロックを損傷させる際に呼び出される。
 - name: BlockDestroyEvent
   link: >-
     https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/block/BlockDestroyEvent.html
@@ -89,7 +89,7 @@
   link: >-
     https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockDropItemEvent.html
   source: bukkit
-  description: プレイヤーによって破壊されたブロックがアイテムとしてドロップした際に呼び出される。
+  description: プレイヤーによって破壊されたブロックがアイテムとしてドロップする際に呼び出される。
 - name: BlockEvent
   link: >-
     https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockEvent.html
@@ -110,7 +110,7 @@
     https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockFadeEvent.html
   source: bukkit
   description: |-
-    自然にブロックが溶けたり消滅したりする際に呼び出される。
+    自然にブロックが溶けたり消滅したりする際に呼び出される。例を以下に示す。
     - 光源によって雪や氷が溶ける時。
     - 燃料ブロックを破壊することなく、時間の経過によって火が消える時。
     - 水不足によってサンゴが死んだサンゴに変わる時。
