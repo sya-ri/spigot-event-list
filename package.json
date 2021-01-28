@@ -6,10 +6,10 @@
   "license": "ISC",
   "author": "sya_ri",
   "scripts": {
-    "download": "ts-node download-events.ts",
-    "generate": "ts-node generate-output.ts",
-    "lint": "eslint .",
-    "lint:fix": "eslint --fix .",
+    "download": "ts-node src/download-events.ts",
+    "generate": "ts-node src/generate-output.ts",
+    "lint": "eslint src",
+    "lint:fix": "eslint --fix src",
     "update": "npm run download && npm run generate"
   },
   "dependencies": {

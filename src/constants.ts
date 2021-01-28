@@ -1,9 +1,9 @@
 export const JavaDocUrl = "https://papermc.io/javadocs/paper/1.16/";
 export const AllClassesHtml = "allclasses-noframe.html";
 export const EventsYaml = "events.yaml";
-export const TemplateReadmeFileName = "README-template.md";
+export const TemplateReadmeFileName = "template/README-template.md";
 export const OutputReadmeFileName = "README.md";
-export const TemplateOnlyEventSourceFileName = "env-only-template.md";
+export const TemplateOnlyEventSourceFileName = "template/env-only-template.md";
 export const OutputOnlyEventSourceFileName = "-only.md";
 export const DoNotEditMessage = `<!--
 
