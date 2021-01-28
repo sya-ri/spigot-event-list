@@ -7,5 +7,6 @@ assignees: ''
 
 ---
 
-**名前**: <Name>
+**GitHub**: <URL>
+  
 **JavaDoc**: <URL>
