@@ -9,9 +9,9 @@ Bukkit, Spigot, Paper のイベント一覧です。
 https://papermc.io/javadocs/paper/1.16/ を元に作成しています。
 
 ## 環境毎のイベント一覧
-- [bukkit](bukkit-only.md)
-- [paper](paper-only.md)
-- [spigot](spigot-only.md)
+- [bukkit](only-bukkit.md)
+- [paper](only-paper.md)
+- [spigot](only-spigot.md)
 
 ## イベント一覧
 ### `paper` [AnvilDamagedEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/block/AnvilDamagedEvent.html)

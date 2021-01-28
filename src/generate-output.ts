@@ -30,7 +30,7 @@ const main = () => {
 
   Object.keys(sourceEvents).forEach((source) => {
     fs.writeFileSync(
-      source + OutputOnlyEventSourceFileName,
+        OutputOnlyEventSourceFileName.replace("{name}", source),
       DoNotEditMessage +
         Handlebars.compile(
           fs.readFileSync(TemplateOnlyEventSourceFileName, "utf8")
@@ -55,7 +55,7 @@ const main = () => {
           .map((name) => {
             return {
               name: name,
-              link: name + OutputOnlyEventSourceFileName,
+              link: OutputOnlyEventSourceFileName.replace("{name}", name),
             };
           }),
       }),
