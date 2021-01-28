@@ -34,19 +34,25 @@ const main = () => {
         }
       });
 
-      // events.yaml をロード
-      const data = yaml.load(fs.readFileSync(EventsYaml, "utf8"));
+      // 前回のデータをロード
+      const lastData = yaml.load(fs.readFileSync(EventsYaml, "utf8"));
+      const lastEvents = lastData.reduce((map, value) => {
+        map[value.name] = value
+        return map
+      }, {});
 
-      // events.yaml に存在しない新しいイベントを追加
-      const lastEventNames = data.map((value) => value.name);
-      events.forEach((event) => {
-        if (!lastEventNames.includes(event.name)) {
-          data.push({
-            name: event.name,
-            link: event.link,
-            source: event.source,
-            description: "",
-          });
+      // 取得したイベント一覧からデータを作成
+      const data = events.map((event) => {
+        let description = ""
+        const lastEvent = lastEvents[event.name]
+        if (lastEvent) {
+          description = lastEvent.description
+        }
+        return {
+          name: event.name,
+          link: event.link,
+          source: event.source,
+          description: description,
         }
       });
 
