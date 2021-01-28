@@ -48,11 +48,15 @@ AreaEffectCloud の効果が付与される際に呼び出される。5ティッ
 ### `bukkit` [BlockEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockEvent.html)
 ブロック関連のイベントを表す。
 ### `bukkit` [BlockExpEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockExpEvent.html)
-
+ブロックが経験値を落とす際に呼び出される。
 ### `bukkit` [BlockExplodeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockExplodeEvent.html)
-
+ブロックが爆発する際に呼び出される。
 ### `bukkit` [BlockFadeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockFadeEvent.html)
-
+自然にブロックが溶けたり消滅したりする際に呼び出される。
+- 光源によって雪や氷が溶ける時。
+- 燃料ブロックを破壊することなく、時間の経過によって火が消える時。
+- 水不足によってサンゴが死んだサンゴに変わる時。
+- カメが孵化し、カメの卵が破裂する時。
 ### `paper` [BlockFailedDispenseEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/BlockFailedDispenseEvent.html)
 
 ### `bukkit` [BlockFertilizeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockFertilizeEvent.html)
