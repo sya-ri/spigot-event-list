@@ -21,7 +21,7 @@
 - name: AsyncTabCompleteEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/server/AsyncTabCompleteEvent.html
   source: paper
-  description: タブ補完を行う際に呼び出される。非同期で処理される。このイベントが結果を返す時、標準のタブ補完処理は発生しない。ただし、 [TabCompleteEvent](#bukkit-tabcompleteevent) は非同期の結果と共に呼び出される。
+  description: タブ補完を行う際に呼び出される。非同期で処理される。このイベントが結果を返す時、標準のタブ補完処理は発生しない。ただし、 [TabCompleteEvent](README.md#bukkit-tabcompleteevent) は非同期の結果と共に呼び出される。
 - name: BatToggleSleepEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/BatToggleSleepEvent.html
   source: bukkit
@@ -98,7 +98,7 @@
 - name: BlockFertilizeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockFertilizeEvent.html
   source: bukkit
-  description: プレイヤーが骨粉を使用し、ブロックに変更が生じる際に呼び出される。[StructureGrowEvent](#bukkit-structuregrowevent) の後に呼び出される。
+  description: プレイヤーが骨粉を使用し、ブロックに変更が生じる際に呼び出される。[StructureGrowEvent](README.md#bukkit-structuregrowevent) の後に呼び出される。
 - name: BlockFormEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockFormEvent.html
   source: bukkit

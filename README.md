@@ -25,7 +25,7 @@ AreaEffectCloud の効果が付与される際に呼び出される。5ティッ
 ### `bukkit` [AsyncPlayerPreLoginEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/AsyncPlayerPreLoginEvent.html)
 プレイヤーがログインしようとしている際に呼び出される。非同期で処理される。
 ### `paper` [AsyncTabCompleteEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/server/AsyncTabCompleteEvent.html)
-タブ補完を行う際に呼び出される。非同期で処理される。このイベントが結果を返す時、標準のタブ補完処理は発生しない。ただし、 [TabCompleteEvent](#bukkit-tabcompleteevent) は非同期の結果と共に呼び出される。
+タブ補完を行う際に呼び出される。非同期で処理される。このイベントが結果を返す時、標準のタブ補完処理は発生しない。ただし、 [TabCompleteEvent](README.md#bukkit-tabcompleteevent) は非同期の結果と共に呼び出される。
 ### `bukkit` [BatToggleSleepEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/BatToggleSleepEvent.html)
 コウモリが眠ったり起きたりする際に呼び出される。
 ### `paper` [BeaconEffectEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/block/BeaconEffectEvent.html)
@@ -65,7 +65,7 @@ AreaEffectCloud の効果が付与される際に呼び出される。5ティッ
 ### `paper` [BlockFailedDispenseEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/BlockFailedDispenseEvent.html)
 ディスペンサーにアイテムが存在せず、射出されなかった際に呼び出される。
 ### `bukkit` [BlockFertilizeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockFertilizeEvent.html)
-プレイヤーが骨粉を使用し、ブロックに変更が生じる際に呼び出される。[StructureGrowEvent](#bukkit-structuregrowevent) の後に呼び出される。
+プレイヤーが骨粉を使用し、ブロックに変更が生じる際に呼び出される。[StructureGrowEvent](README.md#bukkit-structuregrowevent) の後に呼び出される。
 ### `bukkit` [BlockFormEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockFormEvent.html)
 自然にブロックが形成される際に呼び出される。[BlockSpreadEvent](#bukkit-blockspreadevent) とは違い、ランダムに形成されないブロックに対して呼び出される。以下に例を示す。
 - 吹雪により雪が積もる時。
