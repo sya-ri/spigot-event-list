@@ -1,5 +1,5 @@
 export const JavaDocUrl = "https://papermc.io/javadocs/paper/1.16/";
-export const AllClassesNoFrame = "allclasses-noframe.html";
+export const AllClassesHtml = "allclasses-noframe.html";
 export const EventsYaml = "events.yaml";
 export const TemplateReadmeFileName = "README-template.md";
 export const OutputReadmeFileName = "README.md";

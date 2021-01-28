@@ -4,13 +4,13 @@ import fs = require("fs");
 import yaml = require("js-yaml");
 import {
   JavaDocUrl,
-  AllClassesNoFrame,
+  AllClassesHtml,
   EventsYaml,
   getEventSource,
 } from "./constants";
 
 const main = () => {
-  request(JavaDocUrl + AllClassesNoFrame, function (e, response, body) {
+  request(JavaDocUrl + AllClassesHtml, function (e, response, body) {
     if (e) {
       console.error(e);
     }
