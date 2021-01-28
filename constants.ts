@@ -1,11 +1,13 @@
 export const JavaDocUrl = "https://papermc.io/javadocs/paper/1.16/";
 export const AllClassesNoFrame = "allclasses-noframe.html";
 export const EventsYaml = "events.yaml";
-export const OutputTemplateFileName = "README-template.md";
-export const OutputFileName = "README.md";
+export const TemplateReadmeFileName = "README-template.md";
+export const OutputReadmeFileName = "README.md";
+export const TemplateOnlyEventSourceFileName = "env-only-template.md";
+export const OutputOnlyEventSourceFileName = "-only.md";
 export const DoNotEditMessage = `<!--
 
-自動生成です。直接編集せず、README-template.md を編集してください。
+自動生成です。直接編集しないでください。
 
 -->
 `;
