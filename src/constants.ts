@@ -3,7 +3,8 @@ export const AllClassesHtml = "allclasses-noframe.html";
 export const EventsYaml = "events.yaml";
 export const TemplateReadmeFileName = "template/README-template.md";
 export const OutputReadmeFileName = "README.md";
-export const TemplateOnlyEventSourceFileName = "template/only-source-template.md";
+export const TemplateOnlyEventSourceFileName =
+  "template/only-source-template.md";
 export const OutputOnlyEventSourceFileName = "only-{name}.md";
 export const DoNotEditMessage = `<!--
 
