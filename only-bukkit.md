@@ -27,7 +27,7 @@
 ### `bukkit` [BlockDispenseArmorEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockDispenseArmorEvent.html)
 ディスペンサーから装備可能なアイテムが射出され、エンティティに装備される際に呼び出される。
 ### `bukkit` [BlockDispenseEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockDispenseEvent.html)
-ディスペンサーからアイテムが射出される際に呼び出される。
+ディスペンサーからアイテムが射出される際に呼び出される。このイベントをキャンセルしてもアイテムが減るバグが存在するので [BlockPreDispenseEvent](README.md#paper-blockpredispenseevent) を使うことを推奨する。
 ### `bukkit` [BlockDropItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockDropItemEvent.html)
 プレイヤーによって破壊されたブロックがアイテムとしてドロップする際に呼び出される。
 ### `bukkit` [BlockEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockEvent.html)
@@ -61,31 +61,33 @@
 - かぼちゃ
 - カメの卵
 ### `bukkit` [BlockIgniteEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockIgniteEvent.html)
-
+ブロックが点火された際に呼び出される。
 ### `bukkit` [BlockMultiPlaceEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockMultiPlaceEvent.html)
-
+プレイヤーがマルチブロックを設置する際に呼び出される。
 ### `bukkit` [BlockPhysicsEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockPhysicsEvent.html)
-
+ブロックの落下確認をする際に呼び出される。高頻度で呼び出されるので処理には注意が必要。
 ### `bukkit` [BlockPistonEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockPistonEvent.html)
-
+ピストンが動作する際に呼び出される。
 ### `bukkit` [BlockPistonExtendEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockPistonExtendEvent.html)
-
+ピストンが伸びる際に呼び出される。
 ### `bukkit` [BlockPistonRetractEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockPistonRetractEvent.html)
-
+ピストンが縮む際に呼び出される。
 ### `bukkit` [BlockPlaceEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockPlaceEvent.html)
-
+プレイヤーがブロックを設置する際に呼び出される。
 ### `bukkit` [BlockRedstoneEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockRedstoneEvent.html)
-
+レッドストーンの強さが変化する際に呼び出される。
 ### `bukkit` [BlockShearEntityEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockShearEntityEvent.html)
-
+ディスペンサーが羊の毛も刈る際に呼び出される。
 ### `bukkit` [BlockSpreadEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockSpreadEvent.html)
-
+ブロックが拡散する際に呼び出される。[BlockFormEvent](#bukkit-blockformevent) とは違い、ランダムに形成されるブロックに対して呼び出される。以下に例を示す。
+- キノコが増える時。
+- 火が燃え広がる時。
 ### `bukkit` [BrewEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/BrewEvent.html)
-
+醸造が完了する際に呼び出される。
 ### `bukkit` [BrewingStandFuelEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/BrewingStandFuelEvent.html)
-
+燃料としてアイテムが醸造台に使用される際に呼び出される。
 ### `bukkit` [BroadcastMessageEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/BroadcastMessageEvent.html)
-
+サーバーにブロードキャストメッセージが送信された際に呼び出される。メッセージが非同期で送信された場合、イベントも非同期で呼び出される。
 ### `bukkit` [CauldronLevelChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/CauldronLevelChangeEvent.html)
 
 ### `bukkit` [ChunkEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/ChunkEvent.html)

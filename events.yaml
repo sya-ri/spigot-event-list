@@ -65,7 +65,7 @@
 - name: BlockDispenseEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockDispenseEvent.html
   source: bukkit
-  description: ディスペンサーからアイテムが射出される際に呼び出される。
+  description: ディスペンサーからアイテムが射出される際に呼び出される。このイベントをキャンセルしてもアイテムが減るバグが存在するので [BlockPreDispenseEvent](README.md#paper-blockpredispenseevent) を使うことを推奨する。
 - name: BlockDropItemEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockDropItemEvent.html
   source: bukkit
@@ -126,59 +126,62 @@
 - name: BlockIgniteEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockIgniteEvent.html
   source: bukkit
-  description: ''
+  description: ブロックが点火された際に呼び出される。
 - name: BlockMultiPlaceEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockMultiPlaceEvent.html
   source: bukkit
-  description: ''
+  description: プレイヤーがマルチブロックを設置する際に呼び出される。
 - name: BlockPhysicsEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockPhysicsEvent.html
   source: bukkit
-  description: ''
+  description: ブロックの落下確認をする際に呼び出される。高頻度で呼び出されるので処理には注意が必要。
 - name: BlockPistonEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockPistonEvent.html
   source: bukkit
-  description: ''
+  description: ピストンが動作する際に呼び出される。
 - name: BlockPistonExtendEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockPistonExtendEvent.html
   source: bukkit
-  description: ''
+  description: ピストンが伸びる際に呼び出される。
 - name: BlockPistonRetractEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockPistonRetractEvent.html
   source: bukkit
-  description: ''
+  description: ピストンが縮む際に呼び出される。
 - name: BlockPlaceEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockPlaceEvent.html
   source: bukkit
-  description: ''
+  description: プレイヤーがブロックを設置する際に呼び出される。
 - name: BlockPreDispenseEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/BlockPreDispenseEvent.html
   source: paper
-  description: ''
+  description: ディスペンサーからアイテムが射出される際に呼び出される。[BlockDispenseEvent](README.md#bukkit-blockdispenseevent) の前に呼び出されるので、ディスペンサーのアイテム消費もキャンセルできる。
 - name: BlockRedstoneEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockRedstoneEvent.html
   source: bukkit
-  description: ''
+  description: レッドストーンの強さが変化する際に呼び出される。
 - name: BlockShearEntityEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockShearEntityEvent.html
   source: bukkit
-  description: ''
+  description: ディスペンサーが羊の毛も刈る際に呼び出される。
 - name: BlockSpreadEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockSpreadEvent.html
   source: bukkit
-  description: ''
+  description: |-
+    ブロックが拡散する際に呼び出される。[BlockFormEvent](#bukkit-blockformevent) とは違い、ランダムに形成されるブロックに対して呼び出される。以下に例を示す。
+    - キノコが増える時。
+    - 火が燃え広がる時。
 - name: BrewEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/BrewEvent.html
   source: bukkit
-  description: ''
+  description: 醸造が完了する際に呼び出される。
 - name: BrewingStandFuelEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/BrewingStandFuelEvent.html
   source: bukkit
-  description: ''
+  description: 燃料としてアイテムが醸造台に使用される際に呼び出される。
 - name: BroadcastMessageEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/BroadcastMessageEvent.html
   source: bukkit
-  description: ''
+  description: サーバーにブロードキャストメッセージが送信された際に呼び出される。メッセージが非同期で送信された場合、イベントも非同期で呼び出される。
 - name: CauldronLevelChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/CauldronLevelChangeEvent.html
   source: bukkit
