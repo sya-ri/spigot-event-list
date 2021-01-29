@@ -67,6 +67,10 @@ const main = () => {
         }
       });
 
+      // イベント数を出力
+      console.log(`総イベント数: ${data.length}`);
+      console.log(`説明が書かれていないイベント数: ${data.filter((value) => !value.description).length}`);
+
       // events.yaml に保存
       fs.writeFile(
         EventsYaml,
