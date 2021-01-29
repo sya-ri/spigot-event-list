@@ -185,43 +185,43 @@
 - name: CauldronLevelChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/CauldronLevelChangeEvent.html
   source: bukkit
-  description: ''
+  description: 大釜の水が増えたり減ったりした際に呼び出される。
 - name: ChunkEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/ChunkEvent.html
   source: bukkit
-  description: ''
+  description: チャンク関連のイベントを表す
 - name: ChunkLoadEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/ChunkLoadEvent.html
   source: bukkit
-  description: ''
+  description: チャンクが読み込まれた際に呼び出される。
 - name: ChunkPopulateEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/ChunkPopulateEvent.html
   source: bukkit
-  description: ''
+  description: 新しいチャンクが作られた際に呼び出される。
 - name: ChunkUnloadEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/ChunkUnloadEvent.html
   source: bukkit
-  description: ''
+  description: チャンクの読み込みが停止された際に呼び出される。
 - name: ConversationAbandonedEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/conversations/ConversationAbandonedEvent.html
   source: bukkit
-  description: ''
+  description: 不明。
 - name: CraftItemEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/CraftItemEvent.html
   source: bukkit
-  description: ''
+  description: アイテムをクラフトする際に呼び出される。
 - name: CreatureSpawnEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/CreatureSpawnEvent.html
   source: bukkit
-  description: ''
+  description: 生き物がスポーンする際に呼び出される。
 - name: CreeperIgniteEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/CreeperIgniteEvent.html
   source: paper
-  description: ''
+  description: クリーパーの点火状態が切り替わる際に呼び出される。
 - name: CreeperPowerEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/CreeperPowerEvent.html
   source: bukkit
-  description: ''
+  description: クリーパーが雷撃を受ける際に呼び出される。
 - name: EnchantItemEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/enchantment/EnchantItemEvent.html
   source: bukkit
@@ -1041,7 +1041,7 @@
 - name: PrepareItemCraftEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/PrepareItemCraftEvent.html
   source: bukkit
-  description: ''
+  description: クラフトの準備が出来た際に呼び出される。材料を並べ、完成アイテムが表示される毎に発生する。
 - name: PrepareItemEnchantEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/enchantment/PrepareItemEnchantEvent.html
   source: bukkit

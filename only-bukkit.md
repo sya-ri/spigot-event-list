@@ -89,23 +89,23 @@
 ### `bukkit` [BroadcastMessageEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/BroadcastMessageEvent.html)
 サーバーにブロードキャストメッセージが送信された際に呼び出される。メッセージが非同期で送信された場合、イベントも非同期で呼び出される。
 ### `bukkit` [CauldronLevelChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/CauldronLevelChangeEvent.html)
-
+大釜の水が増えたり減ったりした際に呼び出される。
 ### `bukkit` [ChunkEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/ChunkEvent.html)
-
+チャンク関連のイベントを表す
 ### `bukkit` [ChunkLoadEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/ChunkLoadEvent.html)
-
+チャンクが読み込まれた際に呼び出される。
 ### `bukkit` [ChunkPopulateEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/ChunkPopulateEvent.html)
-
+新しいチャンクが作られた際に呼び出される。
 ### `bukkit` [ChunkUnloadEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/ChunkUnloadEvent.html)
-
+チャンクの読み込みが停止された際に呼び出される。
 ### `bukkit` [ConversationAbandonedEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/conversations/ConversationAbandonedEvent.html)
-
+不明。
 ### `bukkit` [CraftItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/CraftItemEvent.html)
-
+アイテムをクラフトする際に呼び出される。
 ### `bukkit` [CreatureSpawnEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/CreatureSpawnEvent.html)
-
+生き物がスポーンする際に呼び出される。
 ### `bukkit` [CreeperPowerEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/CreeperPowerEvent.html)
-
+クリーパーが雷撃を受ける際に呼び出される。
 ### `bukkit` [EnchantItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/enchantment/EnchantItemEvent.html)
 
 ### `bukkit` [EnderDragonChangePhaseEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EnderDragonChangePhaseEvent.html)
@@ -393,7 +393,7 @@
 ### `bukkit` [PrepareAnvilEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/PrepareAnvilEvent.html)
 
 ### `bukkit` [PrepareItemCraftEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/PrepareItemCraftEvent.html)
-
+クラフトの準備が出来た際に呼び出される。材料を並べ、完成アイテムが表示される毎に発生する。
 ### `bukkit` [PrepareItemEnchantEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/enchantment/PrepareItemEnchantEvent.html)
 
 ### `bukkit` [PrepareSmithingEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/PrepareSmithingEvent.html)
