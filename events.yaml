@@ -225,31 +225,31 @@
 - name: EnchantItemEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/enchantment/EnchantItemEvent.html
   source: bukkit
-  description: ''
+  description: アイテムにエンチャントした際に呼び出される。
 - name: EnderDragonChangePhaseEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EnderDragonChangePhaseEvent.html
   source: bukkit
-  description: ''
+  description: エンダードラゴンの攻撃フェーズが変わった際に呼び出される。
 - name: EnderDragonFireballHitEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EnderDragonFireballHitEvent.html
   source: paper
-  description: ''
+  description: エンダードラゴンが放った火球が衝突し、AreaEffectCloud が発生する際に呼び出される。
 - name: EnderDragonFlameEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EnderDragonFlameEvent.html
   source: paper
-  description: ''
+  description: エンダードラゴンが炎を吐き、AreaEffectCloud が発生する際に呼び出される。
 - name: EnderDragonShootFireballEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EnderDragonShootFireballEvent.html
   source: paper
-  description: ''
+  description: エンダードラゴンが火球を放つ際に呼び出される。
 - name: EndermanAttackPlayerEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EndermanAttackPlayerEvent.html
   source: paper
-  description: ''
+  description: エンダーマンがプレイヤーを攻撃するか決定する際に呼び出される。
 - name: EndermanEscapeEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EndermanEscapeEvent.html
   source: paper
-  description: ''
+  description: エンダーマンが逃げた際に呼び出される。
 - name: EntityAddToWorldEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityAddToWorldEvent.html
   source: paper
