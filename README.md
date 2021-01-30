@@ -147,23 +147,25 @@ AreaEffectCloud の効果が付与される際に呼び出される。5ティッ
 ### `paper` [EndermanEscapeEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EndermanEscapeEvent.html)
 エンダーマンが逃げた際に呼び出される。
 ### `paper` [EntityAddToWorldEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityAddToWorldEvent.html)
-
+何らかの理由でワールドにエンティティが増えた際に呼び出される。
 ### `bukkit` [EntityAirChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityAirChangeEvent.html)
-
+エンティティの残り酸素量が変化する際に呼び出される。
 ### `bukkit` [EntityBlockFormEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/EntityBlockFormEvent.html)
-
+エンティティによってブロックが形成される際に呼び出される。以下に例を示す。
+- スノーゴーレムによって雪が形成された時。
+- 氷渡りのエンチャントによって氷が形成された時。
 ### `bukkit` [EntityBreakDoorEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityBreakDoorEvent.html)
-
+エンティティによってドアが破壊される際に呼び出される。
 ### `bukkit` [EntityBreedEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityBreedEvent.html)
-
+エンティティが繁殖する際に呼び出される。
 ### `bukkit` [EntityChangeBlockEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityChangeBlockEvent.html)
-
+エンティティがブロックを変化させる際に呼び出される。適したイベントが見当たらない際に呼び出される。
 ### `bukkit` [EntityCombustByBlockEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityCombustByBlockEvent.html)
-
+ブロックによってエンティティが炎上する際に呼び出される。
 ### `bukkit` [EntityCombustByEntityEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityCombustByEntityEvent.html)
-
+エンティティによってエンティティが炎上する際に呼び出される。
 ### `bukkit` [EntityCombustEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityCombustEvent.html)
-
+エンティティが炎上する際に呼び出される。
 ### `bukkit` [EntityCreatePortalEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityCreatePortalEvent.html)
 
 ### `bukkit` [EntityDamageByBlockEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityDamageByBlockEvent.html)

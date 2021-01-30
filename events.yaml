@@ -253,39 +253,42 @@
 - name: EntityAddToWorldEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityAddToWorldEvent.html
   source: paper
-  description: ''
+  description: 何らかの理由でワールドにエンティティが増えた際に呼び出される。
 - name: EntityAirChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityAirChangeEvent.html
   source: bukkit
-  description: ''
+  description: エンティティの残り酸素量が変化する際に呼び出される。
 - name: EntityBlockFormEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/EntityBlockFormEvent.html
   source: bukkit
-  description: ''
+  description: |-
+    エンティティによってブロックが形成される際に呼び出される。以下に例を示す。
+    - スノーゴーレムによって雪が形成された時。
+    - 氷渡りのエンチャントによって氷が形成された時。
 - name: EntityBreakDoorEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityBreakDoorEvent.html
   source: bukkit
-  description: ''
+  description: エンティティによってドアが破壊される際に呼び出される。
 - name: EntityBreedEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityBreedEvent.html
   source: bukkit
-  description: ''
+  description: エンティティが繁殖する際に呼び出される。
 - name: EntityChangeBlockEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityChangeBlockEvent.html
   source: bukkit
-  description: ''
+  description: エンティティがブロックを変化させる際に呼び出される。適したイベントが見当たらない際に呼び出される。
 - name: EntityCombustByBlockEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityCombustByBlockEvent.html
   source: bukkit
-  description: ''
+  description: ブロックによってエンティティが炎上する際に呼び出される。
 - name: EntityCombustByEntityEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityCombustByEntityEvent.html
   source: bukkit
-  description: ''
+  description: エンティティによってエンティティが炎上する際に呼び出される。
 - name: EntityCombustEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityCombustEvent.html
   source: bukkit
-  description: ''
+  description: エンティティが炎上する際に呼び出される。
 - name: EntityCreatePortalEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityCreatePortalEvent.html
   source: bukkit
