@@ -1,3 +1,12 @@
+import { EventSource } from "./data-class";
+
+export const EventSources: EventSource[] = [
+  {
+    javadocUrl: "https://papermc.io/javadocs/paper/1.16/",
+    allClasses: "allclasses-noframe.html",
+    version: "1.16.5-paper-build-455",
+  },
+];
 export const EventsYaml = "events.yaml";
 export const TemplateReadmeFileName = "template/README-template.md";
 export const OutputReadmeFileName = "README.md";

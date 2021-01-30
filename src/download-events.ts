@@ -2,54 +2,50 @@ import requestPromise = require("request-promise");
 import cheerio = require("cheerio");
 import fs = require("fs");
 import yaml = require("js-yaml");
-import { EventsYaml, getEventSource } from "./constants";
-
-class Event {
-  name: string;
-  link: string;
-  source: string;
-  description: string;
-}
+import { EventSources, EventsYaml, getEventSource } from "./constants";
+import { Event, EventSource } from "./data-class";
 
 async function downloadEvents(
   lastEvents: { string: Event },
   events: Event[],
-  javadocUrl: string,
-  allClasses: string
+  source: EventSource
 ) {
-  return requestPromise(javadocUrl + allClasses, function (e, response, body) {
-    if (e) {
-      console.error(e);
-    }
+  return requestPromise(
+    source.javadocUrl + source.allClasses,
+    function (e, response, body) {
+      if (e) {
+        console.error(e);
+      }
 
-    try {
-      // javadoc から イベント一覧を作成
-      const $ = cheerio.load(body);
-      $("a").each(function (_, element) {
-        const a = $(element);
-        const href = a.prop("href");
-        if (href.endsWith("Event.html")) {
-          const name = href
-            .substring(0, href.length - 5)
-            .split("/")
-            .pop();
-          let description = "";
-          const lastEvent = lastEvents[name];
-          if (lastEvent) {
-            description = lastEvent.description;
+      try {
+        // javadoc から イベント一覧を作成
+        const $ = cheerio.load(body);
+        $("a").each(function (_, element) {
+          const a = $(element);
+          const href = a.prop("href");
+          if (href.endsWith("Event.html")) {
+            const name = href
+              .substring(0, href.length - 5)
+              .split("/")
+              .pop();
+            let description = "";
+            const lastEvent = lastEvents[name];
+            if (lastEvent) {
+              description = lastEvent.description;
+            }
+            events.push({
+              name: name,
+              link: source.javadocUrl + href,
+              source: getEventSource(href),
+              description,
+            });
           }
-          events.push({
-            name: name,
-            link: javadocUrl + href,
-            source: getEventSource(href),
-            description,
-          });
-        }
-      });
-    } catch (e) {
-      console.error(e);
+        });
+      } catch (e) {
+        console.error(e);
+      }
     }
-  });
+  );
 }
 
 const main = async () => {
@@ -63,12 +59,9 @@ const main = async () => {
   const events: Event[] = [];
 
   // イベントをダウンロード
-  await downloadEvents(
-    lastEvents,
-    events,
-    "https://papermc.io/javadocs/paper/1.16/",
-    "allclasses-noframe.html"
-  );
+  for (const source of EventSources) {
+    await downloadEvents(lastEvents, events, source);
+  }
 
   // データを並び替え
   events.sort((a, b) => {
