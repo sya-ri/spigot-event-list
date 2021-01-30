@@ -16,24 +16,6 @@ const main = () => {
     }
 
     try {
-      // javadoc から イベント一覧を作成
-      const $ = cheerio.load(body);
-      const events = [];
-      $("a").each(function (_, element) {
-        const a = $(element);
-        const href = a.prop("href");
-        if (href.endsWith("Event.html")) {
-          events.push({
-            name: href
-              .substring(0, href.length - 5)
-              .split("/")
-              .pop(),
-            link: JavaDocUrl + href,
-            source: getEventSource(href),
-          });
-        }
-      });
-
       // 前回のデータをロード
       const lastData = yaml.load(fs.readFileSync(EventsYaml, "utf8"));
       const lastEvents = lastData.reduce((map, value) => {
@@ -41,23 +23,33 @@ const main = () => {
         return map;
       }, {});
 
-      // 取得したイベント一覧からデータを作成
-      const data = events.map((event) => {
-        let description = "";
-        const lastEvent = lastEvents[event.name];
-        if (lastEvent) {
-          description = lastEvent.description;
+      // javadoc から イベント一覧を作成
+      const $ = cheerio.load(body);
+      const events = [];
+      $("a").each(function (_, element) {
+        const a = $(element);
+        const href = a.prop("href");
+        if (href.endsWith("Event.html")) {
+          const name = href
+            .substring(0, href.length - 5)
+            .split("/")
+            .pop();
+          let description = "";
+          const lastEvent = lastEvents[name];
+          if (lastEvent) {
+            description = lastEvent.description;
+          }
+          events.push({
+            name: name,
+            link: JavaDocUrl + href,
+            source: getEventSource(href),
+            description,
+          });
         }
-        return {
-          name: event.name,
-          link: event.link,
-          source: event.source,
-          description: description,
-        };
       });
 
       // データを並び替え
-      data.sort((a, b) => {
+      events.sort((a, b) => {
         if (a.name < b.name) {
           return -1;
         } else if (a.name > b.name) {
@@ -68,17 +60,17 @@ const main = () => {
       });
 
       // イベント数を出力
-      console.log(`総イベント数: ${data.length}`);
+      console.log(`総イベント数: ${events.length}`);
       console.log(
         `説明が書かれていないイベント数: ${
-          data.filter((value) => !value.description).length
+          events.filter((value) => !value.description).length
         }`
       );
 
       // events.yaml に保存
       fs.writeFile(
         EventsYaml,
-        yaml.dump(data, {
+        yaml.dump(events, {
           lineWidth: 200,
         }),
         "utf8",
