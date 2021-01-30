@@ -1,31 +1,30 @@
-import request = require("request");
+import requestPromise = require("request-promise");
 import cheerio = require("cheerio");
 import fs = require("fs");
 import yaml = require("js-yaml");
-import {
-  JavaDocUrl,
-  AllClassesHtml,
-  EventsYaml,
-  getEventSource,
-} from "./constants";
+import { EventsYaml, getEventSource } from "./constants";
 
-const main = () => {
-  request(JavaDocUrl + AllClassesHtml, function (e, response, body) {
+class Event {
+  name: string;
+  link: string;
+  source: string;
+  description: string;
+}
+
+async function downloadEvents(
+  lastEvents: { string: Event },
+  events: Event[],
+  javadocUrl: string,
+  allClasses: string
+) {
+  return requestPromise(javadocUrl + allClasses, function (e, response, body) {
     if (e) {
       console.error(e);
     }
 
     try {
-      // 前回のデータをロード
-      const lastData = yaml.load(fs.readFileSync(EventsYaml, "utf8"));
-      const lastEvents = lastData.reduce((map, value) => {
-        map[value.name] = value;
-        return map;
-      }, {});
-
       // javadoc から イベント一覧を作成
       const $ = cheerio.load(body);
-      const events = [];
       $("a").each(function (_, element) {
         const a = $(element);
         const href = a.prop("href");
@@ -41,49 +40,68 @@ const main = () => {
           }
           events.push({
             name: name,
-            link: JavaDocUrl + href,
+            link: javadocUrl + href,
             source: getEventSource(href),
             description,
           });
         }
       });
-
-      // データを並び替え
-      events.sort((a, b) => {
-        if (a.name < b.name) {
-          return -1;
-        } else if (a.name > b.name) {
-          return 1;
-        } else {
-          return 0;
-        }
-      });
-
-      // イベント数を出力
-      console.log(`総イベント数: ${events.length}`);
-      console.log(
-        `説明が書かれていないイベント数: ${
-          events.filter((value) => !value.description).length
-        }`
-      );
-
-      // events.yaml に保存
-      fs.writeFile(
-        EventsYaml,
-        yaml.dump(events, {
-          lineWidth: 200,
-        }),
-        "utf8",
-        (err) => {
-          if (err) {
-            console.error(err.message);
-          }
-        }
-      );
     } catch (e) {
       console.error(e);
     }
   });
+}
+
+const main = async () => {
+  // 前回のデータをロード
+  const lastData = yaml.load(fs.readFileSync(EventsYaml, "utf8"));
+  const lastEvents = lastData.reduce((map, value) => {
+    map[value.name] = value;
+    return map;
+  }, {});
+
+  const events: Event[] = [];
+
+  // イベントをダウンロード
+  await downloadEvents(
+    lastEvents,
+    events,
+    "https://papermc.io/javadocs/paper/1.16/",
+    "allclasses-noframe.html"
+  );
+
+  // データを並び替え
+  events.sort((a, b) => {
+    if (a.name < b.name) {
+      return -1;
+    } else if (a.name > b.name) {
+      return 1;
+    } else {
+      return 0;
+    }
+  });
+
+  // イベント数を出力
+  console.log(`総イベント数: ${events.length}`);
+  console.log(
+    `説明が書かれていないイベント数: ${
+      events.filter((value) => !value.description).length
+    }`
+  );
+
+  // events.yaml に保存
+  fs.writeFile(
+    EventsYaml,
+    yaml.dump(events, {
+      lineWidth: 200,
+    }),
+    "utf8",
+    (err) => {
+      if (err) {
+        console.error(err.message);
+      }
+    }
+  );
 };
 
 main();

@@ -6,7 +6,6 @@ import {
   TemplateReadmeFileName,
   EventsYaml,
   DoNotEditMessage,
-  JavaDocUrl,
   OutputOnlyEventSourceFileName,
   TemplateOnlyEventSourceFileName,
 } from "./constants";
@@ -48,7 +47,6 @@ const main = () => {
     OutputReadmeFileName,
     DoNotEditMessage +
       Handlebars.compile(fs.readFileSync(TemplateReadmeFileName, "utf8"))({
-        javadoc: JavaDocUrl,
         list: data,
         only_links: Object.keys(sourceEvents)
           .sort()

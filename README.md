@@ -6,8 +6,6 @@
 # Spigot Event List
 Bukkit, Spigot, Paper のイベント一覧です。
 
-https://papermc.io/javadocs/paper/1.16/ を元に作成しています。
-
 ## 環境毎のイベント一覧
 - [bukkit](only-bukkit.md)
 - [paper](only-paper.md)
@@ -132,6 +130,8 @@ AreaEffectCloud の効果が付与される際に呼び出される。5ティッ
 クリーパーの点火状態が切り替わる際に呼び出される。
 ### `bukkit` [CreeperPowerEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/CreeperPowerEvent.html)
 クリーパーが雷撃を受ける際に呼び出される。
+### `paper` [DragonEggFormEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/DragonEggFormEvent.html)
+
 ### `bukkit` [EnchantItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/enchantment/EnchantItemEvent.html)
 アイテムにエンチャントした際に呼び出される。
 ### `bukkit` [EnderDragonChangePhaseEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EnderDragonChangePhaseEvent.html)
