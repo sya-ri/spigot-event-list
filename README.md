@@ -131,7 +131,7 @@ AreaEffectCloud の効果が付与される際に呼び出される。5ティッ
 ### `bukkit` [CreeperPowerEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/CreeperPowerEvent.html)
 クリーパーが雷撃を受ける際に呼び出される。
 ### `paper` [DragonEggFormEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/DragonEggFormEvent.html)
-
+エンダードラゴンが討伐され、卵が設置される際に呼び出される。
 ### `bukkit` [EnchantItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/enchantment/EnchantItemEvent.html)
 アイテムにエンチャントした際に呼び出される。
 ### `bukkit` [EnderDragonChangePhaseEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EnderDragonChangePhaseEvent.html)

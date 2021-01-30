@@ -222,6 +222,10 @@
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/CreeperPowerEvent.html
   source: bukkit
   description: クリーパーが雷撃を受ける際に呼び出される。
+- name: DragonEggFormEvent
+  link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/DragonEggFormEvent.html
+  source: paper
+  description: エンダードラゴンが討伐され、卵が設置される際に呼び出される。
 - name: EnchantItemEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/enchantment/EnchantItemEvent.html
   source: bukkit
