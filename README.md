@@ -442,9 +442,9 @@ AreaEffectCloud の効果が付与される際に呼び出される。5ティッ
 
 ### `bukkit` [PlayerLevelChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerLevelChangeEvent.html)
 
-### `paper` [PlayerLocaleChangeEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerLocaleChangeEvent.html)
-
 ### `bukkit` [PlayerLocaleChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerLocaleChangeEvent.html)
+
+### `paper` [PlayerLocaleChangeEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerLocaleChangeEvent.html)
 
 ### `bukkit` [PlayerLoginEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerLoginEvent.html)
 

@@ -6,12 +6,11 @@ import { EventSources, EventsYaml, getEventSource } from "./constants";
 import { Event, EventSource } from "./data-class";
 
 async function downloadEvents(
-  lastEvents: { string: Event },
-  events: Event[],
-  source: EventSource
+  events: { string: Event },
+  eventSource: EventSource
 ) {
   return requestPromise(
-    source.javadocUrl + source.allClasses,
+    eventSource.javadocUrl + eventSource.allClasses,
     function (e, response, body) {
       if (e) {
         console.error(e);
@@ -28,17 +27,16 @@ async function downloadEvents(
               .substring(0, href.length - 5)
               .split("/")
               .pop();
-            let description = "";
-            const lastEvent = lastEvents[name];
-            if (lastEvent) {
-              description = lastEvent.description;
+            const source = getEventSource(href);
+            const lastEvent = events[name + source];
+            if (!lastEvent) {
+              events[name + source] = {
+                name: name,
+                link: eventSource.javadocUrl + href,
+                source: source,
+                description: "",
+              };
             }
-            events.push({
-              name: name,
-              link: source.javadocUrl + href,
-              source: getEventSource(href),
-              description,
-            });
           }
         });
       } catch (e) {
@@ -51,28 +49,20 @@ async function downloadEvents(
 const main = async () => {
   // 前回のデータをロード
   const lastData = yaml.load(fs.readFileSync(EventsYaml, "utf8"));
-  const lastEvents = lastData.reduce((map, value) => {
-    map[value.name] = value;
+  const eventMap = lastData.reduce((map, value) => {
+    map[value.name + value.source] = value;
     return map;
   }, {});
 
-  const events: Event[] = [];
-
   // イベントをダウンロード
   for (const source of EventSources) {
-    await downloadEvents(lastEvents, events, source);
+    await downloadEvents(eventMap, source);
   }
 
   // データを並び替え
-  events.sort((a, b) => {
-    if (a.name < b.name) {
-      return -1;
-    } else if (a.name > b.name) {
-      return 1;
-    } else {
-      return 0;
-    }
-  });
+  const events = Object.keys(eventMap)
+    .sort()
+    .map((key) => eventMap[key]);
 
   // イベント数を出力
   console.log(`総イベント数: ${events.length}`);
