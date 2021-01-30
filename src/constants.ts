@@ -4,7 +4,7 @@ export const EventSources: EventSource[] = [
   {
     javadocUrl: "https://papermc.io/javadocs/paper/1.16/",
     allClasses: "allclasses-noframe.html",
-    version: "1.16.5-paper-build-455",
+    version: "#455",
   },
 ];
 export const EventsYaml = "events.yaml";

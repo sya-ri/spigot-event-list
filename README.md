@@ -6,6 +6,9 @@
 # Spigot Event List
 Bukkit, Spigot, Paper のイベント一覧です。
 
+## 参考にしている Javadoc
+- https://papermc.io/javadocs/paper/1.16/ `#455`
+
 ## 環境毎のイベント一覧
 - [bukkit](only-bukkit.md)
 - [paper](only-paper.md)

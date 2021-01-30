@@ -8,6 +8,7 @@ import {
   DoNotEditMessage,
   OutputOnlyEventSourceFileName,
   TemplateOnlyEventSourceFileName,
+  EventSources,
 } from "./constants";
 
 const main = () => {
@@ -48,6 +49,7 @@ const main = () => {
     DoNotEditMessage +
       Handlebars.compile(fs.readFileSync(TemplateReadmeFileName, "utf8"))({
         list: data,
+        javadoc_links: EventSources,
         only_links: Object.keys(sourceEvents)
           .sort()
           .map((name) => {
