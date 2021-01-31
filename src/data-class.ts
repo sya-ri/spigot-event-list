@@ -7,6 +7,7 @@ export class Event {
 
 export class EventSource {
   javadocUrl: string;
+  downloadUrl: string;
   allClasses: string;
   version: string;
 }
