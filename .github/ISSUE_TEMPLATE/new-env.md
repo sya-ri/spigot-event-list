@@ -7,6 +7,18 @@ assignees: ''
 
 ---
 
-**GitHub**: <URL>
-  
-**JavaDoc**: <URL>
+<!--
+    ダウンロードできるページを貼り付けてください
+    ビルドバージョンの確認が出来ればよいです
+-->
+**Download**: <URL>
+
+<!--
+    overview-summary.html が開くページを貼り付けてください
+-->
+**JavaDoc Overview**: <URL>
+
+<!--
+    allclasses.html, allclasses-noframe.html が開くページを貼り付けてください
+-->
+**JavaDoc AllClasses**: <URL>
