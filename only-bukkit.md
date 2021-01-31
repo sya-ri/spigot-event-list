@@ -6,6 +6,8 @@
 # bukkit
 
 ## イベント一覧
+### `bukkit` [AreaEffectCloudApplyEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/AreaEffectCloudApplyEvent.html)
+AreaEffectCloud の効果が付与される際に呼び出される。5ティック毎に1回発生する。
 ### `bukkit` [ArrowBodyCountChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ArrowBodyCountChangeEvent.html)
 矢がエンティティの本体に入る・存在する際に呼び出される。
 ### `bukkit` [AsyncPlayerChatEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/AsyncPlayerChatEvent.html)

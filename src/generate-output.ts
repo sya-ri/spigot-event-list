@@ -22,7 +22,7 @@ const main = () => {
       element.list.push(current);
     } else {
       map[current.source] = {
-        list: [],
+        list: [current],
       };
     }
     return map;
