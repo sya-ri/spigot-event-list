@@ -194,23 +194,23 @@ AreaEffectCloud の効果が付与される際に呼び出される。5ティッ
 ### `bukkit` [EntityEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityEvent.html)
 エンティティに関するイベントを表す。
 ### `bukkit` [EntityExplodeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityExplodeEvent.html)
-
+エンティティが爆発する際に呼び出される。
 ### `bukkit` [EntityInteractEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityInteractEvent.html)
-
+エンティティ同士が押し合う際に呼び出される。
 ### `paper` [EntityJumpEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityJumpEvent.html)
-
+エンティティがジャンプする際に呼び出される。
 ### `paper` [EntityKnockbackByEntityEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityKnockbackByEntityEvent.html)
-
+エンティティによってエンティティがノックバックする際に呼び出される。
 ### `paper` [EntityLoadCrossbowEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/entity/EntityLoadCrossbowEvent.html)
-
+エンティティがアイテムをクロスボウに装填する際に呼び出される。
 ### `spigot` [EntityMountEvent](https://papermc.io/javadocs/paper/1.16/org/spigotmc/event/entity/EntityMountEvent.html)
-
+エンティティがエンティティに乗る際に呼び出される。
 ### `paper` [EntityMoveEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/entity/EntityMoveEvent.html)
-
+エンティティが移動する際に呼び出される。
 ### `paper` [EntityPathfindEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityPathfindEvent.html)
-
+エンティティが目的の場所への移動を開始する際に呼び出される。
 ### `bukkit` [EntityPickupItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPickupItemEvent.html)
-
+エンティティが地面からアイテムを拾う際に呼び出される。
 ### `bukkit` [EntityPlaceEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPlaceEvent.html)
 
 ### `bukkit` [EntityPortalEnterEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPortalEnterEvent.html)

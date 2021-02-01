@@ -341,39 +341,39 @@
 - name: EntityExplodeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityExplodeEvent.html
   source: bukkit
-  description: ''
+  description: エンティティが爆発する際に呼び出される。
 - name: EntityInteractEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityInteractEvent.html
   source: bukkit
-  description: ''
+  description: エンティティ同士が押し合う際に呼び出される。
 - name: EntityJumpEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityJumpEvent.html
   source: paper
-  description: ''
+  description: エンティティがジャンプする際に呼び出される。
 - name: EntityKnockbackByEntityEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityKnockbackByEntityEvent.html
   source: paper
-  description: ''
+  description: エンティティによってエンティティがノックバックする際に呼び出される。
 - name: EntityLoadCrossbowEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/entity/EntityLoadCrossbowEvent.html
   source: paper
-  description: ''
+  description: エンティティがアイテムをクロスボウに装填する際に呼び出される。
 - name: EntityMountEvent
   link: https://papermc.io/javadocs/paper/1.16/org/spigotmc/event/entity/EntityMountEvent.html
   source: spigot
-  description: ''
+  description: エンティティがエンティティに乗る際に呼び出される。
 - name: EntityMoveEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/entity/EntityMoveEvent.html
   source: paper
-  description: ''
+  description: エンティティが移動する際に呼び出される。
 - name: EntityPathfindEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityPathfindEvent.html
   source: paper
-  description: ''
+  description: エンティティが目的の場所への移動を開始する際に呼び出される。
 - name: EntityPickupItemEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPickupItemEvent.html
   source: bukkit
-  description: ''
+  description: エンティティが地面からアイテムを拾う際に呼び出される。
 - name: EntityPlaceEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPlaceEvent.html
   source: bukkit
