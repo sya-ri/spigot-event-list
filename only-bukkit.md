@@ -143,7 +143,11 @@ AreaEffectCloud の効果が付与される際に呼び出される。5ティッ
 ### `bukkit` [EntityDropItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityDropItemEvent.html)
 エンティティがアイテムをドロップする際に呼び出される。
 ### `bukkit` [EntityEnterBlockEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityEnterBlockEvent.html)
-エンティティがブロックの中に入る際に呼び出される。ミツバチが巣箱に入る際に呼び出される。シルバーフィッシュが石に入る際には呼び出されず、[EntityChangeBlockEvent](README.md##bukkit-entitychangeblockevent) が呼び出される。
+エンティティがブロックの中に入る際に呼び出される。以下に例を示す。
+- ミツバチが巣箱に入る時。
+
+しかし、以下の場合は呼び出されない。
+- シルバーフィッシュが石に入る時。[EntityChangeBlockEvent](README.md#bukkit-entitychangeblockevent) が呼び出される。
 ### `bukkit` [EntityEnterLoveModeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityEnterLoveModeEvent.html)
 エンティティが発情する際に呼び出される。このイベントをキャンセルしても使用したアイテムは消費されてしまう。
 ### `bukkit` [EntityEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityEvent.html)

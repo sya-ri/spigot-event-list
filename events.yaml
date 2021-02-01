@@ -324,7 +324,12 @@
 - name: EntityEnterBlockEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityEnterBlockEvent.html
   source: bukkit
-  description: エンティティがブロックの中に入る際に呼び出される。ミツバチが巣箱に入る際に呼び出される。シルバーフィッシュが石に入る際には呼び出されず、[EntityChangeBlockEvent](README.md##bukkit-entitychangeblockevent) が呼び出される。
+  description: |-
+    エンティティがブロックの中に入る際に呼び出される。以下に例を示す。
+    - ミツバチが巣箱に入る時。
+
+    しかし、以下の場合は呼び出されない。
+    - シルバーフィッシュが石に入る時。[EntityChangeBlockEvent](README.md#bukkit-entitychangeblockevent) が呼び出される。
 - name: EntityEnterLoveModeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityEnterLoveModeEvent.html
   source: bukkit
