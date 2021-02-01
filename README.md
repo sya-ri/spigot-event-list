@@ -48,7 +48,7 @@ AreaEffectCloud の効果が付与される際に呼び出される。5ティッ
 ### `bukkit` [BlockDispenseArmorEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockDispenseArmorEvent.html)
 ディスペンサーから装備可能なアイテムが射出され、エンティティに装備される際に呼び出される。
 ### `bukkit` [BlockDispenseEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockDispenseEvent.html)
-ディスペンサーからアイテムが射出される際に呼び出される。このイベントをキャンセルしてもアイテムが減るバグが存在するので [BlockPreDispenseEvent](README.md#paper-blockpredispenseevent) を使うことを推奨する。
+ディスペンサーからアイテムが射出される際に呼び出される。このイベントをキャンセルしても射出されたアイテムは減る。[BlockPreDispenseEvent](README.md#paper-blockpredispenseevent) を使うことでアイテムの消費もキャンセルできる。
 ### `bukkit` [BlockDropItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockDropItemEvent.html)
 プレイヤーによって破壊されたブロックがアイテムとしてドロップする際に呼び出される。
 ### `bukkit` [BlockEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockEvent.html)

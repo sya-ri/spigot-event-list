@@ -65,7 +65,7 @@
 - name: BlockDispenseEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockDispenseEvent.html
   source: bukkit
-  description: ディスペンサーからアイテムが射出される際に呼び出される。このイベントをキャンセルしてもアイテムが減るバグが存在するので [BlockPreDispenseEvent](README.md#paper-blockpredispenseevent) を使うことを推奨する。
+  description: ディスペンサーからアイテムが射出される際に呼び出される。このイベントをキャンセルしても射出されたアイテムは減る。[BlockPreDispenseEvent](README.md#paper-blockpredispenseevent) を使うことでアイテムの消費もキャンセルできる。
 - name: BlockDropItemEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockDropItemEvent.html
   source: bukkit
