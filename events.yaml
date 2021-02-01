@@ -296,43 +296,43 @@
 - name: EntityCreatePortalEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityCreatePortalEvent.html
   source: bukkit
-  description: ''
+  description: エンティティがポータルを作成する際に呼び出される。[PortalCreateEvent](README.md#bukkit-portalcreateevent) を使うことが推奨されている。
 - name: EntityDamageByBlockEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityDamageByBlockEvent.html
   source: bukkit
-  description: ''
+  description: ブロックによってエンティティがダメージを受ける際に呼び出される。
 - name: EntityDamageByEntityEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityDamageByEntityEvent.html
   source: bukkit
-  description: ''
+  description: エンティティによってエンティティがダメージを受ける際に呼び出される。
 - name: EntityDamageEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityDamageEvent.html
   source: bukkit
-  description: ''
+  description: エンティティがダメージを受ける際に呼び出される。
 - name: EntityDeathEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityDeathEvent.html
   source: bukkit
-  description: ''
+  description: エンティティが死ぬ際に呼び出される。
 - name: EntityDismountEvent
   link: https://papermc.io/javadocs/paper/1.16/org/spigotmc/event/entity/EntityDismountEvent.html
   source: spigot
-  description: ''
+  description: エンティティが乗っているエンティティが降りる際に呼び出される。
 - name: EntityDropItemEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityDropItemEvent.html
   source: bukkit
-  description: ''
+  description: エンティティがアイテムをドロップする際に呼び出される。
 - name: EntityEnterBlockEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityEnterBlockEvent.html
   source: bukkit
-  description: ''
+  description: エンティティがブロックの中に入る際に呼び出される。ミツバチが巣箱に入る際に呼び出される。シルバーフィッシュが石に入る際には呼び出されず、[EntityChangeBlockEvent](README.md##bukkit-entitychangeblockevent) が呼び出される。
 - name: EntityEnterLoveModeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityEnterLoveModeEvent.html
   source: bukkit
-  description: ''
+  description: エンティティが発情する際に呼び出される。このイベントをキャンセルしても使用したアイテムは消費されてしまう。
 - name: EntityEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityEvent.html
   source: bukkit
-  description: ''
+  description: エンティティに関するイベントを表す。
 - name: EntityExplodeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityExplodeEvent.html
   source: bukkit
