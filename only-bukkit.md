@@ -39,7 +39,7 @@ AreaEffectCloud の効果が付与される際に呼び出される。5ティッ
 ### `bukkit` [BlockExplodeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockExplodeEvent.html)
 ブロックが爆発する際に呼び出される。
 ### `bukkit` [BlockFadeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockFadeEvent.html)
-自然にブロックが溶けたり消滅したりする際に呼び出される。例を以下に示す。
+自然にブロックが溶けたり消滅したりする際に呼び出される。以下に例を示す。
 - 光源によって雪や氷が溶ける時。
 - 燃料ブロックを破壊することなく、時間の経過によって火が消える時。
 - 水不足によってサンゴが死んだサンゴに変わる時。
