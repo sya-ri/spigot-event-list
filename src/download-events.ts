@@ -90,7 +90,7 @@ const main = async () => {
   const lastData = yaml.load(fs.readFileSync(EventsYaml, "utf8"));
   const eventMap = lastData.reduce((map, value) => {
     map[value.name + value.source] = value;
-    value.deprecated = false;
+    delete value.deprecated;
     return map;
   }, {});
 
