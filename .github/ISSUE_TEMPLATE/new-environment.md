@@ -2,7 +2,7 @@
 name: New Environment
 about: 環境の追加 (Bukkit, Spigot, Paper, ...)
 title: "<Name>の追加"
-labels: new env
+labels: ''
 assignees: ''
 
 ---
