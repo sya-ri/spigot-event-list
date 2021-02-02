@@ -22,3 +22,8 @@ assignees: ''
     allclasses.html, allclasses-noframe.html が開くページを貼り付けてください
 -->
 **JavaDoc AllClasses**: <URL>
+
+<!--
+    deprecated-list.html が開くページを貼り付けてください
+-->
+**JavaDoc Deprecated List**: <URL>
