@@ -110,7 +110,19 @@ const main = async () => {
   // データを並び替え
   const events = Object.keys(eventMap)
     .sort()
-    .map((key) => eventMap[key]);
+    .map(
+      (key): Event => {
+        const value = eventMap[key];
+        return {
+          name: value.name,
+          link: value.link,
+          source: value.source,
+          description: value.description,
+          deprecated: value.deprecated,
+          deprecateMessage: value.deprecateMessage,
+        };
+      }
+    );
 
   // イベント数を出力
   console.log(`総イベント数: ${events.length}`);
