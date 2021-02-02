@@ -3,7 +3,8 @@ export class Event {
   link: string;
   source: string;
   description: string;
-  deprecated: boolean;
+  deprecated: boolean | null;
+  deprecateMessage: string;
 }
 
 export class EventSource {

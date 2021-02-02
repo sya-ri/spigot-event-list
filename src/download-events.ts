@@ -73,6 +73,9 @@ function updateClassType(events: { string: Event }, eventSource: EventSource) {
                 const event = events[name + source];
                 if (event) {
                   event.deprecated = true;
+                  if (!event.deprecateMessage) {
+                    event.deprecateMessage = "";
+                  }
                 }
               }
             });

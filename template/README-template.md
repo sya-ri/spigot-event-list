@@ -15,7 +15,7 @@ Bukkit, Spigot, Paper のイベント一覧です。
 {{#each list}}
 ### `{{source}}` [{{name}}]({{link}})
 {{#if deprecated}}
-`@Deprecated`
+`@Deprecated` {{deprecateMessage}}
 
 {{/if}}
 {{description}}

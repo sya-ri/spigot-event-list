@@ -4,7 +4,7 @@
 {{#each list}}
 ### `{{source}}` [{{name}}]({{link}})
 {{#if deprecated}}
-`@Deprecated`
+`@Deprecated` {{deprecateMessage}}
 
 {{/if}}
 {{description}}
