@@ -1,5 +1,5 @@
 ---
-name: description
+name: Description
 about: 説明について
 title: ''
 labels: description
