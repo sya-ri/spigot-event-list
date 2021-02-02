@@ -51,7 +51,7 @@ const updateClassType = (
   eventSource: EventSource
 ) => {
   return requestPromise(
-    eventSource.javadocUrl + eventSource.deprecated,
+    eventSource.javadocUrl + eventSource.deprecateList,
     (e, response, body) => {
       if (e) {
         console.error(e);
@@ -61,8 +61,8 @@ const updateClassType = (
         // javadoc から イベント一覧を作成
         const $ = cheerio.load(body);
         $(".deprecatedSummary").each((_, element) => {
-          const deprecatedType = $(element).children("caption").text();
-          if (deprecatedType.startsWith("Classes")) {
+          const deprecateType = $(element).children("caption").text();
+          if (deprecateType.startsWith("Classes")) {
             const classes = $(element).find(".colDeprecatedItemName a");
             classes.each((_, element) => {
               const a = $(element);
@@ -75,9 +75,9 @@ const updateClassType = (
                 const source = getEventSource(href);
                 const event = events[name + source];
                 if (event) {
-                  event.deprecated = true;
-                  if (!event.deprecateMessage) {
-                    event.deprecateMessage = "";
+                  event.deprecate = true;
+                  if (!event.deprecateDescription) {
+                    event.deprecateDescription = "";
                   }
                 }
               }
@@ -96,7 +96,7 @@ const main = async () => {
   const lastData = yaml.load(fs.readFileSync(EventsYaml, "utf8"));
   const eventMap = lastData.reduce((map, value) => {
     map[value.name + value.source] = value;
-    delete value.deprecated;
+    delete value.deprecate;
     return map;
   }, {});
 
@@ -121,8 +121,8 @@ const main = async () => {
           link: value.link,
           source: value.source,
           description: value.description,
-          deprecated: value.deprecated,
-          deprecateMessage: value.deprecateMessage,
+          deprecate: value.deprecate,
+          deprecateDescription: value.deprecateDescription,
         };
       }
     );
@@ -135,11 +135,11 @@ const main = async () => {
     }`
   );
   console.log(
-    `非推奨イベント数: ${events.filter((value) => value.deprecated).length}`
+    `非推奨イベント数: ${events.filter((value) => value.deprecate).length}`
   );
   console.log(
     `非推奨についての説明が書かれていないイベント数: ${
-      events.filter((value) => value.deprecateMessage == "").length
+      events.filter((value) => value.deprecateDescription == "").length
     }`
   );
 

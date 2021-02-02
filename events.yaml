@@ -297,8 +297,8 @@
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityCreatePortalEvent.html
   source: bukkit
   description: エンティティがポータルを作成する際に呼び出される。
-  deprecated: true
-  deprecateMessage: ワールド関連のイベントとして定義された [PortalCreateEvent](README.md#bukkit-portalcreateevent) を使う。
+  deprecate: true
+  deprecateDescription: ワールド関連のイベントとして定義された [PortalCreateEvent](README.md#bukkit-portalcreateevent) を使う。
 - name: EntityDamageByBlockEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityDamageByBlockEvent.html
   source: bukkit
@@ -380,8 +380,8 @@
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPlaceEvent.html
   source: bukkit
   description: ''
-  deprecated: true
-  deprecateMessage: 仮実装中。
+  deprecate: true
+  deprecateDescription: 仮実装中。
 - name: EntityPortalEnterEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPortalEnterEvent.html
   source: bukkit
@@ -462,8 +462,8 @@
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityTransformedEvent.html
   source: paper
   description: ''
-  deprecated: true
-  deprecateMessage: Bukkit に追加された [EntityTransformEvent](README.md#bukkit-entitytransformevent) を使う。
+  deprecate: true
+  deprecateDescription: Bukkit に追加された [EntityTransformEvent](README.md#bukkit-entitytransformevent) を使う。
 - name: EntityUnleashEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityUnleashEvent.html
   source: bukkit
@@ -544,8 +544,8 @@
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/IllegalPacketEvent.html
   source: paper
   description: ''
-  deprecated: true
-  deprecateMessage: 使われていない。
+  deprecate: true
+  deprecateDescription: 使われていない。
 - name: InventoryClickEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryClickEvent.html
   source: bukkit
@@ -714,14 +714,14 @@
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChatEvent.html
   source: bukkit
   description: ''
-  deprecated: true
-  deprecateMessage: チャットの遅延が発生するので [AsyncPlayerChatEvent](README.md#bukkit-asyncplayerchatevent) を使う。
+  deprecate: true
+  deprecateDescription: チャットの遅延が発生するので [AsyncPlayerChatEvent](README.md#bukkit-asyncplayerchatevent) を使う。
 - name: PlayerChatTabCompleteEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChatTabCompleteEvent.html
   source: bukkit
   description: ''
-  deprecated: true
-  deprecateMessage: クライアントの変更により実行されなくなった。
+  deprecate: true
+  deprecateDescription: クライアントの変更により実行されなくなった。
 - name: PlayerChunkLoadEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/packet/PlayerChunkLoadEvent.html
   source: paper
@@ -798,8 +798,8 @@
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerInitialSpawnEvent.html
   source: paper
   description: ''
-  deprecated: true
-  deprecateMessage: Spigot に追加された [PlayerSpawnLocationEvent](README.md#spigot-playerspawnlocationevent) を使う。
+  deprecate: true
+  deprecateDescription: Spigot に追加された [PlayerSpawnLocationEvent](README.md#spigot-playerspawnlocationevent) を使う。
 - name: PlayerInteractAtEntityEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerInteractAtEntityEvent.html
   source: bukkit
@@ -872,8 +872,8 @@
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerLocaleChangeEvent.html
   source: paper
   description: ''
-  deprecated: true
-  deprecateMessage: Bukkit に追加された [PlayerLocaleChangeEvent](README.md#bukkit-playerlocalechangeevent) を使う。
+  deprecate: true
+  deprecateDescription: Bukkit に追加された [PlayerLocaleChangeEvent](README.md#bukkit-playerlocalechangeevent) を使う。
 - name: PlayerLoginEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerLoginEvent.html
   source: bukkit
@@ -902,8 +902,8 @@
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerPickupItemEvent.html
   source: bukkit
   description: ''
-  deprecated: true
-  deprecateMessage: Bukkit に追加された [EntityPickupItemEvent](README.md#bukkit-entitypickupitemevent) を使う。
+  deprecate: true
+  deprecateDescription: Bukkit に追加された [EntityPickupItemEvent](README.md#bukkit-entitypickupitemevent) を使う。
 - name: PlayerPortalEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerPortalEvent.html
   source: bukkit
@@ -916,8 +916,8 @@
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerPreLoginEvent.html
   source: bukkit
   description: ''
-  deprecated: true
-  deprecateMessage: 非同期で処理をする為に [AsyncPlayerPreLoginEvent](README.md#bukkit-asyncplayerpreloginevent) を使う。
+  deprecate: true
+  deprecateDescription: 非同期で処理をする為に [AsyncPlayerPreLoginEvent](README.md#bukkit-asyncplayerpreloginevent) を使う。
 - name: PlayerQuitEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerQuitEvent.html
   source: bukkit
@@ -1070,8 +1070,8 @@
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/inventory/PrepareGrindstoneEvent.html
   source: paper
   description: ''
-  deprecated: true
-  deprecateMessage: ''
+  deprecate: true
+  deprecateDescription: ''
 - name: PrepareItemCraftEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/PrepareItemCraftEvent.html
   source: bukkit

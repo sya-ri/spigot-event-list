@@ -5,7 +5,7 @@ export const EventSources: EventSource[] = [
     javadocUrl: "https://papermc.io/javadocs/paper/1.16/",
     downloadUrl: "https://papermc.io/downloads#Paper-1.16",
     allClasses: "allclasses-noframe.html",
-    deprecated: "deprecated-list.html",
+    deprecateList: "deprecated-list.html",
     version: "#455",
   },
 ];

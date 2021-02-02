@@ -3,14 +3,14 @@ export class Event {
   link: string;
   source: string;
   description: string;
-  deprecated: boolean | null;
-  deprecateMessage: string;
+  deprecate: boolean | null;
+  deprecateDescription: string;
 }
 
 export class EventSource {
   javadocUrl: string;
   downloadUrl: string;
   allClasses: string;
-  deprecated: string;
+  deprecateList: string;
   version: string;
 }

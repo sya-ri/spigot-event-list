@@ -3,8 +3,8 @@
 ## イベント一覧
 {{#each list}}
 ### `{{source}}` [{{name}}]({{link}})
-{{#if deprecated}}
-`@Deprecated` {{deprecateMessage}}
+{{#if deprecate}}
+`@Deprecated` {{deprecateDescription}}
 
 {{/if}}
 {{description}}
