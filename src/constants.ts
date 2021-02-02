@@ -22,7 +22,7 @@ export const DoNotEditMessage = `<!--
 -->
 `;
 
-export function getEventSource(href: string): string {
+export const getEventSource = (href: string): string => {
   if (href.startsWith("org/bukkit")) {
     return "bukkit";
   } else if (href.startsWith("org/spigotmc")) {
@@ -32,4 +32,4 @@ export function getEventSource(href: string): string {
   } else if (href.startsWith("io/papermc/paper")) {
     return "paper";
   }
-}
+};

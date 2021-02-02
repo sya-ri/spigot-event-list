@@ -5,13 +5,13 @@ import yaml = require("js-yaml");
 import { EventSources, EventsYaml, getEventSource } from "./constants";
 import { Event, EventSource } from "./data-class";
 
-async function downloadEvents(
+const downloadEvents = async (
   events: { string: Event },
   eventSource: EventSource
-) {
+) => {
   return requestPromise(
     eventSource.javadocUrl + eventSource.allClasses,
-    function (e, response, body) {
+    (e, response, body) => {
       if (e) {
         console.error(e);
       }
@@ -19,7 +19,7 @@ async function downloadEvents(
       try {
         // javadoc から イベント一覧を作成
         const $ = cheerio.load(body);
-        $("a").each(function (_, element) {
+        $("a").each((_, element) => {
           const a = $(element);
           const href = a.prop("href");
           if (href.endsWith("Event.html")) {
@@ -44,12 +44,15 @@ async function downloadEvents(
       }
     }
   );
-}
+};
 
-function updateClassType(events: { string: Event }, eventSource: EventSource) {
+const updateClassType = (
+  events: { string: Event },
+  eventSource: EventSource
+) => {
   return requestPromise(
     eventSource.javadocUrl + eventSource.deprecated,
-    function (e, response, body) {
+    (e, response, body) => {
       if (e) {
         console.error(e);
       }
@@ -86,7 +89,7 @@ function updateClassType(events: { string: Event }, eventSource: EventSource) {
       }
     }
   );
-}
+};
 
 const main = async () => {
   // 前回のデータをロード
