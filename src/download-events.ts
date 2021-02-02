@@ -28,8 +28,8 @@ async function downloadEvents(
               .split("/")
               .pop();
             const source = getEventSource(href);
-            const lastEvent = events[name + source];
-            if (!lastEvent) {
+            const event = events[name + source];
+            if (!event) {
               events[name + source] = {
                 name: name,
                 link: eventSource.javadocUrl + href,
@@ -57,20 +57,25 @@ function updateClassType(events: { string: Event }, eventSource: EventSource) {
       try {
         // javadoc から イベント一覧を作成
         const $ = cheerio.load(body);
-        $(".colDeprecatedItemName a").each(function (_, element) {
-          const a = $(element);
-          let href = a.prop("href");
-          href = href.substring(0, href.indexOf("#"));
-          if (href.endsWith("Event.html")) {
-            const name = href
-              .substring(0, href.length - 5)
-              .split("/")
-              .pop();
-            const source = getEventSource(href);
-            const event = events[name + source];
-            if (event) {
-              event.deprecated = true;
-            }
+        $(".deprecatedSummary").each((_, element) => {
+          const deprecatedType = $(element).children("caption").text();
+          if (deprecatedType.startsWith("Classes")) {
+            const classes = $(element).find(".colDeprecatedItemName a");
+            classes.each((_, element) => {
+              const a = $(element);
+              const href = a.prop("href");
+              if (href.endsWith("Event.html")) {
+                const name = href
+                  .substring(0, href.length - 5)
+                  .split("/")
+                  .pop();
+                const source = getEventSource(href);
+                const event = events[name + source];
+                if (event) {
+                  event.deprecated = true;
+                }
+              }
+            });
           }
         });
       } catch (e) {
@@ -85,6 +90,7 @@ const main = async () => {
   const lastData = yaml.load(fs.readFileSync(EventsYaml, "utf8"));
   const eventMap = lastData.reduce((map, value) => {
     map[value.name + value.source] = value;
+    value.deprecated = false;
     return map;
   }, {});
 
