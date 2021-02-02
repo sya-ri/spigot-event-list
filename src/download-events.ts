@@ -131,6 +131,14 @@ const main = async () => {
       events.filter((value) => !value.description).length
     }`
   );
+  console.log(
+    `非推奨イベント数: ${events.filter((value) => value.deprecated).length}`
+  );
+  console.log(
+    `非推奨についての説明が書かれていないイベント数: ${
+      events.filter((value) => value.deprecateMessage == "").length
+    }`
+  );
 
   // events.yaml に保存
   fs.writeFile(
