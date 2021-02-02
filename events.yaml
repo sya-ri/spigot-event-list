@@ -2,86 +2,107 @@
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/block/AnvilDamagedEvent.html
   source: paper
   description: 使用したことで金床が損傷する際に呼び出される。
+  deprecated: false
 - name: AreaEffectCloudApplyEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/AreaEffectCloudApplyEvent.html
   source: bukkit
   description: AreaEffectCloud の効果が付与される際に呼び出される。5ティック毎に1回発生する。
+  deprecated: false
 - name: ArrowBodyCountChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ArrowBodyCountChangeEvent.html
   source: bukkit
   description: 矢がエンティティの本体に入る・存在する際に呼び出される。
+  deprecated: false
 - name: AsyncPlayerChatEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/AsyncPlayerChatEvent.html
   source: bukkit
   description: プレイヤーがチャットした際に呼び出される。非同期でも同期でも呼び出されることがある。
+  deprecated: false
 - name: AsyncPlayerPreLoginEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/AsyncPlayerPreLoginEvent.html
   source: bukkit
   description: プレイヤーがログインしようとしている際に呼び出される。非同期で処理される。
+  deprecated: true
 - name: AsyncTabCompleteEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/server/AsyncTabCompleteEvent.html
   source: paper
   description: タブ補完を行う際に呼び出される。非同期で処理される。このイベントが結果を返す時、標準のタブ補完処理は発生しない。ただし、 [TabCompleteEvent](README.md#bukkit-tabcompleteevent) は非同期の結果と共に呼び出される。
+  deprecated: false
 - name: BatToggleSleepEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/BatToggleSleepEvent.html
   source: bukkit
   description: コウモリが眠ったり起きたりする際に呼び出される。
+  deprecated: false
 - name: BeaconEffectEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/block/BeaconEffectEvent.html
   source: paper
   description: ビーコンの効果がプレイヤーに適用される際に呼び出される。
+  deprecated: false
 - name: BellRingEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/BellRingEvent.html
   source: paper
   description: ベルが鳴る際に呼び出される。
+  deprecated: false
 - name: BlockBreakEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockBreakEvent.html
   source: bukkit
   description: プレイヤーがブロックを破壊する際に呼び出される。
+  deprecated: false
 - name: BlockBurnEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockBurnEvent.html
   source: bukkit
   description: ブロックが燃え尽きて破壊される際に呼び出される。
+  deprecated: true
 - name: BlockCanBuildEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockCanBuildEvent.html
   source: bukkit
   description: ブロックを設置しようとした際に呼び出される。設置可能かどうかを確認する。
+  deprecated: true
 - name: BlockCookEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockCookEvent.html
   source: bukkit
   description: アイテムがブロックを用いて調理される際に呼び出される。
+  deprecated: false
 - name: BlockDamageEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockDamageEvent.html
   source: bukkit
   description: プレイヤーがブロックを損傷させる際に呼び出される。
+  deprecated: false
 - name: BlockDestroyEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/block/BlockDestroyEvent.html
   source: paper
   description: サーバーがブロックを破棄する際に呼び出される。
+  deprecated: false
 - name: BlockDispenseArmorEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockDispenseArmorEvent.html
   source: bukkit
   description: ディスペンサーから装備可能なアイテムが射出され、エンティティに装備される際に呼び出される。
+  deprecated: false
 - name: BlockDispenseEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockDispenseEvent.html
   source: bukkit
   description: ディスペンサーからアイテムが射出される際に呼び出される。このイベントをキャンセルしても射出されたアイテムは減る。[BlockPreDispenseEvent](README.md#paper-blockpredispenseevent) を使うことでアイテムの消費もキャンセルできる。
+  deprecated: false
 - name: BlockDropItemEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockDropItemEvent.html
   source: bukkit
   description: プレイヤーによって破壊されたブロックがアイテムとしてドロップする際に呼び出される。
+  deprecated: false
 - name: BlockEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockEvent.html
   source: bukkit
   description: ブロック関連のイベントを表す。
+  deprecated: false
 - name: BlockExpEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockExpEvent.html
   source: bukkit
   description: ブロックが経験値を落とす際に呼び出される。
+  deprecated: false
 - name: BlockExplodeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockExplodeEvent.html
   source: bukkit
   description: ブロックが爆発する際に呼び出される。
+  deprecated: false
 - name: BlockFadeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockFadeEvent.html
   source: bukkit
@@ -91,14 +112,17 @@
     - 燃料ブロックを破壊することなく、時間の経過によって火が消える時。
     - 水不足によってサンゴが死んだサンゴに変わる時。
     - カメが孵化し、カメの卵が破裂する時。
+  deprecated: false
 - name: BlockFailedDispenseEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/BlockFailedDispenseEvent.html
   source: paper
   description: ディスペンサーにアイテムが存在せず、射出されなかった際に呼び出される。
+  deprecated: false
 - name: BlockFertilizeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockFertilizeEvent.html
   source: bukkit
   description: プレイヤーが骨粉を使用し、ブロックに変更が生じる際に呼び出される。[StructureGrowEvent](README.md#bukkit-structuregrowevent) の後に呼び出される。
+  deprecated: false
 - name: BlockFormEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockFormEvent.html
   source: bukkit
@@ -108,10 +132,12 @@
     - 雪に覆われたバイオームで氷が形成される時。
     - 水との接触による黒曜石や丸石の形成される時。
     - コンクリートパウダーと水の混合によるコンクリートが成形される時。
+  deprecated: false
 - name: BlockFromToEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockFromToEvent.html
   source: bukkit
   description: ブロックの変更が起こる際に呼び出される。液体が流れる時とドラゴンの卵がテレポートする時のみ呼び出される。
+  deprecated: false
 - name: BlockGrowEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockGrowEvent.html
   source: bukkit
@@ -123,46 +149,57 @@
     - スイカ
     - かぼちゃ
     - カメの卵
+  deprecated: false
 - name: BlockIgniteEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockIgniteEvent.html
   source: bukkit
   description: ブロックが点火された際に呼び出される。
+  deprecated: false
 - name: BlockMultiPlaceEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockMultiPlaceEvent.html
   source: bukkit
   description: プレイヤーがマルチブロックを設置する際に呼び出される。
+  deprecated: true
 - name: BlockPhysicsEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockPhysicsEvent.html
   source: bukkit
   description: ブロックの落下確認をする際に呼び出される。高頻度で呼び出されるので処理には注意が必要。
+  deprecated: true
 - name: BlockPistonEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockPistonEvent.html
   source: bukkit
   description: ピストンが動作する際に呼び出される。
+  deprecated: false
 - name: BlockPistonExtendEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockPistonExtendEvent.html
   source: bukkit
   description: ピストンが伸びる際に呼び出される。
+  deprecated: true
 - name: BlockPistonRetractEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockPistonRetractEvent.html
   source: bukkit
   description: ピストンが縮む際に呼び出される。
+  deprecated: true
 - name: BlockPlaceEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockPlaceEvent.html
   source: bukkit
   description: プレイヤーがブロックを設置する際に呼び出される。
+  deprecated: true
 - name: BlockPreDispenseEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/BlockPreDispenseEvent.html
   source: paper
   description: ディスペンサーからアイテムが射出される際に呼び出される。[BlockDispenseEvent](README.md#bukkit-blockdispenseevent) の前に呼び出されるので、ディスペンサーのアイテム消費もキャンセルできる。
+  deprecated: false
 - name: BlockRedstoneEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockRedstoneEvent.html
   source: bukkit
   description: レッドストーンの強さが変化する際に呼び出される。
+  deprecated: false
 - name: BlockShearEntityEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockShearEntityEvent.html
   source: bukkit
   description: ディスペンサーが羊の毛も刈る際に呼び出される。
+  deprecated: false
 - name: BlockSpreadEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockSpreadEvent.html
   source: bukkit
@@ -170,98 +207,122 @@
     ブロックが拡散する際に呼び出される。[BlockFormEvent](#bukkit-blockformevent) とは違い、ランダムに形成されるブロックに対して呼び出される。以下に例を示す。
     - キノコが増える時。
     - 火が燃え広がる時。
+  deprecated: false
 - name: BrewEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/BrewEvent.html
   source: bukkit
   description: 醸造が完了する際に呼び出される。
+  deprecated: false
 - name: BrewingStandFuelEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/BrewingStandFuelEvent.html
   source: bukkit
   description: 燃料としてアイテムが醸造台に使用される際に呼び出される。
+  deprecated: false
 - name: BroadcastMessageEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/BroadcastMessageEvent.html
   source: bukkit
   description: サーバーにブロードキャストメッセージが送信された際に呼び出される。メッセージが非同期で送信された場合、イベントも非同期で呼び出される。
+  deprecated: true
 - name: CauldronLevelChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/CauldronLevelChangeEvent.html
   source: bukkit
   description: 大釜の水が増えたり減ったりした際に呼び出される。
+  deprecated: false
 - name: ChunkEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/ChunkEvent.html
   source: bukkit
   description: チャンク関連のイベントを表す
+  deprecated: false
 - name: ChunkLoadEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/ChunkLoadEvent.html
   source: bukkit
   description: チャンクが読み込まれた際に呼び出される。
+  deprecated: false
 - name: ChunkPopulateEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/ChunkPopulateEvent.html
   source: bukkit
   description: 新しいチャンクが作られた際に呼び出される。
+  deprecated: false
 - name: ChunkUnloadEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/ChunkUnloadEvent.html
   source: bukkit
   description: チャンクの読み込みが停止された際に呼び出される。
+  deprecated: false
 - name: ConversationAbandonedEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/conversations/ConversationAbandonedEvent.html
   source: bukkit
   description: 不明。
+  deprecated: false
 - name: CraftItemEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/CraftItemEvent.html
   source: bukkit
   description: アイテムをクラフトする際に呼び出される。
+  deprecated: false
 - name: CreatureSpawnEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/CreatureSpawnEvent.html
   source: bukkit
   description: 生き物がスポーンする際に呼び出される。
+  deprecated: false
 - name: CreeperIgniteEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/CreeperIgniteEvent.html
   source: paper
   description: クリーパーの点火状態が切り替わる際に呼び出される。
+  deprecated: false
 - name: CreeperPowerEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/CreeperPowerEvent.html
   source: bukkit
   description: クリーパーが雷撃を受ける際に呼び出される。
+  deprecated: false
 - name: DragonEggFormEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/DragonEggFormEvent.html
   source: paper
   description: エンダードラゴンが討伐され、卵が設置される際に呼び出される。
+  deprecated: false
 - name: EnchantItemEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/enchantment/EnchantItemEvent.html
   source: bukkit
   description: アイテムにエンチャントした際に呼び出される。
+  deprecated: false
 - name: EnderDragonChangePhaseEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EnderDragonChangePhaseEvent.html
   source: bukkit
   description: エンダードラゴンの攻撃フェーズが変わった際に呼び出される。
+  deprecated: false
 - name: EnderDragonFireballHitEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EnderDragonFireballHitEvent.html
   source: paper
   description: エンダードラゴンが放った火球が衝突し、AreaEffectCloud が発生する際に呼び出される。
+  deprecated: false
 - name: EnderDragonFlameEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EnderDragonFlameEvent.html
   source: paper
   description: エンダードラゴンが炎を吐き、AreaEffectCloud が発生する際に呼び出される。
+  deprecated: false
 - name: EnderDragonShootFireballEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EnderDragonShootFireballEvent.html
   source: paper
   description: エンダードラゴンが火球を放つ際に呼び出される。
+  deprecated: false
 - name: EndermanAttackPlayerEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EndermanAttackPlayerEvent.html
   source: paper
   description: エンダーマンがプレイヤーを攻撃するか決定する際に呼び出される。
+  deprecated: false
 - name: EndermanEscapeEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EndermanEscapeEvent.html
   source: paper
   description: エンダーマンが逃げた際に呼び出される。
+  deprecated: false
 - name: EntityAddToWorldEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityAddToWorldEvent.html
   source: paper
   description: 何らかの理由でワールドにエンティティが増えた際に呼び出される。
+  deprecated: false
 - name: EntityAirChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityAirChangeEvent.html
   source: bukkit
   description: エンティティの残り酸素量が変化する際に呼び出される。
+  deprecated: false
 - name: EntityBlockFormEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/EntityBlockFormEvent.html
   source: bukkit
@@ -269,58 +330,72 @@
     エンティティによってブロックが形成される際に呼び出される。以下に例を示す。
     - スノーゴーレムによって雪が形成された時。
     - 氷渡りのエンチャントによって氷が形成された時。
+  deprecated: false
 - name: EntityBreakDoorEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityBreakDoorEvent.html
   source: bukkit
   description: エンティティによってドアが破壊される際に呼び出される。
+  deprecated: false
 - name: EntityBreedEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityBreedEvent.html
   source: bukkit
   description: エンティティが繁殖する際に呼び出される。
+  deprecated: false
 - name: EntityChangeBlockEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityChangeBlockEvent.html
   source: bukkit
   description: エンティティがブロックを変化させる際に呼び出される。適したイベントが見当たらない際に呼び出される。
+  deprecated: false
 - name: EntityCombustByBlockEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityCombustByBlockEvent.html
   source: bukkit
   description: ブロックによってエンティティが炎上する際に呼び出される。
+  deprecated: false
 - name: EntityCombustByEntityEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityCombustByEntityEvent.html
   source: bukkit
   description: エンティティによってエンティティが炎上する際に呼び出される。
+  deprecated: false
 - name: EntityCombustEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityCombustEvent.html
   source: bukkit
   description: エンティティが炎上する際に呼び出される。
+  deprecated: false
 - name: EntityCreatePortalEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityCreatePortalEvent.html
   source: bukkit
   description: エンティティがポータルを作成する際に呼び出される。[PortalCreateEvent](README.md#bukkit-portalcreateevent) を使うことが推奨されている。
+  deprecated: false
 - name: EntityDamageByBlockEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityDamageByBlockEvent.html
   source: bukkit
   description: ブロックによってエンティティがダメージを受ける際に呼び出される。
+  deprecated: false
 - name: EntityDamageByEntityEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityDamageByEntityEvent.html
   source: bukkit
   description: エンティティによってエンティティがダメージを受ける際に呼び出される。
+  deprecated: false
 - name: EntityDamageEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityDamageEvent.html
   source: bukkit
   description: エンティティがダメージを受ける際に呼び出される。
+  deprecated: false
 - name: EntityDeathEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityDeathEvent.html
   source: bukkit
   description: エンティティが死ぬ際に呼び出される。
+  deprecated: false
 - name: EntityDismountEvent
   link: https://papermc.io/javadocs/paper/1.16/org/spigotmc/event/entity/EntityDismountEvent.html
   source: spigot
   description: エンティティが乗っているエンティティが降りる際に呼び出される。
+  deprecated: false
 - name: EntityDropItemEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityDropItemEvent.html
   source: bukkit
   description: エンティティがアイテムをドロップする際に呼び出される。
+  deprecated: false
 - name: EntityEnterBlockEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityEnterBlockEvent.html
   source: bukkit
@@ -330,1035 +405,1294 @@
 
     しかし、以下の場合は呼び出されない。
     - シルバーフィッシュが石に入る時。[EntityChangeBlockEvent](README.md#bukkit-entitychangeblockevent) が呼び出される。
+  deprecated: false
 - name: EntityEnterLoveModeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityEnterLoveModeEvent.html
   source: bukkit
   description: エンティティが発情する際に呼び出される。このイベントをキャンセルしても使用したアイテムは消費されてしまう。
+  deprecated: false
 - name: EntityEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityEvent.html
   source: bukkit
   description: エンティティに関するイベントを表す。
+  deprecated: false
 - name: EntityExplodeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityExplodeEvent.html
   source: bukkit
   description: エンティティが爆発する際に呼び出される。
+  deprecated: false
 - name: EntityInteractEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityInteractEvent.html
   source: bukkit
   description: エンティティ同士が押し合う際に呼び出される。
+  deprecated: false
 - name: EntityJumpEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityJumpEvent.html
   source: paper
   description: エンティティがジャンプする際に呼び出される。
+  deprecated: false
 - name: EntityKnockbackByEntityEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityKnockbackByEntityEvent.html
   source: paper
   description: エンティティによってエンティティがノックバックする際に呼び出される。
+  deprecated: false
 - name: EntityLoadCrossbowEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/entity/EntityLoadCrossbowEvent.html
   source: paper
   description: エンティティがアイテムをクロスボウに装填する際に呼び出される。
+  deprecated: false
 - name: EntityMountEvent
   link: https://papermc.io/javadocs/paper/1.16/org/spigotmc/event/entity/EntityMountEvent.html
   source: spigot
   description: エンティティがエンティティに乗る際に呼び出される。
+  deprecated: false
 - name: EntityMoveEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/entity/EntityMoveEvent.html
   source: paper
   description: エンティティが移動する際に呼び出される。
+  deprecated: false
 - name: EntityPathfindEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityPathfindEvent.html
   source: paper
   description: エンティティが目的の場所への移動を開始する際に呼び出される。
+  deprecated: false
 - name: EntityPickupItemEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPickupItemEvent.html
   source: bukkit
   description: エンティティが地面からアイテムを拾う際に呼び出される。
+  deprecated: false
 - name: EntityPlaceEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPlaceEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: EntityPortalEnterEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPortalEnterEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: EntityPortalEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPortalEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: EntityPortalExitEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPortalExitEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: EntityPoseChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPoseChangeEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: EntityPotionEffectEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPotionEffectEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: EntityRegainHealthEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityRegainHealthEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: EntityRemoveFromWorldEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityRemoveFromWorldEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: EntityResurrectEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityResurrectEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: EntityShootBowEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityShootBowEvent.html
   source: bukkit
   description: ''
+  deprecated: true
 - name: EntitySpawnEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntitySpawnEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: EntitySpellCastEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntitySpellCastEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: EntityTameEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityTameEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: EntityTargetEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityTargetEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: EntityTargetLivingEntityEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityTargetLivingEntityEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: EntityTeleportEndGatewayEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityTeleportEndGatewayEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: EntityTeleportEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityTeleportEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: EntityToggleGlideEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityToggleGlideEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: EntityToggleSwimEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityToggleSwimEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: EntityTransformEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityTransformEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: EntityTransformedEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityTransformedEvent.html
   source: paper
   description: ''
+  deprecated: true
 - name: EntityUnleashEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityUnleashEvent.html
   source: bukkit
   description: ''
+  deprecated: true
 - name: EntityZapEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityZapEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: Event
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/Event.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: ExpBottleEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ExpBottleEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: ExperienceOrbMergeEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/ExperienceOrbMergeEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: ExplosionPrimeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ExplosionPrimeEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: FillProfileEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/profile/FillProfileEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: FireworkExplodeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/FireworkExplodeEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: FluidLevelChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/FluidLevelChangeEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: FoodLevelChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/FoodLevelChangeEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: FurnaceBurnEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/FurnaceBurnEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: FurnaceExtractEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/FurnaceExtractEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: FurnaceSmeltEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/FurnaceSmeltEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: GS4QueryEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/server/GS4QueryEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: HangingBreakByEntityEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/hanging/HangingBreakByEntityEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: HangingBreakEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/hanging/HangingBreakEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: HangingEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/hanging/HangingEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: HangingPlaceEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/hanging/HangingPlaceEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: HorseJumpEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/HorseJumpEvent.html
   source: bukkit
   description: ''
+  deprecated: true
 - name: IllegalPacketEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/IllegalPacketEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: InventoryClickEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryClickEvent.html
   source: bukkit
   description: ''
+  deprecated: true
 - name: InventoryCloseEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryCloseEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: InventoryCreativeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryCreativeEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: InventoryDragEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryDragEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: InventoryEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: InventoryInteractEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryInteractEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: InventoryMoveItemEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryMoveItemEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: InventoryOpenEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryOpenEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: InventoryPickupItemEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryPickupItemEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: ItemDespawnEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ItemDespawnEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: ItemMergeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ItemMergeEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: ItemSpawnEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ItemSpawnEvent.html
   source: bukkit
   description: ''
+  deprecated: true
 - name: LeavesDecayEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/LeavesDecayEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: LightningStrikeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/weather/LightningStrikeEvent.html
   source: bukkit
   description: ''
+  deprecated: true
 - name: LingeringPotionSplashEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/LingeringPotionSplashEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: LookupProfileEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/profile/LookupProfileEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: LootGenerateEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/LootGenerateEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: LootableInventoryReplenishEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/loottable/LootableInventoryReplenishEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: MapInitializeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/MapInitializeEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: MoistureChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/MoistureChangeEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: NotePlayEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/NotePlayEvent.html
   source: bukkit
   description: ''
+  deprecated: true
 - name: PaperServerListPingEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/server/PaperServerListPingEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: PhantomPreSpawnEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/PhantomPreSpawnEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: PigZapEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/PigZapEvent.html
   source: bukkit
   description: ''
+  deprecated: true
 - name: PigZombieAngerEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/PigZombieAngerEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PlayerAdvancementCriterionGrantEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerAdvancementCriterionGrantEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: PlayerAdvancementDoneEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerAdvancementDoneEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PlayerAnimationEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerAnimationEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PlayerArmorChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerArmorChangeEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: PlayerArmorStandManipulateEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerArmorStandManipulateEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PlayerAttackEntityCooldownResetEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerAttackEntityCooldownResetEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: PlayerAttemptPickupItemEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerAttemptPickupItemEvent.html
   source: bukkit
   description: ''
+  deprecated: true
 - name: PlayerBedEnterEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBedEnterEvent.html
   source: bukkit
   description: ''
+  deprecated: true
 - name: PlayerBedLeaveEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBedLeaveEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PlayerBucketEmptyEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketEmptyEvent.html
   source: bukkit
   description: ''
+  deprecated: true
 - name: PlayerBucketEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketEvent.html
   source: bukkit
   description: ''
+  deprecated: true
 - name: PlayerBucketFillEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketFillEvent.html
   source: bukkit
   description: ''
+  deprecated: true
 - name: PlayerChangeBeaconEffectEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerChangeBeaconEffectEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: PlayerChangedMainHandEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChangedMainHandEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PlayerChangedWorldEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChangedWorldEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PlayerChannelEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChannelEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PlayerChatEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChatEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PlayerChatTabCompleteEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChatTabCompleteEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PlayerChunkLoadEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/packet/PlayerChunkLoadEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: PlayerChunkUnloadEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/packet/PlayerChunkUnloadEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: PlayerClientOptionsChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerClientOptionsChangeEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: PlayerCommandPreprocessEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerCommandPreprocessEvent.html
   source: bukkit
   description: ''
+  deprecated: true
 - name: PlayerCommandSendEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerCommandSendEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PlayerConnectionCloseEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerConnectionCloseEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: PlayerDeathEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/PlayerDeathEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PlayerDropItemEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerDropItemEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PlayerEditBookEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerEditBookEvent.html
   source: bukkit
   description: ''
+  deprecated: true
 - name: PlayerEggThrowEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerEggThrowEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PlayerElytraBoostEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerElytraBoostEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: PlayerEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PlayerExpChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerExpChangeEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PlayerFishEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerFishEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PlayerFlowerPotManipulateEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerFlowerPotManipulateEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: PlayerGameModeChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerGameModeChangeEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PlayerHandshakeEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerHandshakeEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: PlayerHarvestBlockEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerHarvestBlockEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PlayerInitialSpawnEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerInitialSpawnEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: PlayerInteractAtEntityEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerInteractAtEntityEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PlayerInteractEntityEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerInteractEntityEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PlayerInteractEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerInteractEvent.html
   source: bukkit
   description: ''
+  deprecated: true
 - name: PlayerItemBreakEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerItemBreakEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PlayerItemConsumeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerItemConsumeEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PlayerItemCooldownEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerItemCooldownEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: PlayerItemDamageEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerItemDamageEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PlayerItemHeldEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerItemHeldEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PlayerItemMendEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerItemMendEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PlayerJoinEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerJoinEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PlayerJumpEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerJumpEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: PlayerKickEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerKickEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PlayerLaunchProjectileEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerLaunchProjectileEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: PlayerLeashEntityEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/PlayerLeashEntityEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PlayerLecternPageChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerLecternPageChangeEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: PlayerLevelChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerLevelChangeEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PlayerLocaleChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerLocaleChangeEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PlayerLocaleChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerLocaleChangeEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: PlayerLoginEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerLoginEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PlayerLoomPatternSelectEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerLoomPatternSelectEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: PlayerMoveEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerMoveEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PlayerNaturallySpawnCreaturesEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/PlayerNaturallySpawnCreaturesEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: PlayerPickupArrowEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerPickupArrowEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PlayerPickupExperienceEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerPickupExperienceEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: PlayerPickupItemEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerPickupItemEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PlayerPortalEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerPortalEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PlayerPostRespawnEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerPostRespawnEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: PlayerPreLoginEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerPreLoginEvent.html
   source: bukkit
   description: ''
+  deprecated: true
 - name: PlayerQuitEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerQuitEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PlayerReadyArrowEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerReadyArrowEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: PlayerRecipeBookClickEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerRecipeBookClickEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: PlayerRecipeDiscoverEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerRecipeDiscoverEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PlayerRegisterChannelEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerRegisterChannelEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PlayerResourcePackStatusEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerResourcePackStatusEvent.html
   source: bukkit
   description: ''
+  deprecated: true
 - name: PlayerRespawnEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerRespawnEvent.html
   source: bukkit
   description: ''
+  deprecated: true
 - name: PlayerRiptideEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerRiptideEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PlayerShearBlockEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/PlayerShearBlockEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: PlayerShearEntityEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerShearEntityEvent.html
   source: bukkit
   description: ''
+  deprecated: true
 - name: PlayerSpawnLocationEvent
   link: https://papermc.io/javadocs/paper/1.16/org/spigotmc/event/player/PlayerSpawnLocationEvent.html
   source: spigot
   description: ''
+  deprecated: false
 - name: PlayerStartSpectatingEntityEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerStartSpectatingEntityEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: PlayerStatisticIncrementEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerStatisticIncrementEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PlayerStonecutterRecipeSelectEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerStonecutterRecipeSelectEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: PlayerStopSpectatingEntityEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerStopSpectatingEntityEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: PlayerSwapHandItemsEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerSwapHandItemsEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PlayerTakeLecternBookEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerTakeLecternBookEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PlayerTeleportEndGatewayEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerTeleportEndGatewayEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: PlayerTeleportEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerTeleportEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PlayerToggleFlightEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerToggleFlightEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PlayerToggleSneakEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerToggleSneakEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PlayerToggleSprintEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerToggleSprintEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PlayerTradeEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerTradeEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: PlayerUnleashEntityEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerUnleashEntityEvent.html
   source: bukkit
   description: ''
+  deprecated: true
 - name: PlayerUnregisterChannelEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerUnregisterChannelEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PlayerUseUnknownEntityEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerUseUnknownEntityEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: PlayerVelocityEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerVelocityEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PluginDisableEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/PluginDisableEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PluginEnableEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/PluginEnableEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PluginEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/PluginEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PortalCreateEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/PortalCreateEvent.html
   source: bukkit
   description: ''
+  deprecated: true
 - name: PotionSplashEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/PotionSplashEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PreCreatureSpawnEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/PreCreatureSpawnEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: PreFillProfileEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/profile/PreFillProfileEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: PreLookupProfileEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/profile/PreLookupProfileEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: PreSpawnerSpawnEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/PreSpawnerSpawnEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: PrepareAnvilEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/PrepareAnvilEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: PrepareGrindstoneEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/inventory/PrepareGrindstoneEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: PrepareItemCraftEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/PrepareItemCraftEvent.html
   source: bukkit
   description: クラフトの準備が出来た際に呼び出される。材料を並べ、完成アイテムが表示される毎に発生する。
+  deprecated: false
 - name: PrepareItemEnchantEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/enchantment/PrepareItemEnchantEvent.html
   source: bukkit
   description: ''
+  deprecated: true
 - name: PrepareResultEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/inventory/PrepareResultEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: PrepareSmithingEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/PrepareSmithingEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: ProfileWhitelistVerifyEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/profile/ProfileWhitelistVerifyEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: ProjectileCollideEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/ProjectileCollideEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: ProjectileHitEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ProjectileHitEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: ProjectileLaunchEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ProjectileLaunchEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: RaidEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/raid/RaidEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: RaidFinishEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/raid/RaidFinishEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: RaidSpawnWaveEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/raid/RaidSpawnWaveEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: RaidStopEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/raid/RaidStopEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: RaidTriggerEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/raid/RaidTriggerEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: RemoteServerCommandEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/RemoteServerCommandEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: ServerCommandEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/ServerCommandEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: ServerEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/ServerEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: ServerExceptionEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/server/ServerExceptionEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: ServerListPingEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/ServerListPingEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: ServerLoadEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/ServerLoadEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: ServerResourcesReloadedEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/server/ServerResourcesReloadedEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: ServerTickEndEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/server/ServerTickEndEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: ServerTickStartEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/server/ServerTickStartEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: ServiceEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/ServiceEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: ServiceRegisterEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/ServiceRegisterEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: ServiceUnregisterEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/ServiceUnregisterEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: SheepDyeWoolEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/SheepDyeWoolEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: SheepRegrowWoolEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/SheepRegrowWoolEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: SignChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/SignChangeEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: SkeletonHorseTrapEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/SkeletonHorseTrapEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: SlimeChangeDirectionEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/SlimeChangeDirectionEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: SlimePathfindEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/SlimePathfindEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: SlimeSplitEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/SlimeSplitEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: SlimeSwimEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/SlimeSwimEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: SlimeTargetLivingEntityEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/SlimeTargetLivingEntityEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: SlimeWanderEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/SlimeWanderEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: SpawnChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/SpawnChangeEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: SpawnerSpawnEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/SpawnerSpawnEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: SpongeAbsorbEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/SpongeAbsorbEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: StriderTemperatureChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/StriderTemperatureChangeEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: StructureGrowEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/StructureGrowEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: StructureLocateEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/world/StructureLocateEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: TNTPrimeEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/block/TNTPrimeEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: TabCompleteEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/TabCompleteEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: TargetHitEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/TargetHitEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: ThrownEggHatchEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/ThrownEggHatchEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: ThunderChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/weather/ThunderChangeEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: TimeSkipEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/TimeSkipEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: TradeSelectEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/TradeSelectEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: TurtleGoHomeEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/TurtleGoHomeEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: TurtleLayEggEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/TurtleLayEggEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: TurtleStartDiggingEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/TurtleStartDiggingEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: UnknownCommandEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/command/UnknownCommandEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: VehicleBlockCollisionEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleBlockCollisionEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: VehicleCollisionEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleCollisionEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: VehicleCreateEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleCreateEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: VehicleDamageEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleDamageEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: VehicleDestroyEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleDestroyEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: VehicleEnterEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleEnterEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: VehicleEntityCollisionEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleEntityCollisionEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: VehicleEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: VehicleExitEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleExitEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: VehicleMoveEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleMoveEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: VehicleUpdateEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleUpdateEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: VillagerAcquireTradeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/VillagerAcquireTradeEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: VillagerCareerChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/VillagerCareerChangeEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: VillagerReplenishTradeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/VillagerReplenishTradeEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: WeatherChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/weather/WeatherChangeEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: WeatherEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/weather/WeatherEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: WhitelistToggleEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/server/WhitelistToggleEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: WitchConsumePotionEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/WitchConsumePotionEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: WitchReadyPotionEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/WitchReadyPotionEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: WitchThrowPotionEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/WitchThrowPotionEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: WorldEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/WorldEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: WorldGameRuleChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/world/WorldGameRuleChangeEvent.html
   source: paper
   description: ''
+  deprecated: false
 - name: WorldInitEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/WorldInitEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: WorldLoadEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/WorldLoadEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: WorldSaveEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/WorldSaveEvent.html
   source: bukkit
   description: ''
+  deprecated: false
 - name: WorldUnloadEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/WorldUnloadEvent.html
   source: bukkit
   description: ''
+  deprecated: false

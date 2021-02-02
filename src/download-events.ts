@@ -46,6 +46,40 @@ async function downloadEvents(
   );
 }
 
+function updateClassType(events: { string: Event }, eventSource: EventSource) {
+  return requestPromise(
+    eventSource.javadocUrl + eventSource.deprecated,
+    function (e, response, body) {
+      if (e) {
+        console.error(e);
+      }
+
+      try {
+        // javadoc から イベント一覧を作成
+        const $ = cheerio.load(body);
+        $(".colDeprecatedItemName a").each(function (_, element) {
+          const a = $(element);
+          let href = a.prop("href");
+          href = href.substring(0, href.indexOf("#"));
+          if (href.endsWith("Event.html")) {
+            const name = href
+              .substring(0, href.length - 5)
+              .split("/")
+              .pop();
+            const source = getEventSource(href);
+            const event = events[name + source];
+            if (event) {
+              event.deprecated = true;
+            }
+          }
+        });
+      } catch (e) {
+        console.error(e);
+      }
+    }
+  );
+}
+
 const main = async () => {
   // 前回のデータをロード
   const lastData = yaml.load(fs.readFileSync(EventsYaml, "utf8"));
@@ -57,6 +91,11 @@ const main = async () => {
   // イベントをダウンロード
   for (const source of EventSources) {
     await downloadEvents(eventMap, source);
+  }
+
+  // イベントが非推奨かどうかを取得
+  for (const source of EventSources) {
+    await updateClassType(eventMap, source);
   }
 
   // データを並び替え
