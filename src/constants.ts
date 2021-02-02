@@ -10,10 +10,9 @@ export const EventSources: EventSource[] = [
   },
 ];
 export const EventsYaml = "events.yaml";
-export const TemplateReadmeFileName = "template/README-template.md";
+export const TemplateReadmeFileName = "template/README.md";
 export const OutputReadmeFileName = "README.md";
-export const TemplateOnlyEventSourceFileName =
-  "template/only-source-template.md";
+export const TemplateOnlyEventSourceFileName = "template/only-source.md";
 export const OutputOnlyEventSourceFileName = "only-{name}.md";
 export const DoNotEditMessage = `<!--
 
