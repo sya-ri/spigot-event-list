@@ -131,6 +131,8 @@ AreaEffectCloud の効果が付与される際に呼び出される。5ティッ
 ### `bukkit` [EntityCombustEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityCombustEvent.html)
 エンティティが炎上する際に呼び出される。
 ### `bukkit` [EntityCreatePortalEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityCreatePortalEvent.html)
+`@Deprecated`
+
 エンティティがポータルを作成する際に呼び出される。[PortalCreateEvent](README.md#bukkit-portalcreateevent) を使うことが推奨されている。
 ### `bukkit` [EntityDamageByBlockEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityDamageByBlockEvent.html)
 ブロックによってエンティティがダメージを受ける際に呼び出される。
@@ -159,6 +161,8 @@ AreaEffectCloud の効果が付与される際に呼び出される。5ティッ
 ### `bukkit` [EntityPickupItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPickupItemEvent.html)
 エンティティが地面からアイテムを拾う際に呼び出される。
 ### `bukkit` [EntityPlaceEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPlaceEvent.html)
+`@Deprecated`
+
 
 ### `bukkit` [EntityPortalEnterEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPortalEnterEvent.html)
 
@@ -291,8 +295,12 @@ AreaEffectCloud の効果が付与される際に呼び出される。5ティッ
 ### `bukkit` [PlayerChannelEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChannelEvent.html)
 
 ### `bukkit` [PlayerChatEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChatEvent.html)
+`@Deprecated`
+
 
 ### `bukkit` [PlayerChatTabCompleteEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChatTabCompleteEvent.html)
+`@Deprecated`
+
 
 ### `bukkit` [PlayerCommandPreprocessEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerCommandPreprocessEvent.html)
 
@@ -349,10 +357,14 @@ AreaEffectCloud の効果が付与される際に呼び出される。5ティッ
 ### `bukkit` [PlayerPickupArrowEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerPickupArrowEvent.html)
 
 ### `bukkit` [PlayerPickupItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerPickupItemEvent.html)
+`@Deprecated`
+
 
 ### `bukkit` [PlayerPortalEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerPortalEvent.html)
 
 ### `bukkit` [PlayerPreLoginEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerPreLoginEvent.html)
+`@Deprecated`
+
 
 ### `bukkit` [PlayerQuitEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerQuitEvent.html)
 
