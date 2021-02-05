@@ -417,61 +417,61 @@
 - name: EntityShootBowEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityShootBowEvent.html
   source: bukkit
-  description: ''
+  description: エンティティが弓で矢を放つ際に呼び出される。
 - name: EntitySpawnEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntitySpawnEvent.html
   source: bukkit
-  description: ''
+  description: エンティティがスポーンする際に呼び出される。
 - name: EntitySpellCastEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntitySpellCastEvent.html
   source: bukkit
-  description: ''
+  description: エヴォーカーやイリュージョナーが呪文を唱える際に呼び出される。
 - name: EntityTameEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityTameEvent.html
   source: bukkit
-  description: ''
+  description: エンティティを飼い慣らす際に呼び出される。
 - name: EntityTargetEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityTargetEvent.html
   source: bukkit
-  description: ''
+  description: 生き物が別のエンティティをターゲットする際、ターゲットを解除する際に呼び出される。
 - name: EntityTargetLivingEntityEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityTargetLivingEntityEvent.html
   source: bukkit
-  description: ''
+  description: '[EntityTargetEvent](README.md#bukkit-entitytargetevent) において LivingEntity をターゲットとする際に呼び出される。'
 - name: EntityTeleportEndGatewayEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityTeleportEndGatewayEvent.html
   source: paper
-  description: ''
+  description: エンティティがエンドゲートウェイでテレポートする際に呼び出される。
 - name: EntityTeleportEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityTeleportEvent.html
   source: bukkit
-  description: ''
+  description: プレイヤーではないエンティティがテレポートする際に呼び出される。
 - name: EntityToggleGlideEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityToggleGlideEvent.html
   source: bukkit
-  description: ''
+  description: エンティティの滑空状態が切り替わる際に呼び出される。
 - name: EntityToggleSwimEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityToggleSwimEvent.html
   source: bukkit
-  description: ''
+  description: エンティティの泳ぎ状態が切り替わる際に呼び出される。
 - name: EntityTransformEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityTransformEvent.html
   source: bukkit
-  description: ''
+  description: エンティティが別のエンティティに置きかわる際に呼び出される。
 - name: EntityTransformedEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityTransformedEvent.html
   source: paper
-  description: ''
+  description: エンティティが別のエンティティに置きかわる際に呼び出される。
   deprecate: true
   deprecateDescription: Bukkit に追加された [EntityTransformEvent](README.md#bukkit-entitytransformevent) を使う。
 - name: EntityUnleashEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityUnleashEvent.html
   source: bukkit
-  description: ''
+  description: エンティティからリードが外される際に呼び出される。
 - name: EntityZapEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityZapEvent.html
   source: paper
-  description: ''
+  description: エンティティに落雷が当たった際に呼び出される。
 - name: Event
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/Event.html
   source: bukkit

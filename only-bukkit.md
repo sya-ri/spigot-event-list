@@ -179,27 +179,27 @@ AreaEffectCloud の効果が付与される際に呼び出される。5ティッ
 ### `bukkit` [EntityResurrectEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityResurrectEvent.html)
 エンティティが死亡し、復活できる際に呼び出される。トーテムを装備していない場合、キャンセルされた状態で呼び出される。
 ### `bukkit` [EntityShootBowEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityShootBowEvent.html)
-
+エンティティが弓で矢を放つ際に呼び出される。
 ### `bukkit` [EntitySpawnEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntitySpawnEvent.html)
-
+エンティティがスポーンする際に呼び出される。
 ### `bukkit` [EntitySpellCastEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntitySpellCastEvent.html)
-
+エヴォーカーやイリュージョナーが呪文を唱える際に呼び出される。
 ### `bukkit` [EntityTameEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityTameEvent.html)
-
+エンティティを飼い慣らす際に呼び出される。
 ### `bukkit` [EntityTargetEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityTargetEvent.html)
-
+生き物が別のエンティティをターゲットする際、ターゲットを解除する際に呼び出される。
 ### `bukkit` [EntityTargetLivingEntityEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityTargetLivingEntityEvent.html)
-
+[EntityTargetEvent](README.md#bukkit-entitytargetevent) において LivingEntity をターゲットとする際に呼び出される。
 ### `bukkit` [EntityTeleportEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityTeleportEvent.html)
-
+プレイヤーではないエンティティがテレポートする際に呼び出される。
 ### `bukkit` [EntityToggleGlideEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityToggleGlideEvent.html)
-
+エンティティの滑空状態が切り替わる際に呼び出される。
 ### `bukkit` [EntityToggleSwimEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityToggleSwimEvent.html)
-
+エンティティの泳ぎ状態が切り替わる際に呼び出される。
 ### `bukkit` [EntityTransformEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityTransformEvent.html)
-
+エンティティが別のエンティティに置きかわる際に呼び出される。
 ### `bukkit` [EntityUnleashEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityUnleashEvent.html)
-
+エンティティからリードが外される際に呼び出される。
 ### `bukkit` [Event](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/Event.html)
 
 ### `bukkit` [ExpBottleEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ExpBottleEvent.html)
