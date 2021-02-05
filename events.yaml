@@ -379,41 +379,41 @@
 - name: EntityPlaceEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPlaceEvent.html
   source: bukkit
-  description: ''
+  description: エンティティが設置された際に呼び出される。このイベントは現在、アーマースタンド・ボート・トロッコ・エンドクリスタルでのみ呼び出される。
   deprecate: true
   deprecateDescription: 仮実装中。
 - name: EntityPortalEnterEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPortalEnterEvent.html
   source: bukkit
-  description: ''
+  description: エンティティがポータルに接触した際に呼び出される。
 - name: EntityPortalEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPortalEvent.html
   source: bukkit
-  description: ''
+  description: プレイヤー以外のエンティティがポータルでテレポートする際に呼び出される。プレイヤーの場合 [PlayerPortalEvent](README.md#bukkit-playerportalevent) が呼び出される。
 - name: EntityPortalExitEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPortalExitEvent.html
   source: bukkit
-  description: ''
+  description: エンティティがポータルを出る際に呼び出される。
 - name: EntityPoseChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPoseChangeEvent.html
   source: bukkit
-  description: ''
+  description: エンティティのポーズが変わった際に呼び出される。
 - name: EntityPotionEffectEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPotionEffectEvent.html
   source: bukkit
-  description: ''
+  description: エンティティのポーション効果が変更された際に呼び出される。
 - name: EntityRegainHealthEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityRegainHealthEvent.html
   source: bukkit
-  description: ''
+  description: エンティティが体力を回復する際に呼び出される。
 - name: EntityRemoveFromWorldEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityRemoveFromWorldEvent.html
   source: paper
-  description: ''
+  description: 何らかの理由でワールドからエンティティが削除される際に呼び出される。
 - name: EntityResurrectEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityResurrectEvent.html
   source: bukkit
-  description: ''
+  description: エンティティが死亡し、復活できる際に呼び出される。トーテムを装備していない場合、キャンセルされた状態で呼び出される。
 - name: EntityShootBowEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityShootBowEvent.html
   source: bukkit

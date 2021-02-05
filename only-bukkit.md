@@ -163,21 +163,21 @@ AreaEffectCloud の効果が付与される際に呼び出される。5ティッ
 ### `bukkit` [EntityPlaceEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPlaceEvent.html)
 `@Deprecated` 仮実装中。
 
-
+エンティティが設置された際に呼び出される。このイベントは現在、アーマースタンド・ボート・トロッコ・エンドクリスタルでのみ呼び出される。
 ### `bukkit` [EntityPortalEnterEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPortalEnterEvent.html)
-
+エンティティがポータルに接触した際に呼び出される。
 ### `bukkit` [EntityPortalEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPortalEvent.html)
-
+プレイヤー以外のエンティティがポータルでテレポートする際に呼び出される。プレイヤーの場合 [PlayerPortalEvent](README.md#bukkit-playerportalevent) が呼び出される。
 ### `bukkit` [EntityPortalExitEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPortalExitEvent.html)
-
+エンティティがポータルを出る際に呼び出される。
 ### `bukkit` [EntityPoseChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPoseChangeEvent.html)
-
+エンティティのポーズが変わった際に呼び出される。
 ### `bukkit` [EntityPotionEffectEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPotionEffectEvent.html)
-
+エンティティのポーション効果が変更された際に呼び出される。
 ### `bukkit` [EntityRegainHealthEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityRegainHealthEvent.html)
-
+エンティティが体力を回復する際に呼び出される。
 ### `bukkit` [EntityResurrectEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityResurrectEvent.html)
-
+エンティティが死亡し、復活できる際に呼び出される。トーテムを装備していない場合、キャンセルされた状態で呼び出される。
 ### `bukkit` [EntityShootBowEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityShootBowEvent.html)
 
 ### `bukkit` [EntitySpawnEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntitySpawnEvent.html)
