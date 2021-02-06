@@ -7,55 +7,55 @@
 
 ## イベント一覧
 ### `bukkit` [AreaEffectCloudApplyEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/AreaEffectCloudApplyEvent.html)
-AreaEffectCloud の効果が付与される際に呼び出される。5ティック毎に1回発生する。
+AreaEffectCloud の効果が付与される時に呼び出される。5ティック毎に1回発生する。
 ### `bukkit` [ArrowBodyCountChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ArrowBodyCountChangeEvent.html)
-矢がエンティティの本体に入る・存在する際に呼び出される。
+矢がエンティティの本体に入る・存在する時に呼び出される。
 ### `bukkit` [AsyncPlayerChatEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/AsyncPlayerChatEvent.html)
-プレイヤーがチャットした際に呼び出される。非同期でも同期でも呼び出されることがある。
+プレイヤーがチャットした時に呼び出される。非同期でも同期でも呼び出されることがある。
 ### `bukkit` [AsyncPlayerPreLoginEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/AsyncPlayerPreLoginEvent.html)
-プレイヤーがログインしようとしている際に呼び出される。非同期で処理される。
+プレイヤーがログインしようとしている時に呼び出される。非同期で処理される。
 ### `bukkit` [BatToggleSleepEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/BatToggleSleepEvent.html)
-コウモリが眠ったり起きたりする際に呼び出される。
+コウモリが眠ったり起きたりする時に呼び出される。
 ### `bukkit` [BlockBreakEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockBreakEvent.html)
-プレイヤーがブロックを破壊する際に呼び出される。
+プレイヤーがブロックを破壊する時に呼び出される。
 ### `bukkit` [BlockBurnEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockBurnEvent.html)
-ブロックが燃え尽きて破壊される際に呼び出される。
+ブロックが燃え尽きて破壊される時に呼び出される。
 ### `bukkit` [BlockCanBuildEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockCanBuildEvent.html)
-ブロックを設置しようとした際に呼び出される。設置可能かどうかを確認する。
+ブロックを設置しようとした時に呼び出される。設置可能かどうかを確認する。
 ### `bukkit` [BlockCookEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockCookEvent.html)
-アイテムがブロックを用いて調理される際に呼び出される。
+アイテムがブロックを用いて調理される時に呼び出される。
 ### `bukkit` [BlockDamageEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockDamageEvent.html)
-プレイヤーがブロックを損傷させる際に呼び出される。
+プレイヤーがブロックを損傷させる時に呼び出される。
 ### `bukkit` [BlockDispenseArmorEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockDispenseArmorEvent.html)
-ディスペンサーから装備可能なアイテムが射出され、エンティティに装備される際に呼び出される。
+ディスペンサーから装備可能なアイテムが射出され、エンティティに装備される時に呼び出される。
 ### `bukkit` [BlockDispenseEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockDispenseEvent.html)
-ディスペンサーからアイテムが射出される際に呼び出される。このイベントをキャンセルしても射出されたアイテムは減る。[BlockPreDispenseEvent](README.md#paper-blockpredispenseevent) を使うことでアイテムの消費もキャンセルできる。
+ディスペンサーからアイテムが射出される時に呼び出される。このイベントをキャンセルしても射出されたアイテムは減る。[BlockPreDispenseEvent](README.md#paper-blockpredispenseevent) を使うことでアイテムの消費もキャンセルできる。
 ### `bukkit` [BlockDropItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockDropItemEvent.html)
-プレイヤーによって破壊されたブロックがアイテムとしてドロップする際に呼び出される。
+プレイヤーによって破壊されたブロックがアイテムとしてドロップする時に呼び出される。
 ### `bukkit` [BlockEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockEvent.html)
 ブロック関連のイベントを表す。
 ### `bukkit` [BlockExpEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockExpEvent.html)
-ブロックが経験値を落とす際に呼び出される。
+ブロックが経験値を落とす時に呼び出される。
 ### `bukkit` [BlockExplodeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockExplodeEvent.html)
-ブロックが爆発する際に呼び出される。
+ブロックが爆発する時に呼び出される。
 ### `bukkit` [BlockFadeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockFadeEvent.html)
-自然にブロックが溶けたり消滅したりする際に呼び出される。以下に例を示す。
+自然にブロックが溶けたり消滅したりする時に呼び出される。以下に例を示す。
 - 光源によって雪や氷が溶ける時。
 - 燃料ブロックを破壊することなく、時間の経過によって火が消える時。
 - 水不足によってサンゴが死んだサンゴに変わる時。
 - カメが孵化し、カメの卵が破裂する時。
 ### `bukkit` [BlockFertilizeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockFertilizeEvent.html)
-プレイヤーが骨粉を使用し、ブロックに変更が生じる際に呼び出される。[StructureGrowEvent](README.md#bukkit-structuregrowevent) の後に呼び出される。
+プレイヤーが骨粉を使用し、ブロックに変更が生じる時に呼び出される。[StructureGrowEvent](README.md#bukkit-structuregrowevent) の後に呼び出される。
 ### `bukkit` [BlockFormEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockFormEvent.html)
-自然にブロックが形成される際に呼び出される。[BlockSpreadEvent](#bukkit-blockspreadevent) とは違い、ランダムに形成されないブロックに対して呼び出される。以下に例を示す。
+自然にブロックが形成される時に呼び出される。[BlockSpreadEvent](#bukkit-blockspreadevent) とは違い、ランダムに形成されないブロックに対して呼び出される。以下に例を示す。
 - 吹雪により雪が積もる時。
 - 雪に覆われたバイオームで氷が形成される時。
 - 水との接触による黒曜石や丸石の形成される時。
 - コンクリートパウダーと水の混合によるコンクリートが成形される時。
 ### `bukkit` [BlockFromToEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockFromToEvent.html)
-ブロックの変更が起こる際に呼び出される。液体が流れる時とドラゴンの卵がテレポートする時のみ呼び出される。
+ブロックの変更が起こる時に呼び出される。液体が流れる時とドラゴンの卵がテレポートする時のみ呼び出される。
 ### `bukkit` [BlockGrowEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockGrowEvent.html)
-自然に作物等が成長する際に呼び出される。以下に例を示す。
+自然に作物等が成長する時に呼び出される。以下に例を示す。
 - 小麦
 - サトウキビ
 - サボテン
@@ -63,201 +63,201 @@ AreaEffectCloud の効果が付与される際に呼び出される。5ティッ
 - かぼちゃ
 - カメの卵
 ### `bukkit` [BlockIgniteEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockIgniteEvent.html)
-ブロックが点火された際に呼び出される。
+ブロックが点火された時に呼び出される。
 ### `bukkit` [BlockMultiPlaceEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockMultiPlaceEvent.html)
-プレイヤーがマルチブロックを設置する際に呼び出される。
+プレイヤーがマルチブロックを設置する時に呼び出される。
 ### `bukkit` [BlockPhysicsEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockPhysicsEvent.html)
-ブロックの落下確認をする際に呼び出される。高頻度で呼び出されるので処理には注意が必要。
+ブロックの落下確認をする時に呼び出される。高頻度で呼び出されるので処理には注意が必要。
 ### `bukkit` [BlockPistonEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockPistonEvent.html)
-ピストンが動作する際に呼び出される。
+ピストンが動作する時に呼び出される。
 ### `bukkit` [BlockPistonExtendEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockPistonExtendEvent.html)
-ピストンが伸びる際に呼び出される。
+ピストンが伸びる時に呼び出される。
 ### `bukkit` [BlockPistonRetractEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockPistonRetractEvent.html)
-ピストンが縮む際に呼び出される。
+ピストンが縮む時に呼び出される。
 ### `bukkit` [BlockPlaceEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockPlaceEvent.html)
-プレイヤーがブロックを設置する際に呼び出される。
+プレイヤーがブロックを設置する時に呼び出される。
 ### `bukkit` [BlockRedstoneEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockRedstoneEvent.html)
-レッドストーンの強さが変化する際に呼び出される。
+レッドストーンの強さが変化する時に呼び出される。
 ### `bukkit` [BlockShearEntityEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockShearEntityEvent.html)
-ディスペンサーが羊の毛も刈る際に呼び出される。
+ディスペンサーが羊の毛も刈る時に呼び出される。
 ### `bukkit` [BlockSpreadEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockSpreadEvent.html)
-ブロックが拡散する際に呼び出される。[BlockFormEvent](#bukkit-blockformevent) とは違い、ランダムに形成されるブロックに対して呼び出される。以下に例を示す。
+ブロックが拡散する時に呼び出される。[BlockFormEvent](#bukkit-blockformevent) とは違い、ランダムに形成されるブロックに対して呼び出される。以下に例を示す。
 - キノコが増える時。
 - 火が燃え広がる時。
 ### `bukkit` [BrewEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/BrewEvent.html)
-醸造が完了する際に呼び出される。
+醸造が完了する時に呼び出される。
 ### `bukkit` [BrewingStandFuelEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/BrewingStandFuelEvent.html)
-燃料としてアイテムが醸造台に使用される際に呼び出される。
+燃料としてアイテムが醸造台に使用される時に呼び出される。
 ### `bukkit` [BroadcastMessageEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/BroadcastMessageEvent.html)
-サーバーにブロードキャストメッセージが送信された際に呼び出される。メッセージが非同期で送信された場合、イベントも非同期で呼び出される。
+サーバーにブロードキャストメッセージが送信された時に呼び出される。メッセージが非同期で送信された場合、イベントも非同期で呼び出される。
 ### `bukkit` [CauldronLevelChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/CauldronLevelChangeEvent.html)
-大釜の水が増えたり減ったりした際に呼び出される。
+大釜の水が増えたり減ったりした時に呼び出される。
 ### `bukkit` [ChunkEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/ChunkEvent.html)
 チャンク関連のイベントを表す
 ### `bukkit` [ChunkLoadEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/ChunkLoadEvent.html)
-チャンクが読み込まれた際に呼び出される。
+チャンクが読み込まれた時に呼び出される。
 ### `bukkit` [ChunkPopulateEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/ChunkPopulateEvent.html)
-新しいチャンクが作られた際に呼び出される。
+新しいチャンクが作られた時に呼び出される。
 ### `bukkit` [ChunkUnloadEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/ChunkUnloadEvent.html)
-チャンクの読み込みが停止された際に呼び出される。
+チャンクの読み込みが停止された時に呼び出される。
 ### `bukkit` [ConversationAbandonedEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/conversations/ConversationAbandonedEvent.html)
 不明。
 ### `bukkit` [CraftItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/CraftItemEvent.html)
-アイテムをクラフトする際に呼び出される。
+アイテムをクラフトする時に呼び出される。
 ### `bukkit` [CreatureSpawnEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/CreatureSpawnEvent.html)
-生き物がスポーンする際に呼び出される。
+生き物がスポーンする時に呼び出される。
 ### `bukkit` [CreeperPowerEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/CreeperPowerEvent.html)
-クリーパーが雷撃を受ける際に呼び出される。
+クリーパーが雷撃を受ける時に呼び出される。
 ### `bukkit` [EnchantItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/enchantment/EnchantItemEvent.html)
-アイテムにエンチャントした際に呼び出される。
+アイテムにエンチャントした時に呼び出される。
 ### `bukkit` [EnderDragonChangePhaseEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EnderDragonChangePhaseEvent.html)
-エンダードラゴンの攻撃フェーズが変わった際に呼び出される。
+エンダードラゴンの攻撃フェーズが変わった時に呼び出される。
 ### `bukkit` [EntityAirChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityAirChangeEvent.html)
-エンティティの残り酸素量が変化する際に呼び出される。
+エンティティの残り酸素量が変化する時に呼び出される。
 ### `bukkit` [EntityBlockFormEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/EntityBlockFormEvent.html)
-エンティティによってブロックが形成される際に呼び出される。以下に例を示す。
+エンティティによってブロックが形成される時に呼び出される。以下に例を示す。
 - スノーゴーレムによって雪が形成された時。
 - 氷渡りのエンチャントによって氷が形成された時。
 ### `bukkit` [EntityBreakDoorEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityBreakDoorEvent.html)
-エンティティによってドアが破壊される際に呼び出される。
+エンティティによってドアが破壊される時に呼び出される。
 ### `bukkit` [EntityBreedEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityBreedEvent.html)
-エンティティが繁殖する際に呼び出される。
+エンティティが繁殖する時に呼び出される。
 ### `bukkit` [EntityChangeBlockEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityChangeBlockEvent.html)
-エンティティがブロックを変化させる際に呼び出される。適したイベントが見当たらない際に呼び出される。
+エンティティがブロックを変化させる時に呼び出される。適したイベントが見当たらない時に呼び出される。
 ### `bukkit` [EntityCombustByBlockEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityCombustByBlockEvent.html)
-ブロックによってエンティティが炎上する際に呼び出される。
+ブロックによってエンティティが炎上する時に呼び出される。
 ### `bukkit` [EntityCombustByEntityEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityCombustByEntityEvent.html)
-エンティティによってエンティティが炎上する際に呼び出される。
+エンティティによってエンティティが炎上する時に呼び出される。
 ### `bukkit` [EntityCombustEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityCombustEvent.html)
-エンティティが炎上する際に呼び出される。
+エンティティが炎上する時に呼び出される。
 ### `bukkit` [EntityCreatePortalEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityCreatePortalEvent.html)
 `@Deprecated` ワールド関連のイベントとして定義された [PortalCreateEvent](README.md#bukkit-portalcreateevent) を使う。
 
-エンティティがポータルを作成する際に呼び出される。
+エンティティがポータルを作成する時に呼び出される。
 ### `bukkit` [EntityDamageByBlockEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityDamageByBlockEvent.html)
-ブロックによってエンティティがダメージを受ける際に呼び出される。
+ブロックによってエンティティがダメージを受ける時に呼び出される。
 ### `bukkit` [EntityDamageByEntityEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityDamageByEntityEvent.html)
-エンティティによってエンティティがダメージを受ける際に呼び出される。
+エンティティによってエンティティがダメージを受ける時に呼び出される。
 ### `bukkit` [EntityDamageEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityDamageEvent.html)
-エンティティがダメージを受ける際に呼び出される。
+エンティティがダメージを受ける時に呼び出される。
 ### `bukkit` [EntityDeathEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityDeathEvent.html)
-エンティティが死ぬ際に呼び出される。
+エンティティが死ぬ時に呼び出される。
 ### `bukkit` [EntityDropItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityDropItemEvent.html)
-エンティティがアイテムをドロップする際に呼び出される。
+エンティティがアイテムをドロップする時に呼び出される。
 ### `bukkit` [EntityEnterBlockEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityEnterBlockEvent.html)
-エンティティがブロックの中に入る際に呼び出される。以下に例を示す。
+エンティティがブロックの中に入る時に呼び出される。以下に例を示す。
 - ミツバチが巣箱に入る時。
 
 しかし、以下の場合は呼び出されない。
 - シルバーフィッシュが石に入る時。[EntityChangeBlockEvent](README.md#bukkit-entitychangeblockevent) が呼び出される。
 ### `bukkit` [EntityEnterLoveModeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityEnterLoveModeEvent.html)
-エンティティが発情する際に呼び出される。このイベントをキャンセルしても使用したアイテムは消費されてしまう。
+エンティティが発情する時に呼び出される。このイベントをキャンセルしても使用したアイテムは消費されてしまう。
 ### `bukkit` [EntityEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityEvent.html)
 エンティティに関するイベントを表す。
 ### `bukkit` [EntityExplodeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityExplodeEvent.html)
-エンティティが爆発する際に呼び出される。
+エンティティが爆発する時に呼び出される。
 ### `bukkit` [EntityInteractEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityInteractEvent.html)
-エンティティ同士が押し合う際に呼び出される。
+エンティティ同士が押し合う時に呼び出される。
 ### `bukkit` [EntityPickupItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPickupItemEvent.html)
-エンティティが地面からアイテムを拾う際に呼び出される。
+エンティティが地面からアイテムを拾う時に呼び出される。
 ### `bukkit` [EntityPlaceEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPlaceEvent.html)
 `@Deprecated` 仮実装中。
 
-エンティティが設置された際に呼び出される。このイベントは現在、アーマースタンド・ボート・トロッコ・エンドクリスタルでのみ呼び出される。
+エンティティが設置された時に呼び出される。このイベントは現在、アーマースタンド・ボート・トロッコ・エンドクリスタルでのみ呼び出される。
 ### `bukkit` [EntityPortalEnterEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPortalEnterEvent.html)
-エンティティがポータルに接触した際に呼び出される。
+エンティティがポータルに接触した時に呼び出される。
 ### `bukkit` [EntityPortalEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPortalEvent.html)
-プレイヤー以外のエンティティがポータルでテレポートする際に呼び出される。プレイヤーの場合 [PlayerPortalEvent](README.md#bukkit-playerportalevent) が呼び出される。
+プレイヤー以外のエンティティがポータルでテレポートする時に呼び出される。プレイヤーの場合 [PlayerPortalEvent](README.md#bukkit-playerportalevent) が呼び出される。
 ### `bukkit` [EntityPortalExitEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPortalExitEvent.html)
-エンティティがポータルを出る際に呼び出される。
+エンティティがポータルを出る時に呼び出される。
 ### `bukkit` [EntityPoseChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPoseChangeEvent.html)
-エンティティのポーズが変わった際に呼び出される。
+エンティティのポーズが変わった時に呼び出される。
 ### `bukkit` [EntityPotionEffectEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPotionEffectEvent.html)
-エンティティのポーション効果が変更された際に呼び出される。
+エンティティのポーション効果が変更された時に呼び出される。
 ### `bukkit` [EntityRegainHealthEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityRegainHealthEvent.html)
-エンティティが体力を回復する際に呼び出される。
+エンティティが体力を回復する時に呼び出される。
 ### `bukkit` [EntityResurrectEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityResurrectEvent.html)
-エンティティが死亡し、復活できる際に呼び出される。トーテムを装備していない場合、キャンセルされた状態で呼び出される。
+エンティティが死亡し、復活できる時に呼び出される。トーテムを装備していない場合、キャンセルされた状態で呼び出される。
 ### `bukkit` [EntityShootBowEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityShootBowEvent.html)
-エンティティが弓で矢を放つ際に呼び出される。
+エンティティが弓で矢を放つ時に呼び出される。
 ### `bukkit` [EntitySpawnEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntitySpawnEvent.html)
-エンティティがスポーンする際に呼び出される。
+エンティティがスポーンする時に呼び出される。
 ### `bukkit` [EntitySpellCastEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntitySpellCastEvent.html)
-エヴォーカーやイリュージョナーが呪文を唱える際に呼び出される。
+エヴォーカーやイリュージョナーが呪文を唱える時に呼び出される。
 ### `bukkit` [EntityTameEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityTameEvent.html)
-エンティティを飼い慣らす際に呼び出される。
+エンティティを飼い慣らす時に呼び出される。
 ### `bukkit` [EntityTargetEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityTargetEvent.html)
-生き物が別のエンティティをターゲットする際、ターゲットを解除する際に呼び出される。
+生き物が別のエンティティをターゲットする時、ターゲットを解除する時に呼び出される。
 ### `bukkit` [EntityTargetLivingEntityEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityTargetLivingEntityEvent.html)
-[EntityTargetEvent](README.md#bukkit-entitytargetevent) において LivingEntity をターゲットとする際に呼び出される。
+[EntityTargetEvent](README.md#bukkit-entitytargetevent) において LivingEntity をターゲットとする時に呼び出される。
 ### `bukkit` [EntityTeleportEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityTeleportEvent.html)
-プレイヤーではないエンティティがテレポートする際に呼び出される。
+プレイヤーではないエンティティがテレポートする時に呼び出される。
 ### `bukkit` [EntityToggleGlideEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityToggleGlideEvent.html)
-エンティティの滑空状態が切り替わる際に呼び出される。
+エンティティの滑空状態が切り替わる時に呼び出される。
 ### `bukkit` [EntityToggleSwimEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityToggleSwimEvent.html)
-エンティティの泳ぎ状態が切り替わる際に呼び出される。
+エンティティの泳ぎ状態が切り替わる時に呼び出される。
 ### `bukkit` [EntityTransformEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityTransformEvent.html)
-エンティティが別のエンティティに置きかわる際に呼び出される。
+エンティティが別のエンティティに置きかわる時に呼び出される。
 ### `bukkit` [EntityUnleashEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityUnleashEvent.html)
-エンティティからリードが外される際に呼び出される。
+エンティティからリードが外される時に呼び出される。
 ### `bukkit` [Event](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/Event.html)
 イベントを表す。
 ### `bukkit` [ExpBottleEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ExpBottleEvent.html)
-経験値ボトルから経験値が出る際に呼び出される。
+経験値ボトルから経験値が出る時に呼び出される。
 ### `bukkit` [ExplosionPrimeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ExplosionPrimeEvent.html)
-エンティティが爆発する際に呼び出される。
+エンティティが爆発する時に呼び出される。
 ### `bukkit` [FireworkExplodeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/FireworkExplodeEvent.html)
-花火が爆発する際に呼び出される。
+花火が爆発する時に呼び出される。
 ### `bukkit` [FluidLevelChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/FluidLevelChangeEvent.html)
-隣接したブロックによって液面が変化する際に呼び出される。
+隣接したブロックによって液面が変化する時に呼び出される。
 ### `bukkit` [FoodLevelChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/FoodLevelChangeEvent.html)
-空腹度が変化する際に呼び出される。
+空腹度が変化する時に呼び出される。
 ### `bukkit` [FurnaceBurnEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/FurnaceBurnEvent.html)
-かまど内でアイテムが燃料として使用される際に呼び出される。
+かまど内でアイテムが燃料として使用される時に呼び出される。
 ### `bukkit` [FurnaceExtractEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/FurnaceExtractEvent.html)
-プレイヤーがかまどからアイテムを取り出す際に呼び出される。
+プレイヤーがかまどからアイテムを取り出す時に呼び出される。
 ### `bukkit` [FurnaceSmeltEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/FurnaceSmeltEvent.html)
-かまど内でアイテムが精錬される際に呼び出される。
+かまど内でアイテムが精錬される時に呼び出される。
 ### `bukkit` [HangingBreakByEntityEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/hanging/HangingBreakByEntityEvent.html)
-エンティティによって壁掛けエンティティが破壊される際に呼び出される。
+エンティティによって壁掛けエンティティが破壊される時に呼び出される。
 ### `bukkit` [HangingBreakEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/hanging/HangingBreakEvent.html)
-壁掛けエンティティが破壊される際に呼び出される。
+壁掛けエンティティが破壊される時に呼び出される。
 ### `bukkit` [HangingEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/hanging/HangingEvent.html)
 壁掛けエンティティに関連したイベントであることを表す。壁掛けエンティティの例を以下に示す。
 - 絵画
 - 額縁
 - 柵に繋がれたリード
 ### `bukkit` [HangingPlaceEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/hanging/HangingPlaceEvent.html)
-壁掛けエンティティが設置される際に呼び出される。
+壁掛けエンティティが設置される時に呼び出される。
 ### `bukkit` [HorseJumpEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/HorseJumpEvent.html)
-馬がジャンプする際に呼び出される。
+馬がジャンプする時に呼び出される。
 ### `bukkit` [InventoryClickEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryClickEvent.html)
-インベントリを開いた状態で画面をクリックする際に呼び出される。
+インベントリを開いた状態で画面をクリックする時に呼び出される。
 ### `bukkit` [InventoryCloseEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryCloseEvent.html)
-インベントリを閉じる際に呼び出される。
+インベントリを閉じる時に呼び出される。
 ### `bukkit` [InventoryCreativeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryCreativeEvent.html)
-クリエイティブモードのプレイヤーがインベントリの操作をした際に呼び出される。呼び出される例を以下に示す。
+クリエイティブモードのプレイヤーがインベントリの操作をした時に呼び出される。呼び出される例を以下に示す。
 - インベントリにアイテムを置いた時
 - アイテムを拾った時
 - インベントリからアイテムをドロップした時
 ### `bukkit` [InventoryDragEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryDragEvent.html)
-インベントリ内でアイテムをドラッグした際に呼び出される。
+インベントリ内でアイテムをドラッグした時に呼び出される。
 ### `bukkit` [InventoryEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryEvent.html)
 インベントリ関連のイベントを表す。
 ### `bukkit` [InventoryInteractEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryInteractEvent.html)
 プレイヤーとインベントリが相互に作用するイベント表す。
 ### `bukkit` [InventoryMoveItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryMoveItemEvent.html)
-エンティティやホッパー等のブロックがインベントリ内のアイテムを別のインベントリに移動させる際に呼び出される。
+エンティティやホッパー等のブロックがインベントリ内のアイテムを別のインベントリに移動させる時に呼び出される。
 ### `bukkit` [InventoryOpenEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryOpenEvent.html)
-インベントリを開く際に呼び出される。
+インベントリを開く時に呼び出される。
 ### `bukkit` [InventoryPickupItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryPickupItemEvent.html)
-ホッパーが落ちているアイテムを拾う際に呼び出される。
+ホッパーが落ちているアイテムを拾う時に呼び出される。
 ### `bukkit` [ItemDespawnEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ItemDespawnEvent.html)
-時間によってアイテムが消滅する際に呼び出される。
+時間によってアイテムが消滅する時に呼び出される。
 ### `bukkit` [ItemMergeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ItemMergeEvent.html)
-同じアイテムが合わさる際に呼び出される。
+同じアイテムが合わさる時に呼び出される。
 ### `bukkit` [ItemSpawnEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ItemSpawnEvent.html)
-アイテムがワールドにスポーンする際に呼び出される。
+アイテムがワールドにスポーンする時に呼び出される。
 ### `bukkit` [LeavesDecayEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/LeavesDecayEvent.html)
 
 ### `bukkit` [LightningStrikeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/weather/LightningStrikeEvent.html)
@@ -419,7 +419,7 @@ AreaEffectCloud の効果が付与される際に呼び出される。5ティッ
 ### `bukkit` [PrepareAnvilEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/PrepareAnvilEvent.html)
 
 ### `bukkit` [PrepareItemCraftEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/PrepareItemCraftEvent.html)
-クラフトの準備が出来た際に呼び出される。材料を並べ、完成アイテムが表示される毎に発生する。
+クラフトの準備が出来た時に呼び出される。材料を並べ、完成アイテムが表示される毎に発生する。
 ### `bukkit` [PrepareItemEnchantEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/enchantment/PrepareItemEnchantEvent.html)
 
 ### `bukkit` [PrepareSmithingEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/PrepareSmithingEvent.html)

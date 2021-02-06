@@ -7,65 +7,65 @@
 
 ## イベント一覧
 ### `paper` [AnvilDamagedEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/block/AnvilDamagedEvent.html)
-使用したことで金床が損傷する際に呼び出される。
+使用したことで金床が損傷する時に呼び出される。
 ### `paper` [AsyncTabCompleteEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/server/AsyncTabCompleteEvent.html)
-タブ補完を行う際に呼び出される。非同期で処理される。このイベントが結果を返す時、標準のタブ補完処理は発生しない。ただし、 [TabCompleteEvent](README.md#bukkit-tabcompleteevent) は非同期の結果と共に呼び出される。
+タブ補完を行う時に呼び出される。非同期で処理される。このイベントが結果を返す時、標準のタブ補完処理は発生しない。ただし、 [TabCompleteEvent](README.md#bukkit-tabcompleteevent) は非同期の結果と共に呼び出される。
 ### `paper` [BeaconEffectEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/block/BeaconEffectEvent.html)
-ビーコンの効果がプレイヤーに適用される際に呼び出される。
+ビーコンの効果がプレイヤーに適用される時に呼び出される。
 ### `paper` [BellRingEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/BellRingEvent.html)
-ベルが鳴る際に呼び出される。
+ベルが鳴る時に呼び出される。
 ### `paper` [BlockDestroyEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/block/BlockDestroyEvent.html)
-サーバーがブロックを破棄する際に呼び出される。
+サーバーがブロックを破棄する時に呼び出される。
 ### `paper` [BlockFailedDispenseEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/BlockFailedDispenseEvent.html)
-ディスペンサーにアイテムが存在せず、射出されなかった際に呼び出される。
+ディスペンサーにアイテムが存在せず、射出されなかった時に呼び出される。
 ### `paper` [BlockPreDispenseEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/BlockPreDispenseEvent.html)
-ディスペンサーからアイテムが射出される際に呼び出される。[BlockDispenseEvent](README.md#bukkit-blockdispenseevent) の前に呼び出されるので、ディスペンサーのアイテム消費もキャンセルできる。
+ディスペンサーからアイテムが射出される時に呼び出される。[BlockDispenseEvent](README.md#bukkit-blockdispenseevent) の前に呼び出されるので、ディスペンサーのアイテム消費もキャンセルできる。
 ### `paper` [CreeperIgniteEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/CreeperIgniteEvent.html)
-クリーパーの点火状態が切り替わる際に呼び出される。
+クリーパーの点火状態が切り替わる時に呼び出される。
 ### `paper` [DragonEggFormEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/DragonEggFormEvent.html)
-エンダードラゴンが討伐され、卵が設置される際に呼び出される。
+エンダードラゴンが討伐され、卵が設置される時に呼び出される。
 ### `paper` [EnderDragonFireballHitEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EnderDragonFireballHitEvent.html)
-エンダードラゴンが放った火球が衝突し、AreaEffectCloud が発生する際に呼び出される。
+エンダードラゴンが放った火球が衝突し、AreaEffectCloud が発生する時に呼び出される。
 ### `paper` [EnderDragonFlameEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EnderDragonFlameEvent.html)
-エンダードラゴンが炎を吐き、AreaEffectCloud が発生する際に呼び出される。
+エンダードラゴンが炎を吐き、AreaEffectCloud が発生する時に呼び出される。
 ### `paper` [EnderDragonShootFireballEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EnderDragonShootFireballEvent.html)
-エンダードラゴンが火球を放つ際に呼び出される。
+エンダードラゴンが火球を放つ時に呼び出される。
 ### `paper` [EndermanAttackPlayerEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EndermanAttackPlayerEvent.html)
-エンダーマンがプレイヤーを攻撃するか決定する際に呼び出される。
+エンダーマンがプレイヤーを攻撃するか決定する時に呼び出される。
 ### `paper` [EndermanEscapeEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EndermanEscapeEvent.html)
-エンダーマンが逃げた際に呼び出される。
+エンダーマンが逃げた時に呼び出される。
 ### `paper` [EntityAddToWorldEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityAddToWorldEvent.html)
-何らかの理由でワールドにエンティティが増えた際に呼び出される。
+何らかの理由でワールドにエンティティが増えた時に呼び出される。
 ### `paper` [EntityJumpEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityJumpEvent.html)
-エンティティがジャンプする際に呼び出される。
+エンティティがジャンプする時に呼び出される。
 ### `paper` [EntityKnockbackByEntityEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityKnockbackByEntityEvent.html)
-エンティティによってエンティティがノックバックする際に呼び出される。
+エンティティによってエンティティがノックバックする時に呼び出される。
 ### `paper` [EntityLoadCrossbowEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/entity/EntityLoadCrossbowEvent.html)
-エンティティがアイテムをクロスボウに装填する際に呼び出される。
+エンティティがアイテムをクロスボウに装填する時に呼び出される。
 ### `paper` [EntityMoveEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/entity/EntityMoveEvent.html)
-エンティティが移動する際に呼び出される。
+エンティティが移動する時に呼び出される。
 ### `paper` [EntityPathfindEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityPathfindEvent.html)
-エンティティが目的の場所への移動を開始する際に呼び出される。
+エンティティが目的の場所への移動を開始する時に呼び出される。
 ### `paper` [EntityRemoveFromWorldEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityRemoveFromWorldEvent.html)
-何らかの理由でワールドからエンティティが削除される際に呼び出される。
+何らかの理由でワールドからエンティティが削除される時に呼び出される。
 ### `paper` [EntityTeleportEndGatewayEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityTeleportEndGatewayEvent.html)
-エンティティがエンドゲートウェイでテレポートする際に呼び出される。
+エンティティがエンドゲートウェイでテレポートする時に呼び出される。
 ### `paper` [EntityTransformedEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityTransformedEvent.html)
 `@Deprecated` Bukkit に追加された [EntityTransformEvent](README.md#bukkit-entitytransformevent) を使う。
 
-エンティティが別のエンティティに置きかわる際に呼び出される。
+エンティティが別のエンティティに置きかわる時に呼び出される。
 ### `paper` [EntityZapEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityZapEvent.html)
-エンティティに落雷が当たった際に呼び出される。
+エンティティに落雷が当たった時に呼び出される。
 ### `paper` [ExperienceOrbMergeEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/ExperienceOrbMergeEvent.html)
-経験値オーブが合わさる際に呼び出される。
+経験値オーブが合わさる時に呼び出される。
 ### `paper` [FillProfileEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/profile/FillProfileEvent.html)
-プロファイルプロパティが追加された際に呼び出される。
+プロファイルプロパティが追加された時に呼び出される。
 ### `paper` [GS4QueryEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/server/GS4QueryEvent.html)
-GS4クエリプロトコルがクエリされた際に呼び出される。
+GS4クエリプロトコルがクエリされた時に呼び出される。
 ### `paper` [IllegalPacketEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/IllegalPacketEvent.html)
 `@Deprecated` 使われていない。
 
-不正なパケットが送られた際に呼び出される。
+不正なパケットが送られた時に呼び出される。
 ### `paper` [LookupProfileEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/profile/LookupProfileEvent.html)
 
 ### `paper` [LootableInventoryReplenishEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/loottable/LootableInventoryReplenishEvent.html)
