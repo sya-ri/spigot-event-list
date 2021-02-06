@@ -657,51 +657,51 @@
 - name: PlayerAdvancementCriterionGrantEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerAdvancementCriterionGrantEvent.html
   source: paper
-  description: ''
+  description: 進捗の条件を達成した時に呼び出される。
 - name: PlayerAdvancementDoneEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerAdvancementDoneEvent.html
   source: bukkit
-  description: ''
+  description: 進捗の条件を全て達成した時に呼び出される。
 - name: PlayerAnimationEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerAnimationEvent.html
   source: bukkit
-  description: ''
+  description: アニメーションに関するイベントであることを表す。
 - name: PlayerArmorChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerArmorChangeEvent.html
   source: paper
-  description: ''
+  description: 鎧が変更された時に呼び出される。
 - name: PlayerArmorStandManipulateEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerArmorStandManipulateEvent.html
   source: bukkit
-  description: ''
+  description: アーマースタンドに対してアイテムを交換・取得・配置する時に呼び出される。
 - name: PlayerAttackEntityCooldownResetEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerAttackEntityCooldownResetEvent.html
   source: paper
-  description: ''
+  description: 攻撃のクールダウンがリセットする際に呼び出される。
 - name: PlayerAttemptPickupItemEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerAttemptPickupItemEvent.html
   source: bukkit
-  description: ''
+  description: 地面からアイテムを拾おうとする際に呼び出される。
 - name: PlayerBedEnterEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBedEnterEvent.html
   source: bukkit
-  description: ''
+  description: ベッドに入る時に呼び出される。
 - name: PlayerBedLeaveEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBedLeaveEvent.html
   source: bukkit
-  description: ''
+  description: ベッドから出る時に呼び出される。
 - name: PlayerBucketEmptyEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketEmptyEvent.html
   source: bukkit
-  description: ''
+  description: バケツを空にする時に呼び出される。
 - name: PlayerBucketEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketEvent.html
   source: bukkit
-  description: ''
+  description: バケツを操作する時に呼び出される。
 - name: PlayerBucketFillEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketFillEvent.html
   source: bukkit
-  description: ''
+  description: バケツを満たす時に呼び出される。
 - name: PlayerChangeBeaconEffectEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerChangeBeaconEffectEvent.html
   source: paper
