@@ -73,7 +73,7 @@
 - name: BlockEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockEvent.html
   source: bukkit
-  description: ブロック関連のイベントを表す。
+  description: ブロックに関するイベントであることを表す。
 - name: BlockExpEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockExpEvent.html
   source: bukkit
@@ -189,7 +189,7 @@
 - name: ChunkEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/ChunkEvent.html
   source: bukkit
-  description: チャンク関連のイベントを表す
+  description: チャンクに関するイベントであることを表す
 - name: ChunkLoadEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/ChunkLoadEvent.html
   source: bukkit
@@ -298,7 +298,7 @@
   source: bukkit
   description: エンティティがポータルを作成する時に呼び出される。
   deprecate: true
-  deprecateDescription: ワールド関連のイベントとして定義された [PortalCreateEvent](README.md#bukkit-portalcreateevent) を使う。
+  deprecateDescription: ワールドに関するイベントとして定義された [PortalCreateEvent](README.md#bukkit-portalcreateevent) を使う。
 - name: EntityDamageByBlockEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityDamageByBlockEvent.html
   source: bukkit
@@ -339,7 +339,7 @@
 - name: EntityEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityEvent.html
   source: bukkit
-  description: エンティティに関するイベントを表す。
+  description: エンティティに関するイベントであることを表す。
 - name: EntityExplodeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityExplodeEvent.html
   source: bukkit
@@ -532,7 +532,7 @@
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/hanging/HangingEvent.html
   source: bukkit
   description: |-
-    壁掛けエンティティに関連したイベントであることを表す。壁掛けエンティティの例を以下に示す。
+    壁掛けエンティティに関するイベントであることを表す。壁掛けエンティティの例を以下に示す。
     - 絵画
     - 額縁
     - 柵に繋がれたリード
@@ -573,7 +573,7 @@
 - name: InventoryEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryEvent.html
   source: bukkit
-  description: インベントリ関連のイベントを表す。
+  description: インベントリに関するイベントであることを表す。
 - name: InventoryInteractEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryInteractEvent.html
   source: bukkit
@@ -1045,7 +1045,7 @@
 - name: PluginEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/PluginEvent.html
   source: bukkit
-  description: プラグインに関するイベントを表す。
+  description: プラグインに関するイベントであることを表す。
 - name: PortalCreateEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/PortalCreateEvent.html
   source: bukkit
@@ -1115,7 +1115,7 @@
 - name: RaidEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/raid/RaidEvent.html
   source: bukkit
-  description: レイドに関するイベントを表す。
+  description: レイドに関するイベントであることを表す。
 - name: RaidFinishEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/raid/RaidFinishEvent.html
   source: bukkit
@@ -1143,7 +1143,7 @@
 - name: ServerEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/ServerEvent.html
   source: bukkit
-  description: サーバーに関するイベントを表す。
+  description: サーバーに関するイベントであることを表す。
 - name: ServerExceptionEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/server/ServerExceptionEvent.html
   source: paper

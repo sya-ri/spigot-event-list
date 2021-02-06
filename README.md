@@ -54,7 +54,7 @@ AreaEffectCloud の効果が付与される時に呼び出される。5ティッ
 ### `bukkit` [BlockDropItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockDropItemEvent.html)
 プレイヤーによって破壊されたブロックがアイテムとしてドロップする時に呼び出される。
 ### `bukkit` [BlockEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockEvent.html)
-ブロック関連のイベントを表す。
+ブロックに関するイベントであることを表す。
 ### `bukkit` [BlockExpEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockExpEvent.html)
 ブロックが経験値を落とす時に呼び出される。
 ### `bukkit` [BlockExplodeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockExplodeEvent.html)
@@ -118,7 +118,7 @@ AreaEffectCloud の効果が付与される時に呼び出される。5ティッ
 ### `bukkit` [CauldronLevelChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/CauldronLevelChangeEvent.html)
 大釜の水が増えたり減ったりした時に呼び出される。
 ### `bukkit` [ChunkEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/ChunkEvent.html)
-チャンク関連のイベントを表す
+チャンクに関するイベントであることを表す
 ### `bukkit` [ChunkLoadEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/ChunkLoadEvent.html)
 チャンクが読み込まれた時に呼び出される。
 ### `bukkit` [ChunkPopulateEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/ChunkPopulateEvent.html)
@@ -172,7 +172,7 @@ AreaEffectCloud の効果が付与される時に呼び出される。5ティッ
 ### `bukkit` [EntityCombustEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityCombustEvent.html)
 エンティティが炎上する時に呼び出される。
 ### `bukkit` [EntityCreatePortalEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityCreatePortalEvent.html)
-`@Deprecated` ワールド関連のイベントとして定義された [PortalCreateEvent](README.md#bukkit-portalcreateevent) を使う。
+`@Deprecated` ワールドに関するイベントとして定義された [PortalCreateEvent](README.md#bukkit-portalcreateevent) を使う。
 
 エンティティがポータルを作成する時に呼び出される。
 ### `bukkit` [EntityDamageByBlockEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityDamageByBlockEvent.html)
@@ -196,7 +196,7 @@ AreaEffectCloud の効果が付与される時に呼び出される。5ティッ
 ### `bukkit` [EntityEnterLoveModeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityEnterLoveModeEvent.html)
 エンティティが発情する時に呼び出される。このイベントをキャンセルしても使用したアイテムは消費されてしまう。
 ### `bukkit` [EntityEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityEvent.html)
-エンティティに関するイベントを表す。
+エンティティに関するイベントであることを表す。
 ### `bukkit` [EntityExplodeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityExplodeEvent.html)
 エンティティが爆発する時に呼び出される。
 ### `bukkit` [EntityInteractEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityInteractEvent.html)
@@ -294,7 +294,7 @@ GS4クエリプロトコルがクエリされた時に呼び出される。
 ### `bukkit` [HangingBreakEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/hanging/HangingBreakEvent.html)
 壁掛けエンティティが破壊される時に呼び出される。
 ### `bukkit` [HangingEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/hanging/HangingEvent.html)
-壁掛けエンティティに関連したイベントであることを表す。壁掛けエンティティの例を以下に示す。
+壁掛けエンティティに関するイベントであることを表す。壁掛けエンティティの例を以下に示す。
 - 絵画
 - 額縁
 - 柵に繋がれたリード
@@ -318,7 +318,7 @@ GS4クエリプロトコルがクエリされた時に呼び出される。
 ### `bukkit` [InventoryDragEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryDragEvent.html)
 インベントリ内でアイテムをドラッグした時に呼び出される。
 ### `bukkit` [InventoryEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryEvent.html)
-インベントリ関連のイベントを表す。
+インベントリに関するイベントであることを表す。
 ### `bukkit` [InventoryInteractEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryInteractEvent.html)
 プレイヤーとインベントリが相互に作用するイベント表す。
 ### `bukkit` [InventoryMoveItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryMoveItemEvent.html)
@@ -560,7 +560,7 @@ LootTable によってアイテムが補充される時に呼び出される。
 ### `bukkit` [PluginEnableEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/PluginEnableEvent.html)
 プラグインが有効になった時に呼び出される。
 ### `bukkit` [PluginEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/PluginEvent.html)
-プラグインに関するイベントを表す。
+プラグインに関するイベントであることを表す。
 ### `bukkit` [PortalCreateEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/PortalCreateEvent.html)
 ポータルが作成される時に呼び出される。
 ### `bukkit` [PotionSplashEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/PotionSplashEvent.html)
@@ -596,7 +596,7 @@ Projectile がエンティティに当たる時に呼び出される。
 ### `bukkit` [ProjectileLaunchEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ProjectileLaunchEvent.html)
 Projectile が発射される時に呼び出される。
 ### `bukkit` [RaidEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/raid/RaidEvent.html)
-レイドに関するイベントを表す。
+レイドに関するイベントであることを表す。
 ### `bukkit` [RaidFinishEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/raid/RaidFinishEvent.html)
 レイドが終わった時に呼び出される。
 ### `bukkit` [RaidSpawnWaveEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/raid/RaidSpawnWaveEvent.html)
@@ -610,7 +610,7 @@ RCON を介してコマンド入力を受け取った時に呼び出される。
 ### `bukkit` [ServerCommandEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/ServerCommandEvent.html)
 プレイヤー以外がコマンドを実行する時に呼び出される。
 ### `bukkit` [ServerEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/ServerEvent.html)
-サーバーに関するイベントを表す。
+サーバーに関するイベントであることを表す。
 ### `paper` [ServerExceptionEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/server/ServerExceptionEvent.html)
 回復可能な状況で例外が発生した時に呼び出される。
 ### `bukkit` [ServerListPingEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/ServerListPingEvent.html)
