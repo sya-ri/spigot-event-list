@@ -475,59 +475,59 @@
 - name: Event
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/Event.html
   source: bukkit
-  description: イベントを表す
+  description: イベントを表す。
 - name: ExpBottleEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ExpBottleEvent.html
   source: bukkit
-  description: 経験値ボトルから経験値が出る際に呼び出される
+  description: 経験値ボトルから経験値が出る際に呼び出される。
 - name: ExperienceOrbMergeEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/ExperienceOrbMergeEvent.html
   source: paper
-  description: 経験値オーブが合わさる際に呼び出される
+  description: 経験値オーブが合わさる際に呼び出される。
 - name: ExplosionPrimeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ExplosionPrimeEvent.html
   source: bukkit
-  description: エンティティが爆発する際に呼び出される
+  description: エンティティが爆発する際に呼び出される。
 - name: FillProfileEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/profile/FillProfileEvent.html
   source: paper
-  description: プロファイルプロパティが追加された際に呼び出される
+  description: プロファイルプロパティが追加された際に呼び出される。
 - name: FireworkExplodeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/FireworkExplodeEvent.html
   source: bukkit
-  description: 花火が爆発する際に呼び出される
+  description: 花火が爆発する際に呼び出される。
 - name: FluidLevelChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/FluidLevelChangeEvent.html
   source: bukkit
-  description: 隣接したブロックによって液面が変化する際に呼び出される
+  description: 隣接したブロックによって液面が変化する際に呼び出される。
 - name: FoodLevelChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/FoodLevelChangeEvent.html
   source: bukkit
-  description: 空腹度が変化する際に呼び出される
+  description: 空腹度が変化する際に呼び出される。
 - name: FurnaceBurnEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/FurnaceBurnEvent.html
   source: bukkit
-  description: かまど内でアイテムが燃料として使用される際に呼び出される
+  description: かまど内でアイテムが燃料として使用される際に呼び出される。
 - name: FurnaceExtractEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/FurnaceExtractEvent.html
   source: bukkit
-  description: プレイヤーがかまどからアイテムを取り出す際に呼び出される
+  description: プレイヤーがかまどからアイテムを取り出す際に呼び出される。
 - name: FurnaceSmeltEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/FurnaceSmeltEvent.html
   source: bukkit
-  description: かまど内でアイテムが精錬される際に呼び出される
+  description: かまど内でアイテムが精錬される際に呼び出される。
 - name: GS4QueryEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/server/GS4QueryEvent.html
   source: paper
-  description: GS4クエリプロトコルがクエリされた際に呼び出される
+  description: GS4クエリプロトコルがクエリされた際に呼び出される。
 - name: HangingBreakByEntityEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/hanging/HangingBreakByEntityEvent.html
   source: bukkit
-  description: エンティティによって壁掛けエンティティが破壊される際に呼び出される
+  description: エンティティによって壁掛けエンティティが破壊される際に呼び出される。
 - name: HangingBreakEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/hanging/HangingBreakEvent.html
   source: bukkit
-  description: 壁掛けエンティティが破壊される際に呼び出される
+  description: 壁掛けエンティティが破壊される際に呼び出される。
 - name: HangingEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/hanging/HangingEvent.html
   source: bukkit
@@ -539,15 +539,15 @@
 - name: HangingPlaceEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/hanging/HangingPlaceEvent.html
   source: bukkit
-  description: 壁掛けエンティティが設置される際に呼び出される
+  description: 壁掛けエンティティが設置される際に呼び出される。
 - name: HorseJumpEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/HorseJumpEvent.html
   source: bukkit
-  description: 馬がジャンプする際に呼び出される
+  description: 馬がジャンプする際に呼び出される。
 - name: IllegalPacketEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/IllegalPacketEvent.html
   source: paper
-  description: 不正なパケットが送られた際に呼び出される
+  description: 不正なパケットが送られた際に呼び出される。
   deprecate: true
   deprecateDescription: 使われていない。
 - name: InventoryClickEvent
