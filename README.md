@@ -670,27 +670,27 @@ RCON を介してコマンド入力を受け取った時に呼び出される。
 - エンダーアイを使用した時
 - 宝の地図が開かれた時
 ### `paper` [TNTPrimeEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/block/TNTPrimeEvent.html)
-
+TNT に着火する時に呼び出される。
 ### `bukkit` [TabCompleteEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/TabCompleteEvent.html)
-
+プレイヤーやコンソールがコマンドをタブ補完する時に呼び出される。クライアントの変更により、プレイヤーの場合、コマンド自体では呼び出されず、コマンド引数の場合にのみ呼び出される。
 ### `paper` [TargetHitEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/TargetHitEvent.html)
-
+ターゲットブロックに Projectile が当たる時に呼び出される。
 ### `paper` [ThrownEggHatchEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/ThrownEggHatchEvent.html)
-
+投げられた卵が孵化するかの確認をする時に呼び出される。
 ### `bukkit` [ThunderChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/weather/ThunderChangeEvent.html)
-
+天気が雷雨に変わる時に呼び出される。
 ### `bukkit` [TimeSkipEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/TimeSkipEvent.html)
-
+時間がスキップされる時に呼び出される。
 ### `bukkit` [TradeSelectEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/TradeSelectEvent.html)
-
+取引画面のサイドバーで別の取引をクリックする時に呼び出される。
 ### `paper` [TurtleGoHomeEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/TurtleGoHomeEvent.html)
-
+カメが家に帰ることを決めた時に呼び出される。
 ### `paper` [TurtleLayEggEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/TurtleLayEggEvent.html)
-
+カメの卵が孵化する時に呼び出される。
 ### `paper` [TurtleStartDiggingEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/TurtleStartDiggingEvent.html)
-
+カメが産卵のために掘り始めた時に呼び出される。
 ### `bukkit` [UnknownCommandEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/command/UnknownCommandEvent.html)
-
+定義されていないコマンドをプレイヤーが実行した時に呼び出される。
 ### `bukkit` [VehicleBlockCollisionEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleBlockCollisionEvent.html)
 
 ### `bukkit` [VehicleCollisionEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleCollisionEvent.html)

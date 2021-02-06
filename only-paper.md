@@ -182,17 +182,17 @@ Projectile がエンティティと衝突する時に呼び出される。キャ
 - エンダーアイを使用した時
 - 宝の地図が開かれた時
 ### `paper` [TNTPrimeEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/block/TNTPrimeEvent.html)
-
+TNT に着火する時に呼び出される。
 ### `paper` [TargetHitEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/TargetHitEvent.html)
-
+ターゲットブロックに Projectile が当たる時に呼び出される。
 ### `paper` [ThrownEggHatchEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/ThrownEggHatchEvent.html)
-
+投げられた卵が孵化するかの確認をする時に呼び出される。
 ### `paper` [TurtleGoHomeEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/TurtleGoHomeEvent.html)
-
+カメが家に帰ることを決めた時に呼び出される。
 ### `paper` [TurtleLayEggEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/TurtleLayEggEvent.html)
-
+カメの卵が孵化する時に呼び出される。
 ### `paper` [TurtleStartDiggingEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/TurtleStartDiggingEvent.html)
-
+カメが産卵のために掘り始めた時に呼び出される。
 ### `paper` [WhitelistToggleEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/server/WhitelistToggleEvent.html)
 
 ### `paper` [WitchConsumePotionEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/WitchConsumePotionEvent.html)

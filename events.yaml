@@ -1254,47 +1254,47 @@
 - name: TNTPrimeEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/block/TNTPrimeEvent.html
   source: paper
-  description: ''
+  description: TNT に着火する時に呼び出される。
 - name: TabCompleteEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/TabCompleteEvent.html
   source: bukkit
-  description: ''
+  description: プレイヤーやコンソールがコマンドをタブ補完する時に呼び出される。クライアントの変更により、プレイヤーの場合、コマンド自体では呼び出されず、コマンド引数の場合にのみ呼び出される。
 - name: TargetHitEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/TargetHitEvent.html
   source: paper
-  description: ''
+  description: ターゲットブロックに Projectile が当たる時に呼び出される。
 - name: ThrownEggHatchEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/ThrownEggHatchEvent.html
   source: paper
-  description: ''
+  description: 投げられた卵が孵化するかの確認をする時に呼び出される。
 - name: ThunderChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/weather/ThunderChangeEvent.html
   source: bukkit
-  description: ''
+  description: 天気が雷雨に変わる時に呼び出される。
 - name: TimeSkipEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/TimeSkipEvent.html
   source: bukkit
-  description: ''
+  description: 時間がスキップされる時に呼び出される。
 - name: TradeSelectEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/TradeSelectEvent.html
   source: bukkit
-  description: ''
+  description: 取引画面のサイドバーで別の取引をクリックする時に呼び出される。
 - name: TurtleGoHomeEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/TurtleGoHomeEvent.html
   source: paper
-  description: ''
+  description: カメが家に帰ることを決めた時に呼び出される。
 - name: TurtleLayEggEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/TurtleLayEggEvent.html
   source: paper
-  description: ''
+  description: カメの卵が孵化する時に呼び出される。
 - name: TurtleStartDiggingEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/TurtleStartDiggingEvent.html
   source: paper
-  description: ''
+  description: カメが産卵のために掘り始めた時に呼び出される。
 - name: UnknownCommandEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/command/UnknownCommandEvent.html
   source: bukkit
-  description: ''
+  description: 定義されていないコマンドをプレイヤーが実行した時に呼び出される。
 - name: VehicleBlockCollisionEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleBlockCollisionEvent.html
   source: bukkit
