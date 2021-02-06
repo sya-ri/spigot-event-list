@@ -596,33 +596,33 @@ Projectile がエンティティに当たる時に呼び出される。
 ### `bukkit` [ProjectileLaunchEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ProjectileLaunchEvent.html)
 Projectile が発射される時に呼び出される。
 ### `bukkit` [RaidEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/raid/RaidEvent.html)
-
+レイドに関するイベントを表す。
 ### `bukkit` [RaidFinishEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/raid/RaidFinishEvent.html)
-
+レイドが終わった時に呼び出される。
 ### `bukkit` [RaidSpawnWaveEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/raid/RaidSpawnWaveEvent.html)
-
+レイドのウェーブが進んだ時に呼び出される。
 ### `bukkit` [RaidStopEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/raid/RaidStopEvent.html)
-
+レイドが終了した時に呼び出される。
 ### `bukkit` [RaidTriggerEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/raid/RaidTriggerEvent.html)
-
+レイドが始まる時に呼び出される。
 ### `bukkit` [RemoteServerCommandEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/RemoteServerCommandEvent.html)
-
+RCON を介してコマンド入力を受け取った時に呼び出される。
 ### `bukkit` [ServerCommandEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/ServerCommandEvent.html)
-
+プレイヤー以外がコマンドを実行する時に呼び出される。
 ### `bukkit` [ServerEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/ServerEvent.html)
-
+サーバーに関するイベントを表す。
 ### `paper` [ServerExceptionEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/server/ServerExceptionEvent.html)
-
+回復可能な状況で例外が発生した時に呼び出される。
 ### `bukkit` [ServerListPingEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/ServerListPingEvent.html)
 サーバーリストの表示内容を送る要求を受けた時に呼び出される。[PaperServerListPingEvent](README.md#paper-paperserverlistpingevent) を使うことでより詳細の情報を扱うことができる。
 ### `bukkit` [ServerLoadEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/ServerLoadEvent.html)
-
+サーバーが起動した時、リロードが完了した時に呼び出される。
 ### `paper` [ServerResourcesReloadedEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/server/ServerResourcesReloadedEvent.html)
-
+データパックなどのリソースがリロードされた時に呼び出される。カスタムレシピを再登録するために使用することを目的としている。
 ### `paper` [ServerTickEndEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/server/ServerTickEndEvent.html)
-
+メインループのチェックが終了した時に呼び出される。
 ### `paper` [ServerTickStartEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/server/ServerTickStartEvent.html)
-
+メインループのチェックが開始した時に呼び出される。
 ### `bukkit` [ServiceEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/ServiceEvent.html)
 
 ### `bukkit` [ServiceRegisterEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/ServiceRegisterEvent.html)

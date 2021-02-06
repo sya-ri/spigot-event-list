@@ -1115,39 +1115,39 @@
 - name: RaidEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/raid/RaidEvent.html
   source: bukkit
-  description: ''
+  description: レイドに関するイベントを表す。
 - name: RaidFinishEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/raid/RaidFinishEvent.html
   source: bukkit
-  description: ''
+  description: レイドが終わった時に呼び出される。
 - name: RaidSpawnWaveEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/raid/RaidSpawnWaveEvent.html
   source: bukkit
-  description: ''
+  description: レイドのウェーブが進んだ時に呼び出される。
 - name: RaidStopEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/raid/RaidStopEvent.html
   source: bukkit
-  description: ''
+  description: レイドが終了した時に呼び出される。
 - name: RaidTriggerEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/raid/RaidTriggerEvent.html
   source: bukkit
-  description: ''
+  description: レイドが始まる時に呼び出される。
 - name: RemoteServerCommandEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/RemoteServerCommandEvent.html
   source: bukkit
-  description: ''
+  description: RCON を介してコマンド入力を受け取った時に呼び出される。
 - name: ServerCommandEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/ServerCommandEvent.html
   source: bukkit
-  description: ''
+  description: プレイヤー以外がコマンドを実行する時に呼び出される。
 - name: ServerEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/ServerEvent.html
   source: bukkit
-  description: ''
+  description: サーバーに関するイベントを表す。
 - name: ServerExceptionEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/server/ServerExceptionEvent.html
   source: paper
-  description: ''
+  description: 回復可能な状況で例外が発生した時に呼び出される。
 - name: ServerListPingEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/ServerListPingEvent.html
   source: bukkit
@@ -1155,19 +1155,19 @@
 - name: ServerLoadEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/ServerLoadEvent.html
   source: bukkit
-  description: ''
+  description: サーバーが起動した時、リロードが完了した時に呼び出される。
 - name: ServerResourcesReloadedEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/server/ServerResourcesReloadedEvent.html
   source: paper
-  description: ''
+  description: データパックなどのリソースがリロードされた時に呼び出される。カスタムレシピを再登録するために使用することを目的としている。
 - name: ServerTickEndEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/server/ServerTickEndEvent.html
   source: paper
-  description: ''
+  description: メインループのチェックが終了した時に呼び出される。
 - name: ServerTickStartEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/server/ServerTickStartEvent.html
   source: paper
-  description: ''
+  description: メインループのチェックが開始した時に呼び出される。
 - name: ServiceEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/ServiceEvent.html
   source: bukkit
