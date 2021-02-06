@@ -307,29 +307,32 @@ GS4クエリプロトコルがクエリされた際に呼び出される
 
 不正なパケットが送られた際に呼び出される
 ### `bukkit` [InventoryClickEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryClickEvent.html)
-
+インベントリを開いた状態で画面をクリックする際に呼び出される。
 ### `bukkit` [InventoryCloseEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryCloseEvent.html)
-
+インベントリを閉じる際に呼び出される。
 ### `bukkit` [InventoryCreativeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryCreativeEvent.html)
-
+クリエイティブモードのプレイヤーがインベントリの操作をした際に呼び出される。呼び出される例を以下に示す。
+- インベントリにアイテムを置いた時
+- アイテムを拾った時
+- インベントリからアイテムをドロップした時
 ### `bukkit` [InventoryDragEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryDragEvent.html)
-
+インベントリ内でアイテムをドラッグした際に呼び出される。
 ### `bukkit` [InventoryEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryEvent.html)
-
+インベントリ関連のイベントを表す。
 ### `bukkit` [InventoryInteractEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryInteractEvent.html)
-
+プレイヤーとインベントリが相互に作用するイベント表す。
 ### `bukkit` [InventoryMoveItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryMoveItemEvent.html)
-
+エンティティやホッパー等のブロックがインベントリ内のアイテムを別のインベントリに移動させる際に呼び出される。
 ### `bukkit` [InventoryOpenEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryOpenEvent.html)
-
+インベントリを開く際に呼び出される。
 ### `bukkit` [InventoryPickupItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryPickupItemEvent.html)
-
+ホッパーが落ちているアイテムを拾う際に呼び出される。
 ### `bukkit` [ItemDespawnEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ItemDespawnEvent.html)
-
+時間によってアイテムが消滅する際に呼び出される。
 ### `bukkit` [ItemMergeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ItemMergeEvent.html)
-
+同じアイテムが合わさる際に呼び出される。
 ### `bukkit` [ItemSpawnEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ItemSpawnEvent.html)
-
+アイテムがワールドにスポーンする際に呼び出される。
 ### `bukkit` [LeavesDecayEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/LeavesDecayEvent.html)
 
 ### `bukkit` [LightningStrikeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/weather/LightningStrikeEvent.html)
