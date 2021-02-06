@@ -15,6 +15,9 @@ Bukkit, Spigot, Paper のイベント一覧です。
 - [bukkit](only-bukkit.md)
 - [paper](only-paper.md)
 - [spigot](only-spigot.md)
+  
+## その他
+- [非推奨イベント一覧](only-deprecate.md)
 
 ## イベント一覧
 ### `paper` [AnvilDamagedEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/block/AnvilDamagedEvent.html)

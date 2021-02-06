@@ -14,6 +14,8 @@ export const TemplateReadmeFileName = "template/README.md";
 export const OutputReadmeFileName = "README.md";
 export const TemplateOnlyEventSourceFileName = "template/only-source.md";
 export const OutputOnlyEventSourceFileName = "only-{name}.md";
+export const TemplateOnlyDeprecateFileName = "template/only-deprecate.md";
+export const OutputOnlyDeprecateFileName = "only-deprecate.md";
 export const DoNotEditMessage = `<!--
 
 自動生成です。直接編集しないでください。

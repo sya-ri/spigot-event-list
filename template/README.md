@@ -12,6 +12,9 @@ Bukkit, Spigot, Paper のイベント一覧です。
 {{#each only_links}}
 - [{{name}}]({{link}})
 {{/each}}
+  
+## その他
+- [非推奨イベント一覧]({{deprecate_link}})
 
 ## イベント一覧
 {{#each list}}

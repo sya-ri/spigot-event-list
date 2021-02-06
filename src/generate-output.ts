@@ -2,13 +2,15 @@ import fs = require("fs");
 import yaml = require("js-yaml");
 import Handlebars = require("handlebars");
 import {
+  EventSources,
+  EventsYaml,
   OutputReadmeFileName,
   TemplateReadmeFileName,
-  EventsYaml,
-  DoNotEditMessage,
   OutputOnlyEventSourceFileName,
   TemplateOnlyEventSourceFileName,
-  EventSources,
+  OutputOnlyDeprecateFileName,
+  TemplateOnlyDeprecateFileName,
+  DoNotEditMessage,
 } from "./constants";
 
 const main = () => {
@@ -42,6 +44,18 @@ const main = () => {
     );
   });
 
+  // 非推奨イベントのみ
+  fs.writeFileSync(
+    OutputOnlyDeprecateFileName,
+    DoNotEditMessage +
+      Handlebars.compile(
+        fs.readFileSync(TemplateOnlyDeprecateFileName, "utf8")
+      )({
+        list: data.filter((value) => value.deprecate),
+      }),
+    "utf8"
+  );
+
   // テンプレートに値を当てはめて保存
   // テンプレートをロード
   fs.writeFileSync(
@@ -50,6 +64,7 @@ const main = () => {
       Handlebars.compile(fs.readFileSync(TemplateReadmeFileName, "utf8"))({
         list: data,
         javadoc_links: EventSources,
+        deprecate_link: OutputOnlyDeprecateFileName,
         only_links: Object.keys(sourceEvents)
           .sort()
           .map((name) => {
