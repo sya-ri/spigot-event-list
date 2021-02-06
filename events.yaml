@@ -1171,55 +1171,55 @@
 - name: ServiceEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/ServiceEvent.html
   source: bukkit
-  description: ''
+  description: サービスに関するイベントであることを表す。
 - name: ServiceRegisterEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/ServiceRegisterEvent.html
   source: bukkit
-  description: ''
+  description: サービスが登録された時に呼び出される。
 - name: ServiceUnregisterEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/ServiceUnregisterEvent.html
   source: bukkit
-  description: ''
+  description: サービスの登録が解除された時に呼び出される。
 - name: SheepDyeWoolEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/SheepDyeWoolEvent.html
   source: bukkit
-  description: ''
+  description: 羊が染色された時に呼び出される。
 - name: SheepRegrowWoolEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/SheepRegrowWoolEvent.html
   source: bukkit
-  description: ''
+  description: 羊の毛が生えた時に呼び出される。
 - name: SignChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/SignChangeEvent.html
   source: bukkit
-  description: ''
+  description: プレイヤーによって看板の内容が変わる時に呼び出される。
 - name: SkeletonHorseTrapEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/SkeletonHorseTrapEvent.html
   source: paper
-  description: ''
+  description: プレイヤーがスケルトンホースに近づき、落雷が発生する時に呼び出される。
 - name: SlimeChangeDirectionEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/SlimeChangeDirectionEvent.html
   source: paper
-  description: ''
+  description: スライムが向きを変えようと決めた時に呼び出される。
 - name: SlimePathfindEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/SlimePathfindEvent.html
   source: paper
-  description: ''
+  description: スライムが移動を開始しようと決めた時に呼び出される。
 - name: SlimeSplitEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/SlimeSplitEvent.html
   source: bukkit
-  description: ''
+  description: スライムが死ぬことで分裂した時に呼び出される。
 - name: SlimeSwimEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/SlimeSwimEvent.html
   source: paper
-  description: ''
+  description: スライムが水や溶岩にいる状態でジャンプしようと決めた時に呼び出される。
 - name: SlimeTargetLivingEntityEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/SlimeTargetLivingEntityEvent.html
   source: paper
-  description: ''
+  description: スライムがエンティティを標的として移動を開始しようと決めた時に呼び出される。
 - name: SlimeWanderEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/SlimeWanderEvent.html
   source: paper
-  description: ''
+  description: スライムがランダムに移動することを決めた時に呼び出される。
 - name: SpawnChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/SpawnChangeEvent.html
   source: bukkit

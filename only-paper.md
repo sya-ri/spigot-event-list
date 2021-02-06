@@ -165,17 +165,17 @@ Projectile がエンティティと衝突する時に呼び出される。キャ
 ### `paper` [ServerTickStartEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/server/ServerTickStartEvent.html)
 メインループのチェックが開始した時に呼び出される。
 ### `paper` [SkeletonHorseTrapEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/SkeletonHorseTrapEvent.html)
-
+プレイヤーがスケルトンホースに近づき、落雷が発生する時に呼び出される。
 ### `paper` [SlimeChangeDirectionEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/SlimeChangeDirectionEvent.html)
-
+スライムが向きを変えようと決めた時に呼び出される。
 ### `paper` [SlimePathfindEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/SlimePathfindEvent.html)
-
+スライムが移動を開始しようと決めた時に呼び出される。
 ### `paper` [SlimeSwimEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/SlimeSwimEvent.html)
-
+スライムが水や溶岩にいる状態でジャンプしようと決めた時に呼び出される。
 ### `paper` [SlimeTargetLivingEntityEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/SlimeTargetLivingEntityEvent.html)
-
+スライムがエンティティを標的として移動を開始しようと決めた時に呼び出される。
 ### `paper` [SlimeWanderEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/SlimeWanderEvent.html)
-
+スライムがランダムに移動することを決めた時に呼び出される。
 ### `paper` [StructureLocateEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/world/StructureLocateEvent.html)
 
 ### `paper` [TNTPrimeEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/block/TNTPrimeEvent.html)

@@ -624,31 +624,31 @@ RCON を介してコマンド入力を受け取った時に呼び出される。
 ### `paper` [ServerTickStartEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/server/ServerTickStartEvent.html)
 メインループのチェックが開始した時に呼び出される。
 ### `bukkit` [ServiceEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/ServiceEvent.html)
-
+サービスに関するイベントであることを表す。
 ### `bukkit` [ServiceRegisterEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/ServiceRegisterEvent.html)
-
+サービスが登録された時に呼び出される。
 ### `bukkit` [ServiceUnregisterEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/ServiceUnregisterEvent.html)
-
+サービスの登録が解除された時に呼び出される。
 ### `bukkit` [SheepDyeWoolEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/SheepDyeWoolEvent.html)
-
+羊が染色された時に呼び出される。
 ### `bukkit` [SheepRegrowWoolEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/SheepRegrowWoolEvent.html)
-
+羊の毛が生えた時に呼び出される。
 ### `bukkit` [SignChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/SignChangeEvent.html)
-
+プレイヤーによって看板の内容が変わる時に呼び出される。
 ### `paper` [SkeletonHorseTrapEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/SkeletonHorseTrapEvent.html)
-
+プレイヤーがスケルトンホースに近づき、落雷が発生する時に呼び出される。
 ### `paper` [SlimeChangeDirectionEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/SlimeChangeDirectionEvent.html)
-
+スライムが向きを変えようと決めた時に呼び出される。
 ### `paper` [SlimePathfindEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/SlimePathfindEvent.html)
-
+スライムが移動を開始しようと決めた時に呼び出される。
 ### `bukkit` [SlimeSplitEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/SlimeSplitEvent.html)
-
+スライムが死ぬことで分裂した時に呼び出される。
 ### `paper` [SlimeSwimEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/SlimeSwimEvent.html)
-
+スライムが水や溶岩にいる状態でジャンプしようと決めた時に呼び出される。
 ### `paper` [SlimeTargetLivingEntityEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/SlimeTargetLivingEntityEvent.html)
-
+スライムがエンティティを標的として移動を開始しようと決めた時に呼び出される。
 ### `paper` [SlimeWanderEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/SlimeWanderEvent.html)
-
+スライムがランダムに移動することを決めた時に呼び出される。
 ### `bukkit` [SpawnChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/SpawnChangeEvent.html)
 
 ### `bukkit` [SpawnerSpawnEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/SpawnerSpawnEvent.html)
