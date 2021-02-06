@@ -523,27 +523,31 @@
 - name: HangingBreakByEntityEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/hanging/HangingBreakByEntityEvent.html
   source: bukkit
-  description: ''
+  description: エンティティによって壁掛けエンティティが破壊される際に呼び出される
 - name: HangingBreakEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/hanging/HangingBreakEvent.html
   source: bukkit
-  description: ''
+  description: 壁掛けエンティティが破壊される際に呼び出される
 - name: HangingEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/hanging/HangingEvent.html
   source: bukkit
-  description: ''
+  description: |-
+    壁掛けエンティティに関連したイベントであることを表す。壁掛けエンティティの例を以下に示す。
+    - 絵画
+    - 額縁
+    - 柵に繋がれたリード
 - name: HangingPlaceEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/hanging/HangingPlaceEvent.html
   source: bukkit
-  description: ''
+  description: 壁掛けエンティティが設置される際に呼び出される
 - name: HorseJumpEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/HorseJumpEvent.html
   source: bukkit
-  description: ''
+  description: 馬がジャンプする際に呼び出される
 - name: IllegalPacketEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/IllegalPacketEvent.html
   source: paper
-  description: ''
+  description: 不正なパケットが送られた際に呼び出される
   deprecate: true
   deprecateDescription: 使われていない。
 - name: InventoryClickEvent

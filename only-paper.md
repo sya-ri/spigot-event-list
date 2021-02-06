@@ -65,7 +65,7 @@ GS4クエリプロトコルがクエリされた際に呼び出される
 ### `paper` [IllegalPacketEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/IllegalPacketEvent.html)
 `@Deprecated` 使われていない。
 
-
+不正なパケットが送られた際に呼び出される
 ### `paper` [LookupProfileEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/profile/LookupProfileEvent.html)
 
 ### `paper` [LootableInventoryReplenishEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/loottable/LootableInventoryReplenishEvent.html)

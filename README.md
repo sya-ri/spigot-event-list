@@ -290,19 +290,22 @@ AreaEffectCloud の効果が付与される際に呼び出される。5ティッ
 ### `paper` [GS4QueryEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/server/GS4QueryEvent.html)
 GS4クエリプロトコルがクエリされた際に呼び出される
 ### `bukkit` [HangingBreakByEntityEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/hanging/HangingBreakByEntityEvent.html)
-
+エンティティによって壁掛けエンティティが破壊される際に呼び出される
 ### `bukkit` [HangingBreakEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/hanging/HangingBreakEvent.html)
-
+壁掛けエンティティが破壊される際に呼び出される
 ### `bukkit` [HangingEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/hanging/HangingEvent.html)
-
+壁掛けエンティティに関連したイベントであることを表す。壁掛けエンティティの例を以下に示す。
+- 絵画
+- 額縁
+- 柵に繋がれたリード
 ### `bukkit` [HangingPlaceEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/hanging/HangingPlaceEvent.html)
-
+壁掛けエンティティが設置される際に呼び出される
 ### `bukkit` [HorseJumpEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/HorseJumpEvent.html)
-
+馬がジャンプする際に呼び出される
 ### `paper` [IllegalPacketEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/IllegalPacketEvent.html)
 `@Deprecated` 使われていない。
 
-
+不正なパケットが送られた際に呼び出される
 ### `bukkit` [InventoryClickEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryClickEvent.html)
 
 ### `bukkit` [InventoryCloseEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/InventoryCloseEvent.html)
