@@ -475,51 +475,51 @@
 - name: Event
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/Event.html
   source: bukkit
-  description: ''
+  description: イベントを表す
 - name: ExpBottleEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ExpBottleEvent.html
   source: bukkit
-  description: ''
+  description: 経験値ボトルから経験値が出る際に呼び出される
 - name: ExperienceOrbMergeEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/ExperienceOrbMergeEvent.html
   source: paper
-  description: ''
+  description: 経験値オーブが合わさる際に呼び出される
 - name: ExplosionPrimeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ExplosionPrimeEvent.html
   source: bukkit
-  description: ''
+  description: エンティティが爆発する際に呼び出される
 - name: FillProfileEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/profile/FillProfileEvent.html
   source: paper
-  description: ''
+  description: プロファイルプロパティが追加された際に呼び出される
 - name: FireworkExplodeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/FireworkExplodeEvent.html
   source: bukkit
-  description: ''
+  description: 花火が爆発する際に呼び出される
 - name: FluidLevelChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/FluidLevelChangeEvent.html
   source: bukkit
-  description: ''
+  description: 隣接したブロックによって液面が変化する際に呼び出される
 - name: FoodLevelChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/FoodLevelChangeEvent.html
   source: bukkit
-  description: ''
+  description: 空腹度が変化する際に呼び出される
 - name: FurnaceBurnEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/FurnaceBurnEvent.html
   source: bukkit
-  description: ''
+  description: かまど内でアイテムが燃料として使用される際に呼び出される
 - name: FurnaceExtractEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/FurnaceExtractEvent.html
   source: bukkit
-  description: ''
+  description: プレイヤーがかまどからアイテムを取り出す際に呼び出される
 - name: FurnaceSmeltEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/FurnaceSmeltEvent.html
   source: bukkit
-  description: ''
+  description: かまど内でアイテムが精錬される際に呼び出される
 - name: GS4QueryEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/server/GS4QueryEvent.html
   source: paper
-  description: ''
+  description: GS4クエリプロトコルがクエリされた際に呼び出される
 - name: HangingBreakByEntityEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/hanging/HangingBreakByEntityEvent.html
   source: bukkit
