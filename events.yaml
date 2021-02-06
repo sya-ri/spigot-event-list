@@ -1298,59 +1298,59 @@
 - name: VehicleBlockCollisionEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleBlockCollisionEvent.html
   source: bukkit
-  description: ''
+  description: 乗り物がブロックに衝突した時に呼び出される。
 - name: VehicleCollisionEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleCollisionEvent.html
   source: bukkit
-  description: ''
+  description: 乗り物が衝突した時に呼び出される。
 - name: VehicleCreateEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleCreateEvent.html
   source: bukkit
-  description: ''
+  description: 乗り物が作成される時に呼び出される。
 - name: VehicleDamageEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleDamageEvent.html
   source: bukkit
-  description: ''
+  description: 乗り物がダメージを受ける時に呼び出される。
 - name: VehicleDestroyEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleDestroyEvent.html
   source: bukkit
-  description: ''
+  description: 乗り物が破壊される時に呼び出される。
 - name: VehicleEnterEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleEnterEvent.html
   source: bukkit
-  description: ''
+  description: エンティティが乗り物に乗る時に呼び出される。
 - name: VehicleEntityCollisionEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleEntityCollisionEvent.html
   source: bukkit
-  description: ''
+  description: 乗り物がエンティティと衝突した時に呼び出される。
 - name: VehicleEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleEvent.html
   source: bukkit
-  description: ''
+  description: 乗り物に関するイベントであることを表す。
 - name: VehicleExitEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleExitEvent.html
   source: bukkit
-  description: ''
+  description: エンティティが乗り物から降りる時に呼び出される。
 - name: VehicleMoveEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleMoveEvent.html
   source: bukkit
-  description: ''
+  description: 乗り物が動く時に呼び出される。
 - name: VehicleUpdateEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleUpdateEvent.html
   source: bukkit
-  description: ''
+  description: 乗り物が更新された時に呼び出される。
 - name: VillagerAcquireTradeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/VillagerAcquireTradeEvent.html
   source: bukkit
-  description: ''
+  description: 村人が新たな交易品を獲得する時に呼び出される。
 - name: VillagerCareerChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/VillagerCareerChangeEvent.html
   source: bukkit
-  description: ''
+  description: 村人の職業が変わる時に呼び出される。
 - name: VillagerReplenishTradeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/VillagerReplenishTradeEvent.html
   source: bukkit
-  description: ''
+  description: 村人が交易品を補充する時に呼び出される。
 - name: WeatherChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/weather/WeatherChangeEvent.html
   source: bukkit

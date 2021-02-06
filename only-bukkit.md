@@ -485,33 +485,33 @@ RCON を介してコマンド入力を受け取った時に呼び出される。
 ### `bukkit` [UnknownCommandEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/command/UnknownCommandEvent.html)
 定義されていないコマンドをプレイヤーが実行した時に呼び出される。
 ### `bukkit` [VehicleBlockCollisionEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleBlockCollisionEvent.html)
-
+乗り物がブロックに衝突した時に呼び出される。
 ### `bukkit` [VehicleCollisionEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleCollisionEvent.html)
-
+乗り物が衝突した時に呼び出される。
 ### `bukkit` [VehicleCreateEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleCreateEvent.html)
-
+乗り物が作成される時に呼び出される。
 ### `bukkit` [VehicleDamageEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleDamageEvent.html)
-
+乗り物がダメージを受ける時に呼び出される。
 ### `bukkit` [VehicleDestroyEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleDestroyEvent.html)
-
+乗り物が破壊される時に呼び出される。
 ### `bukkit` [VehicleEnterEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleEnterEvent.html)
-
+エンティティが乗り物に乗る時に呼び出される。
 ### `bukkit` [VehicleEntityCollisionEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleEntityCollisionEvent.html)
-
+乗り物がエンティティと衝突した時に呼び出される。
 ### `bukkit` [VehicleEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleEvent.html)
-
+乗り物に関するイベントであることを表す。
 ### `bukkit` [VehicleExitEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleExitEvent.html)
-
+エンティティが乗り物から降りる時に呼び出される。
 ### `bukkit` [VehicleMoveEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleMoveEvent.html)
-
+乗り物が動く時に呼び出される。
 ### `bukkit` [VehicleUpdateEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/vehicle/VehicleUpdateEvent.html)
-
+乗り物が更新された時に呼び出される。
 ### `bukkit` [VillagerAcquireTradeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/VillagerAcquireTradeEvent.html)
-
+村人が新たな交易品を獲得する時に呼び出される。
 ### `bukkit` [VillagerCareerChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/VillagerCareerChangeEvent.html)
-
+村人の職業が変わる時に呼び出される。
 ### `bukkit` [VillagerReplenishTradeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/VillagerReplenishTradeEvent.html)
-
+村人が交易品を補充する時に呼び出される。
 ### `bukkit` [WeatherChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/weather/WeatherChangeEvent.html)
 
 ### `bukkit` [WeatherEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/weather/WeatherEvent.html)
