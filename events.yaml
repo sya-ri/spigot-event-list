@@ -1037,39 +1037,39 @@
 - name: PluginDisableEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/PluginDisableEvent.html
   source: bukkit
-  description: ''
+  description: プラグインが無効になった時に呼び出される。
 - name: PluginEnableEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/PluginEnableEvent.html
   source: bukkit
-  description: ''
+  description: プラグインが有効になった時に呼び出される。
 - name: PluginEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/PluginEvent.html
   source: bukkit
-  description: ''
+  description: プラグインに関するイベントを表す。
 - name: PortalCreateEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/PortalCreateEvent.html
   source: bukkit
-  description: ''
+  description: ポータルが作成される時に呼び出される。
 - name: PotionSplashEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/PotionSplashEvent.html
   source: bukkit
-  description: ''
+  description: ポーションが割れる時に呼び出される。
 - name: PreCreatureSpawnEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/PreCreatureSpawnEvent.html
   source: paper
-  description: ''
+  description: 生き物がスポーンする時に呼び出される。このイベントの目的はサーバーのパフォーマンスを向上させることであるため、[CreatureSpawnEvent](README.md#bukkit-creaturespawnevent) が呼び出される全ての状況で呼び出されるわけではない。
 - name: PreFillProfileEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/profile/PreFillProfileEvent.html
   source: paper
-  description: ''
+  description: 不完全なプロファイルプロパティの追加を要求している時に呼び出される。
 - name: PreLookupProfileEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/profile/PreLookupProfileEvent.html
   source: paper
-  description: ''
+  description: Mojang API を用いてプロファイルを検索する時に呼び出される。
 - name: PreSpawnerSpawnEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/PreSpawnerSpawnEvent.html
   source: paper
-  description: ''
+  description: エンティティがスポナーによってスポーンする時に呼び出される。
 - name: PrepareAnvilEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/PrepareAnvilEvent.html
   source: bukkit
