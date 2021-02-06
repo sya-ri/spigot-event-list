@@ -417,17 +417,17 @@ LootTable によってアイテムが生成される時に呼び出される。
 ### `bukkit` [PotionSplashEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/PotionSplashEvent.html)
 ポーションが割れる時に呼び出される。
 ### `bukkit` [PrepareAnvilEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/PrepareAnvilEvent.html)
-
+金床の使用準備が出来た時に呼び出される。完成アイテムが表示される毎に発生する。
 ### `bukkit` [PrepareItemCraftEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/PrepareItemCraftEvent.html)
 クラフトの準備が出来た時に呼び出される。材料を並べ、完成アイテムが表示される毎に発生する。
 ### `bukkit` [PrepareItemEnchantEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/enchantment/PrepareItemEnchantEvent.html)
-
+エンチャントの準備が出来た時に呼び出される。完成アイテムが表示される毎に発生する。
 ### `bukkit` [PrepareSmithingEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/PrepareSmithingEvent.html)
-
+鍛治台の使用準備が出来た時に呼び出される。完成アイテムが表示される毎に発生する。
 ### `bukkit` [ProjectileHitEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ProjectileHitEvent.html)
-
+Projectile がエンティティに当たる時に呼び出される。
 ### `bukkit` [ProjectileLaunchEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ProjectileLaunchEvent.html)
-
+Projectile が発射される時に呼び出される。
 ### `bukkit` [RaidEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/raid/RaidEvent.html)
 
 ### `bukkit` [RaidFinishEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/raid/RaidFinishEvent.html)

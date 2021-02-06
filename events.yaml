@@ -1073,11 +1073,11 @@
 - name: PrepareAnvilEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/PrepareAnvilEvent.html
   source: bukkit
-  description: ''
+  description: 金床の使用準備が出来た時に呼び出される。完成アイテムが表示される毎に発生する。
 - name: PrepareGrindstoneEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/inventory/PrepareGrindstoneEvent.html
   source: paper
-  description: ''
+  description: 砥石の使用準備が出来た時に呼び出される。完成アイテムが表示される毎に発生する。
   deprecate: true
   deprecateDescription: ''
 - name: PrepareItemCraftEvent
@@ -1087,31 +1087,31 @@
 - name: PrepareItemEnchantEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/enchantment/PrepareItemEnchantEvent.html
   source: bukkit
-  description: ''
+  description: エンチャントの準備が出来た時に呼び出される。完成アイテムが表示される毎に発生する。
 - name: PrepareResultEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/inventory/PrepareResultEvent.html
   source: paper
-  description: ''
+  description: 結果スロットを含むインベントリにアイテムが配置された時に呼び出される。
 - name: PrepareSmithingEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/PrepareSmithingEvent.html
   source: bukkit
-  description: ''
+  description: 鍛治台の使用準備が出来た時に呼び出される。完成アイテムが表示される毎に発生する。
 - name: ProfileWhitelistVerifyEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/profile/ProfileWhitelistVerifyEvent.html
   source: paper
-  description: ''
+  description: プレイヤーがホワイトリストに登録されているか確認する時に呼び出される。
 - name: ProjectileCollideEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/ProjectileCollideEvent.html
   source: paper
-  description: ''
+  description: Projectile がエンティティと衝突する時に呼び出される。キャンセルすると Projectile は飛び続ける。
 - name: ProjectileHitEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ProjectileHitEvent.html
   source: bukkit
-  description: ''
+  description: Projectile がエンティティに当たる時に呼び出される。
 - name: ProjectileLaunchEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ProjectileLaunchEvent.html
   source: bukkit
-  description: ''
+  description: Projectile が発射される時に呼び出される。
 - name: RaidEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/raid/RaidEvent.html
   source: bukkit

@@ -149,13 +149,13 @@ Mojang API を用いてプロファイルを検索する時に呼び出される
 ### `paper` [PrepareGrindstoneEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/inventory/PrepareGrindstoneEvent.html)
 `@Deprecated` 
 
-
+砥石の使用準備が出来た時に呼び出される。完成アイテムが表示される毎に発生する。
 ### `paper` [PrepareResultEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/inventory/PrepareResultEvent.html)
-
+結果スロットを含むインベントリにアイテムが配置された時に呼び出される。
 ### `paper` [ProfileWhitelistVerifyEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/profile/ProfileWhitelistVerifyEvent.html)
-
+プレイヤーがホワイトリストに登録されているか確認する時に呼び出される。
 ### `paper` [ProjectileCollideEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/ProjectileCollideEvent.html)
-
+Projectile がエンティティと衝突する時に呼び出される。キャンセルすると Projectile は飛び続ける。
 ### `paper` [ServerExceptionEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/server/ServerExceptionEvent.html)
 
 ### `paper` [ServerResourcesReloadedEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/server/ServerResourcesReloadedEvent.html)
