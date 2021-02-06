@@ -757,31 +757,31 @@
 - name: PlayerDeathEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/PlayerDeathEvent.html
   source: bukkit
-  description: ''
+  description: プレイヤーが死んだ時に呼び出される。
 - name: PlayerDropItemEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerDropItemEvent.html
   source: bukkit
-  description: ''
+  description: インベントリからアイテムをドロップする時に呼び出される。
 - name: PlayerEditBookEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerEditBookEvent.html
   source: bukkit
-  description: ''
+  description: 本と羽ペンを編集・署名した時に呼び出される。
 - name: PlayerEggThrowEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerEggThrowEvent.html
   source: bukkit
-  description: ''
+  description: プレイヤーが投げた卵が孵化するかの確認をする時に呼び出される。
 - name: PlayerElytraBoostEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerElytraBoostEvent.html
   source: paper
-  description: ''
+  description: 花火を使いエリトラ飛行のブーストをする時に呼び出される。
 - name: PlayerEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerEvent.html
   source: bukkit
-  description: ''
+  description: プレイヤーに関するイベントであることを表す。
 - name: PlayerExpChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerExpChangeEvent.html
   source: bukkit
-  description: ''
+  description: プレイヤーの経験値が自然に変化した時に呼び出される。
 - name: PlayerFishEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerFishEvent.html
   source: bukkit

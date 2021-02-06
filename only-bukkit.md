@@ -313,17 +313,17 @@ LootTable によってアイテムが生成される時に呼び出される。
 ### `bukkit` [PlayerCommandSendEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerCommandSendEvent.html)
 使用可能なコマンドをプレイヤーに送信する時に呼び出される。
 ### `bukkit` [PlayerDeathEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/PlayerDeathEvent.html)
-
+プレイヤーが死んだ時に呼び出される。
 ### `bukkit` [PlayerDropItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerDropItemEvent.html)
-
+インベントリからアイテムをドロップする時に呼び出される。
 ### `bukkit` [PlayerEditBookEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerEditBookEvent.html)
-
+本と羽ペンを編集・署名した時に呼び出される。
 ### `bukkit` [PlayerEggThrowEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerEggThrowEvent.html)
-
+プレイヤーが投げた卵が孵化するかの確認をする時に呼び出される。
 ### `bukkit` [PlayerEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerEvent.html)
-
+プレイヤーに関するイベントであることを表す。
 ### `bukkit` [PlayerExpChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerExpChangeEvent.html)
-
+プレイヤーの経験値が自然に変化した時に呼び出される。
 ### `bukkit` [PlayerFishEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerFishEvent.html)
 
 ### `bukkit` [PlayerGameModeChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerGameModeChangeEvent.html)
