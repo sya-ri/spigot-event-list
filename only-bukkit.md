@@ -259,23 +259,23 @@ AreaEffectCloud の効果が付与される時に呼び出される。5ティッ
 ### `bukkit` [ItemSpawnEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ItemSpawnEvent.html)
 アイテムがワールドにスポーンする時に呼び出される。
 ### `bukkit` [LeavesDecayEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/LeavesDecayEvent.html)
-
+葉が自然に壊れる時に呼び出される。
 ### `bukkit` [LightningStrikeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/weather/LightningStrikeEvent.html)
-
+雷が落ちる時に呼び出される。
 ### `bukkit` [LingeringPotionSplashEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/LingeringPotionSplashEvent.html)
-
+残留ポーションが割れる時に呼び出される。
 ### `bukkit` [LootGenerateEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/LootGenerateEvent.html)
-
+LootTable によってアイテムが生成される時に呼び出される。
 ### `bukkit` [MapInitializeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/MapInitializeEvent.html)
-
+マップが初期化された時に呼び出される。
 ### `bukkit` [MoistureChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/MoistureChangeEvent.html)
-
+耕地の水分レベルが変化する時に呼び出される。
 ### `bukkit` [NotePlayEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/NotePlayEvent.html)
-
+音符ブロックが音を鳴らす時に呼び出される。
 ### `bukkit` [PigZapEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/PigZapEvent.html)
-
+豚が雷に打たれた時に呼び出される。
 ### `bukkit` [PigZombieAngerEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/PigZombieAngerEvent.html)
-
+ゾンビ豚が怒る時に呼び出される。
 ### `bukkit` [PlayerAdvancementDoneEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerAdvancementDoneEvent.html)
 
 ### `bukkit` [PlayerAnimationEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerAnimationEvent.html)
@@ -445,7 +445,7 @@ AreaEffectCloud の効果が付与される時に呼び出される。5ティッ
 ### `bukkit` [ServerEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/ServerEvent.html)
 
 ### `bukkit` [ServerListPingEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/ServerListPingEvent.html)
-
+サーバーリストの表示内容を送る要求を受けた時に呼び出される。[PaperServerListPingEvent](README.md#paper-paperserverlistpingevent) を使うことでより詳細の情報を扱うことができる。
 ### `bukkit` [ServerLoadEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/ServerLoadEvent.html)
 
 ### `bukkit` [ServiceEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/ServiceEvent.html)

@@ -605,55 +605,55 @@
 - name: LeavesDecayEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/LeavesDecayEvent.html
   source: bukkit
-  description: ''
+  description: 葉が自然に壊れる時に呼び出される。
 - name: LightningStrikeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/weather/LightningStrikeEvent.html
   source: bukkit
-  description: ''
+  description: 雷が落ちる時に呼び出される。
 - name: LingeringPotionSplashEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/LingeringPotionSplashEvent.html
   source: bukkit
-  description: ''
+  description: 残留ポーションが割れる時に呼び出される。
 - name: LookupProfileEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/profile/LookupProfileEvent.html
   source: paper
-  description: ''
+  description: Mojang API を用いてプロファイルが検索された時に呼び出される。
 - name: LootGenerateEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/LootGenerateEvent.html
   source: bukkit
-  description: ''
+  description: LootTable によってアイテムが生成される時に呼び出される。
 - name: LootableInventoryReplenishEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/loottable/LootableInventoryReplenishEvent.html
   source: paper
-  description: ''
+  description: LootTable によってアイテムが補充される時に呼び出される。
 - name: MapInitializeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/MapInitializeEvent.html
   source: bukkit
-  description: ''
+  description: マップが初期化された時に呼び出される。
 - name: MoistureChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/MoistureChangeEvent.html
   source: bukkit
-  description: ''
+  description: 耕地の水分レベルが変化する時に呼び出される。
 - name: NotePlayEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/NotePlayEvent.html
   source: bukkit
-  description: ''
+  description: 音符ブロックが音を鳴らす時に呼び出される。
 - name: PaperServerListPingEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/server/PaperServerListPingEvent.html
   source: paper
-  description: ''
+  description: サーバーリストの表示内容を送る要求を受けた時に呼び出される。[ServerListPingEvent](README.md#bukkit-serverlistpingevent) よりも扱える情報が多い。
 - name: PhantomPreSpawnEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/PhantomPreSpawnEvent.html
   source: paper
-  description: ''
+  description: ファントムがスポーンする時に呼び出される。
 - name: PigZapEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/PigZapEvent.html
   source: bukkit
-  description: ''
+  description: 豚が雷に打たれた時に呼び出される。
 - name: PigZombieAngerEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/PigZombieAngerEvent.html
   source: bukkit
-  description: ''
+  description: ゾンビ豚が怒る時に呼び出される。
 - name: PlayerAdvancementCriterionGrantEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerAdvancementCriterionGrantEvent.html
   source: paper
@@ -1151,7 +1151,7 @@
 - name: ServerListPingEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/ServerListPingEvent.html
   source: bukkit
-  description: ''
+  description: サーバーリストの表示内容を送る要求を受けた時に呼び出される。[PaperServerListPingEvent](README.md#paper-paperserverlistpingevent) を使うことでより詳細の情報を扱うことができる。
 - name: ServerLoadEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/ServerLoadEvent.html
   source: bukkit
