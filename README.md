@@ -720,26 +720,26 @@ TNT に着火する時に呼び出される。
 ### `bukkit` [VillagerReplenishTradeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/VillagerReplenishTradeEvent.html)
 村人が交易品を補充する時に呼び出される。
 ### `bukkit` [WeatherChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/weather/WeatherChangeEvent.html)
-
+天気が変わる時に呼び出される。
 ### `bukkit` [WeatherEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/weather/WeatherEvent.html)
-
+天気に関するイベントであることを表す。
 ### `paper` [WhitelistToggleEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/server/WhitelistToggleEvent.html)
-
+ホワイトリストが切り替わった時に呼び出される。
 ### `paper` [WitchConsumePotionEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/WitchConsumePotionEvent.html)
-
+ウィッチがポーションを自分自身で消費する時に呼び出される。
 ### `paper` [WitchReadyPotionEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/WitchReadyPotionEvent.html)
-
+ウィッチのポーションの準備が出来る時に呼び出される。
 ### `paper` [WitchThrowPotionEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/WitchThrowPotionEvent.html)
-
+ウィッチがポーションを投げる時に呼び出される。
 ### `bukkit` [WorldEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/WorldEvent.html)
-
+ワールドに関するイベントであることを表す。
 ### `paper` [WorldGameRuleChangeEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/world/WorldGameRuleChangeEvent.html)
-
+ワールドのゲームルールが変更される時に呼び出される。
 ### `bukkit` [WorldInitEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/WorldInitEvent.html)
-
+ワールドが初期化される時に呼び出される。
 ### `bukkit` [WorldLoadEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/WorldLoadEvent.html)
-
+ワールドをロードした時に呼び出される。
 ### `bukkit` [WorldSaveEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/WorldSaveEvent.html)
-
+ワールドが保存された時に呼び出される。
 ### `bukkit` [WorldUnloadEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/WorldUnloadEvent.html)
-
+ワールドをアンロードするに呼び出される。

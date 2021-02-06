@@ -1354,48 +1354,48 @@
 - name: WeatherChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/weather/WeatherChangeEvent.html
   source: bukkit
-  description: ''
+  description: 天気が変わる時に呼び出される。
 - name: WeatherEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/weather/WeatherEvent.html
   source: bukkit
-  description: ''
+  description: 天気に関するイベントであることを表す。
 - name: WhitelistToggleEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/server/WhitelistToggleEvent.html
   source: paper
-  description: ''
+  description: ホワイトリストが切り替わった時に呼び出される。
 - name: WitchConsumePotionEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/WitchConsumePotionEvent.html
   source: paper
-  description: ''
+  description: ウィッチがポーションを自分自身で消費する時に呼び出される。
 - name: WitchReadyPotionEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/WitchReadyPotionEvent.html
   source: paper
-  description: ''
+  description: ウィッチのポーションの準備が出来る時に呼び出される。
 - name: WitchThrowPotionEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/WitchThrowPotionEvent.html
   source: paper
-  description: ''
+  description: ウィッチがポーションを投げる時に呼び出される。
 - name: WorldEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/WorldEvent.html
   source: bukkit
-  description: ''
+  description: ワールドに関するイベントであることを表す。
 - name: WorldGameRuleChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/world/WorldGameRuleChangeEvent.html
   source: paper
-  description: ''
+  description: ワールドのゲームルールが変更される時に呼び出される。
 - name: WorldInitEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/WorldInitEvent.html
   source: bukkit
-  description: ''
+  description: ワールドが初期化される時に呼び出される。
 - name: WorldLoadEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/WorldLoadEvent.html
   source: bukkit
-  description: ''
+  description: ワールドをロードした時に呼び出される。
 - name: WorldSaveEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/WorldSaveEvent.html
   source: bukkit
-  description: ''
+  description: ワールドが保存された時に呼び出される。
 - name: WorldUnloadEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/WorldUnloadEvent.html
   source: bukkit
-  description: ''
+  description: ワールドをアンロードするに呼び出される。

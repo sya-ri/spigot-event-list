@@ -194,14 +194,14 @@ TNT に着火する時に呼び出される。
 ### `paper` [TurtleStartDiggingEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/TurtleStartDiggingEvent.html)
 カメが産卵のために掘り始めた時に呼び出される。
 ### `paper` [WhitelistToggleEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/server/WhitelistToggleEvent.html)
-
+ホワイトリストが切り替わった時に呼び出される。
 ### `paper` [WitchConsumePotionEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/WitchConsumePotionEvent.html)
-
+ウィッチがポーションを自分自身で消費する時に呼び出される。
 ### `paper` [WitchReadyPotionEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/WitchReadyPotionEvent.html)
-
+ウィッチのポーションの準備が出来る時に呼び出される。
 ### `paper` [WitchThrowPotionEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/WitchThrowPotionEvent.html)
-
+ウィッチがポーションを投げる時に呼び出される。
 ### `paper` [WorldGameRuleChangeEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/world/WorldGameRuleChangeEvent.html)
-
+ワールドのゲームルールが変更される時に呼び出される。
 
 [<< 戻る](README.md)

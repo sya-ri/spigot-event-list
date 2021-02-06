@@ -513,18 +513,18 @@ RCON を介してコマンド入力を受け取った時に呼び出される。
 ### `bukkit` [VillagerReplenishTradeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/VillagerReplenishTradeEvent.html)
 村人が交易品を補充する時に呼び出される。
 ### `bukkit` [WeatherChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/weather/WeatherChangeEvent.html)
-
+天気が変わる時に呼び出される。
 ### `bukkit` [WeatherEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/weather/WeatherEvent.html)
-
+天気に関するイベントであることを表す。
 ### `bukkit` [WorldEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/WorldEvent.html)
-
+ワールドに関するイベントであることを表す。
 ### `bukkit` [WorldInitEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/WorldInitEvent.html)
-
+ワールドが初期化される時に呼び出される。
 ### `bukkit` [WorldLoadEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/WorldLoadEvent.html)
-
+ワールドをロードした時に呼び出される。
 ### `bukkit` [WorldSaveEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/WorldSaveEvent.html)
-
+ワールドが保存された時に呼び出される。
 ### `bukkit` [WorldUnloadEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/WorldUnloadEvent.html)
-
+ワールドをアンロードするに呼び出される。
 
 [<< 戻る](README.md)
