@@ -650,17 +650,22 @@ RCON を介してコマンド入力を受け取った時に呼び出される。
 ### `paper` [SlimeWanderEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/SlimeWanderEvent.html)
 スライムがランダムに移動することを決めた時に呼び出される。
 ### `bukkit` [SpawnChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/SpawnChangeEvent.html)
-
+ワールドのスポーン位置が変更された時に呼び出される。
 ### `bukkit` [SpawnerSpawnEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/SpawnerSpawnEvent.html)
-
+エンティティがスポナーによってスポーンする時に呼び出される。
 ### `bukkit` [SpongeAbsorbEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/SpongeAbsorbEvent.html)
-
+スポンジが水を吸収する時に呼び出される。
 ### `bukkit` [StriderTemperatureChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/StriderTemperatureChangeEvent.html)
-
+ストライダーの体温が変化した時に呼び出される。
 ### `bukkit` [StructureGrowEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/StructureGrowEvent.html)
-
+植物が成長する時に呼び出される。以下に例を示す。
+- 苗木が木に成長する時
+- キノコが巨大キノコに成長する時
 ### `paper` [StructureLocateEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/world/StructureLocateEvent.html)
-
+建造物が見つかる時に呼び出される。以下に例を示す。
+- /locate コマンドを実行した時
+- エンダーアイを使用した時
+- 宝の地図が開かれた時
 ### `paper` [TNTPrimeEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/block/TNTPrimeEvent.html)
 
 ### `bukkit` [TabCompleteEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/TabCompleteEvent.html)

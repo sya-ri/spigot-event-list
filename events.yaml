@@ -1223,27 +1223,34 @@
 - name: SpawnChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/SpawnChangeEvent.html
   source: bukkit
-  description: ''
+  description: ワールドのスポーン位置が変更された時に呼び出される。
 - name: SpawnerSpawnEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/SpawnerSpawnEvent.html
   source: bukkit
-  description: ''
+  description: エンティティがスポナーによってスポーンする時に呼び出される。
 - name: SpongeAbsorbEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/SpongeAbsorbEvent.html
   source: bukkit
-  description: ''
+  description: スポンジが水を吸収する時に呼び出される。
 - name: StriderTemperatureChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/StriderTemperatureChangeEvent.html
   source: bukkit
-  description: ''
+  description: ストライダーの体温が変化した時に呼び出される。
 - name: StructureGrowEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/StructureGrowEvent.html
   source: bukkit
-  description: ''
+  description: |-
+    植物が成長する時に呼び出される。以下に例を示す。
+    - 苗木が木に成長する時
+    - キノコが巨大キノコに成長する時
 - name: StructureLocateEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/world/StructureLocateEvent.html
   source: paper
-  description: ''
+  description: |-
+    建造物が見つかる時に呼び出される。以下に例を示す。
+    - /locate コマンドを実行した時
+    - エンダーアイを使用した時
+    - 宝の地図が開かれた時
 - name: TNTPrimeEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/block/TNTPrimeEvent.html
   source: paper

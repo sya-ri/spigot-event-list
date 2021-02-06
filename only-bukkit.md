@@ -463,15 +463,17 @@ RCON を介してコマンド入力を受け取った時に呼び出される。
 ### `bukkit` [SlimeSplitEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/SlimeSplitEvent.html)
 スライムが死ぬことで分裂した時に呼び出される。
 ### `bukkit` [SpawnChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/SpawnChangeEvent.html)
-
+ワールドのスポーン位置が変更された時に呼び出される。
 ### `bukkit` [SpawnerSpawnEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/SpawnerSpawnEvent.html)
-
+エンティティがスポナーによってスポーンする時に呼び出される。
 ### `bukkit` [SpongeAbsorbEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/SpongeAbsorbEvent.html)
-
+スポンジが水を吸収する時に呼び出される。
 ### `bukkit` [StriderTemperatureChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/StriderTemperatureChangeEvent.html)
-
+ストライダーの体温が変化した時に呼び出される。
 ### `bukkit` [StructureGrowEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/StructureGrowEvent.html)
-
+植物が成長する時に呼び出される。以下に例を示す。
+- 苗木が木に成長する時
+- キノコが巨大キノコに成長する時
 ### `bukkit` [TabCompleteEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/TabCompleteEvent.html)
 
 ### `bukkit` [ThunderChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/weather/ThunderChangeEvent.html)

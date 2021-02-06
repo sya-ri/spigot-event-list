@@ -177,7 +177,10 @@ Projectile がエンティティと衝突する時に呼び出される。キャ
 ### `paper` [SlimeWanderEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/SlimeWanderEvent.html)
 スライムがランダムに移動することを決めた時に呼び出される。
 ### `paper` [StructureLocateEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/world/StructureLocateEvent.html)
-
+建造物が見つかる時に呼び出される。以下に例を示す。
+- /locate コマンドを実行した時
+- エンダーアイを使用した時
+- 宝の地図が開かれた時
 ### `paper` [TNTPrimeEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/block/TNTPrimeEvent.html)
 
 ### `paper` [TargetHitEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/TargetHitEvent.html)
