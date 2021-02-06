@@ -677,11 +677,11 @@
 - name: PlayerAttackEntityCooldownResetEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerAttackEntityCooldownResetEvent.html
   source: paper
-  description: 攻撃のクールダウンがリセットする際に呼び出される。
+  description: 攻撃のクールダウンがリセットする時に呼び出される。
 - name: PlayerAttemptPickupItemEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerAttemptPickupItemEvent.html
   source: bukkit
-  description: 地面からアイテムを拾おうとする際に呼び出される。
+  description: 地面からアイテムを拾おうとする時に呼び出される。
 - name: PlayerBedEnterEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBedEnterEvent.html
   source: bukkit
@@ -705,55 +705,55 @@
 - name: PlayerChangeBeaconEffectEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerChangeBeaconEffectEvent.html
   source: paper
-  description: ''
+  description: ビーコンの効果を変更する時に呼び出される。
 - name: PlayerChangedMainHandEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChangedMainHandEvent.html
   source: bukkit
-  description: ''
+  description: 設定によってメインハンドの左右を切り替えた時に呼び出される。
 - name: PlayerChangedWorldEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChangedWorldEvent.html
   source: bukkit
-  description: ''
+  description: 別のワールドに移動した時に呼び出される。
 - name: PlayerChannelEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChannelEvent.html
   source: bukkit
-  description: ''
+  description: プレイヤーがプラグインチャンネルを登録・登録解除した時に呼び出される。
 - name: PlayerChatEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChatEvent.html
   source: bukkit
-  description: ''
+  description: プレイヤーがチャットする時に呼び出される。
   deprecate: true
   deprecateDescription: チャットの遅延が発生するので [AsyncPlayerChatEvent](README.md#bukkit-asyncplayerchatevent) を使う。
 - name: PlayerChatTabCompleteEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChatTabCompleteEvent.html
   source: bukkit
-  description: ''
+  description: チャットメッセージでタブ補完をする時に呼び出される。
   deprecate: true
   deprecateDescription: クライアントの変更により実行されなくなった。
 - name: PlayerChunkLoadEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/packet/PlayerChunkLoadEvent.html
   source: paper
-  description: ''
+  description: プレイヤーがチャンクロードパケットを受け取った時に呼び出される。行いたい処理がパケットやクライアントに関する場合でのみ使うイベントになる。
 - name: PlayerChunkUnloadEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/packet/PlayerChunkUnloadEvent.html
   source: paper
-  description: ''
+  description: プレイヤーがチャンクアンロードパケットを受け取った時に呼び出される。行いたい処理がパケットやクライアントに関する場合でのみ使うイベントになる。
 - name: PlayerClientOptionsChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerClientOptionsChangeEvent.html
   source: paper
-  description: ''
+  description: 設定を変更した時に呼び出される。
 - name: PlayerCommandPreprocessEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerCommandPreprocessEvent.html
   source: bukkit
-  description: ''
+  description: プレイヤーが実行したコマンドが処理される前に呼び出される。
 - name: PlayerCommandSendEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerCommandSendEvent.html
   source: bukkit
-  description: ''
+  description: 使用可能なコマンドをプレイヤーに送信する時に呼び出される。
 - name: PlayerConnectionCloseEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerConnectionCloseEvent.html
   source: paper
-  description: ''
+  description: プレイヤーが切断された時に呼び出される。
 - name: PlayerDeathEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/PlayerDeathEvent.html
   source: bukkit

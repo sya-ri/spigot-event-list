@@ -283,7 +283,7 @@ LootTable によってアイテムが生成される時に呼び出される。
 ### `bukkit` [PlayerArmorStandManipulateEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerArmorStandManipulateEvent.html)
 アーマースタンドに対してアイテムを交換・取得・配置する時に呼び出される。
 ### `bukkit` [PlayerAttemptPickupItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerAttemptPickupItemEvent.html)
-地面からアイテムを拾おうとする際に呼び出される。
+地面からアイテムを拾おうとする時に呼び出される。
 ### `bukkit` [PlayerBedEnterEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBedEnterEvent.html)
 ベッドに入る時に呼び出される。
 ### `bukkit` [PlayerBedLeaveEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBedLeaveEvent.html)
@@ -295,23 +295,23 @@ LootTable によってアイテムが生成される時に呼び出される。
 ### `bukkit` [PlayerBucketFillEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketFillEvent.html)
 バケツを満たす時に呼び出される。
 ### `bukkit` [PlayerChangedMainHandEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChangedMainHandEvent.html)
-
+設定によってメインハンドの左右を切り替えた時に呼び出される。
 ### `bukkit` [PlayerChangedWorldEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChangedWorldEvent.html)
-
+別のワールドに移動した時に呼び出される。
 ### `bukkit` [PlayerChannelEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChannelEvent.html)
-
+プレイヤーがプラグインチャンネルを登録・登録解除した時に呼び出される。
 ### `bukkit` [PlayerChatEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChatEvent.html)
 `@Deprecated` チャットの遅延が発生するので [AsyncPlayerChatEvent](README.md#bukkit-asyncplayerchatevent) を使う。
 
-
+プレイヤーがチャットする時に呼び出される。
 ### `bukkit` [PlayerChatTabCompleteEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChatTabCompleteEvent.html)
 `@Deprecated` クライアントの変更により実行されなくなった。
 
-
+チャットメッセージでタブ補完をする時に呼び出される。
 ### `bukkit` [PlayerCommandPreprocessEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerCommandPreprocessEvent.html)
-
+プレイヤーが実行したコマンドが処理される前に呼び出される。
 ### `bukkit` [PlayerCommandSendEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerCommandSendEvent.html)
-
+使用可能なコマンドをプレイヤーに送信する時に呼び出される。
 ### `bukkit` [PlayerDeathEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/PlayerDeathEvent.html)
 
 ### `bukkit` [PlayerDropItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerDropItemEvent.html)
