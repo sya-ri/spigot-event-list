@@ -785,23 +785,23 @@
 - name: PlayerFishEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerFishEvent.html
   source: bukkit
-  description: ''
+  description: プレイヤーが釣りをしている時に呼び出される。
 - name: PlayerFlowerPotManipulateEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerFlowerPotManipulateEvent.html
   source: paper
-  description: ''
+  description: 植木鉢にアイテムを置いたり、植木鉢からアイテムを取り出したりする時に呼び出される。
 - name: PlayerGameModeChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerGameModeChangeEvent.html
   source: bukkit
-  description: ''
+  description: プレイヤーのゲームモードが変わる時に呼び出される。
 - name: PlayerHandshakeEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerHandshakeEvent.html
   source: paper
-  description: ''
+  description: プレイヤーとのハンドシェイクする時に呼び出される。
 - name: PlayerHarvestBlockEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerHarvestBlockEvent.html
   source: bukkit
-  description: ''
+  description: プレイヤーが作物を収穫する時に呼び出される。
 - name: PlayerInitialSpawnEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerInitialSpawnEvent.html
   source: paper
