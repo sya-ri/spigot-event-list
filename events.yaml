@@ -853,57 +853,57 @@
 - name: PlayerJoinEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerJoinEvent.html
   source: bukkit
-  description: ''
+  description: プレイヤーがサーバーに参加した時に呼び出される。
 - name: PlayerJumpEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerJumpEvent.html
   source: paper
-  description: ''
+  description: プレイヤーがジャンプする時に呼び出される。
 - name: PlayerKickEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerKickEvent.html
   source: bukkit
-  description: ''
+  description: プレイヤーがサーバーからキックされる時に呼び出される。
 - name: PlayerLaunchProjectileEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerLaunchProjectileEvent.html
   source: paper
-  description: ''
+  description: プレイヤーが Projectile を発射する時に呼び出される。
 - name: PlayerLeashEntityEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/PlayerLeashEntityEvent.html
   source: bukkit
-  description: ''
+  description: プレイヤーが生き物にリードを繋げる時に呼び出される。
 - name: PlayerLecternPageChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerLecternPageChangeEvent.html
   source: paper
-  description: ''
+  description: プレイヤーが書見台に置かれた本のページを変更する時に呼び出される。
 - name: PlayerLevelChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerLevelChangeEvent.html
   source: bukkit
-  description: ''
+  description: プレイヤーの経験値レベルが変更した時に呼び出される。
 - name: PlayerLocaleChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerLocaleChangeEvent.html
   source: bukkit
-  description: ''
+  description: プレイヤーが言語設定を変更した時に呼び出される。
 - name: PlayerLocaleChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerLocaleChangeEvent.html
   source: paper
-  description: ''
+  description: プレイヤーが言語設定を変更した時に呼び出される。
   deprecate: true
   deprecateDescription: Bukkit に追加された [PlayerLocaleChangeEvent](README.md#bukkit-playerlocalechangeevent) を使う。
 - name: PlayerLoginEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerLoginEvent.html
   source: bukkit
-  description: ''
+  description: プレイヤーがログインしようとする時に呼び出される。[PlayerJoinEvent](README.md#bukkit-playerjoinevent) の前に呼び出される。
 - name: PlayerLoomPatternSelectEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerLoomPatternSelectEvent.html
   source: paper
-  description: ''
+  description: プレイヤーが機織り機の旗模様を変更する時に呼び出される。
 - name: PlayerMoveEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerMoveEvent.html
   source: bukkit
-  description: ''
+  description: プレイヤーが移動する時に呼び出される。
 - name: PlayerNaturallySpawnCreaturesEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/PlayerNaturallySpawnCreaturesEvent.html
   source: paper
-  description: ''
+  description: モンスターをスポーンさせるチャンクを計算する時に呼び出される。
 - name: PlayerPickupArrowEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerPickupArrowEvent.html
   source: bukkit
