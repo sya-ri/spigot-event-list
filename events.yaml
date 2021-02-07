@@ -907,35 +907,35 @@
 - name: PlayerPickupArrowEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerPickupArrowEvent.html
   source: bukkit
-  description: ''
+  description: プレイヤーが地面から矢を拾う時に呼び出される。
 - name: PlayerPickupExperienceEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerPickupExperienceEvent.html
   source: paper
-  description: ''
+  description: プレイヤーが地面から経験値オーブを拾う時に呼び出される。
 - name: PlayerPickupItemEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerPickupItemEvent.html
   source: bukkit
-  description: ''
+  description: プレイヤーが地面からアイテムを拾う時に呼び出される。
   deprecate: true
   deprecateDescription: Bukkit に追加された [EntityPickupItemEvent](README.md#bukkit-entitypickupitemevent) を使う。
 - name: PlayerPortalEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerPortalEvent.html
   source: bukkit
-  description: ''
+  description: プレイヤーがポータルでテレポートする時に呼び出される。
 - name: PlayerPostRespawnEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerPostRespawnEvent.html
   source: paper
-  description: ''
+  description: プレイヤーがリスポーンした後に呼び出される。
 - name: PlayerPreLoginEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerPreLoginEvent.html
   source: bukkit
-  description: ''
+  description: プレイヤーがログインしようとしている時に呼び出される。
   deprecate: true
   deprecateDescription: 非同期で処理をする為に [AsyncPlayerPreLoginEvent](README.md#bukkit-asyncplayerpreloginevent) を使う。
 - name: PlayerQuitEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerQuitEvent.html
   source: bukkit
-  description: ''
+  description: プレイヤーがサーバーから退出した時に呼び出される。
 - name: PlayerReadyArrowEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerReadyArrowEvent.html
   source: paper
