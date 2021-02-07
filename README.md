@@ -524,9 +524,11 @@ LootTable によってアイテムが補充される時に呼び出される。
 ### `bukkit` [PlayerRiptideEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerRiptideEvent.html)
 プレイヤーが激流エンチャントを使用した時に呼び出される。
 ### `paper` [PlayerShearBlockEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/PlayerShearBlockEvent.html)
-
+プレイヤーがブロックに対してハサミを使用する時に呼び出される。以下に例を示す。
+- カボチャを彫ったカボチャに変える時。
+- 蜂の巣からハニカムを回収する時。
 ### `bukkit` [PlayerShearEntityEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerShearEntityEvent.html)
-
+プレイヤーがエンティティに対してハサミを使用する時に呼び出される。
 ### `spigot` [PlayerSpawnLocationEvent](https://papermc.io/javadocs/paper/1.16/org/spigotmc/event/player/PlayerSpawnLocationEvent.html)
 プレイヤーがサーバーに参加した後、スポーンしようとしている時に呼び出される。
 ### `paper` [PlayerStartSpectatingEntityEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerStartSpectatingEntityEvent.html)
@@ -558,7 +560,7 @@ LootTable によってアイテムが補充される時に呼び出される。
 ### `bukkit` [PlayerUnregisterChannelEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerUnregisterChannelEvent.html)
 プレイヤーがプラグインチャンネルの登録を解除する時に呼び出される。
 ### `paper` [PlayerUseUnknownEntityEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerUseUnknownEntityEvent.html)
-
+不明。
 ### `bukkit` [PlayerVelocityEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerVelocityEvent.html)
 プレイヤーに対する力の向きや大きさが変化する時に呼び出される。
 ### `bukkit` [PluginDisableEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/PluginDisableEvent.html)
@@ -582,7 +584,7 @@ Mojang API を用いてプロファイルを検索する時に呼び出される
 ### `bukkit` [PrepareAnvilEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/PrepareAnvilEvent.html)
 金床の使用準備が出来た時に呼び出される。完成アイテムが表示される毎に発生する。
 ### `paper` [PrepareGrindstoneEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/inventory/PrepareGrindstoneEvent.html)
-`@Deprecated` 
+`@Deprecated` 不明。
 
 砥石の使用準備が出来た時に呼び出される。完成アイテムが表示される毎に発生する。
 ### `bukkit` [PrepareItemCraftEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/PrepareItemCraftEvent.html)

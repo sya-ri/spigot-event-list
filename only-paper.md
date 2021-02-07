@@ -125,7 +125,9 @@ LootTable によってアイテムが補充される時に呼び出される。
 ### `paper` [PlayerRecipeBookClickEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerRecipeBookClickEvent.html)
 プレイヤーがレシピブックのレシビをクリックする時に呼び出される。
 ### `paper` [PlayerShearBlockEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/PlayerShearBlockEvent.html)
-
+プレイヤーがブロックに対してハサミを使用する時に呼び出される。以下に例を示す。
+- カボチャを彫ったカボチャに変える時。
+- 蜂の巣からハニカムを回収する時。
 ### `paper` [PlayerStartSpectatingEntityEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerStartSpectatingEntityEvent.html)
 プレイヤーがスペクテイターモードでエンティティ視点を開始する時に呼び出される。
 ### `paper` [PlayerStonecutterRecipeSelectEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerStonecutterRecipeSelectEvent.html)
@@ -137,7 +139,7 @@ LootTable によってアイテムが補充される時に呼び出される。
 ### `paper` [PlayerTradeEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerTradeEvent.html)
 プレイヤーが村人や行商人と交易をする時に呼び出される。
 ### `paper` [PlayerUseUnknownEntityEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerUseUnknownEntityEvent.html)
-
+不明。
 ### `paper` [PreCreatureSpawnEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/PreCreatureSpawnEvent.html)
 生き物がスポーンする時に呼び出される。このイベントの目的はサーバーのパフォーマンスを向上させることであるため、[CreatureSpawnEvent](README.md#bukkit-creaturespawnevent) が呼び出される全ての状況で呼び出されるわけではない。
 ### `paper` [PreFillProfileEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/profile/PreFillProfileEvent.html)
@@ -147,7 +149,7 @@ Mojang API を用いてプロファイルを検索する時に呼び出される
 ### `paper` [PreSpawnerSpawnEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/PreSpawnerSpawnEvent.html)
 エンティティがスポナーによってスポーンする時に呼び出される。
 ### `paper` [PrepareGrindstoneEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/inventory/PrepareGrindstoneEvent.html)
-`@Deprecated` 
+`@Deprecated` 不明。
 
 砥石の使用準備が出来た時に呼び出される。完成アイテムが表示される毎に発生する。
 ### `paper` [PrepareResultEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/inventory/PrepareResultEvent.html)

@@ -967,11 +967,14 @@
 - name: PlayerShearBlockEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/PlayerShearBlockEvent.html
   source: paper
-  description: ''
+  description: |-
+    プレイヤーがブロックに対してハサミを使用する時に呼び出される。以下に例を示す。
+    - カボチャを彫ったカボチャに変える時。
+    - 蜂の巣からハニカムを回収する時。
 - name: PlayerShearEntityEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerShearEntityEvent.html
   source: bukkit
-  description: ''
+  description: プレイヤーがエンティティに対してハサミを使用する時に呼び出される。
 - name: PlayerSpawnLocationEvent
   link: https://papermc.io/javadocs/paper/1.16/org/spigotmc/event/player/PlayerSpawnLocationEvent.html
   source: spigot
@@ -1035,7 +1038,7 @@
 - name: PlayerUseUnknownEntityEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerUseUnknownEntityEvent.html
   source: paper
-  description: ''
+  description: 不明。
 - name: PlayerVelocityEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerVelocityEvent.html
   source: bukkit
@@ -1085,7 +1088,7 @@
   source: paper
   description: 砥石の使用準備が出来た時に呼び出される。完成アイテムが表示される毎に発生する。
   deprecate: true
-  deprecateDescription: ''
+  deprecateDescription: 不明。
 - name: PrepareItemCraftEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/PrepareItemCraftEvent.html
   source: bukkit

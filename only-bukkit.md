@@ -388,7 +388,7 @@ LootTable によってアイテムが生成される時に呼び出される。
 ### `bukkit` [PlayerRiptideEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerRiptideEvent.html)
 プレイヤーが激流エンチャントを使用した時に呼び出される。
 ### `bukkit` [PlayerShearEntityEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerShearEntityEvent.html)
-
+プレイヤーがエンティティに対してハサミを使用する時に呼び出される。
 ### `bukkit` [PlayerStatisticIncrementEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerStatisticIncrementEvent.html)
 プレイヤーの統計が増加した時に呼び出される。移動などの高頻度で増加するような一部の統計では呼び出される。
 ### `bukkit` [PlayerSwapHandItemsEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerSwapHandItemsEvent.html)

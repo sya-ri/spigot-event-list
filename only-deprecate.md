@@ -47,7 +47,7 @@
 
 プレイヤーがログインしようとしている時に呼び出される。
 ### `paper` [PrepareGrindstoneEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/inventory/PrepareGrindstoneEvent.html)
-`@Deprecated` 
+`@Deprecated` 不明。
 
 砥石の使用準備が出来た時に呼び出される。完成アイテムが表示される毎に発生する。
 
