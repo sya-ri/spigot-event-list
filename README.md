@@ -441,25 +441,28 @@ LootTable によってアイテムが補充される時に呼び出される。
 ### `paper` [PlayerInitialSpawnEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerInitialSpawnEvent.html)
 `@Deprecated` Spigot に追加された [PlayerSpawnLocationEvent](README.md#spigot-playerspawnlocationevent) を使う。
 
-
+プレイヤーがサーバーに参加した後、スポーンしようとしている時に呼び出される。
 ### `bukkit` [PlayerInteractAtEntityEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerInteractAtEntityEvent.html)
-
+プレイヤーがエンティティを右クリックする時に呼び出される。クライアントは [PlayerInteractEntityEvent](README.md#bukkit-playerinteractentityevent] に加えてこのパケットを誤って送信する場合がある。 しかし、アーマースタンドを右クリックした場合、このイベントのみが呼び出される。特別な場合を除いて　[PlayerInteractEntityEvent](README.md#bukkit-playerinteractentityevent] を使うことを推奨している。
 ### `bukkit` [PlayerInteractEntityEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerInteractEntityEvent.html)
-
+プレイヤーがエンティティを右クリックする時に呼び出される。
 ### `bukkit` [PlayerInteractEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerInteractEvent.html)
-
+プレイヤーがオブジェクトや空気を右クリックする時に呼び出される。それぞれの手に対して呼び出される可能性がある。
 ### `bukkit` [PlayerItemBreakEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerItemBreakEvent.html)
-
+プレイヤーのアイテムが壊れる時に呼び出される。
 ### `bukkit` [PlayerItemConsumeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerItemConsumeEvent.html)
-
+プレイヤーがアイテムを消費する時に呼び出される。アイテムの例を以下に示す。
+- 食べ物
+- ポーション
+- 牛乳入りバケツ
 ### `paper` [PlayerItemCooldownEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerItemCooldownEvent.html)
-
+プレイヤーのアイテムクールダウンが変更される時に呼び出される。
 ### `bukkit` [PlayerItemDamageEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerItemDamageEvent.html)
-
+プレイヤーがアイテムを使用し、その耐久値が減少する時に呼び出される。
 ### `bukkit` [PlayerItemHeldEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerItemHeldEvent.html)
-
+プレイヤーが手に持つアイテムを変更した時に呼び出される。
 ### `bukkit` [PlayerItemMendEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerItemMendEvent.html)
-
+プレイヤーのアイテムが修繕のエンチャントによって耐久値を回復する時に呼び出される。
 ### `bukkit` [PlayerJoinEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerJoinEvent.html)
 
 ### `paper` [PlayerJumpEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerJumpEvent.html)
@@ -525,7 +528,7 @@ LootTable によってアイテムが補充される時に呼び出される。
 ### `bukkit` [PlayerShearEntityEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerShearEntityEvent.html)
 
 ### `spigot` [PlayerSpawnLocationEvent](https://papermc.io/javadocs/paper/1.16/org/spigotmc/event/player/PlayerSpawnLocationEvent.html)
-
+プレイヤーがサーバーに参加した後、スポーンしようとしている時に呼び出される。
 ### `paper` [PlayerStartSpectatingEntityEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerStartSpectatingEntityEvent.html)
 
 ### `bukkit` [PlayerStatisticIncrementEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerStatisticIncrementEvent.html)

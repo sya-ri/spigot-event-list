@@ -805,45 +805,51 @@
 - name: PlayerInitialSpawnEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerInitialSpawnEvent.html
   source: paper
-  description: ''
+  description: プレイヤーがサーバーに参加した後、スポーンしようとしている時に呼び出される。
   deprecate: true
   deprecateDescription: Spigot に追加された [PlayerSpawnLocationEvent](README.md#spigot-playerspawnlocationevent) を使う。
 - name: PlayerInteractAtEntityEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerInteractAtEntityEvent.html
   source: bukkit
-  description: ''
+  description: >-
+    プレイヤーがエンティティを右クリックする時に呼び出される。クライアントは [PlayerInteractEntityEvent](README.md#bukkit-playerinteractentityevent] に加えてこのパケットを誤って送信する場合がある。
+    しかし、アーマースタンドを右クリックした場合、このイベントのみが呼び出される。特別な場合を除いて　[PlayerInteractEntityEvent](README.md#bukkit-playerinteractentityevent] を使うことを推奨している。
 - name: PlayerInteractEntityEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerInteractEntityEvent.html
   source: bukkit
-  description: ''
+  description: プレイヤーがエンティティを右クリックする時に呼び出される。
 - name: PlayerInteractEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerInteractEvent.html
   source: bukkit
-  description: ''
+  description: プレイヤーがオブジェクトや空気を右クリックする時に呼び出される。それぞれの手に対して呼び出される可能性がある。
 - name: PlayerItemBreakEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerItemBreakEvent.html
   source: bukkit
-  description: ''
+  description: プレイヤーのアイテムが壊れる時に呼び出される。
 - name: PlayerItemConsumeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerItemConsumeEvent.html
   source: bukkit
-  description: ''
+  description: |-
+    プレイヤーがアイテムを消費する時に呼び出される。アイテムの例を以下に示す。
+    - 食べ物
+    - ポーション
+    - 牛乳入りバケツ
 - name: PlayerItemCooldownEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerItemCooldownEvent.html
   source: paper
-  description: ''
+  description: プレイヤーのアイテムクールダウンが変更される時に呼び出される。
 - name: PlayerItemDamageEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerItemDamageEvent.html
   source: bukkit
-  description: ''
+  description: プレイヤーがアイテムを使用し、その耐久値が減少する時に呼び出される。
 - name: PlayerItemHeldEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerItemHeldEvent.html
   source: bukkit
-  description: ''
+  description: プレイヤーが手に持つアイテムを変更した時に呼び出される。
 - name: PlayerItemMendEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerItemMendEvent.html
   source: bukkit
-  description: ''
+  description: プレイヤーのアイテムが修繕のエンチャントによって耐久値を回復する時に呼び出される。
 - name: PlayerJoinEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerJoinEvent.html
   source: bukkit
@@ -969,7 +975,7 @@
 - name: PlayerSpawnLocationEvent
   link: https://papermc.io/javadocs/paper/1.16/org/spigotmc/event/player/PlayerSpawnLocationEvent.html
   source: spigot
-  description: ''
+  description: プレイヤーがサーバーに参加した後、スポーンしようとしている時に呼び出される。
 - name: PlayerStartSpectatingEntityEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerStartSpectatingEntityEvent.html
   source: paper
