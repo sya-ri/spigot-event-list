@@ -29,7 +29,7 @@
 ### `bukkit` [PlayerChatTabCompleteEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChatTabCompleteEvent.html)
 `@Deprecated` クライアントの変更により実行されなくなった。
 
-チャットメッセージでタブ補完をする時に呼び出される。
+プレイヤーがチャットメッセージでタブ補完をする時に呼び出される。
 ### `paper` [PlayerInitialSpawnEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerInitialSpawnEvent.html)
 `@Deprecated` Spigot に追加された [PlayerSpawnLocationEvent](README.md#spigot-playerspawnlocationevent) を使う。
 

@@ -657,63 +657,63 @@
 - name: PlayerAdvancementCriterionGrantEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerAdvancementCriterionGrantEvent.html
   source: paper
-  description: 進捗の条件を達成した時に呼び出される。
+  description: プレイヤーが進捗の条件を達成した時に呼び出される。
 - name: PlayerAdvancementDoneEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerAdvancementDoneEvent.html
   source: bukkit
-  description: 進捗の条件を全て達成した時に呼び出される。
+  description: プレイヤーが進捗の条件を全て達成した時に呼び出される。
 - name: PlayerAnimationEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerAnimationEvent.html
   source: bukkit
-  description: アニメーションに関するイベントであることを表す。
+  description: プレイヤーのアニメーションに関するイベントであることを表す。
 - name: PlayerArmorChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerArmorChangeEvent.html
   source: paper
-  description: 鎧が変更された時に呼び出される。
+  description: プレイヤーの鎧が変更された時に呼び出される。
 - name: PlayerArmorStandManipulateEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerArmorStandManipulateEvent.html
   source: bukkit
-  description: アーマースタンドに対してアイテムを交換・取得・配置する時に呼び出される。
+  description: プレイヤーがアーマースタンドに対してアイテムを交換・取得・配置する時に呼び出される。
 - name: PlayerAttackEntityCooldownResetEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerAttackEntityCooldownResetEvent.html
   source: paper
-  description: 攻撃のクールダウンがリセットする時に呼び出される。
+  description: プレイヤーの攻撃クールダウンがリセットする時に呼び出される。
 - name: PlayerAttemptPickupItemEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerAttemptPickupItemEvent.html
   source: bukkit
-  description: 地面からアイテムを拾おうとする時に呼び出される。
+  description: プレイヤーが地面からアイテムを拾おうとする時に呼び出される。
 - name: PlayerBedEnterEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBedEnterEvent.html
   source: bukkit
-  description: ベッドに入る時に呼び出される。
+  description: プレイヤーがベッドに入る時に呼び出される。
 - name: PlayerBedLeaveEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBedLeaveEvent.html
   source: bukkit
-  description: ベッドから出る時に呼び出される。
+  description: プレイヤーがベッドから出る時に呼び出される。
 - name: PlayerBucketEmptyEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketEmptyEvent.html
   source: bukkit
-  description: バケツを空にする時に呼び出される。
+  description: プレイヤーがバケツを空にする時に呼び出される。
 - name: PlayerBucketEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketEvent.html
   source: bukkit
-  description: バケツを操作する時に呼び出される。
+  description: プレイヤーがバケツを操作する時に呼び出される。
 - name: PlayerBucketFillEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketFillEvent.html
   source: bukkit
-  description: バケツを満たす時に呼び出される。
+  description: プレイヤーがバケツを満たす時に呼び出される。
 - name: PlayerChangeBeaconEffectEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerChangeBeaconEffectEvent.html
   source: paper
-  description: ビーコンの効果を変更する時に呼び出される。
+  description: プレイヤーがビーコンの効果を変更する時に呼び出される。
 - name: PlayerChangedMainHandEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChangedMainHandEvent.html
   source: bukkit
-  description: 設定によってメインハンドの左右を切り替えた時に呼び出される。
+  description: プレイヤーがメインハンドの左右の設定を切り替えた時に呼び出される。
 - name: PlayerChangedWorldEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChangedWorldEvent.html
   source: bukkit
-  description: 別のワールドに移動した時に呼び出される。
+  description: プレイヤーが別のワールドに移動した時に呼び出される。
 - name: PlayerChannelEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChannelEvent.html
   source: bukkit
@@ -727,7 +727,7 @@
 - name: PlayerChatTabCompleteEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChatTabCompleteEvent.html
   source: bukkit
-  description: チャットメッセージでタブ補完をする時に呼び出される。
+  description: プレイヤーがチャットメッセージでタブ補完をする時に呼び出される。
   deprecate: true
   deprecateDescription: クライアントの変更により実行されなくなった。
 - name: PlayerChunkLoadEvent
@@ -741,7 +741,7 @@
 - name: PlayerClientOptionsChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerClientOptionsChangeEvent.html
   source: paper
-  description: 設定を変更した時に呼び出される。
+  description: プレイヤーがクライアント設定を変更した時に呼び出される。
 - name: PlayerCommandPreprocessEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerCommandPreprocessEvent.html
   source: bukkit
@@ -753,7 +753,7 @@
 - name: PlayerConnectionCloseEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerConnectionCloseEvent.html
   source: paper
-  description: プレイヤーが切断された時に呼び出される。
+  description: プレイヤーがサーバーから切断された時に呼び出される。
 - name: PlayerDeathEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/PlayerDeathEvent.html
   source: bukkit
@@ -761,11 +761,11 @@
 - name: PlayerDropItemEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerDropItemEvent.html
   source: bukkit
-  description: インベントリからアイテムをドロップする時に呼び出される。
+  description: プレイヤーのインベントリからアイテムをドロップする時に呼び出される。
 - name: PlayerEditBookEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerEditBookEvent.html
   source: bukkit
-  description: 本と羽ペンを編集・署名した時に呼び出される。
+  description: プレイヤーが本と羽ペンを編集・署名した時に呼び出される。
 - name: PlayerEggThrowEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerEggThrowEvent.html
   source: bukkit
@@ -773,7 +773,7 @@
 - name: PlayerElytraBoostEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerElytraBoostEvent.html
   source: paper
-  description: 花火を使いエリトラ飛行のブーストをする時に呼び出される。
+  description: プレイヤーが花火を使いエリトラ飛行のブーストをする時に呼び出される。
 - name: PlayerEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerEvent.html
   source: bukkit
@@ -789,7 +789,7 @@
 - name: PlayerFlowerPotManipulateEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerFlowerPotManipulateEvent.html
   source: paper
-  description: 植木鉢にアイテムを置いたり、植木鉢からアイテムを取り出したりする時に呼び出される。
+  description: プレイヤーが植木鉢にアイテムを置いたり、植木鉢からアイテムを取り出したりする時に呼び出される。
 - name: PlayerGameModeChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerGameModeChangeEvent.html
   source: bukkit
@@ -797,7 +797,7 @@
 - name: PlayerHandshakeEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerHandshakeEvent.html
   source: paper
-  description: プレイヤーとのハンドシェイクする時に呼び出される。
+  description: プレイヤーとサーバーがハンドシェイクする時に呼び出される。
 - name: PlayerHarvestBlockEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerHarvestBlockEvent.html
   source: bukkit

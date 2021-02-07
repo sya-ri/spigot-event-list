@@ -75,27 +75,27 @@ LootTable によってアイテムが補充される時に呼び出される。
 ### `paper` [PhantomPreSpawnEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/PhantomPreSpawnEvent.html)
 ファントムがスポーンする時に呼び出される。
 ### `paper` [PlayerAdvancementCriterionGrantEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerAdvancementCriterionGrantEvent.html)
-進捗の条件を達成した時に呼び出される。
+プレイヤーが進捗の条件を達成した時に呼び出される。
 ### `paper` [PlayerArmorChangeEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerArmorChangeEvent.html)
-鎧が変更された時に呼び出される。
+プレイヤーの鎧が変更された時に呼び出される。
 ### `paper` [PlayerAttackEntityCooldownResetEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerAttackEntityCooldownResetEvent.html)
-攻撃のクールダウンがリセットする時に呼び出される。
+プレイヤーの攻撃クールダウンがリセットする時に呼び出される。
 ### `paper` [PlayerChangeBeaconEffectEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerChangeBeaconEffectEvent.html)
-ビーコンの効果を変更する時に呼び出される。
+プレイヤーがビーコンの効果を変更する時に呼び出される。
 ### `paper` [PlayerChunkLoadEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/packet/PlayerChunkLoadEvent.html)
 プレイヤーがチャンクロードパケットを受け取った時に呼び出される。行いたい処理がパケットやクライアントに関する場合でのみ使うイベントになる。
 ### `paper` [PlayerChunkUnloadEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/packet/PlayerChunkUnloadEvent.html)
 プレイヤーがチャンクアンロードパケットを受け取った時に呼び出される。行いたい処理がパケットやクライアントに関する場合でのみ使うイベントになる。
 ### `paper` [PlayerClientOptionsChangeEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerClientOptionsChangeEvent.html)
-設定を変更した時に呼び出される。
+プレイヤーがクライアント設定を変更した時に呼び出される。
 ### `paper` [PlayerConnectionCloseEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerConnectionCloseEvent.html)
-プレイヤーが切断された時に呼び出される。
+プレイヤーがサーバーから切断された時に呼び出される。
 ### `paper` [PlayerElytraBoostEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerElytraBoostEvent.html)
-花火を使いエリトラ飛行のブーストをする時に呼び出される。
+プレイヤーが花火を使いエリトラ飛行のブーストをする時に呼び出される。
 ### `paper` [PlayerFlowerPotManipulateEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerFlowerPotManipulateEvent.html)
-植木鉢にアイテムを置いたり、植木鉢からアイテムを取り出したりする時に呼び出される。
+プレイヤーが植木鉢にアイテムを置いたり、植木鉢からアイテムを取り出したりする時に呼び出される。
 ### `paper` [PlayerHandshakeEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerHandshakeEvent.html)
-プレイヤーとのハンドシェイクする時に呼び出される。
+プレイヤーとサーバーがハンドシェイクする時に呼び出される。
 ### `paper` [PlayerInitialSpawnEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerInitialSpawnEvent.html)
 `@Deprecated` Spigot に追加された [PlayerSpawnLocationEvent](README.md#spigot-playerspawnlocationevent) を使う。
 

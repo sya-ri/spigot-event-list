@@ -363,35 +363,35 @@ LootTable によってアイテムが補充される時に呼び出される。
 ### `bukkit` [PigZombieAngerEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/PigZombieAngerEvent.html)
 ゾンビ豚が怒る時に呼び出される。
 ### `paper` [PlayerAdvancementCriterionGrantEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerAdvancementCriterionGrantEvent.html)
-進捗の条件を達成した時に呼び出される。
+プレイヤーが進捗の条件を達成した時に呼び出される。
 ### `bukkit` [PlayerAdvancementDoneEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerAdvancementDoneEvent.html)
-進捗の条件を全て達成した時に呼び出される。
+プレイヤーが進捗の条件を全て達成した時に呼び出される。
 ### `bukkit` [PlayerAnimationEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerAnimationEvent.html)
-アニメーションに関するイベントであることを表す。
+プレイヤーのアニメーションに関するイベントであることを表す。
 ### `paper` [PlayerArmorChangeEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerArmorChangeEvent.html)
-鎧が変更された時に呼び出される。
+プレイヤーの鎧が変更された時に呼び出される。
 ### `bukkit` [PlayerArmorStandManipulateEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerArmorStandManipulateEvent.html)
-アーマースタンドに対してアイテムを交換・取得・配置する時に呼び出される。
+プレイヤーがアーマースタンドに対してアイテムを交換・取得・配置する時に呼び出される。
 ### `paper` [PlayerAttackEntityCooldownResetEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerAttackEntityCooldownResetEvent.html)
-攻撃のクールダウンがリセットする時に呼び出される。
+プレイヤーの攻撃クールダウンがリセットする時に呼び出される。
 ### `bukkit` [PlayerAttemptPickupItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerAttemptPickupItemEvent.html)
-地面からアイテムを拾おうとする時に呼び出される。
+プレイヤーが地面からアイテムを拾おうとする時に呼び出される。
 ### `bukkit` [PlayerBedEnterEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBedEnterEvent.html)
-ベッドに入る時に呼び出される。
+プレイヤーがベッドに入る時に呼び出される。
 ### `bukkit` [PlayerBedLeaveEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBedLeaveEvent.html)
-ベッドから出る時に呼び出される。
+プレイヤーがベッドから出る時に呼び出される。
 ### `bukkit` [PlayerBucketEmptyEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketEmptyEvent.html)
-バケツを空にする時に呼び出される。
+プレイヤーがバケツを空にする時に呼び出される。
 ### `bukkit` [PlayerBucketEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketEvent.html)
-バケツを操作する時に呼び出される。
+プレイヤーがバケツを操作する時に呼び出される。
 ### `bukkit` [PlayerBucketFillEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketFillEvent.html)
-バケツを満たす時に呼び出される。
+プレイヤーがバケツを満たす時に呼び出される。
 ### `paper` [PlayerChangeBeaconEffectEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerChangeBeaconEffectEvent.html)
-ビーコンの効果を変更する時に呼び出される。
+プレイヤーがビーコンの効果を変更する時に呼び出される。
 ### `bukkit` [PlayerChangedMainHandEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChangedMainHandEvent.html)
-設定によってメインハンドの左右を切り替えた時に呼び出される。
+プレイヤーがメインハンドの左右の設定を切り替えた時に呼び出される。
 ### `bukkit` [PlayerChangedWorldEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChangedWorldEvent.html)
-別のワールドに移動した時に呼び出される。
+プレイヤーが別のワールドに移動した時に呼び出される。
 ### `bukkit` [PlayerChannelEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChannelEvent.html)
 プレイヤーがプラグインチャンネルを登録・登録解除した時に呼び出される。
 ### `bukkit` [PlayerChatEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChatEvent.html)
@@ -401,29 +401,29 @@ LootTable によってアイテムが補充される時に呼び出される。
 ### `bukkit` [PlayerChatTabCompleteEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChatTabCompleteEvent.html)
 `@Deprecated` クライアントの変更により実行されなくなった。
 
-チャットメッセージでタブ補完をする時に呼び出される。
+プレイヤーがチャットメッセージでタブ補完をする時に呼び出される。
 ### `paper` [PlayerChunkLoadEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/packet/PlayerChunkLoadEvent.html)
 プレイヤーがチャンクロードパケットを受け取った時に呼び出される。行いたい処理がパケットやクライアントに関する場合でのみ使うイベントになる。
 ### `paper` [PlayerChunkUnloadEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/packet/PlayerChunkUnloadEvent.html)
 プレイヤーがチャンクアンロードパケットを受け取った時に呼び出される。行いたい処理がパケットやクライアントに関する場合でのみ使うイベントになる。
 ### `paper` [PlayerClientOptionsChangeEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerClientOptionsChangeEvent.html)
-設定を変更した時に呼び出される。
+プレイヤーがクライアント設定を変更した時に呼び出される。
 ### `bukkit` [PlayerCommandPreprocessEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerCommandPreprocessEvent.html)
 プレイヤーが実行したコマンドが処理される前に呼び出される。
 ### `bukkit` [PlayerCommandSendEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerCommandSendEvent.html)
 使用可能なコマンドをプレイヤーに送信する時に呼び出される。
 ### `paper` [PlayerConnectionCloseEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerConnectionCloseEvent.html)
-プレイヤーが切断された時に呼び出される。
+プレイヤーがサーバーから切断された時に呼び出される。
 ### `bukkit` [PlayerDeathEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/PlayerDeathEvent.html)
 プレイヤーが死んだ時に呼び出される。
 ### `bukkit` [PlayerDropItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerDropItemEvent.html)
-インベントリからアイテムをドロップする時に呼び出される。
+プレイヤーのインベントリからアイテムをドロップする時に呼び出される。
 ### `bukkit` [PlayerEditBookEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerEditBookEvent.html)
-本と羽ペンを編集・署名した時に呼び出される。
+プレイヤーが本と羽ペンを編集・署名した時に呼び出される。
 ### `bukkit` [PlayerEggThrowEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerEggThrowEvent.html)
 プレイヤーが投げた卵が孵化するかの確認をする時に呼び出される。
 ### `paper` [PlayerElytraBoostEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerElytraBoostEvent.html)
-花火を使いエリトラ飛行のブーストをする時に呼び出される。
+プレイヤーが花火を使いエリトラ飛行のブーストをする時に呼び出される。
 ### `bukkit` [PlayerEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerEvent.html)
 プレイヤーに関するイベントであることを表す。
 ### `bukkit` [PlayerExpChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerExpChangeEvent.html)
@@ -431,11 +431,11 @@ LootTable によってアイテムが補充される時に呼び出される。
 ### `bukkit` [PlayerFishEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerFishEvent.html)
 プレイヤーが釣りをしている時に呼び出される。
 ### `paper` [PlayerFlowerPotManipulateEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerFlowerPotManipulateEvent.html)
-植木鉢にアイテムを置いたり、植木鉢からアイテムを取り出したりする時に呼び出される。
+プレイヤーが植木鉢にアイテムを置いたり、植木鉢からアイテムを取り出したりする時に呼び出される。
 ### `bukkit` [PlayerGameModeChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerGameModeChangeEvent.html)
 プレイヤーのゲームモードが変わる時に呼び出される。
 ### `paper` [PlayerHandshakeEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerHandshakeEvent.html)
-プレイヤーとのハンドシェイクする時に呼び出される。
+プレイヤーとサーバーがハンドシェイクする時に呼び出される。
 ### `bukkit` [PlayerHarvestBlockEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerHarvestBlockEvent.html)
 プレイヤーが作物を収穫する時に呼び出される。
 ### `paper` [PlayerInitialSpawnEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerInitialSpawnEvent.html)

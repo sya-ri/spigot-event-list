@@ -277,27 +277,27 @@ LootTable によってアイテムが生成される時に呼び出される。
 ### `bukkit` [PigZombieAngerEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/PigZombieAngerEvent.html)
 ゾンビ豚が怒る時に呼び出される。
 ### `bukkit` [PlayerAdvancementDoneEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerAdvancementDoneEvent.html)
-進捗の条件を全て達成した時に呼び出される。
+プレイヤーが進捗の条件を全て達成した時に呼び出される。
 ### `bukkit` [PlayerAnimationEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerAnimationEvent.html)
-アニメーションに関するイベントであることを表す。
+プレイヤーのアニメーションに関するイベントであることを表す。
 ### `bukkit` [PlayerArmorStandManipulateEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerArmorStandManipulateEvent.html)
-アーマースタンドに対してアイテムを交換・取得・配置する時に呼び出される。
+プレイヤーがアーマースタンドに対してアイテムを交換・取得・配置する時に呼び出される。
 ### `bukkit` [PlayerAttemptPickupItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerAttemptPickupItemEvent.html)
-地面からアイテムを拾おうとする時に呼び出される。
+プレイヤーが地面からアイテムを拾おうとする時に呼び出される。
 ### `bukkit` [PlayerBedEnterEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBedEnterEvent.html)
-ベッドに入る時に呼び出される。
+プレイヤーがベッドに入る時に呼び出される。
 ### `bukkit` [PlayerBedLeaveEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBedLeaveEvent.html)
-ベッドから出る時に呼び出される。
+プレイヤーがベッドから出る時に呼び出される。
 ### `bukkit` [PlayerBucketEmptyEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketEmptyEvent.html)
-バケツを空にする時に呼び出される。
+プレイヤーがバケツを空にする時に呼び出される。
 ### `bukkit` [PlayerBucketEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketEvent.html)
-バケツを操作する時に呼び出される。
+プレイヤーがバケツを操作する時に呼び出される。
 ### `bukkit` [PlayerBucketFillEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketFillEvent.html)
-バケツを満たす時に呼び出される。
+プレイヤーがバケツを満たす時に呼び出される。
 ### `bukkit` [PlayerChangedMainHandEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChangedMainHandEvent.html)
-設定によってメインハンドの左右を切り替えた時に呼び出される。
+プレイヤーがメインハンドの左右の設定を切り替えた時に呼び出される。
 ### `bukkit` [PlayerChangedWorldEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChangedWorldEvent.html)
-別のワールドに移動した時に呼び出される。
+プレイヤーが別のワールドに移動した時に呼び出される。
 ### `bukkit` [PlayerChannelEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChannelEvent.html)
 プレイヤーがプラグインチャンネルを登録・登録解除した時に呼び出される。
 ### `bukkit` [PlayerChatEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChatEvent.html)
@@ -307,7 +307,7 @@ LootTable によってアイテムが生成される時に呼び出される。
 ### `bukkit` [PlayerChatTabCompleteEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChatTabCompleteEvent.html)
 `@Deprecated` クライアントの変更により実行されなくなった。
 
-チャットメッセージでタブ補完をする時に呼び出される。
+プレイヤーがチャットメッセージでタブ補完をする時に呼び出される。
 ### `bukkit` [PlayerCommandPreprocessEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerCommandPreprocessEvent.html)
 プレイヤーが実行したコマンドが処理される前に呼び出される。
 ### `bukkit` [PlayerCommandSendEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerCommandSendEvent.html)
@@ -315,9 +315,9 @@ LootTable によってアイテムが生成される時に呼び出される。
 ### `bukkit` [PlayerDeathEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/PlayerDeathEvent.html)
 プレイヤーが死んだ時に呼び出される。
 ### `bukkit` [PlayerDropItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerDropItemEvent.html)
-インベントリからアイテムをドロップする時に呼び出される。
+プレイヤーのインベントリからアイテムをドロップする時に呼び出される。
 ### `bukkit` [PlayerEditBookEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerEditBookEvent.html)
-本と羽ペンを編集・署名した時に呼び出される。
+プレイヤーが本と羽ペンを編集・署名した時に呼び出される。
 ### `bukkit` [PlayerEggThrowEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerEggThrowEvent.html)
 プレイヤーが投げた卵が孵化するかの確認をする時に呼び出される。
 ### `bukkit` [PlayerEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerEvent.html)
