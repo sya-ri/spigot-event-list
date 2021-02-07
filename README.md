@@ -9,7 +9,7 @@ Bukkit, Spigot, Paper のイベント一覧です。
 不明点や指摘については Issue や PullRequest にお願いします。
 
 ## 参考にしている Javadoc
-- https://papermc.io/javadocs/paper/1.16/ [`#455`](https://papermc.io/downloads#Paper-1.16)
+- https://papermc.io/javadocs/paper/1.16/ [`#465`](https://papermc.io/downloads#Paper-1.16)
 
 ## 環境毎のイベント一覧
 - [bukkit](only-bukkit.md)
