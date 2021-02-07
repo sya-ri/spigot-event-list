@@ -378,21 +378,21 @@ LootTable によってアイテムが生成される時に呼び出される。
 ### `bukkit` [PlayerQuitEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerQuitEvent.html)
 プレイヤーがサーバーから退出した時に呼び出される。
 ### `bukkit` [PlayerRecipeDiscoverEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerRecipeDiscoverEvent.html)
-
+プレイヤーが新しいレシピを見つける時に呼び出される。
 ### `bukkit` [PlayerRegisterChannelEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerRegisterChannelEvent.html)
-
+プレイヤーがプラグインチャンネルを登録した時に呼び出される。
 ### `bukkit` [PlayerResourcePackStatusEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerResourcePackStatusEvent.html)
-
+サーバーから送られたリソースパックリクエストに対してプレイヤーが処理をした時に呼び出される。
 ### `bukkit` [PlayerRespawnEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerRespawnEvent.html)
-
+プレイヤーがリスポーンする時に呼び出される。
 ### `bukkit` [PlayerRiptideEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerRiptideEvent.html)
-
+プレイヤーが激流エンチャントを使用した時に呼び出される。
 ### `bukkit` [PlayerShearEntityEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerShearEntityEvent.html)
 
 ### `bukkit` [PlayerStatisticIncrementEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerStatisticIncrementEvent.html)
-
+プレイヤーの統計が増加した時に呼び出される。移動などの高頻度で増加するような一部の統計では呼び出される。
 ### `bukkit` [PlayerSwapHandItemsEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerSwapHandItemsEvent.html)
-
+プレイヤーがメインハンドとオフハンドのアイテムをホットキーによって交換する時に呼び出される。
 ### `bukkit` [PlayerTakeLecternBookEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerTakeLecternBookEvent.html)
 
 ### `bukkit` [PlayerTeleportEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerTeleportEvent.html)

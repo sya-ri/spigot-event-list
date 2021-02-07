@@ -510,19 +510,19 @@ LootTable によってアイテムが補充される時に呼び出される。
 ### `bukkit` [PlayerQuitEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerQuitEvent.html)
 プレイヤーがサーバーから退出した時に呼び出される。
 ### `paper` [PlayerReadyArrowEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerReadyArrowEvent.html)
-
+プレイヤーが弓を発射し、使用する矢を選ぶ時に呼び出される。
 ### `paper` [PlayerRecipeBookClickEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerRecipeBookClickEvent.html)
-
+プレイヤーがレシピブックのレシビをクリックする時に呼び出される。
 ### `bukkit` [PlayerRecipeDiscoverEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerRecipeDiscoverEvent.html)
-
+プレイヤーが新しいレシピを見つける時に呼び出される。
 ### `bukkit` [PlayerRegisterChannelEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerRegisterChannelEvent.html)
-
+プレイヤーがプラグインチャンネルを登録した時に呼び出される。
 ### `bukkit` [PlayerResourcePackStatusEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerResourcePackStatusEvent.html)
-
+サーバーから送られたリソースパックリクエストに対してプレイヤーが処理をした時に呼び出される。
 ### `bukkit` [PlayerRespawnEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerRespawnEvent.html)
-
+プレイヤーがリスポーンする時に呼び出される。
 ### `bukkit` [PlayerRiptideEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerRiptideEvent.html)
-
+プレイヤーが激流エンチャントを使用した時に呼び出される。
 ### `paper` [PlayerShearBlockEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/PlayerShearBlockEvent.html)
 
 ### `bukkit` [PlayerShearEntityEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerShearEntityEvent.html)
@@ -530,15 +530,15 @@ LootTable によってアイテムが補充される時に呼び出される。
 ### `spigot` [PlayerSpawnLocationEvent](https://papermc.io/javadocs/paper/1.16/org/spigotmc/event/player/PlayerSpawnLocationEvent.html)
 プレイヤーがサーバーに参加した後、スポーンしようとしている時に呼び出される。
 ### `paper` [PlayerStartSpectatingEntityEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerStartSpectatingEntityEvent.html)
-
+プレイヤーがスペクテイターモードでエンティティ視点を開始する時に呼び出される。
 ### `bukkit` [PlayerStatisticIncrementEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerStatisticIncrementEvent.html)
-
+プレイヤーの統計が増加した時に呼び出される。移動などの高頻度で増加するような一部の統計では呼び出される。
 ### `paper` [PlayerStonecutterRecipeSelectEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerStonecutterRecipeSelectEvent.html)
-
+プレイヤーが石切台のレシピを選択する時に呼び出される。
 ### `paper` [PlayerStopSpectatingEntityEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerStopSpectatingEntityEvent.html)
-
+プレイヤーがスペクテイターモードでエンティティ視点を終了する時に呼び出される。
 ### `bukkit` [PlayerSwapHandItemsEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerSwapHandItemsEvent.html)
-
+プレイヤーがメインハンドとオフハンドのアイテムをホットキーによって交換する時に呼び出される。
 ### `bukkit` [PlayerTakeLecternBookEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerTakeLecternBookEvent.html)
 
 ### `paper` [PlayerTeleportEndGatewayEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerTeleportEndGatewayEvent.html)
