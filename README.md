@@ -540,27 +540,27 @@ LootTable によってアイテムが補充される時に呼び出される。
 ### `bukkit` [PlayerSwapHandItemsEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerSwapHandItemsEvent.html)
 プレイヤーがメインハンドとオフハンドのアイテムをホットキーによって交換する時に呼び出される。
 ### `bukkit` [PlayerTakeLecternBookEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerTakeLecternBookEvent.html)
-
+プレイヤーが書見台に置いてある本を取る時に呼び出される。
 ### `paper` [PlayerTeleportEndGatewayEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerTeleportEndGatewayEvent.html)
-
+プレイヤーがエンドゲートウェイを用いてテレポートする時に呼び出される。
 ### `bukkit` [PlayerTeleportEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerTeleportEvent.html)
-
+プレイヤーがテレポートする時に呼び出される。
 ### `bukkit` [PlayerToggleFlightEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerToggleFlightEvent.html)
-
+プレイヤーが飛行状態を切り替える時に呼び出される。
 ### `bukkit` [PlayerToggleSneakEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerToggleSneakEvent.html)
-
+プレイヤーがしゃがみ状態を切り替える時に呼び出される。
 ### `bukkit` [PlayerToggleSprintEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerToggleSprintEvent.html)
-
+プレイヤーが走り状態を切り替える時に呼び出される。
 ### `paper` [PlayerTradeEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerTradeEvent.html)
-
+プレイヤーが村人や行商人と交易をする時に呼び出される。
 ### `bukkit` [PlayerUnleashEntityEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerUnleashEntityEvent.html)
-
+プレイヤーによってエンティティに繋げっているリードが外される時に呼び出される。
 ### `bukkit` [PlayerUnregisterChannelEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerUnregisterChannelEvent.html)
-
+プレイヤーがプラグインチャンネルの登録を解除する時に呼び出される。
 ### `paper` [PlayerUseUnknownEntityEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerUseUnknownEntityEvent.html)
 
 ### `bukkit` [PlayerVelocityEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerVelocityEvent.html)
-
+プレイヤーに対する力の向きや大きさが変化する時に呼び出される。
 ### `bukkit` [PluginDisableEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/PluginDisableEvent.html)
 プラグインが無効になった時に呼び出される。
 ### `bukkit` [PluginEnableEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/PluginEnableEvent.html)
