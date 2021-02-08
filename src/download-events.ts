@@ -2,7 +2,12 @@ import requestPromise = require("request-promise");
 import cheerio = require("cheerio");
 import fs = require("fs");
 import yaml = require("js-yaml");
-import { EventSources, EventsYaml, getEventSource } from "./constants";
+import {
+  EventSources,
+  EventsYaml,
+  ExcludeEventsYaml,
+  getEventSource,
+} from "./constants";
 import { Event, EventSource } from "./data-class";
 
 const downloadEvents = async (
@@ -104,6 +109,11 @@ const main = async () => {
   for (const source of EventSources) {
     await downloadEvents(eventMap, source);
   }
+
+  // 無視するイベントを除外
+  yaml.load(fs.readFileSync(ExcludeEventsYaml, "utf8")).forEach((eventName) => {
+    delete eventMap[eventName];
+  });
 
   // イベントが非推奨かどうかを取得
   for (const source of EventSources) {

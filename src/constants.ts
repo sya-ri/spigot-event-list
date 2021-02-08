@@ -10,6 +10,7 @@ export const EventSources: EventSource[] = [
   },
 ];
 export const EventsYaml = "events.yaml";
+export const ExcludeEventsYaml = "exclude-events.yaml";
 export const TemplateReadmeFileName = "template/README.md";
 export const OutputReadmeFileName = "README.md";
 export const TemplateOnlyEventSourceFileName = "template/only-source.md";

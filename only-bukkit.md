@@ -100,8 +100,6 @@ AreaEffectCloud の効果が付与される時に呼び出される。5ティッ
 新しいチャンクが作られた時に呼び出される。
 ### `bukkit` [ChunkUnloadEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/ChunkUnloadEvent.html)
 チャンクの読み込みが停止された時に呼び出される。
-### `bukkit` [ConversationAbandonedEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/conversations/ConversationAbandonedEvent.html)
-不明。
 ### `bukkit` [CraftItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/CraftItemEvent.html)
 アイテムをクラフトする時に呼び出される。
 ### `bukkit` [CreatureSpawnEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/CreatureSpawnEvent.html)

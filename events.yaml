@@ -202,10 +202,6 @@
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/ChunkUnloadEvent.html
   source: bukkit
   description: チャンクの読み込みが停止された時に呼び出される。
-- name: ConversationAbandonedEvent
-  link: https://papermc.io/javadocs/paper/1.16/org/bukkit/conversations/ConversationAbandonedEvent.html
-  source: bukkit
-  description: 不明。
 - name: CraftItemEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/CraftItemEvent.html
   source: bukkit
