@@ -12,6 +12,7 @@ import { Event, EventSource } from "./data-class";
 
 const downloadEvents = async (
   events: { string: Event },
+  lastEvents: { string: Event },
   eventSource: EventSource
 ) => {
   return requestPromise(
@@ -33,13 +34,20 @@ const downloadEvents = async (
               .split("/")
               .pop();
             const source = getEventSource(href);
-            const event = events[name + source];
-            if (!event) {
+            if (!events[name + source]) {
+              const lastEvent = lastEvents[name + source];
+              let description = "";
+              let deprecateDescription;
+              if (lastEvent) {
+                description = lastEvent.description;
+                deprecateDescription = lastEvent.deprecateDescription;
+              }
               events[name + source] = {
                 name: name,
                 link: eventSource.javadocUrl + href,
                 source: source,
-                description: "",
+                description: description,
+                deprecateDescription: deprecateDescription,
               };
             }
           }
@@ -99,15 +107,16 @@ const updateClassType = (
 const main = async () => {
   // 前回のデータをロード
   const lastData = yaml.load(fs.readFileSync(EventsYaml, "utf8"));
-  const eventMap = lastData.reduce((map, value) => {
+  const lastEventMap = lastData.reduce((map, value) => {
     map[value.name + value.source] = value;
     delete value.deprecate;
     return map;
   }, {});
 
   // イベントをダウンロード
+  const eventMap: { string: Event } = {} as { string: Event };
   for (const source of EventSources) {
-    await downloadEvents(eventMap, source);
+    await downloadEvents(eventMap, lastEventMap, source);
   }
 
   // 無視するイベントを除外
