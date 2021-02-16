@@ -9,7 +9,8 @@
     "generate": "ts-node src/generate-output.ts",
     "lint": "eslint src",
     "lint:fix": "eslint --fix src",
-    "update": "npm run download && npm run generate"
+    "update": "npm run download && npm run generate",
+    "update-javadoc-gh-pages": "sh src/update-javadoc-gh-pages.sh"
   },
   "dependencies": {
     "cheerio": "^1.0.0-rc.5",
