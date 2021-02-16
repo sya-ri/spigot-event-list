@@ -149,7 +149,7 @@ Mojang API を用いてプロファイルを検索する時に呼び出される
 ### `paper` [PreSpawnerSpawnEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/PreSpawnerSpawnEvent.html)
 エンティティがスポナーによってスポーンする前に呼び出される。[SpawnerSpawnEvent](README.md#bukkit-spawnerspawnevent) よりも前に呼び出される。
 ### `paper` [PrepareGrindstoneEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/inventory/PrepareGrindstoneEvent.html)
-`@Deprecated` 不明。
+`@Deprecated` このイベントを直接使用せず、[PrepareResultEvent](README.md#paper-prepareresultevent) を使うことが推奨されている。
 
 砥石の使用準備が出来た時に呼び出される。完成アイテムが表示される毎に発生する。
 ### `paper` [PrepareResultEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/inventory/PrepareResultEvent.html)
