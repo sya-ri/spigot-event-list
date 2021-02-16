@@ -883,10 +883,6 @@
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerItemCooldownEvent.html
   source: paper
   description: プレイヤーのアイテムクールダウンが変更される時に呼び出される。
-- name: PlayerItemCooldownEvent
-  link: https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/player/PlayerItemCooldownEvent.html
-  source: purpur
-  description: プレイヤーのアイテムクールダウンが変更される時に呼び出される。Paper にも同様のイベントが存在する。
 - name: PlayerItemDamageEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerItemDamageEvent.html
   source: bukkit

@@ -24,8 +24,6 @@
 プレイヤーのAFKモードに移行する時に呼び出される
 ### `purpur` [PlayerBookTooLargeEvent](https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/player/PlayerBookTooLargeEvent.html)
 プレイヤーが本の制限を回避しようとした時に呼び出される。
-### `purpur` [PlayerItemCooldownEvent](https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/player/PlayerItemCooldownEvent.html)
-プレイヤーのアイテムクールダウンが変更される時に呼び出される。Paper にも同様のイベントが存在する。
 ### `purpur` [PlayerSetSpawnerTypeWithEggEvent](https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/PlayerSetSpawnerTypeWithEggEvent.html)
 モンスターエッグを使い、スポナーの内容を変える時に呼び出される。
 ### `purpur` [RidableMoveEvent](https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/entity/RidableMoveEvent.html)
