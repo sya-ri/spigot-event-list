@@ -8,6 +8,13 @@ export const EventSources: EventSource[] = [
     deprecateList: "deprecated-list.html",
     version: "#465",
   },
+  {
+    javadocUrl: "https://purpur.pl3x.net/javadoc/",
+    downloadUrl: "https://purpur.pl3x.net/downloads/#1.16.5",
+    allClasses: "allclasses-index.html",
+    deprecateList: "deprecated-list.html",
+    version: "#978",
+  },
 ];
 export const EventsYaml = "events.yaml";
 export const ExcludeEventsYaml = "exclude-events.yaml";
@@ -33,5 +40,7 @@ export const getEventSource = (href: string): string => {
     return "paper";
   } else if (href.startsWith("io/papermc/paper")) {
     return "paper";
+  } else if (href.startsWith("net/pl3x/purpur")) {
+    return "purpur";
   }
 };
