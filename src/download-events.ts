@@ -34,6 +34,7 @@ const downloadEvents = async (
               .split("/")
               .pop();
             const source = getEventSource(href);
+            if (!eventSource.downloadSources.includes(source)) return;
             if (!events[name + source]) {
               const lastEvent = lastEvents[name + source];
               let description = "";

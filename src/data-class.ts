@@ -13,4 +13,5 @@ export class EventSource {
   allClasses: string;
   deprecateList: string;
   version: string;
+  downloadSources: string[];
 }

@@ -7,6 +7,7 @@ export const EventSources: EventSource[] = [
     allClasses: "allclasses-noframe.html",
     deprecateList: "deprecated-list.html",
     version: "#465",
+    downloadSources: ["bukkit", "spigot", "paper"],
   },
   {
     javadocUrl: "https://purpur.pl3x.net/javadoc/",
@@ -14,6 +15,7 @@ export const EventSources: EventSource[] = [
     allClasses: "allclasses-index.html",
     deprecateList: "deprecated-list.html",
     version: "#978",
+    downloadSources: ["purpur"],
   },
   {
     javadocUrl: "https://sya-ri.github.io/spigot-event-list/yatopia/",
@@ -21,6 +23,7 @@ export const EventSources: EventSource[] = [
     allClasses: "allclasses-noframe.html",
     deprecateList: "deprecated-list.html",
     version: "#30",
+    downloadSources: ["yatopia"],
   },
 ];
 export const EventsYaml = "events.yaml";
