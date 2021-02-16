@@ -15,6 +15,13 @@ export const EventSources: EventSource[] = [
     deprecateList: "deprecated-list.html",
     version: "#978",
   },
+  {
+    javadocUrl: "https://sya-ri.github.io/spigot-event-list/yatopia/",
+    downloadUrl: "https://yatopiamc.org/download.html",
+    allClasses: "allclasses-noframe.html",
+    deprecateList: "deprecated-list.html",
+    version: "#30",
+  },
 ];
 export const EventsYaml = "events.yaml";
 export const ExcludeEventsYaml = "exclude-events.yaml";
@@ -42,5 +49,9 @@ export const getEventSource = (href: string): string => {
     return "paper";
   } else if (href.startsWith("net/pl3x/purpur")) {
     return "purpur";
+  } else if (href.startsWith("dev/tr7zw/yatopia")) {
+    return "yatopia";
+  } else if (href.startsWith("net/yatopia")) {
+    return "yatopia";
   }
 };
