@@ -4,7 +4,7 @@
 
 -->
 # Spigot Event List
-Bukkit, Spigot, Paper のイベント一覧です。
+Bukkit, Spigot, Paper, Purpur, Yatopia のイベント一覧です。
 イベントについて簡単な説明が書かれていますが、詳しい内容は Javadoc を参照してください。
 不明点や指摘については Issue や PullRequest にお願いします。
 
