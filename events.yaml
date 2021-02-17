@@ -1087,7 +1087,7 @@
 - name: PlayerUseUnknownEntityEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerUseUnknownEntityEvent.html
   source: paper
-  description: 不明。
+  description: 存在しないエンティティに対して PacketPlayInUseEntity が送られてきた時に呼び出される。
 - name: PlayerVelocityEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerVelocityEvent.html
   source: bukkit

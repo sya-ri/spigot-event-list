@@ -590,7 +590,7 @@ LootTable によってアイテムが補充される時に呼び出される。
 ### `bukkit` [PlayerUnregisterChannelEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerUnregisterChannelEvent.html)
 プレイヤーがプラグインチャンネルの登録を解除する時に呼び出される。
 ### `paper` [PlayerUseUnknownEntityEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerUseUnknownEntityEvent.html)
-不明。
+存在しないエンティティに対して PacketPlayInUseEntity が送られてきた時に呼び出される。
 ### `bukkit` [PlayerVelocityEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerVelocityEvent.html)
 プレイヤーに対する力の向きや大きさが変化する時に呼び出される。
 ### `bukkit` [PluginDisableEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/server/PluginDisableEvent.html)
