@@ -471,7 +471,7 @@ LootTable によってアイテムが補充される時に呼び出される。
 
 プレイヤーがサーバーに参加した後、スポーンしようとしている時に呼び出される。
 ### `bukkit` [PlayerInteractAtEntityEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerInteractAtEntityEvent.html)
-プレイヤーがエンティティを右クリックする時に呼び出される。クライアントは [PlayerInteractEntityEvent](README.md#bukkit-playerinteractentityevent] に加えてこのパケットを誤って送信する場合がある。 しかし、アーマースタンドを右クリックした場合、このイベントのみが呼び出される。特別な場合を除いて　[PlayerInteractEntityEvent](README.md#bukkit-playerinteractentityevent] を使うことを推奨している。
+プレイヤーがエンティティを右クリックする時に呼び出される。クライアントは [PlayerInteractEntityEvent](README.md#bukkit-playerinteractentityevent) に加えてこのパケットを誤って送信する場合がある。 しかし、アーマースタンドを右クリックした場合、このイベントのみが呼び出される。特別な場合を除いて　[PlayerInteractEntityEvent](README.md#bukkit-playerinteractentityevent) を使うことを推奨している。
 ### `bukkit` [PlayerInteractEntityEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerInteractEntityEvent.html)
 プレイヤーがエンティティを右クリックする時に呼び出される。
 ### `bukkit` [PlayerInteractEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerInteractEvent.html)

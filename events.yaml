@@ -857,8 +857,8 @@
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerInteractAtEntityEvent.html
   source: bukkit
   description: >-
-    プレイヤーがエンティティを右クリックする時に呼び出される。クライアントは [PlayerInteractEntityEvent](README.md#bukkit-playerinteractentityevent] に加えてこのパケットを誤って送信する場合がある。
-    しかし、アーマースタンドを右クリックした場合、このイベントのみが呼び出される。特別な場合を除いて　[PlayerInteractEntityEvent](README.md#bukkit-playerinteractentityevent] を使うことを推奨している。
+    プレイヤーがエンティティを右クリックする時に呼び出される。クライアントは [PlayerInteractEntityEvent](README.md#bukkit-playerinteractentityevent) に加えてこのパケットを誤って送信する場合がある。
+    しかし、アーマースタンドを右クリックした場合、このイベントのみが呼び出される。特別な場合を除いて　[PlayerInteractEntityEvent](README.md#bukkit-playerinteractentityevent) を使うことを推奨している。
 - name: PlayerInteractEntityEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerInteractEntityEvent.html
   source: bukkit
