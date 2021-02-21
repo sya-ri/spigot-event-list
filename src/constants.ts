@@ -22,7 +22,7 @@ export const EventSources: EventSource[] = [
     downloadUrl: "https://yatopiamc.org/download.html",
     allClasses: "allclasses-noframe.html",
     deprecateList: "deprecated-list.html",
-    version: "#31",
+    version: "#33",
     downloadSources: ["yatopia"],
   },
 ];
