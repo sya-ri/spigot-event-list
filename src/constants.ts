@@ -6,7 +6,7 @@ export const EventSources: EventSource[] = [
     downloadUrl: "https://papermc.io/downloads#Paper-1.16",
     allClasses: "allclasses-noframe.html",
     deprecateList: "deprecated-list.html",
-    version: "#469",
+    version: "#503",
     downloadSources: ["bukkit", "spigot", "paper"],
   },
   {
@@ -14,7 +14,7 @@ export const EventSources: EventSource[] = [
     downloadUrl: "https://purpur.pl3x.net/downloads/#1.16.5",
     allClasses: "allclasses-index.html",
     deprecateList: "deprecated-list.html",
-    version: "#980",
+    version: "#995",
     downloadSources: ["purpur"],
   },
   {
