@@ -1,3 +1,7 @@
+- name: AbstractChatEvent
+  link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/AbstractChatEvent.html
+  source: paper
+  description: チャットに関するイベントであることを表す。
 - name: AnvilDamagedEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/block/AnvilDamagedEvent.html
   source: paper
@@ -18,10 +22,16 @@
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ArrowBodyCountChangeEvent.html
   source: bukkit
   description: 矢がエンティティの本体に入る・存在する時に呼び出される。
+- name: AsyncChatEvent
+  link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/AsyncChatEvent.html
+  source: paper
+  description: プレイヤーがチャットした時に呼び出される。
 - name: AsyncPlayerChatEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/AsyncPlayerChatEvent.html
   source: bukkit
   description: プレイヤーがチャットした時に呼び出される。非同期でも同期でも呼び出されることがある。
+  deprecate: true
+  deprecateDescription: Paper であれば、[AsyncChatEvent](README.md#asyncchatevent) を使う。
 - name: AsyncPlayerPreLoginEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/AsyncPlayerPreLoginEvent.html
   source: bukkit
@@ -194,6 +204,12 @@
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/CauldronLevelChangeEvent.html
   source: bukkit
   description: 大釜の水が増えたり減ったりした時に呼び出される。
+- name: ChatEvent
+  link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/ChatEvent.html
+  source: paper
+  description: プレイヤーがチャットした時に呼び出される。
+  deprecate: true
+  deprecateDescription: 非同期で処理をする [AsyncChatEvent](README.md#asyncchatevent) を使う。
 - name: ChunkEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/ChunkEvent.html
   source: bukkit
@@ -344,6 +360,10 @@
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityEvent.html
   source: bukkit
   description: エンティティに関するイベントであることを表す。
+- name: EntityExhaustionEvent
+  link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityExhaustionEvent.html
+  source: bukkit
+  description: プレイヤーに疲労が溜まると呼び出される。4を超える疲労値では、満腹度が1減少する。
 - name: EntityExplodeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityExplodeEvent.html
   source: bukkit
@@ -945,6 +965,10 @@
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerMoveEvent.html
   source: bukkit
   description: プレイヤーが移動する時に呼び出される。
+- name: PlayerNameEntityEvent
+  link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerNameEntityEvent.html
+  source: paper
+  description: プレイヤーがエンティティの名前を変更する時に呼び出される。
 - name: PlayerNaturallySpawnCreaturesEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/PlayerNaturallySpawnCreaturesEvent.html
   source: paper
@@ -1445,6 +1469,22 @@
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/WitchThrowPotionEvent.html
   source: paper
   description: ウィッチがポーションを投げる時に呼び出される。
+- name: WorldBorderBoundsChangeEvent
+  link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/world/border/WorldBorderBoundsChangeEvent.html
+  source: paper
+  description: ワールドボーダーのサイズが変更する時に呼び出される。
+- name: WorldBorderBoundsChangeFinishEvent
+  link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/world/border/WorldBorderBoundsChangeFinishEvent.html
+  source: paper
+  description: ワールドボーダーのサイズが変更した時に呼び出される。
+- name: WorldBorderCenterChangeEvent
+  link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/world/border/WorldBorderCenterChangeEvent.html
+  source: paper
+  description: ワールドボーダーの中心が変更する時に呼び出される。
+- name: WorldBorderEvent
+  link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/world/border/WorldBorderEvent.html
+  source: paper
+  description: ワールドボーダーに関するイベントであることを表す。
 - name: WorldEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/WorldEvent.html
   source: bukkit

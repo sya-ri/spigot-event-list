@@ -6,8 +6,12 @@
 # paper
 
 ## イベント一覧
+### `paper` [AbstractChatEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/AbstractChatEvent.html)
+チャットに関するイベントであることを表す。
 ### `paper` [AnvilDamagedEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/block/AnvilDamagedEvent.html)
 使用したことで金床が損傷する時に呼び出される。
+### `paper` [AsyncChatEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/AsyncChatEvent.html)
+プレイヤーがチャットした時に呼び出される。
 ### `paper` [AsyncTabCompleteEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/server/AsyncTabCompleteEvent.html)
 タブ補完を行う時に呼び出される。非同期で処理される。このイベントが結果を返す時、標準のタブ補完処理は発生しない。ただし、 [TabCompleteEvent](README.md#bukkit-tabcompleteevent) は非同期の結果と共に呼び出される。
 ### `paper` [BeaconEffectEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/block/BeaconEffectEvent.html)
@@ -20,6 +24,10 @@
 ディスペンサーにアイテムが存在せず、射出されなかった時に呼び出される。
 ### `paper` [BlockPreDispenseEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/BlockPreDispenseEvent.html)
 ディスペンサーからアイテムが射出される時に呼び出される。[BlockDispenseEvent](README.md#bukkit-blockdispenseevent) の前に呼び出されるので、ディスペンサーのアイテム消費もキャンセルできる。
+### `paper` [ChatEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/ChatEvent.html)
+`@Deprecated` 非同期で処理をする [AsyncChatEvent](README.md#asyncchatevent) を使う。
+
+プレイヤーがチャットした時に呼び出される。
 ### `paper` [CreeperIgniteEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/CreeperIgniteEvent.html)
 クリーパーの点火状態が切り替わる時に呼び出される。
 ### `paper` [DragonEggFormEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/DragonEggFormEvent.html)
@@ -114,6 +122,8 @@ LootTable によってアイテムが補充される時に呼び出される。
 プレイヤーが言語設定を変更した時に呼び出される。
 ### `paper` [PlayerLoomPatternSelectEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerLoomPatternSelectEvent.html)
 プレイヤーが機織り機の旗模様を変更する時に呼び出される。
+### `paper` [PlayerNameEntityEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerNameEntityEvent.html)
+プレイヤーがエンティティの名前を変更する時に呼び出される。
 ### `paper` [PlayerNaturallySpawnCreaturesEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/PlayerNaturallySpawnCreaturesEvent.html)
 モンスターをスポーンさせるチャンクを計算する時に呼び出される。
 ### `paper` [PlayerPickupExperienceEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerPickupExperienceEvent.html)
@@ -203,6 +213,14 @@ TNT に着火する時に呼び出される。
 ウィッチのポーションの準備が出来る時に呼び出される。
 ### `paper` [WitchThrowPotionEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/WitchThrowPotionEvent.html)
 ウィッチがポーションを投げる時に呼び出される。
+### `paper` [WorldBorderBoundsChangeEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/world/border/WorldBorderBoundsChangeEvent.html)
+ワールドボーダーのサイズが変更する時に呼び出される。
+### `paper` [WorldBorderBoundsChangeFinishEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/world/border/WorldBorderBoundsChangeFinishEvent.html)
+ワールドボーダーのサイズが変更した時に呼び出される。
+### `paper` [WorldBorderCenterChangeEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/world/border/WorldBorderCenterChangeEvent.html)
+ワールドボーダーの中心が変更する時に呼び出される。
+### `paper` [WorldBorderEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/world/border/WorldBorderEvent.html)
+ワールドボーダーに関するイベントであることを表す。
 ### `paper` [WorldGameRuleChangeEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/world/WorldGameRuleChangeEvent.html)
 ワールドのゲームルールが変更される時に呼び出される。
 

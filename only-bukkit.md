@@ -11,6 +11,8 @@ AreaEffectCloud の効果が付与される時に呼び出される。5ティッ
 ### `bukkit` [ArrowBodyCountChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ArrowBodyCountChangeEvent.html)
 矢がエンティティの本体に入る・存在する時に呼び出される。
 ### `bukkit` [AsyncPlayerChatEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/AsyncPlayerChatEvent.html)
+`@Deprecated` Paper であれば、[AsyncChatEvent](README.md#asyncchatevent) を使う。
+
 プレイヤーがチャットした時に呼び出される。非同期でも同期でも呼び出されることがある。
 ### `bukkit` [AsyncPlayerPreLoginEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/AsyncPlayerPreLoginEvent.html)
 プレイヤーがログインしようとしている時に呼び出される。非同期で処理される。
@@ -152,6 +154,8 @@ AreaEffectCloud の効果が付与される時に呼び出される。5ティッ
 エンティティが発情する時に呼び出される。このイベントをキャンセルしても使用したアイテムは消費されてしまう。
 ### `bukkit` [EntityEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityEvent.html)
 エンティティに関するイベントであることを表す。
+### `bukkit` [EntityExhaustionEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityExhaustionEvent.html)
+プレイヤーに疲労が溜まると呼び出される。4を超える疲労値では、満腹度が1減少する。
 ### `bukkit` [EntityExplodeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityExplodeEvent.html)
 エンティティが爆発する時に呼び出される。
 ### `bukkit` [EntityInteractEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityInteractEvent.html)

@@ -9,8 +9,8 @@ Bukkit, Spigot, Paper, Purpur, Yatopia のイベント一覧です。
 不明点や指摘については Issue や PullRequest にお願いします。
 
 ## 参考にしている Javadoc
-- https://papermc.io/javadocs/paper/1.16/ [`#506`](https://papermc.io/downloads#Paper-1.16)
-- https://purpur.pl3x.net/javadoc/ [`#995`](https://purpur.pl3x.net/downloads/#1.16.5)
+- https://papermc.io/javadocs/paper/1.16/ [`#526`](https://papermc.io/downloads#Paper-1.16)
+- https://purpur.pl3x.net/javadoc/ [`#998`](https://purpur.pl3x.net/downloads/#1.16.5)
 - https://sya-ri.github.io/spigot-event-list/yatopia/ [`#33`](https://yatopiamc.org/download.html)
 
 ## 環境毎のイベント一覧
@@ -24,6 +24,8 @@ Bukkit, Spigot, Paper, Purpur, Yatopia のイベント一覧です。
 - [非推奨イベント一覧](only-deprecate.md)
 
 ## イベント一覧
+### `paper` [AbstractChatEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/AbstractChatEvent.html)
+チャットに関するイベントであることを表す。
 ### `paper` [AnvilDamagedEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/block/AnvilDamagedEvent.html)
 使用したことで金床が損傷する時に呼び出される。
 ### `purpur` [AnvilTakeResultEvent](https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/inventory/AnvilTakeResultEvent.html)
@@ -34,7 +36,11 @@ Bukkit, Spigot, Paper, Purpur, Yatopia のイベント一覧です。
 AreaEffectCloud の効果が付与される時に呼び出される。5ティック毎に1回発生する。
 ### `bukkit` [ArrowBodyCountChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ArrowBodyCountChangeEvent.html)
 矢がエンティティの本体に入る・存在する時に呼び出される。
+### `paper` [AsyncChatEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/AsyncChatEvent.html)
+プレイヤーがチャットした時に呼び出される。
 ### `bukkit` [AsyncPlayerChatEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/AsyncPlayerChatEvent.html)
+`@Deprecated` Paper であれば、[AsyncChatEvent](README.md#asyncchatevent) を使う。
+
 プレイヤーがチャットした時に呼び出される。非同期でも同期でも呼び出されることがある。
 ### `bukkit` [AsyncPlayerPreLoginEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/AsyncPlayerPreLoginEvent.html)
 プレイヤーがログインしようとしている時に呼び出される。非同期で処理される。
@@ -128,6 +134,10 @@ AreaEffectCloud の効果が付与される時に呼び出される。5ティッ
 サーバーにブロードキャストメッセージが送信された時に呼び出される。メッセージが非同期で送信された場合、イベントも非同期で呼び出される。
 ### `bukkit` [CauldronLevelChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/CauldronLevelChangeEvent.html)
 大釜の水が増えたり減ったりした時に呼び出される。
+### `paper` [ChatEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/ChatEvent.html)
+`@Deprecated` 非同期で処理をする [AsyncChatEvent](README.md#asyncchatevent) を使う。
+
+プレイヤーがチャットした時に呼び出される。
 ### `bukkit` [ChunkEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/ChunkEvent.html)
 チャンクに関するイベントであることを表す
 ### `bukkit` [ChunkLoadEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/ChunkLoadEvent.html)
@@ -206,6 +216,8 @@ AreaEffectCloud の効果が付与される時に呼び出される。5ティッ
 エンティティが発情する時に呼び出される。このイベントをキャンセルしても使用したアイテムは消費されてしまう。
 ### `bukkit` [EntityEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityEvent.html)
 エンティティに関するイベントであることを表す。
+### `bukkit` [EntityExhaustionEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityExhaustionEvent.html)
+プレイヤーに疲労が溜まると呼び出される。4を超える疲労値では、満腹度が1減少する。
 ### `bukkit` [EntityExplodeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityExplodeEvent.html)
 エンティティが爆発する時に呼び出される。
 ### `bukkit` [EntityInteractEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityInteractEvent.html)
@@ -517,6 +529,8 @@ LootTable によってアイテムが補充される時に呼び出される。
 プレイヤーが機織り機の旗模様を変更する時に呼び出される。
 ### `bukkit` [PlayerMoveEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerMoveEvent.html)
 プレイヤーが移動する時に呼び出される。
+### `paper` [PlayerNameEntityEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerNameEntityEvent.html)
+プレイヤーがエンティティの名前を変更する時に呼び出される。
 ### `paper` [PlayerNaturallySpawnCreaturesEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/PlayerNaturallySpawnCreaturesEvent.html)
 モンスターをスポーンさせるチャンクを計算する時に呼び出される。
 ### `bukkit` [PlayerPickupArrowEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerPickupArrowEvent.html)
@@ -772,6 +786,14 @@ TNT に着火する時に呼び出される。
 ウィッチのポーションの準備が出来る時に呼び出される。
 ### `paper` [WitchThrowPotionEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/WitchThrowPotionEvent.html)
 ウィッチがポーションを投げる時に呼び出される。
+### `paper` [WorldBorderBoundsChangeEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/world/border/WorldBorderBoundsChangeEvent.html)
+ワールドボーダーのサイズが変更する時に呼び出される。
+### `paper` [WorldBorderBoundsChangeFinishEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/world/border/WorldBorderBoundsChangeFinishEvent.html)
+ワールドボーダーのサイズが変更した時に呼び出される。
+### `paper` [WorldBorderCenterChangeEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/world/border/WorldBorderCenterChangeEvent.html)
+ワールドボーダーの中心が変更する時に呼び出される。
+### `paper` [WorldBorderEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/world/border/WorldBorderEvent.html)
+ワールドボーダーに関するイベントであることを表す。
 ### `bukkit` [WorldEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/WorldEvent.html)
 ワールドに関するイベントであることを表す。
 ### `paper` [WorldGameRuleChangeEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/world/WorldGameRuleChangeEvent.html)

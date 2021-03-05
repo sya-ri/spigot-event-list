@@ -6,6 +6,14 @@
 # 非推奨イベント
 
 ## イベント一覧
+### `bukkit` [AsyncPlayerChatEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/AsyncPlayerChatEvent.html)
+`@Deprecated` Paper であれば、[AsyncChatEvent](README.md#asyncchatevent) を使う。
+
+プレイヤーがチャットした時に呼び出される。非同期でも同期でも呼び出されることがある。
+### `paper` [ChatEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/ChatEvent.html)
+`@Deprecated` 非同期で処理をする [AsyncChatEvent](README.md#asyncchatevent) を使う。
+
+プレイヤーがチャットした時に呼び出される。
 ### `bukkit` [EntityCreatePortalEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityCreatePortalEvent.html)
 `@Deprecated` ワールドに関するイベントとして定義された [PortalCreateEvent](README.md#bukkit-portalcreateevent) を使う。
 
