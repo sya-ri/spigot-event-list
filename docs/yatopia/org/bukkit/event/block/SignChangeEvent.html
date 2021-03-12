@@ -17,8 +17,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
-var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var methods = {"i0":9,"i1":10,"i2":42,"i3":42,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":42};
+var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -175,9 +175,16 @@ implements <a href="../../../../org/bukkit/event/Cancellable.html" title="interf
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/block/SignChangeEvent.html#SignChangeEvent-org.bukkit.block.Block-org.bukkit.entity.Player-java.util.List-">SignChangeEvent</a></span>(<a href="../../../../org/bukkit/block/Block.html" title="interface in org.bukkit.block">Block</a>&nbsp;theBlock,
+               <a href="../../../../org/bukkit/entity/Player.html" title="interface in org.bukkit.entity">Player</a>&nbsp;player,
+               java.util.List&lt;net.kyori.adventure.text.Component&gt;&nbsp;adventure$lines)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/block/SignChangeEvent.html#SignChangeEvent-org.bukkit.block.Block-org.bukkit.entity.Player-java.lang.String:A-">SignChangeEvent</a></span>(<a href="../../../../org/bukkit/block/Block.html" title="interface in org.bukkit.block">Block</a>&nbsp;theBlock,
                <a href="../../../../org/bukkit/entity/Player.html" title="interface in org.bukkit.entity">Player</a>&nbsp;thePlayer,
-               java.lang.String[]&nbsp;theLines)</code>&nbsp;</td>
+               java.lang.String[]&nbsp;theLines)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+</td>
 </tr>
 </table>
 </li>
@@ -189,7 +196,7 @@ implements <a href="../../../../org/bukkit/event/Cancellable.html" title="interf
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">Deprecated Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
@@ -205,13 +212,17 @@ implements <a href="../../../../org/bukkit/event/Cancellable.html" title="interf
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/block/SignChangeEvent.html#getLine-int-">getLine</a></span>(int&nbsp;index)</code>
-<div class="block">Gets a single line of text from the sign involved in this event.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">in favour of <a href="../../../../org/bukkit/event/block/SignChangeEvent.html#line-int-"><code>line(int)</code></a></span></div>
+</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.String[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/block/SignChangeEvent.html#getLines--">getLines</a></span>()</code>
-<div class="block">Gets all of the lines of text from the sign involved in this event.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">in favour of <a href="../../../../org/bukkit/event/block/SignChangeEvent.html#lines--"><code>lines()</code></a></span></div>
+</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
@@ -227,16 +238,37 @@ implements <a href="../../../../org/bukkit/event/Cancellable.html" title="interf
 </td>
 </tr>
 <tr id="i6" class="altColor">
+<td class="colFirst"><code>net.kyori.adventure.text.Component</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/block/SignChangeEvent.html#line-int-">line</a></span>(int&nbsp;index)</code>
+<div class="block">Gets a single line of text from the sign involved in this event.</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/block/SignChangeEvent.html#line-int-net.kyori.adventure.text.Component-">line</a></span>(int&nbsp;index,
+    net.kyori.adventure.text.Component&nbsp;line)</code>
+<div class="block">Sets a single line for the sign involved in this event</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>java.util.List&lt;net.kyori.adventure.text.Component&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/block/SignChangeEvent.html#lines--">lines</a></span>()</code>
+<div class="block">Gets all of the lines of text from the sign involved in this event.</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/block/SignChangeEvent.html#setCancelled-boolean-">setCancelled</a></span>(boolean&nbsp;cancel)</code>
 <div class="block">Sets the cancellation state of this event.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/block/SignChangeEvent.html#setLine-int-java.lang.String-">setLine</a></span>(int&nbsp;index,
        java.lang.String&nbsp;line)</code>
-<div class="block">Sets a single line for the sign involved in this event</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">in favour of <a href="../../../../org/bukkit/event/block/SignChangeEvent.html#line-int-net.kyori.adventure.text.Component-"><code>line(int, net.kyori.adventure.text.Component)</code></a></span></div>
+</div>
 </td>
 </tr>
 </table>
@@ -275,18 +307,34 @@ implements <a href="../../../../org/bukkit/event/Cancellable.html" title="interf
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
+<a name="SignChangeEvent-org.bukkit.block.Block-org.bukkit.entity.Player-java.util.List-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>SignChangeEvent</h4>
+<pre>public&nbsp;SignChangeEvent(@NotNull
+                       <a href="../../../../org/bukkit/block/Block.html" title="interface in org.bukkit.block">Block</a>&nbsp;theBlock,
+                       @NotNull
+                       <a href="../../../../org/bukkit/entity/Player.html" title="interface in org.bukkit.entity">Player</a>&nbsp;player,
+                       @NotNull
+                       java.util.List&lt;net.kyori.adventure.text.Component&gt;&nbsp;adventure$lines)</pre>
+</li>
+</ul>
 <a name="SignChangeEvent-org.bukkit.block.Block-org.bukkit.entity.Player-java.lang.String:A-">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>SignChangeEvent</h4>
-<pre>public&nbsp;SignChangeEvent(@NotNull
-                       <a href="../../../../org/bukkit/block/Block.html" title="interface in org.bukkit.block">Block</a>&nbsp;theBlock,
-                       @NotNull
-                       <a href="../../../../org/bukkit/entity/Player.html" title="interface in org.bukkit.entity">Player</a>&nbsp;thePlayer,
-                       @NotNull
-                       java.lang.String[]&nbsp;theLines)</pre>
+<pre>@Deprecated
+public&nbsp;SignChangeEvent(@NotNull
+                                   <a href="../../../../org/bukkit/block/Block.html" title="interface in org.bukkit.block">Block</a>&nbsp;theBlock,
+                                   @NotNull
+                                   <a href="../../../../org/bukkit/entity/Player.html" title="interface in org.bukkit.entity">Player</a>&nbsp;thePlayer,
+                                   @NotNull
+                                   java.lang.String[]&nbsp;theLines)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 </li>
 </ul>
 </li>
@@ -312,6 +360,64 @@ public&nbsp;<a href="../../../../org/bukkit/entity/Player.html" title="interface
 </dl>
 </li>
 </ul>
+<a name="lines--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>lines</h4>
+<pre>@NotNull
+public&nbsp;java.util.List&lt;net.kyori.adventure.text.Component&gt;&nbsp;lines()</pre>
+<div class="block">Gets all of the lines of text from the sign involved in this event.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the String array for the sign's lines new text</dd>
+</dl>
+</li>
+</ul>
+<a name="line-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>line</h4>
+<pre>@Nullable
+public&nbsp;net.kyori.adventure.text.Component&nbsp;line(int&nbsp;index)
+                                                  throws java.lang.IndexOutOfBoundsException</pre>
+<div class="block">Gets a single line of text from the sign involved in this event.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>index</code> - index of the line to get</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the String containing the line of text associated with the
+     provided index</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IndexOutOfBoundsException</code> - thrown when the provided index is &gt; 3
+     or &lt; 0</dd>
+</dl>
+</li>
+</ul>
+<a name="line-int-net.kyori.adventure.text.Component-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>line</h4>
+<pre>public&nbsp;void&nbsp;line(int&nbsp;index,
+                 @Nullable
+                 net.kyori.adventure.text.Component&nbsp;line)
+          throws java.lang.IndexOutOfBoundsException</pre>
+<div class="block">Sets a single line for the sign involved in this event</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>index</code> - index of the line to set</dd>
+<dd><code>line</code> - text to set</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IndexOutOfBoundsException</code> - thrown when the provided index is &gt; 3
+     or &lt; 0</dd>
+</dl>
+</li>
+</ul>
 <a name="getLines--">
 <!--   -->
 </a>
@@ -319,7 +425,9 @@ public&nbsp;<a href="../../../../org/bukkit/entity/Player.html" title="interface
 <li class="blockList">
 <h4>getLines</h4>
 <pre>@NotNull
+ @Deprecated
 public&nbsp;java.lang.String[]&nbsp;getLines()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">in favour of <a href="../../../../org/bukkit/event/block/SignChangeEvent.html#lines--"><code>lines()</code></a></span></div>
 <div class="block">Gets all of the lines of text from the sign involved in this event.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -334,8 +442,10 @@ public&nbsp;java.lang.String[]&nbsp;getLines()</pre>
 <li class="blockList">
 <h4>getLine</h4>
 <pre>@Nullable
+ @Deprecated
 public&nbsp;java.lang.String&nbsp;getLine(int&nbsp;index)
-                                   throws java.lang.IndexOutOfBoundsException</pre>
+                                                throws java.lang.IndexOutOfBoundsException</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">in favour of <a href="../../../../org/bukkit/event/block/SignChangeEvent.html#line-int-"><code>line(int)</code></a></span></div>
 <div class="block">Gets a single line of text from the sign involved in this event.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -355,10 +465,12 @@ public&nbsp;java.lang.String&nbsp;getLine(int&nbsp;index)
 <ul class="blockList">
 <li class="blockList">
 <h4>setLine</h4>
-<pre>public&nbsp;void&nbsp;setLine(int&nbsp;index,
-                    @Nullable
-                    java.lang.String&nbsp;line)
-             throws java.lang.IndexOutOfBoundsException</pre>
+<pre>@Deprecated
+public&nbsp;void&nbsp;setLine(int&nbsp;index,
+                                @Nullable
+                                java.lang.String&nbsp;line)
+                         throws java.lang.IndexOutOfBoundsException</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">in favour of <a href="../../../../org/bukkit/event/block/SignChangeEvent.html#line-int-net.kyori.adventure.text.Component-"><code>line(int, net.kyori.adventure.text.Component)</code></a></span></div>
 <div class="block">Sets a single line for the sign involved in this event</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

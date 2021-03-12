@@ -108,6 +108,28 @@
 </ul>
 <h2 title="Interface Hierarchy">Interface Hierarchy</h2>
 <ul>
+<li type="circle">net.kyori.adventure.audience.Audience
+<ul>
+<li type="circle">org.bukkit.command.<a href="../../../org/bukkit/command/CommandSender.html" title="interface in org.bukkit.command"><span class="typeNameLink">CommandSender</span></a> (also extends org.bukkit.permissions.<a href="../../../org/bukkit/permissions/Permissible.html" title="interface in org.bukkit.permissions">Permissible</a>)
+<ul>
+<li type="circle">org.bukkit.command.<a href="../../../org/bukkit/command/BlockCommandSender.html" title="interface in org.bukkit.command"><span class="typeNameLink">BlockCommandSender</span></a></li>
+<li type="circle">org.bukkit.command.<a href="../../../org/bukkit/command/ConsoleCommandSender.html" title="interface in org.bukkit.command"><span class="typeNameLink">ConsoleCommandSender</span></a> (also extends org.bukkit.conversations.<a href="../../../org/bukkit/conversations/Conversable.html" title="interface in org.bukkit.conversations">Conversable</a>)</li>
+<li type="circle">org.bukkit.command.<a href="../../../org/bukkit/command/MessageCommandSender.html" title="interface in org.bukkit.command"><span class="typeNameLink">MessageCommandSender</span></a></li>
+<li type="circle">org.bukkit.command.<a href="../../../org/bukkit/command/ProxiedCommandSender.html" title="interface in org.bukkit.command"><span class="typeNameLink">ProxiedCommandSender</span></a> (also extends net.kyori.adventure.audience.ForwardingAudience.Single)</li>
+<li type="circle">org.bukkit.command.<a href="../../../org/bukkit/command/RemoteConsoleCommandSender.html" title="interface in org.bukkit.command"><span class="typeNameLink">RemoteConsoleCommandSender</span></a></li>
+</ul>
+</li>
+<li type="circle">net.kyori.adventure.audience.ForwardingAudience
+<ul>
+<li type="circle">net.kyori.adventure.audience.ForwardingAudience.Single
+<ul>
+<li type="circle">org.bukkit.command.<a href="../../../org/bukkit/command/ProxiedCommandSender.html" title="interface in org.bukkit.command"><span class="typeNameLink">ProxiedCommandSender</span></a> (also extends org.bukkit.command.<a href="../../../org/bukkit/command/CommandSender.html" title="interface in org.bukkit.command">CommandSender</a>)</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 <li type="circle">org.bukkit.command.<a href="../../../org/bukkit/command/CommandExecutor.html" title="interface in org.bukkit.command"><span class="typeNameLink">CommandExecutor</span></a>
 <ul>
 <li type="circle">org.bukkit.command.<a href="../../../org/bukkit/command/TabExecutor.html" title="interface in org.bukkit.command"><span class="typeNameLink">TabExecutor</span></a> (also extends org.bukkit.command.<a href="../../../org/bukkit/command/TabCompleter.html" title="interface in org.bukkit.command">TabCompleter</a>)</li>
@@ -124,12 +146,12 @@
 <ul>
 <li type="circle">org.bukkit.permissions.<a href="../../../org/bukkit/permissions/Permissible.html" title="interface in org.bukkit.permissions"><span class="typeNameLink">Permissible</span></a>
 <ul>
-<li type="circle">org.bukkit.command.<a href="../../../org/bukkit/command/CommandSender.html" title="interface in org.bukkit.command"><span class="typeNameLink">CommandSender</span></a>
+<li type="circle">org.bukkit.command.<a href="../../../org/bukkit/command/CommandSender.html" title="interface in org.bukkit.command"><span class="typeNameLink">CommandSender</span></a> (also extends net.kyori.adventure.audience.Audience)
 <ul>
 <li type="circle">org.bukkit.command.<a href="../../../org/bukkit/command/BlockCommandSender.html" title="interface in org.bukkit.command"><span class="typeNameLink">BlockCommandSender</span></a></li>
 <li type="circle">org.bukkit.command.<a href="../../../org/bukkit/command/ConsoleCommandSender.html" title="interface in org.bukkit.command"><span class="typeNameLink">ConsoleCommandSender</span></a> (also extends org.bukkit.conversations.<a href="../../../org/bukkit/conversations/Conversable.html" title="interface in org.bukkit.conversations">Conversable</a>)</li>
 <li type="circle">org.bukkit.command.<a href="../../../org/bukkit/command/MessageCommandSender.html" title="interface in org.bukkit.command"><span class="typeNameLink">MessageCommandSender</span></a></li>
-<li type="circle">org.bukkit.command.<a href="../../../org/bukkit/command/ProxiedCommandSender.html" title="interface in org.bukkit.command"><span class="typeNameLink">ProxiedCommandSender</span></a></li>
+<li type="circle">org.bukkit.command.<a href="../../../org/bukkit/command/ProxiedCommandSender.html" title="interface in org.bukkit.command"><span class="typeNameLink">ProxiedCommandSender</span></a> (also extends net.kyori.adventure.audience.ForwardingAudience.Single)</li>
 <li type="circle">org.bukkit.command.<a href="../../../org/bukkit/command/RemoteConsoleCommandSender.html" title="interface in org.bukkit.command"><span class="typeNameLink">RemoteConsoleCommandSender</span></a></li>
 </ul>
 </li>

@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":38};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":38,"i10":38,"i11":38,"i12":38,"i13":6,"i14":6,"i15":6,"i16":38};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -123,90 +123,105 @@ var activeTableTab = "activeTableTab";
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>net.kyori.adventure.text.event.HoverEvent&lt;net.kyori.adventure.text.event.HoverEvent.ShowItem&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/inventory/ItemFactory.html#asHoverEvent-org.bukkit.inventory.ItemStack-java.util.function.UnaryOperator-">asHoverEvent</a></span>(<a href="../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&nbsp;item,
+            java.util.function.UnaryOperator&lt;net.kyori.adventure.text.event.HoverEvent.ShowItem&gt;&nbsp;op)</code>
+<div class="block">Creates a hover event for the given item.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/inventory/meta/ItemMeta.html" title="interface in org.bukkit.inventory.meta">ItemMeta</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/inventory/ItemFactory.html#asMetaFor-org.bukkit.inventory.meta.ItemMeta-org.bukkit.inventory.ItemStack-">asMetaFor</a></span>(<a href="../../../org/bukkit/inventory/meta/ItemMeta.html" title="interface in org.bukkit.inventory.meta">ItemMeta</a>&nbsp;meta,
          <a href="../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&nbsp;stack)</code>
 <div class="block">Returns an appropriate item meta for the specified stack.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/inventory/meta/ItemMeta.html" title="interface in org.bukkit.inventory.meta">ItemMeta</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/inventory/ItemFactory.html#asMetaFor-org.bukkit.inventory.meta.ItemMeta-org.bukkit.Material-">asMetaFor</a></span>(<a href="../../../org/bukkit/inventory/meta/ItemMeta.html" title="interface in org.bukkit.inventory.meta">ItemMeta</a>&nbsp;meta,
          <a href="../../../org/bukkit/Material.html" title="enum in org.bukkit">Material</a>&nbsp;material)</code>
 <div class="block">Returns an appropriate item meta for the specified material.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/inventory/ItemFactory.html#ensureServerConversions-org.bukkit.inventory.ItemStack-">ensureServerConversions</a></span>(<a href="../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&nbsp;item)</code>
 <div class="block">Minecart updates are converting simple item stacks into more complex NBT oriented Item Stacks.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/inventory/ItemFactory.html#equals-org.bukkit.inventory.meta.ItemMeta-org.bukkit.inventory.meta.ItemMeta-">equals</a></span>(<a href="../../../org/bukkit/inventory/meta/ItemMeta.html" title="interface in org.bukkit.inventory.meta">ItemMeta</a>&nbsp;meta1,
       <a href="../../../org/bukkit/inventory/meta/ItemMeta.html" title="interface in org.bukkit.inventory.meta">ItemMeta</a>&nbsp;meta2)</code>
 <div class="block">This method is used to compare two item meta data objects.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/Color.html" title="class in org.bukkit">Color</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/inventory/ItemFactory.html#getDefaultLeatherColor--">getDefaultLeatherColor</a></span>()</code>
 <div class="block">Returns the default color for all leather armor.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/inventory/ItemFactory.html#getI18NDisplayName-org.bukkit.inventory.ItemStack-">getI18NDisplayName</a></span>(<a href="../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&nbsp;item)</code>
 <div class="block">Gets the Display name as seen in the Client.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/inventory/meta/ItemMeta.html" title="interface in org.bukkit.inventory.meta">ItemMeta</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/inventory/ItemFactory.html#getItemMeta-org.bukkit.Material-">getItemMeta</a></span>(<a href="../../../org/bukkit/Material.html" title="enum in org.bukkit">Material</a>&nbsp;material)</code>
 <div class="block">This creates a new item meta for the material.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/inventory/ItemFactory.html#getMonsterEgg-org.bukkit.entity.EntityType-">getMonsterEgg</a></span>(<a href="../../../org/bukkit/entity/EntityType.html" title="enum in org.bukkit.entity">EntityType</a>&nbsp;type)</code>
 <div class="block">Get a monster egg ItemStack from an EntityType</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
-<td class="colFirst"><code>net.md_5.bungee.api.chat.hover.content.Content</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/inventory/ItemFactory.html#hoverContentOf-org.bukkit.entity.Entity-">hoverContentOf</a></span>(<a href="../../../org/bukkit/entity/Entity.html" title="interface in org.bukkit.entity">Entity</a>&nbsp;entity)</code>
-<div class="block">Creates a <code>Content</code> of that <a href="../../../org/bukkit/entity/Entity.html" title="interface in org.bukkit.entity"><code>Entity</code></a> for displaying.</div>
-</td>
-</tr>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>net.md_5.bungee.api.chat.hover.content.Content</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/inventory/ItemFactory.html#hoverContentOf-org.bukkit.entity.Entity-net.md_5.bungee.api.chat.BaseComponent-">hoverContentOf</a></span>(<a href="../../../org/bukkit/entity/Entity.html" title="interface in org.bukkit.entity">Entity</a>&nbsp;entity,
-              net.md_5.bungee.api.chat.BaseComponent&nbsp;customName)</code>
-<div class="block">Creates a <code>Content</code> of that <a href="../../../org/bukkit/entity/Entity.html" title="interface in org.bukkit.entity"><code>Entity</code></a> for displaying.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/inventory/ItemFactory.html#hoverContentOf-org.bukkit.entity.Entity-">hoverContentOf</a></span>(<a href="../../../org/bukkit/entity/Entity.html" title="interface in org.bukkit.entity">Entity</a>&nbsp;entity)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">use <code>HoverEventSource.asHoverEvent()</code></span></div>
+</div>
 </td>
 </tr>
 <tr id="i10" class="altColor">
 <td class="colFirst"><code>net.md_5.bungee.api.chat.hover.content.Content</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/inventory/ItemFactory.html#hoverContentOf-org.bukkit.entity.Entity-net.md_5.bungee.api.chat.BaseComponent:A-">hoverContentOf</a></span>(<a href="../../../org/bukkit/entity/Entity.html" title="interface in org.bukkit.entity">Entity</a>&nbsp;entity,
-              net.md_5.bungee.api.chat.BaseComponent[]&nbsp;customName)</code>
-<div class="block">Creates a <code>Content</code> of that <a href="../../../org/bukkit/entity/Entity.html" title="interface in org.bukkit.entity"><code>Entity</code></a> for displaying.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/inventory/ItemFactory.html#hoverContentOf-org.bukkit.entity.Entity-net.md_5.bungee.api.chat.BaseComponent-">hoverContentOf</a></span>(<a href="../../../org/bukkit/entity/Entity.html" title="interface in org.bukkit.entity">Entity</a>&nbsp;entity,
+              net.md_5.bungee.api.chat.BaseComponent&nbsp;customName)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">use <a href="../../../org/bukkit/entity/Entity.html#asHoverEvent-java.util.function.UnaryOperator-"><code>Entity.asHoverEvent(java.util.function.UnaryOperator)</code></a></span></div>
+</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
 <td class="colFirst"><code>net.md_5.bungee.api.chat.hover.content.Content</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/inventory/ItemFactory.html#hoverContentOf-org.bukkit.entity.Entity-java.lang.String-">hoverContentOf</a></span>(<a href="../../../org/bukkit/entity/Entity.html" title="interface in org.bukkit.entity">Entity</a>&nbsp;entity,
-              java.lang.String&nbsp;customName)</code>
-<div class="block">Creates a <code>Content</code> of that <a href="../../../org/bukkit/entity/Entity.html" title="interface in org.bukkit.entity"><code>Entity</code></a> for displaying.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/inventory/ItemFactory.html#hoverContentOf-org.bukkit.entity.Entity-net.md_5.bungee.api.chat.BaseComponent:A-">hoverContentOf</a></span>(<a href="../../../org/bukkit/entity/Entity.html" title="interface in org.bukkit.entity">Entity</a>&nbsp;entity,
+              net.md_5.bungee.api.chat.BaseComponent[]&nbsp;customName)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">use <a href="../../../org/bukkit/entity/Entity.html#asHoverEvent-java.util.function.UnaryOperator-"><code>Entity.asHoverEvent(java.util.function.UnaryOperator)</code></a></span></div>
+</div>
 </td>
 </tr>
 <tr id="i12" class="altColor">
+<td class="colFirst"><code>net.md_5.bungee.api.chat.hover.content.Content</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/inventory/ItemFactory.html#hoverContentOf-org.bukkit.entity.Entity-java.lang.String-">hoverContentOf</a></span>(<a href="../../../org/bukkit/entity/Entity.html" title="interface in org.bukkit.entity">Entity</a>&nbsp;entity,
+              java.lang.String&nbsp;customName)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">use <a href="../../../org/bukkit/entity/Entity.html#asHoverEvent-java.util.function.UnaryOperator-"><code>Entity.asHoverEvent(java.util.function.UnaryOperator)</code></a></span></div>
+</div>
+</td>
+</tr>
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>net.md_5.bungee.api.chat.hover.content.Content</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/inventory/ItemFactory.html#hoverContentOf-org.bukkit.inventory.ItemStack-">hoverContentOf</a></span>(<a href="../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&nbsp;itemStack)</code>
 <div class="block">Creates a <code>Content</code> of that ItemStack for displaying.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/inventory/ItemFactory.html#isApplicable-org.bukkit.inventory.meta.ItemMeta-org.bukkit.inventory.ItemStack-">isApplicable</a></span>(<a href="../../../org/bukkit/inventory/meta/ItemMeta.html" title="interface in org.bukkit.inventory.meta">ItemMeta</a>&nbsp;meta,
             <a href="../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&nbsp;stack)</code>
@@ -214,7 +229,7 @@ var activeTableTab = "activeTableTab";
  data lost if applied) to the specified ItemStack.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/inventory/ItemFactory.html#isApplicable-org.bukkit.inventory.meta.ItemMeta-org.bukkit.Material-">isApplicable</a></span>(<a href="../../../org/bukkit/inventory/meta/ItemMeta.html" title="interface in org.bukkit.inventory.meta">ItemMeta</a>&nbsp;meta,
             <a href="../../../org/bukkit/Material.html" title="enum in org.bukkit">Material</a>&nbsp;material)</code>
@@ -222,7 +237,7 @@ var activeTableTab = "activeTableTab";
  data lost if applied) to the specified Material.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/Material.html" title="enum in org.bukkit">Material</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/inventory/ItemFactory.html#updateMaterial-org.bukkit.inventory.meta.ItemMeta-org.bukkit.Material-">updateMaterial</a></span>(<a href="../../../org/bukkit/inventory/meta/ItemMeta.html" title="interface in org.bukkit.inventory.meta">ItemMeta</a>&nbsp;meta,
               <a href="../../../org/bukkit/Material.html" title="enum in org.bukkit">Material</a>&nbsp;material)</code>
@@ -461,6 +476,27 @@ var activeTableTab = "activeTableTab";
 </dl>
 </li>
 </ul>
+<a name="asHoverEvent-org.bukkit.inventory.ItemStack-java.util.function.UnaryOperator-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>asHoverEvent</h4>
+<pre>@NotNull
+net.kyori.adventure.text.event.HoverEvent&lt;net.kyori.adventure.text.event.HoverEvent.ShowItem&gt;&nbsp;asHoverEvent(@NotNull
+                                                                                                                    <a href="../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&nbsp;item,
+                                                                                                                    @NotNull
+                                                                                                                    java.util.function.UnaryOperator&lt;net.kyori.adventure.text.event.HoverEvent.ShowItem&gt;&nbsp;op)</pre>
+<div class="block">Creates a hover event for the given item.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>item</code> - The item</dd>
+<dd><code>op</code> - Unary operator</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>A hover event</dd>
+</dl>
+</li>
+</ul>
 <a name="ensureServerConversions-org.bukkit.inventory.ItemStack-">
 <!--   -->
 </a>
@@ -527,8 +563,10 @@ net.md_5.bungee.api.chat.hover.content.Content&nbsp;hoverContentOf(@NotNull
 <li class="blockList">
 <h4>hoverContentOf</h4>
 <pre>@NotNull
+ @Deprecated
 net.md_5.bungee.api.chat.hover.content.Content&nbsp;hoverContentOf(@NotNull
-                                                                       <a href="../../../org/bukkit/entity/Entity.html" title="interface in org.bukkit.entity">Entity</a>&nbsp;entity)</pre>
+                                                                                    <a href="../../../org/bukkit/entity/Entity.html" title="interface in org.bukkit.entity">Entity</a>&nbsp;entity)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">use <code>HoverEventSource.asHoverEvent()</code></span></div>
 <div class="block">Creates a <code>Content</code> of that <a href="../../../org/bukkit/entity/Entity.html" title="interface in org.bukkit.entity"><code>Entity</code></a> for displaying.
  Uses the display name of the entity, if present.</div>
 <dl>
@@ -546,10 +584,12 @@ net.md_5.bungee.api.chat.hover.content.Content&nbsp;hoverContentOf(@NotNull
 <li class="blockList">
 <h4>hoverContentOf</h4>
 <pre>@NotNull
+ @Deprecated
 net.md_5.bungee.api.chat.hover.content.Content&nbsp;hoverContentOf(@NotNull
-                                                                       <a href="../../../org/bukkit/entity/Entity.html" title="interface in org.bukkit.entity">Entity</a>&nbsp;entity,
-                                                                       @Nullable
-                                                                       java.lang.String&nbsp;customName)</pre>
+                                                                                    <a href="../../../org/bukkit/entity/Entity.html" title="interface in org.bukkit.entity">Entity</a>&nbsp;entity,
+                                                                                    @Nullable
+                                                                                    java.lang.String&nbsp;customName)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">use <a href="../../../org/bukkit/entity/Entity.html#asHoverEvent-java.util.function.UnaryOperator-"><code>Entity.asHoverEvent(java.util.function.UnaryOperator)</code></a></span></div>
 <div class="block">Creates a <code>Content</code> of that <a href="../../../org/bukkit/entity/Entity.html" title="interface in org.bukkit.entity"><code>Entity</code></a> for displaying.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -567,10 +607,12 @@ net.md_5.bungee.api.chat.hover.content.Content&nbsp;hoverContentOf(@NotNull
 <li class="blockList">
 <h4>hoverContentOf</h4>
 <pre>@NotNull
+ @Deprecated
 net.md_5.bungee.api.chat.hover.content.Content&nbsp;hoverContentOf(@NotNull
-                                                                       <a href="../../../org/bukkit/entity/Entity.html" title="interface in org.bukkit.entity">Entity</a>&nbsp;entity,
-                                                                       @Nullable
-                                                                       net.md_5.bungee.api.chat.BaseComponent&nbsp;customName)</pre>
+                                                                                    <a href="../../../org/bukkit/entity/Entity.html" title="interface in org.bukkit.entity">Entity</a>&nbsp;entity,
+                                                                                    @Nullable
+                                                                                    net.md_5.bungee.api.chat.BaseComponent&nbsp;customName)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">use <a href="../../../org/bukkit/entity/Entity.html#asHoverEvent-java.util.function.UnaryOperator-"><code>Entity.asHoverEvent(java.util.function.UnaryOperator)</code></a></span></div>
 <div class="block">Creates a <code>Content</code> of that <a href="../../../org/bukkit/entity/Entity.html" title="interface in org.bukkit.entity"><code>Entity</code></a> for displaying.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -588,10 +630,12 @@ net.md_5.bungee.api.chat.hover.content.Content&nbsp;hoverContentOf(@NotNull
 <li class="blockList">
 <h4>hoverContentOf</h4>
 <pre>@NotNull
+ @Deprecated
 net.md_5.bungee.api.chat.hover.content.Content&nbsp;hoverContentOf(@NotNull
-                                                                       <a href="../../../org/bukkit/entity/Entity.html" title="interface in org.bukkit.entity">Entity</a>&nbsp;entity,
-                                                                       @NotNull
-                                                                       net.md_5.bungee.api.chat.BaseComponent[]&nbsp;customName)</pre>
+                                                                                    <a href="../../../org/bukkit/entity/Entity.html" title="interface in org.bukkit.entity">Entity</a>&nbsp;entity,
+                                                                                    @NotNull
+                                                                                    net.md_5.bungee.api.chat.BaseComponent[]&nbsp;customName)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">use <a href="../../../org/bukkit/entity/Entity.html#asHoverEvent-java.util.function.UnaryOperator-"><code>Entity.asHoverEvent(java.util.function.UnaryOperator)</code></a></span></div>
 <div class="block">Creates a <code>Content</code> of that <a href="../../../org/bukkit/entity/Entity.html" title="interface in org.bukkit.entity"><code>Entity</code></a> for displaying.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

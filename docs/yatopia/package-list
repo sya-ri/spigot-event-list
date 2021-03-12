@@ -22,12 +22,14 @@ com.destroystokyo.paper.profile
 com.destroystokyo.paper.util
 com.destroystokyo.paper.utils
 dev.tr7zw.yatopia.events
+io.papermc.paper.chat
 io.papermc.paper.event.block
 io.papermc.paper.event.entity
 io.papermc.paper.event.packet
 io.papermc.paper.event.player
 io.papermc.paper.event.server
 io.papermc.paper.event.world
+io.papermc.paper.event.world.border
 io.papermc.paper.tag
 io.papermc.paper.world
 net.pl3x.purpur.event

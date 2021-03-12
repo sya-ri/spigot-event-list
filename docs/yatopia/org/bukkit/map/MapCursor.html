@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":42,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":42,"i10":10,"i11":10,"i12":10,"i13":10};
+var methods = {"i0":10,"i1":10,"i2":42,"i3":10,"i4":42,"i5":10,"i6":10,"i7":10,"i8":10,"i9":42,"i10":10,"i11":42,"i12":10,"i13":10,"i14":10,"i15":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -160,6 +160,18 @@ extends java.lang.Object</pre>
 </td>
 </tr>
 <tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../org/bukkit/map/MapCursor.html#MapCursor-byte-byte-byte-byte-boolean-net.kyori.adventure.text.Component-">MapCursor</a></span>(byte&nbsp;x,
+         byte&nbsp;y,
+         byte&nbsp;direction,
+         byte&nbsp;type,
+         boolean&nbsp;visible,
+         net.kyori.adventure.text.Component&nbsp;caption)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">Magic value</span></div>
+</div>
+</td>
+</tr>
+<tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../org/bukkit/map/MapCursor.html#MapCursor-byte-byte-byte-byte-boolean-java.lang.String-">MapCursor</a></span>(byte&nbsp;x,
          byte&nbsp;y,
          byte&nbsp;direction,
@@ -167,16 +179,26 @@ extends java.lang.Object</pre>
          boolean&nbsp;visible,
          java.lang.String&nbsp;caption)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
-<div class="block"><span class="deprecationComment">Magic value</span></div>
+<div class="block"><span class="deprecationComment">Magic value. Use <a href="../../../org/bukkit/map/MapCursor.html#MapCursor-byte-byte-byte-byte-boolean-net.kyori.adventure.text.Component-"><code>MapCursor(byte, byte, byte, byte, boolean, net.kyori.adventure.text.Component)</code></a></span></div>
 </div>
 </td>
 </tr>
-<tr class="altColor">
+<tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../org/bukkit/map/MapCursor.html#MapCursor-byte-byte-byte-org.bukkit.map.MapCursor.Type-boolean-">MapCursor</a></span>(byte&nbsp;x,
          byte&nbsp;y,
          byte&nbsp;direction,
          <a href="../../../org/bukkit/map/MapCursor.Type.html" title="enum in org.bukkit.map">MapCursor.Type</a>&nbsp;type,
          boolean&nbsp;visible)</code>
+<div class="block">Initialize the map cursor.</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../org/bukkit/map/MapCursor.html#MapCursor-byte-byte-byte-org.bukkit.map.MapCursor.Type-boolean-net.kyori.adventure.text.Component-">MapCursor</a></span>(byte&nbsp;x,
+         byte&nbsp;y,
+         byte&nbsp;direction,
+         <a href="../../../org/bukkit/map/MapCursor.Type.html" title="enum in org.bukkit.map">MapCursor.Type</a>&nbsp;type,
+         boolean&nbsp;visible,
+         net.kyori.adventure.text.Component&nbsp;caption)</code>
 <div class="block">Initialize the map cursor.</div>
 </td>
 </tr>
@@ -206,18 +228,32 @@ extends java.lang.Object</pre>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/map/MapCursor.html#getCaption--">getCaption</a></span>()</code>
+<td class="colFirst"><code>net.kyori.adventure.text.Component</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/map/MapCursor.html#caption--">caption</a></span>()</code>
 <div class="block">Gets the caption on this cursor.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/map/MapCursor.html#caption-net.kyori.adventure.text.Component-">caption</a></span>(net.kyori.adventure.text.Component&nbsp;caption)</code>
+<div class="block">Sets the caption on this cursor.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/map/MapCursor.html#getCaption--">getCaption</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">in favour of <a href="../../../org/bukkit/map/MapCursor.html#caption--"><code>caption()</code></a></span></div>
+</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>byte</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/map/MapCursor.html#getDirection--">getDirection</a></span>()</code>
 <div class="block">Get the direction of this cursor.</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>byte</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/map/MapCursor.html#getRawType--">getRawType</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -225,43 +261,45 @@ extends java.lang.Object</pre>
 </div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/map/MapCursor.Type.html" title="enum in org.bukkit.map">MapCursor.Type</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/map/MapCursor.html#getType--">getType</a></span>()</code>
 <div class="block">Get the type of this cursor.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>byte</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/map/MapCursor.html#getX--">getX</a></span>()</code>
 <div class="block">Get the X position of this cursor.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>byte</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/map/MapCursor.html#getY--">getY</a></span>()</code>
 <div class="block">Get the Y position of this cursor.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/map/MapCursor.html#isVisible--">isVisible</a></span>()</code>
 <div class="block">Get the visibility status of this cursor.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/map/MapCursor.html#setCaption-java.lang.String-">setCaption</a></span>(java.lang.String&nbsp;caption)</code>
-<div class="block">Sets the caption on this cursor.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">in favour of <a href="../../../org/bukkit/map/MapCursor.html#caption-net.kyori.adventure.text.Component-"><code>caption(net.kyori.adventure.text.Component)</code></a></span></div>
+</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/map/MapCursor.html#setDirection-byte-">setDirection</a></span>(byte&nbsp;direction)</code>
 <div class="block">Set the direction of this cursor.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/map/MapCursor.html#setRawType-byte-">setRawType</a></span>(byte&nbsp;type)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -269,25 +307,25 @@ extends java.lang.Object</pre>
 </div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/map/MapCursor.html#setType-org.bukkit.map.MapCursor.Type-">setType</a></span>(<a href="../../../org/bukkit/map/MapCursor.Type.html" title="enum in org.bukkit.map">MapCursor.Type</a>&nbsp;type)</code>
 <div class="block">Set the type of this cursor.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/map/MapCursor.html#setVisible-boolean-">setVisible</a></span>(boolean&nbsp;visible)</code>
 <div class="block">Set the visibility status of this cursor.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/map/MapCursor.html#setX-byte-">setX</a></span>(byte&nbsp;x)</code>
 <div class="block">Set the X position of this cursor.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/map/MapCursor.html#setY-byte-">setY</a></span>(byte&nbsp;y)</code>
 <div class="block">Set the Y position of this cursor.</div>
@@ -376,7 +414,60 @@ public&nbsp;MapCursor(byte&nbsp;x,
                              boolean&nbsp;visible,
                              @Nullable
                              java.lang.String&nbsp;caption)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Magic value. Use <a href="../../../org/bukkit/map/MapCursor.html#MapCursor-byte-byte-byte-byte-boolean-net.kyori.adventure.text.Component-"><code>MapCursor(byte, byte, byte, byte, boolean, net.kyori.adventure.text.Component)</code></a></span></div>
+<div class="block">Initialize the map cursor.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>x</code> - The x coordinate, from -128 to 127.</dd>
+<dd><code>y</code> - The y coordinate, from -128 to 127.</dd>
+<dd><code>direction</code> - The facing of the cursor, from 0 to 15.</dd>
+<dd><code>type</code> - The type (color/style) of the map cursor.</dd>
+<dd><code>visible</code> - Whether the cursor is visible by default.</dd>
+<dd><code>caption</code> - cursor caption</dd>
+</dl>
+</li>
+</ul>
+<a name="MapCursor-byte-byte-byte-byte-boolean-net.kyori.adventure.text.Component-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>MapCursor</h4>
+<pre>@Deprecated
+public&nbsp;MapCursor(byte&nbsp;x,
+                             byte&nbsp;y,
+                             byte&nbsp;direction,
+                             byte&nbsp;type,
+                             boolean&nbsp;visible,
+                             @Nullable
+                             net.kyori.adventure.text.Component&nbsp;caption)</pre>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Magic value</span></div>
+<div class="block">Initialize the map cursor.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>x</code> - The x coordinate, from -128 to 127.</dd>
+<dd><code>y</code> - The y coordinate, from -128 to 127.</dd>
+<dd><code>direction</code> - The facing of the cursor, from 0 to 15.</dd>
+<dd><code>type</code> - The type (color/style) of the map cursor.</dd>
+<dd><code>visible</code> - Whether the cursor is visible by default.</dd>
+<dd><code>caption</code> - cursor caption</dd>
+</dl>
+</li>
+</ul>
+<a name="MapCursor-byte-byte-byte-org.bukkit.map.MapCursor.Type-boolean-net.kyori.adventure.text.Component-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>MapCursor</h4>
+<pre>public&nbsp;MapCursor(byte&nbsp;x,
+                 byte&nbsp;y,
+                 byte&nbsp;direction,
+                 @NotNull
+                 <a href="../../../org/bukkit/map/MapCursor.Type.html" title="enum in org.bukkit.map">MapCursor.Type</a>&nbsp;type,
+                 boolean&nbsp;visible,
+                 @Nullable
+                 net.kyori.adventure.text.Component&nbsp;caption)</pre>
 <div class="block">Initialize the map cursor.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -597,6 +688,36 @@ public&nbsp;void&nbsp;setRawType(byte&nbsp;type)</pre>
 </dl>
 </li>
 </ul>
+<a name="caption--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>caption</h4>
+<pre>@Nullable
+public&nbsp;net.kyori.adventure.text.Component&nbsp;caption()</pre>
+<div class="block">Gets the caption on this cursor.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>caption</dd>
+</dl>
+</li>
+</ul>
+<a name="caption-net.kyori.adventure.text.Component-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>caption</h4>
+<pre>public&nbsp;void&nbsp;caption(@Nullable
+                    net.kyori.adventure.text.Component&nbsp;caption)</pre>
+<div class="block">Sets the caption on this cursor.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>caption</code> - new caption</dd>
+</dl>
+</li>
+</ul>
 <a name="getCaption--">
 <!--   -->
 </a>
@@ -604,7 +725,9 @@ public&nbsp;void&nbsp;setRawType(byte&nbsp;type)</pre>
 <li class="blockList">
 <h4>getCaption</h4>
 <pre>@Nullable
+ @Deprecated
 public&nbsp;java.lang.String&nbsp;getCaption()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">in favour of <a href="../../../org/bukkit/map/MapCursor.html#caption--"><code>caption()</code></a></span></div>
 <div class="block">Gets the caption on this cursor.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -618,8 +741,10 @@ public&nbsp;java.lang.String&nbsp;getCaption()</pre>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>setCaption</h4>
-<pre>public&nbsp;void&nbsp;setCaption(@Nullable
-                       java.lang.String&nbsp;caption)</pre>
+<pre>@Deprecated
+public&nbsp;void&nbsp;setCaption(@Nullable
+                                   java.lang.String&nbsp;caption)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">in favour of <a href="../../../org/bukkit/map/MapCursor.html#caption-net.kyori.adventure.text.Component-"><code>caption(net.kyori.adventure.text.Component)</code></a></span></div>
 <div class="block">Sets the caption on this cursor.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

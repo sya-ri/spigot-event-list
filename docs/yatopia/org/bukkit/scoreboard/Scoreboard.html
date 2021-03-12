@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":38,"i8":38,"i9":38,"i10":6,"i11":6,"i12":6,"i13":38,"i14":6,"i15":6,"i16":6,"i17":38,"i18":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":38,"i8":38,"i9":38,"i10":6,"i11":6,"i12":6,"i13":38,"i14":6,"i15":6,"i16":38,"i17":38,"i18":6,"i19":38,"i20":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -215,28 +215,49 @@ var activeTableTab = "activeTableTab";
 </tr>
 <tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/scoreboard/Objective.html" title="interface in org.bukkit.scoreboard">Objective</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Scoreboard.html#registerNewObjective-java.lang.String-java.lang.String-java.lang.String-">registerNewObjective</a></span>(java.lang.String&nbsp;name,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Scoreboard.html#registerNewObjective-java.lang.String-java.lang.String-net.kyori.adventure.text.Component-">registerNewObjective</a></span>(java.lang.String&nbsp;name,
                     java.lang.String&nbsp;criteria,
-                    java.lang.String&nbsp;displayName)</code>
+                    net.kyori.adventure.text.Component&nbsp;displayName)</code>
 <div class="block">Registers an Objective on this Scoreboard</div>
 </td>
 </tr>
 <tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/scoreboard/Objective.html" title="interface in org.bukkit.scoreboard">Objective</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Scoreboard.html#registerNewObjective-java.lang.String-java.lang.String-java.lang.String-org.bukkit.scoreboard.RenderType-">registerNewObjective</a></span>(java.lang.String&nbsp;name,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Scoreboard.html#registerNewObjective-java.lang.String-java.lang.String-net.kyori.adventure.text.Component-org.bukkit.scoreboard.RenderType-">registerNewObjective</a></span>(java.lang.String&nbsp;name,
                     java.lang.String&nbsp;criteria,
-                    java.lang.String&nbsp;displayName,
+                    net.kyori.adventure.text.Component&nbsp;displayName,
                     <a href="../../../org/bukkit/scoreboard/RenderType.html" title="enum in org.bukkit.scoreboard">RenderType</a>&nbsp;renderType)</code>
 <div class="block">Registers an Objective on this Scoreboard</div>
 </td>
 </tr>
 <tr id="i16" class="altColor">
+<td class="colFirst"><code><a href="../../../org/bukkit/scoreboard/Objective.html" title="interface in org.bukkit.scoreboard">Objective</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Scoreboard.html#registerNewObjective-java.lang.String-java.lang.String-java.lang.String-">registerNewObjective</a></span>(java.lang.String&nbsp;name,
+                    java.lang.String&nbsp;criteria,
+                    java.lang.String&nbsp;displayName)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">in favour of <a href="../../../org/bukkit/scoreboard/Scoreboard.html#registerNewObjective-java.lang.String-java.lang.String-net.kyori.adventure.text.Component-"><code>registerNewObjective(String, String, net.kyori.adventure.text.Component)</code></a></span></div>
+</div>
+</td>
+</tr>
+<tr id="i17" class="rowColor">
+<td class="colFirst"><code><a href="../../../org/bukkit/scoreboard/Objective.html" title="interface in org.bukkit.scoreboard">Objective</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Scoreboard.html#registerNewObjective-java.lang.String-java.lang.String-java.lang.String-org.bukkit.scoreboard.RenderType-">registerNewObjective</a></span>(java.lang.String&nbsp;name,
+                    java.lang.String&nbsp;criteria,
+                    java.lang.String&nbsp;displayName,
+                    <a href="../../../org/bukkit/scoreboard/RenderType.html" title="enum in org.bukkit.scoreboard">RenderType</a>&nbsp;renderType)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">in favour of <a href="../../../org/bukkit/scoreboard/Scoreboard.html#registerNewObjective-java.lang.String-java.lang.String-net.kyori.adventure.text.Component-org.bukkit.scoreboard.RenderType-"><code>registerNewObjective(String, String, net.kyori.adventure.text.Component, RenderType)</code></a></span></div>
+</div>
+</td>
+</tr>
+<tr id="i18" class="altColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/scoreboard/Team.html" title="interface in org.bukkit.scoreboard">Team</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Scoreboard.html#registerNewTeam-java.lang.String-">registerNewTeam</a></span>(java.lang.String&nbsp;name)</code>
 <div class="block">Registers a Team on this Scoreboard</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Scoreboard.html#resetScores-org.bukkit.OfflinePlayer-">resetScores</a></span>(<a href="../../../org/bukkit/OfflinePlayer.html" title="interface in org.bukkit">OfflinePlayer</a>&nbsp;player)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -244,7 +265,7 @@ var activeTableTab = "activeTableTab";
 </div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Scoreboard.html#resetScores-java.lang.String-">resetScores</a></span>(java.lang.String&nbsp;entry)</code>
 <div class="block">Removes all scores for an entry on this Scoreboard</div>
@@ -296,7 +317,7 @@ var activeTableTab = "activeTableTab";
 </dl>
 </li>
 </ul>
-<a name="registerNewObjective-java.lang.String-java.lang.String-java.lang.String-">
+<a name="registerNewObjective-java.lang.String-java.lang.String-net.kyori.adventure.text.Component-">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -307,9 +328,85 @@ var activeTableTab = "activeTableTab";
                                         java.lang.String&nbsp;name,
                                         @NotNull
                                         java.lang.String&nbsp;criteria,
-                                        @NotNull
-                                        java.lang.String&nbsp;displayName)
+                                        @Nullable
+                                        net.kyori.adventure.text.Component&nbsp;displayName)
                                  throws java.lang.IllegalArgumentException</pre>
+<div class="block">Registers an Objective on this Scoreboard</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - Name of the Objective</dd>
+<dd><code>criteria</code> - Criteria for the Objective</dd>
+<dd><code>displayName</code> - Name displayed to players for the Objective.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The registered Objective</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if name is null</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - if name is longer than 16
+     characters.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - if criteria is null</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - if displayName is null</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - if displayName is longer than 128
+     characters.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - if an objective by that name already
+     exists</dd>
+</dl>
+</li>
+</ul>
+<a name="registerNewObjective-java.lang.String-java.lang.String-net.kyori.adventure.text.Component-org.bukkit.scoreboard.RenderType-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>registerNewObjective</h4>
+<pre>@NotNull
+<a href="../../../org/bukkit/scoreboard/Objective.html" title="interface in org.bukkit.scoreboard">Objective</a>&nbsp;registerNewObjective(@NotNull
+                                        java.lang.String&nbsp;name,
+                                        @NotNull
+                                        java.lang.String&nbsp;criteria,
+                                        @Nullable
+                                        net.kyori.adventure.text.Component&nbsp;displayName,
+                                        @NotNull
+                                        <a href="../../../org/bukkit/scoreboard/RenderType.html" title="enum in org.bukkit.scoreboard">RenderType</a>&nbsp;renderType)
+                                 throws java.lang.IllegalArgumentException</pre>
+<div class="block">Registers an Objective on this Scoreboard</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>name</code> - Name of the Objective</dd>
+<dd><code>criteria</code> - Criteria for the Objective</dd>
+<dd><code>displayName</code> - Name displayed to players for the Objective.</dd>
+<dd><code>renderType</code> - Manner of rendering the Objective</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The registered Objective</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if name is null</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - if name is longer than 16
+     characters.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - if criteria is null</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - if displayName is null</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - if displayName is longer than 128
+     characters.</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - if renderType is null</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - if an objective by that name already
+     exists</dd>
+</dl>
+</li>
+</ul>
+<a name="registerNewObjective-java.lang.String-java.lang.String-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>registerNewObjective</h4>
+<pre>@NotNull
+ @Deprecated
+<a href="../../../org/bukkit/scoreboard/Objective.html" title="interface in org.bukkit.scoreboard">Objective</a>&nbsp;registerNewObjective(@NotNull
+                                                     java.lang.String&nbsp;name,
+                                                     @NotNull
+                                                     java.lang.String&nbsp;criteria,
+                                                     @NotNull
+                                                     java.lang.String&nbsp;displayName)
+                                              throws java.lang.IllegalArgumentException</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">in favour of <a href="../../../org/bukkit/scoreboard/Scoreboard.html#registerNewObjective-java.lang.String-java.lang.String-net.kyori.adventure.text.Component-"><code>registerNewObjective(String, String, net.kyori.adventure.text.Component)</code></a></span></div>
 <div class="block">Registers an Objective on this Scoreboard</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -338,15 +435,17 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>registerNewObjective</h4>
 <pre>@NotNull
+ @Deprecated
 <a href="../../../org/bukkit/scoreboard/Objective.html" title="interface in org.bukkit.scoreboard">Objective</a>&nbsp;registerNewObjective(@NotNull
-                                        java.lang.String&nbsp;name,
-                                        @NotNull
-                                        java.lang.String&nbsp;criteria,
-                                        @NotNull
-                                        java.lang.String&nbsp;displayName,
-                                        @NotNull
-                                        <a href="../../../org/bukkit/scoreboard/RenderType.html" title="enum in org.bukkit.scoreboard">RenderType</a>&nbsp;renderType)
-                                 throws java.lang.IllegalArgumentException</pre>
+                                                     java.lang.String&nbsp;name,
+                                                     @NotNull
+                                                     java.lang.String&nbsp;criteria,
+                                                     @NotNull
+                                                     java.lang.String&nbsp;displayName,
+                                                     @NotNull
+                                                     <a href="../../../org/bukkit/scoreboard/RenderType.html" title="enum in org.bukkit.scoreboard">RenderType</a>&nbsp;renderType)
+                                              throws java.lang.IllegalArgumentException</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">in favour of <a href="../../../org/bukkit/scoreboard/Scoreboard.html#registerNewObjective-java.lang.String-java.lang.String-net.kyori.adventure.text.Component-org.bukkit.scoreboard.RenderType-"><code>registerNewObjective(String, String, net.kyori.adventure.text.Component, RenderType)</code></a></span></div>
 <div class="block">Registers an Objective on this Scoreboard</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

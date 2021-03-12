@@ -17,8 +17,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
+var methods = {"i0":38,"i1":38,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":38};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -119,7 +119,7 @@ extends <a href="../../../org/bukkit/block/TileState.html" title="interface in o
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">Deprecated Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
@@ -127,13 +127,17 @@ extends <a href="../../../org/bukkit/block/TileState.html" title="interface in o
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Sign.html#getLine-int-">getLine</a></span>(int&nbsp;index)</code>
-<div class="block">Gets the line of text at the specified index.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">in favour of <a href="../../../org/bukkit/block/Sign.html#line-int-"><code>line(int)</code></a></span></div>
+</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>java.lang.String[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Sign.html#getLines--">getLines</a></span>()</code>
-<div class="block">Gets all the lines of text currently on this sign.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">in favour of <a href="../../../org/bukkit/block/Sign.html#lines--"><code>lines()</code></a></span></div>
+</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
@@ -143,16 +147,37 @@ extends <a href="../../../org/bukkit/block/TileState.html" title="interface in o
 </td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code>net.kyori.adventure.text.Component</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Sign.html#line-int-">line</a></span>(int&nbsp;index)</code>
+<div class="block">Gets the line of text at the specified index.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Sign.html#line-int-net.kyori.adventure.text.Component-">line</a></span>(int&nbsp;index,
+    net.kyori.adventure.text.Component&nbsp;line)</code>
+<div class="block">Sets the line of text at the specified index.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>java.util.List&lt;net.kyori.adventure.text.Component&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Sign.html#lines--">lines</a></span>()</code>
+<div class="block">Gets all the lines of text currently on this sign.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Sign.html#setEditable-boolean-">setEditable</a></span>(boolean&nbsp;editable)</code>
 <div class="block">Marks whether this sign can be edited by players.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Sign.html#setLine-int-java.lang.String-">setLine</a></span>(int&nbsp;index,
        java.lang.String&nbsp;line)</code>
-<div class="block">Sets the line of text at the specified index.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">in favour of <a href="../../../org/bukkit/block/Sign.html#line-int-net.kyori.adventure.text.Component-"><code>line(int, net.kyori.adventure.text.Component)</code></a></span></div>
+</div>
 </td>
 </tr>
 </table>
@@ -198,6 +223,66 @@ extends <a href="../../../org/bukkit/block/TileState.html" title="interface in o
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="lines--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>lines</h4>
+<pre>@NotNull
+java.util.List&lt;net.kyori.adventure.text.Component&gt;&nbsp;lines()</pre>
+<div class="block">Gets all the lines of text currently on this sign.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Array of Strings containing each line of text</dd>
+</dl>
+</li>
+</ul>
+<a name="line-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>line</h4>
+<pre>@NotNull
+net.kyori.adventure.text.Component&nbsp;line(int&nbsp;index)
+                                          throws java.lang.IndexOutOfBoundsException</pre>
+<div class="block">Gets the line of text at the specified index.
+ <p>
+ For example, getLine(0) will return the first line of text.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>index</code> - Line number to get the text from, starting at 0</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Text on the given line</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IndexOutOfBoundsException</code> - Thrown when the line does not exist</dd>
+</dl>
+</li>
+</ul>
+<a name="line-int-net.kyori.adventure.text.Component-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>line</h4>
+<pre>void&nbsp;line(int&nbsp;index,
+          @NotNull
+          net.kyori.adventure.text.Component&nbsp;line)
+   throws java.lang.IndexOutOfBoundsException</pre>
+<div class="block">Sets the line of text at the specified index.
+ <p>
+ For example, setLine(0, "Line One") will set the first line of text to
+ "Line One".</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>index</code> - Line number to set the text at, starting from 0</dd>
+<dd><code>line</code> - New text to set at the specified index</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IndexOutOfBoundsException</code> - If the index is out of the range 0..3</dd>
+</dl>
+</li>
+</ul>
 <a name="getLines--">
 <!--   -->
 </a>
@@ -205,7 +290,9 @@ extends <a href="../../../org/bukkit/block/TileState.html" title="interface in o
 <li class="blockList">
 <h4>getLines</h4>
 <pre>@NotNull
+ @Deprecated
 java.lang.String[]&nbsp;getLines()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">in favour of <a href="../../../org/bukkit/block/Sign.html#lines--"><code>lines()</code></a></span></div>
 <div class="block">Gets all the lines of text currently on this sign.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -220,8 +307,10 @@ java.lang.String[]&nbsp;getLines()</pre>
 <li class="blockList">
 <h4>getLine</h4>
 <pre>@NotNull
+ @Deprecated
 java.lang.String&nbsp;getLine(int&nbsp;index)
-                           throws java.lang.IndexOutOfBoundsException</pre>
+                                        throws java.lang.IndexOutOfBoundsException</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">in favour of <a href="../../../org/bukkit/block/Sign.html#line-int-"><code>line(int)</code></a></span></div>
 <div class="block">Gets the line of text at the specified index.
  <p>
  For example, getLine(0) will return the first line of text.</div>
@@ -241,10 +330,12 @@ java.lang.String&nbsp;getLine(int&nbsp;index)
 <ul class="blockList">
 <li class="blockList">
 <h4>setLine</h4>
-<pre>void&nbsp;setLine(int&nbsp;index,
-             @NotNull
-             java.lang.String&nbsp;line)
-      throws java.lang.IndexOutOfBoundsException</pre>
+<pre>@Deprecated
+void&nbsp;setLine(int&nbsp;index,
+                         @NotNull
+                         java.lang.String&nbsp;line)
+                  throws java.lang.IndexOutOfBoundsException</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">in favour of <a href="../../../org/bukkit/block/Sign.html#line-int-net.kyori.adventure.text.Component-"><code>line(int, net.kyori.adventure.text.Component)</code></a></span></div>
 <div class="block">Sets the line of text at the specified index.
  <p>
  For example, setLine(0, "Line One") will set the first line of text to

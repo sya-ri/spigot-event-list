@@ -17,8 +17,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":6,"i4":10,"i5":10,"i6":10,"i7":6,"i8":10,"i9":6,"i10":6,"i11":6,"i12":10,"i13":10,"i14":10};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"]};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":6,"i4":10,"i5":10,"i6":10,"i7":6,"i8":10,"i9":38,"i10":6,"i11":6,"i12":10,"i13":10,"i14":10,"i15":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -185,7 +185,7 @@ extends java.lang.Object</pre>
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">Deprecated Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
@@ -249,7 +249,9 @@ extends java.lang.Object</pre>
 <tr id="i9" class="rowColor">
 <td class="colFirst"><code>abstract java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/inventory/InventoryView.html#getTitle--">getTitle</a></span>()</code>
-<div class="block">Get the title of this inventory window.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">in favour of <a href="../../../org/bukkit/inventory/InventoryView.html#title--"><code>title()</code></a></span></div>
+</div>
 </td>
 </tr>
 <tr id="i10" class="altColor">
@@ -283,6 +285,12 @@ extends java.lang.Object</pre>
            int&nbsp;value)</code>
 <div class="block">Sets an extra property of this inventory if supported by that
  inventory, for example the state of a progress bar.</div>
+</td>
+</tr>
+<tr id="i15" class="rowColor">
+<td class="colFirst"><code>net.kyori.adventure.text.Component</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/inventory/InventoryView.html#title--">title</a></span>()</code>
+<div class="block">Get the title of this inventory window.</div>
 </td>
 </tr>
 </table>
@@ -590,18 +598,35 @@ public final&nbsp;<a href="../../../org/bukkit/event/inventory/InventoryType.Slo
 </dl>
 </li>
 </ul>
+<a name="title--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>title</h4>
+<pre>@NotNull
+public&nbsp;net.kyori.adventure.text.Component&nbsp;title()</pre>
+<div class="block">Get the title of this inventory window.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The title or empty string when title is <code>null</code>. <!-- Paper --></dd>
+</dl>
+</li>
+</ul>
 <a name="getTitle--">
 <!--   -->
 </a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>getTitle</h4>
-<pre>@NotNull
+<pre>@Deprecated
+ @NotNull
 public abstract&nbsp;java.lang.String&nbsp;getTitle()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">in favour of <a href="../../../org/bukkit/inventory/InventoryView.html#title--"><code>title()</code></a></span></div>
 <div class="block">Get the title of this inventory window.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>The title or empty string when title is <code>null</code>. <!-- Paper --></dd>
+<dd>The title.</dd>
 </dl>
 </li>
 </ul>

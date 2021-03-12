@@ -17,8 +17,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":9,"i2":10,"i3":10,"i4":10,"i5":42,"i6":42};
-var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
+var methods = {"i0":10,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -187,7 +187,7 @@ implements <a href="../../../../org/bukkit/event/Cancellable.html" title="interf
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">Deprecated Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
@@ -221,17 +221,15 @@ implements <a href="../../../../org/bukkit/event/Cancellable.html" title="interf
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/player/PlayerBedLeaveEvent.html#setSpawnLocation-boolean-">setSpawnLocation</a></span>(boolean&nbsp;setBedSpawn)</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
-<div class="block"><span class="deprecationComment">NOT IMPLEMENTED <!-- paper --></span></div>
-</div>
+<div class="block">Set if this event should set the new spawn location for the
+ <a href="../../../../org/bukkit/entity/Player.html" title="interface in org.bukkit.entity"><code>Player</code></a>.</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/player/PlayerBedLeaveEvent.html#shouldSetSpawnLocation--">shouldSetSpawnLocation</a></span>()</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
-<div class="block"><span class="deprecationComment">NOT IMPLEMENTED <!-- paper --></span></div>
-</div>
+<div class="block">Get if this event should set the new spawn location for the
+ <a href="../../../../org/bukkit/entity/Player.html" title="interface in org.bukkit.entity"><code>Player</code></a>.</div>
 </td>
 </tr>
 </table>
@@ -312,9 +310,7 @@ public&nbsp;<a href="../../../../org/bukkit/block/Block.html" title="interface i
 <ul class="blockList">
 <li class="blockList">
 <h4>shouldSetSpawnLocation</h4>
-<pre>@Deprecated
-public&nbsp;boolean&nbsp;shouldSetSpawnLocation()</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">NOT IMPLEMENTED <!-- paper --></span></div>
+<pre>public&nbsp;boolean&nbsp;shouldSetSpawnLocation()</pre>
 <div class="block">Get if this event should set the new spawn location for the
  <a href="../../../../org/bukkit/entity/Player.html" title="interface in org.bukkit.entity"><code>Player</code></a>.
  <br>
@@ -335,9 +331,7 @@ public&nbsp;boolean&nbsp;shouldSetSpawnLocation()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>setSpawnLocation</h4>
-<pre>@Deprecated
-public&nbsp;void&nbsp;setSpawnLocation(boolean&nbsp;setBedSpawn)</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">NOT IMPLEMENTED <!-- paper --></span></div>
+<pre>public&nbsp;void&nbsp;setSpawnLocation(boolean&nbsp;setBedSpawn)</pre>
 <div class="block">Set if this event should set the new spawn location for the
  <a href="../../../../org/bukkit/entity/Player.html" title="interface in org.bukkit.entity"><code>Player</code></a>.
  <br>

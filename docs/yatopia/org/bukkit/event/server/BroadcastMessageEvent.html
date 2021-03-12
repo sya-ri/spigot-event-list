@@ -17,8 +17,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
-var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var methods = {"i0":9,"i1":10,"i2":42,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":42};
+var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -163,9 +163,22 @@ implements <a href="../../../../org/bukkit/event/Cancellable.html" title="interf
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/server/BroadcastMessageEvent.html#BroadcastMessageEvent-boolean-net.kyori.adventure.text.Component-java.util.Set-">BroadcastMessageEvent</a></span>(boolean&nbsp;isAsync,
+                     net.kyori.adventure.text.Component&nbsp;message,
+                     java.util.Set&lt;<a href="../../../../org/bukkit/command/CommandSender.html" title="interface in org.bukkit.command">CommandSender</a>&gt;&nbsp;recipients)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/server/BroadcastMessageEvent.html#BroadcastMessageEvent-boolean-java.lang.String-java.util.Set-">BroadcastMessageEvent</a></span>(boolean&nbsp;isAsync,
                      java.lang.String&nbsp;message,
-                     java.util.Set&lt;<a href="../../../../org/bukkit/command/CommandSender.html" title="interface in org.bukkit.command">CommandSender</a>&gt;&nbsp;recipients)</code>&nbsp;</td>
+                     java.util.Set&lt;<a href="../../../../org/bukkit/command/CommandSender.html" title="interface in org.bukkit.command">CommandSender</a>&gt;&nbsp;recipients)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/server/BroadcastMessageEvent.html#BroadcastMessageEvent-net.kyori.adventure.text.Component-java.util.Set-">BroadcastMessageEvent</a></span>(net.kyori.adventure.text.Component&nbsp;message,
+                     java.util.Set&lt;<a href="../../../../org/bukkit/command/CommandSender.html" title="interface in org.bukkit.command">CommandSender</a>&gt;&nbsp;recipients)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/server/BroadcastMessageEvent.html#BroadcastMessageEvent-java.lang.String-java.util.Set-">BroadcastMessageEvent</a></span>(java.lang.String&nbsp;message,
@@ -183,7 +196,7 @@ implements <a href="../../../../org/bukkit/event/Cancellable.html" title="interf
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">Deprecated Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
@@ -199,7 +212,9 @@ implements <a href="../../../../org/bukkit/event/Cancellable.html" title="interf
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/server/BroadcastMessageEvent.html#getMessage--">getMessage</a></span>()</code>
-<div class="block">Get the message to broadcast.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">in favour of <a href="../../../../org/bukkit/event/server/BroadcastMessageEvent.html#message--"><code>message()</code></a></span></div>
+</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -215,15 +230,29 @@ implements <a href="../../../../org/bukkit/event/Cancellable.html" title="interf
 </td>
 </tr>
 <tr id="i5" class="rowColor">
+<td class="colFirst"><code>net.kyori.adventure.text.Component</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/server/BroadcastMessageEvent.html#message--">message</a></span>()</code>
+<div class="block">Get the broadcast message.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/server/BroadcastMessageEvent.html#message-net.kyori.adventure.text.Component-">message</a></span>(net.kyori.adventure.text.Component&nbsp;message)</code>
+<div class="block">Set the broadcast message.</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/server/BroadcastMessageEvent.html#setCancelled-boolean-">setCancelled</a></span>(boolean&nbsp;cancelled)</code>
 <div class="block">Sets the cancellation state of this event.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/server/BroadcastMessageEvent.html#setMessage-java.lang.String-">setMessage</a></span>(java.lang.String&nbsp;message)</code>
-<div class="block">Set the message to broadcast.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">in favour of <a href="../../../../org/bukkit/event/server/BroadcastMessageEvent.html#message-net.kyori.adventure.text.Component-"><code>message(net.kyori.adventure.text.Component)</code></a></span></div>
+</div>
 </td>
 </tr>
 </table>
@@ -272,12 +301,41 @@ public&nbsp;BroadcastMessageEvent(@NotNull
 <a name="BroadcastMessageEvent-boolean-java.lang.String-java.util.Set-">
 <!--   -->
 </a>
+<ul class="blockList">
+<li class="blockList">
+<h4>BroadcastMessageEvent</h4>
+<pre>@Deprecated
+public&nbsp;BroadcastMessageEvent(boolean&nbsp;isAsync,
+                                         @NotNull
+                                         java.lang.String&nbsp;message,
+                                         @NotNull
+                                         java.util.Set&lt;<a href="../../../../org/bukkit/command/CommandSender.html" title="interface in org.bukkit.command">CommandSender</a>&gt;&nbsp;recipients)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+</li>
+</ul>
+<a name="BroadcastMessageEvent-net.kyori.adventure.text.Component-java.util.Set-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>BroadcastMessageEvent</h4>
+<pre>@Deprecated
+public&nbsp;BroadcastMessageEvent(@NotNull
+                                         net.kyori.adventure.text.Component&nbsp;message,
+                                         @NotNull
+                                         java.util.Set&lt;<a href="../../../../org/bukkit/command/CommandSender.html" title="interface in org.bukkit.command">CommandSender</a>&gt;&nbsp;recipients)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+</li>
+</ul>
+<a name="BroadcastMessageEvent-boolean-net.kyori.adventure.text.Component-java.util.Set-">
+<!--   -->
+</a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>BroadcastMessageEvent</h4>
 <pre>public&nbsp;BroadcastMessageEvent(boolean&nbsp;isAsync,
                              @NotNull
-                             java.lang.String&nbsp;message,
+                             net.kyori.adventure.text.Component&nbsp;message,
                              @NotNull
                              java.util.Set&lt;<a href="../../../../org/bukkit/command/CommandSender.html" title="interface in org.bukkit.command">CommandSender</a>&gt;&nbsp;recipients)</pre>
 </li>
@@ -290,6 +348,36 @@ public&nbsp;BroadcastMessageEvent(@NotNull
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="message--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>message</h4>
+<pre>@NotNull
+public&nbsp;net.kyori.adventure.text.Component&nbsp;message()</pre>
+<div class="block">Get the broadcast message.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Message to broadcast</dd>
+</dl>
+</li>
+</ul>
+<a name="message-net.kyori.adventure.text.Component-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>message</h4>
+<pre>public&nbsp;void&nbsp;message(@NotNull
+                    net.kyori.adventure.text.Component&nbsp;message)</pre>
+<div class="block">Set the broadcast message.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>message</code> - New message to broadcast</dd>
+</dl>
+</li>
+</ul>
 <a name="getMessage--">
 <!--   -->
 </a>
@@ -297,7 +385,9 @@ public&nbsp;BroadcastMessageEvent(@NotNull
 <li class="blockList">
 <h4>getMessage</h4>
 <pre>@NotNull
+ @Deprecated
 public&nbsp;java.lang.String&nbsp;getMessage()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">in favour of <a href="../../../../org/bukkit/event/server/BroadcastMessageEvent.html#message--"><code>message()</code></a></span></div>
 <div class="block">Get the message to broadcast.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -311,8 +401,10 @@ public&nbsp;java.lang.String&nbsp;getMessage()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>setMessage</h4>
-<pre>public&nbsp;void&nbsp;setMessage(@NotNull
-                       java.lang.String&nbsp;message)</pre>
+<pre>@Deprecated
+public&nbsp;void&nbsp;setMessage(@NotNull
+                                   java.lang.String&nbsp;message)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">in favour of <a href="../../../../org/bukkit/event/server/BroadcastMessageEvent.html#message-net.kyori.adventure.text.Component-"><code>message(net.kyori.adventure.text.Component)</code></a></span></div>
 <div class="block">Set the message to broadcast.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

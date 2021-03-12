@@ -176,7 +176,7 @@ implements <a href="../../../../com/destroystokyo/paper/util/VersionFetcher.html
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>java.lang.String</code></td>
+<td class="colFirst"><code>net.kyori.adventure.text.Component</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/destroystokyo/paper/util/VersionFetcher.DummyVersionFetcher.html#getVersionMessage-java.lang.String-">getVersionMessage</a></span>(java.lang.String&nbsp;serverVersion)</code>
 <div class="block">Gets the version message to cache and show to command senders.</div>
 </td>
@@ -246,13 +246,12 @@ implements <a href="../../../../com/destroystokyo/paper/util/VersionFetcher.html
 <li class="blockList">
 <h4>getVersionMessage</h4>
 <pre>@NotNull
-public&nbsp;java.lang.String&nbsp;getVersionMessage(@NotNull
-                                                   java.lang.String&nbsp;serverVersion)</pre>
+public&nbsp;net.kyori.adventure.text.Component&nbsp;getVersionMessage(@NotNull
+                                                                     java.lang.String&nbsp;serverVersion)</pre>
 <div class="block"><span class="descfrmTypeLabel">Description copied from interface:&nbsp;<code><a href="../../../../com/destroystokyo/paper/util/VersionFetcher.html#getVersionMessage-java.lang.String-">VersionFetcher</a></code></span></div>
-<div class="block">Gets the version message to cache and show to command senders. Multiple messages can be sent using newlines (\n)
- in the string. The string will be split on these newlines and sent as individual messages.
- <p>
- NOTE: This is run in a new thread separate from that of the command processing thread</div>
+<div class="block">Gets the version message to cache and show to command senders.
+
+ <p>NOTE: This is run in a new thread separate from that of the command processing thread</p></div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
 <dd><code><a href="../../../../com/destroystokyo/paper/util/VersionFetcher.html#getVersionMessage-java.lang.String-">getVersionMessage</a></code>&nbsp;in interface&nbsp;<code><a href="../../../../com/destroystokyo/paper/util/VersionFetcher.html" title="interface in com.destroystokyo.paper.util">VersionFetcher</a></code></dd>

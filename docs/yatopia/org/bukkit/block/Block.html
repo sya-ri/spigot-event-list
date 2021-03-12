@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":18,"i7":17,"i8":17,"i9":17,"i10":17,"i11":6,"i12":6,"i13":6,"i14":6,"i15":38,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6,"i22":6,"i23":6,"i24":6,"i25":6,"i26":6,"i27":6,"i28":6,"i29":6,"i30":6,"i31":6,"i32":6,"i33":6,"i34":6,"i35":6,"i36":6,"i37":6,"i38":6,"i39":6,"i40":6,"i41":6,"i42":6,"i43":6,"i44":6,"i45":6,"i46":6,"i47":6,"i48":6,"i49":6,"i50":6,"i51":6,"i52":6,"i53":6,"i54":6,"i55":6,"i56":6,"i57":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":18,"i7":17,"i8":17,"i9":17,"i10":17,"i11":6,"i12":6,"i13":6,"i14":6,"i15":38,"i16":18,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6,"i22":6,"i23":6,"i24":6,"i25":6,"i26":6,"i27":6,"i28":6,"i29":6,"i30":6,"i31":6,"i32":6,"i33":6,"i34":6,"i35":6,"i36":6,"i37":6,"i38":6,"i39":6,"i40":6,"i41":6,"i42":6,"i43":6,"i44":6,"i45":6,"i46":6,"i47":6,"i48":6,"i49":6,"i50":6,"i51":6,"i52":6,"i53":6,"i54":6,"i55":6,"i56":6,"i57":6,"i58":6,"i59":6};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -237,25 +237,32 @@ extends <a href="../../../org/bukkit/metadata/Metadatable.html" title="interface
 </td>
 </tr>
 <tr id="i16" class="altColor">
-<td class="colFirst"><code>float</code></td>
+<td class="colFirst"><code>default float</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Block.html#getDestroySpeed-org.bukkit.inventory.ItemStack-">getDestroySpeed</a></span>(<a href="../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&nbsp;itemStack)</code>
 <div class="block">Gets the speed at which this block will be destroyed by a given <a href="../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory"><code>ItemStack</code></a></div>
 </td>
 </tr>
 <tr id="i17" class="rowColor">
+<td class="colFirst"><code>float</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Block.html#getDestroySpeed-org.bukkit.inventory.ItemStack-boolean-">getDestroySpeed</a></span>(<a href="../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&nbsp;itemStack,
+               boolean&nbsp;considerEnchants)</code>
+<div class="block">Gets the speed at which this blook will be destroyed by a given <a href="../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory"><code>ItemStack</code></a></div>
+</td>
+</tr>
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>java.util.Collection&lt;<a href="../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Block.html#getDrops--">getDrops</a></span>()</code>
 <div class="block">Returns a list of items which would drop by destroying this block</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>java.util.Collection&lt;<a href="../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Block.html#getDrops-org.bukkit.inventory.ItemStack-">getDrops</a></span>(<a href="../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&nbsp;tool)</code>
 <div class="block">Returns a list of items which would drop by destroying this block with
  a specific tool</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>java.util.Collection&lt;<a href="../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Block.html#getDrops-org.bukkit.inventory.ItemStack-org.bukkit.entity.Entity-">getDrops</a></span>(<a href="../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&nbsp;tool,
         <a href="../../../org/bukkit/entity/Entity.html" title="interface in org.bukkit.entity">Entity</a>&nbsp;entity)</code>
@@ -263,68 +270,68 @@ extends <a href="../../../org/bukkit/metadata/Metadatable.html" title="interface
  block with a specific tool</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/block/BlockFace.html" title="enum in org.bukkit.block">BlockFace</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Block.html#getFace-org.bukkit.block.Block-">getFace</a></span>(<a href="../../../org/bukkit/block/Block.html" title="interface in org.bukkit.block">Block</a>&nbsp;block)</code>
 <div class="block">Gets the face relation of this block compared to the given block.</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Block.html#getHumidity--">getHumidity</a></span>()</code>
 <div class="block">Gets the humidity of the biome of this block</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>byte</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Block.html#getLightFromBlocks--">getLightFromBlocks</a></span>()</code>
 <div class="block">Get the amount of light at this block from nearby blocks.</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>byte</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Block.html#getLightFromSky--">getLightFromSky</a></span>()</code>
 <div class="block">Get the amount of light at this block from the sky.</div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>byte</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Block.html#getLightLevel--">getLightLevel</a></span>()</code>
 <div class="block">Gets the light level between 0-15</div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/Location.html" title="class in org.bukkit">Location</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Block.html#getLocation--">getLocation</a></span>()</code>
 <div class="block">Gets the Location of the block</div>
 </td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/Location.html" title="class in org.bukkit">Location</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Block.html#getLocation-org.bukkit.Location-">getLocation</a></span>(<a href="../../../org/bukkit/Location.html" title="class in org.bukkit">Location</a>&nbsp;loc)</code>
 <div class="block">Stores the location of the block in the provided Location object.</div>
 </td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/block/PistonMoveReaction.html" title="enum in org.bukkit.block">PistonMoveReaction</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Block.html#getPistonMoveReaction--">getPistonMoveReaction</a></span>()</code>
 <div class="block">Returns the reaction of the block when moved by a piston</div>
 </td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/block/Block.html" title="interface in org.bukkit.block">Block</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Block.html#getRelative-org.bukkit.block.BlockFace-">getRelative</a></span>(<a href="../../../org/bukkit/block/BlockFace.html" title="enum in org.bukkit.block">BlockFace</a>&nbsp;face)</code>
 <div class="block">Gets the block at the given face</div>
 </td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/block/Block.html" title="interface in org.bukkit.block">Block</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Block.html#getRelative-org.bukkit.block.BlockFace-int-">getRelative</a></span>(<a href="../../../org/bukkit/block/BlockFace.html" title="enum in org.bukkit.block">BlockFace</a>&nbsp;face,
            int&nbsp;distance)</code>
 <div class="block">Gets the block at the given distance of the given face</div>
 </td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/block/Block.html" title="interface in org.bukkit.block">Block</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Block.html#getRelative-int-int-int-">getRelative</a></span>(int&nbsp;modX,
            int&nbsp;modY,
@@ -332,132 +339,139 @@ extends <a href="../../../org/bukkit/metadata/Metadatable.html" title="interface
 <div class="block">Gets the block at the given offsets</div>
 </td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code><a href="../../../com/destroystokyo/paper/block/BlockSoundGroup.html" title="interface in com.destroystokyo.paper.block">BlockSoundGroup</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Block.html#getSoundGroup--">getSoundGroup</a></span>()</code>
 <div class="block">Gets the <a href="../../../com/destroystokyo/paper/block/BlockSoundGroup.html" title="interface in com.destroystokyo.paper.block"><code>BlockSoundGroup</code></a> for this block.</div>
 </td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/block/BlockState.html" title="interface in org.bukkit.block">BlockState</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Block.html#getState--">getState</a></span>()</code>
 <div class="block">Captures the current state of this block.</div>
 </td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/block/BlockState.html" title="interface in org.bukkit.block">BlockState</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Block.html#getState-boolean-">getState</a></span>(boolean&nbsp;useSnapshot)</code>&nbsp;</td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Block.html#getTemperature--">getTemperature</a></span>()</code>
 <div class="block">Gets the temperature of this block.</div>
 </td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i36" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Block.html#getTranslationKey--">getTranslationKey</a></span>()</code>
 <div class="block">Return the translation key for the Block, so the client can translate it into the active
  locale when using a TranslatableComponent.</div>
 </td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/Material.html" title="enum in org.bukkit">Material</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Block.html#getType--">getType</a></span>()</code>
 <div class="block">Gets the type of this block</div>
 </td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i38" class="altColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/World.html" title="interface in org.bukkit">World</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Block.html#getWorld--">getWorld</a></span>()</code>
 <div class="block">Gets the world which contains this Block</div>
 </td>
 </tr>
-<tr id="i38" class="altColor">
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Block.html#getX--">getX</a></span>()</code>
 <div class="block">Gets the x-coordinate of this block</div>
 </td>
 </tr>
-<tr id="i39" class="rowColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Block.html#getY--">getY</a></span>()</code>
 <div class="block">Gets the y-coordinate of this block</div>
 </td>
 </tr>
-<tr id="i40" class="altColor">
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Block.html#getZ--">getZ</a></span>()</code>
 <div class="block">Gets the z-coordinate of this block</div>
 </td>
 </tr>
-<tr id="i41" class="rowColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Block.html#isBlockFaceIndirectlyPowered-org.bukkit.block.BlockFace-">isBlockFaceIndirectlyPowered</a></span>(<a href="../../../org/bukkit/block/BlockFace.html" title="enum in org.bukkit.block">BlockFace</a>&nbsp;face)</code>
 <div class="block">Returns true if the block face is being indirectly powered by Redstone.</div>
 </td>
 </tr>
-<tr id="i42" class="altColor">
+<tr id="i43" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Block.html#isBlockFacePowered-org.bukkit.block.BlockFace-">isBlockFacePowered</a></span>(<a href="../../../org/bukkit/block/BlockFace.html" title="enum in org.bukkit.block">BlockFace</a>&nbsp;face)</code>
 <div class="block">Returns true if the block face is being powered by Redstone.</div>
 </td>
 </tr>
-<tr id="i43" class="rowColor">
+<tr id="i44" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Block.html#isBlockIndirectlyPowered--">isBlockIndirectlyPowered</a></span>()</code>
 <div class="block">Returns true if the block is being indirectly powered by Redstone.</div>
 </td>
 </tr>
-<tr id="i44" class="altColor">
+<tr id="i45" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Block.html#isBlockPowered--">isBlockPowered</a></span>()</code>
 <div class="block">Returns true if the block is being powered by Redstone.</div>
 </td>
 </tr>
-<tr id="i45" class="rowColor">
+<tr id="i46" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Block.html#isBuildable--">isBuildable</a></span>()</code>
 <div class="block">Check if this block is solid</div>
 </td>
 </tr>
-<tr id="i46" class="altColor">
+<tr id="i47" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Block.html#isBurnable--">isBurnable</a></span>()</code>
 <div class="block">Check if this block is burnable</div>
 </td>
 </tr>
-<tr id="i47" class="rowColor">
+<tr id="i48" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Block.html#isEmpty--">isEmpty</a></span>()</code>
 <div class="block">Checks if this block is empty.</div>
 </td>
 </tr>
-<tr id="i48" class="altColor">
+<tr id="i49" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Block.html#isLiquid--">isLiquid</a></span>()</code>
 <div class="block">Checks if this block is liquid.</div>
 </td>
 </tr>
-<tr id="i49" class="rowColor">
+<tr id="i50" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Block.html#isPassable--">isPassable</a></span>()</code>
 <div class="block">Checks if this block is passable.</div>
 </td>
 </tr>
-<tr id="i50" class="altColor">
+<tr id="i51" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Block.html#isReplaceable--">isReplaceable</a></span>()</code>
 <div class="block">Check if this block is replaceable</div>
 </td>
 </tr>
-<tr id="i51" class="rowColor">
+<tr id="i52" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Block.html#isSolid--">isSolid</a></span>()</code>
 <div class="block">Check if this block is solid</div>
 </td>
 </tr>
-<tr id="i52" class="altColor">
+<tr id="i53" class="rowColor">
+<td class="colFirst"><code>boolean</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Block.html#isValidTool-org.bukkit.inventory.ItemStack-">isValidTool</a></span>(<a href="../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&nbsp;itemStack)</code>
+<div class="block">Checks if the itemstack is a valid tool to
+ break the block with</div>
+</td>
+</tr>
+<tr id="i54" class="altColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/util/RayTraceResult.html" title="class in org.bukkit.util">RayTraceResult</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Block.html#rayTrace-org.bukkit.Location-org.bukkit.util.Vector-double-org.bukkit.FluidCollisionMode-">rayTrace</a></span>(<a href="../../../org/bukkit/Location.html" title="class in org.bukkit">Location</a>&nbsp;start,
         <a href="../../../org/bukkit/util/Vector.html" title="class in org.bukkit.util">Vector</a>&nbsp;direction,
@@ -467,19 +481,19 @@ extends <a href="../../../org/bukkit/metadata/Metadatable.html" title="interface
  in its current state using its precise collision shape.</div>
 </td>
 </tr>
-<tr id="i53" class="rowColor">
+<tr id="i55" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Block.html#setBiome-org.bukkit.block.Biome-">setBiome</a></span>(<a href="../../../org/bukkit/block/Biome.html" title="enum in org.bukkit.block">Biome</a>&nbsp;bio)</code>
 <div class="block">Sets the biome that this block resides in</div>
 </td>
 </tr>
-<tr id="i54" class="altColor">
+<tr id="i56" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Block.html#setBlockData-org.bukkit.block.data.BlockData-">setBlockData</a></span>(<a href="../../../org/bukkit/block/data/BlockData.html" title="interface in org.bukkit.block.data">BlockData</a>&nbsp;data)</code>
 <div class="block">Sets the complete data for this block</div>
 </td>
 </tr>
-<tr id="i55" class="rowColor">
+<tr id="i57" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Block.html#setBlockData-org.bukkit.block.data.BlockData-boolean-">setBlockData</a></span>(<a href="../../../org/bukkit/block/data/BlockData.html" title="interface in org.bukkit.block.data">BlockData</a>&nbsp;data,
             boolean&nbsp;applyPhysics)</code>
@@ -489,13 +503,13 @@ extends <a href="../../../org/bukkit/metadata/Metadatable.html" title="interface
  Note that applyPhysics = false is not in general safe.</div>
 </td>
 </tr>
-<tr id="i56" class="altColor">
+<tr id="i58" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Block.html#setType-org.bukkit.Material-">setType</a></span>(<a href="../../../org/bukkit/Material.html" title="enum in org.bukkit">Material</a>&nbsp;type)</code>
 <div class="block">Sets the type of this block</div>
 </td>
 </tr>
-<tr id="i57" class="rowColor">
+<tr id="i59" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/block/Block.html#setType-org.bukkit.Material-boolean-">setType</a></span>(<a href="../../../org/bukkit/Material.html" title="enum in org.bukkit">Material</a>&nbsp;type,
        boolean&nbsp;applyPhysics)</code>
@@ -852,6 +866,24 @@ byte&nbsp;getData()</pre>
 <dd>The z component from the packed value.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
 <dd><a href="../../../org/bukkit/block/Block.html#getBlockKey-int-int-int-"><code>getBlockKey(int, int, int)</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="isValidTool-org.bukkit.inventory.ItemStack-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>isValidTool</h4>
+<pre>boolean&nbsp;isValidTool(@NotNull
+                    <a href="../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&nbsp;itemStack)</pre>
+<div class="block">Checks if the itemstack is a valid tool to
+ break the block with</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>itemStack</code> - The (tool) itemstack</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>whether the block will drop items</dd>
 </dl>
 </li>
 </ul>
@@ -1565,18 +1597,40 @@ java.lang.String&nbsp;getTranslationKey()</pre>
 <a name="getDestroySpeed-org.bukkit.inventory.ItemStack-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getDestroySpeed</h4>
 <pre>@NotNull
-float&nbsp;getDestroySpeed(@NotNull
-                               <a href="../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&nbsp;itemStack)</pre>
+default&nbsp;float&nbsp;getDestroySpeed(@NotNull
+                                       <a href="../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&nbsp;itemStack)</pre>
 <div class="block">Gets the speed at which this block will be destroyed by a given <a href="../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory"><code>ItemStack</code></a>
 
  <p>Default value is 1.0</p></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>itemStack</code> - <a href="../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory"><code>ItemStack</code></a> used to mine this Block</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the speed that this Block will be mined by the given <a href="../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory"><code>ItemStack</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="getDestroySpeed-org.bukkit.inventory.ItemStack-boolean-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>getDestroySpeed</h4>
+<pre>@NotNull
+float&nbsp;getDestroySpeed(@NotNull
+                               <a href="../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&nbsp;itemStack,
+                               boolean&nbsp;considerEnchants)</pre>
+<div class="block">Gets the speed at which this blook will be destroyed by a given <a href="../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory"><code>ItemStack</code></a>
+ <p>
+ Default value is 1.0</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>itemStack</code> - <a href="../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory"><code>ItemStack</code></a> used to mine this Block</dd>
+<dd><code>considerEnchants</code> - true to look at enchants on the itemstack</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the speed that this Block will be mined by the given <a href="../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory"><code>ItemStack</code></a></dd>
 </dl>

@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -124,12 +124,24 @@ var activeTableTab = "activeTableTab";
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>net.kyori.adventure.text.Component</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Nameable.html#customName--">customName</a></span>()</code>
+<div class="block">Gets the custom name.</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Nameable.html#customName-net.kyori.adventure.text.Component-">customName</a></span>(net.kyori.adventure.text.Component&nbsp;customName)</code>
+<div class="block">Sets the custom name.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Nameable.html#getCustomName--">getCustomName</a></span>()</code>
 <div class="block">Gets the custom name on a mob or block.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Nameable.html#setCustomName-java.lang.String-">setCustomName</a></span>(java.lang.String&nbsp;name)</code>
 <div class="block">Sets a custom name on a mob or block.</div>
@@ -150,6 +162,44 @@ var activeTableTab = "activeTableTab";
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="customName--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>customName</h4>
+<pre>@Nullable
+net.kyori.adventure.text.Component&nbsp;customName()</pre>
+<div class="block">Gets the custom name.
+
+ <p>This value has no effect on players, they will always use their real name.</p></div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the custom name</dd>
+</dl>
+</li>
+</ul>
+<a name="customName-net.kyori.adventure.text.Component-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>customName</h4>
+<pre>void&nbsp;customName(@Nullable
+                net.kyori.adventure.text.Component&nbsp;customName)</pre>
+<div class="block">Sets the custom name.
+
+ <p>This name will be used in death messages and can be sent to the client as a nameplate over the mob.</p>
+
+ <p>Setting the name to <code>null</code> will clear it.</p>
+
+ <p>This value has no effect on players, they will always use their real name.</p></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>customName</code> - the custom name to set</dd>
+</dl>
+</li>
+</ul>
 <a name="getCustomName--">
 <!--   -->
 </a>

@@ -292,7 +292,7 @@ var activeTableTab = "activeTableTab";
 <pre>@Nullable
 &lt;T&gt;&nbsp;T&nbsp;load(@NotNull
                      java.lang.Class&lt;T&gt;&nbsp;service)</pre>
-<div class="block">Queries for a provider. This may return if no provider has been
+<div class="block">Queries for a provider. This may return null if no provider has been
  registered for a service. The highest priority provider is returned.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>
@@ -313,7 +313,7 @@ var activeTableTab = "activeTableTab";
 <pre>@Nullable
 &lt;T&gt;&nbsp;<a href="../../../org/bukkit/plugin/RegisteredServiceProvider.html" title="class in org.bukkit.plugin">RegisteredServiceProvider</a>&lt;T&gt;&nbsp;getRegistration(@NotNull
                                                            java.lang.Class&lt;T&gt;&nbsp;service)</pre>
-<div class="block">Queries for a provider registration. This may return if no provider
+<div class="block">Queries for a provider registration. This may return null if no provider
  has been registered for a service.</div>
 <dl>
 <dt><span class="paramLabel">Type Parameters:</span></dt>

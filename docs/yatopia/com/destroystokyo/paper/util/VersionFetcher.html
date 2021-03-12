@@ -151,7 +151,7 @@ var activeTableTab = "activeTableTab";
 </td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>java.lang.String</code></td>
+<td class="colFirst"><code>net.kyori.adventure.text.Component</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../com/destroystokyo/paper/util/VersionFetcher.html#getVersionMessage-java.lang.String-">getVersionMessage</a></span>(java.lang.String&nbsp;serverVersion)</code>
 <div class="block">Gets the version message to cache and show to command senders.</div>
 </td>
@@ -194,12 +194,11 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <h4>getVersionMessage</h4>
 <pre>@NotNull
-java.lang.String&nbsp;getVersionMessage(@NotNull
-                                            java.lang.String&nbsp;serverVersion)</pre>
-<div class="block">Gets the version message to cache and show to command senders. Multiple messages can be sent using newlines (\n)
- in the string. The string will be split on these newlines and sent as individual messages.
- <p>
- NOTE: This is run in a new thread separate from that of the command processing thread</div>
+net.kyori.adventure.text.Component&nbsp;getVersionMessage(@NotNull
+                                                              java.lang.String&nbsp;serverVersion)</pre>
+<div class="block">Gets the version message to cache and show to command senders.
+
+ <p>NOTE: This is run in a new thread separate from that of the command processing thread</p></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>serverVersion</code> - the current version of the server (will match <a href="../../../../org/bukkit/Bukkit.html#getVersion--"><code>Bukkit.getVersion()</code></a>)</dd>

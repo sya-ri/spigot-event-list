@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":42,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":42,"i8":42,"i9":10,"i10":10,"i11":42};
+var methods = {"i0":42,"i1":10,"i2":10,"i3":10,"i4":10,"i5":42,"i6":42,"i7":42,"i8":42,"i9":42,"i10":42,"i11":42};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -193,13 +193,13 @@ extends <a href="../../../org/bukkit/entity/Entity.Spigot.html" title="class in 
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/Player.Spigot.html#sendMessage-net.md_5.bungee.api.chat.BaseComponent...-">sendMessage</a></span>(net.md_5.bungee.api.chat.BaseComponent...&nbsp;components)</code>
-<div class="block">Sends an array of components as a single message to the sender.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/Player.Spigot.html#sendMessage-net.md_5.bungee.api.chat.BaseComponent-">sendMessage</a></span>(net.md_5.bungee.api.chat.BaseComponent&nbsp;component)</code>
-<div class="block">Sends this sender a chat component.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
@@ -225,7 +225,9 @@ extends <a href="../../../org/bukkit/entity/Entity.Spigot.html" title="class in 
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/Player.Spigot.html#sendMessage-net.md_5.bungee.api.ChatMessageType-java.util.UUID-net.md_5.bungee.api.chat.BaseComponent...-">sendMessage</a></span>(net.md_5.bungee.api.ChatMessageType&nbsp;position,
            java.util.UUID&nbsp;sender,
            net.md_5.bungee.api.chat.BaseComponent...&nbsp;components)</code>
-<div class="block">Sends an array of components as a single message to the specified screen position of this player</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">use <code>sendMessage</code> methods that accept <code>Component</code></span></div>
+</div>
 </td>
 </tr>
 <tr id="i10" class="altColor">
@@ -233,7 +235,9 @@ extends <a href="../../../org/bukkit/entity/Entity.Spigot.html" title="class in 
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/Player.Spigot.html#sendMessage-net.md_5.bungee.api.ChatMessageType-java.util.UUID-net.md_5.bungee.api.chat.BaseComponent-">sendMessage</a></span>(net.md_5.bungee.api.ChatMessageType&nbsp;position,
            java.util.UUID&nbsp;sender,
            net.md_5.bungee.api.chat.BaseComponent&nbsp;component)</code>
-<div class="block">Sends the component to the specified screen position of this player</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">use <code>sendMessage</code> methods that accept <code>Component</code></span></div>
+</div>
 </td>
 </tr>
 <tr id="i11" class="rowColor">
@@ -370,8 +374,10 @@ public&nbsp;java.util.Set&lt;<a href="../../../org/bukkit/entity/Player.html" ti
 <ul class="blockList">
 <li class="blockList">
 <h4>sendMessage</h4>
-<pre>public&nbsp;void&nbsp;sendMessage(@NotNull
-                        net.md_5.bungee.api.chat.BaseComponent&nbsp;component)</pre>
+<pre>@Deprecated
+public&nbsp;void&nbsp;sendMessage(@NotNull
+                                    net.md_5.bungee.api.chat.BaseComponent&nbsp;component)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../org/bukkit/command/CommandSender.Spigot.html#sendMessage-net.md_5.bungee.api.chat.BaseComponent-">CommandSender.Spigot</a></code></span></div>
 <div class="block">Sends this sender a chat component.</div>
 <dl>
@@ -388,8 +394,10 @@ public&nbsp;java.util.Set&lt;<a href="../../../org/bukkit/entity/Player.html" ti
 <ul class="blockList">
 <li class="blockList">
 <h4>sendMessage</h4>
-<pre>public&nbsp;void&nbsp;sendMessage(@NotNull
-                        net.md_5.bungee.api.chat.BaseComponent...&nbsp;components)</pre>
+<pre>@Deprecated
+public&nbsp;void&nbsp;sendMessage(@NotNull
+                                    net.md_5.bungee.api.chat.BaseComponent...&nbsp;components)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block"><span class="descfrmTypeLabel">Description copied from class:&nbsp;<code><a href="../../../org/bukkit/command/CommandSender.Spigot.html#sendMessage-net.md_5.bungee.api.chat.BaseComponent...-">CommandSender.Spigot</a></code></span></div>
 <div class="block">Sends an array of components as a single message to the sender.</div>
 <dl>
@@ -446,12 +454,14 @@ public&nbsp;void&nbsp;sendMessage(@NotNull
 <ul class="blockList">
 <li class="blockList">
 <h4>sendMessage</h4>
-<pre>public&nbsp;void&nbsp;sendMessage(@NotNull
-                        net.md_5.bungee.api.ChatMessageType&nbsp;position,
-                        @Nullable
-                        java.util.UUID&nbsp;sender,
-                        @NotNull
-                        net.md_5.bungee.api.chat.BaseComponent&nbsp;component)</pre>
+<pre>@Deprecated
+public&nbsp;void&nbsp;sendMessage(@NotNull
+                                    net.md_5.bungee.api.ChatMessageType&nbsp;position,
+                                    @Nullable
+                                    java.util.UUID&nbsp;sender,
+                                    @NotNull
+                                    net.md_5.bungee.api.chat.BaseComponent&nbsp;component)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">use <code>sendMessage</code> methods that accept <code>Component</code></span></div>
 <div class="block">Sends the component to the specified screen position of this player</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -467,12 +477,14 @@ public&nbsp;void&nbsp;sendMessage(@NotNull
 <ul class="blockList">
 <li class="blockList">
 <h4>sendMessage</h4>
-<pre>public&nbsp;void&nbsp;sendMessage(@NotNull
-                        net.md_5.bungee.api.ChatMessageType&nbsp;position,
-                        @Nullable
-                        java.util.UUID&nbsp;sender,
-                        @NotNull
-                        net.md_5.bungee.api.chat.BaseComponent...&nbsp;components)</pre>
+<pre>@Deprecated
+public&nbsp;void&nbsp;sendMessage(@NotNull
+                                    net.md_5.bungee.api.ChatMessageType&nbsp;position,
+                                    @Nullable
+                                    java.util.UUID&nbsp;sender,
+                                    @NotNull
+                                    net.md_5.bungee.api.chat.BaseComponent...&nbsp;components)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">use <code>sendMessage</code> methods that accept <code>Component</code></span></div>
 <div class="block">Sends an array of components as a single message to the specified screen position of this player</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

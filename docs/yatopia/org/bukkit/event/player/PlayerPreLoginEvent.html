@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":42,"i1":42,"i2":42,"i3":41,"i4":42,"i5":42,"i6":42,"i7":42,"i8":42,"i9":42,"i10":42};
+var methods = {"i0":42,"i1":42,"i2":42,"i3":42,"i4":41,"i5":42,"i6":42,"i7":42,"i8":42,"i9":42,"i10":42,"i11":42,"i12":42,"i13":42};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -196,68 +196,93 @@ extends <a href="../../../../org/bukkit/event/Event.html" title="class in org.bu
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/player/PlayerPreLoginEvent.html#disallow-org.bukkit.event.player.PlayerPreLoginEvent.Result-java.lang.String-">disallow</a></span>(<a href="../../../../org/bukkit/event/player/PlayerPreLoginEvent.Result.html" title="enum in org.bukkit.event.player">PlayerPreLoginEvent.Result</a>&nbsp;result,
-        java.lang.String&nbsp;message)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/player/PlayerPreLoginEvent.html#disallow-org.bukkit.event.player.PlayerPreLoginEvent.Result-net.kyori.adventure.text.Component-">disallow</a></span>(<a href="../../../../org/bukkit/event/player/PlayerPreLoginEvent.Result.html" title="enum in org.bukkit.event.player">PlayerPreLoginEvent.Result</a>&nbsp;result,
+        net.kyori.adventure.text.Component&nbsp;message)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">Disallows the player from logging in, with the given reason</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/player/PlayerPreLoginEvent.html#disallow-org.bukkit.event.player.PlayerPreLoginEvent.Result-java.lang.String-">disallow</a></span>(<a href="../../../../org/bukkit/event/player/PlayerPreLoginEvent.Result.html" title="enum in org.bukkit.event.player">PlayerPreLoginEvent.Result</a>&nbsp;result,
+        java.lang.String&nbsp;message)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">in favour of <a href="../../../../org/bukkit/event/player/PlayerPreLoginEvent.html#disallow-org.bukkit.event.player.PlayerPreLoginEvent.Result-net.kyori.adventure.text.Component-"><code>disallow(org.bukkit.event.player.PlayerPreLoginEvent.Result, net.kyori.adventure.text.Component)</code></a></span></div>
+</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.net.InetAddress</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/player/PlayerPreLoginEvent.html#getAddress--">getAddress</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">Gets the player IP address.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>static <a href="../../../../org/bukkit/event/HandlerList.html" title="class in org.bukkit.event">HandlerList</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/player/PlayerPreLoginEvent.html#getHandlerList--">getHandlerList</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 &nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/bukkit/event/HandlerList.html" title="class in org.bukkit.event">HandlerList</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/player/PlayerPreLoginEvent.html#getHandlers--">getHandlers</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 &nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/player/PlayerPreLoginEvent.html#getKickMessage--">getKickMessage</a></span>()</code>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
-<div class="block">Gets the current kick message that will be used if getResult() !=
- Result.ALLOWED</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">in favour of <a href="../../../../org/bukkit/event/player/PlayerPreLoginEvent.html#kickMessage--"><code>kickMessage()</code></a></span></div>
+</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/player/PlayerPreLoginEvent.html#getName--">getName</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">Gets the player's name.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/bukkit/event/player/PlayerPreLoginEvent.Result.html" title="enum in org.bukkit.event.player">PlayerPreLoginEvent.Result</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/player/PlayerPreLoginEvent.html#getResult--">getResult</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">Gets the current result of the login, as an enum</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>java.util.UUID</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/player/PlayerPreLoginEvent.html#getUniqueId--">getUniqueId</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">Gets the player's unique ID.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>net.kyori.adventure.text.Component</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/player/PlayerPreLoginEvent.html#kickMessage--">kickMessage</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+<div class="block">Gets the current kick message that will be used if getResult() !=
+ Result.ALLOWED</div>
+</td>
+</tr>
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/player/PlayerPreLoginEvent.html#setKickMessage-java.lang.String-">setKickMessage</a></span>(java.lang.String&nbsp;message)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/player/PlayerPreLoginEvent.html#kickMessage-net.kyori.adventure.text.Component-">kickMessage</a></span>(net.kyori.adventure.text.Component&nbsp;message)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 <div class="block">Sets the kick message to display if getResult() != Result.ALLOWED</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i12" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/player/PlayerPreLoginEvent.html#setKickMessage-java.lang.String-">setKickMessage</a></span>(java.lang.String&nbsp;message)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">in favour of <a href="../../../../org/bukkit/event/player/PlayerPreLoginEvent.html#kickMessage-net.kyori.adventure.text.Component-"><code>kickMessage(net.kyori.adventure.text.Component)</code></a></span></div>
+</div>
+</td>
+</tr>
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/player/PlayerPreLoginEvent.html#setResult-org.bukkit.event.player.PlayerPreLoginEvent.Result-">setResult</a></span>(<a href="../../../../org/bukkit/event/player/PlayerPreLoginEvent.Result.html" title="enum in org.bukkit.event.player">PlayerPreLoginEvent.Result</a>&nbsp;result)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
@@ -362,15 +387,68 @@ public&nbsp;<a href="../../../../org/bukkit/event/player/PlayerPreLoginEvent.Res
 </dl>
 </li>
 </ul>
+<a name="kickMessage--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>kickMessage</h4>
+<pre>@NotNull
+public&nbsp;net.kyori.adventure.text.Component&nbsp;kickMessage()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+<div class="block">Gets the current kick message that will be used if getResult() !=
+ Result.ALLOWED</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Current kick message</dd>
+</dl>
+</li>
+</ul>
+<a name="kickMessage-net.kyori.adventure.text.Component-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>kickMessage</h4>
+<pre>public&nbsp;void&nbsp;kickMessage(@NotNull
+                        net.kyori.adventure.text.Component&nbsp;message)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+<div class="block">Sets the kick message to display if getResult() != Result.ALLOWED</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>message</code> - New kick message</dd>
+</dl>
+</li>
+</ul>
+<a name="disallow-org.bukkit.event.player.PlayerPreLoginEvent.Result-net.kyori.adventure.text.Component-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>disallow</h4>
+<pre>public&nbsp;void&nbsp;disallow(@NotNull
+                     <a href="../../../../org/bukkit/event/player/PlayerPreLoginEvent.Result.html" title="enum in org.bukkit.event.player">PlayerPreLoginEvent.Result</a>&nbsp;result,
+                     @NotNull
+                     net.kyori.adventure.text.Component&nbsp;message)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+<div class="block">Disallows the player from logging in, with the given reason</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>result</code> - New result for disallowing the player</dd>
+<dd><code>message</code> - Kick message to display to the user</dd>
+</dl>
+</li>
+</ul>
 <a name="getKickMessage--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getKickMessage</h4>
-<pre>@NotNull
+<pre>@Deprecated
+ @NotNull
 public&nbsp;java.lang.String&nbsp;getKickMessage()</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">in favour of <a href="../../../../org/bukkit/event/player/PlayerPreLoginEvent.html#kickMessage--"><code>kickMessage()</code></a></span></div>
 <div class="block">Gets the current kick message that will be used if getResult() !=
  Result.ALLOWED</div>
 <dl>
@@ -385,9 +463,10 @@ public&nbsp;java.lang.String&nbsp;getKickMessage()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>setKickMessage</h4>
-<pre>public&nbsp;void&nbsp;setKickMessage(@NotNull
-                           java.lang.String&nbsp;message)</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+<pre>@Deprecated
+public&nbsp;void&nbsp;setKickMessage(@NotNull
+                                       java.lang.String&nbsp;message)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">in favour of <a href="../../../../org/bukkit/event/player/PlayerPreLoginEvent.html#kickMessage-net.kyori.adventure.text.Component-"><code>kickMessage(net.kyori.adventure.text.Component)</code></a></span></div>
 <div class="block">Sets the kick message to display if getResult() != Result.ALLOWED</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -412,11 +491,12 @@ public&nbsp;java.lang.String&nbsp;getKickMessage()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>disallow</h4>
-<pre>public&nbsp;void&nbsp;disallow(@NotNull
-                     <a href="../../../../org/bukkit/event/player/PlayerPreLoginEvent.Result.html" title="enum in org.bukkit.event.player">PlayerPreLoginEvent.Result</a>&nbsp;result,
-                     @NotNull
-                     java.lang.String&nbsp;message)</pre>
-<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+<pre>@Deprecated
+public&nbsp;void&nbsp;disallow(@NotNull
+                                 <a href="../../../../org/bukkit/event/player/PlayerPreLoginEvent.Result.html" title="enum in org.bukkit.event.player">PlayerPreLoginEvent.Result</a>&nbsp;result,
+                                 @NotNull
+                                 java.lang.String&nbsp;message)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">in favour of <a href="../../../../org/bukkit/event/player/PlayerPreLoginEvent.html#disallow-org.bukkit.event.player.PlayerPreLoginEvent.Result-net.kyori.adventure.text.Component-"><code>disallow(org.bukkit.event.player.PlayerPreLoginEvent.Result, net.kyori.adventure.text.Component)</code></a></span></div>
 <div class="block">Disallows the player from logging in, with the given reason</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

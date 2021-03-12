@@ -17,8 +17,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
+var methods = {"i0":18,"i1":6,"i2":6,"i3":18};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -99,12 +99,12 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Superinterfaces:</dt>
-<dd><a href="../../../org/bukkit/command/CommandSender.html" title="interface in org.bukkit.command">CommandSender</a>, <a href="../../../org/bukkit/permissions/Permissible.html" title="interface in org.bukkit.permissions">Permissible</a>, <a href="../../../org/bukkit/permissions/ServerOperator.html" title="interface in org.bukkit.permissions">ServerOperator</a></dd>
+<dd>net.kyori.adventure.audience.Audience, <a href="../../../org/bukkit/command/CommandSender.html" title="interface in org.bukkit.command">CommandSender</a>, net.kyori.adventure.audience.ForwardingAudience, net.kyori.adventure.audience.ForwardingAudience.Single, <a href="../../../org/bukkit/permissions/Permissible.html" title="interface in org.bukkit.permissions">Permissible</a>, <a href="../../../org/bukkit/permissions/ServerOperator.html" title="interface in org.bukkit.permissions">ServerOperator</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public interface <span class="typeNameLabel">ProxiedCommandSender</span>
-extends <a href="../../../org/bukkit/command/CommandSender.html" title="interface in org.bukkit.command">CommandSender</a></pre>
+extends <a href="../../../org/bukkit/command/CommandSender.html" title="interface in org.bukkit.command">CommandSender</a>, net.kyori.adventure.audience.ForwardingAudience.Single</pre>
 </li>
 </ul>
 </div>
@@ -124,6 +124,13 @@ extends <a href="../../../org/bukkit/command/CommandSender.html" title="interfac
 <h3>Nested classes/interfaces inherited from interface&nbsp;org.bukkit.command.<a href="../../../org/bukkit/command/CommandSender.html" title="interface in org.bukkit.command">CommandSender</a></h3>
 <code><a href="../../../org/bukkit/command/CommandSender.Spigot.html" title="class in org.bukkit.command">CommandSender.Spigot</a></code></li>
 </ul>
+<ul class="blockList">
+<li class="blockList"><a name="nested.classes.inherited.from.class.net.kyori.adventure.audience.ForwardingAudience">
+<!--   -->
+</a>
+<h3>Nested classes/interfaces inherited from interface&nbsp;net.kyori.adventure.audience.ForwardingAudience</h3>
+<code>net.kyori.adventure.audience.ForwardingAudience.Single</code></li>
+</ul>
 </li>
 </ul>
 <!-- ========== METHOD SUMMARY =========== -->
@@ -133,22 +140,32 @@ extends <a href="../../../org/bukkit/command/CommandSender.html" title="interfac
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t5" class="tableTab"><span><a href="javascript:show(16);">Default Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>default net.kyori.adventure.audience.Audience</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/command/ProxiedCommandSender.html#audience--">audience</a></span>()</code>&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/command/CommandSender.html" title="interface in org.bukkit.command">CommandSender</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/command/ProxiedCommandSender.html#getCallee--">getCallee</a></span>()</code>
 <div class="block">Returns the CommandSender which is being used to call the command</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/command/CommandSender.html" title="interface in org.bukkit.command">CommandSender</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/command/ProxiedCommandSender.html#getCaller--">getCaller</a></span>()</code>
 <div class="block">Returns the CommandSender which triggered this proxied command</div>
 </td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>default void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/command/ProxiedCommandSender.html#sendMessage-net.kyori.adventure.identity.Identity-net.kyori.adventure.text.Component-net.kyori.adventure.audience.MessageType-">sendMessage</a></span>(net.kyori.adventure.identity.Identity&nbsp;source,
+           net.kyori.adventure.text.Component&nbsp;message,
+           net.kyori.adventure.audience.MessageType&nbsp;type)</code>&nbsp;</td>
 </tr>
 </table>
 <ul class="blockList">
@@ -171,6 +188,20 @@ extends <a href="../../../org/bukkit/command/CommandSender.html" title="interfac
 </a>
 <h3>Methods inherited from interface&nbsp;org.bukkit.permissions.<a href="../../../org/bukkit/permissions/ServerOperator.html" title="interface in org.bukkit.permissions">ServerOperator</a></h3>
 <code><a href="../../../org/bukkit/permissions/ServerOperator.html#isOp--">isOp</a>, <a href="../../../org/bukkit/permissions/ServerOperator.html#setOp-boolean-">setOp</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.net.kyori.adventure.audience.ForwardingAudience.Single">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;net.kyori.adventure.audience.ForwardingAudience.Single</h3>
+<code>audiences, clearTitle, hideBossBar, openBook, playSound, playSound, resetTitle, sendActionBar, sendMessage, sendPlayerListFooter, sendPlayerListHeader, sendPlayerListHeaderAndFooter, showBossBar, showTitle, stopSound</code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.net.kyori.adventure.audience.Audience">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;net.kyori.adventure.audience.Audience</h3>
+<code>audience, audience, empty, openBook, sendActionBar, sendMessage, sendMessage, sendMessage, sendMessage, sendMessage, sendMessage, sendMessage, sendMessage, sendMessage, sendMessage, sendPlayerListFooter, sendPlayerListHeader, sendPlayerListHeaderAndFooter, toAudience</code></li>
 </ul>
 </li>
 </ul>
@@ -204,7 +235,7 @@ extends <a href="../../../org/bukkit/command/CommandSender.html" title="interfac
 <a name="getCallee--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>getCallee</h4>
 <pre>@NotNull
@@ -213,6 +244,44 @@ extends <a href="../../../org/bukkit/command/CommandSender.html" title="interfac
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the caller which the command is being run as</dd>
+</dl>
+</li>
+</ul>
+<a name="sendMessage-net.kyori.adventure.identity.Identity-net.kyori.adventure.text.Component-net.kyori.adventure.audience.MessageType-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>sendMessage</h4>
+<pre>default&nbsp;void&nbsp;sendMessage(@NotNull
+                         net.kyori.adventure.identity.Identity&nbsp;source,
+                         @NotNull
+                         net.kyori.adventure.text.Component&nbsp;message,
+                         @NotNull
+                         net.kyori.adventure.audience.MessageType&nbsp;type)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code>sendMessage</code>&nbsp;in interface&nbsp;<code>net.kyori.adventure.audience.Audience</code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../org/bukkit/command/CommandSender.html#sendMessage-net.kyori.adventure.identity.Identity-net.kyori.adventure.text.Component-net.kyori.adventure.audience.MessageType-">sendMessage</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/bukkit/command/CommandSender.html" title="interface in org.bukkit.command">CommandSender</a></code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code>sendMessage</code>&nbsp;in interface&nbsp;<code>net.kyori.adventure.audience.ForwardingAudience</code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code>sendMessage</code>&nbsp;in interface&nbsp;<code>net.kyori.adventure.audience.ForwardingAudience.Single</code></dd>
+</dl>
+</li>
+</ul>
+<a name="audience--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>audience</h4>
+<pre>@NotNull
+default&nbsp;net.kyori.adventure.audience.Audience&nbsp;audience()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code>audience</code>&nbsp;in interface&nbsp;<code>net.kyori.adventure.audience.ForwardingAudience.Single</code></dd>
 </dl>
 </li>
 </ul>

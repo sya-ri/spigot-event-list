@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":38,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":38,"i4":6,"i5":6,"i6":6,"i7":38,"i8":6,"i9":6,"i10":6,"i11":38,"i12":6,"i13":6,"i14":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -121,36 +121,50 @@ var activeTableTab = "activeTableTab";
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>net.kyori.adventure.text.Component</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Objective.html#displayName--">displayName</a></span>()</code>
+<div class="block">Gets the name displayed to players for this objective</div>
+</td>
+</tr>
+<tr id="i1" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Objective.html#displayName-net.kyori.adventure.text.Component-">displayName</a></span>(net.kyori.adventure.text.Component&nbsp;displayName)</code>
+<div class="block">Sets the name displayed to players for this objective.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Objective.html#getCriteria--">getCriteria</a></span>()</code>
 <div class="block">Gets the criteria this objective tracks.</div>
 </td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Objective.html#getDisplayName--">getDisplayName</a></span>()</code>
-<div class="block">Gets the name displayed to players for this objective</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">in favour of <a href="../../../org/bukkit/scoreboard/Objective.html#displayName--"><code>displayName()</code></a></span></div>
+</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/scoreboard/DisplaySlot.html" title="enum in org.bukkit.scoreboard">DisplaySlot</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Objective.html#getDisplaySlot--">getDisplaySlot</a></span>()</code>
 <div class="block">Gets the display slot this objective is displayed at.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Objective.html#getName--">getName</a></span>()</code>
 <div class="block">Gets the name of this Objective</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/scoreboard/RenderType.html" title="enum in org.bukkit.scoreboard">RenderType</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Objective.html#getRenderType--">getRenderType</a></span>()</code>
 <div class="block">Sets manner in which this objective will be rendered.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/scoreboard/Score.html" title="interface in org.bukkit.scoreboard">Score</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Objective.html#getScore-org.bukkit.OfflinePlayer-">getScore</a></span>(<a href="../../../org/bukkit/OfflinePlayer.html" title="interface in org.bukkit">OfflinePlayer</a>&nbsp;player)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -158,44 +172,46 @@ var activeTableTab = "activeTableTab";
 </div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/scoreboard/Score.html" title="interface in org.bukkit.scoreboard">Score</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Objective.html#getScore-java.lang.String-">getScore</a></span>(java.lang.String&nbsp;entry)</code>
 <div class="block">Gets an entry's Score for an Objective on this Scoreboard.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/scoreboard/Scoreboard.html" title="interface in org.bukkit.scoreboard">Scoreboard</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Objective.html#getScoreboard--">getScoreboard</a></span>()</code>
 <div class="block">Gets the scoreboard to which this objective is attached.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Objective.html#isModifiable--">isModifiable</a></span>()</code>
 <div class="block">Gets if the objective's scores can be modified directly by a plugin.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Objective.html#setDisplayName-java.lang.String-">setDisplayName</a></span>(java.lang.String&nbsp;displayName)</code>
-<div class="block">Sets the name displayed to players for this objective.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">in favour of <a href="../../../org/bukkit/scoreboard/Objective.html#displayName-net.kyori.adventure.text.Component-"><code>displayName(net.kyori.adventure.text.Component)</code></a></span></div>
+</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Objective.html#setDisplaySlot-org.bukkit.scoreboard.DisplaySlot-">setDisplaySlot</a></span>(<a href="../../../org/bukkit/scoreboard/DisplaySlot.html" title="enum in org.bukkit.scoreboard">DisplaySlot</a>&nbsp;slot)</code>
 <div class="block">Sets this objective to display on the specified slot for the
  scoreboard, removing it from any other display slot.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Objective.html#setRenderType-org.bukkit.scoreboard.RenderType-">setRenderType</a></span>(<a href="../../../org/bukkit/scoreboard/RenderType.html" title="enum in org.bukkit.scoreboard">RenderType</a>&nbsp;renderType)</code>
 <div class="block">Sets manner in which this objective will be rendered.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Objective.html#unregister--">unregister</a></span>()</code>
 <div class="block">Unregisters this objective from the <a href="../../../org/bukkit/scoreboard/Scoreboard.html" title="interface in org.bukkit.scoreboard"><code>scoreboard.</code></a></div>
@@ -234,6 +250,46 @@ java.lang.String&nbsp;getName()
 </dl>
 </li>
 </ul>
+<a name="displayName--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>displayName</h4>
+<pre>@NotNull
+net.kyori.adventure.text.Component&nbsp;displayName()
+                                                 throws java.lang.IllegalStateException</pre>
+<div class="block">Gets the name displayed to players for this objective</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>this objective's display name</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - if this objective has been unregistered</dd>
+</dl>
+</li>
+</ul>
+<a name="displayName-net.kyori.adventure.text.Component-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>displayName</h4>
+<pre>void&nbsp;displayName(@Nullable
+                 net.kyori.adventure.text.Component&nbsp;displayName)
+          throws java.lang.IllegalStateException,
+                 java.lang.IllegalArgumentException</pre>
+<div class="block">Sets the name displayed to players for this objective.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>displayName</code> - Display name to set</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - if this objective has been unregistered</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - if displayName is null</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - if displayName is longer than 128
+     characters.</dd>
+</dl>
+</li>
+</ul>
 <a name="getDisplayName--">
 <!--   -->
 </a>
@@ -241,8 +297,10 @@ java.lang.String&nbsp;getName()
 <li class="blockList">
 <h4>getDisplayName</h4>
 <pre>@NotNull
+ @Deprecated
 java.lang.String&nbsp;getDisplayName()
-                                  throws java.lang.IllegalStateException</pre>
+                                               throws java.lang.IllegalStateException</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">in favour of <a href="../../../org/bukkit/scoreboard/Objective.html#displayName--"><code>displayName()</code></a></span></div>
 <div class="block">Gets the name displayed to players for this objective</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -258,10 +316,12 @@ java.lang.String&nbsp;getDisplayName()
 <ul class="blockList">
 <li class="blockList">
 <h4>setDisplayName</h4>
-<pre>void&nbsp;setDisplayName(@NotNull
-                    java.lang.String&nbsp;displayName)
-             throws java.lang.IllegalStateException,
-                    java.lang.IllegalArgumentException</pre>
+<pre>@Deprecated
+void&nbsp;setDisplayName(@NotNull
+                                java.lang.String&nbsp;displayName)
+                         throws java.lang.IllegalStateException,
+                                java.lang.IllegalArgumentException</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">in favour of <a href="../../../org/bukkit/scoreboard/Objective.html#displayName-net.kyori.adventure.text.Component-"><code>displayName(net.kyori.adventure.text.Component)</code></a></span></div>
 <div class="block">Sets the name displayed to players for this objective.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

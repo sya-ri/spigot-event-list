@@ -17,8 +17,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":18,"i3":18,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
+var methods = {"i0":6,"i1":6,"i2":50,"i3":50,"i4":18,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -99,7 +99,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Superinterfaces:</dt>
-<dd><a href="../../../org/bukkit/permissions/Permissible.html" title="interface in org.bukkit.permissions">Permissible</a>, <a href="../../../org/bukkit/permissions/ServerOperator.html" title="interface in org.bukkit.permissions">ServerOperator</a></dd>
+<dd>net.kyori.adventure.audience.Audience, <a href="../../../org/bukkit/permissions/Permissible.html" title="interface in org.bukkit.permissions">Permissible</a>, <a href="../../../org/bukkit/permissions/ServerOperator.html" title="interface in org.bukkit.permissions">ServerOperator</a></dd>
 </dl>
 <dl>
 <dt>All Known Subinterfaces:</dt>
@@ -112,7 +112,7 @@ var activeTableTab = "activeTableTab";
 <hr>
 <br>
 <pre>public interface <span class="typeNameLabel">CommandSender</span>
-extends <a href="../../../org/bukkit/permissions/Permissible.html" title="interface in org.bukkit.permissions">Permissible</a></pre>
+extends net.kyori.adventure.audience.Audience, <a href="../../../org/bukkit/permissions/Permissible.html" title="interface in org.bukkit.permissions">Permissible</a></pre>
 </li>
 </ul>
 </div>
@@ -147,7 +147,7 @@ extends <a href="../../../org/bukkit/permissions/Permissible.html" title="interf
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t5" class="tableTab"><span><a href="javascript:show(16);">Default Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t5" class="tableTab"><span><a href="javascript:show(16);">Default Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">Deprecated Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
@@ -167,46 +167,63 @@ extends <a href="../../../org/bukkit/permissions/Permissible.html" title="interf
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>default void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/command/CommandSender.html#sendMessage-net.md_5.bungee.api.chat.BaseComponent...-">sendMessage</a></span>(net.md_5.bungee.api.chat.BaseComponent...&nbsp;components)</code>
-<div class="block">Sends an array of components as a single message to the sender</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">use <a href="../../../org/bukkit/command/CommandSender.html#sendMessage-net.kyori.adventure.identity.Identity-net.kyori.adventure.text.Component-net.kyori.adventure.audience.MessageType-"><code>sendMessage(Identity, Component, MessageType)</code></a> instead</span></div>
+</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/command/CommandSender.html#sendMessage-net.md_5.bungee.api.chat.BaseComponent-">sendMessage</a></span>(net.md_5.bungee.api.chat.BaseComponent&nbsp;component)</code>
-<div class="block">Sends the component to the sender</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">use <a href="../../../org/bukkit/command/CommandSender.html#sendMessage-net.kyori.adventure.identity.Identity-net.kyori.adventure.text.Component-net.kyori.adventure.audience.MessageType-"><code>sendMessage(Identity, Component, MessageType)</code></a> instead</span></div>
+</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code>default void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/command/CommandSender.html#sendMessage-net.kyori.adventure.identity.Identity-net.kyori.adventure.text.Component-net.kyori.adventure.audience.MessageType-">sendMessage</a></span>(net.kyori.adventure.identity.Identity&nbsp;identity,
+           net.kyori.adventure.text.Component&nbsp;message,
+           net.kyori.adventure.audience.MessageType&nbsp;type)</code>&nbsp;</td>
+</tr>
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/command/CommandSender.html#sendMessage-java.lang.String-">sendMessage</a></span>(java.lang.String&nbsp;message)</code>
 <div class="block">Sends this sender a message</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/command/CommandSender.html#sendMessage-java.lang.String:A-">sendMessage</a></span>(java.lang.String[]&nbsp;messages)</code>
 <div class="block">Sends this sender multiple messages</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/command/CommandSender.html#sendMessage-java.util.UUID-java.lang.String-">sendMessage</a></span>(java.util.UUID&nbsp;sender,
            java.lang.String&nbsp;message)</code>
 <div class="block">Sends this sender a message</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/command/CommandSender.html#sendMessage-java.util.UUID-java.lang.String:A-">sendMessage</a></span>(java.util.UUID&nbsp;sender,
            java.lang.String[]&nbsp;messages)</code>
 <div class="block">Sends this sender multiple messages</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/command/CommandSender.Spigot.html" title="class in org.bukkit.command">CommandSender.Spigot</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/command/CommandSender.html#spigot--">spigot</a></span>()</code>&nbsp;</td>
 </tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.net.kyori.adventure.audience.Audience">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;net.kyori.adventure.audience.Audience</h3>
+<code>audience, audience, clearTitle, empty, hideBossBar, openBook, openBook, playSound, playSound, resetTitle, sendActionBar, sendActionBar, sendMessage, sendMessage, sendMessage, sendMessage, sendMessage, sendMessage, sendMessage, sendMessage, sendMessage, sendMessage, sendMessage, sendPlayerListFooter, sendPlayerListFooter, sendPlayerListHeader, sendPlayerListHeader, sendPlayerListHeaderAndFooter, sendPlayerListHeaderAndFooter, showBossBar, showTitle, stopSound, toAudience</code></li>
+</ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.bukkit.permissions.Permissible">
 <!--   -->
@@ -247,6 +264,8 @@ extends <a href="../../../org/bukkit/permissions/Permissible.html" title="interf
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>message</code> - Message to be displayed</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><code>Audience.sendMessage(net.kyori.adventure.text.Component)</code></dd>
 </dl>
 </li>
 </ul>
@@ -262,6 +281,8 @@ extends <a href="../../../org/bukkit/permissions/Permissible.html" title="interf
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>messages</code> - An array of messages to be displayed</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><code>Audience.sendMessage(net.kyori.adventure.text.Component)</code></dd>
 </dl>
 </li>
 </ul>
@@ -280,6 +301,8 @@ extends <a href="../../../org/bukkit/permissions/Permissible.html" title="interf
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>message</code> - Message to be displayed</dd>
 <dd><code>sender</code> - The sender of this message</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><code>Audience.sendMessage(net.kyori.adventure.identity.Identified, net.kyori.adventure.text.Component)</code></dd>
 </dl>
 </li>
 </ul>
@@ -298,6 +321,8 @@ extends <a href="../../../org/bukkit/permissions/Permissible.html" title="interf
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>messages</code> - An array of messages to be displayed</dd>
 <dd><code>sender</code> - The sender of this message</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><code>Audience.sendMessage(net.kyori.adventure.identity.Identified, net.kyori.adventure.text.Component)</code></dd>
 </dl>
 </li>
 </ul>
@@ -341,14 +366,34 @@ java.lang.String&nbsp;getName()</pre>
 <a href="../../../org/bukkit/command/CommandSender.Spigot.html" title="class in org.bukkit.command">CommandSender.Spigot</a>&nbsp;spigot()</pre>
 </li>
 </ul>
-<a name="sendMessage-net.md_5.bungee.api.chat.BaseComponent-">
+<a name="sendMessage-net.kyori.adventure.identity.Identity-net.kyori.adventure.text.Component-net.kyori.adventure.audience.MessageType-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>sendMessage</h4>
 <pre>default&nbsp;void&nbsp;sendMessage(@NotNull
-                         net.md_5.bungee.api.chat.BaseComponent&nbsp;component)</pre>
+                         net.kyori.adventure.identity.Identity&nbsp;identity,
+                         @NotNull
+                         net.kyori.adventure.text.Component&nbsp;message,
+                         @NotNull
+                         net.kyori.adventure.audience.MessageType&nbsp;type)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code>sendMessage</code>&nbsp;in interface&nbsp;<code>net.kyori.adventure.audience.Audience</code></dd>
+</dl>
+</li>
+</ul>
+<a name="sendMessage-net.md_5.bungee.api.chat.BaseComponent-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>sendMessage</h4>
+<pre>@Deprecated
+default&nbsp;void&nbsp;sendMessage(@NotNull
+                                     net.md_5.bungee.api.chat.BaseComponent&nbsp;component)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">use <a href="../../../org/bukkit/command/CommandSender.html#sendMessage-net.kyori.adventure.identity.Identity-net.kyori.adventure.text.Component-net.kyori.adventure.audience.MessageType-"><code>sendMessage(Identity, Component, MessageType)</code></a> instead</span></div>
 <div class="block">Sends the component to the sender
 
  <p>If this sender does not support sending full components then
@@ -365,8 +410,10 @@ java.lang.String&nbsp;getName()</pre>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>sendMessage</h4>
-<pre>default&nbsp;void&nbsp;sendMessage(@NotNull
-                         net.md_5.bungee.api.chat.BaseComponent...&nbsp;components)</pre>
+<pre>@Deprecated
+default&nbsp;void&nbsp;sendMessage(@NotNull
+                                     net.md_5.bungee.api.chat.BaseComponent...&nbsp;components)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">use <a href="../../../org/bukkit/command/CommandSender.html#sendMessage-net.kyori.adventure.identity.Identity-net.kyori.adventure.text.Component-net.kyori.adventure.audience.MessageType-"><code>sendMessage(Identity, Component, MessageType)</code></a> instead</span></div>
 <div class="block">Sends an array of components as a single message to the sender
 
  <p>If this sender does not support sending full components then

@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -148,30 +148,34 @@ extends java.net.URLClassLoader</pre>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
+<td class="colFirst"><code>java.lang.Class&lt;?&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/plugin/java/PluginClassLoader.html#Z:Z_airplane_findClass-java.lang.String-">_airplane_findClass</a></span>(java.lang.String&nbsp;name)</code>&nbsp;</td>
+</tr>
+<tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/plugin/java/PluginClassLoader.html#close--">close</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i1" class="rowColor">
+<tr id="i2" class="altColor">
 <td class="colFirst"><code>protected java.lang.Class&lt;?&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/plugin/java/PluginClassLoader.html#findClass-java.lang.String-">findClass</a></span>(java.lang.String&nbsp;name)</code>&nbsp;</td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.util.Collection&lt;java.lang.Class&lt;?&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/plugin/java/PluginClassLoader.html#getLoadedClasses--">getLoadedClasses</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/bukkit/plugin/java/JavaPlugin.html" title="class in org.bukkit.plugin.java">JavaPlugin</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/plugin/java/PluginClassLoader.html#getPlugin--">getPlugin</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>java.net.URL</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/plugin/java/PluginClassLoader.html#getResource-java.lang.String-">getResource</a></span>(java.lang.String&nbsp;name)</code>&nbsp;</td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>java.util.Enumeration&lt;java.net.URL&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/plugin/java/PluginClassLoader.html#getResources-java.lang.String-">getResources</a></span>(java.lang.String&nbsp;name)</code>&nbsp;</td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/plugin/java/PluginClassLoader.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
@@ -267,6 +271,21 @@ extends java.net.URLClassLoader</pre>
 <dl>
 <dt><span class="overrideSpecifyLabel">Overrides:</span></dt>
 <dd><code>findClass</code>&nbsp;in class&nbsp;<code>java.net.URLClassLoader</code></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.ClassNotFoundException</code></dd>
+</dl>
+</li>
+</ul>
+<a name="Z:Z_airplane_findClass-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>_airplane_findClass</h4>
+<pre>public&nbsp;java.lang.Class&lt;?&gt;&nbsp;_airplane_findClass(@NotNull
+                                              java.lang.String&nbsp;name)
+                                       throws java.lang.ClassNotFoundException</pre>
+<dl>
 <dt><span class="throwsLabel">Throws:</span></dt>
 <dd><code>java.lang.ClassNotFoundException</code></dd>
 </dl>

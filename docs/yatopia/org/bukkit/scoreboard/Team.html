@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":38,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":38,"i9":6,"i10":38,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":38,"i17":6,"i18":38,"i19":6,"i20":6,"i21":6,"i22":6,"i23":38,"i24":6,"i25":6,"i26":6,"i27":6};
+var methods = {"i0":6,"i1":38,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":38,"i9":38,"i10":6,"i11":6,"i12":38,"i13":6,"i14":38,"i15":38,"i16":6,"i17":6,"i18":38,"i19":6,"i20":38,"i21":6,"i22":6,"i23":6,"i24":38,"i25":6,"i26":6,"i27":38,"i28":38,"i29":38,"i30":6,"i31":38,"i32":38,"i33":6,"i34":6,"i35":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -175,30 +175,58 @@ var activeTableTab = "activeTableTab";
 </td>
 </tr>
 <tr id="i4" class="altColor">
-<td class="colFirst"><code><a href="../../../org/bukkit/ChatColor.html" title="enum in org.bukkit">ChatColor</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Team.html#getColor--">getColor</a></span>()</code>
+<td class="colFirst"><code>net.kyori.adventure.text.format.TextColor</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Team.html#color--">color</a></span>()</code>
 <div class="block">Gets the color of the team.</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
-<td class="colFirst"><code>java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Team.html#getDisplayName--">getDisplayName</a></span>()</code>
-<div class="block">Gets the name displayed to entries for this team</div>
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Team.html#color-net.kyori.adventure.text.format.NamedTextColor-">color</a></span>(net.kyori.adventure.text.format.NamedTextColor&nbsp;color)</code>
+<div class="block">Sets the color of the team.</div>
 </td>
 </tr>
 <tr id="i6" class="altColor">
+<td class="colFirst"><code>net.kyori.adventure.text.Component</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Team.html#displayName--">displayName</a></span>()</code>
+<div class="block">Gets the name displayed to entries for this team</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Team.html#displayName-net.kyori.adventure.text.Component-">displayName</a></span>(net.kyori.adventure.text.Component&nbsp;displayName)</code>
+<div class="block">Sets the name displayed to entries for this team</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code><a href="../../../org/bukkit/ChatColor.html" title="enum in org.bukkit">ChatColor</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Team.html#getColor--">getColor</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">in favour of <a href="../../../org/bukkit/scoreboard/Team.html#color--"><code>color()</code></a></span></div>
+</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Team.html#getDisplayName--">getDisplayName</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">in favour of <a href="../../../org/bukkit/scoreboard/Team.html#displayName--"><code>displayName()</code></a></span></div>
+</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>java.util.Set&lt;java.lang.String&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Team.html#getEntries--">getEntries</a></span>()</code>
 <div class="block">Gets the Set of entries on the team</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Team.html#getName--">getName</a></span>()</code>
 <div class="block">Gets the name of this Team</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/scoreboard/NameTagVisibility.html" title="enum in org.bukkit.scoreboard">NameTagVisibility</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Team.html#getNameTagVisibility--">getNameTagVisibility</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -206,13 +234,13 @@ var activeTableTab = "activeTableTab";
 </div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/scoreboard/Team.OptionStatus.html" title="enum in org.bukkit.scoreboard">Team.OptionStatus</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Team.html#getOption-org.bukkit.scoreboard.Team.Option-">getOption</a></span>(<a href="../../../org/bukkit/scoreboard/Team.Option.html" title="enum in org.bukkit.scoreboard">Team.Option</a>&nbsp;option)</code>
 <div class="block">Get an option for this team</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>java.util.Set&lt;<a href="../../../org/bukkit/OfflinePlayer.html" title="interface in org.bukkit">OfflinePlayer</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Team.html#getPlayers--">getPlayers</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -220,37 +248,41 @@ var activeTableTab = "activeTableTab";
 </div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Team.html#getPrefix--">getPrefix</a></span>()</code>
-<div class="block">Gets the prefix prepended to the display of entries on this team.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">in favour of <a href="../../../org/bukkit/scoreboard/Team.html#prefix--"><code>prefix()</code></a></span></div>
+</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/scoreboard/Scoreboard.html" title="interface in org.bukkit.scoreboard">Scoreboard</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Team.html#getScoreboard--">getScoreboard</a></span>()</code>
 <div class="block">Gets the Scoreboard to which this team is attached</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Team.html#getSize--">getSize</a></span>()</code>
 <div class="block">Gets the size of the team</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Team.html#getSuffix--">getSuffix</a></span>()</code>
-<div class="block">Gets the suffix appended to the display of entries on this team.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">in favour of <a href="../../../org/bukkit/scoreboard/Team.html#suffix--"><code>suffix()</code></a></span></div>
+</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Team.html#hasEntry-java.lang.String-">hasEntry</a></span>(java.lang.String&nbsp;entry)</code>
 <div class="block">Checks to see if the specified entry is a member of this team.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Team.html#hasPlayer-org.bukkit.OfflinePlayer-">hasPlayer</a></span>(<a href="../../../org/bukkit/OfflinePlayer.html" title="interface in org.bukkit">OfflinePlayer</a>&nbsp;player)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -258,13 +290,25 @@ var activeTableTab = "activeTableTab";
 </div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i21" class="rowColor">
+<td class="colFirst"><code>net.kyori.adventure.text.Component</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Team.html#prefix--">prefix</a></span>()</code>
+<div class="block">Gets the prefix prepended to the display of entries on this team.</div>
+</td>
+</tr>
+<tr id="i22" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Team.html#prefix-net.kyori.adventure.text.Component-">prefix</a></span>(net.kyori.adventure.text.Component&nbsp;prefix)</code>
+<div class="block">Sets the prefix prepended to the display of entries on this team.</div>
+</td>
+</tr>
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Team.html#removeEntry-java.lang.String-">removeEntry</a></span>(java.lang.String&nbsp;entry)</code>
 <div class="block">Removes the entry from this team.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Team.html#removePlayer-org.bukkit.OfflinePlayer-">removePlayer</a></span>(<a href="../../../org/bukkit/OfflinePlayer.html" title="interface in org.bukkit">OfflinePlayer</a>&nbsp;player)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -272,31 +316,35 @@ var activeTableTab = "activeTableTab";
 </div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Team.html#setAllowFriendlyFire-boolean-">setAllowFriendlyFire</a></span>(boolean&nbsp;enabled)</code>
 <div class="block">Sets the team friendly fire state</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Team.html#setCanSeeFriendlyInvisibles-boolean-">setCanSeeFriendlyInvisibles</a></span>(boolean&nbsp;enabled)</code>
 <div class="block">Sets the team's ability to see <a href="../../../org/bukkit/potion/PotionEffectType.html#INVISIBILITY"><code>invisible</code></a> teammates.</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Team.html#setColor-org.bukkit.ChatColor-">setColor</a></span>(<a href="../../../org/bukkit/ChatColor.html" title="enum in org.bukkit">ChatColor</a>&nbsp;color)</code>
-<div class="block">Sets the color of the team.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">in favour of <a href="../../../org/bukkit/scoreboard/Team.html#color-net.kyori.adventure.text.format.NamedTextColor-"><code>color(net.kyori.adventure.text.format.NamedTextColor)</code></a></span></div>
+</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Team.html#setDisplayName-java.lang.String-">setDisplayName</a></span>(java.lang.String&nbsp;displayName)</code>
-<div class="block">Sets the name displayed to entries for this team</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">in favour of <a href="../../../org/bukkit/scoreboard/Team.html#displayName-net.kyori.adventure.text.Component-"><code>displayName(net.kyori.adventure.text.Component)</code></a></span></div>
+</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Team.html#setNameTagVisibility-org.bukkit.scoreboard.NameTagVisibility-">setNameTagVisibility</a></span>(<a href="../../../org/bukkit/scoreboard/NameTagVisibility.html" title="enum in org.bukkit.scoreboard">NameTagVisibility</a>&nbsp;visibility)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -305,26 +353,42 @@ var activeTableTab = "activeTableTab";
 </div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Team.html#setOption-org.bukkit.scoreboard.Team.Option-org.bukkit.scoreboard.Team.OptionStatus-">setOption</a></span>(<a href="../../../org/bukkit/scoreboard/Team.Option.html" title="enum in org.bukkit.scoreboard">Team.Option</a>&nbsp;option,
          <a href="../../../org/bukkit/scoreboard/Team.OptionStatus.html" title="enum in org.bukkit.scoreboard">Team.OptionStatus</a>&nbsp;status)</code>
 <div class="block">Set an option for this team</div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Team.html#setPrefix-java.lang.String-">setPrefix</a></span>(java.lang.String&nbsp;prefix)</code>
-<div class="block">Sets the prefix prepended to the display of entries on this team.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">in favour of <a href="../../../org/bukkit/scoreboard/Team.html#prefix-net.kyori.adventure.text.Component-"><code>prefix(net.kyori.adventure.text.Component)</code></a></span></div>
+</div>
 </td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Team.html#setSuffix-java.lang.String-">setSuffix</a></span>(java.lang.String&nbsp;suffix)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">in favour of <a href="../../../org/bukkit/scoreboard/Team.html#suffix-net.kyori.adventure.text.Component-"><code>suffix(net.kyori.adventure.text.Component)</code></a></span></div>
+</div>
+</td>
+</tr>
+<tr id="i33" class="rowColor">
+<td class="colFirst"><code>net.kyori.adventure.text.Component</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Team.html#suffix--">suffix</a></span>()</code>
+<div class="block">Gets the suffix appended to the display of entries on this team.</div>
+</td>
+</tr>
+<tr id="i34" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Team.html#suffix-net.kyori.adventure.text.Component-">suffix</a></span>(net.kyori.adventure.text.Component&nbsp;suffix)</code>
 <div class="block">Sets the suffix appended to the display of entries on this team.</div>
 </td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/scoreboard/Team.html#unregister--">unregister</a></span>()</code>
 <div class="block">Unregisters this team from the Scoreboard</div>
@@ -363,6 +427,165 @@ java.lang.String&nbsp;getName()
 </dl>
 </li>
 </ul>
+<a name="displayName--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>displayName</h4>
+<pre>@NotNull
+net.kyori.adventure.text.Component&nbsp;displayName()
+                                                 throws java.lang.IllegalStateException</pre>
+<div class="block">Gets the name displayed to entries for this team</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Team display name</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - if this team has been unregistered</dd>
+</dl>
+</li>
+</ul>
+<a name="displayName-net.kyori.adventure.text.Component-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>displayName</h4>
+<pre>void&nbsp;displayName(@Nullable
+                 net.kyori.adventure.text.Component&nbsp;displayName)
+          throws java.lang.IllegalStateException,
+                 java.lang.IllegalArgumentException</pre>
+<div class="block">Sets the name displayed to entries for this team</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>displayName</code> - New display name</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if displayName is longer than 128
+     characters.</dd>
+<dd><code>java.lang.IllegalStateException</code> - if this team has been unregistered</dd>
+</dl>
+</li>
+</ul>
+<a name="prefix--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>prefix</h4>
+<pre>@NotNull
+net.kyori.adventure.text.Component&nbsp;prefix()
+                                            throws java.lang.IllegalStateException</pre>
+<div class="block">Gets the prefix prepended to the display of entries on this team.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Team prefix</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - if this team has been unregistered</dd>
+</dl>
+</li>
+</ul>
+<a name="prefix-net.kyori.adventure.text.Component-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>prefix</h4>
+<pre>void&nbsp;prefix(@Nullable
+            net.kyori.adventure.text.Component&nbsp;prefix)
+     throws java.lang.IllegalStateException,
+            java.lang.IllegalArgumentException</pre>
+<div class="block">Sets the prefix prepended to the display of entries on this team.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>prefix</code> - New prefix</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if prefix is null</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - if prefix is longer than 64
+     characters</dd>
+<dd><code>java.lang.IllegalStateException</code> - if this team has been unregistered</dd>
+</dl>
+</li>
+</ul>
+<a name="suffix--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>suffix</h4>
+<pre>@NotNull
+net.kyori.adventure.text.Component&nbsp;suffix()
+                                            throws java.lang.IllegalStateException</pre>
+<div class="block">Gets the suffix appended to the display of entries on this team.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the team's current suffix</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - if this team has been unregistered</dd>
+</dl>
+</li>
+</ul>
+<a name="suffix-net.kyori.adventure.text.Component-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>suffix</h4>
+<pre>void&nbsp;suffix(@Nullable
+            net.kyori.adventure.text.Component&nbsp;suffix)
+     throws java.lang.IllegalStateException,
+            java.lang.IllegalArgumentException</pre>
+<div class="block">Sets the suffix appended to the display of entries on this team.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>suffix</code> - the new suffix for this team.</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if suffix is null</dd>
+<dd><code>java.lang.IllegalArgumentException</code> - if suffix is longer than 64
+     characters</dd>
+<dd><code>java.lang.IllegalStateException</code> - if this team has been unregistered</dd>
+</dl>
+</li>
+</ul>
+<a name="color--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>color</h4>
+<pre>@NotNull
+net.kyori.adventure.text.format.TextColor&nbsp;color()
+                                                  throws java.lang.IllegalStateException</pre>
+<div class="block">Gets the color of the team.
+ <br>
+ This only sets the team outline, other occurrences of colors such as in
+ names are handled by prefixes / suffixes.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>team color, defaults to <a href="../../../org/bukkit/ChatColor.html#RESET"><code>ChatColor.RESET</code></a></dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalStateException</code> - if this team has been unregistered</dd>
+</dl>
+</li>
+</ul>
+<a name="color-net.kyori.adventure.text.format.NamedTextColor-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>color</h4>
+<pre>void&nbsp;color(@Nullable
+           net.kyori.adventure.text.format.NamedTextColor&nbsp;color)</pre>
+<div class="block">Sets the color of the team.
+ <br>
+ This only sets the team outline, other occurrences of colors such as in
+ names are handled by prefixes / suffixes.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>color</code> - new color, must be non-null. Use <a href="../../../org/bukkit/ChatColor.html#RESET"><code>ChatColor.RESET</code></a> for
+ no color</dd>
+</dl>
+</li>
+</ul>
 <a name="getDisplayName--">
 <!--   -->
 </a>
@@ -370,8 +593,10 @@ java.lang.String&nbsp;getName()
 <li class="blockList">
 <h4>getDisplayName</h4>
 <pre>@NotNull
+ @Deprecated
 java.lang.String&nbsp;getDisplayName()
-                                  throws java.lang.IllegalStateException</pre>
+                                               throws java.lang.IllegalStateException</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">in favour of <a href="../../../org/bukkit/scoreboard/Team.html#displayName--"><code>displayName()</code></a></span></div>
 <div class="block">Gets the name displayed to entries for this team</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -387,10 +612,12 @@ java.lang.String&nbsp;getDisplayName()
 <ul class="blockList">
 <li class="blockList">
 <h4>setDisplayName</h4>
-<pre>void&nbsp;setDisplayName(@NotNull
-                    java.lang.String&nbsp;displayName)
-             throws java.lang.IllegalStateException,
-                    java.lang.IllegalArgumentException</pre>
+<pre>@Deprecated
+void&nbsp;setDisplayName(@NotNull
+                                java.lang.String&nbsp;displayName)
+                         throws java.lang.IllegalStateException,
+                                java.lang.IllegalArgumentException</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">in favour of <a href="../../../org/bukkit/scoreboard/Team.html#displayName-net.kyori.adventure.text.Component-"><code>displayName(net.kyori.adventure.text.Component)</code></a></span></div>
 <div class="block">Sets the name displayed to entries for this team</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -409,8 +636,10 @@ java.lang.String&nbsp;getDisplayName()
 <li class="blockList">
 <h4>getPrefix</h4>
 <pre>@NotNull
+ @Deprecated
 java.lang.String&nbsp;getPrefix()
-                             throws java.lang.IllegalStateException</pre>
+                                          throws java.lang.IllegalStateException</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">in favour of <a href="../../../org/bukkit/scoreboard/Team.html#prefix--"><code>prefix()</code></a></span></div>
 <div class="block">Gets the prefix prepended to the display of entries on this team.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -426,10 +655,12 @@ java.lang.String&nbsp;getPrefix()
 <ul class="blockList">
 <li class="blockList">
 <h4>setPrefix</h4>
-<pre>void&nbsp;setPrefix(@NotNull
-               java.lang.String&nbsp;prefix)
-        throws java.lang.IllegalStateException,
-               java.lang.IllegalArgumentException</pre>
+<pre>@Deprecated
+void&nbsp;setPrefix(@NotNull
+                           java.lang.String&nbsp;prefix)
+                    throws java.lang.IllegalStateException,
+                           java.lang.IllegalArgumentException</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">in favour of <a href="../../../org/bukkit/scoreboard/Team.html#prefix-net.kyori.adventure.text.Component-"><code>prefix(net.kyori.adventure.text.Component)</code></a></span></div>
 <div class="block">Sets the prefix prepended to the display of entries on this team.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -449,8 +680,10 @@ java.lang.String&nbsp;getPrefix()
 <li class="blockList">
 <h4>getSuffix</h4>
 <pre>@NotNull
+ @Deprecated
 java.lang.String&nbsp;getSuffix()
-                             throws java.lang.IllegalStateException</pre>
+                                          throws java.lang.IllegalStateException</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">in favour of <a href="../../../org/bukkit/scoreboard/Team.html#suffix--"><code>suffix()</code></a></span></div>
 <div class="block">Gets the suffix appended to the display of entries on this team.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -466,10 +699,12 @@ java.lang.String&nbsp;getSuffix()
 <ul class="blockList">
 <li class="blockList">
 <h4>setSuffix</h4>
-<pre>void&nbsp;setSuffix(@NotNull
-               java.lang.String&nbsp;suffix)
-        throws java.lang.IllegalStateException,
-               java.lang.IllegalArgumentException</pre>
+<pre>@Deprecated
+void&nbsp;setSuffix(@NotNull
+                           java.lang.String&nbsp;suffix)
+                    throws java.lang.IllegalStateException,
+                           java.lang.IllegalArgumentException</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">in favour of <a href="../../../org/bukkit/scoreboard/Team.html#suffix-net.kyori.adventure.text.Component-"><code>suffix(net.kyori.adventure.text.Component)</code></a></span></div>
 <div class="block">Sets the suffix appended to the display of entries on this team.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -489,8 +724,10 @@ java.lang.String&nbsp;getSuffix()
 <li class="blockList">
 <h4>getColor</h4>
 <pre>@NotNull
+ @Deprecated
 <a href="../../../org/bukkit/ChatColor.html" title="enum in org.bukkit">ChatColor</a>&nbsp;getColor()
-                     throws java.lang.IllegalStateException</pre>
+                                  throws java.lang.IllegalStateException</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">in favour of <a href="../../../org/bukkit/scoreboard/Team.html#color--"><code>color()</code></a></span></div>
 <div class="block">Gets the color of the team.
  <br>
  This only sets the team outline, other occurrences of colors such as in
@@ -509,8 +746,10 @@ java.lang.String&nbsp;getSuffix()
 <ul class="blockList">
 <li class="blockList">
 <h4>setColor</h4>
-<pre>void&nbsp;setColor(@NotNull
-              <a href="../../../org/bukkit/ChatColor.html" title="enum in org.bukkit">ChatColor</a>&nbsp;color)</pre>
+<pre>@Deprecated
+void&nbsp;setColor(@NotNull
+                          <a href="../../../org/bukkit/ChatColor.html" title="enum in org.bukkit">ChatColor</a>&nbsp;color)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">in favour of <a href="../../../org/bukkit/scoreboard/Team.html#color-net.kyori.adventure.text.format.NamedTextColor-"><code>color(net.kyori.adventure.text.format.NamedTextColor)</code></a></span></div>
 <div class="block">Sets the color of the team.
  <br>
  This only sets the team outline, other occurrences of colors such as in

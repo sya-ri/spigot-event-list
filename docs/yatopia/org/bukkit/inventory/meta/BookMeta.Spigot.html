@@ -17,8 +17,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var methods = {"i0":42,"i1":42,"i2":42,"i3":42,"i4":42,"i5":42};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -144,7 +144,7 @@ extends java.lang.Object</pre>
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">Deprecated Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
@@ -152,40 +152,50 @@ extends java.lang.Object</pre>
 <tr id="i0" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/BookMeta.Spigot.html#addPage-net.md_5.bungee.api.chat.BaseComponent:A...-">addPage</a></span>(net.md_5.bungee.api.chat.BaseComponent[]...&nbsp;pages)</code>
-<div class="block">Adds new pages to the end of the book.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">in favour of <a href="../../../../org/bukkit/inventory/meta/BookMeta.html#addPages-net.kyori.adventure.text.Component...-"><code>BookMeta.addPages(net.kyori.adventure.text.Component...)</code></a></span></div>
+</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>net.md_5.bungee.api.chat.BaseComponent[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/BookMeta.Spigot.html#getPage-int-">getPage</a></span>(int&nbsp;page)</code>
-<div class="block">Gets the specified page in the book.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">in favour of <a href="../../../../org/bukkit/inventory/meta/BookMeta.html#page-int-"><code>BookMeta.page(int)</code></a></span></div>
+</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.util.List&lt;net.md_5.bungee.api.chat.BaseComponent[]&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/BookMeta.Spigot.html#getPages--">getPages</a></span>()</code>
-<div class="block">Gets all the pages in the book.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">in favour of <code>Book.pages()</code></span></div>
+</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/BookMeta.Spigot.html#setPage-int-net.md_5.bungee.api.chat.BaseComponent...-">setPage</a></span>(int&nbsp;page,
        net.md_5.bungee.api.chat.BaseComponent...&nbsp;data)</code>
-<div class="block">Sets the specified page in the book.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">in favour of <a href="../../../../org/bukkit/inventory/meta/BookMeta.html#page-int-net.kyori.adventure.text.Component-"><code>BookMeta.page(int, net.kyori.adventure.text.Component)</code></a></span></div>
+</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/BookMeta.Spigot.html#setPages-net.md_5.bungee.api.chat.BaseComponent:A...-">setPages</a></span>(net.md_5.bungee.api.chat.BaseComponent[]...&nbsp;pages)</code>
-<div class="block">Clears the existing book pages, and sets the book to use the provided
- pages.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">in favour of <code>Book.pages(net.kyori.adventure.text.Component...)</code></span></div>
+</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/BookMeta.Spigot.html#setPages-java.util.List-">setPages</a></span>(java.util.List&lt;net.md_5.bungee.api.chat.BaseComponent[]&gt;&nbsp;pages)</code>
-<div class="block">Clears the existing book pages, and sets the book to use the provided
- pages.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">in favour of <code>Book.pages(java.util.List)</code></span></div>
+</div>
 </td>
 </tr>
 </table>
@@ -234,7 +244,9 @@ extends java.lang.Object</pre>
 <li class="blockList">
 <h4>getPage</h4>
 <pre>@NotNull
+ @Deprecated
 public&nbsp;net.md_5.bungee.api.chat.BaseComponent[]&nbsp;getPage(int&nbsp;page)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">in favour of <a href="../../../../org/bukkit/inventory/meta/BookMeta.html#page-int-"><code>BookMeta.page(int)</code></a></span></div>
 <div class="block">Gets the specified page in the book. The given page must exist.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -250,9 +262,11 @@ public&nbsp;net.md_5.bungee.api.chat.BaseComponent[]&nbsp;getPage(int&nbsp;page)
 <ul class="blockList">
 <li class="blockList">
 <h4>setPage</h4>
-<pre>public&nbsp;void&nbsp;setPage(int&nbsp;page,
-                    @Nullable
-                    net.md_5.bungee.api.chat.BaseComponent...&nbsp;data)</pre>
+<pre>@Deprecated
+public&nbsp;void&nbsp;setPage(int&nbsp;page,
+                                @Nullable
+                                net.md_5.bungee.api.chat.BaseComponent...&nbsp;data)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">in favour of <a href="../../../../org/bukkit/inventory/meta/BookMeta.html#page-int-net.kyori.adventure.text.Component-"><code>BookMeta.page(int, net.kyori.adventure.text.Component)</code></a></span></div>
 <div class="block">Sets the specified page in the book. Pages of the book must be
  contiguous.
  <p>
@@ -272,7 +286,9 @@ public&nbsp;net.md_5.bungee.api.chat.BaseComponent[]&nbsp;getPage(int&nbsp;page)
 <li class="blockList">
 <h4>getPages</h4>
 <pre>@NotNull
+ @Deprecated
 public&nbsp;java.util.List&lt;net.md_5.bungee.api.chat.BaseComponent[]&gt;&nbsp;getPages()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">in favour of <code>Book.pages()</code></span></div>
 <div class="block">Gets all the pages in the book.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -286,8 +302,10 @@ public&nbsp;java.util.List&lt;net.md_5.bungee.api.chat.BaseComponent[]&gt;&nbsp;
 <ul class="blockList">
 <li class="blockList">
 <h4>setPages</h4>
-<pre>public&nbsp;void&nbsp;setPages(@NotNull
-                     java.util.List&lt;net.md_5.bungee.api.chat.BaseComponent[]&gt;&nbsp;pages)</pre>
+<pre>@Deprecated
+public&nbsp;void&nbsp;setPages(@NotNull
+                                 java.util.List&lt;net.md_5.bungee.api.chat.BaseComponent[]&gt;&nbsp;pages)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">in favour of <code>Book.pages(java.util.List)</code></span></div>
 <div class="block">Clears the existing book pages, and sets the book to use the provided
  pages. Maximum 50 pages with 256 characters per page.</div>
 <dl>
@@ -302,8 +320,10 @@ public&nbsp;java.util.List&lt;net.md_5.bungee.api.chat.BaseComponent[]&gt;&nbsp;
 <ul class="blockList">
 <li class="blockList">
 <h4>setPages</h4>
-<pre>public&nbsp;void&nbsp;setPages(@NotNull
-                     net.md_5.bungee.api.chat.BaseComponent[]...&nbsp;pages)</pre>
+<pre>@Deprecated
+public&nbsp;void&nbsp;setPages(@NotNull
+                                 net.md_5.bungee.api.chat.BaseComponent[]...&nbsp;pages)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">in favour of <code>Book.pages(net.kyori.adventure.text.Component...)</code></span></div>
 <div class="block">Clears the existing book pages, and sets the book to use the provided
  pages. Maximum 50 pages with 256 characters per page.</div>
 <dl>
@@ -318,8 +338,10 @@ public&nbsp;java.util.List&lt;net.md_5.bungee.api.chat.BaseComponent[]&gt;&nbsp;
 <ul class="blockListLast">
 <li class="blockList">
 <h4>addPage</h4>
-<pre>public&nbsp;void&nbsp;addPage(@NotNull
-                    net.md_5.bungee.api.chat.BaseComponent[]...&nbsp;pages)</pre>
+<pre>@Deprecated
+public&nbsp;void&nbsp;addPage(@NotNull
+                                net.md_5.bungee.api.chat.BaseComponent[]...&nbsp;pages)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">in favour of <a href="../../../../org/bukkit/inventory/meta/BookMeta.html#addPages-net.kyori.adventure.text.Component...-"><code>BookMeta.addPages(net.kyori.adventure.text.Component...)</code></a></span></div>
 <div class="block">Adds new pages to the end of the book. Up to a maximum of 50 pages
  with 256 characters per page.</div>
 <dl>

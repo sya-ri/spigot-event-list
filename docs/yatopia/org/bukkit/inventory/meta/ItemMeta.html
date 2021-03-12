@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":38,"i8":38,"i9":6,"i10":38,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6,"i22":6,"i23":6,"i24":6,"i25":6,"i26":6,"i27":6,"i28":6,"i29":6,"i30":6,"i31":6,"i32":6,"i33":6,"i34":6,"i35":6,"i36":6,"i37":6,"i38":6,"i39":38,"i40":38,"i41":6,"i42":6,"i43":6,"i44":6,"i45":6,"i46":6,"i47":6,"i48":6,"i49":6,"i50":38};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":38,"i10":38,"i11":6,"i12":38,"i13":6,"i14":38,"i15":38,"i16":6,"i17":6,"i18":6,"i19":6,"i20":38,"i21":38,"i22":6,"i23":6,"i24":6,"i25":6,"i26":6,"i27":6,"i28":6,"i29":6,"i30":6,"i31":6,"i32":6,"i33":6,"i34":6,"i35":6,"i36":6,"i37":6,"i38":6,"i39":6,"i40":6,"i41":6,"i42":6,"i43":38,"i44":38,"i45":6,"i46":6,"i47":38,"i48":38,"i49":6,"i50":38,"i51":38,"i52":6,"i53":6,"i54":38};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -157,6 +157,18 @@ extends java.lang.Cloneable, <a href="../../../../org/bukkit/configuration/seria
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#clone--">clone</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i4" class="altColor">
+<td class="colFirst"><code>net.kyori.adventure.text.Component</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#displayName--">displayName</a></span>()</code>
+<div class="block">Gets the display name.</div>
+</td>
+</tr>
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#displayName-net.kyori.adventure.text.Component-">displayName</a></span>(net.kyori.adventure.text.Component&nbsp;displayName)</code>
+<div class="block">Sets the display name.</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>com.google.common.collect.Multimap&lt;<a href="../../../../org/bukkit/attribute/Attribute.html" title="enum in org.bukkit.attribute">Attribute</a>,<a href="../../../../org/bukkit/attribute/AttributeModifier.html" title="class in org.bukkit.attribute">AttributeModifier</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#getAttributeModifiers--">getAttributeModifiers</a></span>()</code>
 <div class="block">Return an immutable copy of all Attributes and
@@ -164,14 +176,14 @@ extends java.lang.Cloneable, <a href="../../../../org/bukkit/configuration/seria
  Returns null if none exist.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.util.Collection&lt;<a href="../../../../org/bukkit/attribute/AttributeModifier.html" title="class in org.bukkit.attribute">AttributeModifier</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#getAttributeModifiers-org.bukkit.attribute.Attribute-">getAttributeModifiers</a></span>(<a href="../../../../org/bukkit/attribute/Attribute.html" title="enum in org.bukkit.attribute">Attribute</a>&nbsp;attribute)</code>
 <div class="block">Return an immutable copy of all <a href="../../../../org/bukkit/attribute/AttributeModifier.html" title="class in org.bukkit.attribute"><code>AttributeModifier</code></a>s
  for a given <a href="../../../../org/bukkit/attribute/Attribute.html" title="enum in org.bukkit.attribute"><code>Attribute</code></a></div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>com.google.common.collect.Multimap&lt;<a href="../../../../org/bukkit/attribute/Attribute.html" title="enum in org.bukkit.attribute">Attribute</a>,<a href="../../../../org/bukkit/attribute/AttributeModifier.html" title="class in org.bukkit.attribute">AttributeModifier</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#getAttributeModifiers-org.bukkit.inventory.EquipmentSlot-">getAttributeModifiers</a></span>(<a href="../../../../org/bukkit/inventory/EquipmentSlot.html" title="enum in org.bukkit.inventory">EquipmentSlot</a>&nbsp;slot)</code>
 <div class="block">Return an immutable copy of all <a href="../../../../org/bukkit/attribute/Attribute.html" title="enum in org.bukkit.attribute"><code>Attribute</code></a>s and their
@@ -180,7 +192,7 @@ extends java.lang.Cloneable, <a href="../../../../org/bukkit/configuration/seria
  <a href="../../../../org/bukkit/inventory/EquipmentSlot.html" title="enum in org.bukkit.inventory"><code>EquipmentSlot</code></a> will be returned.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>java.util.Set&lt;<a href="../../../../org/bukkit/Material.html" title="enum in org.bukkit">Material</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#getCanDestroy--">getCanDestroy</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -188,7 +200,7 @@ extends java.lang.Cloneable, <a href="../../../../org/bukkit/configuration/seria
 </div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>java.util.Set&lt;<a href="../../../../org/bukkit/Material.html" title="enum in org.bukkit">Material</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#getCanPlaceOn--">getCanPlaceOn</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -196,13 +208,13 @@ extends java.lang.Cloneable, <a href="../../../../org/bukkit/configuration/seria
 </div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#getCustomModelData--">getCustomModelData</a></span>()</code>
 <div class="block">Gets the custom model data that is set.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../../../org/bukkit/inventory/meta/tags/CustomItemTagContainer.html" title="interface in org.bukkit.inventory.meta.tags">CustomItemTagContainer</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#getCustomTagContainer--">getCustomTagContainer</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -211,154 +223,174 @@ extends java.lang.Cloneable, <a href="../../../../org/bukkit/configuration/seria
 </div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>java.util.Set&lt;<a href="../../../../com/destroystokyo/paper/Namespaced.html" title="interface in com.destroystokyo.paper">Namespaced</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#getDestroyableKeys--">getDestroyableKeys</a></span>()</code>
 <div class="block">Gets the collection of namespaced keys that the item can destroy in <a href="../../../../org/bukkit/GameMode.html#ADVENTURE"><code>GameMode.ADVENTURE</code></a></div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#getDisplayName--">getDisplayName</a></span>()</code>
-<div class="block">Gets the display name that is set.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">in favour of <a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#displayName--"><code>displayName()</code></a></span></div>
+</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>net.md_5.bungee.api.chat.BaseComponent[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#getDisplayNameComponent--">getDisplayNameComponent</a></span>()</code>
-<div class="block">Gets the display name that is set.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">use <a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#displayName--"><code>displayName()</code></a></span></div>
+</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#getEnchantLevel-org.bukkit.enchantments.Enchantment-">getEnchantLevel</a></span>(<a href="../../../../org/bukkit/enchantments/Enchantment.html" title="class in org.bukkit.enchantments">Enchantment</a>&nbsp;ench)</code>
 <div class="block">Checks for the level of the specified enchantment.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>java.util.Map&lt;<a href="../../../../org/bukkit/enchantments/Enchantment.html" title="class in org.bukkit.enchantments">Enchantment</a>,java.lang.Integer&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#getEnchants--">getEnchants</a></span>()</code>
 <div class="block">Returns a copy the enchantments in this ItemMeta.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>java.util.Set&lt;<a href="../../../../org/bukkit/inventory/ItemFlag.html" title="enum in org.bukkit.inventory">ItemFlag</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#getItemFlags--">getItemFlags</a></span>()</code>
 <div class="block">Get current set itemFlags.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#getLocalizedName--">getLocalizedName</a></span>()</code>
 <div class="block">Gets the localized display name that is set.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>java.util.List&lt;java.lang.String&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#getLore--">getLore</a></span>()</code>
-<div class="block">Gets the lore that is set.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">in favour of <a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#lore--"><code>lore()</code></a></span></div>
+</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code>java.util.List&lt;net.md_5.bungee.api.chat.BaseComponent[]&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#getLoreComponents--">getLoreComponents</a></span>()</code>
-<div class="block">Gets the lore that is set.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">use <a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#lore--"><code>lore()</code></a></span></div>
+</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>java.util.Set&lt;<a href="../../../../com/destroystokyo/paper/Namespaced.html" title="interface in com.destroystokyo.paper">Namespaced</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#getPlaceableKeys--">getPlaceableKeys</a></span>()</code>
 <div class="block">Gets the collection of namespaced keys that the item can be placed on in <a href="../../../../org/bukkit/GameMode.html#ADVENTURE"><code>GameMode.ADVENTURE</code></a></div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#hasAttributeModifiers--">hasAttributeModifiers</a></span>()</code>
 <div class="block">Checks for the existence of any AttributeModifiers.</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#hasConflictingEnchant-org.bukkit.enchantments.Enchantment-">hasConflictingEnchant</a></span>(<a href="../../../../org/bukkit/enchantments/Enchantment.html" title="class in org.bukkit.enchantments">Enchantment</a>&nbsp;ench)</code>
 <div class="block">Checks if the specified enchantment conflicts with any enchantments in
  this ItemMeta.</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#hasCustomModelData--">hasCustomModelData</a></span>()</code>
 <div class="block">Checks for existence of custom model data.</div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#hasDestroyableKeys--">hasDestroyableKeys</a></span>()</code>
 <div class="block">Checks for the existence of any keys that the item can destroy</div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#hasDisplayName--">hasDisplayName</a></span>()</code>
 <div class="block">Checks for existence of a display name.</div>
 </td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#hasEnchant-org.bukkit.enchantments.Enchantment-">hasEnchant</a></span>(<a href="../../../../org/bukkit/enchantments/Enchantment.html" title="class in org.bukkit.enchantments">Enchantment</a>&nbsp;ench)</code>
 <div class="block">Checks for existence of the specified enchantment.</div>
 </td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#hasEnchants--">hasEnchants</a></span>()</code>
 <div class="block">Checks for the existence of any enchantments.</div>
 </td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#hasItemFlag-org.bukkit.inventory.ItemFlag-">hasItemFlag</a></span>(<a href="../../../../org/bukkit/inventory/ItemFlag.html" title="enum in org.bukkit.inventory">ItemFlag</a>&nbsp;flag)</code>
 <div class="block">Check if the specified flag is present on this item.</div>
 </td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#hasLocalizedName--">hasLocalizedName</a></span>()</code>
 <div class="block">Checks for existence of a localized name.</div>
 </td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#hasLore--">hasLore</a></span>()</code>
 <div class="block">Checks for existence of lore.</div>
 </td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#hasPlaceableKeys--">hasPlaceableKeys</a></span>()</code>
 <div class="block">Checks for the existence of any keys that the item can be placed on</div>
 </td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#isUnbreakable--">isUnbreakable</a></span>()</code>
 <div class="block">Return if the unbreakable tag is true.</div>
 </td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i35" class="rowColor">
+<td class="colFirst"><code>java.util.List&lt;net.kyori.adventure.text.Component&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#lore--">lore</a></span>()</code>
+<div class="block">Gets the lore.</div>
+</td>
+</tr>
+<tr id="i36" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#lore-java.util.List-">lore</a></span>(java.util.List&lt;net.kyori.adventure.text.Component&gt;&nbsp;lore)</code>
+<div class="block">Sets the lore.</div>
+</td>
+</tr>
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#removeAttributeModifier-org.bukkit.attribute.Attribute-">removeAttributeModifier</a></span>(<a href="../../../../org/bukkit/attribute/Attribute.html" title="enum in org.bukkit.attribute">Attribute</a>&nbsp;attribute)</code>
 <div class="block">Remove all <a href="../../../../org/bukkit/attribute/AttributeModifier.html" title="class in org.bukkit.attribute"><code>AttributeModifier</code></a>s associated with the given
  <a href="../../../../org/bukkit/attribute/Attribute.html" title="enum in org.bukkit.attribute"><code>Attribute</code></a>.</div>
 </td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i38" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#removeAttributeModifier-org.bukkit.attribute.Attribute-org.bukkit.attribute.AttributeModifier-">removeAttributeModifier</a></span>(<a href="../../../../org/bukkit/attribute/Attribute.html" title="enum in org.bukkit.attribute">Attribute</a>&nbsp;attribute,
                        <a href="../../../../org/bukkit/attribute/AttributeModifier.html" title="class in org.bukkit.attribute">AttributeModifier</a>&nbsp;modifier)</code>
 <div class="block">Remove a specific <a href="../../../../org/bukkit/attribute/Attribute.html" title="enum in org.bukkit.attribute"><code>Attribute</code></a> and <a href="../../../../org/bukkit/attribute/AttributeModifier.html" title="class in org.bukkit.attribute"><code>AttributeModifier</code></a>.</div>
 </td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#removeAttributeModifier-org.bukkit.inventory.EquipmentSlot-">removeAttributeModifier</a></span>(<a href="../../../../org/bukkit/inventory/EquipmentSlot.html" title="enum in org.bukkit.inventory">EquipmentSlot</a>&nbsp;slot)</code>
 <div class="block">Remove all <a href="../../../../org/bukkit/attribute/Attribute.html" title="enum in org.bukkit.attribute"><code>Attribute</code></a>s and <a href="../../../../org/bukkit/attribute/AttributeModifier.html" title="class in org.bukkit.attribute"><code>AttributeModifier</code></a>s for a
@@ -367,25 +399,25 @@ extends java.lang.Cloneable, <a href="../../../../org/bukkit/configuration/seria
  <a href="../../../../org/bukkit/attribute/AttributeModifier.html" title="class in org.bukkit.attribute"><code>AttributeModifier</code></a>s that do not have an EquipmentSlot set.</div>
 </td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#removeEnchant-org.bukkit.enchantments.Enchantment-">removeEnchant</a></span>(<a href="../../../../org/bukkit/enchantments/Enchantment.html" title="class in org.bukkit.enchantments">Enchantment</a>&nbsp;ench)</code>
 <div class="block">Removes the specified enchantment from this item meta.</div>
 </td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#removeItemFlags-org.bukkit.inventory.ItemFlag...-">removeItemFlags</a></span>(<a href="../../../../org/bukkit/inventory/ItemFlag.html" title="enum in org.bukkit.inventory">ItemFlag</a>...&nbsp;itemFlags)</code>
 <div class="block">Remove specific set of itemFlags.</div>
 </td>
 </tr>
-<tr id="i38" class="altColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#setAttributeModifiers-com.google.common.collect.Multimap-">setAttributeModifiers</a></span>(com.google.common.collect.Multimap&lt;<a href="../../../../org/bukkit/attribute/Attribute.html" title="enum in org.bukkit.attribute">Attribute</a>,<a href="../../../../org/bukkit/attribute/AttributeModifier.html" title="class in org.bukkit.attribute">AttributeModifier</a>&gt;&nbsp;attributeModifiers)</code>
 <div class="block">Set all <a href="../../../../org/bukkit/attribute/Attribute.html" title="enum in org.bukkit.attribute"><code>Attribute</code></a>s and their <a href="../../../../org/bukkit/attribute/AttributeModifier.html" title="class in org.bukkit.attribute"><code>AttributeModifier</code></a>s.</div>
 </td>
 </tr>
-<tr id="i39" class="rowColor">
+<tr id="i43" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#setCanDestroy-java.util.Set-">setCanDestroy</a></span>(java.util.Set&lt;<a href="../../../../org/bukkit/Material.html" title="enum in org.bukkit">Material</a>&gt;&nbsp;canDestroy)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -393,7 +425,7 @@ extends java.lang.Cloneable, <a href="../../../../org/bukkit/configuration/seria
 </div>
 </td>
 </tr>
-<tr id="i40" class="altColor">
+<tr id="i44" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#setCanPlaceOn-java.util.Set-">setCanPlaceOn</a></span>(java.util.Set&lt;<a href="../../../../org/bukkit/Material.html" title="enum in org.bukkit">Material</a>&gt;&nbsp;canPlaceOn)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -401,61 +433,69 @@ extends java.lang.Cloneable, <a href="../../../../org/bukkit/configuration/seria
 </div>
 </td>
 </tr>
-<tr id="i41" class="rowColor">
+<tr id="i45" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#setCustomModelData-java.lang.Integer-">setCustomModelData</a></span>(java.lang.Integer&nbsp;data)</code>
 <div class="block">Sets the custom model data.</div>
 </td>
 </tr>
-<tr id="i42" class="altColor">
+<tr id="i46" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#setDestroyableKeys-java.util.Collection-">setDestroyableKeys</a></span>(java.util.Collection&lt;<a href="../../../../com/destroystokyo/paper/Namespaced.html" title="interface in com.destroystokyo.paper">Namespaced</a>&gt;&nbsp;canDestroy)</code>
 <div class="block">Sets the collection of namespaced keys that the item can destroy in <a href="../../../../org/bukkit/GameMode.html#ADVENTURE"><code>GameMode.ADVENTURE</code></a></div>
 </td>
 </tr>
-<tr id="i43" class="rowColor">
+<tr id="i47" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#setDisplayName-java.lang.String-">setDisplayName</a></span>(java.lang.String&nbsp;name)</code>
-<div class="block">Sets the display name.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">in favour of <a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#displayName-net.kyori.adventure.text.Component-"><code>displayName(net.kyori.adventure.text.Component)</code></a></span></div>
+</div>
 </td>
 </tr>
-<tr id="i44" class="altColor">
+<tr id="i48" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#setDisplayNameComponent-net.md_5.bungee.api.chat.BaseComponent:A-">setDisplayNameComponent</a></span>(net.md_5.bungee.api.chat.BaseComponent[]&nbsp;component)</code>
-<div class="block">Sets the display name.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">use <a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#displayName-net.kyori.adventure.text.Component-"><code>displayName(Component)</code></a></span></div>
+</div>
 </td>
 </tr>
-<tr id="i45" class="rowColor">
+<tr id="i49" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#setLocalizedName-java.lang.String-">setLocalizedName</a></span>(java.lang.String&nbsp;name)</code>
 <div class="block">Sets the localized name.</div>
 </td>
 </tr>
-<tr id="i46" class="altColor">
+<tr id="i50" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#setLore-java.util.List-">setLore</a></span>(java.util.List&lt;java.lang.String&gt;&nbsp;lore)</code>
-<div class="block">Sets the lore for this item.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">in favour of <a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#lore-java.util.List-"><code>lore(List)</code></a></span></div>
+</div>
 </td>
 </tr>
-<tr id="i47" class="rowColor">
+<tr id="i51" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#setLoreComponents-java.util.List-">setLoreComponents</a></span>(java.util.List&lt;net.md_5.bungee.api.chat.BaseComponent[]&gt;&nbsp;lore)</code>
-<div class="block">Sets the lore for this item.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">use <a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#lore-java.util.List-"><code>lore(List)</code></a></span></div>
+</div>
 </td>
 </tr>
-<tr id="i48" class="altColor">
+<tr id="i52" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#setPlaceableKeys-java.util.Collection-">setPlaceableKeys</a></span>(java.util.Collection&lt;<a href="../../../../com/destroystokyo/paper/Namespaced.html" title="interface in com.destroystokyo.paper">Namespaced</a>&gt;&nbsp;canPlaceOn)</code>
 <div class="block">Sets the set of namespaced keys that the item can be placed on in <a href="../../../../org/bukkit/GameMode.html#ADVENTURE"><code>GameMode.ADVENTURE</code></a></div>
 </td>
 </tr>
-<tr id="i49" class="rowColor">
+<tr id="i53" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#setUnbreakable-boolean-">setUnbreakable</a></span>(boolean&nbsp;unbreakable)</code>
 <div class="block">Sets the unbreakable tag.</div>
 </td>
 </tr>
-<tr id="i50" class="altColor">
+<tr id="i54" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#setVersion-int-">setVersion</a></span>(int&nbsp;version)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -506,14 +546,48 @@ extends java.lang.Cloneable, <a href="../../../../org/bukkit/configuration/seria
 </dl>
 </li>
 </ul>
+<a name="displayName--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>displayName</h4>
+<pre>@Nullable
+net.kyori.adventure.text.Component&nbsp;displayName()</pre>
+<div class="block">Gets the display name.
+
+ <p>Plugins should check that <a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#hasDisplayName--"><code>hasDisplayName()</code></a> returns <code>true</code> before calling this method.</p></div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the display name</dd>
+</dl>
+</li>
+</ul>
+<a name="displayName-net.kyori.adventure.text.Component-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>displayName</h4>
+<pre>void&nbsp;displayName(@Nullable
+                 net.kyori.adventure.text.Component&nbsp;displayName)</pre>
+<div class="block">Sets the display name.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>displayName</code> - the display name to set</dd>
+</dl>
+</li>
+</ul>
 <a name="getDisplayName--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getDisplayName</h4>
-<pre>@NotNull
+<pre>@Deprecated
+ @NotNull
 java.lang.String&nbsp;getDisplayName()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">in favour of <a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#displayName--"><code>displayName()</code></a></span></div>
 <div class="block">Gets the display name that is set.
  <p>
  Plugins should check that hasDisplayName() returns <code>true</code>
@@ -531,7 +605,9 @@ java.lang.String&nbsp;getDisplayName()</pre>
 <li class="blockList">
 <h4>getDisplayNameComponent</h4>
 <pre>@NotNull
+ @Deprecated
 net.md_5.bungee.api.chat.BaseComponent[]&nbsp;getDisplayNameComponent()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">use <a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#displayName--"><code>displayName()</code></a></span></div>
 <div class="block">Gets the display name that is set.
  <p>
  Plugins should check that hasDisplayName() returns <code>true</code>
@@ -548,8 +624,10 @@ net.md_5.bungee.api.chat.BaseComponent[]&nbsp;getDisplayNameComponent()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>setDisplayName</h4>
-<pre>void&nbsp;setDisplayName(@Nullable
-                    java.lang.String&nbsp;name)</pre>
+<pre>@Deprecated
+void&nbsp;setDisplayName(@Nullable
+                                java.lang.String&nbsp;name)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">in favour of <a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#displayName-net.kyori.adventure.text.Component-"><code>displayName(net.kyori.adventure.text.Component)</code></a></span></div>
 <div class="block">Sets the display name.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -563,8 +641,10 @@ net.md_5.bungee.api.chat.BaseComponent[]&nbsp;getDisplayNameComponent()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>setDisplayNameComponent</h4>
-<pre>void&nbsp;setDisplayNameComponent(@Nullable
-                             net.md_5.bungee.api.chat.BaseComponent[]&nbsp;component)</pre>
+<pre>@Deprecated
+void&nbsp;setDisplayNameComponent(@Nullable
+                                         net.md_5.bungee.api.chat.BaseComponent[]&nbsp;component)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">use <a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#displayName-net.kyori.adventure.text.Component-"><code>displayName(Component)</code></a></span></div>
 <div class="block">Sets the display name.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -633,14 +713,48 @@ java.lang.String&nbsp;getLocalizedName()</pre>
 </dl>
 </li>
 </ul>
+<a name="lore--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>lore</h4>
+<pre>@Nullable
+java.util.List&lt;net.kyori.adventure.text.Component&gt;&nbsp;lore()</pre>
+<div class="block">Gets the lore.
+
+ <p>Plugins should check that <a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#hasLore--"><code>hasLore()</code></a> returns <code>true</code> before calling this method.</p></div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the display name</dd>
+</dl>
+</li>
+</ul>
+<a name="lore-java.util.List-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>lore</h4>
+<pre>void&nbsp;lore(@Nullable
+          java.util.List&lt;net.kyori.adventure.text.Component&gt;&nbsp;lore)</pre>
+<div class="block">Sets the lore.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>lore</code> - the lore to set</dd>
+</dl>
+</li>
+</ul>
 <a name="getLore--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>getLore</h4>
-<pre>@Nullable
+<pre>@Deprecated
+ @Nullable
 java.util.List&lt;java.lang.String&gt;&nbsp;getLore()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">in favour of <a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#lore--"><code>lore()</code></a></span></div>
 <div class="block">Gets the lore that is set.
  <p>
  Plugins should check if hasLore() returns <code>true</code> before
@@ -658,7 +772,9 @@ java.util.List&lt;java.lang.String&gt;&nbsp;getLore()</pre>
 <li class="blockList">
 <h4>getLoreComponents</h4>
 <pre>@Nullable
+ @Deprecated
 java.util.List&lt;net.md_5.bungee.api.chat.BaseComponent[]&gt;&nbsp;getLoreComponents()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">use <a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#lore--"><code>lore()</code></a></span></div>
 <div class="block">Gets the lore that is set.
  <p>
  Plugins should check if hasLore() returns <code>true</code> before
@@ -675,8 +791,10 @@ java.util.List&lt;net.md_5.bungee.api.chat.BaseComponent[]&gt;&nbsp;getLoreCompo
 <ul class="blockList">
 <li class="blockList">
 <h4>setLore</h4>
-<pre>void&nbsp;setLore(@Nullable
-             java.util.List&lt;java.lang.String&gt;&nbsp;lore)</pre>
+<pre>@Deprecated
+void&nbsp;setLore(@Nullable
+                         java.util.List&lt;java.lang.String&gt;&nbsp;lore)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">in favour of <a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#lore-java.util.List-"><code>lore(List)</code></a></span></div>
 <div class="block">Sets the lore for this item.
  Removes lore when given null.</div>
 <dl>
@@ -691,8 +809,10 @@ java.util.List&lt;net.md_5.bungee.api.chat.BaseComponent[]&gt;&nbsp;getLoreCompo
 <ul class="blockList">
 <li class="blockList">
 <h4>setLoreComponents</h4>
-<pre>void&nbsp;setLoreComponents(@Nullable
-                       java.util.List&lt;net.md_5.bungee.api.chat.BaseComponent[]&gt;&nbsp;lore)</pre>
+<pre>@Deprecated
+void&nbsp;setLoreComponents(@Nullable
+                                   java.util.List&lt;net.md_5.bungee.api.chat.BaseComponent[]&gt;&nbsp;lore)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">use <a href="../../../../org/bukkit/inventory/meta/ItemMeta.html#lore-java.util.List-"><code>lore(List)</code></a></span></div>
 <div class="block">Sets the lore for this item.
  Removes lore when given null.</div>
 <dl>

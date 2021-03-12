@@ -173,7 +173,15 @@ extends <a href="../../../../org/bukkit/event/block/BlockCookEvent.html" title="
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/inventory/FurnaceSmeltEvent.html#FurnaceSmeltEvent-org.bukkit.block.Block-org.bukkit.inventory.ItemStack-org.bukkit.inventory.ItemStack-">FurnaceSmeltEvent</a></span>(<a href="../../../../org/bukkit/block/Block.html" title="interface in org.bukkit.block">Block</a>&nbsp;furnace,
                  <a href="../../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&nbsp;source,
-                 <a href="../../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&nbsp;result)</code>&nbsp;</td>
+                 <a href="../../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&nbsp;result)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/inventory/FurnaceSmeltEvent.html#FurnaceSmeltEvent-org.bukkit.block.Block-org.bukkit.inventory.ItemStack-org.bukkit.inventory.ItemStack-org.bukkit.inventory.CookingRecipe-">FurnaceSmeltEvent</a></span>(<a href="../../../../org/bukkit/block/Block.html" title="interface in org.bukkit.block">Block</a>&nbsp;furnace,
+                 <a href="../../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&nbsp;source,
+                 <a href="../../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&nbsp;result,
+                 <a href="../../../../org/bukkit/inventory/CookingRecipe.html" title="class in org.bukkit.inventory">CookingRecipe</a>&lt;?&gt;&nbsp;recipe)</code>&nbsp;</td>
 </tr>
 </table>
 </li>
@@ -189,7 +197,7 @@ extends <a href="../../../../org/bukkit/event/block/BlockCookEvent.html" title="
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;org.bukkit.event.block.<a href="../../../../org/bukkit/event/block/BlockCookEvent.html" title="class in org.bukkit.event.block">BlockCookEvent</a></h3>
-<code><a href="../../../../org/bukkit/event/block/BlockCookEvent.html#getHandlerList--">getHandlerList</a>, <a href="../../../../org/bukkit/event/block/BlockCookEvent.html#getHandlers--">getHandlers</a>, <a href="../../../../org/bukkit/event/block/BlockCookEvent.html#getResult--">getResult</a>, <a href="../../../../org/bukkit/event/block/BlockCookEvent.html#getSource--">getSource</a>, <a href="../../../../org/bukkit/event/block/BlockCookEvent.html#isCancelled--">isCancelled</a>, <a href="../../../../org/bukkit/event/block/BlockCookEvent.html#setCancelled-boolean-">setCancelled</a>, <a href="../../../../org/bukkit/event/block/BlockCookEvent.html#setResult-org.bukkit.inventory.ItemStack-">setResult</a></code></li>
+<code><a href="../../../../org/bukkit/event/block/BlockCookEvent.html#getHandlerList--">getHandlerList</a>, <a href="../../../../org/bukkit/event/block/BlockCookEvent.html#getHandlers--">getHandlers</a>, <a href="../../../../org/bukkit/event/block/BlockCookEvent.html#getRecipe--">getRecipe</a>, <a href="../../../../org/bukkit/event/block/BlockCookEvent.html#getResult--">getResult</a>, <a href="../../../../org/bukkit/event/block/BlockCookEvent.html#getSource--">getSource</a>, <a href="../../../../org/bukkit/event/block/BlockCookEvent.html#isCancelled--">isCancelled</a>, <a href="../../../../org/bukkit/event/block/BlockCookEvent.html#setCancelled-boolean-">setCancelled</a>, <a href="../../../../org/bukkit/event/block/BlockCookEvent.html#setResult-org.bukkit.inventory.ItemStack-">setResult</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.bukkit.event.block.BlockEvent">
@@ -229,6 +237,22 @@ extends <a href="../../../../org/bukkit/event/block/BlockCookEvent.html" title="
 <a name="FurnaceSmeltEvent-org.bukkit.block.Block-org.bukkit.inventory.ItemStack-org.bukkit.inventory.ItemStack-">
 <!--   -->
 </a>
+<ul class="blockList">
+<li class="blockList">
+<h4>FurnaceSmeltEvent</h4>
+<pre>@Deprecated
+public&nbsp;FurnaceSmeltEvent(@NotNull
+                                     <a href="../../../../org/bukkit/block/Block.html" title="interface in org.bukkit.block">Block</a>&nbsp;furnace,
+                                     @NotNull
+                                     <a href="../../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&nbsp;source,
+                                     @NotNull
+                                     <a href="../../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&nbsp;result)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+</li>
+</ul>
+<a name="FurnaceSmeltEvent-org.bukkit.block.Block-org.bukkit.inventory.ItemStack-org.bukkit.inventory.ItemStack-org.bukkit.inventory.CookingRecipe-">
+<!--   -->
+</a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>FurnaceSmeltEvent</h4>
@@ -237,7 +261,9 @@ extends <a href="../../../../org/bukkit/event/block/BlockCookEvent.html" title="
                          @NotNull
                          <a href="../../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&nbsp;source,
                          @NotNull
-                         <a href="../../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&nbsp;result)</pre>
+                         <a href="../../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&nbsp;result,
+                         @Nullable
+                         <a href="../../../../org/bukkit/inventory/CookingRecipe.html" title="class in org.bukkit.inventory">CookingRecipe</a>&lt;?&gt;&nbsp;recipe)</pre>
 </li>
 </ul>
 </li>

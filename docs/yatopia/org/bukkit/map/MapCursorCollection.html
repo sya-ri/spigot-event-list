@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":42,"i2":42,"i3":42,"i4":10,"i5":10,"i6":10,"i7":10};
+var methods = {"i0":10,"i1":42,"i2":42,"i3":42,"i4":42,"i5":10,"i6":10,"i7":10,"i8":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -179,6 +179,19 @@ extends java.lang.Object</pre>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/map/MapCursor.html" title="class in org.bukkit.map">MapCursor</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/map/MapCursorCollection.html#addCursor-int-int-byte-byte-boolean-net.kyori.adventure.text.Component-">addCursor</a></span>(int&nbsp;x,
+         int&nbsp;y,
+         byte&nbsp;direction,
+         byte&nbsp;type,
+         boolean&nbsp;visible,
+         net.kyori.adventure.text.Component&nbsp;caption)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">Magic value</span></div>
+</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
+<td class="colFirst"><code><a href="../../../org/bukkit/map/MapCursor.html" title="class in org.bukkit.map">MapCursor</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/map/MapCursorCollection.html#addCursor-int-int-byte-byte-boolean-java.lang.String-">addCursor</a></span>(int&nbsp;x,
          int&nbsp;y,
          byte&nbsp;direction,
@@ -190,25 +203,25 @@ extends java.lang.Object</pre>
 </div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/map/MapCursor.html" title="class in org.bukkit.map">MapCursor</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/map/MapCursorCollection.html#addCursor-org.bukkit.map.MapCursor-">addCursor</a></span>(<a href="../../../org/bukkit/map/MapCursor.html" title="class in org.bukkit.map">MapCursor</a>&nbsp;cursor)</code>
 <div class="block">Add a cursor to the collection.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/map/MapCursor.html" title="class in org.bukkit.map">MapCursor</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/map/MapCursorCollection.html#getCursor-int-">getCursor</a></span>(int&nbsp;index)</code>
 <div class="block">Get a cursor from this collection.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/map/MapCursorCollection.html#removeCursor-org.bukkit.map.MapCursor-">removeCursor</a></span>(<a href="../../../org/bukkit/map/MapCursor.html" title="class in org.bukkit.map">MapCursor</a>&nbsp;cursor)</code>
 <div class="block">Remove a cursor from the collection.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/map/MapCursorCollection.html#size--">size</a></span>()</code>
 <div class="block">Get the amount of cursors in this collection.</div>
@@ -395,7 +408,7 @@ public&nbsp;<a href="../../../org/bukkit/map/MapCursor.html" title="class in org
 <a name="addCursor-int-int-byte-byte-boolean-java.lang.String-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>addCursor</h4>
 <pre>@Deprecated
@@ -407,6 +420,36 @@ public&nbsp;<a href="../../../org/bukkit/map/MapCursor.html" title="class in org
                                                  boolean&nbsp;visible,
                                                  @Nullable
                                                  java.lang.String&nbsp;caption)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Magic value</span></div>
+<div class="block">Add a cursor to the collection.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>x</code> - The x coordinate, from -128 to 127.</dd>
+<dd><code>y</code> - The y coordinate, from -128 to 127.</dd>
+<dd><code>direction</code> - The facing of the cursor, from 0 to 15.</dd>
+<dd><code>type</code> - The type (color/style) of the map cursor.</dd>
+<dd><code>visible</code> - Whether the cursor is visible.</dd>
+<dd><code>caption</code> - banner caption</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The newly added MapCursor.</dd>
+</dl>
+</li>
+</ul>
+<a name="addCursor-int-int-byte-byte-boolean-net.kyori.adventure.text.Component-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>addCursor</h4>
+<pre>@Deprecated
+ @NotNull
+public&nbsp;<a href="../../../org/bukkit/map/MapCursor.html" title="class in org.bukkit.map">MapCursor</a>&nbsp;addCursor(int&nbsp;x,
+                                                 int&nbsp;y,
+                                                 byte&nbsp;direction,
+                                                 byte&nbsp;type,
+                                                 boolean&nbsp;visible,
+                                                 @Nullable
+                                                 net.kyori.adventure.text.Component&nbsp;caption)</pre>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Magic value</span></div>
 <div class="block">Add a cursor to the collection.</div>
 <dl>

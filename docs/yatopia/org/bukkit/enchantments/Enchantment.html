@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":10,"i3":9,"i4":41,"i5":6,"i6":10,"i7":6,"i8":38,"i9":6,"i10":10,"i11":9,"i12":38,"i13":6,"i14":9,"i15":9,"i16":10,"i17":9};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":10,"i4":9,"i5":41,"i6":6,"i7":10,"i8":6,"i9":38,"i10":6,"i11":10,"i12":9,"i13":38,"i14":6,"i15":9,"i16":9,"i17":10,"i18":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -412,16 +412,22 @@ implements <a href="../../../org/bukkit/Keyed.html" title="interface in org.bukk
 </td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code>abstract net.kyori.adventure.text.Component</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/enchantments/Enchantment.html#displayName-int-">displayName</a></span>(int&nbsp;level)</code>
+<div class="block">Get the name of the enchantment with its applied level.</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/enchantments/Enchantment.html#equals-java.lang.Object-">equals</a></span>(java.lang.Object&nbsp;obj)</code>&nbsp;</td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>static <a href="../../../org/bukkit/enchantments/Enchantment.html" title="class in org.bukkit.enchantments">Enchantment</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/enchantments/Enchantment.html#getByKey-org.bukkit.NamespacedKey-">getByKey</a></span>(<a href="../../../org/bukkit/NamespacedKey.html" title="class in org.bukkit">NamespacedKey</a>&nbsp;key)</code>
 <div class="block">Gets the Enchantment at the specified key</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>static <a href="../../../org/bukkit/enchantments/Enchantment.html" title="class in org.bukkit.enchantments">Enchantment</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/enchantments/Enchantment.html#getByName-java.lang.String-">getByName</a></span>(java.lang.String&nbsp;name)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -429,25 +435,25 @@ implements <a href="../../../org/bukkit/Keyed.html" title="interface in org.bukk
 </div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>abstract <a href="../../../org/bukkit/enchantments/EnchantmentTarget.html" title="enum in org.bukkit.enchantments">EnchantmentTarget</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/enchantments/Enchantment.html#getItemTarget--">getItemTarget</a></span>()</code>
 <div class="block">Gets the type of <a href="../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory"><code>ItemStack</code></a> that may fit this Enchantment.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/NamespacedKey.html" title="class in org.bukkit">NamespacedKey</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/enchantments/Enchantment.html#getKey--">getKey</a></span>()</code>
 <div class="block">Return the namespaced identifier for this object.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>abstract int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/enchantments/Enchantment.html#getMaxLevel--">getMaxLevel</a></span>()</code>
 <div class="block">Gets the maximum level that this Enchantment may become.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>abstract java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/enchantments/Enchantment.html#getName--">getName</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -455,23 +461,23 @@ implements <a href="../../../org/bukkit/Keyed.html" title="interface in org.bukk
 </div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>abstract int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/enchantments/Enchantment.html#getStartLevel--">getStartLevel</a></span>()</code>
 <div class="block">Gets the level that this Enchantment should start at</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/enchantments/Enchantment.html#hashCode--">hashCode</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>static boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/enchantments/Enchantment.html#isAcceptingRegistrations--">isAcceptingRegistrations</a></span>()</code>
 <div class="block">Checks if this is accepting Enchantment registrations.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>abstract boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/enchantments/Enchantment.html#isCursed--">isCursed</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -481,29 +487,29 @@ implements <a href="../../../org/bukkit/Keyed.html" title="interface in org.bukk
 </div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>abstract boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/enchantments/Enchantment.html#isTreasure--">isTreasure</a></span>()</code>
 <div class="block">Checks if this enchantment is a treasure enchantment.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/enchantments/Enchantment.html#registerEnchantment-org.bukkit.enchantments.Enchantment-">registerEnchantment</a></span>(<a href="../../../org/bukkit/enchantments/Enchantment.html" title="class in org.bukkit.enchantments">Enchantment</a>&nbsp;enchantment)</code>
 <div class="block">Registers an enchantment with the given ID and object.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>static void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/enchantments/Enchantment.html#stopAcceptingRegistrations--">stopAcceptingRegistrations</a></span>()</code>
 <div class="block">Stops accepting any enchantment registrations</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/enchantments/Enchantment.html#toString--">toString</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>static <a href="../../../org/bukkit/enchantments/Enchantment.html" title="class in org.bukkit.enchantments">Enchantment</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/enchantments/Enchantment.html#values--">values</a></span>()</code>
 <div class="block">Gets an array of all the registered <a href="../../../org/bukkit/enchantments/Enchantment.html" title="class in org.bukkit.enchantments"><code>Enchantment</code></a>s</div>
@@ -1088,6 +1094,27 @@ public abstract&nbsp;boolean&nbsp;isCursed()</pre>
 <dd><code>item</code> - Item to test</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>True if the enchantment may be applied, otherwise False</dd>
+</dl>
+</li>
+</ul>
+<a name="displayName-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>displayName</h4>
+<pre>@NotNull
+public abstract&nbsp;net.kyori.adventure.text.Component&nbsp;displayName(int&nbsp;level)</pre>
+<div class="block">Get the name of the enchantment with its applied level.
+ <p>
+ If the given <code>level</code> is either less than the <a href="../../../org/bukkit/enchantments/Enchantment.html#getStartLevel--"><code>getStartLevel()</code></a> or greater than the <a href="../../../org/bukkit/enchantments/Enchantment.html#getMaxLevel--"><code>getMaxLevel()</code></a>,
+ the level may not be shown in the numeral format one may otherwise expect.
+ </p></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>level</code> - the level of the enchantment to show</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the name of the enchantment with <code>level</code> applied</dd>
 </dl>
 </li>
 </ul>

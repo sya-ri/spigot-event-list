@@ -17,8 +17,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
-var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var methods = {"i0":9,"i1":10,"i2":42,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":42,"i10":10};
+var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -151,11 +151,20 @@ extends <a href="../../../../../org/bukkit/event/Event.html" title="class in org
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../com/destroystokyo/paper/event/profile/ProfileWhitelistVerifyEvent.html#ProfileWhitelistVerifyEvent-com.destroystokyo.paper.profile.PlayerProfile-boolean-boolean-boolean-net.kyori.adventure.text.Component-">ProfileWhitelistVerifyEvent</a></span>(<a href="../../../../../com/destroystokyo/paper/profile/PlayerProfile.html" title="interface in com.destroystokyo.paper.profile">PlayerProfile</a>&nbsp;profile,
+                           boolean&nbsp;whitelistEnabled,
+                           boolean&nbsp;whitelisted,
+                           boolean&nbsp;isOp,
+                           net.kyori.adventure.text.Component&nbsp;kickMessage)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../../com/destroystokyo/paper/event/profile/ProfileWhitelistVerifyEvent.html#ProfileWhitelistVerifyEvent-com.destroystokyo.paper.profile.PlayerProfile-boolean-boolean-boolean-java.lang.String-">ProfileWhitelistVerifyEvent</a></span>(<a href="../../../../../com/destroystokyo/paper/profile/PlayerProfile.html" title="interface in com.destroystokyo.paper.profile">PlayerProfile</a>&nbsp;profile,
                            boolean&nbsp;whitelistEnabled,
                            boolean&nbsp;whitelisted,
                            boolean&nbsp;isOp,
-                           java.lang.String&nbsp;kickMessage)</code>&nbsp;</td>
+                           java.lang.String&nbsp;kickMessage)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+</td>
 </tr>
 </table>
 </li>
@@ -167,7 +176,7 @@ extends <a href="../../../../../org/bukkit/event/Event.html" title="class in org
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">Deprecated Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
@@ -182,7 +191,11 @@ extends <a href="../../../../../org/bukkit/event/Event.html" title="class in org
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/destroystokyo/paper/event/profile/ProfileWhitelistVerifyEvent.html#getKickMessage--">getKickMessage</a></span>()</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/destroystokyo/paper/event/profile/ProfileWhitelistVerifyEvent.html#getKickMessage--">getKickMessage</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">use <a href="../../../../../com/destroystokyo/paper/event/profile/ProfileWhitelistVerifyEvent.html#kickMessage--"><code>kickMessage()</code></a></span></div>
+</div>
+</td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../../com/destroystokyo/paper/profile/PlayerProfile.html" title="interface in com.destroystokyo.paper.profile">PlayerProfile</a></code></td>
@@ -201,10 +214,22 @@ extends <a href="../../../../../org/bukkit/event/Event.html" title="class in org
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/destroystokyo/paper/event/profile/ProfileWhitelistVerifyEvent.html#isWhitelistEnabled--">isWhitelistEnabled</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/destroystokyo/paper/event/profile/ProfileWhitelistVerifyEvent.html#setKickMessage-java.lang.String-">setKickMessage</a></span>(java.lang.String&nbsp;kickMessage)</code>&nbsp;</td>
+<td class="colFirst"><code>net.kyori.adventure.text.Component</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/destroystokyo/paper/event/profile/ProfileWhitelistVerifyEvent.html#kickMessage--">kickMessage</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i8" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/destroystokyo/paper/event/profile/ProfileWhitelistVerifyEvent.html#kickMessage-net.kyori.adventure.text.Component-">kickMessage</a></span>(net.kyori.adventure.text.Component&nbsp;kickMessage)</code>&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/destroystokyo/paper/event/profile/ProfileWhitelistVerifyEvent.html#setKickMessage-java.lang.String-">setKickMessage</a></span>(java.lang.String&nbsp;kickMessage)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">Use <a href="../../../../../com/destroystokyo/paper/event/profile/ProfileWhitelistVerifyEvent.html#kickMessage-net.kyori.adventure.text.Component-"><code>kickMessage(Component)</code></a></span></div>
+</div>
+</td>
+</tr>
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../com/destroystokyo/paper/event/profile/ProfileWhitelistVerifyEvent.html#setWhitelisted-boolean-">setWhitelisted</a></span>(boolean&nbsp;whitelisted)</code>
 <div class="block">Changes the players whitelisted state.</div>
@@ -242,6 +267,23 @@ extends <a href="../../../../../org/bukkit/event/Event.html" title="class in org
 <a name="ProfileWhitelistVerifyEvent-com.destroystokyo.paper.profile.PlayerProfile-boolean-boolean-boolean-java.lang.String-">
 <!--   -->
 </a>
+<ul class="blockList">
+<li class="blockList">
+<h4>ProfileWhitelistVerifyEvent</h4>
+<pre>@Deprecated
+public&nbsp;ProfileWhitelistVerifyEvent(@NotNull
+                                               <a href="../../../../../com/destroystokyo/paper/profile/PlayerProfile.html" title="interface in com.destroystokyo.paper.profile">PlayerProfile</a>&nbsp;profile,
+                                               boolean&nbsp;whitelistEnabled,
+                                               boolean&nbsp;whitelisted,
+                                               boolean&nbsp;isOp,
+                                               @Nullable
+                                               java.lang.String&nbsp;kickMessage)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+</li>
+</ul>
+<a name="ProfileWhitelistVerifyEvent-com.destroystokyo.paper.profile.PlayerProfile-boolean-boolean-boolean-net.kyori.adventure.text.Component-">
+<!--   -->
+</a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>ProfileWhitelistVerifyEvent</h4>
@@ -251,7 +293,7 @@ extends <a href="../../../../../org/bukkit/event/Event.html" title="class in org
                                    boolean&nbsp;whitelisted,
                                    boolean&nbsp;isOp,
                                    @Nullable
-                                   java.lang.String&nbsp;kickMessage)</pre>
+                                   net.kyori.adventure.text.Component&nbsp;kickMessage)</pre>
 </li>
 </ul>
 </li>
@@ -268,8 +310,10 @@ extends <a href="../../../../../org/bukkit/event/Event.html" title="class in org
 <ul class="blockList">
 <li class="blockList">
 <h4>getKickMessage</h4>
-<pre>@Nullable
+<pre>@Deprecated
+ @Nullable
 public&nbsp;java.lang.String&nbsp;getKickMessage()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">use <a href="../../../../../com/destroystokyo/paper/event/profile/ProfileWhitelistVerifyEvent.html#kickMessage--"><code>kickMessage()</code></a></span></div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the currently planned message to send to the user if they are not whitelisted</dd>
@@ -282,8 +326,38 @@ public&nbsp;java.lang.String&nbsp;getKickMessage()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>setKickMessage</h4>
-<pre>public&nbsp;void&nbsp;setKickMessage(@Nullable
-                           java.lang.String&nbsp;kickMessage)</pre>
+<pre>@Deprecated
+public&nbsp;void&nbsp;setKickMessage(@Nullable
+                                       java.lang.String&nbsp;kickMessage)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">Use <a href="../../../../../com/destroystokyo/paper/event/profile/ProfileWhitelistVerifyEvent.html#kickMessage-net.kyori.adventure.text.Component-"><code>kickMessage(Component)</code></a></span></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>kickMessage</code> - The message to send to the player on kick if not whitelisted. May set to null to use the server configured default</dd>
+</dl>
+</li>
+</ul>
+<a name="kickMessage--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>kickMessage</h4>
+<pre>@Nullable
+public&nbsp;net.kyori.adventure.text.Component&nbsp;kickMessage()</pre>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the currently planned message to send to the user if they are not whitelisted</dd>
+</dl>
+</li>
+</ul>
+<a name="kickMessage-net.kyori.adventure.text.Component-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>kickMessage</h4>
+<pre>public&nbsp;void&nbsp;kickMessage(@Nullable
+                        net.kyori.adventure.text.Component&nbsp;kickMessage)</pre>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>kickMessage</code> - The message to send to the player on kick if not whitelisted. May set to null to use the server configured default</dd>

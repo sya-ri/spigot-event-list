@@ -17,8 +17,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":10,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var methods = {"i0":10,"i1":10,"i2":42,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":42,"i11":10,"i12":10,"i13":10,"i14":10,"i15":10,"i16":10,"i17":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -177,13 +177,50 @@ extends <a href="../../../../org/bukkit/event/entity/EntityDeathEvent.html" titl
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/entity/PlayerDeathEvent.html#PlayerDeathEvent-org.bukkit.entity.Player-java.util.List-int-net.kyori.adventure.text.Component-">PlayerDeathEvent</a></span>(<a href="../../../../org/bukkit/entity/Player.html" title="interface in org.bukkit.entity">Player</a>&nbsp;player,
+                java.util.List&lt;<a href="../../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&gt;&nbsp;drops,
+                int&nbsp;droppedExp,
+                net.kyori.adventure.text.Component&nbsp;adventure$deathMessage)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/entity/PlayerDeathEvent.html#PlayerDeathEvent-org.bukkit.entity.Player-java.util.List-int-int-net.kyori.adventure.text.Component-java.lang.String-">PlayerDeathEvent</a></span>(<a href="../../../../org/bukkit/entity/Player.html" title="interface in org.bukkit.entity">Player</a>&nbsp;player,
+                java.util.List&lt;<a href="../../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&gt;&nbsp;drops,
+                int&nbsp;droppedExp,
+                int&nbsp;newExp,
+                net.kyori.adventure.text.Component&nbsp;adventure$deathMessage,
+                java.lang.String&nbsp;deathMessage)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/entity/PlayerDeathEvent.html#PlayerDeathEvent-org.bukkit.entity.Player-java.util.List-int-int-int-int-net.kyori.adventure.text.Component-java.lang.String-">PlayerDeathEvent</a></span>(<a href="../../../../org/bukkit/entity/Player.html" title="interface in org.bukkit.entity">Player</a>&nbsp;player,
+                java.util.List&lt;<a href="../../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&gt;&nbsp;drops,
+                int&nbsp;droppedExp,
+                int&nbsp;newExp,
+                int&nbsp;newTotalExp,
+                int&nbsp;newLevel,
+                net.kyori.adventure.text.Component&nbsp;adventure$deathMessage,
+                java.lang.String&nbsp;deathMessage)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/entity/PlayerDeathEvent.html#PlayerDeathEvent-org.bukkit.entity.Player-java.util.List-int-int-int-int-net.kyori.adventure.text.Component-java.lang.String-boolean-">PlayerDeathEvent</a></span>(<a href="../../../../org/bukkit/entity/Player.html" title="interface in org.bukkit.entity">Player</a>&nbsp;player,
+                java.util.List&lt;<a href="../../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&gt;&nbsp;drops,
+                int&nbsp;droppedExp,
+                int&nbsp;newExp,
+                int&nbsp;newTotalExp,
+                int&nbsp;newLevel,
+                net.kyori.adventure.text.Component&nbsp;adventure$deathMessage,
+                java.lang.String&nbsp;deathMessage,
+                boolean&nbsp;doExpDrop)</code>&nbsp;</td>
+</tr>
+<tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/entity/PlayerDeathEvent.html#PlayerDeathEvent-org.bukkit.entity.Player-java.util.List-int-int-int-int-java.lang.String-">PlayerDeathEvent</a></span>(<a href="../../../../org/bukkit/entity/Player.html" title="interface in org.bukkit.entity">Player</a>&nbsp;player,
                 java.util.List&lt;<a href="../../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&gt;&nbsp;drops,
                 int&nbsp;droppedExp,
                 int&nbsp;newExp,
                 int&nbsp;newTotalExp,
                 int&nbsp;newLevel,
-                java.lang.String&nbsp;deathMessage)</code>&nbsp;</td>
+                java.lang.String&nbsp;deathMessage)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/entity/PlayerDeathEvent.html#PlayerDeathEvent-org.bukkit.entity.Player-java.util.List-int-int-int-int-java.lang.String-boolean-">PlayerDeathEvent</a></span>(<a href="../../../../org/bukkit/entity/Player.html" title="interface in org.bukkit.entity">Player</a>&nbsp;player,
@@ -193,14 +230,18 @@ extends <a href="../../../../org/bukkit/event/entity/EntityDeathEvent.html" titl
                 int&nbsp;newTotalExp,
                 int&nbsp;newLevel,
                 java.lang.String&nbsp;deathMessage,
-                boolean&nbsp;doExpDrop)</code>&nbsp;</td>
+                boolean&nbsp;doExpDrop)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+</td>
 </tr>
 <tr class="altColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/entity/PlayerDeathEvent.html#PlayerDeathEvent-org.bukkit.entity.Player-java.util.List-int-int-java.lang.String-">PlayerDeathEvent</a></span>(<a href="../../../../org/bukkit/entity/Player.html" title="interface in org.bukkit.entity">Player</a>&nbsp;player,
                 java.util.List&lt;<a href="../../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&gt;&nbsp;drops,
                 int&nbsp;droppedExp,
                 int&nbsp;newExp,
-                java.lang.String&nbsp;deathMessage)</code>&nbsp;</td>
+                java.lang.String&nbsp;deathMessage)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+</td>
 </tr>
 <tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/entity/PlayerDeathEvent.html#PlayerDeathEvent-org.bukkit.entity.Player-java.util.List-int-java.lang.String-">PlayerDeathEvent</a></span>(<a href="../../../../org/bukkit/entity/Player.html" title="interface in org.bukkit.entity">Player</a>&nbsp;player,
@@ -218,24 +259,38 @@ extends <a href="../../../../org/bukkit/event/entity/EntityDeathEvent.html" titl
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">Deprecated Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code>java.lang.String</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/entity/PlayerDeathEvent.html#getDeathMessage--">getDeathMessage</a></span>()</code>
+<td class="colFirst"><code>net.kyori.adventure.text.Component</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/entity/PlayerDeathEvent.html#deathMessage--">deathMessage</a></span>()</code>
 <div class="block">Get the death message that will appear to everyone on the server.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/entity/PlayerDeathEvent.html#deathMessage-net.kyori.adventure.text.Component-">deathMessage</a></span>(net.kyori.adventure.text.Component&nbsp;deathMessage)</code>
+<div class="block">Set the death message that will appear to everyone on the server.</div>
+</td>
+</tr>
+<tr id="i2" class="altColor">
+<td class="colFirst"><code>java.lang.String</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/entity/PlayerDeathEvent.html#getDeathMessage--">getDeathMessage</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">in favour of <a href="../../../../org/bukkit/event/entity/PlayerDeathEvent.html#deathMessage--"><code>deathMessage()</code></a></span></div>
+</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
 <td class="colFirst"><code><a href="../../../../org/bukkit/entity/Player.html" title="interface in org.bukkit.entity">Player</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/entity/PlayerDeathEvent.html#getEntity--">getEntity</a></span>()</code>
 <div class="block">Returns the Entity involved in this event</div>
 </td>
 </tr>
-<tr id="i2" class="altColor">
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.util.List&lt;<a href="../../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/entity/PlayerDeathEvent.html#getItemsToKeep--">getItemsToKeep</a></span>()</code>
 <div class="block">A mutable collection to add items that the player should retain in their inventory on death (Similar to KeepInventory game rule)
@@ -243,77 +298,79 @@ extends <a href="../../../../org/bukkit/event/entity/EntityDeathEvent.html" titl
  You <b>MUST</b> remove the item from the .getDrops() collection too or it will duplicate!</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/entity/PlayerDeathEvent.html#getKeepInventory--">getKeepInventory</a></span>()</code>
 <div class="block">Gets if the Player keeps inventory on death.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/entity/PlayerDeathEvent.html#getKeepLevel--">getKeepLevel</a></span>()</code>
 <div class="block">Gets if the Player should keep all EXP at respawn.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/entity/PlayerDeathEvent.html#getNewExp--">getNewExp</a></span>()</code>
 <div class="block">Gets how much EXP the Player should have at respawn.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/entity/PlayerDeathEvent.html#getNewLevel--">getNewLevel</a></span>()</code>
 <div class="block">Gets the Level the Player should have at respawn.</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/entity/PlayerDeathEvent.html#getNewTotalExp--">getNewTotalExp</a></span>()</code>
 <div class="block">Gets the Total EXP the Player should have at respawn.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/entity/PlayerDeathEvent.html#setDeathMessage-java.lang.String-">setDeathMessage</a></span>(java.lang.String&nbsp;deathMessage)</code>
-<div class="block">Set the death message that will appear to everyone on the server.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">in favour of <a href="../../../../org/bukkit/event/entity/PlayerDeathEvent.html#deathMessage-net.kyori.adventure.text.Component-"><code>deathMessage(net.kyori.adventure.text.Component)</code></a></span></div>
+</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/entity/PlayerDeathEvent.html#setKeepInventory-boolean-">setKeepInventory</a></span>(boolean&nbsp;keepInventory)</code>
 <div class="block">Sets if the Player keeps inventory on death.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/entity/PlayerDeathEvent.html#setKeepLevel-boolean-">setKeepLevel</a></span>(boolean&nbsp;keepLevel)</code>
 <div class="block">Sets if the Player should keep all EXP at respawn.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/entity/PlayerDeathEvent.html#setNewExp-int-">setNewExp</a></span>(int&nbsp;exp)</code>
 <div class="block">Sets how much EXP the Player should have at respawn.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/entity/PlayerDeathEvent.html#setNewLevel-int-">setNewLevel</a></span>(int&nbsp;level)</code>
 <div class="block">Sets the Level the Player should have at respawn.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/entity/PlayerDeathEvent.html#setNewTotalExp-int-">setNewTotalExp</a></span>(int&nbsp;totalExp)</code>
 <div class="block">Sets the Total EXP the Player should have at respawn.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/entity/PlayerDeathEvent.html#setShouldDropExperience-boolean-">setShouldDropExperience</a></span>(boolean&nbsp;doExpDrop)</code>&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/entity/PlayerDeathEvent.html#shouldDropExperience--">shouldDropExperience</a></span>()</code>&nbsp;</td>
 </tr>
@@ -360,6 +417,80 @@ extends <a href="../../../../org/bukkit/event/entity/EntityDeathEvent.html" titl
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
+<a name="PlayerDeathEvent-org.bukkit.entity.Player-java.util.List-int-net.kyori.adventure.text.Component-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>PlayerDeathEvent</h4>
+<pre>public&nbsp;PlayerDeathEvent(@NotNull
+                        <a href="../../../../org/bukkit/entity/Player.html" title="interface in org.bukkit.entity">Player</a>&nbsp;player,
+                        @NotNull
+                        java.util.List&lt;<a href="../../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&gt;&nbsp;drops,
+                        int&nbsp;droppedExp,
+                        @Nullable
+                        net.kyori.adventure.text.Component&nbsp;adventure$deathMessage)</pre>
+</li>
+</ul>
+<a name="PlayerDeathEvent-org.bukkit.entity.Player-java.util.List-int-int-net.kyori.adventure.text.Component-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>PlayerDeathEvent</h4>
+<pre>public&nbsp;PlayerDeathEvent(@NotNull
+                        <a href="../../../../org/bukkit/entity/Player.html" title="interface in org.bukkit.entity">Player</a>&nbsp;player,
+                        @NotNull
+                        java.util.List&lt;<a href="../../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&gt;&nbsp;drops,
+                        int&nbsp;droppedExp,
+                        int&nbsp;newExp,
+                        @Nullable
+                        net.kyori.adventure.text.Component&nbsp;adventure$deathMessage,
+                        @Nullable
+                        java.lang.String&nbsp;deathMessage)</pre>
+</li>
+</ul>
+<a name="PlayerDeathEvent-org.bukkit.entity.Player-java.util.List-int-int-int-int-net.kyori.adventure.text.Component-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>PlayerDeathEvent</h4>
+<pre>public&nbsp;PlayerDeathEvent(@NotNull
+                        <a href="../../../../org/bukkit/entity/Player.html" title="interface in org.bukkit.entity">Player</a>&nbsp;player,
+                        @NotNull
+                        java.util.List&lt;<a href="../../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&gt;&nbsp;drops,
+                        int&nbsp;droppedExp,
+                        int&nbsp;newExp,
+                        int&nbsp;newTotalExp,
+                        int&nbsp;newLevel,
+                        @Nullable
+                        net.kyori.adventure.text.Component&nbsp;adventure$deathMessage,
+                        @Nullable
+                        java.lang.String&nbsp;deathMessage)</pre>
+</li>
+</ul>
+<a name="PlayerDeathEvent-org.bukkit.entity.Player-java.util.List-int-int-int-int-net.kyori.adventure.text.Component-java.lang.String-boolean-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>PlayerDeathEvent</h4>
+<pre>public&nbsp;PlayerDeathEvent(@NotNull
+                        <a href="../../../../org/bukkit/entity/Player.html" title="interface in org.bukkit.entity">Player</a>&nbsp;player,
+                        @NotNull
+                        java.util.List&lt;<a href="../../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&gt;&nbsp;drops,
+                        int&nbsp;droppedExp,
+                        int&nbsp;newExp,
+                        int&nbsp;newTotalExp,
+                        int&nbsp;newLevel,
+                        @Nullable
+                        net.kyori.adventure.text.Component&nbsp;adventure$deathMessage,
+                        @Nullable
+                        java.lang.String&nbsp;deathMessage,
+                        boolean&nbsp;doExpDrop)</pre>
+</li>
+</ul>
 <a name="PlayerDeathEvent-org.bukkit.entity.Player-java.util.List-int-java.lang.String-">
 <!--   -->
 </a>
@@ -381,14 +512,16 @@ extends <a href="../../../../org/bukkit/event/entity/EntityDeathEvent.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>PlayerDeathEvent</h4>
-<pre>public&nbsp;PlayerDeathEvent(@NotNull
-                        <a href="../../../../org/bukkit/entity/Player.html" title="interface in org.bukkit.entity">Player</a>&nbsp;player,
-                        @NotNull
-                        java.util.List&lt;<a href="../../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&gt;&nbsp;drops,
-                        int&nbsp;droppedExp,
-                        int&nbsp;newExp,
-                        @Nullable
-                        java.lang.String&nbsp;deathMessage)</pre>
+<pre>@Deprecated
+public&nbsp;PlayerDeathEvent(@NotNull
+                                    <a href="../../../../org/bukkit/entity/Player.html" title="interface in org.bukkit.entity">Player</a>&nbsp;player,
+                                    @NotNull
+                                    java.util.List&lt;<a href="../../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&gt;&nbsp;drops,
+                                    int&nbsp;droppedExp,
+                                    int&nbsp;newExp,
+                                    @Nullable
+                                    java.lang.String&nbsp;deathMessage)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 </li>
 </ul>
 <a name="PlayerDeathEvent-org.bukkit.entity.Player-java.util.List-int-int-int-int-java.lang.String-">
@@ -397,16 +530,18 @@ extends <a href="../../../../org/bukkit/event/entity/EntityDeathEvent.html" titl
 <ul class="blockList">
 <li class="blockList">
 <h4>PlayerDeathEvent</h4>
-<pre>public&nbsp;PlayerDeathEvent(@NotNull
-                        <a href="../../../../org/bukkit/entity/Player.html" title="interface in org.bukkit.entity">Player</a>&nbsp;player,
-                        @NotNull
-                        java.util.List&lt;<a href="../../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&gt;&nbsp;drops,
-                        int&nbsp;droppedExp,
-                        int&nbsp;newExp,
-                        int&nbsp;newTotalExp,
-                        int&nbsp;newLevel,
-                        @Nullable
-                        java.lang.String&nbsp;deathMessage)</pre>
+<pre>@Deprecated
+public&nbsp;PlayerDeathEvent(@NotNull
+                                    <a href="../../../../org/bukkit/entity/Player.html" title="interface in org.bukkit.entity">Player</a>&nbsp;player,
+                                    @NotNull
+                                    java.util.List&lt;<a href="../../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&gt;&nbsp;drops,
+                                    int&nbsp;droppedExp,
+                                    int&nbsp;newExp,
+                                    int&nbsp;newTotalExp,
+                                    int&nbsp;newLevel,
+                                    @Nullable
+                                    java.lang.String&nbsp;deathMessage)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 </li>
 </ul>
 <a name="PlayerDeathEvent-org.bukkit.entity.Player-java.util.List-int-int-int-int-java.lang.String-boolean-">
@@ -415,17 +550,19 @@ extends <a href="../../../../org/bukkit/event/entity/EntityDeathEvent.html" titl
 <ul class="blockListLast">
 <li class="blockList">
 <h4>PlayerDeathEvent</h4>
-<pre>public&nbsp;PlayerDeathEvent(@NotNull
-                        <a href="../../../../org/bukkit/entity/Player.html" title="interface in org.bukkit.entity">Player</a>&nbsp;player,
-                        @NotNull
-                        java.util.List&lt;<a href="../../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&gt;&nbsp;drops,
-                        int&nbsp;droppedExp,
-                        int&nbsp;newExp,
-                        int&nbsp;newTotalExp,
-                        int&nbsp;newLevel,
-                        @Nullable
-                        java.lang.String&nbsp;deathMessage,
-                        boolean&nbsp;doExpDrop)</pre>
+<pre>@Deprecated
+public&nbsp;PlayerDeathEvent(@NotNull
+                                    <a href="../../../../org/bukkit/entity/Player.html" title="interface in org.bukkit.entity">Player</a>&nbsp;player,
+                                    @NotNull
+                                    java.util.List&lt;<a href="../../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&gt;&nbsp;drops,
+                                    int&nbsp;droppedExp,
+                                    int&nbsp;newExp,
+                                    int&nbsp;newTotalExp,
+                                    int&nbsp;newLevel,
+                                    @Nullable
+                                    java.lang.String&nbsp;deathMessage,
+                                    boolean&nbsp;doExpDrop)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 </li>
 </ul>
 </li>
@@ -515,14 +652,46 @@ public&nbsp;<a href="../../../../org/bukkit/entity/Player.html" title="interface
 </dl>
 </li>
 </ul>
+<a name="deathMessage-net.kyori.adventure.text.Component-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>deathMessage</h4>
+<pre>public&nbsp;void&nbsp;deathMessage(@Nullable
+                         net.kyori.adventure.text.Component&nbsp;deathMessage)</pre>
+<div class="block">Set the death message that will appear to everyone on the server.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>deathMessage</code> - Message to appear to other players on the server.</dd>
+</dl>
+</li>
+</ul>
+<a name="deathMessage--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>deathMessage</h4>
+<pre>@Nullable
+public&nbsp;net.kyori.adventure.text.Component&nbsp;deathMessage()</pre>
+<div class="block">Get the death message that will appear to everyone on the server.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Message to appear to other players on the server.</dd>
+</dl>
+</li>
+</ul>
 <a name="setDeathMessage-java.lang.String-">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>setDeathMessage</h4>
-<pre>public&nbsp;void&nbsp;setDeathMessage(@Nullable
-                            java.lang.String&nbsp;deathMessage)</pre>
+<pre>@Deprecated
+public&nbsp;void&nbsp;setDeathMessage(@Nullable
+                                        java.lang.String&nbsp;deathMessage)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">in favour of <a href="../../../../org/bukkit/event/entity/PlayerDeathEvent.html#deathMessage-net.kyori.adventure.text.Component-"><code>deathMessage(net.kyori.adventure.text.Component)</code></a></span></div>
 <div class="block">Set the death message that will appear to everyone on the server.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -537,7 +706,9 @@ public&nbsp;<a href="../../../../org/bukkit/entity/Player.html" title="interface
 <li class="blockList">
 <h4>getDeathMessage</h4>
 <pre>@Nullable
+ @Deprecated
 public&nbsp;java.lang.String&nbsp;getDeathMessage()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">in favour of <a href="../../../../org/bukkit/event/entity/PlayerDeathEvent.html#deathMessage--"><code>deathMessage()</code></a></span></div>
 <div class="block">Get the death message that will appear to everyone on the server.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -662,7 +833,7 @@ public&nbsp;java.lang.String&nbsp;getDeathMessage()</pre>
  <p>
  This overrides all other EXP settings
  <p>
- <b>This doesn't prevent prevent the EXP from dropping.
+ <b>This doesn't prevent the EXP from dropping.
  <a href="../../../../org/bukkit/event/entity/EntityDeathEvent.html#setDroppedExp-int-"><code>EntityDeathEvent.setDroppedExp(int)</code></a> should be used stop the
  EXP from dropping.</b></div>
 <dl>
@@ -680,7 +851,7 @@ public&nbsp;java.lang.String&nbsp;getDeathMessage()</pre>
 <pre>public&nbsp;void&nbsp;setKeepInventory(boolean&nbsp;keepInventory)</pre>
 <div class="block">Sets if the Player keeps inventory on death.
  <p>
- <b>This doesn't prevent prevent the items from dropping.
+ <b>This doesn't prevent the items from dropping.
  <code>getDrops().clear()</code> should be used stop the
  items from dropping.</b></div>
 <dl>

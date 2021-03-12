@@ -17,8 +17,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":9,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10,"i7":10};
-var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var methods = {"i0":9,"i1":10,"i2":42,"i3":42,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10,"i9":10,"i10":42,"i11":42};
+var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -173,9 +173,16 @@ implements <a href="../../../../org/bukkit/event/Cancellable.html" title="interf
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/player/PlayerKickEvent.html#PlayerKickEvent-org.bukkit.entity.Player-net.kyori.adventure.text.Component-net.kyori.adventure.text.Component-">PlayerKickEvent</a></span>(<a href="../../../../org/bukkit/entity/Player.html" title="interface in org.bukkit.entity">Player</a>&nbsp;playerKicked,
+               net.kyori.adventure.text.Component&nbsp;kickReason,
+               net.kyori.adventure.text.Component&nbsp;leaveMessage)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/player/PlayerKickEvent.html#PlayerKickEvent-org.bukkit.entity.Player-java.lang.String-java.lang.String-">PlayerKickEvent</a></span>(<a href="../../../../org/bukkit/entity/Player.html" title="interface in org.bukkit.entity">Player</a>&nbsp;playerKicked,
                java.lang.String&nbsp;kickReason,
-               java.lang.String&nbsp;leaveMessage)</code>&nbsp;</td>
+               java.lang.String&nbsp;leaveMessage)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+</td>
 </tr>
 </table>
 </li>
@@ -187,7 +194,7 @@ implements <a href="../../../../org/bukkit/event/Cancellable.html" title="interf
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">Deprecated Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
@@ -203,13 +210,17 @@ implements <a href="../../../../org/bukkit/event/Cancellable.html" title="interf
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/player/PlayerKickEvent.html#getLeaveMessage--">getLeaveMessage</a></span>()</code>
-<div class="block">Gets the leave message send to all online players</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">in favour of <a href="../../../../org/bukkit/event/player/PlayerKickEvent.html#leaveMessage--"><code>leaveMessage()</code></a></span></div>
+</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/player/PlayerKickEvent.html#getReason--">getReason</a></span>()</code>
-<div class="block">Gets the reason why the player is getting kicked</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">in favour of <a href="../../../../org/bukkit/event/player/PlayerKickEvent.html#reason--"><code>reason()</code></a></span></div>
+</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
@@ -219,21 +230,49 @@ implements <a href="../../../../org/bukkit/event/Cancellable.html" title="interf
 </td>
 </tr>
 <tr id="i5" class="rowColor">
+<td class="colFirst"><code>net.kyori.adventure.text.Component</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/player/PlayerKickEvent.html#leaveMessage--">leaveMessage</a></span>()</code>
+<div class="block">Gets the leave message send to all online players</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/player/PlayerKickEvent.html#leaveMessage-net.kyori.adventure.text.Component-">leaveMessage</a></span>(net.kyori.adventure.text.Component&nbsp;leaveMessage)</code>
+<div class="block">Sets the leave message send to all online players</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
+<td class="colFirst"><code>net.kyori.adventure.text.Component</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/player/PlayerKickEvent.html#reason--">reason</a></span>()</code>
+<div class="block">Gets the reason why the player is getting kicked</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/player/PlayerKickEvent.html#reason-net.kyori.adventure.text.Component-">reason</a></span>(net.kyori.adventure.text.Component&nbsp;kickReason)</code>
+<div class="block">Sets the reason why the player is getting kicked</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/player/PlayerKickEvent.html#setCancelled-boolean-">setCancelled</a></span>(boolean&nbsp;cancel)</code>
 <div class="block">Sets the cancellation state of this event.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/player/PlayerKickEvent.html#setLeaveMessage-java.lang.String-">setLeaveMessage</a></span>(java.lang.String&nbsp;leaveMessage)</code>
-<div class="block">Sets the leave message send to all online players</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">in favour of <a href="../../../../org/bukkit/event/player/PlayerKickEvent.html#leaveMessage-net.kyori.adventure.text.Component-"><code>leaveMessage(net.kyori.adventure.text.Component)</code></a></span></div>
+</div>
 </td>
 </tr>
-<tr id="i7" class="rowColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/player/PlayerKickEvent.html#setReason-java.lang.String-">setReason</a></span>(java.lang.String&nbsp;kickReason)</code>
-<div class="block">Sets the reason why the player is getting kicked</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">in favour of <a href="../../../../org/bukkit/event/player/PlayerKickEvent.html#reason-net.kyori.adventure.text.Component-"><code>reason(net.kyori.adventure.text.Component)</code></a></span></div>
+</div>
 </td>
 </tr>
 </table>
@@ -275,15 +314,31 @@ implements <a href="../../../../org/bukkit/event/Cancellable.html" title="interf
 <a name="PlayerKickEvent-org.bukkit.entity.Player-java.lang.String-java.lang.String-">
 <!--   -->
 </a>
+<ul class="blockList">
+<li class="blockList">
+<h4>PlayerKickEvent</h4>
+<pre>@Deprecated
+public&nbsp;PlayerKickEvent(@NotNull
+                                   <a href="../../../../org/bukkit/entity/Player.html" title="interface in org.bukkit.entity">Player</a>&nbsp;playerKicked,
+                                   @NotNull
+                                   java.lang.String&nbsp;kickReason,
+                                   @NotNull
+                                   java.lang.String&nbsp;leaveMessage)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+</li>
+</ul>
+<a name="PlayerKickEvent-org.bukkit.entity.Player-net.kyori.adventure.text.Component-net.kyori.adventure.text.Component-">
+<!--   -->
+</a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>PlayerKickEvent</h4>
 <pre>public&nbsp;PlayerKickEvent(@NotNull
                        <a href="../../../../org/bukkit/entity/Player.html" title="interface in org.bukkit.entity">Player</a>&nbsp;playerKicked,
                        @NotNull
-                       java.lang.String&nbsp;kickReason,
+                       net.kyori.adventure.text.Component&nbsp;kickReason,
                        @NotNull
-                       java.lang.String&nbsp;leaveMessage)</pre>
+                       net.kyori.adventure.text.Component&nbsp;leaveMessage)</pre>
 </li>
 </ul>
 </li>
@@ -294,6 +349,66 @@ implements <a href="../../../../org/bukkit/event/Cancellable.html" title="interf
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="leaveMessage--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>leaveMessage</h4>
+<pre>@NotNull
+public&nbsp;net.kyori.adventure.text.Component&nbsp;leaveMessage()</pre>
+<div class="block">Gets the leave message send to all online players</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>string kick reason</dd>
+</dl>
+</li>
+</ul>
+<a name="leaveMessage-net.kyori.adventure.text.Component-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>leaveMessage</h4>
+<pre>public&nbsp;void&nbsp;leaveMessage(@NotNull
+                         net.kyori.adventure.text.Component&nbsp;leaveMessage)</pre>
+<div class="block">Sets the leave message send to all online players</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>leaveMessage</code> - leave message</dd>
+</dl>
+</li>
+</ul>
+<a name="reason--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>reason</h4>
+<pre>@NotNull
+public&nbsp;net.kyori.adventure.text.Component&nbsp;reason()</pre>
+<div class="block">Gets the reason why the player is getting kicked</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>string kick reason</dd>
+</dl>
+</li>
+</ul>
+<a name="reason-net.kyori.adventure.text.Component-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>reason</h4>
+<pre>public&nbsp;void&nbsp;reason(@NotNull
+                   net.kyori.adventure.text.Component&nbsp;kickReason)</pre>
+<div class="block">Sets the reason why the player is getting kicked</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>kickReason</code> - kick reason</dd>
+</dl>
+</li>
+</ul>
 <a name="getReason--">
 <!--   -->
 </a>
@@ -301,7 +416,9 @@ implements <a href="../../../../org/bukkit/event/Cancellable.html" title="interf
 <li class="blockList">
 <h4>getReason</h4>
 <pre>@NotNull
+ @Deprecated
 public&nbsp;java.lang.String&nbsp;getReason()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">in favour of <a href="../../../../org/bukkit/event/player/PlayerKickEvent.html#reason--"><code>reason()</code></a></span></div>
 <div class="block">Gets the reason why the player is getting kicked</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -316,7 +433,9 @@ public&nbsp;java.lang.String&nbsp;getReason()</pre>
 <li class="blockList">
 <h4>getLeaveMessage</h4>
 <pre>@NotNull
+ @Deprecated
 public&nbsp;java.lang.String&nbsp;getLeaveMessage()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">in favour of <a href="../../../../org/bukkit/event/player/PlayerKickEvent.html#leaveMessage--"><code>leaveMessage()</code></a></span></div>
 <div class="block">Gets the leave message send to all online players</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -366,8 +485,10 @@ public&nbsp;java.lang.String&nbsp;getLeaveMessage()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>setReason</h4>
-<pre>public&nbsp;void&nbsp;setReason(@NotNull
-                      java.lang.String&nbsp;kickReason)</pre>
+<pre>@Deprecated
+public&nbsp;void&nbsp;setReason(@NotNull
+                                  java.lang.String&nbsp;kickReason)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">in favour of <a href="../../../../org/bukkit/event/player/PlayerKickEvent.html#reason-net.kyori.adventure.text.Component-"><code>reason(net.kyori.adventure.text.Component)</code></a></span></div>
 <div class="block">Sets the reason why the player is getting kicked</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -381,8 +502,10 @@ public&nbsp;java.lang.String&nbsp;getLeaveMessage()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>setLeaveMessage</h4>
-<pre>public&nbsp;void&nbsp;setLeaveMessage(@NotNull
-                            java.lang.String&nbsp;leaveMessage)</pre>
+<pre>@Deprecated
+public&nbsp;void&nbsp;setLeaveMessage(@NotNull
+                                        java.lang.String&nbsp;leaveMessage)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">in favour of <a href="../../../../org/bukkit/event/player/PlayerKickEvent.html#leaveMessage-net.kyori.adventure.text.Component-"><code>leaveMessage(net.kyori.adventure.text.Component)</code></a></span></div>
 <div class="block">Sets the leave message send to all online players</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

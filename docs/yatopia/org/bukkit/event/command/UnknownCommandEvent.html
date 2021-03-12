@@ -17,8 +17,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":9,"i2":10,"i3":10,"i4":10,"i5":10};
-var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var methods = {"i0":10,"i1":9,"i2":10,"i3":42,"i4":10,"i5":10,"i6":10,"i7":42};
+var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -148,9 +148,16 @@ extends <a href="../../../../org/bukkit/event/Event.html" title="class in org.bu
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/command/UnknownCommandEvent.html#UnknownCommandEvent-org.bukkit.command.CommandSender-java.lang.String-net.kyori.adventure.text.Component-">UnknownCommandEvent</a></span>(<a href="../../../../org/bukkit/command/CommandSender.html" title="interface in org.bukkit.command">CommandSender</a>&nbsp;sender,
+                   java.lang.String&nbsp;commandLine,
+                   net.kyori.adventure.text.Component&nbsp;message)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/command/UnknownCommandEvent.html#UnknownCommandEvent-org.bukkit.command.CommandSender-java.lang.String-java.lang.String-">UnknownCommandEvent</a></span>(<a href="../../../../org/bukkit/command/CommandSender.html" title="interface in org.bukkit.command">CommandSender</a>&nbsp;sender,
                    java.lang.String&nbsp;commandLine,
-                   java.lang.String&nbsp;message)</code>&nbsp;</td>
+                   java.lang.String&nbsp;message)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+</td>
 </tr>
 </table>
 </li>
@@ -162,7 +169,7 @@ extends <a href="../../../../org/bukkit/event/Event.html" title="class in org.bu
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t1" class="tableTab"><span><a href="javascript:show(1);">Static Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">Deprecated Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
@@ -184,7 +191,9 @@ extends <a href="../../../../org/bukkit/event/Event.html" title="class in org.bu
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/command/UnknownCommandEvent.html#getMessage--">getMessage</a></span>()</code>
-<div class="block">Gets message that will be returned</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">use <a href="../../../../org/bukkit/event/command/UnknownCommandEvent.html#message--"><code>message()</code></a></span></div>
+</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
@@ -194,9 +203,23 @@ extends <a href="../../../../org/bukkit/event/Event.html" title="class in org.bu
 </td>
 </tr>
 <tr id="i5" class="rowColor">
+<td class="colFirst"><code>net.kyori.adventure.text.Component</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/command/UnknownCommandEvent.html#message--">message</a></span>()</code>
+<div class="block">Gets message that will be returned</div>
+</td>
+</tr>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/command/UnknownCommandEvent.html#message-net.kyori.adventure.text.Component-">message</a></span>(net.kyori.adventure.text.Component&nbsp;message)</code>
+<div class="block">Sets message that will be returned</div>
+</td>
+</tr>
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../org/bukkit/event/command/UnknownCommandEvent.html#setMessage-java.lang.String-">setMessage</a></span>(java.lang.String&nbsp;message)</code>
-<div class="block">Sets message that will be returned</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">use <a href="../../../../org/bukkit/event/command/UnknownCommandEvent.html#message-net.kyori.adventure.text.Component-"><code>message(Component)</code></a></span></div>
+</div>
 </td>
 </tr>
 </table>
@@ -231,6 +254,22 @@ extends <a href="../../../../org/bukkit/event/Event.html" title="class in org.bu
 <a name="UnknownCommandEvent-org.bukkit.command.CommandSender-java.lang.String-java.lang.String-">
 <!--   -->
 </a>
+<ul class="blockList">
+<li class="blockList">
+<h4>UnknownCommandEvent</h4>
+<pre>@Deprecated
+public&nbsp;UnknownCommandEvent(@NotNull
+                                       <a href="../../../../org/bukkit/command/CommandSender.html" title="interface in org.bukkit.command">CommandSender</a>&nbsp;sender,
+                                       @NotNull
+                                       java.lang.String&nbsp;commandLine,
+                                       @Nullable
+                                       java.lang.String&nbsp;message)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+</li>
+</ul>
+<a name="UnknownCommandEvent-org.bukkit.command.CommandSender-java.lang.String-net.kyori.adventure.text.Component-">
+<!--   -->
+</a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>UnknownCommandEvent</h4>
@@ -239,7 +278,7 @@ extends <a href="../../../../org/bukkit/event/Event.html" title="class in org.bu
                            @NotNull
                            java.lang.String&nbsp;commandLine,
                            @Nullable
-                           java.lang.String&nbsp;message)</pre>
+                           net.kyori.adventure.text.Component&nbsp;message)</pre>
 </li>
 </ul>
 </li>
@@ -289,7 +328,9 @@ public&nbsp;java.lang.String&nbsp;getCommandLine()</pre>
 <li class="blockList">
 <h4>getMessage</h4>
 <pre>@Nullable
+ @Deprecated
 public&nbsp;java.lang.String&nbsp;getMessage()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">use <a href="../../../../org/bukkit/event/command/UnknownCommandEvent.html#message--"><code>message()</code></a></span></div>
 <div class="block">Gets message that will be returned
  <p></div>
 <dl>
@@ -304,8 +345,43 @@ public&nbsp;java.lang.String&nbsp;getMessage()</pre>
 <ul class="blockList">
 <li class="blockList">
 <h4>setMessage</h4>
-<pre>public&nbsp;void&nbsp;setMessage(@Nullable
-                       java.lang.String&nbsp;message)</pre>
+<pre>@Deprecated
+public&nbsp;void&nbsp;setMessage(@Nullable
+                                   java.lang.String&nbsp;message)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">use <a href="../../../../org/bukkit/event/command/UnknownCommandEvent.html#message-net.kyori.adventure.text.Component-"><code>message(Component)</code></a></span></div>
+<div class="block">Sets message that will be returned
+ <p>
+ Set to null to avoid any message being sent</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>message</code> - the message to be returned, or null</dd>
+</dl>
+</li>
+</ul>
+<a name="message--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>message</h4>
+<pre>@Nullable
+public&nbsp;net.kyori.adventure.text.Component&nbsp;message()</pre>
+<div class="block">Gets message that will be returned
+ <p></div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Unknown command message</dd>
+</dl>
+</li>
+</ul>
+<a name="message-net.kyori.adventure.text.Component-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>message</h4>
+<pre>public&nbsp;void&nbsp;message(@Nullable
+                    net.kyori.adventure.text.Component&nbsp;message)</pre>
 <div class="block">Sets message that will be returned
  <p>
  Set to null to avoid any message being sent</div>

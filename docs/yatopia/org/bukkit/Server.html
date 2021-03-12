@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":18,"i4":18,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6,"i22":6,"i23":6,"i24":6,"i25":6,"i26":6,"i27":6,"i28":6,"i29":6,"i30":6,"i31":6,"i32":6,"i33":6,"i34":6,"i35":6,"i36":6,"i37":6,"i38":6,"i39":6,"i40":6,"i41":6,"i42":6,"i43":6,"i44":6,"i45":6,"i46":6,"i47":6,"i48":6,"i49":6,"i50":6,"i51":6,"i52":6,"i53":6,"i54":50,"i55":6,"i56":6,"i57":6,"i58":38,"i59":6,"i60":6,"i61":6,"i62":6,"i63":6,"i64":6,"i65":6,"i66":6,"i67":38,"i68":6,"i69":6,"i70":6,"i71":6,"i72":6,"i73":6,"i74":6,"i75":6,"i76":6,"i77":6,"i78":6,"i79":6,"i80":6,"i81":6,"i82":6,"i83":6,"i84":6,"i85":6,"i86":6,"i87":6,"i88":6,"i89":6,"i90":6,"i91":6,"i92":6,"i93":6,"i94":6,"i95":6,"i96":6,"i97":6,"i98":6,"i99":6,"i100":38,"i101":6,"i102":6,"i103":6,"i104":6,"i105":6,"i106":6,"i107":6,"i108":6,"i109":6,"i110":6,"i111":6,"i112":6,"i113":6,"i114":6,"i115":6,"i116":6,"i117":6,"i118":6,"i119":6,"i120":6,"i121":6,"i122":6,"i123":6,"i124":6,"i125":6,"i126":6,"i127":6,"i128":6,"i129":6,"i130":6,"i131":6,"i132":6,"i133":6,"i134":6,"i135":6,"i136":6,"i137":6,"i138":6,"i139":6,"i140":6,"i141":6,"i142":6,"i143":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":50,"i4":50,"i5":6,"i6":38,"i7":38,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":6,"i20":38,"i21":6,"i22":6,"i23":38,"i24":6,"i25":6,"i26":38,"i27":6,"i28":6,"i29":6,"i30":6,"i31":6,"i32":6,"i33":6,"i34":6,"i35":6,"i36":6,"i37":6,"i38":6,"i39":6,"i40":6,"i41":6,"i42":6,"i43":6,"i44":6,"i45":6,"i46":6,"i47":6,"i48":6,"i49":6,"i50":6,"i51":6,"i52":6,"i53":6,"i54":6,"i55":6,"i56":6,"i57":6,"i58":50,"i59":6,"i60":6,"i61":6,"i62":38,"i63":6,"i64":6,"i65":6,"i66":6,"i67":6,"i68":6,"i69":38,"i70":6,"i71":38,"i72":6,"i73":6,"i74":6,"i75":6,"i76":6,"i77":6,"i78":6,"i79":6,"i80":6,"i81":6,"i82":6,"i83":6,"i84":6,"i85":6,"i86":6,"i87":6,"i88":6,"i89":6,"i90":6,"i91":6,"i92":6,"i93":38,"i94":6,"i95":6,"i96":6,"i97":6,"i98":6,"i99":6,"i100":6,"i101":6,"i102":6,"i103":6,"i104":38,"i105":6,"i106":6,"i107":6,"i108":6,"i109":6,"i110":6,"i111":6,"i112":6,"i113":6,"i114":6,"i115":6,"i116":6,"i117":6,"i118":6,"i119":6,"i120":6,"i121":6,"i122":6,"i123":6,"i124":6,"i125":6,"i126":6,"i127":6,"i128":6,"i129":6,"i130":6,"i131":6,"i132":6,"i133":6,"i134":6,"i135":6,"i136":6,"i137":6,"i138":6,"i139":6,"i140":6,"i141":6,"i142":6,"i143":6,"i144":6,"i145":6,"i146":6,"i147":6,"i148":6,"i149":6,"i150":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -99,12 +99,12 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Superinterfaces:</dt>
-<dd><a href="../../org/bukkit/plugin/messaging/PluginMessageRecipient.html" title="interface in org.bukkit.plugin.messaging">PluginMessageRecipient</a></dd>
+<dd>net.kyori.adventure.audience.Audience, net.kyori.adventure.audience.ForwardingAudience, <a href="../../org/bukkit/plugin/messaging/PluginMessageRecipient.html" title="interface in org.bukkit.plugin.messaging">PluginMessageRecipient</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public interface <span class="typeNameLabel">Server</span>
-extends <a href="../../org/bukkit/plugin/messaging/PluginMessageRecipient.html" title="interface in org.bukkit.plugin.messaging">PluginMessageRecipient</a></pre>
+extends <a href="../../org/bukkit/plugin/messaging/PluginMessageRecipient.html" title="interface in org.bukkit.plugin.messaging">PluginMessageRecipient</a>, net.kyori.adventure.audience.ForwardingAudience</pre>
 <div class="block">Represents a server implementation.</div>
 </li>
 </ul>
@@ -131,6 +131,13 @@ extends <a href="../../org/bukkit/plugin/messaging/PluginMessageRecipient.html" 
 </td>
 </tr>
 </table>
+<ul class="blockList">
+<li class="blockList"><a name="nested.classes.inherited.from.class.net.kyori.adventure.audience.ForwardingAudience">
+<!--   -->
+</a>
+<h3>Nested classes/interfaces inherited from interface&nbsp;net.kyori.adventure.audience.ForwardingAudience</h3>
+<code>net.kyori.adventure.audience.ForwardingAudience.Single</code></li>
+</ul>
 </li>
 </ul>
 <!-- =========== FIELD SUMMARY =========== -->
@@ -195,18 +202,22 @@ extends <a href="../../org/bukkit/plugin/messaging/PluginMessageRecipient.html" 
 <tr id="i3" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#broadcast-net.md_5.bungee.api.chat.BaseComponent...-">broadcast</a></span>(net.md_5.bungee.api.chat.BaseComponent...&nbsp;components)</code>
-<div class="block">Sends an array of components as a single message to all online players.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">use <code>sendMessage</code> methods that accept <code>Component</code></span></div>
+</div>
 </td>
 </tr>
 <tr id="i4" class="altColor">
 <td class="colFirst"><code>default void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#broadcast-net.md_5.bungee.api.chat.BaseComponent-">broadcast</a></span>(net.md_5.bungee.api.chat.BaseComponent&nbsp;component)</code>
-<div class="block">Sends the component to all online players.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">use <code>sendMessage</code> methods that accept <code>Component</code></span></div>
+</div>
 </td>
 </tr>
 <tr id="i5" class="rowColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#broadcast-java.lang.String-java.lang.String-">broadcast</a></span>(java.lang.String&nbsp;message,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#broadcast-net.kyori.adventure.text.Component-java.lang.String-">broadcast</a></span>(net.kyori.adventure.text.Component&nbsp;message,
          java.lang.String&nbsp;permission)</code>
 <div class="block">Broadcasts the specified message to every user with the given
  permission name.</div>
@@ -214,24 +225,35 @@ extends <a href="../../org/bukkit/plugin/messaging/PluginMessageRecipient.html" 
 </tr>
 <tr id="i6" class="altColor">
 <td class="colFirst"><code>int</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#broadcastMessage-java.lang.String-">broadcastMessage</a></span>(java.lang.String&nbsp;message)</code>
-<div class="block">Broadcast a message to all players.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#broadcast-java.lang.String-java.lang.String-">broadcast</a></span>(java.lang.String&nbsp;message,
+         java.lang.String&nbsp;permission)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">in favour of <a href="../../org/bukkit/Server.html#broadcast-net.kyori.adventure.text.Component-java.lang.String-"><code>broadcast(net.kyori.adventure.text.Component, String)</code></a></span></div>
+</div>
 </td>
 </tr>
 <tr id="i7" class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#broadcastMessage-java.lang.String-">broadcastMessage</a></span>(java.lang.String&nbsp;message)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">use <code>sendMessage</code> methods that accept <code>Component</code></span></div>
+</div>
+</td>
+</tr>
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#clearRecipes--">clearRecipes</a></span>()</code>
 <div class="block">Clears the list of crafting recipes.</div>
 </td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i9" class="rowColor">
 <td class="colFirst"><code><a href="../../org/bukkit/block/data/BlockData.html" title="interface in org.bukkit.block.data">BlockData</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#createBlockData-org.bukkit.Material-">createBlockData</a></span>(<a href="../../org/bukkit/Material.html" title="enum in org.bukkit">Material</a>&nbsp;material)</code>
 <div class="block">Creates a new <a href="../../org/bukkit/block/data/BlockData.html" title="interface in org.bukkit.block.data"><code>BlockData</code></a> instance for the specified Material, with
  all properties initialized to unspecified defaults.</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code><a href="../../org/bukkit/block/data/BlockData.html" title="interface in org.bukkit.block.data">BlockData</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#createBlockData-org.bukkit.Material-java.util.function.Consumer-">createBlockData</a></span>(<a href="../../org/bukkit/Material.html" title="enum in org.bukkit">Material</a>&nbsp;material,
                java.util.function.Consumer&lt;<a href="../../org/bukkit/block/data/BlockData.html" title="interface in org.bukkit.block.data">BlockData</a>&gt;&nbsp;consumer)</code>
@@ -239,7 +261,7 @@ extends <a href="../../org/bukkit/plugin/messaging/PluginMessageRecipient.html" 
  all properties initialized to unspecified defaults.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code><a href="../../org/bukkit/block/data/BlockData.html" title="interface in org.bukkit.block.data">BlockData</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#createBlockData-org.bukkit.Material-java.lang.String-">createBlockData</a></span>(<a href="../../org/bukkit/Material.html" title="enum in org.bukkit">Material</a>&nbsp;material,
                java.lang.String&nbsp;data)</code>
@@ -248,14 +270,14 @@ extends <a href="../../org/bukkit/plugin/messaging/PluginMessageRecipient.html" 
  provided in data.</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
 <td class="colFirst"><code><a href="../../org/bukkit/block/data/BlockData.html" title="interface in org.bukkit.block.data">BlockData</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#createBlockData-java.lang.String-">createBlockData</a></span>(java.lang.String&nbsp;data)</code>
 <div class="block">Creates a new <a href="../../org/bukkit/block/data/BlockData.html" title="interface in org.bukkit.block.data"><code>BlockData</code></a> instance with material and properties
  parsed from provided data.</div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="../../org/bukkit/boss/KeyedBossBar.html" title="interface in org.bukkit.boss">KeyedBossBar</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#createBossBar-org.bukkit.NamespacedKey-java.lang.String-org.bukkit.boss.BarColor-org.bukkit.boss.BarStyle-org.bukkit.boss.BarFlag...-">createBossBar</a></span>(<a href="../../org/bukkit/NamespacedKey.html" title="class in org.bukkit">NamespacedKey</a>&nbsp;key,
              java.lang.String&nbsp;title,
@@ -265,7 +287,7 @@ extends <a href="../../org/bukkit/plugin/messaging/PluginMessageRecipient.html" 
 <div class="block">Creates a boss bar instance to display to players.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="../../org/bukkit/boss/BossBar.html" title="interface in org.bukkit.boss">BossBar</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#createBossBar-java.lang.String-org.bukkit.boss.BarColor-org.bukkit.boss.BarStyle-org.bukkit.boss.BarFlag...-">createBossBar</a></span>(java.lang.String&nbsp;title,
              <a href="../../org/bukkit/boss/BarColor.html" title="enum in org.bukkit.boss">BarColor</a>&nbsp;color,
@@ -274,13 +296,13 @@ extends <a href="../../org/bukkit/plugin/messaging/PluginMessageRecipient.html" 
 <div class="block">Creates a boss bar instance to display to players.</div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="../../org/bukkit/generator/ChunkGenerator.ChunkData.html" title="interface in org.bukkit.generator">ChunkGenerator.ChunkData</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#createChunkData-org.bukkit.World-">createChunkData</a></span>(<a href="../../org/bukkit/World.html" title="interface in org.bukkit">World</a>&nbsp;world)</code>
 <div class="block">Create a ChunkData for use in a generator.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#createExplorerMap-org.bukkit.World-org.bukkit.Location-org.bukkit.StructureType-">createExplorerMap</a></span>(<a href="../../org/bukkit/World.html" title="interface in org.bukkit">World</a>&nbsp;world,
                  <a href="../../org/bukkit/Location.html" title="class in org.bukkit">Location</a>&nbsp;location,
@@ -289,7 +311,7 @@ extends <a href="../../org/bukkit/plugin/messaging/PluginMessageRecipient.html" 
  given <a href="../../org/bukkit/StructureType.html" title="class in org.bukkit"><code>StructureType</code></a>.</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#createExplorerMap-org.bukkit.World-org.bukkit.Location-org.bukkit.StructureType-int-boolean-">createExplorerMap</a></span>(<a href="../../org/bukkit/World.html" title="interface in org.bukkit">World</a>&nbsp;world,
                  <a href="../../org/bukkit/Location.html" title="class in org.bukkit">Location</a>&nbsp;location,
@@ -300,7 +322,7 @@ extends <a href="../../org/bukkit/plugin/messaging/PluginMessageRecipient.html" 
  given <a href="../../org/bukkit/StructureType.html" title="class in org.bukkit"><code>StructureType</code></a>.</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code><a href="../../org/bukkit/inventory/Inventory.html" title="interface in org.bukkit.inventory">Inventory</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#createInventory-org.bukkit.inventory.InventoryHolder-int-">createInventory</a></span>(<a href="../../org/bukkit/inventory/InventoryHolder.html" title="interface in org.bukkit.inventory">InventoryHolder</a>&nbsp;owner,
                int&nbsp;size)</code>
@@ -308,55 +330,83 @@ extends <a href="../../org/bukkit/plugin/messaging/PluginMessageRecipient.html" 
  specified size.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code><a href="../../org/bukkit/inventory/Inventory.html" title="interface in org.bukkit.inventory">Inventory</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#createInventory-org.bukkit.inventory.InventoryHolder-int-java.lang.String-">createInventory</a></span>(<a href="../../org/bukkit/inventory/InventoryHolder.html" title="interface in org.bukkit.inventory">InventoryHolder</a>&nbsp;owner,
+<td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#createInventory-org.bukkit.inventory.InventoryHolder-int-net.kyori.adventure.text.Component-">createInventory</a></span>(<a href="../../org/bukkit/inventory/InventoryHolder.html" title="interface in org.bukkit.inventory">InventoryHolder</a>&nbsp;owner,
                int&nbsp;size,
-               java.lang.String&nbsp;title)</code>
+               net.kyori.adventure.text.Component&nbsp;title)</code>
 <div class="block">Creates an empty inventory of type <a href="../../org/bukkit/event/inventory/InventoryType.html#CHEST"><code>InventoryType.CHEST</code></a> with the
  specified size and title.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i20" class="altColor">
+<td class="colFirst"><code><a href="../../org/bukkit/inventory/Inventory.html" title="interface in org.bukkit.inventory">Inventory</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#createInventory-org.bukkit.inventory.InventoryHolder-int-java.lang.String-">createInventory</a></span>(<a href="../../org/bukkit/inventory/InventoryHolder.html" title="interface in org.bukkit.inventory">InventoryHolder</a>&nbsp;owner,
+               int&nbsp;size,
+               java.lang.String&nbsp;title)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">in favour of <a href="../../org/bukkit/Server.html#createInventory-org.bukkit.inventory.InventoryHolder-int-net.kyori.adventure.text.Component-"><code>createInventory(InventoryHolder, int, net.kyori.adventure.text.Component)</code></a></span></div>
+</div>
+</td>
+</tr>
+<tr id="i21" class="rowColor">
 <td class="colFirst"><code><a href="../../org/bukkit/inventory/Inventory.html" title="interface in org.bukkit.inventory">Inventory</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#createInventory-org.bukkit.inventory.InventoryHolder-org.bukkit.event.inventory.InventoryType-">createInventory</a></span>(<a href="../../org/bukkit/inventory/InventoryHolder.html" title="interface in org.bukkit.inventory">InventoryHolder</a>&nbsp;owner,
                <a href="../../org/bukkit/event/inventory/InventoryType.html" title="enum in org.bukkit.event.inventory">InventoryType</a>&nbsp;type)</code>
 <div class="block">Creates an empty inventory with the specified type.</div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i22" class="altColor">
+<td class="colFirst"><code><a href="../../org/bukkit/inventory/Inventory.html" title="interface in org.bukkit.inventory">Inventory</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#createInventory-org.bukkit.inventory.InventoryHolder-org.bukkit.event.inventory.InventoryType-net.kyori.adventure.text.Component-">createInventory</a></span>(<a href="../../org/bukkit/inventory/InventoryHolder.html" title="interface in org.bukkit.inventory">InventoryHolder</a>&nbsp;owner,
+               <a href="../../org/bukkit/event/inventory/InventoryType.html" title="enum in org.bukkit.event.inventory">InventoryType</a>&nbsp;type,
+               net.kyori.adventure.text.Component&nbsp;title)</code>
+<div class="block">Creates an empty inventory with the specified type and title.</div>
+</td>
+</tr>
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code><a href="../../org/bukkit/inventory/Inventory.html" title="interface in org.bukkit.inventory">Inventory</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#createInventory-org.bukkit.inventory.InventoryHolder-org.bukkit.event.inventory.InventoryType-java.lang.String-">createInventory</a></span>(<a href="../../org/bukkit/inventory/InventoryHolder.html" title="interface in org.bukkit.inventory">InventoryHolder</a>&nbsp;owner,
                <a href="../../org/bukkit/event/inventory/InventoryType.html" title="enum in org.bukkit.event.inventory">InventoryType</a>&nbsp;type,
                java.lang.String&nbsp;title)</code>
-<div class="block">Creates an empty inventory with the specified type and title.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">in favour of <a href="../../org/bukkit/Server.html#createInventory-org.bukkit.inventory.InventoryHolder-org.bukkit.event.inventory.InventoryType-net.kyori.adventure.text.Component-"><code>createInventory(InventoryHolder, InventoryType, net.kyori.adventure.text.Component)</code></a></span></div>
+</div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code><a href="../../org/bukkit/map/MapView.html" title="interface in org.bukkit.map">MapView</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#createMap-org.bukkit.World-">createMap</a></span>(<a href="../../org/bukkit/World.html" title="interface in org.bukkit">World</a>&nbsp;world)</code>
 <div class="block">Create a new map with an automatically assigned ID.</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code><a href="../../org/bukkit/inventory/Merchant.html" title="interface in org.bukkit.inventory">Merchant</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#createMerchant-java.lang.String-">createMerchant</a></span>(java.lang.String&nbsp;title)</code>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#createMerchant-net.kyori.adventure.text.Component-">createMerchant</a></span>(net.kyori.adventure.text.Component&nbsp;title)</code>
 <div class="block">Creates an empty merchant.</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i26" class="altColor">
+<td class="colFirst"><code><a href="../../org/bukkit/inventory/Merchant.html" title="interface in org.bukkit.inventory">Merchant</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#createMerchant-java.lang.String-">createMerchant</a></span>(java.lang.String&nbsp;title)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">in favour of <a href="../../org/bukkit/Server.html#createMerchant-net.kyori.adventure.text.Component-"><code>createMerchant(net.kyori.adventure.text.Component)</code></a></span></div>
+</div>
+</td>
+</tr>
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code><a href="../../com/destroystokyo/paper/profile/PlayerProfile.html" title="interface in com.destroystokyo.paper.profile">PlayerProfile</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#createProfile-java.lang.String-">createProfile</a></span>(java.lang.String&nbsp;name)</code>
 <div class="block">Creates a PlayerProfile for the specified name, with UUID as null</div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i28" class="altColor">
 <td class="colFirst"><code><a href="../../com/destroystokyo/paper/profile/PlayerProfile.html" title="interface in com.destroystokyo.paper.profile">PlayerProfile</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#createProfile-java.util.UUID-">createProfile</a></span>(java.util.UUID&nbsp;uuid)</code>
 <div class="block">Creates a PlayerProfile for the specified uuid, with name as null</div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code><a href="../../com/destroystokyo/paper/profile/PlayerProfile.html" title="interface in com.destroystokyo.paper.profile">PlayerProfile</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#createProfile-java.util.UUID-java.lang.String-">createProfile</a></span>(java.util.UUID&nbsp;uuid,
              java.lang.String&nbsp;name)</code>
@@ -365,7 +415,7 @@ extends <a href="../../org/bukkit/plugin/messaging/PluginMessageRecipient.html" 
  Both UUID and Name can not be null at same time.</div>
 </td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code><a href="../../org/bukkit/generator/ChunkGenerator.ChunkData.html" title="interface in org.bukkit.generator">ChunkGenerator.ChunkData</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#createVanillaChunkData-org.bukkit.World-int-int-">createVanillaChunkData</a></span>(<a href="../../org/bukkit/World.html" title="interface in org.bukkit">World</a>&nbsp;world,
                       int&nbsp;x,
@@ -373,175 +423,175 @@ extends <a href="../../org/bukkit/plugin/messaging/PluginMessageRecipient.html" 
 <div class="block">Create a ChunkData for use in a generator, that is populated by the vanilla generator for that world</div>
 </td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code><a href="../../org/bukkit/World.html" title="interface in org.bukkit">World</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#createWorld-org.bukkit.WorldCreator-">createWorld</a></span>(<a href="../../org/bukkit/WorldCreator.html" title="class in org.bukkit">WorldCreator</a>&nbsp;creator)</code>
 <div class="block">Creates or loads a world with the given name using the specified
  options.</div>
 </td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#dispatchCommand-org.bukkit.command.CommandSender-java.lang.String-">dispatchCommand</a></span>(<a href="../../org/bukkit/command/CommandSender.html" title="interface in org.bukkit.command">CommandSender</a>&nbsp;sender,
                java.lang.String&nbsp;commandLine)</code>
 <div class="block">Dispatches a command on this server, and executes it if found.</div>
 </td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code><a href="../../org/bukkit/advancement/Advancement.html" title="interface in org.bukkit.advancement">Advancement</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getAdvancement-org.bukkit.NamespacedKey-">getAdvancement</a></span>(<a href="../../org/bukkit/NamespacedKey.html" title="class in org.bukkit">NamespacedKey</a>&nbsp;key)</code>
 <div class="block">Get the advancement specified by this key.</div>
 </td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getAllowEnd--">getAllowEnd</a></span>()</code>
 <div class="block">Gets whether this server allows the End or not.</div>
 </td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getAllowFlight--">getAllowFlight</a></span>()</code>
 <div class="block">Gets whether this server allows flying or not.</div>
 </td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i36" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getAllowNether--">getAllowNether</a></span>()</code>
 <div class="block">Gets whether this server allows the Nether or not.</div>
 </td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getAmbientSpawnLimit--">getAmbientSpawnLimit</a></span>()</code>
 <div class="block">Gets user-specified limit for number of ambient mobs that can spawn in
  a chunk.</div>
 </td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i38" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getAnimalSpawnLimit--">getAnimalSpawnLimit</a></span>()</code>
 <div class="block">Gets user-specified limit for number of animals that can spawn in a
  chunk.</div>
 </td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code>double</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getAverageTickTime--">getAverageTickTime</a></span>()</code>
 <div class="block">Get the average tick time (in millis)</div>
 </td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code><a href="../../org/bukkit/BanList.html" title="interface in org.bukkit">BanList</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getBanList-org.bukkit.BanList.Type-">getBanList</a></span>(<a href="../../org/bukkit/BanList.Type.html" title="enum in org.bukkit">BanList.Type</a>&nbsp;type)</code>
 <div class="block">Gets a ban list for the supplied type.</div>
 </td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code>java.util.Set&lt;<a href="../../org/bukkit/OfflinePlayer.html" title="interface in org.bukkit">OfflinePlayer</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getBannedPlayers--">getBannedPlayers</a></span>()</code>
 <div class="block">Gets a set containing all banned players.</div>
 </td>
 </tr>
-<tr id="i38" class="altColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code><a href="../../org/bukkit/boss/KeyedBossBar.html" title="interface in org.bukkit.boss">KeyedBossBar</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getBossBar-org.bukkit.NamespacedKey-">getBossBar</a></span>(<a href="../../org/bukkit/NamespacedKey.html" title="class in org.bukkit">NamespacedKey</a>&nbsp;key)</code>
 <div class="block">Gets the <a href="../../org/bukkit/boss/KeyedBossBar.html" title="interface in org.bukkit.boss"><code>KeyedBossBar</code></a> specified by this key.</div>
 </td>
 </tr>
-<tr id="i39" class="rowColor">
+<tr id="i43" class="rowColor">
 <td class="colFirst"><code>java.util.Iterator&lt;<a href="../../org/bukkit/boss/KeyedBossBar.html" title="interface in org.bukkit.boss">KeyedBossBar</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getBossBars--">getBossBars</a></span>()</code>
 <div class="block">Gets an unmodifiable iterator through all persistent bossbars.</div>
 </td>
 </tr>
-<tr id="i40" class="altColor">
+<tr id="i44" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getBukkitVersion--">getBukkitVersion</a></span>()</code>
 <div class="block">Gets the Bukkit version that this server is running.</div>
 </td>
 </tr>
-<tr id="i41" class="rowColor">
+<tr id="i45" class="rowColor">
 <td class="colFirst"><code>java.util.Map&lt;java.lang.String,java.lang.String[]&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getCommandAliases--">getCommandAliases</a></span>()</code>
 <div class="block">Gets a list of command aliases defined in the server properties.</div>
 </td>
 </tr>
-<tr id="i42" class="altColor">
+<tr id="i46" class="altColor">
 <td class="colFirst"><code><a href="../../org/bukkit/command/CommandMap.html" title="interface in org.bukkit.command">CommandMap</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getCommandMap--">getCommandMap</a></span>()</code>
 <div class="block">Gets the active <a href="../../org/bukkit/command/CommandMap.html" title="interface in org.bukkit.command"><code>CommandMap</code></a></div>
 </td>
 </tr>
-<tr id="i43" class="rowColor">
+<tr id="i47" class="rowColor">
 <td class="colFirst"><code>long</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getConnectionThrottle--">getConnectionThrottle</a></span>()</code>
 <div class="block">Gets the value of the connection throttle setting.</div>
 </td>
 </tr>
-<tr id="i44" class="altColor">
+<tr id="i48" class="altColor">
 <td class="colFirst"><code><a href="../../org/bukkit/command/ConsoleCommandSender.html" title="interface in org.bukkit.command">ConsoleCommandSender</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getConsoleSender--">getConsoleSender</a></span>()</code>
 <div class="block">Gets a <a href="../../org/bukkit/command/ConsoleCommandSender.html" title="interface in org.bukkit.command"><code>ConsoleCommandSender</code></a> that may be used as an input source
  for this server.</div>
 </td>
 </tr>
-<tr id="i45" class="rowColor">
+<tr id="i49" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getCurrentTick--">getCurrentTick</a></span>()</code>
 <div class="block">Get the current internal server tick</div>
 </td>
 </tr>
-<tr id="i46" class="altColor">
+<tr id="i50" class="altColor">
 <td class="colFirst"><code><a href="../../org/bukkit/GameMode.html" title="enum in org.bukkit">GameMode</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getDefaultGameMode--">getDefaultGameMode</a></span>()</code>
 <div class="block">Gets the default <a href="../../org/bukkit/GameMode.html" title="enum in org.bukkit"><code>GameMode</code></a> for new players.</div>
 </td>
 </tr>
-<tr id="i47" class="rowColor">
+<tr id="i51" class="rowColor">
 <td class="colFirst"><code><a href="../../org/bukkit/entity/Entity.html" title="interface in org.bukkit.entity">Entity</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getEntity-java.util.UUID-">getEntity</a></span>(java.util.UUID&nbsp;uuid)</code>
 <div class="block">Gets an entity on the server by its UUID</div>
 </td>
 </tr>
-<tr id="i48" class="altColor">
+<tr id="i52" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getGenerateStructures--">getGenerateStructures</a></span>()</code>
 <div class="block">Get generate-structures setting.</div>
 </td>
 </tr>
-<tr id="i49" class="rowColor">
+<tr id="i53" class="rowColor">
 <td class="colFirst"><code><a href="../../org/bukkit/help/HelpMap.html" title="interface in org.bukkit.help">HelpMap</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getHelpMap--">getHelpMap</a></span>()</code>
 <div class="block">Gets the <a href="../../org/bukkit/help/HelpMap.html" title="interface in org.bukkit.help"><code>HelpMap</code></a> providing help topics for this server.</div>
 </td>
 </tr>
-<tr id="i50" class="altColor">
+<tr id="i54" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getIdleTimeout--">getIdleTimeout</a></span>()</code>
 <div class="block">Gets the idle kick timeout.</div>
 </td>
 </tr>
-<tr id="i51" class="rowColor">
+<tr id="i55" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getIp--">getIp</a></span>()</code>
 <div class="block">Get the IP that this server is bound to, or empty string if not
  specified.</div>
 </td>
 </tr>
-<tr id="i52" class="altColor">
+<tr id="i56" class="altColor">
 <td class="colFirst"><code>java.util.Set&lt;java.lang.String&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getIPBans--">getIPBans</a></span>()</code>
 <div class="block">Gets a set containing all current IPs that are banned.</div>
 </td>
 </tr>
-<tr id="i53" class="rowColor">
+<tr id="i57" class="rowColor">
 <td class="colFirst"><code><a href="../../org/bukkit/inventory/ItemFactory.html" title="interface in org.bukkit.inventory">ItemFactory</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getItemFactory--">getItemFactory</a></span>()</code>
 <div class="block">Gets the instance of the item factory (for <a href="../../org/bukkit/inventory/meta/ItemMeta.html" title="interface in org.bukkit.inventory.meta"><code>ItemMeta</code></a>).</div>
 </td>
 </tr>
-<tr id="i54" class="altColor">
+<tr id="i58" class="altColor">
 <td class="colFirst"><code>default long</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getLastTickMs--">getLastTickMs</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -549,25 +599,25 @@ extends <a href="../../org/bukkit/plugin/messaging/PluginMessageRecipient.html" 
 </div>
 </td>
 </tr>
-<tr id="i55" class="rowColor">
+<tr id="i59" class="rowColor">
 <td class="colFirst"><code>java.time.Duration</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getLastTickTime--">getLastTickTime</a></span>()</code>
 <div class="block">Returns the time in <code>Duration</code> the last tick took.</div>
 </td>
 </tr>
-<tr id="i56" class="altColor">
+<tr id="i60" class="altColor">
 <td class="colFirst"><code>java.util.logging.Logger</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getLogger--">getLogger</a></span>()</code>
 <div class="block">Returns the primary logger associated with this server instance.</div>
 </td>
 </tr>
-<tr id="i57" class="rowColor">
+<tr id="i61" class="rowColor">
 <td class="colFirst"><code><a href="../../org/bukkit/loot/LootTable.html" title="interface in org.bukkit.loot">LootTable</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getLootTable-org.bukkit.NamespacedKey-">getLootTable</a></span>(<a href="../../org/bukkit/NamespacedKey.html" title="class in org.bukkit">NamespacedKey</a>&nbsp;key)</code>
 <div class="block">Gets the specified <a href="../../org/bukkit/loot/LootTable.html" title="interface in org.bukkit.loot"><code>LootTable</code></a>.</div>
 </td>
 </tr>
-<tr id="i58" class="altColor">
+<tr id="i62" class="altColor">
 <td class="colFirst"><code><a href="../../org/bukkit/map/MapView.html" title="interface in org.bukkit.map">MapView</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getMap-int-">getMap</a></span>(int&nbsp;id)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -575,56 +625,58 @@ extends <a href="../../org/bukkit/plugin/messaging/PluginMessageRecipient.html" 
 </div>
 </td>
 </tr>
-<tr id="i59" class="rowColor">
+<tr id="i63" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getMaxPlayers--">getMaxPlayers</a></span>()</code>
 <div class="block">Get the maximum amount of players which can login to this server.</div>
 </td>
 </tr>
-<tr id="i60" class="altColor">
+<tr id="i64" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getMaxWorldSize--">getMaxWorldSize</a></span>()</code>
 <div class="block">Get max world size.</div>
 </td>
 </tr>
-<tr id="i61" class="rowColor">
+<tr id="i65" class="rowColor">
 <td class="colFirst"><code><a href="../../org/bukkit/plugin/messaging/Messenger.html" title="interface in org.bukkit.plugin.messaging">Messenger</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getMessenger--">getMessenger</a></span>()</code>
 <div class="block">Gets the <a href="../../org/bukkit/plugin/messaging/Messenger.html" title="interface in org.bukkit.plugin.messaging"><code>Messenger</code></a> responsible for this server.</div>
 </td>
 </tr>
-<tr id="i62" class="altColor">
+<tr id="i66" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getMinecraftVersion--">getMinecraftVersion</a></span>()</code>
 <div class="block">Gets the version of game this server implements</div>
 </td>
 </tr>
-<tr id="i63" class="rowColor">
+<tr id="i67" class="rowColor">
 <td class="colFirst"><code><a href="../../com/destroystokyo/paper/entity/ai/MobGoals.html" title="interface in com.destroystokyo.paper.entity.ai">MobGoals</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getMobGoals--">getMobGoals</a></span>()</code>
 <div class="block">Returns the <a href="../../com/destroystokyo/paper/entity/ai/MobGoals.html" title="interface in com.destroystokyo.paper.entity.ai"><code>MobGoals</code></a> manager</div>
 </td>
 </tr>
-<tr id="i64" class="altColor">
+<tr id="i68" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getMonsterSpawnLimit--">getMonsterSpawnLimit</a></span>()</code>
 <div class="block">Gets user-specified limit for number of monsters that can spawn in a
  chunk.</div>
 </td>
 </tr>
-<tr id="i65" class="rowColor">
+<tr id="i69" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getMotd--">getMotd</a></span>()</code>
-<div class="block">Gets the message that is displayed on the server list.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">in favour of <a href="../../org/bukkit/Server.html#motd--"><code>motd()</code></a></span></div>
+</div>
 </td>
 </tr>
-<tr id="i66" class="altColor">
+<tr id="i70" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getName--">getName</a></span>()</code>
 <div class="block">Gets the name of this server implementation.</div>
 </td>
 </tr>
-<tr id="i67" class="rowColor">
+<tr id="i71" class="rowColor">
 <td class="colFirst"><code><a href="../../org/bukkit/OfflinePlayer.html" title="interface in org.bukkit">OfflinePlayer</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getOfflinePlayer-java.lang.String-">getOfflinePlayer</a></span>(java.lang.String&nbsp;name)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -633,146 +685,148 @@ extends <a href="../../org/bukkit/plugin/messaging/PluginMessageRecipient.html" 
 </div>
 </td>
 </tr>
-<tr id="i68" class="altColor">
+<tr id="i72" class="altColor">
 <td class="colFirst"><code><a href="../../org/bukkit/OfflinePlayer.html" title="interface in org.bukkit">OfflinePlayer</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getOfflinePlayer-java.util.UUID-">getOfflinePlayer</a></span>(java.util.UUID&nbsp;id)</code>
 <div class="block">Gets the player by the given UUID, regardless if they are offline or
  online.</div>
 </td>
 </tr>
-<tr id="i69" class="rowColor">
+<tr id="i73" class="rowColor">
 <td class="colFirst"><code><a href="../../org/bukkit/OfflinePlayer.html" title="interface in org.bukkit">OfflinePlayer</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getOfflinePlayerIfCached-java.lang.String-">getOfflinePlayerIfCached</a></span>(java.lang.String&nbsp;name)</code>
 <div class="block">Gets the player by the given name, regardless if they are offline or
  online.</div>
 </td>
 </tr>
-<tr id="i70" class="altColor">
+<tr id="i74" class="altColor">
 <td class="colFirst"><code><a href="../../org/bukkit/OfflinePlayer.html" title="interface in org.bukkit">OfflinePlayer</a>[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getOfflinePlayers--">getOfflinePlayers</a></span>()</code>
 <div class="block">Gets every player that has ever played on this server.</div>
 </td>
 </tr>
-<tr id="i71" class="rowColor">
+<tr id="i75" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getOnlineMode--">getOnlineMode</a></span>()</code>
 <div class="block">Gets whether the Server is in online mode or not.</div>
 </td>
 </tr>
-<tr id="i72" class="altColor">
+<tr id="i76" class="altColor">
 <td class="colFirst"><code>java.util.Collection&lt;? extends <a href="../../org/bukkit/entity/Player.html" title="interface in org.bukkit.entity">Player</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getOnlinePlayers--">getOnlinePlayers</a></span>()</code>
 <div class="block">Gets a view of all currently logged in players.</div>
 </td>
 </tr>
-<tr id="i73" class="rowColor">
+<tr id="i77" class="rowColor">
 <td class="colFirst"><code>java.util.Set&lt;<a href="../../org/bukkit/OfflinePlayer.html" title="interface in org.bukkit">OfflinePlayer</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getOperators--">getOperators</a></span>()</code>
 <div class="block">Gets a set containing all player operators.</div>
 </td>
 </tr>
-<tr id="i74" class="altColor">
+<tr id="i78" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getPermissionMessage--">getPermissionMessage</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i75" class="rowColor">
+<tr id="i79" class="rowColor">
 <td class="colFirst"><code><a href="../../org/bukkit/entity/Player.html" title="interface in org.bukkit.entity">Player</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getPlayer-java.lang.String-">getPlayer</a></span>(java.lang.String&nbsp;name)</code>
 <div class="block">Gets a player object by the given username.</div>
 </td>
 </tr>
-<tr id="i76" class="altColor">
+<tr id="i80" class="altColor">
 <td class="colFirst"><code><a href="../../org/bukkit/entity/Player.html" title="interface in org.bukkit.entity">Player</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getPlayer-java.util.UUID-">getPlayer</a></span>(java.util.UUID&nbsp;id)</code>
 <div class="block">Gets the player with the given UUID.</div>
 </td>
 </tr>
-<tr id="i77" class="rowColor">
+<tr id="i81" class="rowColor">
 <td class="colFirst"><code><a href="../../org/bukkit/entity/Player.html" title="interface in org.bukkit.entity">Player</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getPlayerExact-java.lang.String-">getPlayerExact</a></span>(java.lang.String&nbsp;name)</code>
 <div class="block">Gets the player with the exact given name, case insensitive.</div>
 </td>
 </tr>
-<tr id="i78" class="altColor">
+<tr id="i82" class="altColor">
 <td class="colFirst"><code>java.util.UUID</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getPlayerUniqueId-java.lang.String-">getPlayerUniqueId</a></span>(java.lang.String&nbsp;playerName)</code>
 <div class="block">Gets the unique ID of the player currently known as the specified player name
  In Offline Mode, will return an Offline UUID</div>
 </td>
 </tr>
-<tr id="i79" class="rowColor">
+<tr id="i83" class="rowColor">
 <td class="colFirst"><code><a href="../../org/bukkit/command/PluginCommand.html" title="class in org.bukkit.command">PluginCommand</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getPluginCommand-java.lang.String-">getPluginCommand</a></span>(java.lang.String&nbsp;name)</code>
 <div class="block">Gets a <a href="../../org/bukkit/command/PluginCommand.html" title="class in org.bukkit.command"><code>PluginCommand</code></a> with the given name or alias.</div>
 </td>
 </tr>
-<tr id="i80" class="altColor">
+<tr id="i84" class="altColor">
 <td class="colFirst"><code><a href="../../org/bukkit/plugin/PluginManager.html" title="interface in org.bukkit.plugin">PluginManager</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getPluginManager--">getPluginManager</a></span>()</code>
 <div class="block">Gets the plugin manager for interfacing with plugins.</div>
 </td>
 </tr>
-<tr id="i81" class="rowColor">
+<tr id="i85" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getPort--">getPort</a></span>()</code>
 <div class="block">Get the game port that the server runs on.</div>
 </td>
 </tr>
-<tr id="i82" class="altColor">
+<tr id="i86" class="altColor">
 <td class="colFirst"><code><a href="../../org/bukkit/inventory/Recipe.html" title="interface in org.bukkit.inventory">Recipe</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getRecipe-org.bukkit.NamespacedKey-">getRecipe</a></span>(<a href="../../org/bukkit/NamespacedKey.html" title="class in org.bukkit">NamespacedKey</a>&nbsp;recipeKey)</code>
 <div class="block">Get the <a href="../../org/bukkit/inventory/Recipe.html" title="interface in org.bukkit.inventory"><code>Recipe</code></a> for the given key.</div>
 </td>
 </tr>
-<tr id="i83" class="rowColor">
+<tr id="i87" class="rowColor">
 <td class="colFirst"><code>java.util.List&lt;<a href="../../org/bukkit/inventory/Recipe.html" title="interface in org.bukkit.inventory">Recipe</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getRecipesFor-org.bukkit.inventory.ItemStack-">getRecipesFor</a></span>(<a href="../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&nbsp;result)</code>
 <div class="block">Get a list of all recipes for a given item.</div>
 </td>
 </tr>
-<tr id="i84" class="altColor">
+<tr id="i88" class="altColor">
 <td class="colFirst"><code><a href="../../org/bukkit/scheduler/BukkitScheduler.html" title="interface in org.bukkit.scheduler">BukkitScheduler</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getScheduler--">getScheduler</a></span>()</code>
 <div class="block">Gets the scheduler for managing scheduled events.</div>
 </td>
 </tr>
-<tr id="i85" class="rowColor">
+<tr id="i89" class="rowColor">
 <td class="colFirst"><code><a href="../../org/bukkit/scoreboard/ScoreboardManager.html" title="interface in org.bukkit.scoreboard">ScoreboardManager</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getScoreboardManager--">getScoreboardManager</a></span>()</code>
 <div class="block">Gets the instance of the scoreboard manager.</div>
 </td>
 </tr>
-<tr id="i86" class="altColor">
+<tr id="i90" class="altColor">
 <td class="colFirst"><code><a href="../../org/bukkit/util/CachedServerIcon.html" title="interface in org.bukkit.util">CachedServerIcon</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getServerIcon--">getServerIcon</a></span>()</code>
 <div class="block">Gets an instance of the server's default server-icon.</div>
 </td>
 </tr>
-<tr id="i87" class="rowColor">
+<tr id="i91" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getServerName--">getServerName</a></span>()</code>
 <div class="block">Get the name of this server</div>
 </td>
 </tr>
-<tr id="i88" class="altColor">
+<tr id="i92" class="altColor">
 <td class="colFirst"><code><a href="../../org/bukkit/plugin/ServicesManager.html" title="interface in org.bukkit.plugin">ServicesManager</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getServicesManager--">getServicesManager</a></span>()</code>
 <div class="block">Gets a services manager.</div>
 </td>
 </tr>
-<tr id="i89" class="rowColor">
+<tr id="i93" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getShutdownMessage--">getShutdownMessage</a></span>()</code>
-<div class="block">Gets the default message that is displayed when the server is stopped.</div>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">in favour of <a href="../../org/bukkit/Server.html#shutdownMessage--"><code>shutdownMessage()</code></a></span></div>
+</div>
 </td>
 </tr>
-<tr id="i90" class="altColor">
+<tr id="i94" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getSpawnRadius--">getSpawnRadius</a></span>()</code>
 <div class="block">Gets the radius, in blocks, around each worlds spawn point to protect.</div>
 </td>
 </tr>
-<tr id="i91" class="rowColor">
+<tr id="i95" class="rowColor">
 <td class="colFirst"><code>&lt;T extends <a href="../../org/bukkit/Keyed.html" title="interface in org.bukkit">Keyed</a>&gt;<br><a href="../../org/bukkit/Tag.html" title="interface in org.bukkit">Tag</a>&lt;T&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getTag-java.lang.String-org.bukkit.NamespacedKey-java.lang.Class-">getTag</a></span>(java.lang.String&nbsp;registry,
       <a href="../../org/bukkit/NamespacedKey.html" title="class in org.bukkit">NamespacedKey</a>&nbsp;tag,
@@ -780,316 +834,334 @@ extends <a href="../../org/bukkit/plugin/messaging/PluginMessageRecipient.html" 
 <div class="block">Gets a tag which has already been defined within the server.</div>
 </td>
 </tr>
-<tr id="i92" class="altColor">
+<tr id="i96" class="altColor">
 <td class="colFirst"><code>&lt;T extends <a href="../../org/bukkit/Keyed.html" title="interface in org.bukkit">Keyed</a>&gt;<br>java.lang.Iterable&lt;<a href="../../org/bukkit/Tag.html" title="interface in org.bukkit">Tag</a>&lt;T&gt;&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getTags-java.lang.String-java.lang.Class-">getTags</a></span>(java.lang.String&nbsp;registry,
        java.lang.Class&lt;T&gt;&nbsp;clazz)</code>
 <div class="block">Gets a all tags which have been defined within the server.</div>
 </td>
 </tr>
-<tr id="i93" class="rowColor">
+<tr id="i97" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getTicksPerAmbientSpawns--">getTicksPerAmbientSpawns</a></span>()</code>
 <div class="block">Gets the default ticks per ambient mob spawns value.</div>
 </td>
 </tr>
-<tr id="i94" class="altColor">
+<tr id="i98" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getTicksPerAnimalSpawns--">getTicksPerAnimalSpawns</a></span>()</code>
 <div class="block">Gets default ticks per animal spawns value.</div>
 </td>
 </tr>
-<tr id="i95" class="rowColor">
+<tr id="i99" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getTicksPerMonsterSpawns--">getTicksPerMonsterSpawns</a></span>()</code>
 <div class="block">Gets the default ticks per monster spawns value.</div>
 </td>
 </tr>
-<tr id="i96" class="altColor">
+<tr id="i100" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getTicksPerWaterAmbientSpawns--">getTicksPerWaterAmbientSpawns</a></span>()</code>
 <div class="block">Gets the default ticks per water ambient mob spawns value.</div>
 </td>
 </tr>
-<tr id="i97" class="rowColor">
+<tr id="i101" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getTicksPerWaterSpawns--">getTicksPerWaterSpawns</a></span>()</code>
 <div class="block">Gets the default ticks per water mob spawns value.</div>
 </td>
 </tr>
-<tr id="i98" class="altColor">
+<tr id="i102" class="altColor">
 <td class="colFirst"><code>long[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getTickTimes--">getTickTimes</a></span>()</code>
 <div class="block">Get a sample of the servers last tick times (in nanos)</div>
 </td>
 </tr>
-<tr id="i99" class="rowColor">
+<tr id="i103" class="rowColor">
 <td class="colFirst"><code>double[]</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getTPS--">getTPS</a></span>()</code>
 <div class="block">Gets the current server TPS</div>
 </td>
 </tr>
-<tr id="i100" class="altColor">
+<tr id="i104" class="altColor">
 <td class="colFirst"><code><a href="../../org/bukkit/UnsafeValues.html" title="interface in org.bukkit">UnsafeValues</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getUnsafe--">getUnsafe</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
 </td>
 </tr>
-<tr id="i101" class="rowColor">
+<tr id="i105" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getUpdateFolder--">getUpdateFolder</a></span>()</code>
 <div class="block">Gets the name of the update folder.</div>
 </td>
 </tr>
-<tr id="i102" class="altColor">
+<tr id="i106" class="altColor">
 <td class="colFirst"><code>java.io.File</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getUpdateFolderFile--">getUpdateFolderFile</a></span>()</code>
 <div class="block">Gets the update folder.</div>
 </td>
 </tr>
-<tr id="i103" class="rowColor">
+<tr id="i107" class="rowColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getVersion--">getVersion</a></span>()</code>
 <div class="block">Gets the version string of this server implementation.</div>
 </td>
 </tr>
-<tr id="i104" class="altColor">
+<tr id="i108" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getViewDistance--">getViewDistance</a></span>()</code>
 <div class="block">Get the view distance from this server.</div>
 </td>
 </tr>
-<tr id="i105" class="rowColor">
+<tr id="i109" class="rowColor">
 <td class="colFirst"><code><a href="../../org/bukkit/Warning.WarningState.html" title="enum in org.bukkit">Warning.WarningState</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getWarningState--">getWarningState</a></span>()</code>
 <div class="block">Gets the current warning state for the server.</div>
 </td>
 </tr>
-<tr id="i106" class="altColor">
+<tr id="i110" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getWaterAmbientSpawnLimit--">getWaterAmbientSpawnLimit</a></span>()</code>
 <div class="block">Gets user-specified limit for number of water ambient mobs that can spawn
  in a chunk.</div>
 </td>
 </tr>
-<tr id="i107" class="rowColor">
+<tr id="i111" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getWaterAnimalSpawnLimit--">getWaterAnimalSpawnLimit</a></span>()</code>
 <div class="block">Gets user-specified limit for number of water animals that can spawn in
  a chunk.</div>
 </td>
 </tr>
-<tr id="i108" class="altColor">
+<tr id="i112" class="altColor">
 <td class="colFirst"><code>java.util.Set&lt;<a href="../../org/bukkit/OfflinePlayer.html" title="interface in org.bukkit">OfflinePlayer</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getWhitelistedPlayers--">getWhitelistedPlayers</a></span>()</code>
 <div class="block">Gets a list of whitelisted players.</div>
 </td>
 </tr>
-<tr id="i109" class="rowColor">
+<tr id="i113" class="rowColor">
+<td class="colFirst"><code><a href="../../org/bukkit/World.html" title="interface in org.bukkit">World</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getWorld-org.bukkit.NamespacedKey-">getWorld</a></span>(<a href="../../org/bukkit/NamespacedKey.html" title="class in org.bukkit">NamespacedKey</a>&nbsp;worldKey)</code>
+<div class="block">Gets the world from the given NamespacedKey</div>
+</td>
+</tr>
+<tr id="i114" class="altColor">
 <td class="colFirst"><code><a href="../../org/bukkit/World.html" title="interface in org.bukkit">World</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getWorld-java.lang.String-">getWorld</a></span>(java.lang.String&nbsp;name)</code>
 <div class="block">Gets the world with the given name.</div>
 </td>
 </tr>
-<tr id="i110" class="altColor">
+<tr id="i115" class="rowColor">
 <td class="colFirst"><code><a href="../../org/bukkit/World.html" title="interface in org.bukkit">World</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getWorld-java.util.UUID-">getWorld</a></span>(java.util.UUID&nbsp;uid)</code>
 <div class="block">Gets the world from the given Unique ID.</div>
 </td>
 </tr>
-<tr id="i111" class="rowColor">
+<tr id="i116" class="altColor">
 <td class="colFirst"><code>java.io.File</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getWorldContainer--">getWorldContainer</a></span>()</code>
 <div class="block">Gets the folder that contains all of the various <a href="../../org/bukkit/World.html" title="interface in org.bukkit"><code>World</code></a>s.</div>
 </td>
 </tr>
-<tr id="i112" class="altColor">
+<tr id="i117" class="rowColor">
 <td class="colFirst"><code>java.util.List&lt;<a href="../../org/bukkit/World.html" title="interface in org.bukkit">World</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getWorlds--">getWorlds</a></span>()</code>
 <div class="block">Gets a list of all worlds on this server.</div>
 </td>
 </tr>
-<tr id="i113" class="rowColor">
+<tr id="i118" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#getWorldType--">getWorldType</a></span>()</code>
 <div class="block">Get world type (level-type setting) for default world.</div>
 </td>
 </tr>
-<tr id="i114" class="altColor">
+<tr id="i119" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#hasWhitelist--">hasWhitelist</a></span>()</code>
 <div class="block">Gets whether this server has a whitelist or not.</div>
 </td>
 </tr>
-<tr id="i115" class="rowColor">
+<tr id="i120" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#isHardcore--">isHardcore</a></span>()</code>
 <div class="block">Gets whether the server is in hardcore mode or not.</div>
 </td>
 </tr>
-<tr id="i116" class="altColor">
+<tr id="i121" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#isLagging--">isLagging</a></span>()</code>
 <div class="block">Check if server is lagging according to laggy threshold setting</div>
 </td>
 </tr>
-<tr id="i117" class="rowColor">
+<tr id="i122" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#isPrimaryThread--">isPrimaryThread</a></span>()</code>
 <div class="block">Checks the current thread against the expected primary thread for the
  server.</div>
 </td>
 </tr>
-<tr id="i118" class="altColor">
+<tr id="i123" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#isStopping--">isStopping</a></span>()</code>
 <div class="block">Checks if the server is in the process of being shutdown.</div>
 </td>
 </tr>
-<tr id="i119" class="rowColor">
+<tr id="i124" class="altColor">
 <td class="colFirst"><code><a href="../../org/bukkit/util/CachedServerIcon.html" title="interface in org.bukkit.util">CachedServerIcon</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#loadServerIcon-java.awt.image.BufferedImage-">loadServerIcon</a></span>(java.awt.image.BufferedImage&nbsp;image)</code>
 <div class="block">Creates a cached server-icon for the specific image.</div>
 </td>
 </tr>
-<tr id="i120" class="altColor">
+<tr id="i125" class="rowColor">
 <td class="colFirst"><code><a href="../../org/bukkit/util/CachedServerIcon.html" title="interface in org.bukkit.util">CachedServerIcon</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#loadServerIcon-java.io.File-">loadServerIcon</a></span>(java.io.File&nbsp;file)</code>
 <div class="block">Loads an image from a file, and returns a cached image for the specific
  server-icon.</div>
 </td>
 </tr>
-<tr id="i121" class="rowColor">
+<tr id="i126" class="altColor">
 <td class="colFirst"><code>java.util.List&lt;<a href="../../org/bukkit/entity/Player.html" title="interface in org.bukkit.entity">Player</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#matchPlayer-java.lang.String-">matchPlayer</a></span>(java.lang.String&nbsp;name)</code>
 <div class="block">Attempts to match any players with the given name, and returns a list
  of all possibly matches.</div>
 </td>
 </tr>
-<tr id="i122" class="altColor">
+<tr id="i127" class="rowColor">
+<td class="colFirst"><code>net.kyori.adventure.text.Component</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#motd--">motd</a></span>()</code>
+<div class="block">Gets the message that is displayed on the server list.</div>
+</td>
+</tr>
+<tr id="i128" class="altColor">
 <td class="colFirst"><code>java.util.Iterator&lt;<a href="../../org/bukkit/inventory/Recipe.html" title="interface in org.bukkit.inventory">Recipe</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#recipeIterator--">recipeIterator</a></span>()</code>
 <div class="block">Get an iterator through the list of crafting recipes.</div>
 </td>
 </tr>
-<tr id="i123" class="rowColor">
+<tr id="i129" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#reload--">reload</a></span>()</code>
 <div class="block">Reloads the server, refreshing settings and plugin information.</div>
 </td>
 </tr>
-<tr id="i124" class="altColor">
+<tr id="i130" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#reloadCommandAliases--">reloadCommandAliases</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i125" class="rowColor">
+<tr id="i131" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#reloadData--">reloadData</a></span>()</code>
 <div class="block">Reload only the Minecraft data for the server.</div>
 </td>
 </tr>
-<tr id="i126" class="altColor">
+<tr id="i132" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#reloadPermissions--">reloadPermissions</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i127" class="rowColor">
+<tr id="i133" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#reloadWhitelist--">reloadWhitelist</a></span>()</code>
 <div class="block">Reloads the whitelist from disk.</div>
 </td>
 </tr>
-<tr id="i128" class="altColor">
+<tr id="i134" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#removeBossBar-org.bukkit.NamespacedKey-">removeBossBar</a></span>(<a href="../../org/bukkit/NamespacedKey.html" title="class in org.bukkit">NamespacedKey</a>&nbsp;key)</code>
 <div class="block">Removes a <a href="../../org/bukkit/boss/KeyedBossBar.html" title="interface in org.bukkit.boss"><code>KeyedBossBar</code></a> specified by this key.</div>
 </td>
 </tr>
-<tr id="i129" class="rowColor">
+<tr id="i135" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#removeRecipe-org.bukkit.NamespacedKey-">removeRecipe</a></span>(<a href="../../org/bukkit/NamespacedKey.html" title="class in org.bukkit">NamespacedKey</a>&nbsp;key)</code>
 <div class="block">Remove a recipe from the server.</div>
 </td>
 </tr>
-<tr id="i130" class="altColor">
+<tr id="i136" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#resetRecipes--">resetRecipes</a></span>()</code>
 <div class="block">Resets the list of crafting recipes to the default.</div>
 </td>
 </tr>
-<tr id="i131" class="rowColor">
+<tr id="i137" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#savePlayers--">savePlayers</a></span>()</code>
 <div class="block">Writes loaded players to disk.</div>
 </td>
 </tr>
-<tr id="i132" class="altColor">
+<tr id="i138" class="altColor">
 <td class="colFirst"><code>java.util.List&lt;<a href="../../org/bukkit/entity/Entity.html" title="interface in org.bukkit.entity">Entity</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#selectEntities-org.bukkit.command.CommandSender-java.lang.String-">selectEntities</a></span>(<a href="../../org/bukkit/command/CommandSender.html" title="interface in org.bukkit.command">CommandSender</a>&nbsp;sender,
               java.lang.String&nbsp;selector)</code>
 <div class="block">Selects entities using the given Vanilla selector.</div>
 </td>
 </tr>
-<tr id="i133" class="rowColor">
+<tr id="i139" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#setDefaultGameMode-org.bukkit.GameMode-">setDefaultGameMode</a></span>(<a href="../../org/bukkit/GameMode.html" title="enum in org.bukkit">GameMode</a>&nbsp;mode)</code>
 <div class="block">Sets the default <a href="../../org/bukkit/GameMode.html" title="enum in org.bukkit"><code>GameMode</code></a> for new players.</div>
 </td>
 </tr>
-<tr id="i134" class="altColor">
+<tr id="i140" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#setIdleTimeout-int-">setIdleTimeout</a></span>(int&nbsp;threshold)</code>
 <div class="block">Set the idle kick timeout.</div>
 </td>
 </tr>
-<tr id="i135" class="rowColor">
+<tr id="i141" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#setMaxPlayers-int-">setMaxPlayers</a></span>(int&nbsp;maxPlayers)</code>
 <div class="block">Set the maximum amount of players which can login to this server.</div>
 </td>
 </tr>
-<tr id="i136" class="altColor">
+<tr id="i142" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#setSpawnRadius-int-">setSpawnRadius</a></span>(int&nbsp;value)</code>
 <div class="block">Sets the radius, in blocks, around each worlds spawn point to protect.</div>
 </td>
 </tr>
-<tr id="i137" class="rowColor">
+<tr id="i143" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#setWhitelist-boolean-">setWhitelist</a></span>(boolean&nbsp;value)</code>
 <div class="block">Sets if the server is whitelisted.</div>
 </td>
 </tr>
-<tr id="i138" class="altColor">
+<tr id="i144" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#shutdown--">shutdown</a></span>()</code>
 <div class="block">Shutdowns the server, stopping everything.</div>
 </td>
 </tr>
-<tr id="i139" class="rowColor">
+<tr id="i145" class="rowColor">
+<td class="colFirst"><code>net.kyori.adventure.text.Component</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#shutdownMessage--">shutdownMessage</a></span>()</code>
+<div class="block">Gets the default message that is displayed when the server is stopped.</div>
+</td>
+</tr>
+<tr id="i146" class="altColor">
 <td class="colFirst"><code><a href="../../org/bukkit/Server.Spigot.html" title="class in org.bukkit">Server.Spigot</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#spigot--">spigot</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i140" class="altColor">
+<tr id="i147" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#suggestPlayerNamesWhenNullTabCompletions--">suggestPlayerNamesWhenNullTabCompletions</a></span>()</code>
 <div class="block">Checks if player names should be suggested when a command returns <code>null</code> as
  their tab completion result.</div>
 </td>
 </tr>
-<tr id="i141" class="rowColor">
+<tr id="i148" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#unbanIP-java.lang.String-">unbanIP</a></span>(java.lang.String&nbsp;address)</code>
 <div class="block">Unbans the specified address from the server.</div>
 </td>
 </tr>
-<tr id="i142" class="altColor">
+<tr id="i149" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#unloadWorld-java.lang.String-boolean-">unloadWorld</a></span>(java.lang.String&nbsp;name,
            boolean&nbsp;save)</code>
 <div class="block">Unloads a world with the given name.</div>
 </td>
 </tr>
-<tr id="i143" class="rowColor">
+<tr id="i150" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../org/bukkit/Server.html#unloadWorld-org.bukkit.World-boolean-">unloadWorld</a></span>(<a href="../../org/bukkit/World.html" title="interface in org.bukkit">World</a>&nbsp;world,
            boolean&nbsp;save)</code>
@@ -1103,6 +1175,20 @@ extends <a href="../../org/bukkit/plugin/messaging/PluginMessageRecipient.html" 
 </a>
 <h3>Methods inherited from interface&nbsp;org.bukkit.plugin.messaging.<a href="../../org/bukkit/plugin/messaging/PluginMessageRecipient.html" title="interface in org.bukkit.plugin.messaging">PluginMessageRecipient</a></h3>
 <code><a href="../../org/bukkit/plugin/messaging/PluginMessageRecipient.html#getListeningPluginChannels--">getListeningPluginChannels</a>, <a href="../../org/bukkit/plugin/messaging/PluginMessageRecipient.html#sendPluginMessage-org.bukkit.plugin.Plugin-java.lang.String-byte:A-">sendPluginMessage</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.net.kyori.adventure.audience.ForwardingAudience">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;net.kyori.adventure.audience.ForwardingAudience</h3>
+<code>audiences, clearTitle, hideBossBar, openBook, playSound, playSound, resetTitle, sendActionBar, sendMessage, sendMessage, sendPlayerListFooter, sendPlayerListHeader, sendPlayerListHeaderAndFooter, showBossBar, showTitle, stopSound</code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.net.kyori.adventure.audience.Audience">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;net.kyori.adventure.audience.Audience</h3>
+<code>audience, audience, empty, openBook, sendActionBar, sendMessage, sendMessage, sendMessage, sendMessage, sendMessage, sendMessage, sendMessage, sendMessage, sendMessage, sendMessage, sendPlayerListFooter, sendPlayerListHeader, sendPlayerListHeaderAndFooter, toAudience</code></li>
 </ul>
 </li>
 </ul>
@@ -1457,8 +1543,10 @@ java.util.Set&lt;<a href="../../org/bukkit/OfflinePlayer.html" title="interface 
 <ul class="blockList">
 <li class="blockList">
 <h4>broadcastMessage</h4>
-<pre>int&nbsp;broadcastMessage(@NotNull
-                     java.lang.String&nbsp;message)</pre>
+<pre>@Deprecated
+int&nbsp;broadcastMessage(@NotNull
+                                 java.lang.String&nbsp;message)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">use <code>sendMessage</code> methods that accept <code>Component</code></span></div>
 <div class="block">Broadcast a message to all players.
  <p>
  This is the same as calling <a href="../../org/bukkit/Server.html#broadcast-java.lang.String-java.lang.String-"><code>broadcast(java.lang.String,
@@ -1477,8 +1565,10 @@ java.util.Set&lt;<a href="../../org/bukkit/OfflinePlayer.html" title="interface 
 <ul class="blockList">
 <li class="blockList">
 <h4>broadcast</h4>
-<pre>default&nbsp;void&nbsp;broadcast(@NotNull
-                       net.md_5.bungee.api.chat.BaseComponent&nbsp;component)</pre>
+<pre>@Deprecated
+default&nbsp;void&nbsp;broadcast(@NotNull
+                                   net.md_5.bungee.api.chat.BaseComponent&nbsp;component)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">use <code>sendMessage</code> methods that accept <code>Component</code></span></div>
 <div class="block">Sends the component to all online players.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -1492,8 +1582,10 @@ java.util.Set&lt;<a href="../../org/bukkit/OfflinePlayer.html" title="interface 
 <ul class="blockList">
 <li class="blockList">
 <h4>broadcast</h4>
-<pre>default&nbsp;void&nbsp;broadcast(@NotNull
-                       net.md_5.bungee.api.chat.BaseComponent...&nbsp;components)</pre>
+<pre>@Deprecated
+default&nbsp;void&nbsp;broadcast(@NotNull
+                                   net.md_5.bungee.api.chat.BaseComponent...&nbsp;components)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">use <code>sendMessage</code> methods that accept <code>Component</code></span></div>
 <div class="block">Sends an array of components as a single message to all online players.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -1939,6 +2031,24 @@ java.util.List&lt;<a href="../../org/bukkit/World.html" title="interface in org.
 </dl>
 </li>
 </ul>
+<a name="getWorld-org.bukkit.NamespacedKey-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getWorld</h4>
+<pre>@Nullable
+<a href="../../org/bukkit/World.html" title="interface in org.bukkit">World</a>&nbsp;getWorld(@NotNull
+                         <a href="../../org/bukkit/NamespacedKey.html" title="class in org.bukkit">NamespacedKey</a>&nbsp;worldKey)</pre>
+<div class="block">Gets the world from the given NamespacedKey</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>worldKey</code> - the NamespacedKey of the world to retrieve</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a world with the given NamespacedKey, or null if none exists</dd>
+</dl>
+</li>
+</ul>
 <a name="getMap-int-">
 <!--   -->
 </a>
@@ -2345,8 +2455,31 @@ java.util.Map&lt;java.lang.String,java.lang.String[]&gt;&nbsp;getCommandAliases(
 <ul class="blockList">
 <li class="blockList">
 <h4>broadcast</h4>
+<pre>@Deprecated
+int&nbsp;broadcast(@NotNull
+                          java.lang.String&nbsp;message,
+                          @NotNull
+                          java.lang.String&nbsp;permission)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">in favour of <a href="../../org/bukkit/Server.html#broadcast-net.kyori.adventure.text.Component-java.lang.String-"><code>broadcast(net.kyori.adventure.text.Component, String)</code></a></span></div>
+<div class="block">Broadcasts the specified message to every user with the given
+ permission name.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>message</code> - message to broadcast</dd>
+<dd><code>permission</code> - the required permission <a href="../../org/bukkit/permissions/Permissible.html" title="interface in org.bukkit.permissions"><code>permissibles</code></a> must have to receive the broadcast</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>number of message recipients</dd>
+</dl>
+</li>
+</ul>
+<a name="broadcast-net.kyori.adventure.text.Component-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>broadcast</h4>
 <pre>int&nbsp;broadcast(@NotNull
-              java.lang.String&nbsp;message,
+              net.kyori.adventure.text.Component&nbsp;message,
               @NotNull
               java.lang.String&nbsp;permission)</pre>
 <div class="block">Broadcasts the specified message to every user with the given
@@ -2677,7 +2810,7 @@ java.io.File&nbsp;getWorldContainer()</pre>
 </dl>
 </li>
 </ul>
-<a name="createInventory-org.bukkit.inventory.InventoryHolder-org.bukkit.event.inventory.InventoryType-java.lang.String-">
+<a name="createInventory-org.bukkit.inventory.InventoryHolder-org.bukkit.event.inventory.InventoryType-net.kyori.adventure.text.Component-">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -2689,7 +2822,50 @@ java.io.File&nbsp;getWorldContainer()</pre>
                                    @NotNull
                                    <a href="../../org/bukkit/event/inventory/InventoryType.html" title="enum in org.bukkit.event.inventory">InventoryType</a>&nbsp;type,
                                    @NotNull
-                                   java.lang.String&nbsp;title)</pre>
+                                   net.kyori.adventure.text.Component&nbsp;title)</pre>
+<div class="block">Creates an empty inventory with the specified type and title. If the type
+ is <a href="../../org/bukkit/event/inventory/InventoryType.html#CHEST"><code>InventoryType.CHEST</code></a>, the new inventory has a size of 27;
+ otherwise the new inventory has the normal size for its type.<br>
+ It should be noted that some inventory types do not support titles and
+ may not render with said titles on the Minecraft client.
+ <br>
+ <a href="../../org/bukkit/event/inventory/InventoryType.html#WORKBENCH"><code>InventoryType.WORKBENCH</code></a> will not process crafting recipes if
+ created with this method. Use
+ <a href="../../org/bukkit/entity/HumanEntity.html#openWorkbench-org.bukkit.Location-boolean-"><code>HumanEntity.openWorkbench(Location, boolean)</code></a> instead.
+ <br>
+ <a href="../../org/bukkit/event/inventory/InventoryType.html#ENCHANTING"><code>InventoryType.ENCHANTING</code></a> will not process <a href="../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory"><code>ItemStack</code></a>s
+ for possible enchanting results. Use
+ <a href="../../org/bukkit/entity/HumanEntity.html#openEnchanting-org.bukkit.Location-boolean-"><code>HumanEntity.openEnchanting(Location, boolean)</code></a> instead.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>owner</code> - The holder of the inventory; can be null if there's no holder.</dd>
+<dd><code>type</code> - The type of inventory to create.</dd>
+<dd><code>title</code> - The title of the inventory, to be displayed when it is viewed.</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>The new inventory.</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if the <a href="../../org/bukkit/event/inventory/InventoryType.html" title="enum in org.bukkit.event.inventory"><code>InventoryType</code></a> cannot be
+ viewed.</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><a href="../../org/bukkit/event/inventory/InventoryType.html#isCreatable--"><code>InventoryType.isCreatable()</code></a></dd>
+</dl>
+</li>
+</ul>
+<a name="createInventory-org.bukkit.inventory.InventoryHolder-org.bukkit.event.inventory.InventoryType-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createInventory</h4>
+<pre>@Deprecated
+ @NotNull
+<a href="../../org/bukkit/inventory/Inventory.html" title="interface in org.bukkit.inventory">Inventory</a>&nbsp;createInventory(@Nullable
+                                                <a href="../../org/bukkit/inventory/InventoryHolder.html" title="interface in org.bukkit.inventory">InventoryHolder</a>&nbsp;owner,
+                                                @NotNull
+                                                <a href="../../org/bukkit/event/inventory/InventoryType.html" title="enum in org.bukkit.event.inventory">InventoryType</a>&nbsp;type,
+                                                @NotNull
+                                                java.lang.String&nbsp;title)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">in favour of <a href="../../org/bukkit/Server.html#createInventory-org.bukkit.inventory.InventoryHolder-org.bukkit.event.inventory.InventoryType-net.kyori.adventure.text.Component-"><code>createInventory(InventoryHolder, InventoryType, net.kyori.adventure.text.Component)</code></a></span></div>
 <div class="block">Creates an empty inventory with the specified type and title. If the type
  is <a href="../../org/bukkit/event/inventory/InventoryType.html#CHEST"><code>InventoryType.CHEST</code></a>, the new inventory has a size of 27;
  otherwise the new inventory has the normal size for its type.<br>
@@ -2742,7 +2918,7 @@ java.io.File&nbsp;getWorldContainer()</pre>
 </dl>
 </li>
 </ul>
-<a name="createInventory-org.bukkit.inventory.InventoryHolder-int-java.lang.String-">
+<a name="createInventory-org.bukkit.inventory.InventoryHolder-int-net.kyori.adventure.text.Component-">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -2753,7 +2929,7 @@ java.io.File&nbsp;getWorldContainer()</pre>
                                    <a href="../../org/bukkit/inventory/InventoryHolder.html" title="interface in org.bukkit.inventory">InventoryHolder</a>&nbsp;owner,
                                    int&nbsp;size,
                                    @NotNull
-                                   java.lang.String&nbsp;title)
+                                   net.kyori.adventure.text.Component&nbsp;title)
                             throws java.lang.IllegalArgumentException</pre>
 <div class="block">Creates an empty inventory of type <a href="../../org/bukkit/event/inventory/InventoryType.html#CHEST"><code>InventoryType.CHEST</code></a> with the
  specified size and title.</div>
@@ -2770,7 +2946,37 @@ java.io.File&nbsp;getWorldContainer()</pre>
 </dl>
 </li>
 </ul>
-<a name="createMerchant-java.lang.String-">
+<a name="createInventory-org.bukkit.inventory.InventoryHolder-int-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createInventory</h4>
+<pre>@Deprecated
+ @NotNull
+<a href="../../org/bukkit/inventory/Inventory.html" title="interface in org.bukkit.inventory">Inventory</a>&nbsp;createInventory(@Nullable
+                                                <a href="../../org/bukkit/inventory/InventoryHolder.html" title="interface in org.bukkit.inventory">InventoryHolder</a>&nbsp;owner,
+                                                int&nbsp;size,
+                                                @NotNull
+                                                java.lang.String&nbsp;title)
+                                         throws java.lang.IllegalArgumentException</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">in favour of <a href="../../org/bukkit/Server.html#createInventory-org.bukkit.inventory.InventoryHolder-int-net.kyori.adventure.text.Component-"><code>createInventory(InventoryHolder, int, net.kyori.adventure.text.Component)</code></a></span></div>
+<div class="block">Creates an empty inventory of type <a href="../../org/bukkit/event/inventory/InventoryType.html#CHEST"><code>InventoryType.CHEST</code></a> with the
+ specified size and title.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>owner</code> - the holder of the inventory, or null to indicate no holder</dd>
+<dd><code>size</code> - a multiple of 9 as the size of inventory to create</dd>
+<dd><code>title</code> - the title of the inventory, displayed when inventory is
+     viewed</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new inventory</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.IllegalArgumentException</code> - if the size is not a multiple of 9</dd>
+</dl>
+</li>
+</ul>
+<a name="createMerchant-net.kyori.adventure.text.Component-">
 <!--   -->
 </a>
 <ul class="blockList">
@@ -2778,7 +2984,28 @@ java.io.File&nbsp;getWorldContainer()</pre>
 <h4>createMerchant</h4>
 <pre>@NotNull
 <a href="../../org/bukkit/inventory/Merchant.html" title="interface in org.bukkit.inventory">Merchant</a>&nbsp;createMerchant(@Nullable
-                                 java.lang.String&nbsp;title)</pre>
+                                 net.kyori.adventure.text.Component&nbsp;title)</pre>
+<div class="block">Creates an empty merchant.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>title</code> - the title of the corresponding merchant inventory, displayed
+ when the merchant inventory is viewed</dd>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>a new merchant</dd>
+</dl>
+</li>
+</ul>
+<a name="createMerchant-java.lang.String-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>createMerchant</h4>
+<pre>@NotNull
+ @Deprecated
+<a href="../../org/bukkit/inventory/Merchant.html" title="interface in org.bukkit.inventory">Merchant</a>&nbsp;createMerchant(@Nullable
+                                              java.lang.String&nbsp;title)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">in favour of <a href="../../org/bukkit/Server.html#createMerchant-net.kyori.adventure.text.Component-"><code>createMerchant(net.kyori.adventure.text.Component)</code></a></span></div>
 <div class="block">Creates an empty merchant.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -2885,6 +3112,21 @@ java.io.File&nbsp;getWorldContainer()</pre>
 </dl>
 </li>
 </ul>
+<a name="motd--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>motd</h4>
+<pre>@NotNull
+net.kyori.adventure.text.Component&nbsp;motd()</pre>
+<div class="block">Gets the message that is displayed on the server list.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the server's MOTD</dd>
+</dl>
+</li>
+</ul>
 <a name="getMotd--">
 <!--   -->
 </a>
@@ -2892,11 +3134,28 @@ java.io.File&nbsp;getWorldContainer()</pre>
 <li class="blockList">
 <h4>getMotd</h4>
 <pre>@NotNull
+ @Deprecated
 java.lang.String&nbsp;getMotd()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">in favour of <a href="../../org/bukkit/Server.html#motd--"><code>motd()</code></a></span></div>
 <div class="block">Gets the message that is displayed on the server list.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>the servers MOTD</dd>
+</dl>
+</li>
+</ul>
+<a name="shutdownMessage--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>shutdownMessage</h4>
+<pre>@Nullable
+net.kyori.adventure.text.Component&nbsp;shutdownMessage()</pre>
+<div class="block">Gets the default message that is displayed when the server is stopped.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the shutdown message</dd>
 </dl>
 </li>
 </ul>
@@ -2907,7 +3166,9 @@ java.lang.String&nbsp;getMotd()</pre>
 <li class="blockList">
 <h4>getShutdownMessage</h4>
 <pre>@Nullable
+ @Deprecated
 java.lang.String&nbsp;getShutdownMessage()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">in favour of <a href="../../org/bukkit/Server.html#shutdownMessage--"><code>shutdownMessage()</code></a></span></div>
 <div class="block">Gets the default message that is displayed when the server is stopped.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>

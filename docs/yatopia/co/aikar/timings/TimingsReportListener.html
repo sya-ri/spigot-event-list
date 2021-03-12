@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10};
+var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -107,13 +107,13 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Implemented Interfaces:</dt>
-<dd><a href="../../../org/bukkit/command/CommandSender.html" title="interface in org.bukkit.command">CommandSender</a>, <a href="../../../org/bukkit/command/MessageCommandSender.html" title="interface in org.bukkit.command">MessageCommandSender</a>, <a href="../../../org/bukkit/permissions/Permissible.html" title="interface in org.bukkit.permissions">Permissible</a>, <a href="../../../org/bukkit/permissions/ServerOperator.html" title="interface in org.bukkit.permissions">ServerOperator</a></dd>
+<dd>net.kyori.adventure.audience.Audience, net.kyori.adventure.audience.ForwardingAudience, <a href="../../../org/bukkit/command/CommandSender.html" title="interface in org.bukkit.command">CommandSender</a>, <a href="../../../org/bukkit/command/MessageCommandSender.html" title="interface in org.bukkit.command">MessageCommandSender</a>, <a href="../../../org/bukkit/permissions/Permissible.html" title="interface in org.bukkit.permissions">Permissible</a>, <a href="../../../org/bukkit/permissions/ServerOperator.html" title="interface in org.bukkit.permissions">ServerOperator</a></dd>
 </dl>
 <hr>
 <br>
 <pre>public class <span class="typeNameLabel">TimingsReportListener</span>
 extends java.lang.Object
-implements <a href="../../../org/bukkit/command/MessageCommandSender.html" title="interface in org.bukkit.command">MessageCommandSender</a></pre>
+implements net.kyori.adventure.audience.ForwardingAudience, <a href="../../../org/bukkit/command/MessageCommandSender.html" title="interface in org.bukkit.command">MessageCommandSender</a></pre>
 </li>
 </ul>
 </div>
@@ -126,6 +126,13 @@ implements <a href="../../../org/bukkit/command/MessageCommandSender.html" title
 <!--   -->
 </a>
 <h3>Nested Class Summary</h3>
+<ul class="blockList">
+<li class="blockList"><a name="nested.classes.inherited.from.class.net.kyori.adventure.audience.ForwardingAudience">
+<!--   -->
+</a>
+<h3>Nested classes/interfaces inherited from interface&nbsp;net.kyori.adventure.audience.ForwardingAudience</h3>
+<code>net.kyori.adventure.audience.ForwardingAudience.Single</code></li>
+</ul>
 <ul class="blockList">
 <li class="blockList"><a name="nested.classes.inherited.from.class.org.bukkit.command.CommandSender">
 <!--   -->
@@ -180,18 +187,28 @@ implements <a href="../../../org/bukkit/command/MessageCommandSender.html" title
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../co/aikar/timings/TimingsReportListener.html#addConsoleIfNeeded--">addConsoleIfNeeded</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i1" class="rowColor">
-<td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../co/aikar/timings/TimingsReportListener.html#done--">done</a></span>()</code>&nbsp;</td>
+<td class="colFirst"><code>java.lang.Iterable&lt;? extends net.kyori.adventure.audience.Audience&gt;</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../co/aikar/timings/TimingsReportListener.html#audiences--">audiences</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../co/aikar/timings/TimingsReportListener.html#done-java.lang.String-">done</a></span>(java.lang.String&nbsp;url)</code>&nbsp;</td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../co/aikar/timings/TimingsReportListener.html#done--">done</a></span>()</code>&nbsp;</td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../co/aikar/timings/TimingsReportListener.html#done-java.lang.String-">done</a></span>(java.lang.String&nbsp;url)</code>&nbsp;</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../co/aikar/timings/TimingsReportListener.html#getTimingsURL--">getTimingsURL</a></span>()</code>&nbsp;</td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../co/aikar/timings/TimingsReportListener.html#sendMessage-net.kyori.adventure.identity.Identity-net.kyori.adventure.text.Component-net.kyori.adventure.audience.MessageType-">sendMessage</a></span>(net.kyori.adventure.identity.Identity&nbsp;source,
+           net.kyori.adventure.text.Component&nbsp;message,
+           net.kyori.adventure.audience.MessageType&nbsp;type)</code>&nbsp;</td>
+</tr>
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../co/aikar/timings/TimingsReportListener.html#sendMessage-java.lang.String-">sendMessage</a></span>(java.lang.String&nbsp;message)</code>
 <div class="block">Sends this sender a message</div>
@@ -206,6 +223,13 @@ implements <a href="../../../org/bukkit/command/MessageCommandSender.html" title
 <code>clone, equals, finalize, getClass, hashCode, notify, notifyAll, toString, wait, wait, wait</code></li>
 </ul>
 <ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.net.kyori.adventure.audience.ForwardingAudience">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;net.kyori.adventure.audience.ForwardingAudience</h3>
+<code>clearTitle, hideBossBar, openBook, playSound, playSound, resetTitle, sendActionBar, sendMessage, sendPlayerListFooter, sendPlayerListHeader, sendPlayerListHeaderAndFooter, showBossBar, showTitle, stopSound</code></li>
+</ul>
+<ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.bukkit.command.MessageCommandSender">
 <!--   -->
 </a>
@@ -218,6 +242,13 @@ implements <a href="../../../org/bukkit/command/MessageCommandSender.html" title
 </a>
 <h3>Methods inherited from interface&nbsp;org.bukkit.command.<a href="../../../org/bukkit/command/CommandSender.html" title="interface in org.bukkit.command">CommandSender</a></h3>
 <code><a href="../../../org/bukkit/command/CommandSender.html#sendMessage-net.md_5.bungee.api.chat.BaseComponent...-">sendMessage</a>, <a href="../../../org/bukkit/command/CommandSender.html#sendMessage-net.md_5.bungee.api.chat.BaseComponent-">sendMessage</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.net.kyori.adventure.audience.Audience">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;net.kyori.adventure.audience.Audience</h3>
+<code>audience, audience, empty, openBook, sendActionBar, sendMessage, sendMessage, sendMessage, sendMessage, sendMessage, sendMessage, sendMessage, sendMessage, sendMessage, sendMessage, sendPlayerListFooter, sendPlayerListHeader, sendPlayerListHeaderAndFooter, toAudience</code></li>
 </ul>
 </li>
 </ul>
@@ -329,16 +360,54 @@ public&nbsp;java.lang.String&nbsp;getTimingsURL()</pre>
 <dd><code><a href="../../../org/bukkit/command/CommandSender.html#sendMessage-java.lang.String-">sendMessage</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/bukkit/command/CommandSender.html" title="interface in org.bukkit.command">CommandSender</a></code></dd>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>message</code> - Message to be displayed</dd>
+<dt><span class="seeLabel">See Also:</span></dt>
+<dd><code>Audience.sendMessage(net.kyori.adventure.text.Component)</code></dd>
 </dl>
 </li>
 </ul>
 <a name="addConsoleIfNeeded--">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>addConsoleIfNeeded</h4>
 <pre>public&nbsp;void&nbsp;addConsoleIfNeeded()</pre>
+</li>
+</ul>
+<a name="sendMessage-net.kyori.adventure.identity.Identity-net.kyori.adventure.text.Component-net.kyori.adventure.audience.MessageType-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>sendMessage</h4>
+<pre>public&nbsp;void&nbsp;sendMessage(@NotNull
+                        net.kyori.adventure.identity.Identity&nbsp;source,
+                        @NotNull
+                        net.kyori.adventure.text.Component&nbsp;message,
+                        @NotNull
+                        net.kyori.adventure.audience.MessageType&nbsp;type)</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code>sendMessage</code>&nbsp;in interface&nbsp;<code>net.kyori.adventure.audience.Audience</code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code>sendMessage</code>&nbsp;in interface&nbsp;<code>net.kyori.adventure.audience.ForwardingAudience</code></dd>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code><a href="../../../org/bukkit/command/CommandSender.html#sendMessage-net.kyori.adventure.identity.Identity-net.kyori.adventure.text.Component-net.kyori.adventure.audience.MessageType-">sendMessage</a></code>&nbsp;in interface&nbsp;<code><a href="../../../org/bukkit/command/CommandSender.html" title="interface in org.bukkit.command">CommandSender</a></code></dd>
+</dl>
+</li>
+</ul>
+<a name="audiences--">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>audiences</h4>
+<pre>@NotNull
+public&nbsp;java.lang.Iterable&lt;? extends net.kyori.adventure.audience.Audience&gt;&nbsp;audiences()</pre>
+<dl>
+<dt><span class="overrideSpecifyLabel">Specified by:</span></dt>
+<dd><code>audiences</code>&nbsp;in interface&nbsp;<code>net.kyori.adventure.audience.ForwardingAudience</code></dd>
+</dl>
 </li>
 </ul>
 </li>

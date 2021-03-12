@@ -164,13 +164,24 @@ implements <a href="../../../../../org/bukkit/event/Cancellable.html" title="int
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../com/destroystokyo/paper/event/server/PaperServerListPingEvent.html#PaperServerListPingEvent-com.destroystokyo.paper.network.StatusClient-net.kyori.adventure.text.Component-int-int-java.lang.String-int-org.bukkit.util.CachedServerIcon-">PaperServerListPingEvent</a></span>(<a href="../../../../../com/destroystokyo/paper/network/StatusClient.html" title="interface in com.destroystokyo.paper.network">StatusClient</a>&nbsp;client,
+                        net.kyori.adventure.text.Component&nbsp;motd,
+                        int&nbsp;numPlayers,
+                        int&nbsp;maxPlayers,
+                        java.lang.String&nbsp;version,
+                        int&nbsp;protocolVersion,
+                        <a href="../../../../../org/bukkit/util/CachedServerIcon.html" title="interface in org.bukkit.util">CachedServerIcon</a>&nbsp;favicon)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../../com/destroystokyo/paper/event/server/PaperServerListPingEvent.html#PaperServerListPingEvent-com.destroystokyo.paper.network.StatusClient-java.lang.String-int-int-java.lang.String-int-org.bukkit.util.CachedServerIcon-">PaperServerListPingEvent</a></span>(<a href="../../../../../com/destroystokyo/paper/network/StatusClient.html" title="interface in com.destroystokyo.paper.network">StatusClient</a>&nbsp;client,
                         java.lang.String&nbsp;motd,
                         int&nbsp;numPlayers,
                         int&nbsp;maxPlayers,
                         java.lang.String&nbsp;version,
                         int&nbsp;protocolVersion,
-                        <a href="../../../../../org/bukkit/util/CachedServerIcon.html" title="interface in org.bukkit.util">CachedServerIcon</a>&nbsp;favicon)</code>&nbsp;</td>
+                        <a href="../../../../../org/bukkit/util/CachedServerIcon.html" title="interface in org.bukkit.util">CachedServerIcon</a>&nbsp;favicon)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+</td>
 </tr>
 </table>
 </li>
@@ -300,7 +311,7 @@ implements <a href="../../../../../org/bukkit/event/Cancellable.html" title="int
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;org.bukkit.event.server.<a href="../../../../../org/bukkit/event/server/ServerListPingEvent.html" title="class in org.bukkit.event.server">ServerListPingEvent</a></h3>
-<code><a href="../../../../../org/bukkit/event/server/ServerListPingEvent.html#getAddress--">getAddress</a>, <a href="../../../../../org/bukkit/event/server/ServerListPingEvent.html#getHandlerList--">getHandlerList</a>, <a href="../../../../../org/bukkit/event/server/ServerListPingEvent.html#getHandlers--">getHandlers</a>, <a href="../../../../../org/bukkit/event/server/ServerListPingEvent.html#getMotd--">getMotd</a>, <a href="../../../../../org/bukkit/event/server/ServerListPingEvent.html#setMaxPlayers-int-">setMaxPlayers</a>, <a href="../../../../../org/bukkit/event/server/ServerListPingEvent.html#setMotd-java.lang.String-">setMotd</a></code></li>
+<code><a href="../../../../../org/bukkit/event/server/ServerListPingEvent.html#getAddress--">getAddress</a>, <a href="../../../../../org/bukkit/event/server/ServerListPingEvent.html#getHandlerList--">getHandlerList</a>, <a href="../../../../../org/bukkit/event/server/ServerListPingEvent.html#getHandlers--">getHandlers</a>, <a href="../../../../../org/bukkit/event/server/ServerListPingEvent.html#getMotd--">getMotd</a>, <a href="../../../../../org/bukkit/event/server/ServerListPingEvent.html#motd--">motd</a>, <a href="../../../../../org/bukkit/event/server/ServerListPingEvent.html#motd-net.kyori.adventure.text.Component-">motd</a>, <a href="../../../../../org/bukkit/event/server/ServerListPingEvent.html#setMaxPlayers-int-">setMaxPlayers</a>, <a href="../../../../../org/bukkit/event/server/ServerListPingEvent.html#setMotd-java.lang.String-">setMotd</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.bukkit.event.Event">
@@ -340,13 +351,34 @@ implements <a href="../../../../../org/bukkit/event/Cancellable.html" title="int
 <a name="PaperServerListPingEvent-com.destroystokyo.paper.network.StatusClient-java.lang.String-int-int-java.lang.String-int-org.bukkit.util.CachedServerIcon-">
 <!--   -->
 </a>
+<ul class="blockList">
+<li class="blockList">
+<h4>PaperServerListPingEvent</h4>
+<pre>@Deprecated
+public&nbsp;PaperServerListPingEvent(@NotNull
+                                            <a href="../../../../../com/destroystokyo/paper/network/StatusClient.html" title="interface in com.destroystokyo.paper.network">StatusClient</a>&nbsp;client,
+                                            @NotNull
+                                            java.lang.String&nbsp;motd,
+                                            int&nbsp;numPlayers,
+                                            int&nbsp;maxPlayers,
+                                            @NotNull
+                                            java.lang.String&nbsp;version,
+                                            int&nbsp;protocolVersion,
+                                            @Nullable
+                                            <a href="../../../../../org/bukkit/util/CachedServerIcon.html" title="interface in org.bukkit.util">CachedServerIcon</a>&nbsp;favicon)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;</div>
+</li>
+</ul>
+<a name="PaperServerListPingEvent-com.destroystokyo.paper.network.StatusClient-net.kyori.adventure.text.Component-int-int-java.lang.String-int-org.bukkit.util.CachedServerIcon-">
+<!--   -->
+</a>
 <ul class="blockListLast">
 <li class="blockList">
 <h4>PaperServerListPingEvent</h4>
 <pre>public&nbsp;PaperServerListPingEvent(@NotNull
                                 <a href="../../../../../com/destroystokyo/paper/network/StatusClient.html" title="interface in com.destroystokyo.paper.network">StatusClient</a>&nbsp;client,
                                 @NotNull
-                                java.lang.String&nbsp;motd,
+                                net.kyori.adventure.text.Component&nbsp;motd,
                                 int&nbsp;numPlayers,
                                 int&nbsp;maxPlayers,
                                 @NotNull

@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":38,"i14":6,"i15":6,"i16":6,"i17":6,"i18":6,"i19":38,"i20":38,"i21":6,"i22":6,"i23":6,"i24":6,"i25":6,"i26":6,"i27":6,"i28":6,"i29":6,"i30":6,"i31":6,"i32":6,"i33":6,"i34":6,"i35":6,"i36":6,"i37":6,"i38":6,"i39":6,"i40":6,"i41":6,"i42":6,"i43":38,"i44":6,"i45":38,"i46":38,"i47":6,"i48":6,"i49":6,"i50":6,"i51":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6,"i12":6,"i13":6,"i14":6,"i15":38,"i16":6,"i17":6,"i18":6,"i19":6,"i20":6,"i21":6,"i22":6,"i23":38,"i24":38,"i25":6,"i26":6,"i27":6,"i28":6,"i29":6,"i30":6,"i31":6,"i32":6,"i33":6,"i34":6,"i35":6,"i36":6,"i37":6,"i38":6,"i39":6,"i40":6,"i41":6,"i42":6,"i43":6,"i44":6,"i45":6,"i46":6,"i47":6,"i48":6,"i49":6,"i50":6,"i51":38,"i52":6,"i53":6,"i54":6,"i55":38,"i56":38,"i57":6,"i58":6,"i59":6,"i60":6,"i61":6,"i62":6,"i63":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -99,7 +99,7 @@ var activeTableTab = "activeTableTab";
 <li class="blockList">
 <dl>
 <dt>All Superinterfaces:</dt>
-<dd><a href="../../../org/bukkit/entity/AnimalTamer.html" title="interface in org.bukkit.entity">AnimalTamer</a>, <a href="../../../org/bukkit/attribute/Attributable.html" title="interface in org.bukkit.attribute">Attributable</a>, <a href="../../../org/bukkit/command/CommandSender.html" title="interface in org.bukkit.command">CommandSender</a>, <a href="../../../org/bukkit/entity/Damageable.html" title="interface in org.bukkit.entity">Damageable</a>, <a href="../../../org/bukkit/entity/Entity.html" title="interface in org.bukkit.entity">Entity</a>, <a href="../../../org/bukkit/inventory/InventoryHolder.html" title="interface in org.bukkit.inventory">InventoryHolder</a>, <a href="../../../org/bukkit/entity/LivingEntity.html" title="interface in org.bukkit.entity">LivingEntity</a>, <a href="../../../org/bukkit/metadata/Metadatable.html" title="interface in org.bukkit.metadata">Metadatable</a>, <a href="../../../org/bukkit/Nameable.html" title="interface in org.bukkit">Nameable</a>, <a href="../../../org/bukkit/permissions/Permissible.html" title="interface in org.bukkit.permissions">Permissible</a>, <a href="../../../org/bukkit/persistence/PersistentDataHolder.html" title="interface in org.bukkit.persistence">PersistentDataHolder</a>, <a href="../../../org/bukkit/projectiles/ProjectileSource.html" title="interface in org.bukkit.projectiles">ProjectileSource</a>, <a href="../../../org/bukkit/permissions/ServerOperator.html" title="interface in org.bukkit.permissions">ServerOperator</a></dd>
+<dd><a href="../../../org/bukkit/entity/AnimalTamer.html" title="interface in org.bukkit.entity">AnimalTamer</a>, <a href="../../../org/bukkit/attribute/Attributable.html" title="interface in org.bukkit.attribute">Attributable</a>, net.kyori.adventure.audience.Audience, <a href="../../../org/bukkit/command/CommandSender.html" title="interface in org.bukkit.command">CommandSender</a>, <a href="../../../org/bukkit/entity/Damageable.html" title="interface in org.bukkit.entity">Damageable</a>, <a href="../../../org/bukkit/entity/Entity.html" title="interface in org.bukkit.entity">Entity</a>, net.kyori.adventure.text.event.HoverEventSource&lt;net.kyori.adventure.text.event.HoverEvent.ShowEntity&gt;, <a href="../../../org/bukkit/inventory/InventoryHolder.html" title="interface in org.bukkit.inventory">InventoryHolder</a>, <a href="../../../org/bukkit/entity/LivingEntity.html" title="interface in org.bukkit.entity">LivingEntity</a>, <a href="../../../org/bukkit/metadata/Metadatable.html" title="interface in org.bukkit.metadata">Metadatable</a>, <a href="../../../org/bukkit/Nameable.html" title="interface in org.bukkit">Nameable</a>, <a href="../../../org/bukkit/permissions/Permissible.html" title="interface in org.bukkit.permissions">Permissible</a>, <a href="../../../org/bukkit/persistence/PersistentDataHolder.html" title="interface in org.bukkit.persistence">PersistentDataHolder</a>, <a href="../../../org/bukkit/projectiles/ProjectileSource.html" title="interface in org.bukkit.projectiles">ProjectileSource</a>, <a href="../../../org/bukkit/permissions/ServerOperator.html" title="interface in org.bukkit.permissions">ServerOperator</a></dd>
 </dl>
 <dl>
 <dt>All Known Subinterfaces:</dt>
@@ -206,24 +206,36 @@ extends <a href="../../../org/bukkit/entity/LivingEntity.html" title="interface 
 </td>
 </tr>
 <tr id="i10" class="altColor">
+<td class="colFirst"><code>float</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#getExhaustion--">getExhaustion</a></span>()</code>
+<div class="block">Gets the players current exhaustion level.</div>
+</td>
+</tr>
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#getExpToLevel--">getExpToLevel</a></span>()</code>
 <div class="block">Get the total amount of experience required for the player to level</div>
 </td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i12" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#getFoodLevel--">getFoodLevel</a></span>()</code>
+<div class="block">Gets the players current food level</div>
+</td>
+</tr>
+<tr id="i13" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/GameMode.html" title="enum in org.bukkit">GameMode</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#getGameMode--">getGameMode</a></span>()</code>
 <div class="block">Gets this human's current <a href="../../../org/bukkit/GameMode.html" title="enum in org.bukkit"><code>GameMode</code></a></div>
 </td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i14" class="altColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/inventory/PlayerInventory.html" title="interface in org.bukkit.inventory">PlayerInventory</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#getInventory--">getInventory</a></span>()</code>
 <div class="block">Get the player's inventory.</div>
 </td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#getItemInHand--">getItemInHand</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -232,38 +244,52 @@ extends <a href="../../../org/bukkit/entity/LivingEntity.html" title="interface 
 </div>
 </td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i16" class="altColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#getItemOnCursor--">getItemOnCursor</a></span>()</code>
 <div class="block">Returns the ItemStack currently on your cursor, can be empty.</div>
 </td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/inventory/MainHand.html" title="enum in org.bukkit.inventory">MainHand</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#getMainHand--">getMainHand</a></span>()</code>
 <div class="block">Gets the player's selected main hand</div>
 </td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i18" class="altColor">
 <td class="colFirst"><code>java.lang.String</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#getName--">getName</a></span>()</code>
 <div class="block">Returns the name of this player</div>
 </td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/inventory/InventoryView.html" title="class in org.bukkit.inventory">InventoryView</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#getOpenInventory--">getOpenInventory</a></span>()</code>
 <div class="block">Gets the inventory view the player is currently viewing.</div>
 </td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/Location.html" title="class in org.bukkit">Location</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#getPotentialBedLocation--">getPotentialBedLocation</a></span>()</code>
 <div class="block">Gets the Location of the player's bed, null if they have not slept
  in one.</div>
 </td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i21" class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#getSaturatedRegenRate--">getSaturatedRegenRate</a></span>()</code>
+<div class="block">Get the regeneration rate (1 health per x ticks) of
+ the HumanEntity when they have saturation and
+ their food level is &gt;= 20.</div>
+</td>
+</tr>
+<tr id="i22" class="altColor">
+<td class="colFirst"><code>float</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#getSaturation--">getSaturation</a></span>()</code>
+<div class="block">Gets the players current saturation level.</div>
+</td>
+</tr>
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/entity/Entity.html" title="interface in org.bukkit.entity">Entity</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#getShoulderEntityLeft--">getShoulderEntityLeft</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -272,7 +298,7 @@ extends <a href="../../../org/bukkit/entity/LivingEntity.html" title="interface 
 </div>
 </td>
 </tr>
-<tr id="i20" class="altColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/entity/Entity.html" title="interface in org.bukkit.entity">Entity</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#getShoulderEntityRight--">getShoulderEntityRight</a></span>()</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -281,38 +307,53 @@ extends <a href="../../../org/bukkit/entity/LivingEntity.html" title="interface 
 </div>
 </td>
 </tr>
-<tr id="i21" class="rowColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#getSleepTicks--">getSleepTicks</a></span>()</code>
 <div class="block">Get the sleep ticks of the player.</div>
 </td>
 </tr>
-<tr id="i22" class="altColor">
+<tr id="i26" class="altColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#getStarvationRate--">getStarvationRate</a></span>()</code>
+<div class="block">Get the starvation rate (1 health per x ticks) of
+ the HumanEntity.</div>
+</td>
+</tr>
+<tr id="i27" class="rowColor">
+<td class="colFirst"><code>int</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#getUnsaturatedRegenRate--">getUnsaturatedRegenRate</a></span>()</code>
+<div class="block">Get the regeneration rate (1 health per x ticks) of
+ the HumanEntity when they have no saturation and
+ their food level is &gt;= 18.</div>
+</td>
+</tr>
+<tr id="i28" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#hasCooldown-org.bukkit.Material-">hasCooldown</a></span>(<a href="../../../org/bukkit/Material.html" title="enum in org.bukkit">Material</a>&nbsp;material)</code>
 <div class="block">Check whether a cooldown is active on the specified material.</div>
 </td>
 </tr>
-<tr id="i23" class="rowColor">
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#hasDiscoveredRecipe-org.bukkit.NamespacedKey-">hasDiscoveredRecipe</a></span>(<a href="../../../org/bukkit/NamespacedKey.html" title="class in org.bukkit">NamespacedKey</a>&nbsp;recipe)</code>
 <div class="block">Check whether or not this entity has discovered the specified recipe.</div>
 </td>
 </tr>
-<tr id="i24" class="altColor">
+<tr id="i30" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#isBlocking--">isBlocking</a></span>()</code>
 <div class="block">Check if the player is currently blocking (ie with a shield).</div>
 </td>
 </tr>
-<tr id="i25" class="rowColor">
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#isHandRaised--">isHandRaised</a></span>()</code>
 <div class="block">Check if the player currently has their hand raised (ie about to begin
  blocking).</div>
 </td>
 </tr>
-<tr id="i26" class="altColor">
+<tr id="i32" class="altColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/inventory/InventoryView.html" title="class in org.bukkit.inventory">InventoryView</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#openAnvil-org.bukkit.Location-boolean-">openAnvil</a></span>(<a href="../../../org/bukkit/Location.html" title="class in org.bukkit">Location</a>&nbsp;location,
          boolean&nbsp;force)</code>
@@ -320,7 +361,7 @@ extends <a href="../../../org/bukkit/entity/LivingEntity.html" title="interface 
  on the bottom.</div>
 </td>
 </tr>
-<tr id="i27" class="rowColor">
+<tr id="i33" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/inventory/InventoryView.html" title="class in org.bukkit.inventory">InventoryView</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#openCartographyTable-org.bukkit.Location-boolean-">openCartographyTable</a></span>(<a href="../../../org/bukkit/Location.html" title="class in org.bukkit">Location</a>&nbsp;location,
                     boolean&nbsp;force)</code>
@@ -328,7 +369,7 @@ extends <a href="../../../org/bukkit/entity/LivingEntity.html" title="interface 
  on the bottom.</div>
 </td>
 </tr>
-<tr id="i28" class="altColor">
+<tr id="i34" class="altColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/inventory/InventoryView.html" title="class in org.bukkit.inventory">InventoryView</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#openEnchanting-org.bukkit.Location-boolean-">openEnchanting</a></span>(<a href="../../../org/bukkit/Location.html" title="class in org.bukkit">Location</a>&nbsp;location,
               boolean&nbsp;force)</code>
@@ -336,7 +377,7 @@ extends <a href="../../../org/bukkit/entity/LivingEntity.html" title="interface 
  on the bottom.</div>
 </td>
 </tr>
-<tr id="i29" class="rowColor">
+<tr id="i35" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/inventory/InventoryView.html" title="class in org.bukkit.inventory">InventoryView</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#openGrindstone-org.bukkit.Location-boolean-">openGrindstone</a></span>(<a href="../../../org/bukkit/Location.html" title="class in org.bukkit">Location</a>&nbsp;location,
               boolean&nbsp;force)</code>
@@ -344,20 +385,20 @@ extends <a href="../../../org/bukkit/entity/LivingEntity.html" title="interface 
  on the bottom.</div>
 </td>
 </tr>
-<tr id="i30" class="altColor">
+<tr id="i36" class="altColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/inventory/InventoryView.html" title="class in org.bukkit.inventory">InventoryView</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#openInventory-org.bukkit.inventory.Inventory-">openInventory</a></span>(<a href="../../../org/bukkit/inventory/Inventory.html" title="interface in org.bukkit.inventory">Inventory</a>&nbsp;inventory)</code>
 <div class="block">Opens an inventory window with the specified inventory on the top and
  the player's inventory on the bottom.</div>
 </td>
 </tr>
-<tr id="i31" class="rowColor">
+<tr id="i37" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#openInventory-org.bukkit.inventory.InventoryView-">openInventory</a></span>(<a href="../../../org/bukkit/inventory/InventoryView.html" title="class in org.bukkit.inventory">InventoryView</a>&nbsp;inventory)</code>
 <div class="block">Opens an inventory window to the specified inventory view.</div>
 </td>
 </tr>
-<tr id="i32" class="altColor">
+<tr id="i38" class="altColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/inventory/InventoryView.html" title="class in org.bukkit.inventory">InventoryView</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#openLoom-org.bukkit.Location-boolean-">openLoom</a></span>(<a href="../../../org/bukkit/Location.html" title="class in org.bukkit">Location</a>&nbsp;location,
         boolean&nbsp;force)</code>
@@ -365,27 +406,27 @@ extends <a href="../../../org/bukkit/entity/LivingEntity.html" title="interface 
  on the bottom.</div>
 </td>
 </tr>
-<tr id="i33" class="rowColor">
+<tr id="i39" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/inventory/InventoryView.html" title="class in org.bukkit.inventory">InventoryView</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#openMerchant-org.bukkit.inventory.Merchant-boolean-">openMerchant</a></span>(<a href="../../../org/bukkit/inventory/Merchant.html" title="interface in org.bukkit.inventory">Merchant</a>&nbsp;merchant,
             boolean&nbsp;force)</code>
 <div class="block">Starts a trade between the player and the merchant.</div>
 </td>
 </tr>
-<tr id="i34" class="altColor">
+<tr id="i40" class="altColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/inventory/InventoryView.html" title="class in org.bukkit.inventory">InventoryView</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#openMerchant-org.bukkit.entity.Villager-boolean-">openMerchant</a></span>(<a href="../../../org/bukkit/entity/Villager.html" title="interface in org.bukkit.entity">Villager</a>&nbsp;trader,
             boolean&nbsp;force)</code>
 <div class="block">Starts a trade between the player and the villager.</div>
 </td>
 </tr>
-<tr id="i35" class="rowColor">
+<tr id="i41" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#openSign-org.bukkit.block.Sign-">openSign</a></span>(<a href="../../../org/bukkit/block/Sign.html" title="interface in org.bukkit.block">Sign</a>&nbsp;sign)</code>
 <div class="block">Opens an editor window for the specified sign</div>
 </td>
 </tr>
-<tr id="i36" class="altColor">
+<tr id="i42" class="altColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/inventory/InventoryView.html" title="class in org.bukkit.inventory">InventoryView</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#openSmithingTable-org.bukkit.Location-boolean-">openSmithingTable</a></span>(<a href="../../../org/bukkit/Location.html" title="class in org.bukkit">Location</a>&nbsp;location,
                  boolean&nbsp;force)</code>
@@ -393,7 +434,7 @@ extends <a href="../../../org/bukkit/entity/LivingEntity.html" title="interface 
  on the bottom.</div>
 </td>
 </tr>
-<tr id="i37" class="rowColor">
+<tr id="i43" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/inventory/InventoryView.html" title="class in org.bukkit.inventory">InventoryView</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#openStonecutter-org.bukkit.Location-boolean-">openStonecutter</a></span>(<a href="../../../org/bukkit/Location.html" title="class in org.bukkit">Location</a>&nbsp;location,
                boolean&nbsp;force)</code>
@@ -401,7 +442,7 @@ extends <a href="../../../org/bukkit/entity/LivingEntity.html" title="interface 
  on the bottom.</div>
 </td>
 </tr>
-<tr id="i38" class="altColor">
+<tr id="i44" class="altColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/inventory/InventoryView.html" title="class in org.bukkit.inventory">InventoryView</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#openWorkbench-org.bukkit.Location-boolean-">openWorkbench</a></span>(<a href="../../../org/bukkit/Location.html" title="class in org.bukkit">Location</a>&nbsp;location,
              boolean&nbsp;force)</code>
@@ -409,32 +450,44 @@ extends <a href="../../../org/bukkit/entity/LivingEntity.html" title="interface 
  on the bottom.</div>
 </td>
 </tr>
-<tr id="i39" class="rowColor">
+<tr id="i45" class="rowColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/entity/Entity.html" title="interface in org.bukkit.entity">Entity</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#releaseLeftShoulderEntity--">releaseLeftShoulderEntity</a></span>()</code>
 <div class="block">If there is an Entity on this entities left shoulder, it will be released to the world and returned.</div>
 </td>
 </tr>
-<tr id="i40" class="altColor">
+<tr id="i46" class="altColor">
 <td class="colFirst"><code><a href="../../../org/bukkit/entity/Entity.html" title="interface in org.bukkit.entity">Entity</a></code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#releaseRightShoulderEntity--">releaseRightShoulderEntity</a></span>()</code>
 <div class="block">If there is an Entity on this entities left shoulder, it will be released to the world and returned.</div>
 </td>
 </tr>
-<tr id="i41" class="rowColor">
+<tr id="i47" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#setCooldown-org.bukkit.Material-int-">setCooldown</a></span>(<a href="../../../org/bukkit/Material.html" title="enum in org.bukkit">Material</a>&nbsp;material,
            int&nbsp;ticks)</code>
 <div class="block">Set a cooldown on the specified material for a certain amount of ticks.</div>
 </td>
 </tr>
-<tr id="i42" class="altColor">
+<tr id="i48" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#setExhaustion-float-">setExhaustion</a></span>(float&nbsp;value)</code>
+<div class="block">Sets the players current exhaustion level</div>
+</td>
+</tr>
+<tr id="i49" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#setFoodLevel-int-">setFoodLevel</a></span>(int&nbsp;value)</code>
+<div class="block">Sets the players current food level</div>
+</td>
+</tr>
+<tr id="i50" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#setGameMode-org.bukkit.GameMode-">setGameMode</a></span>(<a href="../../../org/bukkit/GameMode.html" title="enum in org.bukkit">GameMode</a>&nbsp;mode)</code>
 <div class="block">Sets this human's current <a href="../../../org/bukkit/GameMode.html" title="enum in org.bukkit"><code>GameMode</code></a></div>
 </td>
 </tr>
-<tr id="i43" class="rowColor">
+<tr id="i51" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#setItemInHand-org.bukkit.inventory.ItemStack-">setItemInHand</a></span>(<a href="../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&nbsp;item)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -443,14 +496,28 @@ extends <a href="../../../org/bukkit/entity/LivingEntity.html" title="interface 
 </div>
 </td>
 </tr>
-<tr id="i44" class="altColor">
+<tr id="i52" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#setItemOnCursor-org.bukkit.inventory.ItemStack-">setItemOnCursor</a></span>(<a href="../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&nbsp;item)</code>
 <div class="block">Sets the item to the given ItemStack, this will replace whatever the
  user was moving.</div>
 </td>
 </tr>
-<tr id="i45" class="rowColor">
+<tr id="i53" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#setSaturatedRegenRate-int-">setSaturatedRegenRate</a></span>(int&nbsp;ticks)</code>
+<div class="block">Set the regeneration rate (1 health per x ticks) of
+ the HumanEntity when they have saturation and
+ their food level is &gt;= 20.</div>
+</td>
+</tr>
+<tr id="i54" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#setSaturation-float-">setSaturation</a></span>(float&nbsp;value)</code>
+<div class="block">Sets the players current saturation level</div>
+</td>
+</tr>
+<tr id="i55" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#setShoulderEntityLeft-org.bukkit.entity.Entity-">setShoulderEntityLeft</a></span>(<a href="../../../org/bukkit/entity/Entity.html" title="interface in org.bukkit.entity">Entity</a>&nbsp;entity)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -459,7 +526,7 @@ extends <a href="../../../org/bukkit/entity/LivingEntity.html" title="interface 
 </div>
 </td>
 </tr>
-<tr id="i46" class="altColor">
+<tr id="i56" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#setShoulderEntityRight-org.bukkit.entity.Entity-">setShoulderEntityRight</a></span>(<a href="../../../org/bukkit/entity/Entity.html" title="interface in org.bukkit.entity">Entity</a>&nbsp;entity)</code>
 <div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
@@ -468,7 +535,22 @@ extends <a href="../../../org/bukkit/entity/LivingEntity.html" title="interface 
 </div>
 </td>
 </tr>
-<tr id="i47" class="rowColor">
+<tr id="i57" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#setStarvationRate-int-">setStarvationRate</a></span>(int&nbsp;ticks)</code>
+<div class="block">Get the starvation rate (1 health per x ticks) of
+ the HumanEntity.</div>
+</td>
+</tr>
+<tr id="i58" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#setUnsaturatedRegenRate-int-">setUnsaturatedRegenRate</a></span>(int&nbsp;ticks)</code>
+<div class="block">Get the regeneration rate (1 health per x ticks) of
+ the HumanEntity when they have no saturation and
+ their food level is &gt;= 18.</div>
+</td>
+</tr>
+<tr id="i59" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#setWindowProperty-org.bukkit.inventory.InventoryView.Property-int-">setWindowProperty</a></span>(<a href="../../../org/bukkit/inventory/InventoryView.Property.html" title="enum in org.bukkit.inventory">InventoryView.Property</a>&nbsp;prop,
                  int&nbsp;value)</code>
@@ -476,28 +558,28 @@ extends <a href="../../../org/bukkit/entity/LivingEntity.html" title="interface 
  set a property of that window, such as the state of a progress bar.</div>
 </td>
 </tr>
-<tr id="i48" class="altColor">
+<tr id="i60" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#sleep-org.bukkit.Location-boolean-">sleep</a></span>(<a href="../../../org/bukkit/Location.html" title="class in org.bukkit">Location</a>&nbsp;location,
      boolean&nbsp;force)</code>
 <div class="block">Attempts to make the entity sleep at the given location.</div>
 </td>
 </tr>
-<tr id="i49" class="rowColor">
+<tr id="i61" class="rowColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#undiscoverRecipe-org.bukkit.NamespacedKey-">undiscoverRecipe</a></span>(<a href="../../../org/bukkit/NamespacedKey.html" title="class in org.bukkit">NamespacedKey</a>&nbsp;recipe)</code>
 <div class="block">Undiscover a recipe for this player such that it has already been
  discovered.</div>
 </td>
 </tr>
-<tr id="i50" class="altColor">
+<tr id="i62" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#undiscoverRecipes-java.util.Collection-">undiscoverRecipes</a></span>(java.util.Collection&lt;<a href="../../../org/bukkit/NamespacedKey.html" title="class in org.bukkit">NamespacedKey</a>&gt;&nbsp;recipes)</code>
 <div class="block">Undiscover a collection of recipes for this player such that they have
  already been discovered.</div>
 </td>
 </tr>
-<tr id="i51" class="rowColor">
+<tr id="i63" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/HumanEntity.html#wakeup-boolean-">wakeup</a></span>(boolean&nbsp;setSpawnLocation)</code>
 <div class="block">Causes the player to wakeup if they are currently sleeping.</div>
@@ -530,7 +612,7 @@ extends <a href="../../../org/bukkit/entity/LivingEntity.html" title="interface 
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;org.bukkit.entity.<a href="../../../org/bukkit/entity/Entity.html" title="interface in org.bukkit.entity">Entity</a></h3>
-<code><a href="../../../org/bukkit/entity/Entity.html#addPassenger-org.bukkit.entity.Entity-">addPassenger</a>, <a href="../../../org/bukkit/entity/Entity.html#addScoreboardTag-java.lang.String-">addScoreboardTag</a>, <a href="../../../org/bukkit/entity/Entity.html#eject--">eject</a>, <a href="../../../org/bukkit/entity/Entity.html#fromMobSpawner--">fromMobSpawner</a>, <a href="../../../org/bukkit/entity/Entity.html#getBoundingBox--">getBoundingBox</a>, <a href="../../../org/bukkit/entity/Entity.html#getChunk--">getChunk</a>, <a href="../../../org/bukkit/entity/Entity.html#getEntityId--">getEntityId</a>, <a href="../../../org/bukkit/entity/Entity.html#getEntitySpawnReason--">getEntitySpawnReason</a>, <a href="../../../org/bukkit/entity/Entity.html#getFacing--">getFacing</a>, <a href="../../../org/bukkit/entity/Entity.html#getFallDistance--">getFallDistance</a>, <a href="../../../org/bukkit/entity/Entity.html#getFireTicks--">getFireTicks</a>, <a href="../../../org/bukkit/entity/Entity.html#getHeight--">getHeight</a>, <a href="../../../org/bukkit/entity/Entity.html#getLastDamageCause--">getLastDamageCause</a>, <a href="../../../org/bukkit/entity/Entity.html#getLocation--">getLocation</a>, <a href="../../../org/bukkit/entity/Entity.html#getLocation-org.bukkit.Location-">getLocation</a>, <a href="../../../org/bukkit/entity/Entity.html#getMaxFireTicks--">getMaxFireTicks</a>, <a href="../../../org/bukkit/entity/Entity.html#getNBT--">getNBT</a>, <a href="../../../org/bukkit/entity/Entity.html#getNBTC--">getNBTC</a>, <a href="../../../org/bukkit/entity/Entity.html#getNearbyEntities-double-double-double-">getNearbyEntities</a>, <a href="../../../org/bukkit/entity/Entity.html#getOrigin--">getOrigin</a>, <a href="../../../org/bukkit/entity/Entity.html#getPassenger--">getPassenger</a>, <a href="../../../org/bukkit/entity/Entity.html#getPassengers--">getPassengers</a>, <a href="../../../org/bukkit/entity/Entity.html#getPistonMoveReaction--">getPistonMoveReaction</a>, <a href="../../../org/bukkit/entity/Entity.html#getPortalCooldown--">getPortalCooldown</a>, <a href="../../../org/bukkit/entity/Entity.html#getPose--">getPose</a>, <a href="../../../org/bukkit/entity/Entity.html#getRider--">getRider</a>, <a href="../../../org/bukkit/entity/Entity.html#getScoreboardTags--">getScoreboardTags</a>, <a href="../../../org/bukkit/entity/Entity.html#getServer--">getServer</a>, <a href="../../../org/bukkit/entity/Entity.html#getTicksLived--">getTicksLived</a>, <a href="../../../org/bukkit/entity/Entity.html#getType--">getType</a>, <a href="../../../org/bukkit/entity/Entity.html#getUniqueId--">getUniqueId</a>, <a href="../../../org/bukkit/entity/Entity.html#getVehicle--">getVehicle</a>, <a href="../../../org/bukkit/entity/Entity.html#getVelocity--">getVelocity</a>, <a href="../../../org/bukkit/entity/Entity.html#getWidth--">getWidth</a>, <a href="../../../org/bukkit/entity/Entity.html#getWorld--">getWorld</a>, <a href="../../../org/bukkit/entity/Entity.html#hasGravity--">hasGravity</a>, <a href="../../../org/bukkit/entity/Entity.html#hasRider--">hasRider</a>, <a href="../../../org/bukkit/entity/Entity.html#isCustomNameVisible--">isCustomNameVisible</a>, <a href="../../../org/bukkit/entity/Entity.html#isDead--">isDead</a>, <a href="../../../org/bukkit/entity/Entity.html#isEmpty--">isEmpty</a>, <a href="../../../org/bukkit/entity/Entity.html#isGlowing--">isGlowing</a>, <a href="../../../org/bukkit/entity/Entity.html#isInBubbleColumn--">isInBubbleColumn</a>, <a href="../../../org/bukkit/entity/Entity.html#isInLava--">isInLava</a>, <a href="../../../org/bukkit/entity/Entity.html#isInRain--">isInRain</a>, <a href="../../../org/bukkit/entity/Entity.html#isInsideVehicle--">isInsideVehicle</a>, <a href="../../../org/bukkit/entity/Entity.html#isInvulnerable--">isInvulnerable</a>, <a href="../../../org/bukkit/entity/Entity.html#isInWater--">isInWater</a>, <a href="../../../org/bukkit/entity/Entity.html#isInWaterOrBubbleColumn--">isInWaterOrBubbleColumn</a>, <a href="../../../org/bukkit/entity/Entity.html#isInWaterOrRain--">isInWaterOrRain</a>, <a href="../../../org/bukkit/entity/Entity.html#isInWaterOrRainOrBubbleColumn--">isInWaterOrRainOrBubbleColumn</a>, <a href="../../../org/bukkit/entity/Entity.html#isOnGround--">isOnGround</a>, <a href="../../../org/bukkit/entity/Entity.html#isPersistent--">isPersistent</a>, <a href="../../../org/bukkit/entity/Entity.html#isRidable--">isRidable</a>, <a href="../../../org/bukkit/entity/Entity.html#isRidableInWater--">isRidableInWater</a>, <a href="../../../org/bukkit/entity/Entity.html#isSilent--">isSilent</a>, <a href="../../../org/bukkit/entity/Entity.html#isTicking--">isTicking</a>, <a href="../../../org/bukkit/entity/Entity.html#isValid--">isValid</a>, <a href="../../../org/bukkit/entity/Entity.html#leaveVehicle--">leaveVehicle</a>, <a href="../../../org/bukkit/entity/Entity.html#playEffect-org.bukkit.EntityEffect-">playEffect</a>, <a href="../../../org/bukkit/entity/Entity.html#remove--">remove</a>, <a href="../../../org/bukkit/entity/Entity.html#removePassenger-org.bukkit.entity.Entity-">removePassenger</a>, <a href="../../../org/bukkit/entity/Entity.html#removeScoreboardTag-java.lang.String-">removeScoreboardTag</a>, <a href="../../../org/bukkit/entity/Entity.html#setCustomNameVisible-boolean-">setCustomNameVisible</a>, <a href="../../../org/bukkit/entity/Entity.html#setFallDistance-float-">setFallDistance</a>, <a href="../../../org/bukkit/entity/Entity.html#setFireTicks-int-">setFireTicks</a>, <a href="../../../org/bukkit/entity/Entity.html#setGlowing-boolean-">setGlowing</a>, <a href="../../../org/bukkit/entity/Entity.html#setGravity-boolean-">setGravity</a>, <a href="../../../org/bukkit/entity/Entity.html#setInvulnerable-boolean-">setInvulnerable</a>, <a href="../../../org/bukkit/entity/Entity.html#setLastDamageCause-org.bukkit.event.entity.EntityDamageEvent-">setLastDamageCause</a>, <a href="../../../org/bukkit/entity/Entity.html#setPassenger-org.bukkit.entity.Entity-">setPassenger</a>, <a href="../../../org/bukkit/entity/Entity.html#setPersistent-boolean-">setPersistent</a>, <a href="../../../org/bukkit/entity/Entity.html#setPortalCooldown-int-">setPortalCooldown</a>, <a href="../../../org/bukkit/entity/Entity.html#setRotation-float-float-">setRotation</a>, <a href="../../../org/bukkit/entity/Entity.html#setSilent-boolean-">setSilent</a>, <a href="../../../org/bukkit/entity/Entity.html#setTicksLived-int-">setTicksLived</a>, <a href="../../../org/bukkit/entity/Entity.html#setVelocity-org.bukkit.util.Vector-">setVelocity</a>, <a href="../../../org/bukkit/entity/Entity.html#spawnAt-org.bukkit.Location-">spawnAt</a>, <a href="../../../org/bukkit/entity/Entity.html#spawnAt-org.bukkit.Location-org.bukkit.event.entity.CreatureSpawnEvent.SpawnReason-">spawnAt</a>, <a href="../../../org/bukkit/entity/Entity.html#spigot--">spigot</a>, <a href="../../../org/bukkit/entity/Entity.html#teleport-org.bukkit.entity.Entity-">teleport</a>, <a href="../../../org/bukkit/entity/Entity.html#teleport-org.bukkit.entity.Entity-org.bukkit.event.player.PlayerTeleportEvent.TeleportCause-">teleport</a>, <a href="../../../org/bukkit/entity/Entity.html#teleport-org.bukkit.Location-">teleport</a>, <a href="../../../org/bukkit/entity/Entity.html#teleport-org.bukkit.Location-org.bukkit.event.player.PlayerTeleportEvent.TeleportCause-">teleport</a>, <a href="../../../org/bukkit/entity/Entity.html#teleportAsync-org.bukkit.Location-">teleportAsync</a>, <a href="../../../org/bukkit/entity/Entity.html#teleportAsync-org.bukkit.Location-org.bukkit.event.player.PlayerTeleportEvent.TeleportCause-">teleportAsync</a></code></li>
+<code><a href="../../../org/bukkit/entity/Entity.html#addPassenger-org.bukkit.entity.Entity-">addPassenger</a>, <a href="../../../org/bukkit/entity/Entity.html#addScoreboardTag-java.lang.String-">addScoreboardTag</a>, <a href="../../../org/bukkit/entity/Entity.html#asHoverEvent-java.util.function.UnaryOperator-">asHoverEvent</a>, <a href="../../../org/bukkit/entity/Entity.html#eject--">eject</a>, <a href="../../../org/bukkit/entity/Entity.html#fromMobSpawner--">fromMobSpawner</a>, <a href="../../../org/bukkit/entity/Entity.html#getBoundingBox--">getBoundingBox</a>, <a href="../../../org/bukkit/entity/Entity.html#getChunk--">getChunk</a>, <a href="../../../org/bukkit/entity/Entity.html#getEntityId--">getEntityId</a>, <a href="../../../org/bukkit/entity/Entity.html#getEntitySpawnReason--">getEntitySpawnReason</a>, <a href="../../../org/bukkit/entity/Entity.html#getFacing--">getFacing</a>, <a href="../../../org/bukkit/entity/Entity.html#getFallDistance--">getFallDistance</a>, <a href="../../../org/bukkit/entity/Entity.html#getFireTicks--">getFireTicks</a>, <a href="../../../org/bukkit/entity/Entity.html#getHeight--">getHeight</a>, <a href="../../../org/bukkit/entity/Entity.html#getLastDamageCause--">getLastDamageCause</a>, <a href="../../../org/bukkit/entity/Entity.html#getLocation--">getLocation</a>, <a href="../../../org/bukkit/entity/Entity.html#getLocation-org.bukkit.Location-">getLocation</a>, <a href="../../../org/bukkit/entity/Entity.html#getMaxFireTicks--">getMaxFireTicks</a>, <a href="../../../org/bukkit/entity/Entity.html#getNBT--">getNBT</a>, <a href="../../../org/bukkit/entity/Entity.html#getNBTC--">getNBTC</a>, <a href="../../../org/bukkit/entity/Entity.html#getNearbyEntities-double-double-double-">getNearbyEntities</a>, <a href="../../../org/bukkit/entity/Entity.html#getOrigin--">getOrigin</a>, <a href="../../../org/bukkit/entity/Entity.html#getPassenger--">getPassenger</a>, <a href="../../../org/bukkit/entity/Entity.html#getPassengers--">getPassengers</a>, <a href="../../../org/bukkit/entity/Entity.html#getPistonMoveReaction--">getPistonMoveReaction</a>, <a href="../../../org/bukkit/entity/Entity.html#getPortalCooldown--">getPortalCooldown</a>, <a href="../../../org/bukkit/entity/Entity.html#getPose--">getPose</a>, <a href="../../../org/bukkit/entity/Entity.html#getRider--">getRider</a>, <a href="../../../org/bukkit/entity/Entity.html#getScoreboardTags--">getScoreboardTags</a>, <a href="../../../org/bukkit/entity/Entity.html#getServer--">getServer</a>, <a href="../../../org/bukkit/entity/Entity.html#getTicksLived--">getTicksLived</a>, <a href="../../../org/bukkit/entity/Entity.html#getType--">getType</a>, <a href="../../../org/bukkit/entity/Entity.html#getUniqueId--">getUniqueId</a>, <a href="../../../org/bukkit/entity/Entity.html#getVehicle--">getVehicle</a>, <a href="../../../org/bukkit/entity/Entity.html#getVelocity--">getVelocity</a>, <a href="../../../org/bukkit/entity/Entity.html#getWidth--">getWidth</a>, <a href="../../../org/bukkit/entity/Entity.html#getWorld--">getWorld</a>, <a href="../../../org/bukkit/entity/Entity.html#hasGravity--">hasGravity</a>, <a href="../../../org/bukkit/entity/Entity.html#hasRider--">hasRider</a>, <a href="../../../org/bukkit/entity/Entity.html#isCustomNameVisible--">isCustomNameVisible</a>, <a href="../../../org/bukkit/entity/Entity.html#isDead--">isDead</a>, <a href="../../../org/bukkit/entity/Entity.html#isEmpty--">isEmpty</a>, <a href="../../../org/bukkit/entity/Entity.html#isGlowing--">isGlowing</a>, <a href="../../../org/bukkit/entity/Entity.html#isInBubbleColumn--">isInBubbleColumn</a>, <a href="../../../org/bukkit/entity/Entity.html#isInLava--">isInLava</a>, <a href="../../../org/bukkit/entity/Entity.html#isInRain--">isInRain</a>, <a href="../../../org/bukkit/entity/Entity.html#isInsideVehicle--">isInsideVehicle</a>, <a href="../../../org/bukkit/entity/Entity.html#isInvulnerable--">isInvulnerable</a>, <a href="../../../org/bukkit/entity/Entity.html#isInWater--">isInWater</a>, <a href="../../../org/bukkit/entity/Entity.html#isInWaterOrBubbleColumn--">isInWaterOrBubbleColumn</a>, <a href="../../../org/bukkit/entity/Entity.html#isInWaterOrRain--">isInWaterOrRain</a>, <a href="../../../org/bukkit/entity/Entity.html#isInWaterOrRainOrBubbleColumn--">isInWaterOrRainOrBubbleColumn</a>, <a href="../../../org/bukkit/entity/Entity.html#isOnGround--">isOnGround</a>, <a href="../../../org/bukkit/entity/Entity.html#isPersistent--">isPersistent</a>, <a href="../../../org/bukkit/entity/Entity.html#isRidable--">isRidable</a>, <a href="../../../org/bukkit/entity/Entity.html#isRidableInWater--">isRidableInWater</a>, <a href="../../../org/bukkit/entity/Entity.html#isSilent--">isSilent</a>, <a href="../../../org/bukkit/entity/Entity.html#isTicking--">isTicking</a>, <a href="../../../org/bukkit/entity/Entity.html#isValid--">isValid</a>, <a href="../../../org/bukkit/entity/Entity.html#leaveVehicle--">leaveVehicle</a>, <a href="../../../org/bukkit/entity/Entity.html#playEffect-org.bukkit.EntityEffect-">playEffect</a>, <a href="../../../org/bukkit/entity/Entity.html#remove--">remove</a>, <a href="../../../org/bukkit/entity/Entity.html#removePassenger-org.bukkit.entity.Entity-">removePassenger</a>, <a href="../../../org/bukkit/entity/Entity.html#removeScoreboardTag-java.lang.String-">removeScoreboardTag</a>, <a href="../../../org/bukkit/entity/Entity.html#setCustomNameVisible-boolean-">setCustomNameVisible</a>, <a href="../../../org/bukkit/entity/Entity.html#setFallDistance-float-">setFallDistance</a>, <a href="../../../org/bukkit/entity/Entity.html#setFireTicks-int-">setFireTicks</a>, <a href="../../../org/bukkit/entity/Entity.html#setGlowing-boolean-">setGlowing</a>, <a href="../../../org/bukkit/entity/Entity.html#setGravity-boolean-">setGravity</a>, <a href="../../../org/bukkit/entity/Entity.html#setInvulnerable-boolean-">setInvulnerable</a>, <a href="../../../org/bukkit/entity/Entity.html#setLastDamageCause-org.bukkit.event.entity.EntityDamageEvent-">setLastDamageCause</a>, <a href="../../../org/bukkit/entity/Entity.html#setPassenger-org.bukkit.entity.Entity-">setPassenger</a>, <a href="../../../org/bukkit/entity/Entity.html#setPersistent-boolean-">setPersistent</a>, <a href="../../../org/bukkit/entity/Entity.html#setPortalCooldown-int-">setPortalCooldown</a>, <a href="../../../org/bukkit/entity/Entity.html#setRotation-float-float-">setRotation</a>, <a href="../../../org/bukkit/entity/Entity.html#setSilent-boolean-">setSilent</a>, <a href="../../../org/bukkit/entity/Entity.html#setTicksLived-int-">setTicksLived</a>, <a href="../../../org/bukkit/entity/Entity.html#setVelocity-org.bukkit.util.Vector-">setVelocity</a>, <a href="../../../org/bukkit/entity/Entity.html#spawnAt-org.bukkit.Location-">spawnAt</a>, <a href="../../../org/bukkit/entity/Entity.html#spawnAt-org.bukkit.Location-org.bukkit.event.entity.CreatureSpawnEvent.SpawnReason-">spawnAt</a>, <a href="../../../org/bukkit/entity/Entity.html#spigot--">spigot</a>, <a href="../../../org/bukkit/entity/Entity.html#teleport-org.bukkit.entity.Entity-">teleport</a>, <a href="../../../org/bukkit/entity/Entity.html#teleport-org.bukkit.entity.Entity-org.bukkit.event.player.PlayerTeleportEvent.TeleportCause-">teleport</a>, <a href="../../../org/bukkit/entity/Entity.html#teleport-org.bukkit.Location-">teleport</a>, <a href="../../../org/bukkit/entity/Entity.html#teleport-org.bukkit.Location-org.bukkit.event.player.PlayerTeleportEvent.TeleportCause-">teleport</a>, <a href="../../../org/bukkit/entity/Entity.html#teleportAsync-org.bukkit.Location-">teleportAsync</a>, <a href="../../../org/bukkit/entity/Entity.html#teleportAsync-org.bukkit.Location-org.bukkit.event.player.PlayerTeleportEvent.TeleportCause-">teleportAsync</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.bukkit.metadata.Metadatable">
@@ -544,7 +626,14 @@ extends <a href="../../../org/bukkit/entity/LivingEntity.html" title="interface 
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;org.bukkit.command.<a href="../../../org/bukkit/command/CommandSender.html" title="interface in org.bukkit.command">CommandSender</a></h3>
-<code><a href="../../../org/bukkit/command/CommandSender.html#sendMessage-net.md_5.bungee.api.chat.BaseComponent...-">sendMessage</a>, <a href="../../../org/bukkit/command/CommandSender.html#sendMessage-net.md_5.bungee.api.chat.BaseComponent-">sendMessage</a>, <a href="../../../org/bukkit/command/CommandSender.html#sendMessage-java.lang.String-">sendMessage</a>, <a href="../../../org/bukkit/command/CommandSender.html#sendMessage-java.lang.String:A-">sendMessage</a>, <a href="../../../org/bukkit/command/CommandSender.html#sendMessage-java.util.UUID-java.lang.String-">sendMessage</a>, <a href="../../../org/bukkit/command/CommandSender.html#sendMessage-java.util.UUID-java.lang.String:A-">sendMessage</a></code></li>
+<code><a href="../../../org/bukkit/command/CommandSender.html#sendMessage-net.md_5.bungee.api.chat.BaseComponent...-">sendMessage</a>, <a href="../../../org/bukkit/command/CommandSender.html#sendMessage-net.md_5.bungee.api.chat.BaseComponent-">sendMessage</a>, <a href="../../../org/bukkit/command/CommandSender.html#sendMessage-net.kyori.adventure.identity.Identity-net.kyori.adventure.text.Component-net.kyori.adventure.audience.MessageType-">sendMessage</a>, <a href="../../../org/bukkit/command/CommandSender.html#sendMessage-java.lang.String-">sendMessage</a>, <a href="../../../org/bukkit/command/CommandSender.html#sendMessage-java.lang.String:A-">sendMessage</a>, <a href="../../../org/bukkit/command/CommandSender.html#sendMessage-java.util.UUID-java.lang.String-">sendMessage</a>, <a href="../../../org/bukkit/command/CommandSender.html#sendMessage-java.util.UUID-java.lang.String:A-">sendMessage</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.net.kyori.adventure.audience.Audience">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;net.kyori.adventure.audience.Audience</h3>
+<code>audience, audience, clearTitle, empty, hideBossBar, openBook, openBook, playSound, playSound, resetTitle, sendActionBar, sendActionBar, sendMessage, sendMessage, sendMessage, sendMessage, sendMessage, sendMessage, sendMessage, sendMessage, sendMessage, sendMessage, sendMessage, sendPlayerListFooter, sendPlayerListFooter, sendPlayerListHeader, sendPlayerListHeader, sendPlayerListHeaderAndFooter, sendPlayerListHeaderAndFooter, showBossBar, showTitle, stopSound, toAudience</code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.bukkit.permissions.Permissible">
@@ -565,7 +654,7 @@ extends <a href="../../../org/bukkit/entity/LivingEntity.html" title="interface 
 <!--   -->
 </a>
 <h3>Methods inherited from interface&nbsp;org.bukkit.<a href="../../../org/bukkit/Nameable.html" title="interface in org.bukkit">Nameable</a></h3>
-<code><a href="../../../org/bukkit/Nameable.html#getCustomName--">getCustomName</a>, <a href="../../../org/bukkit/Nameable.html#setCustomName-java.lang.String-">setCustomName</a></code></li>
+<code><a href="../../../org/bukkit/Nameable.html#customName--">customName</a>, <a href="../../../org/bukkit/Nameable.html#customName-net.kyori.adventure.text.Component-">customName</a>, <a href="../../../org/bukkit/Nameable.html#getCustomName--">getCustomName</a>, <a href="../../../org/bukkit/Nameable.html#setCustomName-java.lang.String-">setCustomName</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.bukkit.persistence.PersistentDataHolder">
@@ -573,6 +662,13 @@ extends <a href="../../../org/bukkit/entity/LivingEntity.html" title="interface 
 </a>
 <h3>Methods inherited from interface&nbsp;org.bukkit.persistence.<a href="../../../org/bukkit/persistence/PersistentDataHolder.html" title="interface in org.bukkit.persistence">PersistentDataHolder</a></h3>
 <code><a href="../../../org/bukkit/persistence/PersistentDataHolder.html#getPersistentDataContainer--">getPersistentDataContainer</a></code></li>
+</ul>
+<ul class="blockList">
+<li class="blockList"><a name="methods.inherited.from.class.net.kyori.adventure.text.event.HoverEventSource">
+<!--   -->
+</a>
+<h3>Methods inherited from interface&nbsp;net.kyori.adventure.text.event.HoverEventSource</h3>
+<code>asHoverEvent, unbox</code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.bukkit.projectiles.ProjectileSource">
@@ -1572,7 +1668,7 @@ void&nbsp;setShoulderEntityRight(@Nullable
 <a name="dropItem-boolean-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>dropItem</h4>
 <pre>boolean&nbsp;dropItem(boolean&nbsp;dropAll)</pre>
@@ -1585,6 +1681,193 @@ void&nbsp;setShoulderEntityRight(@Nullable
 <dd><code>dropAll</code> - True to drop entire stack, false to drop 1 of the stack</dd>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>True if item was dropped successfully</dd>
+</dl>
+</li>
+</ul>
+<a name="getExhaustion--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getExhaustion</h4>
+<pre>float&nbsp;getExhaustion()</pre>
+<div class="block">Gets the players current exhaustion level.
+ <p>
+ Exhaustion controls how fast the food level drops. While you have a
+ certain amount of exhaustion, your saturation will drop to zero, and
+ then your food will drop to zero.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Exhaustion level</dd>
+</dl>
+</li>
+</ul>
+<a name="setExhaustion-float-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setExhaustion</h4>
+<pre>void&nbsp;setExhaustion(float&nbsp;value)</pre>
+<div class="block">Sets the players current exhaustion level</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>value</code> - Exhaustion level</dd>
+</dl>
+</li>
+</ul>
+<a name="getSaturation--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSaturation</h4>
+<pre>float&nbsp;getSaturation()</pre>
+<div class="block">Gets the players current saturation level.
+ <p>
+ Saturation is a buffer for food level. Your food level will not drop if
+ you are saturated &gt; 0.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Saturation level</dd>
+</dl>
+</li>
+</ul>
+<a name="setSaturation-float-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setSaturation</h4>
+<pre>void&nbsp;setSaturation(float&nbsp;value)</pre>
+<div class="block">Sets the players current saturation level</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>value</code> - Saturation level</dd>
+</dl>
+</li>
+</ul>
+<a name="getFoodLevel--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getFoodLevel</h4>
+<pre>int&nbsp;getFoodLevel()</pre>
+<div class="block">Gets the players current food level</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>Food level</dd>
+</dl>
+</li>
+</ul>
+<a name="setFoodLevel-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setFoodLevel</h4>
+<pre>void&nbsp;setFoodLevel(int&nbsp;value)</pre>
+<div class="block">Sets the players current food level</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>value</code> - New food level</dd>
+</dl>
+</li>
+</ul>
+<a name="getSaturatedRegenRate--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getSaturatedRegenRate</h4>
+<pre>int&nbsp;getSaturatedRegenRate()</pre>
+<div class="block">Get the regeneration rate (1 health per x ticks) of
+ the HumanEntity when they have saturation and
+ their food level is &gt;= 20. Default is 10.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the regeneration rate</dd>
+</dl>
+</li>
+</ul>
+<a name="setSaturatedRegenRate-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setSaturatedRegenRate</h4>
+<pre>void&nbsp;setSaturatedRegenRate(int&nbsp;ticks)</pre>
+<div class="block">Set the regeneration rate (1 health per x ticks) of
+ the HumanEntity when they have saturation and
+ their food level is &gt;= 20. Default is 10.
+ Not affected if the world's difficulty is peaceful.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ticks</code> - the amount of ticks to gain 1 health.</dd>
+</dl>
+</li>
+</ul>
+<a name="getUnsaturatedRegenRate--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getUnsaturatedRegenRate</h4>
+<pre>int&nbsp;getUnsaturatedRegenRate()</pre>
+<div class="block">Get the regeneration rate (1 health per x ticks) of
+ the HumanEntity when they have no saturation and
+ their food level is &gt;= 18. Default is 80.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the regeneration rate</dd>
+</dl>
+</li>
+</ul>
+<a name="setUnsaturatedRegenRate-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setUnsaturatedRegenRate</h4>
+<pre>void&nbsp;setUnsaturatedRegenRate(int&nbsp;ticks)</pre>
+<div class="block">Get the regeneration rate (1 health per x ticks) of
+ the HumanEntity when they have no saturation and
+ their food level is &gt;= 18. Default is 80.
+ Not affected if the world's difficulty is peaceful.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ticks</code> - the amount of ticks to gain 1 health.</dd>
+</dl>
+</li>
+</ul>
+<a name="getStarvationRate--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getStarvationRate</h4>
+<pre>int&nbsp;getStarvationRate()</pre>
+<div class="block">Get the starvation rate (1 health per x ticks) of
+ the HumanEntity. Default is 80.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the starvation rate</dd>
+</dl>
+</li>
+</ul>
+<a name="setStarvationRate-int-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>setStarvationRate</h4>
+<pre>void&nbsp;setStarvationRate(int&nbsp;ticks)</pre>
+<div class="block">Get the starvation rate (1 health per x ticks) of
+ the HumanEntity. Default is 80.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ticks</code> - the amount of ticks to lose 1 health</dd>
 </dl>
 </li>
 </ul>
