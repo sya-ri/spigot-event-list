@@ -30,6 +30,7 @@ io.papermc.paper.event.player
 io.papermc.paper.event.server
 io.papermc.paper.event.world
 io.papermc.paper.event.world.border
+io.papermc.paper.inventory
 io.papermc.paper.tag
 io.papermc.paper.world
 net.pl3x.purpur.event
