@@ -17,8 +17,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":10,"i1":10,"i2":10,"i3":10,"i4":10,"i5":10,"i6":10};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"]};
+var methods = {"i0":10,"i1":10,"i2":42,"i3":42,"i4":10,"i5":10,"i6":10,"i7":10,"i8":10};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],8:["t4","Concrete Methods"],32:["t6","Deprecated Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -172,48 +172,64 @@ implements <a href="../../../../../org/bukkit/event/Cancellable.html" title="int
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t4" class="tableTab"><span><a href="javascript:show(8);">Concrete Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t6" class="tableTab"><span><a href="javascript:show(32);">Deprecated Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
 </tr>
 <tr id="i0" class="altColor">
-<td class="colFirst"><code><a href="../../../../../io/papermc/paper/chat/ChatFormatter.html" title="interface in io.papermc.paper.chat">ChatFormatter</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../io/papermc/paper/event/player/AbstractChatEvent.html#formatter--">formatter</a></span>()</code>
-<div class="block">Gets the chat formatter.</div>
+<td class="colFirst"><code><a href="../../../../../io/papermc/paper/chat/ChatComposer.html" title="interface in io.papermc.paper.chat">ChatComposer</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../io/papermc/paper/event/player/AbstractChatEvent.html#composer--">composer</a></span>()</code>
+<div class="block">Gets the chat composer.</div>
 </td>
 </tr>
 <tr id="i1" class="rowColor">
 <td class="colFirst"><code>void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../io/papermc/paper/event/player/AbstractChatEvent.html#formatter-io.papermc.paper.chat.ChatFormatter-">formatter</a></span>(<a href="../../../../../io/papermc/paper/chat/ChatFormatter.html" title="interface in io.papermc.paper.chat">ChatFormatter</a>&nbsp;formatter)</code>
-<div class="block">Sets the chat formatter.</div>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../io/papermc/paper/event/player/AbstractChatEvent.html#composer-io.papermc.paper.chat.ChatComposer-">composer</a></span>(<a href="../../../../../io/papermc/paper/chat/ChatComposer.html" title="interface in io.papermc.paper.chat">ChatComposer</a>&nbsp;composer)</code>
+<div class="block">Sets the chat composer.</div>
 </td>
 </tr>
 <tr id="i2" class="altColor">
+<td class="colFirst"><code><a href="../../../../../io/papermc/paper/chat/ChatFormatter.html" title="interface in io.papermc.paper.chat">ChatFormatter</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../io/papermc/paper/event/player/AbstractChatEvent.html#formatter--">formatter</a></span>()</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">in favour of <a href="../../../../../io/papermc/paper/event/player/AbstractChatEvent.html#composer--"><code>composer()</code></a></span></div>
+</div>
+</td>
+</tr>
+<tr id="i3" class="rowColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../../../io/papermc/paper/event/player/AbstractChatEvent.html#formatter-io.papermc.paper.chat.ChatFormatter-">formatter</a></span>(<a href="../../../../../io/papermc/paper/chat/ChatFormatter.html" title="interface in io.papermc.paper.chat">ChatFormatter</a>&nbsp;formatter)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">in favour of <a href="../../../../../io/papermc/paper/event/player/AbstractChatEvent.html#composer-io.papermc.paper.chat.ChatComposer-"><code>composer(ChatComposer)</code></a></span></div>
+</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>boolean</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../io/papermc/paper/event/player/AbstractChatEvent.html#isCancelled--">isCancelled</a></span>()</code>
 <div class="block">Gets the cancellation state of this event.</div>
 </td>
 </tr>
-<tr id="i3" class="rowColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>net.kyori.adventure.text.Component</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../io/papermc/paper/event/player/AbstractChatEvent.html#message--">message</a></span>()</code>
 <div class="block">Gets the user-supplied message.</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i6" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../io/papermc/paper/event/player/AbstractChatEvent.html#message-net.kyori.adventure.text.Component-">message</a></span>(net.kyori.adventure.text.Component&nbsp;message)</code>
 <div class="block">Sets the user-supplied message.</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
+<tr id="i7" class="rowColor">
 <td class="colFirst"><code>java.util.Set&lt;<a href="../../../../../org/bukkit/entity/Player.html" title="interface in org.bukkit.entity">Player</a>&gt;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../io/papermc/paper/event/player/AbstractChatEvent.html#recipients--">recipients</a></span>()</code>
 <div class="block">Gets a set of recipients that this chat message will be displayed to.</div>
 </td>
 </tr>
-<tr id="i6" class="altColor">
+<tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../io/papermc/paper/event/player/AbstractChatEvent.html#setCancelled-boolean-">setCancelled</a></span>(boolean&nbsp;cancelled)</code>
 <div class="block">Sets the cancellation state of this event.</div>
@@ -277,14 +293,48 @@ public final&nbsp;java.util.Set&lt;<a href="../../../../../org/bukkit/entity/Pla
 </dl>
 </li>
 </ul>
+<a name="composer--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>composer</h4>
+<pre>@NotNull
+public final&nbsp;<a href="../../../../../io/papermc/paper/chat/ChatComposer.html" title="interface in io.papermc.paper.chat">ChatComposer</a>&nbsp;composer()</pre>
+<div class="block">Gets the chat composer.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the chat composer</dd>
+</dl>
+</li>
+</ul>
+<a name="composer-io.papermc.paper.chat.ChatComposer-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>composer</h4>
+<pre>public final&nbsp;void&nbsp;composer(@NotNull
+                           <a href="../../../../../io/papermc/paper/chat/ChatComposer.html" title="interface in io.papermc.paper.chat">ChatComposer</a>&nbsp;composer)</pre>
+<div class="block">Sets the chat composer.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>composer</code> - the chat composer</dd>
+<dt><span class="throwsLabel">Throws:</span></dt>
+<dd><code>java.lang.NullPointerException</code> - if <code>composer</code> is <code>null</code></dd>
+</dl>
+</li>
+</ul>
 <a name="formatter--">
 <!--   -->
 </a>
 <ul class="blockList">
 <li class="blockList">
 <h4>formatter</h4>
-<pre>@NotNull
+<pre>@Deprecated
+ @NotNull
 public final&nbsp;<a href="../../../../../io/papermc/paper/chat/ChatFormatter.html" title="interface in io.papermc.paper.chat">ChatFormatter</a>&nbsp;formatter()</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">in favour of <a href="../../../../../io/papermc/paper/event/player/AbstractChatEvent.html#composer--"><code>composer()</code></a></span></div>
 <div class="block">Gets the chat formatter.</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
@@ -298,8 +348,10 @@ public final&nbsp;<a href="../../../../../io/papermc/paper/chat/ChatFormatter.ht
 <ul class="blockList">
 <li class="blockList">
 <h4>formatter</h4>
-<pre>public final&nbsp;void&nbsp;formatter(@NotNull
-                            <a href="../../../../../io/papermc/paper/chat/ChatFormatter.html" title="interface in io.papermc.paper.chat">ChatFormatter</a>&nbsp;formatter)</pre>
+<pre>@Deprecated
+public final&nbsp;void&nbsp;formatter(@NotNull
+                                        <a href="../../../../../io/papermc/paper/chat/ChatFormatter.html" title="interface in io.papermc.paper.chat">ChatFormatter</a>&nbsp;formatter)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">in favour of <a href="../../../../../io/papermc/paper/event/player/AbstractChatEvent.html#composer-io.papermc.paper.chat.ChatComposer-"><code>composer(ChatComposer)</code></a></span></div>
 <div class="block">Sets the chat formatter.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

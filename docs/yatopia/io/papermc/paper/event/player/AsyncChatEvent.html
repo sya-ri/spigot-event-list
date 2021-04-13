@@ -177,11 +177,22 @@ extends <a href="../../../../../io/papermc/paper/event/player/AbstractChatEvent.
 <th class="colOne" scope="col">Constructor and Description</th>
 </tr>
 <tr class="altColor">
+<td class="colOne"><code><span class="memberNameLink"><a href="../../../../../io/papermc/paper/event/player/AsyncChatEvent.html#AsyncChatEvent-boolean-org.bukkit.entity.Player-java.util.Set-io.papermc.paper.chat.ChatComposer-net.kyori.adventure.text.Component-">AsyncChatEvent</a></span>(boolean&nbsp;async,
+              <a href="../../../../../org/bukkit/entity/Player.html" title="interface in org.bukkit.entity">Player</a>&nbsp;player,
+              java.util.Set&lt;<a href="../../../../../org/bukkit/entity/Player.html" title="interface in org.bukkit.entity">Player</a>&gt;&nbsp;recipients,
+              <a href="../../../../../io/papermc/paper/chat/ChatComposer.html" title="interface in io.papermc.paper.chat">ChatComposer</a>&nbsp;composer,
+              net.kyori.adventure.text.Component&nbsp;message)</code>&nbsp;</td>
+</tr>
+<tr class="rowColor">
 <td class="colOne"><code><span class="memberNameLink"><a href="../../../../../io/papermc/paper/event/player/AsyncChatEvent.html#AsyncChatEvent-boolean-org.bukkit.entity.Player-java.util.Set-io.papermc.paper.chat.ChatFormatter-net.kyori.adventure.text.Component-">AsyncChatEvent</a></span>(boolean&nbsp;async,
               <a href="../../../../../org/bukkit/entity/Player.html" title="interface in org.bukkit.entity">Player</a>&nbsp;player,
               java.util.Set&lt;<a href="../../../../../org/bukkit/entity/Player.html" title="interface in org.bukkit.entity">Player</a>&gt;&nbsp;recipients,
               <a href="../../../../../io/papermc/paper/chat/ChatFormatter.html" title="interface in io.papermc.paper.chat">ChatFormatter</a>&nbsp;formatter,
-              net.kyori.adventure.text.Component&nbsp;message)</code>&nbsp;</td>
+              net.kyori.adventure.text.Component&nbsp;message)</code>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;
+<div class="block"><span class="deprecationComment">use <a href="../../../../../io/papermc/paper/event/player/AsyncChatEvent.html#AsyncChatEvent-boolean-org.bukkit.entity.Player-java.util.Set-io.papermc.paper.chat.ChatComposer-net.kyori.adventure.text.Component-"><code>AsyncChatEvent(boolean, Player, Set, ChatComposer, Component)</code></a></span></div>
+</div>
+</td>
 </tr>
 </table>
 </li>
@@ -212,7 +223,7 @@ extends <a href="../../../../../io/papermc/paper/event/player/AbstractChatEvent.
 <!--   -->
 </a>
 <h3>Methods inherited from class&nbsp;io.papermc.paper.event.player.<a href="../../../../../io/papermc/paper/event/player/AbstractChatEvent.html" title="class in io.papermc.paper.event.player">AbstractChatEvent</a></h3>
-<code><a href="../../../../../io/papermc/paper/event/player/AbstractChatEvent.html#formatter--">formatter</a>, <a href="../../../../../io/papermc/paper/event/player/AbstractChatEvent.html#formatter-io.papermc.paper.chat.ChatFormatter-">formatter</a>, <a href="../../../../../io/papermc/paper/event/player/AbstractChatEvent.html#isCancelled--">isCancelled</a>, <a href="../../../../../io/papermc/paper/event/player/AbstractChatEvent.html#message--">message</a>, <a href="../../../../../io/papermc/paper/event/player/AbstractChatEvent.html#message-net.kyori.adventure.text.Component-">message</a>, <a href="../../../../../io/papermc/paper/event/player/AbstractChatEvent.html#recipients--">recipients</a>, <a href="../../../../../io/papermc/paper/event/player/AbstractChatEvent.html#setCancelled-boolean-">setCancelled</a></code></li>
+<code><a href="../../../../../io/papermc/paper/event/player/AbstractChatEvent.html#composer--">composer</a>, <a href="../../../../../io/papermc/paper/event/player/AbstractChatEvent.html#composer-io.papermc.paper.chat.ChatComposer-">composer</a>, <a href="../../../../../io/papermc/paper/event/player/AbstractChatEvent.html#formatter--">formatter</a>, <a href="../../../../../io/papermc/paper/event/player/AbstractChatEvent.html#formatter-io.papermc.paper.chat.ChatFormatter-">formatter</a>, <a href="../../../../../io/papermc/paper/event/player/AbstractChatEvent.html#isCancelled--">isCancelled</a>, <a href="../../../../../io/papermc/paper/event/player/AbstractChatEvent.html#message--">message</a>, <a href="../../../../../io/papermc/paper/event/player/AbstractChatEvent.html#message-net.kyori.adventure.text.Component-">message</a>, <a href="../../../../../io/papermc/paper/event/player/AbstractChatEvent.html#recipients--">recipients</a>, <a href="../../../../../io/papermc/paper/event/player/AbstractChatEvent.html#setCancelled-boolean-">setCancelled</a></code></li>
 </ul>
 <ul class="blockList">
 <li class="blockList"><a name="methods.inherited.from.class.org.bukkit.event.player.PlayerEvent">
@@ -249,10 +260,10 @@ extends <a href="../../../../../io/papermc/paper/event/player/AbstractChatEvent.
 <!--   -->
 </a>
 <h3>Constructor Detail</h3>
-<a name="AsyncChatEvent-boolean-org.bukkit.entity.Player-java.util.Set-io.papermc.paper.chat.ChatFormatter-net.kyori.adventure.text.Component-">
+<a name="AsyncChatEvent-boolean-org.bukkit.entity.Player-java.util.Set-io.papermc.paper.chat.ChatComposer-net.kyori.adventure.text.Component-">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>AsyncChatEvent</h4>
 <pre>public&nbsp;AsyncChatEvent(boolean&nbsp;async,
@@ -261,9 +272,36 @@ extends <a href="../../../../../io/papermc/paper/event/player/AbstractChatEvent.
                       @NotNull
                       java.util.Set&lt;<a href="../../../../../org/bukkit/entity/Player.html" title="interface in org.bukkit.entity">Player</a>&gt;&nbsp;recipients,
                       @NotNull
-                      <a href="../../../../../io/papermc/paper/chat/ChatFormatter.html" title="interface in io.papermc.paper.chat">ChatFormatter</a>&nbsp;formatter,
+                      <a href="../../../../../io/papermc/paper/chat/ChatComposer.html" title="interface in io.papermc.paper.chat">ChatComposer</a>&nbsp;composer,
                       @NotNull
                       net.kyori.adventure.text.Component&nbsp;message)</pre>
+</li>
+</ul>
+<a name="AsyncChatEvent-boolean-org.bukkit.entity.Player-java.util.Set-io.papermc.paper.chat.ChatFormatter-net.kyori.adventure.text.Component-">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>AsyncChatEvent</h4>
+<pre>@Deprecated
+public&nbsp;AsyncChatEvent(boolean&nbsp;async,
+                                  @NotNull
+                                  <a href="../../../../../org/bukkit/entity/Player.html" title="interface in org.bukkit.entity">Player</a>&nbsp;player,
+                                  @NotNull
+                                  java.util.Set&lt;<a href="../../../../../org/bukkit/entity/Player.html" title="interface in org.bukkit.entity">Player</a>&gt;&nbsp;recipients,
+                                  @NotNull
+                                  <a href="../../../../../io/papermc/paper/chat/ChatFormatter.html" title="interface in io.papermc.paper.chat">ChatFormatter</a>&nbsp;formatter,
+                                  @NotNull
+                                  net.kyori.adventure.text.Component&nbsp;message)</pre>
+<div class="block"><span class="deprecatedLabel">Deprecated.</span>&nbsp;<span class="deprecationComment">use <a href="../../../../../io/papermc/paper/event/player/AsyncChatEvent.html#AsyncChatEvent-boolean-org.bukkit.entity.Player-java.util.Set-io.papermc.paper.chat.ChatComposer-net.kyori.adventure.text.Component-"><code>AsyncChatEvent(boolean, Player, Set, ChatComposer, Component)</code></a></span></div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>async</code> - Async</dd>
+<dd><code>player</code> - Player</dd>
+<dd><code>recipients</code> - Recipients</dd>
+<dd><code>formatter</code> - Formatter</dd>
+<dd><code>message</code> - Message</dd>
+</dl>
 </li>
 </ul>
 </li>
