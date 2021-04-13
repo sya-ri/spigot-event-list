@@ -6,7 +6,7 @@ export const EventSources: EventSource[] = [
     downloadUrl: "https://papermc.io/downloads#Paper-1.16",
     allClasses: "allclasses-noframe.html",
     deprecateList: "deprecated-list.html",
-    version: "#576",
+    version: "#592",
     downloadSources: ["bukkit", "spigot", "paper"],
   },
   {
@@ -14,7 +14,7 @@ export const EventSources: EventSource[] = [
     downloadUrl: "https://purpur.pl3x.net/downloads/#1.16.5",
     allClasses: "allclasses-index.html",
     deprecateList: "deprecated-list.html",
-    version: "#1051",
+    version: "#1056",
     downloadSources: ["purpur"],
   },
   {
@@ -22,7 +22,7 @@ export const EventSources: EventSource[] = [
     downloadUrl: "https://yatopiamc.org/download.html",
     allClasses: "allclasses-noframe.html",
     deprecateList: "deprecated-list.html",
-    version: "#42",
+    version: "#77",
     downloadSources: ["yatopia"],
   },
 ];

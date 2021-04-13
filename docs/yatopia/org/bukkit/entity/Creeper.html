@@ -17,7 +17,7 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6};
+var methods = {"i0":6,"i1":6,"i2":6,"i3":6,"i4":6,"i5":6,"i6":6,"i7":6,"i8":6,"i9":6,"i10":6,"i11":6};
 var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -154,7 +154,8 @@ extends <a href="../../../org/bukkit/entity/Monster.html" title="interface in or
 <tr id="i2" class="altColor">
 <td class="colFirst"><code>int</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/Creeper.html#getFuseTicks--">getFuseTicks</a></span>()</code>
-<div class="block">Get the number of ticks this creeper has been ignited (armed to explode)</div>
+<div class="block">Get the maximum fuse ticks for this Creeper, where the ticks is the
+ amount of time in which a creeper has been in the primed state.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
@@ -191,11 +192,18 @@ extends <a href="../../../org/bukkit/entity/Monster.html" title="interface in or
 </tr>
 <tr id="i8" class="altColor">
 <td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/Creeper.html#setFuseTicks-int-">setFuseTicks</a></span>(int&nbsp;ticks)</code>
+<div class="block">Set the fuse ticks for this Creeper, where the ticks is the amount of
+ time in which a creeper has been in the primed state.</div>
+</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/Creeper.html#setIgnited-boolean-">setIgnited</a></span>(boolean&nbsp;ignited)</code>
 <div class="block">Set whether creeper is ignited or not (armed to explode)</div>
 </td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i10" class="altColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/Creeper.html#setMaxFuseTicks-int-">setMaxFuseTicks</a></span>(int&nbsp;ticks)</code>
 <div class="block">Set the maximum fuse ticks for this Creeper, where the maximum ticks
@@ -203,7 +211,7 @@ extends <a href="../../../org/bukkit/entity/Monster.html" title="interface in or
  primed state before exploding.</div>
 </td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i11" class="rowColor">
 <td class="colFirst"><code>void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/entity/Creeper.html#setPowered-boolean-">setPowered</a></span>(boolean&nbsp;value)</code>
 <div class="block">Sets the Powered status of this Creeper</div>
@@ -389,6 +397,36 @@ extends <a href="../../../org/bukkit/entity/Monster.html" title="interface in or
 </dl>
 </li>
 </ul>
+<a name="setFuseTicks-int-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setFuseTicks</h4>
+<pre>void&nbsp;setFuseTicks(int&nbsp;ticks)</pre>
+<div class="block">Set the fuse ticks for this Creeper, where the ticks is the amount of
+ time in which a creeper has been in the primed state.</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>ticks</code> - the new fuse ticks</dd>
+</dl>
+</li>
+</ul>
+<a name="getFuseTicks--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getFuseTicks</h4>
+<pre>int&nbsp;getFuseTicks()</pre>
+<div class="block">Get the maximum fuse ticks for this Creeper, where the ticks is the
+ amount of time in which a creeper has been in the primed state.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the fuse ticks</dd>
+</dl>
+</li>
+</ul>
 <a name="setExplosionRadius-int-">
 <!--   -->
 </a>
@@ -465,7 +503,7 @@ extends <a href="../../../org/bukkit/entity/Monster.html" title="interface in or
 <a name="isIgnited--">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>isIgnited</h4>
 <pre>boolean&nbsp;isIgnited()</pre>
@@ -473,20 +511,6 @@ extends <a href="../../../org/bukkit/entity/Monster.html" title="interface in or
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Ignited state</dd>
-</dl>
-</li>
-</ul>
-<a name="getFuseTicks--">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>getFuseTicks</h4>
-<pre>int&nbsp;getFuseTicks()</pre>
-<div class="block">Get the number of ticks this creeper has been ignited (armed to explode)</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>Ticks creeper has been ignited</dd>
 </dl>
 </li>
 </ul>
