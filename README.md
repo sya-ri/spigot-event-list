@@ -9,9 +9,9 @@ Bukkit, Spigot, Paper, Purpur, Yatopia のイベント一覧です。
 不明点や指摘については Issue や PullRequest にお願いします。
 
 ## 参考にしている Javadoc
-- https://papermc.io/javadocs/paper/1.16/ [`#592`](https://papermc.io/downloads#Paper-1.16)
-- https://purpur.pl3x.net/javadoc/ [`#1056`](https://purpur.pl3x.net/downloads/#1.16.5)
-- https://sya-ri.github.io/spigot-event-list/yatopia/ [`#77`](https://yatopiamc.org/download.html)
+- https://papermc.io/javadocs/paper/1.16/ [`#628`](https://papermc.io/downloads#Paper-1.16)
+- https://purpur.pl3x.net/javadoc/ [`#1060`](https://purpur.pl3x.net/downloads/#1.16.5)
+- https://sya-ri.github.io/spigot-event-list/yatopia/ [`#88`](https://yatopiamc.org/download.html)
 
 ## 環境毎のイベント一覧
 - [bukkit](only-bukkit.md)
@@ -416,6 +416,8 @@ LootTable によってアイテムが補充される時に呼び出される。
 プレイヤーが地面からアイテムを拾おうとする時に呼び出される。
 ### `bukkit` [PlayerBedEnterEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBedEnterEvent.html)
 プレイヤーがベッドに入る時に呼び出される。
+### `paper` [PlayerBedFailEnterEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerBedFailEnterEvent.html)
+
 ### `bukkit` [PlayerBedLeaveEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBedLeaveEvent.html)
 プレイヤーがベッドから出る時に呼び出される。
 ### `purpur` [PlayerBookTooLargeEvent](https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/player/PlayerBookTooLargeEvent.html)
@@ -426,6 +428,8 @@ LootTable によってアイテムが補充される時に呼び出される。
 プレイヤーがバケツを操作する時に呼び出される。
 ### `bukkit` [PlayerBucketFillEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketFillEvent.html)
 プレイヤーがバケツを満たす時に呼び出される。
+### `bukkit` [PlayerBucketFishEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketFishEvent.html)
+
 ### `paper` [PlayerChangeBeaconEffectEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerChangeBeaconEffectEvent.html)
 プレイヤーがビーコンの効果を変更する時に呼び出される。
 ### `bukkit` [PlayerChangedMainHandEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChangedMainHandEvent.html)
@@ -456,6 +460,8 @@ LootTable によってアイテムが補充される時に呼び出される。
 プレイヤーがサーバーから切断された時に呼び出される。
 ### `bukkit` [PlayerDeathEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/PlayerDeathEvent.html)
 プレイヤーが死んだ時に呼び出される。
+### `paper` [PlayerDeepSleepEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerDeepSleepEvent.html)
+
 ### `bukkit` [PlayerDropItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerDropItemEvent.html)
 プレイヤーのインベントリからアイテムをドロップする時に呼び出される。
 ### `bukkit` [PlayerEditBookEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerEditBookEvent.html)
@@ -705,6 +711,8 @@ RCON を介してコマンド入力を受け取った時に呼び出される。
 スライムがエンティティを標的として移動を開始しようと決めた時に呼び出される。
 ### `paper` [SlimeWanderEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/SlimeWanderEvent.html)
 スライムがランダムに移動することを決めた時に呼び出される。
+### `bukkit` [SmithItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/SmithItemEvent.html)
+
 ### `bukkit` [SpawnChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/SpawnChangeEvent.html)
 ワールドのスポーン位置が変更された時に呼び出される。
 ### `bukkit` [SpawnerSpawnEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/SpawnerSpawnEvent.html)

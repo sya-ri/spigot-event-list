@@ -88,6 +88,8 @@ LootTable によってアイテムが補充される時に呼び出される。
 プレイヤーの鎧が変更された時に呼び出される。
 ### `paper` [PlayerAttackEntityCooldownResetEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerAttackEntityCooldownResetEvent.html)
 プレイヤーの攻撃クールダウンがリセットする時に呼び出される。
+### `paper` [PlayerBedFailEnterEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerBedFailEnterEvent.html)
+
 ### `paper` [PlayerChangeBeaconEffectEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerChangeBeaconEffectEvent.html)
 プレイヤーがビーコンの効果を変更する時に呼び出される。
 ### `paper` [PlayerChunkLoadEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/packet/PlayerChunkLoadEvent.html)
@@ -98,6 +100,8 @@ LootTable によってアイテムが補充される時に呼び出される。
 プレイヤーがクライアント設定を変更した時に呼び出される。
 ### `paper` [PlayerConnectionCloseEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerConnectionCloseEvent.html)
 プレイヤーがサーバーから切断された時に呼び出される。
+### `paper` [PlayerDeepSleepEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerDeepSleepEvent.html)
+
 ### `paper` [PlayerElytraBoostEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerElytraBoostEvent.html)
 プレイヤーが花火を使いエリトラ飛行のブーストをする時に呼び出される。
 ### `paper` [PlayerFlowerPotManipulateEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerFlowerPotManipulateEvent.html)

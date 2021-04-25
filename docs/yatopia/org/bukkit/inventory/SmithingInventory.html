@@ -17,8 +17,8 @@
     catch(err) {
     }
 //-->
-var methods = {"i0":18,"i1":18,"i2":18,"i3":18,"i4":18,"i5":18};
-var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],16:["t5","Default Methods"]};
+var methods = {"i0":18,"i1":18,"i2":6,"i3":6,"i4":18,"i5":18,"i6":6};
+var tabs = {65535:["t0","All Methods"],2:["t2","Instance Methods"],4:["t3","Abstract Methods"],16:["t5","Default Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
 var tableTab = "tableTab";
@@ -119,7 +119,7 @@ extends <a href="../../../org/bukkit/inventory/Inventory.html" title="interface 
 </a>
 <h3>Method Summary</h3>
 <table class="memberSummary" border="0" cellpadding="3" cellspacing="0" summary="Method Summary table, listing methods, and an explanation">
-<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t5" class="tableTab"><span><a href="javascript:show(16);">Default Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
+<caption><span id="t0" class="activeTableTab"><span>All Methods</span><span class="tabEnd">&nbsp;</span></span><span id="t2" class="tableTab"><span><a href="javascript:show(2);">Instance Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t3" class="tableTab"><span><a href="javascript:show(4);">Abstract Methods</a></span><span class="tabEnd">&nbsp;</span></span><span id="t5" class="tableTab"><span><a href="javascript:show(16);">Default Methods</a></span><span class="tabEnd">&nbsp;</span></span></caption>
 <tr>
 <th class="colFirst" scope="col">Modifier and Type</th>
 <th class="colLast" scope="col">Method and Description</th>
@@ -137,27 +137,33 @@ extends <a href="../../../org/bukkit/inventory/Inventory.html" title="interface 
 </td>
 </tr>
 <tr id="i2" class="altColor">
-<td class="colFirst"><code>default <a href="../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a></code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/inventory/SmithingInventory.html#getResult--">getResult</a></span>()</code>
-<div class="block">Gets the result item.</div>
+<td class="colFirst"><code><a href="../../../org/bukkit/inventory/Recipe.html" title="interface in org.bukkit.inventory">Recipe</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/inventory/SmithingInventory.html#getRecipe--">getRecipe</a></span>()</code>
+<div class="block">Get the current recipe formed on the smithing table, if any.</div>
 </td>
 </tr>
 <tr id="i3" class="rowColor">
+<td class="colFirst"><code><a href="../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a></code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/inventory/SmithingInventory.html#getResult--">getResult</a></span>()</code>
+<div class="block">Check what item is in the result slot of this smithing table.</div>
+</td>
+</tr>
+<tr id="i4" class="altColor">
 <td class="colFirst"><code>default void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/inventory/SmithingInventory.html#setInputEquipment-org.bukkit.inventory.ItemStack-">setInputEquipment</a></span>(<a href="../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&nbsp;itemStack)</code>
 <div class="block">Sets the input equipment (first slot).</div>
 </td>
 </tr>
-<tr id="i4" class="altColor">
+<tr id="i5" class="rowColor">
 <td class="colFirst"><code>default void</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/inventory/SmithingInventory.html#setInputMineral-org.bukkit.inventory.ItemStack-">setInputMineral</a></span>(<a href="../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&nbsp;itemStack)</code>
 <div class="block">Sets the input mineral (second slot).</div>
 </td>
 </tr>
-<tr id="i5" class="rowColor">
-<td class="colFirst"><code>default void</code></td>
-<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/inventory/SmithingInventory.html#setResult-org.bukkit.inventory.ItemStack-">setResult</a></span>(<a href="../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&nbsp;itemStack)</code>
-<div class="block">Sets the result item.</div>
+<tr id="i6" class="altColor">
+<td class="colFirst"><code>void</code></td>
+<td class="colLast"><code><span class="memberNameLink"><a href="../../../org/bukkit/inventory/SmithingInventory.html#setResult-org.bukkit.inventory.ItemStack-">setResult</a></span>(<a href="../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&nbsp;newResult)</code>
+<div class="block">Set the item in the result slot of the smithing table</div>
 </td>
 </tr>
 </table>
@@ -189,6 +195,52 @@ extends <a href="../../../org/bukkit/inventory/Inventory.html" title="interface 
 <!--   -->
 </a>
 <h3>Method Detail</h3>
+<a name="getResult--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getResult</h4>
+<pre>@Nullable
+<a href="../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&nbsp;getResult()</pre>
+<div class="block">Check what item is in the result slot of this smithing table.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the result item</dd>
+</dl>
+</li>
+</ul>
+<a name="setResult-org.bukkit.inventory.ItemStack-">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>setResult</h4>
+<pre>void&nbsp;setResult(@Nullable
+               <a href="../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&nbsp;newResult)</pre>
+<div class="block">Set the item in the result slot of the smithing table</div>
+<dl>
+<dt><span class="paramLabel">Parameters:</span></dt>
+<dd><code>newResult</code> - the new result item</dd>
+</dl>
+</li>
+</ul>
+<a name="getRecipe--">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>getRecipe</h4>
+<pre>@Nullable
+<a href="../../../org/bukkit/inventory/Recipe.html" title="interface in org.bukkit.inventory">Recipe</a>&nbsp;getRecipe()</pre>
+<div class="block">Get the current recipe formed on the smithing table, if any.</div>
+<dl>
+<dt><span class="returnLabel">Returns:</span></dt>
+<dd>the recipe, or null if the current contents don't match any
+ recipe</dd>
+</dl>
+</li>
+</ul>
 <a name="getInputEquipment--">
 <!--   -->
 </a>
@@ -237,42 +289,12 @@ default&nbsp;<a href="../../../org/bukkit/inventory/ItemStack.html" title="class
 <a name="setInputMineral-org.bukkit.inventory.ItemStack-">
 <!--   -->
 </a>
-<ul class="blockList">
+<ul class="blockListLast">
 <li class="blockList">
 <h4>setInputMineral</h4>
 <pre>default&nbsp;void&nbsp;setInputMineral(@Nullable
                              <a href="../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&nbsp;itemStack)</pre>
 <div class="block">Sets the input mineral (second slot).</div>
-<dl>
-<dt><span class="paramLabel">Parameters:</span></dt>
-<dd><code>itemStack</code> - item to set</dd>
-</dl>
-</li>
-</ul>
-<a name="getResult--">
-<!--   -->
-</a>
-<ul class="blockList">
-<li class="blockList">
-<h4>getResult</h4>
-<pre>@Nullable
-default&nbsp;<a href="../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&nbsp;getResult()</pre>
-<div class="block">Gets the result item.</div>
-<dl>
-<dt><span class="returnLabel">Returns:</span></dt>
-<dd>result</dd>
-</dl>
-</li>
-</ul>
-<a name="setResult-org.bukkit.inventory.ItemStack-">
-<!--   -->
-</a>
-<ul class="blockListLast">
-<li class="blockList">
-<h4>setResult</h4>
-<pre>default&nbsp;void&nbsp;setResult(@Nullable
-                       <a href="../../../org/bukkit/inventory/ItemStack.html" title="class in org.bukkit.inventory">ItemStack</a>&nbsp;itemStack)</pre>
-<div class="block">Sets the result item.</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>itemStack</code> - item to set</dd>

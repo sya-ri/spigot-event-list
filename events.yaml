@@ -747,6 +747,10 @@
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBedEnterEvent.html
   source: bukkit
   description: プレイヤーがベッドに入る時に呼び出される。
+- name: PlayerBedFailEnterEvent
+  link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerBedFailEnterEvent.html
+  source: paper
+  description: ''
 - name: PlayerBedLeaveEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBedLeaveEvent.html
   source: bukkit
@@ -767,6 +771,10 @@
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketFillEvent.html
   source: bukkit
   description: プレイヤーがバケツを満たす時に呼び出される。
+- name: PlayerBucketFishEvent
+  link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketFishEvent.html
+  source: bukkit
+  description: ''
 - name: PlayerChangeBeaconEffectEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerChangeBeaconEffectEvent.html
   source: paper
@@ -823,6 +831,10 @@
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/PlayerDeathEvent.html
   source: bukkit
   description: プレイヤーが死んだ時に呼び出される。
+- name: PlayerDeepSleepEvent
+  link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerDeepSleepEvent.html
+  source: paper
+  description: ''
 - name: PlayerDropItemEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerDropItemEvent.html
   source: bukkit
@@ -1310,6 +1322,10 @@
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/SlimeWanderEvent.html
   source: paper
   description: スライムがランダムに移動することを決めた時に呼び出される。
+- name: SmithItemEvent
+  link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/SmithItemEvent.html
+  source: bukkit
+  description: ''
 - name: SpawnChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/SpawnChangeEvent.html
   source: bukkit
