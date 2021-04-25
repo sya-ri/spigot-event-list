@@ -297,7 +297,7 @@ LootTable によってアイテムが生成される時に呼び出される。
 ### `bukkit` [PlayerBucketFillEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketFillEvent.html)
 プレイヤーがバケツを満たす時に呼び出される。
 ### `bukkit` [PlayerBucketFishEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketFishEvent.html)
-
+プレイヤーがバケツに魚を入れる時に呼び出される。
 ### `bukkit` [PlayerChangedMainHandEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChangedMainHandEvent.html)
 プレイヤーがメインハンドの左右の設定を切り替えた時に呼び出される。
 ### `bukkit` [PlayerChangedWorldEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChangedWorldEvent.html)
@@ -470,7 +470,7 @@ RCON を介してコマンド入力を受け取った時に呼び出される。
 ### `bukkit` [SlimeSplitEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/SlimeSplitEvent.html)
 スライムが死ぬことで分裂した時に呼び出される。
 ### `bukkit` [SmithItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/SmithItemEvent.html)
-
+レシピが鍛治台内で完成すると呼び出される。
 ### `bukkit` [SpawnChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/SpawnChangeEvent.html)
 ワールドのスポーン位置が変更された時に呼び出される。
 ### `bukkit` [SpawnerSpawnEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/SpawnerSpawnEvent.html)

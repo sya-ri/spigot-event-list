@@ -34,3 +34,17 @@ Bump versions
 * EventSource
 <name> v<last_version> -> v<version>
 ```
+
+#### イベントの説明を追加
+```
+イベントの説明を追加
+- <event_name>
+```
+
+#### イベントの説明を変更
+```
+イベントの説明を変更
+- <event_name>
+<description>
+
+```

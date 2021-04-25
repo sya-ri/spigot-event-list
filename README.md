@@ -417,7 +417,7 @@ LootTable によってアイテムが補充される時に呼び出される。
 ### `bukkit` [PlayerBedEnterEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBedEnterEvent.html)
 プレイヤーがベッドに入る時に呼び出される。
 ### `paper` [PlayerBedFailEnterEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerBedFailEnterEvent.html)
-
+ベッドに入れなかった時に呼び出される。
 ### `bukkit` [PlayerBedLeaveEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBedLeaveEvent.html)
 プレイヤーがベッドから出る時に呼び出される。
 ### `purpur` [PlayerBookTooLargeEvent](https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/player/PlayerBookTooLargeEvent.html)
@@ -429,7 +429,7 @@ LootTable によってアイテムが補充される時に呼び出される。
 ### `bukkit` [PlayerBucketFillEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketFillEvent.html)
 プレイヤーがバケツを満たす時に呼び出される。
 ### `bukkit` [PlayerBucketFishEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketFishEvent.html)
-
+プレイヤーがバケツに魚を入れる時に呼び出される。
 ### `paper` [PlayerChangeBeaconEffectEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerChangeBeaconEffectEvent.html)
 プレイヤーがビーコンの効果を変更する時に呼び出される。
 ### `bukkit` [PlayerChangedMainHandEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChangedMainHandEvent.html)
@@ -461,7 +461,7 @@ LootTable によってアイテムが補充される時に呼び出される。
 ### `bukkit` [PlayerDeathEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/PlayerDeathEvent.html)
 プレイヤーが死んだ時に呼び出される。
 ### `paper` [PlayerDeepSleepEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerDeepSleepEvent.html)
-
+プレイヤーが深い眠りに入る時に呼び出される。このイベントをキャンセルすると夜や嵐を通過しません。
 ### `bukkit` [PlayerDropItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerDropItemEvent.html)
 プレイヤーのインベントリからアイテムをドロップする時に呼び出される。
 ### `bukkit` [PlayerEditBookEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerEditBookEvent.html)
@@ -712,7 +712,7 @@ RCON を介してコマンド入力を受け取った時に呼び出される。
 ### `paper` [SlimeWanderEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/SlimeWanderEvent.html)
 スライムがランダムに移動することを決めた時に呼び出される。
 ### `bukkit` [SmithItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/SmithItemEvent.html)
-
+レシピが鍛治台内で完成すると呼び出される。
 ### `bukkit` [SpawnChangeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/SpawnChangeEvent.html)
 ワールドのスポーン位置が変更された時に呼び出される。
 ### `bukkit` [SpawnerSpawnEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/SpawnerSpawnEvent.html)

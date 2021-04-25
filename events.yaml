@@ -750,7 +750,7 @@
 - name: PlayerBedFailEnterEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerBedFailEnterEvent.html
   source: paper
-  description: ''
+  description: ベッドに入れなかった時に呼び出される。
 - name: PlayerBedLeaveEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBedLeaveEvent.html
   source: bukkit
@@ -774,7 +774,7 @@
 - name: PlayerBucketFishEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketFishEvent.html
   source: bukkit
-  description: ''
+  description: プレイヤーがバケツに魚を入れる時に呼び出される。
 - name: PlayerChangeBeaconEffectEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerChangeBeaconEffectEvent.html
   source: paper
@@ -834,7 +834,7 @@
 - name: PlayerDeepSleepEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerDeepSleepEvent.html
   source: paper
-  description: ''
+  description: プレイヤーが深い眠りに入る時に呼び出される。このイベントをキャンセルすると夜や嵐を通過しません。
 - name: PlayerDropItemEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerDropItemEvent.html
   source: bukkit
@@ -1325,7 +1325,7 @@
 - name: SmithItemEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/inventory/SmithItemEvent.html
   source: bukkit
-  description: ''
+  description: レシピが鍛治台内で完成すると呼び出される。
 - name: SpawnChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/world/SpawnChangeEvent.html
   source: bukkit
