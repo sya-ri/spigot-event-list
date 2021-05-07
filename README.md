@@ -49,9 +49,9 @@ AreaEffectCloud の効果が付与される時に呼び出される。5ティッ
 ### `bukkit` [BatToggleSleepEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/BatToggleSleepEvent.html)
 コウモリが眠ったり起きたりする時に呼び出される。
 ### `paper` [BeaconActivatedEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/BeaconActivatedEvent.html)
-
+ビーコンが有効になった時に呼び出される。
 ### `paper` [BeaconDeactivatedEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/BeaconDeactivatedEvent.html)
-
+ビーコンが無効になった時に呼び出される。
 ### `paper` [BeaconEffectEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/block/BeaconEffectEvent.html)
 ビーコンの効果がプレイヤーに適用される時に呼び出される。
 ### `paper` [BellRingEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/BellRingEvent.html)

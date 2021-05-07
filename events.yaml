@@ -47,11 +47,11 @@
 - name: BeaconActivatedEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/BeaconActivatedEvent.html
   source: paper
-  description: ''
+  description: ビーコンが有効になった時に呼び出される。
 - name: BeaconDeactivatedEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/BeaconDeactivatedEvent.html
   source: paper
-  description: ''
+  description: ビーコンが無効になった時に呼び出される。
 - name: BeaconEffectEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/block/BeaconEffectEvent.html
   source: paper
