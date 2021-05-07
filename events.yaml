@@ -44,6 +44,14 @@
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/BatToggleSleepEvent.html
   source: bukkit
   description: コウモリが眠ったり起きたりする時に呼び出される。
+- name: BeaconActivatedEvent
+  link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/BeaconActivatedEvent.html
+  source: paper
+  description: ''
+- name: BeaconDeactivatedEvent
+  link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/BeaconDeactivatedEvent.html
+  source: paper
+  description: ''
 - name: BeaconEffectEvent
   link: https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/block/BeaconEffectEvent.html
   source: paper
@@ -404,7 +412,6 @@
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPlaceEvent.html
   source: bukkit
   description: エンティティが設置された時に呼び出される。このイベントは現在、アーマースタンド・ボート・トロッコ・エンドクリスタルでのみ呼び出される。
-  deprecate: true
   deprecateDescription: 仮実装中。
 - name: EntityPortalEnterEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPortalEnterEvent.html

@@ -1,6 +1,6 @@
 # yatopia
 # https://repo.codemc.io/service/rest/repository/browse/maven-public/org/yatopiamc/yatopia-api/1.16.5-R0.1-SNAPSHOT/
-curl "https://repo.codemc.io/repository/maven-public/org/yatopiamc/yatopia-api/1.16.5-R0.1-SNAPSHOT/yatopia-api-1.16.5-R0.1-20210423.145503-175-javadoc.jar" -o "download.jar"
+curl "https://repo.codemc.io/repository/maven-public/org/yatopiamc/yatopia-api/1.16.5-R0.1-SNAPSHOT/yatopia-api-1.16.5-R0.1-20210506.190544-221-javadoc.jar" -o "download.jar"
 rm -r docs/yatopia
 unzip download.jar -d docs/yatopia
 

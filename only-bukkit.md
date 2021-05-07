@@ -163,8 +163,6 @@ AreaEffectCloud の効果が付与される時に呼び出される。5ティッ
 ### `bukkit` [EntityPickupItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPickupItemEvent.html)
 エンティティが地面からアイテムを拾う時に呼び出される。
 ### `bukkit` [EntityPlaceEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPlaceEvent.html)
-`@Deprecated` 仮実装中。
-
 エンティティが設置された時に呼び出される。このイベントは現在、アーマースタンド・ボート・トロッコ・エンドクリスタルでのみ呼び出される。
 ### `bukkit` [EntityPortalEnterEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPortalEnterEvent.html)
 エンティティがポータルに接触した時に呼び出される。

@@ -9,9 +9,9 @@ Bukkit, Spigot, Paper, Purpur, Yatopia のイベント一覧です。
 不明点や指摘については Issue や PullRequest にお願いします。
 
 ## 参考にしている Javadoc
-- https://papermc.io/javadocs/paper/1.16/ [`#628`](https://papermc.io/downloads#Paper-1.16)
-- https://purpur.pl3x.net/javadoc/ [`#1060`](https://purpur.pl3x.net/downloads/#1.16.5)
-- https://sya-ri.github.io/spigot-event-list/yatopia/ [`#88`](https://yatopiamc.org/download.html)
+- https://papermc.io/javadocs/paper/1.16/ [`#648`](https://papermc.io/downloads#Paper-1.16)
+- https://purpur.pl3x.net/javadoc/ [`#1085`](https://purpur.pl3x.net/downloads/#1.16.5)
+- https://sya-ri.github.io/spigot-event-list/yatopia/ [`#108`](https://yatopiamc.org/download.html)
 
 ## 環境毎のイベント一覧
 - [bukkit](only-bukkit.md)
@@ -48,6 +48,10 @@ AreaEffectCloud の効果が付与される時に呼び出される。5ティッ
 タブ補完を行う時に呼び出される。非同期で処理される。このイベントが結果を返す時、標準のタブ補完処理は発生しない。ただし、 [TabCompleteEvent](README.md#bukkit-tabcompleteevent) は非同期の結果と共に呼び出される。
 ### `bukkit` [BatToggleSleepEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/BatToggleSleepEvent.html)
 コウモリが眠ったり起きたりする時に呼び出される。
+### `paper` [BeaconActivatedEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/BeaconActivatedEvent.html)
+
+### `paper` [BeaconDeactivatedEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/BeaconDeactivatedEvent.html)
+
 ### `paper` [BeaconEffectEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/block/BeaconEffectEvent.html)
 ビーコンの効果がプレイヤーに適用される時に呼び出される。
 ### `paper` [BellRingEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/BellRingEvent.html)
@@ -237,8 +241,6 @@ AreaEffectCloud の効果が付与される時に呼び出される。5ティッ
 ### `bukkit` [EntityPickupItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPickupItemEvent.html)
 エンティティが地面からアイテムを拾う時に呼び出される。
 ### `bukkit` [EntityPlaceEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPlaceEvent.html)
-`@Deprecated` 仮実装中。
-
 エンティティが設置された時に呼び出される。このイベントは現在、アーマースタンド・ボート・トロッコ・エンドクリスタルでのみ呼び出される。
 ### `bukkit` [EntityPortalEnterEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityPortalEnterEvent.html)
 エンティティがポータルに接触した時に呼び出される。
