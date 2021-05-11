@@ -10,7 +10,10 @@
     "lint": "eslint src",
     "lint:fix": "eslint --fix src",
     "update": "npm run download && npm run generate",
-    "update-javadoc-gh-pages": "sh src/update-javadoc-gh-pages.sh"
+    "update-javadoc-gh-pages": "sh src/update-javadoc-gh-pages.sh",
+    "ncu": "ncu",
+    "ncu:update": "ncu -u",
+    "sort-package-json": "sort-package-json"
   },
   "dependencies": {
     "cheerio": "^1.0.0-rc.9",
@@ -29,6 +32,8 @@
     "eslint": "^7.25.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
-    "prettier": "^2.2.1"
+    "npm-check-updates": "^11.5.11",
+    "prettier": "^2.2.1",
+    "sort-package-json": "^1.50.0"
   }
 }
