@@ -225,7 +225,8 @@ AreaEffectCloud の効果が付与される時に呼び出される。5ティッ
 ### `bukkit` [EntityExplodeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityExplodeEvent.html)
 エンティティが爆発する時に呼び出される。
 ### `paper` [EntityInsideBlockEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/entity/EntityInsideBlockEvent.html)
-
+エンティティがブロックのヒットボックスに入る時に呼び出される。キャンセルされるとブロックに入ったことによって起きる処理が実行されない。以下に例を示す。
+- 大釜に入り、エンティティが消火される。
 ### `bukkit` [EntityInteractEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityInteractEvent.html)
 エンティティ同士が押し合う時に呼び出される。
 ### `paper` [EntityJumpEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityJumpEvent.html)
@@ -560,7 +561,7 @@ LootTable によってアイテムが補充される時に呼び出される。
 
 プレイヤーがログインしようとしている時に呼び出される。
 ### `paper` [PlayerPurchaseEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerPurchaseEvent.html)
-
+プレイヤーが村人と取引する時に呼び出される。
 ### `bukkit` [PlayerQuitEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerQuitEvent.html)
 プレイヤーがサーバーから退出した時に呼び出される。
 ### `paper` [PlayerReadyArrowEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerReadyArrowEvent.html)

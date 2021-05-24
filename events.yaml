@@ -379,7 +379,9 @@
 - name: EntityInsideBlockEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/entity/EntityInsideBlockEvent.html
   source: paper
-  description: ''
+  description: |-
+    エンティティがブロックのヒットボックスに入る時に呼び出される。キャンセルされるとブロックに入ったことによって起きる処理が実行されない。以下に例を示す。
+    - 大釜に入り、エンティティが消火される。
 - name: EntityInteractEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityInteractEvent.html
   source: bukkit
@@ -1027,7 +1029,7 @@
 - name: PlayerPurchaseEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerPurchaseEvent.html
   source: paper
-  description: ''
+  description: プレイヤーが村人と取引する時に呼び出される。
 - name: PlayerQuitEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerQuitEvent.html
   source: bukkit
