@@ -133,19 +133,17 @@ const main = async () => {
   // データを並び替え
   const events = Object.keys(eventMap)
     .sort()
-    .map(
-      (key): Event => {
-        const value = eventMap[key];
-        return {
-          name: value.name,
-          link: value.link,
-          source: value.source,
-          description: value.description,
-          deprecate: value.deprecate,
-          deprecateDescription: value.deprecateDescription,
-        };
-      }
-    );
+    .map((key): Event => {
+      const value = eventMap[key];
+      return {
+        name: value.name,
+        link: value.link,
+        source: value.source,
+        description: value.description,
+        deprecate: value.deprecate,
+        deprecateDescription: value.deprecateDescription,
+      };
+    });
 
   // イベント数を出力
   console.log(`総イベント数: ${events.length}`);

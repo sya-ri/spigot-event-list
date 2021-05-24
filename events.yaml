@@ -376,6 +376,10 @@
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityExplodeEvent.html
   source: bukkit
   description: エンティティが爆発する時に呼び出される。
+- name: EntityInsideBlockEvent
+  link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/entity/EntityInsideBlockEvent.html
+  source: paper
+  description: ''
 - name: EntityInteractEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityInteractEvent.html
   source: bukkit
@@ -1020,6 +1024,10 @@
   description: プレイヤーがログインしようとしている時に呼び出される。
   deprecate: true
   deprecateDescription: 非同期で処理をする為に [AsyncPlayerPreLoginEvent](README.md#bukkit-asyncplayerpreloginevent) を使う。
+- name: PlayerPurchaseEvent
+  link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerPurchaseEvent.html
+  source: paper
+  description: ''
 - name: PlayerQuitEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerQuitEvent.html
   source: bukkit

@@ -9,9 +9,9 @@ Bukkit, Spigot, Paper, Purpur, Yatopia のイベント一覧です。
 不明点や指摘については Issue や PullRequest にお願いします。
 
 ## 参考にしている Javadoc
-- https://papermc.io/javadocs/paper/1.16/ [`#660`](https://papermc.io/downloads#Paper-1.16)
-- https://purpur.pl3x.net/javadoc/ [`#1091`](https://purpur.pl3x.net/downloads/#1.16.5)
-- https://sya-ri.github.io/spigot-event-list/yatopia/ [`#108`](https://yatopiamc.org/download.html)
+- https://papermc.io/javadocs/paper/1.16/ [`#727`](https://papermc.io/downloads#Paper-1.16)
+- https://purpur.pl3x.net/javadoc/ [`#1127`](https://purpur.pl3x.net/downloads/#1.16.5)
+- https://sya-ri.github.io/spigot-event-list/yatopia/ [`#115`](https://yatopiamc.org/download.html)
 
 ## 環境毎のイベント一覧
 - [bukkit](only-bukkit.md)
@@ -224,6 +224,8 @@ AreaEffectCloud の効果が付与される時に呼び出される。5ティッ
 プレイヤーに疲労が溜まると呼び出される。4を超える疲労値では、満腹度が1減少する。
 ### `bukkit` [EntityExplodeEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityExplodeEvent.html)
 エンティティが爆発する時に呼び出される。
+### `paper` [EntityInsideBlockEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/entity/EntityInsideBlockEvent.html)
+
 ### `bukkit` [EntityInteractEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EntityInteractEvent.html)
 エンティティ同士が押し合う時に呼び出される。
 ### `paper` [EntityJumpEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityJumpEvent.html)
@@ -557,6 +559,8 @@ LootTable によってアイテムが補充される時に呼び出される。
 `@Deprecated` 非同期で処理をする為に [AsyncPlayerPreLoginEvent](README.md#bukkit-asyncplayerpreloginevent) を使う。
 
 プレイヤーがログインしようとしている時に呼び出される。
+### `paper` [PlayerPurchaseEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerPurchaseEvent.html)
+
 ### `bukkit` [PlayerQuitEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerQuitEvent.html)
 プレイヤーがサーバーから退出した時に呼び出される。
 ### `paper` [PlayerReadyArrowEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerReadyArrowEvent.html)

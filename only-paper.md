@@ -48,6 +48,8 @@
 エンダーマンが逃げた時に呼び出される。
 ### `paper` [EntityAddToWorldEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityAddToWorldEvent.html)
 何らかの理由でワールドにエンティティが増えた時に呼び出される。
+### `paper` [EntityInsideBlockEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/entity/EntityInsideBlockEvent.html)
+
 ### `paper` [EntityJumpEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityJumpEvent.html)
 エンティティがジャンプする時に呼び出される。
 ### `paper` [EntityKnockbackByEntityEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EntityKnockbackByEntityEvent.html)
@@ -138,6 +140,8 @@ LootTable によってアイテムが補充される時に呼び出される。
 プレイヤーが地面から経験値オーブを拾う時に呼び出される。
 ### `paper` [PlayerPostRespawnEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerPostRespawnEvent.html)
 プレイヤーがリスポーンした後に呼び出される。
+### `paper` [PlayerPurchaseEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerPurchaseEvent.html)
+
 ### `paper` [PlayerReadyArrowEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerReadyArrowEvent.html)
 プレイヤーが弓を発射し、使用する矢を選ぶ時に呼び出される。
 ### `paper` [PlayerRecipeBookClickEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerRecipeBookClickEvent.html)
