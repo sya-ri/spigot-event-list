@@ -26,6 +26,10 @@
 `@Deprecated` 使われていない。
 
 不正なパケットが送られた時に呼び出される。
+### `bukkit` [PlayerBucketFishEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketFishEvent.html)
+`@Deprecated` 
+
+プレイヤーがバケツに魚を入れる時に呼び出される。
 ### `bukkit` [PlayerChatEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChatEvent.html)
 `@Deprecated` チャットの遅延が発生するので [AsyncPlayerChatEvent](README.md#bukkit-asyncplayerchatevent) を使う。
 

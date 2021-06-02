@@ -9,9 +9,9 @@ Bukkit, Spigot, Paper, Purpur, Yatopia のイベント一覧です。
 不明点や指摘については Issue や PullRequest にお願いします。
 
 ## 参考にしている Javadoc
-- https://papermc.io/javadocs/paper/1.16/ [`#727`](https://papermc.io/downloads#Paper-1.16)
-- https://purpur.pl3x.net/javadoc/ [`#1127`](https://purpur.pl3x.net/downloads/#1.16.5)
-- https://sya-ri.github.io/spigot-event-list/yatopia/ [`#115`](https://yatopiamc.org/download.html)
+- https://papermc.io/javadocs/paper/1.16/ [`#759`](https://papermc.io/downloads#Paper-1.16)
+- https://purpur.pl3x.net/javadoc/ [`#1156`](https://purpur.pl3x.net/downloads/#1.16.5)
+- https://s7a.dev/spigot-event-list/yatopia/ [`#118`](https://yatopiamc.org/download.html)
 
 ## 環境毎のイベント一覧
 - [bukkit](only-bukkit.md)
@@ -54,6 +54,8 @@ AreaEffectCloud の効果が付与される時に呼び出される。5ティッ
 ビーコンが無効になった時に呼び出される。
 ### `paper` [BeaconEffectEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/block/BeaconEffectEvent.html)
 ビーコンの効果がプレイヤーに適用される時に呼び出される。
+### `paper` [BellRevealRaiderEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/BellRevealRaiderEvent.html)
+
 ### `paper` [BellRingEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/BellRingEvent.html)
 ベルが鳴る時に呼び出される。
 ### `bukkit` [BlockBreakEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockBreakEvent.html)
@@ -160,6 +162,8 @@ AreaEffectCloud の効果が付与される時に呼び出される。5ティッ
 クリーパーが雷撃を受ける時に呼び出される。
 ### `paper` [DragonEggFormEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/DragonEggFormEvent.html)
 エンダードラゴンが討伐され、卵が設置される時に呼び出される。
+### `paper` [ElderGuardianAppearanceEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/entity/ElderGuardianAppearanceEvent.html)
+
 ### `bukkit` [EnchantItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/enchantment/EnchantItemEvent.html)
 アイテムにエンチャントした時に呼び出される。
 ### `bukkit` [EnderDragonChangePhaseEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EnderDragonChangePhaseEvent.html)
@@ -319,7 +323,7 @@ AreaEffectCloud の効果が付与される時に呼び出される。5ティッ
 かまど内でアイテムが精錬される時に呼び出される。
 ### `paper` [GS4QueryEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/server/GS4QueryEvent.html)
 GS4クエリプロトコルがクエリされた時に呼び出される。
-### `yatopia` [GameProfileLookupEvent](https://sya-ri.github.io/spigot-event-list/yatopia/dev/tr7zw/yatopia/events/GameProfileLookupEvent.html)
+### `yatopia` [GameProfileLookupEvent](https://s7a.dev/spigot-event-list/yatopia/dev/tr7zw/yatopia/events/GameProfileLookupEvent.html)
 プロファイルが検索される時に呼び出される。Paper にプロファイル関連のイベントが複数あるのでそちらを使うのが良い。
 - [FillProfileEvent](README.md#paper-fillprofileevent)
 - [LookupProfileEvent](README.md#paper-lookupprofileevent)
@@ -401,6 +405,8 @@ LootTable によってアイテムが補充される時に呼び出される。
 豚が雷に打たれた時に呼び出される。
 ### `bukkit` [PigZombieAngerEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/PigZombieAngerEvent.html)
 ゾンビ豚が怒る時に呼び出される。
+### `bukkit` [PiglinBarterEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/PiglinBarterEvent.html)
+
 ### `purpur` [PlayerAFKEvent](https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/PlayerAFKEvent.html)
 プレイヤーのAFKモードに移行する時に呼び出される
 ### `paper` [PlayerAdvancementCriterionGrantEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerAdvancementCriterionGrantEvent.html)
@@ -415,7 +421,7 @@ LootTable によってアイテムが補充される時に呼び出される。
 プレイヤーがアーマースタンドに対してアイテムを交換・取得・配置する時に呼び出される。
 ### `paper` [PlayerAttackEntityCooldownResetEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerAttackEntityCooldownResetEvent.html)
 プレイヤーの攻撃クールダウンがリセットする時に呼び出される。
-### `yatopia` [PlayerAttackEntityEvent](https://sya-ri.github.io/spigot-event-list/yatopia/net/yatopia/api/event/PlayerAttackEntityEvent.html)
+### `yatopia` [PlayerAttackEntityEvent](https://s7a.dev/spigot-event-list/yatopia/net/yatopia/api/event/PlayerAttackEntityEvent.html)
 プレイヤーがエンティティに攻撃する時に呼び出される。[EntityDamageByEntityEvent](README.md#bukkit-entitydamagebyentityevent) よりも前に呼び出される。
 ### `bukkit` [PlayerAttemptPickupItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerAttemptPickupItemEvent.html)
 プレイヤーが地面からアイテムを拾おうとする時に呼び出される。
@@ -429,11 +435,15 @@ LootTable によってアイテムが補充される時に呼び出される。
 プレイヤーが本の制限を回避しようとした時に呼び出される。
 ### `bukkit` [PlayerBucketEmptyEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketEmptyEvent.html)
 プレイヤーがバケツを空にする時に呼び出される。
+### `bukkit` [PlayerBucketEntityEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketEntityEvent.html)
+
 ### `bukkit` [PlayerBucketEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketEvent.html)
 プレイヤーがバケツを操作する時に呼び出される。
 ### `bukkit` [PlayerBucketFillEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketFillEvent.html)
 プレイヤーがバケツを満たす時に呼び出される。
 ### `bukkit` [PlayerBucketFishEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketFishEvent.html)
+`@Deprecated` 
+
 プレイヤーがバケツに魚を入れる時に呼び出される。
 ### `paper` [PlayerChangeBeaconEffectEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerChangeBeaconEffectEvent.html)
 プレイヤーがビーコンの効果を変更する時に呼び出される。
@@ -660,6 +670,8 @@ Projectile がエンティティと衝突する時に呼び出される。キャ
 Projectile がエンティティに当たる時に呼び出される。
 ### `bukkit` [ProjectileLaunchEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ProjectileLaunchEvent.html)
 Projectile が発射される時に呼び出される。
+### `paper` [PufferFishStateChangeEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/entity/PufferFishStateChangeEvent.html)
+
 ### `bukkit` [RaidEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/raid/RaidEvent.html)
 レイドに関するイベントであることを表す。
 ### `bukkit` [RaidFinishEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/raid/RaidFinishEvent.html)

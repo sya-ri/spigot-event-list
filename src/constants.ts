@@ -4,9 +4,9 @@ export const EventSources: EventSource[] = [
   {
     javadocUrl: "https://papermc.io/javadocs/paper/1.16/",
     downloadUrl: "https://papermc.io/downloads#Paper-1.16",
-    allClasses: "allclasses-noframe.html",
+    allClasses: "allclasses-index.html",
     deprecateList: "deprecated-list.html",
-    version: "#727",
+    version: "#759",
     downloadSources: ["bukkit", "spigot", "paper"],
   },
   {
@@ -14,15 +14,15 @@ export const EventSources: EventSource[] = [
     downloadUrl: "https://purpur.pl3x.net/downloads/#1.16.5",
     allClasses: "allclasses-index.html",
     deprecateList: "deprecated-list.html",
-    version: "#1127",
+    version: "#1156",
     downloadSources: ["purpur"],
   },
   {
-    javadocUrl: "https://sya-ri.github.io/spigot-event-list/yatopia/",
+    javadocUrl: "https://s7a.dev/spigot-event-list/yatopia/",
     downloadUrl: "https://yatopiamc.org/download.html",
-    allClasses: "allclasses.html",
+    allClasses: "allclasses-index.html",
     deprecateList: "deprecated-list.html",
-    version: "#115",
+    version: "#118",
     downloadSources: ["yatopia"],
   },
 ];

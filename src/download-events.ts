@@ -28,7 +28,7 @@ const downloadEvents = async (
         $("a").each((_, element) => {
           const a = $(element);
           const href = a.prop("href");
-          if (href.endsWith("Event.html")) {
+          if (href && href.endsWith("Event.html")) {
             const name = href
               .substring(0, href.length - 5)
               .split("/")
