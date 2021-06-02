@@ -21,7 +21,7 @@
 ### `paper` [BeaconEffectEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/block/BeaconEffectEvent.html)
 ビーコンの効果がプレイヤーに適用される時に呼び出される。
 ### `paper` [BellRevealRaiderEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/BellRevealRaiderEvent.html)
-
+ベルによって Rider が正体を表した時に呼び出される。
 ### `paper` [BellRingEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/BellRingEvent.html)
 ベルが鳴る時に呼び出される。
 ### `paper` [BlockDestroyEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/block/BlockDestroyEvent.html)
@@ -39,7 +39,7 @@
 ### `paper` [DragonEggFormEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/DragonEggFormEvent.html)
 エンダードラゴンが討伐され、卵が設置される時に呼び出される。
 ### `paper` [ElderGuardianAppearanceEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/entity/ElderGuardianAppearanceEvent.html)
-
+エルダーガーディアンがプレイヤーの画面に表示される時に呼び出される。
 ### `paper` [EnderDragonFireballHitEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EnderDragonFireballHitEvent.html)
 エンダードラゴンが放った火球が衝突し、AreaEffectCloud が発生する時に呼び出される。
 ### `paper` [EnderDragonFlameEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/EnderDragonFlameEvent.html)
@@ -186,7 +186,7 @@ Mojang API を用いてプロファイルを検索する時に呼び出される
 ### `paper` [ProjectileCollideEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/entity/ProjectileCollideEvent.html)
 Projectile がエンティティと衝突する時に呼び出される。キャンセルすると Projectile は飛び続ける。
 ### `paper` [PufferFishStateChangeEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/entity/PufferFishStateChangeEvent.html)
-
+フグの状態が変化する時に呼び出される。
 ### `paper` [ServerExceptionEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/server/ServerExceptionEvent.html)
 回復可能な状況で例外が発生した時に呼び出される。
 ### `paper` [ServerResourcesReloadedEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/server/ServerResourcesReloadedEvent.html)

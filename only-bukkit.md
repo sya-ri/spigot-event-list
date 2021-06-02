@@ -277,7 +277,7 @@ LootTable によってアイテムが生成される時に呼び出される。
 ### `bukkit` [PigZombieAngerEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/PigZombieAngerEvent.html)
 ゾンビ豚が怒る時に呼び出される。
 ### `bukkit` [PiglinBarterEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/PiglinBarterEvent.html)
-
+ピグリンと物々交換する時に呼び出される。
 ### `bukkit` [PlayerAdvancementDoneEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerAdvancementDoneEvent.html)
 プレイヤーが進捗の条件を全て達成した時に呼び出される。
 ### `bukkit` [PlayerAnimationEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerAnimationEvent.html)
@@ -293,13 +293,13 @@ LootTable によってアイテムが生成される時に呼び出される。
 ### `bukkit` [PlayerBucketEmptyEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketEmptyEvent.html)
 プレイヤーがバケツを空にする時に呼び出される。
 ### `bukkit` [PlayerBucketEntityEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketEntityEvent.html)
-
+プレイヤーバケツにエンティティを入れる時に呼び出される。
 ### `bukkit` [PlayerBucketEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketEvent.html)
 プレイヤーがバケツを操作する時に呼び出される。
 ### `bukkit` [PlayerBucketFillEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketFillEvent.html)
 プレイヤーがバケツを満たす時に呼び出される。
 ### `bukkit` [PlayerBucketFishEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketFishEvent.html)
-`@Deprecated` 
+`@Deprecated` Paper であれば、[PlayerBucketEntityEvent](README.md#playerbucketentityevent) を使う。
 
 プレイヤーがバケツに魚を入れる時に呼び出される。
 ### `bukkit` [PlayerChangedMainHandEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChangedMainHandEvent.html)

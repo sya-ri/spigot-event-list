@@ -59,7 +59,7 @@
 - name: BellRevealRaiderEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/BellRevealRaiderEvent.html
   source: paper
-  description: ''
+  description: ベルによって Rider が正体を表した時に呼び出される。
 - name: BellRingEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/BellRingEvent.html
   source: paper
@@ -261,7 +261,7 @@
 - name: ElderGuardianAppearanceEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/entity/ElderGuardianAppearanceEvent.html
   source: paper
-  description: ''
+  description: エルダーガーディアンがプレイヤーの画面に表示される時に呼び出される。
 - name: EnchantItemEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/enchantment/EnchantItemEvent.html
   source: bukkit
@@ -731,7 +731,7 @@
 - name: PiglinBarterEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/PiglinBarterEvent.html
   source: bukkit
-  description: ''
+  description: ピグリンと物々交換する時に呼び出される。
 - name: PlayerAFKEvent
   link: https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/PlayerAFKEvent.html
   source: purpur
@@ -791,7 +791,7 @@
 - name: PlayerBucketEntityEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketEntityEvent.html
   source: bukkit
-  description: ''
+  description: プレイヤーバケツにエンティティを入れる時に呼び出される。
 - name: PlayerBucketEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketEvent.html
   source: bukkit
@@ -805,7 +805,7 @@
   source: bukkit
   description: プレイヤーがバケツに魚を入れる時に呼び出される。
   deprecate: true
-  deprecateDescription: ''
+  deprecateDescription: Paper であれば、[PlayerBucketEntityEvent](README.md#playerbucketentityevent) を使う。
 - name: PlayerChangeBeaconEffectEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerChangeBeaconEffectEvent.html
   source: paper
@@ -1244,7 +1244,7 @@
 - name: PufferFishStateChangeEvent
   link: https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/entity/PufferFishStateChangeEvent.html
   source: paper
-  description: ''
+  description: フグの状態が変化する時に呼び出される。
 - name: RaidEvent
   link: https://papermc.io/javadocs/paper/1.16/org/bukkit/event/raid/RaidEvent.html
   source: bukkit

@@ -55,7 +55,7 @@ AreaEffectCloud の効果が付与される時に呼び出される。5ティッ
 ### `paper` [BeaconEffectEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/block/BeaconEffectEvent.html)
 ビーコンの効果がプレイヤーに適用される時に呼び出される。
 ### `paper` [BellRevealRaiderEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/BellRevealRaiderEvent.html)
-
+ベルによって Rider が正体を表した時に呼び出される。
 ### `paper` [BellRingEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/BellRingEvent.html)
 ベルが鳴る時に呼び出される。
 ### `bukkit` [BlockBreakEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/block/BlockBreakEvent.html)
@@ -163,7 +163,7 @@ AreaEffectCloud の効果が付与される時に呼び出される。5ティッ
 ### `paper` [DragonEggFormEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/block/DragonEggFormEvent.html)
 エンダードラゴンが討伐され、卵が設置される時に呼び出される。
 ### `paper` [ElderGuardianAppearanceEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/entity/ElderGuardianAppearanceEvent.html)
-
+エルダーガーディアンがプレイヤーの画面に表示される時に呼び出される。
 ### `bukkit` [EnchantItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/enchantment/EnchantItemEvent.html)
 アイテムにエンチャントした時に呼び出される。
 ### `bukkit` [EnderDragonChangePhaseEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/EnderDragonChangePhaseEvent.html)
@@ -406,7 +406,7 @@ LootTable によってアイテムが補充される時に呼び出される。
 ### `bukkit` [PigZombieAngerEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/PigZombieAngerEvent.html)
 ゾンビ豚が怒る時に呼び出される。
 ### `bukkit` [PiglinBarterEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/PiglinBarterEvent.html)
-
+ピグリンと物々交換する時に呼び出される。
 ### `purpur` [PlayerAFKEvent](https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/PlayerAFKEvent.html)
 プレイヤーのAFKモードに移行する時に呼び出される
 ### `paper` [PlayerAdvancementCriterionGrantEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerAdvancementCriterionGrantEvent.html)
@@ -436,13 +436,13 @@ LootTable によってアイテムが補充される時に呼び出される。
 ### `bukkit` [PlayerBucketEmptyEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketEmptyEvent.html)
 プレイヤーがバケツを空にする時に呼び出される。
 ### `bukkit` [PlayerBucketEntityEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketEntityEvent.html)
-
+プレイヤーバケツにエンティティを入れる時に呼び出される。
 ### `bukkit` [PlayerBucketEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketEvent.html)
 プレイヤーがバケツを操作する時に呼び出される。
 ### `bukkit` [PlayerBucketFillEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketFillEvent.html)
 プレイヤーがバケツを満たす時に呼び出される。
 ### `bukkit` [PlayerBucketFishEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketFishEvent.html)
-`@Deprecated` 
+`@Deprecated` Paper であれば、[PlayerBucketEntityEvent](README.md#playerbucketentityevent) を使う。
 
 プレイヤーがバケツに魚を入れる時に呼び出される。
 ### `paper` [PlayerChangeBeaconEffectEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/player/PlayerChangeBeaconEffectEvent.html)
@@ -671,7 +671,7 @@ Projectile がエンティティに当たる時に呼び出される。
 ### `bukkit` [ProjectileLaunchEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/entity/ProjectileLaunchEvent.html)
 Projectile が発射される時に呼び出される。
 ### `paper` [PufferFishStateChangeEvent](https://papermc.io/javadocs/paper/1.16/io/papermc/paper/event/entity/PufferFishStateChangeEvent.html)
-
+フグの状態が変化する時に呼び出される。
 ### `bukkit` [RaidEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/raid/RaidEvent.html)
 レイドに関するイベントであることを表す。
 ### `bukkit` [RaidFinishEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/raid/RaidFinishEvent.html)

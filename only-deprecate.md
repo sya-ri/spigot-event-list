@@ -27,7 +27,7 @@
 
 不正なパケットが送られた時に呼び出される。
 ### `bukkit` [PlayerBucketFishEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerBucketFishEvent.html)
-`@Deprecated` 
+`@Deprecated` Paper であれば、[PlayerBucketEntityEvent](README.md#playerbucketentityevent) を使う。
 
 プレイヤーがバケツに魚を入れる時に呼び出される。
 ### `bukkit` [PlayerChatEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerChatEvent.html)
