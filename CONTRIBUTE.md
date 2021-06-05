@@ -20,7 +20,7 @@ npm run update-javadoc-gh-pages
 
 ### 依存関係の更新
 ```shell
-npx -p npm-check-updates -c "ncu -u"
+npm run ncu:update
 ```
 
 ## コミットメッセージテンプレート
