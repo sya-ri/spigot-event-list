@@ -3,6 +3,8 @@ Bukkit, Spigot, Paper, Purpur, Yatopia のイベント一覧です。
 イベントについて簡単な説明が書かれていますが、詳しい内容は Javadoc を参照してください。
 不明点や指摘については Issue や PullRequest にお願いします。
 
+- [CONTRIBUTE.md](CONTRIBUTE.md)
+
 ## 参考にしている Javadoc
 {{#each javadoc_links}}
 - [{{javadocUrl}}]({{javadocUrl}}) [`{{version}}`]({{downloadUrl}})
