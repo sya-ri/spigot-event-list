@@ -5,7 +5,7 @@ Bukkit, Spigot, Paper, Purpur, Yatopia のイベント一覧です。
 
 ## 参考にしている Javadoc
 {{#each javadoc_links}}
-- {{javadocUrl}} [`{{version}}`]({{downloadUrl}})
+- [{{javadocUrl}}]({{javadocUrl}}) [`{{version}}`]({{downloadUrl}})
 {{/each}}
 
 ## 環境毎のイベント一覧

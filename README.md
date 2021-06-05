@@ -9,9 +9,9 @@ Bukkit, Spigot, Paper, Purpur, Yatopia のイベント一覧です。
 不明点や指摘については Issue や PullRequest にお願いします。
 
 ## 参考にしている Javadoc
-- https://papermc.io/javadocs/paper/1.16/ [`#759`](https://papermc.io/downloads#Paper-1.16)
-- https://purpur.pl3x.net/javadoc/ [`#1156`](https://purpur.pl3x.net/downloads/#1.16.5)
-- https://s7a.dev/spigot-event-list/javadoc/yatopia/ [`#118`](https://yatopiamc.org/download.html)
+- [https://papermc.io/javadocs/paper/1.16/](https://papermc.io/javadocs/paper/1.16/) [`#759`](https://papermc.io/downloads#Paper-1.16)
+- [https://purpur.pl3x.net/javadoc/](https://purpur.pl3x.net/javadoc/) [`#1156`](https://purpur.pl3x.net/downloads/#1.16.5)
+- [https://s7a.dev/spigot-event-list/javadoc/yatopia/](https://s7a.dev/spigot-event-list/javadoc/yatopia/) [`#118`](https://yatopiamc.org/download.html)
 
 ## 環境毎のイベント一覧
 - [bukkit](only-bukkit.md)
@@ -323,7 +323,7 @@ AreaEffectCloud の効果が付与される時に呼び出される。5ティッ
 かまど内でアイテムが精錬される時に呼び出される。
 ### `paper` [GS4QueryEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/server/GS4QueryEvent.html)
 GS4クエリプロトコルがクエリされた時に呼び出される。
-### `yatopia` [GameProfileLookupEvent](https://s7a.dev/spigot-event-list/yatopia/dev/tr7zw/yatopia/events/GameProfileLookupEvent.html)
+### `yatopia` [GameProfileLookupEvent](https://s7a.dev/spigot-event-list/javadoc/yatopia/dev/tr7zw/yatopia/events/GameProfileLookupEvent.html)
 プロファイルが検索される時に呼び出される。Paper にプロファイル関連のイベントが複数あるのでそちらを使うのが良い。
 - [FillProfileEvent](README.md#paper-fillprofileevent)
 - [LookupProfileEvent](README.md#paper-lookupprofileevent)
@@ -421,7 +421,7 @@ LootTable によってアイテムが補充される時に呼び出される。
 プレイヤーがアーマースタンドに対してアイテムを交換・取得・配置する時に呼び出される。
 ### `paper` [PlayerAttackEntityCooldownResetEvent](https://papermc.io/javadocs/paper/1.16/com/destroystokyo/paper/event/player/PlayerAttackEntityCooldownResetEvent.html)
 プレイヤーの攻撃クールダウンがリセットする時に呼び出される。
-### `yatopia` [PlayerAttackEntityEvent](https://s7a.dev/spigot-event-list/yatopia/net/yatopia/api/event/PlayerAttackEntityEvent.html)
+### `yatopia` [PlayerAttackEntityEvent](https://s7a.dev/spigot-event-list/javadoc/yatopia/net/yatopia/api/event/PlayerAttackEntityEvent.html)
 プレイヤーがエンティティに攻撃する時に呼び出される。[EntityDamageByEntityEvent](README.md#bukkit-entitydamagebyentityevent) よりも前に呼び出される。
 ### `bukkit` [PlayerAttemptPickupItemEvent](https://papermc.io/javadocs/paper/1.16/org/bukkit/event/player/PlayerAttemptPickupItemEvent.html)
 プレイヤーが地面からアイテムを拾おうとする時に呼び出される。
