@@ -1,5 +1,17 @@
 name: Spigot Event List
-title: null
+title: Spigot Event List
+theme: jekyll-theme-primer
+lang: ja
+twitter:
+  username: fly_in_pig
+defaults:
+  - scope:
+      path: ""
+    values:
+      image:
+        path: /image/logo.png
+        height: 630
+        width: 1200
 exclude:
   - .idea
   - node_modules

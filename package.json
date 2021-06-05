@@ -5,6 +5,7 @@
   "license": "ISC",
   "author": "sya_ri",
   "scripts": {
+    "pages:start": "bundle exec jekyll serve",
     "download": "ts-node src/download-events.ts",
     "generate": "ts-node src/generate-output.ts",
     "lint": "eslint src",
