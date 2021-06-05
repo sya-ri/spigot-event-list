@@ -24,4 +24,5 @@ Bukkit, Spigot, Paper, Purpur, Yatopia のイベント一覧です。
 
 {{/if}}
 {{description}}
+
 {{/each}}
