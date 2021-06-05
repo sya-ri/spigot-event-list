@@ -1,2 +1,20 @@
 name: Spigot Event List
 title: null
+exclude:
+  - .idea
+  - node_modules
+  - src
+  - template
+  - vendor
+  - .eslintrc.json
+  - .gitignore
+  - _config.yml
+  - events.yaml
+  - exclude-events.yaml
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - package.json
+  - package-lock.json
+  - spigot-event-list.iml
+  - tsconfig.json
