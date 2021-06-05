@@ -1,0 +1,18 @@
+---
+---
+
+@import "jekyll-theme-primer";
+
+.footer {
+  position: fixed !important;
+  bottom: 0;
+  right: 0;
+  padding: 8px;
+}
+
+.footer-gh-icon {
+  background: #fff;
+  width: 48px;
+  height: 48px;
+  border-radius: 32px;
+}

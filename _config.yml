@@ -2,6 +2,7 @@ name: Spigot Event List
 title: Spigot Event List
 theme: jekyll-theme-primer
 lang: ja
+github: sya-ri/spigot-event-list
 twitter:
   username: fly_in_pig
 defaults:
