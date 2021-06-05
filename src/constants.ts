@@ -18,7 +18,7 @@ export const EventSources: EventSource[] = [
     downloadSources: ["purpur"],
   },
   {
-    javadocUrl: "https://s7a.dev/spigot-event-list/yatopia/",
+    javadocUrl: "https://s7a.dev/spigot-event-list/javadoc/yatopia/",
     downloadUrl: "https://yatopiamc.org/download.html",
     allClasses: "allclasses-index.html",
     deprecateList: "deprecated-list.html",
