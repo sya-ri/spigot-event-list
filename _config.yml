@@ -16,6 +16,7 @@ defaults:
 exclude:
   - .idea
   - node_modules
+  - scripts
   - src
   - template
   - vendor

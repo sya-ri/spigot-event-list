@@ -11,7 +11,7 @@
     "lint": "eslint src",
     "lint:fix": "eslint --fix src",
     "update": "npm run download && npm run generate",
-    "update-javadoc-gh-pages": "sh src/update-javadoc-gh-pages.sh",
+    "javadoc:1.16:yatopia": "sh scripts/javadoc/1.16/yatopia.sh",
     "ncu": "npx -p npm-check-updates -c \"ncu\"",
     "ncu:update": "npx -p npm-check-updates -c \"ncu -u\"",
     "sort-package-json": "npx sort-package-json"
