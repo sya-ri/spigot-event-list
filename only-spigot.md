@@ -6,13 +6,13 @@
 # spigot
 
 ## イベント一覧
-### `spigot` [EntityDismountEvent](https://papermc.io/javadocs/paper/1.16/org/spigotmc/event/entity/EntityDismountEvent.html)
+### `spigot` [EntityDismountEvent](https://papermc.io/javadocs/paper/1.17/org/spigotmc/event/entity/EntityDismountEvent.html)
 エンティティが乗っているエンティティが降りる時に呼び出される。
 
-### `spigot` [EntityMountEvent](https://papermc.io/javadocs/paper/1.16/org/spigotmc/event/entity/EntityMountEvent.html)
+### `spigot` [EntityMountEvent](https://papermc.io/javadocs/paper/1.17/org/spigotmc/event/entity/EntityMountEvent.html)
 エンティティがエンティティに乗る時に呼び出される。
 
-### `spigot` [PlayerSpawnLocationEvent](https://papermc.io/javadocs/paper/1.16/org/spigotmc/event/player/PlayerSpawnLocationEvent.html)
+### `spigot` [PlayerSpawnLocationEvent](https://papermc.io/javadocs/paper/1.17/org/spigotmc/event/player/PlayerSpawnLocationEvent.html)
 プレイヤーがサーバーに参加した後、スポーンしようとしている時に呼び出される。
 
 

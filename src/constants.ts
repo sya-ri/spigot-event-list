@@ -2,11 +2,11 @@ import { EventSource } from "./data-class";
 
 export const EventSources: EventSource[] = [
   {
-    javadocUrl: "https://papermc.io/javadocs/paper/1.16/",
-    downloadUrl: "https://papermc.io/downloads#Paper-1.16",
+    javadocUrl: "https://papermc.io/javadocs/paper/1.17/",
+    downloadUrl: "https://papermc.io/downloads#Paper-1.17",
     allClasses: "allclasses-index.html",
     deprecateList: "deprecated-list.html",
-    version: "#778",
+    version: "#12",
     downloadSources: ["bukkit", "spigot", "paper"],
   },
   {
