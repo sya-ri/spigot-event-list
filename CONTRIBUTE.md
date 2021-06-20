@@ -13,11 +13,6 @@ npm run download
 npm run generate
 ```
 
-#### GitHubPages に公開する内容を更新
-```shell
-npm run update-javadoc-gh-pages
-```
-
 ### 依存関係の更新
 ```shell
 npm run ncu:update
