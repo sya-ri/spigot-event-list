@@ -11,8 +11,8 @@ Bukkit, Spigot, Paper, Purpur, Yatopia のイベント一覧です。
 - [CONTRIBUTE.md](CONTRIBUTE.md)
 
 ## 参考にしている Javadoc
-- [https://papermc.io/javadocs/paper/1.16/](https://papermc.io/javadocs/paper/1.16/) [`#759`](https://papermc.io/downloads#Paper-1.16)
-- [https://purpur.pl3x.net/javadoc/](https://purpur.pl3x.net/javadoc/) [`#1156`](https://purpur.pl3x.net/downloads/#1.16.5)
+- [https://papermc.io/javadocs/paper/1.16/](https://papermc.io/javadocs/paper/1.16/) [`#778`](https://papermc.io/downloads#Paper-1.16)
+- [https://purpur.pl3x.net/javadoc/](https://purpur.pl3x.net/javadoc/) [`#1171`](https://purpur.pl3x.net/downloads/#1.16.5)
 - [https://s7a.dev/spigot-event-list/javadoc/1.16/yatopia/](https://s7a.dev/spigot-event-list/javadoc/1.16/yatopia/) [`#118`](https://yatopiamc.org/download.html)
 
 ## 環境毎のイベント一覧

@@ -17,22 +17,22 @@
     "sort-package-json": "npx sort-package-json"
   },
   "dependencies": {
-    "cheerio": "^1.0.0-rc.9",
+    "cheerio": "^1.0.0-rc.10",
     "handlebars": "^4.7.7",
     "js-yaml": "^4.1.0",
     "request": "^2.88.2",
     "request-promise": "^4.2.6",
     "ts-node": "^10.0.0",
-    "typescript": "^4.3.2"
+    "typescript": "^4.3.4"
   },
   "devDependencies": {
-    "@types/node": "^15.6.2",
+    "@types/node": "^15.12.4",
     "@types/request-promise": "^4.1.47",
-    "@typescript-eslint/eslint-plugin": "^4.26.0",
-    "@typescript-eslint/parser": "^4.26.0",
-    "eslint": "^7.27.0",
+    "@typescript-eslint/eslint-plugin": "^4.27.0",
+    "@typescript-eslint/parser": "^4.27.0",
+    "eslint": "^7.29.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^3.4.0",
-    "prettier": "^2.3.0"
+    "prettier": "^2.3.1"
   }
 }
