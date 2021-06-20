@@ -11,7 +11,7 @@ Bukkit, Spigot, Paper, Purpur のイベント一覧です。
 - [CONTRIBUTE.md](CONTRIBUTE.md)
 
 ## 参考にしている Javadoc
-- [https://papermc.io/javadocs/paper/1.17/](https://papermc.io/javadocs/paper/1.17/) [`#778`](https://papermc.io/downloads#Paper-1.17)
+- [https://papermc.io/javadocs/paper/1.17/](https://papermc.io/javadocs/paper/1.17/) [`#12`](https://papermc.io/downloads#Paper-1.17)
 - [https://purpur.pl3x.net/javadoc/](https://purpur.pl3x.net/javadoc/) [`#1171`](https://purpur.pl3x.net/downloads/#1.16.5)
 
 ## 環境毎のイベント一覧
@@ -167,7 +167,7 @@ AreaEffectCloud の効果が付与される時に呼び出される。5ティッ
 ディスペンサーからアイテムが射出される時に呼び出される。[BlockDispenseEvent](README.md#bukkit-blockdispenseevent) の前に呼び出されるので、ディスペンサーのアイテム消費もキャンセルできる。
 
 ### `bukkit` [BlockReceiveGameEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/BlockReceiveGameEvent.html)
-
+スカルセンサーがゲームイベントを受けとる時に呼び出される。
 
 ### `bukkit` [BlockRedstoneEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/BlockRedstoneEvent.html)
 レッドストーンの強さが変化する時に呼び出される。
@@ -460,11 +460,8 @@ AreaEffectCloud の効果が付与される時に呼び出される。5ティッ
 ### `paper` [GS4QueryEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/server/GS4QueryEvent.html)
 GS4クエリプロトコルがクエリされた時に呼び出される。
 
-### `bukkit` [GameEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/GameEvent.html)
-
-
 ### `bukkit` [GenericGameEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/world/GenericGameEvent.html)
-
+一般的なゲームイベントであることを表す。このイベントは主にスカルセンサーの内部で使用される。可能な限りこのイベントを使わないようにする。
 
 ### `bukkit` [HangingBreakByEntityEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/hanging/HangingBreakByEntityEvent.html)
 エンティティによって壁掛けエンティティが破壊される時に呼び出される。

@@ -107,7 +107,7 @@ AreaEffectCloud の効果が付与される時に呼び出される。5ティッ
 プレイヤーがブロックを設置する時に呼び出される。
 
 ### `bukkit` [BlockReceiveGameEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/BlockReceiveGameEvent.html)
-
+スカルセンサーがゲームイベントを受けとる時に呼び出される。
 
 ### `bukkit` [BlockRedstoneEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/BlockRedstoneEvent.html)
 レッドストーンの強さが変化する時に呼び出される。
@@ -314,11 +314,8 @@ AreaEffectCloud の効果が付与される時に呼び出される。5ティッ
 ### `bukkit` [FurnaceSmeltEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/inventory/FurnaceSmeltEvent.html)
 かまど内でアイテムが精錬される時に呼び出される。
 
-### `bukkit` [GameEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/GameEvent.html)
-
-
 ### `bukkit` [GenericGameEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/world/GenericGameEvent.html)
-
+一般的なゲームイベントであることを表す。このイベントは主にスカルセンサーの内部で使用される。可能な限りこのイベントを使わないようにする。
 
 ### `bukkit` [HangingBreakByEntityEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/hanging/HangingBreakByEntityEvent.html)
 エンティティによって壁掛けエンティティが破壊される時に呼び出される。

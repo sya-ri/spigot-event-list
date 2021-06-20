@@ -188,7 +188,7 @@
 - name: BlockReceiveGameEvent
   link: https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/BlockReceiveGameEvent.html
   source: bukkit
-  description: ''
+  description: スカルセンサーがゲームイベントを受けとる時に呼び出される。
 - name: BlockRedstoneEvent
   link: https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/BlockRedstoneEvent.html
   source: bukkit
@@ -577,14 +577,10 @@
   link: https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/server/GS4QueryEvent.html
   source: paper
   description: GS4クエリプロトコルがクエリされた時に呼び出される。
-- name: GameEvent
-  link: https://papermc.io/javadocs/paper/1.17/org/bukkit/GameEvent.html
-  source: bukkit
-  description: ''
 - name: GenericGameEvent
   link: https://papermc.io/javadocs/paper/1.17/org/bukkit/event/world/GenericGameEvent.html
   source: bukkit
-  description: ''
+  description: 一般的なゲームイベントであることを表す。このイベントは主にスカルセンサーの内部で使用される。可能な限りこのイベントを使わないようにする。
 - name: HangingBreakByEntityEvent
   link: https://papermc.io/javadocs/paper/1.17/org/bukkit/event/hanging/HangingBreakByEntityEvent.html
   source: bukkit
