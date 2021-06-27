@@ -74,28 +74,22 @@ const updateClassType = (
       try {
         // javadoc から イベント一覧を作成
         const $ = cheerio.load(body);
-        $(".deprecatedSummary").each((_, element) => {
-          const deprecateType = $(element).children("caption").text();
-          if (deprecateType.startsWith("Classes")) {
-            const classes = $(element).find(".colDeprecatedItemName a");
-            classes.each((_, element) => {
-              const a = $(element);
-              const href = a.prop("href");
-              if (href.endsWith("Event.html")) {
-                const name = href
-                  .substring(0, href.length - 5)
-                  .split("/")
-                  .pop();
-                const source = getEventSource(href);
-                const event = events[name + source];
-                if (event) {
-                  event.deprecate = true;
-                  if (!event.deprecateDescription) {
-                    event.deprecateDescription = "";
-                  }
-                }
+        $("#class .col-deprecated-item-name a").each((_, element) => {
+          const a = $(element);
+          const href = a.prop("href");
+          if (href.endsWith("Event.html")) {
+            const name = href
+              .substring(0, href.length - 5)
+              .split("/")
+              .pop();
+            const source = getEventSource(href);
+            const event = events[name + source];
+            if (event) {
+              event.deprecate = true;
+              if (!event.deprecateDescription) {
+                event.deprecateDescription = "";
               }
-            });
+            }
           }
         });
       } catch (e) {
