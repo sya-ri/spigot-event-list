@@ -11,8 +11,8 @@ Bukkit, Spigot, Paper, Purpur のイベント一覧です。
 - [CONTRIBUTE.md](CONTRIBUTE.md)
 
 ## 参考にしている Javadoc
-- [https://papermc.io/javadocs/paper/1.17/](https://papermc.io/javadocs/paper/1.17/) [`#85`](https://papermc.io/downloads#Paper-1.17)
-- [https://purpur.pl3x.net/javadoc/](https://purpur.pl3x.net/javadoc/) [`#1259`](https://purpur.pl3x.net/downloads/#1.17.1)
+- [https://papermc.io/javadocs/paper/1.17/](https://papermc.io/javadocs/paper/1.17/) [`#100`](https://papermc.io/downloads#Paper-1.17)
+- [https://purpur.pl3x.net/javadoc/](https://purpur.pl3x.net/javadoc/) [`#1265`](https://purpur.pl3x.net/downloads/#1.17.1)
 
 ## 環境毎のイベント一覧
 - [bukkit](only-bukkit.md)
@@ -588,6 +588,9 @@ LootTable によってアイテムが補充される時に呼び出される。
 ### `bukkit` [PlayerAnimationEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerAnimationEvent.html)
 プレイヤーのアニメーションに関するイベントであることを表す。
 
+### `paper` [PlayerArmSwingEvent](https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/PlayerArmSwingEvent.html)
+
+
 ### `paper` [PlayerArmorChangeEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerArmorChangeEvent.html)
 プレイヤーの鎧が変更された時に呼び出される。
 
@@ -846,6 +849,9 @@ LootTable によってアイテムが補充される時に呼び出される。
 
 ### `bukkit` [PlayerShearEntityEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerShearEntityEvent.html)
 プレイヤーがエンティティに対してハサミを使用する時に呼び出される。
+
+### `paper` [PlayerSignCommandPreprocessEvent](https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/PlayerSignCommandPreprocessEvent.html)
+
 
 ### `spigot` [PlayerSpawnLocationEvent](https://papermc.io/javadocs/paper/1.17/org/spigotmc/event/player/PlayerSpawnLocationEvent.html)
 プレイヤーがサーバーに参加した後、スポーンしようとしている時に呼び出される。

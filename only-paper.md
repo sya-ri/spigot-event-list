@@ -136,6 +136,9 @@ LootTable によってアイテムが補充される時に呼び出される。
 ### `paper` [PlayerAdvancementCriterionGrantEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerAdvancementCriterionGrantEvent.html)
 プレイヤーが進捗の条件を達成した時に呼び出される。
 
+### `paper` [PlayerArmSwingEvent](https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/PlayerArmSwingEvent.html)
+
+
 ### `paper` [PlayerArmorChangeEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerArmorChangeEvent.html)
 プレイヤーの鎧が変更された時に呼び出される。
 
@@ -222,6 +225,9 @@ LootTable によってアイテムが補充される時に呼び出される。
 プレイヤーがブロックに対してハサミを使用する時に呼び出される。以下に例を示す。
 - カボチャを彫ったカボチャに変える時。
 - 蜂の巣からハニカムを回収する時。
+
+### `paper` [PlayerSignCommandPreprocessEvent](https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/PlayerSignCommandPreprocessEvent.html)
+
 
 ### `paper` [PlayerStartSpectatingEntityEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerStartSpectatingEntityEvent.html)
 プレイヤーがスペクテイターモードでエンティティ視点を開始する時に呼び出される。

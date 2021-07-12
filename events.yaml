@@ -747,6 +747,10 @@
   link: https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerAnimationEvent.html
   source: bukkit
   description: プレイヤーのアニメーションに関するイベントであることを表す。
+- name: PlayerArmSwingEvent
+  link: https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/PlayerArmSwingEvent.html
+  source: paper
+  description: ''
 - name: PlayerArmorChangeEvent
   link: https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerArmorChangeEvent.html
   source: paper
@@ -1090,6 +1094,10 @@
   link: https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerShearEntityEvent.html
   source: bukkit
   description: プレイヤーがエンティティに対してハサミを使用する時に呼び出される。
+- name: PlayerSignCommandPreprocessEvent
+  link: https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/PlayerSignCommandPreprocessEvent.html
+  source: paper
+  description: ''
 - name: PlayerSpawnLocationEvent
   link: https://papermc.io/javadocs/paper/1.17/org/spigotmc/event/player/PlayerSpawnLocationEvent.html
   source: spigot
