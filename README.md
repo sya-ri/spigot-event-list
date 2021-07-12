@@ -589,7 +589,7 @@ LootTable によってアイテムが補充される時に呼び出される。
 プレイヤーのアニメーションに関するイベントであることを表す。
 
 ### `paper` [PlayerArmSwingEvent](https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/PlayerArmSwingEvent.html)
-
+プレイヤーが腕を振った時に呼び出される。
 
 ### `paper` [PlayerArmorChangeEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerArmorChangeEvent.html)
 プレイヤーの鎧が変更された時に呼び出される。
@@ -851,7 +851,7 @@ LootTable によってアイテムが補充される時に呼び出される。
 プレイヤーがエンティティに対してハサミを使用する時に呼び出される。
 
 ### `paper` [PlayerSignCommandPreprocessEvent](https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/PlayerSignCommandPreprocessEvent.html)
-
+プレイヤーがコマンドを実行させる看板をクリックする時に呼び出される。このコマンドは権限を無視して実行されるため、本来実行できないコマンドも実行される。
 
 ### `spigot` [PlayerSpawnLocationEvent](https://papermc.io/javadocs/paper/1.17/org/spigotmc/event/player/PlayerSpawnLocationEvent.html)
 プレイヤーがサーバーに参加した後、スポーンしようとしている時に呼び出される。
