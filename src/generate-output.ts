@@ -14,6 +14,12 @@ import {
 } from "./constants";
 
 const main = () => {
+  Promise.all(EventSources.map((source) => source.updateVersion(source))).then(
+    generate
+  );
+};
+
+const generate = () => {
   // events.yaml をロード
   const data = yaml.load(fs.readFileSync(EventsYaml, "utf8"));
 

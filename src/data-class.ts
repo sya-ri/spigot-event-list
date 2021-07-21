@@ -1,3 +1,5 @@
+import { RequestPromise } from "request-promise";
+
 export class Event {
   name: string;
   link: string;
@@ -12,6 +14,7 @@ export class EventSource {
   downloadUrl: string;
   allClasses: string;
   deprecateList: string;
-  version: string;
+  version?: string;
+  updateVersion: (source: EventSource) => RequestPromise;
   downloadSources: string[];
 }
