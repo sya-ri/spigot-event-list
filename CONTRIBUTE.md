@@ -5,17 +5,17 @@
 ### イベント内容の更新
 #### Javadoc の内容を適応
 ```shell
-npm run download
+yarn run download
 ```
 
 #### events.yaml の変更を適応
 ```shell
-npm run generate
+yarn run generate
 ```
 
 ### 依存関係の更新
 ```shell
-npm run ncu:update
+yarn run ncu:update
 ```
 
 ## コミットメッセージテンプレート

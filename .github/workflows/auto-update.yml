@@ -16,11 +16,11 @@ jobs:
         with:
           path: |
             node_modules
-          key: node-v${{ matrix.node-version }}-deps-${{ hashFiles(format('{0}{1}', github.workspace, '/package-lock.json')) }}
+          key: node-v${{ matrix.node-version }}-deps-${{ hashFiles(format('{0}{1}', github.workspace, '/yarn.lock')) }}
       - name: Install Dependencies
-        run: npm install
+        run: yarn
       - name: Run Update
-        run: npm run update
+        run: yarn run update
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
