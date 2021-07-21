@@ -1,7 +1,8 @@
 name: Update Event List (Auto)
 on:
-  schedule:
-    - cron: '00 21 * * *' # UTC 21:00 (JST 06:00)
+  #schedule:
+  #  - cron: '00 21 * * *' # UTC 21:00 (JST 06:00)
+  push
 jobs:
   update:
     runs-on: ubuntu-latest
