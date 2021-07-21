@@ -22,12 +22,8 @@ npm run ncu:update
 
 ### バージョンの更新
 ```
-Bump versions
-* Dependency
+ライブラリのバージョンを更新
 <name> <last_version> -> <version>
-
-* EventSource
-<name> v<last_version> -> v<version>
 ```
 
 #### イベントの説明を追加
