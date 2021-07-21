@@ -1,0 +1,31 @@
+name: Update Event List (Auto)
+on:
+  schedule:
+    - cron: '00 21 * * *' # UTC 21:00 (JST 06:00)
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14.x'
+      - name: Cache node_modules
+        uses: actions/cache@v2
+        with:
+          path: |
+            node_modules
+          key: node-v${{ matrix.node-version }}-deps-${{ hashFiles(format('{0}{1}', github.workspace, '/package-lock.json')) }}
+      - name: Install Dependencies
+        run: npm install
+      - name: Run Update
+        run: npm run update
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v3
+        with:
+          title: '[自動] イベントのバージョンを更新'
+          branch: actions/update-event-list
+          commit-message: 'イベントのバージョンを更新'
+          delete-branch: true
+          reviewers: sya-ri
