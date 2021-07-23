@@ -12,7 +12,7 @@ Bukkit, Spigot, Paper, Purpur のイベント一覧です。
 
 ## 参考にしている Javadoc
 - [https://papermc.io/javadocs/paper/1.17/](https://papermc.io/javadocs/paper/1.17/) [`#124`](https://papermc.io/downloads#Paper-1.17)
-- [https://purpur.pl3x.net/javadoc/](https://purpur.pl3x.net/javadoc/) [`#1291`](https://purpur.pl3x.net/downloads/#1.17.1)
+- [https://purpur.pl3x.net/javadoc/](https://purpur.pl3x.net/javadoc/) [`#1292`](https://purpur.pl3x.net/downloads/#1.17.1)
 
 ## 環境毎のイベント一覧
 - [bukkit](only-bukkit.md)
