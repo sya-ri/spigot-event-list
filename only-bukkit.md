@@ -315,7 +315,7 @@ AreaEffectCloud の効果が付与される時に呼び出される。5ティッ
 かまど内でアイテムが精錬される時に呼び出される。
 
 ### `bukkit` [FurnaceStartSmeltEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/inventory/FurnaceStartSmeltEvent.html)
-
+かまどでの精錬が始まった時に呼び出される。
 
 ### `bukkit` [GenericGameEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/world/GenericGameEvent.html)
 一般的なゲームイベントであることを表す。このイベントは主にスカルセンサーの内部で使用される。可能な限りこのイベントを使わないようにする。

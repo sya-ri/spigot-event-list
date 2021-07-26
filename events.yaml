@@ -580,7 +580,7 @@ events:
   - name: FurnaceStartSmeltEvent
     link: https://papermc.io/javadocs/paper/1.17/org/bukkit/event/inventory/FurnaceStartSmeltEvent.html
     source: bukkit
-    description: ''
+    description: かまどでの精錬が始まった時に呼び出される。
   - name: GS4QueryEvent
     link: https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/server/GS4QueryEvent.html
     source: paper
