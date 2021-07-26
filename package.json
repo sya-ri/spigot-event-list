@@ -10,9 +10,9 @@
     "generate": "ts-node src/generate-output.ts",
     "lint": "eslint src",
     "lint:fix": "eslint --fix src",
-    "update": "npm run download && npm run generate",
+    "update": "yarn run download && yarn run generate",
     "ncu": "npx -p npm-check-updates -c \"ncu\"",
-    "ncu:update": "npx -p npm-check-updates -c \"ncu -u\"",
+    "ncu:update": "npx -p npm-check-updates -c \"ncu -u\" && yarn",
     "sort-package-json": "npx sort-package-json"
   },
   "dependencies": {
