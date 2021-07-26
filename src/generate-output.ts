@@ -67,7 +67,7 @@ const main = () => {
     OutputReadmeFileName,
     DoNotEditMessage +
       Handlebars.compile(fs.readFileSync(TemplateReadmeFileName, "utf8"))({
-        list: data,
+        list: data.events,
         javadoc_links: EventSources,
         deprecate_link: OutputOnlyDeprecateFileName,
         only_links: Object.keys(sourceEvents)
