@@ -2,8 +2,8 @@ import { EventSource } from "./data-class";
 import requestPromise = require("request-promise");
 import { RequestPromise } from "request-promise";
 
-export const EventSources: EventSource[] = [
-  {
+export const EventSources: { [name: string]: EventSource } = {
+  Paper: {
     javadocUrl: "https://papermc.io/javadocs/paper/1.17/",
     downloadUrl: "https://papermc.io/downloads#Paper-1.17",
     allClasses: "allclasses-index.html",
@@ -19,7 +19,7 @@ export const EventSources: EventSource[] = [
     },
     downloadSources: ["bukkit", "spigot", "paper"],
   },
-  {
+  Purpur: {
     javadocUrl: "https://purpur.pl3x.net/javadoc/",
     downloadUrl: "https://purpur.pl3x.net/downloads/#1.17.1",
     allClasses: "allclasses-index.html",
@@ -35,7 +35,7 @@ export const EventSources: EventSource[] = [
     },
     downloadSources: ["purpur"],
   },
-];
+};
 export const EventsYaml = "events.yaml";
 export const ExcludeEventsYaml = "exclude-events.yaml";
 export const TemplateReadmeFileName = "template/README.md";

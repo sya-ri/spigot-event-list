@@ -102,7 +102,7 @@ const updateClassType = (
 const main = async () => {
   // 前回のデータをロード
   const lastData = yaml.load(fs.readFileSync(EventsYaml, "utf8"));
-  const lastEventMap = lastData.reduce((map, value) => {
+  const lastEventMap = lastData.events.reduce((map, value) => {
     map[value.name + value.source] = value;
     delete value.deprecate;
     return map;
@@ -110,8 +110,15 @@ const main = async () => {
 
   // イベントをダウンロード
   const eventMap: { string: Event } = {} as { string: Event };
-  for (const source of EventSources) {
+  for (const source of Object.values(EventSources)) {
     await downloadEvents(eventMap, lastEventMap, source);
+  }
+
+  // イベントソースのバージョンを更新
+  const versions: { string: string } = {} as { string: string };
+  for (const [name, source] of Object.entries(EventSources)) {
+    await source.updateVersion(source);
+    versions[name] = source.version;
   }
 
   // 無視するイベントを除外
@@ -120,7 +127,7 @@ const main = async () => {
   });
 
   // イベントが非推奨かどうかを取得
-  for (const source of EventSources) {
+  for (const source of Object.values(EventSources)) {
     await updateClassType(eventMap, source);
   }
 
@@ -138,6 +145,8 @@ const main = async () => {
         deprecateDescription: value.deprecateDescription,
       };
     });
+
+  // バージョンを出力
 
   // イベント数を出力
   console.log(`総イベント数: ${events.length}`);
@@ -158,9 +167,15 @@ const main = async () => {
   // events.yaml に保存
   fs.writeFile(
     EventsYaml,
-    yaml.dump(events, {
-      lineWidth: 200,
-    }),
+    yaml.dump(
+      {
+        versions,
+        events,
+      },
+      {
+        lineWidth: 200,
+      }
+    ),
     "utf8",
     (err) => {
       if (err) {

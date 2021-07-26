@@ -14,17 +14,16 @@ import {
 } from "./constants";
 
 const main = () => {
-  Promise.all(EventSources.map((source) => source.updateVersion(source))).then(
-    generate
-  );
-};
-
-const generate = () => {
   // events.yaml をロード
   const data = yaml.load(fs.readFileSync(EventsYaml, "utf8"));
 
+  // イベントソースのバージョンを更新
+  for (const [name, source] of Object.entries(EventSources)) {
+    source.version = data.versions[name];
+  }
+
   // source 毎にまとめる
-  const sourceEvents = data.reduce((map, current) => {
+  const sourceEvents = data.events.reduce((map, current) => {
     const element = map[current.source];
     if (element) {
       element.list.push(current);
@@ -57,7 +56,7 @@ const generate = () => {
       Handlebars.compile(
         fs.readFileSync(TemplateOnlyDeprecateFileName, "utf8")
       )({
-        list: data.filter((value) => value.deprecate),
+        list: data.events.filter((value) => value.deprecate),
       }),
     "utf8"
   );
