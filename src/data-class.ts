@@ -1,6 +1,6 @@
 import { RequestPromise } from "request-promise";
 
-export class Event {
+export interface Event {
   name: string;
   link: string;
   source: string;
@@ -9,7 +9,7 @@ export class Event {
   deprecateDescription: string;
 }
 
-export class EventSource {
+export interface EventSource {
   javadocUrl: string;
   downloadUrl: string;
   allClasses: string;
