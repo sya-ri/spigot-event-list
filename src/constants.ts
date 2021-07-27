@@ -36,8 +36,7 @@ export const EventSources: { [name: string]: EventSource } = {
     downloadSources: ["purpur"],
   },
 };
-export const EventsYaml = "events.yaml";
-export const ExcludeEventsYaml = "exclude-events.yaml";
+export const DataYamlName = "data.yaml";
 export const TemplateReadmeFileName = "template/README.md";
 export const OutputReadmeFileName = "README.md";
 export const TemplateOnlyEventSourceFileName = "template/only-source.md";

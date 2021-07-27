@@ -2,13 +2,8 @@ import requestPromise = require("request-promise");
 import cheerio = require("cheerio");
 import fs = require("fs");
 import yaml = require("js-yaml");
-import {
-  EventSources,
-  EventsYaml,
-  ExcludeEventsYaml,
-  getEventSource,
-} from "./constants";
-import { Event, EventSource, EventsYamlType } from "./data-class";
+import { EventSources, DataYamlName, getEventSource } from "./constants";
+import { Event, EventSource, DataYamlType } from "./data-class";
 
 const downloadEvents = async (
   events: { [name: string]: Event },
@@ -102,8 +97,8 @@ const updateClassType = (
 const main = async () => {
   // 前回のデータをロード
   const lastData = yaml.load(
-    fs.readFileSync(EventsYaml, "utf8")
-  ) as EventsYamlType;
+    fs.readFileSync(DataYamlName, "utf8")
+  ) as DataYamlType;
   const lastEventMap = lastData.events.reduce((map, value) => {
     map[value.name + value.source] = value;
     delete value.deprecate;
@@ -124,7 +119,7 @@ const main = async () => {
   }
 
   // 無視するイベントを除外
-  yaml.load(fs.readFileSync(ExcludeEventsYaml, "utf8")).forEach((eventName) => {
+  lastData.excludeEvents.forEach((eventName) => {
     delete eventMap[eventName];
   });
 
@@ -164,18 +159,19 @@ const main = async () => {
     }`
   );
 
-  // events.yaml に保存
+  // 保存するデータ
+  const dumpData: DataYamlType = {
+    versions,
+    events,
+    excludeEvents: lastData.excludeEvents,
+  };
+
+  // data.yaml に保存
   fs.writeFile(
-    EventsYaml,
-    yaml.dump(
-      {
-        versions,
-        events,
-      },
-      {
-        lineWidth: 200,
-      }
-    ),
+    DataYamlName,
+    yaml.dump(dumpData, {
+      lineWidth: 200,
+    }),
     "utf8",
     (err) => {
       if (err) {

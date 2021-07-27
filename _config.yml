@@ -23,8 +23,7 @@ exclude:
   - .eslintrc.json
   - .gitignore
   - _config.yml
-  - events.yaml
-  - exclude-events.yaml
+  - data.yaml
   - Gemfile
   - Gemfile.lock
   - LICENSE

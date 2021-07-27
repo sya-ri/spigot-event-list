@@ -19,9 +19,10 @@ export class EventSource {
   downloadSources: string[];
 }
 
-export interface EventsYamlType {
+export interface DataYamlType {
   versions: {
     [name: string]: string;
   };
   events: Event[];
+  excludeEvents: string[];
 }

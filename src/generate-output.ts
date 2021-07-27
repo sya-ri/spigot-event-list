@@ -3,7 +3,7 @@ import yaml = require("js-yaml");
 import Handlebars = require("handlebars");
 import {
   EventSources,
-  EventsYaml,
+  DataYamlName,
   OutputReadmeFileName,
   TemplateReadmeFileName,
   OutputOnlyEventSourceFileName,
@@ -12,11 +12,11 @@ import {
   TemplateOnlyDeprecateFileName,
   DoNotEditMessage,
 } from "./constants";
-import { EventsYamlType } from "./data-class";
+import { DataYamlType } from "./data-class";
 
 const main = () => {
-  // events.yaml をロード
-  const data = yaml.load(fs.readFileSync(EventsYaml, "utf8")) as EventsYamlType;
+  // data.yaml をロード
+  const data = yaml.load(fs.readFileSync(DataYamlName, "utf8")) as DataYamlType;
 
   // イベントソースのバージョンを更新
   for (const [name, source] of Object.entries(EventSources)) {

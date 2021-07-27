@@ -1575,3 +1575,6 @@ events:
     link: https://papermc.io/javadocs/paper/1.17/org/bukkit/event/world/WorldUnloadEvent.html
     source: bukkit
     description: ワールドをアンロードするに呼び出される。
+excludeEvents:
+  - ConversationAbandonedEventbukkit
+  - GameEventbukkit
