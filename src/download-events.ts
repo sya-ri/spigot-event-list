@@ -148,8 +148,6 @@ const main = async () => {
       };
     });
 
-  // バージョンを出力
-
   // イベント数を出力
   console.log(`総イベント数: ${events.length}`);
   console.log(
