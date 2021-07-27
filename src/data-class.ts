@@ -5,7 +5,7 @@ export class Event {
   link: string;
   source: string;
   description: string;
-  deprecate: boolean | null;
+  deprecate?: boolean;
   deprecateDescription: string;
 }
 
@@ -17,4 +17,11 @@ export class EventSource {
   version?: string;
   updateVersion: (source: EventSource) => RequestPromise;
   downloadSources: string[];
+}
+
+export interface EventsYamlType {
+  versions: {
+    [name: string]: string;
+  };
+  events: Event[];
 }

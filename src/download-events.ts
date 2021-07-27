@@ -8,11 +8,11 @@ import {
   ExcludeEventsYaml,
   getEventSource,
 } from "./constants";
-import { Event, EventSource } from "./data-class";
+import { Event, EventSource, EventsYamlType } from "./data-class";
 
 const downloadEvents = async (
-  events: { string: Event },
-  lastEvents: { string: Event },
+  events: { [name: string]: Event },
+  lastEvents: { [name: string]: Event },
   eventSource: EventSource
 ) => {
   return requestPromise(
@@ -61,7 +61,7 @@ const downloadEvents = async (
 };
 
 const updateClassType = (
-  events: { string: Event },
+  events: { [name: string]: Event },
   eventSource: EventSource
 ) => {
   return requestPromise(
@@ -101,21 +101,23 @@ const updateClassType = (
 
 const main = async () => {
   // 前回のデータをロード
-  const lastData = yaml.load(fs.readFileSync(EventsYaml, "utf8"));
+  const lastData = yaml.load(
+    fs.readFileSync(EventsYaml, "utf8")
+  ) as EventsYamlType;
   const lastEventMap = lastData.events.reduce((map, value) => {
     map[value.name + value.source] = value;
     delete value.deprecate;
     return map;
-  }, {});
+  }, {} as { [name: string]: Event });
 
   // イベントをダウンロード
-  const eventMap: { string: Event } = {} as { string: Event };
+  const eventMap = {} as { [name: string]: Event };
   for (const source of Object.values(EventSources)) {
     await downloadEvents(eventMap, lastEventMap, source);
   }
 
   // イベントソースのバージョンを更新
-  const versions: { string: string } = {} as { string: string };
+  const versions = {} as { [name: string]: string };
   for (const [name, source] of Object.entries(EventSources)) {
     await source.updateVersion(source);
     versions[name] = source.version;

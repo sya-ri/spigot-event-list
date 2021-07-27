@@ -12,10 +12,11 @@ import {
   TemplateOnlyDeprecateFileName,
   DoNotEditMessage,
 } from "./constants";
+import { EventsYamlType } from "./data-class";
 
 const main = () => {
   // events.yaml をロード
-  const data = yaml.load(fs.readFileSync(EventsYaml, "utf8"));
+  const data = yaml.load(fs.readFileSync(EventsYaml, "utf8")) as EventsYamlType;
 
   // イベントソースのバージョンを更新
   for (const [name, source] of Object.entries(EventSources)) {
