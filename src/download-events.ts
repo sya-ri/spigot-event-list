@@ -1,16 +1,16 @@
 import requestPromise = require("request-promise");
 import cheerio = require("cheerio");
-import fs = require("fs");
-import yaml = require("js-yaml");
-import { EventSources, DataYamlName, getEventSource } from "./constants";
-import { Event, EventSource, DataYamlType } from "./data-class";
+import { EventSources, getEventSource } from "./constants";
+import { Event, EventSource } from "./data-class";
+import { readDataYamlFile, writeDataYamlFile } from "./util";
+import { RequestPromise } from "request-promise";
 
-const downloadEvents = async (
+const downloadEvents = (
   events: { [name: string]: Event },
   lastEvents: { [name: string]: Event },
   eventSource: EventSource
-) => {
-  return requestPromise(
+): RequestPromise<void> =>
+  requestPromise(
     eventSource.javadocUrl + eventSource.allClasses,
     (e, response, body) => {
       if (e) {
@@ -53,13 +53,12 @@ const downloadEvents = async (
       }
     }
   );
-};
 
 const updateClassType = (
   events: { [name: string]: Event },
   eventSource: EventSource
-) => {
-  return requestPromise(
+): RequestPromise<void> =>
+  requestPromise(
     eventSource.javadocUrl + eventSource.deprecateList,
     (e, response, body) => {
       if (e) {
@@ -92,13 +91,10 @@ const updateClassType = (
       }
     }
   );
-};
 
 const main = async () => {
   // 前回のデータをロード
-  const lastData = yaml.load(
-    fs.readFileSync(DataYamlName, "utf8")
-  ) as DataYamlType;
+  const lastData = readDataYamlFile();
   const lastEventMap = lastData.events.reduce((map, value) => {
     map[value.name + value.source] = value;
     delete value.deprecate;
@@ -129,19 +125,18 @@ const main = async () => {
   }
 
   // データを並び替え
-  const events = Object.keys(eventMap)
+  const events = Object.values(eventMap)
     .sort()
-    .map((key): Event => {
-      const value = eventMap[key];
-      return {
+    .map(
+      (value): Event => ({
         name: value.name,
         link: value.link,
         source: value.source,
         description: value.description,
         deprecate: value.deprecate,
         deprecateDescription: value.deprecateDescription,
-      };
-    });
+      })
+    );
 
   // イベント数を出力
   console.log(`総イベント数: ${events.length}`);
@@ -159,26 +154,12 @@ const main = async () => {
     }`
   );
 
-  // 保存するデータ
-  const dumpData: DataYamlType = {
+  // data.yaml に保存
+  writeDataYamlFile({
     versions,
     events,
     excludeEvents: lastData.excludeEvents,
-  };
-
-  // data.yaml に保存
-  fs.writeFile(
-    DataYamlName,
-    yaml.dump(dumpData, {
-      lineWidth: 200,
-    }),
-    "utf8",
-    (err) => {
-      if (err) {
-        console.error(err.message);
-      }
-    }
-  );
+  });
 };
 
 main();

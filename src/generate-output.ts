@@ -1,22 +1,19 @@
-import fs = require("fs");
-import yaml = require("js-yaml");
 import Handlebars = require("handlebars");
 import {
   EventSources,
-  DataYamlName,
   OutputReadmeFileName,
   TemplateReadmeFileName,
   OutputOnlyEventSourceFileName,
   TemplateOnlyEventSourceFileName,
   OutputOnlyDeprecateFileName,
   TemplateOnlyDeprecateFileName,
-  DoNotEditMessage,
 } from "./constants";
-import { DataYamlType } from "./data-class";
+import { readDataYamlFile, readFile, writeAutoGenerateFile } from "./util";
+import { Event } from "./data-class";
 
 const main = () => {
   // data.yaml をロード
-  const data = yaml.load(fs.readFileSync(DataYamlName, "utf8")) as DataYamlType;
+  const data = readDataYamlFile();
 
   // イベントソースのバージョンを更新
   for (const [name, source] of Object.entries(EventSources)) {
@@ -27,60 +24,46 @@ const main = () => {
   const sourceEvents = data.events.reduce((map, current) => {
     const element = map[current.source];
     if (element) {
-      element.list.push(current);
+      element.push(current);
     } else {
-      map[current.source] = {
-        list: [current],
-      };
+      map[current.source] = [current];
     }
     return map;
-  }, {});
+  }, {} as { [name: string]: Event[] });
 
+  // イベントソース毎イベント一覧
   Object.keys(sourceEvents).forEach((source) => {
-    fs.writeFileSync(
+    writeAutoGenerateFile(
       OutputOnlyEventSourceFileName.replace("{name}", source),
-      DoNotEditMessage +
-        Handlebars.compile(
-          fs.readFileSync(TemplateOnlyEventSourceFileName, "utf8")
-        )({
-          name: source,
-          list: sourceEvents[source].list,
-        }),
-      "utf8"
+      Handlebars.compile(readFile(TemplateOnlyEventSourceFileName))({
+        name: source,
+        list: sourceEvents[source],
+      })
     );
   });
 
   // 非推奨イベントのみ
-  fs.writeFileSync(
+  writeAutoGenerateFile(
     OutputOnlyDeprecateFileName,
-    DoNotEditMessage +
-      Handlebars.compile(
-        fs.readFileSync(TemplateOnlyDeprecateFileName, "utf8")
-      )({
-        list: data.events.filter((value) => value.deprecate),
-      }),
-    "utf8"
+    Handlebars.compile(readFile(TemplateOnlyDeprecateFileName))({
+      list: data.events.filter((value) => value.deprecate),
+    })
   );
 
-  // テンプレートに値を当てはめて保存
-  // テンプレートをロード
-  fs.writeFileSync(
+  // 全てのイベント
+  writeAutoGenerateFile(
     OutputReadmeFileName,
-    DoNotEditMessage +
-      Handlebars.compile(fs.readFileSync(TemplateReadmeFileName, "utf8"))({
-        list: data.events,
-        javadoc_links: EventSources,
-        deprecate_link: OutputOnlyDeprecateFileName,
-        only_links: Object.keys(sourceEvents)
-          .sort()
-          .map((name) => {
-            return {
-              name: name,
-              link: OutputOnlyEventSourceFileName.replace("{name}", name),
-            };
-          }),
-      }),
-    "utf8"
+    Handlebars.compile(readFile(TemplateReadmeFileName))({
+      list: data.events,
+      javadoc_links: EventSources,
+      deprecate_link: OutputOnlyDeprecateFileName,
+      only_links: Object.keys(sourceEvents)
+        .sort()
+        .map((name) => ({
+          name: name,
+          link: OutputOnlyEventSourceFileName.replace("{name}", name),
+        })),
+    })
   );
 };
 
