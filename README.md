@@ -11,8 +11,8 @@ Bukkit, Spigot, Paper, Purpur のイベント一覧です。
 - [CONTRIBUTE.md](CONTRIBUTE.md)
 
 ## 参考にしている Javadoc
-- [https://papermc.io/javadocs/paper/1.17/](https://papermc.io/javadocs/paper/1.17/) [`#124`](https://papermc.io/downloads#Paper-1.17)
-- [https://purpur.pl3x.net/javadoc/](https://purpur.pl3x.net/javadoc/) [`#1292`](https://purpur.pl3x.net/downloads/#1.17.1)
+- [https://papermc.io/javadocs/paper/1.17/](https://papermc.io/javadocs/paper/1.17/) [`#136`](https://papermc.io/downloads#Paper-1.17)
+- [https://purpur.pl3x.net/javadoc/](https://purpur.pl3x.net/javadoc/) [`#1300`](https://purpur.pl3x.net/downloads/#1.17.1)
 
 ## 環境毎のイベント一覧
 - [bukkit](only-bukkit.md)
@@ -29,12 +29,6 @@ Bukkit, Spigot, Paper, Purpur のイベント一覧です。
 
 ### `paper` [AnvilDamagedEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/block/AnvilDamagedEvent.html)
 使用したことで金床が損傷する時に呼び出される。
-
-### `purpur` [AnvilTakeResultEvent](https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/inventory/AnvilTakeResultEvent.html)
-金床から結果アイテムを取り出す時に呼び出される。
-
-### `purpur` [AnvilUpdateResultEvent](https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/inventory/AnvilUpdateResultEvent.html)
-金床の結果アイテムが更新された時に呼び出される。
 
 ### `bukkit` [AreaEffectCloudApplyEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/AreaEffectCloudApplyEvent.html)
 AreaEffectCloud の効果が付与される時に呼び出される。5ティック毎に1回発生する。
@@ -282,6 +276,9 @@ AreaEffectCloud の効果が付与される時に呼び出される。5ティッ
 
 エンティティがポータルを作成する時に呼び出される。
 
+### `bukkit` [PortalCreateEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/world/PortalCreateEvent.html)
+ポータルが作成される時に呼び出される。
+
 ### `bukkit` [EntityDamageByBlockEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityDamageByBlockEvent.html)
 ブロックによってエンティティがダメージを受ける時に呼び出される。
 
@@ -398,21 +395,18 @@ AreaEffectCloud の効果が付与される時に呼び出される。5ティッ
 ### `bukkit` [EntityTeleportEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityTeleportEvent.html)
 プレイヤーではないエンティティがテレポートする時に呼び出される。
 
-### `purpur` [EntityTeleportHinderedEvent](https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/entity/EntityTeleportHinderedEvent.html)
-エンティティがテレポートできない時に呼び出される。
-
 ### `bukkit` [EntityToggleGlideEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityToggleGlideEvent.html)
 エンティティの滑空状態が切り替わる時に呼び出される。
 
 ### `bukkit` [EntityToggleSwimEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityToggleSwimEvent.html)
 エンティティの泳ぎ状態が切り替わる時に呼び出される。
 
-### `bukkit` [EntityTransformEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityTransformEvent.html)
-エンティティが別のエンティティに置きかわる時に呼び出される。
-
 ### `paper` [EntityTransformedEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/EntityTransformedEvent.html)
 `@Deprecated` Bukkit に追加された [EntityTransformEvent](README.md#bukkit-entitytransformevent) を使う。
 
+エンティティが別のエンティティに置きかわる時に呼び出される。
+
+### `bukkit` [EntityTransformEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityTransformEvent.html)
 エンティティが別のエンティティに置きかわる時に呼び出される。
 
 ### `bukkit` [EntityUnleashEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityUnleashEvent.html)
@@ -423,9 +417,6 @@ AreaEffectCloud の効果が付与される時に呼び出される。5ティッ
 
 ### `bukkit` [Event](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/Event.html)
 イベントを表す。
-
-### `purpur` [ExecuteCommandEvent](https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/ExecuteCommandEvent.html)
-コマンドを実行する時に呼び出される。
 
 ### `bukkit` [ExpBottleEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/ExpBottleEvent.html)
 経験値ボトルから経験値が出る時に呼び出される。
@@ -460,11 +451,11 @@ AreaEffectCloud の効果が付与される時に呼び出される。5ティッ
 ### `bukkit` [FurnaceStartSmeltEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/inventory/FurnaceStartSmeltEvent.html)
 かまどでの精錬が始まった時に呼び出される。
 
-### `paper` [GS4QueryEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/server/GS4QueryEvent.html)
-GS4クエリプロトコルがクエリされた時に呼び出される。
-
 ### `bukkit` [GenericGameEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/world/GenericGameEvent.html)
 一般的なゲームイベントであることを表す。このイベントは主にスカルセンサーの内部で使用される。可能な限りこのイベントを使わないようにする。
+
+### `paper` [GS4QueryEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/server/GS4QueryEvent.html)
+GS4クエリプロトコルがクエリされた時に呼び出される。
 
 ### `bukkit` [HangingBreakByEntityEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/hanging/HangingBreakByEntityEvent.html)
 エンティティによって壁掛けエンティティが破壊される時に呼び出される。
@@ -537,20 +528,14 @@ GS4クエリプロトコルがクエリされた時に呼び出される。
 ### `bukkit` [LingeringPotionSplashEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/LingeringPotionSplashEvent.html)
 残留ポーションが割れる時に呼び出される。
 
-### `purpur` [LlamaJoinCaravanEvent](https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/entity/LlamaJoinCaravanEvent.html)
-ラマがキャラバンに参加する時に呼び出される。
-
-### `purpur` [LlamaLeaveCaravanEvent](https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/entity/LlamaLeaveCaravanEvent.html)
-ラマがキャラバンから脱退した時に呼び出される。
-
 ### `paper` [LookupProfileEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/profile/LookupProfileEvent.html)
 Mojang API を用いてプロファイルが検索された時に呼び出される。
 
-### `bukkit` [LootGenerateEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/world/LootGenerateEvent.html)
-LootTable によってアイテムが生成される時に呼び出される。
-
 ### `paper` [LootableInventoryReplenishEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/loottable/LootableInventoryReplenishEvent.html)
 LootTable によってアイテムが補充される時に呼び出される。
+
+### `bukkit` [LootGenerateEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/world/LootGenerateEvent.html)
+LootTable によってアイテムが生成される時に呼び出される。
 
 ### `bukkit` [MapInitializeEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/server/MapInitializeEvent.html)
 マップが初期化された時に呼び出される。
@@ -558,29 +543,26 @@ LootTable によってアイテムが補充される時に呼び出される。
 ### `bukkit` [MoistureChangeEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/MoistureChangeEvent.html)
 耕地の水分レベルが変化する時に呼び出される。
 
-### `purpur` [MonsterEggSpawnEvent](https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/entity/MonsterEggSpawnEvent.html)
-モンスターエッグを使い、エンティティがスポーンする時に呼び出される。
-
 ### `bukkit` [NotePlayEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/NotePlayEvent.html)
 音符ブロックが音を鳴らす時に呼び出される。
 
 ### `paper` [PaperServerListPingEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/server/PaperServerListPingEvent.html)
 サーバーリストの表示内容を送る要求を受けた時に呼び出される。[ServerListPingEvent](README.md#bukkit-serverlistpingevent) よりも扱える情報が多い。
 
+### `bukkit` [ServerListPingEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/server/ServerListPingEvent.html)
+サーバーリストの表示内容を送る要求を受けた時に呼び出される。[PaperServerListPingEvent](README.md#paper-paperserverlistpingevent) を使うことでより詳細の情報を扱うことができる。
+
 ### `paper` [PhantomPreSpawnEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/PhantomPreSpawnEvent.html)
 ファントムがスポーンする時に呼び出される。
+
+### `bukkit` [PiglinBarterEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/PiglinBarterEvent.html)
+ピグリンと物々交換する時に呼び出される。
 
 ### `bukkit` [PigZapEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/PigZapEvent.html)
 豚が雷に打たれた時に呼び出される。
 
 ### `bukkit` [PigZombieAngerEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/PigZombieAngerEvent.html)
 ゾンビ豚が怒る時に呼び出される。
-
-### `bukkit` [PiglinBarterEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/PiglinBarterEvent.html)
-ピグリンと物々交換する時に呼び出される。
-
-### `purpur` [PlayerAFKEvent](https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/PlayerAFKEvent.html)
-プレイヤーのAFKモードに移行する時に呼び出される
 
 ### `paper` [PlayerAdvancementCriterionGrantEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerAdvancementCriterionGrantEvent.html)
 プレイヤーが進捗の条件を達成した時に呼び出される。
@@ -614,9 +596,6 @@ LootTable によってアイテムが補充される時に呼び出される。
 
 ### `bukkit` [PlayerBedLeaveEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerBedLeaveEvent.html)
 プレイヤーがベッドから出る時に呼び出される。
-
-### `purpur` [PlayerBookTooLargeEvent](https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/player/PlayerBookTooLargeEvent.html)
-プレイヤーが本の制限を回避しようとした時に呼び出される。
 
 ### `bukkit` [PlayerBucketEmptyEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerBucketEmptyEvent.html)
 プレイヤーがバケツを空にする時に呼び出される。
@@ -719,6 +698,9 @@ LootTable によってアイテムが補充される時に呼び出される。
 
 プレイヤーがサーバーに参加した後、スポーンしようとしている時に呼び出される。
 
+### `spigot` [PlayerSpawnLocationEvent](https://papermc.io/javadocs/paper/1.17/org/spigotmc/event/player/PlayerSpawnLocationEvent.html)
+プレイヤーがサーバーに参加した後、スポーンしようとしている時に呼び出される。
+
 ### `bukkit` [PlayerInteractAtEntityEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerInteractAtEntityEvent.html)
 プレイヤーがエンティティを右クリックする時に呼び出される。クライアントは [PlayerInteractEntityEvent](README.md#bukkit-playerinteractentityevent) に加えてこのパケットを誤って送信する場合がある。 しかし、アーマースタンドを右クリックした場合、このイベントのみが呼び出される。特別な場合を除いて　[PlayerInteractEntityEvent](README.md#bukkit-playerinteractentityevent) を使うことを推奨している。
 
@@ -770,12 +752,12 @@ LootTable によってアイテムが補充される時に呼び出される。
 ### `bukkit` [PlayerLevelChangeEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerLevelChangeEvent.html)
 プレイヤーの経験値レベルが変更した時に呼び出される。
 
-### `bukkit` [PlayerLocaleChangeEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerLocaleChangeEvent.html)
-プレイヤーが言語設定を変更した時に呼び出される。
-
 ### `paper` [PlayerLocaleChangeEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerLocaleChangeEvent.html)
 `@Deprecated` Bukkit に追加された [PlayerLocaleChangeEvent](README.md#bukkit-playerlocalechangeevent) を使う。
 
+プレイヤーが言語設定を変更した時に呼び出される。
+
+### `bukkit` [PlayerLocaleChangeEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerLocaleChangeEvent.html)
 プレイヤーが言語設定を変更した時に呼び出される。
 
 ### `bukkit` [PlayerLoginEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerLoginEvent.html)
@@ -842,9 +824,6 @@ LootTable によってアイテムが補充される時に呼び出される。
 ### `bukkit` [PlayerRiptideEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerRiptideEvent.html)
 プレイヤーが激流エンチャントを使用した時に呼び出される。
 
-### `purpur` [PlayerSetSpawnerTypeWithEggEvent](https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/PlayerSetSpawnerTypeWithEggEvent.html)
-モンスターエッグを使い、スポナーの内容を変える時に呼び出される。
-
 ### `paper` [PlayerShearBlockEvent](https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/block/PlayerShearBlockEvent.html)
 プレイヤーがブロックに対してハサミを使用する時に呼び出される。以下に例を示す。
 - カボチャを彫ったカボチャに変える時。
@@ -855,9 +834,6 @@ LootTable によってアイテムが補充される時に呼び出される。
 
 ### `paper` [PlayerSignCommandPreprocessEvent](https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/PlayerSignCommandPreprocessEvent.html)
 プレイヤーがコマンドを実行させる看板をクリックする時に呼び出される。このコマンドは権限を無視して実行されるため、本来実行できないコマンドも実行される。
-
-### `spigot` [PlayerSpawnLocationEvent](https://papermc.io/javadocs/paper/1.17/org/spigotmc/event/player/PlayerSpawnLocationEvent.html)
-プレイヤーがサーバーに参加した後、スポーンしようとしている時に呼び出される。
 
 ### `paper` [PlayerStartSpectatingEntityEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerStartSpectatingEntityEvent.html)
 プレイヤーがスペクテイターモードでエンティティ視点を開始する時に呼び出される。
@@ -916,9 +892,6 @@ LootTable によってアイテムが補充される時に呼び出される。
 ### `bukkit` [PluginEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/server/PluginEvent.html)
 プラグインに関するイベントであることを表す。
 
-### `bukkit` [PortalCreateEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/world/PortalCreateEvent.html)
-ポータルが作成される時に呼び出される。
-
 ### `bukkit` [PotionSplashEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/PotionSplashEvent.html)
 ポーションが割れる時に呼び出される。
 
@@ -930,9 +903,6 @@ LootTable によってアイテムが補充される時に呼び出される。
 
 ### `paper` [PreLookupProfileEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/profile/PreLookupProfileEvent.html)
 Mojang API を用いてプロファイルを検索する時に呼び出される。
-
-### `paper` [PreSpawnerSpawnEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/PreSpawnerSpawnEvent.html)
-エンティティがスポナーによってスポーンする前に呼び出される。[SpawnerSpawnEvent](README.md#bukkit-spawnerspawnevent) よりも前に呼び出される。
 
 ### `bukkit` [PrepareAnvilEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/inventory/PrepareAnvilEvent.html)
 金床の使用準備が出来た時に呼び出される。完成アイテムが表示される毎に発生する。
@@ -953,6 +923,9 @@ Mojang API を用いてプロファイルを検索する時に呼び出される
 
 ### `bukkit` [PrepareSmithingEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/inventory/PrepareSmithingEvent.html)
 鍛治台の使用準備が出来た時に呼び出される。完成アイテムが表示される毎に発生する。
+
+### `paper` [PreSpawnerSpawnEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/PreSpawnerSpawnEvent.html)
+エンティティがスポナーによってスポーンする前に呼び出される。[SpawnerSpawnEvent](README.md#bukkit-spawnerspawnevent) よりも前に呼び出される。
 
 ### `paper` [ProfileWhitelistVerifyEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/profile/ProfileWhitelistVerifyEvent.html)
 プレイヤーがホワイトリストに登録されているか確認する時に呼び出される。
@@ -987,12 +960,6 @@ Projectile が発射される時に呼び出される。
 ### `bukkit` [RemoteServerCommandEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/server/RemoteServerCommandEvent.html)
 RCON を介してコマンド入力を受け取った時に呼び出される。
 
-### `purpur` [RidableMoveEvent](https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/entity/RidableMoveEvent.html)
-乗ることが可能なエンティティが乗っているエンティティと共に動く時に呼び出される。
-
-### `purpur` [RidableSpacebarEvent](https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/entity/RidableSpacebarEvent.html)
-乗ることが可能なエンティティに乗っている時にジャンプを試みた時に呼び出される。
-
 ### `bukkit` [ServerCommandEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/server/ServerCommandEvent.html)
 プレイヤー以外がコマンドを実行する時に呼び出される。
 
@@ -1001,9 +968,6 @@ RCON を介してコマンド入力を受け取った時に呼び出される。
 
 ### `paper` [ServerExceptionEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/server/ServerExceptionEvent.html)
 回復可能な状況で例外が発生した時に呼び出される。
-
-### `bukkit` [ServerListPingEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/server/ServerListPingEvent.html)
-サーバーリストの表示内容を送る要求を受けた時に呼び出される。[PaperServerListPingEvent](README.md#paper-paperserverlistpingevent) を使うことでより詳細の情報を扱うことができる。
 
 ### `bukkit` [ServerLoadEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/server/ServerLoadEvent.html)
 サーバーが起動した時、リロードが完了した時に呼び出される。
@@ -1071,9 +1035,6 @@ RCON を介してコマンド入力を受け取った時に呼び出される。
 ### `bukkit` [StriderTemperatureChangeEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/StriderTemperatureChangeEvent.html)
 ストライダーの体温が変化した時に呼び出される。
 
-### `purpur` [StructureGenerateEvent](https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/world/StructureGenerateEvent.html)
-構造物が生成される時に呼び出される。
-
 ### `bukkit` [StructureGrowEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/world/StructureGrowEvent.html)
 植物が成長する時に呼び出される。以下に例を示す。
 - 苗木が木に成長する時
@@ -1084,9 +1045,6 @@ RCON を介してコマンド入力を受け取った時に呼び出される。
 - /locate コマンドを実行した時
 - エンダーアイを使用した時
 - 宝の地図が開かれた時
-
-### `paper` [TNTPrimeEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/block/TNTPrimeEvent.html)
-TNT に着火する時に呼び出される。
 
 ### `bukkit` [TabCompleteEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/server/TabCompleteEvent.html)
 プレイヤーやコンソールがコマンドをタブ補完する時に呼び出される。クライアントの変更により、プレイヤーの場合、コマンド自体では呼び出されず、コマンド引数の場合にのみ呼び出される。
@@ -1102,6 +1060,9 @@ TNT に着火する時に呼び出される。
 
 ### `bukkit` [TimeSkipEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/world/TimeSkipEvent.html)
 時間がスキップされる時に呼び出される。
+
+### `paper` [TNTPrimeEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/block/TNTPrimeEvent.html)
+TNT に着火する時に呼び出される。
 
 ### `bukkit` [TradeSelectEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/inventory/TradeSelectEvent.html)
 取引画面のサイドバーで別の取引をクリックする時に呼び出される。
@@ -1207,4 +1168,43 @@ TNT に着火する時に呼び出される。
 
 ### `bukkit` [WorldUnloadEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/world/WorldUnloadEvent.html)
 ワールドをアンロードするに呼び出される。
+
+### `purpur` [AnvilTakeResultEvent](https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/inventory/AnvilTakeResultEvent.html)
+金床から結果アイテムを取り出す時に呼び出される。
+
+### `purpur` [AnvilUpdateResultEvent](https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/inventory/AnvilUpdateResultEvent.html)
+金床の結果アイテムが更新された時に呼び出される。
+
+### `purpur` [EntityTeleportHinderedEvent](https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/entity/EntityTeleportHinderedEvent.html)
+エンティティがテレポートできない時に呼び出される。
+
+### `purpur` [ExecuteCommandEvent](https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/ExecuteCommandEvent.html)
+コマンドを実行する時に呼び出される。
+
+### `purpur` [LlamaJoinCaravanEvent](https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/entity/LlamaJoinCaravanEvent.html)
+ラマがキャラバンに参加する時に呼び出される。
+
+### `purpur` [LlamaLeaveCaravanEvent](https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/entity/LlamaLeaveCaravanEvent.html)
+ラマがキャラバンから脱退した時に呼び出される。
+
+### `purpur` [MonsterEggSpawnEvent](https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/entity/MonsterEggSpawnEvent.html)
+モンスターエッグを使い、エンティティがスポーンする時に呼び出される。
+
+### `purpur` [PlayerAFKEvent](https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/PlayerAFKEvent.html)
+プレイヤーのAFKモードに移行する時に呼び出される
+
+### `purpur` [PlayerBookTooLargeEvent](https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/player/PlayerBookTooLargeEvent.html)
+プレイヤーが本の制限を回避しようとした時に呼び出される。
+
+### `purpur` [PlayerSetSpawnerTypeWithEggEvent](https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/PlayerSetSpawnerTypeWithEggEvent.html)
+モンスターエッグを使い、スポナーの内容を変える時に呼び出される。
+
+### `purpur` [RidableMoveEvent](https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/entity/RidableMoveEvent.html)
+乗ることが可能なエンティティが乗っているエンティティと共に動く時に呼び出される。
+
+### `purpur` [RidableSpacebarEvent](https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/entity/RidableSpacebarEvent.html)
+乗ることが可能なエンティティに乗っている時にジャンプを試みた時に呼び出される。
+
+### `purpur` [StructureGenerateEvent](https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/world/StructureGenerateEvent.html)
+構造物が生成される時に呼び出される。
 

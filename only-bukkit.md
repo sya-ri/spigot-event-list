@@ -190,6 +190,9 @@ AreaEffectCloud の効果が付与される時に呼び出される。5ティッ
 
 エンティティがポータルを作成する時に呼び出される。
 
+### `bukkit` [PortalCreateEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/world/PortalCreateEvent.html)
+ポータルが作成される時に呼び出される。
+
 ### `bukkit` [EntityDamageByBlockEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityDamageByBlockEvent.html)
 ブロックによってエンティティがダメージを受ける時に呼び出される。
 
@@ -398,14 +401,17 @@ LootTable によってアイテムが生成される時に呼び出される。
 ### `bukkit` [NotePlayEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/NotePlayEvent.html)
 音符ブロックが音を鳴らす時に呼び出される。
 
+### `bukkit` [ServerListPingEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/server/ServerListPingEvent.html)
+サーバーリストの表示内容を送る要求を受けた時に呼び出される。[PaperServerListPingEvent](README.md#paper-paperserverlistpingevent) を使うことでより詳細の情報を扱うことができる。
+
+### `bukkit` [PiglinBarterEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/PiglinBarterEvent.html)
+ピグリンと物々交換する時に呼び出される。
+
 ### `bukkit` [PigZapEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/PigZapEvent.html)
 豚が雷に打たれた時に呼び出される。
 
 ### `bukkit` [PigZombieAngerEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/PigZombieAngerEvent.html)
 ゾンビ豚が怒る時に呼び出される。
-
-### `bukkit` [PiglinBarterEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/PiglinBarterEvent.html)
-ピグリンと物々交換する時に呼び出される。
 
 ### `bukkit` [PlayerAdvancementDoneEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerAdvancementDoneEvent.html)
 プレイヤーが進捗の条件を全て達成した時に呼び出される。
@@ -618,9 +624,6 @@ LootTable によってアイテムが生成される時に呼び出される。
 ### `bukkit` [PluginEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/server/PluginEvent.html)
 プラグインに関するイベントであることを表す。
 
-### `bukkit` [PortalCreateEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/world/PortalCreateEvent.html)
-ポータルが作成される時に呼び出される。
-
 ### `bukkit` [PotionSplashEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/PotionSplashEvent.html)
 ポーションが割れる時に呼び出される。
 
@@ -665,9 +668,6 @@ RCON を介してコマンド入力を受け取った時に呼び出される。
 
 ### `bukkit` [ServerEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/server/ServerEvent.html)
 サーバーに関するイベントであることを表す。
-
-### `bukkit` [ServerListPingEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/server/ServerListPingEvent.html)
-サーバーリストの表示内容を送る要求を受けた時に呼び出される。[PaperServerListPingEvent](README.md#paper-paperserverlistpingevent) を使うことでより詳細の情報を扱うことができる。
 
 ### `bukkit` [ServerLoadEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/server/ServerLoadEvent.html)
 サーバーが起動した時、リロードが完了した時に呼び出される。
