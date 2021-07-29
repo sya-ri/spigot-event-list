@@ -126,7 +126,7 @@ const main = async () => {
 
   // データを並び替え
   const events = Object.values(eventMap)
-    .sort()
+    .sort((a, b) => a.name.localeCompare(b.name))
     .map(
       (value): Event => ({
         name: value.name,

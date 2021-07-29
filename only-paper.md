@@ -136,11 +136,11 @@ LootTable によってアイテムが補充される時に呼び出される。
 ### `paper` [PlayerAdvancementCriterionGrantEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerAdvancementCriterionGrantEvent.html)
 プレイヤーが進捗の条件を達成した時に呼び出される。
 
-### `paper` [PlayerArmSwingEvent](https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/PlayerArmSwingEvent.html)
-プレイヤーが腕を振った時に呼び出される。
-
 ### `paper` [PlayerArmorChangeEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerArmorChangeEvent.html)
 プレイヤーの鎧が変更された時に呼び出される。
+
+### `paper` [PlayerArmSwingEvent](https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/PlayerArmSwingEvent.html)
+プレイヤーが腕を振った時に呼び出される。
 
 ### `paper` [PlayerAttackEntityCooldownResetEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerAttackEntityCooldownResetEvent.html)
 プレイヤーの攻撃クールダウンがリセットする時に呼び出される。
@@ -256,9 +256,6 @@ LootTable によってアイテムが補充される時に呼び出される。
 ### `paper` [PreLookupProfileEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/profile/PreLookupProfileEvent.html)
 Mojang API を用いてプロファイルを検索する時に呼び出される。
 
-### `paper` [PreSpawnerSpawnEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/PreSpawnerSpawnEvent.html)
-エンティティがスポナーによってスポーンする前に呼び出される。[SpawnerSpawnEvent](README.md#bukkit-spawnerspawnevent) よりも前に呼び出される。
-
 ### `paper` [PrepareGrindstoneEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/inventory/PrepareGrindstoneEvent.html)
 `@Deprecated` このイベントを直接使用せず、[PrepareResultEvent](README.md#paper-prepareresultevent) を使うことが推奨されている。
 
@@ -266,6 +263,9 @@ Mojang API を用いてプロファイルを検索する時に呼び出される
 
 ### `paper` [PrepareResultEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/inventory/PrepareResultEvent.html)
 結果スロットを含むインベントリにアイテムが配置された時に呼び出される。
+
+### `paper` [PreSpawnerSpawnEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/PreSpawnerSpawnEvent.html)
+エンティティがスポナーによってスポーンする前に呼び出される。[SpawnerSpawnEvent](README.md#bukkit-spawnerspawnevent) よりも前に呼び出される。
 
 ### `paper` [ProfileWhitelistVerifyEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/profile/ProfileWhitelistVerifyEvent.html)
 プレイヤーがホワイトリストに登録されているか確認する時に呼び出される。
@@ -312,14 +312,14 @@ Projectile がエンティティと衝突する時に呼び出される。キャ
 - エンダーアイを使用した時
 - 宝の地図が開かれた時
 
-### `paper` [TNTPrimeEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/block/TNTPrimeEvent.html)
-TNT に着火する時に呼び出される。
-
 ### `paper` [TargetHitEvent](https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/block/TargetHitEvent.html)
 ターゲットブロックに Projectile が当たる時に呼び出される。
 
 ### `paper` [ThrownEggHatchEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/ThrownEggHatchEvent.html)
 投げられた卵が孵化するかの確認をする時に呼び出される。
+
+### `paper` [TNTPrimeEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/block/TNTPrimeEvent.html)
+TNT に着火する時に呼び出される。
 
 ### `paper` [TurtleGoHomeEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/TurtleGoHomeEvent.html)
 カメが家に帰ることを決めた時に呼び出される。

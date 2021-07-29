@@ -398,14 +398,14 @@ LootTable によってアイテムが生成される時に呼び出される。
 ### `bukkit` [NotePlayEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/NotePlayEvent.html)
 音符ブロックが音を鳴らす時に呼び出される。
 
+### `bukkit` [PiglinBarterEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/PiglinBarterEvent.html)
+ピグリンと物々交換する時に呼び出される。
+
 ### `bukkit` [PigZapEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/PigZapEvent.html)
 豚が雷に打たれた時に呼び出される。
 
 ### `bukkit` [PigZombieAngerEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/PigZombieAngerEvent.html)
 ゾンビ豚が怒る時に呼び出される。
-
-### `bukkit` [PiglinBarterEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/PiglinBarterEvent.html)
-ピグリンと物々交換する時に呼び出される。
 
 ### `bukkit` [PlayerAdvancementDoneEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerAdvancementDoneEvent.html)
 プレイヤーが進捗の条件を全て達成した時に呼び出される。

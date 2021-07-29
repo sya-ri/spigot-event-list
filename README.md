@@ -11,8 +11,8 @@ Bukkit, Spigot, Paper, Purpur のイベント一覧です。
 - [CONTRIBUTE.md](CONTRIBUTE.md)
 
 ## 参考にしている Javadoc
-- [https://papermc.io/javadocs/paper/1.17/](https://papermc.io/javadocs/paper/1.17/) [`#124`](https://papermc.io/downloads#Paper-1.17)
-- [https://purpur.pl3x.net/javadoc/](https://purpur.pl3x.net/javadoc/) [`#1292`](https://purpur.pl3x.net/downloads/#1.17.1)
+- [https://papermc.io/javadocs/paper/1.17/](https://papermc.io/javadocs/paper/1.17/) [`#137`](https://papermc.io/downloads#Paper-1.17)
+- [https://purpur.pl3x.net/javadoc/](https://purpur.pl3x.net/javadoc/) [`#1300`](https://purpur.pl3x.net/downloads/#1.17.1)
 
 ## 環境毎のイベント一覧
 - [bukkit](only-bukkit.md)
@@ -407,12 +407,12 @@ AreaEffectCloud の効果が付与される時に呼び出される。5ティッ
 ### `bukkit` [EntityToggleSwimEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityToggleSwimEvent.html)
 エンティティの泳ぎ状態が切り替わる時に呼び出される。
 
-### `bukkit` [EntityTransformEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityTransformEvent.html)
-エンティティが別のエンティティに置きかわる時に呼び出される。
-
 ### `paper` [EntityTransformedEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/EntityTransformedEvent.html)
 `@Deprecated` Bukkit に追加された [EntityTransformEvent](README.md#bukkit-entitytransformevent) を使う。
 
+エンティティが別のエンティティに置きかわる時に呼び出される。
+
+### `bukkit` [EntityTransformEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityTransformEvent.html)
 エンティティが別のエンティティに置きかわる時に呼び出される。
 
 ### `bukkit` [EntityUnleashEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityUnleashEvent.html)
@@ -460,11 +460,11 @@ AreaEffectCloud の効果が付与される時に呼び出される。5ティッ
 ### `bukkit` [FurnaceStartSmeltEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/inventory/FurnaceStartSmeltEvent.html)
 かまどでの精錬が始まった時に呼び出される。
 
-### `paper` [GS4QueryEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/server/GS4QueryEvent.html)
-GS4クエリプロトコルがクエリされた時に呼び出される。
-
 ### `bukkit` [GenericGameEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/world/GenericGameEvent.html)
 一般的なゲームイベントであることを表す。このイベントは主にスカルセンサーの内部で使用される。可能な限りこのイベントを使わないようにする。
+
+### `paper` [GS4QueryEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/server/GS4QueryEvent.html)
+GS4クエリプロトコルがクエリされた時に呼び出される。
 
 ### `bukkit` [HangingBreakByEntityEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/hanging/HangingBreakByEntityEvent.html)
 エンティティによって壁掛けエンティティが破壊される時に呼び出される。
@@ -546,11 +546,11 @@ GS4クエリプロトコルがクエリされた時に呼び出される。
 ### `paper` [LookupProfileEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/profile/LookupProfileEvent.html)
 Mojang API を用いてプロファイルが検索された時に呼び出される。
 
-### `bukkit` [LootGenerateEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/world/LootGenerateEvent.html)
-LootTable によってアイテムが生成される時に呼び出される。
-
 ### `paper` [LootableInventoryReplenishEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/loottable/LootableInventoryReplenishEvent.html)
 LootTable によってアイテムが補充される時に呼び出される。
+
+### `bukkit` [LootGenerateEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/world/LootGenerateEvent.html)
+LootTable によってアイテムが生成される時に呼び出される。
 
 ### `bukkit` [MapInitializeEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/server/MapInitializeEvent.html)
 マップが初期化された時に呼び出される。
@@ -570,17 +570,14 @@ LootTable によってアイテムが補充される時に呼び出される。
 ### `paper` [PhantomPreSpawnEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/PhantomPreSpawnEvent.html)
 ファントムがスポーンする時に呼び出される。
 
+### `bukkit` [PiglinBarterEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/PiglinBarterEvent.html)
+ピグリンと物々交換する時に呼び出される。
+
 ### `bukkit` [PigZapEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/PigZapEvent.html)
 豚が雷に打たれた時に呼び出される。
 
 ### `bukkit` [PigZombieAngerEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/PigZombieAngerEvent.html)
 ゾンビ豚が怒る時に呼び出される。
-
-### `bukkit` [PiglinBarterEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/PiglinBarterEvent.html)
-ピグリンと物々交換する時に呼び出される。
-
-### `purpur` [PlayerAFKEvent](https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/PlayerAFKEvent.html)
-プレイヤーのAFKモードに移行する時に呼び出される
 
 ### `paper` [PlayerAdvancementCriterionGrantEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerAdvancementCriterionGrantEvent.html)
 プレイヤーが進捗の条件を達成した時に呼び出される。
@@ -588,17 +585,20 @@ LootTable によってアイテムが補充される時に呼び出される。
 ### `bukkit` [PlayerAdvancementDoneEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerAdvancementDoneEvent.html)
 プレイヤーが進捗の条件を全て達成した時に呼び出される。
 
+### `purpur` [PlayerAFKEvent](https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/PlayerAFKEvent.html)
+プレイヤーのAFKモードに移行する時に呼び出される
+
 ### `bukkit` [PlayerAnimationEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerAnimationEvent.html)
 プレイヤーのアニメーションに関するイベントであることを表す。
-
-### `paper` [PlayerArmSwingEvent](https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/PlayerArmSwingEvent.html)
-プレイヤーが腕を振った時に呼び出される。
 
 ### `paper` [PlayerArmorChangeEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerArmorChangeEvent.html)
 プレイヤーの鎧が変更された時に呼び出される。
 
 ### `bukkit` [PlayerArmorStandManipulateEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerArmorStandManipulateEvent.html)
 プレイヤーがアーマースタンドに対してアイテムを交換・取得・配置する時に呼び出される。
+
+### `paper` [PlayerArmSwingEvent](https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/PlayerArmSwingEvent.html)
+プレイヤーが腕を振った時に呼び出される。
 
 ### `paper` [PlayerAttackEntityCooldownResetEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerAttackEntityCooldownResetEvent.html)
 プレイヤーの攻撃クールダウンがリセットする時に呼び出される。
@@ -770,12 +770,12 @@ LootTable によってアイテムが補充される時に呼び出される。
 ### `bukkit` [PlayerLevelChangeEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerLevelChangeEvent.html)
 プレイヤーの経験値レベルが変更した時に呼び出される。
 
-### `bukkit` [PlayerLocaleChangeEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerLocaleChangeEvent.html)
-プレイヤーが言語設定を変更した時に呼び出される。
-
 ### `paper` [PlayerLocaleChangeEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerLocaleChangeEvent.html)
 `@Deprecated` Bukkit に追加された [PlayerLocaleChangeEvent](README.md#bukkit-playerlocalechangeevent) を使う。
 
+プレイヤーが言語設定を変更した時に呼び出される。
+
+### `bukkit` [PlayerLocaleChangeEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerLocaleChangeEvent.html)
 プレイヤーが言語設定を変更した時に呼び出される。
 
 ### `bukkit` [PlayerLoginEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerLoginEvent.html)
@@ -931,9 +931,6 @@ LootTable によってアイテムが補充される時に呼び出される。
 ### `paper` [PreLookupProfileEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/profile/PreLookupProfileEvent.html)
 Mojang API を用いてプロファイルを検索する時に呼び出される。
 
-### `paper` [PreSpawnerSpawnEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/PreSpawnerSpawnEvent.html)
-エンティティがスポナーによってスポーンする前に呼び出される。[SpawnerSpawnEvent](README.md#bukkit-spawnerspawnevent) よりも前に呼び出される。
-
 ### `bukkit` [PrepareAnvilEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/inventory/PrepareAnvilEvent.html)
 金床の使用準備が出来た時に呼び出される。完成アイテムが表示される毎に発生する。
 
@@ -953,6 +950,9 @@ Mojang API を用いてプロファイルを検索する時に呼び出される
 
 ### `bukkit` [PrepareSmithingEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/inventory/PrepareSmithingEvent.html)
 鍛治台の使用準備が出来た時に呼び出される。完成アイテムが表示される毎に発生する。
+
+### `paper` [PreSpawnerSpawnEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/PreSpawnerSpawnEvent.html)
+エンティティがスポナーによってスポーンする前に呼び出される。[SpawnerSpawnEvent](README.md#bukkit-spawnerspawnevent) よりも前に呼び出される。
 
 ### `paper` [ProfileWhitelistVerifyEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/profile/ProfileWhitelistVerifyEvent.html)
 プレイヤーがホワイトリストに登録されているか確認する時に呼び出される。
@@ -1085,9 +1085,6 @@ RCON を介してコマンド入力を受け取った時に呼び出される。
 - エンダーアイを使用した時
 - 宝の地図が開かれた時
 
-### `paper` [TNTPrimeEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/block/TNTPrimeEvent.html)
-TNT に着火する時に呼び出される。
-
 ### `bukkit` [TabCompleteEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/server/TabCompleteEvent.html)
 プレイヤーやコンソールがコマンドをタブ補完する時に呼び出される。クライアントの変更により、プレイヤーの場合、コマンド自体では呼び出されず、コマンド引数の場合にのみ呼び出される。
 
@@ -1102,6 +1099,9 @@ TNT に着火する時に呼び出される。
 
 ### `bukkit` [TimeSkipEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/world/TimeSkipEvent.html)
 時間がスキップされる時に呼び出される。
+
+### `paper` [TNTPrimeEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/block/TNTPrimeEvent.html)
+TNT に着火する時に呼び出される。
 
 ### `bukkit` [TradeSelectEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/inventory/TradeSelectEvent.html)
 取引画面のサイドバーで別の取引をクリックする時に呼び出される。
