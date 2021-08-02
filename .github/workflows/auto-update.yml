@@ -21,11 +21,17 @@ jobs:
         run: yarn
       - name: Run Update
         run: yarn run update
+      - name: Get Report
+        id: report
+        run: echo ::set-output name=content::$(cat report.md)
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
           title: 'イベントのバージョンを更新'
-          body: '> [Actions](https://github.com/sya-ri/spigot-event-list/actions/workflows/auto-update.yml) によって作成されました'
+          body: |
+            ${{ steps.report.outputs.content }}
+
+            > [Actions](https://github.com/sya-ri/spigot-event-list/actions/workflows/auto-update.yml) によって作成されました
           branch: actions/update-event-list
           commit-message: 'イベントのバージョンを更新'
           delete-branch: true

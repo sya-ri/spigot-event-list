@@ -2,8 +2,9 @@ import requestPromise = require("request-promise");
 import cheerio = require("cheerio");
 import { EventSources, getEventSource } from "./constants";
 import { Event, EventSource } from "./data-class";
-import { readDataYamlFile, writeDataYamlFile } from "./util";
+import { readDataYamlFile, writeDataYamlFile, writeFile } from "./util";
 import { RequestPromise } from "request-promise";
+import generateReport from "./generate-report";
 
 const downloadEvents = (
   events: { [name: string]: Event },
@@ -100,6 +101,16 @@ const main = async () => {
     delete value.deprecate;
     return map;
   }, {} as { [name: string]: Event });
+  const lastEventSources = Object.entries(EventSources).reduce(
+    (map, [name, source]) => {
+      map[name] = {
+        ...source,
+        version: lastData[name],
+      } as EventSource;
+      return map;
+    },
+    {} as { [name: string]: EventSource }
+  );
 
   // イベントをダウンロード
   const eventMap = {} as { [name: string]: Event };
@@ -160,6 +171,8 @@ const main = async () => {
     events,
     excludeEvents: lastData.excludeEvents,
   });
+
+  writeFile("report.md", generateReport(lastEventSources, EventSources));
 };
 
 main();
