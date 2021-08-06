@@ -1,6 +1,6 @@
 versions:
-  Paper: '#151'
-  Purpur: '#1308'
+  Paper: '#161'
+  Purpur: '#1315'
 events:
   - name: AbstractChatEvent
     link: https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/AbstractChatEvent.html
@@ -1091,6 +1091,10 @@ events:
     link: https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/PlayerSetSpawnerTypeWithEggEvent.html
     source: purpur
     description: モンスターエッグを使い、スポナーの内容を変える時に呼び出される。
+  - name: PlayerSetSpawnEvent
+    link: https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerSetSpawnEvent.html
+    source: paper
+    description: ''
   - name: PlayerShearBlockEvent
     link: https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/block/PlayerShearBlockEvent.html
     source: paper

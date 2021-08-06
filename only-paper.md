@@ -221,6 +221,9 @@ LootTable によってアイテムが補充される時に呼び出される。
 ### `paper` [PlayerRecipeBookClickEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerRecipeBookClickEvent.html)
 プレイヤーがレシピブックのレシビをクリックする時に呼び出される。
 
+### `paper` [PlayerSetSpawnEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerSetSpawnEvent.html)
+
+
 ### `paper` [PlayerShearBlockEvent](https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/block/PlayerShearBlockEvent.html)
 プレイヤーがブロックに対してハサミを使用する時に呼び出される。以下に例を示す。
 - カボチャを彫ったカボチャに変える時。
