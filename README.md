@@ -11,8 +11,8 @@ Bukkit, Spigot, Paper, Purpur のイベント一覧です。
 - [CONTRIBUTE.md](CONTRIBUTE.md)
 
 ## 参考にしている Javadoc
-- [https://papermc.io/javadocs/paper/1.17/](https://papermc.io/javadocs/paper/1.17/) [`#151`](https://papermc.io/downloads#Paper-1.17)
-- [https://purpur.pl3x.net/javadoc/](https://purpur.pl3x.net/javadoc/) [`#1308`](https://purpur.pl3x.net/downloads/#1.17.1)
+- [https://papermc.io/javadocs/paper/1.17/](https://papermc.io/javadocs/paper/1.17/) [`#161`](https://papermc.io/downloads#Paper-1.17)
+- [https://purpur.pl3x.net/javadoc/](https://purpur.pl3x.net/javadoc/) [`#1315`](https://purpur.pl3x.net/downloads/#1.17.1)
 
 ## 環境毎のイベント一覧
 - [bukkit](only-bukkit.md)
@@ -844,6 +844,9 @@ LootTable によってアイテムが生成される時に呼び出される。
 
 ### `purpur` [PlayerSetSpawnerTypeWithEggEvent](https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/PlayerSetSpawnerTypeWithEggEvent.html)
 モンスターエッグを使い、スポナーの内容を変える時に呼び出される。
+
+### `paper` [PlayerSetSpawnEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerSetSpawnEvent.html)
+
 
 ### `paper` [PlayerShearBlockEvent](https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/block/PlayerShearBlockEvent.html)
 プレイヤーがブロックに対してハサミを使用する時に呼び出される。以下に例を示す。
