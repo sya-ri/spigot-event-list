@@ -1,27 +1,27 @@
 import { EventSource } from "./data-class";
 
 const generateReport = (
-  eventSources: { [name: string]: EventSource },
-  lastEventSources: { [name: string]: EventSource }
+  lastEventSources: { [name: string]: EventSource },
+  eventSources: { [name: string]: EventSource }
 ): string => {
   let result = "";
-  const versions = getVersionsReport(eventSources, lastEventSources);
+  const versions = getVersionsReport(lastEventSources, eventSources);
   if (versions) result += versions;
   return result;
 };
 
 const getVersionsReport = (
-  eventSources: { [name: string]: EventSource },
-  lastEventSources: { [name: string]: EventSource }
+  lastEventSources: { [name: string]: EventSource },
+  eventSources: { [name: string]: EventSource }
 ): string | null => {
   let result = "";
   let changeCount = 0;
-  result += "### バージョン\n";
+  result += "### バージョン\n\n";
   Object.keys(eventSources).forEach((name) => {
-    const version = eventSources[name].version;
     const lastVersion = lastEventSources[name].version;
-    if (version != lastVersion) {
-      result += `- **${name}**: \`${lastVersion}\` → \`${version}\`\n`;
+    const version = eventSources[name].version;
+    if (lastVersion != version) {
+      result += `- **${name}**: \`${lastVersion}\` → \`${version}\`\n\n`;
       changeCount++;
     }
   });

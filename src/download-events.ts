@@ -105,7 +105,7 @@ const main = async () => {
     (map, [name, source]) => {
       map[name] = {
         ...source,
-        version: lastData[name],
+        version: lastData.versions[name],
       } as EventSource;
       return map;
     },
