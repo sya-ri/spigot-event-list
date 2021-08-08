@@ -1,7 +1,7 @@
 import requestPromise = require("request-promise");
 import cheerio = require("cheerio");
 import { EventSources, getEventSource } from "./constants";
-import { Event, EventSource } from "./data-class";
+import { Event, EventSource, EventSourceMap } from "./data-class";
 import { readDataYamlFile, writeDataYamlFile, writeFile } from "./util";
 import { RequestPromise } from "request-promise";
 import generateReport from "./generate-report";
@@ -109,7 +109,7 @@ const main = async () => {
       } as EventSource;
       return map;
     },
-    {} as { [name: string]: EventSource }
+    {} as EventSourceMap
   );
 
   // イベントをダウンロード

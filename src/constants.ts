@@ -1,8 +1,8 @@
-import { EventSource } from "./data-class";
+import { EventSource, EventSourceMap } from "./data-class";
 import requestPromise = require("request-promise");
 import { RequestPromise } from "request-promise";
 
-export const EventSources: { [name: string]: EventSource } = {
+export const EventSources: EventSourceMap = {
   Paper: {
     javadocUrl: "https://papermc.io/javadocs/paper/1.17/",
     downloadUrl: "https://papermc.io/downloads#Paper-1.17",

@@ -9,6 +9,8 @@ export interface Event {
   deprecateDescription: string;
 }
 
+export type EventSourceMap = { [name: string]: EventSource };
+
 export interface EventSource {
   javadocUrl: string;
   downloadUrl: string;

@@ -1,8 +1,8 @@
-import { EventSource } from "./data-class";
+import { EventSourceMap } from "./data-class";
 
 const generateReport = (
-  lastEventSources: { [name: string]: EventSource },
-  eventSources: { [name: string]: EventSource }
+  lastEventSources: EventSourceMap,
+  eventSources: EventSourceMap
 ): string => {
   let result = "";
   const versions = getVersionsReport(lastEventSources, eventSources);
@@ -11,8 +11,8 @@ const generateReport = (
 };
 
 const getVersionsReport = (
-  lastEventSources: { [name: string]: EventSource },
-  eventSources: { [name: string]: EventSource }
+  lastEventSources: EventSourceMap,
+  eventSources: EventSourceMap
 ): string | null => {
   let result = "";
   let changeCount = 0;
