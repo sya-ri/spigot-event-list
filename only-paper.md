@@ -74,6 +74,9 @@
 ### `paper` [EntityAddToWorldEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/EntityAddToWorldEvent.html)
 何らかの理由でワールドにエンティティが増えた時に呼び出される。
 
+### `paper` [EntityDamageItemEvent](https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/entity/EntityDamageItemEvent.html)
+
+
 ### `paper` [EntityInsideBlockEvent](https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/entity/EntityInsideBlockEvent.html)
 エンティティがブロックのヒットボックスに入る時に呼び出される。キャンセルされるとブロックに入ったことによって起きる処理が実行されない。以下に例を示す。
 - 大釜に入り、エンティティが消火される。
