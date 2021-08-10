@@ -11,8 +11,8 @@ Bukkit, Spigot, Paper, Purpur のイベント一覧です。
 - [CONTRIBUTE.md](CONTRIBUTE.md)
 
 ## 参考にしている Javadoc
-- [https://papermc.io/javadocs/paper/1.17/](https://papermc.io/javadocs/paper/1.17/) [`#161`](https://papermc.io/downloads#Paper-1.17)
-- [https://purpur.pl3x.net/javadoc/](https://purpur.pl3x.net/javadoc/) [`#1315`](https://purpur.pl3x.net/downloads/#1.17.1)
+- [https://papermc.io/javadocs/paper/1.17/](https://papermc.io/javadocs/paper/1.17/) [`#170`](https://papermc.io/downloads#Paper-1.17)
+- [https://purpur.pl3x.net/javadoc/](https://purpur.pl3x.net/javadoc/) [`#1328`](https://purpur.pl3x.net/downloads/#1.17.1)
 
 ## 環境毎のイベント一覧
 - [bukkit](only-bukkit.md)
@@ -290,6 +290,9 @@ AreaEffectCloud の効果が付与される時に呼び出される。5ティッ
 
 ### `bukkit` [EntityDamageEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityDamageEvent.html)
 エンティティがダメージを受ける時に呼び出される。
+
+### `paper` [EntityDamageItemEvent](https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/entity/EntityDamageItemEvent.html)
+
 
 ### `bukkit` [EntityDeathEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityDeathEvent.html)
 エンティティが死ぬ時に呼び出される。
