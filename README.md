@@ -292,7 +292,7 @@ AreaEffectCloud の効果が付与される時に呼び出される。5ティッ
 エンティティがダメージを受ける時に呼び出される。
 
 ### `paper` [EntityDamageItemEvent](https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/entity/EntityDamageItemEvent.html)
-
+エンティティによって使用されているアイテムが、耐久ダメージを受ける時に呼び出される。
 
 ### `bukkit` [EntityDeathEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityDeathEvent.html)
 エンティティが死ぬ時に呼び出される。
@@ -849,7 +849,7 @@ LootTable によってアイテムが生成される時に呼び出される。
 モンスターエッグを使い、スポナーの内容を変える時に呼び出される。
 
 ### `paper` [PlayerSetSpawnEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerSetSpawnEvent.html)
-
+プレイヤーがスポーン地点を設定する時に呼び出される。
 
 ### `paper` [PlayerShearBlockEvent](https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/block/PlayerShearBlockEvent.html)
 プレイヤーがブロックに対してハサミを使用する時に呼び出される。以下に例を示す。

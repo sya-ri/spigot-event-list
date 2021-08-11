@@ -358,7 +358,7 @@ events:
   - name: EntityDamageItemEvent
     link: https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/entity/EntityDamageItemEvent.html
     source: paper
-    description: ''
+    description: エンティティによって使用されているアイテムが、耐久ダメージを受ける時に呼び出される。
   - name: EntityDeathEvent
     link: https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityDeathEvent.html
     source: bukkit
@@ -1098,7 +1098,7 @@ events:
   - name: PlayerSetSpawnEvent
     link: https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerSetSpawnEvent.html
     source: paper
-    description: ''
+    description: プレイヤーがスポーン地点を設定する時に呼び出される。
   - name: PlayerShearBlockEvent
     link: https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/block/PlayerShearBlockEvent.html
     source: paper
