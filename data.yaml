@@ -1,6 +1,6 @@
 versions:
-  Paper: '#170'
-  Purpur: '#1328'
+  Paper: '#215'
+  Purpur: '#1345'
 events:
   - name: AbstractChatEvent
     link: https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/AbstractChatEvent.html
@@ -68,6 +68,10 @@ events:
     link: https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/block/BellRingEvent.html
     source: paper
     description: ベルが鳴る時に呼び出される。
+  - name: BlockBreakBlockEvent
+    link: https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/block/BlockBreakBlockEvent.html
+    source: paper
+    description: ''
   - name: BlockBreakEvent
     link: https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/BlockBreakEvent.html
     source: bukkit
