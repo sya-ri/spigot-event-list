@@ -11,8 +11,8 @@ Bukkit, Spigot, Paper, Purpur のイベント一覧です。
 - [CONTRIBUTE.md](CONTRIBUTE.md)
 
 ## 参考にしている Javadoc
-- [https://papermc.io/javadocs/paper/1.17/](https://papermc.io/javadocs/paper/1.17/) [`#215`](https://papermc.io/downloads#Paper-1.17)
-- [https://purpur.pl3x.net/javadoc/](https://purpur.pl3x.net/javadoc/) [`#1345`](https://purpur.pl3x.net/downloads/#1.17.1)
+- [https://papermc.io/javadocs/paper/1.17/](https://papermc.io/javadocs/paper/1.17/) [`#231`](https://papermc.io/downloads#Paper-1.17)
+- [https://purpur.pl3x.net/javadoc/](https://purpur.pl3x.net/javadoc/) [`#1356`](https://purpur.pl3x.net/downloads/#1.17.1)
 
 ## 環境毎のイベント一覧
 - [bukkit](only-bukkit.md)
@@ -75,7 +75,7 @@ AreaEffectCloud の効果が付与される時に呼び出される。5ティッ
 ベルが鳴る時に呼び出される。
 
 ### `paper` [BlockBreakBlockEvent](https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/block/BlockBreakBlockEvent.html)
-
+ブロックがブロックを破壊する時に呼び出される。
 
 ### `bukkit` [BlockBreakEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/BlockBreakEvent.html)
 プレイヤーがブロックを破壊する時に呼び出される。

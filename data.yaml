@@ -1,6 +1,6 @@
 versions:
-  Paper: '#215'
-  Purpur: '#1345'
+  Paper: '#231'
+  Purpur: '#1356'
 events:
   - name: AbstractChatEvent
     link: https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/AbstractChatEvent.html
@@ -71,7 +71,7 @@ events:
   - name: BlockBreakBlockEvent
     link: https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/block/BlockBreakBlockEvent.html
     source: paper
-    description: ''
+    description: ブロックがブロックを破壊する時に呼び出される。
   - name: BlockBreakEvent
     link: https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/BlockBreakEvent.html
     source: bukkit
