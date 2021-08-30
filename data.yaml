@@ -71,7 +71,7 @@ events:
   - name: BlockBreakBlockEvent
     link: https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/block/BlockBreakBlockEvent.html
     source: paper
-    description: ''
+    description: ブロックがブロックを破壊する時に呼び出される。
   - name: BlockBreakEvent
     link: https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/BlockBreakEvent.html
     source: bukkit

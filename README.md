@@ -75,7 +75,7 @@ AreaEffectCloud の効果が付与される時に呼び出される。5ティッ
 ベルが鳴る時に呼び出される。
 
 ### `paper` [BlockBreakBlockEvent](https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/block/BlockBreakBlockEvent.html)
-
+ブロックがブロックを破壊する時に呼び出される。
 
 ### `bukkit` [BlockBreakEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/BlockBreakEvent.html)
 プレイヤーがブロックを破壊する時に呼び出される。

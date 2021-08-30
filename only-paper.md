@@ -34,7 +34,7 @@
 ベルが鳴る時に呼び出される。
 
 ### `paper` [BlockBreakBlockEvent](https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/block/BlockBreakBlockEvent.html)
-
+ブロックがブロックを破壊する時に呼び出される。
 
 ### `paper` [BlockDestroyEvent](https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/block/BlockDestroyEvent.html)
 サーバーがブロックを破棄する時に呼び出される。
