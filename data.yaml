@@ -1,6 +1,6 @@
 versions:
-  Paper: '#231'
-  Purpur: '#1356'
+  Paper: '#243'
+  Purpur: '#1372'
 events:
   - name: AbstractChatEvent
     link: https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/AbstractChatEvent.html
@@ -302,6 +302,14 @@ events:
     link: https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/EndermanEscapeEvent.html
     source: paper
     description: エンダーマンが逃げた時に呼び出される。
+  - name: EntitiesLoadEvent
+    link: https://papermc.io/javadocs/paper/1.17/org/bukkit/event/world/EntitiesLoadEvent.html
+    source: bukkit
+    description: ''
+  - name: EntitiesUnloadEvent
+    link: https://papermc.io/javadocs/paper/1.17/org/bukkit/event/world/EntitiesUnloadEvent.html
+    source: bukkit
+    description: ''
   - name: EntityAddToWorldEvent
     link: https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/EntityAddToWorldEvent.html
     source: paper
