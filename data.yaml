@@ -1,6 +1,6 @@
 versions:
-  Paper: '#243'
-  Purpur: '#1372'
+  Paper: '#249'
+  Purpur: '#1377'
 events:
   - name: AbstractChatEvent
     link: https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/AbstractChatEvent.html
@@ -305,11 +305,11 @@ events:
   - name: EntitiesLoadEvent
     link: https://papermc.io/javadocs/paper/1.17/org/bukkit/event/world/EntitiesLoadEvent.html
     source: bukkit
-    description: ''
+    description: チャンクによってエンティティが読み込まれた時に呼び出される。
   - name: EntitiesUnloadEvent
     link: https://papermc.io/javadocs/paper/1.17/org/bukkit/event/world/EntitiesUnloadEvent.html
     source: bukkit
-    description: ''
+    description: チャンクによってエンティティが読み込まれなくなった時に呼び出される。
   - name: EntityAddToWorldEvent
     link: https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/EntityAddToWorldEvent.html
     source: paper

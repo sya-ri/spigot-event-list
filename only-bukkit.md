@@ -160,10 +160,10 @@ AreaEffectCloud の効果が付与される時に呼び出される。5ティッ
 エンダードラゴンの攻撃フェーズが変わった時に呼び出される。
 
 ### `bukkit` [EntitiesLoadEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/world/EntitiesLoadEvent.html)
-
+チャンクによってエンティティが読み込まれた時に呼び出される。
 
 ### `bukkit` [EntitiesUnloadEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/world/EntitiesUnloadEvent.html)
-
+チャンクによってエンティティが読み込まれなくなった時に呼び出される。
 
 ### `bukkit` [EntityAirChangeEvent](https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityAirChangeEvent.html)
 エンティティの残り酸素量が変化する時に呼び出される。
