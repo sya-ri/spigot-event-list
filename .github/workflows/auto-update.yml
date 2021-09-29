@@ -2,6 +2,7 @@ name: Update Event List (Auto)
 on:
   schedule:
     - cron: '00 21 * * *' # UTC 21:00 (JST 06:00)
+  workflow_dispatch:
 jobs:
   update:
     runs-on: ubuntu-latest
@@ -23,7 +24,12 @@ jobs:
         run: yarn run update
       - name: Get Report
         id: report
-        run: echo ::set-output name=content::$(cat report.md)
+        run: |
+          content=$(cat report.md)
+          content="${content//'%'/'%25'}"
+          content="${content//$'\n'/'%0A'}"
+          content="${content//$'\r'/'%0D'}"
+          echo ::set-output name=content::$content
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
