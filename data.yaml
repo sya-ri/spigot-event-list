@@ -1,6 +1,6 @@
 versions:
-  Paper: '#249'
-  Purpur: '#1377'
+  Paper: '#299'
+  Purpur: '#1397'
 events:
   - name: AbstractChatEvent
     link: https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/AbstractChatEvent.html
