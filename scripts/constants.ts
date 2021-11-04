@@ -1,13 +1,14 @@
-import { EventSource, EventSourceMap } from "./data-class";
-import requestPromise = require("request-promise");
-import { RequestPromise } from "request-promise";
+import requestPromise, { RequestPromise } from "request-promise";
+import EventSource from "./EventSource";
+import EventSourceMap from "./EventSourceMap";
 
 export const EventSources: EventSourceMap = {
   Paper: {
-    javadocUrl: "https://papermc.io/javadocs/paper/1.17/",
-    downloadUrl: "https://papermc.io/downloads#Paper-1.17",
     allClasses: "allclasses-index.html",
     deprecateList: "deprecated-list.html",
+    downloadSources: ["bukkit", "spigot", "paper"],
+    downloadUrl: "https://papermc.io/downloads#Paper-1.17",
+    javadocUrl: "https://papermc.io/javadocs/paper/1.17/",
     updateVersion: (source: EventSource): RequestPromise =>
       requestPromise(
         "https://papermc.io/api/v2/projects/paper/versions/1.17.1/",
@@ -16,13 +17,13 @@ export const EventSources: EventSourceMap = {
           source.version = "#" + json.builds.pop();
         }
       ),
-    downloadSources: ["bukkit", "spigot", "paper"],
   },
   Purpur: {
-    javadocUrl: "https://purpur.pl3x.net/javadoc/",
-    downloadUrl: "https://purpur.pl3x.net/downloads/#1.17.1",
     allClasses: "allclasses-index.html",
     deprecateList: "deprecated-list.html",
+    downloadSources: ["purpur"],
+    downloadUrl: "https://purpur.pl3x.net/downloads/#1.17.1",
+    javadocUrl: "https://purpur.pl3x.net/javadoc/",
     updateVersion: (source: EventSource): RequestPromise =>
       requestPromise(
         "https://api.pl3x.net/v2/purpur/1.17.1/",
@@ -31,7 +32,6 @@ export const EventSources: EventSourceMap = {
           source.version = "#" + json.builds.latest;
         }
       ),
-    downloadSources: ["purpur"],
   },
 };
 export const DataYamlName = "data.yaml";
@@ -59,5 +59,7 @@ export const getEventSource = (href: string): string => {
     return "paper";
   } else if (href.startsWith("net/pl3x/purpur")) {
     return "purpur";
+  } else {
+    return "";
   }
 };

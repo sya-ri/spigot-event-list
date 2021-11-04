@@ -1,10 +1,11 @@
-import requestPromise = require("request-promise");
-import cheerio = require("cheerio");
+import cheerio from "cheerio";
+import requestPromise, { RequestPromise } from "request-promise";
 import { EventSources, getEventSource } from "./constants";
-import { Event, EventSource, EventSourceMap } from "./data-class";
-import { readDataYamlFile, writeDataYamlFile, writeFile } from "./util";
-import { RequestPromise } from "request-promise";
+import Event from "./Event";
+import EventSource from "./EventSource";
+import EventSourceMap from "./EventSourceMap";
 import generateReport from "./generate-report";
+import { readDataYamlFile, writeDataYamlFile, writeFile } from "./util";
 
 const downloadEvents = (
   events: { [name: string]: Event },
@@ -40,11 +41,11 @@ const downloadEvents = (
                 deprecateDescription = lastEvent.deprecateDescription;
               }
               events[name + source] = {
-                name: name,
-                link: eventSource.javadocUrl + href,
-                source: source,
+                deprecateDescription: deprecateDescription || "",
                 description: description,
-                deprecateDescription: deprecateDescription,
+                link: eventSource.javadocUrl + href,
+                name: name || "",
+                source: source,
               };
             }
           }
@@ -122,7 +123,9 @@ const main = async () => {
   const versions = {} as { [name: string]: string };
   for (const [name, source] of Object.entries(EventSources)) {
     await source.updateVersion(source);
-    versions[name] = source.version;
+    if (source.version != null) {
+      versions[name] = source.version;
+    }
   }
 
   // 無視するイベントを除外
@@ -140,12 +143,12 @@ const main = async () => {
     .sort((a, b) => a.name.localeCompare(b.name))
     .map(
       (value): Event => ({
-        name: value.name,
-        link: value.link,
-        source: value.source,
-        description: value.description,
         deprecate: value.deprecate,
         deprecateDescription: value.deprecateDescription,
+        description: value.description,
+        link: value.link,
+        name: value.name,
+        source: value.source,
       })
     );
 
@@ -167,9 +170,9 @@ const main = async () => {
 
   // data.yaml に保存
   writeDataYamlFile({
-    versions,
     events,
     excludeEvents: lastData.excludeEvents,
+    versions,
   });
 
   writeFile("report.md", generateReport(lastEventSources, EventSources));

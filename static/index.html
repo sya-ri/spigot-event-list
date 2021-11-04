@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charSet="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Spigot Event List</title>
+
+  <!-- For GitHub Pages / ref: https://maku.blog/p/9u8it5f/ -->
+  <script>
+    (() => {
+      const query = window.location.search;
+      if (query.startsWith('?p=')) {
+        const route = decodeURIComponent(query.substr(3));
+        window.history.replaceState(null, null, route);
+      }
+    })();
+  </script>
+
+  <!-- Style -->
+  <style>
+      * {
+          margin: 0;
+          padding: 0;
+      }
+  </style>
+
+  <!-- For React -->
+  <script defer src="/main.js"></script>
+</head>
+<body>
+<noscript>You need to enable JavaScript to run this app.</noscript>
+<div id="root"></div>
+</body>
+</html>
