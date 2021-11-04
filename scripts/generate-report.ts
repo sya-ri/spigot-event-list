@@ -1,4 +1,4 @@
-import { EventSourceMap } from "./data-class";
+import EventSourceMap from "./EventSourceMap";
 
 const generateReport = (
   lastEventSources: EventSourceMap,

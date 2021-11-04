@@ -1,23 +1,63 @@
 {
-  "extends":[
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": [
     "eslint:recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended"
+    "plugin:import/recommended",
+    "plugin:import/typescript",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "prettier"
   ],
-  "plugins":[
-    "@typescript-eslint"
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2021,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "import",
+    "react-hooks",
+    "react",
+    "@typescript-eslint",
+    "prettier",
+    "sort-keys-fix"
   ],
-  "env":{
-    "node":true,
-    "es6":true
+  "rules": {
+    "import/order": [
+      "error",
+      {
+        "alphabetize": {
+          "caseInsensitive": true,
+          "order": "asc"
+        },
+        "groups": ["builtin", "external", "internal"],
+        "newlines-between": "never",
+        "pathGroups": [
+          {
+            "group": "external",
+            "pattern": "react",
+            "position": "before"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": ["react"]
+      }
+    ],
+    "prettier/prettier": "error",
+    "react/prop-types": "off",
+    "sort-imports": "off",
+    "sort-keys-fix/sort-keys-fix": "warn"
   },
-  "parser":"@typescript-eslint/parser",
-  "parserOptions":{
-    "sourceType":"module",
-    "project":"./tsconfig.json"
-  },
-  "rules":{
-
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   }
 }

@@ -1,4 +1,4 @@
-import Handlebars = require("handlebars");
+import Handlebars from "handlebars";
 import {
   EventSources,
   OutputReadmeFileName,
@@ -8,8 +8,8 @@ import {
   OutputOnlyDeprecateFileName,
   TemplateOnlyDeprecateFileName,
 } from "./constants";
+import Event from "./Event";
 import { readDataYamlFile, readFile, writeAutoGenerateFile } from "./util";
-import { Event } from "./data-class";
 
 const main = () => {
   // data.yaml をロード
@@ -36,8 +36,8 @@ const main = () => {
     writeAutoGenerateFile(
       OutputOnlyEventSourceFileName.replace("{name}", source),
       Handlebars.compile(readFile(TemplateOnlyEventSourceFileName))({
-        name: source,
         list: sourceEvents[source],
+        name: source,
       })
     );
   });
@@ -54,14 +54,14 @@ const main = () => {
   writeAutoGenerateFile(
     OutputReadmeFileName,
     Handlebars.compile(readFile(TemplateReadmeFileName))({
-      list: data.events,
-      javadoc_links: EventSources,
       deprecate_link: OutputOnlyDeprecateFileName,
+      javadoc_links: EventSources,
+      list: data.events,
       only_links: Object.keys(sourceEvents)
         .sort()
         .map((name) => ({
-          name: name,
           link: OutputOnlyEventSourceFileName.replace("{name}", name),
+          name: name,
         })),
     })
   );

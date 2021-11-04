@@ -1,7 +1,7 @@
-import fs = require("fs");
-import yaml = require("js-yaml");
+import fs from "fs";
+import yaml from "js-yaml";
 import { DataYamlName, DoNotEditMessage } from "./constants";
-import { DataYamlType } from "./data-class";
+import DataYamlType from "./DataYamlType";
 
 /**
  * ファイルを読み込む
@@ -39,7 +39,7 @@ export const writeAutoGenerateFile = (
  * data.yaml を読み込む
  */
 export const readDataYamlFile = (): DataYamlType =>
-  yaml.load(readFile(DataYamlName));
+  <DataYamlType>yaml.load(readFile(DataYamlName));
 
 /**
  * data.yaml を変更する
