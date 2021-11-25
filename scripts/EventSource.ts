@@ -1,5 +1,9 @@
 import { RequestPromise } from "request-promise";
+import EventSourceType from "../src/EventSourceType";
 
+/**
+ * イベントソース
+ */
 export default interface EventSource {
   javadocUrl: string;
   downloadUrl: string;
@@ -7,5 +11,5 @@ export default interface EventSource {
   deprecateList: string;
   version?: string;
   updateVersion: (source: EventSource) => RequestPromise;
-  downloadSources: string[];
+  downloadSources: EventSourceType[];
 }

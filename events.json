@@ -1,0 +1,2296 @@
+[
+  {
+    "description": "チャットに関するイベントであることを表す。",
+    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/AbstractChatEvent.html",
+    "name": "AbstractChatEvent",
+    "source": "paper"
+  },
+  {
+    "description": "使用したことで金床が損傷する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/block/AnvilDamagedEvent.html",
+    "name": "AnvilDamagedEvent",
+    "source": "paper"
+  },
+  {
+    "description": "金床から結果アイテムを取り出す時に呼び出される。",
+    "link": "https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/inventory/AnvilTakeResultEvent.html",
+    "name": "AnvilTakeResultEvent",
+    "source": "purpur"
+  },
+  {
+    "description": "金床の結果アイテムが更新された時に呼び出される。",
+    "link": "https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/inventory/AnvilUpdateResultEvent.html",
+    "name": "AnvilUpdateResultEvent",
+    "source": "purpur"
+  },
+  {
+    "description": "AreaEffectCloud の効果が付与される時に呼び出される。5ティック毎に1回発生する。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/AreaEffectCloudApplyEvent.html",
+    "name": "AreaEffectCloudApplyEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "矢がエンティティの本体に入る・存在する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/ArrowBodyCountChangeEvent.html",
+    "name": "ArrowBodyCountChangeEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーがチャットした時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/AsyncChatEvent.html",
+    "name": "AsyncChatEvent",
+    "source": "paper"
+  },
+  {
+    "deprecate": true,
+    "deprecateDescription": "Paper であれば、[AsyncChatEvent](README.md#asyncchatevent) を使う。",
+    "description": "プレイヤーがチャットした時に呼び出される。非同期でも同期でも呼び出されることがある。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/AsyncPlayerChatEvent.html",
+    "name": "AsyncPlayerChatEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーがログインしようとしている時に呼び出される。非同期で処理される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/AsyncPlayerPreLoginEvent.html",
+    "name": "AsyncPlayerPreLoginEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "タブ補完を行う時に呼び出される。非同期で処理される。このイベントが結果を返す時、標準のタブ補完処理は発生しない。ただし、 [TabCompleteEvent](README.md#bukkit-tabcompleteevent) は非同期の結果と共に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/server/AsyncTabCompleteEvent.html",
+    "name": "AsyncTabCompleteEvent",
+    "source": "paper"
+  },
+  {
+    "description": "コウモリが眠ったり起きたりする時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/BatToggleSleepEvent.html",
+    "name": "BatToggleSleepEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "ビーコンが有効になった時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/block/BeaconActivatedEvent.html",
+    "name": "BeaconActivatedEvent",
+    "source": "paper"
+  },
+  {
+    "description": "ビーコンが無効になった時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/block/BeaconDeactivatedEvent.html",
+    "name": "BeaconDeactivatedEvent",
+    "source": "paper"
+  },
+  {
+    "description": "ビーコンの効果がプレイヤーに適用される時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/block/BeaconEffectEvent.html",
+    "name": "BeaconEffectEvent",
+    "source": "paper"
+  },
+  {
+    "description": "ベルによって Rider が正体を表した時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/block/BellRevealRaiderEvent.html",
+    "name": "BellRevealRaiderEvent",
+    "source": "paper"
+  },
+  {
+    "description": "ベルが鳴る時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/block/BellRingEvent.html",
+    "name": "BellRingEvent",
+    "source": "paper"
+  },
+  {
+    "description": "ブロックがブロックを破壊する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/block/BlockBreakBlockEvent.html",
+    "name": "BlockBreakBlockEvent",
+    "source": "paper"
+  },
+  {
+    "description": "プレイヤーがブロックを破壊する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/BlockBreakEvent.html",
+    "name": "BlockBreakEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "ブロックが燃え尽きて破壊される時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/BlockBurnEvent.html",
+    "name": "BlockBurnEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "ブロックを設置しようとした時に呼び出される。設置可能かどうかを確認する。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/BlockCanBuildEvent.html",
+    "name": "BlockCanBuildEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "アイテムがブロックを用いて調理される時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/BlockCookEvent.html",
+    "name": "BlockCookEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーがブロックを損傷させる時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/BlockDamageEvent.html",
+    "name": "BlockDamageEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "サーバーがブロックを破棄する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/block/BlockDestroyEvent.html",
+    "name": "BlockDestroyEvent",
+    "source": "paper"
+  },
+  {
+    "description": "ディスペンサーから装備可能なアイテムが射出され、エンティティに装備される時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/BlockDispenseArmorEvent.html",
+    "name": "BlockDispenseArmorEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "ディスペンサーからアイテムが射出される時に呼び出される。このイベントをキャンセルしても射出されたアイテムは減る。[BlockPreDispenseEvent](README.md#paper-blockpredispenseevent) を使うことでアイテムの消費もキャンセルできる。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/BlockDispenseEvent.html",
+    "name": "BlockDispenseEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーによって破壊されたブロックがアイテムとしてドロップする時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/BlockDropItemEvent.html",
+    "name": "BlockDropItemEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "ブロックに関するイベントであることを表す。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/BlockEvent.html",
+    "name": "BlockEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "ブロックが経験値を落とす時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/BlockExpEvent.html",
+    "name": "BlockExpEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "ブロックが爆発する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/BlockExplodeEvent.html",
+    "name": "BlockExplodeEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "自然にブロックが溶けたり消滅したりする時に呼び出される。以下に例を示す。\n- 光源によって雪や氷が溶ける時。\n- 燃料ブロックを破壊することなく、時間の経過によって火が消える時。\n- 水不足によってサンゴが死んだサンゴに変わる時。\n- カメが孵化し、カメの卵が破裂する時。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/BlockFadeEvent.html",
+    "name": "BlockFadeEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "ディスペンサーにアイテムが存在せず、射出されなかった時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/block/BlockFailedDispenseEvent.html",
+    "name": "BlockFailedDispenseEvent",
+    "source": "paper"
+  },
+  {
+    "description": "プレイヤーが骨粉を使用し、ブロックに変更が生じる時に呼び出される。[StructureGrowEvent](README.md#bukkit-structuregrowevent) の後に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/BlockFertilizeEvent.html",
+    "name": "BlockFertilizeEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "自然にブロックが形成される時に呼び出される。[BlockSpreadEvent](#bukkit-blockspreadevent) とは違い、ランダムに形成されないブロックに対して呼び出される。以下に例を示す。\n- 吹雪により雪が積もる時。\n- 雪に覆われたバイオームで氷が形成される時。\n- 水との接触による黒曜石や丸石の形成される時。\n- コンクリートパウダーと水の混合によるコンクリートが成形される時。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/BlockFormEvent.html",
+    "name": "BlockFormEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "ブロックの変更が起こる時に呼び出される。液体が流れる時とドラゴンの卵がテレポートする時のみ呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/BlockFromToEvent.html",
+    "name": "BlockFromToEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "自然に作物等が成長する時に呼び出される。以下に例を示す。\n- 小麦\n- サトウキビ\n- サボテン\n- スイカ\n- かぼちゃ\n- カメの卵",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/BlockGrowEvent.html",
+    "name": "BlockGrowEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "ブロックが点火された時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/BlockIgniteEvent.html",
+    "name": "BlockIgniteEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーがマルチブロックを設置する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/BlockMultiPlaceEvent.html",
+    "name": "BlockMultiPlaceEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "ブロックの落下確認をする時に呼び出される。高頻度で呼び出されるので処理には注意が必要。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/BlockPhysicsEvent.html",
+    "name": "BlockPhysicsEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "ピストンが動作する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/BlockPistonEvent.html",
+    "name": "BlockPistonEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "ピストンが伸びる時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/BlockPistonExtendEvent.html",
+    "name": "BlockPistonExtendEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "ピストンが縮む時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/BlockPistonRetractEvent.html",
+    "name": "BlockPistonRetractEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーがブロックを設置する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/BlockPlaceEvent.html",
+    "name": "BlockPlaceEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "ディスペンサーからアイテムが射出される時に呼び出される。[BlockDispenseEvent](README.md#bukkit-blockdispenseevent) の前に呼び出されるので、ディスペンサーのアイテム消費もキャンセルできる。",
+    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/block/BlockPreDispenseEvent.html",
+    "name": "BlockPreDispenseEvent",
+    "source": "paper"
+  },
+  {
+    "description": "スカルセンサーがゲームイベントを受けとる時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/BlockReceiveGameEvent.html",
+    "name": "BlockReceiveGameEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "レッドストーンの強さが変化する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/BlockRedstoneEvent.html",
+    "name": "BlockRedstoneEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "ディスペンサーが羊の毛も刈る時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/BlockShearEntityEvent.html",
+    "name": "BlockShearEntityEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "ブロックが拡散する時に呼び出される。[BlockFormEvent](#bukkit-blockformevent) とは違い、ランダムに形成されるブロックに対して呼び出される。以下に例を示す。\n- キノコが増える時。\n- 火が燃え広がる時。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/BlockSpreadEvent.html",
+    "name": "BlockSpreadEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "醸造が完了する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/inventory/BrewEvent.html",
+    "name": "BrewEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "燃料としてアイテムが醸造台に使用される時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/inventory/BrewingStandFuelEvent.html",
+    "name": "BrewingStandFuelEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "サーバーにブロードキャストメッセージが送信された時に呼び出される。メッセージが非同期で送信された場合、イベントも非同期で呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/server/BroadcastMessageEvent.html",
+    "name": "BroadcastMessageEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "大釜の水が増えたり減ったりした時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/CauldronLevelChangeEvent.html",
+    "name": "CauldronLevelChangeEvent",
+    "source": "bukkit"
+  },
+  {
+    "deprecate": true,
+    "deprecateDescription": "非同期で処理をする [AsyncChatEvent](README.md#asyncchatevent) を使う。",
+    "description": "プレイヤーがチャットした時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/ChatEvent.html",
+    "name": "ChatEvent",
+    "source": "paper"
+  },
+  {
+    "description": "チャンクに関するイベントであることを表す",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/world/ChunkEvent.html",
+    "name": "ChunkEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "チャンクが読み込まれた時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/world/ChunkLoadEvent.html",
+    "name": "ChunkLoadEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "新しいチャンクが作られた時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/world/ChunkPopulateEvent.html",
+    "name": "ChunkPopulateEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "チャンクの読み込みが停止された時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/world/ChunkUnloadEvent.html",
+    "name": "ChunkUnloadEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "アイテムをクラフトする時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/inventory/CraftItemEvent.html",
+    "name": "CraftItemEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "生き物がスポーンする時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/CreatureSpawnEvent.html",
+    "name": "CreatureSpawnEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "クリーパーの点火状態が切り替わる時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/CreeperIgniteEvent.html",
+    "name": "CreeperIgniteEvent",
+    "source": "paper"
+  },
+  {
+    "description": "クリーパーが雷撃を受ける時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/CreeperPowerEvent.html",
+    "name": "CreeperPowerEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "エンダードラゴンが討伐され、卵が設置される時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/block/DragonEggFormEvent.html",
+    "name": "DragonEggFormEvent",
+    "source": "paper"
+  },
+  {
+    "description": "エルダーガーディアンがプレイヤーの画面に表示される時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/entity/ElderGuardianAppearanceEvent.html",
+    "name": "ElderGuardianAppearanceEvent",
+    "source": "paper"
+  },
+  {
+    "description": "アイテムにエンチャントした時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/enchantment/EnchantItemEvent.html",
+    "name": "EnchantItemEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "エンダードラゴンの攻撃フェーズが変わった時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EnderDragonChangePhaseEvent.html",
+    "name": "EnderDragonChangePhaseEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "エンダードラゴンが放った火球が衝突し、AreaEffectCloud が発生する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/EnderDragonFireballHitEvent.html",
+    "name": "EnderDragonFireballHitEvent",
+    "source": "paper"
+  },
+  {
+    "description": "エンダードラゴンが炎を吐き、AreaEffectCloud が発生する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/EnderDragonFlameEvent.html",
+    "name": "EnderDragonFlameEvent",
+    "source": "paper"
+  },
+  {
+    "description": "エンダードラゴンが火球を放つ時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/EnderDragonShootFireballEvent.html",
+    "name": "EnderDragonShootFireballEvent",
+    "source": "paper"
+  },
+  {
+    "description": "エンダーマンがプレイヤーを攻撃するか決定する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/EndermanAttackPlayerEvent.html",
+    "name": "EndermanAttackPlayerEvent",
+    "source": "paper"
+  },
+  {
+    "description": "エンダーマンが逃げた時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/EndermanEscapeEvent.html",
+    "name": "EndermanEscapeEvent",
+    "source": "paper"
+  },
+  {
+    "description": "チャンクによってエンティティが読み込まれた時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/world/EntitiesLoadEvent.html",
+    "name": "EntitiesLoadEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "チャンクによってエンティティが読み込まれなくなった時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/world/EntitiesUnloadEvent.html",
+    "name": "EntitiesUnloadEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "何らかの理由でワールドにエンティティが増えた時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/EntityAddToWorldEvent.html",
+    "name": "EntityAddToWorldEvent",
+    "source": "paper"
+  },
+  {
+    "description": "エンティティの残り酸素量が変化する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityAirChangeEvent.html",
+    "name": "EntityAirChangeEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "エンティティによってブロックが形成される時に呼び出される。以下に例を示す。\n- スノーゴーレムによって雪が形成された時。\n- 氷渡りのエンチャントによって氷が形成された時。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/EntityBlockFormEvent.html",
+    "name": "EntityBlockFormEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "エンティティによってドアが破壊される時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityBreakDoorEvent.html",
+    "name": "EntityBreakDoorEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "エンティティが繁殖する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityBreedEvent.html",
+    "name": "EntityBreedEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "エンティティがブロックを変化させる時に呼び出される。適したイベントが見当たらない時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityChangeBlockEvent.html",
+    "name": "EntityChangeBlockEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "ブロックによってエンティティが炎上する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityCombustByBlockEvent.html",
+    "name": "EntityCombustByBlockEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "エンティティによってエンティティが炎上する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityCombustByEntityEvent.html",
+    "name": "EntityCombustByEntityEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "エンティティが炎上する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityCombustEvent.html",
+    "name": "EntityCombustEvent",
+    "source": "bukkit"
+  },
+  {
+    "deprecate": true,
+    "deprecateDescription": "ワールドに関するイベントとして定義された [PortalCreateEvent](README.md#bukkit-portalcreateevent) を使う。",
+    "description": "エンティティがポータルを作成する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityCreatePortalEvent.html",
+    "name": "EntityCreatePortalEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "ブロックによってエンティティがダメージを受ける時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityDamageByBlockEvent.html",
+    "name": "EntityDamageByBlockEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "エンティティによってエンティティがダメージを受ける時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityDamageByEntityEvent.html",
+    "name": "EntityDamageByEntityEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "エンティティがダメージを受ける時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityDamageEvent.html",
+    "name": "EntityDamageEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "エンティティによって使用されているアイテムが、耐久ダメージを受ける時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/entity/EntityDamageItemEvent.html",
+    "name": "EntityDamageItemEvent",
+    "source": "paper"
+  },
+  {
+    "description": "エンティティが死ぬ時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityDeathEvent.html",
+    "name": "EntityDeathEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "エンティティが乗っているエンティティが降りる時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/spigotmc/event/entity/EntityDismountEvent.html",
+    "name": "EntityDismountEvent",
+    "source": "spigot"
+  },
+  {
+    "description": "エンティティがアイテムをドロップする時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityDropItemEvent.html",
+    "name": "EntityDropItemEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "エンティティがブロックの中に入る時に呼び出される。以下に例を示す。\n- ミツバチが巣箱に入る時。\n\nしかし、以下の場合は呼び出されない。\n- シルバーフィッシュが石に入る時。[EntityChangeBlockEvent](README.md#bukkit-entitychangeblockevent) が呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityEnterBlockEvent.html",
+    "name": "EntityEnterBlockEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "エンティティが発情する時に呼び出される。このイベントをキャンセルしても使用したアイテムは消費されてしまう。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityEnterLoveModeEvent.html",
+    "name": "EntityEnterLoveModeEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "エンティティに関するイベントであることを表す。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityEvent.html",
+    "name": "EntityEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーに疲労が溜まると呼び出される。4を超える疲労値では、満腹度が1減少する。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityExhaustionEvent.html",
+    "name": "EntityExhaustionEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "エンティティが爆発する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityExplodeEvent.html",
+    "name": "EntityExplodeEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "エンティティがブロックのヒットボックスに入る時に呼び出される。キャンセルされるとブロックに入ったことによって起きる処理が実行されない。以下に例を示す。\n- 大釜に入り、エンティティが消火される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/entity/EntityInsideBlockEvent.html",
+    "name": "EntityInsideBlockEvent",
+    "source": "paper"
+  },
+  {
+    "description": "エンティティ同士が押し合う時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityInteractEvent.html",
+    "name": "EntityInteractEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "エンティティがジャンプする時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/EntityJumpEvent.html",
+    "name": "EntityJumpEvent",
+    "source": "paper"
+  },
+  {
+    "description": "エンティティによってエンティティがノックバックする時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/EntityKnockbackByEntityEvent.html",
+    "name": "EntityKnockbackByEntityEvent",
+    "source": "paper"
+  },
+  {
+    "description": "エンティティがアイテムをクロスボウに装填する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/entity/EntityLoadCrossbowEvent.html",
+    "name": "EntityLoadCrossbowEvent",
+    "source": "paper"
+  },
+  {
+    "description": "エンティティがエンティティに乗る時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/spigotmc/event/entity/EntityMountEvent.html",
+    "name": "EntityMountEvent",
+    "source": "spigot"
+  },
+  {
+    "description": "エンティティが移動する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/entity/EntityMoveEvent.html",
+    "name": "EntityMoveEvent",
+    "source": "paper"
+  },
+  {
+    "description": "エンティティが目的の場所への移動を開始する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/EntityPathfindEvent.html",
+    "name": "EntityPathfindEvent",
+    "source": "paper"
+  },
+  {
+    "description": "エンティティが地面からアイテムを拾う時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityPickupItemEvent.html",
+    "name": "EntityPickupItemEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "エンティティが設置された時に呼び出される。このイベントは現在、アーマースタンド・ボート・トロッコ・エンドクリスタルでのみ呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityPlaceEvent.html",
+    "name": "EntityPlaceEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "エンティティがポータルに接触した時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityPortalEnterEvent.html",
+    "name": "EntityPortalEnterEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤー以外のエンティティがポータルでテレポートする時に呼び出される。プレイヤーの場合 [PlayerPortalEvent](README.md#bukkit-playerportalevent) が呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityPortalEvent.html",
+    "name": "EntityPortalEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "エンティティがポータルを出る時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityPortalExitEvent.html",
+    "name": "EntityPortalExitEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "エンティティのポーズが変わった時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityPoseChangeEvent.html",
+    "name": "EntityPoseChangeEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "エンティティのポーション効果が変更された時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityPotionEffectEvent.html",
+    "name": "EntityPotionEffectEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "エンティティが体力を回復する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityRegainHealthEvent.html",
+    "name": "EntityRegainHealthEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "何らかの理由でワールドからエンティティが削除される時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/EntityRemoveFromWorldEvent.html",
+    "name": "EntityRemoveFromWorldEvent",
+    "source": "paper"
+  },
+  {
+    "description": "エンティティが死亡し、復活できる時に呼び出される。トーテムを装備していない場合、キャンセルされた状態で呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityResurrectEvent.html",
+    "name": "EntityResurrectEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "エンティティが弓で矢を放つ時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityShootBowEvent.html",
+    "name": "EntityShootBowEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "エンティティがスポーンする時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntitySpawnEvent.html",
+    "name": "EntitySpawnEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "エヴォーカーやイリュージョナーが呪文を唱える時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntitySpellCastEvent.html",
+    "name": "EntitySpellCastEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "エンティティを飼い慣らす時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityTameEvent.html",
+    "name": "EntityTameEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "生き物が別のエンティティをターゲットする時、ターゲットを解除する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityTargetEvent.html",
+    "name": "EntityTargetEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "[EntityTargetEvent](README.md#bukkit-entitytargetevent) において LivingEntity をターゲットとする時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityTargetLivingEntityEvent.html",
+    "name": "EntityTargetLivingEntityEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "エンティティがエンドゲートウェイでテレポートする時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/EntityTeleportEndGatewayEvent.html",
+    "name": "EntityTeleportEndGatewayEvent",
+    "source": "paper"
+  },
+  {
+    "description": "プレイヤーではないエンティティがテレポートする時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityTeleportEvent.html",
+    "name": "EntityTeleportEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "エンティティがテレポートできない時に呼び出される。",
+    "link": "https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/entity/EntityTeleportHinderedEvent.html",
+    "name": "EntityTeleportHinderedEvent",
+    "source": "purpur"
+  },
+  {
+    "description": "エンティティの滑空状態が切り替わる時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityToggleGlideEvent.html",
+    "name": "EntityToggleGlideEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "エンティティの泳ぎ状態が切り替わる時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityToggleSwimEvent.html",
+    "name": "EntityToggleSwimEvent",
+    "source": "bukkit"
+  },
+  {
+    "deprecate": true,
+    "deprecateDescription": "Bukkit に追加された [EntityTransformEvent](README.md#bukkit-entitytransformevent) を使う。",
+    "description": "エンティティが別のエンティティに置きかわる時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/EntityTransformedEvent.html",
+    "name": "EntityTransformedEvent",
+    "source": "paper"
+  },
+  {
+    "description": "エンティティが別のエンティティに置きかわる時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityTransformEvent.html",
+    "name": "EntityTransformEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "エンティティからリードが外される時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityUnleashEvent.html",
+    "name": "EntityUnleashEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "エンティティに落雷が当たった時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/EntityZapEvent.html",
+    "name": "EntityZapEvent",
+    "source": "paper"
+  },
+  {
+    "description": "イベントを表す。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/Event.html",
+    "name": "Event",
+    "source": "bukkit"
+  },
+  {
+    "description": "コマンドを実行する時に呼び出される。",
+    "link": "https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/ExecuteCommandEvent.html",
+    "name": "ExecuteCommandEvent",
+    "source": "purpur"
+  },
+  {
+    "description": "経験値ボトルから経験値が出る時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/ExpBottleEvent.html",
+    "name": "ExpBottleEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "経験値オーブが合わさる時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/ExperienceOrbMergeEvent.html",
+    "name": "ExperienceOrbMergeEvent",
+    "source": "paper"
+  },
+  {
+    "description": "エンティティが爆発する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/ExplosionPrimeEvent.html",
+    "name": "ExplosionPrimeEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プロファイルプロパティが追加された時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/profile/FillProfileEvent.html",
+    "name": "FillProfileEvent",
+    "source": "paper"
+  },
+  {
+    "description": "花火が爆発する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/FireworkExplodeEvent.html",
+    "name": "FireworkExplodeEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "隣接したブロックによって液面が変化する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/FluidLevelChangeEvent.html",
+    "name": "FluidLevelChangeEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "空腹度が変化する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/FoodLevelChangeEvent.html",
+    "name": "FoodLevelChangeEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "かまど内でアイテムが燃料として使用される時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/inventory/FurnaceBurnEvent.html",
+    "name": "FurnaceBurnEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーがかまどからアイテムを取り出す時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/inventory/FurnaceExtractEvent.html",
+    "name": "FurnaceExtractEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "かまど内でアイテムが精錬される時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/inventory/FurnaceSmeltEvent.html",
+    "name": "FurnaceSmeltEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "かまどでの精錬が始まった時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/inventory/FurnaceStartSmeltEvent.html",
+    "name": "FurnaceStartSmeltEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "一般的なゲームイベントであることを表す。このイベントは主にスカルセンサーの内部で使用される。可能な限りこのイベントを使わないようにする。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/world/GenericGameEvent.html",
+    "name": "GenericGameEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "GS4クエリプロトコルがクエリされた時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/server/GS4QueryEvent.html",
+    "name": "GS4QueryEvent",
+    "source": "paper"
+  },
+  {
+    "description": "エンティティによって壁掛けエンティティが破壊される時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/hanging/HangingBreakByEntityEvent.html",
+    "name": "HangingBreakByEntityEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "壁掛けエンティティが破壊される時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/hanging/HangingBreakEvent.html",
+    "name": "HangingBreakEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "壁掛けエンティティに関するイベントであることを表す。壁掛けエンティティの例を以下に示す。\n- 絵画\n- 額縁\n- 柵に繋がれたリード",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/hanging/HangingEvent.html",
+    "name": "HangingEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "壁掛けエンティティが設置される時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/hanging/HangingPlaceEvent.html",
+    "name": "HangingPlaceEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "馬がジャンプする時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/HorseJumpEvent.html",
+    "name": "HorseJumpEvent",
+    "source": "bukkit"
+  },
+  {
+    "deprecate": true,
+    "deprecateDescription": "使われていない。",
+    "description": "不正なパケットが送られた時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/IllegalPacketEvent.html",
+    "name": "IllegalPacketEvent",
+    "source": "paper"
+  },
+  {
+    "description": "インベントリを開いた状態で画面をクリックする時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/inventory/InventoryClickEvent.html",
+    "name": "InventoryClickEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "インベントリを閉じる時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/inventory/InventoryCloseEvent.html",
+    "name": "InventoryCloseEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "クリエイティブモードのプレイヤーがインベントリの操作をした時に呼び出される。呼び出される例を以下に示す。\n- インベントリにアイテムを置いた時\n- アイテムを拾った時\n- インベントリからアイテムをドロップした時",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/inventory/InventoryCreativeEvent.html",
+    "name": "InventoryCreativeEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "インベントリ内でアイテムをドラッグした時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/inventory/InventoryDragEvent.html",
+    "name": "InventoryDragEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "インベントリに関するイベントであることを表す。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/inventory/InventoryEvent.html",
+    "name": "InventoryEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーとインベントリが相互に作用するイベント表す。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/inventory/InventoryInteractEvent.html",
+    "name": "InventoryInteractEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "エンティティやホッパー等のブロックがインベントリ内のアイテムを別のインベントリに移動させる時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/inventory/InventoryMoveItemEvent.html",
+    "name": "InventoryMoveItemEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "インベントリを開く時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/inventory/InventoryOpenEvent.html",
+    "name": "InventoryOpenEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "ホッパーが落ちているアイテムを拾う時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/inventory/InventoryPickupItemEvent.html",
+    "name": "InventoryPickupItemEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "時間によってアイテムが消滅する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/ItemDespawnEvent.html",
+    "name": "ItemDespawnEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "同じアイテムが合わさる時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/ItemMergeEvent.html",
+    "name": "ItemMergeEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "アイテムがワールドにスポーンする時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/ItemSpawnEvent.html",
+    "name": "ItemSpawnEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "葉が自然に壊れる時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/LeavesDecayEvent.html",
+    "name": "LeavesDecayEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "雷が落ちる時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/weather/LightningStrikeEvent.html",
+    "name": "LightningStrikeEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "残留ポーションが割れる時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/LingeringPotionSplashEvent.html",
+    "name": "LingeringPotionSplashEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "ラマがキャラバンに参加する時に呼び出される。",
+    "link": "https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/entity/LlamaJoinCaravanEvent.html",
+    "name": "LlamaJoinCaravanEvent",
+    "source": "purpur"
+  },
+  {
+    "description": "ラマがキャラバンから脱退した時に呼び出される。",
+    "link": "https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/entity/LlamaLeaveCaravanEvent.html",
+    "name": "LlamaLeaveCaravanEvent",
+    "source": "purpur"
+  },
+  {
+    "description": "Mojang API を用いてプロファイルが検索された時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/profile/LookupProfileEvent.html",
+    "name": "LookupProfileEvent",
+    "source": "paper"
+  },
+  {
+    "description": "LootTable によってアイテムが補充される時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/loottable/LootableInventoryReplenishEvent.html",
+    "name": "LootableInventoryReplenishEvent",
+    "source": "paper"
+  },
+  {
+    "description": "LootTable によってアイテムが生成される時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/world/LootGenerateEvent.html",
+    "name": "LootGenerateEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "マップが初期化された時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/server/MapInitializeEvent.html",
+    "name": "MapInitializeEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "耕地の水分レベルが変化する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/MoistureChangeEvent.html",
+    "name": "MoistureChangeEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "モンスターエッグを使い、エンティティがスポーンする時に呼び出される。",
+    "link": "https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/entity/MonsterEggSpawnEvent.html",
+    "name": "MonsterEggSpawnEvent",
+    "source": "purpur"
+  },
+  {
+    "description": "音符ブロックが音を鳴らす時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/NotePlayEvent.html",
+    "name": "NotePlayEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "サーバーリストの表示内容を送る要求を受けた時に呼び出される。[ServerListPingEvent](README.md#bukkit-serverlistpingevent) よりも扱える情報が多い。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/server/PaperServerListPingEvent.html",
+    "name": "PaperServerListPingEvent",
+    "source": "paper"
+  },
+  {
+    "description": "ファントムがスポーンする時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/PhantomPreSpawnEvent.html",
+    "name": "PhantomPreSpawnEvent",
+    "source": "paper"
+  },
+  {
+    "description": "ピグリンと物々交換する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/PiglinBarterEvent.html",
+    "name": "PiglinBarterEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "豚が雷に打たれた時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/PigZapEvent.html",
+    "name": "PigZapEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "ゾンビ豚が怒る時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/PigZombieAngerEvent.html",
+    "name": "PigZombieAngerEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーが進捗の条件を達成した時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerAdvancementCriterionGrantEvent.html",
+    "name": "PlayerAdvancementCriterionGrantEvent",
+    "source": "paper"
+  },
+  {
+    "description": "プレイヤーが進捗の条件を全て達成した時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerAdvancementDoneEvent.html",
+    "name": "PlayerAdvancementDoneEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーのAFKモードに移行する時に呼び出される",
+    "link": "https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/PlayerAFKEvent.html",
+    "name": "PlayerAFKEvent",
+    "source": "purpur"
+  },
+  {
+    "description": "プレイヤーのアニメーションに関するイベントであることを表す。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerAnimationEvent.html",
+    "name": "PlayerAnimationEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーの鎧が変更された時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerArmorChangeEvent.html",
+    "name": "PlayerArmorChangeEvent",
+    "source": "paper"
+  },
+  {
+    "description": "プレイヤーがアーマースタンドに対してアイテムを交換・取得・配置する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerArmorStandManipulateEvent.html",
+    "name": "PlayerArmorStandManipulateEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーが腕を振った時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/PlayerArmSwingEvent.html",
+    "name": "PlayerArmSwingEvent",
+    "source": "paper"
+  },
+  {
+    "description": "プレイヤーの攻撃クールダウンがリセットする時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerAttackEntityCooldownResetEvent.html",
+    "name": "PlayerAttackEntityCooldownResetEvent",
+    "source": "paper"
+  },
+  {
+    "description": "プレイヤーが地面からアイテムを拾おうとする時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerAttemptPickupItemEvent.html",
+    "name": "PlayerAttemptPickupItemEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーがベッドに入る時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerBedEnterEvent.html",
+    "name": "PlayerBedEnterEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "ベッドに入れなかった時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/PlayerBedFailEnterEvent.html",
+    "name": "PlayerBedFailEnterEvent",
+    "source": "paper"
+  },
+  {
+    "description": "プレイヤーがベッドから出る時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerBedLeaveEvent.html",
+    "name": "PlayerBedLeaveEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーが本の制限を回避しようとした時に呼び出される。",
+    "link": "https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/player/PlayerBookTooLargeEvent.html",
+    "name": "PlayerBookTooLargeEvent",
+    "source": "purpur"
+  },
+  {
+    "description": "プレイヤーがバケツを空にする時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerBucketEmptyEvent.html",
+    "name": "PlayerBucketEmptyEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーバケツにエンティティを入れる時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerBucketEntityEvent.html",
+    "name": "PlayerBucketEntityEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーがバケツを操作する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerBucketEvent.html",
+    "name": "PlayerBucketEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーがバケツを満たす時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerBucketFillEvent.html",
+    "name": "PlayerBucketFillEvent",
+    "source": "bukkit"
+  },
+  {
+    "deprecate": true,
+    "deprecateDescription": "Paper であれば、[PlayerBucketEntityEvent](README.md#playerbucketentityevent) を使う。",
+    "description": "プレイヤーがバケツに魚を入れる時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerBucketFishEvent.html",
+    "name": "PlayerBucketFishEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーがビーコンの効果を変更する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/PlayerChangeBeaconEffectEvent.html",
+    "name": "PlayerChangeBeaconEffectEvent",
+    "source": "paper"
+  },
+  {
+    "description": "プレイヤーがメインハンドの左右の設定を切り替えた時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerChangedMainHandEvent.html",
+    "name": "PlayerChangedMainHandEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーが別のワールドに移動した時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerChangedWorldEvent.html",
+    "name": "PlayerChangedWorldEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーがプラグインチャンネルを登録・登録解除した時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerChannelEvent.html",
+    "name": "PlayerChannelEvent",
+    "source": "bukkit"
+  },
+  {
+    "deprecate": true,
+    "deprecateDescription": "チャットの遅延が発生するので [AsyncPlayerChatEvent](README.md#bukkit-asyncplayerchatevent) を使う。",
+    "description": "プレイヤーがチャットする時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerChatEvent.html",
+    "name": "PlayerChatEvent",
+    "source": "bukkit"
+  },
+  {
+    "deprecate": true,
+    "deprecateDescription": "クライアントの変更により実行されなくなった。",
+    "description": "プレイヤーがチャットメッセージでタブ補完をする時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerChatTabCompleteEvent.html",
+    "name": "PlayerChatTabCompleteEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーがチャンクロードパケットを受け取った時に呼び出される。行いたい処理がパケットやクライアントに関する場合でのみ使うイベントになる。",
+    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/packet/PlayerChunkLoadEvent.html",
+    "name": "PlayerChunkLoadEvent",
+    "source": "paper"
+  },
+  {
+    "description": "プレイヤーがチャンクアンロードパケットを受け取った時に呼び出される。行いたい処理がパケットやクライアントに関する場合でのみ使うイベントになる。",
+    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/packet/PlayerChunkUnloadEvent.html",
+    "name": "PlayerChunkUnloadEvent",
+    "source": "paper"
+  },
+  {
+    "description": "プレイヤーがクライアント設定を変更した時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerClientOptionsChangeEvent.html",
+    "name": "PlayerClientOptionsChangeEvent",
+    "source": "paper"
+  },
+  {
+    "description": "プレイヤーが実行したコマンドが処理される前に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerCommandPreprocessEvent.html",
+    "name": "PlayerCommandPreprocessEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "使用可能なコマンドをプレイヤーに送信する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerCommandSendEvent.html",
+    "name": "PlayerCommandSendEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーがサーバーから切断された時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerConnectionCloseEvent.html",
+    "name": "PlayerConnectionCloseEvent",
+    "source": "paper"
+  },
+  {
+    "description": "プレイヤーが死んだ時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/PlayerDeathEvent.html",
+    "name": "PlayerDeathEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーが深い眠りに入る時に呼び出される。このイベントをキャンセルすると夜や嵐を通過しません。",
+    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/PlayerDeepSleepEvent.html",
+    "name": "PlayerDeepSleepEvent",
+    "source": "paper"
+  },
+  {
+    "description": "プレイヤーのインベントリからアイテムをドロップする時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerDropItemEvent.html",
+    "name": "PlayerDropItemEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーが本と羽ペンを編集・署名した時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerEditBookEvent.html",
+    "name": "PlayerEditBookEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーが投げた卵が孵化するかの確認をする時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerEggThrowEvent.html",
+    "name": "PlayerEggThrowEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーが花火を使いエリトラ飛行のブーストをする時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerElytraBoostEvent.html",
+    "name": "PlayerElytraBoostEvent",
+    "source": "paper"
+  },
+  {
+    "description": "プレイヤーに関するイベントであることを表す。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerEvent.html",
+    "name": "PlayerEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーの経験値が自然に変化した時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerExpChangeEvent.html",
+    "name": "PlayerExpChangeEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーが釣りをしている時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerFishEvent.html",
+    "name": "PlayerFishEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーが植木鉢にアイテムを置いたり、植木鉢からアイテムを取り出したりする時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/PlayerFlowerPotManipulateEvent.html",
+    "name": "PlayerFlowerPotManipulateEvent",
+    "source": "paper"
+  },
+  {
+    "description": "プレイヤーのゲームモードが変わる時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerGameModeChangeEvent.html",
+    "name": "PlayerGameModeChangeEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーとサーバーがハンドシェイクする時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerHandshakeEvent.html",
+    "name": "PlayerHandshakeEvent",
+    "source": "paper"
+  },
+  {
+    "description": "プレイヤーが作物を収穫する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerHarvestBlockEvent.html",
+    "name": "PlayerHarvestBlockEvent",
+    "source": "bukkit"
+  },
+  {
+    "deprecate": true,
+    "deprecateDescription": "Spigot に追加された [PlayerSpawnLocationEvent](README.md#spigot-playerspawnlocationevent) を使う。",
+    "description": "プレイヤーがサーバーに参加した後、スポーンしようとしている時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerInitialSpawnEvent.html",
+    "name": "PlayerInitialSpawnEvent",
+    "source": "paper"
+  },
+  {
+    "description": "プレイヤーがエンティティを右クリックする時に呼び出される。クライアントは [PlayerInteractEntityEvent](README.md#bukkit-playerinteractentityevent) に加えてこのパケットを誤って送信する場合がある。 しかし、アーマースタンドを右クリックした場合、このイベントのみが呼び出される。特別な場合を除いて　[PlayerInteractEntityEvent](README.md#bukkit-playerinteractentityevent) を使うことを推奨している。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerInteractAtEntityEvent.html",
+    "name": "PlayerInteractAtEntityEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーがエンティティを右クリックする時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerInteractEntityEvent.html",
+    "name": "PlayerInteractEntityEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーがオブジェクトや空気を右クリックする時に呼び出される。それぞれの手に対して呼び出される可能性がある。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerInteractEvent.html",
+    "name": "PlayerInteractEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーのアイテムが壊れる時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerItemBreakEvent.html",
+    "name": "PlayerItemBreakEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーがアイテムを消費する時に呼び出される。アイテムの例を以下に示す。\n- 食べ物\n- ポーション\n- 牛乳入りバケツ",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerItemConsumeEvent.html",
+    "name": "PlayerItemConsumeEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーのアイテムクールダウンが変更される時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/PlayerItemCooldownEvent.html",
+    "name": "PlayerItemCooldownEvent",
+    "source": "paper"
+  },
+  {
+    "description": "プレイヤーがアイテムを使用し、その耐久値が減少する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerItemDamageEvent.html",
+    "name": "PlayerItemDamageEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーが手に持つアイテムを変更した時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerItemHeldEvent.html",
+    "name": "PlayerItemHeldEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーのアイテムが修繕のエンチャントによって耐久値を回復する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerItemMendEvent.html",
+    "name": "PlayerItemMendEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーがサーバーに参加した時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerJoinEvent.html",
+    "name": "PlayerJoinEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーがジャンプする時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerJumpEvent.html",
+    "name": "PlayerJumpEvent",
+    "source": "paper"
+  },
+  {
+    "description": "プレイヤーがサーバーからキックされる時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerKickEvent.html",
+    "name": "PlayerKickEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーが Projectile を発射する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerLaunchProjectileEvent.html",
+    "name": "PlayerLaunchProjectileEvent",
+    "source": "paper"
+  },
+  {
+    "description": "プレイヤーが生き物にリードを繋げる時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/PlayerLeashEntityEvent.html",
+    "name": "PlayerLeashEntityEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーが書見台に置かれた本のページを変更する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/PlayerLecternPageChangeEvent.html",
+    "name": "PlayerLecternPageChangeEvent",
+    "source": "paper"
+  },
+  {
+    "description": "プレイヤーの経験値レベルが変更した時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerLevelChangeEvent.html",
+    "name": "PlayerLevelChangeEvent",
+    "source": "bukkit"
+  },
+  {
+    "deprecate": true,
+    "deprecateDescription": "Bukkit に追加された [PlayerLocaleChangeEvent](README.md#bukkit-playerlocalechangeevent) を使う。",
+    "description": "プレイヤーが言語設定を変更した時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerLocaleChangeEvent.html",
+    "name": "PlayerLocaleChangeEvent",
+    "source": "paper"
+  },
+  {
+    "description": "プレイヤーが言語設定を変更した時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerLocaleChangeEvent.html",
+    "name": "PlayerLocaleChangeEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーがログインしようとする時に呼び出される。[PlayerJoinEvent](README.md#bukkit-playerjoinevent) の前に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerLoginEvent.html",
+    "name": "PlayerLoginEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーが機織り機の旗模様を変更する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/PlayerLoomPatternSelectEvent.html",
+    "name": "PlayerLoomPatternSelectEvent",
+    "source": "paper"
+  },
+  {
+    "description": "プレイヤーが移動する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerMoveEvent.html",
+    "name": "PlayerMoveEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーがエンティティの名前を変更する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/PlayerNameEntityEvent.html",
+    "name": "PlayerNameEntityEvent",
+    "source": "paper"
+  },
+  {
+    "description": "モンスターをスポーンさせるチャンクを計算する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/PlayerNaturallySpawnCreaturesEvent.html",
+    "name": "PlayerNaturallySpawnCreaturesEvent",
+    "source": "paper"
+  },
+  {
+    "description": "プレイヤーが地面から矢を拾う時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerPickupArrowEvent.html",
+    "name": "PlayerPickupArrowEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーが地面から経験値オーブを拾う時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerPickupExperienceEvent.html",
+    "name": "PlayerPickupExperienceEvent",
+    "source": "paper"
+  },
+  {
+    "deprecate": true,
+    "deprecateDescription": "Bukkit に追加された [EntityPickupItemEvent](README.md#bukkit-entitypickupitemevent) を使う。",
+    "description": "プレイヤーが地面からアイテムを拾う時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerPickupItemEvent.html",
+    "name": "PlayerPickupItemEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーがポータルでテレポートする時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerPortalEvent.html",
+    "name": "PlayerPortalEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーがリスポーンした後に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerPostRespawnEvent.html",
+    "name": "PlayerPostRespawnEvent",
+    "source": "paper"
+  },
+  {
+    "deprecate": true,
+    "deprecateDescription": "非同期で処理をする為に [AsyncPlayerPreLoginEvent](README.md#bukkit-asyncplayerpreloginevent) を使う。",
+    "description": "プレイヤーがログインしようとしている時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerPreLoginEvent.html",
+    "name": "PlayerPreLoginEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーが村人と取引する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/PlayerPurchaseEvent.html",
+    "name": "PlayerPurchaseEvent",
+    "source": "paper"
+  },
+  {
+    "description": "プレイヤーがサーバーから退出した時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerQuitEvent.html",
+    "name": "PlayerQuitEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーが弓を発射し、使用する矢を選ぶ時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerReadyArrowEvent.html",
+    "name": "PlayerReadyArrowEvent",
+    "source": "paper"
+  },
+  {
+    "description": "プレイヤーがレシピブックのレシビをクリックする時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerRecipeBookClickEvent.html",
+    "name": "PlayerRecipeBookClickEvent",
+    "source": "paper"
+  },
+  {
+    "description": "プレイヤーが新しいレシピを見つける時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerRecipeDiscoverEvent.html",
+    "name": "PlayerRecipeDiscoverEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーがプラグインチャンネルを登録した時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerRegisterChannelEvent.html",
+    "name": "PlayerRegisterChannelEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "サーバーから送られたリソースパックリクエストに対してプレイヤーが処理をした時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerResourcePackStatusEvent.html",
+    "name": "PlayerResourcePackStatusEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーがリスポーンする時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerRespawnEvent.html",
+    "name": "PlayerRespawnEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーが激流エンチャントを使用した時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerRiptideEvent.html",
+    "name": "PlayerRiptideEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "モンスターエッグを使い、スポナーの内容を変える時に呼び出される。",
+    "link": "https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/PlayerSetSpawnerTypeWithEggEvent.html",
+    "name": "PlayerSetSpawnerTypeWithEggEvent",
+    "source": "purpur"
+  },
+  {
+    "description": "プレイヤーがスポーン地点を設定する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerSetSpawnEvent.html",
+    "name": "PlayerSetSpawnEvent",
+    "source": "paper"
+  },
+  {
+    "description": "プレイヤーがブロックに対してハサミを使用する時に呼び出される。以下に例を示す。\n- カボチャを彫ったカボチャに変える時。\n- 蜂の巣からハニカムを回収する時。",
+    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/block/PlayerShearBlockEvent.html",
+    "name": "PlayerShearBlockEvent",
+    "source": "paper"
+  },
+  {
+    "description": "プレイヤーがエンティティに対してハサミを使用する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerShearEntityEvent.html",
+    "name": "PlayerShearEntityEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーがコマンドを実行させる看板をクリックする時に呼び出される。このコマンドは権限を無視して実行されるため、本来実行できないコマンドも実行される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/PlayerSignCommandPreprocessEvent.html",
+    "name": "PlayerSignCommandPreprocessEvent",
+    "source": "paper"
+  },
+  {
+    "description": "プレイヤーがサーバーに参加した後、スポーンしようとしている時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/spigotmc/event/player/PlayerSpawnLocationEvent.html",
+    "name": "PlayerSpawnLocationEvent",
+    "source": "spigot"
+  },
+  {
+    "description": "プレイヤーがスペクテイターモードでエンティティ視点を開始する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerStartSpectatingEntityEvent.html",
+    "name": "PlayerStartSpectatingEntityEvent",
+    "source": "paper"
+  },
+  {
+    "description": "プレイヤーの統計が増加した時に呼び出される。移動などの高頻度で増加するような一部の統計では呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerStatisticIncrementEvent.html",
+    "name": "PlayerStatisticIncrementEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーが石切台のレシピを選択する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/PlayerStonecutterRecipeSelectEvent.html",
+    "name": "PlayerStonecutterRecipeSelectEvent",
+    "source": "paper"
+  },
+  {
+    "description": "プレイヤーがスペクテイターモードでエンティティ視点を終了する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerStopSpectatingEntityEvent.html",
+    "name": "PlayerStopSpectatingEntityEvent",
+    "source": "paper"
+  },
+  {
+    "description": "プレイヤーがメインハンドとオフハンドのアイテムをホットキーによって交換する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerSwapHandItemsEvent.html",
+    "name": "PlayerSwapHandItemsEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーが書見台に置いてある本を取る時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerTakeLecternBookEvent.html",
+    "name": "PlayerTakeLecternBookEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーがエンドゲートウェイを用いてテレポートする時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerTeleportEndGatewayEvent.html",
+    "name": "PlayerTeleportEndGatewayEvent",
+    "source": "paper"
+  },
+  {
+    "description": "プレイヤーがテレポートする時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerTeleportEvent.html",
+    "name": "PlayerTeleportEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーが飛行状態を切り替える時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerToggleFlightEvent.html",
+    "name": "PlayerToggleFlightEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーがしゃがみ状態を切り替える時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerToggleSneakEvent.html",
+    "name": "PlayerToggleSneakEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーが走り状態を切り替える時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerToggleSprintEvent.html",
+    "name": "PlayerToggleSprintEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーが村人や行商人と交易をする時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/PlayerTradeEvent.html",
+    "name": "PlayerTradeEvent",
+    "source": "paper"
+  },
+  {
+    "description": "プレイヤーによってエンティティに繋げっているリードが外される時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerUnleashEntityEvent.html",
+    "name": "PlayerUnleashEntityEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーがプラグインチャンネルの登録を解除する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerUnregisterChannelEvent.html",
+    "name": "PlayerUnregisterChannelEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "存在しないエンティティに対して PacketPlayInUseEntity が送られてきた時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerUseUnknownEntityEvent.html",
+    "name": "PlayerUseUnknownEntityEvent",
+    "source": "paper"
+  },
+  {
+    "description": "プレイヤーに対する力の向きや大きさが変化する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerVelocityEvent.html",
+    "name": "PlayerVelocityEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プラグインが無効になった時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/server/PluginDisableEvent.html",
+    "name": "PluginDisableEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プラグインが有効になった時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/server/PluginEnableEvent.html",
+    "name": "PluginEnableEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プラグインに関するイベントであることを表す。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/server/PluginEvent.html",
+    "name": "PluginEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "ポータルが作成される時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/world/PortalCreateEvent.html",
+    "name": "PortalCreateEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "ポーションが割れる時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/PotionSplashEvent.html",
+    "name": "PotionSplashEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "生き物がスポーンする時に呼び出される。このイベントの目的はサーバーのパフォーマンスを向上させることであるため、[CreatureSpawnEvent](README.md#bukkit-creaturespawnevent) が呼び出される全ての状況で呼び出されるわけではない。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/PreCreatureSpawnEvent.html",
+    "name": "PreCreatureSpawnEvent",
+    "source": "paper"
+  },
+  {
+    "description": "不完全なプロファイルプロパティの追加を要求している時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/profile/PreFillProfileEvent.html",
+    "name": "PreFillProfileEvent",
+    "source": "paper"
+  },
+  {
+    "description": "Mojang API を用いてプロファイルを検索する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/profile/PreLookupProfileEvent.html",
+    "name": "PreLookupProfileEvent",
+    "source": "paper"
+  },
+  {
+    "description": "金床の使用準備が出来た時に呼び出される。完成アイテムが表示される毎に発生する。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/inventory/PrepareAnvilEvent.html",
+    "name": "PrepareAnvilEvent",
+    "source": "bukkit"
+  },
+  {
+    "deprecate": true,
+    "deprecateDescription": "このイベントを直接使用せず、[PrepareResultEvent](README.md#paper-prepareresultevent) を使うことが推奨されている。",
+    "description": "砥石の使用準備が出来た時に呼び出される。完成アイテムが表示される毎に発生する。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/inventory/PrepareGrindstoneEvent.html",
+    "name": "PrepareGrindstoneEvent",
+    "source": "paper"
+  },
+  {
+    "description": "クラフトの準備が出来た時に呼び出される。材料を並べ、完成アイテムが表示される毎に発生する。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/inventory/PrepareItemCraftEvent.html",
+    "name": "PrepareItemCraftEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "エンチャントの準備が出来た時に呼び出される。完成アイテムが表示される毎に発生する。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/enchantment/PrepareItemEnchantEvent.html",
+    "name": "PrepareItemEnchantEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "結果スロットを含むインベントリにアイテムが配置された時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/inventory/PrepareResultEvent.html",
+    "name": "PrepareResultEvent",
+    "source": "paper"
+  },
+  {
+    "description": "鍛治台の使用準備が出来た時に呼び出される。完成アイテムが表示される毎に発生する。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/inventory/PrepareSmithingEvent.html",
+    "name": "PrepareSmithingEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "エンティティがスポナーによってスポーンする前に呼び出される。[SpawnerSpawnEvent](README.md#bukkit-spawnerspawnevent) よりも前に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/PreSpawnerSpawnEvent.html",
+    "name": "PreSpawnerSpawnEvent",
+    "source": "paper"
+  },
+  {
+    "description": "プレイヤーがホワイトリストに登録されているか確認する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/profile/ProfileWhitelistVerifyEvent.html",
+    "name": "ProfileWhitelistVerifyEvent",
+    "source": "paper"
+  },
+  {
+    "description": "Projectile がエンティティと衝突する時に呼び出される。キャンセルすると Projectile は飛び続ける。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/ProjectileCollideEvent.html",
+    "name": "ProjectileCollideEvent",
+    "source": "paper"
+  },
+  {
+    "description": "Projectile がエンティティに当たる時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/ProjectileHitEvent.html",
+    "name": "ProjectileHitEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "Projectile が発射される時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/ProjectileLaunchEvent.html",
+    "name": "ProjectileLaunchEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "フグの状態が変化する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/entity/PufferFishStateChangeEvent.html",
+    "name": "PufferFishStateChangeEvent",
+    "source": "paper"
+  },
+  {
+    "description": "レイドに関するイベントであることを表す。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/raid/RaidEvent.html",
+    "name": "RaidEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "レイドが終わった時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/raid/RaidFinishEvent.html",
+    "name": "RaidFinishEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "レイドのウェーブが進んだ時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/raid/RaidSpawnWaveEvent.html",
+    "name": "RaidSpawnWaveEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "レイドが終了した時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/raid/RaidStopEvent.html",
+    "name": "RaidStopEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "レイドが始まる時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/raid/RaidTriggerEvent.html",
+    "name": "RaidTriggerEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "RCON を介してコマンド入力を受け取った時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/server/RemoteServerCommandEvent.html",
+    "name": "RemoteServerCommandEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "乗ることが可能なエンティティが乗っているエンティティと共に動く時に呼び出される。",
+    "link": "https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/entity/RidableMoveEvent.html",
+    "name": "RidableMoveEvent",
+    "source": "purpur"
+  },
+  {
+    "description": "乗ることが可能なエンティティに乗っている時にジャンプを試みた時に呼び出される。",
+    "link": "https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/entity/RidableSpacebarEvent.html",
+    "name": "RidableSpacebarEvent",
+    "source": "purpur"
+  },
+  {
+    "description": "プレイヤー以外がコマンドを実行する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/server/ServerCommandEvent.html",
+    "name": "ServerCommandEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "サーバーに関するイベントであることを表す。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/server/ServerEvent.html",
+    "name": "ServerEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "回復可能な状況で例外が発生した時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/server/ServerExceptionEvent.html",
+    "name": "ServerExceptionEvent",
+    "source": "paper"
+  },
+  {
+    "description": "サーバーリストの表示内容を送る要求を受けた時に呼び出される。[PaperServerListPingEvent](README.md#paper-paperserverlistpingevent) を使うことでより詳細の情報を扱うことができる。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/server/ServerListPingEvent.html",
+    "name": "ServerListPingEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "サーバーが起動した時、リロードが完了した時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/server/ServerLoadEvent.html",
+    "name": "ServerLoadEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "データパックなどのリソースがリロードされた時に呼び出される。カスタムレシピを再登録するために使用することを目的としている。",
+    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/server/ServerResourcesReloadedEvent.html",
+    "name": "ServerResourcesReloadedEvent",
+    "source": "paper"
+  },
+  {
+    "description": "メインループのチェックが終了した時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/server/ServerTickEndEvent.html",
+    "name": "ServerTickEndEvent",
+    "source": "paper"
+  },
+  {
+    "description": "メインループのチェックが開始した時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/server/ServerTickStartEvent.html",
+    "name": "ServerTickStartEvent",
+    "source": "paper"
+  },
+  {
+    "description": "サービスに関するイベントであることを表す。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/server/ServiceEvent.html",
+    "name": "ServiceEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "サービスが登録された時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/server/ServiceRegisterEvent.html",
+    "name": "ServiceRegisterEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "サービスの登録が解除された時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/server/ServiceUnregisterEvent.html",
+    "name": "ServiceUnregisterEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "羊が染色された時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/SheepDyeWoolEvent.html",
+    "name": "SheepDyeWoolEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "羊の毛が生えた時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/SheepRegrowWoolEvent.html",
+    "name": "SheepRegrowWoolEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーによって看板の内容が変わる時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/SignChangeEvent.html",
+    "name": "SignChangeEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーがスケルトンホースに近づき、落雷が発生する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/SkeletonHorseTrapEvent.html",
+    "name": "SkeletonHorseTrapEvent",
+    "source": "paper"
+  },
+  {
+    "description": "スライムが向きを変えようと決めた時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/SlimeChangeDirectionEvent.html",
+    "name": "SlimeChangeDirectionEvent",
+    "source": "paper"
+  },
+  {
+    "description": "スライムが移動を開始しようと決めた時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/SlimePathfindEvent.html",
+    "name": "SlimePathfindEvent",
+    "source": "paper"
+  },
+  {
+    "description": "スライムが死ぬことで分裂した時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/SlimeSplitEvent.html",
+    "name": "SlimeSplitEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "スライムが水や溶岩にいる状態でジャンプしようと決めた時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/SlimeSwimEvent.html",
+    "name": "SlimeSwimEvent",
+    "source": "paper"
+  },
+  {
+    "description": "スライムがエンティティを標的として移動を開始しようと決めた時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/SlimeTargetLivingEntityEvent.html",
+    "name": "SlimeTargetLivingEntityEvent",
+    "source": "paper"
+  },
+  {
+    "description": "スライムがランダムに移動することを決めた時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/SlimeWanderEvent.html",
+    "name": "SlimeWanderEvent",
+    "source": "paper"
+  },
+  {
+    "description": "レシピが鍛治台内で完成すると呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/inventory/SmithItemEvent.html",
+    "name": "SmithItemEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "ワールドのスポーン位置が変更された時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/world/SpawnChangeEvent.html",
+    "name": "SpawnChangeEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "エンティティがスポナーによってスポーンする時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/SpawnerSpawnEvent.html",
+    "name": "SpawnerSpawnEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "スポンジが水を吸収する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/SpongeAbsorbEvent.html",
+    "name": "SpongeAbsorbEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "ストライダーの体温が変化した時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/StriderTemperatureChangeEvent.html",
+    "name": "StriderTemperatureChangeEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "構造物が生成される時に呼び出される。",
+    "link": "https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/world/StructureGenerateEvent.html",
+    "name": "StructureGenerateEvent",
+    "source": "purpur"
+  },
+  {
+    "description": "植物が成長する時に呼び出される。以下に例を示す。\n- 苗木が木に成長する時\n- キノコが巨大キノコに成長する時",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/world/StructureGrowEvent.html",
+    "name": "StructureGrowEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "建造物が見つかる時に呼び出される。以下に例を示す。\n- /locate コマンドを実行した時\n- エンダーアイを使用した時\n- 宝の地図が開かれた時",
+    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/world/StructureLocateEvent.html",
+    "name": "StructureLocateEvent",
+    "source": "paper"
+  },
+  {
+    "description": "プレイヤーやコンソールがコマンドをタブ補完する時に呼び出される。クライアントの変更により、プレイヤーの場合、コマンド自体では呼び出されず、コマンド引数の場合にのみ呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/server/TabCompleteEvent.html",
+    "name": "TabCompleteEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "ターゲットブロックに Projectile が当たる時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/block/TargetHitEvent.html",
+    "name": "TargetHitEvent",
+    "source": "paper"
+  },
+  {
+    "description": "投げられた卵が孵化するかの確認をする時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/ThrownEggHatchEvent.html",
+    "name": "ThrownEggHatchEvent",
+    "source": "paper"
+  },
+  {
+    "description": "天気が雷雨に変わる時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/weather/ThunderChangeEvent.html",
+    "name": "ThunderChangeEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "時間がスキップされる時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/world/TimeSkipEvent.html",
+    "name": "TimeSkipEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "TNT に着火する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/block/TNTPrimeEvent.html",
+    "name": "TNTPrimeEvent",
+    "source": "paper"
+  },
+  {
+    "description": "取引画面のサイドバーで別の取引をクリックする時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/inventory/TradeSelectEvent.html",
+    "name": "TradeSelectEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "カメが家に帰ることを決めた時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/TurtleGoHomeEvent.html",
+    "name": "TurtleGoHomeEvent",
+    "source": "paper"
+  },
+  {
+    "description": "カメの卵が孵化する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/TurtleLayEggEvent.html",
+    "name": "TurtleLayEggEvent",
+    "source": "paper"
+  },
+  {
+    "description": "カメが産卵のために掘り始めた時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/TurtleStartDiggingEvent.html",
+    "name": "TurtleStartDiggingEvent",
+    "source": "paper"
+  },
+  {
+    "description": "定義されていないコマンドをプレイヤーが実行した時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/command/UnknownCommandEvent.html",
+    "name": "UnknownCommandEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "乗り物がブロックに衝突した時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/vehicle/VehicleBlockCollisionEvent.html",
+    "name": "VehicleBlockCollisionEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "乗り物が衝突した時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/vehicle/VehicleCollisionEvent.html",
+    "name": "VehicleCollisionEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "乗り物が作成される時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/vehicle/VehicleCreateEvent.html",
+    "name": "VehicleCreateEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "乗り物がダメージを受ける時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/vehicle/VehicleDamageEvent.html",
+    "name": "VehicleDamageEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "乗り物が破壊される時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/vehicle/VehicleDestroyEvent.html",
+    "name": "VehicleDestroyEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "エンティティが乗り物に乗る時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/vehicle/VehicleEnterEvent.html",
+    "name": "VehicleEnterEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "乗り物がエンティティと衝突した時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/vehicle/VehicleEntityCollisionEvent.html",
+    "name": "VehicleEntityCollisionEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "乗り物に関するイベントであることを表す。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/vehicle/VehicleEvent.html",
+    "name": "VehicleEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "エンティティが乗り物から降りる時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/vehicle/VehicleExitEvent.html",
+    "name": "VehicleExitEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "乗り物が動く時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/vehicle/VehicleMoveEvent.html",
+    "name": "VehicleMoveEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "乗り物が更新された時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/vehicle/VehicleUpdateEvent.html",
+    "name": "VehicleUpdateEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "村人が新たな交易品を獲得する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/VillagerAcquireTradeEvent.html",
+    "name": "VillagerAcquireTradeEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "村人の職業が変わる時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/VillagerCareerChangeEvent.html",
+    "name": "VillagerCareerChangeEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "村人が交易品を補充する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/VillagerReplenishTradeEvent.html",
+    "name": "VillagerReplenishTradeEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "天気が変わる時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/weather/WeatherChangeEvent.html",
+    "name": "WeatherChangeEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "天気に関するイベントであることを表す。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/weather/WeatherEvent.html",
+    "name": "WeatherEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "ホワイトリストが切り替わった時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/server/WhitelistToggleEvent.html",
+    "name": "WhitelistToggleEvent",
+    "source": "paper"
+  },
+  {
+    "description": "ウィッチがポーションを自分自身で消費する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/WitchConsumePotionEvent.html",
+    "name": "WitchConsumePotionEvent",
+    "source": "paper"
+  },
+  {
+    "description": "ウィッチのポーションの準備が出来る時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/WitchReadyPotionEvent.html",
+    "name": "WitchReadyPotionEvent",
+    "source": "paper"
+  },
+  {
+    "description": "ウィッチがポーションを投げる時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/WitchThrowPotionEvent.html",
+    "name": "WitchThrowPotionEvent",
+    "source": "paper"
+  },
+  {
+    "description": "ワールドボーダーのサイズが変更する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/world/border/WorldBorderBoundsChangeEvent.html",
+    "name": "WorldBorderBoundsChangeEvent",
+    "source": "paper"
+  },
+  {
+    "description": "ワールドボーダーのサイズが変更した時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/world/border/WorldBorderBoundsChangeFinishEvent.html",
+    "name": "WorldBorderBoundsChangeFinishEvent",
+    "source": "paper"
+  },
+  {
+    "description": "ワールドボーダーの中心が変更する時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/world/border/WorldBorderCenterChangeEvent.html",
+    "name": "WorldBorderCenterChangeEvent",
+    "source": "paper"
+  },
+  {
+    "description": "ワールドボーダーに関するイベントであることを表す。",
+    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/world/border/WorldBorderEvent.html",
+    "name": "WorldBorderEvent",
+    "source": "paper"
+  },
+  {
+    "description": "ワールドに関するイベントであることを表す。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/world/WorldEvent.html",
+    "name": "WorldEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "ワールドのゲームルールが変更される時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/world/WorldGameRuleChangeEvent.html",
+    "name": "WorldGameRuleChangeEvent",
+    "source": "paper"
+  },
+  {
+    "description": "ワールドが初期化される時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/world/WorldInitEvent.html",
+    "name": "WorldInitEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "ワールドをロードした時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/world/WorldLoadEvent.html",
+    "name": "WorldLoadEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "ワールドが保存された時に呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/world/WorldSaveEvent.html",
+    "name": "WorldSaveEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "ワールドをアンロードするに呼び出される。",
+    "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/world/WorldUnloadEvent.html",
+    "name": "WorldUnloadEvent",
+    "source": "bukkit"
+  }
+]

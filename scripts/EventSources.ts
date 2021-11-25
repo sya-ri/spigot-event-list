@@ -2,7 +2,10 @@ import requestPromise, { RequestPromise } from "request-promise";
 import EventSource from "./EventSource";
 import EventSourceMap from "./EventSourceMap";
 
-export const EventSources: EventSourceMap = {
+/**
+ * イベントリストのダウンロード元
+ */
+const EventSources: EventSourceMap = {
   Paper: {
     allClasses: "allclasses-index.html",
     deprecateList: "deprecated-list.html",
@@ -34,32 +37,5 @@ export const EventSources: EventSourceMap = {
       ),
   },
 };
-export const DataYamlName = "data.yaml";
-export const TemplateReadmeFileName = "template/README.md";
-export const OutputReadmeFileName = "README.md";
-export const TemplateOnlyEventSourceFileName = "template/only-source.md";
-export const OutputOnlyEventSourceFileName = "only-{name}.md";
-export const TemplateOnlyDeprecateFileName = "template/only-deprecate.md";
-export const OutputOnlyDeprecateFileName = "only-deprecate.md";
-export const DoNotEditMessage = `<!--
 
-自動生成です。直接編集しないでください。
-
--->
-`;
-
-export const getEventSource = (href: string): string => {
-  if (href.startsWith("org/bukkit")) {
-    return "bukkit";
-  } else if (href.startsWith("org/spigotmc")) {
-    return "spigot";
-  } else if (href.startsWith("com/destroystokyo/paper")) {
-    return "paper";
-  } else if (href.startsWith("io/papermc/paper")) {
-    return "paper";
-  } else if (href.startsWith("net/pl3x/purpur")) {
-    return "purpur";
-  } else {
-    return "";
-  }
-};
+export default EventSources;

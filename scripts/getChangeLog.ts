@@ -1,16 +1,22 @@
 import EventSourceMap from "./EventSourceMap";
 
-const generateReport = (
+/**
+ * 変更報告を取得する
+ */
+const getChangeLog = (
   lastEventSources: EventSourceMap,
   eventSources: EventSourceMap
 ): string => {
   let result = "";
-  const versions = getVersionsReport(lastEventSources, eventSources);
+  const versions = getVersionChangeLog(lastEventSources, eventSources);
   if (versions) result += versions;
   return result;
 };
 
-const getVersionsReport = (
+/**
+ * バージョンに関する変更報告を取得する
+ */
+const getVersionChangeLog = (
   lastEventSources: EventSourceMap,
   eventSources: EventSourceMap
 ): string | null => {
@@ -32,4 +38,4 @@ const getVersionsReport = (
   }
 };
 
-export default generateReport;
+export default getChangeLog;

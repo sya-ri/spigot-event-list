@@ -12,12 +12,6 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '14.x'
-      - name: Cache node_modules
-        uses: actions/cache@v2
-        with:
-          path: |
-            node_modules
-          key: node-v${{ matrix.node-version }}-deps-${{ hashFiles(format('{0}{1}', github.workspace, '/yarn.lock')) }}
       - name: Install Dependencies
         run: yarn
       - name: Run Update
