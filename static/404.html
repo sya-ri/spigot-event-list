@@ -4,8 +4,12 @@
   <!-- For GitHub Pages / ref: https://maku.blog/p/9u8it5f/ -->
   <script>
     const loc = window.location
+    const origin = loc.origin;
     const path = loc.href.substr(origin.length + 1);
-    const url = origin + '?p=' + encodeURIComponent(path);
+    const segments = path.split('/');
+    const repo = segments.slice(0, 1).join('/');
+    const param = segments.slice(1).join('/');
+    const url = origin + '/' + repo + '?p=' + encodeURIComponent(param);
     loc.replace(url);
   </script>
 </head>
