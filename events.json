@@ -1614,7 +1614,7 @@
     "source": "paper"
   },
   {
-    "description": "プレイヤーの統計が増加した時に呼び出される。移動などの高頻度で増加するような一部の統計では呼び出される。",
+    "description": "プレイヤーの統計が増加した時に呼び出される。移動などの高頻度で増加するような一部の統計では呼び出されない。",
     "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerStatisticIncrementEvent.html",
     "name": "PlayerStatisticIncrementEvent",
     "source": "bukkit"
