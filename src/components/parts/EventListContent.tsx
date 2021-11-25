@@ -1,6 +1,7 @@
 import React, { FC, memo } from "react";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import {
+  Box,
   Container,
   Flex,
   Icon,
@@ -43,7 +44,9 @@ const EventListContent: FC<Props> = ({
           </Link>
         </Tooltip>
       </Stack>
-      <EventSourceTypeTags source={source} />
+      <Box ml="auto" mr={0}>
+        <EventSourceTypeTags source={source} />
+      </Box>
     </Flex>
     <Container>
       <ReactMarkdown>{description}</ReactMarkdown>
