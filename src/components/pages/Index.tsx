@@ -4,7 +4,7 @@ import { getEvents } from "../../api";
 import { allEventSourceTypes } from "../../EventSourceType";
 import EventType from "../../EventType";
 import EventList from "../parts/EventList";
-import EventListHeader from "../parts/EventListHeader";
+import Header from "../parts/Header";
 
 const Index: FC = () => {
   const [events, setEvents] = useState<EventType[]>([]);
@@ -15,7 +15,7 @@ const Index: FC = () => {
   const [tagsFilter, setTagsFilter] = useState(allEventSourceTypes);
   return (
     <Box>
-      <EventListHeader
+      <Header
         searchText={searchText}
         setSearchText={setSearchText}
         tagsFilter={tagsFilter}

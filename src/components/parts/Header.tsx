@@ -1,9 +1,9 @@
 import React, { Dispatch, FC, SetStateAction } from "react";
 import { Box, Container, Flex, Stack } from "@chakra-ui/react";
 import EventSourceType from "../../EventSourceType";
-import EventListHeaderSeachBox from "./EventListHeaderSeachBox";
-import EventListHeaderTagsFilter from "./EventListHeaderTagsFilter";
-import EventListHeaderTitle from "./EventListHeaderTitle";
+import EventListHeaderSeachBox from "./HeaderSeachBox";
+import HeaderTagsFilter from "./HeaderTagsFilter";
+import EventListHeaderTitle from "./HeaderTitle";
 
 type Props = {
   searchText: string;
@@ -12,7 +12,7 @@ type Props = {
   setTagsFilter: Dispatch<SetStateAction<EventSourceType[]>>;
 };
 
-const EventListHeader: FC<Props> = ({
+const Header: FC<Props> = ({
   searchText,
   setSearchText,
   tagsFilter,
@@ -27,7 +27,7 @@ const EventListHeader: FC<Props> = ({
             searchText={searchText}
             setSearchText={setSearchText}
           />
-          <EventListHeaderTagsFilter
+          <HeaderTagsFilter
             tagsFilter={tagsFilter}
             setTagsFilter={setTagsFilter}
           />
@@ -37,4 +37,4 @@ const EventListHeader: FC<Props> = ({
   </Box>
 );
 
-export default EventListHeader;
+export default Header;

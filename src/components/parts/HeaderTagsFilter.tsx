@@ -8,10 +8,7 @@ type Props = {
   setTagsFilter: Dispatch<SetStateAction<EventSourceType[]>>;
 };
 
-const EventListHeaderTagsFilter: FC<Props> = ({
-  tagsFilter,
-  setTagsFilter,
-}) => {
+const HeaderTagsFilter: FC<Props> = ({ tagsFilter, setTagsFilter }) => {
   return (
     <Stack direction="row" justify="center">
       {allEventSourceTypes.map((source) => (
@@ -35,4 +32,4 @@ const EventListHeaderTagsFilter: FC<Props> = ({
   );
 };
 
-export default EventListHeaderTagsFilter;
+export default HeaderTagsFilter;
