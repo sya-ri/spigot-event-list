@@ -43,7 +43,7 @@
   },
   {
     "deprecate": true,
-    "deprecateDescription": "Paper であれば、[AsyncChatEvent](README.md#asyncchatevent) を使う。",
+    "deprecateDescription": "Paper であれば、AsyncChatEvent を使う。",
     "description": "プレイヤーがチャットした時に呼び出される。非同期でも同期でも呼び出されることがある。",
     "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/AsyncPlayerChatEvent.html",
     "name": "AsyncPlayerChatEvent",
@@ -56,7 +56,7 @@
     "source": "bukkit"
   },
   {
-    "description": "タブ補完を行う時に呼び出される。非同期で処理される。このイベントが結果を返す時、標準のタブ補完処理は発生しない。ただし、 [TabCompleteEvent](README.md#bukkit-tabcompleteevent) は非同期の結果と共に呼び出される。",
+    "description": "タブ補完を行う時に呼び出される。非同期で処理される。このイベントが結果を返す時、標準のタブ補完処理は発生しない。ただし、 TabCompleteEvent は非同期の結果と共に呼び出される。",
     "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/server/AsyncTabCompleteEvent.html",
     "name": "AsyncTabCompleteEvent",
     "source": "paper"
@@ -146,7 +146,7 @@
     "source": "bukkit"
   },
   {
-    "description": "ディスペンサーからアイテムが射出される時に呼び出される。このイベントをキャンセルしても射出されたアイテムは減る。[BlockPreDispenseEvent](README.md#paper-blockpredispenseevent) を使うことでアイテムの消費もキャンセルできる。",
+    "description": "ディスペンサーからアイテムが射出される時に呼び出される。このイベントをキャンセルしても射出されたアイテムは減る。BlockPreDispenseEvent を使うことでアイテムの消費もキャンセルできる。",
     "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/BlockDispenseEvent.html",
     "name": "BlockDispenseEvent",
     "source": "bukkit"
@@ -188,13 +188,13 @@
     "source": "paper"
   },
   {
-    "description": "プレイヤーが骨粉を使用し、ブロックに変更が生じる時に呼び出される。[StructureGrowEvent](README.md#bukkit-structuregrowevent) の後に呼び出される。",
+    "description": "プレイヤーが骨粉を使用し、ブロックに変更が生じる時に呼び出される。StructureGrowEvent の後に呼び出される。",
     "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/BlockFertilizeEvent.html",
     "name": "BlockFertilizeEvent",
     "source": "bukkit"
   },
   {
-    "description": "自然にブロックが形成される時に呼び出される。[BlockSpreadEvent](#bukkit-blockspreadevent) とは違い、ランダムに形成されないブロックに対して呼び出される。以下に例を示す。\n- 吹雪により雪が積もる時。\n- 雪に覆われたバイオームで氷が形成される時。\n- 水との接触による黒曜石や丸石の形成される時。\n- コンクリートパウダーと水の混合によるコンクリートが成形される時。",
+    "description": "自然にブロックが形成される時に呼び出される。BlockSpreadEvent とは違い、ランダムに形成されないブロックに対して呼び出される。以下に例を示す。\n- 吹雪により雪が積もる時。\n- 雪に覆われたバイオームで氷が形成される時。\n- 水との接触による黒曜石や丸石の形成される時。\n- コンクリートパウダーと水の混合によるコンクリートが成形される時。",
     "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/BlockFormEvent.html",
     "name": "BlockFormEvent",
     "source": "bukkit"
@@ -254,7 +254,7 @@
     "source": "bukkit"
   },
   {
-    "description": "ディスペンサーからアイテムが射出される時に呼び出される。[BlockDispenseEvent](README.md#bukkit-blockdispenseevent) の前に呼び出されるので、ディスペンサーのアイテム消費もキャンセルできる。",
+    "description": "ディスペンサーからアイテムが射出される時に呼び出される。BlockDispenseEvent の前に呼び出されるので、ディスペンサーのアイテム消費もキャンセルできる。",
     "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/block/BlockPreDispenseEvent.html",
     "name": "BlockPreDispenseEvent",
     "source": "paper"
@@ -278,7 +278,7 @@
     "source": "bukkit"
   },
   {
-    "description": "ブロックが拡散する時に呼び出される。[BlockFormEvent](#bukkit-blockformevent) とは違い、ランダムに形成されるブロックに対して呼び出される。以下に例を示す。\n- キノコが増える時。\n- 火が燃え広がる時。",
+    "description": "ブロックが拡散する時に呼び出される。BlockFormEvent とは違い、ランダムに形成されるブロックに対して呼び出される。以下に例を示す。\n- キノコが増える時。\n- 火が燃え広がる時。",
     "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/block/BlockSpreadEvent.html",
     "name": "BlockSpreadEvent",
     "source": "bukkit"
@@ -309,7 +309,7 @@
   },
   {
     "deprecate": true,
-    "deprecateDescription": "非同期で処理をする [AsyncChatEvent](README.md#asyncchatevent) を使う。",
+    "deprecateDescription": "非同期で処理をする AsyncChatEvent を使う。",
     "description": "プレイヤーがチャットした時に呼び出される。",
     "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/ChatEvent.html",
     "name": "ChatEvent",
@@ -485,7 +485,7 @@
   },
   {
     "deprecate": true,
-    "deprecateDescription": "ワールドに関するイベントとして定義された [PortalCreateEvent](README.md#bukkit-portalcreateevent) を使う。",
+    "deprecateDescription": "ワールドに関するイベントとして定義された PortalCreateEvent を使う。",
     "description": "エンティティがポータルを作成する時に呼び出される。",
     "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityCreatePortalEvent.html",
     "name": "EntityCreatePortalEvent",
@@ -534,7 +534,7 @@
     "source": "bukkit"
   },
   {
-    "description": "エンティティがブロックの中に入る時に呼び出される。以下に例を示す。\n- ミツバチが巣箱に入る時。\n\nしかし、以下の場合は呼び出されない。\n- シルバーフィッシュが石に入る時。[EntityChangeBlockEvent](README.md#bukkit-entitychangeblockevent) が呼び出される。",
+    "description": "エンティティがブロックの中に入る時に呼び出される。以下に例を示す。\n- ミツバチが巣箱に入る時。\n\nしかし、以下の場合は呼び出されない。\n- シルバーフィッシュが石に入る時。EntityChangeBlockEvent が呼び出される。",
     "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityEnterBlockEvent.html",
     "name": "EntityEnterBlockEvent",
     "source": "bukkit"
@@ -630,7 +630,7 @@
     "source": "bukkit"
   },
   {
-    "description": "プレイヤー以外のエンティティがポータルでテレポートする時に呼び出される。プレイヤーの場合 [PlayerPortalEvent](README.md#bukkit-playerportalevent) が呼び出される。",
+    "description": "プレイヤー以外のエンティティがポータルでテレポートする時に呼び出される。プレイヤーの場合 PlayerPortalEvent が呼び出される。",
     "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityPortalEvent.html",
     "name": "EntityPortalEvent",
     "source": "bukkit"
@@ -702,7 +702,7 @@
     "source": "bukkit"
   },
   {
-    "description": "[EntityTargetEvent](README.md#bukkit-entitytargetevent) において LivingEntity をターゲットとする時に呼び出される。",
+    "description": "EntityTargetEvent において LivingEntity をターゲットとする時に呼び出される。",
     "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/entity/EntityTargetLivingEntityEvent.html",
     "name": "EntityTargetLivingEntityEvent",
     "source": "bukkit"
@@ -739,7 +739,7 @@
   },
   {
     "deprecate": true,
-    "deprecateDescription": "Bukkit に追加された [EntityTransformEvent](README.md#bukkit-entitytransformevent) を使う。",
+    "deprecateDescription": "Bukkit に追加された EntityTransformEvent を使う。",
     "description": "エンティティが別のエンティティに置きかわる時に呼び出される。",
     "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/EntityTransformedEvent.html",
     "name": "EntityTransformedEvent",
@@ -1036,7 +1036,7 @@
     "source": "bukkit"
   },
   {
-    "description": "サーバーリストの表示内容を送る要求を受けた時に呼び出される。[ServerListPingEvent](README.md#bukkit-serverlistpingevent) よりも扱える情報が多い。",
+    "description": "サーバーリストの表示内容を送る要求を受けた時に呼び出される。ServerListPingEvent よりも扱える情報が多い。",
     "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/server/PaperServerListPingEvent.html",
     "name": "PaperServerListPingEvent",
     "source": "paper"
@@ -1169,7 +1169,7 @@
   },
   {
     "deprecate": true,
-    "deprecateDescription": "Paper であれば、[PlayerBucketEntityEvent](README.md#playerbucketentityevent) を使う。",
+    "deprecateDescription": "Paper であれば、PlayerBucketEntityEvent を使う。",
     "description": "プレイヤーがバケツに魚を入れる時に呼び出される。",
     "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerBucketFishEvent.html",
     "name": "PlayerBucketFishEvent",
@@ -1201,7 +1201,7 @@
   },
   {
     "deprecate": true,
-    "deprecateDescription": "チャットの遅延が発生するので [AsyncPlayerChatEvent](README.md#bukkit-asyncplayerchatevent) を使う。",
+    "deprecateDescription": "チャットの遅延が発生するので AsyncPlayerChatEvent を使う。",
     "description": "プレイヤーがチャットする時に呼び出される。",
     "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerChatEvent.html",
     "name": "PlayerChatEvent",
@@ -1331,14 +1331,14 @@
   },
   {
     "deprecate": true,
-    "deprecateDescription": "Spigot に追加された [PlayerSpawnLocationEvent](README.md#spigot-playerspawnlocationevent) を使う。",
+    "deprecateDescription": "Spigot に追加された PlayerSpawnLocationEvent を使う。",
     "description": "プレイヤーがサーバーに参加した後、スポーンしようとしている時に呼び出される。",
     "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerInitialSpawnEvent.html",
     "name": "PlayerInitialSpawnEvent",
     "source": "paper"
   },
   {
-    "description": "プレイヤーがエンティティを右クリックする時に呼び出される。クライアントは [PlayerInteractEntityEvent](README.md#bukkit-playerinteractentityevent) に加えてこのパケットを誤って送信する場合がある。 しかし、アーマースタンドを右クリックした場合、このイベントのみが呼び出される。特別な場合を除いて　[PlayerInteractEntityEvent](README.md#bukkit-playerinteractentityevent) を使うことを推奨している。",
+    "description": "プレイヤーがエンティティを右クリックする時に呼び出される。クライアントは PlayerInteractEntityEvent](README.md#bukkit-playerinteractentityevent) に加えてこのパケットを誤って送信する場合がある。 しかし、アーマースタンドを右クリックした場合、このイベントのみが呼び出される。特別な場合を除いて　[PlayerInteractEntityEvent を使うことを推奨している。",
     "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerInteractAtEntityEvent.html",
     "name": "PlayerInteractAtEntityEvent",
     "source": "bukkit"
@@ -1435,7 +1435,7 @@
   },
   {
     "deprecate": true,
-    "deprecateDescription": "Bukkit に追加された [PlayerLocaleChangeEvent](README.md#bukkit-playerlocalechangeevent) を使う。",
+    "deprecateDescription": "Bukkit に追加された PlayerLocaleChangeEvent を使う。",
     "description": "プレイヤーが言語設定を変更した時に呼び出される。",
     "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerLocaleChangeEvent.html",
     "name": "PlayerLocaleChangeEvent",
@@ -1448,7 +1448,7 @@
     "source": "bukkit"
   },
   {
-    "description": "プレイヤーがログインしようとする時に呼び出される。[PlayerJoinEvent](README.md#bukkit-playerjoinevent) の前に呼び出される。",
+    "description": "プレイヤーがログインしようとする時に呼び出される。PlayerJoinEvent の前に呼び出される。",
     "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerLoginEvent.html",
     "name": "PlayerLoginEvent",
     "source": "bukkit"
@@ -1491,7 +1491,7 @@
   },
   {
     "deprecate": true,
-    "deprecateDescription": "Bukkit に追加された [EntityPickupItemEvent](README.md#bukkit-entitypickupitemevent) を使う。",
+    "deprecateDescription": "Bukkit に追加された EntityPickupItemEvent を使う。",
     "description": "プレイヤーが地面からアイテムを拾う時に呼び出される。",
     "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerPickupItemEvent.html",
     "name": "PlayerPickupItemEvent",
@@ -1511,7 +1511,7 @@
   },
   {
     "deprecate": true,
-    "deprecateDescription": "非同期で処理をする為に [AsyncPlayerPreLoginEvent](README.md#bukkit-asyncplayerpreloginevent) を使う。",
+    "deprecateDescription": "非同期で処理をする為に AsyncPlayerPreLoginEvent を使う。",
     "description": "プレイヤーがログインしようとしている時に呼び出される。",
     "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerPreLoginEvent.html",
     "name": "PlayerPreLoginEvent",
@@ -1734,7 +1734,7 @@
     "source": "bukkit"
   },
   {
-    "description": "生き物がスポーンする時に呼び出される。このイベントの目的はサーバーのパフォーマンスを向上させることであるため、[CreatureSpawnEvent](README.md#bukkit-creaturespawnevent) が呼び出される全ての状況で呼び出されるわけではない。",
+    "description": "生き物がスポーンする時に呼び出される。このイベントの目的はサーバーのパフォーマンスを向上させることであるため、CreatureSpawnEvent が呼び出される全ての状況で呼び出されるわけではない。",
     "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/PreCreatureSpawnEvent.html",
     "name": "PreCreatureSpawnEvent",
     "source": "paper"
@@ -1759,7 +1759,7 @@
   },
   {
     "deprecate": true,
-    "deprecateDescription": "このイベントを直接使用せず、[PrepareResultEvent](README.md#paper-prepareresultevent) を使うことが推奨されている。",
+    "deprecateDescription": "このイベントを直接使用せず、PrepareResultEvent を使うことが推奨されている。",
     "description": "砥石の使用準備が出来た時に呼び出される。完成アイテムが表示される毎に発生する。",
     "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/inventory/PrepareGrindstoneEvent.html",
     "name": "PrepareGrindstoneEvent",
@@ -1790,7 +1790,7 @@
     "source": "bukkit"
   },
   {
-    "description": "エンティティがスポナーによってスポーンする前に呼び出される。[SpawnerSpawnEvent](README.md#bukkit-spawnerspawnevent) よりも前に呼び出される。",
+    "description": "エンティティがスポナーによってスポーンする前に呼び出される。SpawnerSpawnEvent よりも前に呼び出される。",
     "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/PreSpawnerSpawnEvent.html",
     "name": "PreSpawnerSpawnEvent",
     "source": "paper"
@@ -1892,7 +1892,7 @@
     "source": "paper"
   },
   {
-    "description": "サーバーリストの表示内容を送る要求を受けた時に呼び出される。[PaperServerListPingEvent](README.md#paper-paperserverlistpingevent) を使うことでより詳細の情報を扱うことができる。",
+    "description": "サーバーリストの表示内容を送る要求を受けた時に呼び出される。PaperServerListPingEvent を使うことでより詳細の情報を扱うことができる。",
     "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/server/ServerListPingEvent.html",
     "name": "ServerListPingEvent",
     "source": "bukkit"
