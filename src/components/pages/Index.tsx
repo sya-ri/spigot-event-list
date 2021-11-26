@@ -4,6 +4,7 @@ import { getEvents } from "../../api";
 import { allEventSourceTypes } from "../../EventSourceType";
 import EventType from "../../EventType";
 import EventList from "../parts/EventList";
+import Footer from "../parts/Footer";
 import Header from "../parts/Header";
 
 const Index: FC = () => {
@@ -23,7 +24,7 @@ const Index: FC = () => {
         setTagsFilter={setTagsFilter}
         headerRef={headerRef}
       />
-      <Container maxW="container.md" my={2}>
+      <Container maxW="container.md" my={2} minH="100vh">
         <EventList
           events={events}
           searchText={searchText}
@@ -31,6 +32,7 @@ const Index: FC = () => {
           headerRef={headerRef}
         />
       </Container>
+      <Footer />
     </Box>
   );
 };
