@@ -1,4 +1,4 @@
-import React, { Dispatch, FC, SetStateAction } from "react";
+import React, { Dispatch, FC, SetStateAction, memo } from "react";
 import { Link, Stack } from "@chakra-ui/react";
 import EventSourceType, { allEventSourceTypes } from "../../EventSourceType";
 import EventSourceTypeTag from "./EventSourceTypeTag";
@@ -32,4 +32,4 @@ const HeaderTagsFilter: FC<Props> = ({ tagsFilter, setTagsFilter }) => {
   );
 };
 
-export default HeaderTagsFilter;
+export default memo(HeaderTagsFilter);
