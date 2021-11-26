@@ -36,7 +36,7 @@ const EventSourceTypeTags: FC<Props> = ({ source }) => {
     }
   }
   return (
-    <Stack direction="row">
+    <Stack direction="row" spacing={[1, 2]}>
       {sources.map((s) => (
         <EventSourceTypeTag key={s} source={s} />
       ))}

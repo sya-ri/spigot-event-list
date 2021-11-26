@@ -10,7 +10,7 @@ type Props = {
 
 const HeaderTagsFilter: FC<Props> = ({ tagsFilter, setTagsFilter }) => {
   return (
-    <Stack direction="row" justify="center">
+    <Stack direction="row" justify="center" flexWrap="wrap" spacing={[1, 2]}>
       {allEventSourceTypes.map((source) => (
         <Link
           key={source}

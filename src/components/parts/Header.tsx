@@ -29,7 +29,7 @@ const Header: FC<Props> = ({
       py={2}
       boxShadow="0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%)"
     >
-      <Container maxW="container.md">
+      <Container maxW="container.md" px={2}>
         <Flex justify="space-between" flexWrap="wrap" gridGap={2}>
           <HeaderTitle />
           <Stack direction="column" flexGrow={5}>
