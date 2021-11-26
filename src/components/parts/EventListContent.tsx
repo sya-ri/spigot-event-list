@@ -12,7 +12,6 @@ import {
 } from "@chakra-ui/react";
 import { VscWarning } from "react-icons/vsc";
 import ReactMarkdown from "react-markdown";
-import { head } from "request-promise";
 import EventSourceType from "../../EventSourceType";
 import EventSourceTypeTags from "./EventSourceTypeTags";
 

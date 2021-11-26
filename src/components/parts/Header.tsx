@@ -1,11 +1,4 @@
-import React, {
-  Dispatch,
-  FC,
-  RefObject,
-  SetStateAction,
-  useEffect,
-  useRef,
-} from "react";
+import React, { Dispatch, FC, RefObject, SetStateAction } from "react";
 import { Box, Container, Flex, Stack } from "@chakra-ui/react";
 import EventSourceType from "../../EventSourceType";
 import EventListHeaderSeachBox from "./HeaderSeachBox";
