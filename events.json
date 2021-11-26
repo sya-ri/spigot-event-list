@@ -42,6 +42,12 @@
     "source": "paper"
   },
   {
+    "description": "非同期で処理されるイベントを表す。",
+    "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/AsyncEvent.html",
+    "name": "AsyncEvent",
+    "source": "bungee"
+  },
+  {
     "deprecate": true,
     "deprecateDescription": "Paper であれば、AsyncChatEvent を使う。",
     "description": "プレイヤーがチャットした時に呼び出される。非同期でも同期でも呼び出されることがある。",
@@ -308,6 +314,12 @@
     "source": "bukkit"
   },
   {
+    "description": "プレイヤーがメッセージを送信した時に呼び出される。",
+    "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/ChatEvent.html",
+    "name": "ChatEvent",
+    "source": "bungee"
+  },
+  {
     "deprecate": true,
     "deprecateDescription": "非同期で処理をする AsyncChatEvent を使う。",
     "description": "プレイヤーがチャットした時に呼び出される。",
@@ -338,6 +350,12 @@
     "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/world/ChunkUnloadEvent.html",
     "name": "ChunkUnloadEvent",
     "source": "bukkit"
+  },
+  {
+    "description": "クライアントが接続する時に呼び出される。全ての接続の初期段階で呼び出されるので、高速で処理する必要がある。",
+    "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/ClientConnectEvent.html",
+    "name": "ClientConnectEvent",
+    "source": "bungee"
   },
   {
     "description": "アイテムをクラフトする時に呼び出される。",
@@ -765,6 +783,12 @@
   },
   {
     "description": "イベントを表す。",
+    "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/plugin/Event.html",
+    "name": "Event",
+    "source": "bungee"
+  },
+  {
+    "description": "イベントを表す。",
     "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/Event.html",
     "name": "Event",
     "source": "bukkit"
@@ -994,6 +1018,12 @@
     "source": "purpur"
   },
   {
+    "description": "プレイヤーがログインする時に呼び出される。",
+    "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/LoginEvent.html",
+    "name": "LoginEvent",
+    "source": "bungee"
+  },
+  {
     "description": "Mojang API を用いてプロファイルが検索された時に呼び出される。",
     "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/profile/LookupProfileEvent.html",
     "name": "LookupProfileEvent",
@@ -1040,6 +1070,12 @@
     "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/server/PaperServerListPingEvent.html",
     "name": "PaperServerListPingEvent",
     "source": "paper"
+  },
+  {
+    "description": "CommandSender の権限を確認する時に呼び出される。",
+    "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/PermissionCheckEvent.html",
+    "name": "PermissionCheckEvent",
+    "source": "bungee"
   },
   {
     "description": "ファントムがスポーンする時に呼び出される。",
@@ -1264,6 +1300,12 @@
     "source": "paper"
   },
   {
+    "description": "プレイヤーがプロキシを離れた時に呼び出される。",
+    "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/PlayerDisconnectEvent.html",
+    "name": "PlayerDisconnectEvent",
+    "source": "bungee"
+  },
+  {
     "description": "プレイヤーのインベントリからアイテムをドロップする時に呼び出される。",
     "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerDropItemEvent.html",
     "name": "PlayerDropItemEvent",
@@ -1316,6 +1358,12 @@
     "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/player/PlayerGameModeChangeEvent.html",
     "name": "PlayerGameModeChangeEvent",
     "source": "bukkit"
+  },
+  {
+    "description": "ハンドシェイクを行う時に呼び出される。プレイヤーの存在やユーザー名を知る事が出来る最初のイベントである。",
+    "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/PlayerHandshakeEvent.html",
+    "name": "PlayerHandshakeEvent",
+    "source": "bungee"
   },
   {
     "description": "プレイヤーとサーバーがハンドシェイクする時に呼び出される。",
@@ -1722,10 +1770,22 @@
     "source": "bukkit"
   },
   {
+    "description": "クライアントやサーバーから送信されたプラグインメッセージを受信する時に呼び出される。",
+    "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/PluginMessageEvent.html",
+    "name": "PluginMessageEvent",
+    "source": "bungee"
+  },
+  {
     "description": "ポータルが作成される時に呼び出される。",
     "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/world/PortalCreateEvent.html",
     "name": "PortalCreateEvent",
     "source": "bukkit"
+  },
+  {
+    "description": "サーバーに接続する準備が出来た時に呼び出される。ProxiedPlayer にアクセスできる最初のイベントである。",
+    "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/PostLoginEvent.html",
+    "name": "PostLoginEvent",
+    "source": "bungee"
   },
   {
     "description": "ポーションが割れる時に呼び出される。",
@@ -1744,6 +1804,12 @@
     "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/profile/PreFillProfileEvent.html",
     "name": "PreFillProfileEvent",
     "source": "paper"
+  },
+  {
+    "description": "ログインを試みる時に呼び出される。Mojang のサーバーでの認証後に取得されるプレイヤーに関連する情報は含まれず、UUID 等は使用することが出来ない。",
+    "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/PreLoginEvent.html",
+    "name": "PreLoginEvent",
+    "source": "bungee"
   },
   {
     "description": "Mojang API を用いてプロファイルを検索する時に呼び出される。",
@@ -1820,6 +1886,18 @@
     "source": "bukkit"
   },
   {
+    "description": "サーバーリストからピングされた時に呼び出される。",
+    "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/ProxyPingEvent.html",
+    "name": "ProxyPingEvent",
+    "source": "bungee"
+  },
+  {
+    "description": "プロキシがリロードする時に呼び出される。",
+    "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/ProxyReloadEvent.html",
+    "name": "ProxyReloadEvent",
+    "source": "bungee"
+  },
+  {
     "description": "フグの状態が変化する時に呼び出される。",
     "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/entity/PufferFishStateChangeEvent.html",
     "name": "PufferFishStateChangeEvent",
@@ -1880,6 +1958,24 @@
     "source": "bukkit"
   },
   {
+    "description": "サーバーに接続した時に呼び出される。プレイヤーがログインする前にサーバーに情報を送信する場合等に使う。",
+    "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/ServerConnectedEvent.html",
+    "name": "ServerConnectedEvent",
+    "source": "bungee"
+  },
+  {
+    "description": "サーバーに接続する時に呼び出される。プレイヤーがサーバーに接続するのをキャンセルする場合等に使う。",
+    "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/ServerConnectEvent.html",
+    "name": "ServerConnectEvent",
+    "source": "bungee"
+  },
+  {
+    "description": "サーバーへの接続を切断した時に呼び出される。",
+    "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/ServerDisconnectEvent.html",
+    "name": "ServerDisconnectEvent",
+    "source": "bungee"
+  },
+  {
     "description": "サーバーに関するイベントであることを表す。",
     "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/server/ServerEvent.html",
     "name": "ServerEvent",
@@ -1890,6 +1986,12 @@
     "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/server/ServerExceptionEvent.html",
     "name": "ServerExceptionEvent",
     "source": "paper"
+  },
+  {
+    "description": "サーバーからキックされた時に呼び出される。",
+    "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/ServerKickEvent.html",
+    "name": "ServerKickEvent",
+    "source": "bungee"
   },
   {
     "description": "サーバーリストの表示内容を送る要求を受けた時に呼び出される。PaperServerListPingEvent を使うことでより詳細の情報を扱うことができる。",
@@ -1908,6 +2010,12 @@
     "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/server/ServerResourcesReloadedEvent.html",
     "name": "ServerResourcesReloadedEvent",
     "source": "paper"
+  },
+  {
+    "description": "プレイヤーが接続先のサーバーを変更した時に呼び出される。",
+    "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/ServerSwitchEvent.html",
+    "name": "ServerSwitchEvent",
+    "source": "bungee"
   },
   {
     "description": "メインループのチェックが終了した時に呼び出される。",
@@ -1938,6 +2046,12 @@
     "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/server/ServiceUnregisterEvent.html",
     "name": "ServiceUnregisterEvent",
     "source": "bukkit"
+  },
+  {
+    "description": "クライアント設定を変更した時に呼び出される。",
+    "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/SettingsChangedEvent.html",
+    "name": "SettingsChangedEvent",
+    "source": "bungee"
   },
   {
     "description": "羊が染色された時に呼び出される。",
@@ -2048,10 +2162,28 @@
     "source": "paper"
   },
   {
+    "description": "タブ補完を行う時に呼び出される。",
+    "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/TabCompleteEvent.html",
+    "name": "TabCompleteEvent",
+    "source": "bungee"
+  },
+  {
     "description": "プレイヤーやコンソールがコマンドをタブ補完する時に呼び出される。クライアントの変更により、プレイヤーの場合、コマンド自体では呼び出されず、コマンド引数の場合にのみ呼び出される。",
     "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/server/TabCompleteEvent.html",
     "name": "TabCompleteEvent",
     "source": "bukkit"
+  },
+  {
+    "description": "サーバーがタブ補完を行う時に呼び出される。プロキシによって処理されたタブ補完では呼び出されない。",
+    "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/TabCompleteResponseEvent.html",
+    "name": "TabCompleteResponseEvent",
+    "source": "bungee"
+  },
+  {
+    "description": "2つのノード間の通信で発生するイベントを表す。",
+    "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/TargetedEvent.html",
+    "name": "TargetedEvent",
+    "source": "bungee"
   },
   {
     "description": "ターゲットブロックに Projectile が当たる時に呼び出される。",

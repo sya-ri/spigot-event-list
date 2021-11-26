@@ -14,6 +14,8 @@ const getEventSourceType = (href: string): EventSourceType | null => {
     return "paper";
   } else if (href.startsWith("net/pl3x/purpur")) {
     return "purpur";
+  } else if (href.startsWith("net/md_5/bungee/api")) {
+    return "bungee";
   } else {
     return null;
   }

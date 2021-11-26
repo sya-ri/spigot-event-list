@@ -6,6 +6,25 @@ import EventSourceMap from "./EventSourceMap";
  * イベントリストのダウンロード元
  */
 const EventSources: EventSourceMap = {
+  Bungee: {
+    allClasses: "allclasses.html",
+    deprecateList: "deprecated-list.html",
+    downloadSources: ["bungee"],
+    downloadUrl: "https://ci.md-5.net/job/BungeeCord/lastBuild",
+    javadocUrl: "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/",
+    updateVersion: (source: EventSource): RequestPromise =>
+      requestPromise(
+        "https://ci.md-5.net/job/BungeeCord/lastBuild/",
+        (e, response, body: string) => {
+          const match = body.match(
+            "<title>BungeeCord (.*) \\[Jenkins\\]</title>"
+          );
+          if (match) {
+            source.version = match.pop();
+          }
+        }
+      ),
+  },
   Paper: {
     allClasses: "allclasses-index.html",
     deprecateList: "deprecated-list.html",

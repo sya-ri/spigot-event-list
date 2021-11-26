@@ -9,6 +9,7 @@ type Props = {
 
 const colors = {
   bukkit: "blue",
+  bungee: "yellow",
   paper: "gray",
   purpur: "purple",
   spigot: "orange",

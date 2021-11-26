@@ -26,6 +26,10 @@ const EventSourceTypeTags: FC<Props> = ({ source }) => {
       sources = ["purpur"];
       break;
     }
+    case "bungee": {
+      sources = ["bungee"];
+      break;
+    }
   }
   return (
     <Stack direction="row">
