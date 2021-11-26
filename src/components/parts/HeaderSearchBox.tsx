@@ -7,7 +7,7 @@ type Props = {
   setSearchText: Dispatch<SetStateAction<string>>;
 };
 
-const EventListHeaderSearchBox: FC<Props> = ({ searchText, setSearchText }) => (
+const HeaderSearchBox: FC<Props> = ({ searchText, setSearchText }) => (
   <InputGroup maxW="md" m="auto">
     <InputLeftElement>
       <SearchIcon />
@@ -20,4 +20,4 @@ const EventListHeaderSearchBox: FC<Props> = ({ searchText, setSearchText }) => (
   </InputGroup>
 );
 
-export default memo(EventListHeaderSearchBox);
+export default memo(HeaderSearchBox);

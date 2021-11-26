@@ -1,9 +1,9 @@
 import React, { Dispatch, FC, RefObject, SetStateAction } from "react";
 import { Box, Container, Flex, Stack } from "@chakra-ui/react";
 import EventSourceType from "../../EventSourceType";
-import EventListHeaderSeachBox from "./HeaderSeachBox";
+import HeaderSearchBox from "./HeaderSearchBox";
 import HeaderTagsFilter from "./HeaderTagsFilter";
-import EventListHeaderTitle from "./HeaderTitle";
+import HeaderTitle from "./HeaderTitle";
 
 type Props = {
   searchText: string;
@@ -31,9 +31,9 @@ const Header: FC<Props> = ({
     >
       <Container maxW="container.md">
         <Flex justify="space-between" flexWrap="wrap" gridGap={2}>
-          <EventListHeaderTitle />
+          <HeaderTitle />
           <Stack direction="column" flexGrow={5}>
-            <EventListHeaderSeachBox
+            <HeaderSearchBox
               searchText={searchText}
               setSearchText={setSearchText}
             />
