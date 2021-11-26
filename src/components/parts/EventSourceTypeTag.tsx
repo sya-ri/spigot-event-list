@@ -13,6 +13,7 @@ const colors = {
   paper: "gray",
   purpur: "purple",
   spigot: "orange",
+  waterfall: "cyan",
 };
 
 const EventSourceTypeTag: FC<Props> = ({ source, isDisable }) => {

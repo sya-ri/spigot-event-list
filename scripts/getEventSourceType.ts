@@ -16,6 +16,8 @@ const getEventSourceType = (href: string): EventSourceType | null => {
     return "purpur";
   } else if (href.startsWith("net/md_5/bungee/api")) {
     return "bungee";
+  } else if (href.startsWith("io/github/waterfallmc/waterfall")) {
+    return "waterfall";
   } else {
     return null;
   }

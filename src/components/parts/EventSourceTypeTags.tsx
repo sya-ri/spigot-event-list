@@ -27,6 +27,10 @@ const EventSourceTypeTags: FC<Props> = ({ source }) => {
       break;
     }
     case "bungee": {
+      sources = ["bungee", "waterfall"];
+      break;
+    }
+    case "waterfall": {
       sources = ["bungee"];
       break;
     }

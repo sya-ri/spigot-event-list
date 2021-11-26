@@ -358,6 +358,12 @@
     "source": "bungee"
   },
   {
+    "description": "新しい接続があった時に呼び出される。接続を効率的に閉じることを可能にする。",
+    "link": "https://papermc.io/javadocs/waterfall/1.18/io/github/waterfallmc/waterfall/event/ConnectionInitEvent.html",
+    "name": "ConnectionInitEvent",
+    "source": "waterfall"
+  },
+  {
     "description": "アイテムをクラフトする時に呼び出される。",
     "link": "https://papermc.io/javadocs/paper/1.17/org/bukkit/event/inventory/CraftItemEvent.html",
     "name": "CraftItemEvent",
@@ -1886,10 +1892,28 @@
     "source": "bukkit"
   },
   {
+    "description": "タブ補完に使われるコマンドを定義される時に呼び出される。",
+    "link": "https://papermc.io/javadocs/waterfall/1.18/io/github/waterfallmc/waterfall/event/ProxyDefineCommandsEvent.html",
+    "name": "ProxyDefineCommandsEvent",
+    "source": "waterfall"
+  },
+  {
+    "description": "回復可能な状況で例外が発生した時に呼び出される。",
+    "link": "https://papermc.io/javadocs/waterfall/1.18/io/github/waterfallmc/waterfall/event/ProxyExceptionEvent.html",
+    "name": "ProxyExceptionEvent",
+    "source": "waterfall"
+  },
+  {
     "description": "サーバーリストからピングされた時に呼び出される。",
     "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/ProxyPingEvent.html",
     "name": "ProxyPingEvent",
     "source": "bungee"
+  },
+  {
+    "description": "クエリ要求を受信した時に呼び出される。",
+    "link": "https://papermc.io/javadocs/waterfall/1.18/io/github/waterfallmc/waterfall/event/ProxyQueryEvent.html",
+    "name": "ProxyQueryEvent",
+    "source": "waterfall"
   },
   {
     "description": "プロキシがリロードする時に呼び出される。",

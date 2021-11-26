@@ -55,6 +55,21 @@ const EventSources: EventSourceMap = {
         }
       ),
   },
+  Waterfall: {
+    allClasses: "allclasses.html",
+    deprecateList: "deprecated-list.html",
+    downloadSources: ["waterfall"],
+    downloadUrl: "https://papermc.io/downloads#Waterfall",
+    javadocUrl: "https://papermc.io/javadocs/waterfall/1.18/",
+    updateVersion: (source: EventSource): RequestPromise =>
+      requestPromise(
+        "https://papermc.io/api/v2/projects/waterfall/versions/1.18/",
+        (e, response, body) => {
+          const json = JSON.parse(body);
+          source.version = "#" + json.builds.pop();
+        }
+      ),
+  },
 };
 
 export default EventSources;
