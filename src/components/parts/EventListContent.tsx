@@ -64,8 +64,8 @@ const EventListContent: FC<Props> = ({
             </Text>
           </Link>
           <Tooltip label="Javadoc">
-            <Link href={link} isExternal>
-              <ExternalLinkIcon my={1} verticalAlign="top" />
+            <Link href={link} isExternal p={1}>
+              <ExternalLinkIcon verticalAlign="top" />
             </Link>
           </Tooltip>
         </Stack>
