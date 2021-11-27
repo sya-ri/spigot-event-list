@@ -1,13 +1,10 @@
-import React, { lazy, Suspense } from "react";
+import React from "react";
 import { ChakraProvider } from "@chakra-ui/react";
-
-const Index = lazy(() => import("./pages/Index"));
+import Index from "./pages/Index";
 
 const App = (): JSX.Element => (
   <ChakraProvider>
-    <Suspense fallback={<></>}>
-      <Index />
-    </Suspense>
+    <Index />
   </ChakraProvider>
 );
 
