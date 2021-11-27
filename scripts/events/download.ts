@@ -1,5 +1,5 @@
+import axios from "axios";
 import cheerio from "cheerio";
-import requestPromise, { RequestPromise } from "request-promise";
 import EventType from "../../src/EventType";
 import EventSource from "../EventSource";
 import EventSources from "../EventSources";
@@ -17,14 +17,11 @@ const downloadEvents = (
   events: { [name: string]: EventType },
   lastEvents: { [name: string]: EventType },
   eventSource: EventSource
-): RequestPromise<void> =>
-  requestPromise(
-    eventSource.javadocUrl + eventSource.allClasses,
-    (e, response, body) => {
-      if (e) {
-        return console.error(e);
-      }
-
+): Promise<void> =>
+  axios
+    .get<string>(eventSource.javadocUrl + eventSource.allClasses)
+    .then((response) => {
+      const body = response.data;
       try {
         // events から イベント一覧を作成
         const $ = cheerio.load(body);
@@ -65,8 +62,8 @@ const downloadEvents = (
       } catch (e) {
         console.error(e);
       }
-    }
-  );
+    })
+    .catch((reason) => console.error(reason));
 
 /**
  * イベント一覧をダウンロードし、更新する
@@ -77,8 +74,10 @@ export const downloadEventMap = async (
   lastEventMap: EventTypeMap
 ): Promise<EventTypeMap> => {
   const eventMap: EventTypeMap = {};
-  for (const source of Object.values(EventSources)) {
-    await downloadEvents(eventMap, lastEventMap, source);
-  }
+  await Promise.all(
+    Object.values(EventSources).map((source) =>
+      downloadEvents(eventMap, lastEventMap, source)
+    )
+  );
   return eventMap;
 };

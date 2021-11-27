@@ -1,5 +1,5 @@
+import axios from "axios";
 import cheerio from "cheerio";
-import requestPromise, { RequestPromise } from "request-promise";
 import EventSource from "../EventSource";
 import EventSources from "../EventSources";
 import EventTypeMap from "../EventTypeMap";
@@ -11,14 +11,11 @@ import getEventSourceType from "../getEventSourceType";
 const updateDeprecateInternal = (
   events: EventTypeMap,
   eventSource: EventSource
-): RequestPromise<void> =>
-  requestPromise(
-    eventSource.javadocUrl + eventSource.deprecateList,
-    (e, response, body) => {
-      if (e) {
-        console.error(e);
-      }
-
+): Promise<void> =>
+  axios
+    .get<string>(eventSource.javadocUrl + eventSource.deprecateList)
+    .then((response) => {
+      const body = response.data;
       try {
         // events から イベント一覧を作成
         const $ = cheerio.load(body);
@@ -49,14 +46,16 @@ const updateDeprecateInternal = (
       } catch (e) {
         console.error(e);
       }
-    }
-  );
+    })
+    .catch((reason) => console.error(reason));
 
 /**
  * 非推奨イベント一覧を更新する
  */
 export const updateDeprecate = async (eventMap: EventTypeMap) => {
-  for (const source of Object.values(EventSources)) {
-    await updateDeprecateInternal(eventMap, source);
-  }
+  await Promise.all(
+    Object.values(EventSources).map((source) =>
+      updateDeprecateInternal(eventMap, source)
+    )
+  );
 };

@@ -1,4 +1,3 @@
-import { RequestPromise } from "request-promise";
 import EventSourceType from "../src/EventSourceType";
 
 /**
@@ -10,6 +9,6 @@ export default interface EventSource {
   allClasses: string;
   deprecateList: string;
   version?: string;
-  updateVersion: (source: EventSource) => RequestPromise;
+  updateVersion: (source: EventSource) => Promise<void>;
   downloadSources: EventSourceType[];
 }

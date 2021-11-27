@@ -1,6 +1,6 @@
 [
   {
-    "description": "チャットに関するイベントであることを表す。",
+    "description": "",
     "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/AbstractChatEvent.html",
     "name": "AbstractChatEvent",
     "source": "paper"
