@@ -52,14 +52,14 @@ const EventListContent: FC<Props> = ({
   return (
     <Stack key={name + source} ref={ref} py={2}>
       <Flex justify="space-between" flexWrap="wrap" gridGap={1}>
-        <Stack direction="row">
+        <Stack direction="row" spacing={0.5}>
           <Link
             onClick={() => {
               window.location.hash = `#${source}-${name}`;
               scrollTo();
             }}
           >
-            <Text fontSize="md" fontWeight={500}>
+            <Text fontSize="md" fontWeight={500} overflowWrap="anywhere">
               {name}
             </Text>
           </Link>
