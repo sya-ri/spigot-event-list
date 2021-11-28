@@ -29,7 +29,7 @@ const EventSources: EventSourceMap = {
   Paper: {
     allClasses: "allclasses-index.html",
     deprecateList: "deprecated-list.html",
-    downloadSources: ["bukkit", "spigot", "paper"],
+    downloadSources: ["paper"],
     downloadUrl: "https://papermc.io/downloads#Paper-1.17",
     javadocUrl: "https://papermc.io/javadocs/paper/1.17/",
     updateVersion: (source: EventSource): Promise<void> =>
@@ -53,6 +53,24 @@ const EventSources: EventSourceMap = {
         .then((response) => {
           const json = response.data;
           source.version = "#" + json.builds.latest;
+        })
+        .catch((reason) => console.error(reason)),
+  },
+  Spigot: {
+    allClasses: "allclasses-index.html",
+    deprecateList: "deprecated-list.html",
+    downloadSources: ["bukkit", "spigot"],
+    downloadUrl: "https://ci.md-5.net/job/Spigot/lastBuild",
+    javadocUrl: "https://hub.spigotmc.org/javadocs/spigot/",
+    updateVersion: (source: EventSource): Promise<void> =>
+      axios
+        .get<string>("https://ci.md-5.net/job/Spigot/lastBuild/")
+        .then((response) => {
+          const body = response.data;
+          const match = body.match("<title>Spigot (.*) \\[Jenkins\\]</title>");
+          if (match) {
+            source.version = match.pop();
+          }
         })
         .catch((reason) => console.error(reason)),
   },
