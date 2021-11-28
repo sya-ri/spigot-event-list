@@ -1,16 +1,39 @@
-import React, { FC, useRef, useState } from "react";
+import React, { FC, useEffect, useRef, useState } from "react";
 import { Box, Container } from "@chakra-ui/react";
 import Events from "../../../events.json";
-import { allEventSourceTypes } from "../../EventSourceType";
+import EventSourceType, { allEventSourceTypes } from "../../EventSourceType";
 import EventType from "../../EventType";
 import EventList from "../parts/EventList";
 import Footer from "../parts/Footer";
 import Header from "../parts/Header";
 
+const initSearchText = (): string => {
+  const params = new URLSearchParams(window.location.search);
+  return params.get("search") || "";
+};
+
+const initTagsFilter = (): EventSourceType[] => {
+  const params = new URLSearchParams(window.location.search);
+  const tags = params.get("tags")?.split("-");
+  return tags ? (tags as EventSourceType[]) : allEventSourceTypes;
+};
+
 const Index: FC = () => {
-  const [searchText, setSearchText] = useState("");
-  const [tagsFilter, setTagsFilter] = useState(allEventSourceTypes);
+  const [searchText, setSearchText] = useState(initSearchText());
+  const [tagsFilter, setTagsFilter] = useState(initTagsFilter());
   const headerRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    const paramsArray: string[][] = [];
+    if (searchText) {
+      paramsArray.push(["search", searchText]);
+    }
+    if (!allEventSourceTypes.every((t) => tagsFilter.includes(t))) {
+      paramsArray.push(["tags", tagsFilter.join("-")]);
+    }
+    const params = new URLSearchParams(paramsArray).toString();
+    const hash = window.location.hash;
+    window.history.pushState(null, "", `/${params ? `?${params}` : ""}${hash}`);
+  }, [searchText, tagsFilter]);
   return (
     <Box>
       <Header
