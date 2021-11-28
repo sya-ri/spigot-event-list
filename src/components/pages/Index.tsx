@@ -31,7 +31,7 @@ const Index: FC = () => {
       paramsArray.push(["tags", tagsFilter.join("-")]);
     }
     const path = window.location.pathname;
-    const params = paramsArray
+    const params = paramsArray.length
       ? "?" + new URLSearchParams(paramsArray).toString()
       : "";
     const hash = window.location.hash;
