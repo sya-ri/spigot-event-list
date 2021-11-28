@@ -30,9 +30,12 @@ const Index: FC = () => {
     if (!allEventSourceTypes.every((t) => tagsFilter.includes(t))) {
       paramsArray.push(["tags", tagsFilter.join("-")]);
     }
-    const params = new URLSearchParams(paramsArray).toString();
+    const path = window.location.pathname;
+    const params = paramsArray
+      ? "?" + new URLSearchParams(paramsArray).toString()
+      : "";
     const hash = window.location.hash;
-    window.history.pushState(null, "", `/${params ? `?${params}` : ""}${hash}`);
+    window.history.pushState(null, "", path + params + hash);
   }, [searchText, tagsFilter]);
   return (
     <Box>
