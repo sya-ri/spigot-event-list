@@ -31,7 +31,10 @@ const Header: FC<Props> = ({
     >
       <Container maxW="container.md" px={2}>
         <Flex justify="space-between" flexWrap="wrap" gridGap={2}>
-          <HeaderTitle />
+          <HeaderTitle
+            setSearchText={setSearchText}
+            setTagsFilter={setTagsFilter}
+          />
           <Stack direction="column" flexGrow={5}>
             <HeaderSearchBox
               searchText={searchText}
