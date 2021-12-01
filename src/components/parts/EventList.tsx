@@ -1,4 +1,4 @@
-import React, { FC, RefObject } from "react";
+import React, { FC, RefObject, useEffect, useState } from "react";
 import { Box, Container } from "@chakra-ui/react";
 import EventSourceType from "../../EventSourceType";
 import EventType from "../../EventType";
@@ -17,6 +17,8 @@ const EventList: FC<Props> = ({
   tagsFilter,
   headerRef,
 }) => {
+  const [scrollHash, setScrollHash] = useState(window.location.hash);
+  useEffect(() => setScrollHash(""), []);
   return (
     <Container px={[0, 2]}>
       {events.map(
@@ -39,6 +41,7 @@ const EventList: FC<Props> = ({
                 deprecate={deprecate}
                 deprecateDescription={deprecateDescription}
                 headerRef={headerRef}
+                scrollHash={scrollHash}
               />
             ) : (
               <></>

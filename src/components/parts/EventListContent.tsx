@@ -23,6 +23,7 @@ type Props = {
   deprecate?: boolean;
   deprecateDescription?: string;
   headerRef: RefObject<HTMLDivElement>;
+  scrollHash: string;
 };
 
 const EventListContent: FC<Props> = ({
@@ -33,6 +34,7 @@ const EventListContent: FC<Props> = ({
   deprecate,
   deprecateDescription,
   headerRef,
+  scrollHash,
 }) => {
   const ref = useRef<HTMLDivElement>(null);
   const scrollTo = () => {
@@ -45,7 +47,7 @@ const EventListContent: FC<Props> = ({
     }
   };
   useEffect(() => {
-    if (window.location.hash == `#${source}-${name}`) {
+    if (scrollHash == `#${source}-${name}`) {
       scrollTo();
     }
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
