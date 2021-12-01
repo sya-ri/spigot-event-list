@@ -9,8 +9,8 @@
     "start:product": "webpack serve --config webpack.config.product.js",
     "build": "webpack --config webpack.config.product.js",
     "update": "ts-node scripts/main.ts",
-    "lint": "eslint . --ext .json,.js,.ts,.jsx,.tsx",
-    "lint:fix": "eslint . --ext .json,.js,.ts,.jsx,.tsx --fix",
+    "lint": "eslint . --ext .js,.ts,.jsx,.tsx",
+    "lint:fix": "eslint . --ext .js,.ts,.jsx,.tsx --fix",
     "ncu": "npx -p npm-check-updates -c \"ncu\"",
     "ncu:update": "npx -p npm-check-updates -c \"ncu -u\" && yarn",
     "sort-package-json": "npx sort-package-json"
