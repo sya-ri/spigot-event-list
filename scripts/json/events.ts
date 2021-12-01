@@ -31,7 +31,7 @@ export const writeEvents = (events: Events) => {
  */
 export const writeEventMap = (eventMap: EventTypeMap) => {
   const events = Object.values(eventMap)
-    .sort((a, b) => a.name.localeCompare(b.name))
+    .sort((a, b) => (a.name + a.source).localeCompare(b.name + b.source))
     .map(
       (value): EventType => ({
         deprecate: value.deprecate,

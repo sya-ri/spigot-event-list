@@ -789,15 +789,15 @@
   },
   {
     "description": "イベントを表す。",
-    "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/plugin/Event.html",
-    "name": "Event",
-    "source": "bungee"
-  },
-  {
-    "description": "イベントを表す。",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/Event.html",
     "name": "Event",
     "source": "bukkit"
+  },
+  {
+    "description": "イベントを表す。",
+    "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/plugin/Event.html",
+    "name": "Event",
+    "source": "bungee"
   },
   {
     "description": "コマンドを実行する時に呼び出される。",
@@ -1482,18 +1482,18 @@
     "source": "bukkit"
   },
   {
+    "description": "プレイヤーが言語設定を変更した時に呼び出される。",
+    "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerLocaleChangeEvent.html",
+    "name": "PlayerLocaleChangeEvent",
+    "source": "bukkit"
+  },
+  {
     "deprecate": true,
     "deprecateDescription": "Bukkit に追加された PlayerLocaleChangeEvent を使う。",
     "description": "プレイヤーが言語設定を変更した時に呼び出される。",
     "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerLocaleChangeEvent.html",
     "name": "PlayerLocaleChangeEvent",
     "source": "paper"
-  },
-  {
-    "description": "プレイヤーが言語設定を変更した時に呼び出される。",
-    "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerLocaleChangeEvent.html",
-    "name": "PlayerLocaleChangeEvent",
-    "source": "bukkit"
   },
   {
     "description": "プレイヤーがログインしようとする時に呼び出される。PlayerJoinEvent の前に呼び出される。",
@@ -2180,16 +2180,16 @@
     "source": "paper"
   },
   {
-    "description": "タブ補完を行う時に呼び出される。",
-    "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/TabCompleteEvent.html",
-    "name": "TabCompleteEvent",
-    "source": "bungee"
-  },
-  {
     "description": "プレイヤーやコンソールがコマンドをタブ補完する時に呼び出される。クライアントの変更により、プレイヤーの場合、コマンド自体では呼び出されず、コマンド引数の場合にのみ呼び出される。",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/server/TabCompleteEvent.html",
     "name": "TabCompleteEvent",
     "source": "bukkit"
+  },
+  {
+    "description": "タブ補完を行う時に呼び出される。",
+    "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/TabCompleteEvent.html",
+    "name": "TabCompleteEvent",
+    "source": "bungee"
   },
   {
     "description": "サーバーがタブ補完を行う時に呼び出される。プロキシによって処理されたタブ補完では呼び出されない。",
