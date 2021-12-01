@@ -15,6 +15,7 @@ const HeaderTitle: FC<Props> = ({ setSearchText, setTagsFilter }) => {
       px={4}
       cursor="pointer"
       onClick={() => {
+        history.replaceState(null, "", ".");
         setSearchText("");
         setTagsFilter(allEventSourceTypes);
       }}
