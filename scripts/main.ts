@@ -24,7 +24,10 @@ const main = async () => {
   await updateDeprecate(eventMap);
   writeEventMap(eventMap);
   writeVersions(versions);
-  writeFile("report.md", getChangeLog(lastEventSources, EventSources));
+  writeFile(
+    "report.md",
+    getChangeLog(lastEventSources, EventSources, eventMap)
+  );
 };
 
 main().then(() => console.log("* 更新が終了しました"));
