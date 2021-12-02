@@ -1,5 +1,4 @@
 import EventSourceMap from "./EventSourceMap";
-import eventSources from "./EventSources";
 import EventTypeMap from "./EventTypeMap";
 
 /**
@@ -10,12 +9,12 @@ const getChangeLog = (
   eventSources: EventSourceMap,
   eventMap: EventTypeMap
 ): string => {
-  let result = "";
-  const versions = getVersionChangeLog(lastEventSources, eventSources);
-  if (versions) result += versions;
-  const descriptions = getDescriptionReport(eventMap);
-  if (descriptions) result += descriptions;
-  return result;
+  return [
+    getVersionChangeLog(lastEventSources, eventSources),
+    getDescriptionReport(eventMap),
+  ]
+    .filter((line) => line)
+    .join("\n\n");
 };
 
 /**
@@ -25,19 +24,19 @@ const getVersionChangeLog = (
   lastEventSources: EventSourceMap,
   eventSources: EventSourceMap
 ): string | null => {
-  let result = "";
-  let changeCount = 0;
-  result += "### バージョン\n\n";
-  Object.keys(eventSources).forEach((name) => {
-    const lastVersion = lastEventSources[name].version;
-    const version = eventSources[name].version;
-    if (lastVersion != version) {
-      result += `- **${name}**: \`${lastVersion}\` → \`${version}\`\n\n`;
-      changeCount++;
-    }
-  });
-  if (changeCount != 0) {
-    return result;
+  const versions = Object.keys(eventSources)
+    .map((name) => {
+      const lastVersion = lastEventSources[name].version;
+      const version = eventSources[name].version;
+      return [name, lastVersion, version];
+    })
+    .filter(([, lastVersion, version]) => lastVersion != version)
+    .map(
+      ([name, lastVersion, version]) =>
+        `- **${name}**: \`${lastVersion}\` → \`${version}\``
+    );
+  if (versions.length) {
+    return "### バージョン\n\n" + versions.join("\n");
   } else {
     return null;
   }
