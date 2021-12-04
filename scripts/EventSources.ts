@@ -64,10 +64,14 @@ const EventSources: EventSourceMap = {
     javadocUrl: "https://hub.spigotmc.org/javadocs/spigot/",
     updateVersion: (source: EventSource): Promise<void> =>
       axios
-        .get<string>("https://ci.md-5.net/job/Spigot/lastBuild/")
+        .get<string>(
+          "https://hub.spigotmc.org/jenkins/view/All/job/Spigot-RSS/lastBuild/"
+        )
         .then((response) => {
           const body = response.data;
-          const match = body.match("<title>Spigot (.*) \\[Jenkins\\]</title>");
+          const match = body.match(
+            "<title>Spigot-RSS (.*) \\[Jenkins\\]</title>"
+          );
           if (match) {
             source.version = match.pop();
           }
