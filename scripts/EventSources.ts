@@ -65,7 +65,7 @@ const EventSources: EventSourceMap = {
     updateVersion: (source: EventSource): Promise<void> =>
       axios
         .get<string>(
-          "https://hub.spigotmc.org/jenkins/view/All/job/Spigot-RSS/lastBuild/"
+          "https://hub.spigotmc.org/jenkins/job/Spigot-RSS/lastBuild/"
         )
         .then((response) => {
           const body = response.data;
