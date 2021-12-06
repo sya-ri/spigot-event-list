@@ -886,6 +886,11 @@
   dependencies:
     "@types/unist" "*"
 
+"@types/html-minifier-terser@^6.1.0":
+  version "6.1.0"
+  resolved "https://registry.yarnpkg.com/@types/html-minifier-terser/-/html-minifier-terser-6.1.0.tgz#4fc33a00c1d0c16987b1a20cf92d20614c55ac35"
+  integrity sha512-oh/6byDPnL1zeNXFrDXFLyZjkr1MsBG667IM792caf1L2UPOOMf65NFzjUH/ltyfwjAGfs1rsX1eftK0jC/KIg==
+
 "@types/http-proxy@^1.17.5":
   version "1.17.7"
   resolved "https://registry.yarnpkg.com/@types/http-proxy/-/http-proxy-1.17.7.tgz#30ea85cc2c868368352a37f0d0d3581e24834c6f"
@@ -2768,11 +2773,12 @@ html-minifier-terser@^6.0.0:
     relateurl "^0.2.7"
     terser "^5.10.0"
 
-html-minimizer-webpack-plugin@3.3.2:
-  version "3.3.2"
-  resolved "https://registry.yarnpkg.com/html-minimizer-webpack-plugin/-/html-minimizer-webpack-plugin-3.3.2.tgz#3b8ea33fe555e4b28f1c0abec8bc2373aa40ad4e"
-  integrity sha512-4hZQ0ytJi0Tm/dFBx40UKI6K7QxW2JUwhG+KBcfUgDUYnD+Pdu9+o7gaWB96+8ZaQXIYt7qD3oS+LH49ASeaiw==
+html-minimizer-webpack-plugin@3.4.0:
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/html-minimizer-webpack-plugin/-/html-minimizer-webpack-plugin-3.4.0.tgz#ce65d893aa32679b8ceac085cb954cd38ac1666e"
+  integrity sha512-Dp4J0EHMgD1eN2W1Lq0L0t1ApV487AVUrFkqBsHV6NRUO7LTwx+nKHc5Gr41ASjJjqvKV73l+IwI0QRi2mhLQw==
   dependencies:
+    "@types/html-minifier-terser" "^6.1.0"
     html-minifier-terser "^6.0.0"
     jest-worker "^27.0.6"
     schema-utils "^4.0.0"
