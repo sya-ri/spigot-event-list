@@ -45,11 +45,11 @@ const EventSources: EventSourceMap = {
     allClasses: "allclasses-index.html",
     deprecateList: "deprecated-list.html",
     downloadSources: ["purpur"],
-    downloadUrl: "https://purpur.pl3x.net/downloads/#1.17.1",
-    javadocUrl: "https://purpur.pl3x.net/javadoc/",
+    downloadUrl: "https://purpurmc.org/downloads?v=1.18",
+    javadocUrl: "https://purpurmc.org/javadoc/",
     updateVersion: (source: EventSource): Promise<void> =>
       axios
-        .get("https://api.pl3x.net/v2/purpur/1.17.1/")
+        .get("https://api.purpurmc.org/v2/purpur/1.18")
         .then((response) => {
           const json = response.data;
           source.version = "#" + json.builds.latest;
