@@ -13,13 +13,13 @@
   },
   {
     "description": "金床から結果アイテムを取り出す時に呼び出される。",
-    "link": "https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/inventory/AnvilTakeResultEvent.html",
+    "link": "https://purpurmc.org/javadoc/org/purpurmc/purpur/event/inventory/AnvilTakeResultEvent.html",
     "name": "AnvilTakeResultEvent",
     "source": "purpur"
   },
   {
     "description": "金床の結果アイテムが更新された時に呼び出される。",
-    "link": "https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/inventory/AnvilUpdateResultEvent.html",
+    "link": "https://purpurmc.org/javadoc/org/purpurmc/purpur/event/inventory/AnvilUpdateResultEvent.html",
     "name": "AnvilUpdateResultEvent",
     "source": "purpur"
   },
@@ -745,7 +745,7 @@
   },
   {
     "description": "エンティティがテレポートできない時に呼び出される。",
-    "link": "https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/entity/EntityTeleportHinderedEvent.html",
+    "link": "https://purpurmc.org/javadoc/org/purpurmc/purpur/event/entity/EntityTeleportHinderedEvent.html",
     "name": "EntityTeleportHinderedEvent",
     "source": "purpur"
   },
@@ -801,7 +801,7 @@
   },
   {
     "description": "コマンドを実行する時に呼び出される。",
-    "link": "https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/ExecuteCommandEvent.html",
+    "link": "https://purpurmc.org/javadoc/org/purpurmc/purpur/event/ExecuteCommandEvent.html",
     "name": "ExecuteCommandEvent",
     "source": "purpur"
   },
@@ -1013,13 +1013,13 @@
   },
   {
     "description": "ラマがキャラバンに参加する時に呼び出される。",
-    "link": "https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/entity/LlamaJoinCaravanEvent.html",
+    "link": "https://purpurmc.org/javadoc/org/purpurmc/purpur/event/entity/LlamaJoinCaravanEvent.html",
     "name": "LlamaJoinCaravanEvent",
     "source": "purpur"
   },
   {
     "description": "ラマがキャラバンから脱退した時に呼び出される。",
-    "link": "https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/entity/LlamaLeaveCaravanEvent.html",
+    "link": "https://purpurmc.org/javadoc/org/purpurmc/purpur/event/entity/LlamaLeaveCaravanEvent.html",
     "name": "LlamaLeaveCaravanEvent",
     "source": "purpur"
   },
@@ -1061,7 +1061,7 @@
   },
   {
     "description": "モンスターエッグを使い、エンティティがスポーンする時に呼び出される。",
-    "link": "https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/entity/MonsterEggSpawnEvent.html",
+    "link": "https://purpurmc.org/javadoc/org/purpurmc/purpur/event/entity/MonsterEggSpawnEvent.html",
     "name": "MonsterEggSpawnEvent",
     "source": "purpur"
   },
@@ -1121,7 +1121,7 @@
   },
   {
     "description": "プレイヤーのAFKモードに移行する時に呼び出される",
-    "link": "https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/PlayerAFKEvent.html",
+    "link": "https://purpurmc.org/javadoc/org/purpurmc/purpur/event/PlayerAFKEvent.html",
     "name": "PlayerAFKEvent",
     "source": "purpur"
   },
@@ -1175,7 +1175,7 @@
   },
   {
     "description": "プレイヤーが本の制限を回避しようとした時に呼び出される。",
-    "link": "https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/player/PlayerBookTooLargeEvent.html",
+    "link": "https://purpurmc.org/javadoc/org/purpurmc/purpur/event/player/PlayerBookTooLargeEvent.html",
     "name": "PlayerBookTooLargeEvent",
     "source": "purpur"
   },
@@ -1621,7 +1621,7 @@
   },
   {
     "description": "モンスターエッグを使い、スポナーの内容を変える時に呼び出される。",
-    "link": "https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/PlayerSetSpawnerTypeWithEggEvent.html",
+    "link": "https://purpurmc.org/javadoc/org/purpurmc/purpur/event/PlayerSetSpawnerTypeWithEggEvent.html",
     "name": "PlayerSetSpawnerTypeWithEggEvent",
     "source": "purpur"
   },
@@ -1959,13 +1959,13 @@
   },
   {
     "description": "乗ることが可能なエンティティが乗っているエンティティと共に動く時に呼び出される。",
-    "link": "https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/entity/RidableMoveEvent.html",
+    "link": "https://purpurmc.org/javadoc/org/purpurmc/purpur/event/entity/RidableMoveEvent.html",
     "name": "RidableMoveEvent",
     "source": "purpur"
   },
   {
     "description": "乗ることが可能なエンティティに乗っている時にジャンプを試みた時に呼び出される。",
-    "link": "https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/entity/RidableSpacebarEvent.html",
+    "link": "https://purpurmc.org/javadoc/org/purpurmc/purpur/event/entity/RidableSpacebarEvent.html",
     "name": "RidableSpacebarEvent",
     "source": "purpur"
   },
@@ -2160,12 +2160,6 @@
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/StriderTemperatureChangeEvent.html",
     "name": "StriderTemperatureChangeEvent",
     "source": "bukkit"
-  },
-  {
-    "description": "構造物が生成される時に呼び出される。",
-    "link": "https://purpur.pl3x.net/javadoc/net/pl3x/purpur/event/world/StructureGenerateEvent.html",
-    "name": "StructureGenerateEvent",
-    "source": "purpur"
   },
   {
     "description": "植物が成長する時に呼び出される。以下に例を示す。\n- 苗木が木に成長する時\n- キノコが巨大キノコに成長する時",
