@@ -78,6 +78,21 @@ const EventSources: EventSourceMap = {
         })
         .catch((reason) => console.error(reason)),
   },
+  Velocity: {
+    allClasses: "allclasses.html",
+    deprecateList: "deprecated-list.html",
+    downloadSources: ["velocity"],
+    downloadUrl: "https://velocitypowered.com/downloads",
+    javadocUrl: "https://jd.velocitypowered.com/3.0.0/",
+    updateVersion: (source: EventSource): Promise<void> =>
+      axios
+        .get("https://papermc.io/api/v2/projects/velocity/versions/3.1.1/")
+        .then((response) => {
+          const json = response.data;
+          source.version = "#" + json.builds.pop();
+        })
+        .catch((reason) => console.error(reason)),
+  },
   Waterfall: {
     allClasses: "allclasses.html",
     deprecateList: "deprecated-list.html",

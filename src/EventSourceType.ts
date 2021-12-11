@@ -4,7 +4,8 @@ type EventSourceType =
   | "paper"
   | "purpur"
   | "bungee"
-  | "waterfall";
+  | "waterfall"
+  | "velocity";
 
 export const allEventSourceTypes: EventSourceType[] = [
   "bukkit",
@@ -13,6 +14,7 @@ export const allEventSourceTypes: EventSourceType[] = [
   "purpur",
   "bungee",
   "waterfall",
+  "velocity",
 ];
 
 export default EventSourceType;

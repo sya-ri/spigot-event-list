@@ -34,6 +34,10 @@ const EventSourceTypeTags: FC<Props> = ({ source }) => {
       sources = ["waterfall"];
       break;
     }
+    case "velocity": {
+      sources = ["velocity"];
+      break;
+    }
   }
   return (
     <Stack direction="row" spacing={[1, 2]}>
