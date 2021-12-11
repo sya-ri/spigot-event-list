@@ -18,6 +18,8 @@ const getEventSourceType = (href: string): EventSourceType | null => {
     return "bungee";
   } else if (href.startsWith("io/github/waterfallmc/waterfall")) {
     return "waterfall";
+  } else if (href.startsWith("com/velocitypowered")) {
+    return "velocity";
   } else {
     return null;
   }

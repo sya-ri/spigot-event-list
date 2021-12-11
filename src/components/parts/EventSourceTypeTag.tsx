@@ -13,6 +13,7 @@ const colors = {
   paper: "gray",
   purpur: "purple",
   spigot: "orange",
+  velocity: "teal",
   waterfall: "cyan",
 };
 

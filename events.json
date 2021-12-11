@@ -358,6 +358,18 @@
     "source": "bungee"
   },
   {
+    "description": "",
+    "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/command/CommandExecuteEvent.html",
+    "name": "CommandExecuteEvent",
+    "source": "velocity"
+  },
+  {
+    "description": "",
+    "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/connection/ConnectionHandshakeEvent.html",
+    "name": "ConnectionHandshakeEvent",
+    "source": "velocity"
+  },
+  {
     "description": "新しい接続があった時に呼び出される。接続を効率的に閉じることを可能にする。",
     "link": "https://papermc.io/javadocs/waterfall/1.18/io/github/waterfallmc/waterfall/event/ConnectionInitEvent.html",
     "name": "ConnectionInitEvent",
@@ -386,6 +398,12 @@
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/CreeperPowerEvent.html",
     "name": "CreeperPowerEvent",
     "source": "bukkit"
+  },
+  {
+    "description": "",
+    "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/connection/DisconnectEvent.html",
+    "name": "DisconnectEvent",
+    "source": "velocity"
   },
   {
     "description": "エンダードラゴンが討伐され、卵が設置される時に呼び出される。",
@@ -872,6 +890,12 @@
     "source": "bukkit"
   },
   {
+    "description": "",
+    "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/player/GameProfileRequestEvent.html",
+    "name": "GameProfileRequestEvent",
+    "source": "velocity"
+  },
+  {
     "description": "一般的なゲームイベントであることを表す。このイベントは主にスカルセンサーの内部で使用される。可能な限りこのイベントを使わないようにする。",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/world/GenericGameEvent.html",
     "name": "GenericGameEvent",
@@ -994,6 +1018,12 @@
     "source": "bukkit"
   },
   {
+    "description": "",
+    "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/player/KickedFromServerEvent.html",
+    "name": "KickedFromServerEvent",
+    "source": "velocity"
+  },
+  {
     "description": "葉が自然に壊れる時に呼び出される。",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/LeavesDecayEvent.html",
     "name": "LeavesDecayEvent",
@@ -1012,6 +1042,18 @@
     "source": "bukkit"
   },
   {
+    "description": "",
+    "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/proxy/ListenerBoundEvent.html",
+    "name": "ListenerBoundEvent",
+    "source": "velocity"
+  },
+  {
+    "description": "",
+    "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/proxy/ListenerCloseEvent.html",
+    "name": "ListenerCloseEvent",
+    "source": "velocity"
+  },
+  {
     "description": "ラマがキャラバンに参加する時に呼び出される。",
     "link": "https://purpurmc.org/javadoc/org/purpurmc/purpur/event/entity/LlamaJoinCaravanEvent.html",
     "name": "LlamaJoinCaravanEvent",
@@ -1028,6 +1070,12 @@
     "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/LoginEvent.html",
     "name": "LoginEvent",
     "source": "bungee"
+  },
+  {
+    "description": "",
+    "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/connection/LoginEvent.html",
+    "name": "LoginEvent",
+    "source": "velocity"
   },
   {
     "description": "Mojang API を用いてプロファイルが検索された時に呼び出される。",
@@ -1082,6 +1130,12 @@
     "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/PermissionCheckEvent.html",
     "name": "PermissionCheckEvent",
     "source": "bungee"
+  },
+  {
+    "description": "",
+    "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/permission/PermissionsSetupEvent.html",
+    "name": "PermissionsSetupEvent",
+    "source": "velocity"
   },
   {
     "description": "ファントムがスポーンする時に呼び出される。",
@@ -1154,6 +1208,12 @@
     "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerAttackEntityCooldownResetEvent.html",
     "name": "PlayerAttackEntityCooldownResetEvent",
     "source": "paper"
+  },
+  {
+    "description": "",
+    "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/command/PlayerAvailableCommandsEvent.html",
+    "name": "PlayerAvailableCommandsEvent",
+    "source": "velocity"
   },
   {
     "description": "プレイヤーがベッドに入る時に呼び出される。",
@@ -1236,6 +1296,12 @@
     "source": "bukkit"
   },
   {
+    "description": "",
+    "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/player/PlayerChannelRegisterEvent.html",
+    "name": "PlayerChannelRegisterEvent",
+    "source": "velocity"
+  },
+  {
     "deprecate": true,
     "deprecateDescription": "チャットの遅延が発生するので AsyncPlayerChatEvent を使う。",
     "description": "プレイヤーがチャットする時に呼び出される。",
@@ -1244,12 +1310,24 @@
     "source": "bukkit"
   },
   {
+    "description": "",
+    "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/player/PlayerChatEvent.html",
+    "name": "PlayerChatEvent",
+    "source": "velocity"
+  },
+  {
     "deprecate": true,
     "deprecateDescription": "クライアントの変更により実行されなくなった。",
     "description": "プレイヤーがチャットメッセージでタブ補完をする時に呼び出される。",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerChatTabCompleteEvent.html",
     "name": "PlayerChatTabCompleteEvent",
     "source": "bukkit"
+  },
+  {
+    "description": "",
+    "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/player/PlayerChooseInitialServerEvent.html",
+    "name": "PlayerChooseInitialServerEvent",
+    "source": "velocity"
   },
   {
     "description": "プレイヤーがチャンクロードパケットを受け取った時に呼び出される。行いたい処理がパケットやクライアントに関する場合でのみ使うイベントになる。",
@@ -1262,6 +1340,12 @@
     "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/packet/PlayerChunkUnloadEvent.html",
     "name": "PlayerChunkUnloadEvent",
     "source": "paper"
+  },
+  {
+    "description": "",
+    "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/player/PlayerClientBrandEvent.html",
+    "name": "PlayerClientBrandEvent",
+    "source": "velocity"
   },
   {
     "description": "プレイヤーがクライアント設定を変更した時に呼び出される。",
@@ -1508,6 +1592,12 @@
     "source": "paper"
   },
   {
+    "description": "",
+    "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/player/PlayerModInfoEvent.html",
+    "name": "PlayerModInfoEvent",
+    "source": "velocity"
+  },
+  {
     "description": "プレイヤーが移動する時に呼び出される。",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerMoveEvent.html",
     "name": "PlayerMoveEvent",
@@ -1608,6 +1698,12 @@
     "source": "bukkit"
   },
   {
+    "description": "",
+    "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/player/PlayerResourcePackStatusEvent.html",
+    "name": "PlayerResourcePackStatusEvent",
+    "source": "velocity"
+  },
+  {
     "description": "プレイヤーがリスポーンする時に呼び出される。",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerRespawnEvent.html",
     "name": "PlayerRespawnEvent",
@@ -1630,6 +1726,12 @@
     "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerSetSpawnEvent.html",
     "name": "PlayerSetSpawnEvent",
     "source": "paper"
+  },
+  {
+    "description": "",
+    "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/player/PlayerSettingsChangedEvent.html",
+    "name": "PlayerSettingsChangedEvent",
+    "source": "velocity"
   },
   {
     "description": "プレイヤーがブロックに対してハサミを使用する時に呼び出される。以下に例を示す。\n- カボチャを彫ったカボチャに変える時。\n- 蜂の巣からハニカムを回収する時。",
@@ -1776,6 +1878,12 @@
     "source": "bungee"
   },
   {
+    "description": "",
+    "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/connection/PluginMessageEvent.html",
+    "name": "PluginMessageEvent",
+    "source": "velocity"
+  },
+  {
     "description": "ポータルが作成される時に呼び出される。",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/world/PortalCreateEvent.html",
     "name": "PortalCreateEvent",
@@ -1786,6 +1894,12 @@
     "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/PostLoginEvent.html",
     "name": "PostLoginEvent",
     "source": "bungee"
+  },
+  {
+    "description": "",
+    "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/connection/PostLoginEvent.html",
+    "name": "PostLoginEvent",
+    "source": "velocity"
   },
   {
     "description": "ポーションが割れる時に呼び出される。",
@@ -1810,6 +1924,12 @@
     "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/PreLoginEvent.html",
     "name": "PreLoginEvent",
     "source": "bungee"
+  },
+  {
+    "description": "",
+    "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/connection/PreLoginEvent.html",
+    "name": "PreLoginEvent",
+    "source": "velocity"
   },
   {
     "description": "Mojang API を用いてプロファイルを検索する時に呼び出される。",
@@ -1898,10 +2018,28 @@
     "source": "waterfall"
   },
   {
+    "description": "",
+    "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/proxy/ProxyInitializeEvent.html",
+    "name": "ProxyInitializeEvent",
+    "source": "velocity"
+  },
+  {
     "description": "サーバーリストからピングされた時に呼び出される。",
     "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/ProxyPingEvent.html",
     "name": "ProxyPingEvent",
     "source": "bungee"
+  },
+  {
+    "description": "",
+    "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/proxy/ProxyPingEvent.html",
+    "name": "ProxyPingEvent",
+    "source": "velocity"
+  },
+  {
+    "description": "",
+    "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/query/ProxyQueryEvent.html",
+    "name": "ProxyQueryEvent",
+    "source": "velocity"
   },
   {
     "description": "クエリ要求を受信した時に呼び出される。",
@@ -1914,6 +2052,18 @@
     "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/ProxyReloadEvent.html",
     "name": "ProxyReloadEvent",
     "source": "bungee"
+  },
+  {
+    "description": "",
+    "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/proxy/ProxyReloadEvent.html",
+    "name": "ProxyReloadEvent",
+    "source": "velocity"
+  },
+  {
+    "description": "",
+    "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/proxy/ProxyShutdownEvent.html",
+    "name": "ProxyShutdownEvent",
+    "source": "velocity"
   },
   {
     "description": "フグの状態が変化する時に呼び出される。",
@@ -1958,6 +2108,12 @@
     "source": "bukkit"
   },
   {
+    "description": "",
+    "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/ResultedEvent.html",
+    "name": "ResultedEvent",
+    "source": "velocity"
+  },
+  {
     "description": "乗ることが可能なエンティティが乗っているエンティティと共に動く時に呼び出される。",
     "link": "https://purpurmc.org/javadoc/org/purpurmc/purpur/event/entity/RidableMoveEvent.html",
     "name": "RidableMoveEvent",
@@ -1980,6 +2136,12 @@
     "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/ServerConnectedEvent.html",
     "name": "ServerConnectedEvent",
     "source": "bungee"
+  },
+  {
+    "description": "",
+    "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/player/ServerConnectedEvent.html",
+    "name": "ServerConnectedEvent",
+    "source": "velocity"
   },
   {
     "description": "サーバーに接続する時に呼び出される。プレイヤーがサーバーに接続するのをキャンセルする場合等に使う。",
@@ -2022,6 +2184,24 @@
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/server/ServerLoadEvent.html",
     "name": "ServerLoadEvent",
     "source": "bukkit"
+  },
+  {
+    "description": "",
+    "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/player/ServerLoginPluginMessageEvent.html",
+    "name": "ServerLoginPluginMessageEvent",
+    "source": "velocity"
+  },
+  {
+    "description": "",
+    "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/player/ServerPostConnectEvent.html",
+    "name": "ServerPostConnectEvent",
+    "source": "velocity"
+  },
+  {
+    "description": "",
+    "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/player/ServerPreConnectEvent.html",
+    "name": "ServerPreConnectEvent",
+    "source": "velocity"
   },
   {
     "description": "データパックなどのリソースがリロードされた時に呼び出される。カスタムレシピを再登録するために使用することを目的としている。",
@@ -2184,6 +2364,12 @@
     "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/TabCompleteEvent.html",
     "name": "TabCompleteEvent",
     "source": "bungee"
+  },
+  {
+    "description": "",
+    "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/player/TabCompleteEvent.html",
+    "name": "TabCompleteEvent",
+    "source": "velocity"
   },
   {
     "description": "サーバーがタブ補完を行う時に呼び出される。プロキシによって処理されたタブ補完では呼び出されない。",
