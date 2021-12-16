@@ -2787,10 +2787,10 @@ html-minifier-terser@^6.0.0:
     relateurl "^0.2.7"
     terser "^5.10.0"
 
-html-minimizer-webpack-plugin@3.4.0:
-  version "3.4.0"
-  resolved "https://registry.yarnpkg.com/html-minimizer-webpack-plugin/-/html-minimizer-webpack-plugin-3.4.0.tgz#ce65d893aa32679b8ceac085cb954cd38ac1666e"
-  integrity sha512-Dp4J0EHMgD1eN2W1Lq0L0t1ApV487AVUrFkqBsHV6NRUO7LTwx+nKHc5Gr41ASjJjqvKV73l+IwI0QRi2mhLQw==
+html-minimizer-webpack-plugin@3.5.0:
+  version "3.5.0"
+  resolved "https://registry.yarnpkg.com/html-minimizer-webpack-plugin/-/html-minimizer-webpack-plugin-3.5.0.tgz#47d37acfe01cbd07b7c2d4a3d47be2402a60e516"
+  integrity sha512-i5vQ0vD5Zk9WvCXTDjwtw/Yqb9jJHvJrJ2Q+hLJJGM0RnaDziaH95/CkcAdPxL/qyAkgpuyuEEmcnrLGNcjedQ==
   dependencies:
     "@types/html-minifier-terser" "^6.1.0"
     html-minifier-terser "^6.0.0"
