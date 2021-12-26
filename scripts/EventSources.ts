@@ -86,11 +86,22 @@ const EventSources: EventSourceMap = {
     javadocUrl: "https://jd.velocitypowered.com/3.0.0/",
     updateVersion: (source: EventSource): Promise<void> =>
       axios
-        .get("https://papermc.io/api/v2/projects/velocity/versions/3.1.1/")
+        .get("https://papermc.io/api/v2/projects/velocity/")
         .then((response) => {
           const json = response.data;
-          source.version = "#" + json.builds.pop();
+          return json.versions.pop();
         })
+        .then((latestVersion) =>
+          axios
+            .get(
+              `https://papermc.io/api/v2/projects/velocity/versions/${latestVersion}/`
+            )
+            .then((response) => {
+              const json = response.data;
+              source.version = "#" + json.builds.pop();
+            })
+            .catch((reason) => console.error(reason))
+        )
         .catch((reason) => console.error(reason)),
   },
   Waterfall: {

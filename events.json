@@ -68,6 +68,12 @@
     "source": "paper"
   },
   {
+    "description": "",
+    "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/annotation/AwaitingEvent.html",
+    "name": "AwaitingEvent",
+    "source": "velocity"
+  },
+  {
     "description": "コウモリが眠ったり起きたりする時に呼び出される。",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/BatToggleSleepEvent.html",
     "name": "BatToggleSleepEvent",
