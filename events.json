@@ -68,12 +68,6 @@
     "source": "paper"
   },
   {
-    "description": "",
-    "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/annotation/AwaitingEvent.html",
-    "name": "AwaitingEvent",
-    "source": "velocity"
-  },
-  {
     "description": "コウモリが眠ったり起きたりする時に呼び出される。",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/BatToggleSleepEvent.html",
     "name": "BatToggleSleepEvent",
@@ -364,13 +358,13 @@
     "source": "bungee"
   },
   {
-    "description": "",
+    "description": "コンソールもしくはプレイヤーがコマンドを実行する時に呼び出される。",
     "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/command/CommandExecuteEvent.html",
     "name": "CommandExecuteEvent",
     "source": "velocity"
   },
   {
-    "description": "",
+    "description": "ハンドシェイクが確立された時に呼び出される。非同期で呼び出され、このイベントの処理を待たずに接続を処理します。",
     "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/connection/ConnectionHandshakeEvent.html",
     "name": "ConnectionHandshakeEvent",
     "source": "velocity"
@@ -406,7 +400,7 @@
     "source": "bukkit"
   },
   {
-    "description": "",
+    "description": "プレイヤーがプロキシから切断した時に呼び出される。",
     "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/connection/DisconnectEvent.html",
     "name": "DisconnectEvent",
     "source": "velocity"
@@ -896,7 +890,7 @@
     "source": "bukkit"
   },
   {
-    "description": "",
+    "description": "ユーザーのゲームプロファイルを設定する時に呼び出される。このイベントは PreLoginEvent が実行された後に呼び出される。",
     "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/player/GameProfileRequestEvent.html",
     "name": "GameProfileRequestEvent",
     "source": "velocity"
@@ -906,6 +900,12 @@
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/world/GenericGameEvent.html",
     "name": "GenericGameEvent",
     "source": "bukkit"
+  },
+  {
+    "description": "",
+    "link": "https://purpurmc.org/javadoc/org/purpurmc/purpur/event/inventory/GrindstoneTakeResultEvent.html",
+    "name": "GrindstoneTakeResultEvent",
+    "source": "purpur"
   },
   {
     "description": "GS4クエリプロトコルがクエリされた時に呼び出される。",
@@ -1024,7 +1024,7 @@
     "source": "bukkit"
   },
   {
-    "description": "",
+    "description": "プレイヤーがサーバーからキックされた時に呼び出される。",
     "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/player/KickedFromServerEvent.html",
     "name": "KickedFromServerEvent",
     "source": "velocity"
@@ -1048,13 +1048,13 @@
     "source": "bukkit"
   },
   {
-    "description": "",
+    "description": "接続の受け入れを開始した時に呼び出される。",
     "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/proxy/ListenerBoundEvent.html",
     "name": "ListenerBoundEvent",
     "source": "velocity"
   },
   {
-    "description": "",
+    "description": "接続の受け入れを終了した時に呼び出される。",
     "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/proxy/ListenerCloseEvent.html",
     "name": "ListenerCloseEvent",
     "source": "velocity"
@@ -1078,7 +1078,7 @@
     "source": "bungee"
   },
   {
-    "description": "",
+    "description": "プレイヤーが認証され、サーバーに参加する時に呼び出される。",
     "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/connection/LoginEvent.html",
     "name": "LoginEvent",
     "source": "velocity"
@@ -1138,7 +1138,7 @@
     "source": "bungee"
   },
   {
-    "description": "",
+    "description": "権限が設定される時に呼び出される。",
     "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/permission/PermissionsSetupEvent.html",
     "name": "PermissionsSetupEvent",
     "source": "velocity"
@@ -1216,7 +1216,7 @@
     "source": "paper"
   },
   {
-    "description": "",
+    "description": "サーバーで使用可能なコマンド一覧をプレイヤーに送信する時に呼び出される。",
     "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/command/PlayerAvailableCommandsEvent.html",
     "name": "PlayerAvailableCommandsEvent",
     "source": "velocity"
@@ -1302,7 +1302,7 @@
     "source": "bukkit"
   },
   {
-    "description": "",
+    "description": "プレイヤーがプラグインメッセージを送信した時に呼び出される。",
     "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/player/PlayerChannelRegisterEvent.html",
     "name": "PlayerChannelRegisterEvent",
     "source": "velocity"
@@ -1316,7 +1316,7 @@
     "source": "bukkit"
   },
   {
-    "description": "",
+    "description": "プレイヤーがチャットメッセージを送信した時に呼び出される。",
     "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/player/PlayerChatEvent.html",
     "name": "PlayerChatEvent",
     "source": "velocity"
@@ -1330,7 +1330,7 @@
     "source": "bukkit"
   },
   {
-    "description": "",
+    "description": "プレイヤーがログイン処理を終えて、接続する最初のサーバーを選択する時に呼び出される。",
     "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/player/PlayerChooseInitialServerEvent.html",
     "name": "PlayerChooseInitialServerEvent",
     "source": "velocity"
@@ -1348,7 +1348,7 @@
     "source": "paper"
   },
   {
-    "description": "",
+    "description": "プレイヤーが minecraft:brand のプラグインメッセージを送信した時に呼び出される。",
     "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/player/PlayerClientBrandEvent.html",
     "name": "PlayerClientBrandEvent",
     "source": "velocity"
@@ -1598,7 +1598,7 @@
     "source": "paper"
   },
   {
-    "description": "",
+    "description": "サーバーへの接続中に Forge クライアントが MOD 一覧をプロキシに送信した時に呼び出される。",
     "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/player/PlayerModInfoEvent.html",
     "name": "PlayerModInfoEvent",
     "source": "velocity"
@@ -1704,7 +1704,7 @@
     "source": "bukkit"
   },
   {
-    "description": "",
+    "description": "プレイヤーに送信されたリソースパックの状態が変更された時に呼び出される。",
     "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/player/PlayerResourcePackStatusEvent.html",
     "name": "PlayerResourcePackStatusEvent",
     "source": "velocity"
@@ -1734,7 +1734,7 @@
     "source": "paper"
   },
   {
-    "description": "",
+    "description": "プレイヤーが新しいクライアント設定を送信した時に呼び出される。",
     "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/player/PlayerSettingsChangedEvent.html",
     "name": "PlayerSettingsChangedEvent",
     "source": "velocity"
@@ -1884,7 +1884,7 @@
     "source": "bungee"
   },
   {
-    "description": "",
+    "description": "プレイヤーまたはサーバーからプラグインメッセージが送信された時に呼び出される。",
     "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/connection/PluginMessageEvent.html",
     "name": "PluginMessageEvent",
     "source": "velocity"
@@ -1902,7 +1902,7 @@
     "source": "bungee"
   },
   {
-    "description": "",
+    "description": "プレイヤーが最初のサーバーに参加しようとする時に呼び出される。",
     "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/connection/PostLoginEvent.html",
     "name": "PostLoginEvent",
     "source": "velocity"
@@ -1932,7 +1932,7 @@
     "source": "bungee"
   },
   {
-    "description": "",
+    "description": "プロキシがプレイヤーを Mojang で認証する前に呼び出される。",
     "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/connection/PreLoginEvent.html",
     "name": "PreLoginEvent",
     "source": "velocity"
@@ -2024,7 +2024,7 @@
     "source": "waterfall"
   },
   {
-    "description": "",
+    "description": "プラグインが初期化された後、接続の受け入れを開始する前に呼び出される。",
     "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/proxy/ProxyInitializeEvent.html",
     "name": "ProxyInitializeEvent",
     "source": "velocity"
@@ -2036,13 +2036,13 @@
     "source": "bungee"
   },
   {
-    "description": "",
+    "description": "サーバーリストからピングされた時に呼び出される。",
     "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/proxy/ProxyPingEvent.html",
     "name": "ProxyPingEvent",
     "source": "velocity"
   },
   {
-    "description": "",
+    "description": "クエリ要求を受信した時に呼び出される。",
     "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/query/ProxyQueryEvent.html",
     "name": "ProxyQueryEvent",
     "source": "velocity"
@@ -2060,13 +2060,13 @@
     "source": "bungee"
   },
   {
-    "description": "",
+    "description": "プロキシがリロードした時に呼び出される。",
     "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/proxy/ProxyReloadEvent.html",
     "name": "ProxyReloadEvent",
     "source": "velocity"
   },
   {
-    "description": "",
+    "description": "プロキシが接続の受け入れを終了した後、プロセスが終了する前に呼び出される。",
     "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/proxy/ProxyShutdownEvent.html",
     "name": "ProxyShutdownEvent",
     "source": "velocity"
@@ -2114,7 +2114,7 @@
     "source": "bukkit"
   },
   {
-    "description": "",
+    "description": "結果を伴うイベントであることを表す。",
     "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/ResultedEvent.html",
     "name": "ResultedEvent",
     "source": "velocity"
@@ -2144,7 +2144,7 @@
     "source": "bungee"
   },
   {
-    "description": "",
+    "description": "プレイヤーが接続先サーバーに正常に接続し、接続元サーバーから切断された時に呼び出される。",
     "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/player/ServerConnectedEvent.html",
     "name": "ServerConnectedEvent",
     "source": "velocity"
@@ -2192,19 +2192,19 @@
     "source": "bukkit"
   },
   {
-    "description": "",
+    "description": "サーバーがログインプラグインメッセージを送信した時に呼び出される。",
     "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/player/ServerLoginPluginMessageEvent.html",
     "name": "ServerLoginPluginMessageEvent",
     "source": "velocity"
   },
   {
-    "description": "",
+    "description": "プレイヤーがサーバーに接続した時に呼び出される。",
     "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/player/ServerPostConnectEvent.html",
     "name": "ServerPostConnectEvent",
     "source": "velocity"
   },
   {
-    "description": "",
+    "description": "プレイヤーがサーバーに接続する時に呼び出される。",
     "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/player/ServerPreConnectEvent.html",
     "name": "ServerPreConnectEvent",
     "source": "velocity"
@@ -2372,7 +2372,7 @@
     "source": "bungee"
   },
   {
-    "description": "",
+    "description": "サーバーがタブ補完を行う時に呼び出される。",
     "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/player/TabCompleteEvent.html",
     "name": "TabCompleteEvent",
     "source": "velocity"
