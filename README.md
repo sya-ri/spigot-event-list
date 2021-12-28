@@ -13,3 +13,4 @@
 - Purpur
 - BungeeCord
 - Waterfall
+- Velocity
