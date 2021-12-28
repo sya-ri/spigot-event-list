@@ -902,7 +902,7 @@
     "source": "bukkit"
   },
   {
-    "description": "",
+    "description": "砥石から結果アイテムを取り出す時に呼び出される。",
     "link": "https://purpurmc.org/javadoc/org/purpurmc/purpur/event/inventory/GrindstoneTakeResultEvent.html",
     "name": "GrindstoneTakeResultEvent",
     "source": "purpur"
