@@ -30,11 +30,11 @@ const EventSources: EventSourceMap = {
     allClasses: "allclasses-index.html",
     deprecateList: "deprecated-list.html",
     downloadSources: ["paper"],
-    downloadUrl: "https://papermc.io/downloads#Paper-1.17",
-    javadocUrl: "https://papermc.io/javadocs/paper/1.17/",
+    downloadUrl: "https://papermc.io/downloads#Paper-1.18",
+    javadocUrl: "https://papermc.io/javadocs/paper/1.18/",
     updateVersion: (source: EventSource): Promise<void> =>
       axios
-        .get("https://papermc.io/api/v2/projects/paper/versions/1.17.1/")
+        .get("https://papermc.io/api/v2/projects/paper/versions/1.18.1/")
         .then((response) => {
           const json = response.data;
           source.version = "#" + json.builds.pop();
