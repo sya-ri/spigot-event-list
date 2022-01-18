@@ -19,7 +19,7 @@ const updateDeprecateInternal = (
       try {
         // events から イベント一覧を作成
         const $ = cheerio.load(body);
-        $("#class .col-deprecated-item-name a").each((_, element) => {
+        $("#class .col-summary-item-name a").each((_, element) => {
           const a = $(element);
           const href = a.prop("href");
           if (href.endsWith("Event.html")) {

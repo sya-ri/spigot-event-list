@@ -1,13 +1,13 @@
 [
   {
     "description": "チャットに関するイベントであることを表す。",
-    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/AbstractChatEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/player/AbstractChatEvent.html",
     "name": "AbstractChatEvent",
     "source": "paper"
   },
   {
     "description": "使用したことで金床が損傷する時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/block/AnvilDamagedEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/block/AnvilDamagedEvent.html",
     "name": "AnvilDamagedEvent",
     "source": "paper"
   },
@@ -37,7 +37,7 @@
   },
   {
     "description": "プレイヤーがチャットした時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/AsyncChatEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/player/AsyncChatEvent.html",
     "name": "AsyncChatEvent",
     "source": "paper"
   },
@@ -63,7 +63,7 @@
   },
   {
     "description": "タブ補完を行う時に呼び出される。非同期で処理される。このイベントが結果を返す時、標準のタブ補完処理は発生しない。ただし、 TabCompleteEvent は非同期の結果と共に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/server/AsyncTabCompleteEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/server/AsyncTabCompleteEvent.html",
     "name": "AsyncTabCompleteEvent",
     "source": "paper"
   },
@@ -75,37 +75,37 @@
   },
   {
     "description": "ビーコンが有効になった時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/block/BeaconActivatedEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/block/BeaconActivatedEvent.html",
     "name": "BeaconActivatedEvent",
     "source": "paper"
   },
   {
     "description": "ビーコンが無効になった時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/block/BeaconDeactivatedEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/block/BeaconDeactivatedEvent.html",
     "name": "BeaconDeactivatedEvent",
     "source": "paper"
   },
   {
     "description": "ビーコンの効果がプレイヤーに適用される時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/block/BeaconEffectEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/block/BeaconEffectEvent.html",
     "name": "BeaconEffectEvent",
     "source": "paper"
   },
   {
     "description": "ベルによって Rider が正体を表した時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/block/BellRevealRaiderEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/block/BellRevealRaiderEvent.html",
     "name": "BellRevealRaiderEvent",
     "source": "paper"
   },
   {
     "description": "ベルが鳴る時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/block/BellRingEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/block/BellRingEvent.html",
     "name": "BellRingEvent",
     "source": "paper"
   },
   {
     "description": "ブロックがブロックを破壊する時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/block/BlockBreakBlockEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/block/BlockBreakBlockEvent.html",
     "name": "BlockBreakBlockEvent",
     "source": "paper"
   },
@@ -141,7 +141,7 @@
   },
   {
     "description": "サーバーがブロックを破棄する時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/block/BlockDestroyEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/block/BlockDestroyEvent.html",
     "name": "BlockDestroyEvent",
     "source": "paper"
   },
@@ -189,7 +189,7 @@
   },
   {
     "description": "ディスペンサーにアイテムが存在せず、射出されなかった時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/block/BlockFailedDispenseEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/block/BlockFailedDispenseEvent.html",
     "name": "BlockFailedDispenseEvent",
     "source": "paper"
   },
@@ -261,7 +261,7 @@
   },
   {
     "description": "ディスペンサーからアイテムが射出される時に呼び出される。BlockDispenseEvent の前に呼び出されるので、ディスペンサーのアイテム消費もキャンセルできる。",
-    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/block/BlockPreDispenseEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/block/BlockPreDispenseEvent.html",
     "name": "BlockPreDispenseEvent",
     "source": "paper"
   },
@@ -323,7 +323,7 @@
     "deprecate": true,
     "deprecateDescription": "非同期で処理をする AsyncChatEvent を使う。",
     "description": "プレイヤーがチャットした時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/ChatEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/player/ChatEvent.html",
     "name": "ChatEvent",
     "source": "paper"
   },
@@ -389,7 +389,7 @@
   },
   {
     "description": "クリーパーの点火状態が切り替わる時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/CreeperIgniteEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/entity/CreeperIgniteEvent.html",
     "name": "CreeperIgniteEvent",
     "source": "paper"
   },
@@ -407,13 +407,13 @@
   },
   {
     "description": "エンダードラゴンが討伐され、卵が設置される時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/block/DragonEggFormEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/block/DragonEggFormEvent.html",
     "name": "DragonEggFormEvent",
     "source": "paper"
   },
   {
     "description": "エルダーガーディアンがプレイヤーの画面に表示される時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/entity/ElderGuardianAppearanceEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/entity/ElderGuardianAppearanceEvent.html",
     "name": "ElderGuardianAppearanceEvent",
     "source": "paper"
   },
@@ -431,31 +431,31 @@
   },
   {
     "description": "エンダードラゴンが放った火球が衝突し、AreaEffectCloud が発生する時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/EnderDragonFireballHitEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/entity/EnderDragonFireballHitEvent.html",
     "name": "EnderDragonFireballHitEvent",
     "source": "paper"
   },
   {
     "description": "エンダードラゴンが炎を吐き、AreaEffectCloud が発生する時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/EnderDragonFlameEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/entity/EnderDragonFlameEvent.html",
     "name": "EnderDragonFlameEvent",
     "source": "paper"
   },
   {
     "description": "エンダードラゴンが火球を放つ時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/EnderDragonShootFireballEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/entity/EnderDragonShootFireballEvent.html",
     "name": "EnderDragonShootFireballEvent",
     "source": "paper"
   },
   {
     "description": "エンダーマンがプレイヤーを攻撃するか決定する時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/EndermanAttackPlayerEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/entity/EndermanAttackPlayerEvent.html",
     "name": "EndermanAttackPlayerEvent",
     "source": "paper"
   },
   {
     "description": "エンダーマンが逃げた時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/EndermanEscapeEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/entity/EndermanEscapeEvent.html",
     "name": "EndermanEscapeEvent",
     "source": "paper"
   },
@@ -473,7 +473,7 @@
   },
   {
     "description": "何らかの理由でワールドにエンティティが増えた時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/EntityAddToWorldEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/entity/EntityAddToWorldEvent.html",
     "name": "EntityAddToWorldEvent",
     "source": "paper"
   },
@@ -553,7 +553,7 @@
   },
   {
     "description": "エンティティによって使用されているアイテムが、耐久ダメージを受ける時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/entity/EntityDamageItemEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/entity/EntityDamageItemEvent.html",
     "name": "EntityDamageItemEvent",
     "source": "paper"
   },
@@ -607,7 +607,7 @@
   },
   {
     "description": "エンティティがブロックのヒットボックスに入る時に呼び出される。キャンセルされるとブロックに入ったことによって起きる処理が実行されない。以下に例を示す。\n- 大釜に入り、エンティティが消火される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/entity/EntityInsideBlockEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/entity/EntityInsideBlockEvent.html",
     "name": "EntityInsideBlockEvent",
     "source": "paper"
   },
@@ -619,19 +619,19 @@
   },
   {
     "description": "エンティティがジャンプする時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/EntityJumpEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/entity/EntityJumpEvent.html",
     "name": "EntityJumpEvent",
     "source": "paper"
   },
   {
     "description": "エンティティによってエンティティがノックバックする時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/EntityKnockbackByEntityEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/entity/EntityKnockbackByEntityEvent.html",
     "name": "EntityKnockbackByEntityEvent",
     "source": "paper"
   },
   {
     "description": "エンティティがアイテムをクロスボウに装填する時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/entity/EntityLoadCrossbowEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/entity/EntityLoadCrossbowEvent.html",
     "name": "EntityLoadCrossbowEvent",
     "source": "paper"
   },
@@ -643,13 +643,13 @@
   },
   {
     "description": "エンティティが移動する時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/entity/EntityMoveEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/entity/EntityMoveEvent.html",
     "name": "EntityMoveEvent",
     "source": "paper"
   },
   {
     "description": "エンティティが目的の場所への移動を開始する時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/EntityPathfindEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/entity/EntityPathfindEvent.html",
     "name": "EntityPathfindEvent",
     "source": "paper"
   },
@@ -703,7 +703,7 @@
   },
   {
     "description": "何らかの理由でワールドからエンティティが削除される時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/EntityRemoveFromWorldEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/entity/EntityRemoveFromWorldEvent.html",
     "name": "EntityRemoveFromWorldEvent",
     "source": "paper"
   },
@@ -751,7 +751,7 @@
   },
   {
     "description": "エンティティがエンドゲートウェイでテレポートする時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/EntityTeleportEndGatewayEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/entity/EntityTeleportEndGatewayEvent.html",
     "name": "EntityTeleportEndGatewayEvent",
     "source": "paper"
   },
@@ -783,7 +783,7 @@
     "deprecate": true,
     "deprecateDescription": "Bukkit に追加された EntityTransformEvent を使う。",
     "description": "エンティティが別のエンティティに置きかわる時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/EntityTransformedEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/entity/EntityTransformedEvent.html",
     "name": "EntityTransformedEvent",
     "source": "paper"
   },
@@ -801,7 +801,7 @@
   },
   {
     "description": "エンティティに落雷が当たった時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/EntityZapEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/entity/EntityZapEvent.html",
     "name": "EntityZapEvent",
     "source": "paper"
   },
@@ -831,7 +831,7 @@
   },
   {
     "description": "経験値オーブが合わさる時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/ExperienceOrbMergeEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/entity/ExperienceOrbMergeEvent.html",
     "name": "ExperienceOrbMergeEvent",
     "source": "paper"
   },
@@ -843,7 +843,7 @@
   },
   {
     "description": "プロファイルプロパティが追加された時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/profile/FillProfileEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/profile/FillProfileEvent.html",
     "name": "FillProfileEvent",
     "source": "paper"
   },
@@ -909,7 +909,7 @@
   },
   {
     "description": "GS4クエリプロトコルがクエリされた時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/server/GS4QueryEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/server/GS4QueryEvent.html",
     "name": "GS4QueryEvent",
     "source": "paper"
   },
@@ -947,7 +947,7 @@
     "deprecate": true,
     "deprecateDescription": "使われていない。",
     "description": "不正なパケットが送られた時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/IllegalPacketEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/player/IllegalPacketEvent.html",
     "name": "IllegalPacketEvent",
     "source": "paper"
   },
@@ -1085,13 +1085,13 @@
   },
   {
     "description": "Mojang API を用いてプロファイルが検索された時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/profile/LookupProfileEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/profile/LookupProfileEvent.html",
     "name": "LookupProfileEvent",
     "source": "paper"
   },
   {
     "description": "LootTable によってアイテムが補充される時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/loottable/LootableInventoryReplenishEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/loottable/LootableInventoryReplenishEvent.html",
     "name": "LootableInventoryReplenishEvent",
     "source": "paper"
   },
@@ -1127,7 +1127,7 @@
   },
   {
     "description": "サーバーリストの表示内容を送る要求を受けた時に呼び出される。ServerListPingEvent よりも扱える情報が多い。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/server/PaperServerListPingEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/server/PaperServerListPingEvent.html",
     "name": "PaperServerListPingEvent",
     "source": "paper"
   },
@@ -1145,7 +1145,7 @@
   },
   {
     "description": "ファントムがスポーンする時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/PhantomPreSpawnEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/entity/PhantomPreSpawnEvent.html",
     "name": "PhantomPreSpawnEvent",
     "source": "paper"
   },
@@ -1169,7 +1169,7 @@
   },
   {
     "description": "プレイヤーが進捗の条件を達成した時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerAdvancementCriterionGrantEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/player/PlayerAdvancementCriterionGrantEvent.html",
     "name": "PlayerAdvancementCriterionGrantEvent",
     "source": "paper"
   },
@@ -1193,7 +1193,7 @@
   },
   {
     "description": "プレイヤーの鎧が変更された時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerArmorChangeEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/player/PlayerArmorChangeEvent.html",
     "name": "PlayerArmorChangeEvent",
     "source": "paper"
   },
@@ -1205,13 +1205,13 @@
   },
   {
     "description": "プレイヤーが腕を振った時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/PlayerArmSwingEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/player/PlayerArmSwingEvent.html",
     "name": "PlayerArmSwingEvent",
     "source": "paper"
   },
   {
     "description": "プレイヤーの攻撃クールダウンがリセットする時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerAttackEntityCooldownResetEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/player/PlayerAttackEntityCooldownResetEvent.html",
     "name": "PlayerAttackEntityCooldownResetEvent",
     "source": "paper"
   },
@@ -1229,7 +1229,7 @@
   },
   {
     "description": "ベッドに入れなかった時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/PlayerBedFailEnterEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/player/PlayerBedFailEnterEvent.html",
     "name": "PlayerBedFailEnterEvent",
     "source": "paper"
   },
@@ -1279,7 +1279,7 @@
   },
   {
     "description": "プレイヤーがビーコンの効果を変更する時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/PlayerChangeBeaconEffectEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/player/PlayerChangeBeaconEffectEvent.html",
     "name": "PlayerChangeBeaconEffectEvent",
     "source": "paper"
   },
@@ -1337,13 +1337,13 @@
   },
   {
     "description": "プレイヤーがチャンクロードパケットを受け取った時に呼び出される。行いたい処理がパケットやクライアントに関する場合でのみ使うイベントになる。",
-    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/packet/PlayerChunkLoadEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/packet/PlayerChunkLoadEvent.html",
     "name": "PlayerChunkLoadEvent",
     "source": "paper"
   },
   {
     "description": "プレイヤーがチャンクアンロードパケットを受け取った時に呼び出される。行いたい処理がパケットやクライアントに関する場合でのみ使うイベントになる。",
-    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/packet/PlayerChunkUnloadEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/packet/PlayerChunkUnloadEvent.html",
     "name": "PlayerChunkUnloadEvent",
     "source": "paper"
   },
@@ -1355,7 +1355,7 @@
   },
   {
     "description": "プレイヤーがクライアント設定を変更した時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerClientOptionsChangeEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/player/PlayerClientOptionsChangeEvent.html",
     "name": "PlayerClientOptionsChangeEvent",
     "source": "paper"
   },
@@ -1373,7 +1373,7 @@
   },
   {
     "description": "プレイヤーがサーバーから切断された時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerConnectionCloseEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/player/PlayerConnectionCloseEvent.html",
     "name": "PlayerConnectionCloseEvent",
     "source": "paper"
   },
@@ -1385,7 +1385,7 @@
   },
   {
     "description": "プレイヤーが深い眠りに入る時に呼び出される。このイベントをキャンセルすると夜や嵐を通過しません。",
-    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/PlayerDeepSleepEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/player/PlayerDeepSleepEvent.html",
     "name": "PlayerDeepSleepEvent",
     "source": "paper"
   },
@@ -1415,7 +1415,7 @@
   },
   {
     "description": "プレイヤーが花火を使いエリトラ飛行のブーストをする時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerElytraBoostEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/player/PlayerElytraBoostEvent.html",
     "name": "PlayerElytraBoostEvent",
     "source": "paper"
   },
@@ -1439,7 +1439,7 @@
   },
   {
     "description": "プレイヤーが植木鉢にアイテムを置いたり、植木鉢からアイテムを取り出したりする時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/PlayerFlowerPotManipulateEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/player/PlayerFlowerPotManipulateEvent.html",
     "name": "PlayerFlowerPotManipulateEvent",
     "source": "paper"
   },
@@ -1457,7 +1457,7 @@
   },
   {
     "description": "プレイヤーとサーバーがハンドシェイクする時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerHandshakeEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/player/PlayerHandshakeEvent.html",
     "name": "PlayerHandshakeEvent",
     "source": "paper"
   },
@@ -1471,7 +1471,7 @@
     "deprecate": true,
     "deprecateDescription": "Spigot に追加された PlayerSpawnLocationEvent を使う。",
     "description": "プレイヤーがサーバーに参加した後、スポーンしようとしている時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerInitialSpawnEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/player/PlayerInitialSpawnEvent.html",
     "name": "PlayerInitialSpawnEvent",
     "source": "paper"
   },
@@ -1507,7 +1507,7 @@
   },
   {
     "description": "プレイヤーのアイテムクールダウンが変更される時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/PlayerItemCooldownEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/player/PlayerItemCooldownEvent.html",
     "name": "PlayerItemCooldownEvent",
     "source": "paper"
   },
@@ -1516,6 +1516,12 @@
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerItemDamageEvent.html",
     "name": "PlayerItemDamageEvent",
     "source": "bukkit"
+  },
+  {
+    "description": "",
+    "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/player/PlayerItemFrameChangeEvent.html",
+    "name": "PlayerItemFrameChangeEvent",
+    "source": "paper"
   },
   {
     "description": "プレイヤーが手に持つアイテムを変更した時に呼び出される。",
@@ -1537,7 +1543,7 @@
   },
   {
     "description": "プレイヤーがジャンプする時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerJumpEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/player/PlayerJumpEvent.html",
     "name": "PlayerJumpEvent",
     "source": "paper"
   },
@@ -1549,7 +1555,7 @@
   },
   {
     "description": "プレイヤーが Projectile を発射する時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerLaunchProjectileEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/player/PlayerLaunchProjectileEvent.html",
     "name": "PlayerLaunchProjectileEvent",
     "source": "paper"
   },
@@ -1561,7 +1567,7 @@
   },
   {
     "description": "プレイヤーが書見台に置かれた本のページを変更する時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/PlayerLecternPageChangeEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/player/PlayerLecternPageChangeEvent.html",
     "name": "PlayerLecternPageChangeEvent",
     "source": "paper"
   },
@@ -1581,7 +1587,7 @@
     "deprecate": true,
     "deprecateDescription": "Bukkit に追加された PlayerLocaleChangeEvent を使う。",
     "description": "プレイヤーが言語設定を変更した時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerLocaleChangeEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/player/PlayerLocaleChangeEvent.html",
     "name": "PlayerLocaleChangeEvent",
     "source": "paper"
   },
@@ -1593,7 +1599,7 @@
   },
   {
     "description": "プレイヤーが機織り機の旗模様を変更する時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/PlayerLoomPatternSelectEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/player/PlayerLoomPatternSelectEvent.html",
     "name": "PlayerLoomPatternSelectEvent",
     "source": "paper"
   },
@@ -1611,13 +1617,13 @@
   },
   {
     "description": "プレイヤーがエンティティの名前を変更する時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/PlayerNameEntityEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/player/PlayerNameEntityEvent.html",
     "name": "PlayerNameEntityEvent",
     "source": "paper"
   },
   {
     "description": "モンスターをスポーンさせるチャンクを計算する時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/PlayerNaturallySpawnCreaturesEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/entity/PlayerNaturallySpawnCreaturesEvent.html",
     "name": "PlayerNaturallySpawnCreaturesEvent",
     "source": "paper"
   },
@@ -1629,7 +1635,7 @@
   },
   {
     "description": "プレイヤーが地面から経験値オーブを拾う時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerPickupExperienceEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/player/PlayerPickupExperienceEvent.html",
     "name": "PlayerPickupExperienceEvent",
     "source": "paper"
   },
@@ -1649,7 +1655,7 @@
   },
   {
     "description": "プレイヤーがリスポーンした後に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerPostRespawnEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/player/PlayerPostRespawnEvent.html",
     "name": "PlayerPostRespawnEvent",
     "source": "paper"
   },
@@ -1663,7 +1669,7 @@
   },
   {
     "description": "プレイヤーが村人と取引する時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/PlayerPurchaseEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/player/PlayerPurchaseEvent.html",
     "name": "PlayerPurchaseEvent",
     "source": "paper"
   },
@@ -1675,13 +1681,13 @@
   },
   {
     "description": "プレイヤーが弓を発射し、使用する矢を選ぶ時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerReadyArrowEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/player/PlayerReadyArrowEvent.html",
     "name": "PlayerReadyArrowEvent",
     "source": "paper"
   },
   {
     "description": "プレイヤーがレシピブックのレシビをクリックする時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerRecipeBookClickEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/player/PlayerRecipeBookClickEvent.html",
     "name": "PlayerRecipeBookClickEvent",
     "source": "paper"
   },
@@ -1729,7 +1735,7 @@
   },
   {
     "description": "プレイヤーがスポーン地点を設定する時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerSetSpawnEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/player/PlayerSetSpawnEvent.html",
     "name": "PlayerSetSpawnEvent",
     "source": "paper"
   },
@@ -1741,7 +1747,7 @@
   },
   {
     "description": "プレイヤーがブロックに対してハサミを使用する時に呼び出される。以下に例を示す。\n- カボチャを彫ったカボチャに変える時。\n- 蜂の巣からハニカムを回収する時。",
-    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/block/PlayerShearBlockEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/block/PlayerShearBlockEvent.html",
     "name": "PlayerShearBlockEvent",
     "source": "paper"
   },
@@ -1753,7 +1759,7 @@
   },
   {
     "description": "プレイヤーがコマンドを実行させる看板をクリックする時に呼び出される。このコマンドは権限を無視して実行されるため、本来実行できないコマンドも実行される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/PlayerSignCommandPreprocessEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/player/PlayerSignCommandPreprocessEvent.html",
     "name": "PlayerSignCommandPreprocessEvent",
     "source": "paper"
   },
@@ -1765,7 +1771,7 @@
   },
   {
     "description": "プレイヤーがスペクテイターモードでエンティティ視点を開始する時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerStartSpectatingEntityEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/player/PlayerStartSpectatingEntityEvent.html",
     "name": "PlayerStartSpectatingEntityEvent",
     "source": "paper"
   },
@@ -1777,13 +1783,13 @@
   },
   {
     "description": "プレイヤーが石切台のレシピを選択する時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/PlayerStonecutterRecipeSelectEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/player/PlayerStonecutterRecipeSelectEvent.html",
     "name": "PlayerStonecutterRecipeSelectEvent",
     "source": "paper"
   },
   {
     "description": "プレイヤーがスペクテイターモードでエンティティ視点を終了する時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerStopSpectatingEntityEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/player/PlayerStopSpectatingEntityEvent.html",
     "name": "PlayerStopSpectatingEntityEvent",
     "source": "paper"
   },
@@ -1801,7 +1807,7 @@
   },
   {
     "description": "プレイヤーがエンドゲートウェイを用いてテレポートする時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerTeleportEndGatewayEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/player/PlayerTeleportEndGatewayEvent.html",
     "name": "PlayerTeleportEndGatewayEvent",
     "source": "paper"
   },
@@ -1831,7 +1837,7 @@
   },
   {
     "description": "プレイヤーが村人や行商人と交易をする時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/player/PlayerTradeEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/player/PlayerTradeEvent.html",
     "name": "PlayerTradeEvent",
     "source": "paper"
   },
@@ -1849,7 +1855,7 @@
   },
   {
     "description": "存在しないエンティティに対して PacketPlayInUseEntity が送られてきた時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/player/PlayerUseUnknownEntityEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/player/PlayerUseUnknownEntityEvent.html",
     "name": "PlayerUseUnknownEntityEvent",
     "source": "paper"
   },
@@ -1915,13 +1921,13 @@
   },
   {
     "description": "生き物がスポーンする時に呼び出される。このイベントの目的はサーバーのパフォーマンスを向上させることであるため、CreatureSpawnEvent が呼び出される全ての状況で呼び出されるわけではない。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/PreCreatureSpawnEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/entity/PreCreatureSpawnEvent.html",
     "name": "PreCreatureSpawnEvent",
     "source": "paper"
   },
   {
     "description": "不完全なプロファイルプロパティの追加を要求している時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/profile/PreFillProfileEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/profile/PreFillProfileEvent.html",
     "name": "PreFillProfileEvent",
     "source": "paper"
   },
@@ -1939,7 +1945,7 @@
   },
   {
     "description": "Mojang API を用いてプロファイルを検索する時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/profile/PreLookupProfileEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/profile/PreLookupProfileEvent.html",
     "name": "PreLookupProfileEvent",
     "source": "paper"
   },
@@ -1953,7 +1959,7 @@
     "deprecate": true,
     "deprecateDescription": "このイベントを直接使用せず、PrepareResultEvent を使うことが推奨されている。",
     "description": "砥石の使用準備が出来た時に呼び出される。完成アイテムが表示される毎に発生する。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/inventory/PrepareGrindstoneEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/inventory/PrepareGrindstoneEvent.html",
     "name": "PrepareGrindstoneEvent",
     "source": "paper"
   },
@@ -1971,7 +1977,7 @@
   },
   {
     "description": "結果スロットを含むインベントリにアイテムが配置された時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/inventory/PrepareResultEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/inventory/PrepareResultEvent.html",
     "name": "PrepareResultEvent",
     "source": "paper"
   },
@@ -1983,19 +1989,19 @@
   },
   {
     "description": "エンティティがスポナーによってスポーンする前に呼び出される。SpawnerSpawnEvent よりも前に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/PreSpawnerSpawnEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/entity/PreSpawnerSpawnEvent.html",
     "name": "PreSpawnerSpawnEvent",
     "source": "paper"
   },
   {
     "description": "プレイヤーがホワイトリストに登録されているか確認する時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/profile/ProfileWhitelistVerifyEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/profile/ProfileWhitelistVerifyEvent.html",
     "name": "ProfileWhitelistVerifyEvent",
     "source": "paper"
   },
   {
     "description": "Projectile がエンティティと衝突する時に呼び出される。キャンセルすると Projectile は飛び続ける。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/ProjectileCollideEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/entity/ProjectileCollideEvent.html",
     "name": "ProjectileCollideEvent",
     "source": "paper"
   },
@@ -2073,7 +2079,7 @@
   },
   {
     "description": "フグの状態が変化する時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/entity/PufferFishStateChangeEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/entity/PufferFishStateChangeEvent.html",
     "name": "PufferFishStateChangeEvent",
     "source": "paper"
   },
@@ -2169,7 +2175,7 @@
   },
   {
     "description": "回復可能な状況で例外が発生した時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/server/ServerExceptionEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/server/ServerExceptionEvent.html",
     "name": "ServerExceptionEvent",
     "source": "paper"
   },
@@ -2211,7 +2217,7 @@
   },
   {
     "description": "データパックなどのリソースがリロードされた時に呼び出される。カスタムレシピを再登録するために使用することを目的としている。",
-    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/server/ServerResourcesReloadedEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/server/ServerResourcesReloadedEvent.html",
     "name": "ServerResourcesReloadedEvent",
     "source": "paper"
   },
@@ -2223,13 +2229,13 @@
   },
   {
     "description": "メインループのチェックが終了した時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/server/ServerTickEndEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/server/ServerTickEndEvent.html",
     "name": "ServerTickEndEvent",
     "source": "paper"
   },
   {
     "description": "メインループのチェックが開始した時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/server/ServerTickStartEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/server/ServerTickStartEvent.html",
     "name": "ServerTickStartEvent",
     "source": "paper"
   },
@@ -2277,19 +2283,19 @@
   },
   {
     "description": "プレイヤーがスケルトンホースに近づき、落雷が発生する時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/SkeletonHorseTrapEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/entity/SkeletonHorseTrapEvent.html",
     "name": "SkeletonHorseTrapEvent",
     "source": "paper"
   },
   {
     "description": "スライムが向きを変えようと決めた時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/SlimeChangeDirectionEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/entity/SlimeChangeDirectionEvent.html",
     "name": "SlimeChangeDirectionEvent",
     "source": "paper"
   },
   {
     "description": "スライムが移動を開始しようと決めた時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/SlimePathfindEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/entity/SlimePathfindEvent.html",
     "name": "SlimePathfindEvent",
     "source": "paper"
   },
@@ -2301,19 +2307,19 @@
   },
   {
     "description": "スライムが水や溶岩にいる状態でジャンプしようと決めた時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/SlimeSwimEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/entity/SlimeSwimEvent.html",
     "name": "SlimeSwimEvent",
     "source": "paper"
   },
   {
     "description": "スライムがエンティティを標的として移動を開始しようと決めた時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/SlimeTargetLivingEntityEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/entity/SlimeTargetLivingEntityEvent.html",
     "name": "SlimeTargetLivingEntityEvent",
     "source": "paper"
   },
   {
     "description": "スライムがランダムに移動することを決めた時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/SlimeWanderEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/entity/SlimeWanderEvent.html",
     "name": "SlimeWanderEvent",
     "source": "paper"
   },
@@ -2355,7 +2361,7 @@
   },
   {
     "description": "建造物が見つかる時に呼び出される。以下に例を示す。\n- /locate コマンドを実行した時\n- エンダーアイを使用した時\n- 宝の地図が開かれた時",
-    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/world/StructureLocateEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/world/StructureLocateEvent.html",
     "name": "StructureLocateEvent",
     "source": "paper"
   },
@@ -2391,13 +2397,13 @@
   },
   {
     "description": "ターゲットブロックに Projectile が当たる時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/block/TargetHitEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/block/TargetHitEvent.html",
     "name": "TargetHitEvent",
     "source": "paper"
   },
   {
     "description": "投げられた卵が孵化するかの確認をする時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/ThrownEggHatchEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/entity/ThrownEggHatchEvent.html",
     "name": "ThrownEggHatchEvent",
     "source": "paper"
   },
@@ -2415,7 +2421,7 @@
   },
   {
     "description": "TNT に着火する時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/block/TNTPrimeEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/block/TNTPrimeEvent.html",
     "name": "TNTPrimeEvent",
     "source": "paper"
   },
@@ -2427,19 +2433,19 @@
   },
   {
     "description": "カメが家に帰ることを決めた時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/TurtleGoHomeEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/entity/TurtleGoHomeEvent.html",
     "name": "TurtleGoHomeEvent",
     "source": "paper"
   },
   {
     "description": "カメの卵が孵化する時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/TurtleLayEggEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/entity/TurtleLayEggEvent.html",
     "name": "TurtleLayEggEvent",
     "source": "paper"
   },
   {
     "description": "カメが産卵のために掘り始めた時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/TurtleStartDiggingEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/entity/TurtleStartDiggingEvent.html",
     "name": "TurtleStartDiggingEvent",
     "source": "paper"
   },
@@ -2541,49 +2547,49 @@
   },
   {
     "description": "ホワイトリストが切り替わった時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/server/WhitelistToggleEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/server/WhitelistToggleEvent.html",
     "name": "WhitelistToggleEvent",
     "source": "paper"
   },
   {
     "description": "ウィッチがポーションを自分自身で消費する時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/WitchConsumePotionEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/entity/WitchConsumePotionEvent.html",
     "name": "WitchConsumePotionEvent",
     "source": "paper"
   },
   {
     "description": "ウィッチのポーションの準備が出来る時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/WitchReadyPotionEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/entity/WitchReadyPotionEvent.html",
     "name": "WitchReadyPotionEvent",
     "source": "paper"
   },
   {
     "description": "ウィッチがポーションを投げる時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/com/destroystokyo/paper/event/entity/WitchThrowPotionEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/entity/WitchThrowPotionEvent.html",
     "name": "WitchThrowPotionEvent",
     "source": "paper"
   },
   {
     "description": "ワールドボーダーのサイズが変更する時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/world/border/WorldBorderBoundsChangeEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/world/border/WorldBorderBoundsChangeEvent.html",
     "name": "WorldBorderBoundsChangeEvent",
     "source": "paper"
   },
   {
     "description": "ワールドボーダーのサイズが変更した時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/world/border/WorldBorderBoundsChangeFinishEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/world/border/WorldBorderBoundsChangeFinishEvent.html",
     "name": "WorldBorderBoundsChangeFinishEvent",
     "source": "paper"
   },
   {
     "description": "ワールドボーダーの中心が変更する時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/world/border/WorldBorderCenterChangeEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/world/border/WorldBorderCenterChangeEvent.html",
     "name": "WorldBorderCenterChangeEvent",
     "source": "paper"
   },
   {
     "description": "ワールドボーダーに関するイベントであることを表す。",
-    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/world/border/WorldBorderEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/world/border/WorldBorderEvent.html",
     "name": "WorldBorderEvent",
     "source": "paper"
   },
@@ -2595,7 +2601,7 @@
   },
   {
     "description": "ワールドのゲームルールが変更される時に呼び出される。",
-    "link": "https://papermc.io/javadocs/paper/1.17/io/papermc/paper/event/world/WorldGameRuleChangeEvent.html",
+    "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/world/WorldGameRuleChangeEvent.html",
     "name": "WorldGameRuleChangeEvent",
     "source": "paper"
   },
