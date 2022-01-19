@@ -1518,7 +1518,7 @@
     "source": "bukkit"
   },
   {
-    "description": "",
+    "description": "プレイヤーが額縁のアイテムを追加・削除・回転する時に呼び出される。",
     "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/player/PlayerItemFrameChangeEvent.html",
     "name": "PlayerItemFrameChangeEvent",
     "source": "paper"
