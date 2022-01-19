@@ -1,10 +1,10 @@
-import React, { Dispatch, FC, SetStateAction, memo } from "react";
+import React, { FC, memo } from "react";
 import { SearchIcon } from "@chakra-ui/icons";
 import { Input, InputGroup, InputLeftElement } from "@chakra-ui/react";
 
 type Props = {
   searchText: string;
-  setSearchText: Dispatch<SetStateAction<string>>;
+  setSearchText: (value: string) => void;
 };
 
 const HeaderSearchBox: FC<Props> = ({ searchText, setSearchText }) => (

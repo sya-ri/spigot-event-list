@@ -1,11 +1,11 @@
-import React, { Dispatch, FC, memo, SetStateAction } from "react";
+import React, { FC, memo } from "react";
 import { Flex, Heading, Icon } from "@chakra-ui/react";
 import { FaFaucet } from "react-icons/fa";
 import EventSourceType, { allEventSourceTypes } from "../../EventSourceType";
 
 type Props = {
-  setSearchText: Dispatch<SetStateAction<string>>;
-  setTagsFilter: Dispatch<SetStateAction<EventSourceType[]>>;
+  setSearchText: (value: string) => void;
+  setTagsFilter: (value: EventSourceType[]) => void;
 };
 
 const HeaderTitle: FC<Props> = ({ setSearchText, setTagsFilter }) => {

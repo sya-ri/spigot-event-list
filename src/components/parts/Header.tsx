@@ -1,4 +1,4 @@
-import React, { Dispatch, FC, SetStateAction } from "react";
+import React, { FC } from "react";
 import { Box, Container, Flex, Stack } from "@chakra-ui/react";
 import EventSourceType from "../../EventSourceType";
 import HeaderSearchBox from "./HeaderSearchBox";
@@ -7,9 +7,9 @@ import HeaderTitle from "./HeaderTitle";
 
 type Props = {
   searchText: string;
-  setSearchText: Dispatch<SetStateAction<string>>;
+  setSearchText: (value: string) => void;
   tagsFilter: EventSourceType[];
-  setTagsFilter: Dispatch<SetStateAction<EventSourceType[]>>;
+  setTagsFilter: (value: EventSourceType[]) => void;
 };
 
 const Header: FC<Props> = ({
