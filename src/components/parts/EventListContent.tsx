@@ -8,6 +8,7 @@ import {
   Stack,
   Text,
 } from "@chakra-ui/react";
+import { prev } from "cheerio/lib/api/traversing";
 import { VscWarning } from "react-icons/vsc";
 import ReactMarkdown from "react-markdown";
 import EventSourceType from "../../EventSourceType";
@@ -57,4 +58,12 @@ const EventListContent: FC<Props> = ({
   );
 };
 
-export default memo(EventListContent);
+export default memo(
+  EventListContent,
+  (
+    { name: prevName, source: prevSource },
+    { name: nextName, source: nextSource }
+  ) => {
+    return prevName == nextName && prevSource == nextSource;
+  }
+);
