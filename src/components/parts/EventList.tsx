@@ -1,16 +1,13 @@
-import React, { FC } from "react";
+import React, { FC, memo } from "react";
 import { Box, Container } from "@chakra-ui/react";
-import EventSourceType from "../../EventSourceType";
 import EventType from "../../EventType";
 import EventListContent from "./EventListContent";
 
 type Props = {
   events: EventType[];
-  searchText: string;
-  tagsFilter: EventSourceType[];
 };
 
-const EventList: FC<Props> = ({ events, searchText, tagsFilter }) => {
+const EventList: FC<Props> = ({ events }) => {
   return (
     <Container px={[0, 2]}>
       {events.map(
@@ -23,19 +20,14 @@ const EventList: FC<Props> = ({ events, searchText, tagsFilter }) => {
           deprecateDescription,
         }) => (
           <Box key={name + source}>
-            {tagsFilter.includes(source) &&
-            (!searchText || name.match(new RegExp(searchText, "i"))) ? (
-              <EventListContent
-                name={name}
-                link={link}
-                source={source}
-                description={description}
-                deprecate={deprecate}
-                deprecateDescription={deprecateDescription}
-              />
-            ) : (
-              <></>
-            )}
+            <EventListContent
+              name={name}
+              link={link}
+              source={source}
+              description={description}
+              deprecate={deprecate}
+              deprecateDescription={deprecateDescription}
+            />
           </Box>
         )
       )}
@@ -43,4 +35,10 @@ const EventList: FC<Props> = ({ events, searchText, tagsFilter }) => {
   );
 };
 
-export default EventList;
+export default memo(
+  EventList,
+  ({ events: prevEvents }, { events: nextEvents }) => {
+    if (prevEvents.length != nextEvents.length) return false;
+    return JSON.stringify(prevEvents) == JSON.stringify(nextEvents);
+  }
+);
