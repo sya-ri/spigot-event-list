@@ -1,4 +1,4 @@
-import React, { FC, useEffect, useRef, useState } from "react";
+import React, { FC, useEffect, useState } from "react";
 import { Box, Container } from "@chakra-ui/react";
 import Events from "../../../events.json";
 import EventSourceType, { allEventSourceTypes } from "../../EventSourceType";
@@ -21,7 +21,6 @@ const initTagsFilter = (): EventSourceType[] => {
 const Index: FC = () => {
   const [searchText, setSearchText] = useState(initSearchText());
   const [tagsFilter, setTagsFilter] = useState(initTagsFilter());
-  const headerRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
     const paramsArray: string[][] = [];
     if (searchText) {
@@ -44,14 +43,12 @@ const Index: FC = () => {
         setSearchText={setSearchText}
         tagsFilter={tagsFilter}
         setTagsFilter={setTagsFilter}
-        headerRef={headerRef}
       />
       <Container maxW="container.md" my={2} minH="100vh">
         <EventList
           events={Events as EventType[]}
           searchText={searchText}
           tagsFilter={tagsFilter}
-          headerRef={headerRef}
         />
       </Container>
       <Footer />

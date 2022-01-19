@@ -1,5 +1,4 @@
-import React, { FC, memo, RefObject, useEffect, useRef } from "react";
-import { ExternalLinkIcon } from "@chakra-ui/icons";
+import React, { FC, memo } from "react";
 import {
   Box,
   Container,
@@ -8,7 +7,6 @@ import {
   Link,
   Stack,
   Text,
-  Tooltip,
 } from "@chakra-ui/react";
 import { VscWarning } from "react-icons/vsc";
 import ReactMarkdown from "react-markdown";
@@ -22,8 +20,6 @@ type Props = {
   description: string;
   deprecate?: boolean;
   deprecateDescription?: string;
-  headerRef: RefObject<HTMLDivElement>;
-  scrollHash: string;
 };
 
 const EventListContent: FC<Props> = ({
@@ -33,44 +29,15 @@ const EventListContent: FC<Props> = ({
   description,
   deprecate,
   deprecateDescription,
-  headerRef,
-  scrollHash,
 }) => {
-  const ref = useRef<HTMLDivElement>(null);
-  const scrollTo = () => {
-    if (ref.current && headerRef.current) {
-      const offset = 8;
-      window.scrollTo({
-        behavior: "smooth",
-        top: ref.current.offsetTop - headerRef.current.offsetHeight - offset,
-      });
-    }
-  };
-  useEffect(() => {
-    if (scrollHash == `#${source}-${name}`) {
-      scrollTo();
-    }
-  }, []); // eslint-disable-line react-hooks/exhaustive-deps
   return (
-    <Stack key={name + source} ref={ref} py={2}>
+    <Stack key={name + source} py={2}>
       <Flex justify="space-between" flexWrap="wrap" gridGap={1}>
-        <Stack direction="row" spacing={0.5}>
-          <Link
-            onClick={() => {
-              window.location.hash = `#${source}-${name}`;
-              scrollTo();
-            }}
-          >
-            <Text fontSize="md" fontWeight={500} overflowWrap="anywhere">
-              {name}
-            </Text>
-          </Link>
-          <Tooltip label="Javadoc">
-            <Link href={link} isExternal p={1}>
-              <ExternalLinkIcon verticalAlign="top" />
-            </Link>
-          </Tooltip>
-        </Stack>
+        <Link href={link} isExternal>
+          <Text fontSize="md" fontWeight={500} overflowWrap="anywhere">
+            {name}
+          </Text>
+        </Link>
         <Box ml="auto" mr={0}>
           <EventSourceTypeTags source={source} />
         </Box>

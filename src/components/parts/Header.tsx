@@ -1,4 +1,4 @@
-import React, { Dispatch, FC, RefObject, SetStateAction } from "react";
+import React, { Dispatch, FC, SetStateAction } from "react";
 import { Box, Container, Flex, Stack } from "@chakra-ui/react";
 import EventSourceType from "../../EventSourceType";
 import HeaderSearchBox from "./HeaderSearchBox";
@@ -10,7 +10,6 @@ type Props = {
   setSearchText: Dispatch<SetStateAction<string>>;
   tagsFilter: EventSourceType[];
   setTagsFilter: Dispatch<SetStateAction<EventSourceType[]>>;
-  headerRef: RefObject<HTMLDivElement>;
 };
 
 const Header: FC<Props> = ({
@@ -18,11 +17,9 @@ const Header: FC<Props> = ({
   setSearchText,
   tagsFilter,
   setTagsFilter,
-  headerRef,
 }) => {
   return (
     <Box
-      ref={headerRef}
       position="sticky"
       top={0}
       bgColor="white"
