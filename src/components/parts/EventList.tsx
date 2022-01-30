@@ -20,7 +20,7 @@ const EventList: FC<Props> = ({ events }) => {
     <Container px={[0, 2]}>
       <InfiniteScroll
         next={() => {
-          const start = renderEvents.length - 1;
+          const start = renderEvents.length;
           setRenderEvents([
             ...renderEvents,
             ...events.slice(start, start + 10),
