@@ -9,14 +9,13 @@ type Props = {
 };
 
 const EventList: FC<Props> = ({ events }) => {
-  const chunkedEvents = chunked(events, 10);
   const [renderEvents, setRenderEvents] = useState<EventType[]>([]);
   const [hasMore, setHasMore] = useState(true);
   const loadMore = (page: number) => {
-    if (chunkedEvents.length <= page) {
+    if (events.length <= page) {
       setHasMore(false);
     } else {
-      setRenderEvents([...renderEvents, ...chunkedEvents[page]]);
+      setRenderEvents([...renderEvents, events[page]]);
     }
   };
   return (
@@ -47,12 +46,6 @@ const EventList: FC<Props> = ({ events }) => {
     </Container>
   );
 };
-
-const chunked = <T,>(arr: T[], size: number): T[][] =>
-  arr.reduce(
-    (_arr, _, i) => (i % size ? _arr : [..._arr, arr.slice(i, i + size)]),
-    [] as T[][]
-  );
 
 export default memo(
   EventList,
