@@ -13,7 +13,7 @@ const EventList: FC<Props> = ({ events }) => {
     events.slice(0, 10)
   );
   useEffect(() => {
-    window.scroll({ behavior: "auto", top: 0 });
+    window.scrollTo(0, 0);
     setRenderEvents(events.slice(0, 10));
   }, [events]);
   return (
