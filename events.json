@@ -1469,6 +1469,14 @@
   },
   {
     "deprecate": true,
+    "deprecateDescription": "実験段階です。",
+    "description": "表示されているエンティティがプレイヤーから非表示になる時に呼び出される。追跡範囲内にあるかどうかに関係なく呼び出される。",
+    "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerHideEntityEvent.html",
+    "name": "PlayerHideEntityEvent",
+    "source": "bukkit"
+  },
+  {
+    "deprecate": true,
     "deprecateDescription": "Spigot に追加された PlayerSpawnLocationEvent を使う。",
     "description": "プレイヤーがサーバーに参加した後、スポーンしようとしている時に呼び出される。",
     "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/player/PlayerInitialSpawnEvent.html",
@@ -1755,6 +1763,14 @@
     "description": "プレイヤーがエンティティに対してハサミを使用する時に呼び出される。",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerShearEntityEvent.html",
     "name": "PlayerShearEntityEvent",
+    "source": "bukkit"
+  },
+  {
+    "deprecate": true,
+    "deprecateDescription": "実験段階です。",
+    "description": "非表示になっていたエンティティがプレイヤーに表示される時に呼び出される。追跡範囲内にあるかどうかに関係なく呼び出される。",
+    "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerShowEntityEvent.html",
+    "name": "PlayerShowEntityEvent",
     "source": "bukkit"
   },
   {
