@@ -1,5 +1,6 @@
 import { Box, Container } from "@chakra-ui/react";
 import { NextPage } from "next";
+import { useRouter } from "next/router";
 import React, { FC, useEffect, useMemo, useState } from "react";
 import EventList from "../components/EventList";
 import Footer from "../components/Footer";
@@ -8,43 +9,49 @@ import Events from "../events.json";
 import EventSourceType, { allEventSourceTypes } from "../lib/EventSourceType";
 import EventType from "../lib/EventType";
 
-interface Props {
-  searchText: string;
-  tagsFilter: EventSourceType[];
-}
-
-const Index: NextPage<Props> = ({ searchText, tagsFilter }) => {
-  const [_searchText, setSearchText] = useState(searchText);
-  const [_tagsFilter, setTagsFilter] = useState(tagsFilter);
+const Index: NextPage = () => {
+  const { query, isReady } = useRouter();
+  const [searchText, setSearchText] = useState("");
+  const [tagsFilter, setTagsFilter] = useState<EventSourceType[]>([]);
   useEffect(() => {
-    const paramsArray: string[][] = [];
-    if (_searchText) {
-      paramsArray.push(["search", _searchText]);
+    if (isReady) {
+      setSearchText(first(query.search) || "");
+      const tags = first(query.tags)?.split("-");
+      setTagsFilter(tags ? (tags as EventSourceType[]) : allEventSourceTypes);
     }
-    if (!allEventSourceTypes.every((t) => _tagsFilter.includes(t))) {
-      paramsArray.push(["tags", _tagsFilter.join("-")]);
+  }, [isReady, query.search, query.tags]);
+  useEffect(() => {
+    if (isReady) {
+      const paramsArray: string[][] = [];
+      if (searchText) {
+        paramsArray.push(["search", searchText]);
+      }
+      if (!allEventSourceTypes.every((t) => tagsFilter.includes(t))) {
+        paramsArray.push(["tags", tagsFilter.join("-")]);
+      }
+      const path = window.location.pathname;
+      const params = paramsArray.length
+        ? "?" + new URLSearchParams(paramsArray).toString()
+        : "";
+      const hash = window.location.hash;
+      window.history.pushState(null, "", path + params + hash);
     }
-    const path = window.location.pathname;
-    const params = paramsArray.length
-      ? "?" + new URLSearchParams(paramsArray).toString()
-      : "";
-    const hash = window.location.hash;
-    window.history.pushState(null, "", path + params + hash);
-  }, [_searchText, _tagsFilter]);
+  }, [searchText, tagsFilter]);
   const events = useMemo(() => {
     return (Events as EventType[]).filter(
       ({ name, source }) =>
-        _tagsFilter.includes(source) &&
-        (!_searchText || name.match(new RegExp(_searchText, "i")))
+        tagsFilter.includes(source) &&
+        (!searchText || name.match(new RegExp(searchText, "i")))
     );
-  }, [_searchText, _tagsFilter]);
+  }, [searchText, tagsFilter]);
+  if (!isReady) return null;
   return (
     <Box>
       <Header
-        searchText={_searchText}
+        searchText={searchText}
         setSearchText={setSearchText}
         setTagsFilter={setTagsFilter}
-        tagsFilter={_tagsFilter}
+        tagsFilter={tagsFilter}
       />
       <Container maxW="container.md" minH="100vh" my={2}>
         <EventList events={events} />
@@ -54,18 +61,9 @@ const Index: NextPage<Props> = ({ searchText, tagsFilter }) => {
   );
 };
 
-Index.getInitialProps = async function ({ res }) {
-  if (typeof window !== "undefined") {
-    const params = new URLSearchParams(window.location.search);
-    const searchText = params.get("search") || "";
-    const tags = params.get("tags")?.split("-");
-    const tagsFilter = tags ? (tags as EventSourceType[]) : allEventSourceTypes;
-    return { searchText, tagsFilter };
-  }
-  return {
-    searchText: "",
-    tagsFilter: allEventSourceTypes,
-  };
+const first = (data: string | string[] | undefined): string | undefined => {
+  if (Array.isArray(data)) return data[0];
+  return data;
 };
 
 export default Index;
