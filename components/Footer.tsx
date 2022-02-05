@@ -1,4 +1,3 @@
-import React, { FC, memo } from "react";
 import {
   Box,
   Container,
@@ -8,30 +7,31 @@ import {
   Link,
   Text,
 } from "@chakra-ui/react";
+import React, { FC, memo } from "react";
 import { BiArrowToTop } from "react-icons/bi";
 import { FaGithub } from "react-icons/fa";
 
 const Footer: FC = () => (
   <Box
-    position="sticky"
-    bottom={0}
     bgColor="white"
-    py={1}
+    bottom={0}
     boxShadow="0 -4px 6px -1px rgb(0 0 0 / 10%), 0 -2px 4px -1px rgb(0 0 0 / 6%)"
+    position="sticky"
+    py={1}
   >
     <Container maxW="container.md">
-      <Flex justify="space-around" align="center">
+      <Flex align="center" justify="space-around">
         <Link onClick={() => window.scroll({ behavior: "smooth", top: 0 })}>
-          <IconButton aria-label="ScrollToTop" rounded="full" bgColor="white">
-            <Icon as={BiArrowToTop} w={6} h={6} />
+          <IconButton aria-label="ScrollToTop" bgColor="white" rounded="full">
+            <Icon as={BiArrowToTop} h={6} w={6} />
           </IconButton>
         </Link>
-        <Text textAlign="center" fontWeight={500}>
+        <Text fontWeight={500} textAlign="center">
           ©︎ 2021 sya_ri
         </Text>
-        <Link href="https://github.com/sya-ri/spigot-event-list" isExternal>
-          <IconButton aria-label="ScrollToTop" rounded="full" bgColor="white">
-            <Icon as={FaGithub} w={6} h={6} />
+        <Link isExternal href="https://github.com/sya-ri/spigot-event-list">
+          <IconButton aria-label="ScrollToTop" bgColor="white" rounded="full">
+            <Icon as={FaGithub} h={6} w={6} />
           </IconButton>
         </Link>
       </Flex>

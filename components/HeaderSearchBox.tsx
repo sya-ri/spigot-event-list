@@ -1,6 +1,6 @@
-import React, { FC, memo } from "react";
 import { SearchIcon } from "@chakra-ui/icons";
 import { Input, InputGroup, InputLeftElement } from "@chakra-ui/react";
+import React, { FC, memo } from "react";
 
 type Props = {
   searchText: string;
@@ -8,14 +8,14 @@ type Props = {
 };
 
 const HeaderSearchBox: FC<Props> = ({ searchText, setSearchText }) => (
-  <InputGroup maxW="md" m="auto">
+  <InputGroup m="auto" maxW="md">
     <InputLeftElement>
       <SearchIcon />
     </InputLeftElement>
     <Input
+      placeholder="イベント名で検索する"
       value={searchText}
       onChange={(event) => setSearchText(event.target.value)}
-      placeholder="イベント名で検索する"
     />
   </InputGroup>
 );
