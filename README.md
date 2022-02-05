@@ -3,7 +3,7 @@
 イベントについて簡単な説明が書かれていますが、詳しい内容は Javadoc を参照してください。
 不明点や指摘については Issue や PullRequest にお願いします。
 
-- [イベント一覧](https://gh.s7a.dev/spigot-event-list)
+- [イベント一覧](https://spigot-event-list.s7a.dev)
 
 ## 対応環境
 

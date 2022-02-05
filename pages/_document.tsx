@@ -28,14 +28,11 @@ class Document extends NextDocument {
           <meta content="#ffffff" name="theme-color" />
 
           {/* Open Graph https://www.opengraph.xyz/ */}
-          <meta
-            content="https://gh.s7a.dev/spigot-event-list"
-            property="og:url"
-          />
+          <meta content="https://spigot-event-list.s7a.dev" property="og:url" />
           <meta content="website" property="og:type" />
           <meta content="Spigot Event List" property="og:title" />
           <meta
-            content="https://gh.s7a.dev/spigot-event-list/logo.png"
+            content="https://spigot-event-list.s7a.dev/logo.png"
             property="og:image"
           />
           <meta content="1200" property="og:image:width" />
@@ -44,7 +41,7 @@ class Document extends NextDocument {
           <meta content="@sya_ri_dayo" name="twitter:site" />
           <meta content="Spigot Event List" name="twitter:title" />
           <meta
-            content="https://gh.s7a.dev/spigot-event-list/logo.png"
+            content="https://spigot-event-list.s7a.dev/logo.png"
             name="twitter:image"
           />
         </Head>
