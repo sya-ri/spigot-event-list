@@ -134,7 +134,7 @@
     "source": "bukkit"
   },
   {
-    "description": "",
+    "description": "プレイヤーがブロック破壊を中断した時に呼び出される。",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockDamageAbortEvent.html",
     "name": "BlockDamageAbortEvent",
     "source": "bukkit"
@@ -2238,7 +2238,7 @@
     "source": "velocity"
   },
   {
-    "description": "",
+    "description": "サーバーがリソースパックパケットを送信する時に呼び出される。",
     "link": "https://jd.velocitypowered.com/3.0.0/com/velocitypowered/api/event/player/ServerResourcePackSendEvent.html",
     "name": "ServerResourcePackSendEvent",
     "source": "velocity"
