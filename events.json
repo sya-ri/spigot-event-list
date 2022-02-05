@@ -272,7 +272,7 @@
     "source": "paper"
   },
   {
-    "description": "スカルセンサーがゲームイベントを受けとる時に呼び出される。",
+    "description": "スカルクセンサーがゲームイベントを受けとる時に呼び出される。",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockReceiveGameEvent.html",
     "name": "BlockReceiveGameEvent",
     "source": "bukkit"
