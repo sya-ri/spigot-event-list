@@ -34,7 +34,7 @@ const Index: NextPage = () => {
         ? "?" + new URLSearchParams(paramsArray).toString()
         : "";
       const hash = window.location.hash;
-      window.history.pushState(null, "", path + params + hash);
+      window.history.replaceState(null, "", path + params + hash);
     }
   }, [searchText, tagsFilter]);
   const events = useMemo(() => {
