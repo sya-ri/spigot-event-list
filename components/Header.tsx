@@ -1,4 +1,10 @@
-import { Box, Container, Flex, Stack } from "@chakra-ui/react";
+import {
+  Box,
+  Container,
+  Flex,
+  Stack,
+  useColorModeValue,
+} from "@chakra-ui/react";
 import React, { FC } from "react";
 import EventSourceType from "../lib/EventSourceType";
 import HeaderSearchBox from "./HeaderSearchBox";
@@ -20,7 +26,7 @@ const Header: FC<Props> = ({
 }) => {
   return (
     <Box
-      bgColor="white"
+      bgColor={useColorModeValue("white", "gray.800")}
       boxShadow="0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%)"
       position="sticky"
       py={2}

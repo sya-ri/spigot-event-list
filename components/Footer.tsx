@@ -6,6 +6,7 @@ import {
   IconButton,
   Link,
   Text,
+  useColorModeValue,
 } from "@chakra-ui/react";
 import React, { FC, memo } from "react";
 import { BiArrowToTop } from "react-icons/bi";
@@ -13,7 +14,7 @@ import { FaGithub } from "react-icons/fa";
 
 const Footer: FC = () => (
   <Box
-    bgColor="white"
+    bgColor={useColorModeValue("white", "gray.800")}
     bottom={0}
     boxShadow="0 -4px 6px -1px rgb(0 0 0 / 10%), 0 -2px 4px -1px rgb(0 0 0 / 6%)"
     position="sticky"
@@ -22,7 +23,11 @@ const Footer: FC = () => (
     <Container maxW="container.md">
       <Flex align="center" justify="space-around">
         <Link onClick={() => window.scroll({ behavior: "smooth", top: 0 })}>
-          <IconButton aria-label="ScrollToTop" bgColor="white" rounded="full">
+          <IconButton
+            aria-label="ScrollToTop"
+            bgColor={useColorModeValue("white", "gray.800")}
+            rounded="full"
+          >
             <Icon as={BiArrowToTop} h={6} w={6} />
           </IconButton>
         </Link>
@@ -30,7 +35,11 @@ const Footer: FC = () => (
           ©︎ 2021 sya_ri
         </Text>
         <Link isExternal href="https://github.com/sya-ri/spigot-event-list">
-          <IconButton aria-label="ScrollToTop" bgColor="white" rounded="full">
+          <IconButton
+            aria-label="ScrollToTop"
+            bgColor={useColorModeValue("white", "gray.800")}
+            rounded="full"
+          >
             <Icon as={FaGithub} h={6} w={6} />
           </IconButton>
         </Link>
