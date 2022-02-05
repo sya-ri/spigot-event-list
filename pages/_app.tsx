@@ -1,5 +1,5 @@
-import { ChakraProvider, extendTheme } from "@chakra-ui/react";
 import { AppProps } from "next/app";
+import Chakra from "../components/Chakra";
 import GoogleAnalytics from "../components/GoogleAnalytics";
 
 function App({ Component, pageProps }: AppProps) {
@@ -11,9 +11,9 @@ function App({ Component, pageProps }: AppProps) {
         property="description"
       />
       <GoogleAnalytics />
-      <ChakraProvider>
+      <Chakra cookies={pageProps.cookies}>
         <Component {...pageProps} />
-      </ChakraProvider>
+      </Chakra>
     </>
   );
 }
