@@ -12,7 +12,7 @@ import EventType from "../lib/EventType";
 const Index: NextPage = () => {
   const { query, isReady } = useRouter();
   const [searchText, setSearchText] = useState("");
-  const [tagsFilter, setTagsFilter] = useState<EventSourceType[]>([]);
+  const [tagsFilter, setTagsFilter] = useState(allEventSourceTypes);
   useEffect(() => {
     if (isReady) {
       setSearchText(first(query.search) || "");
