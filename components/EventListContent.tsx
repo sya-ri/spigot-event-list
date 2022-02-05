@@ -1,4 +1,3 @@
-import React, { FC, memo } from "react";
 import {
   Box,
   Container,
@@ -9,9 +8,10 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { prev } from "cheerio/lib/api/traversing";
+import React, { FC, memo } from "react";
 import { VscWarning } from "react-icons/vsc";
 import ReactMarkdown from "react-markdown";
-import EventSourceType from "../../EventSourceType";
+import EventSourceType from "../lib/EventSourceType";
 import EventSourceTypeTags from "./EventSourceTypeTags";
 
 type Props = {
@@ -33,8 +33,8 @@ const EventListContent: FC<Props> = ({
 }) => {
   return (
     <Stack key={name + source} py={2}>
-      <Flex justify="space-between" flexWrap="wrap" gridGap={1}>
-        <Link href={link} isExternal>
+      <Flex flexWrap="wrap" gridGap={1} justify="space-between">
+        <Link isExternal href={link}>
           <Text fontSize="md" fontWeight={500} overflowWrap="anywhere">
             {name}
           </Text>

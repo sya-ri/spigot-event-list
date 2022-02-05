@@ -1,4 +1,4 @@
-import EventType from "../../src/EventType";
+import EventType from "../../lib/EventType";
 import EventTypeMap from "../EventTypeMap";
 import { readJson, writeJson } from "./util";
 

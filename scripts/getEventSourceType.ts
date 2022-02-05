@@ -1,4 +1,4 @@
-import EventSourceType from "../src/EventSourceType";
+import EventSourceType from "../lib/EventSourceType";
 
 /**
  * href に対応する EventSourceType を取得する

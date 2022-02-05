@@ -1,4 +1,4 @@
-import EventType from "../src/EventType";
+import EventType from "../lib/EventType";
 
 /**
  * 名前をキーとした EventType のタイプエイリアス

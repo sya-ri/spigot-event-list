@@ -1,6 +1,6 @@
-import React, { FC, memo } from "react";
 import { Link, Stack } from "@chakra-ui/react";
-import EventSourceType, { allEventSourceTypes } from "../../EventSourceType";
+import React, { FC, memo } from "react";
+import EventSourceType, { allEventSourceTypes } from "../lib/EventSourceType";
 import EventSourceTypeTag from "./EventSourceTypeTag";
 
 type Props = {
@@ -10,7 +10,7 @@ type Props = {
 
 const HeaderTagsFilter: FC<Props> = ({ tagsFilter, setTagsFilter }) => {
   return (
-    <Stack direction="row" justify="center" flexWrap="wrap" spacing={[1, 2]}>
+    <Stack direction="row" flexWrap="wrap" justify="center" spacing={[1, 2]}>
       {allEventSourceTypes.map((source) => (
         <Link
           key={source}
@@ -23,8 +23,8 @@ const HeaderTagsFilter: FC<Props> = ({ tagsFilter, setTagsFilter }) => {
           }}
         >
           <EventSourceTypeTag
-            source={source}
             isDisable={!tagsFilter.includes(source)}
+            source={source}
           />
         </Link>
       ))}
