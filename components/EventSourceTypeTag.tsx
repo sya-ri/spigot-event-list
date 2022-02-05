@@ -1,6 +1,6 @@
-import React, { FC } from "react";
 import { Tag, Text } from "@chakra-ui/react";
-import EventSourceType from "../../EventSourceType";
+import React, { FC } from "react";
+import EventSourceType from "../lib/EventSourceType";
 
 type Props = {
   source: EventSourceType;
@@ -19,7 +19,7 @@ const colors = {
 
 const EventSourceTypeTag: FC<Props> = ({ source, isDisable }) => {
   return (
-    <Tag size="sm" colorScheme={colors[source]}>
+    <Tag colorScheme={colors[source]} size="sm">
       <Text decoration={isDisable ? "line-through" : ""}>{source}</Text>
     </Tag>
   );

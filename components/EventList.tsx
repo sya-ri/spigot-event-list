@@ -1,7 +1,7 @@
-import React, { FC, memo, useEffect, useState } from "react";
 import { Box, Container } from "@chakra-ui/react";
+import React, { FC, memo, useEffect, useState } from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
-import EventType from "../../EventType";
+import EventType from "../lib/EventType";
 import EventListContent from "./EventListContent";
 
 type Props = {
@@ -19,6 +19,9 @@ const EventList: FC<Props> = ({ events }) => {
   return (
     <Container px={[0, 2]}>
       <InfiniteScroll
+        dataLength={renderEvents.length}
+        hasMore={true}
+        loader={<></>}
         next={() => {
           const start = renderEvents.length;
           setRenderEvents([
@@ -26,9 +29,6 @@ const EventList: FC<Props> = ({ events }) => {
             ...events.slice(start, start + 10),
           ]);
         }}
-        hasMore={true}
-        loader={<></>}
-        dataLength={renderEvents.length}
       >
         {renderEvents.map(
           ({
@@ -41,12 +41,12 @@ const EventList: FC<Props> = ({ events }) => {
           }) => (
             <Box key={name + source}>
               <EventListContent
-                name={name}
-                link={link}
-                source={source}
-                description={description}
                 deprecate={deprecate}
                 deprecateDescription={deprecateDescription}
+                description={description}
+                link={link}
+                name={name}
+                source={source}
               />
             </Box>
           )

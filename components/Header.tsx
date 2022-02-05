@@ -1,6 +1,6 @@
-import React, { FC } from "react";
 import { Box, Container, Flex, Stack } from "@chakra-ui/react";
-import EventSourceType from "../../EventSourceType";
+import React, { FC } from "react";
+import EventSourceType from "../lib/EventSourceType";
 import HeaderSearchBox from "./HeaderSearchBox";
 import HeaderTagsFilter from "./HeaderTagsFilter";
 import HeaderTitle from "./HeaderTitle";
@@ -20,15 +20,15 @@ const Header: FC<Props> = ({
 }) => {
   return (
     <Box
-      position="sticky"
-      top={0}
       bgColor="white"
-      py={2}
       boxShadow="0 4px 6px -1px rgb(0 0 0 / 10%), 0 2px 4px -1px rgb(0 0 0 / 6%)"
+      position="sticky"
+      py={2}
+      top={0}
       zIndex={1}
     >
       <Container maxW="container.md" px={2}>
-        <Flex justify="space-between" flexWrap="wrap" gridGap={2}>
+        <Flex flexWrap="wrap" gridGap={2} justify="space-between">
           <HeaderTitle
             setSearchText={setSearchText}
             setTagsFilter={setTagsFilter}
@@ -39,8 +39,8 @@ const Header: FC<Props> = ({
               setSearchText={setSearchText}
             />
             <HeaderTagsFilter
-              tagsFilter={tagsFilter}
               setTagsFilter={setTagsFilter}
+              tagsFilter={tagsFilter}
             />
           </Stack>
         </Flex>

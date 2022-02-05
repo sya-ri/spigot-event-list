@@ -1,7 +1,7 @@
-import React, { FC, memo } from "react";
 import { Flex, Heading, Icon } from "@chakra-ui/react";
+import React, { FC, memo } from "react";
 import { FaFaucet } from "react-icons/fa";
-import EventSourceType, { allEventSourceTypes } from "../../EventSourceType";
+import EventSourceType, { allEventSourceTypes } from "../lib/EventSourceType";
 
 type Props = {
   setSearchText: (value: string) => void;
@@ -11,16 +11,16 @@ type Props = {
 const HeaderTitle: FC<Props> = ({ setSearchText, setTagsFilter }) => {
   return (
     <Flex
+      cursor="pointer"
       m="auto"
       px={4}
-      cursor="pointer"
       onClick={() => {
         history.replaceState(null, "", ".");
         setSearchText("");
         setTagsFilter(allEventSourceTypes);
       }}
     >
-      <Icon as={FaFaucet} mr={2} my="auto" w={8} h={8} />
+      <Icon as={FaFaucet} h={8} mr={2} my="auto" w={8} />
       <Heading as="h1" fontSize="2xl">
         Spigot Event List
       </Heading>

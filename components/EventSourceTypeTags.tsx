@@ -1,6 +1,6 @@
-import React, { FC } from "react";
 import { Stack } from "@chakra-ui/react";
-import EventSourceType from "../../EventSourceType";
+import React, { FC } from "react";
+import EventSourceType from "../lib/EventSourceType";
 import EventSourceTypeTag from "./EventSourceTypeTag";
 
 type Props = {

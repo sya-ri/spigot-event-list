@@ -1,6 +1,6 @@
 import axios from "axios";
 import cheerio from "cheerio";
-import EventType from "../../src/EventType";
+import EventType from "../../lib/EventType";
 import EventSource from "../EventSource";
 import EventSources from "../EventSources";
 import EventTypeMap from "../EventTypeMap";

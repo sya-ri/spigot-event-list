@@ -1,5 +1,6 @@
 .idea/
 dist/
+.next/
 node_modules/
 spigot-event-list.iml
 report.md
