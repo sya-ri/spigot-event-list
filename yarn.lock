@@ -1914,10 +1914,10 @@ follow-redirects@^1.14.7:
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.14.7.tgz#2004c02eb9436eee9a21446a6477debf17e81685"
   integrity sha512-+hbxoLbFMbRKDwohX8GkTataGqO6Jb7jGwpAlwgy2bIz25XtRm7KEzJM76R1WiNT5SwZkX4Y75SwBolkpmE7iQ==
 
-framer-motion@6.2.4:
-  version "6.2.4"
-  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-6.2.4.tgz#3d9c61be3fb8381a770efccdb56cc421de662979"
-  integrity sha512-1UfnSG4c4CefKft6QMYGx8AWt3TtaFoR/Ax4dkuDDD5BDDeIuUm7gesmJrF8GzxeX/i6fMm8+MEdPngUyPVdLA==
+framer-motion@6.2.6:
+  version "6.2.6"
+  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-6.2.6.tgz#75277b4944a1234beaf7453da19028bbf4f75cce"
+  integrity sha512-7eGav5MxEEzDHozQTDY6+psTIOw2i2kM1QVoJOC3bCp9VOKoo+mKR5n7aT5JPh7ksEKFYJYz0GJDils/9S+oLA==
   dependencies:
     framesync "6.0.1"
     hey-listen "^1.0.8"
