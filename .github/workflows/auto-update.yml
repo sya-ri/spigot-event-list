@@ -3,6 +3,7 @@ on:
   schedule:
     - cron: '00 21 * * *' # UTC 21:00 (JST 06:00)
   workflow_dispatch:
+  push:
 jobs:
   update:
     runs-on: ubuntu-latest

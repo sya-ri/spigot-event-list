@@ -981,6 +981,11 @@
   resolved "https://registry.yarnpkg.com/@types/ms/-/ms-0.7.31.tgz#31b7ca6407128a3d2bbc27fe2d21b345397f6197"
   integrity sha512-iiUgKzV9AuaEkZqkOLDIvlQiL6ltuZd9tGcW3gwpnX8JbuiuhFlEGmmFXEXkN50Cvq7Os88IY2v0dkDqXYWVgA==
 
+"@types/node@*":
+  version "17.0.17"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.17.tgz#a8ddf6e0c2341718d74ee3dc413a13a042c45a0c"
+  integrity sha512-e8PUNQy1HgJGV3iU/Bp2+D/DXh3PYeyli8LgIwsQcs1Ar1LoaWHSIT6Rw+H2rNJmiq6SNWiDytfx8+gYj7wDHw==
+
 "@types/node@16.11.24":
   version "16.11.24"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-16.11.24.tgz#9624338b685fea65fb1aba6c7b7eb45ca2df7188"
@@ -1035,6 +1040,13 @@
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/@types/warning/-/warning-3.0.0.tgz#0d2501268ad8f9962b740d387c4654f5f8e23e52"
   integrity sha1-DSUBJorY+ZYrdA04fEZU9fjiPlI=
+
+"@types/xml2js@^0.4.9":
+  version "0.4.9"
+  resolved "https://registry.yarnpkg.com/@types/xml2js/-/xml2js-0.4.9.tgz#a38267d8c2fe121c96922b12ee3bd89a58a6e20e"
+  integrity sha512-CHiCKIihl1pychwR2RNX5mAYmJDACgFVCMT5OArMaO3erzwXVcBqPcusr+Vl8yeeXukxZqtF8mZioqX+mpjjdw==
+  dependencies:
+    "@types/node" "*"
 
 "@typescript-eslint/parser@^5.0.0":
   version "5.10.2"
@@ -2781,35 +2793,6 @@ ms@^2.1.1:
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.3.tgz#574c8138ce1d2b5861f0b44579dbadd60c6615b2"
   integrity sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==
 
-mvn-artifact-download@6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/mvn-artifact-download/-/mvn-artifact-download-6.0.0.tgz#0036e6f67a45bcf20adb54447a3cfcf7abf7bc6a"
-  integrity sha512-/eIZ3/cgIm8NeE+ICq3xCvSNf3uvS7Tb/yEf8x5ACEoDcDuOwM88m2HXFUCeiqavF3irk0vWgX9VJN2tZkbqkQ==
-  dependencies:
-    mvn-artifact-filename "^6.0.0"
-    mvn-artifact-name-parser "^6.0.0"
-    mvn-artifact-url "^6.0.0"
-    node-fetch "^2.6.1"
-
-mvn-artifact-filename@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/mvn-artifact-filename/-/mvn-artifact-filename-6.0.0.tgz#bcb010f14f726371074e9af71856621baa0fb56d"
-  integrity sha512-sDHE+LMJBylCSnRZYKBVhNAslJR9fdLaRynhHVdicxgRa36+TxvHHJl+AaEje1F0VSjejRr2ab/PG7lgV9Ar5Q==
-
-mvn-artifact-name-parser@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/mvn-artifact-name-parser/-/mvn-artifact-name-parser-6.0.0.tgz#441506503326d4633b922e3d3dd843daebfa6cc9"
-  integrity sha512-ZWnGAMB/tHREFrH/6L3M13r+xiPJtyskKTnv7rHAbNoEKrzP6E3jeaLEwNceEVqfO7Px4iowVlYijJbCdDmijw==
-
-mvn-artifact-url@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/mvn-artifact-url/-/mvn-artifact-url-6.0.0.tgz#060456cb3bd7aa82096f133534af5da0ce8dd1a9"
-  integrity sha512-OOhwPzybaBV5KH4LJ2tR6MHC9cBiPSMtbY1e/mOqJ+ZYNyr6cILktLLDWmm3R46UVzALeOqFRK0sJnMq8ixeHA==
-  dependencies:
-    mvn-artifact-filename "^6.0.0"
-    node-fetch "^2.6.1"
-    xml2js "^0.4.23"
-
 nanoid@^3.1.30:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/nanoid/-/nanoid-3.2.0.tgz#62667522da6673971cca916a6d3eff3f415ff80c"
@@ -2842,13 +2825,6 @@ next@12.0.10:
     "@next/swc-win32-arm64-msvc" "12.0.10"
     "@next/swc-win32-ia32-msvc" "12.0.10"
     "@next/swc-win32-x64-msvc" "12.0.10"
-
-node-fetch@^2.6.1:
-  version "2.6.7"
-  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.7.tgz#24de9fba827e3b4ae44dc8b20256a379160052ad"
-  integrity sha512-ZjMPFEfVx5j+y2yF35Kzx5sF7kDzxuDj6ziH4FFbOp87zKDZNx8yExJIb05OGF4Nlt9IHFIMBkRl41VdvcNdbQ==
-  dependencies:
-    whatwg-url "^5.0.0"
 
 nth-check@^2.0.1:
   version "2.0.1"
@@ -3545,11 +3521,6 @@ toggle-selection@^1.0.6:
   resolved "https://registry.yarnpkg.com/toggle-selection/-/toggle-selection-1.0.6.tgz#6e45b1263f2017fa0acc7d89d78b15b8bf77da32"
   integrity sha1-bkWxJj8gF/oKzH2J14sVuL932jI=
 
-tr46@~0.0.3:
-  version "0.0.3"
-  resolved "https://registry.yarnpkg.com/tr46/-/tr46-0.0.3.tgz#8184fd347dac9cdc185992f3a6622e14b9d9ab6a"
-  integrity sha1-gYT9NH2snNwYWZLzpmIuFLnZq2o=
-
 trough@^2.0.0:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/trough/-/trough-2.0.2.tgz#94a3aa9d5ce379fc561f6244905b3f36b7458d96"
@@ -3790,19 +3761,6 @@ warning@^4.0.3:
   integrity sha512-rpJyN222KWIvHJ/F53XSZv0Zl/accqHR8et1kpaMTD/fLCRxtV8iX8czMzY7sVZupTI3zcUTg8eycS2kNF9l6w==
   dependencies:
     loose-envify "^1.0.0"
-
-webidl-conversions@^3.0.0:
-  version "3.0.1"
-  resolved "https://registry.yarnpkg.com/webidl-conversions/-/webidl-conversions-3.0.1.tgz#24534275e2a7bc6be7bc86611cc16ae0a5654871"
-  integrity sha1-JFNCdeKnvGvnvIZhHMFq4KVlSHE=
-
-whatwg-url@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/whatwg-url/-/whatwg-url-5.0.0.tgz#966454e8765462e37644d3626f6742ce8b70965d"
-  integrity sha1-lmRU6HZUYuN2RNNib2dCzotwll0=
-  dependencies:
-    tr46 "~0.0.3"
-    webidl-conversions "^3.0.0"
 
 which-boxed-primitive@^1.0.2:
   version "1.0.2"
