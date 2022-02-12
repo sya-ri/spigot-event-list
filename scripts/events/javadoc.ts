@@ -1,7 +1,7 @@
 import { zip } from "compressing";
-import downloadArtifact from "mvn-artifact-download";
 import Sources from "../Sources";
 import { createDirectory, deleteDirectory } from "../file/util";
+import downloadArtifact from "../mvn/artifact-download";
 
 /**
  * ファイルパスを取得する

@@ -1,5 +1,5 @@
-import { Artifact } from "mvn-artifact-download";
 import SourceType from "../lib/SourceType";
+import { Artifact } from "./mvn/artifact-download";
 
 /**
  * イベントソース

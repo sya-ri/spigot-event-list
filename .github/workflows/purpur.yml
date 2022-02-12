@@ -1,0 +1,10 @@
+on: push
+jobs:
+  curl:
+    runs-on: ubuntu-latest
+    steps:
+      - run: 'curl https://repo.purpurmc.org/snapshots/org/purpurmc/purpur/purpur-api/1.18.1-R0.1-SNAPSHOT/maven-metadata.xml -H "User-Agent: Apache-Maven/3.8.1 (Java 17.0.2; Mac OS X 12.1)" --verbose'
+  curl1-1:
+    runs-on: ubuntu-latest
+    steps:
+      - run: 'curl https://repo.purpurmc.org/snapshots/org/purpurmc/purpur/purpur-api/1.18.1-R0.1-SNAPSHOT/maven-metadata.xml -H "User-Agent: Apache-Maven/3.8.1 (Java 17.0.2; Mac OS X 12.1)" --verbose --http1.1'
