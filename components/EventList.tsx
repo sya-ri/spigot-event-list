@@ -39,16 +39,15 @@ const EventList: FC<Props> = ({ events }) => {
             deprecate,
             deprecateDescription,
           }) => (
-            <Box key={name + source}>
-              <EventListContent
-                deprecate={deprecate}
-                deprecateDescription={deprecateDescription}
-                description={description}
-                link={link}
-                name={name}
-                source={source}
-              />
-            </Box>
+            <EventListContent
+              key={name + source}
+              deprecate={deprecate}
+              deprecateDescription={deprecateDescription}
+              description={description}
+              link={link}
+              name={name}
+              source={source}
+            />
           )
         )}
       </InfiniteScroll>
