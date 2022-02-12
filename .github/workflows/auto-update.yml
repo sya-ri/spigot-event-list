@@ -1,4 +1,4 @@
-name: Update Event List (Auto)
+name: Update Source (Auto)
 on:
   schedule:
     - cron: '00 21 * * *' # UTC 21:00 (JST 06:00)
@@ -27,9 +27,9 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v3
         with:
-          title: 'イベントリストのバージョンを更新'
+          title: 'ソースのバージョンを更新'
           body: ${{ steps.report.outputs.content }}
           branch: actions/update-event-list
-          commit-message: 'イベントリストのバージョンを更新'
+          commit-message: 'ソースのバージョンを更新'
           delete-branch: true
           reviewers: sya-ri
