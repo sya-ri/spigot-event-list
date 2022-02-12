@@ -10,11 +10,11 @@ type Props = {
 
 const EventList: FC<Props> = ({ events }) => {
   const [renderEvents, setRenderEvents] = useState<EventType[]>(
-    events.slice(0, 10)
+    events.slice(0, initialEventListSize())
   );
   useEffect(() => {
     window.scrollTo(0, 0);
-    setRenderEvents(events.slice(0, 10));
+    setRenderEvents(events.slice(0, initialEventListSize()));
   }, [events]);
   return (
     <Container px={[0, 2]}>
@@ -55,6 +55,10 @@ const EventList: FC<Props> = ({ events }) => {
     </Container>
   );
 };
+
+const EventListContentHeight = 72; // 71.93px
+
+const initialEventListSize = () => window.innerHeight / EventListContentHeight;
 
 export default memo(
   EventList,
