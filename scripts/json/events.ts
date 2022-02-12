@@ -1,5 +1,5 @@
 import EventType from "../../lib/EventType";
-import EventTypeMap from "../EventTypeMap";
+import SourceTypeMap from "../SourceTypeMap";
 import { readJson, writeJson } from "./util";
 
 /**
@@ -29,8 +29,8 @@ export const writeEvents = (events: Events) => {
 /**
  * イベント一覧を整形し json に出力する
  */
-export const writeEventMap = (eventMap: EventTypeMap) => {
-  const events = Object.values(eventMap)
+export const writeEventMap = (sourceTypeMap: SourceTypeMap) => {
+  const events = Object.values(sourceTypeMap)
     .sort((a, b) => (a.name + a.source).localeCompare(b.name + b.source))
     .map(
       (value): EventType => ({

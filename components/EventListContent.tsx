@@ -11,13 +11,13 @@ import { prev } from "cheerio/lib/api/traversing";
 import React, { FC, memo } from "react";
 import { VscWarning } from "react-icons/vsc";
 import ReactMarkdown from "react-markdown";
-import EventSourceType from "../lib/EventSourceType";
+import SourceType from "../lib/SourceType";
 import EventSourceTypeTags from "./EventSourceTypeTags";
 
 type Props = {
   name: string;
   link: string;
-  source: EventSourceType;
+  source: SourceType;
   description: string;
   deprecate?: boolean;
   deprecateDescription?: string;

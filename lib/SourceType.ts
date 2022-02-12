@@ -1,4 +1,4 @@
-type EventSourceType =
+type SourceType =
   | "bukkit"
   | "spigot"
   | "paper"
@@ -7,7 +7,7 @@ type EventSourceType =
   | "waterfall"
   | "velocity";
 
-export const allEventSourceTypes: EventSourceType[] = [
+export const SourceTypes: SourceType[] = [
   "bukkit",
   "spigot",
   "paper",
@@ -17,4 +17,4 @@ export const allEventSourceTypes: EventSourceType[] = [
   "velocity",
 ];
 
-export default EventSourceType;
+export default SourceType;

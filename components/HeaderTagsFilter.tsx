@@ -1,17 +1,17 @@
 import { Link, Stack } from "@chakra-ui/react";
 import React, { FC, memo } from "react";
-import EventSourceType, { allEventSourceTypes } from "../lib/EventSourceType";
+import SourceType, { SourceTypes } from "../lib/SourceType";
 import EventSourceTypeTag from "./EventSourceTypeTag";
 
 type Props = {
-  tagsFilter: EventSourceType[];
-  setTagsFilter: (value: EventSourceType[]) => void;
+  tagsFilter: SourceType[];
+  setTagsFilter: (value: SourceType[]) => void;
 };
 
 const HeaderTagsFilter: FC<Props> = ({ tagsFilter, setTagsFilter }) => {
   return (
     <Stack direction="row" flexWrap="wrap" justify="center" spacing={[1, 2]}>
-      {allEventSourceTypes.map((source) => (
+      {SourceTypes.map((source) => (
         <Link
           key={source}
           onClick={() => {

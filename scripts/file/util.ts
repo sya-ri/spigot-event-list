@@ -17,3 +17,17 @@ export const writeFile = (fileName: string, content: string) => {
     }
   });
 };
+
+/**
+ * ディレクトリを削除する
+ */
+export const deleteDirectory = (fileName: string) => {
+  fs.rmdirSync(fileName, { recursive: true });
+};
+
+/**
+ * ディレクトリを作成する
+ */
+export const createDirectory = (fileName: string) => {
+  fs.mkdirSync(fileName);
+};

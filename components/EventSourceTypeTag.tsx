@@ -1,9 +1,9 @@
 import { Tag, Text } from "@chakra-ui/react";
 import React, { FC } from "react";
-import EventSourceType from "../lib/EventSourceType";
+import SourceType from "../lib/SourceType";
 
 type Props = {
-  source: EventSourceType;
+  source: SourceType;
   isDisable?: boolean;
 };
 

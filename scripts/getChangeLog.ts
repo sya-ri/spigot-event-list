@@ -1,17 +1,18 @@
-import EventSourceMap from "./EventSourceMap";
-import EventTypeMap from "./EventTypeMap";
+import EventType from "../lib/EventType";
+import SourceMap from "./SourceMap";
+import SourceTypeMap from "./SourceTypeMap";
 
 /**
  * 変更報告を取得する
  */
 const getChangeLog = (
-  lastEventSources: EventSourceMap,
-  eventSources: EventSourceMap,
-  eventMap: EventTypeMap
+  lastSourceMap: SourceMap,
+  sourceMap: SourceMap,
+  sourceTypeMap: SourceTypeMap
 ): string => {
   return [
-    getVersionChangeLog(lastEventSources, eventSources),
-    getDescriptionReport(eventMap),
+    getVersionChangeLog(lastSourceMap, sourceMap),
+    getDescriptionReport(sourceTypeMap),
   ]
     .filter((line) => line)
     .join("\n\n");
@@ -21,13 +22,13 @@ const getChangeLog = (
  * バージョンに関する変更報告を取得する
  */
 const getVersionChangeLog = (
-  lastEventSources: EventSourceMap,
-  eventSources: EventSourceMap
+  lastSourceMap: SourceMap,
+  sourceMap: SourceMap
 ): string | null => {
-  const versions = Object.keys(eventSources)
+  const versions = Object.keys(sourceMap)
     .map((name) => {
-      const lastVersion = lastEventSources[name].version;
-      const version = eventSources[name].version;
+      const lastVersion = lastSourceMap[name].version;
+      const version = sourceMap[name].version;
       return [name, lastVersion, version];
     })
     .filter(([, lastVersion, version]) => lastVersion != version)
@@ -45,14 +46,14 @@ const getVersionChangeLog = (
 /**
  * 説明文に関するレポートを取得する
  */
-const getDescriptionReport = (eventMap: EventTypeMap): string | null => {
-  const noDescriptions = Object.values(eventMap)
-    .filter(
-      (event) =>
-        !event.description.length ||
-        (event.deprecate && !event.deprecateDescription?.length)
-    )
-    .map((event) => `- ${event.name} (${event.source})`);
+const getDescriptionReport = (sourceTypeMap: SourceTypeMap): string | null => {
+  const noDescription = (type: EventType) =>
+    !type.description.length ||
+    (type.deprecate && !type.deprecateDescription?.length);
+
+  const noDescriptions = Object.values(sourceTypeMap)
+    .filter((type) => noDescription(type))
+    .map((type) => `- ${type.name} (${type.source})`);
   if (noDescriptions.length) {
     return "### 説明が書かれていないイベント\n\n" + noDescriptions.join("\n");
   } else {

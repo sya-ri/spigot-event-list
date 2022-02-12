@@ -6,7 +6,7 @@ import {
   useColorModeValue,
 } from "@chakra-ui/react";
 import React, { FC } from "react";
-import EventSourceType from "../lib/EventSourceType";
+import SourceType from "../lib/SourceType";
 import HeaderSearchBox from "./HeaderSearchBox";
 import HeaderTagsFilter from "./HeaderTagsFilter";
 import HeaderTitle from "./HeaderTitle";
@@ -14,8 +14,8 @@ import HeaderTitle from "./HeaderTitle";
 type Props = {
   searchText: string;
   setSearchText: (value: string) => void;
-  tagsFilter: EventSourceType[];
-  setTagsFilter: (value: EventSourceType[]) => void;
+  tagsFilter: SourceType[];
+  setTagsFilter: (value: SourceType[]) => void;
 };
 
 const Header: FC<Props> = ({

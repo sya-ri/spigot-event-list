@@ -1,4 +1,4 @@
-import EventSources from "../EventSources";
+import Sources from "../Sources";
 import { Versions } from "../json/versions";
 
 /**
@@ -6,7 +6,7 @@ import { Versions } from "../json/versions";
  */
 export const updateVersions = async (): Promise<Versions> => {
   const versions = {} as Versions;
-  for (const [name, source] of Object.entries(EventSources)) {
+  for (const [name, source] of Object.entries(Sources)) {
     await source.updateVersion(source);
     if (source.version != null) {
       versions[name] = source.version;

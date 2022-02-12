@@ -1,4 +1,4 @@
-import EventSourceType from "./EventSourceType";
+import SourceType from "./SourceType";
 
 /**
  * イベントデータの定義
@@ -6,7 +6,7 @@ import EventSourceType from "./EventSourceType";
 export default interface EventType {
   name: string;
   link: string;
-  source: EventSourceType;
+  source: SourceType;
   description: string;
   deprecate?: boolean;
   deprecateDescription?: string;

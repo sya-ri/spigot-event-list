@@ -1,9 +1,9 @@
-import EventSourceType from "../lib/EventSourceType";
+import SourceType from "../lib/SourceType";
 
 /**
- * href に対応する EventSourceType を取得する
+ * href に対応する SourceType を取得する
  */
-const getEventSourceType = (href: string): EventSourceType | null => {
+const getSourceType = (href: string): SourceType | null => {
   if (href.startsWith("org/bukkit")) {
     return "bukkit";
   } else if (href.startsWith("org/spigotmc")) {
@@ -25,4 +25,4 @@ const getEventSourceType = (href: string): EventSourceType | null => {
   }
 };
 
-export default getEventSourceType;
+export default getSourceType;
