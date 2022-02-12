@@ -1368,7 +1368,7 @@ comma-separated-tokens@^2.0.0:
   resolved "https://registry.yarnpkg.com/comma-separated-tokens/-/comma-separated-tokens-2.0.2.tgz#d4c25abb679b7751c880be623c1179780fe1dd98"
   integrity sha512-G5yTt3KQN4Yn7Yk4ed73hlZ1evrFKXeUW3086p3PRFNp7m2vIjI6Pg+Kgb+oyzhd9F2qdcoj67+y3SdxL5XWsg==
 
-compressing@^1.5.1:
+compressing@1.5.1:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/compressing/-/compressing-1.5.1.tgz#d031a3311b8c2ed6561a8431671d5a844540482d"
   integrity sha512-1AGBR4Vh0/rpPKSXHoV9cerLo0CUlAhZ/xsJqU3a9+2cbSaFjWT3fk2MIGkCnbpk//DGWrcWw03rhKFQrA9RQw==
@@ -2776,7 +2776,7 @@ ms@^2.1.1:
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.3.tgz#574c8138ce1d2b5861f0b44579dbadd60c6615b2"
   integrity sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==
 
-mvn-artifact-download@^6.0.0:
+mvn-artifact-download@6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/mvn-artifact-download/-/mvn-artifact-download-6.0.0.tgz#0036e6f67a45bcf20adb54447a3cfcf7abf7bc6a"
   integrity sha512-/eIZ3/cgIm8NeE+ICq3xCvSNf3uvS7Tb/yEf8x5ACEoDcDuOwM88m2HXFUCeiqavF3irk0vWgX9VJN2tZkbqkQ==
