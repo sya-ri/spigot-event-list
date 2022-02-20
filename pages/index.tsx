@@ -8,6 +8,7 @@ import Header from "../components/Header";
 import Events from "../events.json";
 import EventType from "../lib/EventType";
 import SourceType, { SourceTypes } from "../lib/SourceType";
+import Versions from "../versions.json";
 
 const Index: NextPage = () => {
   const { query, isReady } = useRouter();
@@ -47,6 +48,9 @@ const Index: NextPage = () => {
   if (!isReady) return null;
   return (
     <Box>
+      {Object.entries(Versions).map(([name, version]) => (
+        <meta key={name} content={version} name={`version:${name}`} />
+      ))}
       <Header
         searchText={searchText}
         setSearchText={setSearchText}
