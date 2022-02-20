@@ -1,7 +1,7 @@
 import { Box, Container } from "@chakra-ui/react";
 import { NextPage } from "next";
 import { useRouter } from "next/router";
-import React, { FC, useEffect, useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import EventList from "../components/EventList";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -36,7 +36,7 @@ const Index: NextPage = () => {
       const hash = window.location.hash;
       window.history.replaceState(null, "", path + params + hash);
     }
-  }, [searchText, tagsFilter]);
+  }, [searchText, tagsFilter]); // eslint-disable-line react-hooks/exhaustive-deps
   const events = useMemo(() => {
     return (Events as EventType[]).filter(
       ({ name, source }) =>
