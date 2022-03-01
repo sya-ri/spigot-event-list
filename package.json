@@ -41,7 +41,7 @@
     "eslint-plugin-prettier": "4.0.0",
     "prettier": "2.5.1",
     "ts-loader": "9.2.6",
-    "ts-node": "10.5.0",
+    "ts-node": "10.6.0",
     "xml2js": "0.4.23"
   }
 }
