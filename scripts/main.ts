@@ -23,7 +23,7 @@ const main = async () => {
   await downloadJavadoc();
   const eventMap = updateEvents(lastEventMap);
   excludeEvents(eventMap);
-  await updateDeprecate(eventMap);
+  updateDeprecate(eventMap);
   writeEventMap(eventMap);
   writeVersions(versions);
   writeFile("report.md", getChangeLog(lastSourceMap, Sources, eventMap));
