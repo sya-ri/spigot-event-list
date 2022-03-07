@@ -6,8 +6,8 @@ import {
   Link,
   Stack,
   Text,
+  Tooltip,
 } from "@chakra-ui/react";
-import { prev } from "cheerio/lib/api/traversing";
 import React, { FC, memo } from "react";
 import { VscWarning } from "react-icons/vsc";
 import ReactMarkdown from "react-markdown";
@@ -19,6 +19,7 @@ type Props = {
   link: string;
   source: SourceType;
   description: string;
+  abstract?: boolean;
   deprecate?: boolean;
   deprecateDescription?: string;
 };
@@ -28,6 +29,7 @@ const EventListContent: FC<Props> = ({
   link,
   source,
   description,
+  abstract,
   deprecate,
   deprecateDescription,
 }) => {
@@ -35,8 +37,16 @@ const EventListContent: FC<Props> = ({
     <Stack key={name + source} py={2}>
       <Flex flexWrap="wrap" gridGap={1} justify="space-between">
         <Link isExternal href={link}>
-          <Text fontSize="md" fontWeight={500} overflowWrap="anywhere">
-            {name}
+          <Text
+            as={abstract ? "s" : "p"}
+            fontSize="md"
+            fontWeight={500}
+            overflowWrap="anywhere"
+            textDecorationThickness="1px"
+          >
+            <Tooltip label={abstract ? "抽象クラス" : undefined}>
+              {name}
+            </Tooltip>
           </Text>
         </Link>
         <Box ml="auto" mr={0}>

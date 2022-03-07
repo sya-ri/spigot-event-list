@@ -36,11 +36,13 @@ const EventList: FC<Props> = ({ events }) => {
             link,
             source,
             description,
+            abstract,
             deprecate,
             deprecateDescription,
           }) => (
             <EventListContent
               key={name + source}
+              abstract={abstract}
               deprecate={deprecate}
               deprecateDescription={deprecateDescription}
               description={description}
