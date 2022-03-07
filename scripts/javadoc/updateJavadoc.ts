@@ -27,7 +27,19 @@ export const updateJavadoc = (sourceTypeMap: SourceTypeMap) => {
     const body = readFile(javadocPath([sourceName, eventType.href].join("/")));
     try {
       const $ = cheerio.load(body);
-      eventType.javadoc = $("#class-description .block").text();
+      switch (eventType.source) {
+        case "bukkit":
+        case "spigot":
+        case "paper":
+        case "purpur":
+        case "velocity":
+          eventType.javadoc = $("#class-description .block").text();
+          break;
+        case "bungee":
+        case "waterfall":
+          eventType.javadoc = $(".description .block").text();
+          break;
+      }
       if ($("#class-description .modifiers").text().includes("abstract")) {
         eventType.abstract = true;
       }

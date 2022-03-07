@@ -59,7 +59,7 @@
   {
     "description": "非同期で処理されるイベントを表す。",
     "href": "net/md_5/bungee/api/event/AsyncEvent.html",
-    "javadoc": "",
+    "javadoc": "Represents an event which depends on the result of asynchronous operations.",
     "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/AsyncEvent.html",
     "name": "AsyncEvent",
     "source": "bungee"
@@ -431,7 +431,7 @@
   {
     "description": "プレイヤーがメッセージを送信した時に呼び出される。",
     "href": "net/md_5/bungee/api/event/ChatEvent.html",
-    "javadoc": "",
+    "javadoc": "Event called when a player sends a message to a server.",
     "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/ChatEvent.html",
     "name": "ChatEvent",
     "source": "bungee"
@@ -482,7 +482,7 @@
   {
     "description": "クライアントが接続する時に呼び出される。全ての接続の初期段階で呼び出されるので、高速で処理する必要がある。",
     "href": "net/md_5/bungee/api/event/ClientConnectEvent.html",
-    "javadoc": "",
+    "javadoc": "Event called to represent an initial client connection.\n \n Note: This event is called at an early stage of every connection, handling\n should be fast.",
     "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/ClientConnectEvent.html",
     "name": "ClientConnectEvent",
     "source": "bungee"
@@ -506,7 +506,7 @@
   {
     "description": "新しい接続があった時に呼び出される。接続を効率的に閉じることを可能にする。",
     "href": "io/github/waterfallmc/waterfall/event/ConnectionInitEvent.html",
-    "javadoc": "",
+    "javadoc": "Represents a brand new connection made to the proxy, allowing for plugins to\n efficiently close a connection, useful for connection throttlers, etc",
     "link": "https://papermc.io/javadocs/waterfall/1.18/io/github/waterfallmc/waterfall/event/ConnectionInitEvent.html",
     "name": "ConnectionInitEvent",
     "source": "waterfall"
@@ -1096,7 +1096,7 @@
   {
     "description": "イベントを表す。",
     "href": "net/md_5/bungee/api/plugin/Event.html",
-    "javadoc": "",
+    "javadoc": "Dummy class which all callable events must extend.",
     "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/plugin/Event.html",
     "name": "Event",
     "source": "bungee"
@@ -1444,7 +1444,7 @@
   {
     "description": "プレイヤーがログインする時に呼び出される。",
     "href": "net/md_5/bungee/api/event/LoginEvent.html",
-    "javadoc": "",
+    "javadoc": "Event called to represent a player logging in.",
     "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/LoginEvent.html",
     "name": "LoginEvent",
     "source": "bungee"
@@ -1524,7 +1524,7 @@
   {
     "description": "CommandSender の権限を確認する時に呼び出される。",
     "href": "net/md_5/bungee/api/event/PermissionCheckEvent.html",
-    "javadoc": "",
+    "javadoc": "Called when the permission of a CommandSender is checked.",
     "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/PermissionCheckEvent.html",
     "name": "PermissionCheckEvent",
     "source": "bungee"
@@ -1868,7 +1868,7 @@
   {
     "description": "プレイヤーがプロキシを離れた時に呼び出される。",
     "href": "net/md_5/bungee/api/event/PlayerDisconnectEvent.html",
-    "javadoc": "",
+    "javadoc": "Called when a player has left the proxy, it is not safe to call any methods\n that perform an action on the passed player instance.",
     "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/PlayerDisconnectEvent.html",
     "name": "PlayerDisconnectEvent",
     "source": "bungee"
@@ -1949,7 +1949,7 @@
   {
     "description": "ハンドシェイクを行う時に呼び出される。プレイヤーの存在やユーザー名を知る事が出来る最初のイベントである。",
     "href": "net/md_5/bungee/api/event/PlayerHandshakeEvent.html",
-    "javadoc": "",
+    "javadoc": "Event called to represent a player first making their presence and username\n known.",
     "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/PlayerHandshakeEvent.html",
     "name": "PlayerHandshakeEvent",
     "source": "bungee"
@@ -2546,7 +2546,7 @@
   {
     "description": "クライアントやサーバーから送信されたプラグインメッセージを受信する時に呼び出される。",
     "href": "net/md_5/bungee/api/event/PluginMessageEvent.html",
-    "javadoc": "",
+    "javadoc": "Event called when a plugin message is sent to the client or server.",
     "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/PluginMessageEvent.html",
     "name": "PluginMessageEvent",
     "source": "bungee"
@@ -2570,7 +2570,7 @@
   {
     "description": "サーバーに接続する準備が出来た時に呼び出される。ProxiedPlayer にアクセスできる最初のイベントである。",
     "href": "net/md_5/bungee/api/event/PostLoginEvent.html",
-    "javadoc": "",
+    "javadoc": "Event called as soon as a connection has a ProxiedPlayer and is ready\n to be connected to a server.",
     "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/PostLoginEvent.html",
     "name": "PostLoginEvent",
     "source": "bungee"
@@ -2610,7 +2610,7 @@
   {
     "description": "ログインを試みる時に呼び出される。Mojang のサーバーでの認証後に取得されるプレイヤーに関連する情報は含まれず、UUID 等は使用することが出来ない。",
     "href": "net/md_5/bungee/api/event/PreLoginEvent.html",
-    "javadoc": "",
+    "javadoc": "Event called to represent a player first making their presence and username\n known.\n\n This will NOT contain many attributes relating to the player which are filled\n in after authentication with Mojang's servers. Examples of attributes which\n are not available include their UUID.",
     "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/PreLoginEvent.html",
     "name": "PreLoginEvent",
     "source": "bungee"
@@ -2724,7 +2724,7 @@
   {
     "description": "タブ補完に使われるコマンドを定義される時に呼び出される。",
     "href": "io/github/waterfallmc/waterfall/event/ProxyDefineCommandsEvent.html",
-    "javadoc": "",
+    "javadoc": "Called when the proxy intercepts the command packet\n allowing for plugins to prevent commands being added\n to the clients which might not be wanted.\n\n\n Plugin developers, please implement Command.hasPermission(CommandSender)\n properly in favor of this event.",
     "link": "https://papermc.io/javadocs/waterfall/1.18/io/github/waterfallmc/waterfall/event/ProxyDefineCommandsEvent.html",
     "name": "ProxyDefineCommandsEvent",
     "source": "waterfall"
@@ -2732,7 +2732,7 @@
   {
     "description": "回復可能な状況で例外が発生した時に呼び出される。",
     "href": "io/github/waterfallmc/waterfall/event/ProxyExceptionEvent.html",
-    "javadoc": "",
+    "javadoc": "Called whenever an exception is thrown in a recoverable section of the server.",
     "link": "https://papermc.io/javadocs/waterfall/1.18/io/github/waterfallmc/waterfall/event/ProxyExceptionEvent.html",
     "name": "ProxyExceptionEvent",
     "source": "waterfall"
@@ -2748,7 +2748,7 @@
   {
     "description": "サーバーリストからピングされた時に呼び出される。",
     "href": "net/md_5/bungee/api/event/ProxyPingEvent.html",
-    "javadoc": "",
+    "javadoc": "Called when the proxy is pinged with packet 0xFE from the server list.",
     "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/ProxyPingEvent.html",
     "name": "ProxyPingEvent",
     "source": "bungee"
@@ -2772,7 +2772,7 @@
   {
     "description": "クエリ要求を受信した時に呼び出される。",
     "href": "io/github/waterfallmc/waterfall/event/ProxyQueryEvent.html",
-    "javadoc": "",
+    "javadoc": "This event will be posted whenever a Query request is received.",
     "link": "https://papermc.io/javadocs/waterfall/1.18/io/github/waterfallmc/waterfall/event/ProxyQueryEvent.html",
     "name": "ProxyQueryEvent",
     "source": "waterfall"
@@ -2780,7 +2780,7 @@
   {
     "description": "プロキシがリロードする時に呼び出される。",
     "href": "net/md_5/bungee/api/event/ProxyReloadEvent.html",
-    "javadoc": "",
+    "javadoc": "Called when somebody reloads BungeeCord",
     "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/ProxyReloadEvent.html",
     "name": "ProxyReloadEvent",
     "source": "bungee"
@@ -2893,7 +2893,7 @@
   {
     "description": "サーバーに接続した時に呼び出される。プレイヤーがログインする前にサーバーに情報を送信する場合等に使う。",
     "href": "net/md_5/bungee/api/event/ServerConnectedEvent.html",
-    "javadoc": "",
+    "javadoc": "Not to be confused with ServerConnectEvent, this event is called once\n a connection to a server is fully operational, and is about to hand over\n control of the session to the player. It is useful if you wish to send\n information to the server before the player logs in.",
     "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/ServerConnectedEvent.html",
     "name": "ServerConnectedEvent",
     "source": "bungee"
@@ -2909,7 +2909,7 @@
   {
     "description": "サーバーに接続する時に呼び出される。プレイヤーがサーバーに接続するのをキャンセルする場合等に使う。",
     "href": "net/md_5/bungee/api/event/ServerConnectEvent.html",
-    "javadoc": "",
+    "javadoc": "Called when deciding to connect to a server. At the time when this event is\n called, no connection has actually been made. Cancelling the event will\n ensure that the connection does not proceed and can be useful to prevent\n certain players from accessing certain servers.",
     "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/ServerConnectEvent.html",
     "name": "ServerConnectEvent",
     "source": "bungee"
@@ -2942,7 +2942,7 @@
   {
     "description": "サーバーからキックされた時に呼び出される。",
     "href": "net/md_5/bungee/api/event/ServerKickEvent.html",
-    "javadoc": "",
+    "javadoc": "Represents a player getting kicked from a server.",
     "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/ServerKickEvent.html",
     "name": "ServerKickEvent",
     "source": "bungee"
@@ -3006,7 +3006,7 @@
   {
     "description": "プレイヤーが接続先のサーバーを変更した時に呼び出される。",
     "href": "net/md_5/bungee/api/event/ServerSwitchEvent.html",
-    "javadoc": "",
+    "javadoc": "Called when a player has changed servers.",
     "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/ServerSwitchEvent.html",
     "name": "ServerSwitchEvent",
     "source": "bungee"
@@ -3055,7 +3055,7 @@
   {
     "description": "クライアント設定を変更した時に呼び出される。",
     "href": "net/md_5/bungee/api/event/SettingsChangedEvent.html",
-    "javadoc": "",
+    "javadoc": "Called after a ProxiedPlayer changed one or more of the following\n (client-side) settings:\n\n \n View distance\n Locale\n Displayed skin parts\n Chat visibility\n Chat colors\n Main hand side (left or right)\n ",
     "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/SettingsChangedEvent.html",
     "name": "SettingsChangedEvent",
     "source": "bungee"
@@ -3217,7 +3217,7 @@
   {
     "description": "タブ補完を行う時に呼び出される。",
     "href": "net/md_5/bungee/api/event/TabCompleteEvent.html",
-    "javadoc": "",
+    "javadoc": "Event called when a player uses tab completion.",
     "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/TabCompleteEvent.html",
     "name": "TabCompleteEvent",
     "source": "bungee"
@@ -3233,7 +3233,7 @@
   {
     "description": "サーバーがタブ補完を行う時に呼び出される。プロキシによって処理されたタブ補完では呼び出されない。",
     "href": "net/md_5/bungee/api/event/TabCompleteResponseEvent.html",
-    "javadoc": "",
+    "javadoc": "Event called when a backend server sends a response to a player asking to\n tab-complete a chat message or command. Note that this is not called when\n BungeeCord or a plugin responds to a tab-complete request. Use\n TabCompleteEvent for that.",
     "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/TabCompleteResponseEvent.html",
     "name": "TabCompleteResponseEvent",
     "source": "bungee"
@@ -3241,7 +3241,7 @@
   {
     "description": "2つのノード間の通信で発生するイベントを表す。",
     "href": "net/md_5/bungee/api/event/TargetedEvent.html",
-    "javadoc": "",
+    "javadoc": "An event which occurs in the communication between two nodes.",
     "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/TargetedEvent.html",
     "name": "TargetedEvent",
     "source": "bungee"
