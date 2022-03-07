@@ -48,6 +48,7 @@ const updateEventsInternal = (
             events[eventName + sourceType] = {
               deprecateDescription: deprecateDescription || "",
               description: description,
+              href: href,
               link: source.javadocUrl + href,
               name: eventName || "",
               source: sourceType,

@@ -8,6 +8,7 @@ import { updateVersions } from "./events/versions";
 import { writeFile } from "./file/util";
 import getChangeLog from "./getChangeLog";
 import getLastSourceMap from "./getLastSourceMap";
+import { updateJavadoc } from "./javadoc/updateJavadoc";
 import { readEvents, writeEventMap } from "./json/events";
 import { writeVersions } from "./json/versions";
 
@@ -15,6 +16,7 @@ const main = async () => {
   const lastEvents = readEvents();
   const lastEventMap = lastEvents.reduce((map, value) => {
     map[value.name + value.source] = value;
+    delete value.javadoc;
     delete value.deprecate;
     return map;
   }, {} as SourceTypeMap);
@@ -23,6 +25,7 @@ const main = async () => {
   await downloadJavadoc();
   const eventMap = updateEvents(lastEventMap);
   excludeEvents(eventMap);
+  updateJavadoc(eventMap);
   updateDeprecate(eventMap);
   writeEventMap(eventMap);
   writeVersions(versions);

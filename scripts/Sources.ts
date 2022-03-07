@@ -1,4 +1,5 @@
 import axios from "axios";
+import SourceType from "../lib/SourceType";
 import Source from "./Source";
 import SourceMap from "./SourceMap";
 

@@ -1,6 +1,6 @@
 .idea/
 dist/
-javadoc/
+/javadoc/
 .next/
 node_modules/
 spigot-event-list.iml

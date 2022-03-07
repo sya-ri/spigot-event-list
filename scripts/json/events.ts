@@ -39,6 +39,8 @@ export const writeEventMap = (sourceTypeMap: SourceTypeMap) => {
           ? value.deprecateDescription
           : undefined,
         description: value.description,
+        href: value.href,
+        javadoc: value.javadoc,
         link: value.link,
         name: value.name,
         source: value.source,
