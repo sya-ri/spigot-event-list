@@ -38,7 +38,7 @@ const Sources: SourceMap = {
     artifact: {
       groupId: "io.papermc.paper",
       artifactId: "paper-api",
-      version: "1.18.1-R0.1",
+      version: "1.18.2-R0.1",
       classifier: "javadoc",
       isSnapShot: true,
     },
@@ -50,7 +50,7 @@ const Sources: SourceMap = {
     javadocUrl: "https://papermc.io/javadocs/paper/1.18/",
     updateVersion: (source: Source): Promise<void> =>
       axios
-        .get("https://papermc.io/api/v2/projects/paper/versions/1.18.1/")
+        .get("https://papermc.io/api/v2/projects/paper/versions/1.18.2/")
         .then((response) => {
           const json = response.data;
           source.version = "#" + json.builds.pop();
@@ -61,7 +61,7 @@ const Sources: SourceMap = {
     artifact: {
       groupId: "org.purpurmc.purpur",
       artifactId: "purpur-api",
-      version: "1.18.1-R0.1",
+      version: "1.18.2-R0.1",
       classifier: "javadoc",
       isSnapShot: true,
     },
@@ -69,11 +69,11 @@ const Sources: SourceMap = {
     allClasses: "allclasses-index.html",
     deprecateList: "deprecated-list.html",
     downloadSources: ["purpur"],
-    downloadUrl: "https://purpurmc.org/downloads?v=1.18.1",
+    downloadUrl: "https://purpurmc.org/downloads?v=1.18.2",
     javadocUrl: "https://purpurmc.org/javadoc/",
     updateVersion: (source: Source): Promise<void> =>
       axios
-        .get("https://api.purpurmc.org/v2/purpur/1.18.1")
+        .get("https://api.purpurmc.org/v2/purpur/1.18.2")
         .then((response) => {
           const json = response.data;
           source.version = "#" + json.builds.latest;
@@ -84,7 +84,7 @@ const Sources: SourceMap = {
     artifact: {
       groupId: "org.spigotmc",
       artifactId: "spigot-api",
-      version: "1.18.1-R0.1",
+      version: "1.18.2-R0.1",
       classifier: "javadoc",
       isSnapShot: true,
     },
