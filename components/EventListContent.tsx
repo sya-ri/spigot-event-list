@@ -19,6 +19,7 @@ type Props = {
   link: string;
   source: SourceType;
   description: string;
+  javadoc?: string;
   abstract?: boolean;
   deprecate?: boolean;
   deprecateDescription?: string;
@@ -29,6 +30,7 @@ const EventListContent: FC<Props> = ({
   link,
   source,
   description,
+  javadoc,
   abstract,
   deprecate,
   deprecateDescription,
@@ -53,9 +55,11 @@ const EventListContent: FC<Props> = ({
           <EventSourceTypeTags source={source} />
         </Box>
       </Flex>
-      <Container>
-        <ReactMarkdown>{description}</ReactMarkdown>
-      </Container>
+      <Tooltip label={javadoc}>
+        <Container>
+          <ReactMarkdown>{description}</ReactMarkdown>
+        </Container>
+      </Tooltip>
       {deprecate && deprecateDescription ? (
         <Stack direction="row">
           <Icon as={VscWarning} my="auto" />

@@ -36,6 +36,7 @@ const EventList: FC<Props> = ({ events }) => {
             link,
             source,
             description,
+            javadoc,
             abstract,
             deprecate,
             deprecateDescription,
@@ -46,6 +47,7 @@ const EventList: FC<Props> = ({ events }) => {
               deprecate={deprecate}
               deprecateDescription={deprecateDescription}
               description={description}
+              javadoc={javadoc}
               link={link}
               name={name}
               source={source}
