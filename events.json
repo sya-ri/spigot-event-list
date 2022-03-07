@@ -2388,9 +2388,17 @@
     "source": "bukkit"
   },
   {
+    "deprecate": true,
+    "deprecateDescription": "StructuresLocateEvent を使う。",
     "description": "建造物が見つかる時に呼び出される。以下に例を示す。\n- /locate コマンドを実行した時\n- エンダーアイを使用した時\n- 宝の地図が開かれた時",
     "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/world/StructureLocateEvent.html",
     "name": "StructureLocateEvent",
+    "source": "paper"
+  },
+  {
+    "description": "建造物が見つかる時に呼び出される。以下に例を示す。\n- /locate コマンドを実行した時\n- エンダーアイを使用した時\n- 宝の地図が開かれた時\n- イルカが構造物の場所を示した時\n- 村人と地図の交換をした時",
+    "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/world/StructuresLocateEvent.html",
+    "name": "StructuresLocateEvent",
     "source": "paper"
   },
   {
