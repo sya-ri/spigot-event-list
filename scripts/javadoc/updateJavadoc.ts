@@ -40,6 +40,9 @@ export const updateJavadoc = (sourceTypeMap: SourceTypeMap) => {
           eventType.javadoc = $(".description .block").text();
           break;
       }
+      if (!eventType.javadoc) {
+        delete eventType.javadoc;
+      }
       if ($("#class-description .modifiers").text().includes("abstract")) {
         eventType.abstract = true;
       }

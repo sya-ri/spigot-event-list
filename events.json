@@ -359,7 +359,6 @@
   {
     "description": "ディスペンサーからアイテムが射出される時に呼び出される。BlockDispenseEvent の前に呼び出されるので、ディスペンサーのアイテム消費もキャンセルできる。",
     "href": "io/papermc/paper/event/block/BlockPreDispenseEvent.html",
-    "javadoc": "",
     "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/block/BlockPreDispenseEvent.html",
     "name": "BlockPreDispenseEvent",
     "source": "paper"
@@ -423,7 +422,6 @@
   {
     "description": "大釜の水が増えたり減ったりした時に呼び出される。",
     "href": "org/bukkit/event/block/CauldronLevelChangeEvent.html",
-    "javadoc": "",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/CauldronLevelChangeEvent.html",
     "name": "CauldronLevelChangeEvent",
     "source": "bukkit"
@@ -618,7 +616,6 @@
   {
     "description": "エンダーマンが逃げた時に呼び出される。",
     "href": "com/destroystokyo/paper/event/entity/EndermanEscapeEvent.html",
-    "javadoc": "",
     "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/entity/EndermanEscapeEvent.html",
     "name": "EndermanEscapeEvent",
     "source": "paper"
@@ -1192,7 +1189,6 @@
   {
     "description": "かまどでの精錬が始まった時に呼び出される。",
     "href": "org/bukkit/event/inventory/FurnaceStartSmeltEvent.html",
-    "javadoc": "",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/inventory/FurnaceStartSmeltEvent.html",
     "name": "FurnaceStartSmeltEvent",
     "source": "bukkit"
@@ -1275,7 +1271,6 @@
     "deprecateDescription": "使われていない。",
     "description": "不正なパケットが送られた時に呼び出される。",
     "href": "com/destroystokyo/paper/event/player/IllegalPacketEvent.html",
-    "javadoc": "",
     "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/player/IllegalPacketEvent.html",
     "name": "IllegalPacketEvent",
     "source": "paper"
@@ -1364,7 +1359,6 @@
   {
     "description": "同じアイテムが合わさる時に呼び出される。",
     "href": "org/bukkit/event/entity/ItemMergeEvent.html",
-    "javadoc": "",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/ItemMergeEvent.html",
     "name": "ItemMergeEvent",
     "source": "bukkit"
@@ -1468,7 +1462,6 @@
   {
     "description": "LootTable によってアイテムが補充される時に呼び出される。",
     "href": "com/destroystokyo/paper/loottable/LootableInventoryReplenishEvent.html",
-    "javadoc": "",
     "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/loottable/LootableInventoryReplenishEvent.html",
     "name": "LootableInventoryReplenishEvent",
     "source": "paper"
@@ -1500,7 +1493,6 @@
   {
     "description": "モンスターエッグを使い、エンティティがスポーンする時に呼び出される。",
     "href": "org/purpurmc/purpur/event/entity/MonsterEggSpawnEvent.html",
-    "javadoc": "",
     "link": "https://purpurmc.org/javadoc/org/purpurmc/purpur/event/entity/MonsterEggSpawnEvent.html",
     "name": "MonsterEggSpawnEvent",
     "source": "purpur"
@@ -1588,7 +1580,6 @@
   {
     "description": "プレイヤーのAFKモードに移行する時に呼び出される",
     "href": "org/purpurmc/purpur/event/PlayerAFKEvent.html",
-    "javadoc": "",
     "link": "https://purpurmc.org/javadoc/org/purpurmc/purpur/event/PlayerAFKEvent.html",
     "name": "PlayerAFKEvent",
     "source": "purpur"
@@ -1620,7 +1611,6 @@
   {
     "description": "プレイヤーが腕を振った時に呼び出される。",
     "href": "io/papermc/paper/event/player/PlayerArmSwingEvent.html",
-    "javadoc": "",
     "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/player/PlayerArmSwingEvent.html",
     "name": "PlayerArmSwingEvent",
     "source": "paper"
@@ -1652,7 +1642,6 @@
   {
     "description": "ベッドに入れなかった時に呼び出される。",
     "href": "io/papermc/paper/event/player/PlayerBedFailEnterEvent.html",
-    "javadoc": "",
     "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/player/PlayerBedFailEnterEvent.html",
     "name": "PlayerBedFailEnterEvent",
     "source": "paper"
@@ -1985,7 +1974,6 @@
     "deprecateDescription": "Spigot に追加された PlayerSpawnLocationEvent を使う。",
     "description": "プレイヤーがサーバーに参加した後、スポーンしようとしている時に呼び出される。",
     "href": "com/destroystokyo/paper/event/player/PlayerInitialSpawnEvent.html",
-    "javadoc": "",
     "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/player/PlayerInitialSpawnEvent.html",
     "name": "PlayerInitialSpawnEvent",
     "source": "paper"
@@ -2113,7 +2101,6 @@
   {
     "description": "プレイヤーが書見台に置かれた本のページを変更する時に呼び出される。",
     "href": "io/papermc/paper/event/player/PlayerLecternPageChangeEvent.html",
-    "javadoc": "",
     "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/player/PlayerLecternPageChangeEvent.html",
     "name": "PlayerLecternPageChangeEvent",
     "source": "paper"
@@ -2327,7 +2314,6 @@
   {
     "description": "モンスターエッグを使い、スポナーの内容を変える時に呼び出される。",
     "href": "org/purpurmc/purpur/event/PlayerSetSpawnerTypeWithEggEvent.html",
-    "javadoc": "",
     "link": "https://purpurmc.org/javadoc/org/purpurmc/purpur/event/PlayerSetSpawnerTypeWithEggEvent.html",
     "name": "PlayerSetSpawnerTypeWithEggEvent",
     "source": "purpur"
@@ -2409,7 +2395,6 @@
   {
     "description": "プレイヤーが石切台のレシピを選択する時に呼び出される。",
     "href": "io/papermc/paper/event/player/PlayerStonecutterRecipeSelectEvent.html",
-    "javadoc": "",
     "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/player/PlayerStonecutterRecipeSelectEvent.html",
     "name": "PlayerStonecutterRecipeSelectEvent",
     "source": "paper"
@@ -2505,7 +2490,6 @@
   {
     "description": "存在しないエンティティに対して PacketPlayInUseEntity が送られてきた時に呼び出される。",
     "href": "com/destroystokyo/paper/event/player/PlayerUseUnknownEntityEvent.html",
-    "javadoc": "",
     "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/player/PlayerUseUnknownEntityEvent.html",
     "name": "PlayerUseUnknownEntityEvent",
     "source": "paper"
@@ -2652,7 +2636,6 @@
   {
     "description": "クラフトの準備が出来た時に呼び出される。材料を並べ、完成アイテムが表示される毎に発生する。",
     "href": "org/bukkit/event/inventory/PrepareItemCraftEvent.html",
-    "javadoc": "",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/inventory/PrepareItemCraftEvent.html",
     "name": "PrepareItemCraftEvent",
     "source": "bukkit"
@@ -2877,7 +2860,6 @@
   {
     "description": "乗ることが可能なエンティティに乗っている時にジャンプを試みた時に呼び出される。",
     "href": "org/purpurmc/purpur/event/entity/RidableSpacebarEvent.html",
-    "javadoc": "",
     "link": "https://purpurmc.org/javadoc/org/purpurmc/purpur/event/entity/RidableSpacebarEvent.html",
     "name": "RidableSpacebarEvent",
     "source": "purpur"
@@ -2917,7 +2899,6 @@
   {
     "description": "サーバーへの接続を切断した時に呼び出される。",
     "href": "net/md_5/bungee/api/event/ServerDisconnectEvent.html",
-    "javadoc": "",
     "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/ServerDisconnectEvent.html",
     "name": "ServerDisconnectEvent",
     "source": "bungee"
@@ -3022,7 +3003,6 @@
   {
     "description": "メインループのチェックが開始した時に呼び出される。",
     "href": "com/destroystokyo/paper/event/server/ServerTickStartEvent.html",
-    "javadoc": "",
     "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/server/ServerTickStartEvent.html",
     "name": "ServerTickStartEvent",
     "source": "paper"
@@ -3419,7 +3399,6 @@
   {
     "description": "村人の職業が変わる時に呼び出される。",
     "href": "org/bukkit/event/entity/VillagerCareerChangeEvent.html",
-    "javadoc": "",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/VillagerCareerChangeEvent.html",
     "name": "VillagerCareerChangeEvent",
     "source": "bukkit"
@@ -3468,7 +3447,6 @@
   {
     "description": "ウィッチのポーションの準備が出来る時に呼び出される。",
     "href": "com/destroystokyo/paper/event/entity/WitchReadyPotionEvent.html",
-    "javadoc": "",
     "link": "https://papermc.io/javadocs/paper/1.18/com/destroystokyo/paper/event/entity/WitchReadyPotionEvent.html",
     "name": "WitchReadyPotionEvent",
     "source": "paper"
@@ -3509,7 +3487,6 @@
     "description": "ワールドボーダーに関するイベントであることを表す。",
     "abstract": true,
     "href": "io/papermc/paper/event/world/border/WorldBorderEvent.html",
-    "javadoc": "",
     "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/world/border/WorldBorderEvent.html",
     "name": "WorldBorderEvent",
     "source": "paper"
