@@ -17,6 +17,7 @@ const main = async () => {
   const lastEventMap = lastEvents.reduce((map, value) => {
     map[value.name + value.source] = value;
     delete value.javadoc;
+    delete value.abstract;
     delete value.deprecate;
     return map;
   }, {} as SourceTypeMap);

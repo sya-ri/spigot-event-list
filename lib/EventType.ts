@@ -9,6 +9,7 @@ export default interface EventType {
   source: SourceType;
   href: string;
   javadoc?: string;
+  abstract?: boolean;
   description: string;
   deprecate?: boolean;
   deprecateDescription?: string;

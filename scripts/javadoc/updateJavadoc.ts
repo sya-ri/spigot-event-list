@@ -28,6 +28,9 @@ export const updateJavadoc = (sourceTypeMap: SourceTypeMap) => {
     try {
       const $ = cheerio.load(body);
       eventType.javadoc = $("#class-description .block").text();
+      if ($("#class-description .modifiers").text().includes("abstract")) {
+        eventType.abstract = true;
+      }
     } catch (e) {
       console.error(e);
     }

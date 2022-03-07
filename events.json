@@ -1,6 +1,7 @@
 [
   {
     "description": "チャットに関するイベントであることを表す。",
+    "abstract": true,
     "href": "io/papermc/paper/event/player/AbstractChatEvent.html",
     "javadoc": "An abstract implementation of a chat event, handling shared logic.",
     "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/player/AbstractChatEvent.html",
@@ -227,6 +228,7 @@
   },
   {
     "description": "ブロックに関するイベントであることを表す。",
+    "abstract": true,
     "href": "org/bukkit/event/block/BlockEvent.html",
     "javadoc": "Represents a block related event.",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockEvent.html",
@@ -323,6 +325,7 @@
   },
   {
     "description": "ピストンが動作する時に呼び出される。",
+    "abstract": true,
     "href": "org/bukkit/event/block/BlockPistonEvent.html",
     "javadoc": "Called when a piston block is triggered",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockPistonEvent.html",
@@ -445,6 +448,7 @@
   },
   {
     "description": "チャンクに関するイベントであることを表す",
+    "abstract": true,
     "href": "org/bukkit/event/world/ChunkEvent.html",
     "javadoc": "Represents a Chunk related event",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/world/ChunkEvent.html",
@@ -791,6 +795,7 @@
   },
   {
     "description": "エンティティに関するイベントであることを表す。",
+    "abstract": true,
     "href": "org/bukkit/event/entity/EntityEvent.html",
     "javadoc": "Represents an Entity-related event",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityEvent.html",
@@ -1081,6 +1086,7 @@
   },
   {
     "description": "イベントを表す。",
+    "abstract": true,
     "href": "org/bukkit/event/Event.html",
     "javadoc": "Represents an event.\n\n All events require a static method named getHandlerList() which returns the same HandlerList as getHandlers().",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/Event.html",
@@ -1241,6 +1247,7 @@
   },
   {
     "description": "壁掛けエンティティに関するイベントであることを表す。壁掛けエンティティの例を以下に示す。\n- 絵画\n- 額縁\n- 柵に繋がれたリード",
+    "abstract": true,
     "href": "org/bukkit/event/hanging/HangingEvent.html",
     "javadoc": "Represents a hanging entity-related event.",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/hanging/HangingEvent.html",
@@ -1315,6 +1322,7 @@
   },
   {
     "description": "プレイヤーとインベントリが相互に作用するイベント表す。",
+    "abstract": true,
     "href": "org/bukkit/event/inventory/InventoryInteractEvent.html",
     "javadoc": "An abstract base class for events that describe an interaction between a\n HumanEntity and the contents of an Inventory.",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/inventory/InventoryInteractEvent.html",
@@ -1683,6 +1691,7 @@
   },
   {
     "description": "プレイヤーがバケツを操作する時に呼び出される。",
+    "abstract": true,
     "href": "org/bukkit/event/player/PlayerBucketEvent.html",
     "javadoc": "Called when a player interacts with a Bucket",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerBucketEvent.html",
@@ -1733,6 +1742,7 @@
   },
   {
     "description": "プレイヤーがプラグインチャンネルを登録・登録解除した時に呼び出される。",
+    "abstract": true,
     "href": "org/bukkit/event/player/PlayerChannelEvent.html",
     "javadoc": "This event is called after a player registers or unregisters a new plugin\n channel.",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerChannelEvent.html",
@@ -1897,6 +1907,7 @@
   },
   {
     "description": "プレイヤーに関するイベントであることを表す。",
+    "abstract": true,
     "href": "org/bukkit/event/player/PlayerEvent.html",
     "javadoc": "Represents a player related event",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerEvent.html",
@@ -2525,6 +2536,7 @@
   },
   {
     "description": "プラグインに関するイベントであることを表す。",
+    "abstract": true,
     "href": "org/bukkit/event/server/PluginEvent.html",
     "javadoc": "Used for plugin enable and disable events",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/server/PluginEvent.html",
@@ -2799,6 +2811,7 @@
   },
   {
     "description": "レイドに関するイベントであることを表す。",
+    "abstract": true,
     "href": "org/bukkit/event/raid/RaidEvent.html",
     "javadoc": "Represents events related to raids.",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/raid/RaidEvent.html",
@@ -2911,6 +2924,7 @@
   },
   {
     "description": "サーバーに関するイベントであることを表す。",
+    "abstract": true,
     "href": "org/bukkit/event/server/ServerEvent.html",
     "javadoc": "Miscellaneous server events",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/server/ServerEvent.html",
@@ -3015,6 +3029,7 @@
   },
   {
     "description": "サービスに関するイベントであることを表す。",
+    "abstract": true,
     "href": "org/bukkit/event/server/ServiceEvent.html",
     "javadoc": "An event relating to a registered service. This is called in a ServicesManager",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/server/ServiceEvent.html",
@@ -3313,6 +3328,7 @@
   },
   {
     "description": "乗り物が衝突した時に呼び出される。",
+    "abstract": true,
     "href": "org/bukkit/event/vehicle/VehicleCollisionEvent.html",
     "javadoc": "Raised when a vehicle collides.",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/vehicle/VehicleCollisionEvent.html",
@@ -3361,6 +3377,7 @@
   },
   {
     "description": "乗り物に関するイベントであることを表す。",
+    "abstract": true,
     "href": "org/bukkit/event/vehicle/VehicleEvent.html",
     "javadoc": "Represents a vehicle-related event.",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/vehicle/VehicleEvent.html",
@@ -3425,6 +3442,7 @@
   },
   {
     "description": "天気に関するイベントであることを表す。",
+    "abstract": true,
     "href": "org/bukkit/event/weather/WeatherEvent.html",
     "javadoc": "Represents a Weather-related event",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/weather/WeatherEvent.html",
@@ -3489,6 +3507,7 @@
   },
   {
     "description": "ワールドボーダーに関するイベントであることを表す。",
+    "abstract": true,
     "href": "io/papermc/paper/event/world/border/WorldBorderEvent.html",
     "javadoc": "",
     "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/world/border/WorldBorderEvent.html",
@@ -3497,6 +3516,7 @@
   },
   {
     "description": "ワールドに関するイベントであることを表す。",
+    "abstract": true,
     "href": "org/bukkit/event/world/WorldEvent.html",
     "javadoc": "Represents events within a world",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/world/WorldEvent.html",
