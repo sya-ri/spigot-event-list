@@ -34,17 +34,20 @@ export const updateJavadoc = (sourceTypeMap: SourceTypeMap) => {
         case "purpur":
         case "velocity":
           eventType.javadoc = $("#class-description .block").text();
+          if ($("#class-description .modifiers").text().includes("abstract")) {
+            eventType.abstract = true;
+          }
           break;
         case "bungee":
         case "waterfall":
           eventType.javadoc = $(".description .block").text();
+          if ($(".description .modifiers").text().includes("abstract")) {
+            eventType.abstract = true;
+          }
           break;
       }
       if (!eventType.javadoc) {
         delete eventType.javadoc;
-      }
-      if ($("#class-description .modifiers").text().includes("abstract")) {
-        eventType.abstract = true;
       }
     } catch (e) {
       console.error(e);
