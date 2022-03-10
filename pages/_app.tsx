@@ -7,8 +7,8 @@ function App({ Component, pageProps }: AppProps) {
     <>
       <title>Spigot Event List</title>
       <meta
-        content="[1.18.x] Bukkit, Spigot, Paper, Purpur, BungeeCord, Waterfall, Velocity 対応のイベント一覧"
-        property="description"
+        content="[Minecraft 1.18.2] Bukkit, Spigot, Paper, Purpur, BungeeCord, Waterfall, Velocity 対応のイベント一覧"
+        name="description"
       />
       <GoogleAnalytics />
       <Chakra cookies={pageProps.cookies}>
