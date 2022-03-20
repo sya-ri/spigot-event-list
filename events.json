@@ -3219,6 +3219,14 @@
     "source": "bungee"
   },
   {
+    "description": "",
+    "href": "io/papermc/paper/event/entity/TameableDeathMessageEvent.html",
+    "javadoc": "Called when a Tameable dies and sends a death message.",
+    "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/entity/TameableDeathMessageEvent.html",
+    "name": "TameableDeathMessageEvent",
+    "source": "paper"
+  },
+  {
     "description": "2つのノード間の通信で発生するイベントを表す。",
     "href": "net/md_5/bungee/api/event/TargetedEvent.html",
     "javadoc": "An event which occurs in the communication between two nodes.",
