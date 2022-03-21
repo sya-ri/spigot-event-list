@@ -3219,7 +3219,7 @@
     "source": "bungee"
   },
   {
-    "description": "",
+    "description": "飼い慣らしたエンティティが死んでメッセージが送られる時に呼び出される。",
     "href": "io/papermc/paper/event/entity/TameableDeathMessageEvent.html",
     "javadoc": "Called when a Tameable dies and sends a death message.",
     "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/entity/TameableDeathMessageEvent.html",
