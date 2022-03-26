@@ -30,6 +30,6 @@ jobs:
           title: 'ソースのバージョンを更新'
           body: ${{ steps.report.outputs.content }}
           branch: actions/update-event-list
-          commit-message: 'ソースのバージョンを更新'
+          commit-message: 'ソースのバージョンを更新\n\n${{ steps.report.outputs.content }}'
           delete-branch: true
           reviewers: sya-ri
