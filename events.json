@@ -775,6 +775,14 @@
     "source": "bukkit"
   },
   {
+    "description": "",
+    "href": "io/papermc/paper/event/entity/EntityDyeEvent.html",
+    "javadoc": "Called when an entity is dyed. Currently, this is called for Sheep\n being dyed, and Wolf/Cat collars being dyed.",
+    "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/entity/EntityDyeEvent.html",
+    "name": "EntityDyeEvent",
+    "source": "paper"
+  },
+  {
     "description": "エンティティがブロックの中に入る時に呼び出される。以下に例を示す。\n- ミツバチが巣箱に入る時。\n\nしかし、以下の場合は呼び出されない。\n- シルバーフィッシュが石に入る時。EntityChangeBlockEvent が呼び出される。",
     "href": "org/bukkit/event/entity/EntityEnterBlockEvent.html",
     "javadoc": "Called when an Entity enters a block and is stored in that block.\n \n This event is called for bees entering a bee hive.\n \n It is not called when a silverfish \"enters\" a stone block. For that listen to\n the EntityChangeBlockEvent.",
