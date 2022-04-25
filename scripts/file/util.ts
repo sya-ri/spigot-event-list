@@ -22,7 +22,7 @@ export const writeFile = (fileName: string, content: string) => {
  * ディレクトリを削除する
  */
 export const deleteDirectory = (fileName: string) => {
-  fs.rmdirSync(fileName, { recursive: true });
+  fs.rmSync(fileName, { recursive: true });
 };
 
 /**
