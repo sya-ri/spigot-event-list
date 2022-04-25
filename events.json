@@ -775,7 +775,7 @@
     "source": "bukkit"
   },
   {
-    "description": "",
+    "description": "エンティティが染色される時に呼び出される。以下に例を示す。\n- 羊が染色される時。\n- 狼や猫の首輪が染色される時。",
     "href": "io/papermc/paper/event/entity/EntityDyeEvent.html",
     "javadoc": "Called when an entity is dyed. Currently, this is called for Sheep\n being dyed, and Wolf/Cat collars being dyed.",
     "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/entity/EntityDyeEvent.html",
