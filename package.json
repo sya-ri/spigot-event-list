@@ -29,7 +29,7 @@
   },
   "devDependencies": {
     "@types/node": "17.0.25",
-    "@types/react": "18.0.7",
+    "@types/react": "18.0.8",
     "@types/react-dom": "18.0.2",
     "@types/xml2js": "0.4.11",
     "axios": "0.27.1",
