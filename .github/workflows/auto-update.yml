@@ -32,7 +32,5 @@ jobs:
           branch: actions/update-event-list
           commit-message: |
             ソースのバージョンを更新
-            
-            ${{ steps.report.outputs.content }}
           delete-branch: true
           reviewers: sya-ri
