@@ -35,7 +35,7 @@
     "axios": "0.27.2",
     "cheerio": "1.0.0-rc.10",
     "compressing": "1.5.1",
-    "eslint": "8.14.0",
+    "eslint": "8.15.0",
     "eslint-config-next": "12.1.6",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-prettier": "4.0.0",
