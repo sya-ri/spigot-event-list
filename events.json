@@ -2416,6 +2416,14 @@
     "source": "paper"
   },
   {
+    "description": "",
+    "href": "io/papermc/paper/event/player/PlayerStopUsingItemEvent.html",
+    "javadoc": "Called when the server detects a player stopping using an item.\n Examples of this are letting go of the interact button when holding a bow, an edible item, or a spyglass.",
+    "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/player/PlayerStopUsingItemEvent.html",
+    "name": "PlayerStopUsingItemEvent",
+    "source": "paper"
+  },
+  {
     "description": "プレイヤーがメインハンドとオフハンドのアイテムをホットキーによって交換する時に呼び出される。",
     "href": "org/bukkit/event/player/PlayerSwapHandItemsEvent.html",
     "javadoc": "Called when a player swap items between main hand and off hand using the\n hotkey.",
