@@ -2416,7 +2416,7 @@
     "source": "paper"
   },
   {
-    "description": "",
+    "description": "プレイヤーがアイテムの使用をやめた時に呼び出される。以下に例を示す。\n- 弓のひきしぼり\n- 食べ物\n- スパイグラス",
     "href": "io/papermc/paper/event/player/PlayerStopUsingItemEvent.html",
     "javadoc": "Called when the server detects a player stopping using an item.\n Examples of this are letting go of the interact button when holding a bow, an edible item, or a spyglass.",
     "link": "https://papermc.io/javadocs/paper/1.18/io/papermc/paper/event/player/PlayerStopUsingItemEvent.html",
