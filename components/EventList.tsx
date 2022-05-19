@@ -63,6 +63,7 @@ const EventListContentHeight = 72; // 71.93px
 
 const initialEventListSize = () => window.innerHeight / EventListContentHeight;
 
+// eslint-disable-next-line react/display-name
 export default memo(
   EventList,
   ({ events: prevEvents }, { events: nextEvents }) => {

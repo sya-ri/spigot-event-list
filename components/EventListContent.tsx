@@ -72,6 +72,7 @@ const EventListContent: FC<Props> = ({
   );
 };
 
+// eslint-disable-next-line react/display-name
 export default memo(
   EventListContent,
   (
