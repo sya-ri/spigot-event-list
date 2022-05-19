@@ -52,7 +52,7 @@ class Document extends NextDocument {
           />
         </Head>
         <body>
-          <ColorModeScript initialColorMode={theme.config.initialColorMode} />
+          <ColorModeScript type="cookie" />
           <Main />
           <NextScript />
         </body>
