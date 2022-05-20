@@ -33,7 +33,7 @@
     "@types/react-dom": "18.0.4",
     "@types/xml2js": "0.4.11",
     "axios": "0.27.2",
-    "cheerio": "1.0.0-rc.10",
+    "cheerio": "1.0.0-rc.11",
     "compressing": "1.5.1",
     "eslint": "8.15.0",
     "eslint-config-next": "12.1.6",
