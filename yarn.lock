@@ -2032,10 +2032,10 @@ form-data@^4.0.0:
     combined-stream "^1.0.8"
     mime-types "^2.1.12"
 
-framer-motion@6.3.8:
-  version "6.3.8"
-  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-6.3.8.tgz#8bfc3845d00404c6a85ab7764851d2fb23cee753"
-  integrity sha512-FBbSAG/kzi3Tm9taF6tULhdKtWqiXmISBocsNC+jqHMQP/3PsnS0dFL2qZMmwgVAGwg3InhY739gKNjqOCR7Cw==
+framer-motion@6.3.10:
+  version "6.3.10"
+  resolved "https://registry.yarnpkg.com/framer-motion/-/framer-motion-6.3.10.tgz#e71f8c4ee09612de8328725c4fb1a1c204ae451f"
+  integrity sha512-modFplFb1Fznsm0MrmRAJUC32UDA5jbGU9rDvkGzhAHksru2tnoKbU/Pa3orzdsJI0CJviG4NGBrmwGveU98Cg==
   dependencies:
     framesync "6.0.1"
     hey-listen "^1.0.8"
