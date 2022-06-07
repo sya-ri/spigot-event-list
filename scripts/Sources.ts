@@ -123,8 +123,8 @@ const Sources: SourceMap = {
     allClasses: "allclasses-index.html",
     deprecateList: "deprecated-list.html",
     downloadSources: ["velocity"],
-    downloadUrl: "https://velocitypowered.com/downloads",
-    javadocUrl: "https://jd.velocitypowered.com/3.0.0/",
+    downloadUrl: "https://papermc.io/downloads#Velocity",
+    javadocUrl: "https://jd.papermc.io/velocity/3.0.0/",
     updateVersion: (source: Source): Promise<void> =>
       axios
         .get("https://api.papermc.io/v2/projects/velocity/")
