@@ -1,5 +1,4 @@
 import axios from "axios";
-import SourceType from "../lib/SourceType";
 import Source from "./Source";
 import SourceMap from "./SourceMap";
 
@@ -43,15 +42,15 @@ const Sources: SourceMap = {
       classifier: "javadoc",
       isSnapShot: true,
     },
-    repository: "https://papermc.io/repo/repository/maven-public/",
+    repository: "https://repo.papermc.io/repository/maven-public/",
     allClasses: "allclasses-index.html",
     deprecateList: "deprecated-list.html",
     downloadSources: ["paper"],
     downloadUrl: "https://papermc.io/downloads#Paper-1.18",
-    javadocUrl: "https://papermc.io/javadocs/paper/1.18/",
+    javadocUrl: "https://jd.papermc.io/paper/1.18/",
     updateVersion: (source: Source): Promise<void> =>
       axios
-        .get("https://papermc.io/api/v2/projects/paper/versions/1.18.2/")
+        .get("https://api.papermc.io/v2/projects/paper/versions/1.18.2/")
         .then((response) => {
           const json = response.data;
           source.version = "#" + json.builds.pop();
@@ -120,7 +119,7 @@ const Sources: SourceMap = {
       classifier: "javadoc",
       isSnapShot: true,
     },
-    repository: "https://papermc.io/repo/repository/maven-public/",
+    repository: "https://repo.papermc.io/repository/maven-public/",
     allClasses: "allclasses-index.html",
     deprecateList: "deprecated-list.html",
     downloadSources: ["velocity"],
@@ -128,7 +127,7 @@ const Sources: SourceMap = {
     javadocUrl: "https://jd.velocitypowered.com/3.0.0/",
     updateVersion: (source: Source): Promise<void> =>
       axios
-        .get("https://papermc.io/api/v2/projects/velocity/")
+        .get("https://api.papermc.io/v2/projects/velocity/")
         .then((response) => {
           const json = response.data;
           return json.versions.pop();
@@ -137,7 +136,7 @@ const Sources: SourceMap = {
           source.artifact.version = latestVersion.split("-SNAPSHOT")[0];
           return axios
             .get(
-              `https://papermc.io/api/v2/projects/velocity/versions/${latestVersion}/`
+              `https://api.papermc.io/v2/projects/velocity/versions/${latestVersion}/`
             )
             .then((response) => {
               const json = response.data;
@@ -155,15 +154,15 @@ const Sources: SourceMap = {
       classifier: "javadoc",
       isSnapShot: true,
     },
-    repository: "https://papermc.io/repo/repository/maven-public/",
+    repository: "https://repo.papermc.io/repository/maven-public/",
     allClasses: "allclasses.html",
     deprecateList: "deprecated-list.html",
     downloadSources: ["waterfall"],
     downloadUrl: "https://papermc.io/downloads#Waterfall",
-    javadocUrl: "https://papermc.io/javadocs/waterfall/1.18/",
+    javadocUrl: "https://jd.papermc.io/waterfall/1.18/",
     updateVersion: (source: Source): Promise<void> =>
       axios
-        .get("https://papermc.io/api/v2/projects/waterfall/versions/1.18/")
+        .get("https://api.papermc.io/v2/projects/waterfall/versions/1.18/")
         .then((response) => {
           const json = response.data;
           source.version = "#" + json.builds.pop();
