@@ -10,7 +10,7 @@ const Sources: SourceMap = {
     artifact: {
       groupId: "net.md-5",
       artifactId: "bungeecord-api",
-      version: "1.18-R0.1",
+      version: "1.19-R0.1",
       classifier: "javadoc",
       isSnapShot: true,
     },
@@ -84,7 +84,7 @@ const Sources: SourceMap = {
     artifact: {
       groupId: "org.spigotmc",
       artifactId: "spigot-api",
-      version: "1.18.2-R0.1",
+      version: "1.19-R0.1",
       classifier: "javadoc",
       isSnapShot: true,
     },
@@ -150,7 +150,7 @@ const Sources: SourceMap = {
     artifact: {
       groupId: "io.github.waterfallmc",
       artifactId: "waterfall-api",
-      version: "1.18-R0.1",
+      version: "1.19-R0.1",
       classifier: "javadoc",
       isSnapShot: true,
     },
@@ -159,10 +159,10 @@ const Sources: SourceMap = {
     deprecateList: "deprecated-list.html",
     downloadSources: ["waterfall"],
     downloadUrl: "https://papermc.io/downloads#Waterfall",
-    javadocUrl: "https://jd.papermc.io/waterfall/1.18/",
+    javadocUrl: "https://jd.papermc.io/waterfall/1.19/",
     updateVersion: (source: Source): Promise<void> =>
       axios
-        .get("https://api.papermc.io/v2/projects/waterfall/versions/1.18/")
+        .get("https://api.papermc.io/v2/projects/waterfall/versions/1.19/")
         .then((response) => {
           const json = response.data;
           source.version = "#" + json.builds.pop();

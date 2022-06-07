@@ -505,7 +505,7 @@
     "description": "新しい接続があった時に呼び出される。接続を効率的に閉じることを可能にする。",
     "href": "io/github/waterfallmc/waterfall/event/ConnectionInitEvent.html",
     "javadoc": "Represents a brand new connection made to the proxy, allowing for plugins to\n efficiently close a connection, useful for connection throttlers, etc",
-    "link": "https://jd.papermc.io/waterfall/1.18/io/github/waterfallmc/waterfall/event/ConnectionInitEvent.html",
+    "link": "https://jd.papermc.io/waterfall/1.19/io/github/waterfallmc/waterfall/event/ConnectionInitEvent.html",
     "name": "ConnectionInitEvent",
     "source": "waterfall"
   },
@@ -2724,7 +2724,7 @@
     "description": "タブ補完に使われるコマンドを定義される時に呼び出される。",
     "href": "io/github/waterfallmc/waterfall/event/ProxyDefineCommandsEvent.html",
     "javadoc": "Called when the proxy intercepts the command packet\n allowing for plugins to prevent commands being added\n to the clients which might not be wanted.\n\n\n Plugin developers, please implement Command.hasPermission(CommandSender)\n properly in favor of this event.",
-    "link": "https://jd.papermc.io/waterfall/1.18/io/github/waterfallmc/waterfall/event/ProxyDefineCommandsEvent.html",
+    "link": "https://jd.papermc.io/waterfall/1.19/io/github/waterfallmc/waterfall/event/ProxyDefineCommandsEvent.html",
     "name": "ProxyDefineCommandsEvent",
     "source": "waterfall"
   },
@@ -2732,7 +2732,7 @@
     "description": "回復可能な状況で例外が発生した時に呼び出される。",
     "href": "io/github/waterfallmc/waterfall/event/ProxyExceptionEvent.html",
     "javadoc": "Called whenever an exception is thrown in a recoverable section of the server.",
-    "link": "https://jd.papermc.io/waterfall/1.18/io/github/waterfallmc/waterfall/event/ProxyExceptionEvent.html",
+    "link": "https://jd.papermc.io/waterfall/1.19/io/github/waterfallmc/waterfall/event/ProxyExceptionEvent.html",
     "name": "ProxyExceptionEvent",
     "source": "waterfall"
   },
@@ -2772,7 +2772,7 @@
     "description": "クエリ要求を受信した時に呼び出される。",
     "href": "io/github/waterfallmc/waterfall/event/ProxyQueryEvent.html",
     "javadoc": "This event will be posted whenever a Query request is received.",
-    "link": "https://jd.papermc.io/waterfall/1.18/io/github/waterfallmc/waterfall/event/ProxyQueryEvent.html",
+    "link": "https://jd.papermc.io/waterfall/1.19/io/github/waterfallmc/waterfall/event/ProxyQueryEvent.html",
     "name": "ProxyQueryEvent",
     "source": "waterfall"
   },
@@ -3535,7 +3535,7 @@
   {
     "description": "ワールドが初期化される時に呼び出される。",
     "href": "org/bukkit/event/world/WorldInitEvent.html",
-    "javadoc": "Called when a World is initializing",
+    "javadoc": "Called when a World is initializing.\n \n To get every world it is recommended to add following to the plugin.yml.\n load: STARTUP",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/world/WorldInitEvent.html",
     "name": "WorldInitEvent",
     "source": "bukkit"
