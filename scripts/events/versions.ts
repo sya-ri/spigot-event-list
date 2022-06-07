@@ -1,12 +1,13 @@
-import Sources from "../Sources";
-import { Versions } from "../json/versions";
+import EventSource from "../EventSource";
 
 /**
  * イベントソースのバージョンを更新する
  */
-export const updateVersions = async (): Promise<Versions> => {
-  const versions = {} as Versions;
-  for (const [name, source] of Object.entries(Sources)) {
+export const updateVersions = async (sources: {
+  [name: string]: EventSource;
+}): Promise<{ [name: string]: string }> => {
+  const versions: { [name: string]: string } = {};
+  for (const [name, source] of Object.entries(sources)) {
     await source.updateVersion(source);
     if (source.version != null) {
       versions[name] = source.version;

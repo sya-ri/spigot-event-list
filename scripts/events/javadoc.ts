@@ -1,6 +1,6 @@
+import { mkdir, rm } from "fs/promises";
 import { zip } from "compressing";
-import Sources from "../Sources";
-import { createDirectory, deleteDirectory } from "../file/util";
+import EventSource from "../EventSource";
 import downloadArtifact from "../mvn/artifact-download";
 
 /**
@@ -11,32 +11,26 @@ import downloadArtifact from "../mvn/artifact-download";
 export const javadocPath = (filename: string) => `javadoc/${filename}`;
 
 /**
- * ファイルを解凍する
- *
- * @param filename ファイル名
- * @param destination 保存先
- */
-const unzip = (filename: string, destination: string) =>
-  zip.uncompress(filename, destination);
-
-/**
  * Javadoc をダウンロードする
  */
-const downloadJavadoc = () => {
-  deleteDirectory(javadocPath(""));
-  createDirectory(javadocPath(""));
-  return Promise.all(
-    Object.entries(Sources).map(([name, source]) =>
-      downloadArtifact(
-        source.artifact,
-        javadocPath(""),
-        source.repository,
-        `${name}.jar`
+const downloadJavadoc = (sources: { [name: string]: EventSource }) =>
+  rm(javadocPath(""), { recursive: true, force: true })
+    .then(() => mkdir(javadocPath("")))
+    .then(() =>
+      Promise.all(
+        Object.entries(sources).map(([name, source]) =>
+          downloadArtifact(
+            source.artifact,
+            javadocPath(""),
+            source.repository,
+            `${name}.jar`
+          )
+            .then(() =>
+              zip.uncompress(javadocPath(`${name}.jar`), javadocPath(name))
+            )
+            .catch((err) => console.error(err))
+        )
       )
-        .then(() => unzip(javadocPath(`${name}.jar`), javadocPath(name)))
-        .catch((err) => console.error(err))
-    )
-  );
-};
+    );
 
 export default downloadJavadoc;

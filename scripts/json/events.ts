@@ -1,36 +1,28 @@
-import EventType from "../../lib/EventType";
-import SourceTypeMap from "../SourceTypeMap";
-import { readJson, writeJson } from "./util";
+import { readFile, writeFile } from "fs/promises";
+import EventType from "../../scripts/EventType";
 
 /**
- * events.json の中身
+ * イベント一覧を取得する
  */
-export type Events = EventType[];
-
-/**
- * ファイル名
- */
-const FileName = "events.json";
-
-/**
- * イベント一覧を json から取得する
- */
-export const readEvents = (): Events => {
-  return readJson(FileName);
-};
-
-/**
- * イベント一覧を json に出力する
- */
-export const writeEvents = (events: Events) => {
-  writeJson(FileName, events);
+export const getLastEvents = (): Promise<{ [name: string]: EventType }> => {
+  return readFile("events.json", "utf8")
+    .then<EventType[]>((text) => JSON.parse(text))
+    .then((lastEvents) =>
+      lastEvents.reduce((map, value) => {
+        map[value.name + value.source] = value;
+        delete value.javadoc;
+        delete value.abstract;
+        delete value.deprecate;
+        return map;
+      }, {} as { [name: string]: EventType })
+    );
 };
 
 /**
  * イベント一覧を整形し json に出力する
  */
-export const writeEventMap = (sourceTypeMap: SourceTypeMap) => {
-  const events = Object.values(sourceTypeMap)
+export const writeEvents = (sources: { [name: string]: EventType }) => {
+  const events = Object.values(sources)
     .sort((a, b) => (a.name + a.source).localeCompare(b.name + b.source))
     .map(
       (value): EventType => ({
@@ -47,5 +39,5 @@ export const writeEventMap = (sourceTypeMap: SourceTypeMap) => {
         source: value.source,
       })
     );
-  writeEvents(events);
+  return writeFile("events.json", JSON.stringify(events, null, 2));
 };

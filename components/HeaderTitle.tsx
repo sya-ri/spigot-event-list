@@ -1,11 +1,11 @@
 import { Flex, Heading, Icon } from "@chakra-ui/react";
 import React, { FC, memo } from "react";
 import { FaFaucet } from "react-icons/fa";
-import SourceType, { SourceTypes } from "../lib/SourceType";
+import SourceName, { sourceNames } from "../scripts/SourceName";
 
 type Props = {
   setSearchText: (value: string) => void;
-  setTagsFilter: (value: SourceType[]) => void;
+  setTagsFilter: (value: SourceName[]) => void;
 };
 
 const HeaderTitle: FC<Props> = ({ setSearchText, setTagsFilter }) => {
@@ -17,7 +17,7 @@ const HeaderTitle: FC<Props> = ({ setSearchText, setTagsFilter }) => {
       onClick={() => {
         history.replaceState(null, "", ".");
         setSearchText("");
-        setTagsFilter(SourceTypes);
+        setTagsFilter(sourceNames);
       }}
     >
       <Icon as={FaFaucet} h={8} mr={2} my="auto" w={8} />

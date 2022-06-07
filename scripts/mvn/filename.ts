@@ -1,4 +1,4 @@
-import util from 'util';
+import util from "util";
 
 export interface Artifact {
   groupId: string;
@@ -11,12 +11,12 @@ export interface Artifact {
 }
 
 function getVersion(artifact: Artifact): string {
-  let suffix = '';
+  let suffix = "";
   if (artifact.isSnapShot) {
     if (artifact.snapShotVersion != null) {
       suffix = `-${artifact.snapShotVersion}`;
     } else {
-      suffix = '-SNAPSHOT';
+      suffix = "-SNAPSHOT";
     }
   }
   const version = artifact.version;
@@ -24,17 +24,17 @@ function getVersion(artifact: Artifact): string {
 }
 
 export default function filename(artifact: Artifact) {
-  const extension = artifact.extension || 'jar';
+  const extension = artifact.extension || "jar";
   let version = getVersion(artifact);
 
   if (artifact.classifier) {
     return util.format(
-      '%s-%s-%s.%s',
+      "%s-%s-%s.%s",
       artifact.artifactId,
       version,
       artifact.classifier,
       extension
     );
   }
-  return util.format('%s-%s.%s', artifact.artifactId, version, extension);
+  return util.format("%s-%s.%s", artifact.artifactId, version, extension);
 }

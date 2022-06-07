@@ -1,10 +1,10 @@
-import SourceType from "../lib/SourceType";
+import SourceName from "../scripts/SourceName";
 import { Artifact } from "./mvn/artifact-download";
 
 /**
  * イベントソース
  */
-export default interface Source {
+export default interface EventSource {
   artifact: Artifact;
   repository: string;
   javadocUrl: string;
@@ -12,6 +12,6 @@ export default interface Source {
   allClasses: string;
   deprecateList: string;
   version?: string;
-  updateVersion: (source: Source) => Promise<void>;
-  downloadSources: SourceType[];
+  updateVersion: (source: EventSource) => Promise<void>;
+  downloadSources: SourceName[];
 }

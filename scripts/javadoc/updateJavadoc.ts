@@ -1,10 +1,10 @@
+import { readFile } from "fs/promises";
 import cheerio from "cheerio";
-import SourceType from "../../lib/SourceType";
-import SourceTypeMap from "../SourceTypeMap";
+import EventType from "../../scripts/EventType";
+import SourceName from "../../scripts/SourceName";
 import { javadocPath } from "../events/javadoc";
-import { readFile } from "../file/util";
 
-const getSourceNameFromType = (type: SourceType) => {
+const getSourceNameFromType = (type: SourceName) => {
   switch (type) {
     case "bukkit":
     case "spigot":
@@ -21,36 +21,43 @@ const getSourceNameFromType = (type: SourceType) => {
   }
 };
 
-export const updateJavadoc = (sourceTypeMap: SourceTypeMap) => {
-  Object.values(sourceTypeMap).forEach((eventType) => {
-    const sourceName = getSourceNameFromType(eventType.source);
-    const body = readFile(javadocPath([sourceName, eventType.href].join("/")));
-    try {
-      const $ = cheerio.load(body);
-      switch (eventType.source) {
-        case "bukkit":
-        case "spigot":
-        case "paper":
-        case "purpur":
-        case "velocity":
-          eventType.javadoc = $("#class-description .block").text();
-          if ($("#class-description .modifiers").text().includes("abstract")) {
-            eventType.abstract = true;
+export const updateJavadoc = (sources: { [name: string]: EventType }) => {
+  return Promise.all(
+    Object.values(sources).map((eventType) => {
+      const sourceName = getSourceNameFromType(eventType.source);
+      return readFile(javadocPath([sourceName, eventType.href].join("/"))).then(
+        (body) => {
+          try {
+            const $ = cheerio.load(body);
+            switch (eventType.source) {
+              case "bukkit":
+              case "spigot":
+              case "paper":
+              case "purpur":
+              case "velocity":
+                eventType.javadoc = $("#class-description .block").text();
+                if (
+                  $("#class-description .modifiers").text().includes("abstract")
+                ) {
+                  eventType.abstract = true;
+                }
+                break;
+              case "bungee":
+              case "waterfall":
+                eventType.javadoc = $(".description .block").text();
+                if ($(".description .modifiers").text().includes("abstract")) {
+                  eventType.abstract = true;
+                }
+                break;
+            }
+            if (!eventType.javadoc) {
+              delete eventType.javadoc;
+            }
+          } catch (e) {
+            console.error(e);
           }
-          break;
-        case "bungee":
-        case "waterfall":
-          eventType.javadoc = $(".description .block").text();
-          if ($(".description .modifiers").text().includes("abstract")) {
-            eventType.abstract = true;
-          }
-          break;
-      }
-      if (!eventType.javadoc) {
-        delete eventType.javadoc;
-      }
-    } catch (e) {
-      console.error(e);
-    }
-  });
+        }
+      );
+    })
+  );
 };

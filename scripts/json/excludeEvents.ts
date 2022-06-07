@@ -1,18 +1,10 @@
-import { readJson } from "./util";
-
-/**
- * excludeEvents.json の中身
- */
-export type ExcludeEvents = string[];
-
-/**
- * ファイル名
- */
-const FileName = "excludeEvents.json";
+import { readFile } from "fs/promises";
 
 /**
  * 除外するイベント一覧を取得する
  */
-export const readExcludeEvents = (): ExcludeEvents => {
-  return readJson<ExcludeEvents>(FileName);
+export const readExcludeEvents = (): Promise<string[]> => {
+  return readFile("excludeEvents.json", "utf8").then((text) =>
+    JSON.parse(text)
+  );
 };

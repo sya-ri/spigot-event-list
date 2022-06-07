@@ -1,4 +1,4 @@
-import SourceType from "./SourceType";
+import SourceName from "./SourceName";
 
 /**
  * イベントデータの定義
@@ -6,7 +6,7 @@ import SourceType from "./SourceType";
 export default interface EventType {
   name: string;
   link: string;
-  source: SourceType;
+  source: SourceName;
   href: string;
   javadoc?: string;
   abstract?: boolean;

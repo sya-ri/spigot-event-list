@@ -1,9 +1,9 @@
 import { Tag, Text } from "@chakra-ui/react";
 import React, { FC } from "react";
-import SourceType from "../lib/SourceType";
+import SourceName from "../scripts/SourceName";
 
 type Props = {
-  source: SourceType;
+  source: SourceName;
   isDisable?: boolean;
 };
 

@@ -1,18 +1,17 @@
-import EventType from "../lib/EventType";
-import SourceMap from "./SourceMap";
-import SourceTypeMap from "./SourceTypeMap";
+import EventType from "../scripts/EventType";
+import EventSource from "./EventSource";
 
 /**
  * 変更報告を取得する
  */
 const getChangeLog = (
-  lastSourceMap: SourceMap,
-  sourceMap: SourceMap,
-  sourceTypeMap: SourceTypeMap
+  lastSources: { [name: string]: EventSource },
+  sources: { [name: string]: EventSource },
+  sourceTypes: { [name: string]: EventType }
 ): string => {
   return [
-    getVersionChangeLog(lastSourceMap, sourceMap),
-    getDescriptionReport(sourceTypeMap),
+    getVersionChangeLog(lastSources, sources),
+    getDescriptionReport(sourceTypes),
   ]
     .filter((line) => line)
     .join("\n\n");
@@ -22,13 +21,13 @@ const getChangeLog = (
  * バージョンに関する変更報告を取得する
  */
 const getVersionChangeLog = (
-  lastSourceMap: SourceMap,
-  sourceMap: SourceMap
+  lastSources: { [name: string]: EventSource },
+  sources: { [name: string]: EventSource }
 ): string | null => {
-  const versions = Object.keys(sourceMap)
+  const versions = Object.keys(sources)
     .map((name) => {
-      const lastVersion = lastSourceMap[name].version;
-      const version = sourceMap[name].version;
+      const lastVersion = lastSources[name].version;
+      const version = sources[name].version;
       return [name, lastVersion, version];
     })
     .filter(([, lastVersion, version]) => lastVersion != version)
@@ -46,12 +45,14 @@ const getVersionChangeLog = (
 /**
  * 説明文に関するレポートを取得する
  */
-const getDescriptionReport = (sourceTypeMap: SourceTypeMap): string | null => {
+const getDescriptionReport = (sources: {
+  [name: string]: EventType;
+}): string | null => {
   const noDescription = (type: EventType) =>
     !type.description.length ||
     (type.deprecate && !type.deprecateDescription?.length);
 
-  const noDescriptions = Object.values(sourceTypeMap)
+  const noDescriptions = Object.values(sources)
     .filter((type) => noDescription(type))
     .map((type) => `- ${type.name} (${type.source})`);
   if (noDescriptions.length) {

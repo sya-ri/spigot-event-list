@@ -1,7 +1,7 @@
 import { Box, Container } from "@chakra-ui/react";
 import React, { FC, memo, useEffect, useState } from "react";
 import InfiniteScroll from "react-infinite-scroll-component";
-import EventType from "../lib/EventType";
+import EventType from "../scripts/EventType";
 import EventListContent from "./EventListContent";
 
 type Props = {

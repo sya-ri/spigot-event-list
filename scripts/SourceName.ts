@@ -1,9 +1,26 @@
-import SourceType from "../lib/SourceType";
+type SourceName =
+  | "bukkit"
+  | "spigot"
+  | "paper"
+  | "purpur"
+  | "bungee"
+  | "waterfall"
+  | "velocity";
+
+export const sourceNames: SourceName[] = [
+  "bukkit",
+  "spigot",
+  "paper",
+  "purpur",
+  "bungee",
+  "waterfall",
+  "velocity",
+];
 
 /**
- * href に対応する SourceType を取得する
+ * href に対応する SourceName を取得する
  */
-const getSourceType = (href: string): SourceType | null => {
+export const getSourceName = (href: string): SourceName | null => {
   if (href.startsWith("org/bukkit")) {
     return "bukkit";
   } else if (href.startsWith("org/spigotmc")) {
@@ -25,4 +42,4 @@ const getSourceType = (href: string): SourceType | null => {
   }
 };
 
-export default getSourceType;
+export default SourceName;

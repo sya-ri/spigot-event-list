@@ -6,19 +6,19 @@ import EventList from "../components/EventList";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Events from "../events.json";
-import EventType from "../lib/EventType";
-import SourceType, { SourceTypes } from "../lib/SourceType";
+import EventType from "../scripts/EventType";
+import SourceName, { sourceNames } from "../scripts/SourceName";
 import Versions from "../versions.json";
 
 const Index: NextPage = () => {
   const { query, isReady } = useRouter();
   const [searchText, setSearchText] = useState("");
-  const [tagsFilter, setTagsFilter] = useState(SourceTypes);
+  const [tagsFilter, setTagsFilter] = useState(sourceNames);
   useEffect(() => {
     if (isReady) {
       setSearchText(first(query.search) || "");
       const tags = first(query.tags)?.split("-");
-      setTagsFilter(tags ? (tags as SourceType[]) : SourceTypes);
+      setTagsFilter(tags ? (tags as SourceName[]) : sourceNames);
     }
   }, [isReady, query.search, query.tags]);
   useEffect(() => {
@@ -27,7 +27,7 @@ const Index: NextPage = () => {
       if (searchText) {
         paramsArray.push(["search", searchText]);
       }
-      if (!SourceTypes.every((t) => tagsFilter.includes(t))) {
+      if (!sourceNames.every((t) => tagsFilter.includes(t))) {
         paramsArray.push(["tags", tagsFilter.join("-")]);
       }
       const path = window.location.pathname;

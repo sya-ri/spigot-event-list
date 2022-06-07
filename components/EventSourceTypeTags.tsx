@@ -1,14 +1,14 @@
 import { Stack } from "@chakra-ui/react";
 import React, { FC } from "react";
-import SourceType from "../lib/SourceType";
+import SourceName from "../scripts/SourceName";
 import EventSourceTypeTag from "./EventSourceTypeTag";
 
 type Props = {
-  source: SourceType;
+  source: SourceName;
 };
 
 const EventSourceTypeTags: FC<Props> = ({ source }) => {
-  let sources: SourceType[];
+  let sources: SourceName[];
   switch (source) {
     case "bukkit": {
       sources = ["bukkit", "spigot", "paper", "purpur"];

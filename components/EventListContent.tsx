@@ -11,13 +11,13 @@ import {
 import React, { FC, memo } from "react";
 import { VscWarning } from "react-icons/vsc";
 import ReactMarkdown from "react-markdown";
-import SourceType from "../lib/SourceType";
+import SourceName from "../scripts/SourceName";
 import EventSourceTypeTags from "./EventSourceTypeTags";
 
 type Props = {
   name: string;
   link: string;
-  source: SourceType;
+  source: SourceName;
   description: string;
   javadoc?: string;
   abstract?: boolean;

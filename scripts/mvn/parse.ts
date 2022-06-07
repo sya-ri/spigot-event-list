@@ -7,6 +7,7 @@ export interface Artifact {
   isSnapShot?: boolean;
   snapShotVersion?: string;
 }
+
 export default function parseFileName(name: string): Artifact {
   const parts = name.split(":");
   if (parts.length >= 3) {
