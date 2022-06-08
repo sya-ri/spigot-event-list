@@ -1,5 +1,5 @@
 import SourceName from "../scripts/SourceName";
-import { Artifact } from "./mvn/artifact-download";
+import Artifact from "./mvn/Artifact";
 
 /**
  * イベントソース

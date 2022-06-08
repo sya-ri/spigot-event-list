@@ -1,17 +1,18 @@
 import { mkdir, readFile, rm } from "fs/promises";
+import * as path from "path";
 import cheerio from "cheerio";
 import { zip } from "compressing";
 import EventSource from "../EventSource";
 import EventType from "../EventType";
 import SourceName from "../SourceName";
-import downloadArtifact from "../mvn/artifact-download";
+import downloadArtifact from "../mvn/downloadArtifact";
 
 /**
  * ファイルパスを取得する
  *
  * @param filename　ファイル名
  */
-export const javadocPath = (filename: string) => `javadoc/${filename}`;
+export const javadocPath = (filename: string) => path.join("javadoc", filename);
 
 /**
  * Javadoc をダウンロードする
@@ -24,9 +25,8 @@ export const downloadJavadoc = (sources: { [name: string]: EventSource }) =>
         Object.entries(sources).map(([name, source]) =>
           downloadArtifact(
             source.artifact,
-            javadocPath(""),
-            source.repository,
-            `${name}.jar`
+            javadocPath(`${name}.jar`),
+            source.repository
           )
             .then(() =>
               zip.uncompress(javadocPath(`${name}.jar`), javadocPath(name))
