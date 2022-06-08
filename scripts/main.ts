@@ -2,7 +2,7 @@ import { writeFile } from "fs/promises";
 import axios from "axios";
 import EventSource from "./EventSource";
 import { getLatestEvents } from "./events/events";
-import downloadJavadoc from "./events/javadoc";
+import { downloadJavadoc } from "./events/javadoc";
 import { updateVersions } from "./events/versions";
 import getChangeLog from "./getChangeLog";
 import getLastSources from "./getLastSources";

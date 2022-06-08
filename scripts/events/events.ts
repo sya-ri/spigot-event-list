@@ -3,10 +3,9 @@ import cheerio from "cheerio";
 import EventType from "../../scripts/EventType";
 import EventSource from "../EventSource";
 import { getSourceName } from "../SourceName";
-import { updateJavadoc } from "../javadoc/updateJavadoc";
 import { updateDeprecate } from "./deprecate";
 import { excludeEvents } from "./exclude";
-import { javadocPath } from "./javadoc";
+import { javadocPath, updateJavadoc } from "./javadoc";
 
 /**
  * 最新のイベント一覧を取得する
