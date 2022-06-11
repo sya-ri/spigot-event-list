@@ -34,7 +34,7 @@ class Document extends NextDocument {
           <meta content="website" property="og:type" />
           <meta content="Spigot Event List" property="og:title" />
           <meta
-            content="[Minecraft 1.18.2] Bukkit, Spigot, Paper, Purpur, BungeeCord, Waterfall, Velocity 対応のイベント一覧"
+            content="[Minecraft 1.19] Bukkit, Spigot, Paper, Purpur, BungeeCord, Waterfall, Velocity 対応のイベント一覧"
             property="og:title"
           />
           <meta
