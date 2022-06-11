@@ -42,7 +42,7 @@ const sources: { [name: string]: EventSource } = {
     artifact: {
       groupId: "io.papermc.paper",
       artifactId: "paper-api",
-      version: "1.18.2-R0.1",
+      version: "1.19-R0.1",
       classifier: "javadoc",
       isSnapShot: true,
     },
@@ -50,11 +50,11 @@ const sources: { [name: string]: EventSource } = {
     allClasses: "allclasses-index.html",
     deprecateList: "deprecated-list.html",
     downloadSources: ["paper"],
-    downloadUrl: "https://papermc.io/downloads#Paper-1.18",
-    javadocUrl: "https://jd.papermc.io/paper/1.18/",
+    downloadUrl: "https://papermc.io/downloads#Paper-1.19",
+    javadocUrl: "https://jd.papermc.io/paper/1.19/",
     updateVersion: (source: EventSource): Promise<void> =>
       axios
-        .get("https://api.papermc.io/v2/projects/paper/versions/1.18.2/")
+        .get("https://api.papermc.io/v2/projects/paper/versions/1.19/")
         .then((response) => {
           const json = response.data;
           source.version = "#" + json.builds.pop();
@@ -65,7 +65,7 @@ const sources: { [name: string]: EventSource } = {
     artifact: {
       groupId: "org.purpurmc.purpur",
       artifactId: "purpur-api",
-      version: "1.18.2-R0.1",
+      version: "1.19-R0.1",
       classifier: "javadoc",
       isSnapShot: true,
     },
@@ -73,11 +73,11 @@ const sources: { [name: string]: EventSource } = {
     allClasses: "allclasses-index.html",
     deprecateList: "deprecated-list.html",
     downloadSources: ["purpur"],
-    downloadUrl: "https://purpurmc.org/downloads?v=1.18.2",
+    downloadUrl: "https://purpurmc.org/downloads?v=1.19",
     javadocUrl: "https://purpurmc.org/javadoc/",
     updateVersion: (source: EventSource): Promise<void> =>
       axios
-        .get("https://api.purpurmc.org/v2/purpur/1.18.2")
+        .get("https://api.purpurmc.org/v2/purpur/1.19")
         .then((response) => {
           const json = response.data;
           source.version = "#" + json.builds.latest;

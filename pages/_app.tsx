@@ -7,7 +7,7 @@ function App({ Component, pageProps }: AppProps) {
     <>
       <title>Spigot Event List</title>
       <meta
-        content="[Minecraft 1.18.2] Bukkit, Spigot, Paper, Purpur, BungeeCord, Waterfall, Velocity 対応のイベント一覧"
+        content="[Minecraft 1.19] Bukkit, Spigot, Paper, Purpur, BungeeCord, Waterfall, Velocity 対応のイベント一覧"
         name="description"
       />
       <GoogleAnalytics />
