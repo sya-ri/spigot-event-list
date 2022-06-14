@@ -3436,6 +3436,14 @@
     "source": "bukkit"
   },
   {
+    "description": "",
+    "href": "io/papermc/paper/event/entity/WardenAngerChangeEvent.html",
+    "javadoc": "Called when a Warden's anger level has changed due to another entity.\n \n If the event is cancelled, the warden's anger level will not change.",
+    "link": "https://jd.papermc.io/paper/1.19/io/papermc/paper/event/entity/WardenAngerChangeEvent.html",
+    "name": "WardenAngerChangeEvent",
+    "source": "paper"
+  },
+  {
     "description": "天気が変わる時に呼び出される。",
     "href": "org/bukkit/event/weather/WeatherChangeEvent.html",
     "javadoc": "Stores data for weather changing in a world",
