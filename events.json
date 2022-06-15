@@ -3436,7 +3436,7 @@
     "source": "bukkit"
   },
   {
-    "description": "",
+    "description": "ウォーデンの怒りレベルが他のエンティティによって変化する時に呼び出される。",
     "href": "io/papermc/paper/event/entity/WardenAngerChangeEvent.html",
     "javadoc": "Called when a Warden's anger level has changed due to another entity.\n \n If the event is cancelled, the warden's anger level will not change.",
     "link": "https://jd.papermc.io/paper/1.19/io/papermc/paper/event/entity/WardenAngerChangeEvent.html",
