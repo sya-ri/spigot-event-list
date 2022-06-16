@@ -39,7 +39,7 @@
     "eslint-config-next": "12.1.6",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-prettier": "4.0.0",
-    "prettier": "2.7.0",
+    "prettier": "2.7.1",
     "ts-loader": "9.3.0",
     "ts-node": "10.8.1",
     "xml2js": "0.4.23"
