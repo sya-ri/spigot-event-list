@@ -2755,7 +2755,7 @@
   {
     "description": "サーバーリストからピングされた時に呼び出される。",
     "href": "com/velocitypowered/api/event/proxy/ProxyPingEvent.html",
-    "javadoc": "This event is fired when a server list ping request is sent by a remote client. Velocity will\n wait on this event to finish firing before delivering the results to the remote client, but\n you are urged to be as parsimonious as possible when handling this event due to the amount of\n ping packets a client can send.",
+    "javadoc": "This event is fired when a request for server information is sent by a remote client, or when the\n server sends the MOTD and favicon to the client after a successful login. Velocity will\n wait on this event to finish firing before delivering the results to the remote client, but\n you are urged to handle this event as quickly as possible when handling this event due to the\n amount of ping packets a client can send.",
     "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/proxy/ProxyPingEvent.html",
     "name": "ProxyPingEvent",
     "source": "velocity"
