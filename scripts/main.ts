@@ -97,7 +97,7 @@ const sources: { [name: string]: EventSource } = {
     allClasses: "allclasses-index.html",
     deprecateList: "deprecated-list.html",
     downloadSources: ["bukkit", "spigot"],
-    downloadUrl: "https://ci.md-5.net/job/Spigot/lastBuild",
+    downloadUrl: "",
     javadocUrl: "https://hub.spigotmc.org/javadocs/spigot/",
     updateVersion: (source: EventSource): Promise<void> =>
       axios
