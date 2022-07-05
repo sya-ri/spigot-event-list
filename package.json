@@ -30,7 +30,7 @@
   "devDependencies": {
     "@types/node": "17.0.41",
     "@types/react": "18.0.14",
-    "@types/react-dom": "18.0.5",
+    "@types/react-dom": "18.0.6",
     "@types/xml2js": "0.4.11",
     "axios": "0.27.2",
     "cheerio": "1.0.0-rc.12",
