@@ -1472,10 +1472,10 @@ comma-separated-tokens@^2.0.0:
   resolved "https://registry.yarnpkg.com/comma-separated-tokens/-/comma-separated-tokens-2.0.2.tgz#d4c25abb679b7751c880be623c1179780fe1dd98"
   integrity sha512-G5yTt3KQN4Yn7Yk4ed73hlZ1evrFKXeUW3086p3PRFNp7m2vIjI6Pg+Kgb+oyzhd9F2qdcoj67+y3SdxL5XWsg==
 
-compressing@1.6.0:
-  version "1.6.0"
-  resolved "https://registry.yarnpkg.com/compressing/-/compressing-1.6.0.tgz#6cb0e2b9d3ad83436942180b20ffd9c3356ee62a"
-  integrity sha512-tWI4kJAbYLqoL+YHlMf9+EvIb9LA0WUm49C17KBMVa+JxpCfvHdiXqhE6lepFTuCghu0hDRZNd0Q+bGZvFDHAQ==
+compressing@1.6.2:
+  version "1.6.2"
+  resolved "https://registry.yarnpkg.com/compressing/-/compressing-1.6.2.tgz#87320c2d867364045403792c08694e4e8284099c"
+  integrity sha512-1HK+eK//Tx45n2kuVCl2ITDMZD2JkZAolOYyJrV260lUnq1rPt4d+6L6OvwRFLqAt5aR0vAtGGGiJNmTxqff/g==
   dependencies:
     flushwritable "^1.0.0"
     get-ready "^1.0.0"
