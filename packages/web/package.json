@@ -1,5 +1,6 @@
 {
   "name": "spigot-event-list-web",
+  "type": "module",
   "version": "0.1.0",
   "description": "List of events for Bukkit, Spigot, Paper, Purpur, BungeeCord, Waterfall and Velocity",
   "repository": "https://github.com/sya-ri/spigot-event-list.git",
@@ -7,37 +8,20 @@
   "license": "ISC",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "export": "next export",
-    "lint": "next lint",
-    "lint-fix": "next lint --fix"
-  },
-  "dependencies": {
-    "@chakra-ui/icons": "2.0.4",
-    "@chakra-ui/react": "2.2.4",
-    "@emotion/react": "11.9.3",
-    "@emotion/styled": "11.9.3",
-    "framer-motion": "6.5.1",
-    "next": "12.2.2",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-icons": "4.4.0",
-    "react-infinite-scroll-component": "6.1.0",
-    "react-markdown": "8.0.3",
-    "spigot-event-list-common": "../common"
+    "dev": "solid-start dev",
+    "build": "solid-start build",
+    "start": "solid-start start",
+    "lint": "",
+    "lint-fix": ""
   },
   "devDependencies": {
-    "@types/node": "18.0.4",
-    "@types/react": "18.0.15",
-    "@types/react-dom": "18.0.6",
-    "eslint": "8.19.0",
-    "eslint-config-next": "12.2.2",
-    "eslint-config-prettier": "8.5.0",
-    "eslint-plugin-prettier": "4.2.1",
-    "prettier": "2.7.1",
-    "ts-loader": "9.3.1",
-    "typescript": "4.7.4"
+    "solid-app-router": "0.4.1",
+    "solid-js": "1.4.7",
+    "solid-meta": "0.27.5",
+    "solid-start": "next",
+    "solid-start-node": "next",
+    "typescript": "4.7.4",
+    "undici": "5.7.0",
+    "vite": "2.9.14"
   }
 }
