@@ -1,11 +1,11 @@
-import { BiSearch } from "solid-icons/bi";
+// import { BiSearch } from "solid-icons/bi"; FIXME
 
 export default function HeaderSearchBox() {
   return (
     <div class="flex items-center">
       <div class="relative w-full">
         <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-          <BiSearch class="w-5 h-5" />
+          {/* <BiSearch class="w-5 h-5" /> FIXME */}
         </div>
         <input
           type="text"
