@@ -1,0 +1,20 @@
+import HeaderSearchBox from "~/components/header/HeaderSearchBox";
+import HeaderTagsFilter from "~/components/header/HeaderTagsFilter";
+import { FaSolidFaucet } from "solid-icons/fa";
+
+export default function Header() {
+  return (
+    <header class="sticky top-0 py-2 bg-white shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1),0_2px_4px_-1px_rgba(0,0,0,0.06)]">
+      <div class="md:max-w-3xl mx-auto flex justify-between px-6">
+        <div class="flex items-center shrink-0 mr-8">
+          <FaSolidFaucet class="h-8 w-8 mr-2" />
+          <h1 class="font-bold text-2xl">Spigot Event List</h1>
+        </div>
+        <div class="flex flex-col gap-2">
+          <HeaderSearchBox />
+          <HeaderTagsFilter />
+        </div>
+      </div>
+    </header>
+  );
+}
