@@ -13,6 +13,7 @@
     "common:build": "yarn common build",
     "data": "yarn --cwd packages/data",
     "data:fetch": "yarn data fetch",
+    "data:build": "yarn data build",
     "web": "yarn --cwd packages/web",
     "web:dev": "yarn web dev",
     "web:build": "yarn web build",

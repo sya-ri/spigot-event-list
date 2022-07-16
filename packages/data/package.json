@@ -1,13 +1,16 @@
 {
   "name": "spigot-event-list-data",
-  "version": "1.19-SNAPSHOT",
+  "version": "1.19.0",
   "description": "List of events for Bukkit, Spigot, Paper, Purpur, BungeeCord, Waterfall and Velocity",
   "repository": "https://github.com/sya-ri/spigot-event-list.git",
   "author": "sya-ri",
   "license": "ISC",
   "private": true,
+  "main": "dist/data.js",
+  "types": "dist/data.d.ts",
   "scripts": {
-    "fetch": "ts-node src/index.ts"
+    "fetch": "ts-node src/index.ts",
+    "build": "tsc"
   },
   "devDependencies": {
     "@types/node": "18.0.4",
@@ -15,9 +18,11 @@
     "axios": "0.27.2",
     "cheerio": "1.0.0-rc.12",
     "compressing": "1.6.2",
-    "spigot-event-list-common": "../common",
     "ts-node": "10.9.1",
     "typescript": "4.7.4",
     "xml2js": "0.4.23"
+  },
+  "dependencies": {
+    "spigot-event-list-common": "../common"
   }
 }
