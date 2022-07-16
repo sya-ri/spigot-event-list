@@ -2,9 +2,8 @@ import { getEvents } from "spigot-event-list-data";
 import { For } from "solid-js";
 import EventListContent from "./EventListContent";
 
-const events = getEvents();
-
 export default function EventList() {
+  const events = getEvents();
   return (
     <div class="md:max-w-lg md:mx-auto">
       <For each={events}>
