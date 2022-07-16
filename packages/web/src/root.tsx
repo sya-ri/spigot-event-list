@@ -33,7 +33,10 @@ export default function Root() {
         <meta content="#ffffff" name="theme-color" />
 
         {/* Open Graph https://www.opengraph.xyz/ */}
-        <meta content="https://spigot-event-list-solidjs.vercel.app/" property="og:url" />
+        <meta
+          content="https://spigot-event-list-solidjs.vercel.app/"
+          property="og:url"
+        />
         <meta content="website" property="og:type" />
         <meta content="Spigot Event List" property="og:title" />
         <meta
