@@ -19,7 +19,6 @@
     "web:build": "yarn web build",
     "web:start": "yarn web start",
     "web:lint": "yarn web lint",
-    "web:lint-fix": "yarn web lint-fix",
-    "vercel-build": "(mv .next packages/web || exit 0) && yarn common && yarn common:build && yarn web && yarn web:build && mv packages/web/.next ."
+    "web:lint-fix": "yarn web lint-fix"
   }
 }
