@@ -31,5 +31,8 @@
     "typescript": "4.7.4",
     "undici": "5.7.0",
     "vite": "2.9.14"
+  },
+  "dependencies": {
+    "solid-icons": "^0.5.0"
   }
 }
