@@ -1987,7 +1987,7 @@
     "source": "paper"
   },
   {
-    "description": "プレイヤーがエンティティを右クリックする時に呼び出される。クライアントは PlayerInteractEntityEvent](README.md#bukkit-playerinteractentityevent) に加えてこのパケットを誤って送信する場合がある。 しかし、アーマースタンドを右クリックした場合、このイベントのみが呼び出される。特別な場合を除いて　[PlayerInteractEntityEvent を使うことを推奨している。",
+    "description": "プレイヤーがエンティティを右クリックする時に呼び出される。クライアントは PlayerInteractEntityEvent に加えてこのパケットを誤って送信する場合がある。 しかし、アーマースタンドを右クリックした場合、このイベントのみが呼び出される。特別な場合を除いて PlayerInteractEntityEvent を使うことを推奨している。",
     "href": "org/bukkit/event/player/PlayerInteractAtEntityEvent.html",
     "javadoc": "Represents an event that is called when a player right clicks an entity that\n also contains the location where the entity was clicked.\n \n Note that the client may sometimes spuriously send this packet in addition to PlayerInteractEntityEvent.\n Users are advised to listen to this (parent) class unless specifically required.\n \n Note that interacting with Armor Stands fires this event only and not its parent and as such users are expressly required\n to listen to this event for that scenario.",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerInteractAtEntityEvent.html",
