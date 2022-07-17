@@ -1,7 +1,11 @@
 import { defineConfig } from "vite";
 import solid from "solid-start";
 import vercel from "solid-start-vercel";
+import node from "solid-start-node";
+import * as process from "process";
 
 export default defineConfig({
-  plugins: [solid({ adapter: vercel() })],
+  plugins: [
+    solid({ adapter: process.env["ENABLE_VC_BUILD"] ? vercel() : node() }),
+  ],
 });
