@@ -16,7 +16,7 @@ export default function Footer() {
           rel="noopener"
           class="hover:underline"
         >
-          <p class="font-bold">©︎ 2021 sya_ri</p>
+          <p class="font-semibold">©︎ 2021 sya_ri</p>
         </a>
         <button class="bg-white hover:bg-gray-200 active:bg-gray-300 rounded-full p-2">
           ☀️{/* <BiSun class="h-6 w-6" /> FIXME */}
