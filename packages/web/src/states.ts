@@ -5,5 +5,13 @@ import { createStore } from "solid-js/store";
 export const [searchText, setSearchText] = createSignal("");
 
 export const [filterSources, setFilterSources] = createStore(
-  Object.fromEntries(sourceNames.map((source) => [source, true]))
+  defaultFilterSources()
 );
+
+export function resetFilterSources() {
+  setFilterSources(defaultFilterSources);
+}
+
+function defaultFilterSources() {
+  return Object.fromEntries(sourceNames.map((source) => [source, true]));
+}
