@@ -1,6 +1,6 @@
-import { EventType } from "spigot-event-list-common";
+import { EventType, SourceName } from "spigot-event-list-common";
 import EventSourceTags from "~/components/events/EventSourceTags";
-import { searchText } from "~/states";
+import { filterSources, searchText } from "~/states";
 import { createEffect, createSignal, Show } from "solid-js";
 
 export type EventListContentProps = {
@@ -13,10 +13,15 @@ export default function EventListContent(props: EventListContentProps) {
   createEffect(() => {
     function matchSearchText(name: string) {
       const search = searchText();
-      return !search || !!name.match(new RegExp(search, "i"));
+      return !search || name.match(new RegExp(search, "i"));
+    }
+    function matchSource(source: SourceName) {
+      return filterSources[source];
     }
 
-    setShow(matchSearchText(props.event.name));
+    setShow(
+      matchSearchText(props.event.name) && matchSource(props.event.source)
+    );
   });
 
   return (
