@@ -4,7 +4,7 @@ import EventSourceTag from "~/components/events/EventSourceTag";
 
 export default function HeaderTagsFilter() {
   return (
-    <div class="flex gap-2">
+    <div class="flex flex-wrap justify-center gap-2">
       <For each={sourceNames}>
         {(source, index) => (
           <EventSourceTag data-index={index} source={source} />

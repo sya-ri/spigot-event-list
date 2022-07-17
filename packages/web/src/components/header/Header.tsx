@@ -6,9 +6,9 @@ import { resetFilterSources, setSearchText } from "~/states";
 export default function Header() {
   return (
     <header class="sticky top-0 py-2 bg-white shadow-[0_4px_6px_-1px_rgba(0,0,0,0.1),0_2px_4px_-1px_rgba(0,0,0,0.06)]">
-      <div class="md:max-w-3xl mx-auto flex justify-between px-6">
+      <div class="md:max-w-3xl mx-auto flex flex-wrap justify-between px-4 gap-2">
         <div
-          class="flex items-center shrink-0 mr-8 cursor-pointer"
+          class="flex items-center shrink-0 cursor-pointer m-auto"
           onClick={() => {
             setSearchText("");
             resetFilterSources();

@@ -27,7 +27,7 @@ export default function EventListContent(props: EventListContentProps) {
   return (
     <Show when={show()}>
       <div class="my-4">
-        <div class="flex justify-between">
+        <div class="flex flex-wrap justify-between gap-1">
           <a
             href={props.event.link}
             target="_blank"
@@ -38,7 +38,9 @@ export default function EventListContent(props: EventListContentProps) {
               {props.event.name}
             </p>
           </a>
-          <EventSourceTags source={props.event.source} />
+          <div class="ml-auto mr-0">
+            <EventSourceTags source={props.event.source} />
+          </div>
         </div>
         <p class="font-normal mx-4 my-1">{props.event.description}</p>
       </div>

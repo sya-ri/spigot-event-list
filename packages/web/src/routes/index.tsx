@@ -46,7 +46,7 @@ export default function Index() {
   return (
     <>
       <Header />
-      <main class="min-h-screen">
+      <main class="min-h-screen mx-2">
         <EventList />
       </main>
       <Footer />
