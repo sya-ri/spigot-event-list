@@ -9,7 +9,7 @@
   "main": "dist/data.js",
   "types": "dist/data.d.ts",
   "scripts": {
-    "preinstall": "yarn --cwd ../common && yarn --cwd ../common build",
+    "build-dependencies": "yarn --cwd ../common && yarn --cwd ../common build",
     "fetch": "ts-node src/index.ts",
     "build": "tsc"
   },

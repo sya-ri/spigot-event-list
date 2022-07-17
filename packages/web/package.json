@@ -8,7 +8,7 @@
   "license": "ISC",
   "private": true,
   "scripts": {
-    "preinstall": "yarn --cwd ../data && yarn --cwd ../data build",
+    "build-dependencies": "yarn --cwd ../data build-dependencies && yarn --cwd ../data && yarn --cwd ../data build",
     "dev": "solid-start dev",
     "build": "solid-start build",
     "start": "solid-start start",
