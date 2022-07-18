@@ -29,7 +29,7 @@ export default function EventSourceTag(props: EventSourceTagProps) {
       }
     >
       <p
-        class={`text-xs font-medium px-2 ${
+        class={`text-xs font-medium px-2 select-none ${
           !filterSources[props.source] && "line-through"
         }`}
       >
