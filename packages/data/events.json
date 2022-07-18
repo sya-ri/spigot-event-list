@@ -2240,7 +2240,7 @@
     "source": "bukkit"
   },
   {
-    "description": "",
+    "description": "プレイヤーがチャット欄に文字を入力する度に呼び出される。",
     "href": "org/purpurmc/purpur/event/player/PlayerPreviewChatEvent.html",
     "link": "https://purpurmc.org/javadoc/org/purpurmc/purpur/event/player/PlayerPreviewChatEvent.html",
     "name": "PlayerPreviewChatEvent",
