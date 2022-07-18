@@ -1,4 +1,4 @@
-name: Update Source (Auto)
+name: Fetch Event List
 on:
   schedule:
     - cron: '00 21 * * *' # UTC 21:00 (JST 06:00)
@@ -16,7 +16,7 @@ jobs:
         run: |
           yarn data build-dependencies
           yarn data
-      - name: Run Update
+      - name: Fetch
         run: yarn data:fetch
       - name: Get Report
         id: report
@@ -29,10 +29,10 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
         with:
-          title: 'ソースのバージョンを更新'
+          title: 'イベント一覧を更新'
           body: ${{ steps.report.outputs.content }}
           branch: actions/update-event-list
           commit-message: |
-            ソースのバージョンを更新
+            イベント一覧を更新
           delete-branch: true
           reviewers: sya-ri
