@@ -5,7 +5,7 @@ body:
     attributes:
       value: |
         貢献いただきありがとうございます。分かる範囲で構いませんので、記入していただけばと思います。
-  - type: textarea
+  - type: input
     id: name
     attributes:
       label: 環境の名前
