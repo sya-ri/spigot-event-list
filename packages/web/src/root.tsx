@@ -2,13 +2,13 @@
 import { Links, Meta, Routes, Scripts } from "solid-start/root";
 import { ErrorBoundary } from "solid-start/error-boundary";
 import { Suspense } from "solid-js";
-import { createStatesEffect } from "~/states";
+import { createStatesEffect, isDarkMode } from "~/states";
 import "./index.css";
 
 export default function Root() {
   createStatesEffect();
   return (
-    <html lang="ja">
+    <html lang="ja" class={isDarkMode() ? "dark" : ""}>
       <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -61,7 +61,7 @@ export default function Root() {
         <Meta />
         <Links />
       </head>
-      <body>
+      <body class="dark:text-white dark:bg-gray-800">
         <ErrorBoundary>
           <Suspense>
             <Routes />

@@ -3,6 +3,17 @@ import { sourceNames } from "spigot-event-list-common";
 import { createStore } from "solid-js/store";
 import { isServer } from "solid-js/web";
 
+export const [isDarkMode, setDarkMode] = createSignal(defaultDarkMode());
+
+function defaultDarkMode() {
+  return (
+    isServer ||
+    localStorage.getItem("color-theme") === "dark" ||
+    (!("color-theme" in localStorage) &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches)
+  );
+}
+
 export const [searchText, setSearchText] = createSignal("");
 
 export const [filterSources, setFilterSources] = createStore(
@@ -51,6 +62,9 @@ export function createStatesEffect() {
         : "";
       const hash = window.location.hash;
       window.history.replaceState(null, "", path + params + hash);
+    });
+    createEffect(() => {
+      localStorage.setItem("color-theme", isDarkMode() ? "dark" : "");
     });
   }
 }
