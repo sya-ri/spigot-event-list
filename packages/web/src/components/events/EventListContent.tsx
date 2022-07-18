@@ -26,7 +26,13 @@ export default function EventListContent(props: EventListContentProps) {
 
   return (
     <Show when={show()}>
-      <div class="my-4">
+      <div
+        class="p-1 mx-1 my-2 cursor-pointer scroll-mt-32 md:scroll-mt-24"
+        id={`${props.event.source}-${props.event.name}`}
+        onClick={() => {
+          window.location.hash = `#${props.event.source}-${props.event.name}`;
+        }}
+      >
         <div class="flex flex-wrap justify-between gap-1">
           <a
             href={props.event.link}
