@@ -14,8 +14,7 @@ jobs:
           node-version: '16.x'
       - name: Install Dependencies
         run: |
-          yarn common
-          yarn common:build
+          yarn data build-dependencies
           yarn data
       - name: Run Update
         run: yarn data:fetch
