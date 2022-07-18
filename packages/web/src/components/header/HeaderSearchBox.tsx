@@ -11,7 +11,7 @@ export default function HeaderSearchBox() {
         <input
           type="text"
           class="w-full border border-gray-300 rounded-lg pl-10 p-2 bg-transparent"
-          placeholder="イベント名で検索する"
+          placeholder="イベント名・説明文で検索する"
           value={searchText()}
           onInput={({ currentTarget }) => setSearchText(currentTarget.value)}
         />
