@@ -12,25 +12,26 @@ export default function Root() {
       <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <link
-          href="apple-touch-icon.png"
+          href="/apple-touch-icon.png"
           rel="apple-touch-icon"
           sizes="180x180"
         />
         <link
-          href="favicon-32x32.png"
+          href="/favicon-32x32.png"
           rel="icon"
           sizes="32x32"
           type="image/png"
         />
         <link
-          href="favicon-16x16.png"
+          href="/favicon-16x16.png"
           rel="icon"
           sizes="16x16"
           type="image/png"
         />
-        <link href="site.webmanifest" rel="manifest" />
-        <link color="#606060" href="safari-pinned-tab.svg" rel="mask-icon" />
+        <link href="/site.webmanifest" rel="manifest" />
+        <link color="#606060" href="/safari-pinned-tab.svg" rel="mask-icon" />
         <meta content="#ffffff" name="msapplication-TileColor" />
         <meta content="#ffffff" name="theme-color" />
 
