@@ -27,7 +27,7 @@ export default function EventListContent(props: EventListContentProps) {
   return (
     <Show when={show()}>
       <div
-        class="p-1 mx-1 my-2 cursor-pointer scroll-mt-32 md:scroll-mt-24"
+        class="p-1 mx-1 my-2 cursor-pointer scroll-mt-40 md:scroll-mt-24"
         id={`${props.event.source}-${props.event.name}`}
         onClick={() => {
           window.location.hash = `#${props.event.source}-${props.event.name}`;
