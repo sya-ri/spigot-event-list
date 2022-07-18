@@ -2,9 +2,11 @@
 import { Links, Meta, Routes, Scripts } from "solid-start/root";
 import { ErrorBoundary } from "solid-start/error-boundary";
 import { Suspense } from "solid-js";
+import { createStatesEffect } from "~/states";
 import "./index.css";
 
 export default function Root() {
+  createStatesEffect();
   return (
     <html lang="ja">
       <head>
