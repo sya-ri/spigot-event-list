@@ -42,7 +42,7 @@ export default function Root() {
         <meta content="Spigot Event List" property="og:title" />
         <meta
           content="[Minecraft 1.19] Bukkit, Spigot, Paper, Purpur, BungeeCord, Waterfall, Velocity 対応のイベント一覧"
-          property="og:title"
+          property="og:description"
         />
         <meta
           content="https://spigot-event-list.s7a.dev/logo.png"
