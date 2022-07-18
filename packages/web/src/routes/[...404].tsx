@@ -1,31 +1,20 @@
-import { Link } from "solid-app-router";
+import { FaSolidFaucet } from "~/components/icons";
+import { Link } from "solid-app-router"; // TODO: import from "solid-icons/fa"
 
 export default function NotFound() {
   return (
-    <main class="text-center mx-auto text-gray-700 p-4">
-      <h1 class="max-6-xs text-6xl text-sky-700 font-thin uppercase my-16">
-        Not Found
-      </h1>
-      <p class="mt-8">
-        Visit{" "}
-        <Link
-          href="https://solidjs.com"
-          target="_blank"
-          class="text-sky-600 hover:underline"
-        >
-          solidjs.com
-        </Link>{" "}
-        to learn how to build Solid apps.
-      </p>
-      <p class="my-4">
-        <Link href="/" class="text-sky-600 hover:underline">
-          Home
-        </Link>
-        {" - "}
-        <Link href="/about" class="text-sky-600 hover:underline">
-          About Page
-        </Link>
-      </p>
+    <main class="min-h-screen flex justify-center">
+      <div class="m-auto">
+        <FaSolidFaucet class="h-24 w-24 fill-current m-auto" />
+        <p class="text-4xl font-bold font-mono my-8">404 Not Found</p>
+        <div class="flex justify-center">
+          <Link href="/">
+            <button class="p-2 rounded-lg border border-gray-800 dark:border-white bg-white hover:bg-gray-200 active:bg-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700 dark:active:bg-gray-600">
+              トップに戻る
+            </button>
+          </Link>
+        </div>
+      </div>
     </main>
   );
 }
