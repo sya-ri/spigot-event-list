@@ -12,6 +12,7 @@ export default function Root() {
       <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Spigot Event List</title>
         <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <link
           href="/apple-touch-icon.png"
