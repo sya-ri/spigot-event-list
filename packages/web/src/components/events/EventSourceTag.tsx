@@ -21,7 +21,7 @@ export default function EventSourceTag(props: EventSourceTagProps) {
 
   return (
     <span
-      class={`flex items-center rounded-lg h-5 cursor-pointer ${
+      class={`flex items-center rounded-lg h-5 cursor-pointer dark:opacity-70 ${
         colors[props.source]
       }`}
       onClick={() =>
