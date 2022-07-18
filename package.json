@@ -4,7 +4,7 @@
   "description": "List of events for Bukkit, Spigot, Paper, Purpur, BungeeCord, Waterfall and Velocity",
   "repository": "https://github.com/sya-ri/spigot-event-list.git",
   "author": "sya-ri",
-  "license": "ISC",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "lint": "yarn web:lint",

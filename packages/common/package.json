@@ -6,7 +6,7 @@
   "types": "dist/index.d.ts",
   "repository": "https://github.com/sya-ri/spigot-event-list.git",
   "author": "sya-ri",
-  "license": "ISC",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "build": "tsc"
