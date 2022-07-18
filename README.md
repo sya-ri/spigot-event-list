@@ -24,6 +24,8 @@
   <img alt="Velocity" src="https://img.shields.io/badge/dynamic/json?color=lightgreen&label=Velocity&query=Velocity&url=https%3A%2F%2Fraw.githubusercontent.com%2Fsya-ri%2Fspigot-event-list%2Fmaster%2Fpackages%2Fdata%2Fversions.json" />
 </a>
 
+<br />
+
 - Minecraft のプラグイン制作に使うイベントの一覧です。
 - イベント名による検索・環境による絞り込みに対応しています。
 - 最新バージョンに対応しており、常に新しいイベントを追加しています。
