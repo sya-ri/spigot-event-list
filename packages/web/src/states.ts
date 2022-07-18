@@ -6,12 +6,12 @@ import { isServer } from "solid-js/web";
 export const [isDarkMode, setDarkMode] = createSignal(defaultDarkMode());
 
 function defaultDarkMode() {
-  return (
-    isServer ||
-    localStorage.getItem("color-theme") === "dark" ||
-    (!("color-theme" in localStorage) &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches)
-  );
+  if (isServer) return false;
+  if ("color-theme" in localStorage) {
+    return localStorage.getItem("color-theme") === "dark";
+  } else {
+    return window.matchMedia("(prefers-color-scheme: dark)").matches;
+  }
 }
 
 export const [searchText, setSearchText] = createSignal("");
