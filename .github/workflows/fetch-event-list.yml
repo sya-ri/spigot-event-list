@@ -33,6 +33,6 @@ jobs:
           body: ${{ steps.report.outputs.content }}
           branch: actions/update-event-list
           commit-message: |
-            イベント一覧を更新
+            chore(data): イベント一覧を更新
           delete-branch: true
           reviewers: sya-ri
