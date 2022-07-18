@@ -5,7 +5,7 @@ import EventListContent from "./EventListContent";
 export default function EventList() {
   const events = getEvents();
   return (
-    <div class="md:max-w-lg md:mx-auto">
+    <div class="max-w-xl mx-auto">
       <For each={events}>
         {(event, index) => (
           <EventListContent data-index={index()} event={event} />

@@ -17,7 +17,7 @@ export default function Header() {
           <FaSolidFaucet class="h-8 w-8 mr-2" />
           <h1 class="font-bold text-2xl">Spigot Event List</h1>
         </div>
-        <div class="flex flex-col gap-2">
+        <div class="flex flex-col gap-2 m-auto">
           <HeaderSearchBox />
           <HeaderTagsFilter />
         </div>
