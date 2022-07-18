@@ -1,0 +1,50 @@
+name: 新しい環境への対応
+description: 対応していない環境をイベント一覧に追加してほしい場合に使ってください。
+body:
+  - type: markdown
+    attributes:
+      value: |
+        貢献いただきありがとうございます。分かる範囲で構いませんので、記入していただけばと思います。
+  - type: textarea
+    attributes:
+      label: 環境の名前
+      description: 追加してほしい環境の名前を書いてください。
+      placeholder: Spigot
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: ウェブサイト
+      description: 公式ウェブサイトなどへのリンクを貼ってください。
+      placeholder: https://www.spigotmc.org
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: Javadoc
+      description: Javadocへのリンクをウェブページ内に設置するときに使います。
+      placeholder: https://hub.spigotmc.org/javadocs/spigot
+    validations:
+      required: false
+  - type: textarea
+    attributes:
+      label: maven リポジトリ
+      description: プラグインを制作する時に使うものです。Javadocをダウンロードするために使います。
+      placeholder: |
+        <repositories>
+            <repository>
+                <id>spigot-repo</id>
+                <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+            </repository>
+        </repositories>
+
+        <dependencies>
+            <dependency>
+                   <groupId>org.spigotmc</groupId>
+                   <artifactId>spigot-api</artifactId>
+                   <version>1.19-R0.1-SNAPSHOT</version>
+                   <scope>provided</scope>
+            </dependency>
+        </dependencies>
+    validations:
+      required: false
