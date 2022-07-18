@@ -2240,6 +2240,13 @@
     "source": "bukkit"
   },
   {
+    "description": "",
+    "href": "org/purpurmc/purpur/event/player/PlayerPreviewChatEvent.html",
+    "link": "https://purpurmc.org/javadoc/org/purpurmc/purpur/event/player/PlayerPreviewChatEvent.html",
+    "name": "PlayerPreviewChatEvent",
+    "source": "purpur"
+  },
+  {
     "description": "プレイヤーが村人と取引する時に呼び出される。",
     "href": "io/papermc/paper/event/player/PlayerPurchaseEvent.html",
     "javadoc": "Called when a player trades with a standalone merchant GUI.",
