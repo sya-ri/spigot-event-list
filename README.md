@@ -1,16 +1,16 @@
-# Spigot Event List
+<h1 align="center">
+<a href="https://spigot-event-list.s7a.dev">
+<img src="logo.png" alt="spigot-event-list"/>
+</a>
+Spigot Event List
+</h1>
 
-イベントについて簡単な説明が書かれていますが、詳しい内容は Javadoc を参照してください。イベント名をクリックすると、対応するJavadocを確認できます。
-不明点や指摘については [Issue](https://github.com/sya-ri/spigot-event-list/issues) や [PullRequest](https://github.com/sya-ri/spigot-event-list/pulls) にお願いします。
+![](https://img.shields.io/badge/dynamic/json?color=orange&label=Spigot&query=Spigot&url=https%3A%2F%2Fraw.githubusercontent.com%2Fsya-ri%2Fspigot-event-list%2Fmaster%2Fpackages%2Fdata%2Fversions.json)
+![](https://img.shields.io/badge/dynamic/json?color=lightgray&label=Paper&query=Paper&url=https%3A%2F%2Fraw.githubusercontent.com%2Fsya-ri%2Fspigot-event-list%2Fmaster%2Fpackages%2Fdata%2Fversions.json)
+![](https://img.shields.io/badge/dynamic/json?color=blueviolet&label=Purpur&query=Purpur&url=https%3A%2F%2Fraw.githubusercontent.com%2Fsya-ri%2Fspigot-event-list%2Fmaster%2Fpackages%2Fdata%2Fversions.json)
+![](https://img.shields.io/badge/dynamic/json?color=yellow&label=BungeeCord&query=Bungee&url=https%3A%2F%2Fraw.githubusercontent.com%2Fsya-ri%2Fspigot-event-list%2Fmaster%2Fpackages%2Fdata%2Fversions.json)
+![](https://img.shields.io/badge/dynamic/json?color=lightblue&label=Waterfall&query=Waterfall&url=https%3A%2F%2Fraw.githubusercontent.com%2Fsya-ri%2Fspigot-event-list%2Fmaster%2Fpackages%2Fdata%2Fversions.json)
+![](https://img.shields.io/badge/dynamic/json?color=lightgreen&label=Velocity&query=Velocity&url=https%3A%2F%2Fraw.githubusercontent.com%2Fsya-ri%2Fspigot-event-list%2Fmaster%2Fpackages%2Fdata%2Fversions.json)
 
-- [イベント一覧](https://spigot-event-list.s7a.dev)
-
-## 対応環境
-
-- Bukkit
-- Spigot
-- Paper
-- Purpur
-- BungeeCord
-- Waterfall
-- Velocity
+- Minecraft のプラグイン制作に使うイベントの一覧。
+- イベント名による検索・環境によるイベント絞り込みに対応。
