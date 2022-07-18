@@ -6,6 +6,7 @@ body:
       value: |
         貢献いただきありがとうございます。分かる範囲で構いませんので、記入していただけばと思います。
   - type: textarea
+    id: name
     attributes:
       label: 環境の名前
       description: 追加してほしい環境の名前を書いてください。
@@ -13,6 +14,7 @@ body:
     validations:
       required: true
   - type: textarea
+    id: website
     attributes:
       label: ウェブサイト
       description: 公式ウェブサイトなどへのリンクを貼ってください。
@@ -20,6 +22,7 @@ body:
     validations:
       required: false
   - type: textarea
+    id: javadoc
     attributes:
       label: Javadoc
       description: Javadocへのリンクをウェブページ内に設置するときに使います。
@@ -27,6 +30,7 @@ body:
     validations:
       required: false
   - type: textarea
+    id: maven
     attributes:
       label: maven リポジトリ
       description: プラグインを制作する時に使うものです。Javadocをダウンロードするために使います。
