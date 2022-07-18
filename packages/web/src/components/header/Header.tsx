@@ -1,7 +1,7 @@
 import HeaderSearchBox from "~/components/header/HeaderSearchBox";
 import HeaderTagsFilter from "~/components/header/HeaderTagsFilter";
 import { resetFilterSources, setSearchText } from "~/states";
-// import { FaSolidFaucet } from "solid-icons/fa"; FIXME
+import { FaSolidFaucet } from "~/components/icons"; // TODO: import from "solid-icons/fa"
 
 export default function Header() {
   return (
@@ -14,7 +14,7 @@ export default function Header() {
             resetFilterSources();
           }}
         >
-          {/* <FaSolidFaucet class="h-8 w-8 mr-2" /> FIXME */}
+          <FaSolidFaucet class="h-8 w-8 mr-2" />
           <h1 class="font-bold text-2xl">Spigot Event List</h1>
         </div>
         <div class="flex flex-col gap-2">

@@ -1,4 +1,4 @@
-// import { BiArrowToTop, BiSun } from "solid-icons/bi"; FIXME
+import { BiArrowToTop, BiSun } from "~/components/icons"; // TODO: import from "solid-icons/bi"
 
 export default function Footer() {
   return (
@@ -8,7 +8,7 @@ export default function Footer() {
           class="bg-white hover:bg-gray-200 active:bg-gray-300 rounded-full p-2"
           onClick={() => window.scroll({ behavior: "smooth", top: 0 })}
         >
-          👆{/* <BiArrowToTop class="h-6 w-6" /> FIXME */}
+          <BiArrowToTop class="h-6 w-6" />
         </button>
         <a
           href="https://github.com/sya-ri/spigot-event-list"
@@ -19,7 +19,7 @@ export default function Footer() {
           <p class="font-semibold">©︎ 2021 sya_ri</p>
         </a>
         <button class="bg-white hover:bg-gray-200 active:bg-gray-300 rounded-full p-2">
-          ☀️{/* <BiSun class="h-6 w-6" /> FIXME */}
+          <BiSun class="h-6 w-6" />
         </button>
       </div>
     </footer>
