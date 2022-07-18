@@ -1,8 +1,8 @@
 <h1 align="center">
-<a href="https://spigot-event-list.s7a.dev">
-<img src="logo.png" alt="spigot-event-list"/>
-</a>
-Spigot Event List
+  <a href="https://spigot-event-list.s7a.dev">
+    <img src="logo.png" alt="spigot-event-list"/>
+  </a>
+  Spigot Event List
 </h1>
 
 ![](https://img.shields.io/badge/dynamic/json?color=orange&label=Spigot&query=Spigot&url=https%3A%2F%2Fraw.githubusercontent.com%2Fsya-ri%2Fspigot-event-list%2Fmaster%2Fpackages%2Fdata%2Fversions.json)
