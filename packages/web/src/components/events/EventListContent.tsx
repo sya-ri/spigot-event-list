@@ -11,16 +11,21 @@ export default function EventListContent(props: EventListContentProps) {
   const [show, setShow] = createSignal(false);
 
   createEffect(() => {
-    function matchSearchText(name: string) {
+    function matchSearchText(name: string, description: string) {
       const search = searchText();
-      return !search || name.match(new RegExp(search, "i"));
+      return (
+        !search ||
+        name.match(new RegExp(search, "i")) ||
+        description.match(new RegExp(search, "i"))
+      );
     }
     function matchSource(source: SourceName) {
       return filterSources[source];
     }
 
     setShow(
-      matchSearchText(props.event.name) && matchSource(props.event.source)
+      matchSearchText(props.event.name, props.event.description) &&
+        matchSource(props.event.source)
     );
   });
 
