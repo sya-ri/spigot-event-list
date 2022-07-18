@@ -8,7 +8,7 @@ import "./index.css";
 export default function Root() {
   createStatesEffect();
   return (
-    <html lang="ja" class={`h-full ${isDarkMode() ? "dark" : ""}`}>
+    <html lang="ja" class={isDarkMode() ? "dark" : ""}>
       <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -73,7 +73,7 @@ export default function Root() {
         `}
         </script>
       </head>
-      <body class="dark:text-white dark:bg-gray-800 h-full">
+      <body class="dark:text-white dark:bg-gray-800">
         <ErrorBoundary>
           <Suspense>
             <Routes />

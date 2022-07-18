@@ -6,7 +6,7 @@ export default function Index() {
   return (
     <>
       <Header />
-      <main class="overflow-auto">
+      <main class="min-h-screen">
         <EventList />
       </main>
       <Footer />
