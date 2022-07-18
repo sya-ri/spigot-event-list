@@ -33,7 +33,7 @@ const sources: { [name: string]: EventSource } = {
             "<title>BungeeCord (.*) \\[Jenkins\\]</title>"
           );
           if (match) {
-            source.version = match.pop();
+            source.version = source.artifact.version + " - " + match.pop();
           }
         })
         .catch((reason) => console.error(reason)),
@@ -57,7 +57,7 @@ const sources: { [name: string]: EventSource } = {
         .get("https://api.papermc.io/v2/projects/paper/versions/1.19/")
         .then((response) => {
           const json = response.data;
-          source.version = "#" + json.builds.pop();
+          source.version = source.artifact.version + " - #" + json.builds.pop();
         })
         .catch((reason) => console.error(reason)),
   },
@@ -80,7 +80,7 @@ const sources: { [name: string]: EventSource } = {
         .get("https://api.purpurmc.org/v2/purpur/1.19")
         .then((response) => {
           const json = response.data;
-          source.version = "#" + json.builds.latest;
+          source.version = source.artifact.version + " - #" + json.builds.latest;
         })
         .catch((reason) => console.error(reason)),
   },
@@ -110,7 +110,7 @@ const sources: { [name: string]: EventSource } = {
             "<title>Spigot-RSS (.*) \\[Jenkins\\]</title>"
           );
           if (match) {
-            source.version = match.pop();
+            source.version = source.artifact.version + " - " + match.pop();
           }
         })
         .catch((reason) => console.error(reason)),
@@ -144,7 +144,7 @@ const sources: { [name: string]: EventSource } = {
             )
             .then((response) => {
               const json = response.data;
-              source.version = "#" + json.builds.pop();
+              source.version = source.artifact.version + " - #" + json.builds.pop();
             })
             .catch((reason) => console.error(reason));
         })
@@ -169,7 +169,7 @@ const sources: { [name: string]: EventSource } = {
         .get("https://api.papermc.io/v2/projects/waterfall/versions/1.19/")
         .then((response) => {
           const json = response.data;
-          source.version = "#" + json.builds.pop();
+          source.version = source.artifact.version + " - #" + json.builds.pop();
         })
         .catch((reason) => console.error(reason)),
   },
