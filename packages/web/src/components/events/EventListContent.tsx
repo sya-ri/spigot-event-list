@@ -37,10 +37,10 @@ export default function EventListContent(props: EventListContentProps) {
         id={`${props.event.source}-${props.event.name}`}
       >
         <div class="flex flex-wrap justify-between gap-1">
-          <div class="group flex items-center">
+          <div class="group flex items-center flex-row-reverse md:flex-row">
             <a
               href={`#${props.event.source}-${props.event.name}`}
-              class="hidden group-hover:inline-block float-left ml-[-1.25em] pr-1"
+              class="hidden group-hover:inline-block float-right mr-[-1.25rem] ml-0 pl-1 pr-0 md:float-left md:ml-[-1.25rem] md:mr-0 md:pr-1 md:pl-0"
             >
               <BiLink class="h-4 w-4 fill-current" />
             </a>
