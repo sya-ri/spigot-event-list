@@ -2,6 +2,7 @@ import { EventType, SourceName } from "spigot-event-list-common";
 import EventSourceTags from "~/components/events/EventSourceTags";
 import { filterSources, searchText } from "~/states";
 import { createEffect, createSignal, Show } from "solid-js";
+import { BiLink } from "~/components/icons"; // TODO: import from "solid-icons/bi"
 
 export type EventListContentProps = {
   event: EventType;
@@ -32,23 +33,30 @@ export default function EventListContent(props: EventListContentProps) {
   return (
     <Show when={show()}>
       <div
-        class="p-1 mx-1 my-2 cursor-pointer scroll-mt-40 md:scroll-mt-24"
+        class="p-1 mx-1 my-2 scroll-mt-40 md:scroll-mt-24"
         id={`${props.event.source}-${props.event.name}`}
-        onClick={() => {
-          window.location.hash = `#${props.event.source}-${props.event.name}`;
-        }}
       >
-        <div class="flex flex-wrap justify-between gap-1">
-          <a
-            href={props.event.link}
-            target="_blank"
-            rel="noopener"
-            class="hover:underline hover:cursor-pointer"
-          >
-            <p class={`font-medium ${props.event.abstract && "line-through"}`}>
-              {props.event.name}
-            </p>
-          </a>
+        <div class="group flex flex-wrap justify-between gap-1">
+          <div class="flex items-center">
+            <a
+              href={`#${props.event.source}-${props.event.name}`}
+              class="hidden group-hover:inline-block float-left ml-[-1.25em] pr-1"
+            >
+              <BiLink class="h-4 w-4 fill-current" />
+            </a>
+            <a
+              href={props.event.link}
+              target="_blank"
+              rel="noopener"
+              class="hover:underline hover:cursor-pointer"
+            >
+              <p
+                class={`font-medium ${props.event.abstract && "line-through"}`}
+              >
+                {props.event.name}
+              </p>
+            </a>
+          </div>
           <div class="ml-auto mr-0">
             <EventSourceTags source={props.event.source} />
           </div>
