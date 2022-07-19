@@ -36,8 +36,8 @@ export default function EventListContent(props: EventListContentProps) {
         class="p-1 mx-1 my-2 scroll-mt-40 md:scroll-mt-24"
         id={`${props.event.source}-${props.event.name}`}
       >
-        <div class="group flex flex-wrap justify-between gap-1">
-          <div class="flex items-center">
+        <div class="flex flex-wrap justify-between gap-1">
+          <div class="group flex items-center">
             <a
               href={`#${props.event.source}-${props.event.name}`}
               class="hidden group-hover:inline-block float-left ml-[-1.25em] pr-1"
