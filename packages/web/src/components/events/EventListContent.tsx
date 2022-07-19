@@ -53,7 +53,9 @@ export default function EventListContent(props: EventListContentProps) {
             <EventSourceTags source={props.event.source} />
           </div>
         </div>
-        <p class="font-normal mx-4 my-1 break-all">{props.event.description}</p>
+        <p class="font-normal mx-4 my-1 break-all whitespace-pre-wrap">
+          {props.event.description}
+        </p>
       </div>
     </Show>
   );
