@@ -8,6 +8,7 @@ import getChangeLog from "./getChangeLog";
 import getLastSources from "./getLastSources";
 import { getLastEvents, writeEvents } from "./json/events";
 import { writeVersions } from "./json/versions";
+import * as ProgressBar from "progress";
 
 const sources: { [name: string]: EventSource } = {
   Bungee: {
@@ -186,4 +187,4 @@ const index = async () => {
   await writeFile("report.md", getChangeLog(lastSources, sources, events));
 };
 
-index().then(() => console.log("* 更新が終了しました"));
+index().catch(err => console.error(err));

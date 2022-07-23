@@ -928,6 +928,14 @@
     "source": "bukkit"
   },
   {
+    "description": "",
+    "href": "io/papermc/paper/event/entity/EntityPortalReadyEvent.html",
+    "javadoc": "Called when an entity is ready to be teleported by a plugin.\n Currently this is only called after the required\n ticks have passed for a Nether Portal.\n \n Cancelling this event resets the entity's readiness\n regarding the current portal.",
+    "link": "https://jd.papermc.io/paper/1.19/io/papermc/paper/event/entity/EntityPortalReadyEvent.html",
+    "name": "EntityPortalReadyEvent",
+    "source": "paper"
+  },
+  {
     "description": "エンティティのポーズが変わった時に呼び出される。",
     "href": "org/bukkit/event/entity/EntityPoseChangeEvent.html",
     "javadoc": "Called when an entity changes its pose.",

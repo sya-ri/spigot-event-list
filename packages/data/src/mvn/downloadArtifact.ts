@@ -1,10 +1,13 @@
-import { writeFile } from "fs/promises";
 import axios, { AxiosRequestConfig } from "axios";
 import Artifact from "./Artifact";
 import artifactUrl from "./artifactUrl";
-import ArrayBufferView = NodeJS.ArrayBufferView;
+import { Stream } from "stream";
+import { createWriteStream } from "fs";
+import ProgressBar = require("progress");
+import * as Buffer from "buffer";
 
 const downloadArtifact = (
+  name: string,
   artifact: Artifact,
   destination: string,
   repository: string,
@@ -12,15 +15,30 @@ const downloadArtifact = (
 ) =>
   artifactUrl(artifact, repository, config).then((url) =>
     axios
-      .get<ArrayBufferView>(url, {
-        responseType: "arraybuffer",
+      .get<Stream>(url, {
+        responseType: "stream",
         ...config,
       })
-      .then((response) => {
-        if (response.status !== 200) {
-          throw new Error(`Unable to fetch ${url}. Status ${response.status}`);
+      .then(({ status, headers, data }) => {
+        if (status !== 200) {
+          throw new Error(`Unable to fetch ${url}. Status ${status}`);
         }
-        return writeFile(destination, response.data);
+        const contentLength = parseInt(headers["content-length"]);
+        if (Number.isNaN(contentLength)) {
+          throw new Error(`Unable to fetch ${url}. Content-Length: ${headers["content-length"]}`);
+        }
+        return new Promise<void>((resolve, reject) => {
+          const bar = new ProgressBar(`  ${name.padEnd(10, " ")} [:bar] :percent`, {
+            complete: '=',
+            incomplete: ' ',
+            width: 20,
+            total: contentLength
+          });
+          data.pipe(createWriteStream(destination));
+          data.on('data', (chunk: Buffer) => bar.tick(chunk.length));
+          data.on('end', () => resolve());
+          data.on('error', () => reject());
+        });
       })
   );
 

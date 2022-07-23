@@ -5,6 +5,7 @@ import { zip } from "compressing";
 import EventSource from "../EventSource";
 import { EventType, SourceName } from "spigot-event-list-common";
 import downloadArtifact from "../mvn/downloadArtifact";
+import ProgressBar = require("progress");
 
 /**
  * ファイルパスを取得する
@@ -16,13 +17,15 @@ export const javadocPath = (filename: string) => path.join("javadoc", filename);
 /**
  * Javadoc をダウンロードする
  */
-export const downloadJavadoc = (sources: { [name: string]: EventSource }) =>
-  rm(javadocPath(""), { recursive: true, force: true })
+export const downloadJavadoc = (sources: { [name: string]: EventSource }) => {
+  console.info("Download Javadoc:");
+  return rm(javadocPath(""), { recursive: true, force: true })
     .then(() => mkdir(javadocPath("")))
     .then(() =>
       Promise.all(
         Object.entries(sources).map(([name, source]) =>
           downloadArtifact(
+            name,
             source.artifact,
             javadocPath(`${name}.jar`),
             source.repository
@@ -34,6 +37,7 @@ export const downloadJavadoc = (sources: { [name: string]: EventSource }) =>
         )
       )
     );
+};
 
 const getSourceNameFromType = (type: SourceName) => {
   switch (type) {
