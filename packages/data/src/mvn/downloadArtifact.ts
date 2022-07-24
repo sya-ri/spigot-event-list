@@ -3,10 +3,11 @@ import Artifact from "./Artifact";
 import artifactUrl from "./artifactUrl";
 import { Stream } from "stream";
 import { createWriteStream } from "fs";
-import ProgressBar = require("progress");
+import MultiProgress = require("multi-progress");
 import * as Buffer from "buffer";
 
 const downloadArtifact = (
+  multiProgress: MultiProgress,
   name: string,
   artifact: Artifact,
   destination: string,
@@ -28,7 +29,7 @@ const downloadArtifact = (
           throw new Error(`Unable to fetch ${url}. Content-Length: ${headers["content-length"]}`);
         }
         return new Promise<void>((resolve, reject) => {
-          const bar = new ProgressBar(`  ${name.padEnd(10, " ")} [:bar] :percent`, {
+          const bar = multiProgress.newBar(`  ${name.padEnd(10, " ")} [:bar] :percent`, {
             complete: '=',
             incomplete: ' ',
             width: 20,

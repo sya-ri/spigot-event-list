@@ -5,7 +5,7 @@ import { zip } from "compressing";
 import EventSource from "../EventSource";
 import { EventType, SourceName } from "spigot-event-list-common";
 import downloadArtifact from "../mvn/downloadArtifact";
-import ProgressBar = require("progress");
+import MultiProgress = require("multi-progress");
 
 /**
  * ファイルパスを取得する
@@ -19,12 +19,14 @@ export const javadocPath = (filename: string) => path.join("javadoc", filename);
  */
 export const downloadJavadoc = (sources: { [name: string]: EventSource }) => {
   console.info("Download Javadoc:");
+  const multiProgress = new MultiProgress();
   return rm(javadocPath(""), { recursive: true, force: true })
     .then(() => mkdir(javadocPath("")))
     .then(() =>
       Promise.all(
         Object.entries(sources).map(([name, source]) =>
           downloadArtifact(
+            multiProgress,
             name,
             source.artifact,
             javadocPath(`${name}.jar`),
