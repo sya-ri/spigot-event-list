@@ -3397,10 +3397,10 @@ solid-icons@0.5.0:
   resolved "https://registry.yarnpkg.com/solid-icons/-/solid-icons-0.5.0.tgz#7f6b59cc30603088195a8f6f66a9631bdd76c6e0"
   integrity sha512-diDMdtV2loH0LDbAPHAQiQNcxw2lXtzlw1qBDYtmZKSY1vedOdBk/aVylmVhzTYP12SQYeJdcg25MY6CHnkn8w==
 
-solid-js@1.4.7:
-  version "1.4.7"
-  resolved "https://registry.yarnpkg.com/solid-js/-/solid-js-1.4.7.tgz#c174199c9248bcdceb66fa1b216348eef4541dfe"
-  integrity sha512-u3hoe5w3xseAc/8zLwYaQVGanWXknMMQkzryNz7lOPy2ygW6DhCtfMseun4kLflRNRzrUUpTV3W5p7j2SGcHCQ==
+solid-js@1.4.8:
+  version "1.4.8"
+  resolved "https://registry.yarnpkg.com/solid-js/-/solid-js-1.4.8.tgz#a1e7f56c17d64c1729c6fd36fe513ca283e78dbd"
+  integrity sha512-XErZdnnYYXF7OwGSUAPcua2y5/ELB/c53zFCpWiEGqxTNoH1iQghzI8EsHJXk06sNn+Z/TGhb8bPDNNGSgimag==
 
 solid-meta@0.27.5:
   version "0.27.5"
