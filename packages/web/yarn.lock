@@ -3402,10 +3402,10 @@ solid-js@1.4.8:
   resolved "https://registry.yarnpkg.com/solid-js/-/solid-js-1.4.8.tgz#a1e7f56c17d64c1729c6fd36fe513ca283e78dbd"
   integrity sha512-XErZdnnYYXF7OwGSUAPcua2y5/ELB/c53zFCpWiEGqxTNoH1iQghzI8EsHJXk06sNn+Z/TGhb8bPDNNGSgimag==
 
-solid-meta@0.27.5:
-  version "0.27.5"
-  resolved "https://registry.yarnpkg.com/solid-meta/-/solid-meta-0.27.5.tgz#b130a9a779b03d66baa030443327c4ec00982be5"
-  integrity sha512-9OA50aNBhCwuFo1Uby9NT3gB6I6iBRN0mSXkXROJyWDtmyhdw9iyMT9JsnGF/A/7IQq2BSLV75oPQjNKQAMeQw==
+solid-meta@0.28.1:
+  version "0.28.1"
+  resolved "https://registry.yarnpkg.com/solid-meta/-/solid-meta-0.28.1.tgz#e04eb876a890fcbb767739aede9290ceca757408"
+  integrity sha512-mYS1YccWZY6eda3wxY7GOVjx7fJcstCqCdyA6DI/2GjymjaYA5/FeObwvbP8sm48VwEgSBCw44bP7iVpQz/mcQ==
 
 solid-refresh@^0.4.1:
   version "0.4.1"
