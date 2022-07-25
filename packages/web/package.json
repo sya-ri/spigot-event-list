@@ -39,5 +39,8 @@
   "dependencies": {
     "solid-icons": "0.5.0",
     "spigot-event-list-data": "../data"
+  },
+  "resolutions": {
+    "undici": "^5.8.0"
   }
 }
