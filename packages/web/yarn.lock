@@ -3392,10 +3392,10 @@ solid-app-router@0.4.1:
   resolved "https://registry.yarnpkg.com/solid-app-router/-/solid-app-router-0.4.1.tgz#cee8da5167fb1e7ce740528324118d76a3d197ba"
   integrity sha512-RKHyFQ+J5lXyE/SoyJVHgTBeBck2etYVJn1/9F7ehlzyD2pIOMqLpNXD1GfWQljHqNdXZBSyE+xB/Cck5l9Q/g==
 
-solid-icons@0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/solid-icons/-/solid-icons-0.5.0.tgz#7f6b59cc30603088195a8f6f66a9631bdd76c6e0"
-  integrity sha512-diDMdtV2loH0LDbAPHAQiQNcxw2lXtzlw1qBDYtmZKSY1vedOdBk/aVylmVhzTYP12SQYeJdcg25MY6CHnkn8w==
+solid-icons@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/solid-icons/-/solid-icons-1.0.0.tgz#eef18cc3eab80b7355a99cd0cd327c2c975da242"
+  integrity sha512-yZvuYkHQPebt6EQgyiRB04iwP02xi+4886rK/TyX18E8yda/0xcTZ44wJ5S0x9xKMnjd8YtwSPOk0KQVb+Dc+g==
 
 solid-js@1.4.8:
   version "1.4.8"

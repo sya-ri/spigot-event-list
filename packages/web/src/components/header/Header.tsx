@@ -1,7 +1,7 @@
 import HeaderSearchBox from "~/components/header/HeaderSearchBox";
 import HeaderTagsFilter from "~/components/header/HeaderTagsFilter";
 import { resetFilterSources, setSearchText } from "~/states";
-import { FaSolidFaucet } from "~/components/icons"; // TODO: import from "solid-icons/fa"
+import { FaSolidFaucet } from "solid-icons/fa";
 
 export default function Header() {
   return (

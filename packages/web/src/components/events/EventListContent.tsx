@@ -2,7 +2,7 @@ import { EventType, SourceName } from "spigot-event-list-common";
 import EventSourceTags from "~/components/events/EventSourceTags";
 import { filterSources, searchText } from "~/states";
 import { createEffect, createSignal, Show } from "solid-js";
-import { BiLink } from "~/components/icons"; // TODO: import from "solid-icons/bi"
+import { BiRegularLink } from "solid-icons/bi";
 
 export type EventListContentProps = {
   event: EventType;
@@ -42,7 +42,7 @@ export default function EventListContent(props: EventListContentProps) {
               href={`#${props.event.source}-${props.event.name}`}
               class="hidden group-hover:inline-block float-right mr-[-1.25rem] ml-0 pl-1 pr-0 md:float-left md:ml-[-1.25rem] md:mr-0 md:pr-1 md:pl-0"
             >
-              <BiLink class="h-4 w-4 fill-current" />
+              <BiRegularLink class="h-4 w-4 fill-current" />
             </a>
             <a
               href={props.event.link}

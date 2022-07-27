@@ -1,4 +1,4 @@
-import { BiSearch } from "~/components/icons"; // TODO: import from "solid-icons/bi"
+import { BiRegularSearch } from "solid-icons/bi";
 import { searchText, setSearchText } from "~/states";
 
 export default function HeaderSearchBox() {
@@ -6,7 +6,7 @@ export default function HeaderSearchBox() {
     <div class="flex items-center">
       <div class="relative w-full">
         <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
-          <BiSearch class="w-5 h-5 fill-current" />
+          <BiRegularSearch class="w-5 h-5 fill-current" />
         </div>
         <input
           type="text"

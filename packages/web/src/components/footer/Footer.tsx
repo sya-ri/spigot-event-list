@@ -1,4 +1,8 @@
-import { BiArrowToTop, BiSun, BiMoon } from "~/components/icons"; // TODO: import from "solid-icons/bi"
+import {
+  BiRegularArrowToTop,
+  BiRegularSun,
+  BiRegularMoon,
+} from "solid-icons/bi";
 import { isDarkMode, setDarkMode } from "~/states";
 
 export default function Footer() {
@@ -9,7 +13,7 @@ export default function Footer() {
           class="bg-white hover:bg-gray-200 active:bg-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700 dark:active:bg-gray-600 rounded-full p-2"
           onClick={() => window.scroll({ behavior: "smooth", top: 0 })}
         >
-          <BiArrowToTop class="h-6 w-6 fill-current" />
+          <BiRegularArrowToTop class="h-6 w-6 fill-current" />
         </button>
         <a
           href="https://github.com/sya-ri/spigot-event-list"
@@ -23,10 +27,10 @@ export default function Footer() {
           class="bg-white hover:bg-gray-200 active:bg-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700 dark:active:bg-gray-600 rounded-full p-2"
           onClick={() => setDarkMode(!isDarkMode())}
         >
-          <BiMoon
+          <BiRegularMoon
             class={`h-6 w-6 fill-current ${isDarkMode() ? "" : "hidden"}`}
           />
-          <BiSun
+          <BiRegularSun
             class={`h-6 w-6 fill-current ${isDarkMode() ? "hidden" : ""}`}
           />
         </button>

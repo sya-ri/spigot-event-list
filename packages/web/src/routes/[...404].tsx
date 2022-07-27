@@ -1,5 +1,6 @@
-import { BiChevronLeft, FaSolidFaucet } from "~/components/icons"; // TODO: import from "solid-icons/fa", "solid-icons/bi"
+import { BiRegularChevronLeft } from "solid-icons/bi";
 import { Link } from "solid-app-router";
+import { FaSolidFaucet } from "solid-icons/fa";
 
 export default function NotFound() {
   return (
@@ -10,7 +11,7 @@ export default function NotFound() {
         <div class="flex justify-center">
           <Link href="/">
             <button class="flex items-center p-2 rounded-lg border border-gray-800 dark:border-white bg-white hover:bg-gray-200 active:bg-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700 dark:active:bg-gray-600">
-              <BiChevronLeft class="h-6 w-6 mr-1 fill-current" />
+              <BiRegularChevronLeft class="h-6 w-6 mr-1 fill-current" />
               トップに戻る
             </button>
           </Link>
