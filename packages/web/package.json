@@ -33,7 +33,7 @@
     "solid-start-vercel": "next",
     "tailwindcss": "3.1.7",
     "typescript": "4.7.4",
-    "undici": "5.8.0",
+    "undici": "5.8.1",
     "vite": "2.9.14"
   },
   "dependencies": {
@@ -41,6 +41,6 @@
     "spigot-event-list-data": "../data"
   },
   "resolutions": {
-    "undici": "^5.8.0"
+    "undici": "5.8.1"
   }
 }
