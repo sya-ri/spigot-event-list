@@ -49,14 +49,14 @@
     "source": "bukkit"
   },
   {
-    "description": "",
+    "description": "コマンドを介したチャットコンポーネントをサーバーが装飾するときに呼び出される。",
     "href": "io/papermc/paper/event/player/AsyncChatCommandDecorateEvent.html",
     "link": "https://jd.papermc.io/paper/1.19/io/papermc/paper/event/player/AsyncChatCommandDecorateEvent.html",
     "name": "AsyncChatCommandDecorateEvent",
     "source": "paper"
   },
   {
-    "description": "",
+    "description": "チャットコンポーネントをサーバーが装飾するときに呼び出される。",
     "href": "io/papermc/paper/event/player/AsyncChatDecorateEvent.html",
     "javadoc": "This event is fired when the server decorates a component for chat purposes. It can be called\n under the following circumstances:\n \n     Previewing: If the client requests a preview response, this event is fired to decorate the component\n     before it is sent back to the client for signing.\n     Chat: If the client sends a chat packet without having signed a preview (the client could have previews\n     disabled or they sent the message too quickly) this event is fired to generated the decorated component. Note\n     that when this is the case, the message will show up as modified as the decorated component wasn't signed\n     by the client.\n ",
     "link": "https://jd.papermc.io/paper/1.19/io/papermc/paper/event/player/AsyncChatDecorateEvent.html",
@@ -91,8 +91,8 @@
   },
   {
     "deprecate": true,
-    "deprecateDescription": "",
-    "description": "",
+    "deprecateDescription": "実験段階。",
+    "description": "チャットのプレビュー用にフォーマットする時に呼び出される。このイベントを使用する場合は、AsyncPlayerChatEvent も同じ方法でフォーマットする必要がある。",
     "href": "org/bukkit/event/player/AsyncPlayerChatPreviewEvent.html",
     "javadoc": "Used to format chat for chat preview. If this event is used, then the result\n of the corresponding AsyncPlayerChatEvent must be formatted in\n the same way.",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/AsyncPlayerChatPreviewEvent.html",
@@ -148,7 +148,7 @@
     "source": "paper"
   },
   {
-    "description": "",
+    "description": "ミツバチが花をターゲットする時に呼び出される。",
     "href": "org/purpurmc/purpur/event/entity/BeeFoundFlowerEvent.html",
     "javadoc": "Called when a bee targets a flower",
     "link": "https://purpurmc.org/javadoc/org/purpurmc/purpur/event/entity/BeeFoundFlowerEvent.html",
@@ -156,7 +156,7 @@
     "source": "purpur"
   },
   {
-    "description": "",
+    "description": "ミツバチが受粉を始める時に呼び出される。",
     "href": "org/purpurmc/purpur/event/entity/BeeStartedPollinatingEvent.html",
     "javadoc": "Called when a bee starts pollinating",
     "link": "https://purpurmc.org/javadoc/org/purpurmc/purpur/event/entity/BeeStartedPollinatingEvent.html",
@@ -164,7 +164,7 @@
     "source": "purpur"
   },
   {
-    "description": "",
+    "description": "ミツバチが受粉をやめる時に呼び出される。",
     "href": "org/purpurmc/purpur/event/entity/BeeStopPollinatingEvent.html",
     "javadoc": "Called when a bee stops pollinating",
     "link": "https://purpurmc.org/javadoc/org/purpurmc/purpur/event/entity/BeeStopPollinatingEvent.html",
@@ -2026,7 +2026,7 @@
   },
   {
     "deprecate": true,
-    "deprecateDescription": "実験段階です。",
+    "deprecateDescription": "実験段階。",
     "description": "表示されているエンティティがプレイヤーから非表示になる時に呼び出される。追跡範囲内にあるかどうかに関係なく呼び出される。",
     "href": "org/bukkit/event/player/PlayerHideEntityEvent.html",
     "javadoc": "Called when a visible entity is hidden from a player.\n\n This event is only called when the entity's visibility status is actually\n changed.\n\n This event is called regardless of if the entity was within tracking range.",
@@ -2417,7 +2417,7 @@
   },
   {
     "deprecate": true,
-    "deprecateDescription": "実験段階です。",
+    "deprecateDescription": "実験段階。",
     "description": "非表示になっていたエンティティがプレイヤーに表示される時に呼び出される。追跡範囲内にあるかどうかに関係なく呼び出される。",
     "href": "org/bukkit/event/player/PlayerShowEntityEvent.html",
     "javadoc": "Called when a hidden entity is shown to a player.\n\n This event is only called when the entity's visibility status is actually\n changed.\n\n This event is called regardless of whether the entity was within tracking\n range.",
