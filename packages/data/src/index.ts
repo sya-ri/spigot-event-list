@@ -43,7 +43,7 @@ const sources: { [name: string]: EventSource } = {
     artifact: {
       groupId: "io.papermc.paper",
       artifactId: "paper-api",
-      version: "1.19-R0.1",
+      version: "1.19.2-R0.1",
       classifier: "javadoc",
       isSnapShot: true,
     },
@@ -55,7 +55,7 @@ const sources: { [name: string]: EventSource } = {
     javadocUrl: "https://jd.papermc.io/paper/1.19/",
     updateVersion: (source: EventSource): Promise<void> =>
       axios
-        .get("https://api.papermc.io/v2/projects/paper/versions/1.19/")
+        .get("https://api.papermc.io/v2/projects/paper/versions/1.19.2/")
         .then((response) => {
           const json = response.data;
           source.version = source.artifact.version.split("-")[0] + " - #" + json.builds.pop();
@@ -66,7 +66,7 @@ const sources: { [name: string]: EventSource } = {
     artifact: {
       groupId: "org.purpurmc.purpur",
       artifactId: "purpur-api",
-      version: "1.19-R0.1",
+      version: "1.19.2-R0.1",
       classifier: "javadoc",
       isSnapShot: true,
     },
@@ -74,11 +74,11 @@ const sources: { [name: string]: EventSource } = {
     allClasses: "allclasses-index.html",
     deprecateList: "deprecated-list.html",
     downloadSources: ["purpur"],
-    downloadUrl: "https://purpurmc.org/downloads?v=1.19",
+    downloadUrl: "https://purpurmc.org/downloads?v=1.19.2",
     javadocUrl: "https://purpurmc.org/javadoc/",
     updateVersion: (source: EventSource): Promise<void> =>
       axios
-        .get("https://api.purpurmc.org/v2/purpur/1.19")
+        .get("https://api.purpurmc.org/v2/purpur/1.19.2")
         .then((response) => {
           const json = response.data;
           source.version = source.artifact.version.split("-")[0] + " - #" + json.builds.latest;
@@ -89,7 +89,7 @@ const sources: { [name: string]: EventSource } = {
     artifact: {
       groupId: "org.spigotmc",
       artifactId: "spigot-api",
-      version: "1.19-R0.1",
+      version: "1.19.2-R0.1",
       classifier: "javadoc",
       isSnapShot: true,
     },
