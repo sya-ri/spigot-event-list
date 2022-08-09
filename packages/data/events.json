@@ -49,6 +49,8 @@
     "source": "bukkit"
   },
   {
+    "deprecate": true,
+    "deprecateDescription": "実験段階。",
     "description": "コマンドを介したチャットコンポーネントをサーバーが装飾するときに呼び出される。",
     "href": "io/papermc/paper/event/player/AsyncChatCommandDecorateEvent.html",
     "link": "https://jd.papermc.io/paper/1.19/io/papermc/paper/event/player/AsyncChatCommandDecorateEvent.html",
@@ -56,6 +58,8 @@
     "source": "paper"
   },
   {
+    "deprecate": true,
+    "deprecateDescription": "実験段階。",
     "description": "チャットコンポーネントをサーバーが装飾するときに呼び出される。",
     "href": "io/papermc/paper/event/player/AsyncChatDecorateEvent.html",
     "javadoc": "This event is fired when the server decorates a component for chat purposes. It can be called\n under the following circumstances:\n \n     Previewing: If the client requests a preview response, this event is fired to decorate the component\n     before it is sent back to the client for signing.\n     Chat: If the client sends a chat packet without having signed a preview (the client could have previews\n     disabled or they sent the message too quickly) this event is fired to generated the decorated component. Note\n     that when this is the case, the message will show up as modified as the decorated component wasn't signed\n     by the client.\n ",
