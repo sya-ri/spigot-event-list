@@ -34,7 +34,7 @@
     "tailwindcss": "3.1.8",
     "typescript": "4.7.4",
     "undici": "5.8.2",
-    "vite": "2.9.14"
+    "vite": "2.9.15"
   },
   "dependencies": {
     "solid-icons": "1.0.1",
