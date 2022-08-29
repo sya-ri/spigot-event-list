@@ -32,7 +32,7 @@
     "solid-start-node": "next",
     "solid-start-vercel": "next",
     "tailwindcss": "3.1.8",
-    "typescript": "4.7.4",
+    "typescript": "4.8.2",
     "undici": "5.8.2",
     "vite": "2.9.15"
   },
