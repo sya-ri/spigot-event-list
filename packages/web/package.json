@@ -16,7 +16,7 @@
     "lint-fix": "yarn lint --fix"
   },
   "devDependencies": {
-    "@typescript-eslint/parser": "5.36.0",
+    "@typescript-eslint/parser": "5.36.1",
     "autoprefixer": "10.4.8",
     "cssnano": "5.1.13",
     "eslint": "8.23.0",
