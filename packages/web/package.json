@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "@typescript-eslint/parser": "5.36.1",
-    "autoprefixer": "10.4.8",
+    "autoprefixer": "10.4.11",
     "cssnano": "5.1.13",
     "eslint": "8.23.0",
     "eslint-config-prettier": "8.5.0",
