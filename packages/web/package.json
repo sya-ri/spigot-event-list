@@ -26,7 +26,7 @@
     "postcss": "8.4.16",
     "prettier": "2.7.1",
     "solid-app-router": "0.4.2",
-    "solid-js": "1.5.4",
+    "solid-js": "1.5.5",
     "solid-meta": "0.28.1",
     "solid-start": "next",
     "solid-start-node": "next",
