@@ -1567,6 +1567,14 @@
     "source": "purpur"
   },
   {
+    "description": "",
+    "href": "org/purpurmc/purpur/event/packet/NetworkItemSerializeEvent.html",
+    "javadoc": "Called when an item is about to be written to a packet.",
+    "link": "https://purpurmc.org/javadoc/org/purpurmc/purpur/event/packet/NetworkItemSerializeEvent.html",
+    "name": "NetworkItemSerializeEvent",
+    "source": "purpur"
+  },
+  {
     "description": "音符ブロックが音を鳴らす時に呼び出される。",
     "href": "org/bukkit/event/block/NotePlayEvent.html",
     "javadoc": "Called when a note block is being played through player interaction or a\n redstone current.",
@@ -1672,7 +1680,7 @@
   {
     "description": "プレイヤーがアーマースタンドに対してアイテムを交換・取得・配置する時に呼び出される。",
     "href": "org/bukkit/event/player/PlayerArmorStandManipulateEvent.html",
-    "javadoc": "Called when a player interacts with an armor stand and will either swap, retrieve or place an item.",
+    "javadoc": "Called when a player interacts with an armor stand and will either swap, retrieve or\n place an item.",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerArmorStandManipulateEvent.html",
     "name": "PlayerArmorStandManipulateEvent",
     "source": "bukkit"
