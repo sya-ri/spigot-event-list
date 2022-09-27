@@ -22,7 +22,7 @@
     "eslint": "8.23.1",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-prettier": "4.2.1",
-    "eslint-plugin-solid": "0.7.2",
+    "eslint-plugin-solid": "0.7.3",
     "postcss": "8.4.16",
     "prettier": "2.7.1",
     "solid-app-router": "0.4.2",
