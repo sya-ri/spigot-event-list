@@ -1567,7 +1567,7 @@
     "source": "purpur"
   },
   {
-    "description": "",
+    "description": "アイテムがパケットとして送信される時に呼び出される。",
     "href": "org/purpurmc/purpur/event/packet/NetworkItemSerializeEvent.html",
     "javadoc": "Called when an item is about to be written to a packet.",
     "link": "https://purpurmc.org/javadoc/org/purpurmc/purpur/event/packet/NetworkItemSerializeEvent.html",
