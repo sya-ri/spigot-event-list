@@ -1,5 +1,5 @@
 import { defineConfig } from "vite";
-import solid from "solid-start";
+import solid from "solid-start/vite";
 import vercel from "solid-start-vercel";
 import node from "solid-start-node";
 import * as process from "process";
