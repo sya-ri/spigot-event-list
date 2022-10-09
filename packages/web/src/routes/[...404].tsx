@@ -1,6 +1,6 @@
 import { BiRegularChevronLeft } from "solid-icons/bi";
-import { Link } from "solid-app-router";
 import { FaSolidFaucet } from "solid-icons/fa";
+import { Link } from "solid-start";
 
 export default function NotFound() {
   return (

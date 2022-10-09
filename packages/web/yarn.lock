@@ -1270,6 +1270,16 @@
   resolved "https://registry.yarnpkg.com/@sideway/pinpoint/-/pinpoint-2.0.0.tgz#cff8ffadc372ad29fd3f78277aeb29e632cc70df"
   integrity sha512-RNiOoTPkptFtSVzQevY/yWtZwf/RxyVnPy/OcA9HBM3MlGDnBEYL5B41H0MTn0Uec8Hi+2qUtTfG2WWZBmMejQ==
 
+"@solidjs/meta@^0.28.0":
+  version "0.28.0"
+  resolved "https://registry.yarnpkg.com/@solidjs/meta/-/meta-0.28.0.tgz#0c5e09eef8784c8ddd3196fadd64baa025e1a1de"
+  integrity sha512-x52VdB9RZJ1apDB/pAmf58oeJsJ0lGKFXWjnm/TE/MlENIBPg3JaW8H5v2HnGpQC0WUbgiIsDFWpLWVNBo5t6g==
+
+"@solidjs/router@^0.5.0":
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@solidjs/router/-/router-0.5.0.tgz#b324c64f79d94c2b55011c2c8eea0a76771754fc"
+  integrity sha512-rNR07l21tWWDVmCbaapggB89rEX7jlM2XChpTLqEGEnj46LzVZ8zgvjcF6NNKScByAlLpoQUkVIjB2KHpcMi+w==
+
 "@trysound/sax@0.2.0":
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/@trysound/sax/-/sax-0.2.0.tgz#cccaab758af56761eb7bf37af6f03f326dd798ad"
@@ -3930,11 +3940,6 @@ slash@^3.0.0:
   resolved "https://registry.yarnpkg.com/slash/-/slash-3.0.0.tgz#6539be870c165adbd5240220dbe361f1bc4d4634"
   integrity sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==
 
-solid-app-router@0.4.2:
-  version "0.4.2"
-  resolved "https://registry.yarnpkg.com/solid-app-router/-/solid-app-router-0.4.2.tgz#67a0e1769e1e98d7c73256fe46430ee234324ce0"
-  integrity sha512-+NrLcmqYssx8DcbpcLBaYPqfTRtS+rkfbxMhLH8MHfTcTkdZfrkWQK7lsUvuPCebGEzfaPZJvHqBwhPrCXAmxg==
-
 solid-icons@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/solid-icons/-/solid-icons-1.0.1.tgz#2b60bb385a11489369b1d3096199bfccfeeb4399"
@@ -3946,11 +3951,6 @@ solid-js@1.5.6:
   integrity sha512-EA7hjMIEdDUuV6Fk3WUQ2fPx7sRnhjl+3M59zj6Sh+c7c3JF3N1cSViBvX8MYJG9vEBEqKQBZUfKHPe/9JgKvQ==
   dependencies:
     csstype "^3.1.0"
-
-solid-meta@0.28.1:
-  version "0.28.1"
-  resolved "https://registry.yarnpkg.com/solid-meta/-/solid-meta-0.28.1.tgz#e04eb876a890fcbb767739aede9290ceca757408"
-  integrity sha512-mYS1YccWZY6eda3wxY7GOVjx7fJcstCqCdyA6DI/2GjymjaYA5/FeObwvbP8sm48VwEgSBCw44bP7iVpQz/mcQ==
 
 solid-refresh@^0.4.1:
   version "0.4.1"

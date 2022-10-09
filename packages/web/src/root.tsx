@@ -1,6 +1,16 @@
 // @refresh reload
-import { Links, Meta, Routes, Scripts } from "solid-start/root";
-import { ErrorBoundary } from "solid-start/error-boundary";
+import {
+  Link,
+  Meta,
+  Title,
+  Html,
+  Head,
+  Routes,
+  Scripts,
+  Body,
+  FileRoutes,
+  ErrorBoundary,
+} from "solid-start";
 import { Suspense } from "solid-js";
 import { createStatesEffect, isDarkMode } from "~/states";
 import "./index.css";
@@ -8,63 +18,65 @@ import "./index.css";
 export default function Root() {
   createStatesEffect();
   return (
-    <html lang="ja" class={isDarkMode() ? "dark" : ""}>
-      <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Spigot Event List</title>
-        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-        <link
+    <Html lang="ja" class={isDarkMode() ? "dark" : ""}>
+      <Head>
+        <Meta charset="utf-8" />
+        <Meta name="viewport" content="width=device-width, initial-scale=1" />
+        <Title>Spigot Event List</Title>
+        <Link rel="icon" type="image/x-icon" href="/favicon.ico" />
+        <Link
           href="/apple-touch-icon.png"
           rel="apple-touch-icon"
           sizes="180x180"
         />
-        <link
+        <Link
           href="/favicon-32x32.png"
           rel="icon"
           sizes="32x32"
           type="image/png"
         />
-        <link
+        <Link
           href="/favicon-16x16.png"
           rel="icon"
           sizes="16x16"
           type="image/png"
         />
-        <link href="/site.webmanifest" rel="manifest" />
-        <link color="#606060" href="/safari-pinned-tab.svg" rel="mask-icon" />
-        <meta content="#ffffff" name="msapplication-TileColor" />
-        <meta content="#ffffff" name="theme-color" />
+        <Link href="/site.webmanifest" rel="manifest" />
+        <Link color="#606060" href="/safari-pinned-tab.svg" rel="mask-icon" />
+        <Meta content="#ffffff" name="msapplication-TileColor" />
+        <Meta content="#ffffff" name="theme-color" />
 
         {/* Open Graph https://www.opengraph.xyz/ */}
-        <meta content="https://spigot-event-list.s7a.dev/" property="og:url" />
-        <meta content="website" property="og:type" />
-        <meta content="Spigot Event List" property="og:title" />
-        <meta
+        <Meta content="https://spigot-event-list.s7a.dev/" property="og:url" />
+        <Meta content="website" property="og:type" />
+        <Meta content="Spigot Event List" property="og:title" />
+        <Meta
           content="[Minecraft 1.19] Bukkit, Spigot, Paper, Purpur, BungeeCord, Waterfall, Velocity 対応のイベント一覧"
           property="og:description"
         />
-        <meta
+        <Meta
           content="https://spigot-event-list.s7a.dev/logo.png"
           property="og:image"
         />
-        <meta content="1200" property="og:image:width" />
-        <meta content="630" property="og:image:height" />
-        <meta content="summary_large_image" name="twitter:card" />
-        <meta content="@sya_ri_dayo" name="twitter:site" />
-        <meta content="Spigot Event List" name="twitter:title" />
-        <meta
+        <Meta content="1200" property="og:image:width" />
+        <Meta content="630" property="og:image:height" />
+        <Meta content="summary_large_image" name="twitter:card" />
+        <Meta content="@sya_ri_dayo" name="twitter:site" />
+        <Meta content="Spigot Event List" name="twitter:title" />
+        <Meta
           content="https://spigot-event-list.s7a.dev//logo.png"
           name="twitter:image"
         />
-        <Meta />
-        <Links />
         <script
           defer
           src="https://www.googletagmanager.com/gtag/js?id=G-60WKT971SW"
-          strategy="afterInteractive"
+          // strategy="afterInteractive"
         />
-        <script defer id="ga" strategy="afterInteractive">
+        <script
+          defer
+          id="ga"
+          // strategy="afterInteractive"
+        >
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
@@ -72,15 +84,17 @@ export default function Root() {
             gtag('config', 'G-EJ15BC1R3Q');
         `}
         </script>
-      </head>
-      <body class="dark:text-white dark:bg-gray-800">
+      </Head>
+      <Body class="dark:text-white dark:bg-gray-800">
         <ErrorBoundary>
           <Suspense>
-            <Routes />
+            <Routes>
+              <FileRoutes />
+            </Routes>
           </Suspense>
         </ErrorBoundary>
         <Scripts />
-      </body>
-    </html>
+      </Body>
+    </Html>
   );
 }
