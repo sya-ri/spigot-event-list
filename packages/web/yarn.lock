@@ -1270,12 +1270,12 @@
   resolved "https://registry.yarnpkg.com/@sideway/pinpoint/-/pinpoint-2.0.0.tgz#cff8ffadc372ad29fd3f78277aeb29e632cc70df"
   integrity sha512-RNiOoTPkptFtSVzQevY/yWtZwf/RxyVnPy/OcA9HBM3MlGDnBEYL5B41H0MTn0Uec8Hi+2qUtTfG2WWZBmMejQ==
 
-"@solidjs/meta@^0.28.0":
+"@solidjs/meta@0.28.0":
   version "0.28.0"
   resolved "https://registry.yarnpkg.com/@solidjs/meta/-/meta-0.28.0.tgz#0c5e09eef8784c8ddd3196fadd64baa025e1a1de"
   integrity sha512-x52VdB9RZJ1apDB/pAmf58oeJsJ0lGKFXWjnm/TE/MlENIBPg3JaW8H5v2HnGpQC0WUbgiIsDFWpLWVNBo5t6g==
 
-"@solidjs/router@^0.5.0":
+"@solidjs/router@0.5.0":
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/@solidjs/router/-/router-0.5.0.tgz#b324c64f79d94c2b55011c2c8eea0a76771754fc"
   integrity sha512-rNR07l21tWWDVmCbaapggB89rEX7jlM2XChpTLqEGEnj46LzVZ8zgvjcF6NNKScByAlLpoQUkVIjB2KHpcMi+w==
