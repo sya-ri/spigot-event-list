@@ -27,6 +27,27 @@
   resolved "https://registry.yarnpkg.com/@babel/compat-data/-/compat-data-7.18.8.tgz#2483f565faca607b8535590e84e7de323f27764d"
   integrity sha512-HSmX4WZPPK3FUxYp7g2T6EyO8j96HlZJlxmKPSh6KAcqwyDrfx7hKjXpAW/0FhFfTJsR0Yt4lAjLI2coMptIHQ==
 
+"@babel/core@^7.16.5", "@babel/core@^7.19.0":
+  version "7.19.3"
+  resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.19.3.tgz#2519f62a51458f43b682d61583c3810e7dcee64c"
+  integrity sha512-WneDJxdsjEvyKtXKsaBGbDeiyOjR5vYq4HcShxnIbG0qixpoHjI3MqeZM9NDvsojNCEBItQE4juOo/bU6e72gQ==
+  dependencies:
+    "@ampproject/remapping" "^2.1.0"
+    "@babel/code-frame" "^7.18.6"
+    "@babel/generator" "^7.19.3"
+    "@babel/helper-compilation-targets" "^7.19.3"
+    "@babel/helper-module-transforms" "^7.19.0"
+    "@babel/helpers" "^7.19.0"
+    "@babel/parser" "^7.19.3"
+    "@babel/template" "^7.18.10"
+    "@babel/traverse" "^7.19.3"
+    "@babel/types" "^7.19.3"
+    convert-source-map "^1.7.0"
+    debug "^4.1.0"
+    gensync "^1.0.0-beta.2"
+    json5 "^2.2.1"
+    semver "^6.3.0"
+
 "@babel/core@^7.18.6":
   version "7.18.9"
   resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.18.9.tgz#805461f967c77ff46c74ca0460ccf4fe933ddd59"
@@ -42,27 +63,6 @@
     "@babel/template" "^7.18.6"
     "@babel/traverse" "^7.18.9"
     "@babel/types" "^7.18.9"
-    convert-source-map "^1.7.0"
-    debug "^4.1.0"
-    gensync "^1.0.0-beta.2"
-    json5 "^2.2.1"
-    semver "^6.3.0"
-
-"@babel/core@^7.19.0":
-  version "7.19.3"
-  resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.19.3.tgz#2519f62a51458f43b682d61583c3810e7dcee64c"
-  integrity sha512-WneDJxdsjEvyKtXKsaBGbDeiyOjR5vYq4HcShxnIbG0qixpoHjI3MqeZM9NDvsojNCEBItQE4juOo/bU6e72gQ==
-  dependencies:
-    "@ampproject/remapping" "^2.1.0"
-    "@babel/code-frame" "^7.18.6"
-    "@babel/generator" "^7.19.3"
-    "@babel/helper-compilation-targets" "^7.19.3"
-    "@babel/helper-module-transforms" "^7.19.0"
-    "@babel/helpers" "^7.19.0"
-    "@babel/parser" "^7.19.3"
-    "@babel/template" "^7.18.10"
-    "@babel/traverse" "^7.19.3"
-    "@babel/types" "^7.19.3"
     convert-source-map "^1.7.0"
     debug "^4.1.0"
     gensync "^1.0.0-beta.2"
@@ -991,7 +991,7 @@
     "@babel/types" "^7.4.4"
     esutils "^2.0.2"
 
-"@babel/preset-typescript@^7.18.6":
+"@babel/preset-typescript@^7.16.5", "@babel/preset-typescript@^7.18.6":
   version "7.18.6"
   resolved "https://registry.yarnpkg.com/@babel/preset-typescript/-/preset-typescript-7.18.6.tgz#ce64be3e63eddc44240c6358daefac17b3186399"
   integrity sha512-s9ik86kXBAnD760aybBucdpnLsAt0jK1xqJn2juOn9lkOvSHV60os5hxoVJsPzMQxvnUJFAlkont2DvvaYEBtQ==
@@ -1566,6 +1566,16 @@ babel-plugin-jsx-dom-expressions@^0.33.12:
     "@babel/types" "^7.16.0"
     html-entities "2.3.2"
 
+babel-plugin-jsx-dom-expressions@^0.34.11:
+  version "0.34.13"
+  resolved "https://registry.yarnpkg.com/babel-plugin-jsx-dom-expressions/-/babel-plugin-jsx-dom-expressions-0.34.13.tgz#93ad4913ab3453d3c4affdf8be64b9788108750c"
+  integrity sha512-rKkJ7a0arzqE180hPeZI/EIB4OTuByVgE5bsHlI/lZGpU+pVtuvIwwePIIFH8ld49a8pvM0fLfrryP/W6ZMx0g==
+  dependencies:
+    "@babel/helper-module-imports" "7.16.0"
+    "@babel/plugin-syntax-jsx" "^7.16.5"
+    "@babel/types" "^7.16.0"
+    html-entities "2.3.2"
+
 babel-plugin-polyfill-corejs2@^0.3.3:
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/babel-plugin-polyfill-corejs2/-/babel-plugin-polyfill-corejs2-0.3.3.tgz#5d1bd3836d0a19e1b84bbf2d9640ccb6f951c122"
@@ -1589,6 +1599,13 @@ babel-plugin-polyfill-regenerator@^0.4.1:
   integrity sha512-NtQGmyQDXjQqQ+IzRkBVwEOz9lQ4zxAQZgoAYEtU9dJjnl1Oc98qnN7jcp+bE7O7aYzVpavXE3/VKXNzUbh7aw==
   dependencies:
     "@babel/helper-define-polyfill-provider" "^0.3.3"
+
+babel-preset-solid@^1.2.6:
+  version "1.5.7"
+  resolved "https://registry.yarnpkg.com/babel-preset-solid/-/babel-preset-solid-1.5.7.tgz#e075aea017f28185719b3af75002e0df1fde6cf3"
+  integrity sha512-BUE7SOawUNMcw4QDJHWSRWAzmzZKoYNuduAKx8GfdaUhtW+50LTh2ZkHXEPZiQrSpxmvT0zP7e1cKnTYN6iiqw==
+  dependencies:
+    babel-plugin-jsx-dom-expressions "^0.34.11"
 
 babel-preset-solid@^1.4.6:
   version "1.4.6"
@@ -2280,6 +2297,15 @@ esbuild-openbsd-64@0.14.54:
   version "0.14.54"
   resolved "https://registry.yarnpkg.com/esbuild-openbsd-64/-/esbuild-openbsd-64-0.14.54.tgz#db4c8495287a350a6790de22edea247a57c5d47b"
   integrity sha512-Qyk7ikT2o7Wu76UsvvDS5q0amJvmRzDyVlL0qf5VLsLchjCa1+IAvd8kTBgUxD7VBUUVgItLkk609ZHUc1oCaw==
+
+esbuild-plugin-solid@^0.4.2:
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/esbuild-plugin-solid/-/esbuild-plugin-solid-0.4.2.tgz#747942408e218b15e424e3ba344d0626a05685bb"
+  integrity sha512-T5GphLoud3RumjeNYO3K9WVjWDzVKG5evlS7hUEUI0n9tiCL+CnbvJh3SSwFi3xeeXpZRrnZc1gd6FWQsVobTg==
+  dependencies:
+    "@babel/core" "^7.16.5"
+    "@babel/preset-typescript" "^7.16.5"
+    babel-preset-solid "^1.2.6"
 
 esbuild-sunos-64@0.14.49:
   version "0.14.49"
@@ -3986,10 +4012,10 @@ solid-start-vercel@0.1.0:
     rollup "^2.79.0"
     terser "^5.15.0"
 
-solid-start@0.1.0:
-  version "0.1.0"
-  resolved "https://registry.yarnpkg.com/solid-start/-/solid-start-0.1.0.tgz#06446fb9968c7054cf433df509947c6dbe71fa4f"
-  integrity sha512-Dco6FvRFNpH+koa9f5EKH4WwYg40eSGMovQS8Nvh8lmcYBGeUEuyX4sBSQ3uxAVSuZw9vBefld7GfFg6u0p0vQ==
+solid-start@0.1.5:
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/solid-start/-/solid-start-0.1.5.tgz#b8d30ed973f781cc50482c8a5a3037df6684ae4b"
+  integrity sha512-pEVWGmCxrqRK8HJ8v64tqhQnO0OCfjUiINck0xs2B5Alqv3xIG2m6NQftHqWTjiJb/tyoxbZiUhPW+zSsaV3ew==
   dependencies:
     "@babel/core" "^7.19.0"
     "@babel/generator" "^7.19.0"
@@ -4006,6 +4032,7 @@ solid-start@0.1.0:
     dequal "^2.0.3"
     es-module-lexer "^1.0.3"
     esbuild "^0.14.54"
+    esbuild-plugin-solid "^0.4.2"
     fast-glob "^3.2.12"
     get-port "^6.1.2"
     parse-multipart-data "^1.4.0"
@@ -4018,7 +4045,7 @@ solid-start@0.1.0:
     terser "^5.15.0"
     undici "^5.10.0"
     vite-plugin-inspect "^0.6.1"
-    vite-plugin-solid "^2.3.6"
+    vite-plugin-solid "^2.3.9"
     wait-on "^6.0.1"
 
 source-map-js@^1.0.2:
@@ -4356,7 +4383,7 @@ vite-plugin-inspect@^0.6.1:
     sirv "^2.0.2"
     ufo "^0.8.5"
 
-vite-plugin-solid@^2.3.6:
+vite-plugin-solid@^2.3.9:
   version "2.3.9"
   resolved "https://registry.yarnpkg.com/vite-plugin-solid/-/vite-plugin-solid-2.3.9.tgz#260905cb72103917a69b3c3ad1df26bf29a01ad8"
   integrity sha512-+lprsYgt9DVNp0kbDj2d2HWAPI13L8ff5xslk9SjiPBcsY/YUZ/1Wj0J/Oj5aiVAhwfPm8IcM3bzyHJUPlmc8w==
