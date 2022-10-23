@@ -24,7 +24,7 @@ const downloadArtifact = (
         if (status !== 200) {
           throw new Error(`Unable to fetch ${url}. Status ${status}`);
         }
-        const contentLength = parseInt(headers["content-length"]);
+        const contentLength = parseInt(headers["content-length"] || "");
         if (Number.isNaN(contentLength)) {
           throw new Error(`Unable to fetch ${url}. Content-Length: ${headers["content-length"]}`);
         }
