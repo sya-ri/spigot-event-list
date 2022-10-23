@@ -1109,6 +1109,14 @@
     "source": "bukkit"
   },
   {
+    "description": "エンティティが座ったり立ち上がったりする時に呼び出される。",
+    "href": "io/papermc/paper/event/entity/EntityToggleSitEvent.html",
+    "javadoc": "Is called when an entity sits down or stands up.",
+    "link": "https://jd.papermc.io/paper/1.19/io/papermc/paper/event/entity/EntityToggleSitEvent.html",
+    "name": "EntityToggleSitEvent",
+    "source": "paper"
+  },
+  {
     "description": "エンティティの泳ぎ状態が切り替わる時に呼び出される。",
     "href": "org/bukkit/event/entity/EntityToggleSwimEvent.html",
     "javadoc": "Sent when an entity's swimming status is toggled.",
@@ -2078,6 +2086,14 @@
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerInteractEvent.html",
     "name": "PlayerInteractEvent",
     "source": "bukkit"
+  },
+  {
+    "description": "プレイヤーのインベントリスロットが変化する時に呼び出される。",
+    "href": "io/papermc/paper/event/player/PlayerInventorySlotChangeEvent.html",
+    "javadoc": "Called when a slot contents change in a player's inventory.",
+    "link": "https://jd.papermc.io/paper/1.19/io/papermc/paper/event/player/PlayerInventorySlotChangeEvent.html",
+    "name": "PlayerInventorySlotChangeEvent",
+    "source": "paper"
   },
   {
     "description": "プレイヤーのアイテムが壊れる時に呼び出される。",
