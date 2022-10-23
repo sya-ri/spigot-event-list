@@ -1140,10 +1140,10 @@
   resolved "https://registry.yarnpkg.com/@sideway/pinpoint/-/pinpoint-2.0.0.tgz#cff8ffadc372ad29fd3f78277aeb29e632cc70df"
   integrity sha512-RNiOoTPkptFtSVzQevY/yWtZwf/RxyVnPy/OcA9HBM3MlGDnBEYL5B41H0MTn0Uec8Hi+2qUtTfG2WWZBmMejQ==
 
-"@solidjs/meta@0.28.0":
-  version "0.28.0"
-  resolved "https://registry.yarnpkg.com/@solidjs/meta/-/meta-0.28.0.tgz#0c5e09eef8784c8ddd3196fadd64baa025e1a1de"
-  integrity sha512-x52VdB9RZJ1apDB/pAmf58oeJsJ0lGKFXWjnm/TE/MlENIBPg3JaW8H5v2HnGpQC0WUbgiIsDFWpLWVNBo5t6g==
+"@solidjs/meta@0.28.1":
+  version "0.28.1"
+  resolved "https://registry.yarnpkg.com/@solidjs/meta/-/meta-0.28.1.tgz#b04f095650518b744959a2e0e9ad5d0d3d84f16c"
+  integrity sha512-oWv7GjjkJ9Mp9gCKPWEc3jcLeoxzoBHlmj+CzEqfK3sORxvtaXKkf6lwheuJLbd0qDpmnuny3GDBN8OxpB5SNg==
 
 "@solidjs/router@0.5.0":
   version "0.5.0"
