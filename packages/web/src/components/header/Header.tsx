@@ -14,7 +14,7 @@ export default function Header() {
             resetFilterSources();
           }}
         >
-          <FaSolidFaucet class="h-8 w-8 mr-2 fill-current" />
+          <FaSolidFaucet class="h-8 w-8 mr-2 fill-current hidden" />
           <h1 class="font-bold text-2xl">Spigot Event List</h1>
         </div>
         <div class="flex flex-col gap-2 m-auto">
