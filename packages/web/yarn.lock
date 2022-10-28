@@ -3789,15 +3789,24 @@ slash@^3.0.0:
   resolved "https://registry.yarnpkg.com/slash/-/slash-3.0.0.tgz#6539be870c165adbd5240220dbe361f1bc4d4634"
   integrity sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==
 
-solid-icons@1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/solid-icons/-/solid-icons-1.0.2.tgz#91712c2f3e9da101c46219d6a69ada71f1b73a45"
-  integrity sha512-Pockp4vkCFFW+uubuRpb50pqKZNzjLhUUDm5VPpcZJWSgDw7fOxnMLcO1fC2bK8l+kYbJOr52y+pB5fnoZXg3Q==
+solid-icons@1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/solid-icons/-/solid-icons-1.0.3.tgz#997b55ae698b97537726b7dc068681729494a452"
+  integrity sha512-djw7FMaUPVBjTjZXda/JOkYmYxc6rlnADeNGOW9pvOGVAeebMduQuhgGYSqRjvJY4tHQkHeIMLqB/W+xaOR2aQ==
+  dependencies:
+    solid-js "<=1.5.7"
 
 solid-js@1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/solid-js/-/solid-js-1.6.0.tgz#52fe81e553e42fc6873ebd12093eb8fdc5d22571"
   integrity sha512-db5s65ErgZnBhapPx77qauzul8akHlMCvirS+Y86U4abMa3uizMVNW9ql3UxbO0yMzMGNpFJwUiOlXmJCbwVpA==
+  dependencies:
+    csstype "^3.1.0"
+
+solid-js@<=1.5.7:
+  version "1.5.7"
+  resolved "https://registry.yarnpkg.com/solid-js/-/solid-js-1.5.7.tgz#f693adb02c4eee780dec8456866dcd4e099726ca"
+  integrity sha512-L1UuyMuZZARAwzXo5NZDhE6yxc14aqNbVOUoGzvlcxRZo1Cm4ExhPV0diEfwDyiKG/igqNNLkNurHkXiI5sVEg==
   dependencies:
     csstype "^3.1.0"
 
