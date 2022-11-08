@@ -2178,7 +2178,7 @@
   {
     "description": "プレイヤーが Projectile を発射する時に呼び出される。",
     "href": "com/destroystokyo/paper/event/player/PlayerLaunchProjectileEvent.html",
-    "javadoc": "Called when a player shoots a projectile",
+    "javadoc": "Called when a player shoots a projectile.\n \n Notably this event is not called for arrows as the player does not launch them, rather shoots them with the help\n of a bow or crossbow. A plugin may listen to EntityShootBowEvent for these actions\n instead.",
     "link": "https://jd.papermc.io/paper/1.19/com/destroystokyo/paper/event/player/PlayerLaunchProjectileEvent.html",
     "name": "PlayerLaunchProjectileEvent",
     "source": "paper"
