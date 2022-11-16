@@ -1287,6 +1287,14 @@
     "source": "bukkit"
   },
   {
+    "description": "",
+    "href": "org/purpurmc/purpur/event/entity/GoatRamEntityEvent.html",
+    "javadoc": "Called when a goat rams an entity",
+    "link": "https://purpurmc.org/javadoc/org/purpurmc/purpur/event/entity/GoatRamEntityEvent.html",
+    "name": "GoatRamEntityEvent",
+    "source": "purpur"
+  },
+  {
     "description": "砥石から結果アイテムを取り出す時に呼び出される。",
     "href": "org/purpurmc/purpur/event/inventory/GrindstoneTakeResultEvent.html",
     "javadoc": "Called when a player takes the result item out of a Grindstone",
@@ -2766,6 +2774,14 @@
     "source": "bukkit"
   },
   {
+    "description": "",
+    "href": "io/papermc/paper/event/player/PrePlayerAttackEntityEvent.html",
+    "javadoc": "Called when the player tries to attack an entity.\n\n This occurs before any of the damage logic, so cancelling this event\n will prevent any sort of sounds from being played when attacking.\n\n This event will fire as cancelled for certain entities, with willAttack() being false\n to indicate that this entity will not actually be attacked.\n \n Note: there may be other factors (invulnerability, etc) that will prevent this entity from being attacked that this event will not cover",
+    "link": "https://jd.papermc.io/paper/1.19/io/papermc/paper/event/player/PrePlayerAttackEntityEvent.html",
+    "name": "PrePlayerAttackEntityEvent",
+    "source": "paper"
+  },
+  {
     "description": "エンティティがスポナーによってスポーンする前に呼び出される。SpawnerSpawnEvent よりも前に呼び出される。",
     "href": "com/destroystokyo/paper/event/entity/PreSpawnerSpawnEvent.html",
     "javadoc": "Called before an entity is spawned into a world by a spawner.\n\n This only includes the spawner's location and not the full BlockState snapshot for performance reasons.\n If you really need it you have to get the spawner yourself.",
@@ -2832,7 +2848,7 @@
   {
     "description": "サーバーリストからピングされた時に呼び出される。",
     "href": "net/md_5/bungee/api/event/ProxyPingEvent.html",
-    "javadoc": "Called when the proxy is pinged with packet 0xFE from the server list.",
+    "javadoc": "Called when the proxy is queried for status from the server list.",
     "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/ProxyPingEvent.html",
     "name": "ProxyPingEvent",
     "source": "bungee"
