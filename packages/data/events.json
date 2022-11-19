@@ -1287,7 +1287,7 @@
     "source": "bukkit"
   },
   {
-    "description": "",
+    "description": "ヤギがエンティティに衝突する時に呼び出される。",
     "href": "org/purpurmc/purpur/event/entity/GoatRamEntityEvent.html",
     "javadoc": "Called when a goat rams an entity",
     "link": "https://purpurmc.org/javadoc/org/purpurmc/purpur/event/entity/GoatRamEntityEvent.html",
@@ -2774,7 +2774,7 @@
     "source": "bukkit"
   },
   {
-    "description": "",
+    "description": "プレイヤーがエンティティに攻撃する前に呼び出される。このイベントがキャンセルされると攻撃時のサウンドが再生されなくなる。",
     "href": "io/papermc/paper/event/player/PrePlayerAttackEntityEvent.html",
     "javadoc": "Called when the player tries to attack an entity.\n\n This occurs before any of the damage logic, so cancelling this event\n will prevent any sort of sounds from being played when attacking.\n\n This event will fire as cancelled for certain entities, with willAttack() being false\n to indicate that this entity will not actually be attacked.\n \n Note: there may be other factors (invulnerability, etc) that will prevent this entity from being attacked that this event will not cover",
     "link": "https://jd.papermc.io/paper/1.19/io/papermc/paper/event/player/PrePlayerAttackEntityEvent.html",
