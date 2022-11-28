@@ -3844,10 +3844,10 @@ solid-start-vercel@0.2.5:
     rollup "^2.79.1"
     terser "^5.15.1"
 
-solid-start@0.2.5:
-  version "0.2.5"
-  resolved "https://registry.yarnpkg.com/solid-start/-/solid-start-0.2.5.tgz#b664539424793eda4de73e11c988b68008d37c18"
-  integrity sha512-G1Iyb2ECulsCsewr12hueaCGvB+FQPylcYq9SvsCy8A2Lpyj5KcB9ic7pAKtEbByBAa318MqvBFEmL4eKS8mhw==
+solid-start@0.2.6:
+  version "0.2.6"
+  resolved "https://registry.yarnpkg.com/solid-start/-/solid-start-0.2.6.tgz#059906b20c7912c96f6b352f6649a819389d68f8"
+  integrity sha512-tAVXLUo8/zfXIi62VsQkdEinA54JpWYCIwRhMH+zHyJ0vPqmKTp67jRGKy7L2efVt17VITfMAVIT77j/qNnk+w==
   dependencies:
     "@babel/core" "^7.19.6"
     "@babel/generator" "^7.19.6"
