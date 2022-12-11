@@ -25,7 +25,7 @@
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-prettier": "4.2.1",
     "eslint-plugin-solid": "0.9.1",
-    "postcss": "8.4.19",
+    "postcss": "8.4.20",
     "prettier": "2.8.1",
     "solid-js": "1.6.4",
     "solid-start": "0.2.7",
