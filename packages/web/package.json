@@ -18,7 +18,7 @@
   "devDependencies": {
     "@solidjs/meta": "0.28.2",
     "@solidjs/router": "0.5.1",
-    "@typescript-eslint/parser": "5.46.0",
+    "@typescript-eslint/parser": "5.46.1",
     "autoprefixer": "10.4.13",
     "cssnano": "5.1.14",
     "eslint": "8.29.0",
