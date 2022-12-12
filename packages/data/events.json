@@ -62,7 +62,7 @@
     "deprecateDescription": "実験段階。",
     "description": "チャットコンポーネントをサーバーが装飾するときに呼び出される。",
     "href": "io/papermc/paper/event/player/AsyncChatDecorateEvent.html",
-    "javadoc": "This event is fired when the server decorates a component for chat purposes. It can be called\n under the following circumstances:\n \n     Previewing: If the client requests a preview response, this event is fired to decorate the component\n     before it is sent back to the client for signing.\n     Chat: If the client sends a chat packet without having signed a preview (the client could have previews\n     disabled or they sent the message too quickly) this event is fired to generated the decorated component. Note\n     that when this is the case, the message will show up as modified as the decorated component wasn't signed\n     by the client.\n ",
+    "javadoc": "This event is fired when the server decorates a component for chat purposes. This is called\n before AsyncChatEvent and the other chat events. It is recommended that you modify the\n message here, and use the chat events for modifying receivers and later the chat type. If you\n want to keep the message as \"signed\" for the clients who get it, be sure to include the entire\n original message somewhere in the final message.",
     "link": "https://jd.papermc.io/paper/1.19/io/papermc/paper/event/player/AsyncChatDecorateEvent.html",
     "name": "AsyncChatDecorateEvent",
     "source": "paper"
@@ -879,7 +879,7 @@
   {
     "description": "エンティティがブロックのヒットボックスに入る時に呼び出される。キャンセルされるとブロックに入ったことによって起きる処理が実行されない。以下に例を示す。\n- 大釜に入り、エンティティが消火される。",
     "href": "io/papermc/paper/event/entity/EntityInsideBlockEvent.html",
-    "javadoc": "Called when an entity enters the hitbox of a block.\n Only called for blocks that react when an entity is inside.\n If cancelled, any action that would have resulted from that entity\n being in the block will not happen (such as extinguishing an entity in a cauldron).\n \n Blocks this is currently called for:\n \n     Bubble column\n     Buttons\n     Cactus\n     Campfire\n     Cauldron\n     Crops\n     Ender Portal\n     Fires\n     Honey\n     Hopper\n     Detector rails\n     Nether portals\n     Pressure plates\n     Sweet berry bush\n     Tripwire\n     Waterlily\n     Web\n     Wither rose\n ",
+    "javadoc": "Called when an entity enters the hitbox of a block.\n Only called for blocks that react when an entity is inside.\n If cancelled, any action that would have resulted from that entity\n being in the block will not happen (such as extinguishing an entity in a cauldron).\n \n Blocks this is currently called for:\n \n     Big dripleaf\n     Bubble column\n     Buttons\n     Cactus\n     Campfire\n     Cauldron\n     Crops\n     Ender Portal\n     Fires\n     Frogspawn\n     Honey\n     Hopper\n     Detector rails\n     Nether portals\n     Powdered snow\n     Pressure plates\n     Sweet berry bush\n     Tripwire\n     Waterlily\n     Web\n     Wither rose\n ",
     "link": "https://jd.papermc.io/paper/1.19/io/papermc/paper/event/entity/EntityInsideBlockEvent.html",
     "name": "EntityInsideBlockEvent",
     "source": "paper"
@@ -3558,6 +3558,14 @@
     "javadoc": "Called when a Warden's anger level has changed due to another entity.\n \n If the event is cancelled, the warden's anger level will not change.",
     "link": "https://jd.papermc.io/paper/1.19/io/papermc/paper/event/entity/WardenAngerChangeEvent.html",
     "name": "WardenAngerChangeEvent",
+    "source": "paper"
+  },
+  {
+    "description": "スプラッシュウォーターポーションが割れる時に呼び出される。このイベントを使ってさまざまなエンティティに影響を与えることができる。",
+    "href": "io/papermc/paper/event/entity/WaterBottleSplashEvent.html",
+    "javadoc": "Called when a splash water potion \"splashes\" and affects\n different entities in different ways.",
+    "link": "https://jd.papermc.io/paper/1.19/io/papermc/paper/event/entity/WaterBottleSplashEvent.html",
+    "name": "WaterBottleSplashEvent",
     "source": "paper"
   },
   {
