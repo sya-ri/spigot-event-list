@@ -187,4 +187,4 @@ const index = async () => {
   await writeFile("report.md", getChangeLog(lastSources, sources, events));
 };
 
-index().catch(err => console.error(err));
+index();
