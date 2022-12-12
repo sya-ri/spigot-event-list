@@ -2573,6 +2573,14 @@
     "source": "bukkit"
   },
   {
+    "description": "",
+    "href": "io/papermc/paper/event/player/PlayerTrackEntityEvent.html",
+    "javadoc": "Is called when a Player tracks an Entity.",
+    "link": "https://jd.papermc.io/paper/1.19/io/papermc/paper/event/player/PlayerTrackEntityEvent.html",
+    "name": "PlayerTrackEntityEvent",
+    "source": "paper"
+  },
+  {
     "description": "プレイヤーが村人や行商人と交易をする時に呼び出される。",
     "href": "io/papermc/paper/event/player/PlayerTradeEvent.html",
     "javadoc": "Called when a player trades with a villager or wandering trader",
@@ -2595,6 +2603,14 @@
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerUnregisterChannelEvent.html",
     "name": "PlayerUnregisterChannelEvent",
     "source": "bukkit"
+  },
+  {
+    "description": "",
+    "href": "io/papermc/paper/event/player/PlayerUntrackEntityEvent.html",
+    "javadoc": "Is called when a Player untracks an Entity.",
+    "link": "https://jd.papermc.io/paper/1.19/io/papermc/paper/event/player/PlayerUntrackEntityEvent.html",
+    "name": "PlayerUntrackEntityEvent",
+    "source": "paper"
   },
   {
     "description": "存在しないエンティティに対して PacketPlayInUseEntity が送られてきた時に呼び出される。",
