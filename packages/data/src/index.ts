@@ -8,7 +8,6 @@ import getChangeLog from "./getChangeLog";
 import getLastSources from "./getLastSources";
 import { getLastEvents, writeEvents } from "./json/events";
 import { writeVersions } from "./json/versions";
-import * as ProgressBar from "progress";
 
 const sources: { [name: string]: EventSource } = {
   Bungee: {
@@ -27,7 +26,13 @@ const sources: { [name: string]: EventSource } = {
     javadocUrl: "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/",
     updateVersion: (source: EventSource): Promise<void> =>
       axios
-        .get<string>("https://ci.md-5.net/job/BungeeCord/lastBuild/")
+        .get<string>(
+          "https://ci.md-5.net/job/BungeeCord/lastBuild/",
+          {
+            headers: {
+              "Accept-Encoding": "gzip,deflate,compress"
+            }
+          })
         .then((response) => {
           const body = response.data;
           const match = body.match(
@@ -103,7 +108,12 @@ const sources: { [name: string]: EventSource } = {
     updateVersion: (source: EventSource): Promise<void> =>
       axios
         .get<string>(
-          "https://hub.spigotmc.org/jenkins/job/Spigot-RSS/lastBuild/"
+          "https://hub.spigotmc.org/jenkins/job/Spigot-RSS/lastBuild/",
+          {
+            headers: {
+              "Accept-Encoding": "gzip,deflate,compress"
+            }
+          }
         )
         .then((response) => {
           const body = response.data;
