@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@types/multi-progress": "2.0.3",
-    "@types/node": "18.11.13",
+    "@types/node": "18.11.14",
     "@types/progress": "2.0.5",
     "@types/xml2js": "0.4.11",
     "axios": "1.2.1",
