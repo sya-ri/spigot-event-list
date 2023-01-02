@@ -2013,6 +2013,11 @@ domutils@^2.8.0:
     domelementtype "^2.2.0"
     domhandler "^4.2.0"
 
+dotenv@^16.0.3:
+  version "16.0.3"
+  resolved "https://registry.yarnpkg.com/dotenv/-/dotenv-16.0.3.tgz#115aec42bac5053db3c456db30cc243a5a836a07"
+  integrity sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==
+
 ee-first@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
@@ -3851,10 +3856,10 @@ solid-start-vercel@0.2.8:
     rollup "^2.79.1"
     terser "^5.15.1"
 
-solid-start@0.2.8:
-  version "0.2.8"
-  resolved "https://registry.yarnpkg.com/solid-start/-/solid-start-0.2.8.tgz#b5e9ad837f0d166c27a337517f51c7810d475f87"
-  integrity sha512-S9JFes0pW8mnil5rWNw+IO1Q5h7PnLu/5Mc0qy9o8gtL8ZaUwFiynXBik/qYJM5TvruQAkP7ltoSscdAvOyGLQ==
+solid-start@0.2.10:
+  version "0.2.10"
+  resolved "https://registry.yarnpkg.com/solid-start/-/solid-start-0.2.10.tgz#c9418251fdece81ad71b0be9bff7b76909c17343"
+  integrity sha512-teiSMeBnQ/7ijq1+Ndnl2U2Z7y71tzRWWV8Ur7uEeOvS74+cYbfRlmHeqln7yBwtiAHXJfEPLsmWEshArvCZnQ==
   dependencies:
     "@babel/core" "^7.19.6"
     "@babel/generator" "^7.19.6"
@@ -3869,6 +3874,7 @@ solid-start@0.2.8:
     connect "^3.7.0"
     debug "^4.3.4"
     dequal "^2.0.3"
+    dotenv "^16.0.3"
     es-module-lexer "^1.0.5"
     esbuild "^0.14.54"
     esbuild-plugin-solid "^0.4.2"
