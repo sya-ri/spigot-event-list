@@ -20,7 +20,7 @@
     "@types/xml2js": "0.4.11",
     "axios": "1.2.1",
     "cheerio": "1.0.0-rc.12",
-    "compressing": "1.6.2",
+    "compressing": "1.6.3",
     "multi-progress": "4.0.0",
     "progress": "2.0.3",
     "ts-node": "10.9.1",
