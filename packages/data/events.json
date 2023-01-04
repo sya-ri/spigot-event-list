@@ -361,7 +361,7 @@
     "source": "bukkit"
   },
   {
-    "description": "",
+    "description": "ロックされているかを確認する時に呼び出される。",
     "href": "io/papermc/paper/event/block/BlockLockCheckEvent.html",
     "javadoc": "Called when the server tries to check the lock on a lockable tile entity.",
     "link": "https://jd.papermc.io/paper/1.19/io/papermc/paper/event/block/BlockLockCheckEvent.html",
@@ -1010,7 +1010,7 @@
     "source": "bukkit"
   },
   {
-    "description": "",
+    "description": "エンティティが別のエンティティによる攻撃によって押される時に呼び出される。",
     "href": "io/papermc/paper/event/entity/EntityPushedByEntityAttackEvent.html",
     "javadoc": "Fired when an entity is pushed by another entity's attack. The acceleration vector can be\n modified. If this event is cancelled, the entity will not get pushed.\n \n Note: Some entities might trigger this multiple times on the same entity\n as multiple acceleration calculations are done.",
     "link": "https://jd.papermc.io/paper/1.19/io/papermc/paper/event/entity/EntityPushedByEntityAttackEvent.html",
@@ -2745,7 +2745,7 @@
     "source": "bukkit"
   },
   {
-    "description": "",
+    "description": "砥石のアイテムスロットにアイテムを置く時に呼び出される。",
     "href": "org/bukkit/event/inventory/PrepareGrindstoneEvent.html",
     "javadoc": "Called when an item is put in a slot for repair or unenchanting in a grindstone.",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/inventory/PrepareGrindstoneEvent.html",
@@ -2764,7 +2764,7 @@
   },
   {
     "deprecate": true,
-    "deprecateDescription": "",
+    "deprecateDescription": "インベントリにアイテムが置かれ、リザルトスロットのアイテムが置かれる時に呼び出される。",
     "description": "",
     "href": "org/bukkit/event/inventory/PrepareInventoryResultEvent.html",
     "javadoc": "Called when an item is put in a slot and the result is calculated.",
