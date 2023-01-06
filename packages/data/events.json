@@ -2764,8 +2764,8 @@
   },
   {
     "deprecate": true,
-    "deprecateDescription": "インベントリにアイテムが置かれ、リザルトスロットのアイテムが置かれる時に呼び出される。",
-    "description": "",
+    "deprecateDescription": "",
+    "description": "インベントリにアイテムが置かれ、リザルトスロットのアイテムが置かれる時に呼び出される。",
     "href": "org/bukkit/event/inventory/PrepareInventoryResultEvent.html",
     "javadoc": "Called when an item is put in a slot and the result is calculated.",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/inventory/PrepareInventoryResultEvent.html",
