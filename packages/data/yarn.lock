@@ -176,10 +176,10 @@ combined-stream@^1.0.8:
   dependencies:
     delayed-stream "~1.0.0"
 
-compressing@1.6.3:
-  version "1.6.3"
-  resolved "https://registry.yarnpkg.com/compressing/-/compressing-1.6.3.tgz#0ac87175a0b92bf2069616f2f7a8666bd0f53fb0"
-  integrity sha512-BPkE937R8kXT1k55PgnVgMpCAs4Ws5ZgROx+qZEaYIi0tA4nvB9s5HAX/YH5suYp9njGGJOKEAOHhB3OQ5/IJA==
+compressing@1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/compressing/-/compressing-1.7.0.tgz#960e3906ea82739fc35c0162c898f1e9e83ced5f"
+  integrity sha512-3OGtkZaBLZ6tHCfsEUiSUNmbyQhSrpjXafAAM+aXp8DU5I3BWsOqMrD3XhDnOsE2akpRaoije7gmcCNSR2b9Vw==
   dependencies:
     flushwritable "^1.0.0"
     get-ready "^1.0.0"
