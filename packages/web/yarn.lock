@@ -3840,10 +3840,10 @@ solid-refresh@^0.4.1:
     "@babel/helper-module-imports" "^7.16.7"
     "@babel/types" "^7.18.4"
 
-solid-start-node@0.2.11:
-  version "0.2.11"
-  resolved "https://registry.yarnpkg.com/solid-start-node/-/solid-start-node-0.2.11.tgz#c94f65584ac44086cb0f6bc896cf33f87802ba99"
-  integrity sha512-wnk+Yif4L+5ipSOURyT9TwoDJYr1RMbT7qjPanxUU7qJNp0JdWiQgK0cJfijYNRGjClGkbyucnXjVbVHh7kYbg==
+solid-start-node@0.2.12:
+  version "0.2.12"
+  resolved "https://registry.yarnpkg.com/solid-start-node/-/solid-start-node-0.2.12.tgz#3bc82eca58fd0aff07c7c0fafe3c736abc606fe5"
+  integrity sha512-kzvOS4owe66kJlUknP1AGUdaZHlj0yoI1BgkLufJs6Rt1ptLRnyFetZNlOzP1untIq2ZUJFSPuuB1cAFWux1kA==
   dependencies:
     "@rollup/plugin-commonjs" "^24.0.0"
     "@rollup/plugin-json" "^6.0.0"
