@@ -3854,10 +3854,10 @@ solid-start-node@0.2.13:
     sirv "^2.0.2"
     terser "^5.15.1"
 
-solid-start-vercel@0.2.12:
-  version "0.2.12"
-  resolved "https://registry.yarnpkg.com/solid-start-vercel/-/solid-start-vercel-0.2.12.tgz#cc04614ca35392b5022d77401a71e4b2da9ba537"
-  integrity sha512-s+XFef7+TqToYkbtb8fOljqmz7PuThaEwqGFo9NxjwTBg+Ubhw6Dd2SG0r+ZHAg4OGt8ZSnupfp8ihd4COO8/w==
+solid-start-vercel@0.2.13:
+  version "0.2.13"
+  resolved "https://registry.yarnpkg.com/solid-start-vercel/-/solid-start-vercel-0.2.13.tgz#afa18367a6327ef08186f0b5a8bf14ae6b06ea67"
+  integrity sha512-SMaQcMl8wO5t4N/UvCZZTfY+86GnNTMjmw1Vd+Z0Esi5/kZ1CchH0S9T9ROr0W5omUxkRYT/SiFv+qUkwXiWBA==
   dependencies:
     "@rollup/plugin-commonjs" "^24.0.0"
     "@rollup/plugin-json" "^6.0.0"
