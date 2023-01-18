@@ -3834,6 +3834,11 @@ semver@^7.3.7:
   dependencies:
     lru-cache "^6.0.0"
 
+set-cookie-parser@^2.5.1:
+  version "2.5.1"
+  resolved "https://registry.yarnpkg.com/set-cookie-parser/-/set-cookie-parser-2.5.1.tgz#ddd3e9a566b0e8e0862aca974a6ac0e01349430b"
+  integrity sha512-1jeBGaKNGdEq4FgIrORu/N570dwoPYio8lSoYLWmX7sQ//0JY08Xh9o5pBcgmHQ/MbsYp/aZnOe1s1lIsbLprQ==
+
 shebang-command@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/shebang-command/-/shebang-command-2.0.0.tgz#ccd0af4f8835fbdc265b82461aaf0c36663f34ea"
@@ -3915,10 +3920,10 @@ solid-start-vercel@0.2.13:
     rollup "^2.79.1"
     terser "^5.15.1"
 
-solid-start@0.2.13:
-  version "0.2.13"
-  resolved "https://registry.yarnpkg.com/solid-start/-/solid-start-0.2.13.tgz#8f0f068287d15dc5085102700177c2b366e2385d"
-  integrity sha512-tjEwjuuhgm2MEUVYeoiKNm2JsVO5SN4UbsK6H9ptwHM1aOYST8eViQ6HcXuq7MHa6BHRUnHbIEeOSTLBKoK1wg==
+solid-start@0.2.14:
+  version "0.2.14"
+  resolved "https://registry.yarnpkg.com/solid-start/-/solid-start-0.2.14.tgz#9849c3beace048c24194c45cdbcee3a27e378b0e"
+  integrity sha512-mk54/9QWYT5rQ/m5UafiyjV2uaaUToAuEQbQx3YW3+v3vPZ7Bjy+aODZJS+3h3A1+++bDBzJLf+CDaLonul4YQ==
   dependencies:
     "@babel/core" "^7.19.6"
     "@babel/generator" "^7.19.6"
@@ -3944,11 +3949,12 @@ solid-start@0.2.13:
     rollup-plugin-visualizer "^5.9.0"
     rollup-route-manifest "^1.0.0"
     sade "^1.8.1"
+    set-cookie-parser "^2.5.1"
     sirv "^2.0.2"
     terser "^5.15.1"
     undici "^5.11.0"
     vite-plugin-inspect "^0.7.12"
-    vite-plugin-solid "^2.3.10"
+    vite-plugin-solid "^2.5.0"
     wait-on "^6.0.1"
 
 source-map-js@^1.0.2:
@@ -4297,7 +4303,7 @@ vite-plugin-inspect@^0.7.12:
     sirv "^2.0.2"
     ufo "^1.0.1"
 
-vite-plugin-solid@^2.3.10:
+vite-plugin-solid@^2.5.0:
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/vite-plugin-solid/-/vite-plugin-solid-2.5.0.tgz#3f7217f9b5b56be2a0c42e5b6d35036121cedec7"
   integrity sha512-VneGd3RyFJvwaiffsqgymeMaofn0IzQLPwDzafTV2f1agoWeeJlk5VrI5WqT9BTtLe69vNNbCJWqLhHr9fOdDw==
