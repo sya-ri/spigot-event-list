@@ -3349,7 +3349,7 @@ pify@^2.3.0:
   resolved "https://registry.yarnpkg.com/pify/-/pify-2.3.0.tgz#ed141a6ac043a849ea588498e7dca8b15330e90c"
   integrity sha512-udgsAY+fTnvv7kI7aaxbqwWNb0AHiB0qBO89PZKPkoTmGOgdbrHDKD+0B2X4uTfJ/FT1R09r9gTsjUjNJotuog==
 
-polka@^1.0.0-next.22:
+polka@1.0.0-next.22:
   version "1.0.0-next.22"
   resolved "https://registry.yarnpkg.com/polka/-/polka-1.0.0-next.22.tgz#3c25659a401608cf437732f292baf481dc6ec16e"
   integrity sha512-a7tsZy5gFbJr0aUltZS97xCkbPglXuD67AMvTyZX7BTDBH384FWf0ZQF6rPvdutSxnO1vUlXM2zSLf5tCKk5RA==
@@ -3895,19 +3895,19 @@ solid-refresh@^0.4.1:
     "@babel/helper-module-imports" "^7.16.7"
     "@babel/types" "^7.18.4"
 
-solid-start-node@0.2.15:
-  version "0.2.15"
-  resolved "https://registry.yarnpkg.com/solid-start-node/-/solid-start-node-0.2.15.tgz#4a08b3acf76fabe9a49c6dc2915d3fe00cf66a5a"
-  integrity sha512-87Iy4w+38tAd3lL61E7FoPJA3oYRux1jAefAw0r6SeOKnOw0Ea6xKeECNeTHP+aWt67UOf6502pykbiOZOnHKA==
+solid-start-node@0.2.16:
+  version "0.2.16"
+  resolved "https://registry.yarnpkg.com/solid-start-node/-/solid-start-node-0.2.16.tgz#a821de8cc89acef06a82daf3861b5a03517ca346"
+  integrity sha512-kOxrBl1G18Y9z3KDr/ZMnJhUQDe9PhmkxaXbKxYRxtyG1hW7ZeAw49Hw8fPVLX+CbQVA6Zq8Mv1SUXA41Ct2IA==
   dependencies:
     "@rollup/plugin-commonjs" "^24.0.0"
     "@rollup/plugin-json" "^6.0.0"
     "@rollup/plugin-node-resolve" "^15.0.1"
     compression "^1.7.4"
-    polka "^1.0.0-next.22"
-    rollup "^2.79.1"
+    polka "1.0.0-next.22"
+    rollup "^3.10.0"
     sirv "^2.0.2"
-    terser "^5.15.1"
+    terser "^5.16.1"
 
 solid-start-vercel@0.2.15:
   version "0.2.15"
