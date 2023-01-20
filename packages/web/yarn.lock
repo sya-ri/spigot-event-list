@@ -27,7 +27,7 @@
   resolved "https://registry.yarnpkg.com/@babel/compat-data/-/compat-data-7.20.10.tgz#9d92fa81b87542fff50e848ed585b4212c1d34ec"
   integrity sha512-sEnuDPpOJR/fcafHMjpcpGN5M2jbUGUHwmuWKM/YdPzeEDJg8bgmbcWQFUfE32MQjti1koACvoPVsDe8Uq+idg==
 
-"@babel/core@^7.16.5", "@babel/core@^7.19.6", "@babel/core@^7.20.5":
+"@babel/core@^7.16.5", "@babel/core@^7.20.12", "@babel/core@^7.20.5":
   version "7.20.12"
   resolved "https://registry.yarnpkg.com/@babel/core/-/core-7.20.12.tgz#7930db57443c6714ad216953d1356dac0eb8496d"
   integrity sha512-XsMfHovsUYHFMdrIHkZphTN/2Hzzi78R08NuHfDBehym2VsPDL6Zn/JAD/JQdnRvbSsbQc4mVaU1m6JgtTEElg==
@@ -48,7 +48,7 @@
     json5 "^2.2.2"
     semver "^6.3.0"
 
-"@babel/generator@^7.18.7", "@babel/generator@^7.19.6", "@babel/generator@^7.20.7":
+"@babel/generator@^7.18.7", "@babel/generator@^7.20.7":
   version "7.20.7"
   resolved "https://registry.yarnpkg.com/@babel/generator/-/generator-7.20.7.tgz#f8ef57c8242665c5929fe2e8d82ba75460187b4a"
   integrity sha512-7wqMOJq8doJMZmP4ApXTzLxSr7+oO2jroJURrVEp6XShrQUObV8Tq/D0NCcoYg2uHqUrjzO0zwBjoYzelxK+sw==
@@ -799,7 +799,7 @@
     "@babel/helper-create-regexp-features-plugin" "^7.18.6"
     "@babel/helper-plugin-utils" "^7.18.6"
 
-"@babel/preset-env@^7.19.4":
+"@babel/preset-env@^7.20.2":
   version "7.20.2"
   resolved "https://registry.yarnpkg.com/@babel/preset-env/-/preset-env-7.20.2.tgz#9b1642aa47bb9f43a86f9630011780dab7f86506"
   integrity sha512-1G0efQEWR1EHkKvKHqbG+IN/QdgwfByUpM5V5QroDzGV2t3S/WXNQd693cHiHTlCFMpr9B6FkPFXDA2lQcKoDg==
@@ -2048,7 +2048,7 @@ es-abstract@^1.19.0, es-abstract@^1.20.4:
     unbox-primitive "^1.0.2"
     which-typed-array "^1.1.9"
 
-es-module-lexer@^1.0.5:
+es-module-lexer@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/es-module-lexer/-/es-module-lexer-1.1.0.tgz#bf56a09b5f1c6aea6ba231b0a636a0f60c410b70"
   integrity sha512-fJg+1tiyEeS8figV+fPcPpm8WqJEflG3yPU0NOm5xMvrNkuiy7HzX/Ljng4Y0hAoiw4/3hQTCFYw+ub8+a2pRA==
@@ -3775,7 +3775,7 @@ rollup@^2.79.1:
   optionalDependencies:
     fsevents "~2.3.2"
 
-rollup@^3.7.0:
+rollup@^3.10.0, rollup@^3.7.0:
   version "3.10.0"
   resolved "https://registry.yarnpkg.com/rollup/-/rollup-3.10.0.tgz#6eb19196d8b3b375ca651cb78261faac48e24cd6"
   integrity sha512-JmRYz44NjC1MjVF2VKxc0M1a97vn+cDxeqWmnwyAF4FvpjK8YFdHpaqvQB+3IxCvX05vJxKZkoMDU8TShhmJVA==
@@ -3920,17 +3920,17 @@ solid-start-vercel@0.2.15:
     rollup "^2.79.1"
     terser "^5.15.1"
 
-solid-start@0.2.15:
-  version "0.2.15"
-  resolved "https://registry.yarnpkg.com/solid-start/-/solid-start-0.2.15.tgz#8a1d07fafa8d776e8036dc3df6a7778c07def77e"
-  integrity sha512-G5xDoFeOJ/jHpvs134LWP52+EPNHSnsAgqgMIw7CMAy2Tvr0S0+0U3rUzj+yoDmTtoEAW69wPdgoawYBRiaGiA==
+solid-start@0.2.16:
+  version "0.2.16"
+  resolved "https://registry.yarnpkg.com/solid-start/-/solid-start-0.2.16.tgz#b58095ae3b6fcb8020db497502c3dbae0f3a18ff"
+  integrity sha512-gkc14UFGBWF61qPu3nGVaB/wWKzX0r46BiOmwuMqIDJKpWAiOjzd+wDPGQOLkzVuobVGGFFcTbIUBvVZRUZ/qw==
   dependencies:
-    "@babel/core" "^7.19.6"
-    "@babel/generator" "^7.19.6"
+    "@babel/core" "^7.20.12"
+    "@babel/generator" "^7.20.7"
     "@babel/plugin-syntax-jsx" "^7.18.6"
-    "@babel/preset-env" "^7.19.4"
+    "@babel/preset-env" "^7.20.2"
     "@babel/preset-typescript" "^7.18.6"
-    "@babel/template" "^7.18.10"
+    "@babel/template" "^7.20.7"
     "@types/cookie" "^0.5.1"
     chokidar "^3.5.3"
     compression "^1.7.4"
@@ -3938,22 +3938,22 @@ solid-start@0.2.15:
     debug "^4.3.4"
     dequal "^2.0.3"
     dotenv "^16.0.3"
-    es-module-lexer "^1.0.5"
+    es-module-lexer "^1.1.0"
     esbuild "^0.14.54"
     esbuild-plugin-solid "^0.4.2"
     fast-glob "^3.2.12"
     get-port "^6.1.2"
     parse-multipart-data "^1.5.0"
     picocolors "^1.0.0"
-    rollup "^2.79.1"
+    rollup "^3.10.0"
     rollup-plugin-visualizer "^5.9.0"
     rollup-route-manifest "^1.0.0"
     sade "^1.8.1"
     set-cookie-parser "^2.5.1"
     sirv "^2.0.2"
-    terser "^5.15.1"
-    undici "^5.11.0"
-    vite-plugin-inspect "^0.7.12"
+    terser "^5.16.1"
+    undici "^5.15.1"
+    vite-plugin-inspect "^0.7.14"
     vite-plugin-solid "^2.5.0"
     wait-on "^6.0.1"
 
@@ -4118,7 +4118,7 @@ tailwindcss@3.2.4:
     quick-lru "^5.1.1"
     resolve "^1.22.1"
 
-terser@^5.15.1:
+terser@^5.15.1, terser@^5.16.1:
   version "5.16.1"
   resolved "https://registry.yarnpkg.com/terser/-/terser-5.16.1.tgz#5af3bc3d0f24241c7fb2024199d5c461a1075880"
   integrity sha512-xvQfyfA1ayT0qdK47zskQgRZeWLoOQ8JQ6mIgRGVNwZKdQMU+5FkCBjmv4QjcrTzyZquRw2FVtlJSRUmMKQslw==
@@ -4215,7 +4215,7 @@ unbox-primitive@^1.0.2:
     has-symbols "^1.0.3"
     which-boxed-primitive "^1.0.2"
 
-undici@5.15.1, undici@^5.11.0:
+undici@5.15.1, undici@^5.15.1:
   version "5.15.1"
   resolved "https://registry.yarnpkg.com/undici/-/undici-5.15.1.tgz#5292454b1441da486a80c0f3ada1e88f1765ff8d"
   integrity sha512-XLk8g0WAngdvFqTI+VKfBtM4YWXgdxkf1WezC771Es0Dd+Pm1KmNx8t93WTC+Hh9tnghmVxkclU1HN+j+CvIUA==
@@ -4290,7 +4290,7 @@ vary@~1.1.2:
   resolved "https://registry.yarnpkg.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
   integrity sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==
 
-vite-plugin-inspect@^0.7.12:
+vite-plugin-inspect@^0.7.14:
   version "0.7.14"
   resolved "https://registry.yarnpkg.com/vite-plugin-inspect/-/vite-plugin-inspect-0.7.14.tgz#13e330d89e038ab7fa40f5d6d132ad58b7a16be4"
   integrity sha512-C9V93Yy2yUf941oVxIq93K6T1o0SZxoG8MdmyJsnoNDijOAGHT1rVSVjzF/uKFYvgnvLvaXioaoy6ica6aOS0g==
