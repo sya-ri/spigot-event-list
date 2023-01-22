@@ -2764,7 +2764,7 @@
   },
   {
     "deprecate": true,
-    "deprecateDescription": "",
+    "deprecateDescription": "Paper であれば、PrepareResultEvent を使う。",
     "description": "インベントリにアイテムが置かれ、リザルトスロットのアイテムが置かれる時に呼び出される。",
     "href": "org/bukkit/event/inventory/PrepareInventoryResultEvent.html",
     "javadoc": "Called when an item is put in a slot and the result is calculated.",
@@ -2829,7 +2829,7 @@
   },
   {
     "deprecate": true,
-    "deprecateDescription": "",
+    "deprecateDescription": "非推奨。ProjectileHitEvent を使って、エンティティに当たっているかチェックする。",
     "description": "Projectile がエンティティと衝突する時に呼び出される。キャンセルすると Projectile は飛び続ける。",
     "href": "com/destroystokyo/paper/event/entity/ProjectileCollideEvent.html",
     "javadoc": "Called when a projectile collides with an entity\n \n This event is called before EntityDamageByEntityEvent, and cancelling it will allow the projectile to continue flying",
