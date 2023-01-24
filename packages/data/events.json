@@ -1640,7 +1640,7 @@
   {
     "description": "ピグリンと物々交換する時に呼び出される。",
     "href": "org/bukkit/event/entity/PiglinBarterEvent.html",
-    "javadoc": "Stores all data related to the bartering interaction with a piglin.\n\n This event can be triggered by a piglin picking up an item that's on its\n bartering list.",
+    "javadoc": "Stores all data related to the bartering interaction with a piglin.\n\n Called when a piglin completes a barter.",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/PiglinBarterEvent.html",
     "name": "PiglinBarterEvent",
     "source": "bukkit"
