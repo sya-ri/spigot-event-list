@@ -473,7 +473,7 @@
     "source": "bukkit"
   },
   {
-    "description": "",
+    "description": "醸造台が醸造を始めた時に呼び出される。",
     "href": "org/bukkit/event/block/BrewingStartEvent.html",
     "javadoc": "Called when a brewing stand starts to brew.",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BrewingStartEvent.html",
@@ -489,7 +489,7 @@
     "source": "bukkit"
   },
   {
-    "description": "",
+    "description": "キャンプファイアが調理を開始した時に呼び出される。",
     "href": "org/bukkit/event/block/CampfireStartEvent.html",
     "javadoc": "Called when a Campfire starts to cook.",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/CampfireStartEvent.html",
@@ -1391,8 +1391,8 @@
   },
   {
     "deprecate": true,
-    "deprecateDescription": "",
-    "description": "",
+    "deprecateDescription": "実験段階です。",
+    "description": "インベントリを持つブロックが処理を開始した時に呼び出される。",
     "href": "org/bukkit/event/block/InventoryBlockStartEvent.html",
     "javadoc": "Used when:\n \n A Furnace starts smelting FurnaceStartSmeltEvent\n A Brewing-Stand starts brewing BrewingStartEvent\n A Campfire starts cooking CampfireStartEvent\n ",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/InventoryBlockStartEvent.html",
