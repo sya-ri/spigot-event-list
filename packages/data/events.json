@@ -299,7 +299,7 @@
   {
     "description": "ブロックが爆発する時に呼び出される。",
     "href": "org/bukkit/event/block/BlockExplodeEvent.html",
-    "javadoc": "Called when a block explodes\n \n The Block returned by this event is not necessarily\n the block that caused the explosion, just the block at the location where\n the explosion originated. See getExplodedBlockState()",
+    "javadoc": "Called when a block explodes",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockExplodeEvent.html",
     "name": "BlockExplodeEvent",
     "source": "bukkit"
@@ -473,11 +473,27 @@
     "source": "bukkit"
   },
   {
+    "description": "",
+    "href": "org/bukkit/event/block/BrewingStartEvent.html",
+    "javadoc": "Called when a brewing stand starts to brew.",
+    "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BrewingStartEvent.html",
+    "name": "BrewingStartEvent",
+    "source": "bukkit"
+  },
+  {
     "description": "サーバーにブロードキャストメッセージが送信された時に呼び出される。メッセージが非同期で送信された場合、イベントも非同期で呼び出される。",
     "href": "org/bukkit/event/server/BroadcastMessageEvent.html",
     "javadoc": "Event triggered for server broadcast messages such as from\n Server.broadcast(String, String).\n\n This event behaves similarly to AsyncPlayerChatEvent in that it\n should be async if fired from an async thread. Please see that event for\n further information.",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/server/BroadcastMessageEvent.html",
     "name": "BroadcastMessageEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "",
+    "href": "org/bukkit/event/block/CampfireStartEvent.html",
+    "javadoc": "Called when a Campfire starts to cook.",
+    "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/CampfireStartEvent.html",
+    "name": "CampfireStartEvent",
     "source": "bukkit"
   },
   {
@@ -980,7 +996,7 @@
   {
     "description": "エンティティがポータルを出る時に呼び出される。",
     "href": "org/bukkit/event/entity/EntityPortalExitEvent.html",
-    "javadoc": "Called before an entity exits a portal.\n \n This event allows you to modify the velocity of the entity after they have\n successfully exited the portal.\n \n Cancelling this event does not prevent the teleport, but it does prevent\n any changes to velocity and location from taking place.",
+    "javadoc": "Called before an entity exits a portal.\n \n This event allows you to modify the velocity of the entity after they have\n successfully exited the portal.",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityPortalExitEvent.html",
     "name": "EntityPortalExitEvent",
     "source": "bukkit"
@@ -1158,7 +1174,7 @@
   {
     "description": "エンティティからリードが外される時に呼び出される。",
     "href": "org/bukkit/event/entity/EntityUnleashEvent.html",
-    "javadoc": "Called immediately prior to an entity being unleashed.\n \n Cancelling this event when either:\n \n     the leashed entity dies,\n     the entity changes dimension, or\n     the client has disconnected the leash\n \n will have no effect.",
+    "javadoc": "Called immediately prior to an entity being unleashed.",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityUnleashEvent.html",
     "name": "EntityUnleashEvent",
     "source": "bukkit"
@@ -1279,6 +1295,7 @@
   {
     "description": "かまどでの精錬が始まった時に呼び出される。",
     "href": "org/bukkit/event/inventory/FurnaceStartSmeltEvent.html",
+    "javadoc": "Called when a Furnace starts smelting.",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/inventory/FurnaceStartSmeltEvent.html",
     "name": "FurnaceStartSmeltEvent",
     "source": "bukkit"
@@ -1371,6 +1388,16 @@
     "link": "https://jd.papermc.io/paper/1.19/com/destroystokyo/paper/event/player/IllegalPacketEvent.html",
     "name": "IllegalPacketEvent",
     "source": "paper"
+  },
+  {
+    "deprecate": true,
+    "deprecateDescription": "",
+    "description": "",
+    "href": "org/bukkit/event/block/InventoryBlockStartEvent.html",
+    "javadoc": "Used when:\n \n A Furnace starts smelting FurnaceStartSmeltEvent\n A Brewing-Stand starts brewing BrewingStartEvent\n A Campfire starts cooking CampfireStartEvent\n ",
+    "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/InventoryBlockStartEvent.html",
+    "name": "InventoryBlockStartEvent",
+    "source": "bukkit"
   },
   {
     "description": "インベントリを開いた状態で画面をクリックする時に呼び出される。",
@@ -1640,7 +1667,7 @@
   {
     "description": "ピグリンと物々交換する時に呼び出される。",
     "href": "org/bukkit/event/entity/PiglinBarterEvent.html",
-    "javadoc": "Stores all data related to the bartering interaction with a piglin.\n\n Called when a piglin completes a barter.",
+    "javadoc": "Stores all data related to the bartering interaction with a piglin.\n\n This event can be triggered by a piglin picking up an item that's on its\n bartering list.",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/PiglinBarterEvent.html",
     "name": "PiglinBarterEvent",
     "source": "bukkit"
@@ -1687,7 +1714,7 @@
   {
     "description": "プレイヤーのアニメーションに関するイベントであることを表す。",
     "href": "org/bukkit/event/player/PlayerAnimationEvent.html",
-    "javadoc": "Represents a player animation event\n Use PlayerArmSwingEvent for determining which arm was swung.",
+    "javadoc": "Represents a player animation event",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerAnimationEvent.html",
     "name": "PlayerAnimationEvent",
     "source": "bukkit"
@@ -2025,7 +2052,7 @@
   {
     "description": "プレイヤーのゲームモードが変わる時に呼び出される。",
     "href": "org/bukkit/event/player/PlayerGameModeChangeEvent.html",
-    "javadoc": "Called when the GameMode of the player is changed.\n \n NOTE: When getCause() is PlayerGameModeChangeEvent.Cause.DEFAULT_GAMEMODE,\n the Player from PlayerEvent.getPlayer() might not be fully online at\n the time this event is fired. Plugins should use OfflinePlayer.isOnline()\n to check before changing player state.",
+    "javadoc": "Called when the GameMode of the player is changed.",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerGameModeChangeEvent.html",
     "name": "PlayerGameModeChangeEvent",
     "source": "bukkit"
@@ -2076,7 +2103,7 @@
   {
     "description": "プレイヤーがエンティティを右クリックする時に呼び出される。クライアントは PlayerInteractEntityEvent に加えてこのパケットを誤って送信する場合がある。 しかし、アーマースタンドを右クリックした場合、このイベントのみが呼び出される。特別な場合を除いて PlayerInteractEntityEvent を使うことを推奨している。",
     "href": "org/bukkit/event/player/PlayerInteractAtEntityEvent.html",
-    "javadoc": "Represents an event that is called when a player right clicks an entity that\n also contains the location where the entity was clicked.\n \n Note that the client may sometimes spuriously send this packet in addition to PlayerInteractEntityEvent.\n Users are advised to listen to this (parent) class unless specifically required.\n \n Note that interacting with Armor Stands fires this event only and not its parent and as such users are expressly required\n to listen to this event for that scenario.",
+    "javadoc": "Represents an event that is called when a player right clicks an entity that\n also contains the location where the entity was clicked.\n \n Note that the client may sometimes spuriously send this packet in addition to PlayerInteractEntityEvent.\n Users are advised to listen to this (parent) class unless specifically required.",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerInteractAtEntityEvent.html",
     "name": "PlayerInteractAtEntityEvent",
     "source": "bukkit"
@@ -2399,7 +2426,7 @@
   {
     "description": "プレイヤーがリスポーンする時に呼び出される。",
     "href": "org/bukkit/event/player/PlayerRespawnEvent.html",
-    "javadoc": "Called when a player respawns.\n \n If changing player state, see PlayerPostRespawnEvent\n because the player is \"reset\" between this event and that event and some changes won't persist.",
+    "javadoc": "Called when a player respawns.",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerRespawnEvent.html",
     "name": "PlayerRespawnEvent",
     "source": "bukkit"

@@ -45,6 +45,7 @@ const getSourceNameFromType = (type: SourceName) => {
   switch (type) {
     case "bukkit":
     case "spigot":
+      return "Spigot";
     case "paper":
       return "Paper";
     case "purpur":
