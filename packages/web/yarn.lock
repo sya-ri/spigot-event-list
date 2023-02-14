@@ -4151,10 +4151,10 @@ solid-refresh@^0.4.1:
     "@babel/helper-module-imports" "^7.16.7"
     "@babel/types" "^7.18.4"
 
-solid-start-node@0.2.20:
-  version "0.2.20"
-  resolved "https://registry.yarnpkg.com/solid-start-node/-/solid-start-node-0.2.20.tgz#5a4c030d42c849e4dcb7375cc9c4cc792f9da303"
-  integrity sha512-MWpaJKgy5OgdQHpN1cS9nQy3NEgD6QeViGc6AKP0PvowsZ4k+lPI1eT2JyObfLh4PUT9qABhVh8g1jctBra6CA==
+solid-start-node@0.2.21:
+  version "0.2.21"
+  resolved "https://registry.yarnpkg.com/solid-start-node/-/solid-start-node-0.2.21.tgz#d6b43c7ad09248ac473f893d08b28496ca464ba3"
+  integrity sha512-DmmJT6K+uF0yLPkn1GQvIHmZRUdYlQwBijruvCiEWuy3d1sLedRnP22K/+u9eKqm8ruFOTQHrc/1wuGVcj3JXg==
   dependencies:
     "@rollup/plugin-commonjs" "^24.0.0"
     "@rollup/plugin-json" "^6.0.0"
