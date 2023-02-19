@@ -21,7 +21,7 @@ export default function Footer() {
           rel="noopener"
           class="hover:underline"
         >
-          <p class="font-semibold">©︎ 2021 sya_ri</p>
+          <p class="font-semibold">©︎ 2023 sya_ri</p>
         </a>
         <button
           class="bg-white hover:bg-gray-200 active:bg-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700 dark:active:bg-gray-600 rounded-full p-2"
