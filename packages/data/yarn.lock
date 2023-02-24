@@ -9,6 +9,14 @@
   dependencies:
     "@jridgewell/trace-mapping" "0.3.9"
 
+"@eggjs/yauzl@^2.11.0":
+  version "2.11.0"
+  resolved "https://registry.yarnpkg.com/@eggjs/yauzl/-/yauzl-2.11.0.tgz#b8e4413f50fc7c51451f770f152de4c1137aa99b"
+  integrity sha512-Jq+k2fCZJ3i3HShb0nxLUiAgq5pwo8JTT1TrH22JoehZQ0Nm2dvByGIja1NYfNyuE4Tx5/Dns5nVsBN/mlC8yg==
+  dependencies:
+    buffer-crc32 "~0.2.3"
+    fd-slicer2 "^1.2.0"
+
 "@jridgewell/resolve-uri@^3.0.3":
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/@jridgewell/resolve-uri/-/resolve-uri-3.1.0.tgz#2203b118c157721addfe69d47b70465463066d78"
@@ -176,11 +184,12 @@ combined-stream@^1.0.8:
   dependencies:
     delayed-stream "~1.0.0"
 
-compressing@1.7.0:
-  version "1.7.0"
-  resolved "https://registry.yarnpkg.com/compressing/-/compressing-1.7.0.tgz#960e3906ea82739fc35c0162c898f1e9e83ced5f"
-  integrity sha512-3OGtkZaBLZ6tHCfsEUiSUNmbyQhSrpjXafAAM+aXp8DU5I3BWsOqMrD3XhDnOsE2akpRaoije7gmcCNSR2b9Vw==
+compressing@1.8.0:
+  version "1.8.0"
+  resolved "https://registry.yarnpkg.com/compressing/-/compressing-1.8.0.tgz#dcad24ea82c52af5de9329c082440d2d8cced2f7"
+  integrity sha512-PyO8OGoPa2D7Vby7i+H8EiYSH0+bxcACZLUx5xZgCWg22tet7G3FLSws3Tc30WM0GA9vbsE0k+Tm5BzIM/4UuQ==
   dependencies:
+    "@eggjs/yauzl" "^2.11.0"
     flushwritable "^1.0.0"
     get-ready "^1.0.0"
     iconv-lite "^0.5.0"
@@ -188,7 +197,6 @@ compressing@1.7.0:
     pump "^3.0.0"
     streamifier "^0.1.1"
     tar-stream "^1.5.2"
-    yauzl "^2.7.0"
     yazl "^2.4.2"
 
 core-util-is@~1.0.0:
@@ -269,12 +277,12 @@ entities@^4.2.0, entities@^4.3.0, entities@^4.4.0:
   resolved "https://registry.yarnpkg.com/entities/-/entities-4.4.0.tgz#97bdaba170339446495e653cfd2db78962900174"
   integrity sha512-oYp7156SP8LkeGD0GF85ad1X9Ai79WtRsZ2gxJqtBuzH+98YUV6jkHEKlZkMbcrjJjIVJNIDP/3WL9wQkoPbWA==
 
-fd-slicer@~1.1.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/fd-slicer/-/fd-slicer-1.1.0.tgz#25c7c89cb1f9077f8891bbe61d8f390eae256f1e"
-  integrity sha512-cE1qsB/VwyQozZ+q1dGxR8LBYNZeofhEdUNGSMbQD3Gw2lAzX9Zb3uIU6Ebc/Fmyjo9AWWfnn0AUCHqtevs/8g==
+fd-slicer2@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/fd-slicer2/-/fd-slicer2-1.2.0.tgz#a2c54a540639bbcd4702480821771341277ca20e"
+  integrity sha512-3lBUNUckhMZduCc4g+Pw4Ve16LD9vpX9b8qUkkKq2mgDRLYWzblszZH2luADnJqjJe+cypngjCuKRm/IW12rRw==
   dependencies:
-    pend "~1.2.0"
+    pend "^1.2.0"
 
 flushwritable@^1.0.0:
   version "1.0.0"
@@ -395,7 +403,7 @@ parse5@^7.0.0:
   dependencies:
     entities "^4.4.0"
 
-pend@~1.2.0:
+pend@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/pend/-/pend-1.2.0.tgz#7a57eb550a6783f9115331fcf4663d5c8e007a50"
   integrity sha512-F3asv42UuXchdzt+xXqfW1OGlVBe+mxa2mqI0pg5yAHZPvFmY3Y6drSf/GQ1A86WgWEN9Kzh/WrgKa6iGcHXLg==
@@ -550,14 +558,6 @@ xtend@^4.0.0:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/xtend/-/xtend-4.0.2.tgz#bb72779f5fa465186b1f438f674fa347fdb5db54"
   integrity sha512-LKYU1iAXJXUgAXn9URjiu+MWhyUXHsvfp7mcuYm9dSUKK0/CjtrUwFAxD82/mCWbtLsGjFIad0wIsod4zrTAEQ==
-
-yauzl@^2.7.0:
-  version "2.10.0"
-  resolved "https://registry.yarnpkg.com/yauzl/-/yauzl-2.10.0.tgz#c7eb17c93e112cb1086fa6d8e51fb0667b79a5f9"
-  integrity sha512-p4a9I6X6nu6IhoGmBqAcbJy1mlC4j27vEPZX9F4L4/vZT3Lyq1VkFHw/V/PUcB9Buo+DG3iHkT0x3Qya58zc3g==
-  dependencies:
-    buffer-crc32 "~0.2.3"
-    fd-slicer "~1.1.0"
 
 yazl@^2.4.2:
   version "2.5.1"
