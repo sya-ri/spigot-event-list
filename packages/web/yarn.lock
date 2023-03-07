@@ -2452,10 +2452,10 @@ eslint-plugin-prettier@4.2.1:
   dependencies:
     prettier-linter-helpers "^1.0.0"
 
-eslint-plugin-solid@0.10.0:
-  version "0.10.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-solid/-/eslint-plugin-solid-0.10.0.tgz#620c3a1e9e2ce869e4c5157ce4e36e34c36afe94"
-  integrity sha512-x8Jpe1EI44neuMuXG8safkIHWozkjJ2UCi9k6204OYL5sK+1+fSOOHuwd9i6bG2NcHV49SIykG3rbZCuojwtfA==
+eslint-plugin-solid@0.11.0:
+  version "0.11.0"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-solid/-/eslint-plugin-solid-0.11.0.tgz#58204041a54273a54241033f7aa305b35da50fd0"
+  integrity sha512-3ve6IpEtl8nOvJnjaJACqlBmv449l6dMMhMczjQWvvLlRqkzLemgsJ9H+Isu8GLSBTNxDIm5oSKx/lO2j8vKbA==
   dependencies:
     "@typescript-eslint/utils" "^5.30.7"
     is-html "^2.0.0"
