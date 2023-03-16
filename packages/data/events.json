@@ -112,6 +112,14 @@
     "source": "bukkit"
   },
   {
+    "description": "",
+    "href": "org/bukkit/event/world/AsyncStructureSpawnEvent.html",
+    "javadoc": "Called when a Structure is naturally generated in the world.",
+    "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/world/AsyncStructureSpawnEvent.html",
+    "name": "AsyncStructureSpawnEvent",
+    "source": "bukkit"
+  },
+  {
     "description": "タブ補完を行う時に呼び出される。非同期で処理される。このイベントが結果を返す時、標準のタブ補完処理は発生しない。ただし、 TabCompleteEvent は非同期の結果と共に呼び出される。",
     "href": "com/destroystokyo/paper/event/server/AsyncTabCompleteEvent.html",
     "javadoc": "Allows plugins to compute tab completion results asynchronously. If this event provides completions, then the standard synchronous process will not be fired to populate the results. However, the synchronous TabCompleteEvent will fire with the Async results.\n\n Only 1 process will be allowed to provide completions, the Async Event, or the standard process.",
@@ -570,6 +578,14 @@
     "source": "velocity"
   },
   {
+    "description": "",
+    "href": "io/papermc/paper/event/block/CompostItemEvent.html",
+    "javadoc": "Called when an item is about to be composted by a hopper.\n To prevent hoppers from moving items into composters, cancel the InventoryMoveItemEvent.",
+    "link": "https://jd.papermc.io/paper/1.19/io/papermc/paper/event/block/CompostItemEvent.html",
+    "name": "CompostItemEvent",
+    "source": "paper"
+  },
+  {
     "description": "ハンドシェイクが確立された時に呼び出される。非同期で呼び出され、このイベントの処理を待たずに接続を処理します。",
     "href": "com/velocitypowered/api/event/connection/ConnectionHandshakeEvent.html",
     "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/connection/ConnectionHandshakeEvent.html",
@@ -783,6 +799,14 @@
     "source": "bukkit"
   },
   {
+    "description": "",
+    "href": "io/papermc/paper/event/entity/EntityCompostItemEvent.html",
+    "javadoc": "Called when an item is about to be composted by an entity.",
+    "link": "https://jd.papermc.io/paper/1.19/io/papermc/paper/event/entity/EntityCompostItemEvent.html",
+    "name": "EntityCompostItemEvent",
+    "source": "paper"
+  },
+  {
     "deprecate": true,
     "deprecateDescription": "ワールドに関するイベントとして定義された PortalCreateEvent を使う。",
     "description": "エンティティがポータルを作成する時に呼び出される。",
@@ -896,6 +920,14 @@
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityExplodeEvent.html",
     "name": "EntityExplodeEvent",
     "source": "bukkit"
+  },
+  {
+    "description": "",
+    "href": "io/papermc/paper/event/entity/EntityFertilizeEggEvent.html",
+    "javadoc": "Called when a mating occurs that results in a pregnancy.\n After a bit of time, the mother will lay an egg.",
+    "link": "https://jd.papermc.io/paper/1.19/io/papermc/paper/event/entity/EntityFertilizeEggEvent.html",
+    "name": "EntityFertilizeEggEvent",
+    "source": "paper"
   },
   {
     "description": "エンティティがブロックのヒットボックスに入る時に呼び出される。キャンセルされるとブロックに入ったことによって起きる処理が実行されない。以下に例を示す。\n- 大釜に入り、エンティティが消火される。",
@@ -1370,6 +1402,14 @@
     "javadoc": "Triggered when a hanging entity is created in the world",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/hanging/HangingPlaceEvent.html",
     "name": "HangingPlaceEvent",
+    "source": "bukkit"
+  },
+  {
+    "description": "",
+    "href": "org/bukkit/event/inventory/HopperInventorySearchEvent.html",
+    "javadoc": "Event that gets called each time a Hopper attempts to find its\n source/attached containers.",
+    "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/inventory/HopperInventorySearchEvent.html",
+    "name": "HopperInventorySearchEvent",
     "source": "bukkit"
   },
   {
@@ -2725,12 +2765,28 @@
     "source": "bukkit"
   },
   {
+    "description": "",
+    "href": "org/purpurmc/purpur/event/PreBlockExplodeEvent.html",
+    "javadoc": "Called before a block's explosion is processed",
+    "link": "https://purpurmc.org/javadoc/org/purpurmc/purpur/event/PreBlockExplodeEvent.html",
+    "name": "PreBlockExplodeEvent",
+    "source": "purpur"
+  },
+  {
     "description": "生き物がスポーンする時に呼び出される。このイベントの目的はサーバーのパフォーマンスを向上させることであるため、CreatureSpawnEvent が呼び出される全ての状況で呼び出されるわけではない。",
     "href": "com/destroystokyo/paper/event/entity/PreCreatureSpawnEvent.html",
     "javadoc": "WARNING: This event only fires for a limited number of cases, and not for every case that CreatureSpawnEvent does.\n\n You should still listen to CreatureSpawnEvent as a backup, and only use this event as an \"enhancement\".\n The intent of this event is to improve server performance, so it fires even if the spawning might fail later, for\n example when the entity would be unable to spawn due to limited space or lighting.\n \n Currently: NATURAL and SPAWNER based reasons. Please submit a Pull Request for future additions.\n Also, Plugins that replace Entity Registrations with their own custom entities might not fire this event.",
     "link": "https://jd.papermc.io/paper/1.19/com/destroystokyo/paper/event/entity/PreCreatureSpawnEvent.html",
     "name": "PreCreatureSpawnEvent",
     "source": "paper"
+  },
+  {
+    "description": "",
+    "href": "org/purpurmc/purpur/event/entity/PreEntityExplodeEvent.html",
+    "javadoc": "Called before an entity's explosion is processed",
+    "link": "https://purpurmc.org/javadoc/org/purpurmc/purpur/event/entity/PreEntityExplodeEvent.html",
+    "name": "PreEntityExplodeEvent",
+    "source": "purpur"
   },
   {
     "description": "不完全なプロファイルプロパティの追加を要求している時に呼び出される。",
