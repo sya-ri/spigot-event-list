@@ -112,7 +112,7 @@
     "source": "bukkit"
   },
   {
-    "description": "",
+    "description": "構造物がワールドに自然生成される時に呼び出される。",
     "href": "org/bukkit/event/world/AsyncStructureSpawnEvent.html",
     "javadoc": "Called when a Structure is naturally generated in the world.",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/world/AsyncStructureSpawnEvent.html",
@@ -578,7 +578,7 @@
     "source": "velocity"
   },
   {
-    "description": "",
+    "description": "アイテムがホッパーによって堆肥になる時に呼び出される。アイテムがコンポスターに移動するのを防ぐには InventoryMoveItemEvent を使う。",
     "href": "io/papermc/paper/event/block/CompostItemEvent.html",
     "javadoc": "Called when an item is about to be composted by a hopper.\n To prevent hoppers from moving items into composters, cancel the InventoryMoveItemEvent.",
     "link": "https://jd.papermc.io/paper/1.19/io/papermc/paper/event/block/CompostItemEvent.html",
@@ -799,7 +799,7 @@
     "source": "bukkit"
   },
   {
-    "description": "",
+    "description": "アイテムがエンティティによって堆肥になる時に呼び出される。",
     "href": "io/papermc/paper/event/entity/EntityCompostItemEvent.html",
     "javadoc": "Called when an item is about to be composted by an entity.",
     "link": "https://jd.papermc.io/paper/1.19/io/papermc/paper/event/entity/EntityCompostItemEvent.html",
@@ -922,7 +922,7 @@
     "source": "bukkit"
   },
   {
-    "description": "",
+    "description": "交配が発生した時に呼び出される。しばらくすると、卵を産む。",
     "href": "io/papermc/paper/event/entity/EntityFertilizeEggEvent.html",
     "javadoc": "Called when a mating occurs that results in a pregnancy.\n After a bit of time, the mother will lay an egg.",
     "link": "https://jd.papermc.io/paper/1.19/io/papermc/paper/event/entity/EntityFertilizeEggEvent.html",
@@ -1405,7 +1405,7 @@
     "source": "bukkit"
   },
   {
-    "description": "",
+    "description": "ホッパーが接続されたコンテナを見つけようとする時に呼び出される。",
     "href": "org/bukkit/event/inventory/HopperInventorySearchEvent.html",
     "javadoc": "Event that gets called each time a Hopper attempts to find its\n source/attached containers.",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/inventory/HopperInventorySearchEvent.html",
@@ -2765,7 +2765,7 @@
     "source": "bukkit"
   },
   {
-    "description": "",
+    "description": "ブロックの爆発が処理される前に呼び出される。",
     "href": "org/purpurmc/purpur/event/PreBlockExplodeEvent.html",
     "javadoc": "Called before a block's explosion is processed",
     "link": "https://purpurmc.org/javadoc/org/purpurmc/purpur/event/PreBlockExplodeEvent.html",
@@ -2781,7 +2781,7 @@
     "source": "paper"
   },
   {
-    "description": "",
+    "description": "エンティティの爆発が処理される前に呼び出される。",
     "href": "org/purpurmc/purpur/event/entity/PreEntityExplodeEvent.html",
     "javadoc": "Called before an entity's explosion is processed",
     "link": "https://purpurmc.org/javadoc/org/purpurmc/purpur/event/entity/PreEntityExplodeEvent.html",
