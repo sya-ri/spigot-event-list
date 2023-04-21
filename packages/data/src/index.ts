@@ -48,7 +48,7 @@ const sources: { [name: string]: EventSource } = {
     artifact: {
       groupId: "io.papermc.paper",
       artifactId: "paper-api",
-      version: "1.19.3-R0.1",
+      version: "1.19.4-R0.1",
       classifier: "javadoc",
       isSnapShot: true,
     },
@@ -71,7 +71,7 @@ const sources: { [name: string]: EventSource } = {
     artifact: {
       groupId: "org.purpurmc.purpur",
       artifactId: "purpur-api",
-      version: "1.19.3-R0.1",
+      version: "1.19.4-R0.1",
       classifier: "javadoc",
       isSnapShot: true,
     },
@@ -94,7 +94,7 @@ const sources: { [name: string]: EventSource } = {
     artifact: {
       groupId: "org.spigotmc",
       artifactId: "spigot-api",
-      version: "1.19.3-R0.1",
+      version: "1.19.4-R0.1",
       classifier: "javadoc",
       isSnapShot: true,
     },
