@@ -2094,6 +2094,16 @@
     "source": "bukkit"
   },
   {
+    "deprecate": true,
+    "deprecateDescription": "",
+    "description": "",
+    "href": "org/bukkit/event/player/PlayerExpCooldownChangeEvent.html",
+    "javadoc": "Called when a player's experience cooldown changes.",
+    "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerExpCooldownChangeEvent.html",
+    "name": "PlayerExpCooldownChangeEvent",
+    "source": "bukkit"
+  },
+  {
     "description": "プレイヤーが釣りをしている時に呼び出される。",
     "href": "org/bukkit/event/player/PlayerFishEvent.html",
     "javadoc": "Thrown when a player is fishing",
