@@ -2095,8 +2095,8 @@
   },
   {
     "deprecate": true,
-    "deprecateDescription": "",
-    "description": "",
+    "deprecateDescription": "実験用。",
+    "description": "プレイヤーの経験値のクールダウンが変更される時に呼び出される。",
     "href": "org/bukkit/event/player/PlayerExpCooldownChangeEvent.html",
     "javadoc": "Called when a player's experience cooldown changes.",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerExpCooldownChangeEvent.html",
