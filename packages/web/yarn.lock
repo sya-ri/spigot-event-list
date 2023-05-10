@@ -1286,10 +1286,10 @@
   resolved "https://registry.yarnpkg.com/@sideway/pinpoint/-/pinpoint-2.0.0.tgz#cff8ffadc372ad29fd3f78277aeb29e632cc70df"
   integrity sha512-RNiOoTPkptFtSVzQevY/yWtZwf/RxyVnPy/OcA9HBM3MlGDnBEYL5B41H0MTn0Uec8Hi+2qUtTfG2WWZBmMejQ==
 
-"@solidjs/meta@0.28.4":
-  version "0.28.4"
-  resolved "https://registry.yarnpkg.com/@solidjs/meta/-/meta-0.28.4.tgz#80f9d10661e289ef780b8920a33f494211199f04"
-  integrity sha512-1USElsQuGVcJnmZ6CxPfUVmKvCsVdBQoGrUyMxLtFw36Ytt90dPs/qLyXLvPR/ZPD16/qauWqg6APEkbrDOLcA==
+"@solidjs/meta@0.28.5":
+  version "0.28.5"
+  resolved "https://registry.yarnpkg.com/@solidjs/meta/-/meta-0.28.5.tgz#d18c3b5995ef1772027c2ca9a63c3bbb213f3683"
+  integrity sha512-52luJR6hVNMA1K8Od5OD0d8WVz/svqZG4is8lrDimiUGxdia3DzuLF+pK56dnEzbNt9cA42qVFL134U9LkC9Gg==
 
 "@solidjs/router@0.8.2":
   version "0.8.2"
