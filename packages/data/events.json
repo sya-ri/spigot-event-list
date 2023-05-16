@@ -3529,6 +3529,16 @@
   },
   {
     "description": "TNT に着火する時に呼び出される。",
+    "href": "org/bukkit/event/block/TNTPrimeEvent.html",
+    "javadoc": "Called when a block of TNT in the world become primed.\n \n If a TNT Prime event is cancelled, the block of TNT will not become primed.",
+    "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/TNTPrimeEvent.html",
+    "name": "TNTPrimeEvent",
+    "source": "bukkit"
+  },
+  {
+    "deprecate": true,
+    "deprecateDescription": "Bukkit に追加された TNTPrimeEvent を使う。",
+    "description": "TNT に着火する時に呼び出される。",
     "href": "com/destroystokyo/paper/event/block/TNTPrimeEvent.html",
     "javadoc": "Called when TNT block is about to turn into TNTPrimed\n \n Cancelling it won't turn TNT into TNTPrimed and leaves\n the TNT block as-is",
     "link": "https://jd.papermc.io/paper/1.19/com/destroystokyo/paper/event/block/TNTPrimeEvent.html",
