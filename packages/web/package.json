@@ -37,7 +37,7 @@
     "vite": "4.3.9"
   },
   "dependencies": {
-    "solid-icons": "1.0.4",
+    "solid-icons": "1.0.5",
     "spigot-event-list-data": "../data"
   },
   "resolutions": {
