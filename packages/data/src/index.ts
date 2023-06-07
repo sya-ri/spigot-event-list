@@ -14,7 +14,7 @@ const sources: { [name: string]: EventSource } = {
     artifact: {
       groupId: "net.md-5",
       artifactId: "bungeecord-api",
-      version: "1.19-R0.1",
+      version: "1.20-R0.1",
       classifier: "javadoc",
       isSnapShot: true,
     },
@@ -94,7 +94,7 @@ const sources: { [name: string]: EventSource } = {
     artifact: {
       groupId: "org.spigotmc",
       artifactId: "spigot-api",
-      version: "1.19.4-R0.1",
+      version: "1.20-R0.1",
       classifier: "javadoc",
       isSnapShot: true,
     },
