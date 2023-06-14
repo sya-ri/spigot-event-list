@@ -9,7 +9,7 @@
   <a href="https://www.spigotmc.org">
     <img alt="Spigot" src="https://img.shields.io/badge/dynamic/json?color=orange&label=Spigot&query=Spigot&url=https%3A%2F%2Fraw.githubusercontent.com%2Fsya-ri%2Fspigot-event-list%2Fmaster%2Fpackages%2Fdata%2Fversions.json" />
   </a>
-  <a href="https://papermc.io/downloads#Paper">
+  <a href="https://papermc.io/downloads/paper">
     <img alt="Paper" src="https://img.shields.io/badge/dynamic/json?color=lightgray&label=Paper&query=Paper&url=https%3A%2F%2Fraw.githubusercontent.com%2Fsya-ri%2Fspigot-event-list%2Fmaster%2Fpackages%2Fdata%2Fversions.json" />
   </a>
   <a href="https://purpurmc.org">
@@ -18,10 +18,10 @@
   <a href="https://www.spigotmc.org/wiki/bungeecord">
     <img alt="BungeeCord" src="https://img.shields.io/badge/dynamic/json?color=yellow&label=BungeeCord&query=Bungee&url=https%3A%2F%2Fraw.githubusercontent.com%2Fsya-ri%2Fspigot-event-list%2Fmaster%2Fpackages%2Fdata%2Fversions.json" />
   </a>
-  <a href="https://papermc.io/downloads#Waterfall">
+  <a href="https://papermc.io/downloads/waterfall">
     <img alt="Waterfall" src="https://img.shields.io/badge/dynamic/json?color=lightblue&label=Waterfall&query=Waterfall&url=https%3A%2F%2Fraw.githubusercontent.com%2Fsya-ri%2Fspigot-event-list%2Fmaster%2Fpackages%2Fdata%2Fversions.json" />
   </a>
-  <a href="https://papermc.io/downloads#Velocity">
+  <a href="https://papermc.io/downloads/velocity">
     <img alt="Velocity" src="https://img.shields.io/badge/dynamic/json?color=lightgreen&label=Velocity&query=Velocity&url=https%3A%2F%2Fraw.githubusercontent.com%2Fsya-ri%2Fspigot-event-list%2Fmaster%2Fpackages%2Fdata%2Fversions.json" />
   </a>
 </p>
