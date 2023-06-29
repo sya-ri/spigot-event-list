@@ -2372,6 +2372,14 @@
     "source": "paper"
   },
   {
+    "description": "",
+    "href": "io/papermc/paper/event/player/PlayerOpenSignEvent.html",
+    "javadoc": "Called when a player begins editing a sign's text.\n \n Cancelling this event stops the sign editing menu from opening.",
+    "link": "https://jd.papermc.io/paper/1.20/io/papermc/paper/event/player/PlayerOpenSignEvent.html",
+    "name": "PlayerOpenSignEvent",
+    "source": "paper"
+  },
+  {
     "description": "プレイヤーが地面から矢を拾う時に呼び出される。",
     "href": "org/bukkit/event/player/PlayerPickupArrowEvent.html",
     "javadoc": "Thrown when a player picks up an arrow from the ground.",
