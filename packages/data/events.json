@@ -2372,7 +2372,7 @@
     "source": "paper"
   },
   {
-    "description": "",
+    "description": "プレイヤーが看板の編集画面を開く時に呼び出される。このイベントがキャンセルされると編集画面が開かれない。",
     "href": "io/papermc/paper/event/player/PlayerOpenSignEvent.html",
     "javadoc": "Called when a player begins editing a sign's text.\n \n Cancelling this event stops the sign editing menu from opening.",
     "link": "https://jd.papermc.io/paper/1.20/io/papermc/paper/event/player/PlayerOpenSignEvent.html",
