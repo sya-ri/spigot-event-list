@@ -4067,10 +4067,10 @@ slash@^3.0.0:
   resolved "https://registry.yarnpkg.com/slash/-/slash-3.0.0.tgz#6539be870c165adbd5240220dbe361f1bc4d4634"
   integrity sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==
 
-solid-icons@1.0.10:
-  version "1.0.10"
-  resolved "https://registry.yarnpkg.com/solid-icons/-/solid-icons-1.0.10.tgz#a95682d170a605a024101463a87d467eabb4c263"
-  integrity sha512-lFEeOGg3b+U7L5iSm2FD3ponEactI6VkkOW1t9Bxbk+3LeP3IgOliOl+ffezHqtYp98HKcFD5CaurzKkcr9AsA==
+solid-icons@1.0.11:
+  version "1.0.11"
+  resolved "https://registry.yarnpkg.com/solid-icons/-/solid-icons-1.0.11.tgz#2057b0c3f5c2d91f8bee1a23640b5a5acfb9ccba"
+  integrity sha512-shEL5Otrl73LPZukpanJKi6ISnQhpIvhqqAb8haKyCGrixHOYC6yGfNkSE7jpkKSikZ0rGtSMRiFETRrec2Uzw==
 
 solid-js@1.7.7:
   version "1.7.7"
