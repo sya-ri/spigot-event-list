@@ -1466,6 +1466,13 @@
   resolved "https://registry.yarnpkg.com/@types/cookie/-/cookie-0.5.1.tgz#b29aa1f91a59f35e29ff8f7cb24faf1a3a750554"
   integrity sha512-COUnqfB2+ckwXXSFInsFdOAWQzCCx+a5hq2ruyj+Vjund94RJQd4LG2u9hnvJrTgunKAaax7ancBYlDrNYxA0g==
 
+"@types/debug@^4.1.7":
+  version "4.1.8"
+  resolved "https://registry.yarnpkg.com/@types/debug/-/debug-4.1.8.tgz#cef723a5d0a90990313faec2d1e22aee5eecb317"
+  integrity sha512-/vPO1EPOs306Cvhwv7KfVfYvOJqA/S/AXjaHQiJboCZzcNDb+TIJFN9/2C9DZ//ijSKWioNyUxD792QmDJ+HKQ==
+  dependencies:
+    "@types/ms" "*"
+
 "@types/estree@*", "@types/estree@^1.0.0":
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/@types/estree/-/estree-1.0.1.tgz#aa22750962f3bf0e79d753d3cc067f010c95f194"
@@ -1475,6 +1482,11 @@
   version "7.0.11"
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.11.tgz#d421b6c527a3037f7c84433fd2c4229e016863d3"
   integrity sha512-wOuvG1SN4Us4rez+tylwwwCV1psiNVOkJeM3AUWUNWg/jDQY2+HE/444y5gc+jBmRqASOm2Oeh5c1axHobwRKQ==
+
+"@types/ms@*":
+  version "0.7.31"
+  resolved "https://registry.yarnpkg.com/@types/ms/-/ms-0.7.31.tgz#31b7ca6407128a3d2bbc27fe2d21b345397f6197"
+  integrity sha512-iiUgKzV9AuaEkZqkOLDIvlQiL6ltuZd9tGcW3gwpnX8JbuiuhFlEGmmFXEXkN50Cvq7Os88IY2v0dkDqXYWVgA==
 
 "@types/resolve@1.20.2":
   version "1.20.2"
@@ -4468,10 +4480,10 @@ solid-start-vercel@0.2.27:
     rollup "^3.10.0"
     terser "^5.16.1"
 
-solid-start@0.2.27:
-  version "0.2.27"
-  resolved "https://registry.yarnpkg.com/solid-start/-/solid-start-0.2.27.tgz#6f0e4e2229ae93ae72a3a7c3dd256e3e46047475"
-  integrity sha512-shniSYTHJAYzZ4DvZKBvy4y+NQy/pvCPO3HBeGzKsac3jSSVr7V5RulmlyIQRwk9SMsLhqQZlEdswixHN714+w==
+solid-start@0.2.29:
+  version "0.2.29"
+  resolved "https://registry.yarnpkg.com/solid-start/-/solid-start-0.2.29.tgz#355ac0b06a7df3325be51c49e755f368513f160a"
+  integrity sha512-Lvov1rQSJGPsBAPh/ot4UGuxrMeb2PjRV/QXT3eoTPjbTjtLGfo9OJWtZHXHuCIrFgqiNQvX/K95jZgfR6jJ+w==
   dependencies:
     "@babel/core" "^7.20.12"
     "@babel/generator" "^7.20.7"
@@ -4480,6 +4492,7 @@ solid-start@0.2.27:
     "@babel/preset-typescript" "^7.18.6"
     "@babel/template" "^7.20.7"
     "@types/cookie" "^0.5.1"
+    "@types/debug" "^4.1.7"
     chokidar "^3.5.3"
     compression "^1.7.4"
     connect "^3.7.0"
