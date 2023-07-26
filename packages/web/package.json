@@ -16,7 +16,7 @@
     "lint-fix": "yarn lint --fix"
   },
   "devDependencies": {
-    "@solidjs/meta": "0.28.5",
+    "@solidjs/meta": "0.28.6",
     "@solidjs/router": "0.8.2",
     "@typescript-eslint/parser": "6.2.0",
     "autoprefixer": "10.4.14",
