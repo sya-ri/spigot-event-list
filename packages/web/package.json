@@ -27,7 +27,7 @@
     "eslint-plugin-solid": "0.12.1",
     "postcss": "8.4.27",
     "prettier": "3.0.1",
-    "solid-js": "1.7.9",
+    "solid-js": "1.7.10",
     "solid-start": "0.3.1",
     "solid-start-node": "0.3.1",
     "solid-start-vercel": "0.3.1",
