@@ -1418,10 +1418,10 @@
   resolved "https://registry.yarnpkg.com/@solidjs/meta/-/meta-0.28.6.tgz#b168b986fc2b62ad9347323a8fd73db45febac11"
   integrity sha512-mplUfmp7tjGgDTiVbEAqkWDLpr0ZNyR1+OOETNyJt759MqPzh979X3oJUk8SZisGII0BNycmHDIGc0Shqx7bIg==
 
-"@solidjs/router@0.8.2":
-  version "0.8.2"
-  resolved "https://registry.yarnpkg.com/@solidjs/router/-/router-0.8.2.tgz#3dd82fd052cb8654a2948989ed3e17cf6b25b04d"
-  integrity sha512-gUKW+LZqxtX6y/Aw6JKyy4gQ9E7dLqp513oB9pSYJR1HM5c56Pf7eijzyXX+b3WuXig18Cxqah4tMtF0YGu80w==
+"@solidjs/router@0.8.3":
+  version "0.8.3"
+  resolved "https://registry.yarnpkg.com/@solidjs/router/-/router-0.8.3.tgz#4623cda699c4f47b3520222529b72e3cb77ec415"
+  integrity sha512-oJuqQo10rVTiQYhe1qXIG1NyZIZ2YOwHnlLc8Xx+g/iJhFCJo1saLOIrD/Dkh2fpIaIny5ZMkz1cYYqoTYGJbg==
 
 "@trysound/sax@0.2.0":
   version "0.2.0"
