@@ -4491,10 +4491,10 @@ solid-refresh@^0.5.0:
     "@babel/helper-module-imports" "^7.18.6"
     "@babel/types" "^7.21.2"
 
-solid-start-node@0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/solid-start-node/-/solid-start-node-0.3.1.tgz#b81f159576e446254b0bcf0f144b9b4381a3a79b"
-  integrity sha512-eG/5ftxgIi53ADLroatLUBnhA0g5aMVHalwpxaFiCYw9Xp2agKhrFeWXSkmPQtVCe1549VXC454EaWdqbO1t6A==
+solid-start-node@0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/solid-start-node/-/solid-start-node-0.3.2.tgz#4b08defd015b05fad70fa0fc7532002b5a5b6e7c"
+  integrity sha512-28oCCE6gppYlXRHT8Ll8JlOzOalCnAsO+vO8ScupQXkN2kKqN3cOFCmGu8J9pupKM5OseEM6kPojwCEFq68kEA==
   dependencies:
     "@rollup/plugin-commonjs" "^24.1.0"
     "@rollup/plugin-json" "^6.0.0"
@@ -4505,10 +4505,10 @@ solid-start-node@0.3.1:
     sirv "^2.0.3"
     terser "^5.19.0"
 
-solid-start-vercel@0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/solid-start-vercel/-/solid-start-vercel-0.3.1.tgz#a990b7745c4054e69143eb3def9bee00ab464f51"
-  integrity sha512-oK49DF4op/7RxB3E2oeaN1wjf+D9ZbSIKhc7NRxjlfAa4ezQ4tYHFik+WXuRFG8FbF/4fM9KGYkvRqq/krna1Q==
+solid-start-vercel@0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/solid-start-vercel/-/solid-start-vercel-0.3.2.tgz#0838968dd803ccad0548d19b05d848e98eac1758"
+  integrity sha512-+m5YeMf+q3ee2Cr3A7bS5EG+VDruZS9CDB1J3BWvLk8jJvaC39nXKda8ykYyV5HOiG2YuXERoIvUcnASsEzWog==
   dependencies:
     "@rollup/plugin-commonjs" "^24.1.0"
     "@rollup/plugin-json" "^6.0.0"
@@ -4519,10 +4519,10 @@ solid-start-vercel@0.3.1:
     rollup "^3.26.2"
     terser "^5.19.0"
 
-solid-start@0.3.1:
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/solid-start/-/solid-start-0.3.1.tgz#2149d3e9634eacda6f23386ca1dd487046ddb120"
-  integrity sha512-so91EhE07F1aLgBUJUUBKEyEqfaJssADKVuRwxHOS5Gzpauh/1QsVuz4jPK4G4eeodamQ440QBCOf3t9Rc/mXQ==
+solid-start@0.3.2:
+  version "0.3.2"
+  resolved "https://registry.yarnpkg.com/solid-start/-/solid-start-0.3.2.tgz#567d6a09badd98300774f2821c0b70acf1a3d220"
+  integrity sha512-5sYkrnVbZLtFY/RlVWic0FNLlrdpSFfv5x3pz1kiBr2MoDcKLGiH5muydkkmCJwBa8I05mK/oDytoLZ/qIA36Q==
   dependencies:
     "@babel/core" "^7.22.9"
     "@babel/generator" "^7.22.9"
