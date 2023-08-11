@@ -29,6 +29,6 @@
     "xml2js": "0.6.2"
   },
   "dependencies": {
-    "spigot-event-list-common": "../common"
+    "spigot-event-list-common": "./packages/common"
   }
 }

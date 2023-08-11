@@ -17,7 +17,7 @@ function defaultDarkMode() {
 export const [searchText, setSearchText] = createSignal("");
 
 export const [filterSources, setFilterSources] = createStore(
-  defaultFilterSources()
+  defaultFilterSources(),
 );
 
 export function resetFilterSources() {
@@ -37,8 +37,8 @@ function initFromSearchParams() {
     const sources = params.get("tags").split("-");
     setFilterSources(
       Object.fromEntries(
-        sourceNames.map((source) => [source, sources.includes(source)])
-      )
+        sourceNames.map((source) => [source, sources.includes(source)]),
+      ),
     );
   }
 }

@@ -20,5 +20,8 @@
     "web:start": "yarn web start",
     "web:lint": "yarn web lint",
     "web:lint-fix": "yarn web lint-fix"
-  }
+  },
+  "workspaces": [
+    "packages/*"
+  ]
 }
