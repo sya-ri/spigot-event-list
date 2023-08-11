@@ -26,7 +26,7 @@ export default function EventListContent(props: EventListContentProps) {
 
     setShow(
       matchSearchText(props.event.name, props.event.description) &&
-        matchSource(props.event.source),
+        matchSource(props.event.source)
     );
   });
 

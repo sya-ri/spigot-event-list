@@ -21,7 +21,7 @@
     "@typescript-eslint/parser": "6.3.0",
     "autoprefixer": "10.4.14",
     "cssnano": "6.0.1",
-    "eslint": "8.47.0",
+    "eslint": "8.46.0",
     "eslint-config-prettier": "9.0.0",
     "eslint-plugin-prettier": "5.0.0",
     "eslint-plugin-solid": "0.12.1",
@@ -38,7 +38,7 @@
   },
   "dependencies": {
     "solid-icons": "1.0.11",
-    "spigot-event-list-data": "./packages/data"
+    "spigot-event-list-data": "../data"
   },
   "resolutions": {
     "undici": "5.23.0"
