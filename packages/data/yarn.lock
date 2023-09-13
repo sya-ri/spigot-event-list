@@ -184,10 +184,10 @@ combined-stream@^1.0.8:
   dependencies:
     delayed-stream "~1.0.0"
 
-compressing@1.9.1:
-  version "1.9.1"
-  resolved "https://registry.yarnpkg.com/compressing/-/compressing-1.9.1.tgz#3ac452fa8d6e442548579e80e1132438249f004b"
-  integrity sha512-5fyyxjvFRbY7/FEzmqUTSXQdyUA+ETsBEjLHqsYnWbZrZbE7aqyiHCGWHWYD1Xpq83O2b4geN0ctDccRyRjZwg==
+compressing@1.10.0:
+  version "1.10.0"
+  resolved "https://registry.yarnpkg.com/compressing/-/compressing-1.10.0.tgz#bca0f734736b5bb05c3a176fef8d60d7f5f322da"
+  integrity sha512-k2vpbZLaJoHe9euyUZjYYE8vOrbR19aU3HcWIYw5EBXiUs34ygfDVnXU+ubI41JXMriHutnoiu0ZFdwCkH6jPA==
   dependencies:
     "@eggjs/yauzl" "^2.11.0"
     flushwritable "^1.0.0"
