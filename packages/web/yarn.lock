@@ -4440,10 +4440,10 @@ solid-icons@1.0.12:
   resolved "https://registry.yarnpkg.com/solid-icons/-/solid-icons-1.0.12.tgz#66d506a425ec37b4973a880224637d31441a1fa8"
   integrity sha512-HOIQ2nFGLEH9/QHnMiu6CZkEMrRlrEvxpX3V3XikvQQ/CQNhOKl2vLQALaJYgz3MvfPP5wkid+q79tTdIw5YGQ==
 
-solid-js@1.7.11:
-  version "1.7.11"
-  resolved "https://registry.yarnpkg.com/solid-js/-/solid-js-1.7.11.tgz#c37706382bcfd563459810434b1382b550c27867"
-  integrity sha512-JkuvsHt8jqy7USsy9xJtT18aF9r2pFO+GB8JQ2XGTvtF49rGTObB46iebD25sE3qVNvIbwglXOXdALnJq9IHtQ==
+solid-js@1.7.12:
+  version "1.7.12"
+  resolved "https://registry.yarnpkg.com/solid-js/-/solid-js-1.7.12.tgz#e196aceb03790c15aedf109771c5bb9cc92516ea"
+  integrity sha512-QoyoOUKu14iLoGxjxWFIU8+/1kLT4edQ7mZESFPonsEXZ//VJtPKD8Ud1aTKzotj+MNWmSs9YzK6TdY+fO9Eww==
   dependencies:
     csstype "^3.1.0"
     seroval "^0.5.0"
