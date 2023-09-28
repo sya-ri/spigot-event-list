@@ -41,6 +41,6 @@
     "spigot-event-list-data": "../data"
   },
   "resolutions": {
-    "undici": "5.24.0"
+    "undici": "5.25.2"
   }
 }
