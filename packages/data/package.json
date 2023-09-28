@@ -14,11 +14,11 @@
     "build": "tsc"
   },
   "devDependencies": {
-    "@types/multi-progress": "2.0.3",
-    "@types/node": "20.6.2",
+    "@types/multi-progress": "2.0.4",
+    "@types/node": "20.7.1",
     "@types/progress": "2.0.5",
     "@types/xml2js": "0.4.12",
-    "axios": "1.5.0",
+    "axios": "1.5.1",
     "cheerio": "1.0.0-rc.12",
     "compressing": "1.10.0",
     "multi-progress": "4.0.0",
