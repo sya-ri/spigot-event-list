@@ -55,10 +55,10 @@
   resolved "https://registry.yarnpkg.com/@tsconfig/node16/-/node16-1.0.4.tgz#0b92dcc0cc1c81f6f306a381f28e31b1a56536e9"
   integrity sha512-vxhUy4J8lyeyinH7Azl1pdd43GJhZH/tP2weN8TntQblOY+A0XbT8DJk1/oCPuOOyg/Ja757rG0CgHcWC8OfMA==
 
-"@types/multi-progress@2.0.4":
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/@types/multi-progress/-/multi-progress-2.0.4.tgz#50bc66b6ce3b6d7561f0b87a21e48ec047e1709d"
-  integrity sha512-k57m0vtPAn+bYhBon5hLB2ncfefbl8H17mDWy5aKc/Z/x6XviYRf59TifQePCJYs/Mrkguk5I1uTgi6vi70uUg==
+"@types/multi-progress@2.0.5":
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/@types/multi-progress/-/multi-progress-2.0.5.tgz#d603c2a1b0f4dd0383db24a405d54d0e83582c71"
+  integrity sha512-Sj4rTIMUGp9W48SelTgXgB6M7OzaAsnR/Hl4e1DML+y+i7XiiWJXLH0ox2A+eCyaB/irb37Ps6K1Jei81CGMeQ==
   dependencies:
     "@types/node" "*"
     "@types/progress" "*"
