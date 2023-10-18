@@ -16,7 +16,7 @@
   "devDependencies": {
     "@types/multi-progress": "2.0.5",
     "@types/node": "20.8.7",
-    "@types/progress": "2.0.5",
+    "@types/progress": "2.0.6",
     "@types/xml2js": "0.4.12",
     "axios": "1.5.1",
     "cheerio": "1.0.0-rc.12",

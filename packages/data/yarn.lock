@@ -75,10 +75,17 @@
   dependencies:
     undici-types "~5.25.1"
 
-"@types/progress@*", "@types/progress@2.0.5":
+"@types/progress@*":
   version "2.0.5"
   resolved "https://registry.yarnpkg.com/@types/progress/-/progress-2.0.5.tgz#6e0febf3a82cc0ffdc1cebb4e56d6949fd108775"
   integrity sha512-ZYYVc/kSMkhH9W/4dNK/sLNra3cnkfT2nJyOAIDY+C2u6w72wa0s1aXAezVtbTsnN8HID1uhXCrLwDE2ZXpplg==
+  dependencies:
+    "@types/node" "*"
+
+"@types/progress@2.0.6":
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/@types/progress/-/progress-2.0.6.tgz#c1b9fde048c8e3040945265fdb948edf6d583762"
+  integrity sha512-VMoR0SmxPQFOZ7Sege+q2gswFNq/bHDSMcWv3sEaPqAkbvYYzCOJJzpmAupgYqXn3AXWWmyAWlw8x5tzRDNR7g==
   dependencies:
     "@types/node" "*"
 
