@@ -31,7 +31,7 @@
     "solid-start": "0.3.8",
     "solid-start-node": "0.3.8",
     "solid-start-vercel": "0.3.8",
-    "tailwindcss": "3.3.3",
+    "tailwindcss": "3.3.4",
     "typescript": "5.2.2",
     "undici": "5.26.5",
     "vite": "4.5.0"
