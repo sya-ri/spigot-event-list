@@ -17,7 +17,7 @@
     "@types/multi-progress": "2.0.6",
     "@types/node": "20.8.10",
     "@types/progress": "2.0.7",
-    "@types/xml2js": "0.4.13",
+    "@types/xml2js": "0.4.14",
     "axios": "1.6.0",
     "cheerio": "1.0.0-rc.12",
     "compressing": "1.10.0",
