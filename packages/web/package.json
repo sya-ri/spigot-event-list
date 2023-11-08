@@ -28,7 +28,7 @@
     "postcss": "8.4.31",
     "prettier": "3.0.3",
     "solid-js": "1.8.5",
-    "solid-start": "0.3.9",
+    "solid-start": "0.3.10",
     "solid-start-node": "0.3.9",
     "solid-start-vercel": "0.3.9",
     "tailwindcss": "3.3.5",
