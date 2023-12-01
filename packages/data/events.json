@@ -112,6 +112,16 @@
     "source": "bukkit"
   },
   {
+    "deprecate": true,
+    "deprecateDescription": "",
+    "description": "",
+    "href": "org/bukkit/event/world/AsyncStructureGenerateEvent.html",
+    "javadoc": "This event will sometimes fire synchronously, depending on how it was\n triggered.\n \n The constructor provides a boolean to indicate if the event was fired\n synchronously or asynchronously. When asynchronous, this event can be called\n from any thread, sans the main thread, and has limited access to the API.\n \n If a Structure is naturally placed in a chunk of the world, this\n event will be asynchronous. If a player executes the '/place structure'\n command, this event will be synchronous.\n\n Allows to register transformers that can modify the blocks placed and\n entities spawned by the structure.\n \n Care should be taken to check Event.isAsynchronous() and treat the event\n appropriately.\n ",
+    "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/world/AsyncStructureGenerateEvent.html",
+    "name": "AsyncStructureGenerateEvent",
+    "source": "bukkit"
+  },
+  {
     "description": "構造物がワールドに自然生成される時に呼び出される。",
     "href": "org/bukkit/event/world/AsyncStructureSpawnEvent.html",
     "javadoc": "Called when a Structure is naturally generated in the world.",
@@ -1744,7 +1754,7 @@
   {
     "description": "プレイヤーが進捗の条件を達成した時に呼び出される。",
     "href": "com/destroystokyo/paper/event/player/PlayerAdvancementCriterionGrantEvent.html",
-    "javadoc": "Called when a player is granted a criteria in an advancement.",
+    "javadoc": "Called after a player is granted a criteria in an advancement.\n If cancelled the criteria will be revoked.",
     "link": "https://jd.papermc.io/paper/1.20/com/destroystokyo/paper/event/player/PlayerAdvancementCriterionGrantEvent.html",
     "name": "PlayerAdvancementCriterionGrantEvent",
     "source": "paper"
@@ -2488,6 +2498,14 @@
     "link": "https://jd.papermc.io/paper/1.20/com/destroystokyo/paper/event/player/PlayerRecipeBookClickEvent.html",
     "name": "PlayerRecipeBookClickEvent",
     "source": "paper"
+  },
+  {
+    "description": "",
+    "href": "org/bukkit/event/player/PlayerRecipeBookSettingsChangeEvent.html",
+    "javadoc": "Called when a player changes recipe book settings.",
+    "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerRecipeBookSettingsChangeEvent.html",
+    "name": "PlayerRecipeBookSettingsChangeEvent",
+    "source": "bukkit"
   },
   {
     "description": "プレイヤーが新しいレシピを見つける時に呼び出される。",
