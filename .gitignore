@@ -233,3 +233,8 @@ $RECYCLE.BIN/
 # .pnp.*
 
 # End of https://www.toptal.com/developers/gitignore/api/yarn,linux,macos,windows,node
+
+.vercel/
+.solid/
+javadoc/
+report.md

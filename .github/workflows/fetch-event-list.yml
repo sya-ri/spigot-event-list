@@ -11,17 +11,16 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '16.x'
+          node-version: '20.x'
       - name: Install Dependencies
         run: |
-          yarn data build-dependencies
-          yarn data
-      - name: Fetch
-        run: yarn data:fetch
+          yarn install
+      - name: Update event list
+        run: yarn update
       - name: Get Report
         id: report
         run: |
-          content=$(cat packages/data/report.md)
+          content=$(cat report.md)
           content="${content//'%'/'%25'}"
           content="${content//$'\n'/'%0A'}"
           content="${content//$'\r'/'%0D'}"
