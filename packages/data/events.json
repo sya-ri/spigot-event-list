@@ -2500,7 +2500,7 @@
     "source": "paper"
   },
   {
-    "description": "",
+    "description": "プレイヤーがレシピブックの設定を変更した時に呼び出される。",
     "href": "org/bukkit/event/player/PlayerRecipeBookSettingsChangeEvent.html",
     "javadoc": "Called when a player changes recipe book settings.",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerRecipeBookSettingsChangeEvent.html",
