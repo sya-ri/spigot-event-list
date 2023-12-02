@@ -1,6 +1,6 @@
 import { For } from "solid-js";
 import EventListContent from "./EventListContent";
-import events from "../../../events.json";
+import events from "../../../data/events.json";
 import { EventType } from "~/types";
 
 export default function EventList() {

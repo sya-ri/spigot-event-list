@@ -20,7 +20,7 @@ jobs:
       - name: Get Report
         id: report
         run: |
-          content=$(cat report.md)
+          content=$(cat data/report.md)
           content="${content//'%'/'%25'}"
           content="${content//$'\n'/'%0A'}"
           content="${content//$'\r'/'%0D'}"

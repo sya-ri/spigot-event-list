@@ -7,7 +7,7 @@ import { EventType } from "~/types.js";
 export const getLastEvents = async (): Promise<{
   [name: string]: EventType;
 }> => {
-  let text = await readFile("events.json", "utf8");
+  let text = await readFile("data/events.json", "utf8");
   let lastEvents: any = await JSON.parse(text);
   return lastEvents.reduce(
     (map, value) => {
@@ -42,5 +42,5 @@ export const writeEvents = (sources: { [name: string]: EventType }) => {
         source: value.source,
       }),
     );
-  return writeFile("events.json", JSON.stringify(events, null, 2));
+  return writeFile("data/events.json", JSON.stringify(events, null, 2));
 };

@@ -198,7 +198,7 @@ const index = async () => {
   const events = await getLatestEvents(sources, lastEvents);
   await writeEvents(events);
   await writeVersions(versions);
-  await writeFile("report.md", getChangeLog(lastSources, sources, events));
+  await writeFile("data/report.md", getChangeLog(lastSources, sources, events));
 };
 
 index();
