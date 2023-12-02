@@ -1,5 +1,5 @@
-import { SourceName } from "spigot-event-list-common";
 import { filterSources, setFilterSources } from "~/states";
+import { SourceName } from "~/types";
 
 export type EventSourceTagProps = {
   source: SourceName;

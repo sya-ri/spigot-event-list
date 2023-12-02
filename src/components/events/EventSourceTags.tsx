@@ -1,6 +1,6 @@
-import { SourceName } from "spigot-event-list-common";
 import { For } from "solid-js";
 import EventSourceTag from "~/components/events/EventSourceTag";
+import { SourceName } from "~/types";
 
 export type EventSourceTagsProps = {
   source: SourceName;

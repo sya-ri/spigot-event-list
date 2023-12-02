@@ -1,8 +1,8 @@
-import { EventType, SourceName } from "spigot-event-list-common";
 import EventSourceTags from "~/components/events/EventSourceTags";
 import { filterSources, searchText } from "~/states";
 import { createEffect, createSignal, Show } from "solid-js";
 import { BiRegularLink } from "solid-icons/bi";
+import { EventType, SourceName } from "~/types";
 
 export type EventListContentProps = {
   event: EventType;
