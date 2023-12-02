@@ -113,8 +113,8 @@
   },
   {
     "deprecate": true,
-    "deprecateDescription": "",
-    "description": "",
+    "deprecateDescription": "実験段階。",
+    "description": "構造物が生成された時に呼び出される。",
     "href": "org/bukkit/event/world/AsyncStructureGenerateEvent.html",
     "javadoc": "This event will sometimes fire synchronously, depending on how it was\n triggered.\n \n The constructor provides a boolean to indicate if the event was fired\n synchronously or asynchronously. When asynchronous, this event can be called\n from any thread, sans the main thread, and has limited access to the API.\n \n If a Structure is naturally placed in a chunk of the world, this\n event will be asynchronous. If a player executes the '/place structure'\n command, this event will be synchronous.\n\n Allows to register transformers that can modify the blocks placed and\n entities spawned by the structure.\n \n Care should be taken to check Event.isAsynchronous() and treat the event\n appropriately.\n ",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/world/AsyncStructureGenerateEvent.html",
