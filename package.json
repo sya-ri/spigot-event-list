@@ -33,7 +33,7 @@
     "eslint-plugin-prettier": "5.0.1",
     "eslint-plugin-solid": "0.13.0",
     "multi-progress": "4.0.0",
-    "postcss": "8.4.31",
+    "postcss": "8.4.32",
     "prettier": "3.1.0",
     "progress": "2.0.3",
     "solid-js": "1.8.6",
