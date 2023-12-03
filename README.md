@@ -2,7 +2,6 @@
   <a href="https://spigot-event-list.s7a.dev">
     <img src="public/logo.png" alt="spigot-event-list"/>
   </a>
-  Spigot Event List
 </h1>
 
 <p align="center">
