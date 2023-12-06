@@ -12,7 +12,7 @@
     "build": "solid-start build",
     "start": "solid-start start",
     "lint": "eslint . --ext ts,tsx",
-    "lint-fix": "yarn lint --fix",
+    "lint-fix": "npm run lint -- --fix",
     "update": "node --loader ts-node/esm src/scripts/index.ts"
   },
   "devDependencies": {
@@ -54,5 +54,5 @@
   "engines": {
     "node": "18.x"
   },
-  "packageManager": "yarn@3.7.0"
+  "packageManager": "npm@10.2.4"
 }

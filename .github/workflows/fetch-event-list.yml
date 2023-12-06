@@ -14,9 +14,9 @@ jobs:
           node-version-file: package.json
       - name: Install Dependencies
         run: |
-          yarn install
+          npm install
       - name: Update event list
-        run: yarn update
+        run: npm run update
       - name: Get Report
         id: report
         run: |
