@@ -1,20 +1,13 @@
 import axios from "axios";
 
-export class UpdateFetchError extends Error {}
+type JenkinsApi = {
+  id: string;
+};
 
-const fetchBuildNumberFromJenkins = async (
-  url: string,
-  name: string,
-): Promise<number> => {
-  const response = await axios.get<string>(url, {
-    headers: {
-      "Accept-Encoding": "gzip,deflate,compress",
-    },
-  });
-  const body = response.data;
-  const match = body.match(`<title>${name} #(\\d+) \\[Jenkins\\]</title>`);
-  if (!match) throw new UpdateFetchError();
-  return parseInt(match.pop());
+const fetchBuildNumberFromJenkins = async (url: string): Promise<number> => {
+  const response = await axios.get<JenkinsApi>(url);
+  const json = response.data;
+  return parseInt(json.id);
 };
 
 type PaperApiVersion = {
@@ -85,8 +78,7 @@ const fetchBuildNumberFromPurpurApi = async (
 
 export const bungeeBuildNumber = async () => {
   return fetchBuildNumberFromJenkins(
-    "https://ci.md-5.net/job/BungeeCord/lastBuild/",
-    "BungeeCord",
+    "https://ci.md-5.net/job/BungeeCord/lastBuild/api/json/",
   );
 };
 
@@ -108,8 +100,7 @@ export const purpurBuildNumber = async (version: string) => {
 
 export const spigotBuildNumber = async () => {
   return fetchBuildNumberFromJenkins(
-    "https://hub.spigotmc.org/jenkins/job/Spigot-RSS/lastBuild/",
-    "Spigot-RSS",
+    "https://hub.spigotmc.org/jenkins/job/Spigot-RSS/lastBuild/api/json/",
   );
 };
 
