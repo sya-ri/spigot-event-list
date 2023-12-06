@@ -93,6 +93,7 @@ export const updateJavadoc = (sources: { [name: string]: EventType }) => {
             ).text();
             if (annotations.includes("@Experimental")) {
               eventType.deprecate = true;
+              eventType.deprecateDescription = "実験段階。";
             }
             if (!eventType.javadoc) {
               delete eventType.javadoc;
