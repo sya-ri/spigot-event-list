@@ -1,45 +1,12 @@
-import EventSource from "./EventSource.js";
 import { EventType } from "~/types.js";
 
 /**
  * 変更報告を取得する
  */
-const getChangeLog = (
-  lastSources: { [name: string]: EventSource },
-  sources: { [name: string]: EventSource },
-  sourceTypes: { [name: string]: EventType },
-): string => {
-  return [
-    getVersionChangeLog(lastSources, sources),
-    getDescriptionReport(sourceTypes),
-  ]
+const getChangeLog = (sourceTypes: { [name: string]: EventType }): string => {
+  return [getDescriptionReport(sourceTypes)]
     .filter((line) => line)
     .join("\n\n");
-};
-
-/**
- * バージョンに関する変更報告を取得する
- */
-const getVersionChangeLog = (
-  lastSources: { [name: string]: EventSource },
-  sources: { [name: string]: EventSource },
-): string | null => {
-  const versions = Object.keys(sources)
-    .map((name) => {
-      const lastVersion = lastSources[name].version;
-      const version = sources[name].version;
-      return [name, lastVersion, version];
-    })
-    .filter(([, lastVersion, version]) => lastVersion != version)
-    .map(
-      ([name, lastVersion, version]) =>
-        `- **${name}**: \`${lastVersion}\` → \`${version}\``,
-    );
-  if (versions.length) {
-    return "### バージョン\n\n" + versions.join("\n");
-  } else {
-    return null;
-  }
 };
 
 /**

@@ -11,8 +11,6 @@ export default interface EventSource {
   downloadUrl: string;
   allClasses: string;
   deprecateList: string;
-  version?: string;
-  // eslint-disable-next-line no-unused-vars
-  updateVersion: (source: EventSource) => Promise<void>;
+  buildNumber: number;
   downloadSources: SourceName[];
 }
