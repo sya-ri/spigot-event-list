@@ -95,7 +95,7 @@ const sources: { [name: string]: EventSource } = {
     artifact: {
       groupId: "org.spigotmc",
       artifactId: "spigot-api",
-      version: "1.20.2-R0.1",
+      version: "1.20.3-R0.1",
       classifier: "javadoc",
       isSnapShot: true,
     },
