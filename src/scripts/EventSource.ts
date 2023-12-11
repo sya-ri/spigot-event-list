@@ -10,7 +10,6 @@ export default interface EventSource {
   javadocUrl: string;
   downloadUrl: string;
   allClasses: string;
-  deprecateList: string;
   buildNumber: number;
   downloadSources: SourceName[];
 }

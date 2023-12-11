@@ -1,7 +1,6 @@
 import { readFile } from "fs/promises";
 import { load } from "cheerio";
 import EventSource from "../EventSource.js";
-import { updateDeprecate } from "./deprecate.js";
 import { excludeEvents } from "./exclude.js";
 import { javadocPath, updateJavadoc } from "./javadoc.js";
 import { EventType, SourceName } from "~/types.js";
@@ -92,6 +91,5 @@ export const getLatestEvents = async (
   );
   await excludeEvents(events);
   await updateJavadoc(events);
-  await updateDeprecate(sources, events);
   return events;
 };

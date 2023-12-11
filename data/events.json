@@ -84,8 +84,6 @@
     "source": "bungee"
   },
   {
-    "deprecate": true,
-    "deprecateDescription": "Paper であれば、AsyncChatEvent を使う。",
     "description": "プレイヤーがチャットした時に呼び出される。非同期でも同期でも呼び出されることがある。",
     "href": "org/bukkit/event/player/AsyncPlayerChatEvent.html",
     "javadoc": "This event will sometimes fire synchronously, depending on how it was\n triggered.\n \n The constructor provides a boolean to indicate if the event was fired\n synchronously or asynchronously. When asynchronous, this event can be\n called from any thread, sans the main thread, and has limited access to the\n API.\n \n If a player is the direct cause of this event by an incoming packet, this\n event will be asynchronous. If a plugin triggers this event by compelling a\n player to chat, this event will be synchronous.\n \n Care should be taken to check Event.isAsynchronous() and treat the event\n appropriately.",
@@ -1824,6 +1822,8 @@
     "source": "paper"
   },
   {
+    "deprecate": true,
+    "deprecateDescription": "ベータ段階。",
     "description": "サーバーで使用可能なコマンド一覧をプレイヤーに送信する時に呼び出される。",
     "href": "com/velocitypowered/api/event/command/PlayerAvailableCommandsEvent.html",
     "javadoc": "Allows plugins to modify the packet indicating commands available on the server to a\n Minecraft 1.13+ client. The given RootCommandNode is mutable. Velocity will wait\n for this event to finish firing before sending the list of available commands to the\n client.",
@@ -2498,8 +2498,6 @@
     "source": "paper"
   },
   {
-    "deprecate": true,
-    "deprecateDescription": "Paper であれば Paper で追加された PlayerRecipeBookClickEvent を使う。",
     "description": "プレイヤーがレシピブックのレシビをクリックする時に呼び出される。",
     "href": "org/bukkit/event/player/PlayerRecipeBookClickEvent.html",
     "javadoc": "Called when a player clicks a recipe in the recipe book.",
@@ -2963,8 +2961,6 @@
     "source": "paper"
   },
   {
-    "deprecate": true,
-    "deprecateDescription": "Paper であれば、PrepareResultEvent を使う。",
     "description": "インベントリにアイテムが置かれ、リザルトスロットのアイテムが置かれる時に呼び出される。",
     "href": "org/bukkit/event/inventory/PrepareInventoryResultEvent.html",
     "javadoc": "Called when an item is put in a slot and the result is calculated.",
@@ -3311,6 +3307,8 @@
     "source": "velocity"
   },
   {
+    "deprecate": true,
+    "deprecateDescription": "ベータ段階。",
     "description": "プレイヤーがサーバーに接続した時に呼び出される。",
     "href": "com/velocitypowered/api/event/player/ServerPostConnectEvent.html",
     "javadoc": "Fired after the player has connected to a server. The server the player is now connected to is\n available in Player.getCurrentServer(). Velocity will not wait on this event to finish\n firing.",

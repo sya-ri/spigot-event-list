@@ -4,20 +4,11 @@ import { EventType } from "~/types.js";
 /**
  * イベント一覧を取得する
  */
-export const getLastEvents = async (): Promise<{
-  [name: string]: EventType;
-}> => {
-  let text = await readFile("data/events.json", "utf8");
-  let lastEvents: any = await JSON.parse(text);
-  return lastEvents.reduce(
-    (map, value) => {
-      map[value.name + value.source] = value;
-      delete value.javadoc;
-      delete value.abstract;
-      delete value.deprecate;
-      return map;
-    },
-    {} as { [name: string]: EventType },
+export const getLastEvents = async (): Promise<Record<string, EventType>> => {
+  const text = await readFile("data/events.json", "utf8");
+  const lastEvents: EventType[] = await JSON.parse(text);
+  return Object.fromEntries(
+    lastEvents.map((event) => [event.name + event.source, event]),
   );
 };
 

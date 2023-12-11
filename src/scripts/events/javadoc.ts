@@ -85,23 +85,34 @@ export const updateJavadoc = (sources: { [name: string]: EventType }) => {
                 typeSignatureSelector = "pre";
                 break;
             }
-            eventType.javadoc = $(`${descriptionSelector} .block`).text();
-            if (
-              $(`${descriptionSelector} ${typeSignatureSelector}`)
-                .text()
-                .includes("abstract")
-            ) {
+            const javadoc = $(`${descriptionSelector} .block`).text();
+            if (javadoc) {
+              eventType.javadoc = javadoc;
+            } else {
+              delete eventType.javadoc;
+            }
+            const abstract = $(
+              `${descriptionSelector} ${typeSignatureSelector}`,
+            )
+              .text()
+              .includes("abstract");
+            if (abstract) {
               eventType.abstract = true;
             }
             const annotations = $(
               `${descriptionSelector} ${typeSignatureSelector} .annotations`,
             ).text();
-            if (annotations.includes("@Experimental")) {
+            if (annotations.includes("@Deprecated")) {
+              eventType.deprecate = true;
+            } else if (annotations.includes("@Experimental")) {
               eventType.deprecate = true;
               eventType.deprecateDescription = "実験段階。";
-            }
-            if (!eventType.javadoc) {
-              delete eventType.javadoc;
+            } else if (annotations.includes("@Beta")) {
+              eventType.deprecate = true;
+              eventType.deprecateDescription = "ベータ段階。";
+            } else {
+              delete eventType.deprecate;
+              delete eventType.deprecateDescription;
             }
           } catch (e) {
             console.error(e);
