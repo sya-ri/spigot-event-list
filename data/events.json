@@ -1263,6 +1263,7 @@
   },
   {
     "description": "イベントを表す。",
+    "abstract": true,
     "href": "net/md_5/bungee/api/plugin/Event.html",
     "javadoc": "Dummy class which all callable events must extend.",
     "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/plugin/Event.html",
@@ -3585,6 +3586,7 @@
   },
   {
     "description": "2つのノード間の通信で発生するイベントを表す。",
+    "abstract": true,
     "href": "net/md_5/bungee/api/event/TargetedEvent.html",
     "javadoc": "An event which occurs in the communication between two nodes.",
     "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/TargetedEvent.html",

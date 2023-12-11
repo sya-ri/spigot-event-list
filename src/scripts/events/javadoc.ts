@@ -67,29 +67,34 @@ export const updateJavadoc = (sources: { [name: string]: EventType }) => {
         (body) => {
           try {
             const $ = cheerio.load(body);
+            let descriptionSelector: string;
+            let typeSignatureSelector: string;
+
             switch (eventType.source) {
               case "bukkit":
               case "spigot":
               case "paper":
               case "purpur":
               case "velocity":
-                eventType.javadoc = $("#class-description .block").text();
-                if (
-                  $("#class-description .modifiers").text().includes("abstract")
-                ) {
-                  eventType.abstract = true;
-                }
+                descriptionSelector = "#class-description";
+                typeSignatureSelector = ".type-signature";
                 break;
               case "bungee":
               case "waterfall":
-                eventType.javadoc = $(".description .block").text();
-                if ($(".description .modifiers").text().includes("abstract")) {
-                  eventType.abstract = true;
-                }
+                descriptionSelector = ".description";
+                typeSignatureSelector = "pre";
                 break;
             }
+            eventType.javadoc = $(`${descriptionSelector} .block`).text();
+            if (
+              $(`${descriptionSelector} ${typeSignatureSelector}`)
+                .text()
+                .includes("abstract")
+            ) {
+              eventType.abstract = true;
+            }
             const annotations = $(
-              "#class-description .type-signature .annotations",
+              `${descriptionSelector} ${typeSignatureSelector} .annotations`,
             ).text();
             if (annotations.includes("@Experimental")) {
               eventType.deprecate = true;
