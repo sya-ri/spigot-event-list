@@ -7,18 +7,18 @@ import { getLastEvents, writeEvents } from "./json/events.js";
 import { writeVersions } from "./json/versions.js";
 import {
   bungeeBuildNumber,
+  bungeeVersion,
   paperBuildNumber,
   paperVersion,
   purpurBuildNumber,
   purpurVersion,
   spigotBuildNumber,
+  spigotVersion,
   velocityBuildNumber,
   velocityVersion,
   waterfallBuildNumber,
   waterfallVersion,
 } from "./sources.js";
-
-const latestMinecraftVersion = "1.20.3";
 
 const dropPatchVersion = (version: string): string => {
   return version.split(".").slice(0, 2).join(".");
@@ -26,22 +26,22 @@ const dropPatchVersion = (version: string): string => {
 
 const index = async () => {
   const sources: Record<string, EventSource> = {
-    Bungee: {
+    Bungee: await bungeeVersion().then(async (version) => ({
       artifact: {
         groupId: "net.md-5",
         artifactId: "bungeecord-api",
-        version: `${dropPatchVersion(latestMinecraftVersion)}-R0.1`,
+        version: version.split("-SNAPSHOT")[0],
         classifier: "javadoc",
         isSnapShot: true,
       },
       repository: "https://oss.sonatype.org/content/repositories/snapshots/",
-      allClasses: "allclasses.html",
+      allClasses: "allclasses-index.html",
       deprecateList: "deprecated-list.html",
       downloadSources: ["bungee"],
       downloadUrl: "https://ci.md-5.net/job/BungeeCord/lastBuild",
       javadocUrl: "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/",
       buildNumber: await bungeeBuildNumber(),
-    },
+    })),
     Paper: await paperVersion().then(async (version) => ({
       artifact: {
         groupId: "io.papermc.paper",
@@ -74,11 +74,11 @@ const index = async () => {
       javadocUrl: "https://purpurmc.org/javadoc/",
       buildNumber: await purpurBuildNumber(version),
     })),
-    Spigot: {
+    Spigot: await spigotVersion().then(async (version) => ({
       artifact: {
         groupId: "org.spigotmc",
         artifactId: "spigot-api",
-        version: `${latestMinecraftVersion}-R0.1`,
+        version: `${version}-R0.1`,
         classifier: "javadoc",
         isSnapShot: true,
       },
@@ -90,7 +90,7 @@ const index = async () => {
       downloadUrl: "",
       javadocUrl: "https://hub.spigotmc.org/javadocs/spigot/",
       buildNumber: await spigotBuildNumber(),
-    },
+    })),
     Velocity: await velocityVersion().then(async (version) => ({
       artifact: {
         groupId: "com.velocitypowered",
@@ -116,7 +116,7 @@ const index = async () => {
         isSnapShot: true,
       },
       repository: "https://repo.papermc.io/repository/maven-public/",
-      allClasses: "allclasses.html",
+      allClasses: "allclasses-index.html",
       deprecateList: "deprecated-list.html",
       downloadSources: ["waterfall"],
       downloadUrl: "https://papermc.io/downloads#Waterfall",

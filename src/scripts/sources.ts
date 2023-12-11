@@ -1,4 +1,11 @@
 import axios from "axios";
+import { load } from "cheerio";
+
+const fetchVersionFromPom = async (url: string): Promise<string> => {
+  const response = await axios.get<string>(url);
+  const $ = load(response.data);
+  return $("version").first().text();
+};
 
 type JenkinsApi = {
   id: string;
@@ -73,13 +80,31 @@ const fetchBuildNumberFromPurpurApi = async (
     `https://api.purpurmc.org/v2/${name}/${version}/`,
   );
   const json = response.data;
-  return parseInt(json.builds.latest);
+  return parseInt(json.builds.all.pop());
+};
+
+export const bungeeVersion = async () => {
+  return fetchVersionFromPom(
+    "https://github.com/SpigotMC/BungeeCord/raw/master/pom.xml",
+  );
 };
 
 export const bungeeBuildNumber = async () => {
   return fetchBuildNumberFromJenkins(
     "https://ci.md-5.net/job/BungeeCord/lastBuild/api/json/",
   );
+};
+
+type SpigotBuildData = {
+  minecraftVersion: string;
+  spigotVersion: string;
+};
+
+export const spigotVersion = async (): Promise<string> => {
+  const response = await axios.get<SpigotBuildData>(
+    "https://hub.spigotmc.org/stash/projects/SPIGOT/repos/builddata/raw/info.json",
+  );
+  return response.data.minecraftVersion;
 };
 
 export const paperVersion = async () => {

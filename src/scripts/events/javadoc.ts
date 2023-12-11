@@ -76,10 +76,10 @@ export const updateJavadoc = (sources: { [name: string]: EventType }) => {
               case "paper":
               case "purpur":
               case "velocity":
+              case "bungee":
                 descriptionSelector = "#class-description";
                 typeSignatureSelector = ".type-signature";
                 break;
-              case "bungee":
               case "waterfall":
                 descriptionSelector = ".description";
                 typeSignatureSelector = "pre";
