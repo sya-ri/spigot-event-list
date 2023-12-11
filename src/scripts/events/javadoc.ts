@@ -1,6 +1,6 @@
 import { mkdir, readFile, rm } from "fs/promises";
 import * as path from "path";
-import cheerio from "cheerio";
+import { load } from "cheerio";
 import { zip } from "compressing";
 import EventSource from "../EventSource.js";
 import downloadArtifact from "../mvn/downloadArtifact.js";
@@ -66,7 +66,7 @@ export const updateJavadoc = (sources: { [name: string]: EventType }) => {
       return readFile(javadocPath([sourceName, eventType.href].join("/"))).then(
         (body) => {
           try {
-            const $ = cheerio.load(body);
+            const $ = load(body);
             let descriptionSelector: string;
             let typeSignatureSelector: string;
 

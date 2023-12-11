@@ -1,5 +1,5 @@
 import { readFile } from "fs/promises";
-import cheerio from "cheerio";
+import { load } from "cheerio";
 import EventSource from "../EventSource.js";
 import { updateDeprecate } from "./deprecate.js";
 import { excludeEvents } from "./exclude.js";
@@ -47,7 +47,7 @@ export const getLatestEvents = async (
         (body) => {
           try {
             // events から イベント一覧を作成
-            const $ = cheerio.load(body);
+            const $ = load(body);
             $("a").each((_, element) => {
               const a = $(element);
               const href = a.prop("href");

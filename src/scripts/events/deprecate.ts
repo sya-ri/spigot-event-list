@@ -1,5 +1,5 @@
 import { readFile } from "fs/promises";
-import cheerio from "cheerio";
+import { load } from "cheerio";
 import EventSource from "../EventSource.js";
 import { getSourceName } from "./events.js";
 import { javadocPath } from "./javadoc.js";
@@ -20,7 +20,7 @@ export const updateDeprecate = (
         (body) => {
           try {
             // sourceTypes から イベント一覧を作成
-            const $ = cheerio.load(body);
+            const $ = load(body);
             $("#class .col-summary-item-name a").each((_, element) => {
               const a = $(element);
               const href = a.prop("href");
