@@ -16,7 +16,7 @@
     "update": "node --loader ts-node/esm src/scripts/index.ts"
   },
   "devDependencies": {
-    "@solidjs/meta": "0.29.1",
+    "@solidjs/meta": "0.29.3",
     "@solidjs/router": "0.8.4",
     "@types/multi-progress": "2.0.6",
     "@types/node": "18.19.3",
