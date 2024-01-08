@@ -70,7 +70,7 @@
   {
     "description": "プレイヤーがチャットした時に呼び出される。",
     "href": "io/papermc/paper/event/player/AsyncChatEvent.html",
-    "javadoc": "An event fired when a Player sends a chat message to the server.",
+    "javadoc": "An event fired when a Player sends a chat message to the server.\n \n This event will sometimes fire synchronously, depending on how it was\n triggered.\n \n If a player is the direct cause of this event by an incoming packet, this\n event will be asynchronous. If a plugin triggers this event by compelling a\n player to chat, this event will be synchronous.\n \n Care should be taken to check Event.isAsynchronous() and treat the event\n appropriately.",
     "link": "https://jd.papermc.io/paper/1.20/io/papermc/paper/event/player/AsyncChatEvent.html",
     "name": "AsyncChatEvent",
     "source": "paper"
@@ -889,6 +889,16 @@
   },
   {
     "description": "エンティティが乗っているエンティティが降りる時に呼び出される。",
+    "href": "org/bukkit/event/entity/EntityDismountEvent.html",
+    "javadoc": "Called when an entity stops riding another entity.",
+    "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityDismountEvent.html",
+    "name": "EntityDismountEvent",
+    "source": "bukkit"
+  },
+  {
+    "deprecate": true,
+    "deprecateDescription": "Bukkit に追加された EntityDismountEvent を使う。",
+    "description": "エンティティが乗っているエンティティが降りる時に呼び出される。",
     "href": "org/spigotmc/event/entity/EntityDismountEvent.html",
     "javadoc": "Called when an entity stops riding another entity.",
     "link": "https://hub.spigotmc.org/javadocs/spigot/org/spigotmc/event/entity/EntityDismountEvent.html",
@@ -1001,6 +1011,16 @@
     "source": "paper"
   },
   {
+    "description": "エンティティがエンティティに乗る時に呼び出される。",
+    "href": "org/bukkit/event/entity/EntityMountEvent.html",
+    "javadoc": "Called when an entity attempts to ride another entity.",
+    "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityMountEvent.html",
+    "name": "EntityMountEvent",
+    "source": "bukkit"
+  },
+  {
+    "deprecate": true,
+    "deprecateDescription": "Bukkit に追加された EntityMountEvent を使う。",
     "description": "エンティティがエンティティに乗る時に呼び出される。",
     "href": "org/spigotmc/event/entity/EntityMountEvent.html",
     "javadoc": "Called when an entity attempts to ride another entity.",
@@ -2609,6 +2629,14 @@
     "source": "bukkit"
   },
   {
+    "description": "別のエンティティからの攻撃により、プレイヤーのシールドが無効になるたびに呼び出される。",
+    "href": "io/papermc/paper/event/player/PlayerShieldDisableEvent.html",
+    "javadoc": "Called whenever a players shield is disabled due to an attack from another entity that was capable of disabling the\n shield. This, most commonly, may be another player attacking with an axe.\n \n Notably, this even is distinct from a PlayerItemCooldownEvent and will fire prior to the item going on\n cooldown.\n It follows that, if this event is cancelled, no PlayerItemCooldownEvent is called as the shield is never\n disabled in the first place.",
+    "link": "https://jd.papermc.io/paper/1.20/io/papermc/paper/event/player/PlayerShieldDisableEvent.html",
+    "name": "PlayerShieldDisableEvent",
+    "source": "paper"
+  },
+  {
     "deprecate": true,
     "deprecateDescription": "実験段階。",
     "description": "非表示になっていたエンティティがプレイヤーに表示される時に呼び出される。追跡範囲内にあるかどうかに関係なく呼び出される。",
@@ -2752,7 +2780,7 @@
   {
     "description": "プレイヤーがエンティティの追跡を開始すると呼び出される。プレイヤーがエンティティを追跡しているかどうかによって、サーバー上のプレイヤーに対するエンティティの可視性が決まります。エンティティがプレイヤーによって追跡されていない場合、エンティティに関するデータがクライアントに送信されないため、そのプレイヤーはエンティティの存在を認識しません。",
     "href": "io/papermc/paper/event/player/PlayerTrackEntityEvent.html",
-    "javadoc": "Is called when a Player tracks an Entity.\n \n If cancelled entity is not shown to the player and interaction in both directions is not possible.",
+    "javadoc": "Is called when a Player tracks an Entity.\n \n If cancelled entity is not shown to the player and interaction in both directions is not possible.\n \n Adding or removing entities from the world at the point in time this event is called is completely\n unsupported and should be avoided.",
     "link": "https://jd.papermc.io/paper/1.20/io/papermc/paper/event/player/PlayerTrackEntityEvent.html",
     "name": "PlayerTrackEntityEvent",
     "source": "paper"
@@ -2784,7 +2812,7 @@
   {
     "description": "プレイヤーがエンティティの追跡を終了すると呼び出される。",
     "href": "io/papermc/paper/event/player/PlayerUntrackEntityEvent.html",
-    "javadoc": "Is called when a Player untracks an Entity.",
+    "javadoc": "Is called when a Player untracks an Entity.\n \n Adding or removing entities from the world at the point in time this event is called is completely\n unsupported and should be avoided.",
     "link": "https://jd.papermc.io/paper/1.20/io/papermc/paper/event/player/PlayerUntrackEntityEvent.html",
     "name": "PlayerUntrackEntityEvent",
     "source": "paper"
