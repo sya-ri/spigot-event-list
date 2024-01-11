@@ -36,7 +36,7 @@
     "postcss": "8.4.33",
     "prettier": "3.1.1",
     "progress": "2.0.3",
-    "solid-js": "1.8.9",
+    "solid-js": "1.8.10",
     "solid-start": "0.3.10",
     "solid-start-node": "0.3.10",
     "solid-start-vercel": "0.3.10",
