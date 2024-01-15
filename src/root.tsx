@@ -51,7 +51,7 @@ export default function Root() {
         <Meta content="website" property="og:type" />
         <Meta content="Spigot Event List" property="og:title" />
         <Meta
-          content="[Minecraft 1.19] Bukkit, Spigot, Paper, Purpur, BungeeCord, Waterfall, Velocity 対応のイベント一覧"
+          content="[Minecraft 1.20.4] Bukkit, Spigot, Paper, Purpur, BungeeCord, Waterfall, Velocity 対応のイベント一覧"
           property="og:description"
         />
         <Meta
