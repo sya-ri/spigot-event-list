@@ -40,7 +40,7 @@ const SelectableSourceTag: FC<SelectableSourceTagProps> = ({ source }) => {
       }}
       className={clsx(
         "cursor-pointer hover:opacity-80",
-        selected && "opacity-50",
+        selected && "opacity-50 grayscale",
       )}
     >
       <SourceTag source={source} />
