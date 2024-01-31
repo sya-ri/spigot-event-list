@@ -12,6 +12,7 @@ import {
 import React, { FC } from "react";
 import SelectableSourceTag from "@/components/selectable-source-tag";
 import EventSource from "@/types/event-source";
+import { FiAlertTriangle } from "react-icons/fi";
 
 type EventListProps = {
   tags: EventSource[];
@@ -62,6 +63,12 @@ const EventList: FC<EventListProps> = ({ tags, search }) => {
                 )}
               </div>
             </div>
+            {event.deprecate && (
+              <div className="flex items-center gap-2 text-error mt-1">
+                <FiAlertTriangle />
+                {event.deprecateDescription}
+              </div>
+            )}
             <div className="mt-1">{event.description}</div>
           </div>
         ))}
