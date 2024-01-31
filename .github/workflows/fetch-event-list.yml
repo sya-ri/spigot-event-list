@@ -26,7 +26,7 @@ jobs:
           content="${content//$'\r'/'%0D'}"
           echo ::set-output name=content::$content
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v5
+        uses: peter-evans/create-pull-request@v6
         with:
           title: 'イベント一覧を更新'
           body: ${{ steps.report.outputs.content }}
