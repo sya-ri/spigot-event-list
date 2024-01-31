@@ -3,6 +3,7 @@ import { M_PLUS_1p } from "next/font/google";
 import "../globals.css";
 import { ReactNode } from "react";
 import Providers from "@/components/providers";
+import clsx from "clsx";
 
 const font = M_PLUS_1p({ weight: "400", subsets: ["latin"] });
 
@@ -21,7 +22,7 @@ export default function Layout({
 }>) {
   return (
     <html lang={params.locale}>
-      <body className={font.className}>
+      <body className={clsx(font.className, "flex min-h-screen flex-col")}>
         <Providers>{children}</Providers>
       </body>
     </html>

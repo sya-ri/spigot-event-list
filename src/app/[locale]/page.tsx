@@ -6,11 +6,15 @@ import EventSource from "@/types/event-source";
 import SelectableSourceTag from "@/components/selectable-source-tag";
 import SwitchThemeButton from "@/components/switch-theme-button";
 import ScrollToTopButton from "@/components/scroll-to-top-button";
+import SearchBox from "@/components/search-box";
 
 export default function Page({
   searchParams,
 }: {
-  searchParams: { tags?: string };
+  searchParams: {
+    tags?: string;
+    search?: string;
+  };
 }) {
   return [
     <header
@@ -26,11 +30,7 @@ export default function Page({
             </Link>
           </div>
           <div className="my-auto flex flex-col gap-2">
-            <input
-              type="text"
-              className="input input-bordered"
-              placeholder="イベント名・説明文で検索"
-            />
+            <SearchBox defaultSearch={searchParams.search ?? ""} />
             <div className="flex gap-1 mx-auto flex-wrap justify-center">
               {EventSource.map((source) => (
                 <SelectableSourceTag key={source} source={source} />
@@ -40,8 +40,11 @@ export default function Page({
         </div>
       </div>
     </header>,
-    <main key="main" className="w-full max-w-screen-sm mx-auto py-4 px-2">
-      <EventList tags={splitTags(searchParams.tags ?? "")} />
+    <main key="main" className="w-full max-w-screen-sm mx-auto py-4 px-2 grow">
+      <EventList
+        tags={splitTags(searchParams.tags ?? "")}
+        search={searchParams.search ?? ""}
+      />
     </main>,
     <footer
       key="footer"

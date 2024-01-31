@@ -15,13 +15,19 @@ import EventSource from "@/types/event-source";
 
 type EventListProps = {
   tags: EventSource[];
+  search: string;
 };
 
-const EventList: FC<EventListProps> = ({ tags }) => {
+const EventList: FC<EventListProps> = ({ tags, search }) => {
   return (
     <div className="flex flex-col gap-4">
       {events
-        .filter((event) => tags.includes(event.source as EventSource))
+        .filter(
+          (event) =>
+            tags.includes(event.source as EventSource) &&
+            (event.name.match(new RegExp(search, "i")) ||
+              event.description.match(new RegExp(search, "i"))),
+        )
         .map((event) => (
           <div key={event.href}>
             <div className="flex flex-wrap gap-1 justify-between">
