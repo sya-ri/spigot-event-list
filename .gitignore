@@ -236,6 +236,5 @@ $RECYCLE.BIN/
 # End of https://www.toptal.com/developers/gitignore/api/yarn,linux,macos,windows,node
 
 .vercel/
-.solid/
 javadoc/
 data/report.md

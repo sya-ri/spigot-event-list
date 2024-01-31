@@ -1,7 +1,7 @@
 name: Fetch Event List
 on:
   schedule:
-    - cron: '00 21 * * *' # UTC 21:00 (JST 06:00)
+    - cron: "00 21 * * *" # UTC 21:00 (JST 06:00)
   workflow_dispatch:
 jobs:
   update:
@@ -28,7 +28,7 @@ jobs:
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v5
         with:
-          title: 'イベント一覧を更新'
+          title: "イベント一覧を更新"
           body: ${{ steps.report.outputs.content }}
           branch: actions/update-event-list
           commit-message: |
