@@ -42,7 +42,7 @@ export default function Page({
     </header>,
     <main key="main" className="w-full max-w-screen-sm mx-auto py-4 px-2 grow">
       <EventList
-        tags={splitTags(searchParams.tags ?? "")}
+        tags={splitTags(searchParams.tags)}
         search={searchParams.search ?? ""}
       />
     </main>,

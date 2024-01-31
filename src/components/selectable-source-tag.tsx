@@ -21,7 +21,7 @@ export type SelectableSourceTagProps = {
 const SelectableSourceTag: FC<SelectableSourceTagProps> = ({ source }) => {
   const pathname = usePathname();
   const searchParams = useSearchParams();
-  const tags = splitTags(searchParams.get("tags") ?? "");
+  const tags = splitTags(searchParams.get("tags"));
   const selected = !tags.includes(source);
   return (
     <Link

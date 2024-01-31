@@ -4,8 +4,8 @@ export const joinTags = (tags: EventSource[]) => {
   return tags.join("-");
 };
 
-export const splitTags = (text: string) => {
-  if (!text) return [...EventSource];
+export const splitTags = (text: string | undefined | null) => {
+  if (text == undefined) return [...EventSource];
   const split = text.split("-");
   return EventSource.filter((source) => split.includes(source));
 };
