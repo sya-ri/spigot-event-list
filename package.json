@@ -19,7 +19,7 @@
     "@solidjs/meta": "0.29.3",
     "@solidjs/router": "0.8.4",
     "@types/multi-progress": "2.0.6",
-    "@types/node": "18.19.11",
+    "@types/node": "20.11.13",
     "@types/progress": "2.0.7",
     "@types/xml2js": "0.4.14",
     "@typescript-eslint/parser": "6.20.0",
@@ -52,7 +52,7 @@
     "solid-icons": "1.1.0"
   },
   "engines": {
-    "node": "18.x"
+    "node": "20.x"
   },
   "packageManager": "npm@10.4.0"
 }
