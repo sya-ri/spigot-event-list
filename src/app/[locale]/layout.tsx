@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { M_PLUS_1p } from "next/font/google";
 import "../globals.css";
 import { ReactNode } from "react";
+import Providers from "@/components/providers";
 
 const font = M_PLUS_1p({ weight: "400", subsets: ["latin"] });
 
@@ -20,7 +21,9 @@ export default function Layout({
 }>) {
   return (
     <html lang={params.locale}>
-      <body className={font.className}>{children}</body>
+      <body className={font.className}>
+        <Providers>{children}</Providers>
+      </body>
     </html>
   );
 }

@@ -4,6 +4,9 @@ import { FaFaucet } from "react-icons/fa";
 import Link from "next/link";
 import EventSource from "@/types/event-source";
 import SelectableSourceTag from "@/components/selectable-source-tag";
+import { BiArrowToTop, BiSun } from "react-icons/bi";
+import SwitchThemeButton from "@/components/switch-theme-button";
+import ScrollToTopButton from "@/components/scroll-to-top-button";
 
 export default function Page({
   searchParams,
@@ -11,7 +14,10 @@ export default function Page({
   searchParams: { tags?: string };
 }) {
   return [
-    <header className="bg-base-300 top-0 sticky shadow-lg">
+    <header
+      key="header"
+      className="bg-base-300 top-0 sticky border-b border-base-content/10"
+    >
       <div className="w-full max-w-screen-md mx-auto p-2">
         <div className="flex justify-between items-center flex-col md:flex-row gap-2">
           <div>
@@ -35,8 +41,27 @@ export default function Page({
         </div>
       </div>
     </header>,
-    <main className="w-full max-w-screen-sm mx-auto py-4 px-2">
+    <main key="main" className="w-full max-w-screen-sm mx-auto py-4 px-2">
       <EventList tags={splitTags(searchParams.tags ?? "")} />
     </main>,
+    <footer
+      key="footer"
+      className="bg-base-300 bottom-0 sticky border-t border-base-content/10"
+    >
+      <div className="w-full max-w-screen-sm mx-auto p-1">
+        <div className="flex justify-around gap-2 items-center">
+          <ScrollToTopButton />
+          <div>
+            <Link
+              className="link-hover font-bold"
+              href="https://github.com/sya-ri/spigot-event-list"
+            >
+              © 2024 sya-ri
+            </Link>
+          </div>
+          <SwitchThemeButton />
+        </div>
+      </div>
+    </footer>,
   ];
 }
