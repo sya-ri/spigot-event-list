@@ -24,10 +24,10 @@ const EventList: FC<EventListProps> = ({ tags }) => {
         .filter((event) => tags.includes(event.source as EventSource))
         .map((event) => (
           <div key={event.href}>
-            <div className="flex justify-between">
+            <div className="flex flex-wrap gap-1 justify-between">
               <Link
                 className={clsx(
-                  "text-lg link-primary",
+                  "font-bold link-hover text-lg link-primary",
                   event.abstract && "line-through",
                 )}
                 href={event.link}
@@ -35,7 +35,7 @@ const EventList: FC<EventListProps> = ({ tags }) => {
               >
                 {event.name}
               </Link>
-              <div className="flex gap-2">
+              <div className="flex gap-2 mr-0 ml-auto">
                 {availableInSpigot(event.source) && (
                   <SelectableSourceTag source="spigot" />
                 )}

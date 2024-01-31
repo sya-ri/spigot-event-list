@@ -4,7 +4,6 @@ import { FaFaucet } from "react-icons/fa";
 import Link from "next/link";
 import EventSource from "@/types/event-source";
 import SelectableSourceTag from "@/components/selectable-source-tag";
-import { BiArrowToTop, BiSun } from "react-icons/bi";
 import SwitchThemeButton from "@/components/switch-theme-button";
 import ScrollToTopButton from "@/components/scroll-to-top-button";
 
@@ -21,7 +20,7 @@ export default function Page({
       <div className="w-full max-w-screen-md mx-auto p-2">
         <div className="flex justify-between items-center flex-col md:flex-row gap-2">
           <div>
-            <Link href="/" className="flex items-center mx-auto">
+            <Link href="/" className="flex items-center mx-auto gap-1">
               <FaFaucet className="size-8 mr-2 fill-current" />
               <h1 className="font-bold text-2xl">Spigot Event List</h1>
             </Link>
@@ -32,7 +31,7 @@ export default function Page({
               className="input input-bordered"
               placeholder="イベント名・説明文で検索"
             />
-            <div className="flex gap-1 mx-auto flex-wrap">
+            <div className="flex gap-1 mx-auto flex-wrap justify-center">
               {EventSource.map((source) => (
                 <SelectableSourceTag key={source} source={source} />
               ))}
