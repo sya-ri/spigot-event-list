@@ -38,9 +38,9 @@ const SearchBox: FC<SearchBoxProps> = ({ defaultSearch }) => {
             ...(search ? { search } : {}),
           },
         }}
-        className="btn join-item"
+        className="btn border border-l-0 border-base-content/10 hover:border-base-content/10 join-item"
       >
-        <BiSearch />
+        <BiSearch className="size-4" />
       </Link>
     </div>
   );
