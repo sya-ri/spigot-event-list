@@ -28,10 +28,10 @@
 <br />
 <br />
 
-- Minecraft のプラグイン制作に使うイベントの一覧です。
-- イベント名による検索・環境による絞り込みに対応しています。
-- 最新バージョンに対応しており、常に新しいイベントを追加しています。
-- 複数の環境に対応しており、総イベント数は450個を超えています。
+- A list of events for Minecraft plugins.
+- Search by event name and filtering by platform.
+- Compatible with the latest version and constantly adding new events.
+- Compatible with multiple environments, total number of events exceeds 450.
   - Bukkit
   - Spigot
   - Paper
@@ -39,4 +39,9 @@
   - BungeeCord
   - Waterfall
   - Velocity
-  - [... 追加する](https://github.com/sya-ri/spigot-event-list/issues/new?template=new-environment.yml)
+- Support i18n.
+
+## i18n
+
+1. Add locale: [src/i18n/config.ts](src/i18n/config.ts)
+2. Add lang: [data/events.json](data/events.json)

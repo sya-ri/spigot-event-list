@@ -10,10 +10,12 @@ import SourceType from "./types/source-type";
 
 const javadocPath = (filename: string) => path.join("javadoc", filename);
 
-const downloadLatestEvents = async (sources: Record<string, Source>) => {
+const downloadLatestEvents = async (
+  sources: Record<string, Source>,
+): Promise<[string[], Record<string, EventType>]> => {
   await downloadJavadoc(sources);
-  const lastEvents = await getLastEvents();
-  return await getLatestEvents(sources, lastEvents);
+  const [lang, lastEvents] = await getLastEvents();
+  return [lang, await getLatestEvents(sources, lastEvents, lang)];
 };
 
 const downloadJavadoc = async (sources: Record<string, Source>) => {
@@ -36,17 +38,23 @@ const downloadJavadoc = async (sources: Record<string, Source>) => {
   );
 };
 
-const getLastEvents = async (): Promise<Record<string, EventType>> => {
+const getLastEvents = async (): Promise<
+  [string[], Record<string, EventType>]
+> => {
   const text = await readFile("../../data/events.json", "utf8");
-  const lastEvents: EventType[] = await JSON.parse(text);
-  return Object.fromEntries(
-    lastEvents.map((event) => [event.name + event.source, event]),
-  );
+  const data: { lang: string[]; events: EventType[] } = await JSON.parse(text);
+  return [
+    data.lang,
+    Object.fromEntries(
+      data.events.map((event) => [event.name + event.source, event]),
+    ),
+  ];
 };
 
 const getLatestEvents = async (
   sources: Record<string, Source>,
   lastEvents: Record<string, EventType>,
+  lang: string[],
 ): Promise<Record<string, EventType>> => {
   const events: Record<string, EventType> = {};
   await Promise.all(
@@ -67,14 +75,18 @@ const getLatestEvents = async (
                 if (!source.downloadSources.includes(sourceType)) return;
                 if (!events[eventName + sourceType]) {
                   const lastEvent = lastEvents[eventName + sourceType];
-                  let description = "";
-                  let deprecateDescription;
+                  let description = Object.fromEntries(
+                    lang.map((key) => [key, ""]),
+                  );
+                  let deprecateDescription = Object.fromEntries(
+                    lang.map((key) => [key, ""]),
+                  );
                   if (lastEvent) {
                     description = lastEvent.description;
-                    deprecateDescription = lastEvent.deprecateDescription;
+                    deprecateDescription = lastEvent.deprecateDescription || {};
                   }
                   events[eventName + sourceType] = {
-                    deprecateDescription: deprecateDescription || "",
+                    deprecateDescription: deprecateDescription,
                     description: description,
                     href: href,
                     link: source.javadocUrl + href,
@@ -149,14 +161,12 @@ const applyToSources = (sources: Record<string, EventType>) => {
         const annotations = $(
           `${descriptionSelector} ${typeSignatureSelector} .annotations`,
         ).text();
-        if (annotations.includes("@Deprecated")) {
+        if (
+          annotations.includes("@Deprecated") ||
+          annotations.includes("@Experimental") ||
+          annotations.includes("@Beta")
+        ) {
           eventType.deprecate = true;
-        } else if (annotations.includes("@Experimental")) {
-          eventType.deprecate = true;
-          eventType.deprecateDescription = "実験段階。";
-        } else if (annotations.includes("@Beta")) {
-          eventType.deprecate = true;
-          eventType.deprecateDescription = "ベータ段階。";
         } else {
           delete eventType.deprecate;
           delete eventType.deprecateDescription;

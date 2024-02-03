@@ -13,7 +13,7 @@ type Event = {
 
 const useEvents = () => {
   const { data: events } = useSWRImmutable("events", () =>
-    fetch("/api/events").then(
+    fetch("/api/events?lang=ja").then(
       (response) => response.json() as Promise<Event[]>,
     ),
   );

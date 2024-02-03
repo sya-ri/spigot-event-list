@@ -1,11 +1,17 @@
-import events from "@data/events.json";
-import { NextResponse } from "next/server";
+import data from "@data/events.json";
+import { NextRequest, NextResponse } from "next/server";
 import { map, pick, pipe } from "remeda";
 
-export const GET = () => {
+export const GET = (request: NextRequest) => {
+  const lang = request.nextUrl.searchParams.get("lang") ?? "ja";
+  if (!data.lang.includes(lang)) {
+    return new NextResponse(`Unsupported lang: ${lang}`, {
+      status: 400,
+    });
+  }
   return NextResponse.json(
     pipe(
-      events,
+      data.events,
       map(
         pick([
           "name",
@@ -17,6 +23,15 @@ export const GET = () => {
           "deprecateDescription",
         ]),
       ),
+      map(({ description, deprecateDescription, ...event }) => ({
+        description: (description as Record<string, string>)[lang],
+        ...(deprecateDescription && {
+          deprecateDescription: (
+            deprecateDescription as Record<string, string>
+          )[lang],
+        }),
+        ...event,
+      })),
     ),
   );
 };

@@ -5,8 +5,8 @@ import EventType from "./types/event-type";
 
 const index = async () => {
   const sources = await getSources();
-  const events = await downloadLatestEvents(sources);
-  await writeEvents(events);
+  const [lang, events] = await downloadLatestEvents(sources);
+  await writeEvents(lang, events);
   await writeVersions(
     Object.fromEntries(
       Object.entries(sources).map(([name, source]) => [
@@ -17,7 +17,7 @@ const index = async () => {
   );
 };
 
-const writeEvents = (sources: Record<string, EventType>) => {
+const writeEvents = (lang: string[], sources: Record<string, EventType>) => {
   const events = Object.values(sources)
     .sort((a, b) => (a.name + a.source).localeCompare(b.name + b.source))
     .map(
@@ -35,7 +35,17 @@ const writeEvents = (sources: Record<string, EventType>) => {
         source: value.source,
       }),
     );
-  return writeFile("../../data/events.json", JSON.stringify(events, null, 2));
+  return writeFile(
+    "../../data/events.json",
+    JSON.stringify(
+      {
+        lang,
+        events,
+      },
+      null,
+      2,
+    ),
+  );
 };
 
 const writeVersions = (versions: Record<string, string>) => {

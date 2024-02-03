@@ -1,7 +1,7 @@
 import SourceType from "./source-type";
 
 type EventType = {
-  description: string;
+  description: Record<string, string>;
   abstract?: true;
   href: string;
   javadoc?: string;
@@ -9,7 +9,7 @@ type EventType = {
   name: string;
   source: SourceType;
   deprecate?: true;
-  deprecateDescription?: string;
+  deprecateDescription?: Record<string, string>;
 };
 
 export default EventType;
