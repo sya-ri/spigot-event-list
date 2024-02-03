@@ -11,7 +11,7 @@ const SwitchThemeButton = () => {
   return (
     <label
       className={clsx(
-        "btn btn-circle btn-ghost swap swap-rotate",
+        "btn btn-square btn-ghost swap swap-rotate",
         resolvedTheme == "dark" ? "swap-active" : "",
       )}
     >
@@ -20,8 +20,8 @@ const SwitchThemeButton = () => {
         defaultChecked={resolvedTheme == "dark"}
         onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
       />
-      <BiMoon className="swap-on size-5 tablet:size-6" />
-      <BiSun className="swap-off size-5 tablet:size-6" />
+      <BiMoon className="swap-on size-5" />
+      <BiSun className="swap-off size-5" />
     </label>
   );
 };

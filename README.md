@@ -43,5 +43,8 @@
 
 ## i18n
 
-1. Add locale: [src/i18n/config.ts](src/i18n/config.ts)
-2. Add lang: [data/events.json](data/events.json)
+Edit the file below and create a [pull request](https://github.com/sya-ri/spigot-event-list/pulls).
+
+- [src/i18n/config.ts](src/i18n/config.ts)
+- [src/i18n/translation.ts](src/i18n/translation.ts)
+- [data/events.json](data/events.json)

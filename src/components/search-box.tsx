@@ -5,6 +5,9 @@ import { BiSearch } from "react-icons/bi";
 import { FC, useRef } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
 import { omit } from "remeda";
+import { translate } from "@/i18n/translation";
+import { useCurrentLocale } from "next-i18n-router/client";
+import { i18nConfig } from "@/i18n/config";
 
 export type SearchBoxProps = {
   search: string;
@@ -12,6 +15,7 @@ export type SearchBoxProps = {
 };
 
 const SearchBox: FC<SearchBoxProps> = ({ search, setSearch }) => {
+  const currentLocale = useCurrentLocale(i18nConfig);
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const ref = useRef<HTMLAnchorElement>(null);
@@ -20,7 +24,7 @@ const SearchBox: FC<SearchBoxProps> = ({ search, setSearch }) => {
       <input
         type="text"
         className="input input-bordered w-full join-item"
-        placeholder="イベント名・説明文で検索"
+        placeholder={translate(currentLocale, "SearchByName")}
         value={search}
         onChange={(event) => setSearch(event.target.value)}
         onKeyDown={(event) => {

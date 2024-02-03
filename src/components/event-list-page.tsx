@@ -6,9 +6,13 @@ import SearchBox from "@/components/search-box";
 import EventSource from "@/types/event-source";
 import SelectableSourceTag from "@/components/selectable-source-tag";
 import EventList from "@/components/event-list";
-import ScrollToTopButton from "@/components/scroll-to-top-button";
 import SwitchThemeButton from "@/components/switch-theme-button";
 import { FC, useState } from "react";
+import { i18nConfig } from "@/i18n/config";
+import { BsTranslate } from "react-icons/bs";
+import { useCurrentLocale } from "next-i18n-router/client";
+import { FiPlus } from "react-icons/fi";
+import { translate } from "@/i18n/translation";
 
 export type EventListPageProps = {
   defaultSearch: string;
@@ -19,6 +23,7 @@ const EventListPage: FC<EventListPageProps> = ({
   defaultSearch,
   defaultTags,
 }) => {
+  const currentLocale = useCurrentLocale(i18nConfig);
   const [search, setSearch] = useState(defaultSearch);
   const [tags, setTags] = useState(defaultTags);
   return [
@@ -59,7 +64,43 @@ const EventListPage: FC<EventListPageProps> = ({
     >
       <div className="w-full max-w-screen-sm mx-auto p-1">
         <div className="flex justify-around gap-2 items-center">
-          <ScrollToTopButton />
+          <div className="dropdown dropdown-hover dropdown-top">
+            <div
+              tabIndex={0}
+              role="button"
+              className="btn btn-square btn-ghost"
+            >
+              <BsTranslate className="size-5" />
+            </div>
+            <ul
+              tabIndex={0}
+              className="dropdown-content z-10 menu p-2 shadow bg-base-200 rounded-box w-64"
+            >
+              {i18nConfig.locales.map((locale) => (
+                <li key={locale}>
+                  <Link href={`/${locale}`}>
+                    <div className="badge badge-outline">
+                      {locale.toUpperCase()}
+                    </div>
+                    <div>
+                      {new Intl.DisplayNames(locale, {
+                        type: "language",
+                      }).of(currentLocale ?? "en")}
+                    </div>
+                  </Link>
+                </li>
+              ))}
+              <li className="mt-2 pt-2 border-t border-base-content/20">
+                <Link
+                  href="https://github.com/sya-ri/spigot-event-list#i18n"
+                  target="_blank"
+                >
+                  <FiPlus />
+                  {translate(currentLocale, "AddNewLanguage")}
+                </Link>
+              </li>
+            </ul>
+          </div>
           <div>
             <Link
               className="link-hover font-bold"
