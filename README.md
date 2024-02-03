@@ -31,7 +31,7 @@
 - A list of events for Minecraft plugins.
 - Search by event name and filtering by platform.
 - Compatible with the latest version and constantly adding new events.
-- Compatible with multiple environments, total number of events exceeds 450.
+- Compatible with multiple environments, total number of events exceeds 500.
   - Bukkit
   - Spigot
   - Paper
