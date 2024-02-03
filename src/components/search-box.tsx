@@ -2,16 +2,16 @@
 
 import Link from "next/link";
 import { BiSearch } from "react-icons/bi";
-import { FC, useRef, useState } from "react";
+import { FC, useRef } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
 import { omit } from "remeda";
 
 export type SearchBoxProps = {
-  defaultSearch: string;
+  search: string;
+  setSearch: (value: string) => void;
 };
 
-const SearchBox: FC<SearchBoxProps> = ({ defaultSearch }) => {
-  const [search, setSearch] = useState(defaultSearch);
+const SearchBox: FC<SearchBoxProps> = ({ search, setSearch }) => {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const ref = useRef<HTMLAnchorElement>(null);

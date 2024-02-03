@@ -22,7 +22,12 @@ export default function Layout({
 }>) {
   return (
     <html lang={params.locale}>
-      <body className={clsx(font.className, "flex min-h-screen flex-col")}>
+      <body
+        className={clsx(
+          font.className,
+          "flex min-h-screen flex-col overflow-y-scroll",
+        )}
+      >
         <Providers>{children}</Providers>
       </body>
     </html>
