@@ -1256,7 +1256,7 @@
     },
     {
       "description": {
-        "ja": ""
+        "ja": "エンティティが別のエンティティによってノックバックする時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityKnockbackByEntityEvent.html",
       "javadoc": "Called when an entity receives knockback from another entity.",
@@ -1266,7 +1266,7 @@
     },
     {
       "description": {
-        "ja": ""
+        "ja": "エンティティがノックバックする時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityKnockbackEvent.html",
       "javadoc": "Called when a living entity receives knockback.",
@@ -4340,7 +4340,7 @@
     },
     {
       "description": {
-        "ja": ""
+        "ja": "シュルカーが新しいシュルカーを生成する時に呼び出される。"
       },
       "href": "io/papermc/paper/event/entity/ShulkerDuplicateEvent.html",
       "javadoc": "Fired when a shulker duplicates itself by spawning a new shulker.\n \n The event is fired prior to the newly created shulker, accessible via getEntity(), being added to the world.",
