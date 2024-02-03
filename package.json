@@ -10,9 +10,9 @@
     "format": "next lint . --fix && prettier --write ."
   },
   "dependencies": {
-    "clsx": "^2.1.0",
+    "clsx": "2.1.0",
     "next": "14.1.0",
-    "next-i18n-router": "^5.2.0",
+    "next-i18n-router": "5.2.0",
     "next-themes": "^0.2.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -27,10 +27,13 @@
     "daisyui": "4.6.1",
     "eslint": "8.56.0",
     "eslint-config-next": "14.1.0",
-    "eslint-config-prettier": "^9.1.0",
+    "eslint-config-prettier": "9.1.0",
     "postcss": "8.4.33",
-    "prettier": "^3.2.4",
+    "prettier": "3.2.4",
     "tailwindcss": "3.4.1",
     "typescript": "5.3.3"
-  }
+  },
+  "workspaces": [
+    "packages/downloader"
+  ]
 }
