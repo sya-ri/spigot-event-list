@@ -161,12 +161,12 @@ const applyToSources = (sources: Record<string, EventType>) => {
         const annotations = $(
           `${descriptionSelector} ${typeSignatureSelector} .annotations`,
         ).text();
-        if (
-          annotations.includes("@Deprecated") ||
-          annotations.includes("@Experimental") ||
-          annotations.includes("@Beta")
-        ) {
-          eventType.deprecate = true;
+        if (annotations.includes("@Deprecated")) {
+          eventType.deprecate = "@Deprecated";
+        } else if (annotations.includes("@Experimental")) {
+          eventType.deprecate = "@Experimental";
+        } else if (annotations.includes("@Beta")) {
+          eventType.deprecate = "@Beta";
         } else {
           delete eventType.deprecate;
           delete eventType.deprecateDescription;

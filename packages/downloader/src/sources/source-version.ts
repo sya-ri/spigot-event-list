@@ -1,5 +1,6 @@
 import axios from "axios";
 import { load } from "cheerio";
+
 const fetchVersionFromPom = async (url: string): Promise<string> => {
   const response = await axios.get<string>(url);
   const $ = load(response.data);

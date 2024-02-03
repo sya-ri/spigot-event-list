@@ -24,7 +24,7 @@ const SearchBox: FC<SearchBoxProps> = ({ search, setSearch }) => {
       <input
         type="text"
         className="input input-bordered w-full join-item"
-        placeholder={translate(currentLocale, "SearchByName")}
+        placeholder={translate(currentLocale, "SearchByNameOrDescription")}
         value={search}
         onChange={(event) => setSearch(event.target.value)}
         onKeyDown={(event) => {

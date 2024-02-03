@@ -7,15 +7,17 @@ type Event = {
   link: string;
   abstract: string;
   source: EventSource;
-  deprecate?: boolean;
+  deprecate?: string;
   deprecateDescription?: string;
 };
 
-const useEvents = () => {
-  const { data: events } = useSWRImmutable("events", () =>
-    fetch("/api/events?lang=ja").then(
-      (response) => response.json() as Promise<Event[]>,
-    ),
+const useEvents = (locale: string | undefined) => {
+  const { data: events } = useSWRImmutable(
+    ["events", locale ?? "en"],
+    ([, locale]) =>
+      fetch(`/api/events?lang=${locale}`).then(
+        (response) => response.json() as Promise<Event[]>,
+      ),
   );
   return { events };
 };

@@ -76,20 +76,22 @@ const EventListPage: FC<EventListPageProps> = ({
               tabIndex={0}
               className="dropdown-content z-10 menu p-2 shadow bg-base-200 rounded-box w-64"
             >
-              {i18nConfig.locales.map((locale) => (
-                <li key={locale}>
-                  <Link href={`/${locale}`}>
-                    <div className="badge badge-outline">
-                      {locale.toUpperCase()}
-                    </div>
-                    <div>
-                      {new Intl.DisplayNames(locale, {
-                        type: "language",
-                      }).of(currentLocale ?? "en")}
-                    </div>
-                  </Link>
-                </li>
-              ))}
+              {i18nConfig.locales
+                .filter((locale) => locale != "default")
+                .map((locale) => (
+                  <li key={locale}>
+                    <Link href={`/${locale}`}>
+                      <div className="badge badge-outline">
+                        {locale.toUpperCase()}
+                      </div>
+                      <div>
+                        {new Intl.DisplayNames(currentLocale ?? "en", {
+                          type: "language",
+                        }).of(locale)}
+                      </div>
+                    </Link>
+                  </li>
+                ))}
               <li className="mt-2 pt-2 border-t border-base-content/20">
                 <Link
                   href="https://github.com/sya-ri/spigot-event-list#i18n"

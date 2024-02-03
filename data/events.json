@@ -1,5 +1,5 @@
 {
-  "lang": ["ja"],
+  "lang": ["en", "ja"],
   "events": [
     {
       "description": {
@@ -63,7 +63,7 @@
       "source": "spigot"
     },
     {
-      "deprecate": true,
+      "deprecate": "@Experimental",
       "deprecateDescription": {
         "ja": "実験段階。"
       },
@@ -76,7 +76,7 @@
       "source": "paper"
     },
     {
-      "deprecate": true,
+      "deprecate": "@Experimental",
       "deprecateDescription": {
         "ja": "実験段階。"
       },
@@ -120,7 +120,7 @@
       "source": "spigot"
     },
     {
-      "deprecate": true,
+      "deprecate": "@Deprecated",
       "deprecateDescription": {
         "ja": "実験段階。"
       },
@@ -144,7 +144,7 @@
       "source": "spigot"
     },
     {
-      "deprecate": true,
+      "deprecate": "@Experimental",
       "deprecateDescription": {
         "ja": "実験段階。"
       },
@@ -258,7 +258,7 @@
       "source": "spigot"
     },
     {
-      "deprecate": true,
+      "deprecate": "@Deprecated",
       "deprecateDescription": {
         "ja": "Bukkit に追加された BellResonateEvent を使う。"
       },
@@ -272,7 +272,7 @@
       "source": "paper"
     },
     {
-      "deprecate": true,
+      "deprecate": "@Deprecated",
       "deprecateDescription": {
         "ja": "Bukkit に追加された BellRingEvent を使う。"
       },
@@ -696,7 +696,7 @@
       "source": "bungee"
     },
     {
-      "deprecate": true,
+      "deprecate": "@Deprecated",
       "deprecateDescription": {
         "ja": "非同期で処理をする AsyncChatEvent を使う。"
       },
@@ -799,16 +799,6 @@
       "link": "https://jd.papermc.io/waterfall/1.20/io/github/waterfallmc/waterfall/event/ConnectionInitEvent.html",
       "name": "ConnectionInitEvent",
       "source": "waterfall"
-    },
-    {
-      "description": {
-        "ja": ""
-      },
-      "href": "org/bukkit/conversations/ConversationAbandonedEvent.html",
-      "javadoc": "ConversationAbandonedEvent contains information about an abandoned\n conversation.",
-      "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/conversations/ConversationAbandonedEvent.html",
-      "name": "ConversationAbandonedEvent",
-      "source": "spigot"
     },
     {
       "description": {
@@ -1070,7 +1060,7 @@
       "source": "paper"
     },
     {
-      "deprecate": true,
+      "deprecate": "@Deprecated",
       "deprecateDescription": {
         "ja": "ワールドに関するイベントとして定義された PortalCreateEvent を使う。"
       },
@@ -1565,7 +1555,7 @@
       "source": "spigot"
     },
     {
-      "deprecate": true,
+      "deprecate": "@Deprecated",
       "deprecateDescription": {
         "ja": "Bukkit に追加された EntityTransformEvent を使う。"
       },
@@ -1752,17 +1742,6 @@
     },
     {
       "description": {
-        "ja": ""
-      },
-      "abstract": true,
-      "href": "org/bukkit/GameEvent.html",
-      "javadoc": "Represents a generic Mojang game event.",
-      "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/GameEvent.html",
-      "name": "GameEvent",
-      "source": "spigot"
-    },
-    {
-      "description": {
         "ja": "ユーザーのゲームプロファイルを設定する時に呼び出される。このイベントは PreLoginEvent が実行された後に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/player/GameProfileRequestEvent.html",
@@ -1873,7 +1852,7 @@
       "source": "spigot"
     },
     {
-      "deprecate": true,
+      "deprecate": "@Deprecated",
       "deprecateDescription": {
         "ja": "使われていない。"
       },
@@ -1886,7 +1865,7 @@
       "source": "paper"
     },
     {
-      "deprecate": true,
+      "deprecate": "@Experimental",
       "deprecateDescription": {
         "ja": "実験段階。"
       },
@@ -2337,7 +2316,7 @@
       "source": "paper"
     },
     {
-      "deprecate": true,
+      "deprecate": "@Beta",
       "deprecateDescription": {
         "ja": "ベータ段階。"
       },
@@ -2431,7 +2410,7 @@
       "source": "spigot"
     },
     {
-      "deprecate": true,
+      "deprecate": "@Deprecated",
       "deprecateDescription": {
         "ja": "Paper であれば、PlayerBucketEntityEvent を使う。"
       },
@@ -2496,7 +2475,7 @@
       "source": "velocity"
     },
     {
-      "deprecate": true,
+      "deprecate": "@Deprecated",
       "deprecateDescription": {
         "ja": "チャットの遅延が発生するので AsyncPlayerChatEvent を使う。"
       },
@@ -2520,7 +2499,7 @@
       "source": "velocity"
     },
     {
-      "deprecate": true,
+      "deprecate": "@Deprecated",
       "deprecateDescription": {
         "ja": "クライアントの変更により実行されなくなった。"
       },
@@ -2705,7 +2684,7 @@
       "source": "spigot"
     },
     {
-      "deprecate": true,
+      "deprecate": "@Experimental",
       "deprecateDescription": {
         "ja": "実験段階。"
       },
@@ -2789,7 +2768,7 @@
       "source": "spigot"
     },
     {
-      "deprecate": true,
+      "deprecate": "@Experimental",
       "deprecateDescription": {
         "ja": "実験段階。"
       },
@@ -2803,7 +2782,7 @@
       "source": "spigot"
     },
     {
-      "deprecate": true,
+      "deprecate": "@Deprecated",
       "deprecateDescription": {
         "ja": "Spigot に追加された PlayerSpawnLocationEvent を使う。"
       },
@@ -2995,7 +2974,7 @@
       "source": "spigot"
     },
     {
-      "deprecate": true,
+      "deprecate": "@Deprecated",
       "deprecateDescription": {
         "ja": "Bukkit に追加された PlayerLocaleChangeEvent を使う。"
       },
@@ -3119,7 +3098,7 @@
       "source": "paper"
     },
     {
-      "deprecate": true,
+      "deprecate": "@Deprecated",
       "deprecateDescription": {
         "ja": "Bukkit に追加された EntityPickupItemEvent を使う。"
       },
@@ -3153,7 +3132,7 @@
       "source": "paper"
     },
     {
-      "deprecate": true,
+      "deprecate": "@Deprecated",
       "deprecateDescription": {
         "ja": "非同期で処理をする為に AsyncPlayerPreLoginEvent を使う。"
       },
@@ -3346,7 +3325,7 @@
       "source": "paper"
     },
     {
-      "deprecate": true,
+      "deprecate": "@Experimental",
       "deprecateDescription": {
         "ja": "実験段階。"
       },
@@ -3370,7 +3349,7 @@
       "source": "paper"
     },
     {
-      "deprecate": true,
+      "deprecate": "@Experimental",
       "deprecateDescription": {
         "ja": "実験段階。"
       },
@@ -3384,7 +3363,7 @@
       "source": "spigot"
     },
     {
-      "deprecate": true,
+      "deprecate": "@Experimental",
       "deprecateDescription": {
         "ja": "実験段階。"
       },
@@ -3768,7 +3747,7 @@
       "source": "spigot"
     },
     {
-      "deprecate": true,
+      "deprecate": "@Deprecated",
       "deprecateDescription": {
         "ja": "このイベントを直接使用せず、PrepareResultEvent を使うことが推奨されている。"
       },
@@ -3871,7 +3850,7 @@
       "source": "paper"
     },
     {
-      "deprecate": true,
+      "deprecate": "@Deprecated",
       "deprecateDescription": {
         "ja": "非推奨。ProjectileHitEvent を使って、エンティティに当たっているかチェックする。"
       },
@@ -4226,7 +4205,7 @@
       "source": "velocity"
     },
     {
-      "deprecate": true,
+      "deprecate": "@Beta",
       "deprecateDescription": {
         "ja": "ベータ段階。"
       },
@@ -4510,7 +4489,7 @@
       "source": "spigot"
     },
     {
-      "deprecate": true,
+      "deprecate": "@Deprecated",
       "deprecateDescription": {
         "ja": "StructuresLocateEvent を使う。"
       },
@@ -4635,7 +4614,7 @@
       "source": "spigot"
     },
     {
-      "deprecate": true,
+      "deprecate": "@Deprecated",
       "deprecateDescription": {
         "ja": "Bukkit に追加された TNTPrimeEvent を使う。"
       },

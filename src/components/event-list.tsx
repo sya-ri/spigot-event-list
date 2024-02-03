@@ -10,11 +10,16 @@ import {
   availableInVelocity,
   availableInWaterfall,
 } from "@/libs/available-in";
-import React, { FC } from "react";
+import React, { FC, useEffect, useState } from "react";
 import SelectableSourceTag from "@/components/selectable-source-tag";
 import EventSource from "@/types/event-source";
-import { FiAlertTriangle } from "react-icons/fi";
 import useEvents from "@/libs/hooks/use-events";
+import { useCurrentLocale } from "next-i18n-router/client";
+import { i18nConfig } from "@/i18n/config";
+import { isEmpty } from "remeda/dist/es";
+import { isDefined } from "remeda";
+import { translate } from "@/i18n/translation";
+import { FiAlertTriangle } from "react-icons/fi";
 
 type EventListProps = {
   tags: EventSource[];
@@ -23,9 +28,55 @@ type EventListProps = {
 };
 
 const EventList: FC<EventListProps> = ({ tags, setTags, search }) => {
-  const { events } = useEvents();
+  const currentLocale = useCurrentLocale(i18nConfig);
+  const { events } = useEvents(currentLocale);
+  const [incompleteEvents, setIncompleteEvents] =
+    useState<ReturnType<typeof useEvents>["events"]>();
+  useEffect(() => {
+    if (events) {
+      setIncompleteEvents(
+        events.filter(
+          (event) =>
+            isEmpty(event.description) ||
+            (isDefined(event.deprecateDescription) &&
+              isEmpty(event.deprecateDescription)),
+        ),
+      );
+    }
+  }, [events]);
   return (
     <div className="flex flex-col gap-4">
+      {incompleteEvents && incompleteEvents.length !== 0 && (
+        <div className="bg-warning text-warning-content rounded-lg">
+          <div className="collapse collapse-arrow w-full">
+            <input type="checkbox" />
+            <div className="collapse-title">
+              <div className="flex items-center gap-8 w-full">
+                <FiAlertTriangle />
+                {translate(currentLocale, "IncompleteEvents").replace(
+                  "%size%",
+                  incompleteEvents.length.toLocaleString(),
+                )}
+              </div>
+            </div>
+            <div className="collapse-content">
+              <ul className="w-fit mx-auto sm:mx-12">
+                {incompleteEvents.map((event) => (
+                  <li key={event.link}>
+                    <Link
+                      href={event.link}
+                      className="link-hover"
+                      target="_blank"
+                    >
+                      {event.source} {event.name}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      )}
       {events &&
         events
           .filter(
@@ -94,8 +145,8 @@ const EventList: FC<EventListProps> = ({ tags, setTags, search }) => {
               </div>
               {event.deprecate && (
                 <div className="flex items-center gap-2 text-error mt-1">
-                  <FiAlertTriangle />
-                  {event.deprecateDescription}
+                  <div>{event.deprecate}</div>
+                  <div>{event.deprecateDescription}</div>
                 </div>
               )}
               <div className="mt-1">{event.description}</div>
