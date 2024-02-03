@@ -90,7 +90,7 @@ const EventList: FC<EventListProps> = ({ tags, setTags, search }) => {
               <div className="flex flex-wrap gap-1 justify-between">
                 <Link
                   className={clsx(
-                    "font-bold link-hover text-lg link-primary",
+                    "font-bold link-hover sm:text-lg link-primary break-all",
                     event.abstract && "line-through",
                   )}
                   href={event.link}
@@ -98,7 +98,7 @@ const EventList: FC<EventListProps> = ({ tags, setTags, search }) => {
                 >
                   {event.name}
                 </Link>
-                <div className="flex gap-2 mr-0 ml-auto">
+                <div className="flex gap-2 mr-0 ml-auto flex-wrap justify-end">
                   {availableInSpigot(event.source) && (
                     <SelectableSourceTag
                       source="spigot"
@@ -144,12 +144,12 @@ const EventList: FC<EventListProps> = ({ tags, setTags, search }) => {
                 </div>
               </div>
               {event.deprecate && (
-                <div className="flex items-center gap-2 text-error mt-1">
+                <div className="flex items-center gap-2 text-error mt-1 flex-wrap break-all">
                   <div>{event.deprecate}</div>
                   <div>{event.deprecateDescription}</div>
                 </div>
               )}
-              <div className="mt-1">{event.description}</div>
+              <div className="mt-1 break-all">{event.description}</div>
             </div>
           ))}
     </div>
