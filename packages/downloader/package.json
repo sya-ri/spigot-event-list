@@ -1,7 +1,7 @@
 {
   "name": "spigot-event-list-downloader",
   "scripts": {
-    "start": "ts-node src/index.ts"
+    "start": "tsx src/index.ts"
   },
   "devDependencies": {
     "@types/multi-progress": "2.0.6",
@@ -10,8 +10,8 @@
     "cheerio": "1.0.0-rc.12",
     "compressing": "1.10.0",
     "multi-progress": "4.0.0",
-    "ts-node": "10.9.2",
-    "xml2js": "0.6.2",
-    "typescript": "5.3.3"
+    "tsx": "4.7.0",
+    "typescript": "5.3.3",
+    "xml2js": "0.6.2"
   }
 }
