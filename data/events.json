@@ -2019,6 +2019,22 @@
       "source": "spigot"
     },
     {
+      "deprecate": "@Experimental",
+      "deprecateDescription": {
+        "en": "",
+        "ja": ""
+      },
+      "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "io/papermc/paper/plugin/lifecycle/event/LifecycleEvent.html",
+      "javadoc": "Base type for all Lifecycle Events.\n \n Lifecycle events are generally fired when the older\n event system is not available, like during early\n server initialization.",
+      "link": "https://jd.papermc.io/paper/1.20/io/papermc/paper/plugin/lifecycle/event/LifecycleEvent.html",
+      "name": "LifecycleEvent",
+      "source": "paper"
+    },
+    {
       "description": {
         "ja": "雷が落ちる時に呼び出される。"
       },
@@ -4043,6 +4059,38 @@
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/raid/RaidTriggerEvent.html",
       "name": "RaidTriggerEvent",
       "source": "spigot"
+    },
+    {
+      "deprecate": "@Experimental",
+      "deprecateDescription": {
+        "en": "",
+        "ja": ""
+      },
+      "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "io/papermc/paper/plugin/lifecycle/event/registrar/RegistrarEvent.html",
+      "javadoc": "A lifecycle event that exposes a Registrar of some kind\n to allow management of various things. Look at implementations of\n Registrar for an idea of what uses this event.",
+      "link": "https://jd.papermc.io/paper/1.20/io/papermc/paper/plugin/lifecycle/event/registrar/RegistrarEvent.html",
+      "name": "RegistrarEvent",
+      "source": "paper"
+    },
+    {
+      "deprecate": "@Experimental",
+      "deprecateDescription": {
+        "en": "",
+        "ja": ""
+      },
+      "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "io/papermc/paper/plugin/lifecycle/event/registrar/ReloadableRegistrarEvent.html",
+      "javadoc": "A lifecycle event that exposes a Registrar that is\n reloadable.",
+      "link": "https://jd.papermc.io/paper/1.20/io/papermc/paper/plugin/lifecycle/event/registrar/ReloadableRegistrarEvent.html",
+      "name": "ReloadableRegistrarEvent",
+      "source": "paper"
     },
     {
       "description": {
