@@ -2784,10 +2784,6 @@
       "source": "spigot"
     },
     {
-      "deprecate": "@Experimental",
-      "deprecateDescription": {
-        "ja": "実験段階。"
-      },
       "description": {
         "ja": "表示されているエンティティがプレイヤーから非表示になる時に呼び出される。追跡範囲内にあるかどうかに関係なく呼び出される。"
       },
@@ -3341,10 +3337,6 @@
       "source": "paper"
     },
     {
-      "deprecate": "@Experimental",
-      "deprecateDescription": {
-        "ja": "実験段階。"
-      },
       "description": {
         "ja": "非表示になっていたエンティティがプレイヤーに表示される時に呼び出される。追跡範囲内にあるかどうかに関係なく呼び出される。"
       },
