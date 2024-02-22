@@ -1415,6 +1415,22 @@
       "source": "spigot"
     },
     {
+      "deprecate": "@Experimental",
+      "deprecateDescription": {
+        "en": "",
+        "ja": ""
+      },
+      "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "org/bukkit/event/entity/EntityRemoveEvent.html",
+      "javadoc": "Called when an Entity is removed.\n \n This event should only be used for monitoring. The result\n of modifying the entity during or after this event is unspecified.\n This event is not called for a Player.",
+      "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityRemoveEvent.html",
+      "name": "EntityRemoveEvent",
+      "source": "spigot"
+    },
+    {
       "description": {
         "ja": "何らかの理由でワールドからエンティティが削除される時に呼び出される。"
       },
