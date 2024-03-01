@@ -18,7 +18,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-icons": "5.0.1",
-    "remeda": "1.45.2",
+    "remeda": "1.46.0",
     "swr": "2.2.5"
   },
   "devDependencies": {
