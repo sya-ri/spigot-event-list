@@ -317,6 +317,17 @@
     },
     {
       "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "io/papermc/paper/event/block/BlockBreakProgressUpdateEvent.html",
+      "javadoc": "Called when the progress of a block break is updated.",
+      "link": "https://jd.papermc.io/paper/1.20/io/papermc/paper/event/block/BlockBreakProgressUpdateEvent.html",
+      "name": "BlockBreakProgressUpdateEvent",
+      "source": "paper"
+    },
+    {
+      "description": {
         "ja": "ブロックが燃え尽きて破壊される時に呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockBurnEvent.html",
