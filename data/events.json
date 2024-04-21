@@ -689,6 +689,17 @@
     },
     {
       "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "io/papermc/paper/event/player/CartographyItemEvent.html",
+      "javadoc": "Called when the recipe of an Item is completed inside a cartography table.",
+      "link": "https://jd.papermc.io/paper/1.20/io/papermc/paper/event/player/CartographyItemEvent.html",
+      "name": "CartographyItemEvent",
+      "source": "paper"
+    },
+    {
+      "description": {
         "ja": "大釜の水が増えたり減ったりした時に呼び出される。"
       },
       "href": "org/bukkit/event/block/CauldronLevelChangeEvent.html",
