@@ -3897,6 +3897,22 @@
       "source": "paper"
     },
     {
+      "deprecate": "@Experimental",
+      "deprecateDescription": {
+        "en": "",
+        "ja": ""
+      },
+      "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "com/velocitypowered/api/event/connection/PreTransferEvent.html",
+      "javadoc": "This event is executed before sending a player to another host,\n either by the backend server or by a plugin using\n the Player.transferToHost(InetSocketAddress) method.",
+      "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/connection/PreTransferEvent.html",
+      "name": "PreTransferEvent",
+      "source": "velocity"
+    },
+    {
       "description": {
         "ja": "プレイヤーがホワイトリストに登録されているか確認する時に呼び出される。"
       },
