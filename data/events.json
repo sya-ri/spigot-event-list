@@ -3,6 +3,7 @@
   "events": [
     {
       "description": {
+        "en": "The event is about chatting.",
         "ja": "チャットに関するイベントであることを表す。"
       },
       "abstract": true,
@@ -14,6 +15,7 @@
     },
     {
       "description": {
+        "en": "Called when an anvil is damaged from being used.",
         "ja": "使用したことで金床が損傷する時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/block/AnvilDamagedEvent.html",
@@ -24,6 +26,7 @@
     },
     {
       "description": {
+        "en": "Called when a player takes the result item out of an anvil.",
         "ja": "金床から結果アイテムを取り出す時に呼び出される。"
       },
       "href": "org/purpurmc/purpur/event/inventory/AnvilTakeResultEvent.html",
@@ -34,6 +37,7 @@
     },
     {
       "description": {
+        "en": "Called when anvil slots change, triggering the result slot to be updated.",
         "ja": "金床の結果アイテムが更新された時に呼び出される。"
       },
       "href": "org/purpurmc/purpur/event/inventory/AnvilUpdateResultEvent.html",
@@ -44,6 +48,7 @@
     },
     {
       "description": {
+        "en": "Called when a lingering potion applies it's effects. Happens once every 5 ticks",
         "ja": "AreaEffectCloud の効果が付与される時に呼び出される。5ティック毎に1回発生する。"
       },
       "href": "org/bukkit/event/entity/AreaEffectCloudApplyEvent.html",
@@ -54,6 +59,7 @@
     },
     {
       "description": {
+        "en": "Called when an arrow enters or exists an entity's body.",
         "ja": "矢がエンティティの本体に入る・存在する時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/ArrowBodyCountChangeEvent.html",
@@ -68,6 +74,7 @@
         "ja": "実験段階。"
       },
       "description": {
+        "en": "Called when the server decorates the chat component via a command.",
         "ja": "コマンドを介したチャットコンポーネントをサーバーが装飾するときに呼び出される。"
       },
       "href": "io/papermc/paper/event/player/AsyncChatCommandDecorateEvent.html",
@@ -81,6 +88,7 @@
         "ja": "実験段階。"
       },
       "description": {
+        "en": "Called when the server decorates a component for chat purposes.",
         "ja": "チャットコンポーネントをサーバーが装飾するときに呼び出される。"
       },
       "href": "io/papermc/paper/event/player/AsyncChatDecorateEvent.html",
@@ -91,6 +99,7 @@
     },
     {
       "description": {
+        "en": "Called when a player sends a chat message to the server.",
         "ja": "プレイヤーがチャットした時に呼び出される。"
       },
       "href": "io/papermc/paper/event/player/AsyncChatEvent.html",
@@ -101,6 +110,7 @@
     },
     {
       "description": {
+        "en": "This event is handled asynchronously.",
         "ja": "非同期で処理されるイベントを表す。"
       },
       "href": "net/md_5/bungee/api/event/AsyncEvent.html",
@@ -111,6 +121,7 @@
     },
     {
       "description": {
+        "en": "Called when a player chats. Called asynchronously or synchronously.",
         "ja": "プレイヤーがチャットした時に呼び出される。非同期でも同期でも呼び出されることがある。"
       },
       "href": "org/bukkit/event/player/AsyncPlayerChatEvent.html",
@@ -125,6 +136,7 @@
         "ja": "実験段階。"
       },
       "description": {
+        "en": "Used to format chat for chat preview. If this event is used, then the result of the corresponding AsyncPlayerChatEvent must be formatted in the same way.",
         "ja": "チャットのプレビュー用にフォーマットする時に呼び出される。このイベントを使用する場合は、AsyncPlayerChatEvent も同じ方法でフォーマットする必要がある。"
       },
       "href": "org/bukkit/event/player/AsyncPlayerChatPreviewEvent.html",
@@ -317,8 +329,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when the progress of a block break is updated.",
+        "ja": "ブロックの破壊状況が更新される時に呼び出される。"
       },
       "href": "io/papermc/paper/event/block/BlockBreakProgressUpdateEvent.html",
       "javadoc": "Called when the progress of a block break is updated.",
@@ -689,8 +701,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when the recipe of an item is completed inside a cartography table.",
+        "ja": "製図台でアイテムを作成する時に呼び出される。"
       },
       "href": "io/papermc/paper/event/player/CartographyItemEvent.html",
       "javadoc": "Called when the recipe of an Item is completed inside a cartography table.",
@@ -1440,11 +1452,11 @@
       "deprecate": "@Experimental",
       "deprecateDescription": {
         "en": "",
-        "ja": ""
+        "ja": "実験段階。"
       },
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when an Entity is removed.",
+        "ja": "エンティティが削除された時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityRemoveEvent.html",
       "javadoc": "Called when an Entity is removed.\n \n This event should only be used for monitoring. The result\n of modifying the entity during or after this event is unspecified.\n This event is not called for a Player.",
@@ -3668,8 +3680,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when velocity executed a command.",
+        "ja": "コマンドが実行された時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/command/PostCommandInvocationEvent.html",
       "javadoc": "This event is fired when velocity executed a command. This event is called after the event\n is handled.\n\n Commands can be cancelled or forwarded to backend servers in CommandExecuteEvent.\n This will prevent firing this event.",
@@ -3884,11 +3896,11 @@
       "deprecate": "@Experimental",
       "deprecateDescription": {
         "en": "",
-        "ja": ""
+        "ja": "実験段階。"
       },
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called before sending a player to another host.",
+        "ja": "プレイヤーが別のホストに送られる時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/connection/PreTransferEvent.html",
       "javadoc": "This event is executed before sending a player to another host,\n either by the backend server or by a plugin using\n the Player.transferToHost(InetSocketAddress) method.",
