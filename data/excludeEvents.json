@@ -1,1 +1,8 @@
-["AwaitingEventvelocity", "ConversationAbandonedEventspigot", "GameEventspigot"]
+[
+  "AwaitingEventvelocity",
+  "ConversationAbandonedEventspigot",
+  "GameEventspigot",
+  "LifecycleEventpaper",
+  "RegistrarEventpaper",
+  "ReloadableRegistrarEventpaper"
+]
