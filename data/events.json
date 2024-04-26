@@ -52,7 +52,7 @@
         "ja": "AreaEffectCloud の効果が付与される時に呼び出される。5ティック毎に1回発生する。"
       },
       "href": "org/bukkit/event/entity/AreaEffectCloudApplyEvent.html",
-      "javadoc": "Called when a lingering potion applies it's effects. Happens\n once every 5 ticks",
+      "javadoc": "Called when a lingering potion applies it's effects. Happens once every 5 ticks",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/AreaEffectCloudApplyEvent.html",
       "name": "AreaEffectCloudApplyEvent",
       "source": "spigot"
@@ -92,7 +92,7 @@
         "ja": "チャットコンポーネントをサーバーが装飾するときに呼び出される。"
       },
       "href": "io/papermc/paper/event/player/AsyncChatDecorateEvent.html",
-      "javadoc": "This event is fired when the server decorates a component for chat purposes. This is called\n before AsyncChatEvent and the other chat events. It is recommended that you modify the\n message here, and use the chat events for modifying receivers and later the chat type. If you\n want to keep the message as \"signed\" for the clients who get it, be sure to include the entire\n original message somewhere in the final message.\n \n See AsyncChatCommandDecorateEvent for the decoration of messages sent via commands",
+      "javadoc": "This event is fired when the server decorates a component for chat purposes. This is called before AsyncChatEvent and the other chat events. It is recommended that you modify the message here, and use the chat events for modifying receivers and later the chat type. If you want to keep the message as \"signed\" for the clients who get it, be sure to include the entire original message somewhere in the final message. See AsyncChatCommandDecorateEvent for the decoration of messages sent via commands",
       "link": "https://jd.papermc.io/paper/1.20/io/papermc/paper/event/player/AsyncChatDecorateEvent.html",
       "name": "AsyncChatDecorateEvent",
       "source": "paper"
@@ -103,7 +103,7 @@
         "ja": "プレイヤーがチャットした時に呼び出される。"
       },
       "href": "io/papermc/paper/event/player/AsyncChatEvent.html",
-      "javadoc": "An event fired when a Player sends a chat message to the server.\n \n This event will sometimes fire synchronously, depending on how it was\n triggered.\n \n If a player is the direct cause of this event by an incoming packet, this\n event will be asynchronous. If a plugin triggers this event by compelling a\n player to chat, this event will be synchronous.\n \n Care should be taken to check Event.isAsynchronous() and treat the event\n appropriately.",
+      "javadoc": "An event fired when a Player sends a chat message to the server. This event will sometimes fire synchronously, depending on how it was triggered. If a player is the direct cause of this event by an incoming packet, this event will be asynchronous. If a plugin triggers this event by compelling a player to chat, this event will be synchronous. Care should be taken to check Event.isAsynchronous() and treat the event appropriately.",
       "link": "https://jd.papermc.io/paper/1.20/io/papermc/paper/event/player/AsyncChatEvent.html",
       "name": "AsyncChatEvent",
       "source": "paper"
@@ -125,7 +125,7 @@
         "ja": "プレイヤーがチャットした時に呼び出される。非同期でも同期でも呼び出されることがある。"
       },
       "href": "org/bukkit/event/player/AsyncPlayerChatEvent.html",
-      "javadoc": "This event will sometimes fire synchronously, depending on how it was\n triggered.\n \n The constructor provides a boolean to indicate if the event was fired\n synchronously or asynchronously. When asynchronous, this event can be\n called from any thread, sans the main thread, and has limited access to the\n API.\n \n If a player is the direct cause of this event by an incoming packet, this\n event will be asynchronous. If a plugin triggers this event by compelling a\n player to chat, this event will be synchronous.\n \n Care should be taken to check Event.isAsynchronous() and treat the event\n appropriately.",
+      "javadoc": "This event will sometimes fire synchronously, depending on how it was triggered. The constructor provides a boolean to indicate if the event was fired synchronously or asynchronously. When asynchronous, this event can be called from any thread, sans the main thread, and has limited access to the API. If a player is the direct cause of this event by an incoming packet, this event will be asynchronous. If a plugin triggers this event by compelling a player to chat, this event will be synchronous. Care should be taken to check Event.isAsynchronous() and treat the event appropriately.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/AsyncPlayerChatEvent.html",
       "name": "AsyncPlayerChatEvent",
       "source": "spigot"
@@ -140,7 +140,7 @@
         "ja": "チャットのプレビュー用にフォーマットする時に呼び出される。このイベントを使用する場合は、AsyncPlayerChatEvent も同じ方法でフォーマットする必要がある。"
       },
       "href": "org/bukkit/event/player/AsyncPlayerChatPreviewEvent.html",
-      "javadoc": "Used to format chat for chat preview. If this event is used, then the result\n of the corresponding AsyncPlayerChatEvent must be formatted in\n the same way.",
+      "javadoc": "Used to format chat for chat preview. If this event is used, then the result of the corresponding AsyncPlayerChatEvent must be formatted in the same way.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/AsyncPlayerChatPreviewEvent.html",
       "name": "AsyncPlayerChatPreviewEvent",
       "source": "spigot"
@@ -150,7 +150,7 @@
         "ja": "プレイヤーがログインしようとしている時に呼び出される。非同期で処理される。"
       },
       "href": "org/bukkit/event/player/AsyncPlayerPreLoginEvent.html",
-      "javadoc": "Stores details for players attempting to log in.\n \n This event is asynchronous, and not run using main thread.",
+      "javadoc": "Stores details for players attempting to log in. This event is asynchronous, and not run using main thread.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/AsyncPlayerPreLoginEvent.html",
       "name": "AsyncPlayerPreLoginEvent",
       "source": "spigot"
@@ -164,7 +164,7 @@
         "ja": "構造物が生成された時に呼び出される。"
       },
       "href": "org/bukkit/event/world/AsyncStructureGenerateEvent.html",
-      "javadoc": "This event will sometimes fire synchronously, depending on how it was\n triggered.\n \n The constructor provides a boolean to indicate if the event was fired\n synchronously or asynchronously. When asynchronous, this event can be called\n from any thread, sans the main thread, and has limited access to the API.\n \n If a Structure is naturally placed in a chunk of the world, this\n event will be asynchronous. If a player executes the '/place structure'\n command, this event will be synchronous.\n\n Allows to register transformers that can modify the blocks placed and\n entities spawned by the structure.\n \n Care should be taken to check Event.isAsynchronous() and treat the event\n appropriately.\n ",
+      "javadoc": "This event will sometimes fire synchronously, depending on how it was triggered. The constructor provides a boolean to indicate if the event was fired synchronously or asynchronously. When asynchronous, this event can be called from any thread, sans the main thread, and has limited access to the API. If a Structure is naturally placed in a chunk of the world, this event will be asynchronous. If a player executes the '/place structure' command, this event will be synchronous. Allows to register transformers that can modify the blocks placed and entities spawned by the structure. Care should be taken to check Event.isAsynchronous() and treat the event appropriately. ",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/world/AsyncStructureGenerateEvent.html",
       "name": "AsyncStructureGenerateEvent",
       "source": "spigot"
@@ -184,7 +184,7 @@
         "ja": "タブ補完を行う時に呼び出される。非同期で処理される。このイベントが結果を返す時、標準のタブ補完処理は発生しない。ただし、 TabCompleteEvent は非同期の結果と共に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/server/AsyncTabCompleteEvent.html",
-      "javadoc": "Allows plugins to compute tab completion results asynchronously.\n \n If this event provides completions, then the standard synchronous process\n will not be fired to populate the results.\n However, the synchronous TabCompleteEvent will fire with the Async results.\n \n Only 1 process will be allowed to provide completions, the Async Event, or the standard process.",
+      "javadoc": "Allows plugins to compute tab completion results asynchronously. If this event provides completions, then the standard synchronous process will not be fired to populate the results. However, the synchronous TabCompleteEvent will fire with the Async results. Only 1 process will be allowed to provide completions, the Async Event, or the standard process.",
       "link": "https://jd.papermc.io/paper/1.20/com/destroystokyo/paper/event/server/AsyncTabCompleteEvent.html",
       "name": "AsyncTabCompleteEvent",
       "source": "paper"
@@ -194,7 +194,7 @@
         "ja": "コウモリが眠ったり起きたりする時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/BatToggleSleepEvent.html",
-      "javadoc": "Called when a bat attempts to sleep or wake up from its slumber.\n \n If a Bat Toggle Sleep event is cancelled, the Bat will not toggle its sleep\n state.",
+      "javadoc": "Called when a bat attempts to sleep or wake up from its slumber. If a Bat Toggle Sleep event is cancelled, the Bat will not toggle its sleep state.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/BatToggleSleepEvent.html",
       "name": "BatToggleSleepEvent",
       "source": "spigot"
@@ -204,7 +204,7 @@
         "ja": "ビーコンが有効になった時に呼び出される。"
       },
       "href": "io/papermc/paper/event/block/BeaconActivatedEvent.html",
-      "javadoc": "Called when a beacon is activated.\n Activation occurs when the beacon beam becomes visible.",
+      "javadoc": "Called when a beacon is activated. Activation occurs when the beacon beam becomes visible.",
       "link": "https://jd.papermc.io/paper/1.20/io/papermc/paper/event/block/BeaconActivatedEvent.html",
       "name": "BeaconActivatedEvent",
       "source": "paper"
@@ -264,7 +264,7 @@
         "ja": "ベルが共鳴し、近くのレイダーに影響を及ぼす時に呼び出される。レイダーが近くにいる場合のみ、ベルガ共鳴する。"
       },
       "href": "org/bukkit/event/block/BellResonateEvent.html",
-      "javadoc": "Called when a bell resonated after being rung and highlights nearby raiders.\n A bell will only resonate if raiders are in the vicinity of the bell.",
+      "javadoc": "Called when a bell resonated after being rung and highlights nearby raiders. A bell will only resonate if raiders are in the vicinity of the bell.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BellResonateEvent.html",
       "name": "BellResonateEvent",
       "source": "spigot"
@@ -312,7 +312,7 @@
         "ja": "ブロックがブロックを破壊する時に呼び出される。"
       },
       "href": "io/papermc/paper/event/block/BlockBreakBlockEvent.html",
-      "javadoc": "Called when a block forces another block to break and drop items.\n \n Currently called for piston's and liquid flows.",
+      "javadoc": "Called when a block forces another block to break and drop items. Currently called for piston's and liquid flows.",
       "link": "https://jd.papermc.io/paper/1.20/io/papermc/paper/event/block/BlockBreakBlockEvent.html",
       "name": "BlockBreakBlockEvent",
       "source": "paper"
@@ -322,7 +322,7 @@
         "ja": "プレイヤーがブロックを破壊する時に呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockBreakEvent.html",
-      "javadoc": "Called when a block is broken by a player.\n \n If you wish to have the block drop experience, you must set the experience\n value above 0. By default, experience will be set in the event if:\n \n The player is not in creative or adventure mode\n The player can loot the block (ie: does not destroy it completely, by\n     using the correct tool)\n The player does not have silk touch\n The block drops experience in vanilla Minecraft\n \n \n Note:\n Plugins wanting to simulate a traditional block drop should set the block\n to air and utilize their own methods for determining what the default drop\n for the block being broken is and what to do about it, if anything.\n \n If a Block Break event is cancelled, the block will not break and\n experience will not drop.",
+      "javadoc": "Called when a block is broken by a player. If you wish to have the block drop experience, you must set the experience value above 0. By default, experience will be set in the event if: The player is not in creative or adventure mode The player can loot the block (ie: does not destroy it completely, by using the correct tool) The player does not have silk touch The block drops experience in vanilla Minecraft Note: Plugins wanting to simulate a traditional block drop should set the block to air and utilize their own methods for determining what the default drop for the block being broken is and what to do about it, if anything. If a Block Break event is cancelled, the block will not break and experience will not drop.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockBreakEvent.html",
       "name": "BlockBreakEvent",
       "source": "spigot"
@@ -343,7 +343,7 @@
         "ja": "ブロックが燃え尽きて破壊される時に呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockBurnEvent.html",
-      "javadoc": "Called when a block is destroyed as a result of being burnt by fire.\n \n If a Block Burn event is cancelled, the block will not be destroyed as a\n result of being burnt by fire.",
+      "javadoc": "Called when a block is destroyed as a result of being burnt by fire. If a Block Burn event is cancelled, the block will not be destroyed as a result of being burnt by fire.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockBurnEvent.html",
       "name": "BlockBurnEvent",
       "source": "spigot"
@@ -353,7 +353,7 @@
         "ja": "ブロックを設置しようとした時に呼び出される。設置可能かどうかを確認する。"
       },
       "href": "org/bukkit/event/block/BlockCanBuildEvent.html",
-      "javadoc": "Called when we try to place a block, to see if we can build it here or not.\n \n Note:\n \n The Block returned by getBlock() is the block we are trying to place\n     on, not the block we are trying to place.\n If you want to figure out what is being placed, use getMaterial() instead.\n ",
+      "javadoc": "Called when we try to place a block, to see if we can build it here or not. Note: The Block returned by getBlock() is the block we are trying to place on, not the block we are trying to place. If you want to figure out what is being placed, use getMaterial() instead. ",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockCanBuildEvent.html",
       "name": "BlockCanBuildEvent",
       "source": "spigot"
@@ -383,7 +383,7 @@
         "ja": "プレイヤーがブロックを損傷させる時に呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockDamageEvent.html",
-      "javadoc": "Called when a block is damaged by a player.\n \n If a Block Damage event is cancelled, the block will not be damaged.",
+      "javadoc": "Called when a block is damaged by a player. If a Block Damage event is cancelled, the block will not be damaged.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockDamageEvent.html",
       "name": "BlockDamageEvent",
       "source": "spigot"
@@ -393,7 +393,7 @@
         "ja": "サーバーがブロックを破棄する時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/block/BlockDestroyEvent.html",
-      "javadoc": "Fired anytime the server intends to 'destroy' a block through some triggering reason.\n This does not fire anytime a block is set to air, but only with more direct triggers such\n as physics updates, pistons, Entities changing blocks, commands set to \"Destroy\".\n \n This event is associated with the game playing a sound effect at the block in question, when\n something can be described as \"intend to destroy what is there\",\n \n Events such as leaves decaying, pistons retracting (where the block is moving), does NOT fire this event.",
+      "javadoc": "Fired anytime the server intends to 'destroy' a block through some triggering reason. This does not fire anytime a block is set to air, but only with more direct triggers such as physics updates, pistons, Entities changing blocks, commands set to \"Destroy\". This event is associated with the game playing a sound effect at the block in question, when something can be described as \"intend to destroy what is there\", Events such as leaves decaying, pistons retracting (where the block is moving), does NOT fire this event.",
       "link": "https://jd.papermc.io/paper/1.20/com/destroystokyo/paper/event/block/BlockDestroyEvent.html",
       "name": "BlockDestroyEvent",
       "source": "paper"
@@ -403,7 +403,7 @@
         "ja": "ディスペンサーから装備可能なアイテムが射出され、エンティティに装備される時に呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockDispenseArmorEvent.html",
-      "javadoc": "Called when an equippable item is dispensed from a block and equipped on a\n nearby entity.\n \n If a Block Dispense Armor event is cancelled, the equipment will not be\n equipped on the target entity.",
+      "javadoc": "Called when an equippable item is dispensed from a block and equipped on a nearby entity. If a Block Dispense Armor event is cancelled, the equipment will not be equipped on the target entity.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockDispenseArmorEvent.html",
       "name": "BlockDispenseArmorEvent",
       "source": "spigot"
@@ -413,7 +413,7 @@
         "ja": "ディスペンサーからアイテムが射出される時に呼び出される。このイベントをキャンセルしても射出されたアイテムは減る。BlockPreDispenseEvent を使うことでアイテムの消費もキャンセルできる。"
       },
       "href": "org/bukkit/event/block/BlockDispenseEvent.html",
-      "javadoc": "Called when an item is dispensed from a block.\n \n If a Block Dispense event is cancelled, the block will not dispense the\n item.",
+      "javadoc": "Called when an item is dispensed from a block. If a Block Dispense event is cancelled, the block will not dispense the item.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockDispenseEvent.html",
       "name": "BlockDispenseEvent",
       "source": "spigot"
@@ -423,7 +423,7 @@
         "ja": "プレイヤーによって破壊されたブロックがアイテムとしてドロップする時に呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockDropItemEvent.html",
-      "javadoc": "Called if a block broken by a player drops an item.\n\n If the block break is cancelled, this event won't be called.\n\n If isDropItems in BlockBreakEvent is set to false, this event won't be\n called.\n\n This event will also be called if the player breaks a multi block structure,\n for example a torch on top of a stone. Both items will have an event call.\n\n The Block is already broken as this event is called, so #getBlock() will be\n AIR in most cases. Use #getBlockState() for more Information about the broken\n block.",
+      "javadoc": "Called if a block broken by a player drops an item. If the block break is cancelled, this event won't be called. If isDropItems in BlockBreakEvent is set to false, this event won't be called. This event will also be called if the player breaks a multi block structure, for example a torch on top of a stone. Both items will have an event call. The Block is already broken as this event is called, so #getBlock() will be AIR in most cases. Use #getBlockState() for more Information about the broken block.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockDropItemEvent.html",
       "name": "BlockDropItemEvent",
       "source": "spigot"
@@ -464,7 +464,7 @@
         "ja": "自然にブロックが溶けたり消滅したりする時に呼び出される。以下に例を示す。\n- 光源によって雪や氷が溶ける時。\n- 燃料ブロックを破壊することなく、時間の経過によって火が消える時。\n- 水不足によってサンゴが死んだサンゴに変わる時。\n- カメが孵化し、カメの卵が破裂する時。"
       },
       "href": "org/bukkit/event/block/BlockFadeEvent.html",
-      "javadoc": "Called when a block fades, melts or disappears based on world conditions\n \n Examples:\n \n Snow melting due to being near a light source.\n Ice melting due to being near a light source.\n Fire burning out after time, without destroying fuel block.\n Coral fading to dead coral due to lack of water\n Turtle Egg bursting when a turtle hatches\n \n \n If a Block Fade event is cancelled, the block will not fade, melt or\n disappear.",
+      "javadoc": "Called when a block fades, melts or disappears based on world conditions Examples: Snow melting due to being near a light source. Ice melting due to being near a light source. Fire burning out after time, without destroying fuel block. Coral fading to dead coral due to lack of water Turtle Egg bursting when a turtle hatches If a Block Fade event is cancelled, the block will not fade, melt or disappear.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockFadeEvent.html",
       "name": "BlockFadeEvent",
       "source": "spigot"
@@ -484,7 +484,7 @@
         "ja": "プレイヤーが骨粉を使用し、ブロックに変更が生じる時に呼び出される。StructureGrowEvent の後に呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockFertilizeEvent.html",
-      "javadoc": "Called with the block changes resulting from a player fertilizing a given\n block with bonemeal. Will be called after the applicable\n StructureGrowEvent.",
+      "javadoc": "Called with the block changes resulting from a player fertilizing a given block with bonemeal. Will be called after the applicable StructureGrowEvent.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockFertilizeEvent.html",
       "name": "BlockFertilizeEvent",
       "source": "spigot"
@@ -494,7 +494,7 @@
         "ja": "自然にブロックが形成される時に呼び出される。BlockSpreadEvent とは違い、ランダムに形成されないブロックに対して呼び出される。以下に例を示す。\n- 吹雪により雪が積もる時。\n- 雪に覆われたバイオームで氷が形成される時。\n- 水との接触による黒曜石や丸石の形成される時。\n- コンクリートパウダーと水の混合によるコンクリートが成形される時。"
       },
       "href": "org/bukkit/event/block/BlockFormEvent.html",
-      "javadoc": "Called when a block is formed or spreads based on world conditions.\n \n Use BlockSpreadEvent to catch blocks that actually spread and don't\n just \"randomly\" form.\n \n Examples:\n \n Snow forming due to a snow storm.\n Ice forming in a snowy Biome like Taiga or Tundra.\n  Obsidian / Cobblestone forming due to contact with water.\n  Concrete forming due to mixing of concrete powder and water.\n \n \n If a Block Form event is cancelled, the block will not be formed.",
+      "javadoc": "Called when a block is formed or spreads based on world conditions. Use BlockSpreadEvent to catch blocks that actually spread and don't just \"randomly\" form. Examples: Snow forming due to a snow storm. Ice forming in a snowy Biome like Taiga or Tundra. Obsidian / Cobblestone forming due to contact with water. Concrete forming due to mixing of concrete powder and water. If a Block Form event is cancelled, the block will not be formed.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockFormEvent.html",
       "name": "BlockFormEvent",
       "source": "spigot"
@@ -504,7 +504,7 @@
         "ja": "ブロックの変更が起こる時に呼び出される。液体が流れる時とドラゴンの卵がテレポートする時のみ呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockFromToEvent.html",
-      "javadoc": "Represents events with a source block and a destination block, currently\n only applies to liquid (lava and water) and teleporting dragon eggs.\n \n If a Block From To event is cancelled, the block will not move (the liquid\n will not flow).",
+      "javadoc": "Represents events with a source block and a destination block, currently only applies to liquid (lava and water) and teleporting dragon eggs. If a Block From To event is cancelled, the block will not move (the liquid will not flow).",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockFromToEvent.html",
       "name": "BlockFromToEvent",
       "source": "spigot"
@@ -514,7 +514,7 @@
         "ja": "自然に作物等が成長する時に呼び出される。以下に例を示す。\n- 小麦\n- サトウキビ\n- サボテン\n- スイカ\n- かぼちゃ\n- カメの卵"
       },
       "href": "org/bukkit/event/block/BlockGrowEvent.html",
-      "javadoc": "Called when a block grows naturally in the world.\n \n Examples:\n \n Wheat\n Sugar Cane\n Cactus\n Watermelon\n Pumpkin\n Turtle Egg\n \n \n If a Block Grow event is cancelled, the block will not grow.",
+      "javadoc": "Called when a block grows naturally in the world. Examples: Wheat Sugar Cane Cactus Watermelon Pumpkin Turtle Egg If a Block Grow event is cancelled, the block will not grow.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockGrowEvent.html",
       "name": "BlockGrowEvent",
       "source": "spigot"
@@ -524,7 +524,7 @@
         "ja": "ブロックが点火された時に呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockIgniteEvent.html",
-      "javadoc": "Called when a block is ignited. If you want to catch when a Player places\n fire, you need to use BlockPlaceEvent.\n \n If a Block Ignite event is cancelled, the block will not be ignited.",
+      "javadoc": "Called when a block is ignited. If you want to catch when a Player places fire, you need to use BlockPlaceEvent. If a Block Ignite event is cancelled, the block will not be ignited.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockIgniteEvent.html",
       "name": "BlockIgniteEvent",
       "source": "spigot"
@@ -534,7 +534,7 @@
         "ja": "ロックされているかを確認する時に呼び出される。"
       },
       "href": "io/papermc/paper/event/block/BlockLockCheckEvent.html",
-      "javadoc": "Called when the server tries to check the lock on a lockable block entity.\n \n See setResult(Result) to change behavior",
+      "javadoc": "Called when the server tries to check the lock on a lockable block entity. See setResult(Result) to change behavior",
       "link": "https://jd.papermc.io/paper/1.20/io/papermc/paper/event/block/BlockLockCheckEvent.html",
       "name": "BlockLockCheckEvent",
       "source": "paper"
@@ -544,7 +544,7 @@
         "ja": "プレイヤーがマルチブロックを設置する時に呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockMultiPlaceEvent.html",
-      "javadoc": "Fired when a single block placement action of a player triggers the\n creation of multiple blocks(e.g. placing a bed block). The block returned\n by BlockPlaceEvent.getBlockPlaced() and its related methods is the block where\n the placed block would exist if the placement only affected a single\n block.",
+      "javadoc": "Fired when a single block placement action of a player triggers the creation of multiple blocks(e.g. placing a bed block). The block returned by BlockPlaceEvent.getBlockPlaced() and its related methods is the block where the placed block would exist if the placement only affected a single block.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockMultiPlaceEvent.html",
       "name": "BlockMultiPlaceEvent",
       "source": "spigot"
@@ -554,7 +554,7 @@
         "ja": "ブロックの落下確認をする時に呼び出される。高頻度で呼び出されるので処理には注意が必要。"
       },
       "href": "org/bukkit/event/block/BlockPhysicsEvent.html",
-      "javadoc": "Thrown when a block physics check is called.\n \n This event is a high frequency event, it may be called thousands of times per\n a second on a busy server. Plugins are advised to listen to the event with\n caution and only perform lightweight checks when using it.\n \n In addition to this, cancelling the event is liable to leave the world in an\n inconsistent state. For example if you use the event to leave a block\n floating in mid air when that block has a requirement to be attached to\n something, there is no guarantee that the floating block will persist across\n server restarts or map upgrades.\n \n Plugins should also note that where possible this event may only called for\n the \"root\" block of physics updates in order to limit event spam. Physics\n updates that cause other blocks to change their state may not result in an\n event for each of those blocks (usually adjacent). If you are concerned about\n monitoring these changes then you should check adjacent blocks yourself.",
+      "javadoc": "Thrown when a block physics check is called. This event is a high frequency event, it may be called thousands of times per a second on a busy server. Plugins are advised to listen to the event with caution and only perform lightweight checks when using it. In addition to this, cancelling the event is liable to leave the world in an inconsistent state. For example if you use the event to leave a block floating in mid air when that block has a requirement to be attached to something, there is no guarantee that the floating block will persist across server restarts or map upgrades. Plugins should also note that where possible this event may only called for the \"root\" block of physics updates in order to limit event spam. Physics updates that cause other blocks to change their state may not result in an event for each of those blocks (usually adjacent). If you are concerned about monitoring these changes then you should check adjacent blocks yourself.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockPhysicsEvent.html",
       "name": "BlockPhysicsEvent",
       "source": "spigot"
@@ -595,7 +595,7 @@
         "ja": "プレイヤーがブロックを設置する時に呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockPlaceEvent.html",
-      "javadoc": "Called when a block is placed by a player.\n \n If a Block Place event is cancelled, the block will not be placed.",
+      "javadoc": "Called when a block is placed by a player. If a Block Place event is cancelled, the block will not be placed.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockPlaceEvent.html",
       "name": "BlockPlaceEvent",
       "source": "spigot"
@@ -614,7 +614,7 @@
         "ja": "スカルクセンサーがゲームイベントを受けとる時に呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockReceiveGameEvent.html",
-      "javadoc": "Called when a Sculk sensor receives a game event and hence might activate.\n\n Will be called cancelled if the block's default behavior is to ignore the\n event.",
+      "javadoc": "Called when a Sculk sensor receives a game event and hence might activate. Will be called cancelled if the block's default behavior is to ignore the event.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockReceiveGameEvent.html",
       "name": "BlockReceiveGameEvent",
       "source": "spigot"
@@ -644,7 +644,7 @@
         "ja": "ブロックが拡散する時に呼び出される。BlockFormEvent とは違い、ランダムに形成されるブロックに対して呼び出される。以下に例を示す。\n- キノコが増える時。\n- 火が燃え広がる時。"
       },
       "href": "org/bukkit/event/block/BlockSpreadEvent.html",
-      "javadoc": "Called when a block spreads based on world conditions.\n \n Use BlockFormEvent to catch blocks that \"randomly\" form instead of\n actually spread.\n \n Examples:\n \n Mushrooms spreading.\n Fire spreading.\n \n \n If a Block Spread event is cancelled, the block will not spread.",
+      "javadoc": "Called when a block spreads based on world conditions. Use BlockFormEvent to catch blocks that \"randomly\" form instead of actually spread. Examples: Mushrooms spreading. Fire spreading. If a Block Spread event is cancelled, the block will not spread.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockSpreadEvent.html",
       "name": "BlockSpreadEvent",
       "source": "spigot"
@@ -654,7 +654,7 @@
         "ja": "醸造が完了する時に呼び出される。"
       },
       "href": "org/bukkit/event/inventory/BrewEvent.html",
-      "javadoc": "Called when the brewing of the contents inside the Brewing Stand is\n complete.",
+      "javadoc": "Called when the brewing of the contents inside the Brewing Stand is complete.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/inventory/BrewEvent.html",
       "name": "BrewEvent",
       "source": "spigot"
@@ -664,7 +664,7 @@
         "ja": "燃料としてアイテムが醸造台に使用される時に呼び出される。"
       },
       "href": "org/bukkit/event/inventory/BrewingStandFuelEvent.html",
-      "javadoc": "Called when an ItemStack is about to increase the fuel level of a brewing\n stand.",
+      "javadoc": "Called when an ItemStack is about to increase the fuel level of a brewing stand.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/inventory/BrewingStandFuelEvent.html",
       "name": "BrewingStandFuelEvent",
       "source": "spigot"
@@ -684,7 +684,7 @@
         "ja": "サーバーにブロードキャストメッセージが送信された時に呼び出される。メッセージが非同期で送信された場合、イベントも非同期で呼び出される。"
       },
       "href": "org/bukkit/event/server/BroadcastMessageEvent.html",
-      "javadoc": "Event triggered for server broadcast messages such as from\n Server.broadcast(String, String).\n\n This event behaves similarly to AsyncPlayerChatEvent in that it\n should be async if fired from an async thread. Please see that event for\n further information.",
+      "javadoc": "Event triggered for server broadcast messages such as from Server.broadcast(String, String). This event behaves similarly to AsyncPlayerChatEvent in that it should be async if fired from an async thread. Please see that event for further information.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/server/BroadcastMessageEvent.html",
       "name": "BroadcastMessageEvent",
       "source": "spigot"
@@ -769,7 +769,7 @@
         "ja": "新しいチャンクが作られた時に呼び出される。"
       },
       "href": "org/bukkit/event/world/ChunkPopulateEvent.html",
-      "javadoc": "Thrown when a newly generated chunk has finished being populated.\n \n Note: Do not use this to generated blocks in a newly generated chunk.\n Use a BlockPopulator instead.",
+      "javadoc": "Thrown when a newly generated chunk has finished being populated. Note: Do not use this to generated blocks in a newly generated chunk. Use a BlockPopulator instead.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/world/ChunkPopulateEvent.html",
       "name": "ChunkPopulateEvent",
       "source": "spigot"
@@ -789,7 +789,7 @@
         "ja": "クライアントが接続する時に呼び出される。全ての接続の初期段階で呼び出されるので、高速で処理する必要がある。"
       },
       "href": "net/md_5/bungee/api/event/ClientConnectEvent.html",
-      "javadoc": "Event called to represent an initial client connection.\n \n Note: This event is called at an early stage of every connection, handling\n should be fast.",
+      "javadoc": "Event called to represent an initial client connection. Note: This event is called at an early stage of every connection, handling should be fast.",
       "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/ClientConnectEvent.html",
       "name": "ClientConnectEvent",
       "source": "bungee"
@@ -799,7 +799,7 @@
         "ja": "コンソールもしくはプレイヤーがコマンドを実行する時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/command/CommandExecuteEvent.html",
-      "javadoc": "This event is fired when someone executes a command. Velocity will wait for this event to finish\n firing before trying to handle the command and/or forwarding it to the server.",
+      "javadoc": "This event is fired when someone executes a command. Velocity will wait for this event to finish firing before trying to handle the command and/or forwarding it to the server.",
       "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/command/CommandExecuteEvent.html",
       "name": "CommandExecuteEvent",
       "source": "velocity"
@@ -809,7 +809,7 @@
         "ja": "アイテムがホッパーによって堆肥になる時に呼び出される。アイテムがコンポスターに移動するのを防ぐには InventoryMoveItemEvent を使う。"
       },
       "href": "io/papermc/paper/event/block/CompostItemEvent.html",
-      "javadoc": "Called when an item is about to be composted by a hopper.\n To prevent hoppers from moving items into composters, cancel the InventoryMoveItemEvent.",
+      "javadoc": "Called when an item is about to be composted by a hopper. To prevent hoppers from moving items into composters, cancel the InventoryMoveItemEvent.",
       "link": "https://jd.papermc.io/paper/1.20/io/papermc/paper/event/block/CompostItemEvent.html",
       "name": "CompostItemEvent",
       "source": "paper"
@@ -819,7 +819,7 @@
         "ja": "ハンドシェイクが確立された時に呼び出される。非同期で呼び出され、このイベントの処理を待たずに接続を処理します。"
       },
       "href": "com/velocitypowered/api/event/connection/ConnectionHandshakeEvent.html",
-      "javadoc": "This event is fired when a handshake is established between a client and the proxy.\n Velocity will fire this event asynchronously and will not wait for it to complete before\n handling the connection.",
+      "javadoc": "This event is fired when a handshake is established between a client and the proxy. Velocity will fire this event asynchronously and will not wait for it to complete before handling the connection.",
       "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/connection/ConnectionHandshakeEvent.html",
       "name": "ConnectionHandshakeEvent",
       "source": "velocity"
@@ -829,7 +829,7 @@
         "ja": "新しい接続があった時に呼び出される。接続を効率的に閉じることを可能にする。"
       },
       "href": "io/github/waterfallmc/waterfall/event/ConnectionInitEvent.html",
-      "javadoc": "Represents a brand new connection made to the proxy, allowing for plugins to\n efficiently close a connection, useful for connection throttlers, etc",
+      "javadoc": "Represents a brand new connection made to the proxy, allowing for plugins to efficiently close a connection, useful for connection throttlers, etc",
       "link": "https://jd.papermc.io/waterfall/1.20/io/github/waterfallmc/waterfall/event/ConnectionInitEvent.html",
       "name": "ConnectionInitEvent",
       "source": "waterfall"
@@ -849,7 +849,7 @@
         "ja": "生き物がスポーンする時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/CreatureSpawnEvent.html",
-      "javadoc": "Called when a creature is spawned into a world.\n \n If a Creature Spawn event is cancelled, the creature will not spawn.",
+      "javadoc": "Called when a creature is spawned into a world. If a Creature Spawn event is cancelled, the creature will not spawn.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/CreatureSpawnEvent.html",
       "name": "CreatureSpawnEvent",
       "source": "spigot"
@@ -859,7 +859,7 @@
         "ja": "クリーパーの点火状態が切り替わる時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/entity/CreeperIgniteEvent.html",
-      "javadoc": "Called when a Creeper is ignited either by a\n flint and steel, Creeper.ignite() or\n Creeper.setIgnited(boolean).",
+      "javadoc": "Called when a Creeper is ignited either by a flint and steel, Creeper.ignite() or Creeper.setIgnited(boolean).",
       "link": "https://jd.papermc.io/paper/1.20/com/destroystokyo/paper/event/entity/CreeperIgniteEvent.html",
       "name": "CreeperIgniteEvent",
       "source": "paper"
@@ -869,7 +869,7 @@
         "ja": "クリーパーが雷撃を受ける時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/CreeperPowerEvent.html",
-      "javadoc": "Called when a Creeper is struck by lightning.\n \n If a Creeper Power event is cancelled, the Creeper will not be powered.",
+      "javadoc": "Called when a Creeper is struck by lightning. If a Creeper Power event is cancelled, the Creeper will not be powered.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/CreeperPowerEvent.html",
       "name": "CreeperPowerEvent",
       "source": "spigot"
@@ -879,7 +879,7 @@
         "ja": "プレイヤーがプロキシから切断した時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/connection/DisconnectEvent.html",
-      "javadoc": "This event is fired when a player disconnects from the proxy. This operation can take place\n when the player disconnects due to normal network activity or when the proxy shuts down.\n Operations on the provided player, aside from basic data retrieval operations, may behave in\n undefined ways.\n\n \n   Velocity typically fires this event asynchronously and does not wait for a response. However,\n   it will wait for all DisconnectEvents for every player on the proxy to fire\n   successfully before the proxy shuts down. This event is the sole exception to the\n   AwaitingEvent contract.\n ",
+      "javadoc": "This event is fired when a player disconnects from the proxy. This operation can take place when the player disconnects due to normal network activity or when the proxy shuts down. Operations on the provided player, aside from basic data retrieval operations, may behave in undefined ways. Velocity typically fires this event asynchronously and does not wait for a response. However, it will wait for all DisconnectEvents for every player on the proxy to fire successfully before the proxy shuts down. This event is the sole exception to the AwaitingEvent contract. ",
       "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/connection/DisconnectEvent.html",
       "name": "DisconnectEvent",
       "source": "velocity"
@@ -889,7 +889,7 @@
         "ja": "エンダードラゴンが討伐され、卵が設置される時に呼び出される。"
       },
       "href": "io/papermc/paper/event/block/DragonEggFormEvent.html",
-      "javadoc": "Called when the EnderDragon is defeated (killed) in a DragonBattle,\n causing a Material.DRAGON_EGG (more formally: BlockGrowEvent.getNewState())\n to possibly appear depending on BlockGrowEvent.isCancelled().\n \n This event might be cancelled by default depending on\n e.g. DragonBattle.hasBeenPreviouslyKilled() and server configuration.",
+      "javadoc": "Called when the EnderDragon is defeated (killed) in a DragonBattle, causing a Material.DRAGON_EGG (more formally: BlockGrowEvent.getNewState()) to possibly appear depending on BlockGrowEvent.isCancelled(). This event might be cancelled by default depending on e.g. DragonBattle.hasBeenPreviouslyKilled() and server configuration.",
       "link": "https://jd.papermc.io/paper/1.20/io/papermc/paper/event/block/DragonEggFormEvent.html",
       "name": "DragonEggFormEvent",
       "source": "paper"
@@ -909,7 +909,7 @@
         "ja": "アイテムにエンチャントした時に呼び出される。"
       },
       "href": "org/bukkit/event/enchantment/EnchantItemEvent.html",
-      "javadoc": "Called when an ItemStack is successfully enchanted (currently at\n enchantment table)",
+      "javadoc": "Called when an ItemStack is successfully enchanted (currently at enchantment table)",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/enchantment/EnchantItemEvent.html",
       "name": "EnchantItemEvent",
       "source": "spigot"
@@ -959,7 +959,7 @@
         "ja": "エンダーマンがプレイヤーを攻撃するか決定する時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/entity/EndermanAttackPlayerEvent.html",
-      "javadoc": "Fired when an Enderman determines if it should attack a player or not.\n \n Starts off cancelled if the player is wearing a pumpkin head or is not looking\n at the Enderman, according to Vanilla rules.",
+      "javadoc": "Fired when an Enderman determines if it should attack a player or not. Starts off cancelled if the player is wearing a pumpkin head or is not looking at the Enderman, according to Vanilla rules.",
       "link": "https://jd.papermc.io/paper/1.20/com/destroystokyo/paper/event/entity/EndermanAttackPlayerEvent.html",
       "name": "EndermanAttackPlayerEvent",
       "source": "paper"
@@ -978,7 +978,7 @@
         "ja": "チャンクによってエンティティが読み込まれた時に呼び出される。"
       },
       "href": "org/bukkit/event/world/EntitiesLoadEvent.html",
-      "javadoc": "Called when entities are loaded.\n\n The provided chunk may or may not be loaded.",
+      "javadoc": "Called when entities are loaded. The provided chunk may or may not be loaded.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/world/EntitiesLoadEvent.html",
       "name": "EntitiesLoadEvent",
       "source": "spigot"
@@ -988,7 +988,7 @@
         "ja": "チャンクによってエンティティが読み込まれなくなった時に呼び出される。"
       },
       "href": "org/bukkit/event/world/EntitiesUnloadEvent.html",
-      "javadoc": "Called when entities are unloaded.\n\n The provided chunk may or may not be loaded.",
+      "javadoc": "Called when entities are unloaded. The provided chunk may or may not be loaded.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/world/EntitiesUnloadEvent.html",
       "name": "EntitiesUnloadEvent",
       "source": "spigot"
@@ -998,7 +998,7 @@
         "ja": "何らかの理由でワールドにエンティティが増えた時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/entity/EntityAddToWorldEvent.html",
-      "javadoc": "Fired any time an entity is being added to the world for any reason (including a chunk loading).\n \n Not to be confused with CreatureSpawnEvent",
+      "javadoc": "Fired any time an entity is being added to the world for any reason (including a chunk loading). Not to be confused with CreatureSpawnEvent",
       "link": "https://jd.papermc.io/paper/1.20/com/destroystokyo/paper/event/entity/EntityAddToWorldEvent.html",
       "name": "EntityAddToWorldEvent",
       "source": "paper"
@@ -1018,7 +1018,7 @@
         "ja": "エンティティによってブロックが形成される時に呼び出される。以下に例を示す。\n- スノーゴーレムによって雪が形成された時。\n- 氷渡りのエンチャントによって氷が形成された時。"
       },
       "href": "org/bukkit/event/block/EntityBlockFormEvent.html",
-      "javadoc": "Called when a block is formed by entities.\n \n Examples:\n \n Snow formed by a Snowman.\n Frosted Ice formed by the Frost Walker enchantment.\n ",
+      "javadoc": "Called when a block is formed by entities. Examples: Snow formed by a Snowman. Frosted Ice formed by the Frost Walker enchantment. ",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/EntityBlockFormEvent.html",
       "name": "EntityBlockFormEvent",
       "source": "spigot"
@@ -1028,7 +1028,7 @@
         "ja": "エンティティによってドアが破壊される時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityBreakDoorEvent.html",
-      "javadoc": "Called when an Entity breaks a door\n \n Cancelling the event will cause the event to be delayed",
+      "javadoc": "Called when an Entity breaks a door Cancelling the event will cause the event to be delayed",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityBreakDoorEvent.html",
       "name": "EntityBreakDoorEvent",
       "source": "spigot"
@@ -1078,7 +1078,7 @@
         "ja": "エンティティが炎上する時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityCombustEvent.html",
-      "javadoc": "Called when an entity combusts.\n \n If an Entity Combust event is cancelled, the entity will not combust.",
+      "javadoc": "Called when an entity combusts. If an Entity Combust event is cancelled, the entity will not combust.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityCombustEvent.html",
       "name": "EntityCombustEvent",
       "source": "spigot"
@@ -1142,7 +1142,7 @@
         "ja": "エンティティによって使用されているアイテムが、耐久ダメージを受ける時に呼び出される。"
       },
       "href": "io/papermc/paper/event/entity/EntityDamageItemEvent.html",
-      "javadoc": "Called when an item on or used by an entity takes durability damage as a result of being hit/used.\n \n NOTE: default vanilla behaviour dictates that armor/tools picked up by\n mobs do not take damage (except via Thorns).",
+      "javadoc": "Called when an item on or used by an entity takes durability damage as a result of being hit/used. NOTE: default vanilla behaviour dictates that armor/tools picked up by mobs do not take damage (except via Thorns).",
       "link": "https://jd.papermc.io/paper/1.20/io/papermc/paper/event/entity/EntityDamageItemEvent.html",
       "name": "EntityDamageItemEvent",
       "source": "paper"
@@ -1182,7 +1182,7 @@
         "ja": "エンティティが染色される時に呼び出される。以下に例を示す。\n- 羊が染色される時。\n- 狼や猫の首輪が染色される時。"
       },
       "href": "io/papermc/paper/event/entity/EntityDyeEvent.html",
-      "javadoc": "Called when an entity is dyed. Currently, this is called for Sheep\n being dyed, and Wolf/Cat collars being dyed.",
+      "javadoc": "Called when an entity is dyed. Currently, this is called for Sheep being dyed, and Wolf/Cat collars being dyed.",
       "link": "https://jd.papermc.io/paper/1.20/io/papermc/paper/event/entity/EntityDyeEvent.html",
       "name": "EntityDyeEvent",
       "source": "paper"
@@ -1192,7 +1192,7 @@
         "ja": "エンティティがブロックの中に入る時に呼び出される。以下に例を示す。\n- ミツバチが巣箱に入る時。\n\nしかし、以下の場合は呼び出されない。\n- シルバーフィッシュが石に入る時。EntityChangeBlockEvent が呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityEnterBlockEvent.html",
-      "javadoc": "Called when an Entity enters a block and is stored in that block.\n \n This event is called for bees entering a bee hive.\n \n It is not called when a silverfish \"enters\" a stone block. For that listen to\n the EntityChangeBlockEvent.",
+      "javadoc": "Called when an Entity enters a block and is stored in that block. This event is called for bees entering a bee hive. It is not called when a silverfish \"enters\" a stone block. For that listen to the EntityChangeBlockEvent.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityEnterBlockEvent.html",
       "name": "EntityEnterBlockEvent",
       "source": "spigot"
@@ -1202,7 +1202,7 @@
         "ja": "エンティティが発情する時に呼び出される。このイベントをキャンセルしても使用したアイテムは消費されてしまう。"
       },
       "href": "org/bukkit/event/entity/EntityEnterLoveModeEvent.html",
-      "javadoc": "Called when an entity enters love mode.\n \n This can be cancelled but the item will still be consumed that was used to\n make the entity enter into love mode.",
+      "javadoc": "Called when an entity enters love mode. This can be cancelled but the item will still be consumed that was used to make the entity enter into love mode.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityEnterLoveModeEvent.html",
       "name": "EntityEnterLoveModeEvent",
       "source": "spigot"
@@ -1223,7 +1223,7 @@
         "ja": "プレイヤーに疲労が溜まると呼び出される。4を超える疲労値では、満腹度が1減少する。"
       },
       "href": "org/bukkit/event/entity/EntityExhaustionEvent.html",
-      "javadoc": "Called when a human entity experiences exhaustion.\n\n An exhaustion level greater than 4.0 causes a decrease in saturation by 1.",
+      "javadoc": "Called when a human entity experiences exhaustion. An exhaustion level greater than 4.0 causes a decrease in saturation by 1.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityExhaustionEvent.html",
       "name": "EntityExhaustionEvent",
       "source": "spigot"
@@ -1243,7 +1243,7 @@
         "ja": "交配が発生した時に呼び出される。しばらくすると、卵を産む。"
       },
       "href": "io/papermc/paper/event/entity/EntityFertilizeEggEvent.html",
-      "javadoc": "Called when two entities mate and the mating process results in a fertilization.\n Fertilization differs from normal breeding, as represented by the EntityBreedEvent, as\n it does not result in the immediate creation of the child entity in the world.\n \n An example of this would be:\n \n A frog being marked as \"is_pregnant\" and laying Material.FROGSPAWN later.\n Sniffers producing the Material.SNIFFER_EGG item, which needs to be placed before it can begin to hatch.\n A turtle being marked with \"HasEgg\" and laying a Material.TURTLE_EGG later.\n \n\n The event hence only exposes the two parent entities in the fertilization process and cannot provide the child entity, as it will only exist at a later point in time.",
+      "javadoc": "Called when two entities mate and the mating process results in a fertilization. Fertilization differs from normal breeding, as represented by the EntityBreedEvent, as it does not result in the immediate creation of the child entity in the world. An example of this would be: A frog being marked as \"is_pregnant\" and laying Material.FROGSPAWN later. Sniffers producing the Material.SNIFFER_EGG item, which needs to be placed before it can begin to hatch. A turtle being marked with \"HasEgg\" and laying a Material.TURTLE_EGG later. The event hence only exposes the two parent entities in the fertilization process and cannot provide the child entity, as it will only exist at a later point in time.",
       "link": "https://jd.papermc.io/paper/1.20/io/papermc/paper/event/entity/EntityFertilizeEggEvent.html",
       "name": "EntityFertilizeEggEvent",
       "source": "paper"
@@ -1253,7 +1253,7 @@
         "ja": "エンティティがブロックのヒットボックスに入る時に呼び出される。キャンセルされるとブロックに入ったことによって起きる処理が実行されない。以下に例を示す。\n- 大釜に入り、エンティティが消火される。"
       },
       "href": "io/papermc/paper/event/entity/EntityInsideBlockEvent.html",
-      "javadoc": "Called when an entity enters the hitbox of a block.\n Only called for blocks that react when an entity is inside.\n If cancelled, any action that would have resulted from that entity\n being in the block will not happen (such as extinguishing an entity in a cauldron).\n \n Blocks this is currently called for:\n \n     Big dripleaf\n     Bubble column\n     Buttons\n     Cactus\n     Campfire\n     Cauldron\n     Crops\n     Ender Portal\n     Fires\n     Frogspawn\n     Honey\n     Hopper\n     Detector rails\n     Nether portals\n     Pitcher crop\n     Powdered snow\n     Pressure plates\n     Sweet berry bush\n     Tripwire\n     Waterlily\n     Web\n     Wither rose\n ",
+      "javadoc": "Called when an entity enters the hitbox of a block. Only called for blocks that react when an entity is inside. If cancelled, any action that would have resulted from that entity being in the block will not happen (such as extinguishing an entity in a cauldron). Blocks this is currently called for: Big dripleaf Bubble column Buttons Cactus Campfire Cauldron Crops Ender Portal Fires Frogspawn Honey Hopper Detector rails Nether portals Pitcher crop Powdered snow Pressure plates Sweet berry bush Tripwire Waterlily Web Wither rose ",
       "link": "https://jd.papermc.io/paper/1.20/io/papermc/paper/event/entity/EntityInsideBlockEvent.html",
       "name": "EntityInsideBlockEvent",
       "source": "paper"
@@ -1273,7 +1273,7 @@
         "ja": "エンティティがジャンプする時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/entity/EntityJumpEvent.html",
-      "javadoc": "Called when an entity jumps\n \n Cancelling the event will stop the entity from jumping",
+      "javadoc": "Called when an entity jumps Cancelling the event will stop the entity from jumping",
       "link": "https://jd.papermc.io/paper/1.20/com/destroystokyo/paper/event/entity/EntityJumpEvent.html",
       "name": "EntityJumpEvent",
       "source": "paper"
@@ -1283,7 +1283,7 @@
         "ja": "エンティティによってエンティティがノックバックする時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/entity/EntityKnockbackByEntityEvent.html",
-      "javadoc": "Fired when an Entity is knocked back by the hit of another Entity. The acceleration\n vector can be modified. If this event is cancelled, the entity is not knocked back.",
+      "javadoc": "Fired when an Entity is knocked back by the hit of another Entity. The acceleration vector can be modified. If this event is cancelled, the entity is not knocked back.",
       "link": "https://jd.papermc.io/paper/1.20/com/destroystokyo/paper/event/entity/EntityKnockbackByEntityEvent.html",
       "name": "EntityKnockbackByEntityEvent",
       "source": "paper"
@@ -1333,7 +1333,7 @@
         "ja": "エンティティが移動する時に呼び出される。"
       },
       "href": "io/papermc/paper/event/entity/EntityMoveEvent.html",
-      "javadoc": "Holds information for living entity movement events\n \n Does not fire for players; use PlayerMoveEvent for player movement.",
+      "javadoc": "Holds information for living entity movement events Does not fire for players; use PlayerMoveEvent for player movement.",
       "link": "https://jd.papermc.io/paper/1.20/io/papermc/paper/event/entity/EntityMoveEvent.html",
       "name": "EntityMoveEvent",
       "source": "paper"
@@ -1343,7 +1343,7 @@
         "ja": "エンティティが目的の場所への移動を開始する時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/entity/EntityPathfindEvent.html",
-      "javadoc": "Fired when an Entity decides to start moving towards a location.\n \n This event does not fire for the entities actual movement. Only when it\n is choosing to start moving to a location.",
+      "javadoc": "Fired when an Entity decides to start moving towards a location. This event does not fire for the entities actual movement. Only when it is choosing to start moving to a location.",
       "link": "https://jd.papermc.io/paper/1.20/com/destroystokyo/paper/event/entity/EntityPathfindEvent.html",
       "name": "EntityPathfindEvent",
       "source": "paper"
@@ -1363,7 +1363,7 @@
         "ja": "エンティティが設置された時に呼び出される。このイベントは現在、アーマースタンド・ボート・トロッコ・エンドクリスタルでのみ呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityPlaceEvent.html",
-      "javadoc": "Triggered when a entity is created in the world by a player \"placing\" an item\n on a block.\n \n Note that this event is currently only fired for four specific placements:\n armor stands, boats, minecarts, and end crystals.",
+      "javadoc": "Triggered when a entity is created in the world by a player \"placing\" an item on a block. Note that this event is currently only fired for four specific placements: armor stands, boats, minecarts, and end crystals.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityPlaceEvent.html",
       "name": "EntityPlaceEvent",
       "source": "spigot"
@@ -1383,7 +1383,7 @@
         "ja": "プレイヤー以外のエンティティがポータルでテレポートする時に呼び出される。プレイヤーの場合 PlayerPortalEvent が呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityPortalEvent.html",
-      "javadoc": "Called when a non-player entity is about to teleport because it is in\n contact with a portal.\n \n For players see PlayerPortalEvent",
+      "javadoc": "Called when a non-player entity is about to teleport because it is in contact with a portal. For players see PlayerPortalEvent",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityPortalEvent.html",
       "name": "EntityPortalEvent",
       "source": "spigot"
@@ -1393,7 +1393,7 @@
         "ja": "エンティティがポータルを出る時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityPortalExitEvent.html",
-      "javadoc": "Called before an entity exits a portal.\n \n This event allows you to modify the velocity of the entity after they have\n successfully exited the portal.",
+      "javadoc": "Called before an entity exits a portal. This event allows you to modify the velocity of the entity after they have successfully exited the portal.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityPortalExitEvent.html",
       "name": "EntityPortalExitEvent",
       "source": "spigot"
@@ -1403,7 +1403,7 @@
         "ja": "エンティティがプラグインによってテレポートする準備が整った時に呼び出される。現在、ネザーポータルでのみ呼び出される。"
       },
       "href": "io/papermc/paper/event/entity/EntityPortalReadyEvent.html",
-      "javadoc": "Called when an entity is ready to be teleported by a plugin.\n Currently this is only called after the required\n ticks have passed for a Nether Portal.\n \n Cancelling this event resets the entity's readiness\n regarding the current portal.",
+      "javadoc": "Called when an entity is ready to be teleported by a plugin. Currently this is only called after the required ticks have passed for a Nether Portal. Cancelling this event resets the entity's readiness regarding the current portal.",
       "link": "https://jd.papermc.io/paper/1.20/io/papermc/paper/event/entity/EntityPortalReadyEvent.html",
       "name": "EntityPortalReadyEvent",
       "source": "paper"
@@ -1423,7 +1423,7 @@
         "ja": "エンティティのポーション効果が変更された時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityPotionEffectEvent.html",
-      "javadoc": "Called when a potion effect is modified on an entity.\n \n If the event is cancelled, no change will be made on the entity.",
+      "javadoc": "Called when a potion effect is modified on an entity. If the event is cancelled, no change will be made on the entity.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityPotionEffectEvent.html",
       "name": "EntityPotionEffectEvent",
       "source": "spigot"
@@ -1433,7 +1433,7 @@
         "ja": "エンティティが別のエンティティによる攻撃によって押される時に呼び出される。"
       },
       "href": "io/papermc/paper/event/entity/EntityPushedByEntityAttackEvent.html",
-      "javadoc": "Fired when an entity is pushed by another entity's attack. The acceleration vector can be\n modified. If this event is cancelled, the entity will not get pushed.\n \n Note: Some entities might trigger this multiple times on the same entity\n as multiple acceleration calculations are done.",
+      "javadoc": "Fired when an entity is pushed by another entity's attack. The acceleration vector can be modified. If this event is cancelled, the entity will not get pushed. Note: Some entities might trigger this multiple times on the same entity as multiple acceleration calculations are done.",
       "link": "https://jd.papermc.io/paper/1.20/io/papermc/paper/event/entity/EntityPushedByEntityAttackEvent.html",
       "name": "EntityPushedByEntityAttackEvent",
       "source": "paper"
@@ -1459,7 +1459,7 @@
         "ja": "エンティティが削除された時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityRemoveEvent.html",
-      "javadoc": "Called when an Entity is removed.\n \n This event should only be used for monitoring. The result\n of modifying the entity during or after this event is unspecified.\n This event is not called for a Player.",
+      "javadoc": "Called when an Entity is removed. This event should only be used for monitoring. The result of modifying the entity during or after this event is unspecified. This event is not called for a Player.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityRemoveEvent.html",
       "name": "EntityRemoveEvent",
       "source": "spigot"
@@ -1469,7 +1469,7 @@
         "ja": "何らかの理由でワールドからエンティティが削除される時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/entity/EntityRemoveFromWorldEvent.html",
-      "javadoc": "Fired any time an entity is being removed from a world for any reason (including a chunk unloading).\n Note: The entity is updated prior to this event being called, as such, the entity's world may not be equal to getWorld().",
+      "javadoc": "Fired any time an entity is being removed from a world for any reason (including a chunk unloading). Note: The entity is updated prior to this event being called, as such, the entity's world may not be equal to getWorld().",
       "link": "https://jd.papermc.io/paper/1.20/com/destroystokyo/paper/event/entity/EntityRemoveFromWorldEvent.html",
       "name": "EntityRemoveFromWorldEvent",
       "source": "paper"
@@ -1479,7 +1479,7 @@
         "ja": "エンティティが死亡し、復活できる時に呼び出される。トーテムを装備していない場合、キャンセルされた状態で呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityResurrectEvent.html",
-      "javadoc": "Called when an entity dies and may have the opportunity to be resurrected.\n Will be called in a cancelled state if the entity does not have a totem\n equipped.",
+      "javadoc": "Called when an entity dies and may have the opportunity to be resurrected. Will be called in a cancelled state if the entity does not have a totem equipped.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityResurrectEvent.html",
       "name": "EntityResurrectEvent",
       "source": "spigot"
@@ -1499,7 +1499,7 @@
         "ja": "エンティティがスポーンする時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntitySpawnEvent.html",
-      "javadoc": "Called when an entity is spawned into a world.\n \n If an Entity Spawn event is cancelled, the entity will not spawn.",
+      "javadoc": "Called when an entity is spawned into a world. If an Entity Spawn event is cancelled, the entity will not spawn.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntitySpawnEvent.html",
       "name": "EntitySpawnEvent",
       "source": "spigot"
@@ -1539,7 +1539,7 @@
         "ja": "EntityTargetEvent において LivingEntity をターゲットとする時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityTargetLivingEntityEvent.html",
-      "javadoc": "Called when an Entity targets a LivingEntity and can only target\n LivingEntity's.",
+      "javadoc": "Called when an Entity targets a LivingEntity and can only target LivingEntity's.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityTargetLivingEntityEvent.html",
       "name": "EntityTargetLivingEntityEvent",
       "source": "spigot"
@@ -1559,7 +1559,7 @@
         "ja": "プレイヤーではないエンティティがテレポートする時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityTeleportEvent.html",
-      "javadoc": "Thrown when a non-player entity is teleported from one location to another.\n \n This may be as a result of natural causes (Enderman, Shulker), pathfinding\n (Wolf), or commands (/teleport).",
+      "javadoc": "Thrown when a non-player entity is teleported from one location to another. This may be as a result of natural causes (Enderman, Shulker), pathfinding (Wolf), or commands (/teleport).",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityTeleportEvent.html",
       "name": "EntityTeleportEvent",
       "source": "spigot"
@@ -1579,7 +1579,7 @@
         "ja": "エンティティの滑空状態が切り替わる時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityToggleGlideEvent.html",
-      "javadoc": "Sent when an entity's gliding status is toggled with an Elytra.\n Examples of when this event would be called:\n \n     Player presses the jump key while in midair and using an Elytra\n     Player lands on ground while they are gliding (with an Elytra)\n \n This can be visually estimated by the animation in which a player turns horizontal.",
+      "javadoc": "Sent when an entity's gliding status is toggled with an Elytra. Examples of when this event would be called: Player presses the jump key while in midair and using an Elytra Player lands on ground while they are gliding (with an Elytra) This can be visually estimated by the animation in which a player turns horizontal.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityToggleGlideEvent.html",
       "name": "EntityToggleGlideEvent",
       "source": "spigot"
@@ -1613,7 +1613,7 @@
         "ja": "エンティティが別のエンティティに置きかわる時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/entity/EntityTransformedEvent.html",
-      "javadoc": "Fired when an entity transforms into another entity\n \n If the event is cancelled, the entity will not transform",
+      "javadoc": "Fired when an entity transforms into another entity If the event is cancelled, the entity will not transform",
       "link": "https://jd.papermc.io/paper/1.20/com/destroystokyo/paper/event/entity/EntityTransformedEvent.html",
       "name": "EntityTransformedEvent",
       "source": "paper"
@@ -1665,7 +1665,7 @@
       },
       "abstract": true,
       "href": "org/bukkit/event/Event.html",
-      "javadoc": "Represents an event.\n\n All events require a static method named getHandlerList() which returns the same HandlerList as getHandlers().",
+      "javadoc": "Represents an event. All events require a static method named getHandlerList() which returns the same HandlerList as getHandlers().",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/Event.html",
       "name": "Event",
       "source": "spigot"
@@ -1735,7 +1735,7 @@
         "ja": "隣接したブロックによって液面が変化する時に呼び出される。"
       },
       "href": "org/bukkit/event/block/FluidLevelChangeEvent.html",
-      "javadoc": "Called when the fluid level of a block changes due to changes in adjacent\n blocks.",
+      "javadoc": "Called when the fluid level of a block changes due to changes in adjacent blocks.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/FluidLevelChangeEvent.html",
       "name": "FluidLevelChangeEvent",
       "source": "spigot"
@@ -1795,7 +1795,7 @@
         "ja": "ユーザーのゲームプロファイルを設定する時に呼び出される。このイベントは PreLoginEvent が実行された後に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/player/GameProfileRequestEvent.html",
-      "javadoc": "This event is fired after the PreLoginEvent in\n order to set up the game profile for the user. This can be used to configure a custom profile for\n a user, i.e. skin replacement.\n\n \n   Velocity will wait for this event to finish firing before proceeding with the rest of the login\n   process, but you should try to limit the work done in any event that fires during the login\n   process.\n ",
+      "javadoc": "This event is fired after the PreLoginEvent in order to set up the game profile for the user. This can be used to configure a custom profile for a user, i.e. skin replacement. Velocity will wait for this event to finish firing before proceeding with the rest of the login process, but you should try to limit the work done in any event that fires during the login process. ",
       "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/player/GameProfileRequestEvent.html",
       "name": "GameProfileRequestEvent",
       "source": "velocity"
@@ -1805,7 +1805,7 @@
         "ja": "一般的なゲームイベントであることを表す。このイベントは主にスカルセンサーの内部で使用される。可能な限りこのイベントを使わないようにする。"
       },
       "href": "org/bukkit/event/world/GenericGameEvent.html",
-      "javadoc": "Represents a generic Mojang game event.\n\n Specific Bukkit events should be used where possible, this event is mainly\n used internally by Sculk sensors.",
+      "javadoc": "Represents a generic Mojang game event. Specific Bukkit events should be used where possible, this event is mainly used internally by Sculk sensors.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/world/GenericGameEvent.html",
       "name": "GenericGameEvent",
       "source": "spigot"
@@ -1835,7 +1835,7 @@
         "ja": "GS4クエリプロトコルがクエリされた時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/server/GS4QueryEvent.html",
-      "javadoc": "This event is fired if server is getting queried over GS4 Query protocol.\n \n Adapted from Velocity's ProxyQueryEvent",
+      "javadoc": "This event is fired if server is getting queried over GS4 Query protocol. Adapted from Velocity's ProxyQueryEvent",
       "link": "https://jd.papermc.io/paper/1.20/com/destroystokyo/paper/event/server/GS4QueryEvent.html",
       "name": "GS4QueryEvent",
       "source": "paper"
@@ -1886,7 +1886,7 @@
         "ja": "ホッパーが接続されたコンテナを見つけようとする時に呼び出される。"
       },
       "href": "org/bukkit/event/inventory/HopperInventorySearchEvent.html",
-      "javadoc": "Event that gets called each time a Hopper attempts to find its\n source/attached containers.",
+      "javadoc": "Event that gets called each time a Hopper attempts to find its source/attached containers.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/inventory/HopperInventorySearchEvent.html",
       "name": "HopperInventorySearchEvent",
       "source": "spigot"
@@ -1923,7 +1923,7 @@
         "ja": "インベントリを持つブロックが処理を開始した時に呼び出される。"
       },
       "href": "org/bukkit/event/block/InventoryBlockStartEvent.html",
-      "javadoc": "Used when:\n \n A Furnace starts smelting FurnaceStartSmeltEvent\n A Brewing-Stand starts brewing BrewingStartEvent\n A Campfire starts cooking CampfireStartEvent\n ",
+      "javadoc": "Used when: A Furnace starts smelting FurnaceStartSmeltEvent A Brewing-Stand starts brewing BrewingStartEvent A Campfire starts cooking CampfireStartEvent ",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/InventoryBlockStartEvent.html",
       "name": "InventoryBlockStartEvent",
       "source": "spigot"
@@ -1933,7 +1933,7 @@
         "ja": "インベントリを開いた状態で画面をクリックする時に呼び出される。"
       },
       "href": "org/bukkit/event/inventory/InventoryClickEvent.html",
-      "javadoc": "This event is called when a player clicks in an inventory.\n \n Because InventoryClickEvent occurs within a modification of the Inventory,\n not all Inventory related methods are safe to use.\n \n The following should never be invoked by an EventHandler for\n InventoryClickEvent using the HumanEntity or InventoryView associated with\n this event:\n \n HumanEntity.closeInventory()\n HumanEntity.openInventory(Inventory)\n HumanEntity.openWorkbench(Location, boolean)\n HumanEntity.openEnchanting(Location, boolean)\n InventoryView.close()\n \n To invoke one of these methods, schedule a task using\n BukkitScheduler.runTask(Plugin, Runnable), which will run the task\n on the next tick. Also be aware that this is not an exhaustive list, and\n other methods could potentially create issues as well.\n \n Assuming the EntityHuman associated with this event is an instance of a\n Player, manipulating the MaxStackSize or contents of an Inventory will\n require an Invocation of Player.updateInventory().\n \n Modifications to slots that are modified by the results of this\n InventoryClickEvent can be overwritten. To change these slots, this event\n should be cancelled and all desired changes to the inventory applied.\n Alternatively, scheduling a task using BukkitScheduler.runTask(Plugin, Runnable), which would execute the task on the next tick, would\n work as well.",
+      "javadoc": "This event is called when a player clicks in an inventory. Because InventoryClickEvent occurs within a modification of the Inventory, not all Inventory related methods are safe to use. The following should never be invoked by an EventHandler for InventoryClickEvent using the HumanEntity or InventoryView associated with this event: HumanEntity.closeInventory() HumanEntity.openInventory(Inventory) HumanEntity.openWorkbench(Location, boolean) HumanEntity.openEnchanting(Location, boolean) InventoryView.close() To invoke one of these methods, schedule a task using BukkitScheduler.runTask(Plugin, Runnable), which will run the task on the next tick. Also be aware that this is not an exhaustive list, and other methods could potentially create issues as well. Assuming the EntityHuman associated with this event is an instance of a Player, manipulating the MaxStackSize or contents of an Inventory will require an Invocation of Player.updateInventory(). Modifications to slots that are modified by the results of this InventoryClickEvent can be overwritten. To change these slots, this event should be cancelled and all desired changes to the inventory applied. Alternatively, scheduling a task using BukkitScheduler.runTask(Plugin, Runnable), which would execute the task on the next tick, would work as well.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/inventory/InventoryClickEvent.html",
       "name": "InventoryClickEvent",
       "source": "spigot"
@@ -1953,7 +1953,7 @@
         "ja": "クリエイティブモードのプレイヤーがインベントリの操作をした時に呼び出される。呼び出される例を以下に示す。\n- インベントリにアイテムを置いた時\n- アイテムを拾った時\n- インベントリからアイテムをドロップした時"
       },
       "href": "org/bukkit/event/inventory/InventoryCreativeEvent.html",
-      "javadoc": "This event is called when a player in creative mode puts down or picks up\n an item in their inventory / hotbar and when they drop items from their\n Inventory while in creative mode.",
+      "javadoc": "This event is called when a player in creative mode puts down or picks up an item in their inventory / hotbar and when they drop items from their Inventory while in creative mode.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/inventory/InventoryCreativeEvent.html",
       "name": "InventoryCreativeEvent",
       "source": "spigot"
@@ -1963,7 +1963,7 @@
         "ja": "インベントリ内でアイテムをドラッグした時に呼び出される。"
       },
       "href": "org/bukkit/event/inventory/InventoryDragEvent.html",
-      "javadoc": "This event is called when the player drags an item in their cursor across\n the inventory. The ItemStack is distributed across the slots the\n HumanEntity dragged over. The method of distribution is described by the\n DragType returned by getType().\n \n Canceling this event will result in none of the changes described in\n getNewItems() being applied to the Inventory.\n \n Because InventoryDragEvent occurs within a modification of the Inventory,\n not all Inventory related methods are safe to use.\n \n The following should never be invoked by an EventHandler for\n InventoryDragEvent using the HumanEntity or InventoryView associated with\n this event.\n \n HumanEntity.closeInventory()\n HumanEntity.openInventory(Inventory)\n HumanEntity.openWorkbench(Location, boolean)\n HumanEntity.openEnchanting(Location, boolean)\n InventoryView.close()\n \n To invoke one of these methods, schedule a task using\n BukkitScheduler.runTask(Plugin, Runnable), which will run the task\n on the next tick.  Also be aware that this is not an exhaustive list, and\n other methods could potentially create issues as well.\n \n Assuming the EntityHuman associated with this event is an instance of a\n Player, manipulating the MaxStackSize or contents of an Inventory will\n require an Invocation of Player.updateInventory().\n \n Any modifications to slots that are modified by the results of this\n InventoryDragEvent will be overwritten. To change these slots, this event\n should be cancelled and the changes applied. Alternatively, scheduling a\n task using BukkitScheduler.runTask(Plugin, Runnable), which would\n execute the task on the next tick, would work as well.",
+      "javadoc": "This event is called when the player drags an item in their cursor across the inventory. The ItemStack is distributed across the slots the HumanEntity dragged over. The method of distribution is described by the DragType returned by getType(). Canceling this event will result in none of the changes described in getNewItems() being applied to the Inventory. Because InventoryDragEvent occurs within a modification of the Inventory, not all Inventory related methods are safe to use. The following should never be invoked by an EventHandler for InventoryDragEvent using the HumanEntity or InventoryView associated with this event. HumanEntity.closeInventory() HumanEntity.openInventory(Inventory) HumanEntity.openWorkbench(Location, boolean) HumanEntity.openEnchanting(Location, boolean) InventoryView.close() To invoke one of these methods, schedule a task using BukkitScheduler.runTask(Plugin, Runnable), which will run the task on the next tick. Also be aware that this is not an exhaustive list, and other methods could potentially create issues as well. Assuming the EntityHuman associated with this event is an instance of a Player, manipulating the MaxStackSize or contents of an Inventory will require an Invocation of Player.updateInventory(). Any modifications to slots that are modified by the results of this InventoryDragEvent will be overwritten. To change these slots, this event should be cancelled and the changes applied. Alternatively, scheduling a task using BukkitScheduler.runTask(Plugin, Runnable), which would execute the task on the next tick, would work as well.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/inventory/InventoryDragEvent.html",
       "name": "InventoryDragEvent",
       "source": "spigot"
@@ -1984,7 +1984,7 @@
       },
       "abstract": true,
       "href": "org/bukkit/event/inventory/InventoryInteractEvent.html",
-      "javadoc": "An abstract base class for events that describe an interaction between a\n HumanEntity and the contents of an Inventory.",
+      "javadoc": "An abstract base class for events that describe an interaction between a HumanEntity and the contents of an Inventory.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/inventory/InventoryInteractEvent.html",
       "name": "InventoryInteractEvent",
       "source": "spigot"
@@ -1994,7 +1994,7 @@
         "ja": "エンティティやホッパー等のブロックがインベントリ内のアイテムを別のインベントリに移動させる時に呼び出される。"
       },
       "href": "org/bukkit/event/inventory/InventoryMoveItemEvent.html",
-      "javadoc": "Called when some entity or block (e.g. hopper) tries to move items directly\n from one inventory to another.\n \n When this event is called, the initiator may already have removed the item\n from the source inventory and is ready to move it into the destination\n inventory.\n \n If this event is cancelled, the items will be returned to the source\n inventory, if needed.\n \n If this event is not cancelled, the initiator will try to put the ItemStack\n into the destination inventory. If this is not possible and the ItemStack\n has not been modified, the source inventory slot will be restored to its\n former state. Otherwise any additional items will be discarded.",
+      "javadoc": "Called when some entity or block (e.g. hopper) tries to move items directly from one inventory to another. When this event is called, the initiator may already have removed the item from the source inventory and is ready to move it into the destination inventory. If this event is cancelled, the items will be returned to the source inventory, if needed. If this event is not cancelled, the initiator will try to put the ItemStack into the destination inventory. If this is not possible and the ItemStack has not been modified, the source inventory slot will be restored to its former state. Otherwise any additional items will be discarded.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/inventory/InventoryMoveItemEvent.html",
       "name": "InventoryMoveItemEvent",
       "source": "spigot"
@@ -2024,7 +2024,7 @@
         "ja": "時間によってアイテムが消滅する時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/ItemDespawnEvent.html",
-      "javadoc": "This event is called when a Item is removed from\n the world because it has existed for 5 minutes.\n \n Cancelling the event results in the item being allowed to exist for 5 more\n minutes. This behavior is not guaranteed and may change in future versions.",
+      "javadoc": "This event is called when a Item is removed from the world because it has existed for 5 minutes. Cancelling the event results in the item being allowed to exist for 5 more minutes. This behavior is not guaranteed and may change in future versions.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/ItemDespawnEvent.html",
       "name": "ItemDespawnEvent",
       "source": "spigot"
@@ -2053,7 +2053,7 @@
         "ja": "プレイヤーがサーバーからキックされた時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/player/KickedFromServerEvent.html",
-      "javadoc": "Fired when a player is kicked from a server. You may either allow Velocity to kick the player\n (with an optional reason override) or redirect the player to a separate server. By default,\n Velocity will notify the user (if they are already connected to a server) or disconnect them\n (if they are not on a server and no other servers are available). Velocity will wait on this\n event to finish firing before taking the specified action.",
+      "javadoc": "Fired when a player is kicked from a server. You may either allow Velocity to kick the player (with an optional reason override) or redirect the player to a separate server. By default, Velocity will notify the user (if they are already connected to a server) or disconnect them (if they are not on a server and no other servers are available). Velocity will wait on this event to finish firing before taking the specified action.",
       "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/player/KickedFromServerEvent.html",
       "name": "KickedFromServerEvent",
       "source": "velocity"
@@ -2063,7 +2063,7 @@
         "ja": "葉が自然に壊れる時に呼び出される。"
       },
       "href": "org/bukkit/event/block/LeavesDecayEvent.html",
-      "javadoc": "Called when leaves are decaying naturally.\n \n If a Leaves Decay event is cancelled, the leaves will not decay.",
+      "javadoc": "Called when leaves are decaying naturally. If a Leaves Decay event is cancelled, the leaves will not decay.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/LeavesDecayEvent.html",
       "name": "LeavesDecayEvent",
       "source": "spigot"
@@ -2113,7 +2113,7 @@
         "ja": "ラマがキャラバンに参加する時に呼び出される。"
       },
       "href": "org/purpurmc/purpur/event/entity/LlamaJoinCaravanEvent.html",
-      "javadoc": "Called when a Llama tries to join a caravan.\n \n Cancelling the event will not let the Llama join. To prevent future attempts\n at joining a caravan use Llama.setShouldJoinCaravan(boolean).",
+      "javadoc": "Called when a Llama tries to join a caravan. Cancelling the event will not let the Llama join. To prevent future attempts at joining a caravan use Llama.setShouldJoinCaravan(boolean).",
       "link": "https://purpurmc.org/javadoc/org/purpurmc/purpur/event/entity/LlamaJoinCaravanEvent.html",
       "name": "LlamaJoinCaravanEvent",
       "source": "purpur"
@@ -2143,7 +2143,7 @@
         "ja": "プレイヤーが認証され、サーバーに参加する時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/connection/LoginEvent.html",
-      "javadoc": "This event is fired once the player has been authenticated, but before they connect to a server.\n Velocity will wait for this event to finish firing before proceeding with the rest of the login\n process, but you should try to limit the work done in any event that fires during the login\n process.",
+      "javadoc": "This event is fired once the player has been authenticated, but before they connect to a server. Velocity will wait for this event to finish firing before proceeding with the rest of the login process, but you should try to limit the work done in any event that fires during the login process.",
       "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/connection/LoginEvent.html",
       "name": "LoginEvent",
       "source": "velocity"
@@ -2153,7 +2153,7 @@
         "ja": "Mojang API を用いてプロファイルが検索された時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/profile/LookupProfileEvent.html",
-      "javadoc": "Allows a plugin to be notified anytime AFTER a Profile has been looked up from the Mojang API\n This is an opportunity to view the response and potentially cache things.\n \n No guarantees are made about thread execution context for this event. If you need to know, check\n Event.isAsynchronous()",
+      "javadoc": "Allows a plugin to be notified anytime AFTER a Profile has been looked up from the Mojang API This is an opportunity to view the response and potentially cache things. No guarantees are made about thread execution context for this event. If you need to know, check Event.isAsynchronous()",
       "link": "https://jd.papermc.io/paper/1.20/com/destroystokyo/paper/event/profile/LookupProfileEvent.html",
       "name": "LookupProfileEvent",
       "source": "paper"
@@ -2172,7 +2172,7 @@
         "ja": "LootTable によってアイテムが生成される時に呼び出される。"
       },
       "href": "org/bukkit/event/world/LootGenerateEvent.html",
-      "javadoc": "Called when a LootTable is generated in the world for an\n InventoryHolder.\n\n This event is NOT currently called when an entity's loot table has been\n generated (use EntityDeathEvent.getDrops(), but WILL be called by\n plugins invoking\n LootTable.fillInventory(org.bukkit.inventory.Inventory, java.util.Random, LootContext).",
+      "javadoc": "Called when a LootTable is generated in the world for an InventoryHolder. This event is NOT currently called when an entity's loot table has been generated (use EntityDeathEvent.getDrops(), but WILL be called by plugins invoking LootTable.fillInventory(org.bukkit.inventory.Inventory, java.util.Random, LootContext).",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/world/LootGenerateEvent.html",
       "name": "LootGenerateEvent",
       "source": "spigot"
@@ -2212,7 +2212,7 @@
         "ja": "音符ブロックが音を鳴らす時に呼び出される。"
       },
       "href": "org/bukkit/event/block/NotePlayEvent.html",
-      "javadoc": "Called when a note block is being played through player interaction or a\n redstone current.",
+      "javadoc": "Called when a note block is being played through player interaction or a redstone current.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/NotePlayEvent.html",
       "name": "NotePlayEvent",
       "source": "spigot"
@@ -2222,7 +2222,7 @@
         "ja": "サーバーリストの表示内容を送る要求を受けた時に呼び出される。ServerListPingEvent よりも扱える情報が多い。"
       },
       "href": "com/destroystokyo/paper/event/server/PaperServerListPingEvent.html",
-      "javadoc": "Extended version of ServerListPingEvent that allows full control\n of the response sent to the client.",
+      "javadoc": "Extended version of ServerListPingEvent that allows full control of the response sent to the client.",
       "link": "https://jd.papermc.io/paper/1.20/com/destroystokyo/paper/event/server/PaperServerListPingEvent.html",
       "name": "PaperServerListPingEvent",
       "source": "paper"
@@ -2242,7 +2242,7 @@
         "ja": "権限が設定される時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/permission/PermissionsSetupEvent.html",
-      "javadoc": "Called when a PermissionSubject's permissions are being setup. This event is typically\n called for the ConsoleCommandSource and any\n Players who join the proxy.\n\n This event is only called once per subject, on initialisation.\n\n \n   Velocity will wait for this event to finish firing before proceeding further with server\n   startup (for the console command source) and logins (for players) but it is strongly\n   recommended to minimize the amount of work that must be done in this event.\n ",
+      "javadoc": "Called when a PermissionSubject's permissions are being setup. This event is typically called for the ConsoleCommandSource and any Players who join the proxy. This event is only called once per subject, on initialisation. Velocity will wait for this event to finish firing before proceeding further with server startup (for the console command source) and logins (for players) but it is strongly recommended to minimize the amount of work that must be done in this event. ",
       "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/permission/PermissionsSetupEvent.html",
       "name": "PermissionsSetupEvent",
       "source": "velocity"
@@ -2262,7 +2262,7 @@
         "ja": "ピグリンと物々交換する時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/PiglinBarterEvent.html",
-      "javadoc": "Stores all data related to the bartering interaction with a piglin.\n\n This event can be triggered by a piglin picking up an item that's on its\n bartering list.",
+      "javadoc": "Stores all data related to the bartering interaction with a piglin. This event can be triggered by a piglin picking up an item that's on its bartering list.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/PiglinBarterEvent.html",
       "name": "PiglinBarterEvent",
       "source": "spigot"
@@ -2282,7 +2282,7 @@
         "ja": "ゾンビ豚が怒る時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/PigZombieAngerEvent.html",
-      "javadoc": "Called when a Pig Zombie is angered by another entity.\n \n If the event is cancelled, the pig zombie will not be angered.",
+      "javadoc": "Called when a Pig Zombie is angered by another entity. If the event is cancelled, the pig zombie will not be angered.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/PigZombieAngerEvent.html",
       "name": "PigZombieAngerEvent",
       "source": "spigot"
@@ -2292,7 +2292,7 @@
         "ja": "プレイヤーが進捗の条件を達成した時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/player/PlayerAdvancementCriterionGrantEvent.html",
-      "javadoc": "Called after a player is granted a criteria in an advancement.\n If cancelled the criteria will be revoked.",
+      "javadoc": "Called after a player is granted a criteria in an advancement. If cancelled the criteria will be revoked.",
       "link": "https://jd.papermc.io/paper/1.20/com/destroystokyo/paper/event/player/PlayerAdvancementCriterionGrantEvent.html",
       "name": "PlayerAdvancementCriterionGrantEvent",
       "source": "paper"
@@ -2331,7 +2331,7 @@
         "ja": "プレイヤーの鎧が変更された時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/player/PlayerArmorChangeEvent.html",
-      "javadoc": "Called when the player themselves change their armor items\n \n Not currently called for environmental factors though it MAY BE IN THE FUTURE",
+      "javadoc": "Called when the player themselves change their armor items Not currently called for environmental factors though it MAY BE IN THE FUTURE",
       "link": "https://jd.papermc.io/paper/1.20/com/destroystokyo/paper/event/player/PlayerArmorChangeEvent.html",
       "name": "PlayerArmorChangeEvent",
       "source": "paper"
@@ -2341,7 +2341,7 @@
         "ja": "プレイヤーがアーマースタンドに対してアイテムを交換・取得・配置する時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerArmorStandManipulateEvent.html",
-      "javadoc": "Called when a player interacts with an armor stand and will either swap, retrieve or\n place an item.",
+      "javadoc": "Called when a player interacts with an armor stand and will either swap, retrieve or place an item.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerArmorStandManipulateEvent.html",
       "name": "PlayerArmorStandManipulateEvent",
       "source": "spigot"
@@ -2374,7 +2374,7 @@
         "ja": "サーバーで使用可能なコマンド一覧をプレイヤーに送信する時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/command/PlayerAvailableCommandsEvent.html",
-      "javadoc": "Allows plugins to modify the packet indicating commands available on the server to a\n Minecraft 1.13+ client. The given RootCommandNode is mutable. Velocity will wait\n for this event to finish firing before sending the list of available commands to the\n client.",
+      "javadoc": "Allows plugins to modify the packet indicating commands available on the server to a Minecraft 1.13+ client. The given RootCommandNode is mutable. Velocity will wait for this event to finish firing before sending the list of available commands to the client.",
       "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/command/PlayerAvailableCommandsEvent.html",
       "name": "PlayerAvailableCommandsEvent",
       "source": "velocity"
@@ -2509,7 +2509,7 @@
       },
       "abstract": true,
       "href": "org/bukkit/event/player/PlayerChannelEvent.html",
-      "javadoc": "This event is called after a player registers or unregisters a new plugin\n channel.",
+      "javadoc": "This event is called after a player registers or unregisters a new plugin channel.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerChannelEvent.html",
       "name": "PlayerChannelEvent",
       "source": "spigot"
@@ -2519,7 +2519,7 @@
         "ja": "プレイヤーがプラグインメッセージを送信した時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/player/PlayerChannelRegisterEvent.html",
-      "javadoc": "This event is fired when a client (Player) sends a plugin message through the\n register channel. Velocity will not wait on this event to finish firing.",
+      "javadoc": "This event is fired when a client (Player) sends a plugin message through the register channel. Velocity will not wait on this event to finish firing.",
       "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/player/PlayerChannelRegisterEvent.html",
       "name": "PlayerChannelRegisterEvent",
       "source": "velocity"
@@ -2543,7 +2543,7 @@
         "ja": "プレイヤーがチャットメッセージを送信した時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/player/PlayerChatEvent.html",
-      "javadoc": "This event is fired when a player types in a chat message. Velocity will wait on this event\n to finish firing before forwarding it to the server, if the result allows it.",
+      "javadoc": "This event is fired when a player types in a chat message. Velocity will wait on this event to finish firing before forwarding it to the server, if the result allows it.",
       "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/player/PlayerChatEvent.html",
       "name": "PlayerChatEvent",
       "source": "velocity"
@@ -2567,7 +2567,7 @@
         "ja": "プレイヤーがログイン処理を終えて、接続する最初のサーバーを選択する時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/player/PlayerChooseInitialServerEvent.html",
-      "javadoc": "Fired when a player has finished the login process, and we need to choose the first server\n to connect to. Velocity will wait on this event to finish firing before initiating the connection\n but you should try to limit the work done in this event. Failures will be handled by\n KickedFromServerEvent as normal.",
+      "javadoc": "Fired when a player has finished the login process, and we need to choose the first server to connect to. Velocity will wait on this event to finish firing before initiating the connection but you should try to limit the work done in this event. Failures will be handled by KickedFromServerEvent as normal.",
       "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/player/PlayerChooseInitialServerEvent.html",
       "name": "PlayerChooseInitialServerEvent",
       "source": "velocity"
@@ -2577,7 +2577,7 @@
         "ja": "プレイヤーがチャンクロードパケットを受け取った時に呼び出される。行いたい処理がパケットやクライアントに関する場合でのみ使うイベントになる。"
       },
       "href": "io/papermc/paper/event/packet/PlayerChunkLoadEvent.html",
-      "javadoc": "Is called when a Player receives a Chunk\n \n Can for example be used for spawning a fake entity when the player receives a chunk.\n \n Should only be used for packet/clientside related stuff.\n Not intended for modifying server side state.",
+      "javadoc": "Is called when a Player receives a Chunk Can for example be used for spawning a fake entity when the player receives a chunk. Should only be used for packet/clientside related stuff. Not intended for modifying server side state.",
       "link": "https://jd.papermc.io/paper/1.20/io/papermc/paper/event/packet/PlayerChunkLoadEvent.html",
       "name": "PlayerChunkLoadEvent",
       "source": "paper"
@@ -2587,7 +2587,7 @@
         "ja": "プレイヤーがチャンクアンロードパケットを受け取った時に呼び出される。行いたい処理がパケットやクライアントに関する場合でのみ使うイベントになる。"
       },
       "href": "io/papermc/paper/event/packet/PlayerChunkUnloadEvent.html",
-      "javadoc": "Is called when a Player receives a chunk unload packet.\n \n Should only be used for packet/clientside related stuff.\n Not intended for modifying server side.",
+      "javadoc": "Is called when a Player receives a chunk unload packet. Should only be used for packet/clientside related stuff. Not intended for modifying server side.",
       "link": "https://jd.papermc.io/paper/1.20/io/papermc/paper/event/packet/PlayerChunkUnloadEvent.html",
       "name": "PlayerChunkUnloadEvent",
       "source": "paper"
@@ -2597,7 +2597,7 @@
         "ja": "プレイヤーが minecraft:brand のプラグインメッセージを送信した時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/player/PlayerClientBrandEvent.html",
-      "javadoc": "Fired when a Player sends the minecraft:brand plugin message. Velocity will\n not wait on the result of this event.",
+      "javadoc": "Fired when a Player sends the minecraft:brand plugin message. Velocity will not wait on the result of this event.",
       "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/player/PlayerClientBrandEvent.html",
       "name": "PlayerClientBrandEvent",
       "source": "velocity"
@@ -2617,7 +2617,7 @@
         "ja": "プレイヤーが実行したコマンドが処理される前に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerCommandPreprocessEvent.html",
-      "javadoc": "This event is called whenever a player runs a command (by placing a slash\n at the start of their message). It is called early in the command handling\n process, and modifications in this event (via setMessage(String))\n will be shown in the behavior.\n \n Many plugins will have no use for this event, and you should\n attempt to avoid using it if it is not necessary.\n \n Some examples of valid uses for this event are:\n \n Logging executed commands to a separate file\n Variable substitution. For example, replacing\n     ${nearbyPlayer} with the name of the nearest other\n     player, or simulating the @a and @p\n     decorators used by Command Blocks in plugins that do not handle it.\n Conditionally blocking commands belonging to other plugins. For\n     example, blocking the use of the /home command in a\n     combat arena.\n Per-sender command aliases. For example, after a player runs the\n     command /calias cr gamemode creative, the next time they\n     run /cr, it gets replaced into\n     /gamemode creative. (Global command aliases should be\n     done by registering the alias.)\n \n \n Examples of incorrect uses are:\n \n Using this event to run command logic\n \n \n If the event is cancelled, processing of the command will halt.\n \n The state of whether or not there is a slash (/) at the\n beginning of the message should be preserved. If a slash is added or\n removed, unexpected behavior may result.",
+      "javadoc": "This event is called whenever a player runs a command (by placing a slash at the start of their message). It is called early in the command handling process, and modifications in this event (via setMessage(String)) will be shown in the behavior. Many plugins will have no use for this event, and you should attempt to avoid using it if it is not necessary. Some examples of valid uses for this event are: Logging executed commands to a separate file Variable substitution. For example, replacing ${nearbyPlayer} with the name of the nearest other player, or simulating the @a and @p decorators used by Command Blocks in plugins that do not handle it. Conditionally blocking commands belonging to other plugins. For example, blocking the use of the /home command in a combat arena. Per-sender command aliases. For example, after a player runs the command /calias cr gamemode creative, the next time they run /cr, it gets replaced into /gamemode creative. (Global command aliases should be done by registering the alias.) Examples of incorrect uses are: Using this event to run command logic If the event is cancelled, processing of the command will halt. The state of whether or not there is a slash (/) at the beginning of the message should be preserved. If a slash is added or removed, unexpected behavior may result.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerCommandPreprocessEvent.html",
       "name": "PlayerCommandPreprocessEvent",
       "source": "spigot"
@@ -2627,7 +2627,7 @@
         "ja": "使用可能なコマンドをプレイヤーに送信する時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerCommandSendEvent.html",
-      "javadoc": "This event is called when the list of available server commands is sent to\n the player.\n \n Commands may be removed from display using this event, but implementations\n are not required to securely remove all traces of the command. If secure\n removal of commands is required, then the command should be assigned a\n permission which is not granted to the player.",
+      "javadoc": "This event is called when the list of available server commands is sent to the player. Commands may be removed from display using this event, but implementations are not required to securely remove all traces of the command. If secure removal of commands is required, then the command should be assigned a permission which is not granted to the player.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerCommandSendEvent.html",
       "name": "PlayerCommandSendEvent",
       "source": "spigot"
@@ -2637,7 +2637,7 @@
         "ja": "プレイヤーがサーバーから切断された時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/player/PlayerConnectionCloseEvent.html",
-      "javadoc": "\n This event is invoked when a player has disconnected. It is guaranteed that,\n if the server is in online-mode, that the provided uuid and username have been\n validated.\n \n The event is invoked for players who have not yet logged into the world, whereas\n PlayerQuitEvent is only invoked on players who have logged into the world.\n \n The event is invoked for players who have already logged into the world,\n although whether or not the player exists in the world at the time of\n firing is undefined. (That is, whether the plugin can retrieve a Player object\n using the event parameters is undefined). However, it is guaranteed that this\n event is invoked AFTER PlayerQuitEvent, if the player has already logged into the world.\n \n This event is guaranteed to never fire unless AsyncPlayerPreLoginEvent has\n been fired beforehand, and this event may not be called in parallel with\n AsyncPlayerPreLoginEvent for the same connection.\n \n Cancelling the AsyncPlayerPreLoginEvent guarantees the corresponding\n PlayerConnectionCloseEvent is never called.\n \n The event may be invoked asynchronously or synchronously. Plugins should check\n Event.isAsynchronous() and handle accordingly.",
+      "javadoc": " This event is invoked when a player has disconnected. It is guaranteed that, if the server is in online-mode, that the provided uuid and username have been validated. The event is invoked for players who have not yet logged into the world, whereas PlayerQuitEvent is only invoked on players who have logged into the world. The event is invoked for players who have already logged into the world, although whether or not the player exists in the world at the time of firing is undefined. (That is, whether the plugin can retrieve a Player object using the event parameters is undefined). However, it is guaranteed that this event is invoked AFTER PlayerQuitEvent, if the player has already logged into the world. This event is guaranteed to never fire unless AsyncPlayerPreLoginEvent has been fired beforehand, and this event may not be called in parallel with AsyncPlayerPreLoginEvent for the same connection. Cancelling the AsyncPlayerPreLoginEvent guarantees the corresponding PlayerConnectionCloseEvent is never called. The event may be invoked asynchronously or synchronously. Plugins should check Event.isAsynchronous() and handle accordingly.",
       "link": "https://jd.papermc.io/paper/1.20/com/destroystokyo/paper/event/player/PlayerConnectionCloseEvent.html",
       "name": "PlayerConnectionCloseEvent",
       "source": "paper"
@@ -2657,7 +2657,7 @@
         "ja": "プレイヤーが深い眠りに入る時に呼び出される。このイベントをキャンセルすると夜や嵐を通過しません。"
       },
       "href": "io/papermc/paper/event/player/PlayerDeepSleepEvent.html",
-      "javadoc": "Called when a player has slept long enough\n to count as passing the night/storm.\n \n Cancelling this event will prevent the player from being counted as deeply sleeping\n unless they exit and re-enter the bed.",
+      "javadoc": "Called when a player has slept long enough to count as passing the night/storm. Cancelling this event will prevent the player from being counted as deeply sleeping unless they exit and re-enter the bed.",
       "link": "https://jd.papermc.io/paper/1.20/io/papermc/paper/event/player/PlayerDeepSleepEvent.html",
       "name": "PlayerDeepSleepEvent",
       "source": "paper"
@@ -2667,7 +2667,7 @@
         "ja": "プレイヤーがプロキシを離れた時に呼び出される。"
       },
       "href": "net/md_5/bungee/api/event/PlayerDisconnectEvent.html",
-      "javadoc": "Called when a player has left the proxy, it is not safe to call any methods\n that perform an action on the passed player instance.",
+      "javadoc": "Called when a player has left the proxy, it is not safe to call any methods that perform an action on the passed player instance.",
       "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/PlayerDisconnectEvent.html",
       "name": "PlayerDisconnectEvent",
       "source": "bungee"
@@ -2687,7 +2687,7 @@
         "ja": "プレイヤーが本と羽ペンを編集・署名した時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerEditBookEvent.html",
-      "javadoc": "Called when a player edits or signs a book and quill item. If the event is\n cancelled, no changes are made to the BookMeta",
+      "javadoc": "Called when a player edits or signs a book and quill item. If the event is cancelled, no changes are made to the BookMeta",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerEditBookEvent.html",
       "name": "PlayerEditBookEvent",
       "source": "spigot"
@@ -2792,7 +2792,7 @@
         "ja": "ハンドシェイクを行う時に呼び出される。プレイヤーの存在やユーザー名を知る事が出来る最初のイベントである。"
       },
       "href": "net/md_5/bungee/api/event/PlayerHandshakeEvent.html",
-      "javadoc": "Event called to represent a player first making their presence and username\n known.",
+      "javadoc": "Event called to represent a player first making their presence and username known.",
       "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/PlayerHandshakeEvent.html",
       "name": "PlayerHandshakeEvent",
       "source": "bungee"
@@ -2802,7 +2802,7 @@
         "ja": "プレイヤーとサーバーがハンドシェイクする時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/player/PlayerHandshakeEvent.html",
-      "javadoc": "This event is fired during a player handshake.\n \n If there are no listeners listening to this event, the logic default\n to your server platform will be run.\n\n WARNING: TAMPERING WITH THIS EVENT CAN BE DANGEROUS",
+      "javadoc": "This event is fired during a player handshake. If there are no listeners listening to this event, the logic default to your server platform will be run. WARNING: TAMPERING WITH THIS EVENT CAN BE DANGEROUS",
       "link": "https://jd.papermc.io/paper/1.20/com/destroystokyo/paper/event/player/PlayerHandshakeEvent.html",
       "name": "PlayerHandshakeEvent",
       "source": "paper"
@@ -2812,7 +2812,7 @@
         "ja": "プレイヤーが作物を収穫する時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerHarvestBlockEvent.html",
-      "javadoc": "This event is called whenever a player harvests a block.\n \n A 'harvest' is when a block drops an item (usually some sort of crop) and\n changes state, but is not broken in order to drop the item.\n \n This event is not called for when a block is broken, to handle that, listen\n for BlockBreakEvent and\n BlockDropItemEvent.",
+      "javadoc": "This event is called whenever a player harvests a block. A 'harvest' is when a block drops an item (usually some sort of crop) and changes state, but is not broken in order to drop the item. This event is not called for when a block is broken, to handle that, listen for BlockBreakEvent and BlockDropItemEvent.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerHarvestBlockEvent.html",
       "name": "PlayerHarvestBlockEvent",
       "source": "spigot"
@@ -2822,7 +2822,7 @@
         "ja": "表示されているエンティティがプレイヤーから非表示になる時に呼び出される。追跡範囲内にあるかどうかに関係なく呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerHideEntityEvent.html",
-      "javadoc": "Called when a visible entity is hidden from a player.\n \n This event is only called when the entity's visibility status is actually\n changed.\n \n This event is called regardless of if the entity was within tracking range.",
+      "javadoc": "Called when a visible entity is hidden from a player. This event is only called when the entity's visibility status is actually changed. This event is called regardless of if the entity was within tracking range.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerHideEntityEvent.html",
       "name": "PlayerHideEntityEvent",
       "source": "spigot"
@@ -2845,7 +2845,7 @@
         "ja": "プレイヤーがエンティティを右クリックする時に呼び出される。クライアントは PlayerInteractEntityEvent に加えてこのパケットを誤って送信する場合がある。 しかし、アーマースタンドを右クリックした場合、このイベントのみが呼び出される。特別な場合を除いて PlayerInteractEntityEvent を使うことを推奨している。"
       },
       "href": "org/bukkit/event/player/PlayerInteractAtEntityEvent.html",
-      "javadoc": "Represents an event that is called when a player right clicks an entity that\n also contains the location where the entity was clicked.\n \n Note that the client may sometimes spuriously send this packet in addition to PlayerInteractEntityEvent.\n Users are advised to listen to this (parent) class unless specifically required.",
+      "javadoc": "Represents an event that is called when a player right clicks an entity that also contains the location where the entity was clicked. Note that the client may sometimes spuriously send this packet in addition to PlayerInteractEntityEvent. Users are advised to listen to this (parent) class unless specifically required.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerInteractAtEntityEvent.html",
       "name": "PlayerInteractAtEntityEvent",
       "source": "spigot"
@@ -2865,7 +2865,7 @@
         "ja": "プレイヤーがオブジェクトや空気を右クリックする時に呼び出される。それぞれの手に対して呼び出される可能性がある。"
       },
       "href": "org/bukkit/event/player/PlayerInteractEvent.html",
-      "javadoc": "Represents an event that is called when a player interacts with an object or\n air, potentially fired once for each hand. The hand can be determined using\n getHand().\n \n This event will fire as cancelled if the vanilla behavior is to do nothing\n (e.g interacting with air). For the purpose of avoiding doubt, this means\n that the event will only be in the cancelled state if it is fired as a result\n of some prediction made by the server where no subsequent code will run,\n rather than when the subsequent interaction activity (e.g. placing a block in\n an illegal position (BlockCanBuildEvent) will fail.",
+      "javadoc": "Represents an event that is called when a player interacts with an object or air, potentially fired once for each hand. The hand can be determined using getHand(). This event will fire as cancelled if the vanilla behavior is to do nothing (e.g interacting with air). For the purpose of avoiding doubt, this means that the event will only be in the cancelled state if it is fired as a result of some prediction made by the server where no subsequent code will run, rather than when the subsequent interaction activity (e.g. placing a block in an illegal position (BlockCanBuildEvent) will fail.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerInteractEvent.html",
       "name": "PlayerInteractEvent",
       "source": "spigot"
@@ -2885,7 +2885,7 @@
         "ja": "プレイヤーのアイテムが壊れる時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerItemBreakEvent.html",
-      "javadoc": "Fired when a player's item breaks (such as a shovel or flint and steel).\n \n After this event, the item's amount will be set to item amount - 1\n and its durability will be reset to 0.",
+      "javadoc": "Fired when a player's item breaks (such as a shovel or flint and steel). After this event, the item's amount will be set to item amount - 1 and its durability will be reset to 0.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerItemBreakEvent.html",
       "name": "PlayerItemBreakEvent",
       "source": "spigot"
@@ -2895,7 +2895,7 @@
         "ja": "プレイヤーがアイテムを消費する時に呼び出される。アイテムの例を以下に示す。\n- 食べ物\n- ポーション\n- 牛乳入りバケツ"
       },
       "href": "org/bukkit/event/player/PlayerItemConsumeEvent.html",
-      "javadoc": "This event will fire when a player is finishing consuming an item (food,\n potion, milk bucket).\n \n If the ItemStack is modified the server will use the effects of the new\n item and not remove the original one from the player's inventory.\n \n If the event is cancelled the effect will not be applied and the item will\n not be removed from the player's inventory.",
+      "javadoc": "This event will fire when a player is finishing consuming an item (food, potion, milk bucket). If the ItemStack is modified the server will use the effects of the new item and not remove the original one from the player's inventory. If the event is cancelled the effect will not be applied and the item will not be removed from the player's inventory.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerItemConsumeEvent.html",
       "name": "PlayerItemConsumeEvent",
       "source": "spigot"
@@ -2915,7 +2915,7 @@
         "ja": "プレイヤーがアイテムを使用し、その耐久値が減少する時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerItemDamageEvent.html",
-      "javadoc": "Called when an item used by the player takes durability damage as a result of\n being used.",
+      "javadoc": "Called when an item used by the player takes durability damage as a result of being used.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerItemDamageEvent.html",
       "name": "PlayerItemDamageEvent",
       "source": "spigot"
@@ -2945,7 +2945,7 @@
         "ja": "プレイヤーのアイテムが修繕のエンチャントによって耐久値を回復する時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerItemMendEvent.html",
-      "javadoc": "Represents when a player has an item repaired via the Mending enchantment.\n \n This event is fired directly before the PlayerExpChangeEvent, and the\n results of this event directly affect the PlayerExpChangeEvent.",
+      "javadoc": "Represents when a player has an item repaired via the Mending enchantment. This event is fired directly before the PlayerExpChangeEvent, and the results of this event directly affect the PlayerExpChangeEvent.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerItemMendEvent.html",
       "name": "PlayerItemMendEvent",
       "source": "spigot"
@@ -2965,7 +2965,7 @@
         "ja": "プレイヤーがジャンプする時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/player/PlayerJumpEvent.html",
-      "javadoc": "Called when the server detects the player is jumping.\n \n Added to avoid the overhead and special case logic that many plugins use\n when checking for jumps via PlayerMoveEvent, this event is fired whenever\n the server detects that the player is jumping.",
+      "javadoc": "Called when the server detects the player is jumping. Added to avoid the overhead and special case logic that many plugins use when checking for jumps via PlayerMoveEvent, this event is fired whenever the server detects that the player is jumping.",
       "link": "https://jd.papermc.io/paper/1.20/com/destroystokyo/paper/event/player/PlayerJumpEvent.html",
       "name": "PlayerJumpEvent",
       "source": "paper"
@@ -2985,7 +2985,7 @@
         "ja": "プレイヤーが Projectile を発射する時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/player/PlayerLaunchProjectileEvent.html",
-      "javadoc": "Called when a player shoots a projectile.\n \n Notably this event is not called for arrows as the player does not launch them, rather shoots them with the help\n of a bow or crossbow. A plugin may listen to EntityShootBowEvent\n for these actions instead.",
+      "javadoc": "Called when a player shoots a projectile. Notably this event is not called for arrows as the player does not launch them, rather shoots them with the help of a bow or crossbow. A plugin may listen to EntityShootBowEvent for these actions instead.",
       "link": "https://jd.papermc.io/paper/1.20/com/destroystokyo/paper/event/player/PlayerLaunchProjectileEvent.html",
       "name": "PlayerLaunchProjectileEvent",
       "source": "paper"
@@ -3048,7 +3048,7 @@
         "ja": "プレイヤーがログインしようとする時に呼び出される。PlayerJoinEvent の前に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerLoginEvent.html",
-      "javadoc": "Stores details for players attempting to log in.\n \n Note that this event is called early in the player initialization\n process. It is recommended that most options involving the Player\n entity be postponed to the PlayerJoinEvent instead.",
+      "javadoc": "Stores details for players attempting to log in. Note that this event is called early in the player initialization process. It is recommended that most options involving the Player entity be postponed to the PlayerJoinEvent instead.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerLoginEvent.html",
       "name": "PlayerLoginEvent",
       "source": "spigot"
@@ -3068,7 +3068,7 @@
         "ja": "サーバーへの接続中に Forge クライアントが MOD 一覧をプロキシに送信した時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/player/PlayerModInfoEvent.html",
-      "javadoc": "This event is fired when a Forge client sends its mods to the proxy while connecting to a server.\n Velocity will not wait on this event to finish firing.",
+      "javadoc": "This event is fired when a Forge client sends its mods to the proxy while connecting to a server. Velocity will not wait on this event to finish firing.",
       "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/player/PlayerModInfoEvent.html",
       "name": "PlayerModInfoEvent",
       "source": "velocity"
@@ -3108,7 +3108,7 @@
         "ja": "プレイヤーが看板の編集画面を開く時に呼び出される。このイベントがキャンセルされると編集画面が開かれない。"
       },
       "href": "io/papermc/paper/event/player/PlayerOpenSignEvent.html",
-      "javadoc": "Called when a player begins editing a sign's text.\n \n Cancelling this event stops the sign editing menu from opening.",
+      "javadoc": "Called when a player begins editing a sign's text. Cancelling this event stops the sign editing menu from opening.",
       "link": "https://jd.papermc.io/paper/1.20/io/papermc/paper/event/player/PlayerOpenSignEvent.html",
       "name": "PlayerOpenSignEvent",
       "source": "paper"
@@ -3118,7 +3118,7 @@
         "ja": "プレイヤーがアイテムの選択機能を使用する時に呼び出される。アイテムをインベントリからホットバーに移動する場合のみ呼び出される。"
       },
       "href": "io/papermc/paper/event/player/PlayerPickItemEvent.html",
-      "javadoc": "Event that is fired when a player uses the pick item functionality (middle-clicking a block to get the appropriate\n item). However, note that this event will only trigger if an item has to be moved from the inventory to the hotbar.\n After the handling of this event, the contents of the source and the target slot will be swapped and the currently\n selected hotbar slot of the player will be set to the target slot.\n \n Note: This event will not be fired for players in creative mode.",
+      "javadoc": "Event that is fired when a player uses the pick item functionality (middle-clicking a block to get the appropriate item). However, note that this event will only trigger if an item has to be moved from the inventory to the hotbar. After the handling of this event, the contents of the source and the target slot will be swapped and the currently selected hotbar slot of the player will be set to the target slot. Note: This event will not be fired for players in creative mode.",
       "link": "https://jd.papermc.io/paper/1.20/io/papermc/paper/event/player/PlayerPickItemEvent.html",
       "name": "PlayerPickItemEvent",
       "source": "paper"
@@ -3162,7 +3162,7 @@
         "ja": "プレイヤーがポータルでテレポートする時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerPortalEvent.html",
-      "javadoc": "Called when a player is about to teleport because it is in contact with a\n portal which will generate an exit portal.\n \n For other entities see EntityPortalEvent",
+      "javadoc": "Called when a player is about to teleport because it is in contact with a portal which will generate an exit portal. For other entities see EntityPortalEvent",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerPortalEvent.html",
       "name": "PlayerPortalEvent",
       "source": "spigot"
@@ -3276,7 +3276,7 @@
         "ja": "サーバーから送られたリソースパックリクエストに対してプレイヤーが処理をした時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerResourcePackStatusEvent.html",
-      "javadoc": "Called when a player takes action on a resource pack request sent via\n Player.setResourcePack(java.lang.String).",
+      "javadoc": "Called when a player takes action on a resource pack request sent via Player.setResourcePack(java.lang.String).",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerResourcePackStatusEvent.html",
       "name": "PlayerResourcePackStatusEvent",
       "source": "spigot"
@@ -3286,7 +3286,7 @@
         "ja": "プレイヤーに送信されたリソースパックの状態が変更された時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/player/PlayerResourcePackStatusEvent.html",
-      "javadoc": "This event is fired when the status of a resource pack sent to the player by the server is\n changed. Depending on the result of this event (which Velocity will wait until completely fired),\n the player may be kicked from the server.",
+      "javadoc": "This event is fired when the status of a resource pack sent to the player by the server is changed. Depending on the result of this event (which Velocity will wait until completely fired), the player may be kicked from the server.",
       "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/player/PlayerResourcePackStatusEvent.html",
       "name": "PlayerResourcePackStatusEvent",
       "source": "velocity"
@@ -3306,7 +3306,7 @@
         "ja": "プレイヤーが激流エンチャントを使用した時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerRiptideEvent.html",
-      "javadoc": "This event is fired when the player activates the riptide enchantment, using\n their trident to propel them through the air.\n \n N.B. the riptide action is currently performed client side, so manipulating\n the player in this event may have undesired effects.",
+      "javadoc": "This event is fired when the player activates the riptide enchantment, using their trident to propel them through the air. N.B. the riptide action is currently performed client side, so manipulating the player in this event may have undesired effects.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerRiptideEvent.html",
       "name": "PlayerRiptideEvent",
       "source": "spigot"
@@ -3325,7 +3325,7 @@
         "ja": "プレイヤーがスポーン地点を設定する時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/player/PlayerSetSpawnEvent.html",
-      "javadoc": "Called when a player's spawn is set, either by themselves or otherwise.\n \n Cancelling this event will prevent the spawn from being set.",
+      "javadoc": "Called when a player's spawn is set, either by themselves or otherwise. Cancelling this event will prevent the spawn from being set.",
       "link": "https://jd.papermc.io/paper/1.20/com/destroystokyo/paper/event/player/PlayerSetSpawnEvent.html",
       "name": "PlayerSetSpawnEvent",
       "source": "paper"
@@ -3335,7 +3335,7 @@
         "ja": "プレイヤーが新しいクライアント設定を送信した時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/player/PlayerSettingsChangedEvent.html",
-      "javadoc": "This event is fired when the client sends new client settings for the player. This event can\n and typically will be fired multiple times per connection. Velocity will not wait on this event\n to finish firing.",
+      "javadoc": "This event is fired when the client sends new client settings for the player. This event can and typically will be fired multiple times per connection. Velocity will not wait on this event to finish firing.",
       "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/player/PlayerSettingsChangedEvent.html",
       "name": "PlayerSettingsChangedEvent",
       "source": "velocity"
@@ -3345,7 +3345,7 @@
         "ja": "プレイヤーがブロックに対してハサミを使用する時に呼び出される。以下に例を示す。\n- カボチャを彫ったカボチャに変える時。\n- 蜂の巣からハニカムを回収する時。"
       },
       "href": "io/papermc/paper/event/block/PlayerShearBlockEvent.html",
-      "javadoc": "Called when a player uses sheers on a block.\n \n This event is not called when breaking blocks with shears but instead only when a\n player uses the sheer item on a block to garner drops from said block and/or change its state.\n \n Examples include shearing a pumpkin to turn it into a carved pumpkin or shearing a beehive to get honeycomb.",
+      "javadoc": "Called when a player uses sheers on a block. This event is not called when breaking blocks with shears but instead only when a player uses the sheer item on a block to garner drops from said block and/or change its state. Examples include shearing a pumpkin to turn it into a carved pumpkin or shearing a beehive to get honeycomb.",
       "link": "https://jd.papermc.io/paper/1.20/io/papermc/paper/event/block/PlayerShearBlockEvent.html",
       "name": "PlayerShearBlockEvent",
       "source": "paper"
@@ -3365,7 +3365,7 @@
         "ja": "別のエンティティからの攻撃により、プレイヤーのシールドが無効になるたびに呼び出される。"
       },
       "href": "io/papermc/paper/event/player/PlayerShieldDisableEvent.html",
-      "javadoc": "Called whenever a players shield is disabled due to an attack from another entity that was capable of disabling the\n shield. This, most commonly, may be another player attacking with an axe.\n \n Notably, this even is distinct from a PlayerItemCooldownEvent and will fire prior to the item going on\n cooldown.\n It follows that, if this event is cancelled, no PlayerItemCooldownEvent is called as the shield is never\n disabled in the first place.",
+      "javadoc": "Called whenever a players shield is disabled due to an attack from another entity that was capable of disabling the shield. This, most commonly, may be another player attacking with an axe. Notably, this even is distinct from a PlayerItemCooldownEvent and will fire prior to the item going on cooldown. It follows that, if this event is cancelled, no PlayerItemCooldownEvent is called as the shield is never disabled in the first place.",
       "link": "https://jd.papermc.io/paper/1.20/io/papermc/paper/event/player/PlayerShieldDisableEvent.html",
       "name": "PlayerShieldDisableEvent",
       "source": "paper"
@@ -3375,7 +3375,7 @@
         "ja": "非表示になっていたエンティティがプレイヤーに表示される時に呼び出される。追跡範囲内にあるかどうかに関係なく呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerShowEntityEvent.html",
-      "javadoc": "Called when a hidden entity is shown to a player.\n \n This event is only called when the entity's visibility status is actually\n changed.\n \n This event is called regardless of whether the entity was within tracking\n range.",
+      "javadoc": "Called when a hidden entity is shown to a player. This event is only called when the entity's visibility status is actually changed. This event is called regardless of whether the entity was within tracking range.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerShowEntityEvent.html",
       "name": "PlayerShowEntityEvent",
       "source": "spigot"
@@ -3385,7 +3385,7 @@
         "ja": "プレイヤーがコマンドを実行させる看板をクリックする時に呼び出される。このコマンドは権限を無視して実行されるため、本来実行できないコマンドも実行される。"
       },
       "href": "io/papermc/paper/event/player/PlayerSignCommandPreprocessEvent.html",
-      "javadoc": "Called when a Player clicks a side on a sign that causes a command to run.\n \n This command is run with elevated permissions which allows players to access commands on signs they wouldn't\n normally be able to run.",
+      "javadoc": "Called when a Player clicks a side on a sign that causes a command to run. This command is run with elevated permissions which allows players to access commands on signs they wouldn't normally be able to run.",
       "link": "https://jd.papermc.io/paper/1.20/io/papermc/paper/event/player/PlayerSignCommandPreprocessEvent.html",
       "name": "PlayerSignCommandPreprocessEvent",
       "source": "paper"
@@ -3443,7 +3443,7 @@
         "ja": "プレイヤーの統計が増加した時に呼び出される。移動などの高頻度で増加するような一部の統計では呼び出されない。"
       },
       "href": "org/bukkit/event/player/PlayerStatisticIncrementEvent.html",
-      "javadoc": "Called when a player statistic is incremented.\n \n This event is not called for some high frequency statistics, e.g. movement\n based statistics.",
+      "javadoc": "Called when a player statistic is incremented. This event is not called for some high frequency statistics, e.g. movement based statistics.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerStatisticIncrementEvent.html",
       "name": "PlayerStatisticIncrementEvent",
       "source": "spigot"
@@ -3472,7 +3472,7 @@
         "ja": "プレイヤーがアイテムの使用をやめた時に呼び出される。以下に例を示す。\n- 弓のひきしぼり\n- 食べ物\n- スパイグラス"
       },
       "href": "io/papermc/paper/event/player/PlayerStopUsingItemEvent.html",
-      "javadoc": "Called when the server detects a player stopping using an item.\n Examples of this are letting go of the interact button when holding a bow, an edible item, or a spyglass.",
+      "javadoc": "Called when the server detects a player stopping using an item. Examples of this are letting go of the interact button when holding a bow, an edible item, or a spyglass.",
       "link": "https://jd.papermc.io/paper/1.20/io/papermc/paper/event/player/PlayerStopUsingItemEvent.html",
       "name": "PlayerStopUsingItemEvent",
       "source": "paper"
@@ -3482,7 +3482,7 @@
         "ja": "プレイヤーがメインハンドとオフハンドのアイテムをホットキーによって交換する時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerSwapHandItemsEvent.html",
-      "javadoc": "Called when a player swap items between main hand and off hand using the\n hotkey.",
+      "javadoc": "Called when a player swap items between main hand and off hand using the hotkey.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerSwapHandItemsEvent.html",
       "name": "PlayerSwapHandItemsEvent",
       "source": "spigot"
@@ -3492,7 +3492,7 @@
         "ja": "プレイヤーが書見台に置いてある本を取る時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerTakeLecternBookEvent.html",
-      "javadoc": "This event is called when a player clicks the button to take a book of a\n Lectern. If this event is cancelled the book remains on the lectern.",
+      "javadoc": "This event is called when a player clicks the button to take a book of a Lectern. If this event is cancelled the book remains on the lectern.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerTakeLecternBookEvent.html",
       "name": "PlayerTakeLecternBookEvent",
       "source": "spigot"
@@ -3552,7 +3552,7 @@
         "ja": "プレイヤーがエンティティの追跡を開始すると呼び出される。プレイヤーがエンティティを追跡しているかどうかによって、サーバー上のプレイヤーに対するエンティティの可視性が決まります。エンティティがプレイヤーによって追跡されていない場合、エンティティに関するデータがクライアントに送信されないため、そのプレイヤーはエンティティの存在を認識しません。"
       },
       "href": "io/papermc/paper/event/player/PlayerTrackEntityEvent.html",
-      "javadoc": "Is called when a Player tracks an Entity.\n \n If cancelled entity is not shown to the player and interaction in both directions is not possible.\n \n Adding or removing entities from the world at the point in time this event is called is completely\n unsupported and should be avoided.",
+      "javadoc": "Is called when a Player tracks an Entity. If cancelled entity is not shown to the player and interaction in both directions is not possible. Adding or removing entities from the world at the point in time this event is called is completely unsupported and should be avoided.",
       "link": "https://jd.papermc.io/paper/1.20/io/papermc/paper/event/player/PlayerTrackEntityEvent.html",
       "name": "PlayerTrackEntityEvent",
       "source": "paper"
@@ -3592,7 +3592,7 @@
         "ja": "プレイヤーがエンティティの追跡を終了すると呼び出される。"
       },
       "href": "io/papermc/paper/event/player/PlayerUntrackEntityEvent.html",
-      "javadoc": "Is called when a Player untracks an Entity.\n \n Adding or removing entities from the world at the point in time this event is called is completely\n unsupported and should be avoided.",
+      "javadoc": "Is called when a Player untracks an Entity. Adding or removing entities from the world at the point in time this event is called is completely unsupported and should be avoided.",
       "link": "https://jd.papermc.io/paper/1.20/io/papermc/paper/event/player/PlayerUntrackEntityEvent.html",
       "name": "PlayerUntrackEntityEvent",
       "source": "paper"
@@ -3602,7 +3602,7 @@
         "ja": "存在しないエンティティに対して PacketPlayInUseEntity が送られてきた時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/player/PlayerUseUnknownEntityEvent.html",
-      "javadoc": "Represents an event that is called when a player right-clicks an unknown entity.\n Useful for plugins dealing with virtual entities (entities that aren't actually spawned on the server).\n \n This event may be called multiple times per interaction with different interaction hands\n and with or without the clicked position.",
+      "javadoc": "Represents an event that is called when a player right-clicks an unknown entity. Useful for plugins dealing with virtual entities (entities that aren't actually spawned on the server). This event may be called multiple times per interaction with different interaction hands and with or without the clicked position.",
       "link": "https://jd.papermc.io/paper/1.20/com/destroystokyo/paper/event/player/PlayerUseUnknownEntityEvent.html",
       "name": "PlayerUseUnknownEntityEvent",
       "source": "paper"
@@ -3663,7 +3663,7 @@
         "ja": "プレイヤーまたはサーバーからプラグインメッセージが送信された時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/connection/PluginMessageEvent.html",
-      "javadoc": "This event is fired when a plugin message is sent to the proxy, either from a client (Player) or a server (ServerConnection). Velocity will wait on this event to finish\n firing before discarding the sent plugin message (if handled) or forwarding it to the server.",
+      "javadoc": "This event is fired when a plugin message is sent to the proxy, either from a client (Player) or a server (ServerConnection). Velocity will wait on this event to finish firing before discarding the sent plugin message (if handled) or forwarding it to the server.",
       "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/connection/PluginMessageEvent.html",
       "name": "PluginMessageEvent",
       "source": "velocity"
@@ -3684,7 +3684,7 @@
         "ja": "コマンドが実行された時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/command/PostCommandInvocationEvent.html",
-      "javadoc": "This event is fired when velocity executed a command. This event is called after the event\n is handled.\n\n Commands can be cancelled or forwarded to backend servers in CommandExecuteEvent.\n This will prevent firing this event.",
+      "javadoc": "This event is fired when velocity executed a command. This event is called after the event is handled. Commands can be cancelled or forwarded to backend servers in CommandExecuteEvent. This will prevent firing this event.",
       "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/command/PostCommandInvocationEvent.html",
       "name": "PostCommandInvocationEvent",
       "source": "velocity"
@@ -3694,7 +3694,7 @@
         "ja": "サーバーに接続する準備が出来た時に呼び出される。ProxiedPlayer にアクセスできる最初のイベントである。"
       },
       "href": "net/md_5/bungee/api/event/PostLoginEvent.html",
-      "javadoc": "Event called as soon as a connection has a ProxiedPlayer and is ready\n to be connected to a server.",
+      "javadoc": "Event called as soon as a connection has a ProxiedPlayer and is ready to be connected to a server.",
       "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/PostLoginEvent.html",
       "name": "PostLoginEvent",
       "source": "bungee"
@@ -3704,7 +3704,7 @@
         "ja": "プレイヤーが最初のサーバーに参加しようとする時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/connection/PostLoginEvent.html",
-      "javadoc": "This event is fired once the player has been fully initialized and is about to connect to their\n first server. Velocity will wait for this event to finish firing before it fires\n PlayerChooseInitialServerEvent with any default\n servers specified in the configuration, but you should try to limit the work done in any event\n that fires during the login process.",
+      "javadoc": "This event is fired once the player has been fully initialized and is about to connect to their first server. Velocity will wait for this event to finish firing before it fires PlayerChooseInitialServerEvent with any default servers specified in the configuration, but you should try to limit the work done in any event that fires during the login process.",
       "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/connection/PostLoginEvent.html",
       "name": "PostLoginEvent",
       "source": "velocity"
@@ -3734,7 +3734,7 @@
         "ja": "生き物がスポーンする時に呼び出される。このイベントの目的はサーバーのパフォーマンスを向上させることであるため、CreatureSpawnEvent が呼び出される全ての状況で呼び出されるわけではない。"
       },
       "href": "com/destroystokyo/paper/event/entity/PreCreatureSpawnEvent.html",
-      "javadoc": "WARNING: This event only fires for a limited number of cases, and not for every case that CreatureSpawnEvent does.\n \n You should still listen to CreatureSpawnEvent as a backup, and only use this event as an \"enhancement\".\n The intent of this event is to improve server performance, so it fires even if the spawning might fail later, for\n example when the entity would be unable to spawn due to limited space or lighting.\n \n Currently: NATURAL and SPAWNER based reasons. \n Also, Plugins that replace Entity Registrations with their own custom entities might not fire this event.",
+      "javadoc": "WARNING: This event only fires for a limited number of cases, and not for every case that CreatureSpawnEvent does. You should still listen to CreatureSpawnEvent as a backup, and only use this event as an \"enhancement\". The intent of this event is to improve server performance, so it fires even if the spawning might fail later, for example when the entity would be unable to spawn due to limited space or lighting. Currently: NATURAL and SPAWNER based reasons. Also, Plugins that replace Entity Registrations with their own custom entities might not fire this event.",
       "link": "https://jd.papermc.io/paper/1.20/com/destroystokyo/paper/event/entity/PreCreatureSpawnEvent.html",
       "name": "PreCreatureSpawnEvent",
       "source": "paper"
@@ -3754,7 +3754,7 @@
         "ja": "不完全なプロファイルプロパティの追加を要求している時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/profile/PreFillProfileEvent.html",
-      "javadoc": "Fired when the server is requesting to fill in properties of an incomplete profile, such as textures.\n \n Allows plugins to pre-populate cached properties and avoid a call to the Mojang API",
+      "javadoc": "Fired when the server is requesting to fill in properties of an incomplete profile, such as textures. Allows plugins to pre-populate cached properties and avoid a call to the Mojang API",
       "link": "https://jd.papermc.io/paper/1.20/com/destroystokyo/paper/event/profile/PreFillProfileEvent.html",
       "name": "PreFillProfileEvent",
       "source": "paper"
@@ -3764,7 +3764,7 @@
         "ja": "ログインを試みる時に呼び出される。Mojang のサーバーでの認証後に取得されるプレイヤーに関連する情報は含まれず、UUID 等は使用することが出来ない。"
       },
       "href": "net/md_5/bungee/api/event/PreLoginEvent.html",
-      "javadoc": "Event called to represent a player first making their presence and username\n known.\n\n This will NOT contain many attributes relating to the player which are filled\n in after authentication with Mojang's servers. Examples of attributes which\n are not available include their UUID.",
+      "javadoc": "Event called to represent a player first making their presence and username known. This will NOT contain many attributes relating to the player which are filled in after authentication with Mojang's servers. Examples of attributes which are not available include their UUID.",
       "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/PreLoginEvent.html",
       "name": "PreLoginEvent",
       "source": "bungee"
@@ -3774,7 +3774,7 @@
         "ja": "プロキシがプレイヤーを Mojang で認証する前に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/connection/PreLoginEvent.html",
-      "javadoc": "This event is fired when a player has initiated a connection with the proxy but before the proxy\n authenticates the player with Mojang or before the player's proxy connection is fully established\n (for offline mode). Velocity will wait for this event to finish firing before proceeding further\n with the login process, but you should try to limit the work done in any event that fires during\n the login process.\n\n \n   As of Velocity 3.1.0, you may cast the InboundConnection to a\n   LoginPhaseConnection to allow a\n   proxy plugin to send login plugin messages to the client.\n ",
+      "javadoc": "This event is fired when a player has initiated a connection with the proxy but before the proxy authenticates the player with Mojang or before the player's proxy connection is fully established (for offline mode). Velocity will wait for this event to finish firing before proceeding further with the login process, but you should try to limit the work done in any event that fires during the login process. As of Velocity 3.1.0, you may cast the InboundConnection to a LoginPhaseConnection to allow a proxy plugin to send login plugin messages to the client. ",
       "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/connection/PreLoginEvent.html",
       "name": "PreLoginEvent",
       "source": "velocity"
@@ -3784,7 +3784,7 @@
         "ja": "Mojang API を用いてプロファイルを検索する時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/profile/PreLookupProfileEvent.html",
-      "javadoc": "Allows a plugin to intercept a Profile Lookup for a Profile by name\n \n At the point of event fire, the UUID and properties are unset.\n \n If a plugin sets the UUID, and optionally the properties, the API call to look up the profile may be skipped.\n \n No guarantees are made about thread execution context for this event. If you need to know, check\n Event.isAsynchronous()",
+      "javadoc": "Allows a plugin to intercept a Profile Lookup for a Profile by name At the point of event fire, the UUID and properties are unset. If a plugin sets the UUID, and optionally the properties, the API call to look up the profile may be skipped. No guarantees are made about thread execution context for this event. If you need to know, check Event.isAsynchronous()",
       "link": "https://jd.papermc.io/paper/1.20/com/destroystokyo/paper/event/profile/PreLookupProfileEvent.html",
       "name": "PreLookupProfileEvent",
       "source": "paper"
@@ -3847,7 +3847,7 @@
         "ja": "エンチャントの準備が出来た時に呼び出される。完成アイテムが表示される毎に発生する。"
       },
       "href": "org/bukkit/event/enchantment/PrepareItemEnchantEvent.html",
-      "javadoc": "Called when an ItemStack is inserted in an enchantment table - can be\n called multiple times",
+      "javadoc": "Called when an ItemStack is inserted in an enchantment table - can be called multiple times",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/enchantment/PrepareItemEnchantEvent.html",
       "name": "PrepareItemEnchantEvent",
       "source": "spigot"
@@ -3877,7 +3877,7 @@
         "ja": "プレイヤーがエンティティに攻撃する前に呼び出される。このイベントがキャンセルされると攻撃時のサウンドが再生されなくなる。"
       },
       "href": "io/papermc/paper/event/player/PrePlayerAttackEntityEvent.html",
-      "javadoc": "Called when the player tries to attack an entity.\n \n This occurs before any of the damage logic, so cancelling this event\n will prevent any sort of sounds from being played when attacking.\n \n This event will fire as cancelled for certain entities, with willAttack() being false\n to indicate that this entity will not actually be attacked.\n \n Note: there may be other factors (invulnerability, etc.) that will prevent this entity from being attacked that this event will not cover",
+      "javadoc": "Called when the player tries to attack an entity. This occurs before any of the damage logic, so cancelling this event will prevent any sort of sounds from being played when attacking. This event will fire as cancelled for certain entities, with willAttack() being false to indicate that this entity will not actually be attacked. Note: there may be other factors (invulnerability, etc.) that will prevent this entity from being attacked that this event will not cover",
       "link": "https://jd.papermc.io/paper/1.20/io/papermc/paper/event/player/PrePlayerAttackEntityEvent.html",
       "name": "PrePlayerAttackEntityEvent",
       "source": "paper"
@@ -3887,7 +3887,7 @@
         "ja": "エンティティがスポナーによってスポーンする前に呼び出される。SpawnerSpawnEvent よりも前に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/entity/PreSpawnerSpawnEvent.html",
-      "javadoc": "Called before an entity is spawned into a world by a spawner.\n \n This only includes the spawner's location and not the full BlockState snapshot for performance reasons.\n If you really need it you have to get the spawner yourself.",
+      "javadoc": "Called before an entity is spawned into a world by a spawner. This only includes the spawner's location and not the full BlockState snapshot for performance reasons. If you really need it you have to get the spawner yourself.",
       "link": "https://jd.papermc.io/paper/1.20/com/destroystokyo/paper/event/entity/PreSpawnerSpawnEvent.html",
       "name": "PreSpawnerSpawnEvent",
       "source": "paper"
@@ -3903,7 +3903,7 @@
         "ja": "プレイヤーが別のホストに送られる時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/connection/PreTransferEvent.html",
-      "javadoc": "This event is executed before sending a player to another host,\n either by the backend server or by a plugin using\n the Player.transferToHost(InetSocketAddress) method.",
+      "javadoc": "This event is executed before sending a player to another host, either by the backend server or by a plugin using the Player.transferToHost(InetSocketAddress) method.",
       "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/connection/PreTransferEvent.html",
       "name": "PreTransferEvent",
       "source": "velocity"
@@ -3913,7 +3913,7 @@
         "ja": "プレイヤーがホワイトリストに登録されているか確認する時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/profile/ProfileWhitelistVerifyEvent.html",
-      "javadoc": "Fires when the server needs to verify if a player is whitelisted.\n \n Plugins may override/control the servers whitelist with this event,\n and dynamically change the kick message.",
+      "javadoc": "Fires when the server needs to verify if a player is whitelisted. Plugins may override/control the servers whitelist with this event, and dynamically change the kick message.",
       "link": "https://jd.papermc.io/paper/1.20/com/destroystokyo/paper/event/profile/ProfileWhitelistVerifyEvent.html",
       "name": "ProfileWhitelistVerifyEvent",
       "source": "paper"
@@ -3927,7 +3927,7 @@
         "ja": "Projectile がエンティティと衝突する時に呼び出される。キャンセルすると Projectile は飛び続ける。"
       },
       "href": "com/destroystokyo/paper/event/entity/ProjectileCollideEvent.html",
-      "javadoc": "Called when a projectile collides with an entity\n \n This event is called before EntityDamageByEntityEvent, and cancelling it will allow the projectile to continue flying",
+      "javadoc": "Called when a projectile collides with an entity This event is called before EntityDamageByEntityEvent, and cancelling it will allow the projectile to continue flying",
       "link": "https://jd.papermc.io/paper/1.20/com/destroystokyo/paper/event/entity/ProjectileCollideEvent.html",
       "name": "ProjectileCollideEvent",
       "source": "paper"
@@ -3957,7 +3957,7 @@
         "ja": "タブ補完に使われるコマンドを定義される時に呼び出される。"
       },
       "href": "io/github/waterfallmc/waterfall/event/ProxyDefineCommandsEvent.html",
-      "javadoc": "Called when the proxy intercepts the command packet\n allowing for plugins to prevent commands being added\n to the clients which might not be wanted.\n\n\n Plugin developers, please implement Command.hasPermission(CommandSender)\n properly in favor of this event.",
+      "javadoc": "Called when the proxy intercepts the command packet allowing for plugins to prevent commands being added to the clients which might not be wanted. Plugin developers, please implement Command.hasPermission(CommandSender) properly in favor of this event.",
       "link": "https://jd.papermc.io/waterfall/1.20/io/github/waterfallmc/waterfall/event/ProxyDefineCommandsEvent.html",
       "name": "ProxyDefineCommandsEvent",
       "source": "waterfall"
@@ -3977,7 +3977,7 @@
         "ja": "プラグインが初期化された後、接続の受け入れを開始する前に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/proxy/ProxyInitializeEvent.html",
-      "javadoc": "This event is fired by the proxy after plugins have been loaded but before the proxy starts\n accepting connections. Velocity will wait for this event to finish firing before it begins to\n accept new connections.",
+      "javadoc": "This event is fired by the proxy after plugins have been loaded but before the proxy starts accepting connections. Velocity will wait for this event to finish firing before it begins to accept new connections.",
       "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/proxy/ProxyInitializeEvent.html",
       "name": "ProxyInitializeEvent",
       "source": "velocity"
@@ -3997,7 +3997,7 @@
         "ja": "サーバーリストからピングされた時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/proxy/ProxyPingEvent.html",
-      "javadoc": "This event is fired when a request for server information is sent by a remote client, or when the\n server sends the MOTD and favicon to the client after a successful login. Velocity will\n wait on this event to finish firing before delivering the results to the remote client, but\n you are urged to handle this event as quickly as possible when handling this event due to the\n amount of ping packets a client can send.",
+      "javadoc": "This event is fired when a request for server information is sent by a remote client, or when the server sends the MOTD and favicon to the client after a successful login. Velocity will wait on this event to finish firing before delivering the results to the remote client, but you are urged to handle this event as quickly as possible when handling this event due to the amount of ping packets a client can send.",
       "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/proxy/ProxyPingEvent.html",
       "name": "ProxyPingEvent",
       "source": "velocity"
@@ -4007,7 +4007,7 @@
         "ja": "クエリ要求を受信した時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/query/ProxyQueryEvent.html",
-      "javadoc": "This event is fired if proxy is getting queried over GS4 Query protocol. Velocity will wait on\n this event to fire before providing a response to the client.",
+      "javadoc": "This event is fired if proxy is getting queried over GS4 Query protocol. Velocity will wait on this event to fire before providing a response to the client.",
       "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/query/ProxyQueryEvent.html",
       "name": "ProxyQueryEvent",
       "source": "velocity"
@@ -4047,7 +4047,7 @@
         "ja": "プロキシが接続の受け入れを終了した後、プロセスが終了する前に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/proxy/ProxyShutdownEvent.html",
-      "javadoc": "This event is fired by the proxy after the proxy has stopped accepting connections but before the\n proxy process exits. Velocity will wait for this event to finish firing before it exits.",
+      "javadoc": "This event is fired by the proxy after the proxy has stopped accepting connections but before the proxy process exits. Velocity will wait for this event to finish firing before it exits.",
       "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/proxy/ProxyShutdownEvent.html",
       "name": "ProxyShutdownEvent",
       "source": "velocity"
@@ -4108,7 +4108,7 @@
         "ja": "レイドが始まる時に呼び出される。"
       },
       "href": "org/bukkit/event/raid/RaidTriggerEvent.html",
-      "javadoc": "Called when a Raid is triggered (e.g: a player with Bad Omen effect\n enters a village).",
+      "javadoc": "Called when a Raid is triggered (e.g: a player with Bad Omen effect enters a village).",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/raid/RaidTriggerEvent.html",
       "name": "RaidTriggerEvent",
       "source": "spigot"
@@ -4118,7 +4118,7 @@
         "ja": "RCON を介してコマンド入力を受け取った時に呼び出される。"
       },
       "href": "org/bukkit/event/server/RemoteServerCommandEvent.html",
-      "javadoc": "This event is called when a command is received over RCON. See the javadocs\n of ServerCommandEvent for more information.",
+      "javadoc": "This event is called when a command is received over RCON. See the javadocs of ServerCommandEvent for more information.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/server/RemoteServerCommandEvent.html",
       "name": "RemoteServerCommandEvent",
       "source": "spigot"
@@ -4157,7 +4157,7 @@
         "ja": "スカルクカタリストによって新しいカーソルが作成される時に呼び出される。"
       },
       "href": "org/bukkit/event/block/SculkBloomEvent.html",
-      "javadoc": "Represents an event triggered when a new cursor is created by a SculkCatalyst.\n \n Cursor Definition:\n A cursor in this context is a dynamic marker or pointer generated by the\n SculkCatalyst. It occupies a block and spreads sculk as it moves. It is\n similar to entity, but it is not an entity. Cursors are ticked by the\n tile entity.\n \n Triggers for Cursor Creation:\n \n   An entity, when killed and drops experience, within an 8-block radius of a SculkCatalyst.\n   An explicit call from a plugin using SculkCatalyst.bloom(Block, int).\n \n\n The result of BlockEvent.getBlock() is the location that the cursor is spawning at.",
+      "javadoc": "Represents an event triggered when a new cursor is created by a SculkCatalyst. Cursor Definition: A cursor in this context is a dynamic marker or pointer generated by the SculkCatalyst. It occupies a block and spreads sculk as it moves. It is similar to entity, but it is not an entity. Cursors are ticked by the tile entity. Triggers for Cursor Creation: An entity, when killed and drops experience, within an 8-block radius of a SculkCatalyst. An explicit call from a plugin using SculkCatalyst.bloom(Block, int). The result of BlockEvent.getBlock() is the location that the cursor is spawning at.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/SculkBloomEvent.html",
       "name": "SculkBloomEvent",
       "source": "spigot"
@@ -4167,7 +4167,7 @@
         "ja": "プレイヤー以外がコマンドを実行する時に呼び出される。"
       },
       "href": "org/bukkit/event/server/ServerCommandEvent.html",
-      "javadoc": "This event is called when a command is run by a non-player. It is\n called early in the command handling process, and modifications in this\n event (via setCommand(String)) will be shown in the behavior.\n \n Many plugins will have no use for this event, and you should\n attempt to avoid using it if it is not necessary.\n \n Some examples of valid uses for this event are:\n \n Logging executed commands to a separate file\n Variable substitution. For example, replacing ${ip:Steve}\n     with the connection IP of the player named Steve, or simulating the\n     @a and @p decorators used by Command Blocks\n     for plugins that do not handle it.\n Conditionally blocking commands belonging to other plugins.\n Per-sender command aliases. For example, after the console runs the\n     command /calias cr gamemode creative, the next time they\n     run /cr, it gets replaced into\n     /gamemode creative. (Global command aliases should be\n     done by registering the alias.)\n \n \n Examples of incorrect uses are:\n \n Using this event to run command logic\n \n \n If the event is cancelled, processing of the command will halt.\n \n The state of whether or not there is a slash (/) at the\n beginning of the message should be preserved. If a slash is added or\n removed, unexpected behavior may result.",
+      "javadoc": "This event is called when a command is run by a non-player. It is called early in the command handling process, and modifications in this event (via setCommand(String)) will be shown in the behavior. Many plugins will have no use for this event, and you should attempt to avoid using it if it is not necessary. Some examples of valid uses for this event are: Logging executed commands to a separate file Variable substitution. For example, replacing ${ip:Steve} with the connection IP of the player named Steve, or simulating the @a and @p decorators used by Command Blocks for plugins that do not handle it. Conditionally blocking commands belonging to other plugins. Per-sender command aliases. For example, after the console runs the command /calias cr gamemode creative, the next time they run /cr, it gets replaced into /gamemode creative. (Global command aliases should be done by registering the alias.) Examples of incorrect uses are: Using this event to run command logic If the event is cancelled, processing of the command will halt. The state of whether or not there is a slash (/) at the beginning of the message should be preserved. If a slash is added or removed, unexpected behavior may result.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/server/ServerCommandEvent.html",
       "name": "ServerCommandEvent",
       "source": "spigot"
@@ -4177,7 +4177,7 @@
         "ja": "サーバーに接続した時に呼び出される。プレイヤーがログインする前にサーバーに情報を送信する場合等に使う。"
       },
       "href": "net/md_5/bungee/api/event/ServerConnectedEvent.html",
-      "javadoc": "Not to be confused with ServerConnectEvent, this event is called once\n a connection to a server is fully operational, and is about to hand over\n control of the session to the player. It is useful if you wish to send\n information to the server before the player logs in.",
+      "javadoc": "Not to be confused with ServerConnectEvent, this event is called once a connection to a server is fully operational, and is about to hand over control of the session to the player. It is useful if you wish to send information to the server before the player logs in.",
       "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/ServerConnectedEvent.html",
       "name": "ServerConnectedEvent",
       "source": "bungee"
@@ -4187,7 +4187,7 @@
         "ja": "プレイヤーが接続先サーバーに正常に接続し、接続元サーバーから切断された時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/player/ServerConnectedEvent.html",
-      "javadoc": "This event is fired once the player has successfully connected to the target server and the\n connection to the previous server has been de-established.\n\n \n   Note: For historical reasons, Velocity does wait on this event to finish\n   firing before continuing the server connection process. This behavior is\n   deprecated and likely to be removed in Polymer.\n ",
+      "javadoc": "This event is fired once the player has successfully connected to the target server and the connection to the previous server has been de-established. Note: For historical reasons, Velocity does wait on this event to finish firing before continuing the server connection process. This behavior is deprecated and likely to be removed in Polymer. ",
       "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/player/ServerConnectedEvent.html",
       "name": "ServerConnectedEvent",
       "source": "velocity"
@@ -4197,7 +4197,7 @@
         "ja": "サーバーに接続する時に呼び出される。プレイヤーがサーバーに接続するのをキャンセルする場合等に使う。"
       },
       "href": "net/md_5/bungee/api/event/ServerConnectEvent.html",
-      "javadoc": "Called when deciding to connect to a server. At the time when this event is\n called, no connection has actually been made. Cancelling the event will\n ensure that the connection does not proceed and can be useful to prevent\n certain players from accessing certain servers.",
+      "javadoc": "Called when deciding to connect to a server. At the time when this event is called, no connection has actually been made. Cancelling the event will ensure that the connection does not proceed and can be useful to prevent certain players from accessing certain servers.",
       "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/ServerConnectEvent.html",
       "name": "ServerConnectEvent",
       "source": "bungee"
@@ -4207,7 +4207,7 @@
         "ja": "サーバーへの接続を切断した時に呼び出される。"
       },
       "href": "net/md_5/bungee/api/event/ServerDisconnectEvent.html",
-      "javadoc": "Called when the player is disconnected from a server, for example during\n server switching.\n\n If the player is kicked from a server, ServerKickEvent will be called\n instead.",
+      "javadoc": "Called when the player is disconnected from a server, for example during server switching. If the player is kicked from a server, ServerKickEvent will be called instead.",
       "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/ServerDisconnectEvent.html",
       "name": "ServerDisconnectEvent",
       "source": "bungee"
@@ -4248,7 +4248,7 @@
         "ja": "サーバーリストの表示内容を送る要求を受けた時に呼び出される。PaperServerListPingEvent を使うことでより詳細の情報を扱うことができる。"
       },
       "href": "org/bukkit/event/server/ServerListPingEvent.html",
-      "javadoc": "Called when a server list ping is coming in. Displayed players can be\n checked and removed by iterating over this event.\n \n Note: The players in iterator() will not be shown in the\n server info if Bukkit.getHideOnlinePlayers() is true.",
+      "javadoc": "Called when a server list ping is coming in. Displayed players can be checked and removed by iterating over this event. Note: The players in iterator() will not be shown in the server info if Bukkit.getHideOnlinePlayers() is true.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/server/ServerListPingEvent.html",
       "name": "ServerListPingEvent",
       "source": "spigot"
@@ -4268,7 +4268,7 @@
         "ja": "サーバーがログインプラグインメッセージを送信した時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/player/ServerLoginPluginMessageEvent.html",
-      "javadoc": "Fired when a server sends a login plugin message to the proxy. Plugins have the opportunity to\n respond to the messages as needed. Velocity will wait on this event to finish. The server will\n be responsible for continuing the login process once the server is satisfied with any login\n plugin responses sent by proxy plugins (or messages indicating a lack of response).",
+      "javadoc": "Fired when a server sends a login plugin message to the proxy. Plugins have the opportunity to respond to the messages as needed. Velocity will wait on this event to finish. The server will be responsible for continuing the login process once the server is satisfied with any login plugin responses sent by proxy plugins (or messages indicating a lack of response).",
       "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/player/ServerLoginPluginMessageEvent.html",
       "name": "ServerLoginPluginMessageEvent",
       "source": "velocity"
@@ -4282,7 +4282,7 @@
         "ja": "プレイヤーがサーバーに接続した時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/player/ServerPostConnectEvent.html",
-      "javadoc": "Fired after the player has connected to a server. The server the player is now connected to is\n available in Player.getCurrentServer(). Velocity will not wait on this event to finish\n firing.",
+      "javadoc": "Fired after the player has connected to a server. The server the player is now connected to is available in Player.getCurrentServer(). Velocity will not wait on this event to finish firing.",
       "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/player/ServerPostConnectEvent.html",
       "name": "ServerPostConnectEvent",
       "source": "velocity"
@@ -4292,7 +4292,7 @@
         "ja": "プレイヤーがサーバーに接続する時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/player/ServerPreConnectEvent.html",
-      "javadoc": "This event is fired before the player connects to a server. Velocity will wait on this event to\n finish firing before initiating the connection.",
+      "javadoc": "This event is fired before the player connects to a server. Velocity will wait on this event to finish firing before initiating the connection.",
       "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/player/ServerPreConnectEvent.html",
       "name": "ServerPreConnectEvent",
       "source": "velocity"
@@ -4302,7 +4302,7 @@
         "ja": "サーバーがリソースパックパケットを送信する時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/player/ServerResourcePackSendEvent.html",
-      "javadoc": "This event is fired when the downstream server tries to send a player a ResourcePack packet.\n The proxy will wait on this event to finish before forwarding the resource pack to the user.\n If this event is denied, it will retroactively send a DENIED status to the downstream\n server in response.\n If the downstream server has it set to \"forced\" it will forcefully disconnect the user.",
+      "javadoc": "This event is fired when the downstream server tries to send a player a ResourcePack packet. The proxy will wait on this event to finish before forwarding the resource pack to the user. If this event is denied, it will retroactively send a DENIED status to the downstream server in response. If the downstream server has it set to \"forced\" it will forcefully disconnect the user.",
       "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/player/ServerResourcePackSendEvent.html",
       "name": "ServerResourcePackSendEvent",
       "source": "velocity"
@@ -4312,7 +4312,7 @@
         "ja": "データパックなどのリソースがリロードされた時に呼び出される。カスタムレシピを再登録するために使用することを目的としている。"
       },
       "href": "io/papermc/paper/event/server/ServerResourcesReloadedEvent.html",
-      "javadoc": "Called when resources such as datapacks are reloaded (e.g. /minecraft:reload)\n \n Intended for use to re-register custom recipes, advancements that may be lost during a reload like this.",
+      "javadoc": "Called when resources such as datapacks are reloaded (e.g. /minecraft:reload) Intended for use to re-register custom recipes, advancements that may be lost during a reload like this.",
       "link": "https://jd.papermc.io/paper/1.20/io/papermc/paper/event/server/ServerResourcesReloadedEvent.html",
       "name": "ServerResourcesReloadedEvent",
       "source": "paper"
@@ -4362,7 +4362,7 @@
         "ja": "サービスが登録された時に呼び出される。"
       },
       "href": "org/bukkit/event/server/ServiceRegisterEvent.html",
-      "javadoc": "This event is called when a service is registered.\n \n Warning: The order in which register and unregister events are called\n should not be relied upon.",
+      "javadoc": "This event is called when a service is registered. Warning: The order in which register and unregister events are called should not be relied upon.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/server/ServiceRegisterEvent.html",
       "name": "ServiceRegisterEvent",
       "source": "spigot"
@@ -4372,7 +4372,7 @@
         "ja": "サービスの登録が解除された時に呼び出される。"
       },
       "href": "org/bukkit/event/server/ServiceUnregisterEvent.html",
-      "javadoc": "This event is called when a service is unregistered.\n \n Warning: The order in which register and unregister events are called\n should not be relied upon.",
+      "javadoc": "This event is called when a service is unregistered. Warning: The order in which register and unregister events are called should not be relied upon.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/server/ServiceUnregisterEvent.html",
       "name": "ServiceUnregisterEvent",
       "source": "spigot"
@@ -4382,7 +4382,7 @@
         "ja": "クライアント設定を変更した時に呼び出される。"
       },
       "href": "net/md_5/bungee/api/event/SettingsChangedEvent.html",
-      "javadoc": "Called after a ProxiedPlayer changed one or more of the following\n (client-side) settings:\n\n \n View distance\n Locale\n Displayed skin parts\n Chat visibility\n Chat colors\n Main hand side (left or right)\n ",
+      "javadoc": "Called after a ProxiedPlayer changed one or more of the following (client-side) settings: View distance Locale Displayed skin parts Chat visibility Chat colors Main hand side (left or right) ",
       "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/SettingsChangedEvent.html",
       "name": "SettingsChangedEvent",
       "source": "bungee"
@@ -4412,7 +4412,7 @@
         "ja": "シュルカーが新しいシュルカーを生成する時に呼び出される。"
       },
       "href": "io/papermc/paper/event/entity/ShulkerDuplicateEvent.html",
-      "javadoc": "Fired when a shulker duplicates itself by spawning a new shulker.\n \n The event is fired prior to the newly created shulker, accessible via getEntity(), being added to the world.",
+      "javadoc": "Fired when a shulker duplicates itself by spawning a new shulker. The event is fired prior to the newly created shulker, accessible via getEntity(), being added to the world.",
       "link": "https://jd.papermc.io/paper/1.20/io/papermc/paper/event/entity/ShulkerDuplicateEvent.html",
       "name": "ShulkerDuplicateEvent",
       "source": "paper"
@@ -4422,7 +4422,7 @@
         "ja": "プレイヤーによって看板の内容が変わる時に呼び出される。"
       },
       "href": "org/bukkit/event/block/SignChangeEvent.html",
-      "javadoc": "Called when a sign is changed by a player.\n \n If a Sign Change event is cancelled, the sign will not be changed.",
+      "javadoc": "Called when a sign is changed by a player. If a Sign Change event is cancelled, the sign will not be changed.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/SignChangeEvent.html",
       "name": "SignChangeEvent",
       "source": "spigot"
@@ -4442,7 +4442,7 @@
         "ja": "スライムが向きを変えようと決めた時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/entity/SlimeChangeDirectionEvent.html",
-      "javadoc": "Fired when a Slime decides to change its facing direction.\n \n This event does not fire for the entity's actual movement. Only when it\n is choosing to change direction.",
+      "javadoc": "Fired when a Slime decides to change its facing direction. This event does not fire for the entity's actual movement. Only when it is choosing to change direction.",
       "link": "https://jd.papermc.io/paper/1.20/com/destroystokyo/paper/event/entity/SlimeChangeDirectionEvent.html",
       "name": "SlimeChangeDirectionEvent",
       "source": "paper"
@@ -4452,7 +4452,7 @@
         "ja": "スライムが移動を開始しようと決めた時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/entity/SlimePathfindEvent.html",
-      "javadoc": "Fired when a Slime decides to start pathfinding.\n \n This event does not fire for the entity's actual movement. Only when it\n is choosing to start moving.",
+      "javadoc": "Fired when a Slime decides to start pathfinding. This event does not fire for the entity's actual movement. Only when it is choosing to start moving.",
       "link": "https://jd.papermc.io/paper/1.20/com/destroystokyo/paper/event/entity/SlimePathfindEvent.html",
       "name": "SlimePathfindEvent",
       "source": "paper"
@@ -4472,7 +4472,7 @@
         "ja": "スライムが水や溶岩にいる状態でジャンプしようと決めた時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/entity/SlimeSwimEvent.html",
-      "javadoc": "Fired when a Slime decides to start jumping while swimming in water/lava.\n \n This event does not fire for the entity's actual movement. Only when it\n is choosing to start jumping.",
+      "javadoc": "Fired when a Slime decides to start jumping while swimming in water/lava. This event does not fire for the entity's actual movement. Only when it is choosing to start jumping.",
       "link": "https://jd.papermc.io/paper/1.20/com/destroystokyo/paper/event/entity/SlimeSwimEvent.html",
       "name": "SlimeSwimEvent",
       "source": "paper"
@@ -4482,7 +4482,7 @@
         "ja": "スライムがエンティティを標的として移動を開始しようと決めた時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/entity/SlimeTargetLivingEntityEvent.html",
-      "javadoc": "Fired when a Slime decides to change direction to target a LivingEntity.\n \n This event does not fire for the entity's actual movement. Only when it\n is choosing to start moving.",
+      "javadoc": "Fired when a Slime decides to change direction to target a LivingEntity. This event does not fire for the entity's actual movement. Only when it is choosing to start moving.",
       "link": "https://jd.papermc.io/paper/1.20/com/destroystokyo/paper/event/entity/SlimeTargetLivingEntityEvent.html",
       "name": "SlimeTargetLivingEntityEvent",
       "source": "paper"
@@ -4492,7 +4492,7 @@
         "ja": "スライムがランダムに移動することを決めた時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/entity/SlimeWanderEvent.html",
-      "javadoc": "Fired when a Slime decides to start wandering.\n \n This event does not fire for the entity's actual movement. Only when it\n is choosing to start moving.",
+      "javadoc": "Fired when a Slime decides to start wandering. This event does not fire for the entity's actual movement. Only when it is choosing to start moving.",
       "link": "https://jd.papermc.io/paper/1.20/com/destroystokyo/paper/event/entity/SlimeWanderEvent.html",
       "name": "SlimeWanderEvent",
       "source": "paper"
@@ -4512,7 +4512,7 @@
         "ja": "ワールドのスポーン位置が変更された時に呼び出される。"
       },
       "href": "org/bukkit/event/world/SpawnChangeEvent.html",
-      "javadoc": "An event that is called when a world's spawn changes. The world's previous\n spawn location is included.",
+      "javadoc": "An event that is called when a world's spawn changes. The world's previous spawn location is included.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/world/SpawnChangeEvent.html",
       "name": "SpawnChangeEvent",
       "source": "spigot"
@@ -4522,7 +4522,7 @@
         "ja": "エンティティがスポナーによってスポーンする時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/SpawnerSpawnEvent.html",
-      "javadoc": "Called when an entity is spawned into a world by a spawner.\n \n If a Spawner Spawn event is cancelled, the entity will not spawn.",
+      "javadoc": "Called when an entity is spawned into a world by a spawner. If a Spawner Spawn event is cancelled, the entity will not spawn.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/SpawnerSpawnEvent.html",
       "name": "SpawnerSpawnEvent",
       "source": "spigot"
@@ -4532,7 +4532,7 @@
         "ja": "スポンジが水を吸収する時に呼び出される。"
       },
       "href": "org/bukkit/event/block/SpongeAbsorbEvent.html",
-      "javadoc": "Called when a sponge absorbs water from the world.\n \n The world will be in its previous state, and getBlocks() will\n represent the changes to be made to the world, if the event is not cancelled.\n \n As this is a physics based event it may be called multiple times for \"the\n same\" changes.",
+      "javadoc": "Called when a sponge absorbs water from the world. The world will be in its previous state, and getBlocks() will represent the changes to be made to the world, if the event is not cancelled. As this is a physics based event it may be called multiple times for \"the same\" changes.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/SpongeAbsorbEvent.html",
       "name": "SpongeAbsorbEvent",
       "source": "spigot"
@@ -4542,7 +4542,7 @@
         "ja": "ストライダーの体温が変化した時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/StriderTemperatureChangeEvent.html",
-      "javadoc": "Called when a Strider's temperature has changed as a result of\n entering or exiting blocks it considers warm.",
+      "javadoc": "Called when a Strider's temperature has changed as a result of entering or exiting blocks it considers warm.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/StriderTemperatureChangeEvent.html",
       "name": "StriderTemperatureChangeEvent",
       "source": "spigot"
@@ -4552,7 +4552,7 @@
         "ja": "植物が成長する時に呼び出される。以下に例を示す。\n- 苗木が木に成長する時\n- キノコが巨大キノコに成長する時"
       },
       "href": "org/bukkit/event/world/StructureGrowEvent.html",
-      "javadoc": "Event that is called when an organic structure attempts to grow (Sapling ->\n Tree), (Mushroom -> Huge Mushroom), naturally or using bonemeal.",
+      "javadoc": "Event that is called when an organic structure attempts to grow (Sapling -> Tree), (Mushroom -> Huge Mushroom), naturally or using bonemeal.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/world/StructureGrowEvent.html",
       "name": "StructureGrowEvent",
       "source": "spigot"
@@ -4566,7 +4566,7 @@
         "ja": "建造物が見つかる時に呼び出される。以下に例を示す。\n- /locate コマンドを実行した時\n- エンダーアイを使用した時\n- 宝の地図が開かれた時"
       },
       "href": "io/papermc/paper/event/world/StructureLocateEvent.html",
-      "javadoc": "Called before a structure/feature is located.\n This happens when:\n \n     The /locate command is used.\n     An Eye of Ender is used.\n     An Explorer/Treasure Map is activated.\n     World.locateNearestStructure(Location, StructureType, int, boolean) is invoked.\n ",
+      "javadoc": "Called before a structure/feature is located. This happens when: The /locate command is used. An Eye of Ender is used. An Explorer/Treasure Map is activated. World.locateNearestStructure(Location, StructureType, int, boolean) is invoked. ",
       "link": "https://jd.papermc.io/paper/1.20/io/papermc/paper/event/world/StructureLocateEvent.html",
       "name": "StructureLocateEvent",
       "source": "paper"
@@ -4576,7 +4576,7 @@
         "ja": "建造物が見つかる時に呼び出される。以下に例を示す。\n- /locate コマンドを実行した時\n- エンダーアイを使用した時\n- 宝の地図が開かれた時\n- イルカが構造物の場所を示した時\n- 村人と地図の交換をした時"
       },
       "href": "io/papermc/paper/event/world/StructuresLocateEvent.html",
-      "javadoc": "Called before a set of configured structures is located.\n This happens when:\n \n     The /locate command is used.\n     An Eye of Ender is used.\n     An Explorer/Treasure Map is activated.\n     A dolphin swims to a treasure location.\n     A trade is done with a villager for a map.\n     World.locateNearestStructure(Location, StructureType, int, boolean) is invoked.\n     World.locateNearestStructure(Location, Structure, int, boolean) is invoked.\n ",
+      "javadoc": "Called before a set of configured structures is located. This happens when: The /locate command is used. An Eye of Ender is used. An Explorer/Treasure Map is activated. A dolphin swims to a treasure location. A trade is done with a villager for a map. World.locateNearestStructure(Location, StructureType, int, boolean) is invoked. World.locateNearestStructure(Location, Structure, int, boolean) is invoked. ",
       "link": "https://jd.papermc.io/paper/1.20/io/papermc/paper/event/world/StructuresLocateEvent.html",
       "name": "StructuresLocateEvent",
       "source": "paper"
@@ -4596,7 +4596,7 @@
         "ja": "プレイヤーやコンソールがコマンドをタブ補完する時に呼び出される。クライアントの変更により、プレイヤーの場合、コマンド自体では呼び出されず、コマンド引数の場合にのみ呼び出される。"
       },
       "href": "org/bukkit/event/server/TabCompleteEvent.html",
-      "javadoc": "Called when a CommandSender of any description (ie: player or\n console) attempts to tab complete.\n \n Note that due to client changes, if the sender is a Player, this event will\n only begin to fire once command arguments are specified, not commands\n themselves. Plugins wishing to remove commands from tab completion are\n advised to ensure the client does not have permission for the relevant\n commands, or use PlayerCommandSendEvent.",
+      "javadoc": "Called when a CommandSender of any description (ie: player or console) attempts to tab complete. Note that due to client changes, if the sender is a Player, this event will only begin to fire once command arguments are specified, not commands themselves. Plugins wishing to remove commands from tab completion are advised to ensure the client does not have permission for the relevant commands, or use PlayerCommandSendEvent.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/server/TabCompleteEvent.html",
       "name": "TabCompleteEvent",
       "source": "spigot"
@@ -4606,7 +4606,7 @@
         "ja": "サーバーがタブ補完を行う時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/player/TabCompleteEvent.html",
-      "javadoc": "This event is fired after a tab complete response is sent by the remote server, for clients on\n 1.12.2 and below. You have the opportunity to modify the response sent to the remote player.\n Velocity will wait for this event to finish firing before sending the tab complete results to\n the client. Be sure to be as fast as possible, since the client will freeze while it waits for\n the tab complete results.",
+      "javadoc": "This event is fired after a tab complete response is sent by the remote server, for clients on 1.12.2 and below. You have the opportunity to modify the response sent to the remote player. Velocity will wait for this event to finish firing before sending the tab complete results to the client. Be sure to be as fast as possible, since the client will freeze while it waits for the tab complete results.",
       "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/player/TabCompleteEvent.html",
       "name": "TabCompleteEvent",
       "source": "velocity"
@@ -4616,7 +4616,7 @@
         "ja": "サーバーがタブ補完を行う時に呼び出される。プロキシによって処理されたタブ補完では呼び出されない。"
       },
       "href": "net/md_5/bungee/api/event/TabCompleteResponseEvent.html",
-      "javadoc": "Event called when a backend server sends a response to a player asking to\n tab-complete a chat message or command. Note that this is not called when\n BungeeCord or a plugin responds to a tab-complete request. Use\n TabCompleteEvent for that.",
+      "javadoc": "Event called when a backend server sends a response to a player asking to tab-complete a chat message or command. Note that this is not called when BungeeCord or a plugin responds to a tab-complete request. Use TabCompleteEvent for that.",
       "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/TabCompleteResponseEvent.html",
       "name": "TabCompleteResponseEvent",
       "source": "bungee"
@@ -4647,7 +4647,7 @@
         "ja": "ターゲットブロックに Projectile が当たる時に呼び出される。"
       },
       "href": "io/papermc/paper/event/block/TargetHitEvent.html",
-      "javadoc": "Called when a Target Block is hit by a projectile.\n \n Cancelling this event will stop the Target from emitting a redstone signal,\n and in the case that the shooter is a player, will stop them from receiving\n advancement criteria.",
+      "javadoc": "Called when a Target Block is hit by a projectile. Cancelling this event will stop the Target from emitting a redstone signal, and in the case that the shooter is a player, will stop them from receiving advancement criteria.",
       "link": "https://jd.papermc.io/paper/1.20/io/papermc/paper/event/block/TargetHitEvent.html",
       "name": "TargetHitEvent",
       "source": "paper"
@@ -4657,7 +4657,7 @@
         "ja": "投げられた卵が孵化するかの確認をする時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/entity/ThrownEggHatchEvent.html",
-      "javadoc": "Called when a thrown egg might hatch.\n \n This event fires for all thrown eggs that may hatch, players, dispensers, etc.",
+      "javadoc": "Called when a thrown egg might hatch. This event fires for all thrown eggs that may hatch, players, dispensers, etc.",
       "link": "https://jd.papermc.io/paper/1.20/com/destroystokyo/paper/event/entity/ThrownEggHatchEvent.html",
       "name": "ThrownEggHatchEvent",
       "source": "paper"
@@ -4677,7 +4677,7 @@
         "ja": "時間がスキップされる時に呼び出される。"
       },
       "href": "org/bukkit/event/world/TimeSkipEvent.html",
-      "javadoc": "Called when the time skips in a world.\n \n If the event is cancelled the time will not change.",
+      "javadoc": "Called when the time skips in a world. If the event is cancelled the time will not change.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/world/TimeSkipEvent.html",
       "name": "TimeSkipEvent",
       "source": "spigot"
@@ -4691,7 +4691,7 @@
         "ja": "TNT に着火する時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/block/TNTPrimeEvent.html",
-      "javadoc": "Called when TNT block is about to turn into TNTPrimed\n \n Cancelling it won't turn TNT into TNTPrimed and leaves\n the TNT block as-is",
+      "javadoc": "Called when TNT block is about to turn into TNTPrimed Cancelling it won't turn TNT into TNTPrimed and leaves the TNT block as-is",
       "link": "https://jd.papermc.io/paper/1.20/com/destroystokyo/paper/event/block/TNTPrimeEvent.html",
       "name": "TNTPrimeEvent",
       "source": "paper"
@@ -4701,7 +4701,7 @@
         "ja": "TNT に着火する時に呼び出される。"
       },
       "href": "org/bukkit/event/block/TNTPrimeEvent.html",
-      "javadoc": "Called when a block of TNT in the world become primed.\n \n If a TNT Prime event is cancelled, the block of TNT will not become primed.",
+      "javadoc": "Called when a block of TNT in the world become primed. If a TNT Prime event is cancelled, the block of TNT will not become primed.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/TNTPrimeEvent.html",
       "name": "TNTPrimeEvent",
       "source": "spigot"
@@ -4711,7 +4711,7 @@
         "ja": "取引画面のサイドバーで別の取引をクリックする時に呼び出される。"
       },
       "href": "org/bukkit/event/inventory/TradeSelectEvent.html",
-      "javadoc": "This event is called whenever a player clicks a new trade on the trades\n sidebar.\n \n This event allows the user to get the index of the trade, letting them get\n the MerchantRecipe via the Merchant.",
+      "javadoc": "This event is called whenever a player clicks a new trade on the trades sidebar. This event allows the user to get the index of the trade, letting them get the MerchantRecipe via the Merchant.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/inventory/TradeSelectEvent.html",
       "name": "TradeSelectEvent",
       "source": "spigot"
@@ -4792,7 +4792,7 @@
         "ja": "乗り物が破壊される時に呼び出される。"
       },
       "href": "org/bukkit/event/vehicle/VehicleDestroyEvent.html",
-      "javadoc": "Raised when a vehicle is destroyed, which could be caused by either a\n player or the environment. This is not raised if the boat is simply\n 'removed' due to other means.",
+      "javadoc": "Raised when a vehicle is destroyed, which could be caused by either a player or the environment. This is not raised if the boat is simply 'removed' due to other means.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/vehicle/VehicleDestroyEvent.html",
       "name": "VehicleDestroyEvent",
       "source": "spigot"
@@ -4882,7 +4882,7 @@
         "ja": "村人が交易品を補充する時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/VillagerReplenishTradeEvent.html",
-      "javadoc": "Called when a Villager is about to restock one of its trades.\n \n If this event passes, the villager will reset the\n uses of the affected MerchantRecipe to 0.",
+      "javadoc": "Called when a Villager is about to restock one of its trades. If this event passes, the villager will reset the uses of the affected MerchantRecipe to 0.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/VillagerReplenishTradeEvent.html",
       "name": "VillagerReplenishTradeEvent",
       "source": "spigot"
@@ -4892,7 +4892,7 @@
         "ja": "ウォーデンの怒りレベルが他のエンティティによって変化する時に呼び出される。"
       },
       "href": "io/papermc/paper/event/entity/WardenAngerChangeEvent.html",
-      "javadoc": "Called when a Warden's anger level has changed due to another entity.\n \n If the event is cancelled, the warden's anger level will not change.",
+      "javadoc": "Called when a Warden's anger level has changed due to another entity. If the event is cancelled, the warden's anger level will not change.",
       "link": "https://jd.papermc.io/paper/1.20/io/papermc/paper/event/entity/WardenAngerChangeEvent.html",
       "name": "WardenAngerChangeEvent",
       "source": "paper"
@@ -4902,7 +4902,7 @@
         "ja": "スプラッシュウォーターポーションが割れる時に呼び出される。このイベントを使ってさまざまなエンティティに影響を与えることができる。"
       },
       "href": "io/papermc/paper/event/entity/WaterBottleSplashEvent.html",
-      "javadoc": "Called when a splash water potion \"splashes\" and affects\n different entities in different ways.",
+      "javadoc": "Called when a splash water potion \"splashes\" and affects different entities in different ways.",
       "link": "https://jd.papermc.io/paper/1.20/io/papermc/paper/event/entity/WaterBottleSplashEvent.html",
       "name": "WaterBottleSplashEvent",
       "source": "paper"
@@ -5043,7 +5043,7 @@
         "ja": "ワールドが初期化される時に呼び出される。"
       },
       "href": "org/bukkit/event/world/WorldInitEvent.html",
-      "javadoc": "Called when a World is initializing.\n \n To get every world it is recommended to add following to the plugin.yml.\n load: STARTUP",
+      "javadoc": "Called when a World is initializing. To get every world it is recommended to add following to the plugin.yml. load: STARTUP",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/world/WorldInitEvent.html",
       "name": "WorldInitEvent",
       "source": "spigot"

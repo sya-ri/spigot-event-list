@@ -29,7 +29,7 @@ const writeEvents = (lang: string[], sources: Record<string, EventType>) => {
         description: value.description,
         abstract: value.abstract,
         href: value.href,
-        javadoc: value.javadoc,
+        javadoc: value.javadoc?.replace(/\n/g, "")?.replace(/\s+/g, " "),
         link: value.link,
         name: value.name,
         source: value.source,
