@@ -454,7 +454,7 @@
         "ja": "ブロックが爆発する時に呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockExplodeEvent.html",
-      "javadoc": "Called when a block explodes",
+      "javadoc": "Called when a block explodes. Note that due to the nature of explosions, BlockEvent.getBlock() will always be an air block. getExplodedBlockState() should be used to get information about the block state that exploded.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockExplodeEvent.html",
       "name": "BlockExplodeEvent",
       "source": "spigot"
