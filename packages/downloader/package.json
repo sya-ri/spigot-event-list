@@ -10,7 +10,7 @@
     "cheerio": "1.0.0-rc.12",
     "compressing": "1.10.0",
     "multi-progress": "4.0.0",
-    "tsx": "4.9.4",
+    "tsx": "4.10.0",
     "typescript": "5.4.5",
     "xml2js": "0.6.2"
   }
