@@ -158,6 +158,33 @@
     {
       "deprecate": "@Experimental",
       "deprecateDescription": {
+        "en": "",
+        "ja": ""
+      },
+      "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "com/destroystokyo/paper/event/brigadier/AsyncPlayerSendCommandsEvent.html",
+      "javadoc": "Fired any time a Brigadier RootCommandNode is generated for a player to inform the client of commands. You may manipulate this CommandNode to change what the client sees. This event may fire on login, world change, and permission rebuilds, by plugin request, and potentially future means. This event will fire before PlayerCommandSendEvent, so no filtering has been done by other plugins yet. WARNING: This event will potentially (and most likely) fire twice! Once for Async, and once again for Sync. It is important that you check event.isAsynchronous() and event.hasFiredAsync() to ensure you only act once. If for some reason we are unable to send this asynchronously in the future, only the sync method will fire. Your logic should look like this: if (event.isAsynchronous() || !event.hasFiredAsync()) { // do stuff } If your logic is not safe to run asynchronously, only react to the synchronous version. This is a draft/experimental API and is subject to change.",
+      "link": "https://jd.papermc.io/paper/1.20/com/destroystokyo/paper/event/brigadier/AsyncPlayerSendCommandsEvent.html",
+      "name": "AsyncPlayerSendCommandsEvent",
+      "source": "paper"
+    },
+    {
+      "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "com/destroystokyo/paper/event/brigadier/AsyncPlayerSendSuggestionsEvent.html",
+      "javadoc": "Called when sending Suggestions to the client. Will be called asynchronously if a plugin marks the AsyncTabCompleteEvent event handled asynchronously, otherwise called synchronously.",
+      "link": "https://jd.papermc.io/paper/1.20/com/destroystokyo/paper/event/brigadier/AsyncPlayerSendSuggestionsEvent.html",
+      "name": "AsyncPlayerSendSuggestionsEvent",
+      "source": "paper"
+    },
+    {
+      "deprecate": "@Experimental",
+      "deprecateDescription": {
         "ja": "実験段階。"
       },
       "description": {
@@ -803,6 +830,22 @@
       "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/command/CommandExecuteEvent.html",
       "name": "CommandExecuteEvent",
       "source": "velocity"
+    },
+    {
+      "deprecate": "@Deprecated",
+      "deprecateDescription": {
+        "en": "",
+        "ja": ""
+      },
+      "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "com/destroystokyo/paper/event/brigadier/CommandRegisteredEvent.html",
+      "javadoc": "Fired anytime the server synchronizes Bukkit commands to Brigadier. Allows a plugin to control the command node structure for its commands. This is done at Plugin Enable time after commands have been registered, but may also run at a later point in the server lifetime due to plugins, a server reload, etc. This is a draft/experimental API and is subject to change.",
+      "link": "https://jd.papermc.io/paper/1.20/com/destroystokyo/paper/event/brigadier/CommandRegisteredEvent.html",
+      "name": "CommandRegisteredEvent",
+      "source": "paper"
     },
     {
       "description": {
