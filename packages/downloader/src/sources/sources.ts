@@ -53,7 +53,7 @@ export const getSources = async (): Promise<Record<string, Source>> => ({
     allClasses: "allclasses-index.html",
     downloadSources: ["paper"],
     downloadUrl: "https://papermc.io/downloads/paper",
-    javadocUrl: `https://jd.papermc.io/paper/${dropPatchVersion(version)}/`,
+    javadocUrl: `https://jd.papermc.io/paper/${version}/`,
     buildNumber: await paperBuildNumber(version),
   })),
   Purpur: await purpurVersion().then(async (version) => ({
