@@ -82,8 +82,8 @@ const EventList: FC<EventListProps> = ({ tags, setTags, search }) => {
           .filter(
             (event) =>
               tags.includes(event.source as EventSource) &&
-              (event.name.match(new RegExp(search, "i")) ||
-                event.description.match(new RegExp(search, "i"))),
+              ((event.name ?? "").match(new RegExp(search, "i")) ||
+                (event.description ?? "").match(new RegExp(search, "i"))),
           )
           .map((event) => (
             <div key={event.link}>
