@@ -39,7 +39,7 @@ const EventListPage: FC<EventListPageProps> = ({
               <h1 className="font-bold text-2xl">Spigot Event List</h1>
             </Link>
           </div>
-          <div className="my-auto flex flex-col gap-2">
+          <div className="my-auto flex flex-col min-w-96 gap-2">
             <SearchBox locale={locale} search={search} setSearch={setSearch} />
             <div className="flex gap-1 mx-auto flex-wrap justify-center">
               {EventSource.map((source) => (
