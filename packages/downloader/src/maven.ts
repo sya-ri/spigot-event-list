@@ -87,7 +87,7 @@ export const downloadArtifact = (
         }
         return new Promise<void>((resolve, reject) => {
           const bar = multiProgress.newBar(
-            `  ${name.padEnd(10, " ")} [:bar] :percent`,
+            `  ${name.padEnd(10, " ")} ${artifact.version.padStart(12, " ")} [:bar] :percent`,
             {
               complete: "=",
               incomplete: " ",

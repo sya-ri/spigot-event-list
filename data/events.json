@@ -825,7 +825,7 @@
       },
       "href": "com/velocitypowered/api/event/command/CommandExecuteEvent.html",
       "javadoc": "This event is fired when someone executes a command. Velocity will wait for this event to finish firing before trying to handle the command and/or forwarding it to the server.",
-      "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/command/CommandExecuteEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/command/CommandExecuteEvent.html",
       "name": "CommandExecuteEvent",
       "source": "velocity"
     },
@@ -861,7 +861,7 @@
       },
       "href": "com/velocitypowered/api/event/connection/ConnectionHandshakeEvent.html",
       "javadoc": "This event is fired when a handshake is established between a client and the proxy. Velocity will fire this event asynchronously and will not wait for it to complete before handling the connection.",
-      "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/connection/ConnectionHandshakeEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/connection/ConnectionHandshakeEvent.html",
       "name": "ConnectionHandshakeEvent",
       "source": "velocity"
     },
@@ -882,7 +882,7 @@
       },
       "href": "com/velocitypowered/api/event/player/CookieReceiveEvent.html",
       "javadoc": "This event is fired when a cookie response from a client is received by the proxy. This usually happens after either a proxy plugin or a backend server requested a cookie. Velocity will wait on this event to finish firing before discarding the received cookie (if handled) or forwarding it to the backend server.",
-      "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/player/CookieReceiveEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/CookieReceiveEvent.html",
       "name": "CookieReceiveEvent",
       "source": "velocity"
     },
@@ -893,7 +893,7 @@
       },
       "href": "com/velocitypowered/api/event/player/CookieRequestEvent.html",
       "javadoc": "This event is fired when a cookie from a client is requested either by a proxy plugin or by a backend server. Velocity will wait on this event to finish firing before discarding the cookie request (if handled) or forwarding it to the client.",
-      "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/player/CookieRequestEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/CookieRequestEvent.html",
       "name": "CookieRequestEvent",
       "source": "velocity"
     },
@@ -904,7 +904,7 @@
       },
       "href": "com/velocitypowered/api/event/player/CookieStoreEvent.html",
       "javadoc": "This event is fired when a cookie should be stored on a player's client. This process can be initiated either by a proxy plugin or by a backend server. Velocity will wait on this event to finish firing before discarding the cookie (if handled) or forwarding it to the client so that it can store the cookie.",
-      "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/player/CookieStoreEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/CookieStoreEvent.html",
       "name": "CookieStoreEvent",
       "source": "velocity"
     },
@@ -954,7 +954,7 @@
       },
       "href": "com/velocitypowered/api/event/connection/DisconnectEvent.html",
       "javadoc": "This event is fired when a player disconnects from the proxy. This operation can take place when the player disconnects due to normal network activity or when the proxy shuts down. Operations on the provided player, aside from basic data retrieval operations, may behave in undefined ways. Velocity typically fires this event asynchronously and does not wait for a response. However, it will wait for all DisconnectEvents for every player on the proxy to fire successfully before the proxy shuts down. This event is the sole exception to the AwaitingEvent contract. ",
-      "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/connection/DisconnectEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/connection/DisconnectEvent.html",
       "name": "DisconnectEvent",
       "source": "velocity"
     },
@@ -1881,7 +1881,7 @@
       },
       "href": "com/velocitypowered/api/event/player/GameProfileRequestEvent.html",
       "javadoc": "This event is fired after the PreLoginEvent in order to set up the game profile for the user. This can be used to configure a custom profile for a user, i.e. skin replacement. Velocity will wait for this event to finish firing before proceeding with the rest of the login process, but you should try to limit the work done in any event that fires during the login process. ",
-      "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/player/GameProfileRequestEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/GameProfileRequestEvent.html",
       "name": "GameProfileRequestEvent",
       "source": "velocity"
     },
@@ -2139,7 +2139,7 @@
       },
       "href": "com/velocitypowered/api/event/player/KickedFromServerEvent.html",
       "javadoc": "Fired when a player is kicked from a server. You may either allow Velocity to kick the player (with an optional reason override) or redirect the player to a separate server. By default, Velocity will notify the user (if they are already connected to a server) or disconnect them (if they are not on a server and no other servers are available). Velocity will wait on this event to finish firing before taking the specified action.",
-      "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/player/KickedFromServerEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/KickedFromServerEvent.html",
       "name": "KickedFromServerEvent",
       "source": "velocity"
     },
@@ -2179,7 +2179,7 @@
       },
       "href": "com/velocitypowered/api/event/proxy/ListenerBoundEvent.html",
       "javadoc": "This event is fired by the proxy after a listener starts accepting connections.",
-      "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/proxy/ListenerBoundEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/proxy/ListenerBoundEvent.html",
       "name": "ListenerBoundEvent",
       "source": "velocity"
     },
@@ -2189,7 +2189,7 @@
       },
       "href": "com/velocitypowered/api/event/proxy/ListenerCloseEvent.html",
       "javadoc": "This event is fired by the proxy before the proxy stops accepting connections.",
-      "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/proxy/ListenerCloseEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/proxy/ListenerCloseEvent.html",
       "name": "ListenerCloseEvent",
       "source": "velocity"
     },
@@ -2229,7 +2229,7 @@
       },
       "href": "com/velocitypowered/api/event/connection/LoginEvent.html",
       "javadoc": "This event is fired once the player has been authenticated, but before they connect to a server. Velocity will wait for this event to finish firing before proceeding with the rest of the login process, but you should try to limit the work done in any event that fires during the login process.",
-      "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/connection/LoginEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/connection/LoginEvent.html",
       "name": "LoginEvent",
       "source": "velocity"
     },
@@ -2318,7 +2318,7 @@
       },
       "href": "com/velocitypowered/api/event/permission/PermissionsSetupEvent.html",
       "javadoc": "Called when a PermissionSubject's permissions are being setup. This event is typically called for the ConsoleCommandSource and any Players who join the proxy. This event is only called once per subject, on initialisation. Velocity will wait for this event to finish firing before proceeding further with server startup (for the console command source) and logins (for players) but it is strongly recommended to minimize the amount of work that must be done in this event. ",
-      "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/permission/PermissionsSetupEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/permission/PermissionsSetupEvent.html",
       "name": "PermissionsSetupEvent",
       "source": "velocity"
     },
@@ -2450,7 +2450,7 @@
       },
       "href": "com/velocitypowered/api/event/command/PlayerAvailableCommandsEvent.html",
       "javadoc": "Allows plugins to modify the packet indicating commands available on the server to a Minecraft 1.13+ client. The given RootCommandNode is mutable. Velocity will wait for this event to finish firing before sending the list of available commands to the client.",
-      "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/command/PlayerAvailableCommandsEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/command/PlayerAvailableCommandsEvent.html",
       "name": "PlayerAvailableCommandsEvent",
       "source": "velocity"
     },
@@ -2595,7 +2595,7 @@
       },
       "href": "com/velocitypowered/api/event/player/PlayerChannelRegisterEvent.html",
       "javadoc": "This event is fired when a client (Player) sends a plugin message through the register channel. Velocity will not wait on this event to finish firing.",
-      "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/player/PlayerChannelRegisterEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/PlayerChannelRegisterEvent.html",
       "name": "PlayerChannelRegisterEvent",
       "source": "velocity"
     },
@@ -2619,7 +2619,7 @@
       },
       "href": "com/velocitypowered/api/event/player/PlayerChatEvent.html",
       "javadoc": "This event is fired when a player types in a chat message. Velocity will wait on this event to finish firing before forwarding it to the server, if the result allows it.",
-      "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/player/PlayerChatEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/PlayerChatEvent.html",
       "name": "PlayerChatEvent",
       "source": "velocity"
     },
@@ -2643,7 +2643,7 @@
       },
       "href": "com/velocitypowered/api/event/player/PlayerChooseInitialServerEvent.html",
       "javadoc": "Fired when a player has finished the login process, and we need to choose the first server to connect to. Velocity will wait on this event to finish firing before initiating the connection but you should try to limit the work done in this event. Failures will be handled by KickedFromServerEvent as normal.",
-      "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/player/PlayerChooseInitialServerEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/PlayerChooseInitialServerEvent.html",
       "name": "PlayerChooseInitialServerEvent",
       "source": "velocity"
     },
@@ -2673,7 +2673,7 @@
       },
       "href": "com/velocitypowered/api/event/player/PlayerClientBrandEvent.html",
       "javadoc": "Fired when a Player sends the minecraft:brand plugin message. Velocity will not wait on the result of this event.",
-      "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/player/PlayerClientBrandEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/PlayerClientBrandEvent.html",
       "name": "PlayerClientBrandEvent",
       "source": "velocity"
     },
@@ -3144,7 +3144,7 @@
       },
       "href": "com/velocitypowered/api/event/player/PlayerModInfoEvent.html",
       "javadoc": "This event is fired when a Forge client sends its mods to the proxy while connecting to a server. Velocity will not wait on this event to finish firing.",
-      "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/player/PlayerModInfoEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/PlayerModInfoEvent.html",
       "name": "PlayerModInfoEvent",
       "source": "velocity"
     },
@@ -3362,7 +3362,7 @@
       },
       "href": "com/velocitypowered/api/event/player/PlayerResourcePackStatusEvent.html",
       "javadoc": "This event is fired when the status of a resource pack sent to the player by the server is changed. Depending on the result of this event (which Velocity will wait until completely fired), the player may be kicked from the server.",
-      "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/player/PlayerResourcePackStatusEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/PlayerResourcePackStatusEvent.html",
       "name": "PlayerResourcePackStatusEvent",
       "source": "velocity"
     },
@@ -3411,7 +3411,7 @@
       },
       "href": "com/velocitypowered/api/event/player/PlayerSettingsChangedEvent.html",
       "javadoc": "This event is fired when the client sends new client settings for the player. This event can and typically will be fired multiple times per connection. Velocity will not wait on this event to finish firing.",
-      "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/player/PlayerSettingsChangedEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/PlayerSettingsChangedEvent.html",
       "name": "PlayerSettingsChangedEvent",
       "source": "velocity"
     },
@@ -3739,7 +3739,7 @@
       },
       "href": "com/velocitypowered/api/event/connection/PluginMessageEvent.html",
       "javadoc": "This event is fired when a plugin message is sent to the proxy, either from a client (Player) or a server (ServerConnection). Velocity will wait on this event to finish firing before discarding the sent plugin message (if handled) or forwarding it to the server.",
-      "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/connection/PluginMessageEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/connection/PluginMessageEvent.html",
       "name": "PluginMessageEvent",
       "source": "velocity"
     },
@@ -3760,7 +3760,7 @@
       },
       "href": "com/velocitypowered/api/event/command/PostCommandInvocationEvent.html",
       "javadoc": "This event is fired when velocity executed a command. This event is called after the event is handled. Commands can be cancelled or forwarded to backend servers in CommandExecuteEvent. This will prevent firing this event.",
-      "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/command/PostCommandInvocationEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/command/PostCommandInvocationEvent.html",
       "name": "PostCommandInvocationEvent",
       "source": "velocity"
     },
@@ -3780,7 +3780,7 @@
       },
       "href": "com/velocitypowered/api/event/connection/PostLoginEvent.html",
       "javadoc": "This event is fired once the player has been fully initialized and is about to connect to their first server. Velocity will wait for this event to finish firing before it fires PlayerChooseInitialServerEvent with any default servers specified in the configuration, but you should try to limit the work done in any event that fires during the login process.",
-      "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/connection/PostLoginEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/connection/PostLoginEvent.html",
       "name": "PostLoginEvent",
       "source": "velocity"
     },
@@ -3850,7 +3850,7 @@
       },
       "href": "com/velocitypowered/api/event/connection/PreLoginEvent.html",
       "javadoc": "This event is fired when a player has initiated a connection with the proxy but before the proxy authenticates the player with Mojang or before the player's proxy connection is fully established (for offline mode). Velocity will wait for this event to finish firing before proceeding further with the login process, but you should try to limit the work done in any event that fires during the login process. As of Velocity 3.1.0, you may cast the InboundConnection to a LoginPhaseConnection to allow a proxy plugin to send login plugin messages to the client. ",
-      "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/connection/PreLoginEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/connection/PreLoginEvent.html",
       "name": "PreLoginEvent",
       "source": "velocity"
     },
@@ -3979,7 +3979,7 @@
       },
       "href": "com/velocitypowered/api/event/connection/PreTransferEvent.html",
       "javadoc": "This event is executed before sending a player to another host, either by the backend server or by a plugin using the Player.transferToHost(InetSocketAddress) method.",
-      "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/connection/PreTransferEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/connection/PreTransferEvent.html",
       "name": "PreTransferEvent",
       "source": "velocity"
     },
@@ -4053,7 +4053,7 @@
       },
       "href": "com/velocitypowered/api/event/proxy/ProxyInitializeEvent.html",
       "javadoc": "This event is fired by the proxy after plugins have been loaded but before the proxy starts accepting connections. Velocity will wait for this event to finish firing before it begins to accept new connections.",
-      "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/proxy/ProxyInitializeEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/proxy/ProxyInitializeEvent.html",
       "name": "ProxyInitializeEvent",
       "source": "velocity"
     },
@@ -4073,7 +4073,7 @@
       },
       "href": "com/velocitypowered/api/event/proxy/ProxyPingEvent.html",
       "javadoc": "This event is fired when a request for server information is sent by a remote client, or when the server sends the MOTD and favicon to the client after a successful login. Velocity will wait on this event to finish firing before delivering the results to the remote client, but you are urged to handle this event as quickly as possible when handling this event due to the amount of ping packets a client can send.",
-      "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/proxy/ProxyPingEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/proxy/ProxyPingEvent.html",
       "name": "ProxyPingEvent",
       "source": "velocity"
     },
@@ -4083,7 +4083,7 @@
       },
       "href": "com/velocitypowered/api/event/query/ProxyQueryEvent.html",
       "javadoc": "This event is fired if proxy is getting queried over GS4 Query protocol. Velocity will wait on this event to fire before providing a response to the client.",
-      "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/query/ProxyQueryEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/query/ProxyQueryEvent.html",
       "name": "ProxyQueryEvent",
       "source": "velocity"
     },
@@ -4113,7 +4113,7 @@
       },
       "href": "com/velocitypowered/api/event/proxy/ProxyReloadEvent.html",
       "javadoc": "This event is fired when the proxy is reloaded by the user using /velocity reload.",
-      "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/proxy/ProxyReloadEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/proxy/ProxyReloadEvent.html",
       "name": "ProxyReloadEvent",
       "source": "velocity"
     },
@@ -4123,7 +4123,7 @@
       },
       "href": "com/velocitypowered/api/event/proxy/ProxyShutdownEvent.html",
       "javadoc": "This event is fired by the proxy after the proxy has stopped accepting connections but before the proxy process exits. Velocity will wait for this event to finish firing before it exits.",
-      "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/proxy/ProxyShutdownEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/proxy/ProxyShutdownEvent.html",
       "name": "ProxyShutdownEvent",
       "source": "velocity"
     },
@@ -4204,7 +4204,7 @@
       },
       "href": "com/velocitypowered/api/event/ResultedEvent.html",
       "javadoc": "Indicates an event that has a result attached to it.",
-      "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/ResultedEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/ResultedEvent.html",
       "name": "ResultedEvent",
       "source": "velocity"
     },
@@ -4263,7 +4263,7 @@
       },
       "href": "com/velocitypowered/api/event/player/ServerConnectedEvent.html",
       "javadoc": "This event is fired once the player has successfully connected to the target server and the connection to the previous server has been de-established. Note: For historical reasons, Velocity does wait on this event to finish firing before continuing the server connection process. This behavior is deprecated and likely to be removed in Polymer. ",
-      "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/player/ServerConnectedEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/ServerConnectedEvent.html",
       "name": "ServerConnectedEvent",
       "source": "velocity"
     },
@@ -4344,7 +4344,7 @@
       },
       "href": "com/velocitypowered/api/event/player/ServerLoginPluginMessageEvent.html",
       "javadoc": "Fired when a server sends a login plugin message to the proxy. Plugins have the opportunity to respond to the messages as needed. Velocity will wait on this event to finish. The server will be responsible for continuing the login process once the server is satisfied with any login plugin responses sent by proxy plugins (or messages indicating a lack of response).",
-      "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/player/ServerLoginPluginMessageEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/ServerLoginPluginMessageEvent.html",
       "name": "ServerLoginPluginMessageEvent",
       "source": "velocity"
     },
@@ -4358,7 +4358,7 @@
       },
       "href": "com/velocitypowered/api/event/player/ServerPostConnectEvent.html",
       "javadoc": "Fired after the player has connected to a server. The server the player is now connected to is available in Player.getCurrentServer(). Velocity will not wait on this event to finish firing.",
-      "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/player/ServerPostConnectEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/ServerPostConnectEvent.html",
       "name": "ServerPostConnectEvent",
       "source": "velocity"
     },
@@ -4368,7 +4368,7 @@
       },
       "href": "com/velocitypowered/api/event/player/ServerPreConnectEvent.html",
       "javadoc": "This event is fired before the player connects to a server. Velocity will wait on this event to finish firing before initiating the connection.",
-      "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/player/ServerPreConnectEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/ServerPreConnectEvent.html",
       "name": "ServerPreConnectEvent",
       "source": "velocity"
     },
@@ -4378,7 +4378,7 @@
       },
       "href": "com/velocitypowered/api/event/player/ServerResourcePackSendEvent.html",
       "javadoc": "This event is fired when the downstream server tries to send a player a ResourcePack packet. The proxy will wait on this event to finish before forwarding the resource pack to the user. If this event is denied, it will retroactively send a DENIED status to the downstream server in response. If the downstream server has it set to \"forced\" it will forcefully disconnect the user.",
-      "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/player/ServerResourcePackSendEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/ServerResourcePackSendEvent.html",
       "name": "ServerResourcePackSendEvent",
       "source": "velocity"
     },
@@ -4682,7 +4682,7 @@
       },
       "href": "com/velocitypowered/api/event/player/TabCompleteEvent.html",
       "javadoc": "This event is fired after a tab complete response is sent by the remote server, for clients on 1.12.2 and below. You have the opportunity to modify the response sent to the remote player. Velocity will wait for this event to finish firing before sending the tab complete results to the client. Be sure to be as fast as possible, since the client will freeze while it waits for the tab complete results.",
-      "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/player/TabCompleteEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/TabCompleteEvent.html",
       "name": "TabCompleteEvent",
       "source": "velocity"
     },

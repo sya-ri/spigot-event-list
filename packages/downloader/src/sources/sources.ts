@@ -99,7 +99,7 @@ export const getSources = async (): Promise<Record<string, Source>> => ({
     allClasses: "allclasses-index.html",
     downloadSources: ["velocity"],
     downloadUrl: "https://papermc.io/downloads#Velocity",
-    javadocUrl: "https://jd.papermc.io/velocity/3.0.0/",
+    javadocUrl: "https://jd.papermc.io/velocity/3.3.0/",
     buildNumber: await velocityBuildNumber(version),
   })),
   Waterfall: await waterfallVersion().then(async (version) => ({
