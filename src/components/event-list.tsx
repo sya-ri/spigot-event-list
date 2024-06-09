@@ -58,7 +58,7 @@ const EventList: FC<EventListProps> = ({ tags, setTags, search, locale }) => {
               </div>
             </div>
             <div className="collapse-content">
-              <ul className="w-fit mx-auto sm:mx-12">
+              <ul className="mx-auto sm:mx-12 max-h-96 overflow-y-scroll">
                 {incompleteEvents.map((event) => (
                   <li key={event.link}>
                     <Link
