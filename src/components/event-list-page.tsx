@@ -12,7 +12,7 @@ import { Locale } from "@/i18n/config";
 import { BsTranslate } from "react-icons/bs";
 import { FiPlus } from "react-icons/fi";
 import { translate } from "@/i18n/translation";
-import useLocale from "@/i18n/useLocale";
+import useLocale from "@/i18n/use-locale";
 
 export type EventListPageProps = {
   defaultSearch: string;
@@ -81,18 +81,16 @@ const EventListPage: FC<EventListPageProps> = ({
               tabIndex={0}
               className="dropdown-content z-10 menu p-2 shadow bg-base-200 rounded-box w-64"
             >
-              {Locale.map((locale) => (
-                <li key={locale}>
-                  <Link href={`/${locale}`}>
-                    <div className="badge badge-outline">
-                      {locale.toUpperCase()}
-                    </div>
+              {Locale.map((l) => (
+                <li key={l}>
+                  <a href={`/${l}`}>
+                    <div className="badge badge-outline">{l.toUpperCase()}</div>
                     <div>
-                      {new Intl.DisplayNames(locale ?? "en", {
+                      {new Intl.DisplayNames(locale, {
                         type: "language",
-                      }).of(locale)}
+                      }).of(l)}
                     </div>
-                  </Link>
+                  </a>
                 </li>
               ))}
               <li className="mt-2 pt-2 border-t border-base-content/20">
