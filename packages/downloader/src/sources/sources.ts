@@ -11,8 +11,6 @@ import {
   spigotVersion,
   velocityBuildNumber,
   velocityVersion,
-  waterfallBuildNumber,
-  waterfallVersion,
 } from "./source-version";
 
 export type Source = {
@@ -102,21 +100,6 @@ export const getSources = async (): Promise<Record<string, Source>> => ({
     javadocUrl: "https://jd.papermc.io/velocity/3.3.0/",
     buildNumber: await velocityBuildNumber(version),
   })),
-  Waterfall: await waterfallVersion().then(async (version) => ({
-    artifact: {
-      groupId: "io.github.waterfallmc",
-      artifactId: "waterfall-api",
-      version: `${version}-R0.1`,
-      classifier: "javadoc",
-      isSnapShot: true,
-    },
-    repository: "https://repo.papermc.io/repository/maven-public/",
-    allClasses: "allclasses-index.html",
-    downloadSources: ["waterfall"],
-    downloadUrl: "https://papermc.io/downloads#Waterfall",
-    javadocUrl: `https://jd.papermc.io/waterfall/${version}/`,
-    buildNumber: await waterfallBuildNumber(version),
-  })),
 });
 
 export const getSourceType = (href: string): SourceType | null => {
@@ -132,15 +115,9 @@ export const getSourceType = (href: string): SourceType | null => {
     return "purpur";
   } else if (href.startsWith("net/md_5/bungee/api")) {
     return "bungee";
-  } else if (href.startsWith("io/github/waterfallmc/waterfall")) {
-    return "waterfall";
   } else if (href.startsWith("com/velocitypowered")) {
     return "velocity";
   } else {
     return null;
   }
-};
-
-const dropPatchVersion = (version: string): string => {
-  return version.split(".").slice(0, 2).join(".");
 };

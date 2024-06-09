@@ -15,7 +15,6 @@ const SourceTag: FC<SourceTagProps> = ({ source }) => {
         source == "paper" && "bg-indigo-300 text-indigo-900",
         source == "purpur" && "bg-purple-300 text-purple-900",
         source == "bungee" && "bg-yellow-300 text-yellow-900",
-        source == "waterfall" && "bg-cyan-300 text-cyan-900",
         source == "velocity" && "bg-teal-300 text-teal-900",
       )}
     >

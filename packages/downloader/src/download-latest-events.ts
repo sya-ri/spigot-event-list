@@ -141,10 +141,6 @@ const applyToSources = (sources: Record<string, EventType>) => {
             descriptionSelector = "#class-description";
             typeSignatureSelector = ".type-signature";
             break;
-          case "waterfall":
-            descriptionSelector = ".description";
-            typeSignatureSelector = "pre";
-            break;
         }
         const javadoc = $(`${descriptionSelector} .block`).text();
         if (javadoc) {
@@ -188,8 +184,6 @@ const getNameFromSourceType = (type: SourceType) => {
       return "Purpur";
     case "bungee":
       return "Bungee";
-    case "waterfall":
-      return "Waterfall";
     case "velocity":
       return "Velocity";
   }

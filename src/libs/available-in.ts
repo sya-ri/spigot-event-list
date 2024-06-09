@@ -14,10 +14,6 @@ export const availableInBungee = (source: string) => {
   return source == "bungee";
 };
 
-export const availableInWaterfall = (source: string) => {
-  return source == "bungee" || source == "waterfall";
-};
-
 export const availableInVelocity = (source: string) => {
   return source == "velocity";
 };

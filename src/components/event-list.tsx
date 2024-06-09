@@ -8,7 +8,6 @@ import {
   availableInPurpur,
   availableInSpigot,
   availableInVelocity,
-  availableInWaterfall,
 } from "@/libs/available-in";
 import React, { FC, useEffect, useState } from "react";
 import SelectableSourceTag from "@/components/selectable-source-tag";
@@ -122,13 +121,6 @@ const EventList: FC<EventListProps> = ({ tags, setTags, search, locale }) => {
                   {availableInBungee(event.source) && (
                     <SelectableSourceTag
                       source="bungee"
-                      tags={tags}
-                      setTags={setTags}
-                    />
-                  )}
-                  {availableInWaterfall(event.source) && (
-                    <SelectableSourceTag
-                      source="waterfall"
                       tags={tags}
                       setTags={setTags}
                     />

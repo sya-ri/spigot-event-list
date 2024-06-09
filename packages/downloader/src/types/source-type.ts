@@ -1,11 +1,4 @@
-const SourceType = [
-  "spigot",
-  "paper",
-  "purpur",
-  "bungee",
-  "waterfall",
-  "velocity",
-] as const;
+const SourceType = ["spigot", "paper", "purpur", "bungee", "velocity"] as const;
 
 type SourceType = (typeof SourceType)[number];
 

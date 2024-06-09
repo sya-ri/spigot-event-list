@@ -6,7 +6,7 @@
   "start_url": "/",
   "name": "Spigot Event List",
   "short_name": "Spigot events",
-  "description": "Event list for Minecraft plugins (Bukkit, Spigot, Paper, Purpur, Bungee, Waterfall, Velocity)",
+  "description": "Event list for Minecraft plugins (Bukkit, Spigot, Paper, Purpur, Bungee, Velocity)",
   "icons": [
     {
       "src": "/icon-192x192.png",

@@ -17,9 +17,6 @@
   <a href="https://www.spigotmc.org/wiki/bungeecord">
     <img alt="BungeeCord" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2Fsya-ri%2Fspigot-event-list%2Fraw%2Fmaster%2Fdata%2Fversions.json&query=Bungee&label=Bungee&color=yellow" />
   </a>
-  <a href="https://papermc.io/downloads/waterfall">
-    <img alt="Waterfall" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2Fsya-ri%2Fspigot-event-list%2Fraw%2Fmaster%2Fdata%2Fversions.json&query=Waterfall&label=Waterfall&color=lightblue" />
-  </a>
   <a href="https://papermc.io/downloads/velocity">
     <img alt="Velocity" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fgithub.com%2Fsya-ri%2Fspigot-event-list%2Fraw%2Fmaster%2Fdata%2Fversions.json&query=Velocity&label=Velocity&color=lightgreen" />
   </a>
@@ -37,7 +34,6 @@
   - Paper
   - Purpur
   - BungeeCord
-  - Waterfall
   - Velocity
 - Support i18n.
 

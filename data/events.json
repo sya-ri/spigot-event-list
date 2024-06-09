@@ -867,16 +867,6 @@
     },
     {
       "description": {
-        "ja": "新しい接続があった時に呼び出される。接続を効率的に閉じることを可能にする。"
-      },
-      "href": "io/github/waterfallmc/waterfall/event/ConnectionInitEvent.html",
-      "javadoc": "Represents a brand new connection made to the proxy, allowing for plugins to efficiently close a connection, useful for connection throttlers, etc",
-      "link": "https://jd.papermc.io/waterfall/1.20/io/github/waterfallmc/waterfall/event/ConnectionInitEvent.html",
-      "name": "ConnectionInitEvent",
-      "source": "waterfall"
-    },
-    {
-      "description": {
         "en": "",
         "ja": ""
       },
@@ -4029,26 +4019,6 @@
     },
     {
       "description": {
-        "ja": "タブ補完に使われるコマンドを定義される時に呼び出される。"
-      },
-      "href": "io/github/waterfallmc/waterfall/event/ProxyDefineCommandsEvent.html",
-      "javadoc": "Called when the proxy intercepts the command packet allowing for plugins to prevent commands being added to the clients which might not be wanted. Plugin developers, please implement Command.hasPermission(CommandSender) properly in favor of this event.",
-      "link": "https://jd.papermc.io/waterfall/1.20/io/github/waterfallmc/waterfall/event/ProxyDefineCommandsEvent.html",
-      "name": "ProxyDefineCommandsEvent",
-      "source": "waterfall"
-    },
-    {
-      "description": {
-        "ja": "回復可能な状況で例外が発生した時に呼び出される。"
-      },
-      "href": "io/github/waterfallmc/waterfall/event/ProxyExceptionEvent.html",
-      "javadoc": "Called whenever an exception is thrown in a recoverable section of the server.",
-      "link": "https://jd.papermc.io/waterfall/1.20/io/github/waterfallmc/waterfall/event/ProxyExceptionEvent.html",
-      "name": "ProxyExceptionEvent",
-      "source": "waterfall"
-    },
-    {
-      "description": {
         "ja": "プラグインが初期化された後、接続の受け入れを開始する前に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/proxy/ProxyInitializeEvent.html",
@@ -4086,16 +4056,6 @@
       "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/query/ProxyQueryEvent.html",
       "name": "ProxyQueryEvent",
       "source": "velocity"
-    },
-    {
-      "description": {
-        "ja": "クエリ要求を受信した時に呼び出される。"
-      },
-      "href": "io/github/waterfallmc/waterfall/event/ProxyQueryEvent.html",
-      "javadoc": "This event will be posted whenever a Query request is received.",
-      "link": "https://jd.papermc.io/waterfall/1.20/io/github/waterfallmc/waterfall/event/ProxyQueryEvent.html",
-      "name": "ProxyQueryEvent",
-      "source": "waterfall"
     },
     {
       "description": {

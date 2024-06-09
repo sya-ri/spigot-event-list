@@ -136,11 +136,3 @@ export const velocityVersion = async () => {
 export const velocityBuildNumber = async (version: string) => {
   return fetchBuildNumberFromPaperApi("velocity", version);
 };
-
-export const waterfallVersion = async () => {
-  return fetchVersionFromPaperApi("waterfall");
-};
-
-export const waterfallBuildNumber = async (version: string) => {
-  return fetchBuildNumberFromPaperApi("waterfall", version);
-};

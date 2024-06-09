@@ -11,13 +11,13 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://spigot-event-list.s7a.dev"),
   title: "Spigot Event List",
   description:
-    "Event list for Minecraft plugins (Bukkit, Spigot, Paper, Purpur, Bungee, Waterfall, Velocity)",
+    "Event list for Minecraft plugins (Bukkit, Spigot, Paper, Purpur, Bungee, Velocity)",
   openGraph: {
     type: "website",
     url: "/",
     siteName: "Spigot Event List",
     description:
-      "Event list for Minecraft plugins (Bukkit, Spigot, Paper, Purpur, Bungee, Waterfall, Velocity)",
+      "Event list for Minecraft plugins (Bukkit, Spigot, Paper, Purpur, Bungee, Velocity)",
     images: "/logo.png",
   },
   twitter: {

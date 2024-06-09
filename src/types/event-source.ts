@@ -3,7 +3,6 @@ const EventSource = [
   "paper",
   "purpur",
   "bungee",
-  "waterfall",
   "velocity",
 ] as const;
 
