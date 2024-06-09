@@ -894,7 +894,7 @@
         "ja": ""
       },
       "href": "com/velocitypowered/api/event/player/CookieRequestEvent.html",
-      "javadoc": "This event is fired when a cookie is requested from a client either by a proxy plugin or by a backend server. Velocity will wait on this event to finish firing before discarding the received cookie (if handled) or forwarding it to the backend server.",
+      "javadoc": "This event is fired when a cookie from a client is requested either by a proxy plugin or by a backend server. Velocity will wait on this event to finish firing before discarding the cookie request (if handled) or forwarding it to the client.",
       "link": "https://jd.papermc.io/velocity/3.0.0/com/velocitypowered/api/event/player/CookieRequestEvent.html",
       "name": "CookieRequestEvent",
       "source": "velocity"
