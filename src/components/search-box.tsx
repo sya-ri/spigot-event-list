@@ -6,16 +6,15 @@ import { FC, useRef } from "react";
 import { usePathname, useSearchParams } from "next/navigation";
 import { omit } from "remeda";
 import { translate } from "@/i18n/translation";
-import { useCurrentLocale } from "next-i18n-router/client";
-import { i18nConfig } from "@/i18n/config";
+import { Locale } from "@/i18n/config";
 
 export type SearchBoxProps = {
+  locale: Locale;
   search: string;
   setSearch: (value: string) => void;
 };
 
-const SearchBox: FC<SearchBoxProps> = ({ search, setSearch }) => {
-  const currentLocale = useCurrentLocale(i18nConfig);
+const SearchBox: FC<SearchBoxProps> = ({ locale, search, setSearch }) => {
   const pathname = usePathname();
   const searchParams = useSearchParams();
   const ref = useRef<HTMLAnchorElement>(null);
@@ -24,7 +23,7 @@ const SearchBox: FC<SearchBoxProps> = ({ search, setSearch }) => {
       <input
         type="text"
         className="input input-bordered w-full join-item"
-        placeholder={translate(currentLocale, "SearchByNameOrDescription")}
+        placeholder={translate(locale, "SearchByNameOrDescription")}
         value={search}
         onChange={(event) => setSearch(event.target.value)}
         onKeyDown={(event) => {

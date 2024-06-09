@@ -8,11 +8,11 @@ import SelectableSourceTag from "@/components/selectable-source-tag";
 import EventList from "@/components/event-list";
 import SwitchThemeButton from "@/components/switch-theme-button";
 import { FC, useState } from "react";
-import { i18nConfig } from "@/i18n/config";
+import { Locale } from "@/i18n/config";
 import { BsTranslate } from "react-icons/bs";
-import { useCurrentLocale } from "next-i18n-router/client";
 import { FiPlus } from "react-icons/fi";
 import { translate } from "@/i18n/translation";
+import useLocale from "@/i18n/useLocale";
 
 export type EventListPageProps = {
   defaultSearch: string;
@@ -23,7 +23,7 @@ const EventListPage: FC<EventListPageProps> = ({
   defaultSearch,
   defaultTags,
 }) => {
-  const currentLocale = useCurrentLocale(i18nConfig);
+  const locale = useLocale();
   const [search, setSearch] = useState(defaultSearch);
   const [tags, setTags] = useState(defaultTags);
   return [
@@ -40,7 +40,7 @@ const EventListPage: FC<EventListPageProps> = ({
             </Link>
           </div>
           <div className="my-auto flex flex-col gap-2">
-            <SearchBox search={search} setSearch={setSearch} />
+            <SearchBox locale={locale} search={search} setSearch={setSearch} />
             <div className="flex gap-1 mx-auto flex-wrap justify-center">
               {EventSource.map((source) => (
                 <SelectableSourceTag
@@ -56,7 +56,12 @@ const EventListPage: FC<EventListPageProps> = ({
       </div>
     </header>,
     <main key="main" className="w-full max-w-screen-sm mx-auto py-4 px-2 grow">
-      <EventList tags={tags} setTags={setTags} search={search} />
+      <EventList
+        tags={tags}
+        setTags={setTags}
+        search={search}
+        locale={locale}
+      />
     </main>,
     <footer
       key="footer"
@@ -76,29 +81,27 @@ const EventListPage: FC<EventListPageProps> = ({
               tabIndex={0}
               className="dropdown-content z-10 menu p-2 shadow bg-base-200 rounded-box w-64"
             >
-              {i18nConfig.locales
-                .filter((locale) => locale != "default")
-                .map((locale) => (
-                  <li key={locale}>
-                    <Link href={`/${locale}`}>
-                      <div className="badge badge-outline">
-                        {locale.toUpperCase()}
-                      </div>
-                      <div>
-                        {new Intl.DisplayNames(currentLocale ?? "en", {
-                          type: "language",
-                        }).of(locale)}
-                      </div>
-                    </Link>
-                  </li>
-                ))}
+              {Locale.map((locale) => (
+                <li key={locale}>
+                  <Link href={`/${locale}`}>
+                    <div className="badge badge-outline">
+                      {locale.toUpperCase()}
+                    </div>
+                    <div>
+                      {new Intl.DisplayNames(locale ?? "en", {
+                        type: "language",
+                      }).of(locale)}
+                    </div>
+                  </Link>
+                </li>
+              ))}
               <li className="mt-2 pt-2 border-t border-base-content/20">
                 <Link
                   href="https://github.com/sya-ri/spigot-event-list#i18n"
                   target="_blank"
                 >
                   <FiPlus />
-                  {translate(currentLocale, "AddNewLanguage")}
+                  {translate(locale, "AddNewLanguage")}
                 </Link>
               </li>
             </ul>

@@ -14,22 +14,21 @@ import React, { FC, useEffect, useState } from "react";
 import SelectableSourceTag from "@/components/selectable-source-tag";
 import EventSource from "@/types/event-source";
 import useEvents from "@/libs/hooks/use-events";
-import { useCurrentLocale } from "next-i18n-router/client";
-import { i18nConfig } from "@/i18n/config";
 import { isEmpty } from "remeda/dist/es";
 import { isDefined } from "remeda";
 import { translate } from "@/i18n/translation";
 import { FiAlertTriangle } from "react-icons/fi";
+import { Locale } from "@/i18n/config";
 
 type EventListProps = {
   tags: EventSource[];
   setTags: (value: EventSource[]) => void;
   search: string;
+  locale: Locale;
 };
 
-const EventList: FC<EventListProps> = ({ tags, setTags, search }) => {
-  const currentLocale = useCurrentLocale(i18nConfig);
-  const { events } = useEvents(currentLocale);
+const EventList: FC<EventListProps> = ({ tags, setTags, search, locale }) => {
+  const { events } = useEvents(locale);
   const [incompleteEvents, setIncompleteEvents] =
     useState<ReturnType<typeof useEvents>["events"]>();
   useEffect(() => {
@@ -53,7 +52,7 @@ const EventList: FC<EventListProps> = ({ tags, setTags, search }) => {
             <div className="collapse-title">
               <div className="flex items-center gap-8 w-full">
                 <FiAlertTriangle />
-                {translate(currentLocale, "IncompleteEvents").replace(
+                {translate(locale, "IncompleteEvents").replace(
                   "%size%",
                   incompleteEvents.length.toLocaleString(),
                 )}

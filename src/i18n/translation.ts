@@ -1,10 +1,12 @@
+import { Locale } from "@/i18n/config";
+
 type Message = {
   SearchByNameOrDescription: string;
   AddNewLanguage: string;
   IncompleteEvents: string;
 };
 
-export const messages: Record<string, Message> = {
+export const messages: Record<Locale, Message> = {
   en: {
     SearchByNameOrDescription: "Search by name or description",
     AddNewLanguage: "Add new language",
@@ -17,6 +19,6 @@ export const messages: Record<string, Message> = {
   },
 };
 
-export const translate = (locale: string | undefined, key: keyof Message) => {
-  return messages[locale ?? "en"][key];
+export const translate = (locale: Locale, key: keyof Message) => {
+  return messages[locale][key];
 };

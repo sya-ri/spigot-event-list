@@ -1,5 +1,6 @@
 import useSWRImmutable from "swr/immutable";
 import EventSource from "@/types/event-source";
+import { Locale } from "@/i18n/config";
 
 type Event = {
   name: string;
@@ -11,13 +12,11 @@ type Event = {
   deprecateDescription?: string;
 };
 
-const useEvents = (locale: string | undefined) => {
-  const { data: events } = useSWRImmutable(
-    ["events", locale ?? "en"],
-    ([, locale]) =>
-      fetch(`/api/events?lang=${locale}`).then(
-        (response) => response.json() as Promise<Event[]>,
-      ),
+const useEvents = (locale: Locale) => {
+  const { data: events } = useSWRImmutable(["events", locale], ([, locale]) =>
+    fetch(`/api/events?lang=${locale}`).then(
+      (response) => response.json() as Promise<Event[]>,
+    ),
   );
   return { events };
 };
