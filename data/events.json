@@ -71,6 +71,7 @@
     {
       "deprecate": "@Experimental",
       "deprecateDescription": {
+        "en": "",
         "ja": "実験段階。"
       },
       "description": {
@@ -85,6 +86,7 @@
     {
       "deprecate": "@Experimental",
       "deprecateDescription": {
+        "en": "",
         "ja": "実験段階。"
       },
       "description": {
@@ -133,6 +135,7 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
+        "en": "",
         "ja": "実験段階。"
       },
       "description": {
@@ -147,6 +150,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがログインしようとしている時に呼び出される。非同期で処理される。"
       },
       "href": "org/bukkit/event/player/AsyncPlayerPreLoginEvent.html",
@@ -158,9 +162,11 @@
     {
       "deprecate": "@Experimental",
       "deprecateDescription": {
+        "en": "",
         "ja": "実験段階。"
       },
       "description": {
+        "en": "",
         "ja": "プレイヤーがクライアントにコマンドを通知するために Brigadier RootCommandNode が生成された時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/brigadier/AsyncPlayerSendCommandsEvent.html",
@@ -183,9 +189,11 @@
     {
       "deprecate": "@Experimental",
       "deprecateDescription": {
+        "en": "",
         "ja": "実験段階。"
       },
       "description": {
+        "en": "",
         "ja": "構造物が生成された時に呼び出される。"
       },
       "href": "org/bukkit/event/world/AsyncStructureGenerateEvent.html",
@@ -196,6 +204,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "構造物がワールドに自然生成される時に呼び出される。"
       },
       "href": "org/bukkit/event/world/AsyncStructureSpawnEvent.html",
@@ -206,6 +215,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "タブ補完を行う時に呼び出される。非同期で処理される。このイベントが結果を返す時、標準のタブ補完処理は発生しない。ただし、 TabCompleteEvent は非同期の結果と共に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/server/AsyncTabCompleteEvent.html",
@@ -216,6 +226,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "コウモリが眠ったり起きたりする時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/BatToggleSleepEvent.html",
@@ -226,6 +237,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ビーコンが有効になった時に呼び出される。"
       },
       "href": "io/papermc/paper/event/block/BeaconActivatedEvent.html",
@@ -236,6 +248,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ビーコンが無効になった時に呼び出される。"
       },
       "href": "io/papermc/paper/event/block/BeaconDeactivatedEvent.html",
@@ -246,6 +259,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ビーコンの効果がプレイヤーに適用される時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/block/BeaconEffectEvent.html",
@@ -256,6 +270,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ミツバチが花をターゲットする時に呼び出される。"
       },
       "href": "org/purpurmc/purpur/event/entity/BeeFoundFlowerEvent.html",
@@ -266,6 +281,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ミツバチが受粉を始める時に呼び出される。"
       },
       "href": "org/purpurmc/purpur/event/entity/BeeStartedPollinatingEvent.html",
@@ -276,6 +292,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ミツバチが受粉をやめる時に呼び出される。"
       },
       "href": "org/purpurmc/purpur/event/entity/BeeStopPollinatingEvent.html",
@@ -286,6 +303,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ベルが共鳴し、近くのレイダーに影響を及ぼす時に呼び出される。レイダーが近くにいる場合のみ、ベルガ共鳴する。"
       },
       "href": "org/bukkit/event/block/BellResonateEvent.html",
@@ -297,9 +315,11 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
+        "en": "",
         "ja": "Bukkit に追加された BellResonateEvent を使う。"
       },
       "description": {
+        "en": "",
         "ja": "ベルによって Rider が正体を表した時に呼び出される。"
       },
       "href": "io/papermc/paper/event/block/BellRevealRaiderEvent.html",
@@ -311,9 +331,11 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
+        "en": "",
         "ja": "Bukkit に追加された BellRingEvent を使う。"
       },
       "description": {
+        "en": "",
         "ja": "ベルが鳴る時に呼び出される。"
       },
       "href": "io/papermc/paper/event/block/BellRingEvent.html",
@@ -324,6 +346,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ベルが鳴る時に呼び出される。"
       },
       "href": "org/bukkit/event/block/BellRingEvent.html",
@@ -334,6 +357,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ブロックがブロックを破壊する時に呼び出される。"
       },
       "href": "io/papermc/paper/event/block/BlockBreakBlockEvent.html",
@@ -344,6 +368,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがブロックを破壊する時に呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockBreakEvent.html",
@@ -365,6 +390,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ブロックが燃え尽きて破壊される時に呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockBurnEvent.html",
@@ -375,6 +401,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ブロックを設置しようとした時に呼び出される。設置可能かどうかを確認する。"
       },
       "href": "org/bukkit/event/block/BlockCanBuildEvent.html",
@@ -385,6 +412,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "アイテムがブロックを用いて調理される時に呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockCookEvent.html",
@@ -395,6 +423,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがブロック破壊を中断した時に呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockDamageAbortEvent.html",
@@ -405,6 +434,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがブロックを損傷させる時に呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockDamageEvent.html",
@@ -415,6 +445,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "サーバーがブロックを破棄する時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/block/BlockDestroyEvent.html",
@@ -425,6 +456,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ディスペンサーから装備可能なアイテムが射出され、エンティティに装備される時に呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockDispenseArmorEvent.html",
@@ -435,6 +467,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ディスペンサーからアイテムが射出される時に呼び出される。このイベントをキャンセルしても射出されたアイテムは減る。BlockPreDispenseEvent を使うことでアイテムの消費もキャンセルできる。"
       },
       "href": "org/bukkit/event/block/BlockDispenseEvent.html",
@@ -445,6 +478,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーによって破壊されたブロックがアイテムとしてドロップする時に呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockDropItemEvent.html",
@@ -455,6 +489,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ブロックに関するイベントであることを表す。"
       },
       "abstract": true,
@@ -466,6 +501,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ブロックが経験値を落とす時に呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockExpEvent.html",
@@ -476,6 +512,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ブロックが爆発する時に呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockExplodeEvent.html",
@@ -486,6 +523,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "自然にブロックが溶けたり消滅したりする時に呼び出される。以下に例を示す。\n- 光源によって雪や氷が溶ける時。\n- 燃料ブロックを破壊することなく、時間の経過によって火が消える時。\n- 水不足によってサンゴが死んだサンゴに変わる時。\n- カメが孵化し、カメの卵が破裂する時。"
       },
       "href": "org/bukkit/event/block/BlockFadeEvent.html",
@@ -496,6 +534,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ディスペンサーにアイテムが存在せず、射出されなかった時に呼び出される。"
       },
       "href": "io/papermc/paper/event/block/BlockFailedDispenseEvent.html",
@@ -506,6 +545,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーが骨粉を使用し、ブロックに変更が生じる時に呼び出される。StructureGrowEvent の後に呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockFertilizeEvent.html",
@@ -516,6 +556,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "自然にブロックが形成される時に呼び出される。BlockSpreadEvent とは違い、ランダムに形成されないブロックに対して呼び出される。以下に例を示す。\n- 吹雪により雪が積もる時。\n- 雪に覆われたバイオームで氷が形成される時。\n- 水との接触による黒曜石や丸石の形成される時。\n- コンクリートパウダーと水の混合によるコンクリートが成形される時。"
       },
       "href": "org/bukkit/event/block/BlockFormEvent.html",
@@ -526,6 +567,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ブロックの変更が起こる時に呼び出される。液体が流れる時とドラゴンの卵がテレポートする時のみ呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockFromToEvent.html",
@@ -536,6 +578,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "自然に作物等が成長する時に呼び出される。以下に例を示す。\n- 小麦\n- サトウキビ\n- サボテン\n- スイカ\n- かぼちゃ\n- カメの卵"
       },
       "href": "org/bukkit/event/block/BlockGrowEvent.html",
@@ -546,6 +589,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ブロックが点火された時に呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockIgniteEvent.html",
@@ -556,6 +600,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ロックされているかを確認する時に呼び出される。"
       },
       "href": "io/papermc/paper/event/block/BlockLockCheckEvent.html",
@@ -566,6 +611,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがマルチブロックを設置する時に呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockMultiPlaceEvent.html",
@@ -576,6 +622,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ブロックの落下確認をする時に呼び出される。高頻度で呼び出されるので処理には注意が必要。"
       },
       "href": "org/bukkit/event/block/BlockPhysicsEvent.html",
@@ -586,6 +633,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ピストンが動作する時に呼び出される。"
       },
       "abstract": true,
@@ -597,6 +645,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ピストンが伸びる時に呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockPistonExtendEvent.html",
@@ -607,6 +656,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ピストンが縮む時に呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockPistonRetractEvent.html",
@@ -617,6 +667,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがブロックを設置する時に呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockPlaceEvent.html",
@@ -627,6 +678,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ディスペンサーからアイテムが射出される時に呼び出される。BlockDispenseEvent の前に呼び出されるので、ディスペンサーのアイテム消費もキャンセルできる。"
       },
       "href": "io/papermc/paper/event/block/BlockPreDispenseEvent.html",
@@ -636,6 +688,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "スカルクセンサーがゲームイベントを受けとる時に呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockReceiveGameEvent.html",
@@ -646,6 +699,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "レッドストーンの強さが変化する時に呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockRedstoneEvent.html",
@@ -656,6 +710,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ディスペンサーが羊の毛も刈る時に呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockShearEntityEvent.html",
@@ -666,6 +721,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ブロックが拡散する時に呼び出される。BlockFormEvent とは違い、ランダムに形成されるブロックに対して呼び出される。以下に例を示す。\n- キノコが増える時。\n- 火が燃え広がる時。"
       },
       "href": "org/bukkit/event/block/BlockSpreadEvent.html",
@@ -676,6 +732,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "醸造が完了する時に呼び出される。"
       },
       "href": "org/bukkit/event/inventory/BrewEvent.html",
@@ -686,6 +743,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "燃料としてアイテムが醸造台に使用される時に呼び出される。"
       },
       "href": "org/bukkit/event/inventory/BrewingStandFuelEvent.html",
@@ -696,6 +754,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "醸造台が醸造を始めた時に呼び出される。"
       },
       "href": "org/bukkit/event/block/BrewingStartEvent.html",
@@ -706,6 +765,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "サーバーにブロードキャストメッセージが送信された時に呼び出される。メッセージが非同期で送信された場合、イベントも非同期で呼び出される。"
       },
       "href": "org/bukkit/event/server/BroadcastMessageEvent.html",
@@ -716,6 +776,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "キャンプファイアが調理を開始した時に呼び出される。"
       },
       "href": "org/bukkit/event/block/CampfireStartEvent.html",
@@ -737,6 +798,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "大釜の水が増えたり減ったりした時に呼び出される。"
       },
       "href": "org/bukkit/event/block/CauldronLevelChangeEvent.html",
@@ -746,6 +808,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがメッセージを送信した時に呼び出される。"
       },
       "href": "net/md_5/bungee/api/event/ChatEvent.html",
@@ -757,9 +820,11 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
+        "en": "",
         "ja": "非同期で処理をする AsyncChatEvent を使う。"
       },
       "description": {
+        "en": "",
         "ja": "プレイヤーがチャットした時に呼び出される。"
       },
       "href": "io/papermc/paper/event/player/ChatEvent.html",
@@ -770,6 +835,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "チャンクに関するイベントであることを表す"
       },
       "abstract": true,
@@ -781,6 +847,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "チャンクが読み込まれた時に呼び出される。"
       },
       "href": "org/bukkit/event/world/ChunkLoadEvent.html",
@@ -791,6 +858,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "新しいチャンクが作られた時に呼び出される。"
       },
       "href": "org/bukkit/event/world/ChunkPopulateEvent.html",
@@ -801,6 +869,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "チャンクの読み込みが停止された時に呼び出される。"
       },
       "href": "org/bukkit/event/world/ChunkUnloadEvent.html",
@@ -811,6 +880,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "クライアントが接続する時に呼び出される。全ての接続の初期段階で呼び出されるので、高速で処理する必要がある。"
       },
       "href": "net/md_5/bungee/api/event/ClientConnectEvent.html",
@@ -821,6 +891,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "コンソールもしくはプレイヤーがコマンドを実行する時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/command/CommandExecuteEvent.html",
@@ -847,6 +918,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "アイテムがホッパーによって堆肥になる時に呼び出される。アイテムがコンポスターに移動するのを防ぐには InventoryMoveItemEvent を使う。"
       },
       "href": "io/papermc/paper/event/block/CompostItemEvent.html",
@@ -857,6 +929,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ハンドシェイクが確立された時に呼び出される。非同期で呼び出され、このイベントの処理を待たずに接続を処理します。"
       },
       "href": "com/velocitypowered/api/event/connection/ConnectionHandshakeEvent.html",
@@ -900,6 +973,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "アイテムをクラフトする時に呼び出される。"
       },
       "href": "org/bukkit/event/inventory/CraftItemEvent.html",
@@ -910,6 +984,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "生き物がスポーンする時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/CreatureSpawnEvent.html",
@@ -920,6 +995,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "クリーパーの点火状態が切り替わる時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/entity/CreeperIgniteEvent.html",
@@ -930,6 +1006,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "クリーパーが雷撃を受ける時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/CreeperPowerEvent.html",
@@ -940,6 +1017,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがプロキシから切断した時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/connection/DisconnectEvent.html",
@@ -950,6 +1028,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンダードラゴンが討伐され、卵が設置される時に呼び出される。"
       },
       "href": "io/papermc/paper/event/block/DragonEggFormEvent.html",
@@ -960,6 +1039,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エルダーガーディアンがプレイヤーの画面に表示される時に呼び出される。"
       },
       "href": "io/papermc/paper/event/entity/ElderGuardianAppearanceEvent.html",
@@ -970,6 +1050,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "アイテムにエンチャントした時に呼び出される。"
       },
       "href": "org/bukkit/event/enchantment/EnchantItemEvent.html",
@@ -980,6 +1061,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンダードラゴンの攻撃フェーズが変わった時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EnderDragonChangePhaseEvent.html",
@@ -990,6 +1072,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンダードラゴンが放った火球が衝突し、AreaEffectCloud が発生する時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/entity/EnderDragonFireballHitEvent.html",
@@ -1000,6 +1083,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンダードラゴンが炎を吐き、AreaEffectCloud が発生する時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/entity/EnderDragonFlameEvent.html",
@@ -1010,6 +1094,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンダードラゴンが火球を放つ時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/entity/EnderDragonShootFireballEvent.html",
@@ -1020,6 +1105,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンダーマンがプレイヤーを攻撃するか決定する時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/entity/EndermanAttackPlayerEvent.html",
@@ -1030,6 +1116,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンダーマンが逃げた時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/entity/EndermanEscapeEvent.html",
@@ -1039,6 +1126,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "チャンクによってエンティティが読み込まれた時に呼び出される。"
       },
       "href": "org/bukkit/event/world/EntitiesLoadEvent.html",
@@ -1049,6 +1137,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "チャンクによってエンティティが読み込まれなくなった時に呼び出される。"
       },
       "href": "org/bukkit/event/world/EntitiesUnloadEvent.html",
@@ -1059,6 +1148,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "何らかの理由でワールドにエンティティが増えた時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/entity/EntityAddToWorldEvent.html",
@@ -1069,6 +1159,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティの残り酸素量が変化する時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityAirChangeEvent.html",
@@ -1079,6 +1170,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティによってブロックが形成される時に呼び出される。以下に例を示す。\n- スノーゴーレムによって雪が形成された時。\n- 氷渡りのエンチャントによって氷が形成された時。"
       },
       "href": "org/bukkit/event/block/EntityBlockFormEvent.html",
@@ -1089,6 +1181,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティによってドアが破壊される時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityBreakDoorEvent.html",
@@ -1099,6 +1192,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティが繁殖する時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityBreedEvent.html",
@@ -1109,6 +1203,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティがブロックを変化させる時に呼び出される。適したイベントが見当たらない時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityChangeBlockEvent.html",
@@ -1119,6 +1214,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ブロックによってエンティティが炎上する時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityCombustByBlockEvent.html",
@@ -1129,6 +1225,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティによってエンティティが炎上する時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityCombustByEntityEvent.html",
@@ -1139,6 +1236,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティが炎上する時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityCombustEvent.html",
@@ -1149,6 +1247,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "アイテムがエンティティによって堆肥になる時に呼び出される。"
       },
       "href": "io/papermc/paper/event/entity/EntityCompostItemEvent.html",
@@ -1160,9 +1259,11 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
+        "en": "",
         "ja": "ワールドに関するイベントとして定義された PortalCreateEvent を使う。"
       },
       "description": {
+        "en": "",
         "ja": "エンティティがポータルを作成する時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityCreatePortalEvent.html",
@@ -1173,6 +1274,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ブロックによってエンティティがダメージを受ける時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityDamageByBlockEvent.html",
@@ -1183,6 +1285,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティによってエンティティがダメージを受ける時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityDamageByEntityEvent.html",
@@ -1193,6 +1296,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティがダメージを受ける時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityDamageEvent.html",
@@ -1203,6 +1307,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティによって使用されているアイテムが、耐久ダメージを受ける時に呼び出される。"
       },
       "href": "io/papermc/paper/event/entity/EntityDamageItemEvent.html",
@@ -1213,6 +1318,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティが死ぬ時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityDeathEvent.html",
@@ -1223,6 +1329,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティが乗っているエンティティが降りる時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityDismountEvent.html",
@@ -1233,6 +1340,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティがアイテムをドロップする時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityDropItemEvent.html",
@@ -1243,6 +1351,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティが染色される時に呼び出される。以下に例を示す。\n- 羊が染色される時。\n- 狼や猫の首輪が染色される時。"
       },
       "href": "io/papermc/paper/event/entity/EntityDyeEvent.html",
@@ -1253,6 +1362,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティがブロックの中に入る時に呼び出される。以下に例を示す。\n- ミツバチが巣箱に入る時。\n\nしかし、以下の場合は呼び出されない。\n- シルバーフィッシュが石に入る時。EntityChangeBlockEvent が呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityEnterBlockEvent.html",
@@ -1263,6 +1373,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティが発情する時に呼び出される。このイベントをキャンセルしても使用したアイテムは消費されてしまう。"
       },
       "href": "org/bukkit/event/entity/EntityEnterLoveModeEvent.html",
@@ -1273,6 +1384,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティに関するイベントであることを表す。"
       },
       "abstract": true,
@@ -1284,6 +1396,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーに疲労が溜まると呼び出される。4を超える疲労値では、満腹度が1減少する。"
       },
       "href": "org/bukkit/event/entity/EntityExhaustionEvent.html",
@@ -1294,6 +1407,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティが爆発する時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityExplodeEvent.html",
@@ -1304,6 +1418,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "交配が発生した時に呼び出される。しばらくすると、卵を産む。"
       },
       "href": "io/papermc/paper/event/entity/EntityFertilizeEggEvent.html",
@@ -1314,6 +1429,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティがブロックのヒットボックスに入る時に呼び出される。キャンセルされるとブロックに入ったことによって起きる処理が実行されない。以下に例を示す。\n- 大釜に入り、エンティティが消火される。"
       },
       "href": "io/papermc/paper/event/entity/EntityInsideBlockEvent.html",
@@ -1324,6 +1440,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティ同士が押し合う時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityInteractEvent.html",
@@ -1334,6 +1451,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティがジャンプする時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/entity/EntityJumpEvent.html",
@@ -1344,6 +1462,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティによってエンティティがノックバックする時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/entity/EntityKnockbackByEntityEvent.html",
@@ -1354,6 +1473,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティが別のエンティティによってノックバックする時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityKnockbackByEntityEvent.html",
@@ -1375,6 +1495,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティがノックバックする時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityKnockbackEvent.html",
@@ -1385,6 +1506,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティがアイテムをクロスボウに装填する時に呼び出される。"
       },
       "href": "io/papermc/paper/event/entity/EntityLoadCrossbowEvent.html",
@@ -1395,6 +1517,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティがエンティティに乗る時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityMountEvent.html",
@@ -1405,6 +1528,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティが移動する時に呼び出される。"
       },
       "href": "io/papermc/paper/event/entity/EntityMoveEvent.html",
@@ -1415,6 +1539,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティが目的の場所への移動を開始する時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/entity/EntityPathfindEvent.html",
@@ -1425,6 +1550,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティが地面からアイテムを拾う時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityPickupItemEvent.html",
@@ -1435,6 +1561,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティが設置された時に呼び出される。このイベントは現在、アーマースタンド・ボート・トロッコ・エンドクリスタルでのみ呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityPlaceEvent.html",
@@ -1445,6 +1572,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティがポータルに接触した時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityPortalEnterEvent.html",
@@ -1455,6 +1583,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤー以外のエンティティがポータルでテレポートする時に呼び出される。プレイヤーの場合 PlayerPortalEvent が呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityPortalEvent.html",
@@ -1465,6 +1594,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティがポータルを出る時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityPortalExitEvent.html",
@@ -1475,6 +1605,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティがプラグインによってテレポートする準備が整った時に呼び出される。現在、ネザーポータルでのみ呼び出される。"
       },
       "href": "io/papermc/paper/event/entity/EntityPortalReadyEvent.html",
@@ -1485,6 +1616,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティのポーズが変わった時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityPoseChangeEvent.html",
@@ -1495,6 +1627,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティのポーション効果が変更された時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityPotionEffectEvent.html",
@@ -1505,6 +1638,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティが別のエンティティによる攻撃によって押される時に呼び出される。"
       },
       "href": "io/papermc/paper/event/entity/EntityPushedByEntityAttackEvent.html",
@@ -1515,6 +1649,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティが体力を回復する時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityRegainHealthEvent.html",
@@ -1541,6 +1676,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "何らかの理由でワールドからエンティティが削除される時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/entity/EntityRemoveFromWorldEvent.html",
@@ -1551,6 +1687,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティが死亡し、復活できる時に呼び出される。トーテムを装備していない場合、キャンセルされた状態で呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityResurrectEvent.html",
@@ -1561,6 +1698,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティが弓で矢を放つ時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityShootBowEvent.html",
@@ -1571,6 +1709,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティがスポーンする時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntitySpawnEvent.html",
@@ -1581,6 +1720,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エヴォーカーやイリュージョナーが呪文を唱える時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntitySpellCastEvent.html",
@@ -1591,6 +1731,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティを飼い慣らす時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityTameEvent.html",
@@ -1601,6 +1742,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "生き物が別のエンティティをターゲットする時、ターゲットを解除する時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityTargetEvent.html",
@@ -1611,6 +1753,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "EntityTargetEvent において LivingEntity をターゲットとする時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityTargetLivingEntityEvent.html",
@@ -1621,6 +1764,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティがエンドゲートウェイでテレポートする時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/entity/EntityTeleportEndGatewayEvent.html",
@@ -1631,6 +1775,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーではないエンティティがテレポートする時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityTeleportEvent.html",
@@ -1641,6 +1786,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティがテレポートできない時に呼び出される。"
       },
       "href": "org/purpurmc/purpur/event/entity/EntityTeleportHinderedEvent.html",
@@ -1651,6 +1797,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティの滑空状態が切り替わる時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityToggleGlideEvent.html",
@@ -1661,6 +1808,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティが座ったり立ち上がったりする時に呼び出される。"
       },
       "href": "io/papermc/paper/event/entity/EntityToggleSitEvent.html",
@@ -1671,6 +1819,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティの泳ぎ状態が切り替わる時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityToggleSwimEvent.html",
@@ -1682,9 +1831,11 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
+        "en": "",
         "ja": "Bukkit に追加された EntityTransformEvent を使う。"
       },
       "description": {
+        "en": "",
         "ja": "エンティティが別のエンティティに置きかわる時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/entity/EntityTransformedEvent.html",
@@ -1695,6 +1846,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティが別のエンティティに置きかわる時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityTransformEvent.html",
@@ -1705,6 +1857,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティからリードが外される時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityUnleashEvent.html",
@@ -1715,6 +1868,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティに落雷が当たった時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/entity/EntityZapEvent.html",
@@ -1725,6 +1879,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "イベントを表す。"
       },
       "abstract": true,
@@ -1736,6 +1891,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "イベントを表す。"
       },
       "abstract": true,
@@ -1747,6 +1903,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "コマンドを実行する時に呼び出される。"
       },
       "href": "org/purpurmc/purpur/event/ExecuteCommandEvent.html",
@@ -1757,6 +1914,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "経験値ボトルから経験値が出る時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/ExpBottleEvent.html",
@@ -1767,6 +1925,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "経験値オーブが合わさる時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/entity/ExperienceOrbMergeEvent.html",
@@ -1777,6 +1936,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティが爆発する時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/ExplosionPrimeEvent.html",
@@ -1787,6 +1947,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プロファイルプロパティが追加された時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/profile/FillProfileEvent.html",
@@ -1797,6 +1958,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "花火が爆発する時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/FireworkExplodeEvent.html",
@@ -1807,6 +1969,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "隣接したブロックによって液面が変化する時に呼び出される。"
       },
       "href": "org/bukkit/event/block/FluidLevelChangeEvent.html",
@@ -1817,6 +1980,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "空腹度が変化する時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/FoodLevelChangeEvent.html",
@@ -1827,6 +1991,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "かまど内でアイテムが燃料として使用される時に呼び出される。"
       },
       "href": "org/bukkit/event/inventory/FurnaceBurnEvent.html",
@@ -1837,6 +2002,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがかまどからアイテムを取り出す時に呼び出される。"
       },
       "href": "org/bukkit/event/inventory/FurnaceExtractEvent.html",
@@ -1847,6 +2013,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "かまど内でアイテムが精錬される時に呼び出される。"
       },
       "href": "org/bukkit/event/inventory/FurnaceSmeltEvent.html",
@@ -1857,6 +2024,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "かまどでの精錬が始まった時に呼び出される。"
       },
       "href": "org/bukkit/event/inventory/FurnaceStartSmeltEvent.html",
@@ -1867,6 +2035,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ユーザーのゲームプロファイルを設定する時に呼び出される。このイベントは PreLoginEvent が実行された後に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/player/GameProfileRequestEvent.html",
@@ -1877,6 +2046,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "一般的なゲームイベントであることを表す。このイベントは主にスカルセンサーの内部で使用される。可能な限りこのイベントを使わないようにする。"
       },
       "href": "org/bukkit/event/world/GenericGameEvent.html",
@@ -1887,6 +2057,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ヤギがエンティティに衝突する時に呼び出される。"
       },
       "href": "org/purpurmc/purpur/event/entity/GoatRamEntityEvent.html",
@@ -1897,6 +2068,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "砥石から結果アイテムを取り出す時に呼び出される。"
       },
       "href": "org/purpurmc/purpur/event/inventory/GrindstoneTakeResultEvent.html",
@@ -1907,6 +2079,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "GS4クエリプロトコルがクエリされた時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/server/GS4QueryEvent.html",
@@ -1917,6 +2090,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティによって壁掛けエンティティが破壊される時に呼び出される。"
       },
       "href": "org/bukkit/event/hanging/HangingBreakByEntityEvent.html",
@@ -1927,6 +2101,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "壁掛けエンティティが破壊される時に呼び出される。"
       },
       "href": "org/bukkit/event/hanging/HangingBreakEvent.html",
@@ -1937,6 +2112,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "壁掛けエンティティに関するイベントであることを表す。壁掛けエンティティの例を以下に示す。\n- 絵画\n- 額縁\n- 柵に繋がれたリード"
       },
       "abstract": true,
@@ -1948,6 +2124,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "壁掛けエンティティが設置される時に呼び出される。"
       },
       "href": "org/bukkit/event/hanging/HangingPlaceEvent.html",
@@ -1958,6 +2135,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ホッパーが接続されたコンテナを見つけようとする時に呼び出される。"
       },
       "href": "org/bukkit/event/inventory/HopperInventorySearchEvent.html",
@@ -1968,6 +2146,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "馬がジャンプする時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/HorseJumpEvent.html",
@@ -1979,9 +2158,11 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
+        "en": "",
         "ja": "使われていない。"
       },
       "description": {
+        "en": "",
         "ja": "不正なパケットが送られた時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/player/IllegalPacketEvent.html",
@@ -1992,9 +2173,11 @@
     {
       "deprecate": "@Experimental",
       "deprecateDescription": {
+        "en": "",
         "ja": "実験段階。"
       },
       "description": {
+        "en": "",
         "ja": "インベントリを持つブロックが処理を開始した時に呼び出される。"
       },
       "href": "org/bukkit/event/block/InventoryBlockStartEvent.html",
@@ -2005,6 +2188,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "インベントリを開いた状態で画面をクリックする時に呼び出される。"
       },
       "href": "org/bukkit/event/inventory/InventoryClickEvent.html",
@@ -2015,6 +2199,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "インベントリを閉じる時に呼び出される。"
       },
       "href": "org/bukkit/event/inventory/InventoryCloseEvent.html",
@@ -2025,6 +2210,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "クリエイティブモードのプレイヤーがインベントリの操作をした時に呼び出される。呼び出される例を以下に示す。\n- インベントリにアイテムを置いた時\n- アイテムを拾った時\n- インベントリからアイテムをドロップした時"
       },
       "href": "org/bukkit/event/inventory/InventoryCreativeEvent.html",
@@ -2035,6 +2221,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "インベントリ内でアイテムをドラッグした時に呼び出される。"
       },
       "href": "org/bukkit/event/inventory/InventoryDragEvent.html",
@@ -2045,6 +2232,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "インベントリに関するイベントであることを表す。"
       },
       "href": "org/bukkit/event/inventory/InventoryEvent.html",
@@ -2055,6 +2243,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーとインベントリが相互に作用するイベント表す。"
       },
       "abstract": true,
@@ -2066,6 +2255,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティやホッパー等のブロックがインベントリ内のアイテムを別のインベントリに移動させる時に呼び出される。"
       },
       "href": "org/bukkit/event/inventory/InventoryMoveItemEvent.html",
@@ -2076,6 +2266,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "インベントリを開く時に呼び出される。"
       },
       "href": "org/bukkit/event/inventory/InventoryOpenEvent.html",
@@ -2086,6 +2277,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ホッパーが落ちているアイテムを拾う時に呼び出される。"
       },
       "href": "org/bukkit/event/inventory/InventoryPickupItemEvent.html",
@@ -2096,6 +2288,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "時間によってアイテムが消滅する時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/ItemDespawnEvent.html",
@@ -2106,6 +2299,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "同じアイテムが合わさる時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/ItemMergeEvent.html",
@@ -2115,6 +2309,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "アイテムがワールドにスポーンする時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/ItemSpawnEvent.html",
@@ -2125,6 +2320,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがサーバーからキックされた時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/player/KickedFromServerEvent.html",
@@ -2135,6 +2331,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "葉が自然に壊れる時に呼び出される。"
       },
       "href": "org/bukkit/event/block/LeavesDecayEvent.html",
@@ -2145,6 +2342,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "雷が落ちる時に呼び出される。"
       },
       "href": "org/bukkit/event/weather/LightningStrikeEvent.html",
@@ -2155,6 +2353,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "残留ポーションが割れる時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/LingeringPotionSplashEvent.html",
@@ -2165,6 +2364,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "接続の受け入れを開始した時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/proxy/ListenerBoundEvent.html",
@@ -2175,6 +2375,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "接続の受け入れを終了した時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/proxy/ListenerCloseEvent.html",
@@ -2185,6 +2386,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ラマがキャラバンに参加する時に呼び出される。"
       },
       "href": "org/purpurmc/purpur/event/entity/LlamaJoinCaravanEvent.html",
@@ -2195,6 +2397,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ラマがキャラバンから脱退した時に呼び出される。"
       },
       "href": "org/purpurmc/purpur/event/entity/LlamaLeaveCaravanEvent.html",
@@ -2205,6 +2408,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがログインする時に呼び出される。"
       },
       "href": "net/md_5/bungee/api/event/LoginEvent.html",
@@ -2215,6 +2419,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーが認証され、サーバーに参加する時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/connection/LoginEvent.html",
@@ -2225,6 +2430,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "Mojang API を用いてプロファイルが検索された時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/profile/LookupProfileEvent.html",
@@ -2235,6 +2441,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "LootTable によってアイテムが補充される時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/loottable/LootableInventoryReplenishEvent.html",
@@ -2244,6 +2451,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "LootTable によってアイテムが生成される時に呼び出される。"
       },
       "href": "org/bukkit/event/world/LootGenerateEvent.html",
@@ -2254,6 +2462,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "マップが初期化された時に呼び出される。"
       },
       "href": "org/bukkit/event/server/MapInitializeEvent.html",
@@ -2264,6 +2473,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "耕地の水分レベルが変化する時に呼び出される。"
       },
       "href": "org/bukkit/event/block/MoistureChangeEvent.html",
@@ -2274,6 +2484,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "音符ブロックが音を鳴らす時に呼び出される。"
       },
       "href": "org/bukkit/event/block/NotePlayEvent.html",
@@ -2284,6 +2495,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "サーバーリストの表示内容を送る要求を受けた時に呼び出される。ServerListPingEvent よりも扱える情報が多い。"
       },
       "href": "com/destroystokyo/paper/event/server/PaperServerListPingEvent.html",
@@ -2294,6 +2506,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "CommandSender の権限を確認する時に呼び出される。"
       },
       "href": "net/md_5/bungee/api/event/PermissionCheckEvent.html",
@@ -2304,6 +2517,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "権限が設定される時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/permission/PermissionsSetupEvent.html",
@@ -2314,6 +2528,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ファントムがスポーンする時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/entity/PhantomPreSpawnEvent.html",
@@ -2324,6 +2539,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ピグリンと物々交換する時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/PiglinBarterEvent.html",
@@ -2334,6 +2550,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "豚が雷に打たれた時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/PigZapEvent.html",
@@ -2344,6 +2561,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ゾンビ豚が怒る時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/PigZombieAngerEvent.html",
@@ -2354,6 +2572,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーが進捗の条件を達成した時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/player/PlayerAdvancementCriterionGrantEvent.html",
@@ -2364,6 +2583,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーが進捗の条件を全て達成した時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerAdvancementDoneEvent.html",
@@ -2374,6 +2594,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーのAFKモードに移行する時に呼び出される"
       },
       "href": "org/purpurmc/purpur/event/PlayerAFKEvent.html",
@@ -2383,6 +2604,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーのアニメーションに関するイベントであることを表す。"
       },
       "href": "org/bukkit/event/player/PlayerAnimationEvent.html",
@@ -2393,6 +2615,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーの鎧が変更された時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/player/PlayerArmorChangeEvent.html",
@@ -2403,6 +2626,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがアーマースタンドに対してアイテムを交換・取得・配置する時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerArmorStandManipulateEvent.html",
@@ -2413,6 +2637,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーが腕を振った時に呼び出される。"
       },
       "href": "io/papermc/paper/event/player/PlayerArmSwingEvent.html",
@@ -2422,6 +2647,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーの攻撃クールダウンがリセットする時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/player/PlayerAttackEntityCooldownResetEvent.html",
@@ -2433,9 +2659,11 @@
     {
       "deprecate": "@Beta",
       "deprecateDescription": {
+        "en": "",
         "ja": "ベータ段階。"
       },
       "description": {
+        "en": "",
         "ja": "サーバーで使用可能なコマンド一覧をプレイヤーに送信する時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/command/PlayerAvailableCommandsEvent.html",
@@ -2446,6 +2674,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがベッドに入る時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerBedEnterEvent.html",
@@ -2456,6 +2685,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ベッドに入れなかった時に呼び出される。"
       },
       "href": "io/papermc/paper/event/player/PlayerBedFailEnterEvent.html",
@@ -2465,6 +2695,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがベッドから出る時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerBedLeaveEvent.html",
@@ -2475,6 +2706,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーが本の制限を回避しようとした時に呼び出される。"
       },
       "href": "org/purpurmc/purpur/event/player/PlayerBookTooLargeEvent.html",
@@ -2485,6 +2717,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがバケツを空にする時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerBucketEmptyEvent.html",
@@ -2495,6 +2728,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーバケツにエンティティを入れる時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerBucketEntityEvent.html",
@@ -2505,6 +2739,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがバケツを操作する時に呼び出される。"
       },
       "abstract": true,
@@ -2516,6 +2751,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがバケツを満たす時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerBucketFillEvent.html",
@@ -2527,9 +2763,11 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
+        "en": "",
         "ja": "Paper であれば、PlayerBucketEntityEvent を使う。"
       },
       "description": {
+        "en": "",
         "ja": "プレイヤーがバケツに魚を入れる時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerBucketFishEvent.html",
@@ -2540,6 +2778,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがビーコンの効果を変更する時に呼び出される。"
       },
       "href": "io/papermc/paper/event/player/PlayerChangeBeaconEffectEvent.html",
@@ -2550,6 +2789,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがメインハンドの左右の設定を切り替えた時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerChangedMainHandEvent.html",
@@ -2560,6 +2800,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーが別のワールドに移動した時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerChangedWorldEvent.html",
@@ -2570,6 +2811,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがプラグインチャンネルを登録・登録解除した時に呼び出される。"
       },
       "abstract": true,
@@ -2581,6 +2823,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがプラグインメッセージを送信した時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/player/PlayerChannelRegisterEvent.html",
@@ -2592,9 +2835,11 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
+        "en": "",
         "ja": "チャットの遅延が発生するので AsyncPlayerChatEvent を使う。"
       },
       "description": {
+        "en": "",
         "ja": "プレイヤーがチャットする時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerChatEvent.html",
@@ -2605,6 +2850,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがチャットメッセージを送信した時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/player/PlayerChatEvent.html",
@@ -2616,9 +2862,11 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
+        "en": "",
         "ja": "クライアントの変更により実行されなくなった。"
       },
       "description": {
+        "en": "",
         "ja": "プレイヤーがチャットメッセージでタブ補完をする時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerChatTabCompleteEvent.html",
@@ -2629,6 +2877,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがログイン処理を終えて、接続する最初のサーバーを選択する時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/player/PlayerChooseInitialServerEvent.html",
@@ -2639,6 +2888,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがチャンクロードパケットを受け取った時に呼び出される。行いたい処理がパケットやクライアントに関する場合でのみ使うイベントになる。"
       },
       "href": "io/papermc/paper/event/packet/PlayerChunkLoadEvent.html",
@@ -2649,6 +2899,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがチャンクアンロードパケットを受け取った時に呼び出される。行いたい処理がパケットやクライアントに関する場合でのみ使うイベントになる。"
       },
       "href": "io/papermc/paper/event/packet/PlayerChunkUnloadEvent.html",
@@ -2659,6 +2910,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーが minecraft:brand のプラグインメッセージを送信した時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/player/PlayerClientBrandEvent.html",
@@ -2669,6 +2921,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがクライアント設定を変更した時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/player/PlayerClientOptionsChangeEvent.html",
@@ -2679,6 +2932,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーが実行したコマンドが処理される前に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerCommandPreprocessEvent.html",
@@ -2689,6 +2943,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "使用可能なコマンドをプレイヤーに送信する時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerCommandSendEvent.html",
@@ -2699,6 +2954,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがサーバーから切断された時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/player/PlayerConnectionCloseEvent.html",
@@ -2709,6 +2965,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーが死んだ時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/PlayerDeathEvent.html",
@@ -2719,6 +2976,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーが深い眠りに入る時に呼び出される。このイベントをキャンセルすると夜や嵐を通過しません。"
       },
       "href": "io/papermc/paper/event/player/PlayerDeepSleepEvent.html",
@@ -2729,6 +2987,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがプロキシを離れた時に呼び出される。"
       },
       "href": "net/md_5/bungee/api/event/PlayerDisconnectEvent.html",
@@ -2739,6 +2998,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーのインベントリからアイテムをドロップする時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerDropItemEvent.html",
@@ -2749,6 +3009,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーが本と羽ペンを編集・署名した時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerEditBookEvent.html",
@@ -2759,6 +3020,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーが投げた卵が孵化するかの確認をする時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerEggThrowEvent.html",
@@ -2769,6 +3031,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーが花火を使いエリトラ飛行のブーストをする時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/player/PlayerElytraBoostEvent.html",
@@ -2779,6 +3042,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーに関するイベントであることを表す。"
       },
       "abstract": true,
@@ -2790,6 +3054,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーの経験値が自然に変化した時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerExpChangeEvent.html",
@@ -2801,9 +3066,11 @@
     {
       "deprecate": "@Experimental",
       "deprecateDescription": {
+        "en": "",
         "ja": "実験段階。"
       },
       "description": {
+        "en": "",
         "ja": "プレイヤーの経験値のクールダウンが変更される時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerExpCooldownChangeEvent.html",
@@ -2814,6 +3081,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーの移動がサーバーによって阻止された時に呼び出される。"
       },
       "href": "io/papermc/paper/event/player/PlayerFailMoveEvent.html",
@@ -2824,6 +3092,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーが釣りをしている時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerFishEvent.html",
@@ -2834,6 +3103,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーが植木鉢にアイテムを置いたり、植木鉢からアイテムを取り出したりする時に呼び出される。"
       },
       "href": "io/papermc/paper/event/player/PlayerFlowerPotManipulateEvent.html",
@@ -2844,6 +3114,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーのゲームモードが変わる時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerGameModeChangeEvent.html",
@@ -2854,6 +3125,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ハンドシェイクを行う時に呼び出される。プレイヤーの存在やユーザー名を知る事が出来る最初のイベントである。"
       },
       "href": "net/md_5/bungee/api/event/PlayerHandshakeEvent.html",
@@ -2864,6 +3136,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーとサーバーがハンドシェイクする時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/player/PlayerHandshakeEvent.html",
@@ -2874,6 +3147,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーが作物を収穫する時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerHarvestBlockEvent.html",
@@ -2884,6 +3158,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "表示されているエンティティがプレイヤーから非表示になる時に呼び出される。追跡範囲内にあるかどうかに関係なく呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerHideEntityEvent.html",
@@ -2895,9 +3170,11 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
+        "en": "",
         "ja": "Spigot に追加された PlayerSpawnLocationEvent を使う。"
       },
       "description": {
+        "en": "",
         "ja": "プレイヤーがサーバーに参加した後、スポーンしようとしている時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/player/PlayerInitialSpawnEvent.html",
@@ -2907,6 +3184,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがエンティティを右クリックする時に呼び出される。クライアントは PlayerInteractEntityEvent に加えてこのパケットを誤って送信する場合がある。 しかし、アーマースタンドを右クリックした場合、このイベントのみが呼び出される。特別な場合を除いて PlayerInteractEntityEvent を使うことを推奨している。"
       },
       "href": "org/bukkit/event/player/PlayerInteractAtEntityEvent.html",
@@ -2917,6 +3195,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがエンティティを右クリックする時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerInteractEntityEvent.html",
@@ -2927,6 +3206,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがオブジェクトや空気を右クリックする時に呼び出される。それぞれの手に対して呼び出される可能性がある。"
       },
       "href": "org/bukkit/event/player/PlayerInteractEvent.html",
@@ -2937,6 +3217,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーのインベントリスロットが変化する時に呼び出される。"
       },
       "href": "io/papermc/paper/event/player/PlayerInventorySlotChangeEvent.html",
@@ -2947,6 +3228,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーのアイテムが壊れる時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerItemBreakEvent.html",
@@ -2957,6 +3239,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがアイテムを消費する時に呼び出される。アイテムの例を以下に示す。\n- 食べ物\n- ポーション\n- 牛乳入りバケツ"
       },
       "href": "org/bukkit/event/player/PlayerItemConsumeEvent.html",
@@ -2967,6 +3250,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーのアイテムクールダウンが変更される時に呼び出される。"
       },
       "href": "io/papermc/paper/event/player/PlayerItemCooldownEvent.html",
@@ -2977,6 +3261,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがアイテムを使用し、その耐久値が減少する時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerItemDamageEvent.html",
@@ -2987,6 +3272,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーが額縁のアイテムを追加・削除・回転する時に呼び出される。"
       },
       "href": "io/papermc/paper/event/player/PlayerItemFrameChangeEvent.html",
@@ -2997,6 +3283,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーが手に持つアイテムを変更した時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerItemHeldEvent.html",
@@ -3007,6 +3294,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーのアイテムが修繕のエンチャントによって耐久値を回復する時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerItemMendEvent.html",
@@ -3017,6 +3305,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがサーバーに参加した時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerJoinEvent.html",
@@ -3027,6 +3316,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがジャンプする時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/player/PlayerJumpEvent.html",
@@ -3037,6 +3327,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがサーバーからキックされる時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerKickEvent.html",
@@ -3047,6 +3338,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーが Projectile を発射する時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/player/PlayerLaunchProjectileEvent.html",
@@ -3057,6 +3349,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーが生き物にリードを繋げる時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/PlayerLeashEntityEvent.html",
@@ -3067,6 +3360,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーが書見台に置かれた本のページを変更する時に呼び出される。"
       },
       "href": "io/papermc/paper/event/player/PlayerLecternPageChangeEvent.html",
@@ -3076,6 +3370,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーの経験値レベルが変更した時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerLevelChangeEvent.html",
@@ -3087,9 +3382,11 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
+        "en": "",
         "ja": "Bukkit に追加された PlayerLocaleChangeEvent を使う。"
       },
       "description": {
+        "en": "",
         "ja": "プレイヤーが言語設定を変更した時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/player/PlayerLocaleChangeEvent.html",
@@ -3100,6 +3397,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーが言語設定を変更した時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerLocaleChangeEvent.html",
@@ -3110,6 +3408,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがログインしようとする時に呼び出される。PlayerJoinEvent の前に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerLoginEvent.html",
@@ -3120,6 +3419,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーが機織り機の旗模様を変更する時に呼び出される。"
       },
       "href": "io/papermc/paper/event/player/PlayerLoomPatternSelectEvent.html",
@@ -3130,6 +3430,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "サーバーへの接続中に Forge クライアントが MOD 一覧をプロキシに送信した時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/player/PlayerModInfoEvent.html",
@@ -3140,6 +3441,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーが移動する時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerMoveEvent.html",
@@ -3150,6 +3452,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがエンティティの名前を変更する時に呼び出される。"
       },
       "href": "io/papermc/paper/event/player/PlayerNameEntityEvent.html",
@@ -3160,6 +3463,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "モンスターをスポーンさせるチャンクを計算する時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/entity/PlayerNaturallySpawnCreaturesEvent.html",
@@ -3170,6 +3474,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーが看板の編集画面を開く時に呼び出される。このイベントがキャンセルされると編集画面が開かれない。"
       },
       "href": "io/papermc/paper/event/player/PlayerOpenSignEvent.html",
@@ -3180,6 +3485,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがアイテムの選択機能を使用する時に呼び出される。アイテムをインベントリからホットバーに移動する場合のみ呼び出される。"
       },
       "href": "io/papermc/paper/event/player/PlayerPickItemEvent.html",
@@ -3190,6 +3496,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーが地面から矢を拾う時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerPickupArrowEvent.html",
@@ -3200,6 +3507,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーが地面から経験値オーブを拾う時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/player/PlayerPickupExperienceEvent.html",
@@ -3211,9 +3519,11 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
+        "en": "",
         "ja": "Bukkit に追加された EntityPickupItemEvent を使う。"
       },
       "description": {
+        "en": "",
         "ja": "プレイヤーが地面からアイテムを拾う時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerPickupItemEvent.html",
@@ -3224,6 +3534,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがポータルでテレポートする時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerPortalEvent.html",
@@ -3234,6 +3545,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがリスポーンした後に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/player/PlayerPostRespawnEvent.html",
@@ -3245,9 +3557,11 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
+        "en": "",
         "ja": "非同期で処理をする為に AsyncPlayerPreLoginEvent を使う。"
       },
       "description": {
+        "en": "",
         "ja": "プレイヤーがログインしようとしている時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerPreLoginEvent.html",
@@ -3258,6 +3572,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーが村人と取引する時に呼び出される。"
       },
       "href": "io/papermc/paper/event/player/PlayerPurchaseEvent.html",
@@ -3268,6 +3583,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがサーバーから退出した時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerQuitEvent.html",
@@ -3278,6 +3594,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーが弓を発射し、使用する矢を選ぶ時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/player/PlayerReadyArrowEvent.html",
@@ -3288,6 +3605,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがレシピブックのレシビをクリックする時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/player/PlayerRecipeBookClickEvent.html",
@@ -3298,6 +3616,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがレシピブックのレシビをクリックする時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerRecipeBookClickEvent.html",
@@ -3308,6 +3627,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがレシピブックの設定を変更した時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerRecipeBookSettingsChangeEvent.html",
@@ -3318,6 +3638,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーが新しいレシピを見つける時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerRecipeDiscoverEvent.html",
@@ -3328,6 +3649,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがプラグインチャンネルを登録した時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerRegisterChannelEvent.html",
@@ -3338,6 +3660,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "サーバーから送られたリソースパックリクエストに対してプレイヤーが処理をした時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerResourcePackStatusEvent.html",
@@ -3348,6 +3671,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーに送信されたリソースパックの状態が変更された時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/player/PlayerResourcePackStatusEvent.html",
@@ -3358,6 +3682,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがリスポーンする時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerRespawnEvent.html",
@@ -3368,6 +3693,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーが激流エンチャントを使用した時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerRiptideEvent.html",
@@ -3378,6 +3704,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "モンスターエッグを使い、スポナーの内容を変える時に呼び出される。"
       },
       "href": "org/purpurmc/purpur/event/PlayerSetSpawnerTypeWithEggEvent.html",
@@ -3387,6 +3714,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがスポーン地点を設定する時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/player/PlayerSetSpawnEvent.html",
@@ -3397,6 +3725,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーが新しいクライアント設定を送信した時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/player/PlayerSettingsChangedEvent.html",
@@ -3407,6 +3736,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがブロックに対してハサミを使用する時に呼び出される。以下に例を示す。\n- カボチャを彫ったカボチャに変える時。\n- 蜂の巣からハニカムを回収する時。"
       },
       "href": "io/papermc/paper/event/block/PlayerShearBlockEvent.html",
@@ -3417,6 +3747,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがエンティティに対してハサミを使用する時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerShearEntityEvent.html",
@@ -3427,6 +3758,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "別のエンティティからの攻撃により、プレイヤーのシールドが無効になるたびに呼び出される。"
       },
       "href": "io/papermc/paper/event/player/PlayerShieldDisableEvent.html",
@@ -3437,6 +3769,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "非表示になっていたエンティティがプレイヤーに表示される時に呼び出される。追跡範囲内にあるかどうかに関係なく呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerShowEntityEvent.html",
@@ -3447,6 +3780,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがコマンドを実行させる看板をクリックする時に呼び出される。このコマンドは権限を無視して実行されるため、本来実行できないコマンドも実行される。"
       },
       "href": "io/papermc/paper/event/player/PlayerSignCommandPreprocessEvent.html",
@@ -3458,9 +3792,11 @@
     {
       "deprecate": "@Experimental",
       "deprecateDescription": {
+        "en": "",
         "ja": "実験段階。"
       },
       "description": {
+        "en": "",
         "ja": "プレイヤーが看板を開く時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerSignOpenEvent.html",
@@ -3472,9 +3808,11 @@
     {
       "deprecate": "@Experimental",
       "deprecateDescription": {
+        "en": "",
         "ja": "実験段階。"
       },
       "description": {
+        "en": "",
         "ja": "プレイヤーのスポーン地点が変更される時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerSpawnChangeEvent.html",
@@ -3485,6 +3823,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがサーバーに参加した後、スポーンしようとしている時に呼び出される。"
       },
       "href": "org/spigotmc/event/player/PlayerSpawnLocationEvent.html",
@@ -3495,6 +3834,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがスペクテイターモードでエンティティ視点を開始する時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/player/PlayerStartSpectatingEntityEvent.html",
@@ -3505,6 +3845,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーの統計が増加した時に呼び出される。移動などの高頻度で増加するような一部の統計では呼び出されない。"
       },
       "href": "org/bukkit/event/player/PlayerStatisticIncrementEvent.html",
@@ -3515,6 +3856,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーが石切台のレシピを選択する時に呼び出される。"
       },
       "href": "io/papermc/paper/event/player/PlayerStonecutterRecipeSelectEvent.html",
@@ -3524,6 +3866,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがスペクテイターモードでエンティティ視点を終了する時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/player/PlayerStopSpectatingEntityEvent.html",
@@ -3534,6 +3877,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがアイテムの使用をやめた時に呼び出される。以下に例を示す。\n- 弓のひきしぼり\n- 食べ物\n- スパイグラス"
       },
       "href": "io/papermc/paper/event/player/PlayerStopUsingItemEvent.html",
@@ -3544,6 +3888,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがメインハンドとオフハンドのアイテムをホットキーによって交換する時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerSwapHandItemsEvent.html",
@@ -3554,6 +3899,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーが書見台に置いてある本を取る時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerTakeLecternBookEvent.html",
@@ -3564,6 +3910,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがエンドゲートウェイを用いてテレポートする時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/player/PlayerTeleportEndGatewayEvent.html",
@@ -3574,6 +3921,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがテレポートする時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerTeleportEvent.html",
@@ -3584,6 +3932,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーが飛行状態を切り替える時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerToggleFlightEvent.html",
@@ -3594,6 +3943,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがしゃがみ状態を切り替える時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerToggleSneakEvent.html",
@@ -3604,6 +3954,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーが走り状態を切り替える時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerToggleSprintEvent.html",
@@ -3614,6 +3965,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがエンティティの追跡を開始すると呼び出される。プレイヤーがエンティティを追跡しているかどうかによって、サーバー上のプレイヤーに対するエンティティの可視性が決まります。エンティティがプレイヤーによって追跡されていない場合、エンティティに関するデータがクライアントに送信されないため、そのプレイヤーはエンティティの存在を認識しません。"
       },
       "href": "io/papermc/paper/event/player/PlayerTrackEntityEvent.html",
@@ -3624,6 +3976,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーが村人や行商人と交易をする時に呼び出される。"
       },
       "href": "io/papermc/paper/event/player/PlayerTradeEvent.html",
@@ -3634,6 +3987,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーによってエンティティに繋げっているリードが外される時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerUnleashEntityEvent.html",
@@ -3644,6 +3998,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがプラグインチャンネルの登録を解除する時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerUnregisterChannelEvent.html",
@@ -3654,6 +4009,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがエンティティの追跡を終了すると呼び出される。"
       },
       "href": "io/papermc/paper/event/player/PlayerUntrackEntityEvent.html",
@@ -3664,6 +4020,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "存在しないエンティティに対して PacketPlayInUseEntity が送られてきた時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/player/PlayerUseUnknownEntityEvent.html",
@@ -3674,6 +4031,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーに対する力の向きや大きさが変化する時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerVelocityEvent.html",
@@ -3684,6 +4042,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プラグインが無効になった時に呼び出される。"
       },
       "href": "org/bukkit/event/server/PluginDisableEvent.html",
@@ -3694,6 +4053,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プラグインが有効になった時に呼び出される。"
       },
       "href": "org/bukkit/event/server/PluginEnableEvent.html",
@@ -3704,6 +4064,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プラグインに関するイベントであることを表す。"
       },
       "abstract": true,
@@ -3715,6 +4076,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "クライアントやサーバーから送信されたプラグインメッセージを受信する時に呼び出される。"
       },
       "href": "net/md_5/bungee/api/event/PluginMessageEvent.html",
@@ -3725,6 +4087,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーまたはサーバーからプラグインメッセージが送信された時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/connection/PluginMessageEvent.html",
@@ -3735,6 +4098,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ポータルが作成される時に呼び出される。"
       },
       "href": "org/bukkit/event/world/PortalCreateEvent.html",
@@ -3756,6 +4120,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "サーバーに接続する準備が出来た時に呼び出される。ProxiedPlayer にアクセスできる最初のイベントである。"
       },
       "href": "net/md_5/bungee/api/event/PostLoginEvent.html",
@@ -3766,6 +4131,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーが最初のサーバーに参加しようとする時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/connection/PostLoginEvent.html",
@@ -3776,6 +4142,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ポーションが割れる時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/PotionSplashEvent.html",
@@ -3786,6 +4153,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ブロックの爆発が処理される前に呼び出される。"
       },
       "href": "org/purpurmc/purpur/event/PreBlockExplodeEvent.html",
@@ -3796,6 +4164,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "生き物がスポーンする時に呼び出される。このイベントの目的はサーバーのパフォーマンスを向上させることであるため、CreatureSpawnEvent が呼び出される全ての状況で呼び出されるわけではない。"
       },
       "href": "com/destroystokyo/paper/event/entity/PreCreatureSpawnEvent.html",
@@ -3806,6 +4175,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティの爆発が処理される前に呼び出される。"
       },
       "href": "org/purpurmc/purpur/event/entity/PreEntityExplodeEvent.html",
@@ -3816,6 +4186,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "不完全なプロファイルプロパティの追加を要求している時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/profile/PreFillProfileEvent.html",
@@ -3826,6 +4197,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ログインを試みる時に呼び出される。Mojang のサーバーでの認証後に取得されるプレイヤーに関連する情報は含まれず、UUID 等は使用することが出来ない。"
       },
       "href": "net/md_5/bungee/api/event/PreLoginEvent.html",
@@ -3836,6 +4208,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プロキシがプレイヤーを Mojang で認証する前に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/connection/PreLoginEvent.html",
@@ -3846,6 +4219,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "Mojang API を用いてプロファイルを検索する時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/profile/PreLookupProfileEvent.html",
@@ -3856,6 +4230,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "金床の使用準備が出来た時に呼び出される。完成アイテムが表示される毎に発生する。"
       },
       "href": "org/bukkit/event/inventory/PrepareAnvilEvent.html",
@@ -3867,9 +4242,11 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
+        "en": "",
         "ja": "このイベントを直接使用せず、PrepareResultEvent を使うことが推奨されている。"
       },
       "description": {
+        "en": "",
         "ja": "砥石の使用準備が出来た時に呼び出される。完成アイテムが表示される毎に発生する。"
       },
       "href": "com/destroystokyo/paper/event/inventory/PrepareGrindstoneEvent.html",
@@ -3880,6 +4257,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "砥石のアイテムスロットにアイテムを置く時に呼び出される。"
       },
       "href": "org/bukkit/event/inventory/PrepareGrindstoneEvent.html",
@@ -3890,6 +4268,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "インベントリにアイテムが置かれ、リザルトスロットのアイテムが置かれる時に呼び出される。"
       },
       "href": "org/bukkit/event/inventory/PrepareInventoryResultEvent.html",
@@ -3900,6 +4279,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "クラフトの準備が出来た時に呼び出される。材料を並べ、完成アイテムが表示される毎に発生する。"
       },
       "href": "org/bukkit/event/inventory/PrepareItemCraftEvent.html",
@@ -3909,6 +4289,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンチャントの準備が出来た時に呼び出される。完成アイテムが表示される毎に発生する。"
       },
       "href": "org/bukkit/event/enchantment/PrepareItemEnchantEvent.html",
@@ -3919,6 +4300,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "結果スロットを含むインベントリにアイテムが配置された時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/inventory/PrepareResultEvent.html",
@@ -3929,6 +4311,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "鍛治台の使用準備が出来た時に呼び出される。完成アイテムが表示される毎に発生する。"
       },
       "href": "org/bukkit/event/inventory/PrepareSmithingEvent.html",
@@ -3939,6 +4322,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがエンティティに攻撃する前に呼び出される。このイベントがキャンセルされると攻撃時のサウンドが再生されなくなる。"
       },
       "href": "io/papermc/paper/event/player/PrePlayerAttackEntityEvent.html",
@@ -3949,6 +4333,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティがスポナーによってスポーンする前に呼び出される。SpawnerSpawnEvent よりも前に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/entity/PreSpawnerSpawnEvent.html",
@@ -3975,6 +4360,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがホワイトリストに登録されているか確認する時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/profile/ProfileWhitelistVerifyEvent.html",
@@ -3986,9 +4372,11 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
+        "en": "",
         "ja": "非推奨。ProjectileHitEvent を使って、エンティティに当たっているかチェックする。"
       },
       "description": {
+        "en": "",
         "ja": "Projectile がエンティティと衝突する時に呼び出される。キャンセルすると Projectile は飛び続ける。"
       },
       "href": "com/destroystokyo/paper/event/entity/ProjectileCollideEvent.html",
@@ -3999,6 +4387,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "Projectile がエンティティに当たる時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/ProjectileHitEvent.html",
@@ -4009,6 +4398,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "Projectile が発射される時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/ProjectileLaunchEvent.html",
@@ -4019,6 +4409,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プラグインが初期化された後、接続の受け入れを開始する前に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/proxy/ProxyInitializeEvent.html",
@@ -4029,6 +4420,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "サーバーリストからピングされた時に呼び出される。"
       },
       "href": "net/md_5/bungee/api/event/ProxyPingEvent.html",
@@ -4039,6 +4431,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "サーバーリストからピングされた時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/proxy/ProxyPingEvent.html",
@@ -4049,6 +4442,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "クエリ要求を受信した時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/query/ProxyQueryEvent.html",
@@ -4059,6 +4453,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プロキシがリロードする時に呼び出される。"
       },
       "href": "net/md_5/bungee/api/event/ProxyReloadEvent.html",
@@ -4069,6 +4464,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プロキシがリロードした時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/proxy/ProxyReloadEvent.html",
@@ -4079,6 +4475,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プロキシが接続の受け入れを終了した後、プロセスが終了する前に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/proxy/ProxyShutdownEvent.html",
@@ -4089,6 +4486,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "フグの状態が変化する時に呼び出される。"
       },
       "href": "io/papermc/paper/event/entity/PufferFishStateChangeEvent.html",
@@ -4099,6 +4497,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "レイドに関するイベントであることを表す。"
       },
       "abstract": true,
@@ -4110,6 +4509,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "レイドが終わった時に呼び出される。"
       },
       "href": "org/bukkit/event/raid/RaidFinishEvent.html",
@@ -4120,6 +4520,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "レイドのウェーブが進んだ時に呼び出される。"
       },
       "href": "org/bukkit/event/raid/RaidSpawnWaveEvent.html",
@@ -4130,6 +4531,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "レイドが終了した時に呼び出される。"
       },
       "href": "org/bukkit/event/raid/RaidStopEvent.html",
@@ -4140,6 +4542,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "レイドが始まる時に呼び出される。"
       },
       "href": "org/bukkit/event/raid/RaidTriggerEvent.html",
@@ -4150,6 +4553,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "RCON を介してコマンド入力を受け取った時に呼び出される。"
       },
       "href": "org/bukkit/event/server/RemoteServerCommandEvent.html",
@@ -4160,6 +4564,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "結果を伴うイベントであることを表す。"
       },
       "href": "com/velocitypowered/api/event/ResultedEvent.html",
@@ -4170,6 +4575,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "乗ることが可能なエンティティが乗っているエンティティと共に動く時に呼び出される。"
       },
       "href": "org/purpurmc/purpur/event/entity/RidableMoveEvent.html",
@@ -4180,6 +4586,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "乗ることが可能なエンティティに乗っている時にジャンプを試みた時に呼び出される。"
       },
       "href": "org/purpurmc/purpur/event/entity/RidableSpacebarEvent.html",
@@ -4189,6 +4596,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "スカルクカタリストによって新しいカーソルが作成される時に呼び出される。"
       },
       "href": "org/bukkit/event/block/SculkBloomEvent.html",
@@ -4199,6 +4607,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤー以外がコマンドを実行する時に呼び出される。"
       },
       "href": "org/bukkit/event/server/ServerCommandEvent.html",
@@ -4209,6 +4618,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "サーバーに接続した時に呼び出される。プレイヤーがログインする前にサーバーに情報を送信する場合等に使う。"
       },
       "href": "net/md_5/bungee/api/event/ServerConnectedEvent.html",
@@ -4219,6 +4629,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーが接続先サーバーに正常に接続し、接続元サーバーから切断された時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/player/ServerConnectedEvent.html",
@@ -4229,6 +4640,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "サーバーに接続する時に呼び出される。プレイヤーがサーバーに接続するのをキャンセルする場合等に使う。"
       },
       "href": "net/md_5/bungee/api/event/ServerConnectEvent.html",
@@ -4239,6 +4651,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "サーバーへの接続を切断した時に呼び出される。"
       },
       "href": "net/md_5/bungee/api/event/ServerDisconnectEvent.html",
@@ -4249,6 +4662,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "サーバーに関するイベントであることを表す。"
       },
       "abstract": true,
@@ -4260,6 +4674,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "回復可能な状況で例外が発生した時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/server/ServerExceptionEvent.html",
@@ -4270,6 +4685,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "サーバーからキックされた時に呼び出される。"
       },
       "href": "net/md_5/bungee/api/event/ServerKickEvent.html",
@@ -4280,6 +4696,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "サーバーリストの表示内容を送る要求を受けた時に呼び出される。PaperServerListPingEvent を使うことでより詳細の情報を扱うことができる。"
       },
       "href": "org/bukkit/event/server/ServerListPingEvent.html",
@@ -4290,6 +4707,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "サーバーが起動した時、リロードが完了した時に呼び出される。"
       },
       "href": "org/bukkit/event/server/ServerLoadEvent.html",
@@ -4300,6 +4718,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "サーバーがログインプラグインメッセージを送信した時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/player/ServerLoginPluginMessageEvent.html",
@@ -4311,9 +4730,11 @@
     {
       "deprecate": "@Beta",
       "deprecateDescription": {
+        "en": "",
         "ja": "ベータ段階。"
       },
       "description": {
+        "en": "",
         "ja": "プレイヤーがサーバーに接続した時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/player/ServerPostConnectEvent.html",
@@ -4324,6 +4745,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがサーバーに接続する時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/player/ServerPreConnectEvent.html",
@@ -4334,6 +4756,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "サーバーがリソースパックパケットを送信する時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/player/ServerResourcePackSendEvent.html",
@@ -4344,6 +4767,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "データパックなどのリソースがリロードされた時に呼び出される。カスタムレシピを再登録するために使用することを目的としている。"
       },
       "href": "io/papermc/paper/event/server/ServerResourcesReloadedEvent.html",
@@ -4354,6 +4778,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーが接続先のサーバーを変更した時に呼び出される。"
       },
       "href": "net/md_5/bungee/api/event/ServerSwitchEvent.html",
@@ -4364,6 +4789,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "メインループのチェックが終了した時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/server/ServerTickEndEvent.html",
@@ -4374,6 +4800,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "メインループのチェックが開始した時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/server/ServerTickStartEvent.html",
@@ -4383,6 +4810,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "サービスに関するイベントであることを表す。"
       },
       "abstract": true,
@@ -4394,6 +4822,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "サービスが登録された時に呼び出される。"
       },
       "href": "org/bukkit/event/server/ServiceRegisterEvent.html",
@@ -4404,6 +4833,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "サービスの登録が解除された時に呼び出される。"
       },
       "href": "org/bukkit/event/server/ServiceUnregisterEvent.html",
@@ -4414,6 +4844,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "クライアント設定を変更した時に呼び出される。"
       },
       "href": "net/md_5/bungee/api/event/SettingsChangedEvent.html",
@@ -4424,6 +4855,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "羊が染色された時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/SheepDyeWoolEvent.html",
@@ -4434,6 +4866,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "羊の毛が生えた時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/SheepRegrowWoolEvent.html",
@@ -4444,6 +4877,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "シュルカーが新しいシュルカーを生成する時に呼び出される。"
       },
       "href": "io/papermc/paper/event/entity/ShulkerDuplicateEvent.html",
@@ -4454,6 +4888,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーによって看板の内容が変わる時に呼び出される。"
       },
       "href": "org/bukkit/event/block/SignChangeEvent.html",
@@ -4464,6 +4899,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーがスケルトンホースに近づき、落雷が発生する時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/entity/SkeletonHorseTrapEvent.html",
@@ -4474,6 +4910,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "スライムが向きを変えようと決めた時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/entity/SlimeChangeDirectionEvent.html",
@@ -4484,6 +4921,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "スライムが移動を開始しようと決めた時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/entity/SlimePathfindEvent.html",
@@ -4494,6 +4932,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "スライムが死ぬことで分裂した時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/SlimeSplitEvent.html",
@@ -4504,6 +4943,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "スライムが水や溶岩にいる状態でジャンプしようと決めた時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/entity/SlimeSwimEvent.html",
@@ -4514,6 +4954,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "スライムがエンティティを標的として移動を開始しようと決めた時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/entity/SlimeTargetLivingEntityEvent.html",
@@ -4524,6 +4965,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "スライムがランダムに移動することを決めた時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/entity/SlimeWanderEvent.html",
@@ -4534,6 +4976,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "レシピが鍛治台内で完成すると呼び出される。"
       },
       "href": "org/bukkit/event/inventory/SmithItemEvent.html",
@@ -4544,6 +4987,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ワールドのスポーン位置が変更された時に呼び出される。"
       },
       "href": "org/bukkit/event/world/SpawnChangeEvent.html",
@@ -4554,6 +4998,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティがスポナーによってスポーンする時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/SpawnerSpawnEvent.html",
@@ -4564,6 +5009,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "スポンジが水を吸収する時に呼び出される。"
       },
       "href": "org/bukkit/event/block/SpongeAbsorbEvent.html",
@@ -4574,6 +5020,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ストライダーの体温が変化した時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/StriderTemperatureChangeEvent.html",
@@ -4584,6 +5031,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "植物が成長する時に呼び出される。以下に例を示す。\n- 苗木が木に成長する時\n- キノコが巨大キノコに成長する時"
       },
       "href": "org/bukkit/event/world/StructureGrowEvent.html",
@@ -4595,9 +5043,11 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
+        "en": "",
         "ja": "StructuresLocateEvent を使う。"
       },
       "description": {
+        "en": "",
         "ja": "建造物が見つかる時に呼び出される。以下に例を示す。\n- /locate コマンドを実行した時\n- エンダーアイを使用した時\n- 宝の地図が開かれた時"
       },
       "href": "io/papermc/paper/event/world/StructureLocateEvent.html",
@@ -4608,6 +5058,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "建造物が見つかる時に呼び出される。以下に例を示す。\n- /locate コマンドを実行した時\n- エンダーアイを使用した時\n- 宝の地図が開かれた時\n- イルカが構造物の場所を示した時\n- 村人と地図の交換をした時"
       },
       "href": "io/papermc/paper/event/world/StructuresLocateEvent.html",
@@ -4618,6 +5069,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "タブ補完を行う時に呼び出される。"
       },
       "href": "net/md_5/bungee/api/event/TabCompleteEvent.html",
@@ -4628,6 +5080,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーやコンソールがコマンドをタブ補完する時に呼び出される。クライアントの変更により、プレイヤーの場合、コマンド自体では呼び出されず、コマンド引数の場合にのみ呼び出される。"
       },
       "href": "org/bukkit/event/server/TabCompleteEvent.html",
@@ -4638,6 +5091,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "サーバーがタブ補完を行う時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/player/TabCompleteEvent.html",
@@ -4648,6 +5102,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "サーバーがタブ補完を行う時に呼び出される。プロキシによって処理されたタブ補完では呼び出されない。"
       },
       "href": "net/md_5/bungee/api/event/TabCompleteResponseEvent.html",
@@ -4658,6 +5113,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "飼い慣らしたエンティティが死んでメッセージが送られる時に呼び出される。"
       },
       "href": "io/papermc/paper/event/entity/TameableDeathMessageEvent.html",
@@ -4668,6 +5124,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "2つのノード間の通信で発生するイベントを表す。"
       },
       "abstract": true,
@@ -4679,6 +5136,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ターゲットブロックに Projectile が当たる時に呼び出される。"
       },
       "href": "io/papermc/paper/event/block/TargetHitEvent.html",
@@ -4689,6 +5147,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "投げられた卵が孵化するかの確認をする時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/entity/ThrownEggHatchEvent.html",
@@ -4699,6 +5158,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "天気が雷雨に変わる時に呼び出される。"
       },
       "href": "org/bukkit/event/weather/ThunderChangeEvent.html",
@@ -4709,6 +5169,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "時間がスキップされる時に呼び出される。"
       },
       "href": "org/bukkit/event/world/TimeSkipEvent.html",
@@ -4720,9 +5181,11 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
+        "en": "",
         "ja": "Bukkit に追加された TNTPrimeEvent を使う。"
       },
       "description": {
+        "en": "",
         "ja": "TNT に着火する時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/block/TNTPrimeEvent.html",
@@ -4733,6 +5196,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "TNT に着火する時に呼び出される。"
       },
       "href": "org/bukkit/event/block/TNTPrimeEvent.html",
@@ -4743,6 +5207,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "取引画面のサイドバーで別の取引をクリックする時に呼び出される。"
       },
       "href": "org/bukkit/event/inventory/TradeSelectEvent.html",
@@ -4753,6 +5218,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "カメが家に帰ることを決めた時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/entity/TurtleGoHomeEvent.html",
@@ -4763,6 +5229,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "カメの卵が孵化する時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/entity/TurtleLayEggEvent.html",
@@ -4773,6 +5240,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "カメが産卵のために掘り始めた時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/entity/TurtleStartDiggingEvent.html",
@@ -4783,6 +5251,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "乗り物がブロックに衝突した時に呼び出される。"
       },
       "href": "org/bukkit/event/vehicle/VehicleBlockCollisionEvent.html",
@@ -4793,6 +5262,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "乗り物が衝突した時に呼び出される。"
       },
       "abstract": true,
@@ -4804,6 +5274,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "乗り物が作成される時に呼び出される。"
       },
       "href": "org/bukkit/event/vehicle/VehicleCreateEvent.html",
@@ -4814,6 +5285,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "乗り物がダメージを受ける時に呼び出される。"
       },
       "href": "org/bukkit/event/vehicle/VehicleDamageEvent.html",
@@ -4824,6 +5296,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "乗り物が破壊される時に呼び出される。"
       },
       "href": "org/bukkit/event/vehicle/VehicleDestroyEvent.html",
@@ -4834,6 +5307,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティが乗り物に乗る時に呼び出される。"
       },
       "href": "org/bukkit/event/vehicle/VehicleEnterEvent.html",
@@ -4844,6 +5318,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "乗り物がエンティティと衝突した時に呼び出される。"
       },
       "href": "org/bukkit/event/vehicle/VehicleEntityCollisionEvent.html",
@@ -4854,6 +5329,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "乗り物に関するイベントであることを表す。"
       },
       "abstract": true,
@@ -4865,6 +5341,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "エンティティが乗り物から降りる時に呼び出される。"
       },
       "href": "org/bukkit/event/vehicle/VehicleExitEvent.html",
@@ -4875,6 +5352,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "乗り物が動く時に呼び出される。"
       },
       "href": "org/bukkit/event/vehicle/VehicleMoveEvent.html",
@@ -4885,6 +5363,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "乗り物が更新された時に呼び出される。"
       },
       "href": "org/bukkit/event/vehicle/VehicleUpdateEvent.html",
@@ -4895,6 +5374,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "村人が新たな交易品を獲得する時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/VillagerAcquireTradeEvent.html",
@@ -4905,6 +5385,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "村人の職業が変わる時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/VillagerCareerChangeEvent.html",
@@ -4914,6 +5395,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "村人が交易品を補充する時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/VillagerReplenishTradeEvent.html",
@@ -4924,6 +5406,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ウォーデンの怒りレベルが他のエンティティによって変化する時に呼び出される。"
       },
       "href": "io/papermc/paper/event/entity/WardenAngerChangeEvent.html",
@@ -4934,6 +5417,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "スプラッシュウォーターポーションが割れる時に呼び出される。このイベントを使ってさまざまなエンティティに影響を与えることができる。"
       },
       "href": "io/papermc/paper/event/entity/WaterBottleSplashEvent.html",
@@ -4944,6 +5428,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "天気が変わる時に呼び出される。"
       },
       "href": "org/bukkit/event/weather/WeatherChangeEvent.html",
@@ -4954,6 +5439,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "天気に関するイベントであることを表す。"
       },
       "abstract": true,
@@ -4965,6 +5451,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "プレイヤーのホワイトリストステータスが変更される時に呼び出される。"
       },
       "href": "io/papermc/paper/event/server/WhitelistStateUpdateEvent.html",
@@ -4975,6 +5462,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ホワイトリストが切り替わった時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/server/WhitelistToggleEvent.html",
@@ -4985,6 +5473,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ウィッチがポーションを自分自身で消費する時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/entity/WitchConsumePotionEvent.html",
@@ -4995,6 +5484,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ウィッチのポーションの準備が出来る時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/entity/WitchReadyPotionEvent.html",
@@ -5004,6 +5494,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ウィッチがポーションを投げる時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/entity/WitchThrowPotionEvent.html",
@@ -5014,6 +5505,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ワールドボーダーのサイズが変更する時に呼び出される。"
       },
       "href": "io/papermc/paper/event/world/border/WorldBorderBoundsChangeEvent.html",
@@ -5024,6 +5516,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ワールドボーダーのサイズが変更した時に呼び出される。"
       },
       "href": "io/papermc/paper/event/world/border/WorldBorderBoundsChangeFinishEvent.html",
@@ -5034,6 +5527,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ワールドボーダーの中心が変更する時に呼び出される。"
       },
       "href": "io/papermc/paper/event/world/border/WorldBorderCenterChangeEvent.html",
@@ -5044,6 +5538,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ワールドボーダーに関するイベントであることを表す。"
       },
       "abstract": true,
@@ -5054,6 +5549,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ワールドに関するイベントであることを表す。"
       },
       "abstract": true,
@@ -5065,6 +5561,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ワールドのゲームルールが変更される時に呼び出される。"
       },
       "href": "io/papermc/paper/event/world/WorldGameRuleChangeEvent.html",
@@ -5075,6 +5572,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ワールドが初期化される時に呼び出される。"
       },
       "href": "org/bukkit/event/world/WorldInitEvent.html",
@@ -5085,6 +5583,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ワールドをロードした時に呼び出される。"
       },
       "href": "org/bukkit/event/world/WorldLoadEvent.html",
@@ -5095,6 +5594,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ワールドが保存された時に呼び出される。"
       },
       "href": "org/bukkit/event/world/WorldSaveEvent.html",
@@ -5105,6 +5605,7 @@
     },
     {
       "description": {
+        "en": "",
         "ja": "ワールドをアンロードするに呼び出される。"
       },
       "href": "org/bukkit/event/world/WorldUnloadEvent.html",

@@ -82,8 +82,14 @@ const getLatestEvents = async (
                     lang.map((key) => [key, ""]),
                   );
                   if (lastEvent) {
-                    description = lastEvent.description;
-                    deprecateDescription = lastEvent.deprecateDescription || {};
+                    description = {
+                      ...description,
+                      ...lastEvent.description,
+                    };
+                    deprecateDescription = {
+                      ...deprecateDescription,
+                      ...lastEvent.deprecateDescription,
+                    };
                   }
                   events[eventName + sourceType] = {
                     deprecateDescription: deprecateDescription,
