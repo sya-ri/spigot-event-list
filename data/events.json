@@ -2171,11 +2171,6 @@
       "source": "paper"
     },
     {
-      "deprecate": "@Experimental",
-      "deprecateDescription": {
-        "en": "",
-        "ja": "実験段階。"
-      },
       "description": {
         "en": "",
         "ja": "インベントリを持つブロックが処理を開始した時に呼び出される。"
@@ -3064,11 +3059,6 @@
       "source": "spigot"
     },
     {
-      "deprecate": "@Experimental",
-      "deprecateDescription": {
-        "en": "",
-        "ja": "実験段階。"
-      },
       "description": {
         "en": "",
         "ja": "プレイヤーの経験値のクールダウンが変更される時に呼び出される。"
@@ -3377,6 +3367,22 @@
       "javadoc": "Called when a players level changes",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerLevelChangeEvent.html",
       "name": "PlayerLevelChangeEvent",
+      "source": "spigot"
+    },
+    {
+      "deprecate": "@Experimental",
+      "deprecateDescription": {
+        "en": "",
+        "ja": ""
+      },
+      "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "org/bukkit/event/player/PlayerLinksSendEvent.html",
+      "javadoc": "This event is called when the list of links is sent to the player.",
+      "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerLinksSendEvent.html",
+      "name": "PlayerLinksSendEvent",
       "source": "spigot"
     },
     {
@@ -3790,11 +3796,6 @@
       "source": "paper"
     },
     {
-      "deprecate": "@Experimental",
-      "deprecateDescription": {
-        "en": "",
-        "ja": "実験段階。"
-      },
       "description": {
         "en": "",
         "ja": "プレイヤーが看板を開く時に呼び出される。"
@@ -3806,11 +3807,6 @@
       "source": "spigot"
     },
     {
-      "deprecate": "@Experimental",
-      "deprecateDescription": {
-        "en": "",
-        "ja": "実験段階。"
-      },
       "description": {
         "en": "",
         "ja": "プレイヤーのスポーン地点が変更される時に呼び出される。"
