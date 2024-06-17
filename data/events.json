@@ -3038,6 +3038,17 @@
     {
       "description": {
         "en": "",
+        "ja": ""
+      },
+      "href": "com/velocitypowered/api/event/player/configuration/PlayerEnterConfigurationEvent.html",
+      "javadoc": "This event is executed when a player with version 1.20.2 or higher enters the configuration phase. From this moment on, until the PlayerFinishedConfigurationEvent is executed, the InboundConnection.getProtocolState() method is guaranteed to return ProtocolState.CONFIGURATION.",
+      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/configuration/PlayerEnterConfigurationEvent.html",
+      "name": "PlayerEnterConfigurationEvent",
+      "source": "velocity"
+    },
+    {
+      "description": {
+        "en": "",
         "ja": "プレイヤーに関するイベントであることを表す。"
       },
       "abstract": true,
@@ -3079,6 +3090,28 @@
       "link": "https://jd.papermc.io/paper/1.20.6/io/papermc/paper/event/player/PlayerFailMoveEvent.html",
       "name": "PlayerFailMoveEvent",
       "source": "paper"
+    },
+    {
+      "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "com/velocitypowered/api/event/player/configuration/PlayerFinishConfigurationEvent.html",
+      "javadoc": "This event is executed when the player is about to finish the Configuration state. Velocity will wait for this event to finish the configuration phase on the client.",
+      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/configuration/PlayerFinishConfigurationEvent.html",
+      "name": "PlayerFinishConfigurationEvent",
+      "source": "velocity"
+    },
+    {
+      "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "com/velocitypowered/api/event/player/configuration/PlayerFinishedConfigurationEvent.html",
+      "javadoc": "Event executed when a player of version 1.20.2 or higher finishes the Configuration state. From this moment on, the InboundConnection.getProtocolState() method will return ProtocolState.PLAY.",
+      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/configuration/PlayerFinishedConfigurationEvent.html",
+      "name": "PlayerFinishedConfigurationEvent",
+      "source": "velocity"
     },
     {
       "description": {
