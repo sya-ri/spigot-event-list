@@ -5231,6 +5231,22 @@
       "source": "spigot"
     },
     {
+      "deprecate": "@Experimental",
+      "deprecateDescription": {
+        "en": "",
+        "ja": ""
+      },
+      "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "org/bukkit/event/entity/TrialSpawnerSpawnEvent.html",
+      "javadoc": "Called when an entity is spawned into a world by a trial spawner. If a Trial Spawner Spawn event is cancelled, the entity will not spawn.",
+      "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/TrialSpawnerSpawnEvent.html",
+      "name": "TrialSpawnerSpawnEvent",
+      "source": "spigot"
+    },
+    {
       "description": {
         "en": "",
         "ja": "カメが家に帰ることを決めた時に呼び出される。"
