@@ -11,7 +11,7 @@
     "compressing": "1.10.1",
     "multi-progress": "4.0.0",
     "tsx": "4.16.0",
-    "typescript": "5.5.2",
+    "typescript": "5.5.3",
     "xml2js": "0.6.2"
   }
 }
