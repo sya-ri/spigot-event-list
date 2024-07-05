@@ -3729,6 +3729,16 @@
     {
       "description": {
         "en": "",
+        "ja": ""
+      },
+      "href": "org/purpurmc/purpur/event/PlayerSetTrialSpawnerTypeWithEggEvent.html",
+      "link": "https://purpurmc.org/javadoc/org/purpurmc/purpur/event/PlayerSetTrialSpawnerTypeWithEggEvent.html",
+      "name": "PlayerSetTrialSpawnerTypeWithEggEvent",
+      "source": "purpur"
+    },
+    {
+      "description": {
+        "en": "",
         "ja": "プレイヤーがブロックに対してハサミを使用する時に呼び出される。以下に例を示す。\n- カボチャを彫ったカボチャに変える時。\n- 蜂の巣からハニカムを回収する時。"
       },
       "href": "io/papermc/paper/event/block/PlayerShearBlockEvent.html",
