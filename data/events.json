@@ -2934,6 +2934,17 @@
     {
       "description": {
         "en": "",
+        "ja": ""
+      },
+      "href": "com/velocitypowered/api/event/player/configuration/PlayerConfigurationEvent.html",
+      "javadoc": "This event is executed when a player entered the configuration state and can be configured by Velocity. Velocity will wait for this event before continuing/ending the configuration state.",
+      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/configuration/PlayerConfigurationEvent.html",
+      "name": "PlayerConfigurationEvent",
+      "source": "velocity"
+    },
+    {
+      "description": {
+        "en": "",
         "ja": "プレイヤーがサーバーから切断された時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/player/PlayerConnectionCloseEvent.html",
@@ -3025,9 +3036,20 @@
         "ja": ""
       },
       "href": "com/velocitypowered/api/event/player/configuration/PlayerEnterConfigurationEvent.html",
-      "javadoc": "This event is executed when a player with version 1.20.2 or higher enters the configuration phase. From this moment on, until the PlayerFinishedConfigurationEvent is executed, the InboundConnection.getProtocolState() method is guaranteed to return ProtocolState.CONFIGURATION.",
+      "javadoc": "This event is executed when a player is about to enter the configuration state. It is not called for the initial configuration of a player after login. Velocity will wait for this event before asking the client to enter configuration state. However due to backend server being unable to keep the connection alive during state changes, Velocity will only wait for a maximum of 5 seconds.",
       "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/configuration/PlayerEnterConfigurationEvent.html",
       "name": "PlayerEnterConfigurationEvent",
+      "source": "velocity"
+    },
+    {
+      "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "com/velocitypowered/api/event/player/configuration/PlayerEnteredConfigurationEvent.html",
+      "javadoc": "This event is executed when a player has entered the configuration state. From this moment on, until the PlayerFinishedConfigurationEvent is executed, the InboundConnection.getProtocolState() method is guaranteed to return ProtocolState.CONFIGURATION.",
+      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/configuration/PlayerEnteredConfigurationEvent.html",
+      "name": "PlayerEnteredConfigurationEvent",
       "source": "velocity"
     },
     {
@@ -3081,7 +3103,7 @@
         "ja": ""
       },
       "href": "com/velocitypowered/api/event/player/configuration/PlayerFinishConfigurationEvent.html",
-      "javadoc": "This event is executed when the player is about to finish the Configuration state. Velocity will wait for this event to finish the configuration phase on the client.",
+      "javadoc": "This event is executed when a player is about to finish the configuration state. Velocity will wait for this event before asking the client to finish the configuration state. However due to backend server being unable to keep the connection alive during state changes, Velocity will only wait for a maximum of 5 seconds. If you need to hold a player in configuration state, use the PlayerConfigurationEvent.",
       "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/configuration/PlayerFinishConfigurationEvent.html",
       "name": "PlayerFinishConfigurationEvent",
       "source": "velocity"
@@ -3092,7 +3114,7 @@
         "ja": ""
       },
       "href": "com/velocitypowered/api/event/player/configuration/PlayerFinishedConfigurationEvent.html",
-      "javadoc": "Event executed when a player of version 1.20.2 or higher finishes the Configuration state. From this moment on, the InboundConnection.getProtocolState() method will return ProtocolState.PLAY.",
+      "javadoc": "This event is executed when a player has finished the configuration state. From this moment on, the InboundConnection.getProtocolState() method will return ProtocolState.PLAY.",
       "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/configuration/PlayerFinishedConfigurationEvent.html",
       "name": "PlayerFinishedConfigurationEvent",
       "source": "velocity"
@@ -4792,6 +4814,17 @@
       "javadoc": "This event is fired before the player connects to a server. Velocity will wait on this event to finish firing before initiating the connection.",
       "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/ServerPreConnectEvent.html",
       "name": "ServerPreConnectEvent",
+      "source": "velocity"
+    },
+    {
+      "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "com/velocitypowered/api/event/player/ServerResourcePackRemoveEvent.html",
+      "javadoc": "This event is fired when the downstream server tries to remove a resource pack from player or clear all of them. The proxy will wait on this event to finish before forwarding the action to the user. If this event is denied, no resource packs will be removed from player.",
+      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/ServerResourcePackRemoveEvent.html",
+      "name": "ServerResourcePackRemoveEvent",
       "source": "velocity"
     },
     {
