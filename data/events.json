@@ -4817,6 +4817,22 @@
       "source": "velocity"
     },
     {
+      "deprecate": "@Beta",
+      "deprecateDescription": {
+        "en": "",
+        "ja": ""
+      },
+      "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "com/velocitypowered/api/event/proxy/server/ServerRegisteredEvent.html",
+      "javadoc": "This event is fired by the proxy after a backend server is registered to the server map. Currently, it may occur when a server is registered dynamically at runtime or when a server is replaced due to configuration reload.",
+      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/proxy/server/ServerRegisteredEvent.html",
+      "name": "ServerRegisteredEvent",
+      "source": "velocity"
+    },
+    {
       "description": {
         "en": "",
         "ja": ""
@@ -4880,6 +4896,22 @@
       "link": "https://jd.papermc.io/paper/1.21/com/destroystokyo/paper/event/server/ServerTickStartEvent.html",
       "name": "ServerTickStartEvent",
       "source": "paper"
+    },
+    {
+      "deprecate": "@Beta",
+      "deprecateDescription": {
+        "en": "",
+        "ja": ""
+      },
+      "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "com/velocitypowered/api/event/proxy/server/ServerUnregisteredEvent.html",
+      "javadoc": "This event is fired by the proxy after a backend server is unregistered from the server map. Currently, it may occur when a server is unregistered dynamically at runtime or when a server is replaced due to configuration reload.",
+      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/proxy/server/ServerUnregisteredEvent.html",
+      "name": "ServerUnregisteredEvent",
+      "source": "velocity"
     },
     {
       "description": {
