@@ -75,25 +75,15 @@ const getLatestEvents = async (
                 if (!source.downloadSources.includes(sourceType)) return;
                 if (!events[eventName + sourceType]) {
                   const lastEvent = lastEvents[eventName + sourceType];
-                  let description = Object.fromEntries(
-                    lang.map((key) => [key, ""]),
-                  );
-                  let deprecateDescription = Object.fromEntries(
-                    lang.map((key) => [key, ""]),
-                  );
-                  if (lastEvent) {
-                    description = {
-                      ...description,
-                      ...lastEvent.description,
-                    };
-                    deprecateDescription = {
-                      ...deprecateDescription,
-                      ...lastEvent.deprecateDescription,
-                    };
-                  }
                   events[eventName + sourceType] = {
-                    deprecateDescription: deprecateDescription,
-                    description: description,
+                    deprecateDescription: {
+                      ...Object.fromEntries(lang.map((key) => [key, ""])),
+                      ...(lastEvent && lastEvent.deprecateDescription),
+                    },
+                    description: {
+                      ...Object.fromEntries(lang.map((key) => [key, ""])),
+                      ...(lastEvent && lastEvent.description),
+                    },
                     href: href,
                     link: source.javadocUrl + href,
                     name: eventName || "",
