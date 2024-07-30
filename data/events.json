@@ -974,6 +974,17 @@
     {
       "description": {
         "en": "",
+        "ja": ""
+      },
+      "href": "org/bukkit/event/block/CrafterCraftEvent.html",
+      "javadoc": "Event called when a Crafter is about to craft an item.",
+      "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/CrafterCraftEvent.html",
+      "name": "CrafterCraftEvent",
+      "source": "spigot"
+    },
+    {
+      "description": {
+        "en": "",
         "ja": "アイテムをクラフトする時に呼び出される。"
       },
       "href": "org/bukkit/event/inventory/CraftItemEvent.html",
