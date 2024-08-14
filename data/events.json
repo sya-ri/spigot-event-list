@@ -477,6 +477,22 @@
       "source": "spigot"
     },
     {
+      "deprecate": "@Experimental",
+      "deprecateDescription": {
+        "en": "",
+        "ja": ""
+      },
+      "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "org/bukkit/event/block/BlockDispenseLootEvent.html",
+      "javadoc": "Called when a block dispenses loot from its designated LootTable. This is not to be confused with events like BlockDispenseEvent which fires when a singular item is dispensed from its inventory container. Example: A player unlocks a trial chamber vault and the vault block dispenses its loot.",
+      "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockDispenseLootEvent.html",
+      "name": "BlockDispenseLootEvent",
+      "source": "spigot"
+    },
+    {
       "description": {
         "en": "",
         "ja": "プレイヤーによって破壊されたブロックがアイテムとしてドロップする時に呼び出される。"
@@ -5364,6 +5380,22 @@
       "link": "https://jd.papermc.io/paper/1.21.1/com/destroystokyo/paper/event/entity/TurtleStartDiggingEvent.html",
       "name": "TurtleStartDiggingEvent",
       "source": "paper"
+    },
+    {
+      "deprecate": "@Experimental",
+      "deprecateDescription": {
+        "en": "",
+        "ja": ""
+      },
+      "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "org/bukkit/event/block/VaultDisplayItemEvent.html",
+      "javadoc": "Called when a vault in a trial chamber is about to display an item.",
+      "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/VaultDisplayItemEvent.html",
+      "name": "VaultDisplayItemEvent",
+      "source": "spigot"
     },
     {
       "description": {
