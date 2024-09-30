@@ -1636,7 +1636,7 @@
         "ja": "エンティティがプラグインによってテレポートする準備が整った時に呼び出される。現在、ネザーポータルでのみ呼び出される。"
       },
       "href": "io/papermc/paper/event/entity/EntityPortalReadyEvent.html",
-      "javadoc": "Called when an entity is ready to be teleported by a plugin. Currently this is only called after the required ticks have passed for a Nether Portal. Cancelling this event resets the entity's readiness regarding the current portal.",
+      "javadoc": "Called when an entity is ready to be teleported by a plugin. Currently, this is only called after the required ticks have passed for a Nether Portal. Cancelling this event resets the entity's readiness regarding the current portal.",
       "link": "https://jd.papermc.io/paper/1.21.1/io/papermc/paper/event/entity/EntityPortalReadyEvent.html",
       "name": "EntityPortalReadyEvent",
       "source": "paper"
@@ -3222,6 +3222,17 @@
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerHideEntityEvent.html",
       "name": "PlayerHideEntityEvent",
       "source": "spigot"
+    },
+    {
+      "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "io/papermc/paper/event/player/PlayerInsertLecternBookEvent.html",
+      "javadoc": "This event is called when a player clicks on a lectern to insert a book. If this event is cancelled the player will keep the book and the lectern will remain empty.",
+      "link": "https://jd.papermc.io/paper/1.21.1/io/papermc/paper/event/player/PlayerInsertLecternBookEvent.html",
+      "name": "PlayerInsertLecternBookEvent",
+      "source": "paper"
     },
     {
       "description": {
