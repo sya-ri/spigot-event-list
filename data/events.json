@@ -3224,6 +3224,22 @@
       "source": "spigot"
     },
     {
+      "deprecate": "@Experimental",
+      "deprecateDescription": {
+        "en": "",
+        "ja": ""
+      },
+      "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "org/bukkit/event/player/PlayerInputEvent.html",
+      "javadoc": "This event is called when a player sends updated input to the server.",
+      "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerInputEvent.html",
+      "name": "PlayerInputEvent",
+      "source": "spigot"
+    },
+    {
       "description": {
         "en": "",
         "ja": ""
