@@ -3322,7 +3322,7 @@
         "ja": "プレイヤーのアイテムクールダウンが変更される時に呼び出される。"
       },
       "href": "io/papermc/paper/event/player/PlayerItemCooldownEvent.html",
-      "javadoc": "Fired when a player receives an item cooldown.",
+      "javadoc": "Fired when a player receives an item cooldown when using an item.",
       "link": "https://jd.papermc.io/paper/1.21.3/io/papermc/paper/event/player/PlayerItemCooldownEvent.html",
       "name": "PlayerItemCooldownEvent",
       "source": "paper"
@@ -3347,6 +3347,17 @@
       "javadoc": "Called when an ItemFrame is having an item rotated, added, or removed from it.",
       "link": "https://jd.papermc.io/paper/1.21.3/io/papermc/paper/event/player/PlayerItemFrameChangeEvent.html",
       "name": "PlayerItemFrameChangeEvent",
+      "source": "paper"
+    },
+    {
+      "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "io/papermc/paper/event/player/PlayerItemGroupCooldownEvent.html",
+      "javadoc": "Fired when a player receives an item cooldown.",
+      "link": "https://jd.papermc.io/paper/1.21.3/io/papermc/paper/event/player/PlayerItemGroupCooldownEvent.html",
+      "name": "PlayerItemGroupCooldownEvent",
       "source": "paper"
     },
     {
