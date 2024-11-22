@@ -22,7 +22,7 @@
     "swr": "2.2.5"
   },
   "devDependencies": {
-    "@types/node": "22.8.2",
+    "@types/node": "22.9.1",
     "@types/react": "18.3.12",
     "@types/react-dom": "18.3.1",
     "autoprefixer": "10.4.20",
@@ -36,7 +36,7 @@
     "typescript": "5.6.3"
   },
   "engines": {
-    "node": "20.x"
+    "node": "22.x"
   },
   "workspaces": [
     "packages/downloader"
