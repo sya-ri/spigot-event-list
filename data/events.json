@@ -2960,8 +2960,8 @@
     },
     {
       "description": {
-        "en": "Called when a player enters the configuration state.",
-        "ja": "プレイヤーが構成状態に入った時に呼び出される。"
+        "en": "Called when a player enters the configuration state. Velocity will wait for this event before continuing or terminating the configuration state.",
+        "ja": "プレイヤーが構成状態に入った時に呼び出される。Velocity はこのイベントを待機してから構成状態の続行または終了を行う。"
       },
       "href": "com/velocitypowered/api/event/player/configuration/PlayerConfigurationEvent.html",
       "javadoc": "This event is executed when a player entered the configuration state and can be configured by Velocity. Velocity will wait for this event before continuing/ending the configuration state.",
