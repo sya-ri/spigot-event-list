@@ -483,8 +483,8 @@
         "ja": ""
       },
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when a block, such  as a vault, ejects loot from the specified loot table.",
+        "ja": "宝物庫などのブロックが指定されたルートテーブルから戦利品を排出する時に呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockDispenseLootEvent.html",
       "javadoc": "Called when a block dispenses loot from its designated LootTable. This is not to be confused with events like BlockDispenseEvent which fires when a singular item is dispensed from its inventory container. Example: A player unlocks a trial chamber vault and the vault block dispenses its loot.",
@@ -956,8 +956,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when the proxy receives a cookie response from the client.",
+        "ja": "プロキシがクライアントから Cookie 応答を受信した時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/player/CookieReceiveEvent.html",
       "javadoc": "This event is fired when a cookie response from a client is received by the proxy. This usually happens after either a proxy plugin or a backend server requested a cookie. Velocity will wait on this event to finish firing before discarding the received cookie (if handled) or forwarding it to the backend server.",
@@ -967,8 +967,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when a proxy plugin or backend server requests a cookie from the client.",
+        "ja": "プロキシプラグインまたはバックエンドサーバーがクライアントに Cookie を要求する時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/player/CookieRequestEvent.html",
       "javadoc": "This event is fired when a cookie from a client is requested either by a proxy plugin or by a backend server. Velocity will wait on this event to finish firing before discarding the cookie request (if handled) or forwarding it to the client.",
@@ -978,8 +978,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when a cookie needs to be saved on the client.",
+        "ja": "Cookie をクライアントに保存する必要がある時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/player/CookieStoreEvent.html",
       "javadoc": "This event is fired when a cookie should be stored on a player's client. This process can be initiated either by a proxy plugin or by a backend server. Velocity will wait on this event to finish firing before discarding the cookie (if handled) or forwarding it to the client so that it can store the cookie.",
@@ -989,8 +989,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when a crafter is about to craft an item.",
+        "ja": "自動作業台がアイテムをクラフトしようとする時に呼び出される。"
       },
       "href": "org/bukkit/event/block/CrafterCraftEvent.html",
       "javadoc": "Event called when a Crafter is about to craft an item.",
@@ -1511,8 +1511,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when an entity is knocked back.",
+        "ja": "エンティティがノックバックする時に呼び出される。"
       },
       "href": "io/papermc/paper/event/entity/EntityKnockbackEvent.html",
       "javadoc": "Called when an entity receives knockback.",
@@ -2960,8 +2960,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when a player enters the configuration state.",
+        "ja": "プレイヤーが構成状態に入った時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/player/configuration/PlayerConfigurationEvent.html",
       "javadoc": "This event is executed when a player entered the configuration state and can be configured by Velocity. Velocity will wait for this event before continuing/ending the configuration state.",
@@ -3059,8 +3059,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when a player is about to enter a configuration state, however Velocity will only wait up to 5 seconds as backend servers cannot maintain connections during state changes.",
+        "ja": "プレイヤーが構成状態に入ろうとしている時に呼び出される。ただし、バックエンドサーバーは状態の変更中に接続を維持できないために、Velocity は最大5秒間までしか待機しない。"
       },
       "href": "com/velocitypowered/api/event/player/configuration/PlayerEnterConfigurationEvent.html",
       "javadoc": "This event is executed when a player is about to enter the configuration state. It is not called for the initial configuration of a player after login. Velocity will wait for this event before asking the client to enter configuration state. However due to backend server being unable to keep the connection alive during state changes, Velocity will only wait for a maximum of 5 seconds.",
@@ -3070,8 +3070,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when a player enters the composed state.",
+        "ja": "プレイヤーが構成状態に入った時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/player/configuration/PlayerEnteredConfigurationEvent.html",
       "javadoc": "This event is executed when a player has entered the configuration state. From this moment on, until the PlayerFinishedConfigurationEvent is executed, the InboundConnection.getProtocolState() method is guaranteed to return ProtocolState.CONFIGURATION.",
@@ -3126,8 +3126,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when a player is about to finish a configuration state, however Velocity will only wait up to 5 seconds as backend servers cannot maintain connections during state changes.",
+        "ja": "プレイヤーが構成状態を終了しようとしている時に呼び出される。ただし、バックエンドサーバーは状態の変更中に接続を維持できないために、Velocity は最大5秒間までしか待機しない。"
       },
       "href": "com/velocitypowered/api/event/player/configuration/PlayerFinishConfigurationEvent.html",
       "javadoc": "This event is executed when a player is about to finish the configuration state. Velocity will wait for this event before asking the client to finish the configuration state. However due to backend server being unable to keep the connection alive during state changes, Velocity will only wait for a maximum of 5 seconds. If you need to hold a player in configuration state, use the PlayerConfigurationEvent.",
@@ -3137,8 +3137,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when a player exits the configuration state.",
+        "ja": "プレイヤーが構成状態を終了した時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/player/configuration/PlayerFinishedConfigurationEvent.html",
       "javadoc": "This event is executed when a player has finished the configuration state. From this moment on, the InboundConnection.getProtocolState() method will return ProtocolState.PLAY.",
@@ -3230,8 +3230,8 @@
         "ja": ""
       },
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when a player updates their control key input.",
+        "ja": "プレイヤーが操作キーの入力を更新した時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerInputEvent.html",
       "javadoc": "This event is called when a player sends updated input to the server.",
@@ -3241,8 +3241,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when a player inserts a book into a lectern.",
+        "ja": "プレイヤーが書見台に本を挿入した時に呼び出される。"
       },
       "href": "io/papermc/paper/event/player/PlayerInsertLecternBookEvent.html",
       "javadoc": "This event is called when a player clicks on a lectern to insert a book. If this event is cancelled the player will keep the book and the lectern will remain empty.",
@@ -3351,8 +3351,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when a player receives an item cooldown.",
+        "ja": "プレイヤーがアイテムのクールダウンを受ける時に呼び出される。"
       },
       "href": "io/papermc/paper/event/player/PlayerItemGroupCooldownEvent.html",
       "javadoc": "Fired when a player receives an item cooldown.",
@@ -3465,8 +3465,8 @@
         "ja": ""
       },
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when a list of links has been sent to the player.",
+        "ja": "リンクのリストがプレイヤーに送信された時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerLinksSendEvent.html",
       "javadoc": "This event is called when the list of links is sent to the player.",
@@ -3815,8 +3815,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when a player uses a spawn egg to set the type of entity the trial spawner will spawn.",
+        "ja": "プレイヤーがスポーンエッグを使用して試練のスポナーがスポーンさせるエンティティの種類を設定した時に呼び出される。"
       },
       "href": "org/purpurmc/purpur/event/PlayerSetTrialSpawnerTypeWithEggEvent.html",
       "link": "https://purpurmc.org/javadoc/org/purpurmc/purpur/event/PlayerSetTrialSpawnerTypeWithEggEvent.html",
@@ -4637,8 +4637,8 @@
         "ja": ""
       },
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called just before an entry is registered or added to the registry.",
+        "ja": "レジストリにエントリが登録または追加される直前に呼び出される。"
       },
       "href": "io/papermc/paper/registry/event/RegistryEntryAddEvent.html",
       "javadoc": "Event object for RegistryEventProvider.entryAdd(). This event is fired right before a specific entry is registered in/added to registry. It provides a way for plugins to modify parts of this entry.",
@@ -4653,8 +4653,8 @@
         "ja": ""
       },
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "The event is about registry.",
+        "ja": "レジストリに関するイベントであることを表す。"
       },
       "href": "io/papermc/paper/registry/event/RegistryEvent.html",
       "javadoc": "Base type for all registry events.",
@@ -4669,8 +4669,8 @@
         "ja": ""
       },
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called just before the registry is frozen and no further changes are allowed.",
+        "ja": "レジストリが凍結してそれ以上の変更が許可されなくなる直前に呼び出される。"
       },
       "href": "io/papermc/paper/registry/event/RegistryFreezeEvent.html",
       "javadoc": "Event object for RegistryEventProvider.freeze(). This event is fired right before a registry is frozen disallowing further changes. It provides a way for plugins to add new objects to the registry.",
@@ -4888,8 +4888,8 @@
         "ja": ""
       },
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called after a backend server is added to the server map.",
+        "ja": "バックエンドサーバーがサーバーマップに登録された後に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/proxy/server/ServerRegisteredEvent.html",
       "javadoc": "This event is fired by the proxy after a backend server is registered to the server map. Currently, it may occur when a server is registered dynamically at runtime or when a server is replaced due to configuration reload.",
@@ -4899,8 +4899,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when a downstream server attempts to remove a resource pack from a player or clear all resource packs.",
+        "ja": "ダウンストリームサーバーがプレイヤーからリソースパックを削除しようとした時、または全てのリソースパックをクリアしようとした時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/player/ServerResourcePackRemoveEvent.html",
       "javadoc": "This event is fired when the downstream server tries to remove a resource pack from player or clear all of them. The proxy will wait on this event to finish before forwarding the action to the user. If this event is denied, no resource packs will be removed from player.",
@@ -4969,8 +4969,8 @@
         "ja": ""
       },
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called after a backend server is unregistered from the server map.",
+        "ja": "バックエンドサーバーがサーバーマップから削除された後に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/proxy/server/ServerUnregisteredEvent.html",
       "javadoc": "This event is fired by the proxy after a backend server is unregistered from the server map. Currently, it may occur when a server is unregistered dynamically at runtime or when a server is replaced due to configuration reload.",
@@ -5377,8 +5377,8 @@
         "ja": ""
       },
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when a trial spawner spawns an entity into the world.",
+        "ja": "試練のスポナーがワールドにエンティティをスポーンさせる時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/TrialSpawnerSpawnEvent.html",
       "javadoc": "Called when an entity is spawned into a world by a trial spawner. If a Trial Spawner Spawn event is cancelled, the entity will not spawn.",
@@ -5426,8 +5426,8 @@
         "ja": ""
       },
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when the vault is about to display an item.",
+        "ja": "宝物庫がアイテムを展示しようとしている時に呼び出される。"
       },
       "href": "org/bukkit/event/block/VaultDisplayItemEvent.html",
       "javadoc": "Called when a vault in a trial chamber is about to display an item.",
