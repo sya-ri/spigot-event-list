@@ -480,7 +480,7 @@
       "deprecate": "@Experimental",
       "deprecateDescription": {
         "en": "",
-        "ja": ""
+        "ja": "実験段階。"
       },
       "description": {
         "en": "Called when a block, such  as a vault, ejects loot from the specified loot table.",
@@ -3227,7 +3227,7 @@
       "deprecate": "@Experimental",
       "deprecateDescription": {
         "en": "",
-        "ja": ""
+        "ja": "実験段階。"
       },
       "description": {
         "en": "Called when a player updates their control key input.",
@@ -3462,7 +3462,7 @@
       "deprecate": "@Experimental",
       "deprecateDescription": {
         "en": "",
-        "ja": ""
+        "ja": "実験段階。"
       },
       "description": {
         "en": "Called when a list of links has been sent to the player.",
@@ -4634,7 +4634,7 @@
       "deprecate": "@Experimental",
       "deprecateDescription": {
         "en": "",
-        "ja": ""
+        "ja": "実験段階。"
       },
       "description": {
         "en": "Called just before an entry is registered or added to the registry.",
@@ -4650,7 +4650,7 @@
       "deprecate": "@Experimental",
       "deprecateDescription": {
         "en": "",
-        "ja": ""
+        "ja": "実験段階。"
       },
       "description": {
         "en": "The event is about registry.",
@@ -4666,7 +4666,7 @@
       "deprecate": "@Experimental",
       "deprecateDescription": {
         "en": "",
-        "ja": ""
+        "ja": "実験段階。"
       },
       "description": {
         "en": "Called just before the registry is frozen and no further changes are allowed.",
@@ -4885,7 +4885,7 @@
       "deprecate": "@Beta",
       "deprecateDescription": {
         "en": "",
-        "ja": ""
+        "ja": "ベータ段階。"
       },
       "description": {
         "en": "Called after a backend server is added to the server map.",
@@ -4966,7 +4966,7 @@
       "deprecate": "@Beta",
       "deprecateDescription": {
         "en": "",
-        "ja": ""
+        "ja": "ベータ段階。"
       },
       "description": {
         "en": "Called after a backend server is unregistered from the server map.",
@@ -5374,7 +5374,7 @@
       "deprecate": "@Experimental",
       "deprecateDescription": {
         "en": "",
-        "ja": ""
+        "ja": "実験段階。"
       },
       "description": {
         "en": "Called when a trial spawner spawns an entity into the world.",
@@ -5423,7 +5423,7 @@
       "deprecate": "@Experimental",
       "deprecateDescription": {
         "en": "",
-        "ja": ""
+        "ja": "実験段階。"
       },
       "description": {
         "en": "Called when the vault is about to display an item.",
