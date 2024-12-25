@@ -990,7 +990,7 @@
     {
       "description": {
         "en": "Called when a crafter is about to craft an item.",
-        "ja": "自動作業台がアイテムをクラフトしようとする時に呼び出される。"
+        "ja": "自動作業台がアイテムをクラフトする時に呼び出される。"
       },
       "href": "org/bukkit/event/block/CrafterCraftEvent.html",
       "javadoc": "Event called when a Crafter is about to craft an item.",
@@ -3242,7 +3242,7 @@
     {
       "description": {
         "en": "Called when a player inserts a book into a lectern.",
-        "ja": "プレイヤーが書見台に本を挿入した時に呼び出される。"
+        "ja": "プレイヤーが書見台に本を挿入する時に呼び出される。"
       },
       "href": "io/papermc/paper/event/player/PlayerInsertLecternBookEvent.html",
       "javadoc": "This event is called when a player clicks on a lectern to insert a book. If this event is cancelled the player will keep the book and the lectern will remain empty.",
@@ -3816,7 +3816,7 @@
     {
       "description": {
         "en": "Called when a player uses a spawn egg to set the type of entity the trial spawner will spawn.",
-        "ja": "プレイヤーがスポーンエッグを使用して試練のスポナーがスポーンさせるエンティティの種類を設定した時に呼び出される。"
+        "ja": "プレイヤーがスポーンエッグを使用して試練のスポナーのエンティティの種類を設定する時に呼び出される。"
       },
       "href": "org/purpurmc/purpur/event/PlayerSetTrialSpawnerTypeWithEggEvent.html",
       "link": "https://purpurmc.org/javadoc/org/purpurmc/purpur/event/PlayerSetTrialSpawnerTypeWithEggEvent.html",
@@ -5427,7 +5427,7 @@
       },
       "description": {
         "en": "Called when the vault is about to display an item.",
-        "ja": "宝物庫がアイテムを展示しようとしている時に呼び出される。"
+        "ja": "宝物庫がアイテムを表示する時に呼び出される。"
       },
       "href": "org/bukkit/event/block/VaultDisplayItemEvent.html",
       "javadoc": "Called when a vault in a trial chamber is about to display an item.",
