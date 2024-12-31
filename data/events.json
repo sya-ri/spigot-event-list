@@ -3,7 +3,7 @@
   "events": [
     {
       "description": {
-        "en": "The event is about chatting.",
+        "en": "",
         "ja": "チャットに関するイベントであることを表す。"
       },
       "abstract": true,
@@ -15,7 +15,7 @@
     },
     {
       "description": {
-        "en": "Called when an anvil is damaged from being used.",
+        "en": "",
         "ja": "使用したことで金床が損傷する時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/block/AnvilDamagedEvent.html",
@@ -26,7 +26,7 @@
     },
     {
       "description": {
-        "en": "Called when a player takes the result item out of an anvil.",
+        "en": "",
         "ja": "金床から結果アイテムを取り出す時に呼び出される。"
       },
       "href": "org/purpurmc/purpur/event/inventory/AnvilTakeResultEvent.html",
@@ -37,7 +37,7 @@
     },
     {
       "description": {
-        "en": "Called when anvil slots change, triggering the result slot to be updated.",
+        "en": "",
         "ja": "金床の結果アイテムが更新された時に呼び出される。"
       },
       "href": "org/purpurmc/purpur/event/inventory/AnvilUpdateResultEvent.html",
@@ -48,7 +48,7 @@
     },
     {
       "description": {
-        "en": "Called when a lingering potion applies it's effects. Happens once every 5 ticks",
+        "en": "",
         "ja": "AreaEffectCloud の効果が付与される時に呼び出される。5ティック毎に1回発生する。"
       },
       "href": "org/bukkit/event/entity/AreaEffectCloudApplyEvent.html",
@@ -59,7 +59,7 @@
     },
     {
       "description": {
-        "en": "Called when an arrow enters or exists an entity's body.",
+        "en": "",
         "ja": "矢がエンティティの本体に入る・存在する時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/ArrowBodyCountChangeEvent.html",
@@ -75,7 +75,7 @@
         "ja": "実験段階。"
       },
       "description": {
-        "en": "Called when the server decorates the chat component via a command.",
+        "en": "",
         "ja": "コマンドを介したチャットコンポーネントをサーバーが装飾するときに呼び出される。"
       },
       "href": "io/papermc/paper/event/player/AsyncChatCommandDecorateEvent.html",
@@ -90,7 +90,7 @@
         "ja": "実験段階。"
       },
       "description": {
-        "en": "Called when the server decorates a component for chat purposes.",
+        "en": "",
         "ja": "チャットコンポーネントをサーバーが装飾するときに呼び出される。"
       },
       "href": "io/papermc/paper/event/player/AsyncChatDecorateEvent.html",
@@ -101,7 +101,7 @@
     },
     {
       "description": {
-        "en": "Called when a player sends a chat message to the server.",
+        "en": "",
         "ja": "プレイヤーがチャットした時に呼び出される。"
       },
       "href": "io/papermc/paper/event/player/AsyncChatEvent.html",
@@ -112,7 +112,7 @@
     },
     {
       "description": {
-        "en": "This event is handled asynchronously.",
+        "en": "",
         "ja": "非同期で処理されるイベントを表す。"
       },
       "href": "net/md_5/bungee/api/event/AsyncEvent.html",
@@ -123,7 +123,7 @@
     },
     {
       "description": {
-        "en": "Called when a player chats. Called asynchronously or synchronously.",
+        "en": "",
         "ja": "プレイヤーがチャットした時に呼び出される。非同期でも同期でも呼び出されることがある。"
       },
       "href": "org/bukkit/event/player/AsyncPlayerChatEvent.html",
@@ -139,7 +139,7 @@
         "ja": "実験段階。"
       },
       "description": {
-        "en": "Used to format chat for chat preview. If this event is used, then the result of the corresponding AsyncPlayerChatEvent must be formatted in the same way.",
+        "en": "",
         "ja": "チャットのプレビュー用にフォーマットする時に呼び出される。このイベントを使用する場合は、AsyncPlayerChatEvent も同じ方法でフォーマットする必要がある。"
       },
       "href": "org/bukkit/event/player/AsyncPlayerChatPreviewEvent.html",
@@ -177,7 +177,7 @@
     },
     {
       "description": {
-        "en": "Called when sending Suggestions to the client.",
+        "en": "",
         "ja": "補完をクライアントに送信する時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/brigadier/AsyncPlayerSendSuggestionsEvent.html",
@@ -379,7 +379,7 @@
     },
     {
       "description": {
-        "en": "Called when the progress of a block break is updated.",
+        "en": "",
         "ja": "ブロックの破壊状況が更新される時に呼び出される。"
       },
       "href": "io/papermc/paper/event/block/BlockBreakProgressUpdateEvent.html",
@@ -483,7 +483,7 @@
         "ja": "実験段階。"
       },
       "description": {
-        "en": "Called when a block, such  as a vault, ejects loot from the specified loot table.",
+        "en": "",
         "ja": "宝物庫などのブロックが指定されたルートテーブルから戦利品を排出する時に呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockDispenseLootEvent.html",
@@ -803,7 +803,7 @@
     },
     {
       "description": {
-        "en": "Called when the recipe of an item is completed inside a cartography table.",
+        "en": "",
         "ja": "製図台でアイテムを作成する時に呼び出される。"
       },
       "href": "io/papermc/paper/event/player/CartographyItemEvent.html",
@@ -919,11 +919,11 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
-        "en": "Use the new brigadier api.",
+        "en": "",
         "ja": "新しい Brigadier API を使う。"
       },
       "description": {
-        "en": "Called when the server synchronizes Bukkit commands to Brigadier.",
+        "en": "",
         "ja": "サーバーが Bukkit コマンドを Brigadier に同期する時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/brigadier/CommandRegisteredEvent.html",
@@ -956,7 +956,7 @@
     },
     {
       "description": {
-        "en": "Called when the proxy receives a cookie response from the client.",
+        "en": "",
         "ja": "プロキシがクライアントから Cookie 応答を受信した時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/player/CookieReceiveEvent.html",
@@ -967,7 +967,7 @@
     },
     {
       "description": {
-        "en": "Called when a proxy plugin or backend server requests a cookie from the client.",
+        "en": "",
         "ja": "プロキシプラグインまたはバックエンドサーバーがクライアントに Cookie を要求する時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/player/CookieRequestEvent.html",
@@ -978,7 +978,7 @@
     },
     {
       "description": {
-        "en": "Called when a cookie needs to be saved on the client.",
+        "en": "",
         "ja": "Cookie をクライアントに保存する必要がある時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/player/CookieStoreEvent.html",
@@ -989,7 +989,7 @@
     },
     {
       "description": {
-        "en": "Called when a crafter is about to craft an item.",
+        "en": "",
         "ja": "自動作業台がアイテムをクラフトする時に呼び出される。"
       },
       "href": "org/bukkit/event/block/CrafterCraftEvent.html",
@@ -1511,7 +1511,7 @@
     },
     {
       "description": {
-        "en": "Called when an entity is knocked back.",
+        "en": "",
         "ja": "エンティティがノックバックする時に呼び出される。"
       },
       "href": "io/papermc/paper/event/entity/EntityKnockbackEvent.html",
@@ -1692,7 +1692,7 @@
         "ja": "実験段階。"
       },
       "description": {
-        "en": "Called when an Entity is removed.",
+        "en": "",
         "ja": "エンティティが削除された時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityRemoveEvent.html",
@@ -2960,7 +2960,7 @@
     },
     {
       "description": {
-        "en": "Called when a player enters the configuration state. Velocity will wait for this event before continuing or terminating the configuration state.",
+        "en": "",
         "ja": "プレイヤーが構成状態に入った時に呼び出される。Velocity はこのイベントを待機してから構成状態の続行または終了を行う。"
       },
       "href": "com/velocitypowered/api/event/player/configuration/PlayerConfigurationEvent.html",
@@ -3059,7 +3059,7 @@
     },
     {
       "description": {
-        "en": "Called when a player is about to enter a configuration state, however Velocity will only wait up to 5 seconds as backend servers cannot maintain connections during state changes.",
+        "en": "",
         "ja": "プレイヤーが構成状態に入ろうとしている時に呼び出される。ただし、バックエンドサーバーは状態の変更中に接続を維持できないために、Velocity は最大5秒間までしか待機しない。"
       },
       "href": "com/velocitypowered/api/event/player/configuration/PlayerEnterConfigurationEvent.html",
@@ -3070,7 +3070,7 @@
     },
     {
       "description": {
-        "en": "Called when a player enters the composed state.",
+        "en": "",
         "ja": "プレイヤーが構成状態に入った時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/player/configuration/PlayerEnteredConfigurationEvent.html",
@@ -3126,7 +3126,7 @@
     },
     {
       "description": {
-        "en": "Called when a player is about to finish a configuration state, however Velocity will only wait up to 5 seconds as backend servers cannot maintain connections during state changes.",
+        "en": "",
         "ja": "プレイヤーが構成状態を終了しようとしている時に呼び出される。ただし、バックエンドサーバーは状態の変更中に接続を維持できないために、Velocity は最大5秒間までしか待機しない。"
       },
       "href": "com/velocitypowered/api/event/player/configuration/PlayerFinishConfigurationEvent.html",
@@ -3137,7 +3137,7 @@
     },
     {
       "description": {
-        "en": "Called when a player exits the configuration state.",
+        "en": "",
         "ja": "プレイヤーが構成状態を終了した時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/player/configuration/PlayerFinishedConfigurationEvent.html",
@@ -3230,7 +3230,7 @@
         "ja": "実験段階。"
       },
       "description": {
-        "en": "Called when a player updates their control key input.",
+        "en": "",
         "ja": "プレイヤーが操作キーの入力を更新した時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerInputEvent.html",
@@ -3241,7 +3241,7 @@
     },
     {
       "description": {
-        "en": "Called when a player inserts a book into a lectern.",
+        "en": "",
         "ja": "プレイヤーが書見台に本を挿入する時に呼び出される。"
       },
       "href": "io/papermc/paper/event/player/PlayerInsertLecternBookEvent.html",
@@ -3351,7 +3351,7 @@
     },
     {
       "description": {
-        "en": "Called when a player receives an item cooldown.",
+        "en": "",
         "ja": "プレイヤーがアイテムのクールダウンを受ける時に呼び出される。"
       },
       "href": "io/papermc/paper/event/player/PlayerItemGroupCooldownEvent.html",
@@ -3465,7 +3465,7 @@
         "ja": "実験段階。"
       },
       "description": {
-        "en": "Called when a list of links has been sent to the player.",
+        "en": "",
         "ja": "リンクのリストがプレイヤーに送信された時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerLinksSendEvent.html",
@@ -3815,7 +3815,7 @@
     },
     {
       "description": {
-        "en": "Called when a player uses a spawn egg to set the type of entity the trial spawner will spawn.",
+        "en": "",
         "ja": "プレイヤーがスポーンエッグを使用して試練のスポナーのエンティティの種類を設定する時に呼び出される。"
       },
       "href": "org/purpurmc/purpur/event/PlayerSetTrialSpawnerTypeWithEggEvent.html",
@@ -4188,7 +4188,7 @@
     },
     {
       "description": {
-        "en": "Called when velocity executed a command.",
+        "en": "",
         "ja": "コマンドが実行された時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/command/PostCommandInvocationEvent.html",
@@ -4428,7 +4428,7 @@
         "ja": "実験段階。"
       },
       "description": {
-        "en": "Called before sending a player to another host.",
+        "en": "",
         "ja": "プレイヤーが別のホストに送られる時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/connection/PreTransferEvent.html",
@@ -4637,7 +4637,7 @@
         "ja": "実験段階。"
       },
       "description": {
-        "en": "Called just before an entry is registered or added to the registry.",
+        "en": "",
         "ja": "レジストリにエントリが登録または追加される直前に呼び出される。"
       },
       "href": "io/papermc/paper/registry/event/RegistryEntryAddEvent.html",
@@ -4653,7 +4653,7 @@
         "ja": "実験段階。"
       },
       "description": {
-        "en": "The event is about registry.",
+        "en": "",
         "ja": "レジストリに関するイベントであることを表す。"
       },
       "href": "io/papermc/paper/registry/event/RegistryEvent.html",
@@ -4669,7 +4669,7 @@
         "ja": "実験段階。"
       },
       "description": {
-        "en": "Called just before the registry is frozen and no further changes are allowed.",
+        "en": "",
         "ja": "レジストリが凍結してそれ以上の変更が許可されなくなる直前に呼び出される。"
       },
       "href": "io/papermc/paper/registry/event/RegistryFreezeEvent.html",
@@ -4888,7 +4888,7 @@
         "ja": "ベータ段階。"
       },
       "description": {
-        "en": "Called after a backend server is added to the server map.",
+        "en": "",
         "ja": "バックエンドサーバーがサーバーマップに登録された後に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/proxy/server/ServerRegisteredEvent.html",
@@ -4899,7 +4899,7 @@
     },
     {
       "description": {
-        "en": "Called when a downstream server attempts to remove a resource pack from a player or clear all resource packs.",
+        "en": "",
         "ja": "ダウンストリームサーバーがプレイヤーからリソースパックを削除しようとした時、または全てのリソースパックをクリアしようとした時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/player/ServerResourcePackRemoveEvent.html",
@@ -4969,7 +4969,7 @@
         "ja": "ベータ段階。"
       },
       "description": {
-        "en": "Called after a backend server is unregistered from the server map.",
+        "en": "",
         "ja": "バックエンドサーバーがサーバーマップから削除された後に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/proxy/server/ServerUnregisteredEvent.html",
@@ -5377,7 +5377,7 @@
         "ja": "実験段階。"
       },
       "description": {
-        "en": "Called when a trial spawner spawns an entity into the world.",
+        "en": "",
         "ja": "試練のスポナーがワールドにエンティティをスポーンさせる時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/TrialSpawnerSpawnEvent.html",
@@ -5426,7 +5426,7 @@
         "ja": "実験段階。"
       },
       "description": {
-        "en": "Called when the vault is about to display an item.",
+        "en": "",
         "ja": "宝物庫がアイテムを表示する時に呼び出される。"
       },
       "href": "org/bukkit/event/block/VaultDisplayItemEvent.html",
