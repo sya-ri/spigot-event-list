@@ -4,5 +4,6 @@
   "GameEventspigot",
   "LifecycleEventpaper",
   "RegistrarEventpaper",
-  "ReloadableRegistrarEventpaper"
+  "ReloadableRegistrarEventpaper",
+  "Villager.ReputationEventspigot"
 ]
