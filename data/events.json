@@ -1389,6 +1389,17 @@
     },
     {
       "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "io/papermc/paper/event/entity/EntityEffectTickEvent.html",
+      "javadoc": "An event that is triggered when an entity receives a potion effect instantly or when the potion effect is applied on each tick (e.g. every 25 ticks for Poison level 1). For example, this event may be called when an entity regenerates health or takes poison damage as a result of a potion effect.",
+      "link": "https://jd.papermc.io/paper/1.21.4/io/papermc/paper/event/entity/EntityEffectTickEvent.html",
+      "name": "EntityEffectTickEvent",
+      "source": "paper"
+    },
+    {
+      "description": {
         "en": "Called when an Entity enters a block and is stored in that block. This event is called for bees entering a bee hive. It is not called when a silverfish \"enters\" a stone block. For that listen to the EntityChangeBlockEvent.",
         "ja": "エンティティがブロックの中に入る時に呼び出される。以下に例を示す。\n- ミツバチが巣箱に入る時。\n\nしかし、以下の場合は呼び出されない。\n- シルバーフィッシュが石に入る時。EntityChangeBlockEvent が呼び出される。"
       },
