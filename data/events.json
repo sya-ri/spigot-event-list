@@ -1389,7 +1389,7 @@
     },
     {
       "description": {
-        "en": "Called when an entity is instantly affected by a potion effect, or when a potion effect is applied each tick. For example: \n- In a poison potion effect, it is first when the entity is affected, then every tick of the potion effect (the interval between ticks depends on the effect's type and level) until the effect wears off.",
+        "en": "Called when an entity is instantly affected by a potion effect, or when a potion effect is applied each tick. For example: \n- For poison potion effects, it is called the first time an entity is affected, and they every tick of the potion effect until the effect wears off (the interval beween ticks depends on the type and level of the effect).",
         "ja": "エンティティがポーション効果を即座に受けた時、またはポーション効果が各ティックに適用される時に呼び出される。以下に例を示す。\n- 毒のポーション効果では、まず初めにエンティティが効果を受けた時に呼び出され、続いて、効果が切れるまでの間、ポーション効果のティック毎 (ティックの間隔はポーション効果とそのレベルに依存する。例に挙げている毒のポーション効果では、レベル1の場合、25サーバーティックごとになる。) に呼び出される。"
       },
       "href": "io/papermc/paper/event/entity/EntityEffectTickEvent.html",
