@@ -4114,7 +4114,7 @@
         "ja": "存在しないエンティティに対して PacketPlayInUseEntity が送られてきた時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/player/PlayerUseUnknownEntityEvent.html",
-      "javadoc": "Represents an event that is called when a player right-clicks an unknown entity. Useful for plugins dealing with virtual entities (entities that aren't actually spawned on the server). This event may be called multiple times per interaction with different interaction hands and with or without the clicked position.",
+      "javadoc": "Represents an event that is called when a player clicks an unknown entity. Useful for plugins dealing with virtual entities (entities that aren't actually spawned on the server). This event may be called multiple times per interaction with different interaction hands and with or without the clicked position.",
       "link": "https://jd.papermc.io/paper/1.21.4/com/destroystokyo/paper/event/player/PlayerUseUnknownEntityEvent.html",
       "name": "PlayerUseUnknownEntityEvent",
       "source": "paper"
