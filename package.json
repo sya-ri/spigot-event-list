@@ -22,7 +22,7 @@
     "swr": "2.3.0"
   },
   "devDependencies": {
-    "@types/node": "22.10.9",
+    "@types/node": "22.10.10",
     "@types/react": "18.3.18",
     "@types/react-dom": "18.3.5",
     "autoprefixer": "10.4.20",
