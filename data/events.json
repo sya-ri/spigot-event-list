@@ -2938,6 +2938,17 @@
     },
     {
       "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "io/papermc/paper/event/player/PlayerClientLoadedWorldEvent.html",
+      "javadoc": "Called when a player is marked as loaded. This either happens when the player notifies the server after loading the world (closing the downloading terrain screen) or when the player has not done so for 60 ticks after joining the server or respawning.",
+      "link": "https://jd.papermc.io/paper/1.21.4/io/papermc/paper/event/player/PlayerClientLoadedWorldEvent.html",
+      "name": "PlayerClientLoadedWorldEvent",
+      "source": "paper"
+    },
+    {
+      "description": {
         "en": "Called when the player changes their client settings.",
         "ja": "プレイヤーがクライアント設定を変更した時に呼び出される。"
       },
