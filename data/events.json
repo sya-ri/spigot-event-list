@@ -2674,11 +2674,6 @@
       "source": "paper"
     },
     {
-      "deprecate": "@Beta",
-      "deprecateDescription": {
-        "en": "Beta stage.",
-        "ja": "ベータ段階。"
-      },
       "description": {
         "en": "Called when sending a list of available commands to a player.",
         "ja": "サーバーで使用可能なコマンド一覧をプレイヤーに送信する時に呼び出される。"
@@ -3851,7 +3846,7 @@
         "ja": "プレイヤーがブロックに対してハサミを使用する時に呼び出される。"
       },
       "href": "io/papermc/paper/event/block/PlayerShearBlockEvent.html",
-      "javadoc": "Called when a player uses sheers on a block. This event is not called when breaking blocks with shears but instead only when a player uses the sheer item on a block to garner drops from said block and/or change its state. Examples include shearing a pumpkin to turn it into a carved pumpkin or shearing a beehive to get honeycomb.",
+      "javadoc": "Called when a player uses shears on a block. This event is not called when a player breaks blocks with shears, but rather when a player uses the shears on a block to collect drops from it and/or modify its state. Examples include shearing a pumpkin to turn it into a carved pumpkin or shearing a beehive to get honeycomb.",
       "link": "https://jd.papermc.io/paper/1.21.4/io/papermc/paper/event/block/PlayerShearBlockEvent.html",
       "name": "PlayerShearBlockEvent",
       "source": "paper"
@@ -4877,11 +4872,6 @@
       "source": "velocity"
     },
     {
-      "deprecate": "@Beta",
-      "deprecateDescription": {
-        "en": "Beta stage.",
-        "ja": "ベータ段階。"
-      },
       "description": {
         "en": "Called when a player connects to the server.",
         "ja": "プレイヤーがサーバーに接続した時に呼び出される。"
@@ -4904,11 +4894,6 @@
       "source": "velocity"
     },
     {
-      "deprecate": "@Beta",
-      "deprecateDescription": {
-        "en": "Beta stage.",
-        "ja": "ベータ段階。"
-      },
       "description": {
         "en": "Called after a backend server is registered to the server map.",
         "ja": "バックエンドサーバーがサーバーマップに登録された後に呼び出される。"
@@ -4985,11 +4970,6 @@
       "source": "paper"
     },
     {
-      "deprecate": "@Beta",
-      "deprecateDescription": {
-        "en": "Beta stage.",
-        "ja": "ベータ段階。"
-      },
       "description": {
         "en": "Called after a backend server is unregistered from the server map.",
         "ja": "バックエンドサーバーがサーバーマップから削除された後に呼び出される。"
