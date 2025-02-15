@@ -109,7 +109,7 @@ const EventListPage: FC<EventListPageProps> = ({
               className="link-hover font-bold"
               href="https://github.com/sya-ri/spigot-event-list"
             >
-              © 2024 sya-ri
+              © 2020-2025 sya-ri
             </Link>
           </div>
           <SwitchThemeButton />
