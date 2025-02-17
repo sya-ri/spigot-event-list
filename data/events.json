@@ -1197,6 +1197,17 @@
     },
     {
       "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "io/papermc/paper/event/entity/EntityAttemptSmashAttackEvent.html",
+      "javadoc": "Called when an entity attempts to perform a smash attack.",
+      "link": "https://jd.papermc.io/paper/1.21.4/io/papermc/paper/event/entity/EntityAttemptSmashAttackEvent.html",
+      "name": "EntityAttemptSmashAttackEvent",
+      "source": "paper"
+    },
+    {
+      "description": {
         "en": "Called when a block is formed by entities. Examples: Snow formed by a Snowman. Frosted Ice formed by the Frost Walker enchantment.",
         "ja": "エンティティによってブロックが形成される時に呼び出される。以下に例を示す。\n- スノーゴーレムによって雪が形成された時。\n- 氷渡りのエンチャントによって氷が形成された時。"
       },
@@ -1419,6 +1430,17 @@
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityEnterLoveModeEvent.html",
       "name": "EntityEnterLoveModeEvent",
       "source": "spigot"
+    },
+    {
+      "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "io/papermc/paper/event/entity/EntityEquipmentChangedEvent.html",
+      "javadoc": "Called whenever a change to an entity's equipment has been detected. This event is called after effects from attribute modifiers and enchantments have been updated. Examples of actions that can trigger this event: An entity being added to a world. A player logging in. The durability of an equipment item changing. A dispenser equipping an item onto an entity. An entity picking up an armor or weapon item from the ground. A player changing their equipped armor. A player changes their currently held item. ",
+      "link": "https://jd.papermc.io/paper/1.21.4/io/papermc/paper/event/entity/EntityEquipmentChangedEvent.html",
+      "name": "EntityEquipmentChangedEvent",
+      "source": "paper"
     },
     {
       "description": {
