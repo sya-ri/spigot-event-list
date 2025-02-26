@@ -6,7 +6,7 @@
   "devDependencies": {
     "@types/multi-progress": "2.0.6",
     "@types/xml2js": "0.4.14",
-    "axios": "1.7.9",
+    "axios": "1.8.1",
     "cheerio": "1.0.0",
     "compressing": "1.10.1",
     "multi-progress": "4.0.0",
