@@ -389,6 +389,22 @@
       "source": "paper"
     },
     {
+      "deprecate": "@Experimental",
+      "deprecateDescription": {
+        "en": "",
+        "ja": ""
+      },
+      "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "org/bukkit/event/block/BlockBrushEvent.html",
+      "javadoc": "Called when a block is brushed by a player.",
+      "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockBrushEvent.html",
+      "name": "BlockBrushEvent",
+      "source": "spigot"
+    },
+    {
       "description": {
         "en": "Called when a block is destroyed as a result of being burnt by fire.",
         "ja": "ブロックが燃え尽きて破壊される時に呼び出される。"
@@ -904,6 +920,17 @@
       "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/ClientConnectEvent.html",
       "name": "ClientConnectEvent",
       "source": "bungee"
+    },
+    {
+      "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "io/papermc/paper/event/packet/ClientTickEndEvent.html",
+      "javadoc": "Called when a minecraft:client_tick_end packet is received by the server.",
+      "link": "https://jd.papermc.io/paper/1.21.4/io/papermc/paper/event/packet/ClientTickEndEvent.html",
+      "name": "ClientTickEndEvent",
+      "source": "paper"
     },
     {
       "description": {
