@@ -395,8 +395,8 @@
         "ja": ""
       },
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when a block is brushed by a player.",
+        "ja": "プレイヤーがブロックをブラシで掃いた時に呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockBrushEvent.html",
       "javadoc": "Called when a block is brushed by a player.",
@@ -923,8 +923,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Event called when a minecraft:client_tick_end packet is received by the server.",
+        "ja": "minecraft:client_tick_end パケットがサーバーに受信された時に呼び出されるイベント。"
       },
       "href": "io/papermc/paper/event/packet/ClientTickEndEvent.html",
       "javadoc": "Called when a minecraft:client_tick_end packet is received by the server.",
