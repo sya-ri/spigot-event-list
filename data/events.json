@@ -923,8 +923,8 @@
     },
     {
       "description": {
-        "en": "Event called when a minecraft:client_tick_end packet is received by the server.",
-        "ja": "minecraft:client_tick_end パケットがサーバーに受信された時に呼び出されるイベント。"
+        "en": "Called when a minecraft:client_tick_end packet is received by the server.",
+        "ja": "minecraft:client_tick_end パケットをサーバーが受信した時に呼び出されるイベント。"
       },
       "href": "io/papermc/paper/event/packet/ClientTickEndEvent.html",
       "javadoc": "Called when a minecraft:client_tick_end packet is received by the server.",
