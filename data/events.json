@@ -5471,6 +5471,17 @@
       "source": "paper"
     },
     {
+      "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "io/papermc/paper/event/block/VaultChangeStateEvent.html",
+      "javadoc": "Called when a vault block changes state.",
+      "link": "https://jd.papermc.io/paper/1.21.5/io/papermc/paper/event/block/VaultChangeStateEvent.html",
+      "name": "VaultChangeStateEvent",
+      "source": "paper"
+    },
+    {
       "deprecate": "@Experimental",
       "deprecateDescription": {
         "en": "Experimental phase.",
