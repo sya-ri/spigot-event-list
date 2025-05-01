@@ -15,6 +15,17 @@
     },
     {
       "description": {
+        "en": "",
+        "ja": ""
+      },
+      "abstract": true,
+      "href": "io/papermc/paper/event/player/AbstractRespawnEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.5/io/papermc/paper/event/player/AbstractRespawnEvent.html",
+      "name": "AbstractRespawnEvent",
+      "source": "paper"
+    },
+    {
+      "description": {
         "en": "Called when an anvil is damaged from being used.",
         "ja": "使用したことで金床が損傷する時に呼び出される。"
       },
