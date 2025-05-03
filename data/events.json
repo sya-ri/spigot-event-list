@@ -3641,11 +3641,34 @@
     },
     {
       "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "io/papermc/paper/event/player/PlayerPickBlockEvent.html",
+      "javadoc": "Event that is fired when a player uses the pick item functionality on a block (middle-clicking a block to get the appropriate item). After the handling of this event, the contents of the source and the target slot will be swapped, and the currently selected hotbar slot of the player will be set to the target slot.",
+      "link": "https://jd.papermc.io/paper/1.21.5/io/papermc/paper/event/player/PlayerPickBlockEvent.html",
+      "name": "PlayerPickBlockEvent",
+      "source": "paper"
+    },
+    {
+      "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "io/papermc/paper/event/player/PlayerPickEntityEvent.html",
+      "javadoc": "Event that is fired when a player uses the pick item functionality on an entity (middle-clicking an entity to get the appropriate item). After the handling of this event, the contents of the source and the target slot will be swapped, and the currently selected hotbar slot of the player will be set to the target slot.",
+      "link": "https://jd.papermc.io/paper/1.21.5/io/papermc/paper/event/player/PlayerPickEntityEvent.html",
+      "name": "PlayerPickEntityEvent",
+      "source": "paper"
+    },
+    {
+      "description": {
         "en": "Event that is fired when a player uses the pick item functionality.",
         "ja": "プレイヤーがアイテムの選択機能を使用する時に呼び出される。アイテムをインベントリからホットバーに移動する場合のみ呼び出される。"
       },
+      "abstract": true,
       "href": "io/papermc/paper/event/player/PlayerPickItemEvent.html",
-      "javadoc": "Event that is fired when a player uses the pick item functionality (middle-clicking a block or entity to get the appropriate item). After the handling of this event, the contents of the source and the target slot will be swapped and the currently selected hotbar slot of the player will be set to the target slot.",
+      "javadoc": "Event that is fired when a player uses the pick item functionality (middle-clicking a block or entity to get the appropriate item). After the handling of this event, the contents of the source and the target slot will be swapped, and the currently selected hotbar slot of the player will be set to the target slot.",
       "link": "https://jd.papermc.io/paper/1.21.5/io/papermc/paper/event/player/PlayerPickItemEvent.html",
       "name": "PlayerPickItemEvent",
       "source": "paper"
