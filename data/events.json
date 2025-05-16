@@ -2051,6 +2051,17 @@
     },
     {
       "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "io/papermc/paper/event/entity/FishHookStateChangeEvent.html",
+      "javadoc": "Called just before a FishHook's FishHook.HookState is changed. If you want to monitor a player's fishing state transition, you can use PlayerFishEvent.",
+      "link": "https://jd.papermc.io/paper/1.21.5/io/papermc/paper/event/entity/FishHookStateChangeEvent.html",
+      "name": "FishHookStateChangeEvent",
+      "source": "paper"
+    },
+    {
+      "description": {
         "en": "Called when the fluid level of a block changes due to changes in adjacent blocks.",
         "ja": "隣接したブロックによって液面が変化する時に呼び出される。"
       },
