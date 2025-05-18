@@ -1082,6 +1082,17 @@
     },
     {
       "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "net/md_5/bungee/api/event/CustomClickEvent.html",
+      "javadoc": "Called after a ProxiedPlayer runs a custom action from a chat event or form submission.",
+      "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/CustomClickEvent.html",
+      "name": "CustomClickEvent",
+      "source": "bungee"
+    },
+    {
+      "description": {
         "en": "This event is fired when a player disconnects from the proxy.",
         "ja": "プレイヤーがプロキシから切断した時に呼び出される。"
       },
