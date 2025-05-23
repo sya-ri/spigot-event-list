@@ -1081,6 +1081,11 @@
       "source": "spigot"
     },
     {
+      "deprecate": "@Experimental",
+      "deprecateDescription": {
+        "en": "",
+        "ja": ""
+      },
       "description": {
         "en": "",
         "ja": ""
