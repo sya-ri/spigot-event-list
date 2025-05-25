@@ -3613,6 +3613,17 @@
     },
     {
       "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "io/papermc/paper/event/player/PlayerMapFilledEvent.html",
+      "javadoc": "Called when a player creates a filled map by right-clicking an empty map.",
+      "link": "https://jd.papermc.io/paper/1.21.5/io/papermc/paper/event/player/PlayerMapFilledEvent.html",
+      "name": "PlayerMapFilledEvent",
+      "source": "paper"
+    },
+    {
+      "description": {
         "en": "This event is fired when a Forge client sends its mods to the proxy while connecting to a server.",
         "ja": "サーバーへの接続中に Forge クライアントが MOD 一覧をプロキシに送信した時に呼び出される。"
       },
@@ -5529,6 +5540,22 @@
       "javadoc": "Fired when a Turtle starts digging to lay eggs",
       "link": "https://jd.papermc.io/paper/1.21.5/com/destroystokyo/paper/event/entity/TurtleStartDiggingEvent.html",
       "name": "TurtleStartDiggingEvent",
+      "source": "paper"
+    },
+    {
+      "deprecate": "@Experimental",
+      "deprecateDescription": {
+        "en": "",
+        "ja": ""
+      },
+      "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "io/papermc/paper/event/packet/UncheckedSignChangeEvent.html",
+      "javadoc": "Called when a client attempts to modify a sign, but the location at which the sign should be edited has not yet been checked for the existence of a real sign. Cancelling this event will prevent further processing of the sign change, but needs further handling by the plugin as the client's local world might be in an inconsistent state.",
+      "link": "https://jd.papermc.io/paper/1.21.5/io/papermc/paper/event/packet/UncheckedSignChangeEvent.html",
+      "name": "UncheckedSignChangeEvent",
       "source": "paper"
     },
     {
