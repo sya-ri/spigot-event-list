@@ -3138,6 +3138,23 @@
         "en": "",
         "ja": ""
       },
+      "abstract": true,
+      "href": "io/papermc/paper/event/player/PlayerCustomClickEvent.html",
+      "javadoc": "This event is fired for any custom click events.",
+      "link": "https://jd.papermc.io/paper/1.21.7/io/papermc/paper/event/player/PlayerCustomClickEvent.html",
+      "name": "PlayerCustomClickEvent",
+      "source": "paper"
+    },
+    {
+      "deprecate": "@Experimental",
+      "deprecateDescription": {
+        "en": "",
+        "ja": ""
+      },
+      "description": {
+        "en": "",
+        "ja": ""
+      },
       "href": "org/bukkit/event/player/PlayerCustomClickEvent.html",
       "javadoc": "Called after a player runs a custom action from a chat event or form submission.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerCustomClickEvent.html",
