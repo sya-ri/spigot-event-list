@@ -1784,11 +1784,6 @@
       "source": "spigot"
     },
     {
-      "deprecate": "@Experimental",
-      "deprecateDescription": {
-        "en": "Experimental phase.",
-        "ja": "実験段階。"
-      },
       "description": {
         "en": "Called when an Entity is removed. This event should only be used for monitoring.",
         "ja": "エンティティが削除された時に呼び出される。"
@@ -3640,11 +3635,6 @@
       "source": "spigot"
     },
     {
-      "deprecate": "@Experimental",
-      "deprecateDescription": {
-        "en": "Experimental phase.",
-        "ja": "実験段階。"
-      },
       "description": {
         "en": "Called when the list of links is sent to the player.",
         "ja": "リンクのリストがプレイヤーに送信された時に呼び出される。"
