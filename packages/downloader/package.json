@@ -7,7 +7,7 @@
     "@types/multi-progress": "2.0.6",
     "@types/xml2js": "0.4.14",
     "axios": "1.10.0",
-    "cheerio": "1.1.0",
+    "cheerio": "1.1.1",
     "compressing": "1.10.3",
     "multi-progress": "4.0.0",
     "tsx": "4.20.3",
