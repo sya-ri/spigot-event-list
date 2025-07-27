@@ -5975,6 +5975,17 @@
     },
     {
       "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "io/papermc/paper/event/world/WorldDifficultyChangeEvent.html",
+      "javadoc": "Called when a world's difficulty is changed, either by command or by api. If the world is in hardcore the resulting difficulty will always be Difficulty.HARD",
+      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/world/WorldDifficultyChangeEvent.html",
+      "name": "WorldDifficultyChangeEvent",
+      "source": "paper"
+    },
+    {
+      "description": {
         "en": "Represents events within a world.",
         "ja": "ワールドに関するイベントであることを表す。"
       },
