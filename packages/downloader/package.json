@@ -8,7 +8,7 @@
     "@types/xml2js": "0.4.14",
     "axios": "1.11.0",
     "cheerio": "1.1.2",
-    "compressing": "1.10.3",
+    "compressing": "2.0.0",
     "multi-progress": "4.0.0",
     "tsx": "4.20.3",
     "typescript": "5.9.2",
