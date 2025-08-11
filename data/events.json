@@ -15,8 +15,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Represents a respawn-related event.",
+        "ja": "リスポーンに関するイベントであることを表す。"
       },
       "abstract": true,
       "href": "io/papermc/paper/event/player/AbstractRespawnEvent.html",
@@ -161,8 +161,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called after a player connection has been configured and before the player enters the world. This event allows for the configuration of the player connection, so that player connection configuration code can run asynchronously.",
+        "ja": "プレイヤーコネクションの構成完了後、プレイヤーがワールドに入る前に呼び出される。これは、プレイヤーコネクションの構成を可能にするためのイベントで、非同期でプレイヤーコネクションの構成コードを実行できる。"
       },
       "href": "io/papermc/paper/event/connection/configuration/AsyncPlayerConnectionConfigureEvent.html",
       "javadoc": "An event that allows you to configure the player. This is async and allows you to run configuration code on the player. Once this event has finished execution, the player connection will continue. This occurs after configuration, but before the player has entered the world.",
@@ -413,8 +413,8 @@
     {
       "deprecate": "@Experimental",
       "deprecateDescription": {
-        "en": "",
-        "ja": ""
+        "en": "Experimental phase.",
+        "ja": "実験段階。"
       },
       "description": {
         "en": "Called when a block is brushed by a player.",
@@ -1094,12 +1094,12 @@
     {
       "deprecate": "@Experimental",
       "deprecateDescription": {
-        "en": "",
-        "ja": ""
+        "en": "Experimental phase.",
+        "ja": "実験段階。"
       },
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called after a player rus a custom action from a chat event or form submission.",
+        "ja": "プレイヤーがチャットイベントまたはフォーム送信からカスタムアクションを実行した後に呼び出される。"
       },
       "href": "net/md_5/bungee/api/event/CustomClickEvent.html",
       "javadoc": "Called after a ProxiedPlayer runs a custom action from a chat event or form submission.",
@@ -1262,8 +1262,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when an entity attempts to perform a smash attack (usually using a mace).",
+        "ja": "エンティティがスマッシュ攻撃(通常メイスを使って)を実行しようとしたときに呼び出される。"
       },
       "href": "io/papermc/paper/event/entity/EntityAttemptSmashAttackEvent.html",
       "javadoc": "Called when an entity attempts to perform a smash attack.",
@@ -1498,8 +1498,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called whenever a change in the entity's equipment is detected. It is called not only when equipment is changed, but also when various changes occur (e.g. durability changes, enchantment updates, etc.).",
+        "ja": "エンティティの装備の変更が検出されるたびに呼び出される。単に装備を変えたときだけでなく、様々な変更(例：耐久値の変化、エンチャント効果の更新など)によって呼び出される。"
       },
       "href": "io/papermc/paper/event/entity/EntityEquipmentChangedEvent.html",
       "javadoc": "Called whenever a change to an entity's equipment has been detected. This event is called after effects from attribute modifiers and enchantments have been updated. Examples of actions that can trigger this event: An entity being added to a world. A player logging in. The durability of an equipment item changing. A dispenser equipping an item onto an entity. An entity picking up an armor or weapon item from the ground. A player changing their equipped armor. A player changes their currently held item. ",
@@ -2073,8 +2073,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called immediately before the state (FishHook.HookState) of the fishing bobber (FishHook) changes.",
+        "ja": "浮き(FishHook)の状態(FishHook.HookState)が変更される直前に呼び出される。"
       },
       "href": "io/papermc/paper/event/entity/FishHookStateChangeEvent.html",
       "javadoc": "Called just before a FishHook's FishHook.HookState is changed. If you want to monitor a player's fishing state transition, you can use PlayerFishEvent.",
@@ -3026,8 +3026,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when a player marks a world as loaded. This occurs if the player notifies the server after loading the world, or if the player does not notify the server that the world is loaded for 60 ticks.",
+        "ja": "プレイヤーがワールドをロード済みとしてマークされたときに呼び出される。プレイヤーがワールドをロードした後にサーバーに通知した場合、または、プレイヤーがロードの完了を60ティック間経過しても通知しなかった場合に発生する。"
       },
       "href": "io/papermc/paper/event/player/PlayerClientLoadedWorldEvent.html",
       "javadoc": "Called when a player is marked as loaded. This either happens when the player notifies the server after loading the world (closing the downloading terrain screen) or when the player has not done so for 60 ticks after joining the server or respawning.",
@@ -3092,8 +3092,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when the server first configure a player connection, indicating that the player connection will begin to be automatically configured.",
+        "ja": "サーバーがプレイヤーコネクションを最初に構成するときに呼び出され、プレイヤーコネクションが自動的に構成を開始することを意味する。"
       },
       "href": "io/papermc/paper/event/connection/configuration/PlayerConnectionInitialConfigureEvent.html",
       "javadoc": "Indicates that this player is being configured for the first time, meaning that the connection will start being configured automatically",
@@ -3103,8 +3103,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when the server reconfigures a player connection.",
+        "ja": "サーバーがプレイヤーコネクションの再構成を行うときに呼び出される。"
       },
       "href": "io/papermc/paper/event/connection/configuration/PlayerConnectionReconfigureEvent.html",
       "javadoc": "Indicates that this player is being reconfigured, meaning that this connection will be held in the configuration stage unless kicked out through PlayerConfigurationConnection.completeReconfiguration()",
@@ -3114,8 +3114,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when the server verifies that a player connection can login.",
+        "ja": "サーバーがプレイヤーコネクションに対してログイン可能かを検証するときに呼び出される。"
       },
       "href": "io/papermc/paper/event/connection/PlayerConnectionValidateLoginEvent.html",
       "javadoc": "Validates whether a player connection is able to log in. Called when is attempting to log in for the first time, or is finishing up being configured.",
@@ -3126,12 +3126,12 @@
     {
       "deprecate": "@Experimental",
       "deprecateDescription": {
-        "en": "",
-        "ja": ""
+        "en": "Experimental phase.",
+        "ja": "実験段階。"
       },
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called for custom click events.",
+        "ja": "カスタムクリックイベントに対して呼び出される。"
       },
       "abstract": true,
       "href": "io/papermc/paper/event/player/PlayerCustomClickEvent.html",
@@ -3143,12 +3143,12 @@
     {
       "deprecate": "@Experimental",
       "deprecateDescription": {
-        "en": "",
-        "ja": ""
+        "en": "Experimental phase.",
+        "ja": "実験段階。"
       },
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called after a player performs a custom action from a chat event or form submission.",
+        "ja": "プレイヤーがチャットイベントまたはフォーム送信からカスタムアクションを実行した後に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerCustomClickEvent.html",
       "javadoc": "Called after a player runs a custom action from a chat event or form submission.",
@@ -3680,8 +3680,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when a player right-clicks on an empty map to create a filled map.",
+        "ja": "プレイヤーが空の地図を右クリックして埋め尽くした地図を作成した時に呼び出される。"
       },
       "href": "io/papermc/paper/event/player/PlayerMapFilledEvent.html",
       "javadoc": "Called when a player creates a filled map by right-clicking an empty map.",
@@ -3746,8 +3746,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when a player uses the item selection future (middle click on the mouse by default) to get a block into their inventory.",
+        "ja": "プレイヤーがアイテム選択機能(デフォルトの設定ではマウスの中クリック)を使用してブロックをインベントリに取得したときに呼び出される。"
       },
       "href": "io/papermc/paper/event/player/PlayerPickBlockEvent.html",
       "javadoc": "Event that is fired when a player uses the pick item functionality on a block (middle-clicking a block to get the appropriate item). After the handling of this event, the contents of the source and the target slot will be swapped, and the currently selected hotbar slot of the player will be set to the target slot.",
@@ -3757,8 +3757,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when a player uses the item selection future (middle click on the mouse by default) to get an entity into their inventory.",
+        "ja": "プレイヤーがアイテム選択機能(デフォルトの設定ではマウスの中クリック)を使用してエンティティをインベントリに取得したときに呼び出される。"
       },
       "href": "io/papermc/paper/event/player/PlayerPickEntityEvent.html",
       "javadoc": "Event that is fired when a player uses the pick item functionality on an entity (middle-clicking an entity to get the appropriate item). After the handling of this event, the contents of the source and the target slot will be swapped, and the currently selected hotbar slot of the player will be set to the target slot.",
@@ -3988,8 +3988,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when the server is calculating is it has reached its limit of online players for a joining player.",
+        "ja": "サーバーが参加しようとしているプレイヤーに対して、オンラインプレイヤー数が上限人数に達しているかを計算するときに呼び出される。"
       },
       "href": "io/papermc/paper/event/player/PlayerServerFullCheckEvent.html",
       "javadoc": "Fires when computing if a server is currently considered full for a player.",
@@ -4848,8 +4848,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called after values defined in vanilla or datapacks are loaded as registry. At this point, plugins can make their own changes to the registry.",
+        "ja": "バニラやデータパックで定義された値がレジストリとしてロードされた後に呼び出される。このとき、プラグインはレジストリに独自の変更を加えることができる。"
       },
       "href": "io/papermc/paper/registry/event/RegistryComposeEvent.html",
       "javadoc": "Event object for RegistryEventProvider.compose(). This event is fired after a registry is loaded with its normal values. It provides a way for plugins to add new objects to the registry.",
@@ -5624,12 +5624,12 @@
     {
       "deprecate": "@Experimental",
       "deprecateDescription": {
-        "en": "",
-        "ja": ""
+        "en": "Experimental phase.",
+        "ja": "実験段階。"
       },
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when a player attempts to change the contents of a sign, before the server checks whether the sign actually exists.",
+        "ja": "プレイヤーが看板の内容を変更しようとするとき、サーバーが実際に看板が存在するかを確認する前の段階で呼び出される。"
       },
       "href": "io/papermc/paper/event/packet/UncheckedSignChangeEvent.html",
       "javadoc": "Called when a client attempts to modify a sign, but the location at which the sign should be edited has not yet been checked for the existence of a real sign. Cancelling this event will prevent further processing of the sign change, but needs further handling by the plugin as the client's local world might be in an inconsistent state.",
@@ -5639,8 +5639,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when a vault block changes state.",
+        "ja": "宝物庫ブロックの状態が変化するときに呼び出される。"
       },
       "href": "io/papermc/paper/event/block/VaultChangeStateEvent.html",
       "javadoc": "Called when a vault block changes state.",
@@ -5975,8 +5975,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when the world difficulty is changed by command or API. If the world is hardcore, the resulting difficulty is always org.bukkit.Difficulty.HARD",
+        "ja": "ワールドの難易度がコマンドまたはAPIによって変更されたときに呼び出される。ワールドがハードコアの場合、結果の難易度は常にorg.bukkit.Difficulty.HARDになる。"
       },
       "href": "io/papermc/paper/event/world/WorldDifficultyChangeEvent.html",
       "javadoc": "Called when a world's difficulty is changed, either by command or by api. If the world is in hardcore the resulting difficulty will always be Difficulty.HARD",
