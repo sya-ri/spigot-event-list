@@ -4859,6 +4859,17 @@
     },
     {
       "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "io/papermc/paper/threadedregions/RegionizedServerInitEvent.html",
+      "javadoc": "This event is called after the server is initialised but before the server begins ticking regions in parallel. Plugins may use this as a hook to run post initialisation logic without worrying about the possibility that regions are ticking in parallel.",
+      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/threadedregions/RegionizedServerInitEvent.html",
+      "name": "RegionizedServerInitEvent",
+      "source": "paper"
+    },
+    {
+      "description": {
         "en": "Called after values defined in vanilla or datapacks are loaded as registry. At this point, plugins can make their own changes to the registry.",
         "ja": "バニラやデータパックで定義された値がレジストリとしてロードされた後に呼び出される。このとき、プラグインはレジストリに独自の変更を加えることができる。"
       },
