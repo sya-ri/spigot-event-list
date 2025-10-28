@@ -22,7 +22,7 @@ const SearchBox: FC<SearchBoxProps> = ({ locale, search, setSearch }) => {
     <div className="join w-full">
       <input
         type="text"
-        className="input input-bordered w-full join-item"
+        className="input w-full join-item px-2"
         placeholder={translate(locale, "SearchByNameOrDescription")}
         value={search}
         onChange={(event) => setSearch(event.target.value)}
@@ -41,7 +41,7 @@ const SearchBox: FC<SearchBoxProps> = ({ locale, search, setSearch }) => {
             ...(search ? { search } : {}),
           },
         }}
-        className="btn border border-l-0 border-base-content/10 hover:border-base-content/10 join-item"
+        className="btn join-item"
       >
         <BiSearch className="size-4" />
       </Link>

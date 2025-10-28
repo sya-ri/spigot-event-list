@@ -29,7 +29,7 @@ const EventListPage: FC<EventListPageProps> = ({
   return [
     <header
       key="header"
-      className="z-10 bg-base-300 top-0 sticky border-b border-base-content/10"
+      className="z-10 bg-base-300 top-0 sticky border-base-content/10"
     >
       <div className="w-full max-w-screen-md mx-auto p-2">
         <div className="flex justify-between items-center flex-col md:flex-row gap-2">
@@ -65,7 +65,7 @@ const EventListPage: FC<EventListPageProps> = ({
     </main>,
     <footer
       key="footer"
-      className="z-10 bg-base-300 bottom-0 sticky border-t border-base-content/10"
+      className="z-10 bg-base-300 bottom-0 sticky border-base-content/10"
     >
       <div className="w-full max-w-screen-sm mx-auto p-1">
         <div className="flex justify-around gap-2 items-center">
@@ -93,7 +93,7 @@ const EventListPage: FC<EventListPageProps> = ({
                   </a>
                 </li>
               ))}
-              <li className="mt-2 pt-2 border-t border-base-content/20">
+              <li className="mt-2 pt-2 border-base-content/20">
                 <Link
                   href="https://github.com/sya-ri/spigot-event-list#i18n"
                   target="_blank"
