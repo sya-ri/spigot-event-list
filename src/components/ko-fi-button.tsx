@@ -26,6 +26,7 @@ export const KoFiButton = () => {
       )}
       <div className="flex justify-end">
         <div className="btn-container">
+          {/* Mobile : Direct link */}
           <a
             title="Support me on Ko-Fi"
             className="kofi-button sm:!hidden"
@@ -43,7 +44,7 @@ export const KoFiButton = () => {
             </span>
           </a>
 
-          {/* PC */}
+          {/* PC : iframe & link */}
           <a
             title="Support me on Ko-Fi"
             className="kofi-button rounded-full !hidden sm:!inline-block"
