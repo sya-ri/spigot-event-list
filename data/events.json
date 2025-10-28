@@ -211,12 +211,12 @@
     {
       "deprecate": "@Experimental",
       "deprecateDescription": {
-        "en": "",
-        "ja": ""
+        "en": "Experimental phase.",
+        "ja": "実験段階。"
       },
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when selecting a player's spawn location (i.e. joining the server or reconfiguring). The player will be kept in the configuration phase until all event handlers return and the spawn location is loaded.",
+        "ja": "プレイヤーのスポーン地点を決定する時に呼び出される。イベントハンドラーが処理を完了し、スポーン地点が読み込まれるまでプレイヤーは設定フェーズのまま留まる。"
       },
       "href": "io/papermc/paper/event/player/AsyncPlayerSpawnLocationEvent.html",
       "javadoc": "Called when selecting a player's spawn location (i.e. joining the server or reconfiguring). The player will be kept in the configuration phase until all event handlers return and the spawn location is loaded.",
@@ -1289,8 +1289,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when a LivingEntity attempts to perform an automatic spin attack against a target entity.",
+        "ja": "生物が別のエンティティに対して自動回転攻撃を試みた時に呼び出される。"
       },
       "href": "io/papermc/paper/event/entity/EntityAttemptSpinAttackEvent.html",
       "javadoc": "Called when a LivingEntity attempts to perform an automatic spin attack against a target entity.",
@@ -2457,8 +2457,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when an item-transporting entity (typically a CopperGolem, although other entities may be possible through non-API means) is searching for or validating a target container block for taking or depositing items.",
+        "ja": "アイテムを運搬するエンティティ(主に銅のゴーレム)が、アイテムを受け取るまたは配置するためのターゲットコンテナブロックを探索・確認する時に呼び出される。"
       },
       "href": "io/papermc/paper/event/entity/ItemTransportingEntityValidateTargetEvent.html",
       "javadoc": "Called when an item-transporting entity (typically a CopperGolem, although other entities may be possible through non-API means) is searching for or validating an existing target container block for taking or depositing items. This may be called multiple times per entity per tick, so listeners should be careful to implement checks in an efficient manner.",
@@ -4776,12 +4776,12 @@
     {
       "deprecate": "@Beta",
       "deprecateDescription": {
-        "en": "",
-        "ja": ""
+        "en": "Experimental phase.",
+        "ja": "実験段階。"
       },
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when deciding to connect to a server, useful for canceling connections.",
+        "ja": "サーバーに接続する時に呼び出される。プレイヤーがサーバーに接続するのをキャンセルする場合等に使う。"
       },
       "href": "com/velocitypowered/api/event/proxy/ProxyPreShutdownEvent.html",
       "javadoc": "This event is fired by the proxy after it has stopped accepting new connections, but before players are disconnected. This is the last point at which you can interact with currently connected players, for example to transfer them to another proxy or perform other cleanup tasks.",
@@ -4902,8 +4902,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when an item-transporting entity (typically a CopperGolem) searches for or validates a target container block for taking or depositing items.",
+        "ja": "アイテムを移動させるエンティティ(通常は銅のゴーレム)が、アイテムの受け取りまたは配置のために対象となるコンテナブロックを探すか検証する時に呼び出される。"
       },
       "href": "io/papermc/paper/threadedregions/RegionizedServerInitEvent.html",
       "javadoc": "This event is called after the server is initialised but before the server begins ticking regions in parallel. Plugins may use this as a hook to run post initialisation logic without worrying about the possibility that regions are ticking in parallel.",
