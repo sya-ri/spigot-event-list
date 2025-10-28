@@ -13,6 +13,7 @@ import { BsTranslate } from "react-icons/bs";
 import { FiPlus } from "react-icons/fi";
 import { translate } from "@/i18n/translation";
 import useLocale from "@/i18n/use-locale";
+import { KoFiButton } from "@/components/ko-fi-button";
 
 export type EventListPageProps = {
   defaultSearch: string;
@@ -63,56 +64,60 @@ const EventListPage: FC<EventListPageProps> = ({
         locale={locale}
       />
     </main>,
-    <footer
-      key="footer"
-      className="z-10 bg-base-300 bottom-0 sticky border-base-content/10"
-    >
-      <div className="w-full max-w-screen-sm mx-auto p-1">
-        <div className="flex justify-around gap-2 items-center">
-          <div className="dropdown dropdown-hover dropdown-top">
-            <div
-              tabIndex={0}
-              role="button"
-              className="btn btn-square btn-ghost"
-            >
-              <BsTranslate className="size-5" />
-            </div>
-            <ul
-              tabIndex={0}
-              className="dropdown-content z-10 menu p-2 shadow bg-base-200 rounded-box w-64"
-            >
-              {Locale.map((l) => (
-                <li key={l}>
-                  <a href={`/${l}`}>
-                    <div className="badge badge-outline">{l.toUpperCase()}</div>
-                    <div>
-                      {new Intl.DisplayNames(locale, {
-                        type: "language",
-                      }).of(l)}
-                    </div>
-                  </a>
+    <footer key="footer" className="bottom-0 sticky z-20">
+      <div className="flex justify-end mr-2 mb-2">
+        <KoFiButton />
+      </div>
+      <div className="bg-base-300 border-base-content/10">
+        <div className="w-full max-w-screen-sm mx-auto p-1">
+          <div className="flex justify-around gap-2 items-center">
+            <div className="dropdown dropdown-hover dropdown-top">
+              <div
+                tabIndex={0}
+                role="button"
+                className="btn btn-square btn-ghost"
+              >
+                <BsTranslate className="size-5" />
+              </div>
+              <ul
+                tabIndex={0}
+                className="dropdown-content z-10 menu p-2 shadow bg-base-200 rounded-box w-64"
+              >
+                {Locale.map((l) => (
+                  <li key={l}>
+                    <a href={`/${l}`}>
+                      <div className="badge badge-outline">
+                        {l.toUpperCase()}
+                      </div>
+                      <div>
+                        {new Intl.DisplayNames(locale, {
+                          type: "language",
+                        }).of(l)}
+                      </div>
+                    </a>
+                  </li>
+                ))}
+                <li className="mt-2 pt-2 border-base-content/20">
+                  <Link
+                    href="https://github.com/sya-ri/spigot-event-list#i18n"
+                    target="_blank"
+                  >
+                    <FiPlus />
+                    {translate(locale, "AddNewLanguage")}
+                  </Link>
                 </li>
-              ))}
-              <li className="mt-2 pt-2 border-base-content/20">
-                <Link
-                  href="https://github.com/sya-ri/spigot-event-list#i18n"
-                  target="_blank"
-                >
-                  <FiPlus />
-                  {translate(locale, "AddNewLanguage")}
-                </Link>
-              </li>
-            </ul>
+              </ul>
+            </div>
+            <div>
+              <Link
+                className="link-hover font-bold"
+                href="https://github.com/sya-ri/spigot-event-list"
+              >
+                © 2020-2025 sya-ri
+              </Link>
+            </div>
+            <SwitchThemeButton />
           </div>
-          <div>
-            <Link
-              className="link-hover font-bold"
-              href="https://github.com/sya-ri/spigot-event-list"
-            >
-              © 2020-2025 sya-ri
-            </Link>
-          </div>
-          <SwitchThemeButton />
         </div>
       </div>
     </footer>,
