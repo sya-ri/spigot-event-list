@@ -28,15 +28,15 @@ type PaperApiVersions = {
   project_id: string;
   project_name: string;
   version_groups: string[];
-  versions: string[];
+  versions: Record<string, string[]>;
 };
 
 const fetchVersionFromPaperApi = async (name: string): Promise<string> => {
   const response = await axios.get<PaperApiVersions>(
-    `https://api.papermc.io/v2/projects/${name}/`,
+    `https://fill.papermc.io/v3/projects/${name}`,
   );
   const json = response.data;
-  return json.versions.pop() ?? "";
+  return Object.values(json.versions).shift()?.shift() ?? "";
 };
 
 const fetchBuildNumberFromPaperApi = async (
@@ -44,10 +44,10 @@ const fetchBuildNumberFromPaperApi = async (
   version: string,
 ): Promise<number> => {
   const response = await axios.get<PaperApiVersion>(
-    `https://api.papermc.io/v2/projects/${name}/versions/${version}/`,
+    `https://fill.papermc.io/v3/projects/${name}/versions/${version}`,
   );
   const json = response.data;
-  return json.builds.pop() ?? 0;
+  return json.builds.shift() ?? 0;
 };
 
 type PurpurApiVersions = {

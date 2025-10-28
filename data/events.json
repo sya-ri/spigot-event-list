@@ -9,7 +9,7 @@
       "abstract": true,
       "href": "io/papermc/paper/event/player/AbstractChatEvent.html",
       "javadoc": "An abstract implementation of a chat event, handling shared logic.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/player/AbstractChatEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/player/AbstractChatEvent.html",
       "name": "AbstractChatEvent",
       "source": "paper"
     },
@@ -20,7 +20,7 @@
       },
       "abstract": true,
       "href": "io/papermc/paper/event/player/AbstractRespawnEvent.html",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/player/AbstractRespawnEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/player/AbstractRespawnEvent.html",
       "name": "AbstractRespawnEvent",
       "source": "paper"
     },
@@ -31,7 +31,7 @@
       },
       "href": "com/destroystokyo/paper/event/block/AnvilDamagedEvent.html",
       "javadoc": "Called when an anvil is damaged from being used",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/block/AnvilDamagedEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/block/AnvilDamagedEvent.html",
       "name": "AnvilDamagedEvent",
       "source": "paper"
     },
@@ -90,7 +90,7 @@
         "ja": "コマンドを介したチャットコンポーネントをサーバーが装飾するときに呼び出される。"
       },
       "href": "io/papermc/paper/event/player/AsyncChatCommandDecorateEvent.html",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/player/AsyncChatCommandDecorateEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/player/AsyncChatCommandDecorateEvent.html",
       "name": "AsyncChatCommandDecorateEvent",
       "source": "paper"
     },
@@ -106,7 +106,7 @@
       },
       "href": "io/papermc/paper/event/player/AsyncChatDecorateEvent.html",
       "javadoc": "This event is fired when the server decorates a component for chat purposes. This is called before AsyncChatEvent and the other chat events. It is recommended that you modify the message here, and use the chat events for modifying receivers and later the chat type. If you want to keep the message as \"signed\" for the clients who get it, be sure to include the entire original message somewhere in the final message. See AsyncChatCommandDecorateEvent for the decoration of messages sent via commands",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/player/AsyncChatDecorateEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/player/AsyncChatDecorateEvent.html",
       "name": "AsyncChatDecorateEvent",
       "source": "paper"
     },
@@ -117,7 +117,7 @@
       },
       "href": "io/papermc/paper/event/player/AsyncChatEvent.html",
       "javadoc": "An event fired when a Player sends a chat message to the server. This event will sometimes fire synchronously, depending on how it was triggered. If a player is the direct cause of this event by an incoming packet, this event will be asynchronous. If a plugin triggers this event by compelling a player to chat, this event will be synchronous. Care should be taken to check Event.isAsynchronous() and treat the event appropriately.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/player/AsyncChatEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/player/AsyncChatEvent.html",
       "name": "AsyncChatEvent",
       "source": "paper"
     },
@@ -166,7 +166,7 @@
       },
       "href": "io/papermc/paper/event/connection/configuration/AsyncPlayerConnectionConfigureEvent.html",
       "javadoc": "An event that allows you to configure the player. This is async and allows you to run configuration code on the player. Once this event has finished execution, the player connection will continue. This occurs after configuration, but before the player has entered the world.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/connection/configuration/AsyncPlayerConnectionConfigureEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/connection/configuration/AsyncPlayerConnectionConfigureEvent.html",
       "name": "AsyncPlayerConnectionConfigureEvent",
       "source": "paper"
     },
@@ -193,7 +193,7 @@
       },
       "href": "com/destroystokyo/paper/event/brigadier/AsyncPlayerSendCommandsEvent.html",
       "javadoc": "Fired any time a Brigadier RootCommandNode is generated for a player to inform the client of commands. You may manipulate this CommandNode to change what the client sees. This event may fire on login, world change, and permission rebuilds, by plugin request, and potentially future means. This event will fire before PlayerCommandSendEvent, so no filtering has been done by other plugins yet. WARNING: This event will potentially (and most likely) fire twice! Once for Async, and once again for Sync. It is important that you check event.isAsynchronous() and event.hasFiredAsync() to ensure you only act once. If for some reason we are unable to send this asynchronously in the future, only the sync method will fire. Your logic should look like this: if (event.isAsynchronous() || !event.hasFiredAsync()) { // do stuff } If your logic is not safe to run asynchronously, only react to the synchronous version. This is a draft/experimental API and is subject to change.",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/brigadier/AsyncPlayerSendCommandsEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/brigadier/AsyncPlayerSendCommandsEvent.html",
       "name": "AsyncPlayerSendCommandsEvent",
       "source": "paper"
     },
@@ -204,8 +204,24 @@
       },
       "href": "com/destroystokyo/paper/event/brigadier/AsyncPlayerSendSuggestionsEvent.html",
       "javadoc": "Called when sending Suggestions to the client. Will be called asynchronously if a plugin marks the AsyncTabCompleteEvent event handled asynchronously, otherwise called synchronously.",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/brigadier/AsyncPlayerSendSuggestionsEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/brigadier/AsyncPlayerSendSuggestionsEvent.html",
       "name": "AsyncPlayerSendSuggestionsEvent",
+      "source": "paper"
+    },
+    {
+      "deprecate": "@Experimental",
+      "deprecateDescription": {
+        "en": "",
+        "ja": ""
+      },
+      "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "io/papermc/paper/event/player/AsyncPlayerSpawnLocationEvent.html",
+      "javadoc": "Called when selecting a player's spawn location (i.e. joining the server or reconfiguring). The player will be kept in the configuration phase until all event handlers return and the spawn location is loaded.",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/player/AsyncPlayerSpawnLocationEvent.html",
+      "name": "AsyncPlayerSpawnLocationEvent",
       "source": "paper"
     },
     {
@@ -242,7 +258,7 @@
       },
       "href": "com/destroystokyo/paper/event/server/AsyncTabCompleteEvent.html",
       "javadoc": "Allows plugins to compute tab completion results asynchronously. If this event provides completions, then the standard synchronous process will not be fired to populate the results. However, the synchronous TabCompleteEvent will fire with the Async results. Only 1 process will be allowed to provide completions, the Async Event, or the standard process.",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/server/AsyncTabCompleteEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/server/AsyncTabCompleteEvent.html",
       "name": "AsyncTabCompleteEvent",
       "source": "paper"
     },
@@ -264,7 +280,7 @@
       },
       "href": "io/papermc/paper/event/block/BeaconActivatedEvent.html",
       "javadoc": "Called when a beacon is activated. Activation occurs when the beacon beam becomes visible.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/block/BeaconActivatedEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/block/BeaconActivatedEvent.html",
       "name": "BeaconActivatedEvent",
       "source": "paper"
     },
@@ -275,7 +291,7 @@
       },
       "href": "io/papermc/paper/event/block/BeaconDeactivatedEvent.html",
       "javadoc": "Called when a beacon is deactivated, either because its base block(s) or itself were destroyed.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/block/BeaconDeactivatedEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/block/BeaconDeactivatedEvent.html",
       "name": "BeaconDeactivatedEvent",
       "source": "paper"
     },
@@ -286,7 +302,7 @@
       },
       "href": "com/destroystokyo/paper/event/block/BeaconEffectEvent.html",
       "javadoc": "Called when a beacon effect is being applied to a player.",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/block/BeaconEffectEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/block/BeaconEffectEvent.html",
       "name": "BeaconEffectEvent",
       "source": "paper"
     },
@@ -346,7 +362,7 @@
       },
       "href": "io/papermc/paper/event/block/BellRevealRaiderEvent.html",
       "javadoc": "Called when a Raider is revealed by a bell.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/block/BellRevealRaiderEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/block/BellRevealRaiderEvent.html",
       "name": "BellRevealRaiderEvent",
       "source": "paper"
     },
@@ -362,7 +378,7 @@
       },
       "href": "io/papermc/paper/event/block/BellRingEvent.html",
       "javadoc": "Called when a bell is rung.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/block/BellRingEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/block/BellRingEvent.html",
       "name": "BellRingEvent",
       "source": "paper"
     },
@@ -384,7 +400,7 @@
       },
       "href": "io/papermc/paper/event/block/BlockBreakBlockEvent.html",
       "javadoc": "Called when a block forces another block to break and drop items. Currently called for piston's and liquid flows.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/block/BlockBreakBlockEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/block/BlockBreakBlockEvent.html",
       "name": "BlockBreakBlockEvent",
       "source": "paper"
     },
@@ -406,7 +422,7 @@
       },
       "href": "io/papermc/paper/event/block/BlockBreakProgressUpdateEvent.html",
       "javadoc": "Called when the progress of a block break is updated.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/block/BlockBreakProgressUpdateEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/block/BlockBreakProgressUpdateEvent.html",
       "name": "BlockBreakProgressUpdateEvent",
       "source": "paper"
     },
@@ -488,7 +504,7 @@
       },
       "href": "com/destroystokyo/paper/event/block/BlockDestroyEvent.html",
       "javadoc": "Fired anytime the server intends to 'destroy' a block through some triggering reason. This does not fire anytime a block is set to air, but only with more direct triggers such as physics updates, pistons, entities changing blocks, commands set to \"Destroy\". This event is associated with the game playing a sound effect at the block in question, when something can be described as \"intend to destroy what is there\", Events such as leaves decaying, pistons retracting (where the block is moving), does NOT fire this event.",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/block/BlockDestroyEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/block/BlockDestroyEvent.html",
       "name": "BlockDestroyEvent",
       "source": "paper"
     },
@@ -593,7 +609,7 @@
       },
       "href": "io/papermc/paper/event/block/BlockFailedDispenseEvent.html",
       "javadoc": "Called when a block tries to dispense an item, but its inventory is empty.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/block/BlockFailedDispenseEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/block/BlockFailedDispenseEvent.html",
       "name": "BlockFailedDispenseEvent",
       "source": "paper"
     },
@@ -659,7 +675,7 @@
       },
       "href": "io/papermc/paper/event/block/BlockLockCheckEvent.html",
       "javadoc": "Called when the server tries to check the lock on a lockable block entity. See setResult(Result) to change behavior",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/block/BlockLockCheckEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/block/BlockLockCheckEvent.html",
       "name": "BlockLockCheckEvent",
       "source": "paper"
     },
@@ -736,7 +752,7 @@
         "ja": "ディスペンサーからアイテムが射出される時に呼び出される。BlockDispenseEvent の前に呼び出されるので、ディスペンサーのアイテム消費もキャンセルできる。"
       },
       "href": "io/papermc/paper/event/block/BlockPreDispenseEvent.html",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/block/BlockPreDispenseEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/block/BlockPreDispenseEvent.html",
       "name": "BlockPreDispenseEvent",
       "source": "paper"
     },
@@ -846,7 +862,7 @@
       },
       "href": "io/papermc/paper/event/player/CartographyItemEvent.html",
       "javadoc": "Called when the recipe of an Item is completed inside a cartography table.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/player/CartographyItemEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/player/CartographyItemEvent.html",
       "name": "CartographyItemEvent",
       "source": "paper"
     },
@@ -883,7 +899,7 @@
       },
       "href": "io/papermc/paper/event/player/ChatEvent.html",
       "javadoc": "An event fired when a Player sends a chat message to the server.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/player/ChatEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/player/ChatEvent.html",
       "name": "ChatEvent",
       "source": "paper"
     },
@@ -950,7 +966,7 @@
       },
       "href": "io/papermc/paper/event/packet/ClientTickEndEvent.html",
       "javadoc": "Called when a minecraft:client_tick_end packet is received by the server.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/packet/ClientTickEndEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/packet/ClientTickEndEvent.html",
       "name": "ClientTickEndEvent",
       "source": "paper"
     },
@@ -961,7 +977,7 @@
       },
       "href": "com/velocitypowered/api/event/command/CommandExecuteEvent.html",
       "javadoc": "This event is fired when someone executes a command. Velocity will wait for this event to finish firing before trying to handle the command and/or forwarding it to the server.",
-      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/command/CommandExecuteEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/command/CommandExecuteEvent.html",
       "name": "CommandExecuteEvent",
       "source": "velocity"
     },
@@ -977,7 +993,7 @@
       },
       "href": "com/destroystokyo/paper/event/brigadier/CommandRegisteredEvent.html",
       "javadoc": "Fired anytime the server synchronizes Bukkit commands to Brigadier. Allows a plugin to control the command node structure for its commands. This is done at Plugin Enable time after commands have been registered, but may also run at a later point in the server lifetime due to plugins, a server reload, etc.",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/brigadier/CommandRegisteredEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/brigadier/CommandRegisteredEvent.html",
       "name": "CommandRegisteredEvent",
       "source": "paper"
     },
@@ -988,7 +1004,7 @@
       },
       "href": "io/papermc/paper/event/block/CompostItemEvent.html",
       "javadoc": "Called when an item is about to be composted by a hopper. To prevent hoppers from moving items into composters, cancel the InventoryMoveItemEvent.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/block/CompostItemEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/block/CompostItemEvent.html",
       "name": "CompostItemEvent",
       "source": "paper"
     },
@@ -999,7 +1015,7 @@
       },
       "href": "com/velocitypowered/api/event/connection/ConnectionHandshakeEvent.html",
       "javadoc": "This event is fired when a handshake is established between a client and the proxy. Velocity will fire this event asynchronously and will not wait for it to complete before handling the connection.",
-      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/connection/ConnectionHandshakeEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/connection/ConnectionHandshakeEvent.html",
       "name": "ConnectionHandshakeEvent",
       "source": "velocity"
     },
@@ -1010,7 +1026,7 @@
       },
       "href": "com/velocitypowered/api/event/player/CookieReceiveEvent.html",
       "javadoc": "This event is fired when a cookie response from a client is received by the proxy. This usually happens after either a proxy plugin or a backend server requested a cookie. Velocity will wait on this event to finish firing before discarding the received cookie (if handled) or forwarding it to the backend server.",
-      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/CookieReceiveEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/player/CookieReceiveEvent.html",
       "name": "CookieReceiveEvent",
       "source": "velocity"
     },
@@ -1021,7 +1037,7 @@
       },
       "href": "com/velocitypowered/api/event/player/CookieRequestEvent.html",
       "javadoc": "This event is fired when a cookie from a client is requested either by a proxy plugin or by a backend server. Velocity will wait on this event to finish firing before discarding the cookie request (if handled) or forwarding it to the client.",
-      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/CookieRequestEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/player/CookieRequestEvent.html",
       "name": "CookieRequestEvent",
       "source": "velocity"
     },
@@ -1032,7 +1048,7 @@
       },
       "href": "com/velocitypowered/api/event/player/CookieStoreEvent.html",
       "javadoc": "This event is fired when a cookie should be stored on a player's client. This process can be initiated either by a proxy plugin or by a backend server. Velocity will wait on this event to finish firing before discarding the cookie (if handled) or forwarding it to the client so that it can store the cookie.",
-      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/CookieStoreEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/player/CookieStoreEvent.html",
       "name": "CookieStoreEvent",
       "source": "velocity"
     },
@@ -1076,7 +1092,7 @@
       },
       "href": "com/destroystokyo/paper/event/entity/CreeperIgniteEvent.html",
       "javadoc": "Called when a Creeper is ignited either by a flint and steel, Creeper.ignite() or Creeper.setIgnited(boolean).",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/entity/CreeperIgniteEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/entity/CreeperIgniteEvent.html",
       "name": "CreeperIgniteEvent",
       "source": "paper"
     },
@@ -1114,7 +1130,7 @@
       },
       "href": "com/velocitypowered/api/event/connection/DisconnectEvent.html",
       "javadoc": "This event is fired when a player disconnects from the proxy. This operation can take place when the player disconnects due to normal network activity or when the proxy shuts down. Operations on the provided player, aside from basic data retrieval operations, may behave in undefined ways. Velocity typically fires this event asynchronously and does not wait for a response. However, it will wait for all DisconnectEvents for every player on the proxy to fire successfully before the proxy shuts down. This event is the sole exception to the AwaitingEvent contract. ",
-      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/connection/DisconnectEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/connection/DisconnectEvent.html",
       "name": "DisconnectEvent",
       "source": "velocity"
     },
@@ -1125,7 +1141,7 @@
       },
       "href": "io/papermc/paper/event/block/DragonEggFormEvent.html",
       "javadoc": "Called when the EnderDragon is defeated (killed) in a DragonBattle, causing a Material.DRAGON_EGG (more formally: BlockGrowEvent.getNewState()) to possibly appear depending on BlockGrowEvent.isCancelled(). This event might be cancelled by default depending on e.g. DragonBattle.hasBeenPreviouslyKilled() and server configuration.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/block/DragonEggFormEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/block/DragonEggFormEvent.html",
       "name": "DragonEggFormEvent",
       "source": "paper"
     },
@@ -1136,7 +1152,7 @@
       },
       "href": "io/papermc/paper/event/entity/ElderGuardianAppearanceEvent.html",
       "javadoc": "Is called when an ElderGuardian appears in front of a Player.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/entity/ElderGuardianAppearanceEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/entity/ElderGuardianAppearanceEvent.html",
       "name": "ElderGuardianAppearanceEvent",
       "source": "paper"
     },
@@ -1169,7 +1185,7 @@
       },
       "href": "com/destroystokyo/paper/event/entity/EnderDragonFireballHitEvent.html",
       "javadoc": "Fired when a DragonFireball collides with a block/entity and spawns an AreaEffectCloud",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/entity/EnderDragonFireballHitEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/entity/EnderDragonFireballHitEvent.html",
       "name": "EnderDragonFireballHitEvent",
       "source": "paper"
     },
@@ -1180,7 +1196,7 @@
       },
       "href": "com/destroystokyo/paper/event/entity/EnderDragonFlameEvent.html",
       "javadoc": "Fired when an EnderDragon spawns an AreaEffectCloud by shooting flames",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/entity/EnderDragonFlameEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/entity/EnderDragonFlameEvent.html",
       "name": "EnderDragonFlameEvent",
       "source": "paper"
     },
@@ -1191,7 +1207,7 @@
       },
       "href": "com/destroystokyo/paper/event/entity/EnderDragonShootFireballEvent.html",
       "javadoc": "Fired when an EnderDragon shoots a fireball",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/entity/EnderDragonShootFireballEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/entity/EnderDragonShootFireballEvent.html",
       "name": "EnderDragonShootFireballEvent",
       "source": "paper"
     },
@@ -1202,7 +1218,7 @@
       },
       "href": "com/destroystokyo/paper/event/entity/EndermanAttackPlayerEvent.html",
       "javadoc": "Fired when an Enderman determines if it should attack a player or not. Starts off cancelled if the player is wearing a pumpkin head or is not looking at the Enderman, according to Vanilla rules.",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/entity/EndermanAttackPlayerEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/entity/EndermanAttackPlayerEvent.html",
       "name": "EndermanAttackPlayerEvent",
       "source": "paper"
     },
@@ -1212,7 +1228,7 @@
         "ja": "エンダーマンが逃げた時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/entity/EndermanEscapeEvent.html",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/entity/EndermanEscapeEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/entity/EndermanEscapeEvent.html",
       "name": "EndermanEscapeEvent",
       "source": "paper"
     },
@@ -1245,7 +1261,7 @@
       },
       "href": "com/destroystokyo/paper/event/entity/EntityAddToWorldEvent.html",
       "javadoc": "Fired any time an entity is being added to the world for any reason (including a chunk loading). Not to be confused with CreatureSpawnEvent",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/entity/EntityAddToWorldEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/entity/EntityAddToWorldEvent.html",
       "name": "EntityAddToWorldEvent",
       "source": "paper"
     },
@@ -1267,7 +1283,7 @@
       },
       "href": "io/papermc/paper/event/entity/EntityAttemptSmashAttackEvent.html",
       "javadoc": "Called when an entity attempts to perform a smash attack.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/entity/EntityAttemptSmashAttackEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/entity/EntityAttemptSmashAttackEvent.html",
       "name": "EntityAttemptSmashAttackEvent",
       "source": "paper"
     },
@@ -1278,7 +1294,7 @@
       },
       "href": "io/papermc/paper/event/entity/EntityAttemptSpinAttackEvent.html",
       "javadoc": "Called when a LivingEntity attempts to perform an automatic spin attack against a target entity.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/entity/EntityAttemptSpinAttackEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/entity/EntityAttemptSpinAttackEvent.html",
       "name": "EntityAttemptSpinAttackEvent",
       "source": "paper"
     },
@@ -1366,7 +1382,7 @@
       },
       "href": "io/papermc/paper/event/entity/EntityCompostItemEvent.html",
       "javadoc": "Called when an item is about to be composted by an entity.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/entity/EntityCompostItemEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/entity/EntityCompostItemEvent.html",
       "name": "EntityCompostItemEvent",
       "source": "paper"
     },
@@ -1426,7 +1442,7 @@
       },
       "href": "io/papermc/paper/event/entity/EntityDamageItemEvent.html",
       "javadoc": "Called when an item on or used by an entity takes durability damage as a result of being hit/used. NOTE: default vanilla behaviour dictates that armor/tools picked up by mobs do not take damage (except via Thorns).",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/entity/EntityDamageItemEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/entity/EntityDamageItemEvent.html",
       "name": "EntityDamageItemEvent",
       "source": "paper"
     },
@@ -1470,7 +1486,7 @@
       },
       "href": "io/papermc/paper/event/entity/EntityDyeEvent.html",
       "javadoc": "Called when an entity is dyed. Currently, this is called for Sheep being dyed, and Wolf/Cat collars being dyed.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/entity/EntityDyeEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/entity/EntityDyeEvent.html",
       "name": "EntityDyeEvent",
       "source": "paper"
     },
@@ -1481,7 +1497,7 @@
       },
       "href": "io/papermc/paper/event/entity/EntityEffectTickEvent.html",
       "javadoc": "An event that is triggered when an entity receives a potion effect instantly or when the potion effect is applied on each tick (e.g. every 25 ticks for Poison level 1). For example, this event may be called when an entity regenerates health or takes poison damage as a result of a potion effect.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/entity/EntityEffectTickEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/entity/EntityEffectTickEvent.html",
       "name": "EntityEffectTickEvent",
       "source": "paper"
     },
@@ -1514,7 +1530,7 @@
       },
       "href": "io/papermc/paper/event/entity/EntityEquipmentChangedEvent.html",
       "javadoc": "Called whenever a change to an entity's equipment has been detected. This event is called after effects from attribute modifiers and enchantments have been updated. Examples of actions that can trigger this event: An entity being added to a world. A player logging in. The durability of an equipment item changing. A dispenser equipping an item onto an entity. An entity picking up an armor or weapon item from the ground. A player changing their equipped armor. A player changes their currently held item. ",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/entity/EntityEquipmentChangedEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/entity/EntityEquipmentChangedEvent.html",
       "name": "EntityEquipmentChangedEvent",
       "source": "paper"
     },
@@ -1559,7 +1575,7 @@
       },
       "href": "io/papermc/paper/event/entity/EntityFertilizeEggEvent.html",
       "javadoc": "Called when two entities mate and the mating process results in a fertilization. Fertilization differs from normal breeding, as represented by the EntityBreedEvent, as it does not result in the immediate creation of the child entity in the world. An example of this would be: A frog being marked as \"is_pregnant\" and laying Material.FROGSPAWN later. Sniffers producing the Material.SNIFFER_EGG item, which needs to be placed before it can begin to hatch. A turtle being marked with \"HasEgg\" and laying a Material.TURTLE_EGG later. The event hence only exposes the two parent entities in the fertilization process and cannot provide the child entity, as it will only exist at a later point in time.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/entity/EntityFertilizeEggEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/entity/EntityFertilizeEggEvent.html",
       "name": "EntityFertilizeEggEvent",
       "source": "paper"
     },
@@ -1570,7 +1586,7 @@
       },
       "href": "io/papermc/paper/event/entity/EntityInsideBlockEvent.html",
       "javadoc": "Called when an entity enters the hitbox of a block. Only called for blocks that react when an entity is inside. If cancelled, any action that would have resulted from that entity being in the block will not happen (such as extinguishing an entity in a cauldron). Blocks this is currently called for: Big dripleaf Bubble column Buttons Cactus Campfire Cauldron Crops End Gateway Ender Portal Eye blossom Fires Frogspawn Honey Hopper Detector rails Nether portals Pitcher crop Powdered snow Pressure plates Sweet berry bush Tripwire Waterlily Web Wither rose ",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/entity/EntityInsideBlockEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/entity/EntityInsideBlockEvent.html",
       "name": "EntityInsideBlockEvent",
       "source": "paper"
     },
@@ -1592,7 +1608,7 @@
       },
       "href": "com/destroystokyo/paper/event/entity/EntityJumpEvent.html",
       "javadoc": "Called when an entity jumps Cancelling the event will stop the entity from jumping",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/entity/EntityJumpEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/entity/EntityJumpEvent.html",
       "name": "EntityJumpEvent",
       "source": "paper"
     },
@@ -1603,7 +1619,7 @@
       },
       "href": "com/destroystokyo/paper/event/entity/EntityKnockbackByEntityEvent.html",
       "javadoc": "Fired when an Entity is knocked back by the hit of another Entity. The acceleration vector can be modified. If this event is cancelled, the entity is not knocked back.",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/entity/EntityKnockbackByEntityEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/entity/EntityKnockbackByEntityEvent.html",
       "name": "EntityKnockbackByEntityEvent",
       "source": "paper"
     },
@@ -1625,7 +1641,7 @@
       },
       "href": "io/papermc/paper/event/entity/EntityKnockbackEvent.html",
       "javadoc": "Called when an entity receives knockback.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/entity/EntityKnockbackEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/entity/EntityKnockbackEvent.html",
       "name": "EntityKnockbackEvent",
       "source": "paper"
     },
@@ -1647,7 +1663,7 @@
       },
       "href": "io/papermc/paper/event/entity/EntityLoadCrossbowEvent.html",
       "javadoc": "Called when a LivingEntity loads a crossbow with a projectile.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/entity/EntityLoadCrossbowEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/entity/EntityLoadCrossbowEvent.html",
       "name": "EntityLoadCrossbowEvent",
       "source": "paper"
     },
@@ -1669,7 +1685,7 @@
       },
       "href": "io/papermc/paper/event/entity/EntityMoveEvent.html",
       "javadoc": "Holds information for living entity movement events Does not fire for players; use PlayerMoveEvent for player movement.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/entity/EntityMoveEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/entity/EntityMoveEvent.html",
       "name": "EntityMoveEvent",
       "source": "paper"
     },
@@ -1680,7 +1696,7 @@
       },
       "href": "com/destroystokyo/paper/event/entity/EntityPathfindEvent.html",
       "javadoc": "Fired when an Entity decides to start moving towards a location. This event does not fire for the entities actual movement. Only when it is choosing to start moving to a location.",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/entity/EntityPathfindEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/entity/EntityPathfindEvent.html",
       "name": "EntityPathfindEvent",
       "source": "paper"
     },
@@ -1746,7 +1762,7 @@
       },
       "href": "io/papermc/paper/event/entity/EntityPortalReadyEvent.html",
       "javadoc": "Called when an entity is ready to be teleported by a plugin. Currently, this is only called after the required ticks have passed for a Nether Portal. Cancelling this event resets the entity's readiness regarding the current portal.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/entity/EntityPortalReadyEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/entity/EntityPortalReadyEvent.html",
       "name": "EntityPortalReadyEvent",
       "source": "paper"
     },
@@ -1779,7 +1795,7 @@
       },
       "href": "io/papermc/paper/event/entity/EntityPushedByEntityAttackEvent.html",
       "javadoc": "Fired when an entity is pushed by another entity's attack. The acceleration vector can be modified. If this event is cancelled, the entity will not get pushed. Note: Some entities might trigger this multiple times on the same entity as multiple acceleration calculations are done.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/entity/EntityPushedByEntityAttackEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/entity/EntityPushedByEntityAttackEvent.html",
       "name": "EntityPushedByEntityAttackEvent",
       "source": "paper"
     },
@@ -1812,7 +1828,7 @@
       },
       "href": "com/destroystokyo/paper/event/entity/EntityRemoveFromWorldEvent.html",
       "javadoc": "Fired any time an entity is being removed from a world for any reason (including a chunk unloading). Note: The entity is updated prior to this event being called, as such, the entity's world may not be equal to getWorld().",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/entity/EntityRemoveFromWorldEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/entity/EntityRemoveFromWorldEvent.html",
       "name": "EntityRemoveFromWorldEvent",
       "source": "paper"
     },
@@ -1900,7 +1916,7 @@
       },
       "href": "com/destroystokyo/paper/event/entity/EntityTeleportEndGatewayEvent.html",
       "javadoc": "Fired any time an entity attempts to teleport in an end gateway",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/entity/EntityTeleportEndGatewayEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/entity/EntityTeleportEndGatewayEvent.html",
       "name": "EntityTeleportEndGatewayEvent",
       "source": "paper"
     },
@@ -1944,7 +1960,7 @@
       },
       "href": "io/papermc/paper/event/entity/EntityToggleSitEvent.html",
       "javadoc": "Is called when an entity sits down or stands up.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/entity/EntityToggleSitEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/entity/EntityToggleSitEvent.html",
       "name": "EntityToggleSitEvent",
       "source": "paper"
     },
@@ -1988,7 +2004,7 @@
       },
       "href": "com/destroystokyo/paper/event/entity/EntityZapEvent.html",
       "javadoc": "Fired when lightning strikes an entity",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/entity/EntityZapEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/entity/EntityZapEvent.html",
       "name": "EntityZapEvent",
       "source": "paper"
     },
@@ -2045,7 +2061,7 @@
       },
       "href": "com/destroystokyo/paper/event/entity/ExperienceOrbMergeEvent.html",
       "javadoc": "Fired anytime the server is about to merge 2 experience orbs into one",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/entity/ExperienceOrbMergeEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/entity/ExperienceOrbMergeEvent.html",
       "name": "ExperienceOrbMergeEvent",
       "source": "paper"
     },
@@ -2067,7 +2083,7 @@
       },
       "href": "com/destroystokyo/paper/event/profile/FillProfileEvent.html",
       "javadoc": "Fired once a profiles additional properties (such as textures) has been filled",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/profile/FillProfileEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/profile/FillProfileEvent.html",
       "name": "FillProfileEvent",
       "source": "paper"
     },
@@ -2089,7 +2105,7 @@
       },
       "href": "io/papermc/paper/event/entity/FishHookStateChangeEvent.html",
       "javadoc": "Called just before a FishHook's FishHook.HookState is changed. If you want to monitor a player's fishing state transition, you can use PlayerFishEvent.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/entity/FishHookStateChangeEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/entity/FishHookStateChangeEvent.html",
       "name": "FishHookStateChangeEvent",
       "source": "paper"
     },
@@ -2166,7 +2182,7 @@
       },
       "href": "com/velocitypowered/api/event/player/GameProfileRequestEvent.html",
       "javadoc": "This event is fired after the PreLoginEvent in order to set up the game profile for the user. This can be used to configure a custom profile for a user, i.e. skin replacement. Velocity will wait for this event to finish firing before proceeding with the rest of the login process, but you should try to limit the work done in any event that fires during the login process. ",
-      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/GameProfileRequestEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/player/GameProfileRequestEvent.html",
       "name": "GameProfileRequestEvent",
       "source": "velocity"
     },
@@ -2210,7 +2226,7 @@
       },
       "href": "com/destroystokyo/paper/event/server/GS4QueryEvent.html",
       "javadoc": "This event is fired if server is getting queried over GS4 Query protocol. Adapted from Velocity's ProxyQueryEvent",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/server/GS4QueryEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/server/GS4QueryEvent.html",
       "name": "GS4QueryEvent",
       "source": "paper"
     },
@@ -2292,7 +2308,7 @@
         "ja": "不正なパケットが送られた時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/player/IllegalPacketEvent.html",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/player/IllegalPacketEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/player/IllegalPacketEvent.html",
       "name": "IllegalPacketEvent",
       "source": "paper"
     },
@@ -2441,12 +2457,23 @@
     },
     {
       "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "io/papermc/paper/event/entity/ItemTransportingEntityValidateTargetEvent.html",
+      "javadoc": "Called when an item-transporting entity (typically a CopperGolem, although other entities may be possible through non-API means) is searching for or validating an existing target container block for taking or depositing items. This may be called multiple times per entity per tick, so listeners should be careful to implement checks in an efficient manner.",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/entity/ItemTransportingEntityValidateTargetEvent.html",
+      "name": "ItemTransportingEntityValidateTargetEvent",
+      "source": "paper"
+    },
+    {
+      "description": {
         "en": "Fired when a player is kicked from a server.",
         "ja": "プレイヤーがサーバーからキックされた時に呼び出される。"
       },
       "href": "com/velocitypowered/api/event/player/KickedFromServerEvent.html",
       "javadoc": "Fired when a player is kicked from a server. You may either allow Velocity to kick the player (with an optional reason override) or redirect the player to a separate server. By default, Velocity will notify the user (if they are already connected to a server) or disconnect them (if they are not on a server and no other servers are available). Velocity will wait on this event to finish firing before taking the specified action.",
-      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/KickedFromServerEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/player/KickedFromServerEvent.html",
       "name": "KickedFromServerEvent",
       "source": "velocity"
     },
@@ -2490,7 +2517,7 @@
       },
       "href": "com/velocitypowered/api/event/proxy/ListenerBoundEvent.html",
       "javadoc": "This event is fired by the proxy after a listener starts accepting connections.",
-      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/proxy/ListenerBoundEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/proxy/ListenerBoundEvent.html",
       "name": "ListenerBoundEvent",
       "source": "velocity"
     },
@@ -2501,7 +2528,7 @@
       },
       "href": "com/velocitypowered/api/event/proxy/ListenerCloseEvent.html",
       "javadoc": "This event is fired by the proxy before the proxy stops accepting connections.",
-      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/proxy/ListenerCloseEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/proxy/ListenerCloseEvent.html",
       "name": "ListenerCloseEvent",
       "source": "velocity"
     },
@@ -2545,7 +2572,7 @@
       },
       "href": "com/velocitypowered/api/event/connection/LoginEvent.html",
       "javadoc": "This event is fired once the player has been authenticated, but before they connect to a server. Velocity will wait for this event to finish firing before proceeding with the rest of the login process, but you should try to limit the work done in any event that fires during the login process.",
-      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/connection/LoginEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/connection/LoginEvent.html",
       "name": "LoginEvent",
       "source": "velocity"
     },
@@ -2556,7 +2583,7 @@
       },
       "href": "com/destroystokyo/paper/event/profile/LookupProfileEvent.html",
       "javadoc": "Allows a plugin to be notified anytime AFTER a Profile has been looked up from the Mojang API This is an opportunity to view the response and potentially cache things. No guarantees are made about thread execution context for this event. If you need to know, check Event.isAsynchronous()",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/profile/LookupProfileEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/profile/LookupProfileEvent.html",
       "name": "LookupProfileEvent",
       "source": "paper"
     },
@@ -2566,7 +2593,7 @@
         "ja": "LootTable によってアイテムが補充される時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/loottable/LootableInventoryReplenishEvent.html",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/loottable/LootableInventoryReplenishEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/loottable/LootableInventoryReplenishEvent.html",
       "name": "LootableInventoryReplenishEvent",
       "source": "paper"
     },
@@ -2621,7 +2648,7 @@
       },
       "href": "com/destroystokyo/paper/event/server/PaperServerListPingEvent.html",
       "javadoc": "Extended version of ServerListPingEvent that allows full control of the response sent to the client.",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/server/PaperServerListPingEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/server/PaperServerListPingEvent.html",
       "name": "PaperServerListPingEvent",
       "source": "paper"
     },
@@ -2643,7 +2670,7 @@
       },
       "href": "com/velocitypowered/api/event/permission/PermissionsSetupEvent.html",
       "javadoc": "Called when a PermissionSubject's permissions are being setup. This event is typically called for the ConsoleCommandSource and any Players who join the proxy. This event is only called once per subject, on initialisation. Velocity will wait for this event to finish firing before proceeding further with server startup (for the console command source) and logins (for players) but it is strongly recommended to minimize the amount of work that must be done in this event. ",
-      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/permission/PermissionsSetupEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/permission/PermissionsSetupEvent.html",
       "name": "PermissionsSetupEvent",
       "source": "velocity"
     },
@@ -2654,7 +2681,7 @@
       },
       "href": "com/destroystokyo/paper/event/entity/PhantomPreSpawnEvent.html",
       "javadoc": "Called when a phantom is spawned for an exhausted player",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/entity/PhantomPreSpawnEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/entity/PhantomPreSpawnEvent.html",
       "name": "PhantomPreSpawnEvent",
       "source": "paper"
     },
@@ -2698,7 +2725,7 @@
       },
       "href": "com/destroystokyo/paper/event/player/PlayerAdvancementCriterionGrantEvent.html",
       "javadoc": "Called after a player is granted a criteria in an advancement. If cancelled the criteria will be revoked.",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/player/PlayerAdvancementCriterionGrantEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/player/PlayerAdvancementCriterionGrantEvent.html",
       "name": "PlayerAdvancementCriterionGrantEvent",
       "source": "paper"
     },
@@ -2741,7 +2768,7 @@
       },
       "href": "com/destroystokyo/paper/event/player/PlayerArmorChangeEvent.html",
       "javadoc": "Called when the player themselves change their armor items Not currently called for environmental factors though it MAY BE IN THE FUTURE",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/player/PlayerArmorChangeEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/player/PlayerArmorChangeEvent.html",
       "name": "PlayerArmorChangeEvent",
       "source": "paper"
     },
@@ -2762,7 +2789,7 @@
         "ja": "プレイヤーが腕を振った時に呼び出される。"
       },
       "href": "io/papermc/paper/event/player/PlayerArmSwingEvent.html",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/player/PlayerArmSwingEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/player/PlayerArmSwingEvent.html",
       "name": "PlayerArmSwingEvent",
       "source": "paper"
     },
@@ -2773,7 +2800,7 @@
       },
       "href": "com/destroystokyo/paper/event/player/PlayerAttackEntityCooldownResetEvent.html",
       "javadoc": "Called when processing a player's attack on an entity when the player's attack strength cooldown is reset",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/player/PlayerAttackEntityCooldownResetEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/player/PlayerAttackEntityCooldownResetEvent.html",
       "name": "PlayerAttackEntityCooldownResetEvent",
       "source": "paper"
     },
@@ -2784,7 +2811,7 @@
       },
       "href": "com/velocitypowered/api/event/command/PlayerAvailableCommandsEvent.html",
       "javadoc": "Allows plugins to modify the packet indicating commands available on the server to a Minecraft 1.13+ client. The given RootCommandNode is mutable. Velocity will wait for this event to finish firing before sending the list of available commands to the client.",
-      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/command/PlayerAvailableCommandsEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/command/PlayerAvailableCommandsEvent.html",
       "name": "PlayerAvailableCommandsEvent",
       "source": "velocity"
     },
@@ -2805,7 +2832,7 @@
         "ja": "ベッドに入れなかった時に呼び出される。"
       },
       "href": "io/papermc/paper/event/player/PlayerBedFailEnterEvent.html",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/player/PlayerBedFailEnterEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/player/PlayerBedFailEnterEvent.html",
       "name": "PlayerBedFailEnterEvent",
       "source": "paper"
     },
@@ -2899,7 +2926,7 @@
       },
       "href": "io/papermc/paper/event/player/PlayerChangeBeaconEffectEvent.html",
       "javadoc": "Called when a player sets the effect for a beacon",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/player/PlayerChangeBeaconEffectEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/player/PlayerChangeBeaconEffectEvent.html",
       "name": "PlayerChangeBeaconEffectEvent",
       "source": "paper"
     },
@@ -2944,7 +2971,7 @@
       },
       "href": "com/velocitypowered/api/event/player/PlayerChannelRegisterEvent.html",
       "javadoc": "This event is fired when a client (Player) sends a plugin message through the register channel. Velocity will not wait on this event to finish firing.",
-      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/PlayerChannelRegisterEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/player/PlayerChannelRegisterEvent.html",
       "name": "PlayerChannelRegisterEvent",
       "source": "velocity"
     },
@@ -2971,7 +2998,7 @@
       },
       "href": "com/velocitypowered/api/event/player/PlayerChatEvent.html",
       "javadoc": "This event is fired when a player types in a chat message. Velocity will wait on this event to finish firing before forwarding it to the server, if the result allows it.",
-      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/PlayerChatEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/player/PlayerChatEvent.html",
       "name": "PlayerChatEvent",
       "source": "velocity"
     },
@@ -2998,7 +3025,7 @@
       },
       "href": "com/velocitypowered/api/event/player/PlayerChooseInitialServerEvent.html",
       "javadoc": "Fired when a player has finished the login process, and we need to choose the first server to connect to. Velocity will wait on this event to finish firing before initiating the connection but you should try to limit the work done in this event. Failures will be handled by KickedFromServerEvent as normal.",
-      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/PlayerChooseInitialServerEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/player/PlayerChooseInitialServerEvent.html",
       "name": "PlayerChooseInitialServerEvent",
       "source": "velocity"
     },
@@ -3009,7 +3036,7 @@
       },
       "href": "io/papermc/paper/event/packet/PlayerChunkLoadEvent.html",
       "javadoc": "Is called when a Player receives a Chunk Can for example be used for spawning a fake entity when the player receives a chunk. Should only be used for packet/clientside related stuff. Not intended for modifying server side state.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/packet/PlayerChunkLoadEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/packet/PlayerChunkLoadEvent.html",
       "name": "PlayerChunkLoadEvent",
       "source": "paper"
     },
@@ -3020,7 +3047,7 @@
       },
       "href": "io/papermc/paper/event/packet/PlayerChunkUnloadEvent.html",
       "javadoc": "Is called when a Player receives a chunk unload packet. Should only be used for packet/clientside related stuff. Not intended for modifying server side.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/packet/PlayerChunkUnloadEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/packet/PlayerChunkUnloadEvent.html",
       "name": "PlayerChunkUnloadEvent",
       "source": "paper"
     },
@@ -3031,7 +3058,7 @@
       },
       "href": "com/velocitypowered/api/event/player/PlayerClientBrandEvent.html",
       "javadoc": "Fired when a Player sends the minecraft:brand plugin message. Velocity will not wait on the result of this event.",
-      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/PlayerClientBrandEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/player/PlayerClientBrandEvent.html",
       "name": "PlayerClientBrandEvent",
       "source": "velocity"
     },
@@ -3042,7 +3069,7 @@
       },
       "href": "io/papermc/paper/event/player/PlayerClientLoadedWorldEvent.html",
       "javadoc": "Called when a player is marked as loaded. This either happens when the player notifies the server after loading the world (closing the downloading terrain screen) or when the player has not done so for 60 ticks after joining the server or respawning.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/player/PlayerClientLoadedWorldEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/player/PlayerClientLoadedWorldEvent.html",
       "name": "PlayerClientLoadedWorldEvent",
       "source": "paper"
     },
@@ -3053,7 +3080,7 @@
       },
       "href": "com/destroystokyo/paper/event/player/PlayerClientOptionsChangeEvent.html",
       "javadoc": "Called when the player changes their client settings",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/player/PlayerClientOptionsChangeEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/player/PlayerClientOptionsChangeEvent.html",
       "name": "PlayerClientOptionsChangeEvent",
       "source": "paper"
     },
@@ -3086,7 +3113,7 @@
       },
       "href": "com/velocitypowered/api/event/player/configuration/PlayerConfigurationEvent.html",
       "javadoc": "This event is executed when a player entered the configuration state and can be configured by Velocity. Velocity will wait for this event before continuing/ending the configuration state.",
-      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/configuration/PlayerConfigurationEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/player/configuration/PlayerConfigurationEvent.html",
       "name": "PlayerConfigurationEvent",
       "source": "velocity"
     },
@@ -3097,7 +3124,7 @@
       },
       "href": "com/destroystokyo/paper/event/player/PlayerConnectionCloseEvent.html",
       "javadoc": " This event is invoked when a player has disconnected. It is guaranteed that, if the server is in online-mode, that the provided uuid and username have been validated. The event is invoked for players who have not yet logged into the world, whereas PlayerQuitEvent is only invoked on players who have logged into the world. The event is invoked for players who have already logged into the world, although whether or not the player exists in the world at the time of firing is undefined. (That is, whether the plugin can retrieve a Player object using the event parameters is undefined). However, it is guaranteed that this event is invoked AFTER PlayerQuitEvent, if the player has already logged into the world. This event is guaranteed to never fire unless AsyncPlayerPreLoginEvent has been fired beforehand, and this event may not be called in parallel with AsyncPlayerPreLoginEvent for the same connection. Cancelling the AsyncPlayerPreLoginEvent guarantees the corresponding PlayerConnectionCloseEvent is never called. The event may be invoked asynchronously or synchronously. Plugins should check Event.isAsynchronous() and handle accordingly.",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/player/PlayerConnectionCloseEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/player/PlayerConnectionCloseEvent.html",
       "name": "PlayerConnectionCloseEvent",
       "source": "paper"
     },
@@ -3108,7 +3135,7 @@
       },
       "href": "io/papermc/paper/event/connection/configuration/PlayerConnectionInitialConfigureEvent.html",
       "javadoc": "Indicates that this player is being configured for the first time, meaning that the connection will start being configured automatically",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/connection/configuration/PlayerConnectionInitialConfigureEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/connection/configuration/PlayerConnectionInitialConfigureEvent.html",
       "name": "PlayerConnectionInitialConfigureEvent",
       "source": "paper"
     },
@@ -3119,7 +3146,7 @@
       },
       "href": "io/papermc/paper/event/connection/configuration/PlayerConnectionReconfigureEvent.html",
       "javadoc": "Indicates that this player is being reconfigured, meaning that this connection will be held in the configuration stage unless kicked out through PlayerConfigurationConnection.completeReconfiguration()",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/connection/configuration/PlayerConnectionReconfigureEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/connection/configuration/PlayerConnectionReconfigureEvent.html",
       "name": "PlayerConnectionReconfigureEvent",
       "source": "paper"
     },
@@ -3130,7 +3157,7 @@
       },
       "href": "io/papermc/paper/event/connection/PlayerConnectionValidateLoginEvent.html",
       "javadoc": "Validates whether a player connection is able to log in. Called when is attempting to log in for the first time, or is finishing up being configured.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/connection/PlayerConnectionValidateLoginEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/connection/PlayerConnectionValidateLoginEvent.html",
       "name": "PlayerConnectionValidateLoginEvent",
       "source": "paper"
     },
@@ -3147,7 +3174,7 @@
       "abstract": true,
       "href": "io/papermc/paper/event/player/PlayerCustomClickEvent.html",
       "javadoc": "This event is fired for any custom click events.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/player/PlayerCustomClickEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/player/PlayerCustomClickEvent.html",
       "name": "PlayerCustomClickEvent",
       "source": "paper"
     },
@@ -3185,7 +3212,7 @@
       },
       "href": "io/papermc/paper/event/player/PlayerDeepSleepEvent.html",
       "javadoc": "Called when a player has slept long enough to count as passing the night/storm. Cancelling this event will prevent the player from being counted as deeply sleeping unless they exit and re-enter the bed.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/player/PlayerDeepSleepEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/player/PlayerDeepSleepEvent.html",
       "name": "PlayerDeepSleepEvent",
       "source": "paper"
     },
@@ -3240,7 +3267,7 @@
       },
       "href": "com/destroystokyo/paper/event/player/PlayerElytraBoostEvent.html",
       "javadoc": "Fired when a player boosts elytra flight with a firework",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/player/PlayerElytraBoostEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/player/PlayerElytraBoostEvent.html",
       "name": "PlayerElytraBoostEvent",
       "source": "paper"
     },
@@ -3251,7 +3278,7 @@
       },
       "href": "com/velocitypowered/api/event/player/configuration/PlayerEnterConfigurationEvent.html",
       "javadoc": "This event is executed when a player is about to enter the configuration state. It is not called for the initial configuration of a player after login. Velocity will wait for this event before asking the client to enter configuration state. However due to backend server being unable to keep the connection alive during state changes, Velocity will only wait for a maximum of 5 seconds.",
-      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/configuration/PlayerEnterConfigurationEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/player/configuration/PlayerEnterConfigurationEvent.html",
       "name": "PlayerEnterConfigurationEvent",
       "source": "velocity"
     },
@@ -3262,7 +3289,7 @@
       },
       "href": "com/velocitypowered/api/event/player/configuration/PlayerEnteredConfigurationEvent.html",
       "javadoc": "This event is executed when a player has entered the configuration state. From this moment on, until the PlayerFinishedConfigurationEvent is executed, the InboundConnection.getProtocolState() method is guaranteed to return ProtocolState.CONFIGURATION.",
-      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/configuration/PlayerEnteredConfigurationEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/player/configuration/PlayerEnteredConfigurationEvent.html",
       "name": "PlayerEnteredConfigurationEvent",
       "source": "velocity"
     },
@@ -3307,7 +3334,7 @@
       },
       "href": "io/papermc/paper/event/player/PlayerFailMoveEvent.html",
       "javadoc": "Runs when a player attempts to move, but is prevented from doing so by the server",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/player/PlayerFailMoveEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/player/PlayerFailMoveEvent.html",
       "name": "PlayerFailMoveEvent",
       "source": "paper"
     },
@@ -3318,7 +3345,7 @@
       },
       "href": "com/velocitypowered/api/event/player/configuration/PlayerFinishConfigurationEvent.html",
       "javadoc": "This event is executed when a player is about to finish the configuration state. Velocity will wait for this event before asking the client to finish the configuration state. However due to backend server being unable to keep the connection alive during state changes, Velocity will only wait for a maximum of 5 seconds. If you need to hold a player in configuration state, use the PlayerConfigurationEvent.",
-      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/configuration/PlayerFinishConfigurationEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/player/configuration/PlayerFinishConfigurationEvent.html",
       "name": "PlayerFinishConfigurationEvent",
       "source": "velocity"
     },
@@ -3329,7 +3356,7 @@
       },
       "href": "com/velocitypowered/api/event/player/configuration/PlayerFinishedConfigurationEvent.html",
       "javadoc": "This event is executed when a player has finished the configuration state. From this moment on, the InboundConnection.getProtocolState() method will return ProtocolState.PLAY.",
-      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/configuration/PlayerFinishedConfigurationEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/player/configuration/PlayerFinishedConfigurationEvent.html",
       "name": "PlayerFinishedConfigurationEvent",
       "source": "velocity"
     },
@@ -3351,7 +3378,7 @@
       },
       "href": "io/papermc/paper/event/player/PlayerFlowerPotManipulateEvent.html",
       "javadoc": "Called when a player places an item in or takes an item out of a flowerpot.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/player/PlayerFlowerPotManipulateEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/player/PlayerFlowerPotManipulateEvent.html",
       "name": "PlayerFlowerPotManipulateEvent",
       "source": "paper"
     },
@@ -3384,7 +3411,7 @@
       },
       "href": "com/destroystokyo/paper/event/player/PlayerHandshakeEvent.html",
       "javadoc": "This event is fired during a player handshake. If there are no listeners listening to this event, the logic default to your server platform will be run. WARNING: TAMPERING WITH THIS EVENT CAN BE DANGEROUS",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/player/PlayerHandshakeEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/player/PlayerHandshakeEvent.html",
       "name": "PlayerHandshakeEvent",
       "source": "paper"
     },
@@ -3433,7 +3460,7 @@
       },
       "href": "io/papermc/paper/event/player/PlayerInsertLecternBookEvent.html",
       "javadoc": "This event is called when a player clicks on a lectern to insert a book. If this event is cancelled the player will keep the book and the lectern will remain empty.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/player/PlayerInsertLecternBookEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/player/PlayerInsertLecternBookEvent.html",
       "name": "PlayerInsertLecternBookEvent",
       "source": "paper"
     },
@@ -3477,7 +3504,7 @@
       },
       "href": "io/papermc/paper/event/player/PlayerInventorySlotChangeEvent.html",
       "javadoc": "Called when a slot contents change in a player's inventory.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/player/PlayerInventorySlotChangeEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/player/PlayerInventorySlotChangeEvent.html",
       "name": "PlayerInventorySlotChangeEvent",
       "source": "paper"
     },
@@ -3510,7 +3537,7 @@
       },
       "href": "io/papermc/paper/event/player/PlayerItemCooldownEvent.html",
       "javadoc": "Fired when a player receives an item cooldown when using an item.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/player/PlayerItemCooldownEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/player/PlayerItemCooldownEvent.html",
       "name": "PlayerItemCooldownEvent",
       "source": "paper"
     },
@@ -3532,7 +3559,7 @@
       },
       "href": "io/papermc/paper/event/player/PlayerItemFrameChangeEvent.html",
       "javadoc": "Called when an ItemFrame is having an item rotated, added, or removed from it.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/player/PlayerItemFrameChangeEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/player/PlayerItemFrameChangeEvent.html",
       "name": "PlayerItemFrameChangeEvent",
       "source": "paper"
     },
@@ -3543,7 +3570,7 @@
       },
       "href": "io/papermc/paper/event/player/PlayerItemGroupCooldownEvent.html",
       "javadoc": "Fired when a player receives an item cooldown.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/player/PlayerItemGroupCooldownEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/player/PlayerItemGroupCooldownEvent.html",
       "name": "PlayerItemGroupCooldownEvent",
       "source": "paper"
     },
@@ -3587,7 +3614,7 @@
       },
       "href": "com/destroystokyo/paper/event/player/PlayerJumpEvent.html",
       "javadoc": "Called when the server detects the player is jumping. Added to avoid the overhead and special case logic that many plugins use when checking for jumps via PlayerMoveEvent, this event is fired whenever the server detects that the player is jumping.",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/player/PlayerJumpEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/player/PlayerJumpEvent.html",
       "name": "PlayerJumpEvent",
       "source": "paper"
     },
@@ -3609,7 +3636,7 @@
       },
       "href": "com/destroystokyo/paper/event/player/PlayerLaunchProjectileEvent.html",
       "javadoc": "Called when a player shoots a projectile. Notably this event is not called for arrows as the player does not launch them, rather shoots them with the help of a bow or crossbow. A plugin may listen to EntityShootBowEvent for these actions instead.",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/player/PlayerLaunchProjectileEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/player/PlayerLaunchProjectileEvent.html",
       "name": "PlayerLaunchProjectileEvent",
       "source": "paper"
     },
@@ -3630,7 +3657,7 @@
         "ja": "プレイヤーが書見台に置かれた本のページを変更する時に呼び出される。"
       },
       "href": "io/papermc/paper/event/player/PlayerLecternPageChangeEvent.html",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/player/PlayerLecternPageChangeEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/player/PlayerLecternPageChangeEvent.html",
       "name": "PlayerLecternPageChangeEvent",
       "source": "paper"
     },
@@ -3684,8 +3711,8 @@
         "ja": "プレイヤーが機織り機の旗模様を変更する時に呼び出される。"
       },
       "href": "io/papermc/paper/event/player/PlayerLoomPatternSelectEvent.html",
-      "javadoc": "Called when a player selects a banner patten in a loom inventory.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/player/PlayerLoomPatternSelectEvent.html",
+      "javadoc": "Called when a player selects a banner pattern in a loom inventory.",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/player/PlayerLoomPatternSelectEvent.html",
       "name": "PlayerLoomPatternSelectEvent",
       "source": "paper"
     },
@@ -3696,7 +3723,7 @@
       },
       "href": "io/papermc/paper/event/player/PlayerMapFilledEvent.html",
       "javadoc": "Called when a player creates a filled map by right-clicking an empty map.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/player/PlayerMapFilledEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/player/PlayerMapFilledEvent.html",
       "name": "PlayerMapFilledEvent",
       "source": "paper"
     },
@@ -3707,7 +3734,7 @@
       },
       "href": "com/velocitypowered/api/event/player/PlayerModInfoEvent.html",
       "javadoc": "This event is fired when a Forge client sends its mods to the proxy while connecting to a server. Velocity will not wait on this event to finish firing.",
-      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/PlayerModInfoEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/player/PlayerModInfoEvent.html",
       "name": "PlayerModInfoEvent",
       "source": "velocity"
     },
@@ -3729,7 +3756,7 @@
       },
       "href": "io/papermc/paper/event/player/PlayerNameEntityEvent.html",
       "javadoc": "Called when the player is attempting to rename a mob",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/player/PlayerNameEntityEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/player/PlayerNameEntityEvent.html",
       "name": "PlayerNameEntityEvent",
       "source": "paper"
     },
@@ -3740,7 +3767,7 @@
       },
       "href": "com/destroystokyo/paper/event/entity/PlayerNaturallySpawnCreaturesEvent.html",
       "javadoc": "Fired when the server is calculating what chunks to try to spawn monsters in every Monster Spawn Tick event",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/entity/PlayerNaturallySpawnCreaturesEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/entity/PlayerNaturallySpawnCreaturesEvent.html",
       "name": "PlayerNaturallySpawnCreaturesEvent",
       "source": "paper"
     },
@@ -3751,7 +3778,7 @@
       },
       "href": "io/papermc/paper/event/player/PlayerOpenSignEvent.html",
       "javadoc": "Called when a player begins editing a sign's text. Cancelling this event stops the sign editing menu from opening.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/player/PlayerOpenSignEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/player/PlayerOpenSignEvent.html",
       "name": "PlayerOpenSignEvent",
       "source": "paper"
     },
@@ -3762,7 +3789,7 @@
       },
       "href": "io/papermc/paper/event/player/PlayerPickBlockEvent.html",
       "javadoc": "Event that is fired when a player uses the pick item functionality on a block (middle-clicking a block to get the appropriate item). After the handling of this event, the contents of the source and the target slot will be swapped, and the currently selected hotbar slot of the player will be set to the target slot.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/player/PlayerPickBlockEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/player/PlayerPickBlockEvent.html",
       "name": "PlayerPickBlockEvent",
       "source": "paper"
     },
@@ -3773,7 +3800,7 @@
       },
       "href": "io/papermc/paper/event/player/PlayerPickEntityEvent.html",
       "javadoc": "Event that is fired when a player uses the pick item functionality on an entity (middle-clicking an entity to get the appropriate item). After the handling of this event, the contents of the source and the target slot will be swapped, and the currently selected hotbar slot of the player will be set to the target slot.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/player/PlayerPickEntityEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/player/PlayerPickEntityEvent.html",
       "name": "PlayerPickEntityEvent",
       "source": "paper"
     },
@@ -3785,7 +3812,7 @@
       "abstract": true,
       "href": "io/papermc/paper/event/player/PlayerPickItemEvent.html",
       "javadoc": "Event that is fired when a player uses the pick item functionality (middle-clicking a block or entity to get the appropriate item). After the handling of this event, the contents of the source and the target slot will be swapped, and the currently selected hotbar slot of the player will be set to the target slot.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/player/PlayerPickItemEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/player/PlayerPickItemEvent.html",
       "name": "PlayerPickItemEvent",
       "source": "paper"
     },
@@ -3807,7 +3834,7 @@
       },
       "href": "com/destroystokyo/paper/event/player/PlayerPickupExperienceEvent.html",
       "javadoc": "Fired when a player is attempting to pick up an experience orb",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/player/PlayerPickupExperienceEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/player/PlayerPickupExperienceEvent.html",
       "name": "PlayerPickupExperienceEvent",
       "source": "paper"
     },
@@ -3845,7 +3872,7 @@
       },
       "href": "com/destroystokyo/paper/event/player/PlayerPostRespawnEvent.html",
       "javadoc": "Fired after a player has respawned",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/player/PlayerPostRespawnEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/player/PlayerPostRespawnEvent.html",
       "name": "PlayerPostRespawnEvent",
       "source": "paper"
     },
@@ -3872,7 +3899,7 @@
       },
       "href": "io/papermc/paper/event/player/PlayerPurchaseEvent.html",
       "javadoc": "Called when a player trades with a standalone merchant GUI.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/player/PlayerPurchaseEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/player/PlayerPurchaseEvent.html",
       "name": "PlayerPurchaseEvent",
       "source": "paper"
     },
@@ -3894,7 +3921,7 @@
       },
       "href": "com/destroystokyo/paper/event/player/PlayerReadyArrowEvent.html",
       "javadoc": "Called when a player is firing a bow and the server is choosing an arrow to use.",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/player/PlayerReadyArrowEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/player/PlayerReadyArrowEvent.html",
       "name": "PlayerReadyArrowEvent",
       "source": "paper"
     },
@@ -3905,7 +3932,7 @@
       },
       "href": "com/destroystokyo/paper/event/player/PlayerRecipeBookClickEvent.html",
       "javadoc": "Called when a player clicks a recipe in the recipe book",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/player/PlayerRecipeBookClickEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/player/PlayerRecipeBookClickEvent.html",
       "name": "PlayerRecipeBookClickEvent",
       "source": "paper"
     },
@@ -3971,7 +3998,7 @@
       },
       "href": "com/velocitypowered/api/event/player/PlayerResourcePackStatusEvent.html",
       "javadoc": "This event is fired when the status of a resource pack sent to the player by the server is changed. Depending on the result of this event (which Velocity will wait until completely fired), the player may be kicked from the server.",
-      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/PlayerResourcePackStatusEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/player/PlayerResourcePackStatusEvent.html",
       "name": "PlayerResourcePackStatusEvent",
       "source": "velocity"
     },
@@ -4004,7 +4031,7 @@
       },
       "href": "io/papermc/paper/event/player/PlayerServerFullCheckEvent.html",
       "javadoc": "Fires when computing if a server is currently considered full for a player.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/player/PlayerServerFullCheckEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/player/PlayerServerFullCheckEvent.html",
       "name": "PlayerServerFullCheckEvent",
       "source": "paper"
     },
@@ -4025,7 +4052,7 @@
       },
       "href": "com/destroystokyo/paper/event/player/PlayerSetSpawnEvent.html",
       "javadoc": "Called when a player's spawn is set, either by themselves or otherwise. Cancelling this event will prevent the spawn from being set.",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/player/PlayerSetSpawnEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/player/PlayerSetSpawnEvent.html",
       "name": "PlayerSetSpawnEvent",
       "source": "paper"
     },
@@ -4036,7 +4063,7 @@
       },
       "href": "com/velocitypowered/api/event/player/PlayerSettingsChangedEvent.html",
       "javadoc": "This event is fired when the client sends new client settings for the player. This event can and typically will be fired multiple times per connection. Velocity will not wait on this event to finish firing.",
-      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/PlayerSettingsChangedEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/player/PlayerSettingsChangedEvent.html",
       "name": "PlayerSettingsChangedEvent",
       "source": "velocity"
     },
@@ -4057,7 +4084,7 @@
       },
       "href": "io/papermc/paper/event/block/PlayerShearBlockEvent.html",
       "javadoc": "Called when a player uses shears on a block. This event is not called when a player breaks blocks with shears, but rather when a player uses the shears on a block to collect drops from it and/or modify its state. Examples include shearing a pumpkin to turn it into a carved pumpkin or shearing a beehive to get honeycomb.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/block/PlayerShearBlockEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/block/PlayerShearBlockEvent.html",
       "name": "PlayerShearBlockEvent",
       "source": "paper"
     },
@@ -4079,7 +4106,7 @@
       },
       "href": "io/papermc/paper/event/player/PlayerShieldDisableEvent.html",
       "javadoc": "Called whenever a players shield is disabled due to an attack from another entity that was capable of disabling the shield. This, most commonly, may be another player attacking with an axe. Notably, this even is distinct from a PlayerItemCooldownEvent and will fire prior to the item going on cooldown. It follows that, if this event is cancelled, no PlayerItemCooldownEvent is called as the shield is never disabled in the first place.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/player/PlayerShieldDisableEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/player/PlayerShieldDisableEvent.html",
       "name": "PlayerShieldDisableEvent",
       "source": "paper"
     },
@@ -4101,7 +4128,7 @@
       },
       "href": "io/papermc/paper/event/player/PlayerSignCommandPreprocessEvent.html",
       "javadoc": "Called when a Player clicks a side on a sign that causes a command to run. This command is run with elevated permissions which allows players to access commands on signs they wouldn't normally be able to run.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/player/PlayerSignCommandPreprocessEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/player/PlayerSignCommandPreprocessEvent.html",
       "name": "PlayerSignCommandPreprocessEvent",
       "source": "paper"
     },
@@ -4145,7 +4172,7 @@
       },
       "href": "com/destroystokyo/paper/event/player/PlayerStartSpectatingEntityEvent.html",
       "javadoc": "Triggered when a player starts spectating an entity in spectator mode.",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/player/PlayerStartSpectatingEntityEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/player/PlayerStartSpectatingEntityEvent.html",
       "name": "PlayerStartSpectatingEntityEvent",
       "source": "paper"
     },
@@ -4166,7 +4193,7 @@
         "ja": "プレイヤーが石切台のレシピを選択する時に呼び出される。"
       },
       "href": "io/papermc/paper/event/player/PlayerStonecutterRecipeSelectEvent.html",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/player/PlayerStonecutterRecipeSelectEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/player/PlayerStonecutterRecipeSelectEvent.html",
       "name": "PlayerStonecutterRecipeSelectEvent",
       "source": "paper"
     },
@@ -4177,7 +4204,7 @@
       },
       "href": "com/destroystokyo/paper/event/player/PlayerStopSpectatingEntityEvent.html",
       "javadoc": "Triggered when a player stops spectating an entity in spectator mode.",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/player/PlayerStopSpectatingEntityEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/player/PlayerStopSpectatingEntityEvent.html",
       "name": "PlayerStopSpectatingEntityEvent",
       "source": "paper"
     },
@@ -4188,7 +4215,7 @@
       },
       "href": "io/papermc/paper/event/player/PlayerStopUsingItemEvent.html",
       "javadoc": "Called when the server detects a player stopping using an item. Examples of this are letting go of the interact button when holding a bow, an edible item, or a spyglass.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/player/PlayerStopUsingItemEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/player/PlayerStopUsingItemEvent.html",
       "name": "PlayerStopUsingItemEvent",
       "source": "paper"
     },
@@ -4221,7 +4248,7 @@
       },
       "href": "com/destroystokyo/paper/event/player/PlayerTeleportEndGatewayEvent.html",
       "javadoc": "Fired when a teleport is triggered for an End Gateway",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/player/PlayerTeleportEndGatewayEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/player/PlayerTeleportEndGatewayEvent.html",
       "name": "PlayerTeleportEndGatewayEvent",
       "source": "paper"
     },
@@ -4276,7 +4303,7 @@
       },
       "href": "io/papermc/paper/event/player/PlayerTrackEntityEvent.html",
       "javadoc": "Is called when a Player tracks an Entity. If cancelled entity is not shown to the player and interaction in both directions is not possible. Adding or removing entities from the world at the point in time this event is called is completely unsupported and should be avoided.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/player/PlayerTrackEntityEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/player/PlayerTrackEntityEvent.html",
       "name": "PlayerTrackEntityEvent",
       "source": "paper"
     },
@@ -4287,7 +4314,7 @@
       },
       "href": "io/papermc/paper/event/player/PlayerTradeEvent.html",
       "javadoc": "Called when a player trades with a villager or wandering trader",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/player/PlayerTradeEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/player/PlayerTradeEvent.html",
       "name": "PlayerTradeEvent",
       "source": "paper"
     },
@@ -4320,7 +4347,7 @@
       },
       "href": "io/papermc/paper/event/player/PlayerUntrackEntityEvent.html",
       "javadoc": "Is called when a Player untracks an Entity. Adding or removing entities from the world at the point in time this event is called is completely unsupported and should be avoided.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/player/PlayerUntrackEntityEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/player/PlayerUntrackEntityEvent.html",
       "name": "PlayerUntrackEntityEvent",
       "source": "paper"
     },
@@ -4331,7 +4358,7 @@
       },
       "href": "com/destroystokyo/paper/event/player/PlayerUseUnknownEntityEvent.html",
       "javadoc": "Represents an event that is called when a player clicks an unknown entity. Useful for plugins dealing with virtual entities (entities that aren't actually spawned on the server). This event may be called multiple times per interaction with different interaction hands and with or without the clicked position.",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/player/PlayerUseUnknownEntityEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/player/PlayerUseUnknownEntityEvent.html",
       "name": "PlayerUseUnknownEntityEvent",
       "source": "paper"
     },
@@ -4398,7 +4425,7 @@
       },
       "href": "com/velocitypowered/api/event/connection/PluginMessageEvent.html",
       "javadoc": "This event is fired when a plugin message is sent to the proxy, either from a client (Player) or a server (ServerConnection). Velocity will wait on this event to finish firing before discarding the sent plugin message (if handled) or forwarding it to the server.",
-      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/connection/PluginMessageEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/connection/PluginMessageEvent.html",
       "name": "PluginMessageEvent",
       "source": "velocity"
     },
@@ -4420,7 +4447,7 @@
       },
       "href": "com/velocitypowered/api/event/command/PostCommandInvocationEvent.html",
       "javadoc": "This event is fired when velocity executed a command. This event is called after the event is handled. Commands can be cancelled or forwarded to backend servers in CommandExecuteEvent. This will prevent firing this event.",
-      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/command/PostCommandInvocationEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/command/PostCommandInvocationEvent.html",
       "name": "PostCommandInvocationEvent",
       "source": "velocity"
     },
@@ -4442,7 +4469,7 @@
       },
       "href": "com/velocitypowered/api/event/connection/PostLoginEvent.html",
       "javadoc": "This event is fired once the player has been fully initialized and is about to connect to their first server. Velocity will wait for this event to finish firing before it fires PlayerChooseInitialServerEvent with any default servers specified in the configuration, but you should try to limit the work done in any event that fires during the login process.",
-      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/connection/PostLoginEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/connection/PostLoginEvent.html",
       "name": "PostLoginEvent",
       "source": "velocity"
     },
@@ -4475,7 +4502,7 @@
       },
       "href": "com/destroystokyo/paper/event/entity/PreCreatureSpawnEvent.html",
       "javadoc": "WARNING: This event only fires for a limited number of cases, and not for every case that CreatureSpawnEvent does. You should still listen to CreatureSpawnEvent as a backup, and only use this event as an \"enhancement\". The intent of this event is to improve server performance, so it fires even if the spawning might fail later, for example when the entity would be unable to spawn due to limited space or lighting. Currently: NATURAL and SPAWNER based reasons. Also, Plugins that replace Entity Registrations with their own custom entities might not fire this event.",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/entity/PreCreatureSpawnEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/entity/PreCreatureSpawnEvent.html",
       "name": "PreCreatureSpawnEvent",
       "source": "paper"
     },
@@ -4497,7 +4524,7 @@
       },
       "href": "com/destroystokyo/paper/event/profile/PreFillProfileEvent.html",
       "javadoc": "Fired when the server is requesting to fill in properties of an incomplete profile, such as textures. Allows plugins to pre-populate cached properties and avoid a call to the Mojang API",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/profile/PreFillProfileEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/profile/PreFillProfileEvent.html",
       "name": "PreFillProfileEvent",
       "source": "paper"
     },
@@ -4519,7 +4546,7 @@
       },
       "href": "com/velocitypowered/api/event/connection/PreLoginEvent.html",
       "javadoc": "This event is fired when a player has initiated a connection with the proxy but before the proxy authenticates the player with Mojang or before the player's proxy connection is fully established (for offline mode). Velocity will wait for this event to finish firing before proceeding further with the login process, but you should try to limit the work done in any event that fires during the login process. As of Velocity 3.1.0, you may cast the InboundConnection to a LoginPhaseConnection to allow a proxy plugin to send login plugin messages to the client. ",
-      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/connection/PreLoginEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/connection/PreLoginEvent.html",
       "name": "PreLoginEvent",
       "source": "velocity"
     },
@@ -4530,7 +4557,7 @@
       },
       "href": "com/destroystokyo/paper/event/profile/PreLookupProfileEvent.html",
       "javadoc": "Allows a plugin to intercept a Profile Lookup for a Profile by name At the point of event fire, the UUID and properties are unset. If a plugin sets the UUID, and optionally the properties, the API call to look up the profile may be skipped. No guarantees are made about thread execution context for this event. If you need to know, check Event.isAsynchronous()",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/profile/PreLookupProfileEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/profile/PreLookupProfileEvent.html",
       "name": "PreLookupProfileEvent",
       "source": "paper"
     },
@@ -4557,7 +4584,7 @@
       },
       "href": "com/destroystokyo/paper/event/inventory/PrepareGrindstoneEvent.html",
       "javadoc": "Called when an item is put in a slot for grinding in a Grindstone",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/inventory/PrepareGrindstoneEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/inventory/PrepareGrindstoneEvent.html",
       "name": "PrepareGrindstoneEvent",
       "source": "paper"
     },
@@ -4611,7 +4638,7 @@
       },
       "href": "com/destroystokyo/paper/event/inventory/PrepareResultEvent.html",
       "javadoc": "Called when an item is put in an inventory containing a result slot",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/inventory/PrepareResultEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/inventory/PrepareResultEvent.html",
       "name": "PrepareResultEvent",
       "source": "paper"
     },
@@ -4633,7 +4660,7 @@
       },
       "href": "io/papermc/paper/event/player/PrePlayerAttackEntityEvent.html",
       "javadoc": "Called when the player tries to attack an entity. This occurs before any of the damage logic, so cancelling this event will prevent any sort of sounds from being played when attacking. This event will fire as cancelled for certain entities, with willAttack() being false to indicate that this entity will not actually be attacked. Note: there may be other factors (invulnerability, etc.) that will prevent this entity from being attacked that this event will not cover",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/player/PrePlayerAttackEntityEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/player/PrePlayerAttackEntityEvent.html",
       "name": "PrePlayerAttackEntityEvent",
       "source": "paper"
     },
@@ -4644,7 +4671,7 @@
       },
       "href": "com/destroystokyo/paper/event/entity/PreSpawnerSpawnEvent.html",
       "javadoc": "Called before an entity is spawned into a world by a spawner. This only includes the spawner's location and not the full BlockState snapshot for performance reasons. If you really need it you have to get the spawner yourself.",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/entity/PreSpawnerSpawnEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/entity/PreSpawnerSpawnEvent.html",
       "name": "PreSpawnerSpawnEvent",
       "source": "paper"
     },
@@ -4660,7 +4687,7 @@
       },
       "href": "com/velocitypowered/api/event/connection/PreTransferEvent.html",
       "javadoc": "This event is executed before sending a player to another host, either by the backend server or by a plugin using the Player.transferToHost(InetSocketAddress) method.",
-      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/connection/PreTransferEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/connection/PreTransferEvent.html",
       "name": "PreTransferEvent",
       "source": "velocity"
     },
@@ -4671,7 +4698,7 @@
       },
       "href": "com/destroystokyo/paper/event/profile/ProfileWhitelistVerifyEvent.html",
       "javadoc": "Fires when the server needs to verify if a player is whitelisted. Plugins may override/control the servers whitelist with this event, and dynamically change the kick message.",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/profile/ProfileWhitelistVerifyEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/profile/ProfileWhitelistVerifyEvent.html",
       "name": "ProfileWhitelistVerifyEvent",
       "source": "paper"
     },
@@ -4687,7 +4714,7 @@
       },
       "href": "com/destroystokyo/paper/event/entity/ProjectileCollideEvent.html",
       "javadoc": "Called when a projectile collides with an entity This event is called before EntityDamageByEntityEvent, and cancelling it will allow the projectile to continue flying",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/entity/ProjectileCollideEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/entity/ProjectileCollideEvent.html",
       "name": "ProjectileCollideEvent",
       "source": "paper"
     },
@@ -4720,7 +4747,7 @@
       },
       "href": "com/velocitypowered/api/event/proxy/ProxyInitializeEvent.html",
       "javadoc": "This event is fired by the proxy after plugins have been loaded but before the proxy starts accepting connections. Velocity will wait for this event to finish firing before it begins to accept new connections.",
-      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/proxy/ProxyInitializeEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/proxy/ProxyInitializeEvent.html",
       "name": "ProxyInitializeEvent",
       "source": "velocity"
     },
@@ -4742,8 +4769,24 @@
       },
       "href": "com/velocitypowered/api/event/proxy/ProxyPingEvent.html",
       "javadoc": "This event is fired when a request for server information is sent by a remote client, or when the server sends the MOTD and favicon to the client after a successful login. Velocity will wait on this event to finish firing before delivering the results to the remote client, but you are urged to handle this event as quickly as possible when handling this event due to the amount of ping packets a client can send.",
-      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/proxy/ProxyPingEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/proxy/ProxyPingEvent.html",
       "name": "ProxyPingEvent",
+      "source": "velocity"
+    },
+    {
+      "deprecate": "@Beta",
+      "deprecateDescription": {
+        "en": "",
+        "ja": ""
+      },
+      "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "com/velocitypowered/api/event/proxy/ProxyPreShutdownEvent.html",
+      "javadoc": "This event is fired by the proxy after it has stopped accepting new connections, but before players are disconnected. This is the last point at which you can interact with currently connected players, for example to transfer them to another proxy or perform other cleanup tasks.",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/proxy/ProxyPreShutdownEvent.html",
+      "name": "ProxyPreShutdownEvent",
       "source": "velocity"
     },
     {
@@ -4753,7 +4796,7 @@
       },
       "href": "com/velocitypowered/api/event/query/ProxyQueryEvent.html",
       "javadoc": "This event is fired if proxy is getting queried over GS4 Query protocol. Velocity will wait on this event to fire before providing a response to the client.",
-      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/query/ProxyQueryEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/query/ProxyQueryEvent.html",
       "name": "ProxyQueryEvent",
       "source": "velocity"
     },
@@ -4775,7 +4818,7 @@
       },
       "href": "com/velocitypowered/api/event/proxy/ProxyReloadEvent.html",
       "javadoc": "This event is fired when the proxy is reloaded by the user using /velocity reload.",
-      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/proxy/ProxyReloadEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/proxy/ProxyReloadEvent.html",
       "name": "ProxyReloadEvent",
       "source": "velocity"
     },
@@ -4786,7 +4829,7 @@
       },
       "href": "com/velocitypowered/api/event/proxy/ProxyShutdownEvent.html",
       "javadoc": "This event is fired by the proxy after the proxy has stopped accepting connections but before the proxy process exits. Velocity will wait for this event to finish firing before it exits.",
-      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/proxy/ProxyShutdownEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/proxy/ProxyShutdownEvent.html",
       "name": "ProxyShutdownEvent",
       "source": "velocity"
     },
@@ -4797,7 +4840,7 @@
       },
       "href": "io/papermc/paper/event/entity/PufferFishStateChangeEvent.html",
       "javadoc": "Called just before a PufferFish inflates or deflates.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/entity/PufferFishStateChangeEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/entity/PufferFishStateChangeEvent.html",
       "name": "PufferFishStateChangeEvent",
       "source": "paper"
     },
@@ -4864,7 +4907,7 @@
       },
       "href": "io/papermc/paper/threadedregions/RegionizedServerInitEvent.html",
       "javadoc": "This event is called after the server is initialised but before the server begins ticking regions in parallel. Plugins may use this as a hook to run post initialisation logic without worrying about the possibility that regions are ticking in parallel.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/threadedregions/RegionizedServerInitEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/threadedregions/RegionizedServerInitEvent.html",
       "name": "RegionizedServerInitEvent",
       "source": "paper"
     },
@@ -4875,7 +4918,7 @@
       },
       "href": "io/papermc/paper/registry/event/RegistryComposeEvent.html",
       "javadoc": "Event object for RegistryEventProvider.compose(). This event is fired after a registry is loaded with its normal values. It provides a way for plugins to add new objects to the registry.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/registry/event/RegistryComposeEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/registry/event/RegistryComposeEvent.html",
       "name": "RegistryComposeEvent",
       "source": "paper"
     },
@@ -4886,7 +4929,7 @@
       },
       "href": "io/papermc/paper/registry/event/RegistryEntryAddEvent.html",
       "javadoc": "Event object for RegistryEventProvider.entryAdd(). This event is fired right before a specific entry is registered in/added to registry. It provides a way for plugins to modify parts of this entry.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/registry/event/RegistryEntryAddEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/registry/event/RegistryEntryAddEvent.html",
       "name": "RegistryEntryAddEvent",
       "source": "paper"
     },
@@ -4897,24 +4940,8 @@
       },
       "href": "io/papermc/paper/registry/event/RegistryEvent.html",
       "javadoc": "Base type for all registry events.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/registry/event/RegistryEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/registry/event/RegistryEvent.html",
       "name": "RegistryEvent",
-      "source": "paper"
-    },
-    {
-      "deprecate": "@Deprecated",
-      "deprecateDescription": {
-        "en": "Experimental phase.",
-        "ja": "実験段階。"
-      },
-      "description": {
-        "en": "Event object for RegistryEventProvider.freeze(). This event is fired right before a registry is frozen disallowing further changes.",
-        "ja": "レジストリが凍結してそれ以上の変更が許可されなくなる直前に呼び出される。"
-      },
-      "href": "io/papermc/paper/registry/event/RegistryFreezeEvent.html",
-      "javadoc": "Event object for RegistryEventProvider.freeze(). This event is fired right before a registry is frozen disallowing further changes. It provides a way for plugins to add new objects to the registry.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/registry/event/RegistryFreezeEvent.html",
-      "name": "RegistryFreezeEvent",
       "source": "paper"
     },
     {
@@ -4935,7 +4962,7 @@
       },
       "href": "com/velocitypowered/api/event/ResultedEvent.html",
       "javadoc": "Indicates an event that has a result attached to it.",
-      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/ResultedEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/ResultedEvent.html",
       "name": "ResultedEvent",
       "source": "velocity"
     },
@@ -5000,7 +5027,7 @@
       },
       "href": "com/velocitypowered/api/event/player/ServerConnectedEvent.html",
       "javadoc": "This event is fired once the player has successfully connected to the target server and the connection to the previous server has been de-established. Note: For historical reasons, Velocity does wait on this event to finish firing before continuing the server connection process. This behavior is deprecated and likely to be removed in Polymer. ",
-      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/ServerConnectedEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/player/ServerConnectedEvent.html",
       "name": "ServerConnectedEvent",
       "source": "velocity"
     },
@@ -5045,7 +5072,7 @@
       },
       "href": "com/destroystokyo/paper/event/server/ServerExceptionEvent.html",
       "javadoc": "Called whenever an exception is thrown in a recoverable section of the server.",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/server/ServerExceptionEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/server/ServerExceptionEvent.html",
       "name": "ServerExceptionEvent",
       "source": "paper"
     },
@@ -5089,7 +5116,7 @@
       },
       "href": "com/velocitypowered/api/event/player/ServerLoginPluginMessageEvent.html",
       "javadoc": "Fired when a server sends a login plugin message to the proxy. Plugins have the opportunity to respond to the messages as needed. Velocity will wait on this event to finish. The server will be responsible for continuing the login process once the server is satisfied with any login plugin responses sent by proxy plugins (or messages indicating a lack of response).",
-      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/ServerLoginPluginMessageEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/player/ServerLoginPluginMessageEvent.html",
       "name": "ServerLoginPluginMessageEvent",
       "source": "velocity"
     },
@@ -5100,7 +5127,7 @@
       },
       "href": "com/velocitypowered/api/event/player/ServerPostConnectEvent.html",
       "javadoc": "Fired after the player has connected to a server. The server the player is now connected to is available in Player.getCurrentServer(). Velocity will not wait on this event to finish firing.",
-      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/ServerPostConnectEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/player/ServerPostConnectEvent.html",
       "name": "ServerPostConnectEvent",
       "source": "velocity"
     },
@@ -5111,7 +5138,7 @@
       },
       "href": "com/velocitypowered/api/event/player/ServerPreConnectEvent.html",
       "javadoc": "This event is fired before the player connects to a server. Velocity will wait on this event to finish firing before initiating the connection.",
-      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/ServerPreConnectEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/player/ServerPreConnectEvent.html",
       "name": "ServerPreConnectEvent",
       "source": "velocity"
     },
@@ -5122,7 +5149,7 @@
       },
       "href": "com/velocitypowered/api/event/proxy/server/ServerRegisteredEvent.html",
       "javadoc": "This event is fired by the proxy after a backend server is registered to the server map. Currently, it may occur when a server is registered dynamically at runtime or when a server is replaced due to configuration reload.",
-      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/proxy/server/ServerRegisteredEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/proxy/server/ServerRegisteredEvent.html",
       "name": "ServerRegisteredEvent",
       "source": "velocity"
     },
@@ -5133,7 +5160,7 @@
       },
       "href": "com/velocitypowered/api/event/player/ServerResourcePackRemoveEvent.html",
       "javadoc": "This event is fired when the downstream server tries to remove a resource pack from player or clear all of them. The proxy will wait on this event to finish before forwarding the action to the user. If this event is denied, no resource packs will be removed from player.",
-      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/ServerResourcePackRemoveEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/player/ServerResourcePackRemoveEvent.html",
       "name": "ServerResourcePackRemoveEvent",
       "source": "velocity"
     },
@@ -5144,7 +5171,7 @@
       },
       "href": "com/velocitypowered/api/event/player/ServerResourcePackSendEvent.html",
       "javadoc": "This event is fired when the downstream server tries to send a player a ResourcePack packet. The proxy will wait on this event to finish before forwarding the resource pack to the user. If this event is denied, it will retroactively send a DENIED status to the downstream server in response. If the downstream server has it set to \"forced\" it will forcefully disconnect the user.",
-      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/ServerResourcePackSendEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/player/ServerResourcePackSendEvent.html",
       "name": "ServerResourcePackSendEvent",
       "source": "velocity"
     },
@@ -5155,7 +5182,7 @@
       },
       "href": "io/papermc/paper/event/server/ServerResourcesReloadedEvent.html",
       "javadoc": "Called when resources such as datapacks are reloaded (e.g. /minecraft:reload) Intended for use to re-register custom recipes, advancements that may be lost during a reload like this.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/server/ServerResourcesReloadedEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/server/ServerResourcesReloadedEvent.html",
       "name": "ServerResourcesReloadedEvent",
       "source": "paper"
     },
@@ -5177,7 +5204,7 @@
       },
       "href": "com/destroystokyo/paper/event/server/ServerTickEndEvent.html",
       "javadoc": "Called when the server has finished ticking the main loop",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/server/ServerTickEndEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/server/ServerTickEndEvent.html",
       "name": "ServerTickEndEvent",
       "source": "paper"
     },
@@ -5187,7 +5214,7 @@
         "ja": "メインループのチェックが開始した時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/server/ServerTickStartEvent.html",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/server/ServerTickStartEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/server/ServerTickStartEvent.html",
       "name": "ServerTickStartEvent",
       "source": "paper"
     },
@@ -5198,7 +5225,7 @@
       },
       "href": "com/velocitypowered/api/event/proxy/server/ServerUnregisteredEvent.html",
       "javadoc": "This event is fired by the proxy after a backend server is unregistered from the server map. Currently, it may occur when a server is unregistered dynamically at runtime or when a server is replaced due to configuration reload.",
-      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/proxy/server/ServerUnregisteredEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/proxy/server/ServerUnregisteredEvent.html",
       "name": "ServerUnregisteredEvent",
       "source": "velocity"
     },
@@ -5276,7 +5303,7 @@
       },
       "href": "io/papermc/paper/event/entity/ShulkerDuplicateEvent.html",
       "javadoc": "Fired when a shulker duplicates itself by spawning a new shulker. The event is fired prior to the newly created shulker, accessible via getEntity(), being added to the world.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/entity/ShulkerDuplicateEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/entity/ShulkerDuplicateEvent.html",
       "name": "ShulkerDuplicateEvent",
       "source": "paper"
     },
@@ -5298,7 +5325,7 @@
       },
       "href": "com/destroystokyo/paper/event/entity/SkeletonHorseTrapEvent.html",
       "javadoc": "Event called when a player gets close to a skeleton horse and triggers the lightning trap",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/entity/SkeletonHorseTrapEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/entity/SkeletonHorseTrapEvent.html",
       "name": "SkeletonHorseTrapEvent",
       "source": "paper"
     },
@@ -5309,7 +5336,7 @@
       },
       "href": "com/destroystokyo/paper/event/entity/SlimeChangeDirectionEvent.html",
       "javadoc": "Fired when a Slime decides to change its facing direction. This event does not fire for the entity's actual movement. Only when it is choosing to change direction.",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/entity/SlimeChangeDirectionEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/entity/SlimeChangeDirectionEvent.html",
       "name": "SlimeChangeDirectionEvent",
       "source": "paper"
     },
@@ -5320,7 +5347,7 @@
       },
       "href": "com/destroystokyo/paper/event/entity/SlimePathfindEvent.html",
       "javadoc": "Fired when a Slime decides to start pathfinding. This event does not fire for the entity's actual movement. Only when it is choosing to start moving.",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/entity/SlimePathfindEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/entity/SlimePathfindEvent.html",
       "name": "SlimePathfindEvent",
       "source": "paper"
     },
@@ -5342,7 +5369,7 @@
       },
       "href": "com/destroystokyo/paper/event/entity/SlimeSwimEvent.html",
       "javadoc": "Fired when a Slime decides to start jumping while swimming in water/lava. This event does not fire for the entity's actual movement. Only when it is choosing to start jumping.",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/entity/SlimeSwimEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/entity/SlimeSwimEvent.html",
       "name": "SlimeSwimEvent",
       "source": "paper"
     },
@@ -5353,7 +5380,7 @@
       },
       "href": "com/destroystokyo/paper/event/entity/SlimeTargetLivingEntityEvent.html",
       "javadoc": "Fired when a Slime decides to change direction to target a LivingEntity. This event does not fire for the entity's actual movement. Only when it is choosing to start moving.",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/entity/SlimeTargetLivingEntityEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/entity/SlimeTargetLivingEntityEvent.html",
       "name": "SlimeTargetLivingEntityEvent",
       "source": "paper"
     },
@@ -5364,7 +5391,7 @@
       },
       "href": "com/destroystokyo/paper/event/entity/SlimeWanderEvent.html",
       "javadoc": "Fired when a Slime decides to start wandering. This event does not fire for the entity's actual movement. Only when it is choosing to start moving.",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/entity/SlimeWanderEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/entity/SlimeWanderEvent.html",
       "name": "SlimeWanderEvent",
       "source": "paper"
     },
@@ -5441,7 +5468,7 @@
       },
       "href": "io/papermc/paper/event/world/StructuresLocateEvent.html",
       "javadoc": "Called before a set of configured structures is located. This happens when: The /locate command is used. An Eye of Ender is used. An Explorer/Treasure Map is activated. A dolphin swims to a treasure location. A trade is done with a villager for a map. World.locateNearestStructure(Location, StructureType, int, boolean) is invoked. World.locateNearestStructure(Location, Structure, int, boolean) is invoked. ",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/world/StructuresLocateEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/world/StructuresLocateEvent.html",
       "name": "StructuresLocateEvent",
       "source": "paper"
     },
@@ -5474,7 +5501,7 @@
       },
       "href": "com/velocitypowered/api/event/player/TabCompleteEvent.html",
       "javadoc": "This event is fired after a tab complete response is sent by the remote server, for clients on 1.12.2 and below. You have the opportunity to modify the response sent to the remote player. Velocity will wait for this event to finish firing before sending the tab complete results to the client. Be sure to be as fast as possible, since the client will freeze while it waits for the tab complete results.",
-      "link": "https://jd.papermc.io/velocity/3.3.0/com/velocitypowered/api/event/player/TabCompleteEvent.html",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/player/TabCompleteEvent.html",
       "name": "TabCompleteEvent",
       "source": "velocity"
     },
@@ -5496,7 +5523,7 @@
       },
       "href": "io/papermc/paper/event/entity/TameableDeathMessageEvent.html",
       "javadoc": "Called when a Tameable dies and sends a death message.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/entity/TameableDeathMessageEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/entity/TameableDeathMessageEvent.html",
       "name": "TameableDeathMessageEvent",
       "source": "paper"
     },
@@ -5519,7 +5546,7 @@
       },
       "href": "io/papermc/paper/event/block/TargetHitEvent.html",
       "javadoc": "Called when a Target Block is hit by a projectile. Cancelling this event will stop the Target from emitting a redstone signal, and in the case that the shooter is a player, will stop them from receiving advancement criteria.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/block/TargetHitEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/block/TargetHitEvent.html",
       "name": "TargetHitEvent",
       "source": "paper"
     },
@@ -5530,7 +5557,7 @@
       },
       "href": "com/destroystokyo/paper/event/entity/ThrownEggHatchEvent.html",
       "javadoc": "Called when a thrown egg might hatch. This event fires for all thrown eggs that may hatch, players, dispensers, etc.",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/entity/ThrownEggHatchEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/entity/ThrownEggHatchEvent.html",
       "name": "ThrownEggHatchEvent",
       "source": "paper"
     },
@@ -5568,7 +5595,7 @@
       },
       "href": "com/destroystokyo/paper/event/block/TNTPrimeEvent.html",
       "javadoc": "Called when TNT block is about to turn into TNTPrimed Cancelling it won't turn TNT into TNTPrimed and leaves the TNT block as-is",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/block/TNTPrimeEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/block/TNTPrimeEvent.html",
       "name": "TNTPrimeEvent",
       "source": "paper"
     },
@@ -5617,7 +5644,7 @@
       },
       "href": "com/destroystokyo/paper/event/entity/TurtleGoHomeEvent.html",
       "javadoc": "Fired when a Turtle decides to go home",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/entity/TurtleGoHomeEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/entity/TurtleGoHomeEvent.html",
       "name": "TurtleGoHomeEvent",
       "source": "paper"
     },
@@ -5628,7 +5655,7 @@
       },
       "href": "com/destroystokyo/paper/event/entity/TurtleLayEggEvent.html",
       "javadoc": "Fired when a Turtle lays eggs",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/entity/TurtleLayEggEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/entity/TurtleLayEggEvent.html",
       "name": "TurtleLayEggEvent",
       "source": "paper"
     },
@@ -5639,7 +5666,7 @@
       },
       "href": "com/destroystokyo/paper/event/entity/TurtleStartDiggingEvent.html",
       "javadoc": "Fired when a Turtle starts digging to lay eggs",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/entity/TurtleStartDiggingEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/entity/TurtleStartDiggingEvent.html",
       "name": "TurtleStartDiggingEvent",
       "source": "paper"
     },
@@ -5655,7 +5682,7 @@
       },
       "href": "io/papermc/paper/event/packet/UncheckedSignChangeEvent.html",
       "javadoc": "Called when a client attempts to modify a sign, but the location at which the sign should be edited has not yet been checked for the existence of a real sign. Cancelling this event will prevent further processing of the sign change, but needs further handling by the plugin as the client's local world might be in an inconsistent state.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/packet/UncheckedSignChangeEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/packet/UncheckedSignChangeEvent.html",
       "name": "UncheckedSignChangeEvent",
       "source": "paper"
     },
@@ -5666,7 +5693,7 @@
       },
       "href": "io/papermc/paper/event/block/VaultChangeStateEvent.html",
       "javadoc": "Called when a vault block changes state.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/block/VaultChangeStateEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/block/VaultChangeStateEvent.html",
       "name": "VaultChangeStateEvent",
       "source": "paper"
     },
@@ -5859,7 +5886,7 @@
       },
       "href": "io/papermc/paper/event/entity/WardenAngerChangeEvent.html",
       "javadoc": "Called when a Warden's anger level has changed due to another entity. If the event is cancelled, the warden's anger level will not change.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/entity/WardenAngerChangeEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/entity/WardenAngerChangeEvent.html",
       "name": "WardenAngerChangeEvent",
       "source": "paper"
     },
@@ -5870,7 +5897,7 @@
       },
       "href": "io/papermc/paper/event/entity/WaterBottleSplashEvent.html",
       "javadoc": "Called when a splash water potion \"splashes\" and affects different entities in different ways.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/entity/WaterBottleSplashEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/entity/WaterBottleSplashEvent.html",
       "name": "WaterBottleSplashEvent",
       "source": "paper"
     },
@@ -5904,7 +5931,7 @@
       },
       "href": "io/papermc/paper/event/server/WhitelistStateUpdateEvent.html",
       "javadoc": "This event gets called when the whitelist status of a player is changed",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/server/WhitelistStateUpdateEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/server/WhitelistStateUpdateEvent.html",
       "name": "WhitelistStateUpdateEvent",
       "source": "paper"
     },
@@ -5915,7 +5942,7 @@
       },
       "href": "com/destroystokyo/paper/event/server/WhitelistToggleEvent.html",
       "javadoc": "This event is fired when whitelist is toggled",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/server/WhitelistToggleEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/server/WhitelistToggleEvent.html",
       "name": "WhitelistToggleEvent",
       "source": "paper"
     },
@@ -5926,7 +5953,7 @@
       },
       "href": "com/destroystokyo/paper/event/entity/WitchConsumePotionEvent.html",
       "javadoc": "Fired when a witch consumes the potion in their hand to buff themselves.",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/entity/WitchConsumePotionEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/entity/WitchConsumePotionEvent.html",
       "name": "WitchConsumePotionEvent",
       "source": "paper"
     },
@@ -5936,7 +5963,7 @@
         "ja": "ウィッチのポーションの準備が出来る時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/entity/WitchReadyPotionEvent.html",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/entity/WitchReadyPotionEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/entity/WitchReadyPotionEvent.html",
       "name": "WitchReadyPotionEvent",
       "source": "paper"
     },
@@ -5947,7 +5974,7 @@
       },
       "href": "com/destroystokyo/paper/event/entity/WitchThrowPotionEvent.html",
       "javadoc": "Fired when a witch throws a potion at a player",
-      "link": "https://jd.papermc.io/paper/1.21.8/com/destroystokyo/paper/event/entity/WitchThrowPotionEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/com/destroystokyo/paper/event/entity/WitchThrowPotionEvent.html",
       "name": "WitchThrowPotionEvent",
       "source": "paper"
     },
@@ -5958,7 +5985,7 @@
       },
       "href": "io/papermc/paper/event/world/border/WorldBorderBoundsChangeEvent.html",
       "javadoc": "Called when a world border changes its bounds, either over time, or instantly.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/world/border/WorldBorderBoundsChangeEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/world/border/WorldBorderBoundsChangeEvent.html",
       "name": "WorldBorderBoundsChangeEvent",
       "source": "paper"
     },
@@ -5969,7 +5996,7 @@
       },
       "href": "io/papermc/paper/event/world/border/WorldBorderBoundsChangeFinishEvent.html",
       "javadoc": "Called when a moving world border has finished its move.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/world/border/WorldBorderBoundsChangeFinishEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/world/border/WorldBorderBoundsChangeFinishEvent.html",
       "name": "WorldBorderBoundsChangeFinishEvent",
       "source": "paper"
     },
@@ -5980,7 +6007,7 @@
       },
       "href": "io/papermc/paper/event/world/border/WorldBorderCenterChangeEvent.html",
       "javadoc": "Called when a world border's center is changed.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/world/border/WorldBorderCenterChangeEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/world/border/WorldBorderCenterChangeEvent.html",
       "name": "WorldBorderCenterChangeEvent",
       "source": "paper"
     },
@@ -5991,7 +6018,7 @@
       },
       "abstract": true,
       "href": "io/papermc/paper/event/world/border/WorldBorderEvent.html",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/world/border/WorldBorderEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/world/border/WorldBorderEvent.html",
       "name": "WorldBorderEvent",
       "source": "paper"
     },
@@ -6002,7 +6029,7 @@
       },
       "href": "io/papermc/paper/event/world/WorldDifficultyChangeEvent.html",
       "javadoc": "Called when a world's difficulty is changed, either by command or by api. If the world is in hardcore the resulting difficulty will always be Difficulty.HARD",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/world/WorldDifficultyChangeEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/world/WorldDifficultyChangeEvent.html",
       "name": "WorldDifficultyChangeEvent",
       "source": "paper"
     },
@@ -6025,7 +6052,7 @@
       },
       "href": "io/papermc/paper/event/world/WorldGameRuleChangeEvent.html",
       "javadoc": "Called when a world's gamerule is changed, either by command or by api.",
-      "link": "https://jd.papermc.io/paper/1.21.8/io/papermc/paper/event/world/WorldGameRuleChangeEvent.html",
+      "link": "https://jd.papermc.io/paper/1.21.10/io/papermc/paper/event/world/WorldGameRuleChangeEvent.html",
       "name": "WorldGameRuleChangeEvent",
       "source": "paper"
     },
