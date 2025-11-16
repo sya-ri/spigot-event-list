@@ -1932,6 +1932,11 @@
       "source": "spigot"
     },
     {
+      "deprecate": "@Deprecated",
+      "deprecateDescription": {
+        "en": "",
+        "ja": ""
+      },
       "description": {
         "en": "Fired when an entity is hindered from teleporting.",
         "ja": "エンティティがテレポートできない時に呼び出される。"
