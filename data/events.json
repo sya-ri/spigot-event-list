@@ -1932,22 +1932,6 @@
       "source": "spigot"
     },
     {
-      "deprecate": "@Deprecated",
-      "deprecateDescription": {
-        "en": "",
-        "ja": ""
-      },
-      "description": {
-        "en": "Fired when an entity is hindered from teleporting.",
-        "ja": "エンティティがテレポートできない時に呼び出される。"
-      },
-      "href": "org/purpurmc/purpur/event/entity/EntityTeleportHinderedEvent.html",
-      "javadoc": "Fired when an entity is hindered from teleporting.",
-      "link": "https://purpurmc.org/javadoc/org/purpurmc/purpur/event/entity/EntityTeleportHinderedEvent.html",
-      "name": "EntityTeleportHinderedEvent",
-      "source": "purpur"
-    },
-    {
       "description": {
         "en": "Called when an entity's gliding status is toggled with an Elytra.",
         "ja": "エンティティの滑空状態が切り替わる時に呼び出される。"
