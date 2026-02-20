@@ -27,7 +27,7 @@
     "@types/react-dom": "18.3.7",
     "autoprefixer": "10.4.24",
     "daisyui": "5.5.19",
-    "eslint": "8.57.1",
+    "eslint": "10.0.1",
     "eslint-config-next": "15.5.12",
     "eslint-config-prettier": "10.1.8",
     "postcss": "8.5.6",
