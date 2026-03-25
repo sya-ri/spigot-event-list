@@ -63,7 +63,7 @@
         "ja": "AreaEffectCloud の効果が付与される時に呼び出される。5ティック毎に1回発生する。"
       },
       "href": "org/bukkit/event/entity/AreaEffectCloudApplyEvent.html",
-      "javadoc": "Called when a lingering potion applies it's effects. Happens once every 5 ticks",
+      "javadoc": "Called when a lingering potion applies it's effects. Happensonce every 5 ticks",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/AreaEffectCloudApplyEvent.html",
       "name": "AreaEffectCloudApplyEvent",
       "source": "spigot"
@@ -138,7 +138,7 @@
         "ja": "プレイヤーがチャットした時に呼び出される。非同期でも同期でも呼び出されることがある。"
       },
       "href": "org/bukkit/event/player/AsyncPlayerChatEvent.html",
-      "javadoc": "This event will sometimes fire synchronously, depending on how it was triggered. The constructor provides a boolean to indicate if the event was fired synchronously or asynchronously. When asynchronous, this event can be called from any thread, sans the main thread, and has limited access to the API. If a player is the direct cause of this event by an incoming packet, this event will be asynchronous. If a plugin triggers this event by compelling a player to chat, this event will be synchronous. Care should be taken to check Event.isAsynchronous() and treat the event appropriately.",
+      "javadoc": "This event will sometimes fire synchronously, depending on how it wastriggered.The constructor provides a boolean to indicate if the event was firedsynchronously or asynchronously. When asynchronous, this event can becalled from any thread, sans the main thread, and has limited access to theAPI.If a player is the direct cause of this event by an incoming packet, thisevent will be asynchronous. If a plugin triggers this event by compelling aplayer to chat, this event will be synchronous.Care should be taken to check Event.isAsynchronous() and treat the eventappropriately.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/AsyncPlayerChatEvent.html",
       "name": "AsyncPlayerChatEvent",
       "source": "spigot"
@@ -154,7 +154,7 @@
         "ja": "チャットのプレビュー用にフォーマットする時に呼び出される。"
       },
       "href": "org/bukkit/event/player/AsyncPlayerChatPreviewEvent.html",
-      "javadoc": "Used to format chat for chat preview. If this event is used, then the result of the corresponding AsyncPlayerChatEvent must be formatted in the same way.",
+      "javadoc": "Used to format chat for chat preview. If this event is used, then the resultof the corresponding AsyncPlayerChatEvent must be formatted inthe same way.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/AsyncPlayerChatPreviewEvent.html",
       "name": "AsyncPlayerChatPreviewEvent",
       "source": "spigot"
@@ -176,7 +176,7 @@
         "ja": "プレイヤーがログインしようとしている時に呼び出される。非同期で処理される。"
       },
       "href": "org/bukkit/event/player/AsyncPlayerPreLoginEvent.html",
-      "javadoc": "Stores details for players attempting to log in. This event is asynchronous, and not run using main thread.",
+      "javadoc": "Stores details for players attempting to log in.This event is asynchronous, and not run using main thread.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/AsyncPlayerPreLoginEvent.html",
       "name": "AsyncPlayerPreLoginEvent",
       "source": "spigot"
@@ -235,7 +235,7 @@
         "ja": "構造物が生成された時に呼び出される。"
       },
       "href": "org/bukkit/event/world/AsyncStructureGenerateEvent.html",
-      "javadoc": "This event will sometimes fire synchronously, depending on how it was triggered. The constructor provides a boolean to indicate if the event was fired synchronously or asynchronously. When asynchronous, this event can be called from any thread, sans the main thread, and has limited access to the API. If a Structure is naturally placed in a chunk of the world, this event will be asynchronous. If a player executes the '/place structure' command, this event will be synchronous. Allows to register transformers that can modify the blocks placed and entities spawned by the structure. Care should be taken to check Event.isAsynchronous() and treat the event appropriately. ",
+      "javadoc": "This event will sometimes fire synchronously, depending on how it wastriggered.The constructor provides a boolean to indicate if the event was firedsynchronously or asynchronously. When asynchronous, this event can be calledfrom any thread, sans the main thread, and has limited access to the API.If a Structure is naturally placed in a chunk of the world, thisevent will be asynchronous. If a player executes the '/place structure'command, this event will be synchronous.Allows to register transformers that can modify the blocks placed andentities spawned by the structure.Care should be taken to check Event.isAsynchronous() and treat the eventappropriately.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/world/AsyncStructureGenerateEvent.html",
       "name": "AsyncStructureGenerateEvent",
       "source": "spigot"
@@ -268,7 +268,7 @@
         "ja": "コウモリが眠ったり起きたりする時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/BatToggleSleepEvent.html",
-      "javadoc": "Called when a bat attempts to sleep or wake up from its slumber. If a Bat Toggle Sleep event is cancelled, the Bat will not toggle its sleep state.",
+      "javadoc": "Called when a bat attempts to sleep or wake up from its slumber.If a Bat Toggle Sleep event is cancelled, the Bat will not toggle its sleepstate.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/BatToggleSleepEvent.html",
       "name": "BatToggleSleepEvent",
       "source": "spigot"
@@ -345,7 +345,7 @@
         "ja": "ベルが共鳴し、近くのレイダーに影響を及ぼす時に呼び出される。"
       },
       "href": "org/bukkit/event/block/BellResonateEvent.html",
-      "javadoc": "Called when a bell resonated after being rung and highlights nearby raiders. A bell will only resonate if raiders are in the vicinity of the bell.",
+      "javadoc": "Called when a bell resonated after being rung and highlights nearby raiders.A bell will only resonate if raiders are in the vicinity of the bell.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BellResonateEvent.html",
       "name": "BellResonateEvent",
       "source": "spigot"
@@ -410,7 +410,7 @@
         "ja": "プレイヤーがブロックを破壊する時に呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockBreakEvent.html",
-      "javadoc": "Called when a block is broken by a player. If you wish to have the block drop experience, you must set the experience value above 0. By default, experience will be set in the event if: The player is not in creative or adventure mode The player can loot the block (ie: does not destroy it completely, by using the correct tool) The player does not have silk touch The block drops experience in vanilla Minecraft Note: Plugins wanting to simulate a traditional block drop should set the block to air and utilize their own methods for determining what the default drop for the block being broken is and what to do about it, if anything. If a Block Break event is cancelled, the block will not break and experience will not drop.",
+      "javadoc": "Called when a block is broken by a player.If you wish to have the block drop experience, you must set the experiencevalue above 0. By default, experience will be set in the event if:The player is not in creative or adventure modeThe player can loot the block (ie: does not destroy it completely, by using the correct tool)The player does not have silk touchThe block drops experience in vanilla MinecraftNote:Plugins wanting to simulate a traditional block drop should set the blockto air and utilize their own methods for determining what the default dropfor the block being broken is and what to do about it, if anything.If a Block Break event is cancelled, the block will not break andexperience will not drop.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockBreakEvent.html",
       "name": "BlockBreakEvent",
       "source": "spigot"
@@ -448,7 +448,7 @@
         "ja": "ブロックが燃え尽きて破壊される時に呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockBurnEvent.html",
-      "javadoc": "Called when a block is destroyed as a result of being burnt by fire. If a Block Burn event is cancelled, the block will not be destroyed as a result of being burnt by fire.",
+      "javadoc": "Called when a block is destroyed as a result of being burnt by fire.If a Block Burn event is cancelled, the block will not be destroyed as aresult of being burnt by fire.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockBurnEvent.html",
       "name": "BlockBurnEvent",
       "source": "spigot"
@@ -459,7 +459,7 @@
         "ja": "ブロックを設置しようとした時に呼び出される。設置可能かどうかを確認する。"
       },
       "href": "org/bukkit/event/block/BlockCanBuildEvent.html",
-      "javadoc": "Called when we try to place a block, to see if we can build it here or not. Note: The Block returned by getBlock() is the block we are trying to place on, not the block we are trying to place. If you want to figure out what is being placed, use getMaterial() instead. ",
+      "javadoc": "Called when we try to place a block, to see if we can build it here or not.Note:The Block returned by getBlock() is the block we are trying to place on, not the block we are trying to place.If you want to figure out what is being placed, use getMaterial() instead.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockCanBuildEvent.html",
       "name": "BlockCanBuildEvent",
       "source": "spigot"
@@ -492,7 +492,7 @@
         "ja": "プレイヤーがブロックを損傷させる時に呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockDamageEvent.html",
-      "javadoc": "Called when a block is damaged by a player. If a Block Damage event is cancelled, the block will not be damaged.",
+      "javadoc": "Called when a block is damaged by a player.If a Block Damage event is cancelled, the block will not be damaged.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockDamageEvent.html",
       "name": "BlockDamageEvent",
       "source": "spigot"
@@ -514,7 +514,7 @@
         "ja": "ディスペンサーから装備可能なアイテムが射出され、エンティティに装備される時に呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockDispenseArmorEvent.html",
-      "javadoc": "Called when an equippable item is dispensed from a block and equipped on a nearby entity. If a Block Dispense Armor event is cancelled, the equipment will not be equipped on the target entity.",
+      "javadoc": "Called when an equippable item is dispensed from a block and equipped on anearby entity.If a Block Dispense Armor event is cancelled, the equipment will not beequipped on the target entity.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockDispenseArmorEvent.html",
       "name": "BlockDispenseArmorEvent",
       "source": "spigot"
@@ -525,7 +525,7 @@
         "ja": "ディスペンサーからアイテムが射出される時に呼び出される。このイベントをキャンセルしても射出されたアイテムは減る。BlockPreDispenseEvent を使うことでアイテムの消費もキャンセルできる。"
       },
       "href": "org/bukkit/event/block/BlockDispenseEvent.html",
-      "javadoc": "Called when an item is dispensed from a block. If a Block Dispense event is cancelled, the block will not dispense the item.",
+      "javadoc": "Called when an item is dispensed from a block.If a Block Dispense event is cancelled, the block will not dispense theitem.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockDispenseEvent.html",
       "name": "BlockDispenseEvent",
       "source": "spigot"
@@ -541,7 +541,7 @@
         "ja": "宝物庫などのブロックが指定されたルートテーブルから戦利品を排出する時に呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockDispenseLootEvent.html",
-      "javadoc": "Called when a block dispenses loot from its designated LootTable. This is not to be confused with events like BlockDispenseEvent which fires when a singular item is dispensed from its inventory container. Example: A player unlocks a trial chamber vault and the vault block dispenses its loot.",
+      "javadoc": "Called when a block dispenses loot from its designated LootTable. This is notto be confused with events like BlockDispenseEvent which fires when asingular item is dispensed from its inventory container.Example: A player unlocks a trial chamber vault and the vault block dispensesits loot.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockDispenseLootEvent.html",
       "name": "BlockDispenseLootEvent",
       "source": "spigot"
@@ -552,7 +552,7 @@
         "ja": "プレイヤーによって破壊されたブロックがアイテムとしてドロップする時に呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockDropItemEvent.html",
-      "javadoc": "Called if a block broken by a player drops an item. If the block break is cancelled, this event won't be called. If isDropItems in BlockBreakEvent is set to false, this event won't be called. This event will also be called if the player breaks a multi block structure, for example a torch on top of a stone. Both items will have an event call. The Block is already broken as this event is called, so #getBlock() will be AIR in most cases. Use #getBlockState() for more Information about the broken block.",
+      "javadoc": "Called if a block broken by a player drops an item.If the block break is cancelled, this event won't be called.If isDropItems in BlockBreakEvent is set to false, this event won't becalled.This event will also be called if the player breaks a multi block structure,for example a torch on top of a stone. Both items will have an event call.The Block is already broken as this event is called, so #getBlock() will beAIR in most cases. Use #getBlockState() for more Information about the brokenblock.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockDropItemEvent.html",
       "name": "BlockDropItemEvent",
       "source": "spigot"
@@ -586,7 +586,7 @@
         "ja": "ブロックが爆発する時に呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockExplodeEvent.html",
-      "javadoc": "Called when a block explodes. Note that due to the nature of explosions, BlockEvent.getBlock() will always be an air block. getExplodedBlockState() should be used to get information about the block state that exploded.",
+      "javadoc": "Called when a block explodes.Note that due to the nature of explosions, BlockEvent.getBlock() will always bean air block. getExplodedBlockState() should be used to getinformation about the block state that exploded.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockExplodeEvent.html",
       "name": "BlockExplodeEvent",
       "source": "spigot"
@@ -597,7 +597,7 @@
         "ja": "自然にブロックが溶けたり消滅したりする時に呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockFadeEvent.html",
-      "javadoc": "Called when a block fades, melts or disappears based on world conditions Examples: Snow melting due to being near a light source. Ice melting due to being near a light source. Fire burning out after time, without destroying fuel block. Coral fading to dead coral due to lack of water Turtle Egg bursting when a turtle hatches If a Block Fade event is cancelled, the block will not fade, melt or disappear.",
+      "javadoc": "Called when a block fades, melts or disappears based on world conditionsExamples:Snow melting due to being near a light source.Ice melting due to being near a light source.Fire burning out after time, without destroying fuel block.Coral fading to dead coral due to lack of waterTurtle Egg bursting when a turtle hatchesIf a Block Fade event is cancelled, the block will not fade, melt ordisappear.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockFadeEvent.html",
       "name": "BlockFadeEvent",
       "source": "spigot"
@@ -619,7 +619,7 @@
         "ja": "プレイヤーが骨粉を使用し、ブロックに変更が生じる時に呼び出される。StructureGrowEvent の後に呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockFertilizeEvent.html",
-      "javadoc": "Called with the block changes resulting from a player fertilizing a given block with bonemeal. Will be called after the applicable StructureGrowEvent.",
+      "javadoc": "Called with the block changes resulting from a player fertilizing a givenblock with bonemeal. Will be called after the applicableStructureGrowEvent.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockFertilizeEvent.html",
       "name": "BlockFertilizeEvent",
       "source": "spigot"
@@ -630,7 +630,7 @@
         "ja": "自然にブロックが形成される時に呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockFormEvent.html",
-      "javadoc": "Called when a block is formed or spreads based on world conditions. Use BlockSpreadEvent to catch blocks that actually spread and don't just \"randomly\" form. Examples: Snow forming due to a snow storm. Ice forming in a snowy Biome like Taiga or Tundra. Obsidian / Cobblestone forming due to contact with water. Concrete forming due to mixing of concrete powder and water. If a Block Form event is cancelled, the block will not be formed.",
+      "javadoc": "Called when a block is formed or spreads based on world conditions.Use BlockSpreadEvent to catch blocks that actually spread and don'tjust \"randomly\" form.Examples:Snow forming due to a snow storm.Ice forming in a snowy Biome like Taiga or Tundra. Obsidian / Cobblestone forming due to contact with water. Concrete forming due to mixing of concrete powder and water.If a Block Form event is cancelled, the block will not be formed.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockFormEvent.html",
       "name": "BlockFormEvent",
       "source": "spigot"
@@ -641,7 +641,7 @@
         "ja": "ブロックの変更が起こる時に呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockFromToEvent.html",
-      "javadoc": "Represents events with a source block and a destination block, currently only applies to liquid (lava and water) and teleporting dragon eggs. If a Block From To event is cancelled, the block will not move (the liquid will not flow).",
+      "javadoc": "Represents events with a source block and a destination block, currentlyonly applies to liquid (lava and water) and teleporting dragon eggs.If a Block From To event is cancelled, the block will not move (the liquidwill not flow).",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockFromToEvent.html",
       "name": "BlockFromToEvent",
       "source": "spigot"
@@ -652,7 +652,7 @@
         "ja": "自然に作物等が成長する時に呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockGrowEvent.html",
-      "javadoc": "Called when a block grows naturally in the world. Examples: Wheat Sugar Cane Cactus Watermelon Pumpkin Turtle Egg If a Block Grow event is cancelled, the block will not grow.",
+      "javadoc": "Called when a block grows naturally in the world.Examples:WheatSugar CaneCactusWatermelonPumpkinTurtle EggIf a Block Grow event is cancelled, the block will not grow.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockGrowEvent.html",
       "name": "BlockGrowEvent",
       "source": "spigot"
@@ -663,7 +663,7 @@
         "ja": "ブロックが点火された時に呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockIgniteEvent.html",
-      "javadoc": "Called when a block is ignited. If you want to catch when a Player places fire, you need to use BlockPlaceEvent. If a Block Ignite event is cancelled, the block will not be ignited.",
+      "javadoc": "Called when a block is ignited. If you want to catch when a Player placesfire, you need to use BlockPlaceEvent.If a Block Ignite event is cancelled, the block will not be ignited.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockIgniteEvent.html",
       "name": "BlockIgniteEvent",
       "source": "spigot"
@@ -685,7 +685,7 @@
         "ja": "プレイヤーがマルチブロックを設置する時に呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockMultiPlaceEvent.html",
-      "javadoc": "Fired when a single block placement action of a player triggers the creation of multiple blocks(e.g. placing a bed block). The block returned by BlockPlaceEvent.getBlockPlaced() and its related methods is the block where the placed block would exist if the placement only affected a single block.",
+      "javadoc": "Fired when a single block placement action of a player triggers thecreation of multiple blocks(e.g. placing a bed block). The block returnedby BlockPlaceEvent.getBlockPlaced() and its related methods is the block wherethe placed block would exist if the placement only affected a singleblock.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockMultiPlaceEvent.html",
       "name": "BlockMultiPlaceEvent",
       "source": "spigot"
@@ -696,7 +696,7 @@
         "ja": "ブロックの落下確認をする時に呼び出される。高頻度で呼び出されるので処理には注意が必要。"
       },
       "href": "org/bukkit/event/block/BlockPhysicsEvent.html",
-      "javadoc": "Thrown when a block physics check is called. This event is a high frequency event, it may be called thousands of times per a second on a busy server. Plugins are advised to listen to the event with caution and only perform lightweight checks when using it. In addition to this, cancelling the event is liable to leave the world in an inconsistent state. For example if you use the event to leave a block floating in mid air when that block has a requirement to be attached to something, there is no guarantee that the floating block will persist across server restarts or map upgrades. Plugins should also note that where possible this event may only called for the \"root\" block of physics updates in order to limit event spam. Physics updates that cause other blocks to change their state may not result in an event for each of those blocks (usually adjacent). If you are concerned about monitoring these changes then you should check adjacent blocks yourself.",
+      "javadoc": "Thrown when a block physics check is called.This event is a high frequency event, it may be called thousands of times pera second on a busy server. Plugins are advised to listen to the event withcaution and only perform lightweight checks when using it.In addition to this, cancelling the event is liable to leave the world in aninconsistent state. For example if you use the event to leave a blockfloating in mid air when that block has a requirement to be attached tosomething, there is no guarantee that the floating block will persist acrossserver restarts or map upgrades.Plugins should also note that where possible this event may only called forthe \"root\" block of physics updates in order to limit event spam. Physicsupdates that cause other blocks to change their state may not result in anevent for each of those blocks (usually adjacent). If you are concerned aboutmonitoring these changes then you should check adjacent blocks yourself.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockPhysicsEvent.html",
       "name": "BlockPhysicsEvent",
       "source": "spigot"
@@ -741,7 +741,7 @@
         "ja": "プレイヤーがブロックを設置する時に呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockPlaceEvent.html",
-      "javadoc": "Called when a block is placed by a player. If a Block Place event is cancelled, the block will not be placed.",
+      "javadoc": "Called when a block is placed by a player.If a Block Place event is cancelled, the block will not be placed.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockPlaceEvent.html",
       "name": "BlockPlaceEvent",
       "source": "spigot"
@@ -762,7 +762,7 @@
         "ja": "スカルクセンサーがゲームイベントを受けとる時に呼び出される。"
       },
       "href": "org/bukkit/event/block/BlockReceiveGameEvent.html",
-      "javadoc": "Called when a Sculk sensor receives a game event and hence might activate. Will be called cancelled if the block's default behavior is to ignore the event.",
+      "javadoc": "Called when a Sculk sensor receives a game event and hence might activate.Will be called cancelled if the block's default behavior is to ignore theevent.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockReceiveGameEvent.html",
       "name": "BlockReceiveGameEvent",
       "source": "spigot"
@@ -795,7 +795,7 @@
         "ja": "ブロックが拡散する時に呼び出される。BlockFormEvent とは違い、ランダムに形成されるブロックに対して呼び出される。以下に例を示す。\n- キノコが増える時。\n- 火が燃え広がる時。"
       },
       "href": "org/bukkit/event/block/BlockSpreadEvent.html",
-      "javadoc": "Called when a block spreads based on world conditions. Use BlockFormEvent to catch blocks that \"randomly\" form instead of actually spread. Examples: Mushrooms spreading. Fire spreading. If a Block Spread event is cancelled, the block will not spread.",
+      "javadoc": "Called when a block spreads based on world conditions.Use BlockFormEvent to catch blocks that \"randomly\" form instead ofactually spread.Examples:Mushrooms spreading.Fire spreading.If a Block Spread event is cancelled, the block will not spread.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/BlockSpreadEvent.html",
       "name": "BlockSpreadEvent",
       "source": "spigot"
@@ -806,7 +806,7 @@
         "ja": "醸造が完了する時に呼び出される。"
       },
       "href": "org/bukkit/event/inventory/BrewEvent.html",
-      "javadoc": "Called when the brewing of the contents inside the Brewing Stand is complete.",
+      "javadoc": "Called when the brewing of the contents inside the Brewing Stand iscomplete.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/inventory/BrewEvent.html",
       "name": "BrewEvent",
       "source": "spigot"
@@ -817,7 +817,7 @@
         "ja": "燃料としてアイテムが醸造台に使用される時に呼び出される。"
       },
       "href": "org/bukkit/event/inventory/BrewingStandFuelEvent.html",
-      "javadoc": "Called when an ItemStack is about to increase the fuel level of a brewing stand.",
+      "javadoc": "Called when an ItemStack is about to increase the fuel level of a brewingstand.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/inventory/BrewingStandFuelEvent.html",
       "name": "BrewingStandFuelEvent",
       "source": "spigot"
@@ -839,7 +839,7 @@
         "ja": "サーバーにブロードキャストメッセージが送信された時に呼び出される。メッセージが非同期で送信された場合、イベントも非同期で呼び出される。"
       },
       "href": "org/bukkit/event/server/BroadcastMessageEvent.html",
-      "javadoc": "Event triggered for server broadcast messages such as from Server.broadcast(String, String). This event behaves similarly to AsyncPlayerChatEvent in that it should be async if fired from an async thread. Please see that event for further information.",
+      "javadoc": "Event triggered for server broadcast messages such as fromServer.broadcast(String, String).This event behaves similarly to AsyncPlayerChatEvent in that itshould be async if fired from an async thread. Please see that event forfurther information.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/server/BroadcastMessageEvent.html",
       "name": "BroadcastMessageEvent",
       "source": "spigot"
@@ -932,7 +932,7 @@
         "ja": "新しいチャンクが作られた時に呼び出される。"
       },
       "href": "org/bukkit/event/world/ChunkPopulateEvent.html",
-      "javadoc": "Thrown when a newly generated chunk has finished being populated. Note: Do not use this to generated blocks in a newly generated chunk. Use a BlockPopulator instead.",
+      "javadoc": "Thrown when a newly generated chunk has finished being populated.Note: Do not use this to generated blocks in a newly generated chunk.Use a BlockPopulator instead.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/world/ChunkPopulateEvent.html",
       "name": "ChunkPopulateEvent",
       "source": "spigot"
@@ -1080,7 +1080,7 @@
         "ja": "生き物がスポーンする時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/CreatureSpawnEvent.html",
-      "javadoc": "Called when a creature is spawned into a world. If a Creature Spawn event is cancelled, the creature will not spawn.",
+      "javadoc": "Called when a creature is spawned into a world.If a Creature Spawn event is cancelled, the creature will not spawn.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/CreatureSpawnEvent.html",
       "name": "CreatureSpawnEvent",
       "source": "spigot"
@@ -1102,7 +1102,7 @@
         "ja": "クリーパーが雷撃を受ける時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/CreeperPowerEvent.html",
-      "javadoc": "Called when a Creeper is struck by lightning. If a Creeper Power event is cancelled, the Creeper will not be powered.",
+      "javadoc": "Called when a Creeper is struck by lightning.If a Creeper Power event is cancelled, the Creeper will not be powered.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/CreeperPowerEvent.html",
       "name": "CreeperPowerEvent",
       "source": "spigot"
@@ -1162,7 +1162,7 @@
         "ja": "アイテムにエンチャントした時に呼び出される。"
       },
       "href": "org/bukkit/event/enchantment/EnchantItemEvent.html",
-      "javadoc": "Called when an ItemStack is successfully enchanted (currently at enchantment table)",
+      "javadoc": "Called when an ItemStack is successfully enchanted (currently atenchantment table)",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/enchantment/EnchantItemEvent.html",
       "name": "EnchantItemEvent",
       "source": "spigot"
@@ -1238,7 +1238,7 @@
         "ja": "チャンクによってエンティティが読み込まれた時に呼び出される。"
       },
       "href": "org/bukkit/event/world/EntitiesLoadEvent.html",
-      "javadoc": "Called when entities are loaded. The provided chunk may or may not be loaded.",
+      "javadoc": "Called when entities are loaded.The provided chunk may or may not be loaded.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/world/EntitiesLoadEvent.html",
       "name": "EntitiesLoadEvent",
       "source": "spigot"
@@ -1249,7 +1249,7 @@
         "ja": "チャンクによってエンティティが読み込まれなくなった時に呼び出される。"
       },
       "href": "org/bukkit/event/world/EntitiesUnloadEvent.html",
-      "javadoc": "Called when entities are unloaded. The provided chunk may or may not be loaded.",
+      "javadoc": "Called when entities are unloaded.The provided chunk may or may not be loaded.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/world/EntitiesUnloadEvent.html",
       "name": "EntitiesUnloadEvent",
       "source": "spigot"
@@ -1304,7 +1304,7 @@
         "ja": "エンティティによってブロックが形成される時に呼び出される。以下に例を示す。\n- スノーゴーレムによって雪が形成された時。\n- 氷渡りのエンチャントによって氷が形成された時。"
       },
       "href": "org/bukkit/event/block/EntityBlockFormEvent.html",
-      "javadoc": "Called when a block is formed by entities. Examples: Snow formed by a Snowman. Frosted Ice formed by the Frost Walker enchantment. ",
+      "javadoc": "Called when a block is formed by entities.Examples:Snow formed by a Snowman.Frosted Ice formed by the Frost Walker enchantment.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/EntityBlockFormEvent.html",
       "name": "EntityBlockFormEvent",
       "source": "spigot"
@@ -1315,7 +1315,7 @@
         "ja": "エンティティによってドアが破壊される時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityBreakDoorEvent.html",
-      "javadoc": "Called when an Entity breaks a door Cancelling the event will cause the event to be delayed",
+      "javadoc": "Called when an Entity breaks a doorCancelling the event will cause the event to be delayed",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityBreakDoorEvent.html",
       "name": "EntityBreakDoorEvent",
       "source": "spigot"
@@ -1370,7 +1370,7 @@
         "ja": "エンティティが炎上する時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityCombustEvent.html",
-      "javadoc": "Called when an entity combusts. If an Entity Combust event is cancelled, the entity will not combust.",
+      "javadoc": "Called when an entity combusts.If an Entity Combust event is cancelled, the entity will not combust.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityCombustEvent.html",
       "name": "EntityCombustEvent",
       "source": "spigot"
@@ -1507,7 +1507,7 @@
         "ja": "エンティティがブロックの中に入る時に呼び出される。以下に例を示す。\n- ミツバチが巣箱に入る時。\n\nしかし、以下の場合は呼び出されない。\n- シルバーフィッシュが石に入る時。EntityChangeBlockEvent が呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityEnterBlockEvent.html",
-      "javadoc": "Called when an Entity enters a block and is stored in that block. This event is called for bees entering a bee hive. It is not called when a silverfish \"enters\" a stone block. For that listen to the EntityChangeBlockEvent.",
+      "javadoc": "Called when an Entity enters a block and is stored in that block.This event is called for bees entering a bee hive.It is not called when a silverfish \"enters\" a stone block. For that listen tothe EntityChangeBlockEvent.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityEnterBlockEvent.html",
       "name": "EntityEnterBlockEvent",
       "source": "spigot"
@@ -1518,7 +1518,7 @@
         "ja": "エンティティが発情する時に呼び出される。このイベントをキャンセルしても使用したアイテムは消費されてしまう。"
       },
       "href": "org/bukkit/event/entity/EntityEnterLoveModeEvent.html",
-      "javadoc": "Called when an entity enters love mode. This can be cancelled but the item will still be consumed that was used to make the entity enter into love mode.",
+      "javadoc": "Called when an entity enters love mode.This can be cancelled but the item will still be consumed that was used tomake the entity enter into love mode.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityEnterLoveModeEvent.html",
       "name": "EntityEnterLoveModeEvent",
       "source": "spigot"
@@ -1552,7 +1552,7 @@
         "ja": "プレイヤーに疲労が溜まると呼び出される。4を超える疲労値では、満腹度が1減少する。"
       },
       "href": "org/bukkit/event/entity/EntityExhaustionEvent.html",
-      "javadoc": "Called when a human entity experiences exhaustion. An exhaustion level greater than 4.0 causes a decrease in saturation by 1.",
+      "javadoc": "Called when a human entity experiences exhaustion.An exhaustion level greater than 4.0 causes a decrease in saturation by 1.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityExhaustionEvent.html",
       "name": "EntityExhaustionEvent",
       "source": "spigot"
@@ -1717,7 +1717,7 @@
         "ja": "エンティティが設置された時に呼び出される。このイベントは現在、アーマースタンド・ボート・トロッコ・エンドクリスタルでのみ呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityPlaceEvent.html",
-      "javadoc": "Triggered when a entity is created in the world by a player \"placing\" an item on a block. Note that this event is currently only fired for four specific placements: armor stands, boats, minecarts, and end crystals.",
+      "javadoc": "Triggered when a entity is created in the world by a player \"placing\" an itemon a block.Note that this event is currently only fired for four specific placements:armor stands, boats, minecarts, and end crystals.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityPlaceEvent.html",
       "name": "EntityPlaceEvent",
       "source": "spigot"
@@ -1739,7 +1739,7 @@
         "ja": "プレイヤー以外のエンティティがポータルでテレポートする時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityPortalEvent.html",
-      "javadoc": "Called when a non-player entity is about to teleport because it is in contact with a portal. For players see PlayerPortalEvent",
+      "javadoc": "Called when a non-player entity is about to teleport because it is incontact with a portal.For players see PlayerPortalEvent",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityPortalEvent.html",
       "name": "EntityPortalEvent",
       "source": "spigot"
@@ -1750,7 +1750,7 @@
         "ja": "エンティティがポータルを出る時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityPortalExitEvent.html",
-      "javadoc": "Called before an entity exits a portal. This event allows you to modify the velocity of the entity after they have successfully exited the portal.",
+      "javadoc": "Called before an entity exits a portal.This event allows you to modify the velocity of the entity after they havesuccessfully exited the portal.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityPortalExitEvent.html",
       "name": "EntityPortalExitEvent",
       "source": "spigot"
@@ -1783,7 +1783,7 @@
         "ja": "エンティティのポーション効果が変更された時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityPotionEffectEvent.html",
-      "javadoc": "Called when a potion effect is modified on an entity. If the event is cancelled, no change will be made on the entity.",
+      "javadoc": "Called when a potion effect is modified on an entity.If the event is cancelled, no change will be made on the entity.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityPotionEffectEvent.html",
       "name": "EntityPotionEffectEvent",
       "source": "spigot"
@@ -1816,7 +1816,7 @@
         "ja": "エンティティが削除された時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityRemoveEvent.html",
-      "javadoc": "Called when an Entity is removed. This event should only be used for monitoring. The result of modifying the entity during or after this event is unspecified. This event is not called for a Player.",
+      "javadoc": "Called when an Entity is removed.This event should only be used for monitoring. The resultof modifying the entity during or after this event is unspecified.This event is not called for a Player.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityRemoveEvent.html",
       "name": "EntityRemoveEvent",
       "source": "spigot"
@@ -1838,7 +1838,7 @@
         "ja": "エンティティが死亡し、復活できる時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityResurrectEvent.html",
-      "javadoc": "Called when an entity dies and may have the opportunity to be resurrected. Will be called in a cancelled state if the entity does not have a totem equipped.",
+      "javadoc": "Called when an entity dies and may have the opportunity to be resurrected.Will be called in a cancelled state if the entity does not have a totemequipped.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityResurrectEvent.html",
       "name": "EntityResurrectEvent",
       "source": "spigot"
@@ -1860,7 +1860,7 @@
         "ja": "エンティティがスポーンする時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntitySpawnEvent.html",
-      "javadoc": "Called when an entity is spawned into a world. If an Entity Spawn event is cancelled, the entity will not spawn.",
+      "javadoc": "Called when an entity is spawned into a world.If an Entity Spawn event is cancelled, the entity will not spawn.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntitySpawnEvent.html",
       "name": "EntitySpawnEvent",
       "source": "spigot"
@@ -1888,6 +1888,22 @@
       "source": "spigot"
     },
     {
+      "deprecate": "@Experimental",
+      "deprecateDescription": {
+        "en": "",
+        "ja": ""
+      },
+      "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "org/bukkit/event/entity/EntityTargetBlockEvent.html",
+      "javadoc": "Called when a creature targets or untargets a block, for example when acopper golem decides whether to walk to a given chest.",
+      "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityTargetBlockEvent.html",
+      "name": "EntityTargetBlockEvent",
+      "source": "spigot"
+    },
+    {
       "description": {
         "en": "Called when a creature targets or untargets another entity.",
         "ja": "生き物が別のエンティティをターゲットする時、ターゲットを解除する時に呼び出される。"
@@ -1904,7 +1920,7 @@
         "ja": "EntityTargetEvent において LivingEntity をターゲットとする時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityTargetLivingEntityEvent.html",
-      "javadoc": "Called when an Entity targets a LivingEntity and can only target LivingEntity's.",
+      "javadoc": "Called when an Entity targets a LivingEntity and can only targetLivingEntity's.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityTargetLivingEntityEvent.html",
       "name": "EntityTargetLivingEntityEvent",
       "source": "spigot"
@@ -1926,7 +1942,7 @@
         "ja": "プレイヤーではないエンティティがテレポートする時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityTeleportEvent.html",
-      "javadoc": "Thrown when a non-player entity is teleported from one location to another. This may be as a result of natural causes (Enderman, Shulker), pathfinding (Wolf), or commands (/teleport).",
+      "javadoc": "Thrown when a non-player entity is teleported from one location to another.This may be as a result of natural causes (Enderman, Shulker), pathfinding(Wolf), or commands (/teleport).",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityTeleportEvent.html",
       "name": "EntityTeleportEvent",
       "source": "spigot"
@@ -1937,7 +1953,7 @@
         "ja": "エンティティの滑空状態が切り替わる時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/EntityToggleGlideEvent.html",
-      "javadoc": "Sent when an entity's gliding status is toggled with an Elytra. Examples of when this event would be called: Player presses the jump key while in midair and using an Elytra Player lands on ground while they are gliding (with an Elytra) This can be visually estimated by the animation in which a player turns horizontal.",
+      "javadoc": "Sent when an entity's gliding status is toggled with an Elytra.Examples of when this event would be called: Player presses the jump key while in midair and using an Elytra Player lands on ground while they are gliding (with an Elytra)This can be visually estimated by the animation in which a player turns horizontal.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/EntityToggleGlideEvent.html",
       "name": "EntityToggleGlideEvent",
       "source": "spigot"
@@ -2016,7 +2032,7 @@
       },
       "abstract": true,
       "href": "org/bukkit/event/Event.html",
-      "javadoc": "Represents an event. All events require a static method named getHandlerList() which returns the same HandlerList as getHandlers().",
+      "javadoc": "Represents an event.All events require a static method named getHandlerList() which returns the same HandlerList as getHandlers().",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/Event.html",
       "name": "Event",
       "source": "spigot"
@@ -2104,7 +2120,7 @@
         "ja": "隣接したブロックによって液面が変化する時に呼び出される。"
       },
       "href": "org/bukkit/event/block/FluidLevelChangeEvent.html",
-      "javadoc": "Called when the fluid level of a block changes due to changes in adjacent blocks.",
+      "javadoc": "Called when the fluid level of a block changes due to changes in adjacentblocks.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/FluidLevelChangeEvent.html",
       "name": "FluidLevelChangeEvent",
       "source": "spigot"
@@ -2181,7 +2197,7 @@
         "ja": "一般的なゲームイベントであることを表す。このイベントは主にスカルセンサーの内部で使用される。可能な限りこのイベントを使わないようにする。"
       },
       "href": "org/bukkit/event/world/GenericGameEvent.html",
-      "javadoc": "Represents a generic Mojang game event. Specific Bukkit events should be used where possible, this event is mainly used internally by Sculk sensors.",
+      "javadoc": "Represents a generic Mojang game event.Specific Bukkit events should be used where possible, this event is mainlyused internally by Sculk sensors.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/world/GenericGameEvent.html",
       "name": "GenericGameEvent",
       "source": "spigot"
@@ -2270,7 +2286,7 @@
         "ja": "ホッパーが接続されたコンテナを見つけようとする時に呼び出される。"
       },
       "href": "org/bukkit/event/inventory/HopperInventorySearchEvent.html",
-      "javadoc": "Event that gets called each time a Hopper attempts to find its source/attached containers.",
+      "javadoc": "Event that gets called each time a Hopper attempts to find itssource/attached containers.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/inventory/HopperInventorySearchEvent.html",
       "name": "HopperInventorySearchEvent",
       "source": "spigot"
@@ -2307,7 +2323,7 @@
         "ja": "インベントリを持つブロックが処理を開始した時に呼び出される。"
       },
       "href": "org/bukkit/event/block/InventoryBlockStartEvent.html",
-      "javadoc": "Used when: A Furnace starts smelting FurnaceStartSmeltEvent A Brewing-Stand starts brewing BrewingStartEvent A Campfire starts cooking CampfireStartEvent ",
+      "javadoc": "Used when:A Furnace starts smelting FurnaceStartSmeltEventA Brewing-Stand starts brewing BrewingStartEventA Campfire starts cooking CampfireStartEvent",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/InventoryBlockStartEvent.html",
       "name": "InventoryBlockStartEvent",
       "source": "spigot"
@@ -2318,7 +2334,7 @@
         "ja": "インベントリを開いた状態で画面をクリックする時に呼び出される。"
       },
       "href": "org/bukkit/event/inventory/InventoryClickEvent.html",
-      "javadoc": "This event is called when a player clicks in an inventory. Because InventoryClickEvent occurs within a modification of the Inventory, not all Inventory related methods are safe to use. The following should never be invoked by an EventHandler for InventoryClickEvent using the HumanEntity or InventoryView associated with this event: HumanEntity.closeInventory() HumanEntity.openInventory(Inventory) HumanEntity.openWorkbench(Location, boolean) HumanEntity.openEnchanting(Location, boolean) InventoryView.close() To invoke one of these methods, schedule a task using BukkitScheduler.runTask(Plugin, Runnable), which will run the task on the next tick. Also be aware that this is not an exhaustive list, and other methods could potentially create issues as well. Assuming the EntityHuman associated with this event is an instance of a Player, manipulating the MaxStackSize or contents of an Inventory will require an Invocation of Player.updateInventory(). Modifications to slots that are modified by the results of this InventoryClickEvent can be overwritten. To change these slots, this event should be cancelled and all desired changes to the inventory applied. Alternatively, scheduling a task using BukkitScheduler.runTask(Plugin, Runnable), which would execute the task on the next tick, would work as well.",
+      "javadoc": "This event is called when a player clicks in an inventory.Because InventoryClickEvent occurs within a modification of the Inventory,not all Inventory related methods are safe to use.The following should never be invoked by an EventHandler forInventoryClickEvent using the HumanEntity or InventoryView associated withthis event:HumanEntity.closeInventory()HumanEntity.openInventory(Inventory)HumanEntity.openWorkbench(Location, boolean)HumanEntity.openEnchanting(Location, boolean)InventoryView.close()To invoke one of these methods, schedule a task usingBukkitScheduler.runTask(Plugin, Runnable), which will run the taskon the next tick. Also be aware that this is not an exhaustive list, andother methods could potentially create issues as well.Assuming the EntityHuman associated with this event is an instance of aPlayer, manipulating the MaxStackSize or contents of an Inventory willrequire an Invocation of Player.updateInventory().Modifications to slots that are modified by the results of thisInventoryClickEvent can be overwritten. To change these slots, this eventshould be cancelled and all desired changes to the inventory applied.Alternatively, scheduling a task using BukkitScheduler.runTask(Plugin, Runnable), which would execute the task on the next tick, wouldwork as well.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/inventory/InventoryClickEvent.html",
       "name": "InventoryClickEvent",
       "source": "spigot"
@@ -2340,7 +2356,7 @@
         "ja": "クリエイティブモードのプレイヤーがインベントリの操作をした時に呼び出される。呼び出される例を以下に示す。\n- インベントリにアイテムを置いた時\n- アイテムを拾った時\n- インベントリからアイテムをドロップした時"
       },
       "href": "org/bukkit/event/inventory/InventoryCreativeEvent.html",
-      "javadoc": "This event is called when a player in creative mode puts down or picks up an item in their inventory / hotbar and when they drop items from their Inventory while in creative mode.",
+      "javadoc": "This event is called when a player in creative mode puts down or picks upan item in their inventory / hotbar and when they drop items from theirInventory while in creative mode.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/inventory/InventoryCreativeEvent.html",
       "name": "InventoryCreativeEvent",
       "source": "spigot"
@@ -2351,7 +2367,7 @@
         "ja": "インベントリ内でアイテムをドラッグした時に呼び出される。"
       },
       "href": "org/bukkit/event/inventory/InventoryDragEvent.html",
-      "javadoc": "This event is called when the player drags an item in their cursor across the inventory. The ItemStack is distributed across the slots the HumanEntity dragged over. The method of distribution is described by the DragType returned by getType(). Canceling this event will result in none of the changes described in getNewItems() being applied to the Inventory. Because InventoryDragEvent occurs within a modification of the Inventory, not all Inventory related methods are safe to use. The following should never be invoked by an EventHandler for InventoryDragEvent using the HumanEntity or InventoryView associated with this event. HumanEntity.closeInventory() HumanEntity.openInventory(Inventory) HumanEntity.openWorkbench(Location, boolean) HumanEntity.openEnchanting(Location, boolean) InventoryView.close() To invoke one of these methods, schedule a task using BukkitScheduler.runTask(Plugin, Runnable), which will run the task on the next tick. Also be aware that this is not an exhaustive list, and other methods could potentially create issues as well. Assuming the EntityHuman associated with this event is an instance of a Player, manipulating the MaxStackSize or contents of an Inventory will require an Invocation of Player.updateInventory(). Any modifications to slots that are modified by the results of this InventoryDragEvent will be overwritten. To change these slots, this event should be cancelled and the changes applied. Alternatively, scheduling a task using BukkitScheduler.runTask(Plugin, Runnable), which would execute the task on the next tick, would work as well.",
+      "javadoc": "This event is called when the player drags an item in their cursor acrossthe inventory. The ItemStack is distributed across the slots theHumanEntity dragged over. The method of distribution is described by theDragType returned by getType().Canceling this event will result in none of the changes described ingetNewItems() being applied to the Inventory.Because InventoryDragEvent occurs within a modification of the Inventory,not all Inventory related methods are safe to use.The following should never be invoked by an EventHandler forInventoryDragEvent using the HumanEntity or InventoryView associated withthis event.HumanEntity.closeInventory()HumanEntity.openInventory(Inventory)HumanEntity.openWorkbench(Location, boolean)HumanEntity.openEnchanting(Location, boolean)InventoryView.close()To invoke one of these methods, schedule a task usingBukkitScheduler.runTask(Plugin, Runnable), which will run the taskon the next tick. Also be aware that this is not an exhaustive list, andother methods could potentially create issues as well.Assuming the EntityHuman associated with this event is an instance of aPlayer, manipulating the MaxStackSize or contents of an Inventory willrequire an Invocation of Player.updateInventory().Any modifications to slots that are modified by the results of thisInventoryDragEvent will be overwritten. To change these slots, this eventshould be cancelled and the changes applied. Alternatively, scheduling atask using BukkitScheduler.runTask(Plugin, Runnable), which wouldexecute the task on the next tick, would work as well.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/inventory/InventoryDragEvent.html",
       "name": "InventoryDragEvent",
       "source": "spigot"
@@ -2374,7 +2390,7 @@
       },
       "abstract": true,
       "href": "org/bukkit/event/inventory/InventoryInteractEvent.html",
-      "javadoc": "An abstract base class for events that describe an interaction between a HumanEntity and the contents of an Inventory.",
+      "javadoc": "An abstract base class for events that describe an interaction between aHumanEntity and the contents of an Inventory.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/inventory/InventoryInteractEvent.html",
       "name": "InventoryInteractEvent",
       "source": "spigot"
@@ -2385,7 +2401,7 @@
         "ja": "エンティティやホッパー等のブロックがインベントリ内のアイテムを別のインベントリに移動させる時に呼び出される。"
       },
       "href": "org/bukkit/event/inventory/InventoryMoveItemEvent.html",
-      "javadoc": "Called when some entity or block (e.g. hopper) tries to move items directly from one inventory to another. When this event is called, the initiator may already have removed the item from the source inventory and is ready to move it into the destination inventory. If this event is cancelled, the items will be returned to the source inventory, if needed. If this event is not cancelled, the initiator will try to put the ItemStack into the destination inventory. If this is not possible and the ItemStack has not been modified, the source inventory slot will be restored to its former state. Otherwise any additional items will be discarded.",
+      "javadoc": "Called when some entity or block (e.g. hopper) tries to move items directlyfrom one inventory to another.When this event is called, the initiator may already have removed the itemfrom the source inventory and is ready to move it into the destinationinventory.If this event is cancelled, the items will be returned to the sourceinventory, if needed.If this event is not cancelled, the initiator will try to put the ItemStackinto the destination inventory. If this is not possible and the ItemStackhas not been modified, the source inventory slot will be restored to itsformer state. Otherwise any additional items will be discarded.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/inventory/InventoryMoveItemEvent.html",
       "name": "InventoryMoveItemEvent",
       "source": "spigot"
@@ -2414,11 +2430,22 @@
     },
     {
       "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "io/papermc/paper/event/inventory/ItemCraftedEvent.html",
+      "javadoc": "Called when a player picks up a crafted item from the result slot of a crafting grid.",
+      "link": "https://jd.papermc.io/paper/1.21.11/io/papermc/paper/event/inventory/ItemCraftedEvent.html",
+      "name": "ItemCraftedEvent",
+      "source": "paper"
+    },
+    {
+      "description": {
         "en": "Called when an item is removed from the world after existing for 5 minutes.",
         "ja": "時間によってアイテムが消滅する時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/ItemDespawnEvent.html",
-      "javadoc": "This event is called when a Item is removed from the world because it has existed for 5 minutes. Cancelling the event results in the item being allowed to exist for 5 more minutes. This behavior is not guaranteed and may change in future versions.",
+      "javadoc": "This event is called when a Item is removed fromthe world because it has existed for 5 minutes.Cancelling the event results in the item being allowed to exist for 5 moreminutes. This behavior is not guaranteed and may change in future versions.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/ItemDespawnEvent.html",
       "name": "ItemDespawnEvent",
       "source": "spigot"
@@ -2472,7 +2499,7 @@
         "ja": "葉が自然に壊れる時に呼び出される。"
       },
       "href": "org/bukkit/event/block/LeavesDecayEvent.html",
-      "javadoc": "Called when leaves are decaying naturally. If a Leaves Decay event is cancelled, the leaves will not decay.",
+      "javadoc": "Called when leaves are decaying naturally.If a Leaves Decay event is cancelled, the leaves will not decay.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/LeavesDecayEvent.html",
       "name": "LeavesDecayEvent",
       "source": "spigot"
@@ -2592,7 +2619,7 @@
         "ja": "LootTable によってアイテムが生成される時に呼び出される。"
       },
       "href": "org/bukkit/event/world/LootGenerateEvent.html",
-      "javadoc": "Called when a LootTable is generated in the world for an InventoryHolder. This event is NOT currently called when an entity's loot table has been generated (use EntityDeathEvent.getDrops(), but WILL be called by plugins invoking LootTable.fillInventory(org.bukkit.inventory.Inventory, java.util.Random, LootContext).",
+      "javadoc": "Called when a LootTable is generated in the world for anInventoryHolder.This event is NOT currently called when an entity's loot table has beengenerated (use EntityDeathEvent.getDrops(), but WILL be called byplugins invokingLootTable.fillInventory(org.bukkit.inventory.Inventory, java.util.Random, LootContext).",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/world/LootGenerateEvent.html",
       "name": "LootGenerateEvent",
       "source": "spigot"
@@ -2625,7 +2652,7 @@
         "ja": "音符ブロックが音を鳴らす時に呼び出される。"
       },
       "href": "org/bukkit/event/block/NotePlayEvent.html",
-      "javadoc": "Called when a note block is being played through player interaction or a redstone current.",
+      "javadoc": "Called when a note block is being played through player interaction or aredstone current.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/NotePlayEvent.html",
       "name": "NotePlayEvent",
       "source": "spigot"
@@ -2680,7 +2707,7 @@
         "ja": "ピグリンと物々交換する時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/PiglinBarterEvent.html",
-      "javadoc": "Stores all data related to the bartering interaction with a piglin. This event can be triggered by a piglin picking up an item that's on its bartering list.",
+      "javadoc": "Stores all data related to the bartering interaction with a piglin.This event can be triggered by a piglin picking up an item that's on itsbartering list.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/PiglinBarterEvent.html",
       "name": "PiglinBarterEvent",
       "source": "spigot"
@@ -2702,7 +2729,7 @@
         "ja": "ゾンビ豚が怒る時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/PigZombieAngerEvent.html",
-      "javadoc": "Called when a Pig Zombie is angered by another entity. If the event is cancelled, the pig zombie will not be angered.",
+      "javadoc": "Called when a Pig Zombie is angered by another entity.If the event is cancelled, the pig zombie will not be angered.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/PigZombieAngerEvent.html",
       "name": "PigZombieAngerEvent",
       "source": "spigot"
@@ -2767,7 +2794,7 @@
         "ja": "プレイヤーがアーマースタンドに対してアイテムを交換・取得・配置する時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerArmorStandManipulateEvent.html",
-      "javadoc": "Called when a player interacts with an armor stand and will either swap, retrieve or place an item.",
+      "javadoc": "Called when a player interacts with an armor stand and will either swap, retrieve orplace an item.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerArmorStandManipulateEvent.html",
       "name": "PlayerArmorStandManipulateEvent",
       "source": "spigot"
@@ -2948,7 +2975,7 @@
       },
       "abstract": true,
       "href": "org/bukkit/event/player/PlayerChannelEvent.html",
-      "javadoc": "This event is called after a player registers or unregisters a new plugin channel.",
+      "javadoc": "This event is called after a player registers or unregisters a new pluginchannel.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerChannelEvent.html",
       "name": "PlayerChannelEvent",
       "source": "spigot"
@@ -3090,7 +3117,7 @@
         "ja": "プレイヤーが実行したコマンドが処理される前に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerCommandPreprocessEvent.html",
-      "javadoc": "This event is called whenever a player runs a command (by placing a slash at the start of their message). It is called early in the command handling process, and modifications in this event (via setMessage(String)) will be shown in the behavior. Many plugins will have no use for this event, and you should attempt to avoid using it if it is not necessary. Some examples of valid uses for this event are: Logging executed commands to a separate file Variable substitution. For example, replacing ${nearbyPlayer} with the name of the nearest other player, or simulating the @a and @p decorators used by Command Blocks in plugins that do not handle it. Conditionally blocking commands belonging to other plugins. For example, blocking the use of the /home command in a combat arena. Per-sender command aliases. For example, after a player runs the command /calias cr gamemode creative, the next time they run /cr, it gets replaced into /gamemode creative. (Global command aliases should be done by registering the alias.) Examples of incorrect uses are: Using this event to run command logic If the event is cancelled, processing of the command will halt. The state of whether or not there is a slash (/) at the beginning of the message should be preserved. If a slash is added or removed, unexpected behavior may result.",
+      "javadoc": "This event is called whenever a player runs a command (by placing a slashat the start of their message). It is called early in the command handlingprocess, and modifications in this event (via setMessage(String))will be shown in the behavior.Many plugins will have no use for this event, and you shouldattempt to avoid using it if it is not necessary.Some examples of valid uses for this event are:Logging executed commands to a separate fileVariable substitution. For example, replacing ${nearbyPlayer} with the name of the nearest other player, or simulating the @a and @p decorators used by Command Blocks in plugins that do not handle it.Conditionally blocking commands belonging to other plugins. For example, blocking the use of the /home command in a combat arena.Per-sender command aliases. For example, after a player runs the command /calias cr gamemode creative, the next time they run /cr, it gets replaced into /gamemode creative. (Global command aliases should be done by registering the alias.)Examples of incorrect uses are:Using this event to run command logicIf the event is cancelled, processing of the command will halt.The state of whether or not there is a slash (/) at thebeginning of the message should be preserved. If a slash is added orremoved, unexpected behavior may result.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerCommandPreprocessEvent.html",
       "name": "PlayerCommandPreprocessEvent",
       "source": "spigot"
@@ -3101,10 +3128,21 @@
         "ja": "使用可能なコマンドをプレイヤーに送信する時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerCommandSendEvent.html",
-      "javadoc": "This event is called when the list of available server commands is sent to the player. Commands may be removed from display using this event, but implementations are not required to securely remove all traces of the command. If secure removal of commands is required, then the command should be assigned a permission which is not granted to the player.",
+      "javadoc": "This event is called when the list of available server commands is sent tothe player.Commands may be removed from display using this event, but implementationsare not required to securely remove all traces of the command. If secureremoval of commands is required, then the command should be assigned apermission which is not granted to the player.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerCommandSendEvent.html",
       "name": "PlayerCommandSendEvent",
       "source": "spigot"
+    },
+    {
+      "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "net/md_5/bungee/api/event/PlayerConfigurationEvent.html",
+      "javadoc": "Called at an appropriate time during the player's configuration phase. This event will be called at an unspecified time when the player is in the configuration phase, usually towards the end of that phase but always prior to the completion of that phase.",
+      "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/PlayerConfigurationEvent.html",
+      "name": "PlayerConfigurationEvent",
+      "source": "bungee"
     },
     {
       "description": {
@@ -3156,7 +3194,7 @@
         "ja": "サーバーがプレイヤーコネクションに対してログイン可能かを検証するときに呼び出される。"
       },
       "href": "io/papermc/paper/event/connection/PlayerConnectionValidateLoginEvent.html",
-      "javadoc": "Validates whether a player connection is able to log in. Called when is attempting to log in for the first time, or is finishing up being configured.",
+      "javadoc": "Validates whether a player connection is able to log in. Called when a player is attempting to log in for the first time, or is finishing up being configured.",
       "link": "https://jd.papermc.io/paper/1.21.11/io/papermc/paper/event/connection/PlayerConnectionValidateLoginEvent.html",
       "name": "PlayerConnectionValidateLoginEvent",
       "source": "paper"
@@ -3189,7 +3227,7 @@
         "ja": "プレイヤーがチャットイベントまたはフォーム送信からカスタムアクションを実行した後に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerCustomClickEvent.html",
-      "javadoc": "Called after a player runs a custom action from a chat event or form submission.",
+      "javadoc": "Called after a player runs a custom action from a chat event or formsubmission.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerCustomClickEvent.html",
       "name": "PlayerCustomClickEvent",
       "source": "spigot"
@@ -3244,7 +3282,7 @@
         "ja": "プレイヤーが本と羽ペンを編集・署名した時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerEditBookEvent.html",
-      "javadoc": "Called when a player edits or signs a book and quill item. If the event is cancelled, no changes are made to the BookMeta",
+      "javadoc": "Called when a player edits or signs a book and quill item. If the event iscancelled, no changes are made to the BookMeta",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerEditBookEvent.html",
       "name": "PlayerEditBookEvent",
       "source": "spigot"
@@ -3421,7 +3459,7 @@
         "ja": "プレイヤーが作物を収穫する時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerHarvestBlockEvent.html",
-      "javadoc": "This event is called whenever a player harvests a block. A 'harvest' is when a block drops an item (usually some sort of crop) and changes state, but is not broken in order to drop the item. This event is not called for when a block is broken, to handle that, listen for BlockBreakEvent and BlockDropItemEvent.",
+      "javadoc": "This event is called whenever a player harvests a block.A 'harvest' is when a block drops an item (usually some sort of crop) andchanges state, but is not broken in order to drop the item.This event is not called for when a block is broken, to handle that, listenfor BlockBreakEvent andBlockDropItemEvent.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerHarvestBlockEvent.html",
       "name": "PlayerHarvestBlockEvent",
       "source": "spigot"
@@ -3432,7 +3470,7 @@
         "ja": "表示されているエンティティがプレイヤーから非表示になる時に呼び出される。追跡範囲内にあるかどうかに関係なく呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerHideEntityEvent.html",
-      "javadoc": "Called when a visible entity is hidden from a player. This event is only called when the entity's visibility status is actually changed. This event is called regardless of if the entity was within tracking range.",
+      "javadoc": "Called when a visible entity is hidden from a player.This event is only called when the entity's visibility status is actuallychanged.This event is called regardless of if the entity was within tracking range.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerHideEntityEvent.html",
       "name": "PlayerHideEntityEvent",
       "source": "spigot"
@@ -3470,7 +3508,7 @@
         "ja": "プレイヤーがエンティティを右クリックする時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerInteractAtEntityEvent.html",
-      "javadoc": "Represents an event that is called when a player right clicks an entity that also contains the location where the entity was clicked. Note that the client may sometimes spuriously send this packet in addition to PlayerInteractEntityEvent. Users are advised to listen to this (parent) class unless specifically required.",
+      "javadoc": "Represents an event that is called when a player right clicks an entity thatalso contains the location where the entity was clicked.Note that the client may sometimes spuriously send this packet in addition to PlayerInteractEntityEvent.Users are advised to listen to this (parent) class unless specifically required.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerInteractAtEntityEvent.html",
       "name": "PlayerInteractAtEntityEvent",
       "source": "spigot"
@@ -3492,7 +3530,7 @@
         "ja": "プレイヤーがオブジェクトや空気を右クリックする時に呼び出される。それぞれの手に対して呼び出される可能性がある。"
       },
       "href": "org/bukkit/event/player/PlayerInteractEvent.html",
-      "javadoc": "Represents an event that is called when a player interacts with an object or air, potentially fired once for each hand. The hand can be determined using getHand(). This event will fire as cancelled if the vanilla behavior is to do nothing (e.g interacting with air). For the purpose of avoiding doubt, this means that the event will only be in the cancelled state if it is fired as a result of some prediction made by the server where no subsequent code will run, rather than when the subsequent interaction activity (e.g. placing a block in an illegal position (BlockCanBuildEvent) will fail.",
+      "javadoc": "Represents an event that is called when a player interacts with an object orair, potentially fired once for each hand. The hand can be determined usinggetHand().This event will fire as cancelled if the vanilla behavior is to do nothing(e.g interacting with air). For the purpose of avoiding doubt, this meansthat the event will only be in the cancelled state if it is fired as a resultof some prediction made by the server where no subsequent code will run,rather than when the subsequent interaction activity (e.g. placing a block inan illegal position (BlockCanBuildEvent) will fail.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerInteractEvent.html",
       "name": "PlayerInteractEvent",
       "source": "spigot"
@@ -3514,7 +3552,7 @@
         "ja": "プレイヤーのアイテムが壊れる時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerItemBreakEvent.html",
-      "javadoc": "Fired when a player's item breaks (such as a shovel or flint and steel). After this event, the item's amount will be set to item amount - 1 and its durability will be reset to 0.",
+      "javadoc": "Fired when a player's item breaks (such as a shovel or flint and steel).After this event, the item's amount will be set to item amount - 1and its durability will be reset to 0.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerItemBreakEvent.html",
       "name": "PlayerItemBreakEvent",
       "source": "spigot"
@@ -3525,7 +3563,7 @@
         "ja": "プレイヤーがアイテムを消費する時に呼び出される。アイテムの例を以下に示す。\n- 食べ物\n- ポーション\n- 牛乳入りバケツ"
       },
       "href": "org/bukkit/event/player/PlayerItemConsumeEvent.html",
-      "javadoc": "This event will fire when a player is finishing consuming an item (food, potion, milk bucket). If the ItemStack is modified the server will use the effects of the new item and not remove the original one from the player's inventory. If the event is cancelled the effect will not be applied and the item will not be removed from the player's inventory.",
+      "javadoc": "This event will fire when a player is finishing consuming an item (food,potion, milk bucket).If the ItemStack is modified the server will use the effects of the newitem and not remove the original one from the player's inventory.If the event is cancelled the effect will not be applied and the item willnot be removed from the player's inventory.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerItemConsumeEvent.html",
       "name": "PlayerItemConsumeEvent",
       "source": "spigot"
@@ -3547,7 +3585,7 @@
         "ja": "プレイヤーがアイテムを使用し、その耐久値が減少する時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerItemDamageEvent.html",
-      "javadoc": "Called when an item used by the player takes durability damage as a result of being used.",
+      "javadoc": "Called when an item used by the player takes durability damage as a result ofbeing used.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerItemDamageEvent.html",
       "name": "PlayerItemDamageEvent",
       "source": "spigot"
@@ -3591,7 +3629,7 @@
         "ja": "プレイヤーのアイテムが修繕のエンチャントによって耐久値を回復する時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerItemMendEvent.html",
-      "javadoc": "Represents when a player has an item repaired via the Mending enchantment. This event is fired directly before the PlayerExpChangeEvent, and the results of this event directly affect the PlayerExpChangeEvent.",
+      "javadoc": "Represents when a player has an item repaired via the Mending enchantment.This event is fired directly before the PlayerExpChangeEvent, and theresults of this event directly affect the PlayerExpChangeEvent.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerItemMendEvent.html",
       "name": "PlayerItemMendEvent",
       "source": "spigot"
@@ -3700,7 +3738,7 @@
         "ja": "プレイヤーがログインしようとする時に呼び出される。PlayerJoinEvent の前に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerLoginEvent.html",
-      "javadoc": "Stores details for players attempting to log in. Note that this event is called early in the player initialization process. It is recommended that most options involving the Player entity be postponed to the PlayerJoinEvent instead.",
+      "javadoc": "Stores details for players attempting to log in.Note that this event is called early in the player initializationprocess. It is recommended that most options involving the Playerentity be postponed to the PlayerJoinEvent instead.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerLoginEvent.html",
       "name": "PlayerLoginEvent",
       "source": "spigot"
@@ -3860,7 +3898,7 @@
         "ja": "プレイヤーがポータルでテレポートする時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerPortalEvent.html",
-      "javadoc": "Called when a player is about to teleport because it is in contact with a portal which will generate an exit portal. For other entities see EntityPortalEvent",
+      "javadoc": "Called when a player is about to teleport because it is in contact with aportal which will generate an exit portal.For other entities see EntityPortalEvent",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerPortalEvent.html",
       "name": "PlayerPortalEvent",
       "source": "spigot"
@@ -3986,7 +4024,7 @@
         "ja": "サーバーから送られたリソースパックリクエストに対してプレイヤーが処理をした時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerResourcePackStatusEvent.html",
-      "javadoc": "Called when a player takes action on a resource pack request sent via Player.setResourcePack(java.lang.String).",
+      "javadoc": "Called when a player takes action on a resource pack request sent viaPlayer.setResourcePack(java.lang.String).",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerResourcePackStatusEvent.html",
       "name": "PlayerResourcePackStatusEvent",
       "source": "spigot"
@@ -4019,7 +4057,7 @@
         "ja": "プレイヤーが激流エンチャントを使用した時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerRiptideEvent.html",
-      "javadoc": "This event is fired when the player activates the riptide enchantment, using their trident to propel them through the air. N.B. the riptide action is currently performed client side, so manipulating the player in this event may have undesired effects.",
+      "javadoc": "This event is fired when the player activates the riptide enchantment, usingtheir trident to propel them through the air.N.B. the riptide action is currently performed client side, so manipulatingthe player in this event may have undesired effects.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerRiptideEvent.html",
       "name": "PlayerRiptideEvent",
       "source": "spigot"
@@ -4116,7 +4154,7 @@
         "ja": "非表示になっていたエンティティがプレイヤーに表示される時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerShowEntityEvent.html",
-      "javadoc": "Called when a hidden entity is shown to a player. This event is only called when the entity's visibility status is actually changed. This event is called regardless of whether the entity was within tracking range.",
+      "javadoc": "Called when a hidden entity is shown to a player.This event is only called when the entity's visibility status is actuallychanged.This event is called regardless of whether the entity was within trackingrange.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerShowEntityEvent.html",
       "name": "PlayerShowEntityEvent",
       "source": "spigot"
@@ -4182,7 +4220,7 @@
         "ja": "プレイヤーの統計が増加した時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerStatisticIncrementEvent.html",
-      "javadoc": "Called when a player statistic is incremented. This event is not called for some high frequency statistics, e.g. movement based statistics.",
+      "javadoc": "Called when a player statistic is incremented.This event is not called for some high frequency statistics, e.g. movementbased statistics.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerStatisticIncrementEvent.html",
       "name": "PlayerStatisticIncrementEvent",
       "source": "spigot"
@@ -4225,10 +4263,21 @@
         "ja": "プレイヤーがメインハンドとオフハンドのアイテムをホットキーによって交換する時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerSwapHandItemsEvent.html",
-      "javadoc": "Called when a player swap items between main hand and off hand using the hotkey.",
+      "javadoc": "Called when a player swap items between main hand and off hand using thehotkey.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerSwapHandItemsEvent.html",
       "name": "PlayerSwapHandItemsEvent",
       "source": "spigot"
+    },
+    {
+      "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "io/papermc/paper/event/player/PlayerSwapWithEquipmentSlotEvent.html",
+      "javadoc": "Triggered when a Player swaps an item with an equipment slot.",
+      "link": "https://jd.papermc.io/paper/1.21.11/io/papermc/paper/event/player/PlayerSwapWithEquipmentSlotEvent.html",
+      "name": "PlayerSwapWithEquipmentSlotEvent",
+      "source": "paper"
     },
     {
       "description": {
@@ -4236,7 +4285,7 @@
         "ja": "プレイヤーが書見台に置いてある本を取る時に呼び出される。"
       },
       "href": "org/bukkit/event/player/PlayerTakeLecternBookEvent.html",
-      "javadoc": "This event is called when a player clicks the button to take a book of a Lectern. If this event is cancelled the book remains on the lectern.",
+      "javadoc": "This event is called when a player clicks the button to take a book of aLectern. If this event is cancelled the book remains on the lectern.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerTakeLecternBookEvent.html",
       "name": "PlayerTakeLecternBookEvent",
       "source": "spigot"
@@ -4626,7 +4675,7 @@
         "ja": "エンチャントの準備が出来た時に呼び出される。完成アイテムが表示される毎に発生する。"
       },
       "href": "org/bukkit/event/enchantment/PrepareItemEnchantEvent.html",
-      "javadoc": "Called when an ItemStack is inserted in an enchantment table - can be called multiple times",
+      "javadoc": "Called when an ItemStack is inserted in an enchantment table - can becalled multiple times",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/enchantment/PrepareItemEnchantEvent.html",
       "name": "PrepareItemEnchantEvent",
       "source": "spigot"
@@ -4895,7 +4944,7 @@
         "ja": "レイドが始まる時に呼び出される。"
       },
       "href": "org/bukkit/event/raid/RaidTriggerEvent.html",
-      "javadoc": "Called when a Raid is triggered (e.g: a player with Bad Omen effect enters a village).",
+      "javadoc": "Called when a Raid is triggered (e.g: a player with Bad Omen effectenters a village).",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/raid/RaidTriggerEvent.html",
       "name": "RaidTriggerEvent",
       "source": "spigot"
@@ -4950,7 +4999,7 @@
         "ja": "RCON を介してコマンド入力を受け取った時に呼び出される。"
       },
       "href": "org/bukkit/event/server/RemoteServerCommandEvent.html",
-      "javadoc": "This event is called when a command is received over RCON. See the javadocs of ServerCommandEvent for more information.",
+      "javadoc": "This event is called when a command is received over RCON. See the javadocsof ServerCommandEvent for more information.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/server/RemoteServerCommandEvent.html",
       "name": "RemoteServerCommandEvent",
       "source": "spigot"
@@ -4993,7 +5042,7 @@
         "ja": "スカルクカタリストによって新しいカーソルが作成される時に呼び出される。"
       },
       "href": "org/bukkit/event/block/SculkBloomEvent.html",
-      "javadoc": "Represents an event triggered when a new cursor is created by a SculkCatalyst. Cursor Definition: A cursor in this context is a dynamic marker or pointer generated by the SculkCatalyst. It occupies a block and spreads sculk as it moves. It is similar to entity, but it is not an entity. Cursors are ticked by the tile entity. Triggers for Cursor Creation: An entity, when killed and drops experience, within an 8-block radius of a SculkCatalyst. An explicit call from a plugin using SculkCatalyst.bloom(Block, int). The result of BlockEvent.getBlock() is the location that the cursor is spawning at.",
+      "javadoc": "Represents an event triggered when a new cursor is created by a SculkCatalyst.Cursor Definition:A cursor in this context is a dynamic marker or pointer generated by theSculkCatalyst. It occupies a block and spreads sculk as it moves. It issimilar to entity, but it is not an entity. Cursors are ticked by thetile entity.Triggers for Cursor Creation: An entity, when killed and drops experience, within an 8-block radius of a SculkCatalyst. An explicit call from a plugin using SculkCatalyst.bloom(Block, int).The result of BlockEvent.getBlock() is the location that the cursor is spawning at.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/SculkBloomEvent.html",
       "name": "SculkBloomEvent",
       "source": "spigot"
@@ -5004,7 +5053,7 @@
         "ja": "プレイヤー以外がコマンドを実行する時に呼び出される。"
       },
       "href": "org/bukkit/event/server/ServerCommandEvent.html",
-      "javadoc": "This event is called when a command is run by a non-player. It is called early in the command handling process, and modifications in this event (via setCommand(String)) will be shown in the behavior. Many plugins will have no use for this event, and you should attempt to avoid using it if it is not necessary. Some examples of valid uses for this event are: Logging executed commands to a separate file Variable substitution. For example, replacing ${ip:Steve} with the connection IP of the player named Steve, or simulating the @a and @p decorators used by Command Blocks for plugins that do not handle it. Conditionally blocking commands belonging to other plugins. Per-sender command aliases. For example, after the console runs the command /calias cr gamemode creative, the next time they run /cr, it gets replaced into /gamemode creative. (Global command aliases should be done by registering the alias.) Examples of incorrect uses are: Using this event to run command logic If the event is cancelled, processing of the command will halt. The state of whether or not there is a slash (/) at the beginning of the message should be preserved. If a slash is added or removed, unexpected behavior may result.",
+      "javadoc": "This event is called when a command is run by a non-player. It iscalled early in the command handling process, and modifications in thisevent (via setCommand(String)) will be shown in the behavior.Many plugins will have no use for this event, and you shouldattempt to avoid using it if it is not necessary.Some examples of valid uses for this event are:Logging executed commands to a separate fileVariable substitution. For example, replacing ${ip:Steve} with the connection IP of the player named Steve, or simulating the @a and @p decorators used by Command Blocks for plugins that do not handle it.Conditionally blocking commands belonging to other plugins.Per-sender command aliases. For example, after the console runs the command /calias cr gamemode creative, the next time they run /cr, it gets replaced into /gamemode creative. (Global command aliases should be done by registering the alias.)Examples of incorrect uses are:Using this event to run command logicIf the event is cancelled, processing of the command will halt.The state of whether or not there is a slash (/) at thebeginning of the message should be preserved. If a slash is added orremoved, unexpected behavior may result.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/server/ServerCommandEvent.html",
       "name": "ServerCommandEvent",
       "source": "spigot"
@@ -5093,7 +5142,7 @@
         "ja": "サーバーリストの表示内容を送る要求を受けた時に呼び出される。PaperServerListPingEvent を使うことでより詳細の情報を扱うことができる。"
       },
       "href": "org/bukkit/event/server/ServerListPingEvent.html",
-      "javadoc": "Called when a server list ping is coming in. Displayed players can be checked and removed by iterating over this event. Note: The players in iterator() will not be shown in the server info if Bukkit.getHideOnlinePlayers() is true.",
+      "javadoc": "Called when a server list ping is coming in. Displayed players can bechecked and removed by iterating over this event.Note: The players in iterator() will not be shown in theserver info if Bukkit.getHideOnlinePlayers() is true.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/server/ServerListPingEvent.html",
       "name": "ServerListPingEvent",
       "source": "spigot"
@@ -5247,7 +5296,7 @@
         "ja": "サービスが登録された時に呼び出される。"
       },
       "href": "org/bukkit/event/server/ServiceRegisterEvent.html",
-      "javadoc": "This event is called when a service is registered. Warning: The order in which register and unregister events are called should not be relied upon.",
+      "javadoc": "This event is called when a service is registered.Warning: The order in which register and unregister events are calledshould not be relied upon.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/server/ServiceRegisterEvent.html",
       "name": "ServiceRegisterEvent",
       "source": "spigot"
@@ -5258,7 +5307,7 @@
         "ja": "サービスの登録が解除された時に呼び出される。"
       },
       "href": "org/bukkit/event/server/ServiceUnregisterEvent.html",
-      "javadoc": "This event is called when a service is unregistered. Warning: The order in which register and unregister events are called should not be relied upon.",
+      "javadoc": "This event is called when a service is unregistered.Warning: The order in which register and unregister events are calledshould not be relied upon.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/server/ServiceUnregisterEvent.html",
       "name": "ServiceUnregisterEvent",
       "source": "spigot"
@@ -5313,7 +5362,7 @@
         "ja": "プレイヤーによって看板の内容が変わる時に呼び出される。"
       },
       "href": "org/bukkit/event/block/SignChangeEvent.html",
-      "javadoc": "Called when a sign is changed by a player. If a Sign Change event is cancelled, the sign will not be changed.",
+      "javadoc": "Called when a sign is changed by a player.If a Sign Change event is cancelled, the sign will not be changed.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/SignChangeEvent.html",
       "name": "SignChangeEvent",
       "source": "spigot"
@@ -5412,7 +5461,7 @@
         "ja": "ワールドのスポーン位置が変更された時に呼び出される。"
       },
       "href": "org/bukkit/event/world/SpawnChangeEvent.html",
-      "javadoc": "An event that is called when a world's spawn changes. The world's previous spawn location is included.",
+      "javadoc": "An event that is called when a world's spawn changes. The world's previousspawn location is included.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/world/SpawnChangeEvent.html",
       "name": "SpawnChangeEvent",
       "source": "spigot"
@@ -5423,7 +5472,7 @@
         "ja": "エンティティがスポナーによってスポーンする時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/SpawnerSpawnEvent.html",
-      "javadoc": "Called when an entity is spawned into a world by a spawner. If a Spawner Spawn event is cancelled, the entity will not spawn.",
+      "javadoc": "Called when an entity is spawned into a world by a spawner.If a Spawner Spawn event is cancelled, the entity will not spawn.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/SpawnerSpawnEvent.html",
       "name": "SpawnerSpawnEvent",
       "source": "spigot"
@@ -5434,7 +5483,7 @@
         "ja": "スポンジが水を吸収する時に呼び出される。"
       },
       "href": "org/bukkit/event/block/SpongeAbsorbEvent.html",
-      "javadoc": "Called when a sponge absorbs water from the world. The world will be in its previous state, and getBlocks() will represent the changes to be made to the world, if the event is not cancelled. As this is a physics based event it may be called multiple times for \"the same\" changes.",
+      "javadoc": "Called when a sponge absorbs water from the world.The world will be in its previous state, and getBlocks() willrepresent the changes to be made to the world, if the event is not cancelled.As this is a physics based event it may be called multiple times for \"thesame\" changes.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/SpongeAbsorbEvent.html",
       "name": "SpongeAbsorbEvent",
       "source": "spigot"
@@ -5445,7 +5494,7 @@
         "ja": "ストライダーの体温が変化した時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/StriderTemperatureChangeEvent.html",
-      "javadoc": "Called when a Strider's temperature has changed as a result of entering or exiting blocks it considers warm.",
+      "javadoc": "Called when a Strider's temperature has changed as a result ofentering or exiting blocks it considers warm.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/StriderTemperatureChangeEvent.html",
       "name": "StriderTemperatureChangeEvent",
       "source": "spigot"
@@ -5456,7 +5505,7 @@
         "ja": "植物が成長する時に呼び出される。以下に例を示す。\n- 苗木が木に成長する時\n- キノコが巨大キノコに成長する時"
       },
       "href": "org/bukkit/event/world/StructureGrowEvent.html",
-      "javadoc": "Event that is called when an organic structure attempts to grow (Sapling -> Tree), (Mushroom -> Huge Mushroom), naturally or using bonemeal.",
+      "javadoc": "Event that is called when an organic structure attempts to grow (Sapling ->Tree), (Mushroom -> Huge Mushroom), naturally or using bonemeal.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/world/StructureGrowEvent.html",
       "name": "StructureGrowEvent",
       "source": "spigot"
@@ -5489,7 +5538,7 @@
         "ja": "プレイヤーやコンソールがコマンドをタブ補完する時に呼び出される。クライアントの変更により、プレイヤーの場合、コマンド自体では呼び出されず、コマンド引数の場合にのみ呼び出される。"
       },
       "href": "org/bukkit/event/server/TabCompleteEvent.html",
-      "javadoc": "Called when a CommandSender of any description (ie: player or console) attempts to tab complete. Note that due to client changes, if the sender is a Player, this event will only begin to fire once command arguments are specified, not commands themselves. Plugins wishing to remove commands from tab completion are advised to ensure the client does not have permission for the relevant commands, or use PlayerCommandSendEvent.",
+      "javadoc": "Called when a CommandSender of any description (ie: player orconsole) attempts to tab complete.Note that due to client changes, if the sender is a Player, this event willonly begin to fire once command arguments are specified, not commandsthemselves. Plugins wishing to remove commands from tab completion areadvised to ensure the client does not have permission for the relevantcommands, or use PlayerCommandSendEvent.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/server/TabCompleteEvent.html",
       "name": "TabCompleteEvent",
       "source": "spigot"
@@ -5578,7 +5627,7 @@
         "ja": "時間がスキップされる時に呼び出される。"
       },
       "href": "org/bukkit/event/world/TimeSkipEvent.html",
-      "javadoc": "Called when the time skips in a world. If the event is cancelled the time will not change.",
+      "javadoc": "Called when the time skips in a world.If the event is cancelled the time will not change.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/world/TimeSkipEvent.html",
       "name": "TimeSkipEvent",
       "source": "spigot"
@@ -5605,7 +5654,7 @@
         "ja": "TNT に着火する時に呼び出される。"
       },
       "href": "org/bukkit/event/block/TNTPrimeEvent.html",
-      "javadoc": "Called when a block of TNT in the world become primed. If a TNT Prime event is cancelled, the block of TNT will not become primed.",
+      "javadoc": "Called when a block of TNT in the world become primed.If a TNT Prime event is cancelled, the block of TNT will not become primed.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/block/TNTPrimeEvent.html",
       "name": "TNTPrimeEvent",
       "source": "spigot"
@@ -5616,7 +5665,7 @@
         "ja": "取引画面のサイドバーで別の取引をクリックする時に呼び出される。"
       },
       "href": "org/bukkit/event/inventory/TradeSelectEvent.html",
-      "javadoc": "This event is called whenever a player clicks a new trade on the trades sidebar. This event allows the user to get the index of the trade, letting them get the MerchantRecipe via the Merchant.",
+      "javadoc": "This event is called whenever a player clicks a new trade on the tradessidebar.This event allows the user to get the index of the trade, letting them getthe MerchantRecipe via the Merchant.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/inventory/TradeSelectEvent.html",
       "name": "TradeSelectEvent",
       "source": "spigot"
@@ -5632,7 +5681,7 @@
         "ja": "試練のスポナーがワールドにエンティティをスポーンさせる時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/TrialSpawnerSpawnEvent.html",
-      "javadoc": "Called when an entity is spawned into a world by a trial spawner. If a Trial Spawner Spawn event is cancelled, the entity will not spawn.",
+      "javadoc": "Called when an entity is spawned into a world by a trial spawner.If a Trial Spawner Spawn event is cancelled, the entity will not spawn.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/TrialSpawnerSpawnEvent.html",
       "name": "TrialSpawnerSpawnEvent",
       "source": "spigot"
@@ -5764,7 +5813,7 @@
         "ja": "乗り物が破壊される時に呼び出される。"
       },
       "href": "org/bukkit/event/vehicle/VehicleDestroyEvent.html",
-      "javadoc": "Raised when a vehicle is destroyed, which could be caused by either a player or the environment. This is not raised if the boat is simply 'removed' due to other means.",
+      "javadoc": "Raised when a vehicle is destroyed, which could be caused by either aplayer or the environment. This is not raised if the boat is simply'removed' due to other means.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/vehicle/VehicleDestroyEvent.html",
       "name": "VehicleDestroyEvent",
       "source": "spigot"
@@ -5863,7 +5912,7 @@
         "ja": "村人が交易品を補充する時に呼び出される。"
       },
       "href": "org/bukkit/event/entity/VillagerReplenishTradeEvent.html",
-      "javadoc": "Called when a Villager is about to restock one of its trades. If this event passes, the villager will reset the uses of the affected MerchantRecipe to 0.",
+      "javadoc": "Called when a Villager is about to restock one of its trades.If this event passes, the villager will reset theuses of the affected MerchantRecipe to 0.",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/entity/VillagerReplenishTradeEvent.html",
       "name": "VillagerReplenishTradeEvent",
       "source": "spigot"
@@ -6062,7 +6111,7 @@
         "ja": "ワールドが初期化される時に呼び出される。"
       },
       "href": "org/bukkit/event/world/WorldInitEvent.html",
-      "javadoc": "Called when a World is initializing. To get every world it is recommended to add following to the plugin.yml. load: STARTUP",
+      "javadoc": "Called when a World is initializing.To get every world it is recommended to add following to the plugin.yml.load: STARTUP",
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/world/WorldInitEvent.html",
       "name": "WorldInitEvent",
       "source": "spigot"
