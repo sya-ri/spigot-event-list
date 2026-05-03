@@ -1,0 +1,803 @@
+{
+  "lang": ["en", "ja"],
+  "events": [
+    {
+      "description": {
+        "en": "Represents an event which depends on the result of asynchronous operations.",
+        "ja": "非同期で処理されるイベントを表す。"
+      },
+      "href": "net/md_5/bungee/api/event/AsyncEvent.html",
+      "javadoc": "Represents an event which depends on the result of asynchronous operations.",
+      "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/AsyncEvent.html",
+      "name": "AsyncEvent",
+      "source": "bungee"
+    },
+    {
+      "description": {
+        "en": "Event called when a player sends a message to a server.",
+        "ja": "プレイヤーがメッセージを送信した時に呼び出される。"
+      },
+      "href": "net/md_5/bungee/api/event/ChatEvent.html",
+      "javadoc": "Event called when a player sends a message to a server.",
+      "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/ChatEvent.html",
+      "name": "ChatEvent",
+      "source": "bungee"
+    },
+    {
+      "description": {
+        "en": "Event called to represent an initial client connection.",
+        "ja": "クライアントが接続する時に呼び出される。全ての接続の初期段階で呼び出されるので、高速で処理する必要がある。"
+      },
+      "href": "net/md_5/bungee/api/event/ClientConnectEvent.html",
+      "javadoc": "Event called to represent an initial client connection. Note: This event is called at an early stage of every connection, handling should be fast.",
+      "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/ClientConnectEvent.html",
+      "name": "ClientConnectEvent",
+      "source": "bungee"
+    },
+    {
+      "description": {
+        "en": "This event is fired when someone executes a command.",
+        "ja": "コンソールもしくはプレイヤーがコマンドを実行する時に呼び出される。"
+      },
+      "href": "com/velocitypowered/api/event/command/CommandExecuteEvent.html",
+      "javadoc": "This event is fired when someone executes a command. Velocity will wait for this event to finish firing before trying to handle the command and/or forwarding it to the server.",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/command/CommandExecuteEvent.html",
+      "name": "CommandExecuteEvent",
+      "source": "velocity"
+    },
+    {
+      "description": {
+        "en": "This event is fired when a handshake is established between a client and the proxy.",
+        "ja": "ハンドシェイクが確立された時に呼び出される。非同期で呼び出され、このイベントの処理を待たずに接続を処理します。"
+      },
+      "href": "com/velocitypowered/api/event/connection/ConnectionHandshakeEvent.html",
+      "javadoc": "This event is fired when a handshake is established between a client and the proxy. Velocity will fire this event asynchronously and will not wait for it to complete before handling the connection.",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/connection/ConnectionHandshakeEvent.html",
+      "name": "ConnectionHandshakeEvent",
+      "source": "velocity"
+    },
+    {
+      "description": {
+        "en": "This event is fired when a cookie response from a client is received by the proxy.",
+        "ja": "プロキシがクライアントから Cookie 応答を受信した時に呼び出される。"
+      },
+      "href": "com/velocitypowered/api/event/player/CookieReceiveEvent.html",
+      "javadoc": "This event is fired when a cookie response from a client is received by the proxy. This usually happens after either a proxy plugin or a backend server requested a cookie. Velocity will wait on this event to finish firing before discarding the received cookie (if handled) or forwarding it to the backend server.",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/player/CookieReceiveEvent.html",
+      "name": "CookieReceiveEvent",
+      "source": "velocity"
+    },
+    {
+      "description": {
+        "en": "This event is fired when a cookie from a client is requested either by a proxy plugin or by a backend server.",
+        "ja": "プロキシプラグインまたはバックエンドサーバーがクライアントに Cookie を要求する時に呼び出される。"
+      },
+      "href": "com/velocitypowered/api/event/player/CookieRequestEvent.html",
+      "javadoc": "This event is fired when a cookie from a client is requested either by a proxy plugin or by a backend server. Velocity will wait on this event to finish firing before discarding the cookie request (if handled) or forwarding it to the client.",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/player/CookieRequestEvent.html",
+      "name": "CookieRequestEvent",
+      "source": "velocity"
+    },
+    {
+      "description": {
+        "en": "This event is fired when a cookie should be stored on a player's client.",
+        "ja": "Cookie をクライアントに保存する必要がある時に呼び出される。"
+      },
+      "href": "com/velocitypowered/api/event/player/CookieStoreEvent.html",
+      "javadoc": "This event is fired when a cookie should be stored on a player's client. This process can be initiated either by a proxy plugin or by a backend server. Velocity will wait on this event to finish firing before discarding the cookie (if handled) or forwarding it to the client so that it can store the cookie.",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/player/CookieStoreEvent.html",
+      "name": "CookieStoreEvent",
+      "source": "velocity"
+    },
+    {
+      "deprecate": "@Experimental",
+      "deprecateDescription": {
+        "en": "Experimental phase.",
+        "ja": "実験段階。"
+      },
+      "description": {
+        "en": "Called after a player rus a custom action from a chat event or form submission.",
+        "ja": "プレイヤーがチャットイベントまたはフォーム送信からカスタムアクションを実行した後に呼び出される。"
+      },
+      "href": "net/md_5/bungee/api/event/CustomClickEvent.html",
+      "javadoc": "Called after a ProxiedPlayer runs a custom action from a chat event or form submission.",
+      "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/CustomClickEvent.html",
+      "name": "CustomClickEvent",
+      "source": "bungee"
+    },
+    {
+      "description": {
+        "en": "This event is fired when a player disconnects from the proxy.",
+        "ja": "プレイヤーがプロキシから切断した時に呼び出される。"
+      },
+      "href": "com/velocitypowered/api/event/connection/DisconnectEvent.html",
+      "javadoc": "This event is fired when a player disconnects from the proxy. This operation can take place when the player disconnects due to normal network activity or when the proxy shuts down. Operations on the provided player, aside from basic data retrieval operations, may behave in undefined ways. Velocity typically fires this event asynchronously and does not wait for a response. However, it will wait for all DisconnectEvents for every player on the proxy to fire successfully before the proxy shuts down. This event is the sole exception to the AwaitingEvent contract. ",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/connection/DisconnectEvent.html",
+      "name": "DisconnectEvent",
+      "source": "velocity"
+    },
+    {
+      "description": {
+        "en": "Represents a generic event that all callable events must extend.",
+        "ja": "イベントを表す。"
+      },
+      "abstract": true,
+      "href": "net/md_5/bungee/api/plugin/Event.html",
+      "javadoc": "Dummy class which all callable events must extend.",
+      "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/plugin/Event.html",
+      "name": "Event",
+      "source": "bungee"
+    },
+    {
+      "description": {
+        "en": "This event is fired after the PreLoginEvent in order to set up the game profile for the user.",
+        "ja": "ユーザーのゲームプロファイルを設定する時に呼び出される。このイベントは PreLoginEvent が実行された後に呼び出される。"
+      },
+      "href": "com/velocitypowered/api/event/player/GameProfileRequestEvent.html",
+      "javadoc": "This event is fired after the PreLoginEvent in order to set up the game profile for the user. This can be used to configure a custom profile for a user, i.e. skin replacement. Velocity will wait for this event to finish firing before proceeding with the rest of the login process, but you should try to limit the work done in any event that fires during the login process. ",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/player/GameProfileRequestEvent.html",
+      "name": "GameProfileRequestEvent",
+      "source": "velocity"
+    },
+    {
+      "description": {
+        "en": "Fired when a player is kicked from a server.",
+        "ja": "プレイヤーがサーバーからキックされた時に呼び出される。"
+      },
+      "href": "com/velocitypowered/api/event/player/KickedFromServerEvent.html",
+      "javadoc": "Fired when a player is kicked from a server. You may either allow Velocity to kick the player (with an optional reason override) or redirect the player to a separate server. By default, Velocity will notify the user (if they are already connected to a server) or disconnect them (if they are not on a server and no other servers are available). Velocity will wait on this event to finish firing before taking the specified action.",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/player/KickedFromServerEvent.html",
+      "name": "KickedFromServerEvent",
+      "source": "velocity"
+    },
+    {
+      "description": {
+        "en": "Called when the proxy starts accepting connections.",
+        "ja": "接続の受け入れを開始した時に呼び出される。"
+      },
+      "href": "com/velocitypowered/api/event/proxy/ListenerBoundEvent.html",
+      "javadoc": "This event is fired by the proxy after a listener starts accepting connections.",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/proxy/ListenerBoundEvent.html",
+      "name": "ListenerBoundEvent",
+      "source": "velocity"
+    },
+    {
+      "description": {
+        "en": "Called when the proxy stops accepting connections.",
+        "ja": "接続の受け入れを終了した時に呼び出される。"
+      },
+      "href": "com/velocitypowered/api/event/proxy/ListenerCloseEvent.html",
+      "javadoc": "This event is fired by the proxy before the proxy stops accepting connections.",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/proxy/ListenerCloseEvent.html",
+      "name": "ListenerCloseEvent",
+      "source": "velocity"
+    },
+    {
+      "description": {
+        "en": "Event called to represent a player logging in.",
+        "ja": "プレイヤーがログインする時に呼び出される。"
+      },
+      "href": "net/md_5/bungee/api/event/LoginEvent.html",
+      "javadoc": "Event called to represent a player logging in.",
+      "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/LoginEvent.html",
+      "name": "LoginEvent",
+      "source": "bungee"
+    },
+    {
+      "description": {
+        "en": "Fired once a player has been authenticated, but before they connect to a server.",
+        "ja": "プレイヤーが認証され、サーバーに参加する時に呼び出される。"
+      },
+      "href": "com/velocitypowered/api/event/connection/LoginEvent.html",
+      "javadoc": "This event is fired once the player has been authenticated, but before they connect to a server. Velocity will wait for this event to finish firing before proceeding with the rest of the login process, but you should try to limit the work done in any event that fires during the login process.",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/connection/LoginEvent.html",
+      "name": "LoginEvent",
+      "source": "velocity"
+    },
+    {
+      "description": {
+        "en": "Called when the permission of a CommandSender is checked.",
+        "ja": "CommandSender の権限を確認する時に呼び出される。"
+      },
+      "href": "net/md_5/bungee/api/event/PermissionCheckEvent.html",
+      "javadoc": "Called when the permission of a CommandSender is checked.",
+      "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/PermissionCheckEvent.html",
+      "name": "PermissionCheckEvent",
+      "source": "bungee"
+    },
+    {
+      "description": {
+        "en": "Called when a PermissionSubject's permissions are being setup.",
+        "ja": "権限が設定される時に呼び出される。"
+      },
+      "href": "com/velocitypowered/api/event/permission/PermissionsSetupEvent.html",
+      "javadoc": "Called when a PermissionSubject's permissions are being setup. This event is typically called for the ConsoleCommandSource and any Players who join the proxy. This event is only called once per subject, on initialisation. Velocity will wait for this event to finish firing before proceeding further with server startup (for the console command source) and logins (for players) but it is strongly recommended to minimize the amount of work that must be done in this event. ",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/permission/PermissionsSetupEvent.html",
+      "name": "PermissionsSetupEvent",
+      "source": "velocity"
+    },
+    {
+      "description": {
+        "en": "Called when sending a list of available commands to a player.",
+        "ja": "サーバーで使用可能なコマンド一覧をプレイヤーに送信する時に呼び出される。"
+      },
+      "href": "com/velocitypowered/api/event/command/PlayerAvailableCommandsEvent.html",
+      "javadoc": "Allows plugins to modify the packet indicating commands available on the server to a Minecraft 1.13+ client. The given RootCommandNode is mutable. Velocity will wait for this event to finish firing before sending the list of available commands to the client.",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/command/PlayerAvailableCommandsEvent.html",
+      "name": "PlayerAvailableCommandsEvent",
+      "source": "velocity"
+    },
+    {
+      "description": {
+        "en": "Called when a player sends a plugin message through the register channel.",
+        "ja": "プレイヤーがプラグインメッセージを送信した時に呼び出される。"
+      },
+      "href": "com/velocitypowered/api/event/player/PlayerChannelRegisterEvent.html",
+      "javadoc": "This event is fired when a client (Player) sends a plugin message through the register channel. Velocity will not wait on this event to finish firing.",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/player/PlayerChannelRegisterEvent.html",
+      "name": "PlayerChannelRegisterEvent",
+      "source": "velocity"
+    },
+    {
+      "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "com/velocitypowered/api/event/player/PlayerChannelUnregisterEvent.html",
+      "javadoc": "This event is fired when a client (Player) sends a plugin message through the unregister channel. Velocity will not wait on this event to finish firing.",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/player/PlayerChannelUnregisterEvent.html",
+      "name": "PlayerChannelUnregisterEvent",
+      "source": "velocity"
+    },
+    {
+      "description": {
+        "en": "This event is fired when a player types in a chat message.",
+        "ja": "プレイヤーがチャットメッセージを送信した時に呼び出される。"
+      },
+      "href": "com/velocitypowered/api/event/player/PlayerChatEvent.html",
+      "javadoc": "This event is fired when a player types in a chat message. Velocity will wait on this event to finish firing before forwarding it to the server, if the result allows it.",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/player/PlayerChatEvent.html",
+      "name": "PlayerChatEvent",
+      "source": "velocity"
+    },
+    {
+      "description": {
+        "en": "Fired when a player has finished the login process, and we need to choose the first server to connect to.",
+        "ja": "プレイヤーがログイン処理を終えて、接続する最初のサーバーを選択する時に呼び出される。"
+      },
+      "href": "com/velocitypowered/api/event/player/PlayerChooseInitialServerEvent.html",
+      "javadoc": "Fired when a player has finished the login process, and we need to choose the first server to connect to. Velocity will wait on this event to finish firing before initiating the connection but you should try to limit the work done in this event. Failures will be handled by KickedFromServerEvent as normal.",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/player/PlayerChooseInitialServerEvent.html",
+      "name": "PlayerChooseInitialServerEvent",
+      "source": "velocity"
+    },
+    {
+      "description": {
+        "en": "Called when a player sends the minecraft:brand plugin message.",
+        "ja": "プレイヤーが minecraft:brand のプラグインメッセージを送信した時に呼び出される。"
+      },
+      "href": "com/velocitypowered/api/event/player/PlayerClientBrandEvent.html",
+      "javadoc": "Fired when a Player sends the minecraft:brand plugin message. Velocity will not wait on the result of this event.",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/player/PlayerClientBrandEvent.html",
+      "name": "PlayerClientBrandEvent",
+      "source": "velocity"
+    },
+    {
+      "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "net/md_5/bungee/api/event/PlayerConfigurationEvent.html",
+      "javadoc": "Called at an appropriate time during the player's configuration phase. This event will be called at an unspecified time when the player is in the configuration phase, usually towards the end of that phase but always prior to the completion of that phase.",
+      "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/PlayerConfigurationEvent.html",
+      "name": "PlayerConfigurationEvent",
+      "source": "bungee"
+    },
+    {
+      "description": {
+        "en": "Called when a player enters the configuration state.",
+        "ja": "プレイヤーが構成状態に入った時に呼び出される。"
+      },
+      "href": "com/velocitypowered/api/event/player/configuration/PlayerConfigurationEvent.html",
+      "javadoc": "This event is executed when a player entered the configuration state and can be configured by Velocity. Velocity will wait for this event before continuing/ending the configuration state.",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/player/configuration/PlayerConfigurationEvent.html",
+      "name": "PlayerConfigurationEvent",
+      "source": "velocity"
+    },
+    {
+      "description": {
+        "en": "Called when a player has left the proxy.",
+        "ja": "プレイヤーがプロキシを離れた時に呼び出される。"
+      },
+      "href": "net/md_5/bungee/api/event/PlayerDisconnectEvent.html",
+      "javadoc": "Called when a player has left the proxy, it is not safe to call any methods that perform an action on the passed player instance.",
+      "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/PlayerDisconnectEvent.html",
+      "name": "PlayerDisconnectEvent",
+      "source": "bungee"
+    },
+    {
+      "description": {
+        "en": "Called when a player is about to enter the configuration state.",
+        "ja": "プレイヤーが構成状態に入ろうとしている時に呼び出される。ただし、バックエンドサーバーは状態の変更中に接続を維持できないために、Velocity は最大5秒間までしか待機しない。"
+      },
+      "href": "com/velocitypowered/api/event/player/configuration/PlayerEnterConfigurationEvent.html",
+      "javadoc": "This event is executed when a player is about to enter the configuration state. It is not called for the initial configuration of a player after login. Velocity will wait for this event before asking the client to enter configuration state. However due to backend server being unable to keep the connection alive during state changes, Velocity will only wait for a maximum of 5 seconds.",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/player/configuration/PlayerEnterConfigurationEvent.html",
+      "name": "PlayerEnterConfigurationEvent",
+      "source": "velocity"
+    },
+    {
+      "description": {
+        "en": "Called when a player has entered the configuration state.",
+        "ja": "プレイヤーが構成状態に入った時に呼び出される。"
+      },
+      "href": "com/velocitypowered/api/event/player/configuration/PlayerEnteredConfigurationEvent.html",
+      "javadoc": "This event is executed when a player has entered the configuration state. From this moment on, until the PlayerFinishedConfigurationEvent is executed, the InboundConnection.getProtocolState() method is guaranteed to return ProtocolState.CONFIGURATION.",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/player/configuration/PlayerEnteredConfigurationEvent.html",
+      "name": "PlayerEnteredConfigurationEvent",
+      "source": "velocity"
+    },
+    {
+      "description": {
+        "en": "Called when a player is about to finish the configuration state.",
+        "ja": "プレイヤーが構成状態を終了しようとしている時に呼び出される。ただし、バックエンドサーバーは状態の変更中に接続を維持できないために、Velocity は最大5秒間までしか待機しない。"
+      },
+      "href": "com/velocitypowered/api/event/player/configuration/PlayerFinishConfigurationEvent.html",
+      "javadoc": "This event is executed when a player is about to finish the configuration state. Velocity will wait for this event before asking the client to finish the configuration state. However due to backend server being unable to keep the connection alive during state changes, Velocity will only wait for a maximum of 5 seconds. If you need to hold a player in configuration state, use the PlayerConfigurationEvent.",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/player/configuration/PlayerFinishConfigurationEvent.html",
+      "name": "PlayerFinishConfigurationEvent",
+      "source": "velocity"
+    },
+    {
+      "description": {
+        "en": "Called when a player has finished the configuration state.",
+        "ja": "プレイヤーが構成状態を終了した時に呼び出される。"
+      },
+      "href": "com/velocitypowered/api/event/player/configuration/PlayerFinishedConfigurationEvent.html",
+      "javadoc": "This event is executed when a player has finished the configuration state. From this moment on, the InboundConnection.getProtocolState() method will return ProtocolState.PLAY.",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/player/configuration/PlayerFinishedConfigurationEvent.html",
+      "name": "PlayerFinishedConfigurationEvent",
+      "source": "velocity"
+    },
+    {
+      "description": {
+        "en": "Called when a player first makes their presence known.",
+        "ja": "ハンドシェイクを行う時に呼び出される。プレイヤーの存在やユーザー名を知る事が出来る最初のイベントである。"
+      },
+      "href": "net/md_5/bungee/api/event/PlayerHandshakeEvent.html",
+      "javadoc": "Event called to represent a player first making their presence and username known.",
+      "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/PlayerHandshakeEvent.html",
+      "name": "PlayerHandshakeEvent",
+      "source": "bungee"
+    },
+    {
+      "description": {
+        "en": "This event is fired when a Forge client sends its mods to the proxy while connecting to a server.",
+        "ja": "サーバーへの接続中に Forge クライアントが MOD 一覧をプロキシに送信した時に呼び出される。"
+      },
+      "href": "com/velocitypowered/api/event/player/PlayerModInfoEvent.html",
+      "javadoc": "This event is fired when a Forge client sends its mods to the proxy while connecting to a server. Velocity will not wait on this event to finish firing.",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/player/PlayerModInfoEvent.html",
+      "name": "PlayerModInfoEvent",
+      "source": "velocity"
+    },
+    {
+      "description": {
+        "en": "Called when the status of a resource pack sent to the player changes.",
+        "ja": "プレイヤーに送信されたリソースパックの状態が変更された時に呼び出される。"
+      },
+      "href": "com/velocitypowered/api/event/player/PlayerResourcePackStatusEvent.html",
+      "javadoc": "This event is fired when the status of a resource pack sent to the player by the server is changed. Depending on the result of this event (which Velocity will wait until completely fired), the player may be kicked from the server.",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/player/PlayerResourcePackStatusEvent.html",
+      "name": "PlayerResourcePackStatusEvent",
+      "source": "velocity"
+    },
+    {
+      "description": {
+        "en": "Called when new client settings are sent from the player.",
+        "ja": "プレイヤーが新しいクライアント設定を送信した時に呼び出される。"
+      },
+      "href": "com/velocitypowered/api/event/player/PlayerSettingsChangedEvent.html",
+      "javadoc": "This event is fired when the client sends new client settings for the player. This event can and typically will be fired multiple times per connection. Velocity will not wait on this event to finish firing.",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/player/PlayerSettingsChangedEvent.html",
+      "name": "PlayerSettingsChangedEvent",
+      "source": "velocity"
+    },
+    {
+      "description": {
+        "en": "Called when a plugin message is sent to the client or server.",
+        "ja": "クライアントやサーバーから送信されたプラグインメッセージを受信する時に呼び出される。"
+      },
+      "href": "net/md_5/bungee/api/event/PluginMessageEvent.html",
+      "javadoc": "Event called when a plugin message is sent to the client or server.",
+      "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/PluginMessageEvent.html",
+      "name": "PluginMessageEvent",
+      "source": "bungee"
+    },
+    {
+      "description": {
+        "en": "Called when a plugin message is sent to the proxy from a client or server.",
+        "ja": "プレイヤーまたはサーバーからプラグインメッセージが送信された時に呼び出される。"
+      },
+      "href": "com/velocitypowered/api/event/connection/PluginMessageEvent.html",
+      "javadoc": "This event is fired when a plugin message is sent to the proxy, either from a client (Player) or a server (ServerConnection). Velocity will wait on this event to finish firing before discarding the sent plugin message (if handled) or forwarding it to the server.",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/connection/PluginMessageEvent.html",
+      "name": "PluginMessageEvent",
+      "source": "velocity"
+    },
+    {
+      "description": {
+        "en": "Called when a command is executed.",
+        "ja": "コマンドが実行された時に呼び出される。"
+      },
+      "href": "com/velocitypowered/api/event/command/PostCommandInvocationEvent.html",
+      "javadoc": "This event is fired when velocity executed a command. This event is called after the event is handled. Commands can be cancelled or forwarded to backend servers in CommandExecuteEvent. This will prevent firing this event.",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/command/PostCommandInvocationEvent.html",
+      "name": "PostCommandInvocationEvent",
+      "source": "velocity"
+    },
+    {
+      "description": {
+        "en": "Called when a connection is ready to link to a server.",
+        "ja": "サーバーに接続する準備が出来た時に呼び出される。ProxiedPlayer にアクセスできる最初のイベントである。"
+      },
+      "href": "net/md_5/bungee/api/event/PostLoginEvent.html",
+      "javadoc": "Event called as soon as a connection has a ProxiedPlayer and is ready to be connected to a server.",
+      "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/PostLoginEvent.html",
+      "name": "PostLoginEvent",
+      "source": "bungee"
+    },
+    {
+      "description": {
+        "en": "Called when a player attempts to join the first server.",
+        "ja": "プレイヤーが最初のサーバーに参加しようとする時に呼び出される。"
+      },
+      "href": "com/velocitypowered/api/event/connection/PostLoginEvent.html",
+      "javadoc": "This event is fired once the player has been fully initialized and is about to connect to their first server. Velocity will wait for this event to finish firing before it fires PlayerChooseInitialServerEvent with any default servers specified in the configuration, but you should try to limit the work done in any event that fires during the login process.",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/connection/PostLoginEvent.html",
+      "name": "PostLoginEvent",
+      "source": "velocity"
+    },
+    {
+      "description": {
+        "en": "Called when a player attempts to log in.",
+        "ja": "ログインを試みる時に呼び出される。Mojang のサーバーでの認証後に取得されるプレイヤーに関連する情報は含まれず、UUID 等は使用することが出来ない。"
+      },
+      "href": "net/md_5/bungee/api/event/PreLoginEvent.html",
+      "javadoc": "Event called to represent a player first making their presence and username known. This will NOT contain many attributes relating to the player which are filled in after authentication with Mojang's servers. Examples of attributes which are not available include their UUID.",
+      "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/PreLoginEvent.html",
+      "name": "PreLoginEvent",
+      "source": "bungee"
+    },
+    {
+      "description": {
+        "en": "Called before the proxy authenticates a player with Mojang.",
+        "ja": "プロキシがプレイヤーを Mojang で認証する前に呼び出される。"
+      },
+      "href": "com/velocitypowered/api/event/connection/PreLoginEvent.html",
+      "javadoc": "This event is fired when a player has initiated a connection with the proxy but before the proxy authenticates the player with Mojang or before the player's proxy connection is fully established (for offline mode). Velocity will wait for this event to finish firing before proceeding further with the login process, but you should try to limit the work done in any event that fires during the login process. As of Velocity 3.1.0, you may cast the InboundConnection to a LoginPhaseConnection to allow a proxy plugin to send login plugin messages to the client. ",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/connection/PreLoginEvent.html",
+      "name": "PreLoginEvent",
+      "source": "velocity"
+    },
+    {
+      "deprecate": "@Experimental",
+      "deprecateDescription": {
+        "en": "Experimental phase.",
+        "ja": "実験段階。"
+      },
+      "description": {
+        "en": "Called when a player is sent to another host.",
+        "ja": "プレイヤーが別のホストに送られる時に呼び出される。"
+      },
+      "href": "com/velocitypowered/api/event/connection/PreTransferEvent.html",
+      "javadoc": "This event is executed before sending a player to another host, either by the backend server or by a plugin using the Player.transferToHost(InetSocketAddress) method.",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/connection/PreTransferEvent.html",
+      "name": "PreTransferEvent",
+      "source": "velocity"
+    },
+    {
+      "description": {
+        "en": "This event is fired by the proxy after plugins have been loaded but before the proxy starts accepting connections.",
+        "ja": "プラグインが初期化された後、接続の受け入れを開始する前に呼び出される。"
+      },
+      "href": "com/velocitypowered/api/event/proxy/ProxyInitializeEvent.html",
+      "javadoc": "This event is fired by the proxy after plugins have been loaded but before the proxy starts accepting connections. Velocity will wait for this event to finish firing before it begins to accept new connections.",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/proxy/ProxyInitializeEvent.html",
+      "name": "ProxyInitializeEvent",
+      "source": "velocity"
+    },
+    {
+      "description": {
+        "en": "Called when the proxy is queried for status from the server list.",
+        "ja": "サーバーリストからピングされた時に呼び出される。"
+      },
+      "href": "net/md_5/bungee/api/event/ProxyPingEvent.html",
+      "javadoc": "Called when the proxy is queried for status from the server list.",
+      "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/ProxyPingEvent.html",
+      "name": "ProxyPingEvent",
+      "source": "bungee"
+    },
+    {
+      "description": {
+        "en": "This event is fired when a request for server information is sent by a remote client.",
+        "ja": "サーバーリストからピングされた時に呼び出される。"
+      },
+      "href": "com/velocitypowered/api/event/proxy/ProxyPingEvent.html",
+      "javadoc": "This event is fired when a request for server information is sent by a remote client, or when the server sends the MOTD and favicon to the client after a successful login. Velocity will wait on this event to finish firing before delivering the results to the remote client, but you are urged to handle this event as quickly as possible when handling this event due to the amount of ping packets a client can send.",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/proxy/ProxyPingEvent.html",
+      "name": "ProxyPingEvent",
+      "source": "velocity"
+    },
+    {
+      "deprecate": "@Beta",
+      "deprecateDescription": {
+        "en": "Experimental phase.",
+        "ja": "実験段階。"
+      },
+      "description": {
+        "en": "Called when deciding to connect to a server, useful for canceling connections.",
+        "ja": "サーバーに接続する時に呼び出される。プレイヤーがサーバーに接続するのをキャンセルする場合等に使う。"
+      },
+      "href": "com/velocitypowered/api/event/proxy/ProxyPreShutdownEvent.html",
+      "javadoc": "This event is fired by the proxy after it has stopped accepting new connections, but before players are disconnected. This is the last point at which you can interact with currently connected players, for example to transfer them to another proxy or perform other cleanup tasks.",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/proxy/ProxyPreShutdownEvent.html",
+      "name": "ProxyPreShutdownEvent",
+      "source": "velocity"
+    },
+    {
+      "description": {
+        "en": "This event is fired if the proxy is getting queried over GS4 Query protocol.",
+        "ja": "クエリ要求を受信した時に呼び出される。"
+      },
+      "href": "com/velocitypowered/api/event/query/ProxyQueryEvent.html",
+      "javadoc": "This event is fired if proxy is getting queried over GS4 Query protocol. Velocity will wait on this event to fire before providing a response to the client.",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/query/ProxyQueryEvent.html",
+      "name": "ProxyQueryEvent",
+      "source": "velocity"
+    },
+    {
+      "description": {
+        "en": "Called when somebody reloads BungeeCord.",
+        "ja": "プロキシがリロードする時に呼び出される。"
+      },
+      "href": "net/md_5/bungee/api/event/ProxyReloadEvent.html",
+      "javadoc": "Called when somebody reloads BungeeCord",
+      "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/ProxyReloadEvent.html",
+      "name": "ProxyReloadEvent",
+      "source": "bungee"
+    },
+    {
+      "description": {
+        "en": "This event is fired when the proxy is reloaded by the user using /velocity reload.",
+        "ja": "プロキシがリロードした時に呼び出される。"
+      },
+      "href": "com/velocitypowered/api/event/proxy/ProxyReloadEvent.html",
+      "javadoc": "This event is fired when the proxy is reloaded by the user using /velocity reload.",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/proxy/ProxyReloadEvent.html",
+      "name": "ProxyReloadEvent",
+      "source": "velocity"
+    },
+    {
+      "description": {
+        "en": "This event is fired by the proxy after the proxy has stopped accepting connections but before the proxy process exits.",
+        "ja": "プロキシが接続の受け入れを終了した後、プロセスが終了する前に呼び出される。"
+      },
+      "href": "com/velocitypowered/api/event/proxy/ProxyShutdownEvent.html",
+      "javadoc": "This event is fired by the proxy after the proxy has stopped accepting connections but before the proxy process exits. Velocity will wait for this event to finish firing before it exits.",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/proxy/ProxyShutdownEvent.html",
+      "name": "ProxyShutdownEvent",
+      "source": "velocity"
+    },
+    {
+      "description": {
+        "en": "Indicates an event that has a result attached to it.",
+        "ja": "結果を伴うイベントであることを表す。"
+      },
+      "href": "com/velocitypowered/api/event/ResultedEvent.html",
+      "javadoc": "Indicates an event that has a result attached to it.",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/ResultedEvent.html",
+      "name": "ResultedEvent",
+      "source": "velocity"
+    },
+    {
+      "description": {
+        "en": "Called when a player connects to the server to send information before they log in.",
+        "ja": "サーバーに接続した時に呼び出される。プレイヤーがログインする前にサーバーに情報を送信する場合等に使う。"
+      },
+      "href": "net/md_5/bungee/api/event/ServerConnectedEvent.html",
+      "javadoc": "Not to be confused with ServerConnectEvent, this event is called once a connection to a server is fully operational, and is about to hand over control of the session to the player. It is useful if you wish to send information to the server before the player logs in.",
+      "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/ServerConnectedEvent.html",
+      "name": "ServerConnectedEvent",
+      "source": "bungee"
+    },
+    {
+      "description": {
+        "en": "Called when a player successfully connects to a target server and disconnects from the previous one.",
+        "ja": "プレイヤーが接続先サーバーに正常に接続し、接続元サーバーから切断された時に呼び出される。"
+      },
+      "href": "com/velocitypowered/api/event/player/ServerConnectedEvent.html",
+      "javadoc": "This event is fired once the player has successfully connected to the target server and the connection to the previous server has been de-established. Note: For historical reasons, Velocity does wait on this event to finish firing before continuing the server connection process. This behavior is deprecated and likely to be removed in Polymer. ",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/player/ServerConnectedEvent.html",
+      "name": "ServerConnectedEvent",
+      "source": "velocity"
+    },
+    {
+      "description": {
+        "en": "Called when deciding to connect to a server, useful for canceling connections.",
+        "ja": "サーバーに接続する時に呼び出される。プレイヤーがサーバーに接続するのをキャンセルする場合等に使う。"
+      },
+      "href": "net/md_5/bungee/api/event/ServerConnectEvent.html",
+      "javadoc": "Called when deciding to connect to a server. At the time when this event is called, no connection has actually been made. Cancelling the event will ensure that the connection does not proceed and can be useful to prevent certain players from accessing certain servers.",
+      "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/ServerConnectEvent.html",
+      "name": "ServerConnectEvent",
+      "source": "bungee"
+    },
+    {
+      "description": {
+        "en": "Called when a player disconnects from a server.",
+        "ja": "サーバーへの接続を切断した時に呼び出される。"
+      },
+      "href": "net/md_5/bungee/api/event/ServerDisconnectEvent.html",
+      "javadoc": "Called when the player is disconnected from a server, for example during server switching. If the player is kicked from a server, ServerKickEvent will be called instead.",
+      "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/ServerDisconnectEvent.html",
+      "name": "ServerDisconnectEvent",
+      "source": "bungee"
+    },
+    {
+      "description": {
+        "en": "Called when a player is kicked from a server.",
+        "ja": "サーバーからキックされた時に呼び出される。"
+      },
+      "href": "net/md_5/bungee/api/event/ServerKickEvent.html",
+      "javadoc": "Represents a player getting kicked from a server.",
+      "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/ServerKickEvent.html",
+      "name": "ServerKickEvent",
+      "source": "bungee"
+    },
+    {
+      "description": {
+        "en": "Called when a server sends a login plugin message to the proxy.",
+        "ja": "サーバーがログインプラグインメッセージを送信した時に呼び出される。"
+      },
+      "href": "com/velocitypowered/api/event/player/ServerLoginPluginMessageEvent.html",
+      "javadoc": "Fired when a server sends a login plugin message to the proxy. Plugins have the opportunity to respond to the messages as needed. Velocity will wait on this event to finish. The server will be responsible for continuing the login process once the server is satisfied with any login plugin responses sent by proxy plugins (or messages indicating a lack of response).",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/player/ServerLoginPluginMessageEvent.html",
+      "name": "ServerLoginPluginMessageEvent",
+      "source": "velocity"
+    },
+    {
+      "description": {
+        "en": "Called when a player connects to the server.",
+        "ja": "プレイヤーがサーバーに接続した時に呼び出される。"
+      },
+      "href": "com/velocitypowered/api/event/player/ServerPostConnectEvent.html",
+      "javadoc": "Fired after the player has connected to a server. The server the player is now connected to is available in Player.getCurrentServer(). Velocity will not wait on this event to finish firing.",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/player/ServerPostConnectEvent.html",
+      "name": "ServerPostConnectEvent",
+      "source": "velocity"
+    },
+    {
+      "description": {
+        "en": "Called before a player connects to a server.",
+        "ja": "プレイヤーがサーバーに接続する時に呼び出される。"
+      },
+      "href": "com/velocitypowered/api/event/player/ServerPreConnectEvent.html",
+      "javadoc": "This event is fired before the player connects to a server. Velocity will wait on this event to finish firing before initiating the connection.",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/player/ServerPreConnectEvent.html",
+      "name": "ServerPreConnectEvent",
+      "source": "velocity"
+    },
+    {
+      "description": {
+        "en": "Called after a backend server is registered to the server map.",
+        "ja": "バックエンドサーバーがサーバーマップに登録された後に呼び出される。"
+      },
+      "href": "com/velocitypowered/api/event/proxy/server/ServerRegisteredEvent.html",
+      "javadoc": "This event is fired by the proxy after a backend server is registered to the server map. Currently, it may occur when a server is registered dynamically at runtime or when a server is replaced due to configuration reload.",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/proxy/server/ServerRegisteredEvent.html",
+      "name": "ServerRegisteredEvent",
+      "source": "velocity"
+    },
+    {
+      "description": {
+        "en": "Called when a downstream server tries to remove a resource pack from a player.",
+        "ja": "ダウンストリームサーバーがプレイヤーからリソースパックを削除しようとした時、または全てのリソースパックをクリアしようとした時に呼び出される。"
+      },
+      "href": "com/velocitypowered/api/event/player/ServerResourcePackRemoveEvent.html",
+      "javadoc": "This event is fired when the downstream server tries to remove a resource pack from player or clear all of them. The proxy will wait on this event to finish before forwarding the action to the user. If this event is denied, no resource packs will be removed from player.",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/player/ServerResourcePackRemoveEvent.html",
+      "name": "ServerResourcePackRemoveEvent",
+      "source": "velocity"
+    },
+    {
+      "description": {
+        "en": "Called when the downstream server tries to send a player a ResourcePack packet.",
+        "ja": "サーバーがリソースパックパケットを送信する時に呼び出される。"
+      },
+      "href": "com/velocitypowered/api/event/player/ServerResourcePackSendEvent.html",
+      "javadoc": "This event is fired when the downstream server tries to send a player a ResourcePack packet. The proxy will wait on this event to finish before forwarding the resource pack to the user. If this event is denied, it will retroactively send a DENIED status to the downstream server in response. If the downstream server has it set to \"forced\" it will forcefully disconnect the user.",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/player/ServerResourcePackSendEvent.html",
+      "name": "ServerResourcePackSendEvent",
+      "source": "velocity"
+    },
+    {
+      "description": {
+        "en": "Called when a player changes servers.",
+        "ja": "プレイヤーが接続先のサーバーを変更した時に呼び出される。"
+      },
+      "href": "net/md_5/bungee/api/event/ServerSwitchEvent.html",
+      "javadoc": "Called when a player has changed servers.",
+      "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/ServerSwitchEvent.html",
+      "name": "ServerSwitchEvent",
+      "source": "bungee"
+    },
+    {
+      "description": {
+        "en": "Called after a backend server is unregistered from the server map.",
+        "ja": "バックエンドサーバーがサーバーマップから削除された後に呼び出される。"
+      },
+      "href": "com/velocitypowered/api/event/proxy/server/ServerUnregisteredEvent.html",
+      "javadoc": "This event is fired by the proxy after a backend server is unregistered from the server map. Currently, it may occur when a server is unregistered dynamically at runtime or when a server is replaced due to configuration reload.",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/proxy/server/ServerUnregisteredEvent.html",
+      "name": "ServerUnregisteredEvent",
+      "source": "velocity"
+    },
+    {
+      "description": {
+        "en": "Called when client settings are changed.",
+        "ja": "クライアント設定を変更した時に呼び出される。"
+      },
+      "href": "net/md_5/bungee/api/event/SettingsChangedEvent.html",
+      "javadoc": "Called after a ProxiedPlayer changed one or more of the following (client-side) settings: View distance Locale Displayed skin parts Chat visibility Chat colors Main hand side (left or right) ",
+      "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/SettingsChangedEvent.html",
+      "name": "SettingsChangedEvent",
+      "source": "bungee"
+    },
+    {
+      "description": {
+        "en": "Event called when a player uses tab completion.",
+        "ja": "タブ補完を行う時に呼び出される。"
+      },
+      "href": "net/md_5/bungee/api/event/TabCompleteEvent.html",
+      "javadoc": "Event called when a player uses tab completion.",
+      "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/TabCompleteEvent.html",
+      "name": "TabCompleteEvent",
+      "source": "bungee"
+    },
+    {
+      "description": {
+        "en": "This event is fired after a tab complete response is sent by the remote server, for clients on 1.12.2 and below.",
+        "ja": "サーバーがタブ補完を行う時に呼び出される。"
+      },
+      "href": "com/velocitypowered/api/event/player/TabCompleteEvent.html",
+      "javadoc": "This event is fired after a tab complete response is sent by the remote server, for clients on 1.12.2 and below. You have the opportunity to modify the response sent to the remote player. Velocity will wait for this event to finish firing before sending the tab complete results to the client. Be sure to be as fast as possible, since the client will freeze while it waits for the tab complete results.",
+      "link": "https://jd.papermc.io/velocity/3.4.0/com/velocitypowered/api/event/player/TabCompleteEvent.html",
+      "name": "TabCompleteEvent",
+      "source": "velocity"
+    },
+    {
+      "description": {
+        "en": "Event called when a backend server sends a response to a player asking to tab-complete a chat message or command.",
+        "ja": "サーバーがタブ補完を行う時に呼び出される。プロキシによって処理されたタブ補完では呼び出されない。"
+      },
+      "href": "net/md_5/bungee/api/event/TabCompleteResponseEvent.html",
+      "javadoc": "Event called when a backend server sends a response to a player asking to tab-complete a chat message or command. Note that this is not called when BungeeCord or a plugin responds to a tab-complete request. Use TabCompleteEvent for that.",
+      "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/TabCompleteResponseEvent.html",
+      "name": "TabCompleteResponseEvent",
+      "source": "bungee"
+    },
+    {
+      "description": {
+        "en": "An event which occurs in the communication between two nodes.",
+        "ja": "2つのノード間の通信で発生するイベントを表す。"
+      },
+      "abstract": true,
+      "href": "net/md_5/bungee/api/event/TargetedEvent.html",
+      "javadoc": "An event which occurs in the communication between two nodes.",
+      "link": "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/net/md_5/bungee/api/event/TargetedEvent.html",
+      "name": "TargetedEvent",
+      "source": "bungee"
+    }
+  ]
+}

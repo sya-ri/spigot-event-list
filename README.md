@@ -43,4 +43,7 @@ Edit the file below and create a [pull request](https://github.com/sya-ri/spigot
 
 - [src/i18n/config.ts](src/i18n/config.ts)
 - [src/i18n/translation.ts](src/i18n/translation.ts)
-- [data/events.json](data/events.json)
+- `data/events.json`
+- `data/versions.json`
+- `data/minecraft/{version}/events.json`
+- `data/proxy/events.json`

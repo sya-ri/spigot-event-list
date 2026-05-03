@@ -24,10 +24,17 @@ type EventListProps = {
   setTags: (value: EventSource[]) => void;
   search: string;
   locale: Locale;
+  version: string;
 };
 
-const EventList: FC<EventListProps> = ({ tags, setTags, search, locale }) => {
-  const { events } = useEvents(locale);
+const EventList: FC<EventListProps> = ({
+  tags,
+  setTags,
+  search,
+  locale,
+  version,
+}) => {
+  const { events } = useEvents(locale, version);
   const [incompleteEvents, setIncompleteEvents] =
     useState<ReturnType<typeof useEvents>["events"]>();
   useEffect(() => {

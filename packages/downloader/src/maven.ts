@@ -25,12 +25,10 @@ const groupPath = (artifact: Artifact) =>
 const artifactPath = (artifact: Artifact) =>
   groupPath(artifact) + "/" + fileName(artifact);
 
-const latestSnapShotVersion = async (
-  artifact: Artifact,
-  basePath: string,
+const parseMetadata = async (
+  metadataUrl: string,
   config?: AxiosRequestConfig,
 ) => {
-  const metadataUrl = basePath + groupPath(artifact) + "/maven-metadata.xml";
   const response = await axios.get<string>(metadataUrl, {
     responseType: "text",
     ...config,
@@ -40,25 +38,89 @@ const latestSnapShotVersion = async (
       `Unable to fetch ${metadataUrl}. Status ${response.status}`,
     );
   }
-  const xml = (await promisify(parseString)(response.data)) as any;
-  const snapshot = xml.metadata.versioning[0].snapshot[0];
-  return snapshot.timestamp[0] + "-" + snapshot.buildNumber[0];
+  return (await promisify(parseString)(response.data)) as any;
 };
 
-const artifactUrl = async (
+const latestSnapShotVersion = async (
+  artifact: Artifact,
+  basePath: string,
+  config?: AxiosRequestConfig,
+) => {
+  const metadataUrl = basePath + groupPath(artifact) + "/maven-metadata.xml";
+  const xml = await parseMetadata(metadataUrl, config);
+  const snapshot = xml.metadata.versioning[0].snapshot[0];
+  return {
+    snapshotVersion: snapshot.timestamp[0] + "-" + snapshot.buildNumber[0],
+    buildNumber: parseInt(snapshot.buildNumber[0], 10),
+  };
+};
+
+const compareReleaseVersions = (left: string, right: string) =>
+  left.localeCompare(right, undefined, {
+    numeric: true,
+    sensitivity: "base",
+  });
+
+export const resolveLatestArtifactVersion = async (
+  artifact: Pick<Artifact, "groupId" | "artifactId">,
+  basePath: string,
+  prefix: string,
+  config?: AxiosRequestConfig,
+) => {
+  const metadataUrl =
+    basePath +
+    [
+      artifact.groupId.replace(/\./g, "/"),
+      artifact.artifactId,
+      "maven-metadata.xml",
+    ].join("/");
+  const xml = await parseMetadata(metadataUrl, config);
+  const versions = (xml.metadata.versioning?.[0]?.versions?.[0]?.version ??
+    []) as string[];
+  const latestVersion = versions
+    .map((value) => String(value))
+    .filter((value) => value.startsWith(prefix))
+    .sort(compareReleaseVersions)
+    .pop();
+  if (!latestVersion) {
+    throw new Error(`Unable to find artifact version with prefix ${prefix}`);
+  }
+  return latestVersion;
+};
+
+export const resolveArtifactUrl = async (
   artifact: Artifact,
   basePath: string,
   config?: AxiosRequestConfig,
 ) => {
   if (artifact.isSnapShot) {
-    const snapShotVersion = await latestSnapShotVersion(
+    const { snapshotVersion } = await latestSnapShotVersion(
       artifact,
       basePath,
       config,
     );
-    return basePath + artifactPath({ snapShotVersion, ...artifact });
+    return (
+      basePath + artifactPath({ snapShotVersion: snapshotVersion, ...artifact })
+    );
   }
   return basePath + artifactPath(artifact);
+};
+
+export const resolveArtifactBuildNumber = async (
+  artifact: Artifact,
+  basePath: string,
+  config?: AxiosRequestConfig,
+) => {
+  if (!artifact.isSnapShot) {
+    const matched = artifact.version.match(/\.build\.(\d+)(?:-|$)/);
+    return matched ? parseInt(matched[1], 10) : null;
+  }
+  const { buildNumber } = await latestSnapShotVersion(
+    artifact,
+    basePath,
+    config,
+  );
+  return buildNumber;
 };
 
 export const downloadArtifact = (
@@ -69,7 +131,7 @@ export const downloadArtifact = (
   repository: string,
   config?: AxiosRequestConfig,
 ) =>
-  artifactUrl(artifact, repository, config).then((url) =>
+  resolveArtifactUrl(artifact, repository, config).then((url) =>
     axios
       .get<Stream>(url, {
         responseType: "stream",

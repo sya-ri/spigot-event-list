@@ -8,25 +8,36 @@ import SelectableSourceTag from "@/components/selectable-source-tag";
 import EventList from "@/components/event-list";
 import SwitchThemeButton from "@/components/switch-theme-button";
 import { FC, useState } from "react";
+import { useEffect } from "react";
 import { Locale } from "@/i18n/config";
 import { BsTranslate } from "react-icons/bs";
 import { FiPlus } from "react-icons/fi";
 import { translate } from "@/i18n/translation";
 import useLocale from "@/i18n/use-locale";
 import { KoFiButton } from "@/components/ko-fi-button";
+import useVersions from "@/libs/hooks/use-versions";
 
 export type EventListPageProps = {
   defaultSearch: string;
   defaultTags: EventSource[];
+  defaultVersion: string;
 };
 
 const EventListPage: FC<EventListPageProps> = ({
   defaultSearch,
   defaultTags,
+  defaultVersion,
 }) => {
   const locale = useLocale();
   const [search, setSearch] = useState(defaultSearch);
   const [tags, setTags] = useState(defaultTags);
+  const [version, setVersion] = useState(defaultVersion);
+  const { versions, latestVersion } = useVersions();
+  useEffect(() => {
+    if (!version && latestVersion) {
+      setVersion(latestVersion);
+    }
+  }, [latestVersion, version]);
   return [
     <header
       key="header"
@@ -42,6 +53,26 @@ const EventListPage: FC<EventListPageProps> = ({
           </div>
           <div className="my-auto flex flex-col min-w-96 gap-2">
             <SearchBox locale={locale} search={search} setSearch={setSearch} />
+            {versions && versions.length > 0 && (
+              <label className="form-control w-full">
+                <div className="label py-0">
+                  <span className="label-text">
+                    {translate(locale, "MinecraftVersion")}
+                  </span>
+                </div>
+                <select
+                  className="select select-bordered w-full"
+                  value={version}
+                  onChange={(event) => setVersion(event.target.value)}
+                >
+                  {versions.map((candidate) => (
+                    <option key={candidate} value={candidate}>
+                      {candidate}
+                    </option>
+                  ))}
+                </select>
+              </label>
+            )}
             <div className="flex gap-1 mx-auto flex-wrap justify-center">
               {EventSource.map((source) => (
                 <SelectableSourceTag
@@ -62,6 +93,7 @@ const EventListPage: FC<EventListPageProps> = ({
         setTags={setTags}
         search={search}
         locale={locale}
+        version={version}
       />
     </main>,
     <footer key="footer" className="bottom-0 sticky z-20">

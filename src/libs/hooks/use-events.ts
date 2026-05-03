@@ -12,11 +12,13 @@ type Event = {
   deprecateDescription?: string;
 };
 
-const useEvents = (locale: Locale) => {
-  const { data: events } = useSWRImmutable(["events", locale], ([, locale]) =>
-    fetch(`/api/events?lang=${locale}`).then(
-      (response) => response.json() as Promise<Event[]>,
-    ),
+const useEvents = (locale: Locale, version: string) => {
+  const { data: events } = useSWRImmutable(
+    version ? ["events", locale, version] : null,
+    ([, locale, version]) =>
+      fetch(
+        `/api/version/${encodeURIComponent(version)}/events?lang=${locale}`,
+      ).then((response) => response.json() as Promise<Event[]>),
   );
   return { events };
 };

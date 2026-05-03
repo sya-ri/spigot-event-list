@@ -7,12 +7,14 @@ export default function Page({
   searchParams: {
     tags?: string;
     search?: string;
+    version?: string;
   };
 }) {
   return (
     <EventListPage
       defaultSearch={searchParams.search ?? ""}
       defaultTags={splitTags(searchParams.tags)}
+      defaultVersion={searchParams.version ?? ""}
     />
   );
 }

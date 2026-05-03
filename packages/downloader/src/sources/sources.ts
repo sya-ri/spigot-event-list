@@ -1,5 +1,10 @@
-import { Artifact } from "../maven";
 import SourceType from "../types/source-type";
+import {
+  createPaperLocation,
+  createPurpurLocation,
+  createSpigotLocation,
+  type JavadocLocation,
+} from "./server-javadoc-resolver";
 import {
   bungeeBuildNumber,
   bungeeVersion,
@@ -13,26 +18,33 @@ import {
   velocityVersion,
 } from "./source-version";
 
+const normalizeBungeeVersionLabel = (version: string) =>
+  version.replace(/-R0\.\d+$/, "");
+
 export type Source = {
-  artifact: Artifact;
-  repository: string;
+  location: JavadocLocation;
+  versionLabel: string;
   javadocUrl: string;
   downloadUrl: string;
   allClasses: string;
-  buildNumber: number;
+  buildNumber: number | null;
   downloadSources: SourceType[];
 };
 
 export const getSources = async (): Promise<Record<string, Source>> => ({
   Bungee: await bungeeVersion().then(async (version) => ({
-    artifact: {
-      groupId: "net.md-5",
-      artifactId: "bungeecord-api",
-      version: version.split("-SNAPSHOT")[0],
-      classifier: "javadoc",
-      isSnapShot: true,
+    location: {
+      kind: "artifact",
+      artifact: {
+        groupId: "net.md-5",
+        artifactId: "bungeecord-api",
+        version: version.split("-SNAPSHOT")[0],
+        classifier: "javadoc",
+        isSnapShot: true,
+      },
+      repository: "https://central.sonatype.com/repository/maven-snapshots/",
     },
-    repository: "https://central.sonatype.com/repository/maven-snapshots/",
+    versionLabel: normalizeBungeeVersionLabel(version.split("-SNAPSHOT")[0]),
     allClasses: "allclasses-index.html",
     downloadSources: ["bungee"],
     downloadUrl: "https://ci.md-5.net/job/BungeeCord/lastBuild",
@@ -40,14 +52,8 @@ export const getSources = async (): Promise<Record<string, Source>> => ({
     buildNumber: await bungeeBuildNumber(),
   })),
   Paper: await paperVersion().then(async (version) => ({
-    artifact: {
-      groupId: "io.papermc.paper",
-      artifactId: "paper-api",
-      version: `${version}-R0.1`,
-      classifier: "javadoc",
-      isSnapShot: true,
-    },
-    repository: "https://repo.papermc.io/repository/maven-public/",
+    location: createPaperLocation(version),
+    versionLabel: version,
     allClasses: "allclasses-index.html",
     downloadSources: ["paper"],
     downloadUrl: "https://papermc.io/downloads/paper",
@@ -55,14 +61,8 @@ export const getSources = async (): Promise<Record<string, Source>> => ({
     buildNumber: await paperBuildNumber(version),
   })),
   Purpur: await purpurVersion().then(async (version) => ({
-    artifact: {
-      groupId: "org.purpurmc.purpur",
-      artifactId: "purpur-api",
-      version: `${version}-R0.1`,
-      classifier: "javadoc",
-      isSnapShot: true,
-    },
-    repository: "https://repo.purpurmc.org/snapshots/",
+    location: createPurpurLocation(version),
+    versionLabel: version,
     allClasses: "allclasses-index.html",
     downloadSources: ["purpur"],
     downloadUrl: "https://purpurmc.org/downloads",
@@ -70,15 +70,8 @@ export const getSources = async (): Promise<Record<string, Source>> => ({
     buildNumber: await purpurBuildNumber(version),
   })),
   Spigot: await spigotVersion().then(async (version) => ({
-    artifact: {
-      groupId: "org.spigotmc",
-      artifactId: "spigot-api",
-      version: `${version}-R0.1`,
-      classifier: "javadoc",
-      isSnapShot: true,
-    },
-    repository:
-      "https://hub.spigotmc.org/nexus/content/repositories/snapshots/",
+    location: createSpigotLocation(version),
+    versionLabel: version,
     allClasses: "allclasses-index.html",
     downloadSources: ["spigot"],
     downloadUrl: "",
@@ -86,14 +79,18 @@ export const getSources = async (): Promise<Record<string, Source>> => ({
     buildNumber: await spigotBuildNumber(),
   })),
   Velocity: await velocityVersion().then(async (version) => ({
-    artifact: {
-      groupId: "com.velocitypowered",
-      artifactId: "velocity-api",
-      version: version.split("-SNAPSHOT")[0],
-      classifier: "javadoc",
-      isSnapShot: true,
+    location: {
+      kind: "artifact",
+      artifact: {
+        groupId: "com.velocitypowered",
+        artifactId: "velocity-api",
+        version: version.split("-SNAPSHOT")[0],
+        classifier: "javadoc",
+        isSnapShot: true,
+      },
+      repository: "https://repo.papermc.io/repository/maven-public/",
     },
-    repository: "https://repo.papermc.io/repository/maven-public/",
+    versionLabel: version.split("-SNAPSHOT")[0],
     allClasses: "allclasses-index.html",
     downloadSources: ["velocity"],
     downloadUrl: "https://papermc.io/downloads/velocity",
