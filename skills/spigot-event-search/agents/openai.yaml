@@ -1,0 +1,7 @@
+interface:
+  display_name: "Spigot Event Search"
+  short_description: "Search Minecraft and proxy events by text."
+  default_prompt: "Use $spigot-event-search to find matching Minecraft or proxy events from partial Japanese or English text."
+
+policy:
+  allow_implicit_invocation: true
