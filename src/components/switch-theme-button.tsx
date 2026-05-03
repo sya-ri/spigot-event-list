@@ -1,28 +1,27 @@
 "use client";
 
-import clsx from "clsx";
 import { useTheme } from "next-themes";
 import React from "react";
 import { BiMoon, BiSun } from "react-icons/bi";
 
 const SwitchThemeButton = () => {
-  const { resolvedTheme, setTheme } = useTheme();
+  const { setTheme } = useTheme();
 
   return (
-    <label
-      className={clsx(
-        "btn btn-square btn-ghost swap swap-rotate",
-        resolvedTheme == "dark" ? "swap-active" : "",
-      )}
+    <button
+      type="button"
+      className="btn btn-square btn-ghost theme-toggle"
+      onClick={() => {
+        const currentTheme =
+          document.documentElement.getAttribute("data-theme") === "dark"
+            ? "dark"
+            : "light";
+        setTheme(currentTheme === "dark" ? "light" : "dark");
+      }}
     >
-      <input
-        type="checkbox"
-        defaultChecked={resolvedTheme == "dark"}
-        onClick={() => setTheme(resolvedTheme === "dark" ? "light" : "dark")}
-      />
-      <BiMoon className="swap-on size-5" />
-      <BiSun className="swap-off size-5" />
-    </label>
+      <BiMoon className="theme-toggle-moon size-5" />
+      <BiSun className="theme-toggle-sun size-5" />
+    </button>
   );
 };
 

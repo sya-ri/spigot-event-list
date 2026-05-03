@@ -38,7 +38,7 @@ export default async function Layout({
 }>) {
   const { locale } = await params;
   return (
-    <html lang={locale}>
+    <html lang={locale} suppressHydrationWarning>
       <body
         className={clsx(
           font.className,

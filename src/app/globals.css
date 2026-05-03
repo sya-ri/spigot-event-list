@@ -5,3 +5,19 @@
   logs: false;
   themes: light, dark;
 }
+
+.theme-toggle .theme-toggle-moon {
+  display: none;
+}
+
+.theme-toggle .theme-toggle-sun {
+  display: block;
+}
+
+html[data-theme="dark"] .theme-toggle .theme-toggle-moon {
+  display: block;
+}
+
+html[data-theme="dark"] .theme-toggle .theme-toggle-sun {
+  display: none;
+}
