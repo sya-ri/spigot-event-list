@@ -1,9 +1,9 @@
-import axios, { AxiosRequestConfig } from "axios";
 import { format, promisify } from "util";
 import { parseString } from "xml2js";
 import MultiProgress from "multi-progress";
 import { Stream } from "stream";
 import { createWriteStream } from "fs";
+import { fetchStream, fetchText } from "./http";
 
 export type Artifact = {
   groupId: string;
@@ -25,26 +25,16 @@ const groupPath = (artifact: Artifact) =>
 const artifactPath = (artifact: Artifact) =>
   groupPath(artifact) + "/" + fileName(artifact);
 
-const parseMetadata = async (
-  metadataUrl: string,
-  config?: AxiosRequestConfig,
-) => {
-  const response = await axios.get<string>(metadataUrl, {
-    responseType: "text",
-    ...config,
-  });
-  if (response.status !== 200) {
-    throw new Error(
-      `Unable to fetch ${metadataUrl}. Status ${response.status}`,
-    );
-  }
-  return (await promisify(parseString)(response.data)) as any;
+const parseMetadata = async (metadataUrl: string, config?: RequestInit) => {
+  return (await promisify(parseString)(
+    await fetchText(metadataUrl, config),
+  )) as any;
 };
 
 const latestSnapShotVersion = async (
   artifact: Artifact,
   basePath: string,
-  config?: AxiosRequestConfig,
+  config?: RequestInit,
 ) => {
   const metadataUrl = basePath + groupPath(artifact) + "/maven-metadata.xml";
   const xml = await parseMetadata(metadataUrl, config);
@@ -65,7 +55,7 @@ export const resolveLatestArtifactVersion = async (
   artifact: Pick<Artifact, "groupId" | "artifactId">,
   basePath: string,
   prefix: string,
-  config?: AxiosRequestConfig,
+  config?: RequestInit,
 ) => {
   const metadataUrl =
     basePath +
@@ -91,7 +81,7 @@ export const resolveLatestArtifactVersion = async (
 export const resolveArtifactUrl = async (
   artifact: Artifact,
   basePath: string,
-  config?: AxiosRequestConfig,
+  config?: RequestInit,
 ) => {
   if (artifact.isSnapShot) {
     const { snapshotVersion } = await latestSnapShotVersion(
@@ -109,7 +99,7 @@ export const resolveArtifactUrl = async (
 export const resolveArtifactBuildNumber = async (
   artifact: Artifact,
   basePath: string,
-  config?: AxiosRequestConfig,
+  config?: RequestInit,
 ) => {
   if (!artifact.isSnapShot) {
     const matched = artifact.version.match(/\.build\.(\d+)(?:-|$)/);
@@ -129,40 +119,32 @@ export const downloadArtifact = (
   artifact: Artifact,
   destination: string,
   repository: string,
-  config?: AxiosRequestConfig,
+  config?: RequestInit,
 ) =>
   resolveArtifactUrl(artifact, repository, config).then((url) =>
-    axios
-      .get<Stream>(url, {
-        responseType: "stream",
-        ...config,
-      })
-      .then(({ status, headers, data }) => {
-        if (status !== 200) {
-          throw new Error(`Unable to fetch ${url}. Status ${status}`);
-        }
-        const contentLength = parseInt(headers["content-length"] || "");
-        if (Number.isNaN(contentLength)) {
-          throw new Error(
-            `Unable to fetch ${url}. Content-Length: ${headers["content-length"]}`,
-          );
-        }
-        return new Promise<void>((resolve, reject) => {
-          const bar = multiProgress.newBar(
-            `  ${name.padEnd(10, " ")} ${artifact.version.padStart(12, " ")} [:bar] :percent`,
-            {
-              complete: "=",
-              incomplete: " ",
-              width: 20,
-              total: contentLength,
-            },
-          );
-          data.pipe(createWriteStream(destination));
-          data.on("data", (chunk: Buffer) => bar.tick(chunk.length));
-          data.on("end", () => resolve());
-          data.on("error", () => reject());
-        });
-      }),
+    fetchStream(url, config).then(({ contentLength: headerValue, stream }) => {
+      const contentLength = parseInt(String(headerValue ?? ""), 10);
+      if (Number.isNaN(contentLength)) {
+        throw new Error(
+          `Unable to fetch ${url}. Content-Length: ${String(headerValue ?? "")}`,
+        );
+      }
+      return new Promise<void>((resolve, reject) => {
+        const bar = multiProgress.newBar(
+          `  ${name.padEnd(10, " ")} ${artifact.version.padStart(12, " ")} [:bar] :percent`,
+          {
+            complete: "=",
+            incomplete: " ",
+            width: 20,
+            total: contentLength,
+          },
+        );
+        stream.pipe(createWriteStream(destination));
+        stream.on("data", (chunk: Buffer) => bar.tick(chunk.length));
+        stream.on("end", () => resolve());
+        stream.on("error", () => reject());
+      });
+    }),
   );
 
 const getVersion = (artifact: Artifact): string => {

@@ -42,11 +42,6 @@ const EventListPage: FC<EventListPageProps> = ({
     return versions && versions.length > 0 ? versions : [fallbackVersion];
   }, [latestVersion, version, versions]);
   useEffect(() => {
-    if (!version && latestVersion) {
-      setVersion(latestVersion);
-    }
-  }, [latestVersion, version]);
-  useEffect(() => {
     if (!version) {
       return;
     }
@@ -79,12 +74,10 @@ const EventListPage: FC<EventListPageProps> = ({
           </div>
           <div className="my-auto flex w-full max-w-md flex-col gap-2">
             <SearchBox locale={locale} search={search} setSearch={setSearch} />
-            <label className="form-control w-full">
-              <div className="label py-0">
-                <span className="label-text">
-                  {translate(locale, "MinecraftVersion")}
-                </span>
-              </div>
+            <fieldset className="fieldset w-full">
+              <legend className="fieldset-legend py-0 text-sm font-medium">
+                {translate(locale, "MinecraftVersion")}
+              </legend>
               <select
                 className="select select-bordered w-full pl-4"
                 value={version || versionOptions[0]}
@@ -98,7 +91,7 @@ const EventListPage: FC<EventListPageProps> = ({
                   </option>
                 ))}
               </select>
-            </label>
+            </fieldset>
             <div className="flex gap-1 mx-auto flex-wrap justify-center">
               {EventSource.map((source) => (
                 <SelectableSourceTag

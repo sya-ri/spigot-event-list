@@ -20,17 +20,18 @@ type EventResponse = {
 
 export const GET = async (
   request: NextRequest,
-  { params }: { params: { version: string } },
+  { params }: { params: Promise<{ version: string }> },
 ) => {
-  const isLatest = params.version === "latest";
+  const { version } = await params;
+  const isLatest = version === "latest";
   const availableVersions = await getServerVersionsDesc();
-  if (!isLatest && !availableVersions.includes(params.version)) {
-    return new NextResponse(`Unsupported version: ${params.version}`, {
+  if (!isLatest && !availableVersions.includes(version)) {
+    return new NextResponse(`Unsupported version: ${version}`, {
       status: 404,
     });
   }
   const [serverData, proxyData] = await Promise.all([
-    isLatest ? readLatestServerEvents() : readServerEvents(params.version),
+    isLatest ? readLatestServerEvents() : readServerEvents(version),
     readProxyEvents(),
   ]);
   const lang = request.nextUrl.searchParams.get("lang") ?? "ja";

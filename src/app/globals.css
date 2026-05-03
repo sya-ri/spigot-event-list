@@ -1,3 +1,7 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@config "../../tailwind.config.ts";
+@import "tailwindcss";
+
+@plugin "daisyui" {
+  logs: false;
+  themes: light, dark;
+}

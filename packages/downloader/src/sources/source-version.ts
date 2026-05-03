@@ -1,5 +1,5 @@
-import axios from "axios";
 import { load } from "cheerio";
+import { fetchJson, fetchText } from "../http";
 
 const PAPERMC_HEADERS = {
   headers: {
@@ -28,8 +28,7 @@ const sortVersionsAsc = (versions: string[]) =>
   [...versions].sort((left, right) => compareVersions(left, right));
 
 const fetchVersionFromPom = async (url: string): Promise<string> => {
-  const response = await axios.get<string>(url);
-  const $ = load(response.data);
+  const $ = load(await fetchText(url));
   return $("version").first().text();
 };
 
@@ -38,8 +37,7 @@ type JenkinsApi = {
 };
 
 const fetchBuildNumberFromJenkins = async (url: string): Promise<number> => {
-  const response = await axios.get<JenkinsApi>(url);
-  const json = response.data;
+  const json = await fetchJson<JenkinsApi>(url);
   return parseInt(json.id);
 };
 
@@ -58,11 +56,10 @@ type PaperApiVersions = {
 };
 
 const fetchVersionFromPaperApi = async (name: string): Promise<string> => {
-  const response = await axios.get<PaperApiVersions>(
+  const json = await fetchJson<PaperApiVersions>(
     `https://fill.papermc.io/v3/projects/${name}`,
     PAPERMC_HEADERS,
   );
-  const json = response.data;
   return (
     sortVersionsAsc(
       Object.values(json.versions).flat().filter(stableMinecraftVersion),
@@ -74,21 +71,20 @@ const fetchBuildNumberFromPaperApi = async (
   name: string,
   version: string,
 ): Promise<number> => {
-  const response = await axios.get<PaperApiVersion>(
+  const json = await fetchJson<PaperApiVersion>(
     `https://fill.papermc.io/v3/projects/${name}/versions/${version}`,
     PAPERMC_HEADERS,
   );
-  const json = response.data;
   return json.builds.shift() ?? 0;
 };
 
 const fetchVersionsFromPaperApi = async (name: string): Promise<string[]> => {
-  const response = await axios.get<PaperApiVersions>(
+  const json = await fetchJson<PaperApiVersions>(
     `https://fill.papermc.io/v3/projects/${name}`,
     PAPERMC_HEADERS,
   );
   return sortVersionsAsc(
-    Object.values(response.data.versions).flat().filter(stableMinecraftVersion),
+    Object.values(json.versions).flat().filter(stableMinecraftVersion),
   );
 };
 
@@ -107,10 +103,9 @@ type PurpurApiVersion = {
 };
 
 const fetchVersionFromPurpurApi = async (name: string): Promise<string> => {
-  const response = await axios.get<PurpurApiVersions>(
+  const json = await fetchJson<PurpurApiVersions>(
     `https://api.purpurmc.org/v2/${name}/`,
   );
-  const json = response.data;
   return (
     sortVersionsAsc(json.versions.filter(stableMinecraftVersion)).pop() ?? ""
   );
@@ -120,25 +115,24 @@ const fetchBuildNumberFromPurpurApi = async (
   name: string,
   version: string,
 ): Promise<number> => {
-  const response = await axios.get<PurpurApiVersion>(
+  const json = await fetchJson<PurpurApiVersion>(
     `https://api.purpurmc.org/v2/${name}/${version}/`,
   );
-  const json = response.data;
   return parseInt(json.builds.all.pop() ?? "0");
 };
 
 const fetchVersionsFromPurpurApi = async (name: string): Promise<string[]> => {
-  const response = await axios.get<PurpurApiVersions>(
+  const json = await fetchJson<PurpurApiVersions>(
     `https://api.purpurmc.org/v2/${name}/`,
   );
-  return sortVersionsAsc(response.data.versions.filter(stableMinecraftVersion));
+  return sortVersionsAsc(json.versions.filter(stableMinecraftVersion));
 };
 
 const fetchSpigotVersions = async (): Promise<string[]> => {
-  const response = await axios.get<string>(
+  const body = await fetchText(
     "https://hub.spigotmc.org/nexus/content/repositories/snapshots/org/spigotmc/spigot-api/maven-metadata.xml",
   );
-  const matches = response.data.match(/<version>([^<]+)<\/version>/g) ?? [];
+  const matches = body.match(/<version>([^<]+)<\/version>/g) ?? [];
   return sortVersionsAsc(
     matches
       .map((value) => value.replace("</version>", "").replace("<version>", ""))
@@ -152,8 +146,8 @@ const fetchVersionsFromMavenMetadata = async (
   url: string,
   predicate: (version: string) => boolean,
 ) => {
-  const response = await axios.get<string>(url);
-  const matches = response.data.match(/<version>([^<]+)<\/version>/g) ?? [];
+  const matches =
+    (await fetchText(url)).match(/<version>([^<]+)<\/version>/g) ?? [];
   return Array.from(
     new Set(
       matches
@@ -194,10 +188,10 @@ type SpigotBuildData = {
 };
 
 export const spigotVersion = async (): Promise<string> => {
-  const response = await axios.get<SpigotBuildData>(
+  const json = await fetchJson<SpigotBuildData>(
     "https://hub.spigotmc.org/stash/projects/SPIGOT/repos/builddata/raw/info.json",
   );
-  return response.data.minecraftVersion;
+  return json.minecraftVersion;
 };
 
 export const paperVersion = async () => {

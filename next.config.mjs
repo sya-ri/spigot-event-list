@@ -1,8 +1,9 @@
-import pwa from "next-pwa";
+import withSerwistInit from "@serwist/next";
 
-const withPWA = pwa({
-  dest: "public",
-  disable: process.env.NODE_ENV === "development",
+const withSerwist = withSerwistInit({
+  swSrc: "src/app/sw.ts",
+  swDest: "public/sw.js",
+  disable: process.env.NODE_ENV !== "production",
 });
 
-export default withPWA({});
+export default withSerwist({});

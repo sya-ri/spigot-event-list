@@ -9,12 +9,11 @@ import {
   availableInSpigot,
   availableInVelocity,
 } from "@/libs/available-in";
-import React, { FC, useEffect, useState } from "react";
+import React, { FC, useMemo } from "react";
 import SelectableSourceTag from "@/components/selectable-source-tag";
 import EventSource from "@/types/event-source";
 import useEvents from "@/libs/hooks/use-events";
-import { isEmpty } from "remeda/dist/es";
-import { isDefined } from "remeda";
+import { isDefined, isEmpty } from "remeda";
 import { translate } from "@/i18n/translation";
 import { FiAlertTriangle } from "react-icons/fi";
 import { Locale } from "@/i18n/config";
@@ -35,20 +34,16 @@ const EventList: FC<EventListProps> = ({
   version,
 }) => {
   const { events } = useEvents(locale, version);
-  const [incompleteEvents, setIncompleteEvents] =
-    useState<ReturnType<typeof useEvents>["events"]>();
-  useEffect(() => {
-    if (events) {
-      setIncompleteEvents(
-        events.filter(
-          (event) =>
-            isEmpty(event.description) ||
-            (isDefined(event.deprecateDescription) &&
-              isEmpty(event.deprecateDescription)),
-        ),
-      );
-    }
-  }, [events]);
+  const incompleteEvents = useMemo(
+    () =>
+      events?.filter(
+        (event) =>
+          isEmpty(event.description) ||
+          (isDefined(event.deprecateDescription) &&
+            isEmpty(event.deprecateDescription)),
+      ),
+    [events],
+  );
   return (
     <div className="flex flex-col gap-4">
       {incompleteEvents && incompleteEvents.length !== 0 && (
@@ -67,7 +62,7 @@ const EventList: FC<EventListProps> = ({
             <div className="collapse-content">
               <ul className="mx-auto sm:mx-12 max-h-96 overflow-y-scroll">
                 {incompleteEvents.map((event) => (
-                  <li key={event.link}>
+                  <li key={`${event.source}:${event.name}:${event.link}`}>
                     <Link
                       href={event.link}
                       className="link-hover"
@@ -91,7 +86,7 @@ const EventList: FC<EventListProps> = ({
                 (event.description ?? "").match(new RegExp(search, "i"))),
           )
           .map((event) => (
-            <div key={event.link}>
+            <div key={`${event.source}:${event.name}:${event.link}`}>
               <div className="flex flex-wrap gap-1 justify-between">
                 <Link
                   className={clsx(

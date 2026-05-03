@@ -7,8 +7,8 @@ import { getSourceType, Source } from "./sources/sources";
 import EventType from "./types/event-type";
 import { load } from "cheerio";
 import SourceType from "./types/source-type";
-import axios from "axios";
 import { createDataPaths } from "../../../src/libs/data-paths";
+import { fetchText } from "./http";
 
 const { proxyDataPath, readLatestServerEvents } = createDataPaths(
   path.resolve(process.cwd(), "../../data"),
@@ -208,15 +208,7 @@ const resolveAllClassesBody = async (rootUrl: string, preferred: string) => {
   );
   for (const candidate of candidates) {
     try {
-      const response = await axios.get<string>(
-        new URL(candidate, rootUrl).toString(),
-        {
-          responseType: "text",
-        },
-      );
-      if (response.status === 200) {
-        return response.data;
-      }
+      return await fetchText(new URL(candidate, rootUrl).toString());
     } catch {}
   }
   throw new Error(`All classes file not found for ${rootUrl}`);
@@ -232,13 +224,7 @@ const prepareSourceReader = async (
     return {
       readAllClasses: (preferred: string) =>
         resolveAllClassesBody(rootUrl, preferred),
-      readPage: async (href: string) => {
-        const response = await axios.get<string>(
-          new URL(href, rootUrl).toString(),
-          { responseType: "text" },
-        );
-        return response.data;
-      },
+      readPage: (href: string) => fetchText(new URL(href, rootUrl).toString()),
     };
   }
   await downloadArtifact(

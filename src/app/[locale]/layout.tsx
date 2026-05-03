@@ -29,15 +29,16 @@ export const metadata: Metadata = {
   manifest: "/manifest.json",
 };
 
-export default function Layout({
+export default async function Layout({
   children,
   params,
 }: Readonly<{
   children: ReactNode;
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }>) {
+  const { locale } = await params;
   return (
-    <html lang={params.locale}>
+    <html lang={locale}>
       <body
         className={clsx(
           font.className,
