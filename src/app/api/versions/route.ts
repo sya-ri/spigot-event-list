@@ -7,7 +7,8 @@ import {
 export const GET = async () => {
   const versions = await getServerVersionsDesc();
   return NextResponse.json({
-    latest: await getLatestServerVersion(),
-    versions,
+    latest: "latest",
+    latestMinecraftVersion: await getLatestServerVersion(),
+    versions: ["latest", ...versions],
   });
 };

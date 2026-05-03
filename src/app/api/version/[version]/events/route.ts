@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from "next/server";
 import { map, pick, pipe } from "remeda";
 import {
   getServerVersionsDesc,
+  readLatestServerEvents,
   readProxyEvents,
   readServerEvents,
 } from "@/libs/data-paths";
@@ -21,14 +22,15 @@ export const GET = async (
   request: NextRequest,
   { params }: { params: { version: string } },
 ) => {
+  const isLatest = params.version === "latest";
   const availableVersions = await getServerVersionsDesc();
-  if (!availableVersions.includes(params.version)) {
+  if (!isLatest && !availableVersions.includes(params.version)) {
     return new NextResponse(`Unsupported version: ${params.version}`, {
       status: 404,
     });
   }
   const [serverData, proxyData] = await Promise.all([
-    readServerEvents(params.version),
+    isLatest ? readLatestServerEvents() : readServerEvents(params.version),
     readProxyEvents(),
   ]);
   const lang = request.nextUrl.searchParams.get("lang") ?? "ja";

@@ -32,7 +32,7 @@ const EventListPage: FC<EventListPageProps> = ({
   const [search, setSearch] = useState(defaultSearch);
   const [tags, setTags] = useState(defaultTags);
   const [version, setVersion] = useState(defaultVersion);
-  const { versions, latestVersion } = useVersions();
+  const { versions, latestVersion, latestMinecraftVersion } = useVersions();
   useEffect(() => {
     if (!version && latestVersion) {
       setVersion(latestVersion);
@@ -67,7 +67,9 @@ const EventListPage: FC<EventListPageProps> = ({
                 >
                   {versions.map((candidate) => (
                     <option key={candidate} value={candidate}>
-                      {candidate}
+                      {candidate === "latest"
+                        ? `${translate(locale, "Latest")} (${latestMinecraftVersion ?? ""})`
+                        : candidate}
                     </option>
                   ))}
                 </select>

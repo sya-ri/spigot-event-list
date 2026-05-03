@@ -4,6 +4,7 @@ type Message = {
   SearchByNameOrDescription: string;
   AddNewLanguage: string;
   IncompleteEvents: string;
+  Latest: string;
   MinecraftVersion: string;
 };
 
@@ -12,12 +13,14 @@ export const messages: Record<Locale, Message> = {
     SearchByNameOrDescription: "Search by name or description",
     AddNewLanguage: "Add new language",
     IncompleteEvents: "%size% event descriptions are not written.",
+    Latest: "latest",
     MinecraftVersion: "Minecraft version",
   },
   ja: {
     SearchByNameOrDescription: "イベント名・説明文で検索",
     AddNewLanguage: "翻訳を追加する",
     IncompleteEvents: "%size%個のイベント説明文が書かれていません。",
+    Latest: "latest",
     MinecraftVersion: "Minecraft バージョン",
   },
 };

@@ -14,7 +14,7 @@ export default function Page({
     <EventListPage
       defaultSearch={searchParams.search ?? ""}
       defaultTags={splitTags(searchParams.tags)}
-      defaultVersion={searchParams.version ?? ""}
+      defaultVersion={searchParams.version ?? "latest"}
     />
   );
 }

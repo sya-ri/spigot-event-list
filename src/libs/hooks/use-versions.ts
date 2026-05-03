@@ -2,6 +2,7 @@ import useSWRImmutable from "swr/immutable";
 
 type VersionsResponse = {
   latest: string;
+  latestMinecraftVersion: string;
   versions: string[];
 };
 
@@ -11,7 +12,11 @@ const useVersions = () => {
       (response) => response.json() as Promise<VersionsResponse>,
     ),
   );
-  return { versions: data?.versions, latestVersion: data?.latest };
+  return {
+    versions: data?.versions,
+    latestVersion: data?.latest,
+    latestMinecraftVersion: data?.latestMinecraftVersion,
+  };
 };
 
 export default useVersions;
