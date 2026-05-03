@@ -5,6 +5,12 @@ import EventType from "../../packages/downloader/src/types/event-type";
 const SERVER_SOURCES = ["spigot", "paper", "purpur"] as const;
 const SERVER_VERSION_SOURCES = ["Spigot", "Paper", "Purpur"] as const;
 
+type CompleteServerVersionRule = {
+  min?: string;
+  max?: string;
+  requiredSources: readonly string[];
+};
+
 const compareVersions = (left: string, right: string) => {
   const leftParts = left.split(".").map((value) => parseInt(value, 10));
   const rightParts = right.split(".").map((value) => parseInt(value, 10));
@@ -20,6 +26,38 @@ const compareVersions = (left: string, right: string) => {
 
 const stableMinecraftVersion = (value: string) =>
   /^\d+(\.\d+){1,2}$/.test(value);
+
+export const COMPLETE_SERVER_VERSION_RULES: CompleteServerVersionRule[] = [
+  {
+    max: "1.14.1",
+    requiredSources: ["Spigot", "Paper"],
+  },
+  {
+    requiredSources: SERVER_VERSION_SOURCES,
+  },
+];
+
+export const getRequiredServerSources = (minecraftVersion: string) =>
+  (
+    COMPLETE_SERVER_VERSION_RULES.find((rule) => {
+      if (rule.min && compareVersions(minecraftVersion, rule.min) < 0) {
+        return false;
+      }
+      if (rule.max && compareVersions(minecraftVersion, rule.max) > 0) {
+        return false;
+      }
+      return true;
+    }) ??
+    COMPLETE_SERVER_VERSION_RULES[COMPLETE_SERVER_VERSION_RULES.length - 1]
+  ).requiredSources;
+
+export const hasCompleteServerSources = (
+  minecraftVersion: string,
+  versions: Record<string, string>,
+) =>
+  getRequiredServerSources(minecraftVersion).every(
+    (source) => source in versions,
+  );
 
 export const createDataPaths = (rootPath: string) => {
   const dataPath = (...parts: string[]) => path.join(rootPath, ...parts);
@@ -53,16 +91,13 @@ export const createDataPaths = (rootPath: string) => {
     return JSON.parse(text) as Record<string, string>;
   };
 
-  const hasCompleteServerSources = (versions: Record<string, string>) =>
-    SERVER_VERSION_SOURCES.every((source) => source in versions);
-
   const getLatestServerVersion = async () => {
     const versions = await getServerVersionsDesc();
     const supported: string[] = [];
     for (const version of versions) {
       try {
         const versionMap = await readServerVersions(version);
-        if (hasCompleteServerSources(versionMap)) {
+        if (hasCompleteServerSources(version, versionMap)) {
           supported.push(version);
         }
       } catch {}
@@ -141,7 +176,7 @@ export const createDataPaths = (rootPath: string) => {
       for (const version of versions) {
         try {
           const versionMap = await readServerVersions(version);
-          if (hasCompleteServerSources(versionMap)) {
+          if (hasCompleteServerSources(version, versionMap)) {
             supported.push(version);
           }
         } catch {}

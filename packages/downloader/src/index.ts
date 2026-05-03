@@ -9,12 +9,14 @@ import downloadLatestEvents from "./download-latest-events";
 import EventType from "./types/event-type";
 import { Source } from "./sources/sources";
 import path from "path";
-import { createDataPaths } from "../../../src/libs/data-paths";
+import {
+  createDataPaths,
+  hasCompleteServerSources,
+} from "../../../src/libs/data-paths";
 import { fillMissingDescriptionsInData } from "./fill-missing-descriptions";
 
 const PROXY_SOURCE_NAMES = ["Bungee", "Velocity"] as const;
 const PROXY_EVENT_SOURCES = ["bungee", "velocity"] as const;
-const SERVER_SOURCE_NAMES = ["Spigot", "Paper", "Purpur"] as const;
 const { latestDataPath, minecraftVersionDataPath, proxyDataPath } =
   createDataPaths(path.resolve(process.cwd(), "../../data"));
 
@@ -361,9 +363,12 @@ const groupCompleteReleasesByMinecraftVersion = (
 ) => {
   const grouped = groupReleasesByMinecraftVersion(releases);
   return new Map(
-    Array.from(grouped.entries()).filter(([, versionReleases]) =>
-      SERVER_SOURCE_NAMES.every((sourceName) =>
-        versionReleases.some((release) => release.sourceName === sourceName),
+    Array.from(grouped.entries()).filter(([version, versionReleases]) =>
+      hasCompleteServerSources(
+        version,
+        Object.fromEntries(
+          versionReleases.map((release) => [release.sourceName, "present"]),
+        ),
       ),
     ),
   );
