@@ -186,7 +186,7 @@ export const fillMissingDescriptionsInData = async (dataRoot: string) => {
   );
 
   const canonicalDescriptions = new Map<string, DescriptionPair>();
-  for (const override of descriptionOverrides.entries()) {
+  for (const override of Array.from(descriptionOverrides.entries())) {
     canonicalDescriptions.set(override[0], override[1]);
   }
   for (const { data } of parsedFiles) {

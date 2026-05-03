@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { map, pick, pipe } from "remeda";
+import { map, pick, pipe, sortBy } from "remeda";
 import {
   getServerVersionsDesc,
   readLatestServerEvents,
@@ -42,6 +42,7 @@ export const GET = async (
   return NextResponse.json(
     pipe(
       [...serverData.events, ...proxyData.events],
+      sortBy([(event) => event.name, "asc"], [(event) => event.source, "asc"]),
       map(
         pick([
           "name",
