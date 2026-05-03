@@ -37,6 +37,32 @@
   - Velocity
 - Support i18n.
 
+## AI Skill
+
+This repository includes a public skill for AI agents:
+
+- `spigot-event-search`
+
+It uses the public event search API and supports partial-match search over:
+
+- event name
+- description
+- Javadoc
+- deprecated description
+- Japanese and English queries
+
+Install with GitHub CLI:
+
+```bash
+gh skill install sya-ri/spigot-event-list spigot-event-search
+```
+
+Install with `skills`:
+
+```bash
+npx -y skills add sya-ri/spigot-event-list --skill spigot-event-search
+```
+
 ## i18n
 
 Edit the file below and create a [pull request](https://github.com/sya-ri/spigot-event-list/pulls).
