@@ -1,7 +1,8 @@
 {
   "name": "spigot-event-list-downloader",
   "scripts": {
-    "start": "tsx src/index.ts"
+    "start": "tsx src/index.ts",
+    "check": "tsx src/check.ts"
   },
   "devDependencies": {
     "@types/multi-progress": "2.0.6",

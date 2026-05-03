@@ -20,6 +20,35 @@ const allClassesCandidates = [
   "allclasses-noframe.html",
   "allclasses-frame.html",
 ];
+const deprecationTranslations = new Map<string, string>([
+  [
+    "Bukkit has added EntityTransformEvent, you should start using that",
+    "Bukkit に EntityTransformEvent が追加されたので、そちらを使うこと。",
+  ],
+  [
+    "Use PlayerSpawnLocationEvent, Duplicate API",
+    "PlayerSpawnLocationEvent を使うこと。重複した API。",
+  ],
+  [
+    "Replaced by PlayerLocaleChangeEvent upstream",
+    "upstream の PlayerLocaleChangeEvent に置き換えられた。",
+  ],
+  ["draft API", "ドラフト API。"],
+  [
+    "no longer used, see StructuresLocateEvent",
+    "もう使われていない。StructuresLocateEvent を参照すること。",
+  ],
+  [
+    "renamed to RegistryComposeEvent",
+    "RegistryComposeEvent に名前が変更された。",
+  ],
+  ["no longer needed", "もう不要。"],
+]);
+const staleDeprecateDescriptions = new Map<string, { ja: string; en: string }>([
+  ["@Deprecated", { ja: "非推奨。", en: "Deprecated." }],
+  ["@Experimental", { ja: "実験段階。", en: "Experimental phase." }],
+  ["@Beta", { ja: "ベータ段階。", en: "Beta phase." }],
+]);
 
 type SourceReader = {
   readAllClasses: (preferred: string) => Promise<string>;
@@ -171,12 +200,27 @@ const applyToSources = (
         const annotations = $(
           `${descriptionSelector} ${typeSignatureSelector} .annotations`,
         ).text();
+        const deprecateDescription = extractDeprecationDescription(
+          $,
+          descriptionSelector,
+        );
         if (annotations.includes("@Deprecated")) {
           eventType.deprecate = "@Deprecated";
+          applyDeprecationDescription(
+            eventType,
+            deprecateDescription,
+            "@Deprecated",
+          );
         } else if (annotations.includes("@Experimental")) {
           eventType.deprecate = "@Experimental";
+          applyDeprecationDescription(
+            eventType,
+            deprecateDescription,
+            "@Experimental",
+          );
         } else if (annotations.includes("@Beta")) {
           eventType.deprecate = "@Beta";
+          applyDeprecationDescription(eventType, deprecateDescription, "@Beta");
         } else {
           delete eventType.deprecate;
           delete eventType.deprecateDescription;
@@ -187,6 +231,66 @@ const applyToSources = (
     }),
   );
 };
+
+const normalizeText = (value: string | undefined) =>
+  (value ?? "").replace(/\s+/g, " ").trim();
+
+const extractDeprecationDescription = (
+  $: ReturnType<typeof load>,
+  descriptionSelector: string,
+) => {
+  const blocks = [
+    `${descriptionSelector} .deprecation-block`,
+    `${descriptionSelector} .deprecationBlock`,
+    `${descriptionSelector} .block:has(.deprecated-label)`,
+    `${descriptionSelector} .block:has(.deprecatedLabel)`,
+  ];
+  for (const selector of blocks) {
+    const element = $(selector).first();
+    if (element.length === 0) {
+      continue;
+    }
+    const comment = normalizeText(
+      element.find(".deprecation-comment, .deprecationComment").first().text(),
+    );
+    if (comment) {
+      return comment;
+    }
+    const text = normalizeText(element.text().replace(/^Deprecated\.\s*/i, ""));
+    if (text) {
+      return text;
+    }
+  }
+  return undefined;
+};
+
+const applyDeprecationDescription = (
+  eventType: EventType,
+  extractedText: string | undefined,
+  deprecate: string,
+) => {
+  if (!extractedText) {
+    return;
+  }
+  const currentJa = normalizeText(eventType.deprecateDescription?.ja);
+  const currentEn = normalizeText(eventType.deprecateDescription?.en);
+  const stale = staleDeprecateDescriptions.get(deprecate);
+  const shouldReplaceJa =
+    !currentJa ||
+    currentJa === currentEn ||
+    (stale != null && currentJa === stale.ja);
+  const shouldReplaceEn =
+    !currentEn || (stale != null && currentEn === stale.en);
+  eventType.deprecateDescription = {
+    ja: shouldReplaceJa
+      ? localizeDeprecationDescription(extractedText)
+      : currentJa,
+    en: shouldReplaceEn ? extractedText : currentEn,
+  };
+};
+
+const localizeDeprecationDescription = (text: string) =>
+  deprecationTranslations.get(text) ?? text;
 
 const resolveAllClassesPath = async (name: string, preferred: string) => {
   const candidates = [preferred, ...allClassesCandidates].filter(

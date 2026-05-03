@@ -124,8 +124,8 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
-        "en": "Experimental phase.",
-        "ja": "実験段階。"
+        "ja": "実験段階。",
+        "en": "Experimental phase."
       },
       "description": {
         "en": "Used to format chat for chat preview.",
@@ -277,8 +277,8 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
-        "en": "Use the BellResonateEvent added to Bukkit",
-        "ja": "Bukkit に追加された BellResonateEvent を使う。"
+        "ja": "Bukkit に追加された BellResonateEvent を使う。",
+        "en": "Use the BellResonateEvent added to Bukkit"
       },
       "description": {
         "en": "Called when a Raider is revealed by a bell.",
@@ -293,8 +293,8 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
-        "en": "Use the BellRingEvent added to Bukkit.",
-        "ja": "Bukkit に追加された BellRingEvent を使う。"
+        "ja": "Bukkit に追加された BellRingEvent を使う。",
+        "en": "Use the BellRingEvent added to Bukkit."
       },
       "description": {
         "en": "Called when a bell is rung.",
@@ -749,8 +749,8 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
-        "en": "Use the AsyncChatEvent to handle processing asynchronously.",
-        "ja": "非同期で処理をする AsyncChatEvent を使う。"
+        "ja": "非同期で処理をする AsyncChatEvent を使う。",
+        "en": "Use the AsyncChatEvent to handle processing asynchronously."
       },
       "description": {
         "en": "An event fired when a Player sends a chat message to the server.",
@@ -1095,8 +1095,8 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
-        "en": "Use PortalCreateEvent defined as a world-related event.",
-        "ja": "ワールドに関するイベントとして定義された PortalCreateEvent を使う。"
+        "ja": "ワールドに関するイベントとして定義された PortalCreateEvent を使う。",
+        "en": "Use PortalCreateEvent defined as a world-related event."
       },
       "description": {
         "en": "Thrown when a Living Entity creates a portal in a world.",
@@ -1618,8 +1618,8 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
-        "en": "",
-        "ja": ""
+        "ja": "Bukkit に EntityTransformEvent が追加されたので、そちらを使うこと。",
+        "en": "Bukkit has added EntityTransformEvent, you should start using that"
       },
       "description": {
         "ja": "エンティティが別のエンティティへ変化した時に発生する。",
@@ -1922,8 +1922,8 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
-        "en": "This event is no longer used.",
-        "ja": "使われていない。"
+        "ja": "使われていない。",
+        "en": "This event is no longer used."
       },
       "description": {
         "en": "Called when an invalid packet is sent.",
@@ -1937,8 +1937,8 @@
     {
       "deprecate": "@Experimental",
       "deprecateDescription": {
-        "en": "Experimental phase.",
-        "ja": "実験段階。"
+        "ja": "実験段階。",
+        "en": "Experimental phase."
       },
       "description": {
         "en": "Called when a block with an inventory starts processing.",
@@ -2193,7 +2193,7 @@
     },
     {
       "description": {
-        "ja": "アイテムがパケットへ書き込まれる直前に呼び出される。",
+        "ja": "Called when an item is about to be written to a packet.",
         "en": "Called when an item is about to be written to a packet."
       },
       "href": "org/purpurmc/purpur/event/packet/NetworkItemSerializeEvent.html",
@@ -2445,8 +2445,8 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
-        "en": "Use PlayerBucketEntityEvent in Paper.",
-        "ja": "Paper であれば、PlayerBucketEntityEvent を使う。"
+        "ja": "Paper であれば、PlayerBucketEntityEvent を使う。",
+        "en": "Use PlayerBucketEntityEvent in Paper."
       },
       "description": {
         "en": "Called when a player attempts to put a fish in a bucket.",
@@ -2506,8 +2506,8 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
-        "en": "Use AsyncPlayerChatEvent due to chat delays.",
-        "ja": "チャットの遅延が発生するので AsyncPlayerChatEvent を使う。"
+        "ja": "チャットの遅延が発生するので AsyncPlayerChatEvent を使う。",
+        "en": "Use AsyncPlayerChatEvent due to chat delays."
       },
       "description": {
         "en": "Called when a player chats.",
@@ -2522,8 +2522,8 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
-        "en": "This event is no longer fired due to client changes.",
-        "ja": "クライアントの変更により実行されなくなった。"
+        "ja": "クライアントの変更により実行されなくなった。",
+        "en": "This event is no longer fired due to client changes."
       },
       "description": {
         "en": "Called when a player attempts to tab-complete a chat message.",
@@ -2693,8 +2693,8 @@
     {
       "deprecate": "@Experimental",
       "deprecateDescription": {
-        "en": "Experimental phase.",
-        "ja": "実験段階。"
+        "ja": "実験段階。",
+        "en": "Experimental phase."
       },
       "description": {
         "en": "Called when a player's experience cooldown changes.",
@@ -2775,8 +2775,8 @@
     {
       "deprecate": "@Experimental",
       "deprecateDescription": {
-        "en": "Experimental phase.",
-        "ja": "実験段階。"
+        "ja": "実験段階。",
+        "en": "Experimental phase."
       },
       "description": {
         "en": "Called when an entity becomes hidden from a player.",
@@ -2791,8 +2791,8 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
-        "en": "",
-        "ja": ""
+        "ja": "PlayerSpawnLocationEvent を使うこと。重複した API。",
+        "en": "Use PlayerSpawnLocationEvent, Duplicate API"
       },
       "description": {
         "ja": "プレイヤーの初期スポーン地点が決定された時に呼び出される。",
@@ -3003,8 +3003,8 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
-        "en": "",
-        "ja": ""
+        "ja": "upstream の PlayerLocaleChangeEvent に置き換えられた。",
+        "en": "Replaced by PlayerLocaleChangeEvent upstream"
       },
       "description": {
         "ja": "プレイヤーのロケールが変更された時に呼び出される。",
@@ -3129,8 +3129,8 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
-        "en": "Use EntityPickupItemEvent added to Bukkit.",
-        "ja": "Bukkit に追加された EntityPickupItemEvent を使う。"
+        "ja": "Bukkit に追加された EntityPickupItemEvent を使う。",
+        "en": "Use EntityPickupItemEvent added to Bukkit."
       },
       "description": {
         "en": "Thrown when a player picks an item up from the ground.",
@@ -3167,8 +3167,8 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
-        "en": "Use AsyncPlayerPreLoginEvent for asynchronous processing.",
-        "ja": "非同期で処理をする為に AsyncPlayerPreLoginEvent を使う。"
+        "ja": "非同期で処理をする為に AsyncPlayerPreLoginEvent を使う。",
+        "en": "Use AsyncPlayerPreLoginEvent for asynchronous processing."
       },
       "description": {
         "en": "Called when a player is attempting to log in.",
@@ -3347,8 +3347,8 @@
     {
       "deprecate": "@Experimental",
       "deprecateDescription": {
-        "en": "Experimental phase.",
-        "ja": "実験段階。"
+        "ja": "実験段階。",
+        "en": "Experimental phase."
       },
       "description": {
         "en": "Called when a hidden entity is shown to a player.",
@@ -3374,8 +3374,8 @@
     {
       "deprecate": "@Experimental",
       "deprecateDescription": {
-        "en": "Experimental phase.",
-        "ja": "実験段階。"
+        "ja": "実験段階。",
+        "en": "Experimental phase."
       },
       "description": {
         "en": "Called when a player opens a sign.",
@@ -3390,8 +3390,8 @@
     {
       "deprecate": "@Experimental",
       "deprecateDescription": {
-        "en": "Experimental phase.",
-        "ja": "実験段階。"
+        "ja": "実験段階。",
+        "en": "Experimental phase."
       },
       "description": {
         "en": "Called when a player's spawn point is changed.",
@@ -3747,8 +3747,8 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
-        "en": "It is recommended to use PrepareResultEvent instead of this event.",
-        "ja": "このイベントを直接使用せず、PrepareResultEvent を使うことが推奨されている。"
+        "ja": "このイベントを直接使用せず、PrepareResultEvent を使うことが推奨されている。",
+        "en": "It is recommended to use PrepareResultEvent instead of this event."
       },
       "description": {
         "en": "Called when an item is put in a slot for grinding in a Grindstone.",
@@ -3861,8 +3861,8 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
-        "en": "Use ProjectileHitEvent to check if it hits an entity.",
-        "ja": "非推奨。ProjectileHitEvent を使って、エンティティに当たっているかチェックする。"
+        "ja": "非推奨。ProjectileHitEvent を使って、エンティティに当たっているかチェックする。",
+        "en": "Use ProjectileHitEvent to check if it hits an entity."
       },
       "description": {
         "en": "Called when a projectile collides with an entity. This event is called before EntityDamageByEntityEvent, and cancelling it will allow the projectile to continue flying.",
@@ -4307,8 +4307,8 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
-        "en": "",
-        "ja": ""
+        "ja": "もう使われていない。StructuresLocateEvent を参照すること。",
+        "en": "no longer used, see StructuresLocateEvent"
       },
       "description": {
         "ja": "構造物または地形要素の位置を特定する前に呼び出される。",
@@ -4400,8 +4400,8 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
-        "en": "Use TNTPrimeEvent added to Bukkit.",
-        "ja": "Bukkit に追加された TNTPrimeEvent を使う。"
+        "ja": "Bukkit に追加された TNTPrimeEvent を使う。",
+        "en": "Use TNTPrimeEvent added to Bukkit."
       },
       "description": {
         "en": "Called when TNT block is about to turn into TNTPrimed.",

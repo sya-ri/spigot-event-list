@@ -46,6 +46,10 @@ const deprecateDescriptionDefaults = new Map<string, DescriptionPair>([
 const eventKey = (event: Pick<EventRecord, "name" | "source">) =>
   `${event.name}|${event.source}`;
 
+const deprecateKey = (
+  event: Pick<EventRecord, "name" | "source" | "deprecate">,
+) => `${event.name}|${event.source}|${event.deprecate ?? ""}`;
+
 const normalizeText = (text: string | undefined) =>
   (text ?? "").replace(/\s+/g, " ").trim();
 
@@ -83,8 +87,26 @@ export const fillMissingDescriptionsInData = async (dataRoot: string) => {
   );
 
   const canonicalDescriptions = new Map<string, DescriptionPair>();
+  const canonicalDeprecateDescriptions = new Map<string, DescriptionPair>();
   for (const { data } of parsedFiles) {
     for (const event of data.events) {
+      if (
+        event.deprecate &&
+        hasDeprecateDescription(event.deprecateDescription)
+      ) {
+        const key = deprecateKey(event);
+        const candidate = {
+          ja: normalizeText(event.deprecateDescription?.ja),
+          en: normalizeText(event.deprecateDescription?.en),
+        };
+        const current = canonicalDeprecateDescriptions.get(key);
+        if (
+          !current ||
+          scoreDescription(candidate) > scoreDescription(current)
+        ) {
+          canonicalDeprecateDescriptions.set(key, candidate);
+        }
+      }
       if (!hasDescription(event.description)) {
         continue;
       }
@@ -107,7 +129,9 @@ export const fillMissingDescriptionsInData = async (dataRoot: string) => {
         event.deprecate &&
         !hasDeprecateDescription(event.deprecateDescription)
       ) {
-        const fallback = deprecateDescriptionDefaults.get(event.deprecate);
+        const fallback =
+          canonicalDeprecateDescriptions.get(deprecateKey(event)) ??
+          deprecateDescriptionDefaults.get(event.deprecate);
         if (fallback) {
           event.deprecateDescription = {
             ja: normalizeText(event.deprecateDescription?.ja) || fallback.ja,

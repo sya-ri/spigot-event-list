@@ -4,7 +4,7 @@ import {
   toSourceFromRelease,
 } from "./discover-source-releases";
 import { getSources } from "./sources/sources";
-import { mkdir, writeFile } from "fs/promises";
+import { mkdir, readFile, writeFile } from "fs/promises";
 import downloadLatestEvents from "./download-latest-events";
 import EventType from "./types/event-type";
 import { Source } from "./sources/sources";
@@ -105,9 +105,70 @@ const downloadVersionedServerEvents = async (
     ]),
   );
   const [lang, events] = await downloadLatestEvents(sources);
-  await writeEvents(version, lang, events);
+  await writeEvents(
+    version,
+    lang,
+    await mergeExistingVersionEvents(version, events),
+  );
   await writeVersions(version, toVersionMapFromReleases(versionReleases));
 };
+
+const mergeExistingVersionEvents = async (
+  version: string,
+  events: Record<string, EventType>,
+) => {
+  const existing = await readExistingVersionEvents(version);
+  if (existing == null) {
+    return events;
+  }
+  return Object.fromEntries(
+    Object.entries(events).map(([key, event]) => {
+      const previous = existing[key];
+      if (!previous) {
+        return [key, event];
+      }
+      return [
+        key,
+        {
+          ...event,
+          description: {
+            ja: normalizeText(event.description.ja) || previous.description.ja,
+            en: normalizeText(event.description.en) || previous.description.en,
+          },
+          deprecateDescription: event.deprecate
+            ? {
+                ja:
+                  normalizeText(event.deprecateDescription?.ja) ||
+                  previous.deprecateDescription?.ja ||
+                  "",
+                en:
+                  normalizeText(event.deprecateDescription?.en) ||
+                  previous.deprecateDescription?.en ||
+                  "",
+              }
+            : undefined,
+        } satisfies EventType,
+      ];
+    }),
+  );
+};
+
+const readExistingVersionEvents = async (version: string) => {
+  const text = await readFile(
+    minecraftVersionDataPath(version, "events.json"),
+    "utf8",
+  ).catch(() => null);
+  if (text == null) {
+    return null;
+  }
+  const data = JSON.parse(text) as { events: EventType[] };
+  return Object.fromEntries(
+    data.events.map((event) => [event.name + event.source, event]),
+  );
+};
+
+const normalizeText = (value: string | undefined) =>
+  (value ?? "").replace(/\s+/g, " ").trim();
 
 const downloadLatestServerSnapshot = async (
   releases: Awaited<ReturnType<typeof discoverSourceReleases>>,
