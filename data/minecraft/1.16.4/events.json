@@ -1127,8 +1127,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "ja": "エンティティが別のエンティティへ変化した時に発生する。",
+        "en": "Fired when an entity transforms into another entity."
       },
       "href": "com/destroystokyo/paper/event/entity/EntityTransformedEvent.html",
       "javadoc": "Fired when an entity transforms into another entity If the event is cancelled, the entity will not transform",
@@ -2021,8 +2021,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "ja": "プレイヤーの初期スポーン地点が決定された時に呼び出される。",
+        "en": "Called when a player's initial spawn location is determined."
       },
       "href": "com/destroystokyo/paper/event/player/PlayerInitialSpawnEvent.html",
       "link": "https://jd.papermc.io/paper/1.16.4/com/destroystokyo/paper/event/player/PlayerInitialSpawnEvent.html",
@@ -2206,8 +2206,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "ja": "プレイヤーのロケールが変更された時に呼び出される。",
+        "en": "Called when the locale of the player is changed."
       },
       "href": "com/destroystokyo/paper/event/player/PlayerLocaleChangeEvent.html",
       "javadoc": "Called when the locale of the player is changed.",

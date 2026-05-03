@@ -1669,8 +1669,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "ja": "生物エンティティが槍で突進しようとした時に呼び出される。",
+        "en": "Called when a living entity tries to lunge with a spear."
       },
       "href": "io/papermc/paper/event/entity/EntityLungeEvent.html",
       "javadoc": "Called when a living entity tries to lunge with a spear.",
@@ -1905,8 +1905,8 @@
         "ja": ""
       },
       "description": {
-        "en": "",
-        "ja": ""
+        "ja": "クリーチャーがブロックをターゲットまたはターゲット解除した時に呼び出される。たとえば、銅ゴーレムが特定のチェストへ向かうかどうかを判断する時など。",
+        "en": "Called when a creature targets or untargets a block, for example when a copper golem decides whether to walk to a given chest."
       },
       "href": "org/bukkit/event/entity/EntityTargetBlockEvent.html",
       "javadoc": "Called when a creature targets or untargets a block, for example when acopper golem decides whether to walk to a given chest.",
@@ -2441,8 +2441,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "ja": "プレイヤーがクラフトグリッドの結果スロットからクラフト済みアイテムを取り出した時に呼び出される。",
+        "en": "Called when a player picks up a crafted item from the result slot of a crafting grid."
       },
       "href": "io/papermc/paper/event/inventory/ItemCraftedEvent.html",
       "javadoc": "Called when a player picks up a crafted item from the result slot of a crafting grid.",
@@ -3004,8 +3004,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "ja": "クライアント（プレイヤー）が unregister チャンネルを通じてプラグインメッセージを送信した時に発生する。",
+        "en": "This event is fired when a client (player) sends a plugin message through the unregister channel."
       },
       "href": "com/velocitypowered/api/event/player/PlayerChannelUnregisterEvent.html",
       "javadoc": "This event is fired when a client (Player) sends a plugin message through the unregister channel. Velocity will not wait on this event to finish firing.",
@@ -3146,8 +3146,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "ja": "プレイヤーの設定フェーズ中、設定完了前の適切なタイミングで呼び出される。",
+        "en": "Called during the player's configuration phase before configuration completes."
       },
       "href": "net/md_5/bungee/api/event/PlayerConfigurationEvent.html",
       "javadoc": "Called at an appropriate time during the player's configuration phase. This event will be called at an unspecified time when the player is in the configuration phase, usually towards the end of that phase but always prior to the completion of that phase.",
@@ -4281,8 +4281,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "ja": "プレイヤーがアイテムを装備スロットと入れ替えた時に呼び出される。",
+        "en": "Triggered when a player swaps an item with an equipment slot."
       },
       "href": "io/papermc/paper/event/player/PlayerSwapWithEquipmentSlotEvent.html",
       "javadoc": "Triggered when a Player swaps an item with an equipment slot.",
@@ -4325,8 +4325,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "ja": "プレイヤーがアイテムを使ってエンティティの年齢ロックを切り替えた時に呼び出される。",
+        "en": "Called when a player toggles the age lock of an entity using an item."
       },
       "href": "io/papermc/paper/event/player/PlayerToggleEntityAgeLockEvent.html",
       "javadoc": "Called when a player toggles the age lock of an entity using an item.",

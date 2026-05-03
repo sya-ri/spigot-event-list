@@ -2276,8 +2276,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "ja": "プレイヤーがクラフトグリッドの結果スロットからクラフト済みアイテムを取り出した時に呼び出される。",
+        "en": "Called when a player picks up a crafted item from the result slot of a crafting grid."
       },
       "href": "io/papermc/paper/event/inventory/ItemCraftedEvent.html",
       "javadoc": "Called when a player picks up a crafted item from the result slot of a crafting grid.",
@@ -3852,8 +3852,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "ja": "プレイヤーがアイテムを装備スロットと入れ替えた時に呼び出される。",
+        "en": "Triggered when a player swaps an item with an equipment slot."
       },
       "href": "io/papermc/paper/event/player/PlayerSwapWithEquipmentSlotEvent.html",
       "javadoc": "Triggered when a Player swaps an item with an equipment slot.",

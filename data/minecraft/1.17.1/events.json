@@ -1309,8 +1309,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "ja": "エンティティのテレポートが妨げられた時に発生する。",
+        "en": "Fired when an entity is hindered from teleporting."
       },
       "href": "org/purpurmc/purpur/event/entity/EntityTeleportHinderedEvent.html",
       "javadoc": "Fired when an entity is hindered from teleporting.",
@@ -1342,8 +1342,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "ja": "エンティティが別のエンティティへ変化した時に発生する。",
+        "en": "Fired when an entity transforms into another entity."
       },
       "href": "com/destroystokyo/paper/event/entity/EntityTransformedEvent.html",
       "javadoc": "Fired when an entity transforms into another entity If the event is cancelled, the entity will not transform",
@@ -1855,8 +1855,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "ja": "モンスターエッグによってエンティティがスポーンした時に呼び出される。",
+        "en": "Called when a monster egg spawns an entity."
       },
       "href": "org/purpurmc/purpur/event/entity/MonsterEggSpawnEvent.html",
       "link": "https://purpurmc.org/javadoc/org/purpurmc/purpur/event/entity/MonsterEggSpawnEvent.html",
@@ -2390,8 +2390,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "ja": "プレイヤーの初期スポーン地点が決定された時に呼び出される。",
+        "en": "Called when a player's initial spawn location is determined."
       },
       "href": "com/destroystokyo/paper/event/player/PlayerInitialSpawnEvent.html",
       "link": "https://jd.papermc.io/paper/1.17.1/com/destroystokyo/paper/event/player/PlayerInitialSpawnEvent.html",
@@ -2575,8 +2575,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "ja": "プレイヤーのロケールが変更された時に呼び出される。",
+        "en": "Called when the locale of the player is changed."
       },
       "href": "com/destroystokyo/paper/event/player/PlayerLocaleChangeEvent.html",
       "javadoc": "Called when the locale of the player is changed.",
@@ -3647,8 +3647,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "ja": "構造物が生成された時に呼び出される。",
+        "en": "Called when a structure is generated."
       },
       "href": "org/purpurmc/purpur/event/world/StructureGenerateEvent.html",
       "link": "https://purpurmc.org/javadoc/org/purpurmc/purpur/event/world/StructureGenerateEvent.html",
@@ -3668,8 +3668,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "ja": "構造物または地形要素の位置を特定する前に呼び出される。",
+        "en": "Called before a structure or feature is located."
       },
       "href": "io/papermc/paper/event/world/StructureLocateEvent.html",
       "javadoc": "Called before a structure/feature is located. This happens when: The /locate command is used. An Eye of Ender is used. An Explorer/Treasure Map is activated. World.locateNearestStructure(Location, StructureType, int, boolean) is invoked. ",

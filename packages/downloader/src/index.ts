@@ -10,6 +10,7 @@ import EventType from "./types/event-type";
 import { Source } from "./sources/sources";
 import path from "path";
 import { createDataPaths } from "../../../src/libs/data-paths";
+import { fillMissingDescriptionsInData } from "./fill-missing-descriptions";
 
 const PROXY_SOURCE_NAMES = ["Bungee", "Velocity"] as const;
 const PROXY_EVENT_SOURCES = ["bungee", "velocity"] as const;
@@ -65,6 +66,9 @@ const index = async () => {
       ...toLatestVersionMap(proxySources),
     });
   }
+  await fillMissingDescriptionsInData(
+    path.resolve(process.cwd(), "../../data"),
+  );
 };
 
 const downloadCompleteServerVersions = async (

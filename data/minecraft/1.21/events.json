@@ -1698,8 +1698,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "ja": "エンティティのテレポートが妨げられた時に発生する。",
+        "en": "Fired when an entity is hindered from teleporting."
       },
       "href": "org/purpurmc/purpur/event/entity/EntityTeleportHinderedEvent.html",
       "javadoc": "Fired when an entity is hindered from teleporting.",
@@ -4076,8 +4076,8 @@
         "ja": ""
       },
       "description": {
-        "en": "",
-        "ja": ""
+        "ja": "レジストリが凍結され、それ以上変更できなくなる直前に呼び出される。",
+        "en": "Called right before a registry is frozen, preventing further changes."
       },
       "href": "io/papermc/paper/registry/event/RegistryFreezeEvent.html",
       "javadoc": "Event object for RegistryEventProvider.freeze(). This event is fired right before a registry is frozen disallowing further changes. It provides a way for plugins to add new objects to the registry.",

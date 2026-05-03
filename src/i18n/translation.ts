@@ -20,7 +20,7 @@ export const messages: Record<Locale, Message> = {
     SearchByNameOrDescription: "イベント名・説明文で検索",
     AddNewLanguage: "翻訳を追加する",
     IncompleteEvents: "%size%個のイベント説明文が書かれていません。",
-    Latest: "latest",
+    Latest: "最新",
     MinecraftVersion: "Minecraft バージョン",
   },
 };
