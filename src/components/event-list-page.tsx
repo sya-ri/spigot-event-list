@@ -39,6 +39,7 @@ const EventListPage: FC<EventListPageProps> = ({
   const router = useRouter();
   const searchParams = useSearchParams();
   const { versions, latestVersion } = useVersions();
+  const currentYear = new Date().getFullYear();
   const versionOptions = useMemo(() => {
     const fallbackVersion = version || latestVersion || "latest";
     return versions && versions.length > 0 ? versions : [fallbackVersion];
@@ -235,7 +236,7 @@ const EventListPage: FC<EventListPageProps> = ({
                 className="link-hover font-bold"
                 href="https://github.com/sya-ri/spigot-event-list"
               >
-                © 2020-2025 sya-ri
+                © 2020-{currentYear} sya-ri
               </Link>
             </div>
             <SwitchThemeButton />
