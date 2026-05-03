@@ -17,7 +17,7 @@ const useEvents = (locale: Locale, version: string) => {
     version ? ["events", locale, version] : null,
     ([, locale, version]) =>
       fetch(
-        `/api/version/${encodeURIComponent(version)}/events?lang=${locale}`,
+        `/api/versions/${encodeURIComponent(version)}/events?lang=${locale}`,
       ).then((response) => response.json() as Promise<Event[]>),
   );
   return { events };
