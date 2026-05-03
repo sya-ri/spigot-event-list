@@ -20,8 +20,54 @@ type SearchEventResponse = {
   javadoc?: string;
 };
 
+type QueryTerm = {
+  normalized: string;
+};
+
+type QueryClause = {
+  terms: QueryTerm[];
+};
+
 const normalize = (value: string | null | undefined) =>
   (value ?? "").replace(/\s+/g, " ").trim().toLocaleLowerCase();
+
+const tokenizeQuery = (value: string) =>
+  Array.from(
+    value.matchAll(/"([^"]+)"|'([^']+)'|\bAND\b|\bOR\b|[^\s]+/gi),
+    (match) => match[1] ?? match[2] ?? match[0] ?? "",
+  ).filter((token) => token.length > 0);
+
+const parseQuery = (value: string): QueryClause[] => {
+  const clauses: QueryClause[] = [];
+  let currentTerms: QueryTerm[] = [];
+
+  for (const token of tokenizeQuery(value)) {
+    const upper = token.toUpperCase();
+    if (upper === "OR") {
+      if (currentTerms.length > 0) {
+        clauses.push({ terms: currentTerms });
+        currentTerms = [];
+      }
+      continue;
+    }
+    if (upper === "AND") {
+      continue;
+    }
+    const normalized = normalize(token);
+    if (!normalized) {
+      continue;
+    }
+    currentTerms.push({
+      normalized,
+    });
+  }
+
+  if (currentTerms.length > 0) {
+    clauses.push({ terms: currentTerms });
+  }
+
+  return clauses;
+};
 
 const splitSources = (value: string | null) =>
   (value ?? "")
@@ -39,46 +85,56 @@ const parseLimit = (value: string | null) => {
   return Math.min(Math.max(parsed, 1), 100);
 };
 
-const searchableTexts = (event: EventType) => [
-  event.name,
-  event.description.en,
-  event.description.ja,
-  event.javadoc,
-  event.deprecateDescription?.en,
-  event.deprecateDescription?.ja,
-];
+const localizedValues = (value: Record<string, string> | undefined) =>
+  Object.values(value ?? {});
 
-const scoreEvent = (event: EventType, query: string) => {
+const matchTermScore = (event: EventType, term: QueryTerm) => {
   const lowerName = normalize(event.name);
-  if (lowerName === query) {
-    return 400;
+  if (lowerName === term.normalized) {
+    return 500;
   }
-  if (lowerName.includes(query)) {
-    return 300;
+  if (lowerName.includes(term.normalized)) {
+    return 350;
   }
 
-  const descriptionMatches = [event.description.en, event.description.ja]
+  const descriptionMatches = localizedValues(event.description)
     .map((value) => normalize(value))
-    .filter((value) => value.includes(query)).length;
+    .filter((value) => value.includes(term.normalized)).length;
   if (descriptionMatches > 0) {
-    return 200 + descriptionMatches;
+    return 220 + descriptionMatches * 10;
   }
 
-  if (normalize(event.javadoc).includes(query)) {
-    return 100;
+  if (normalize(event.javadoc).includes(term.normalized)) {
+    return 120;
   }
 
-  const deprecateMatches = [
-    event.deprecateDescription?.en,
-    event.deprecateDescription?.ja,
-  ]
+  const deprecateMatches = localizedValues(event.deprecateDescription)
     .map((value) => normalize(value))
-    .filter((value) => value.includes(query)).length;
+    .filter((value) => value.includes(term.normalized)).length;
   if (deprecateMatches > 0) {
-    return 50 + deprecateMatches;
+    return 70 + deprecateMatches * 5;
   }
 
   return 0;
+};
+
+const scoreEvent = (event: EventType, clauses: QueryClause[]) => {
+  let bestScore = 0;
+
+  for (const clause of clauses) {
+    const termScores = clause.terms.map((term) => matchTermScore(event, term));
+    if (termScores.some((score) => score === 0)) {
+      continue;
+    }
+    const clauseScore =
+      termScores.reduce((total, score) => total + score, 0) +
+      clause.terms.length * 25;
+    if (clauseScore > bestScore) {
+      bestScore = clauseScore;
+    }
+  }
+
+  return bestScore;
 };
 
 const readEventsForVersion = async (version: string) => {
@@ -96,8 +152,9 @@ const readEventsForVersion = async (version: string) => {
 };
 
 export const GET = async (request: NextRequest) => {
-  const query = normalize(request.nextUrl.searchParams.get("q"));
-  if (!query) {
+  const rawQuery = request.nextUrl.searchParams.get("q") ?? "";
+  const clauses = parseQuery(rawQuery);
+  if (clauses.length === 0) {
     return new NextResponse("Missing query: q", { status: 400 });
   }
 
@@ -121,11 +178,7 @@ export const GET = async (request: NextRequest) => {
     )
     .map((event) => ({
       event,
-      score: searchableTexts(event).some((value) =>
-        normalize(value).includes(query),
-      )
-        ? scoreEvent(event, query)
-        : 0,
+      score: scoreEvent(event, clauses),
     }))
     .filter(({ score }) => score > 0)
     .sort((left, right) => {
@@ -154,7 +207,7 @@ export const GET = async (request: NextRequest) => {
     );
 
   return NextResponse.json({
-    query: request.nextUrl.searchParams.get("q"),
+    query: rawQuery,
     version,
     count: matches.length,
     events: matches,

@@ -1,6 +1,6 @@
 ---
 name: spigot-event-search
-description: Search Minecraft, proxy, and plugin events by event name, description, or Javadoc text in Japanese or English using the public Spigot Event List search API. Use when the user wants to find candidate events, narrow by Minecraft version or source, or look up events from partial text.
+description: Search Minecraft, proxy, and plugin events by event name, description, or Javadoc text using the public Spigot Event List search API. Supports partial-match search with AND and OR conditions. Use when the user wants to find candidate events, narrow by Minecraft version or source, or look up events from partial text.
 license: MIT
 ---
 
@@ -10,12 +10,15 @@ Use this skill when a user wants to find events from partial text rather than br
 
 ## What this skill does
 
-- Accepts Japanese or English search terms directly
-- Performs partial-match search for both Japanese and English text
+- Accepts search terms in supported dataset languages
+- Performs partial-match search across all supported description languages
+- Supports `AND` and `OR` search
+- Treats whitespace-separated terms as `AND`
+- Supports quoted phrases such as `"block break"`
 - Searches event `name`
-- Searches `description.en` and `description.ja`
+- Searches all supported `description.*` fields
 - Searches `javadoc`
-- Searches `deprecateDescription.en` and `deprecateDescription.ja`
+- Searches all supported `deprecateDescription.*` fields
 - Supports `latest` or a fixed Minecraft version such as `1.21.11`
 - Supports source filtering for `spigot`, `paper`, `purpur`, `bungee`, `velocity`
 
@@ -32,7 +35,12 @@ Read [references/api.md](references/api.md) for the full request and response fo
 ## Workflow
 
 1. Build a query from the user's partial text.
-   Japanese search text is valid as-is.
+   Search text in supported dataset languages is valid as-is.
+   Use `OR` when the user wants alternatives.
+   Use `AND` or plain whitespace when the user wants all terms to match.
+   Use quotes for exact phrases.
+   When expanding likely synonyms or candidate terms, include the user's language when that language is supported by the dataset.
+   If the user's language is not supported by the dataset, use English candidate terms only.
 2. Use `version=latest` unless the user asks for a specific version.
 3. Add `source=` when the user names a platform such as Paper or Velocity.
 4. Call the API with `curl`.
@@ -47,7 +55,37 @@ Basic:
 curl -fsSL 'https://spigot-event-list.s7a.dev/api/search/events?q=block%20break'
 ```
 
-Japanese query:
+AND query:
+
+```bash
+curl -fsSL 'https://spigot-event-list.s7a.dev/api/search/events?q=chat%20login'
+```
+
+OR query:
+
+```bash
+curl -fsSL 'https://spigot-event-list.s7a.dev/api/search/events?q=chat%20OR%20login'
+```
+
+OR query with candidate terms:
+
+```bash
+curl -fsSL 'https://spigot-event-list.s7a.dev/api/search/events?q=join%20OR%20login%20OR%20connect'
+```
+
+Supported-language OR query with candidate terms:
+
+```bash
+curl -fsSL 'https://spigot-event-list.s7a.dev/api/search/events?q=%E5%8F%82%E5%8A%A0%20OR%20%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3%20OR%20join%20OR%20login'
+```
+
+Quoted phrase:
+
+```bash
+curl -fsSL 'https://spigot-event-list.s7a.dev/api/search/events?q=%22block%20break%22%20paper'
+```
+
+Supported-language query:
 
 ```bash
 curl -fsSL 'https://spigot-event-list.s7a.dev/api/search/events?q=%E3%83%81%E3%83%A3%E3%83%83%E3%83%88'
@@ -69,5 +107,10 @@ curl -fsSL 'https://spigot-event-list.s7a.dev/api/search/events?q=login&source=s
 
 - Prefer exact or near-exact name matches over description-only matches.
 - If multiple sources define the same event name, group by name and list available sources.
-- If the user searches in Japanese, answer in Japanese.
-- If the API returns zero matches, suggest broader Japanese or English search terms.
+- If the user searches in a supported non-English language, answer in that language.
+- If the API returns zero matches, retry with a broader query.
+- Prefer `OR` when the user is exploring alternatives.
+- Prefer `OR` with multiple likely candidate words when the user knows the meaning but not the exact event name.
+- Mixing a supported non-English language with English in the same OR query is allowed when it improves recall.
+- If the user's language is not supported by the dataset, use English-only query expansion.
+- Prefer `AND` when the user gives multiple conditions that should all hold.
