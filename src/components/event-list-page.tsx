@@ -7,7 +7,7 @@ import EventSource from "@/types/event-source";
 import SelectableSourceTag from "@/components/selectable-source-tag";
 import EventList from "@/components/event-list";
 import SwitchThemeButton from "@/components/switch-theme-button";
-import { FC, useState } from "react";
+import { FC, useMemo, useState } from "react";
 import { useEffect } from "react";
 import { Locale } from "@/i18n/config";
 import { BsTranslate } from "react-icons/bs";
@@ -16,6 +16,7 @@ import { translate } from "@/i18n/translation";
 import useLocale from "@/i18n/use-locale";
 import { KoFiButton } from "@/components/ko-fi-button";
 import useVersions from "@/libs/hooks/use-versions";
+import { usePathname, useRouter, useSearchParams } from "next/navigation";
 
 export type EventListPageProps = {
   defaultSearch: string;
@@ -32,12 +33,37 @@ const EventListPage: FC<EventListPageProps> = ({
   const [search, setSearch] = useState(defaultSearch);
   const [tags, setTags] = useState(defaultTags);
   const [version, setVersion] = useState(defaultVersion);
+  const pathname = usePathname();
+  const router = useRouter();
+  const searchParams = useSearchParams();
   const { versions, latestVersion } = useVersions();
+  const versionOptions = useMemo(() => {
+    const fallbackVersion = version || latestVersion || "latest";
+    return versions && versions.length > 0 ? versions : [fallbackVersion];
+  }, [latestVersion, version, versions]);
   useEffect(() => {
     if (!version && latestVersion) {
       setVersion(latestVersion);
     }
   }, [latestVersion, version]);
+  useEffect(() => {
+    if (!version) {
+      return;
+    }
+    const currentVersion = searchParams.get("version") ?? "latest";
+    if (currentVersion === version) {
+      return;
+    }
+    const nextParams = new URLSearchParams(searchParams.toString());
+    if (version === "latest") {
+      nextParams.delete("version");
+    } else {
+      nextParams.set("version", version);
+    }
+    const nextQuery = nextParams.toString();
+    const nextUrl = nextQuery ? `${pathname}?${nextQuery}` : pathname;
+    router.replace(nextUrl, { scroll: false });
+  }, [pathname, router, searchParams, version]);
   return [
     <header
       key="header"
@@ -51,30 +77,28 @@ const EventListPage: FC<EventListPageProps> = ({
               <h1 className="font-bold text-2xl">Spigot Event List</h1>
             </Link>
           </div>
-          <div className="my-auto flex flex-col min-w-96 gap-2">
+          <div className="my-auto flex w-full max-w-md flex-col gap-2">
             <SearchBox locale={locale} search={search} setSearch={setSearch} />
-            {versions && versions.length > 0 && (
-              <label className="form-control w-full">
-                <div className="label py-0">
-                  <span className="label-text">
-                    {translate(locale, "MinecraftVersion")}
-                  </span>
-                </div>
-                <select
-                  className="select select-bordered w-full"
-                  value={version}
-                  onChange={(event) => setVersion(event.target.value)}
-                >
-                  {versions.map((candidate) => (
-                    <option key={candidate} value={candidate}>
-                      {candidate === "latest"
-                        ? translate(locale, "Latest")
-                        : candidate}
-                    </option>
-                  ))}
-                </select>
-              </label>
-            )}
+            <label className="form-control w-full">
+              <div className="label py-0">
+                <span className="label-text">
+                  {translate(locale, "MinecraftVersion")}
+                </span>
+              </div>
+              <select
+                className="select select-bordered w-full"
+                value={version || versionOptions[0]}
+                onChange={(event) => setVersion(event.target.value)}
+              >
+                {versionOptions.map((candidate) => (
+                  <option key={candidate} value={candidate}>
+                    {candidate === "latest"
+                      ? translate(locale, "Latest")
+                      : candidate}
+                  </option>
+                ))}
+              </select>
+            </label>
             <div className="flex gap-1 mx-auto flex-wrap justify-center">
               {EventSource.map((source) => (
                 <SelectableSourceTag
