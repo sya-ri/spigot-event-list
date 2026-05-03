@@ -57,7 +57,7 @@ Install with GitHub CLI:
 gh skill install sya-ri/spigot-event-list spigot-event-search
 ```
 
-Install with `skills`:
+Install with `vercel-labs/skills`:
 
 ```bash
 npx -y skills add sya-ri/spigot-event-list --skill spigot-event-search

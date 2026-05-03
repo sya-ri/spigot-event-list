@@ -6,6 +6,10 @@ type Message = {
   IncompleteEvents: string;
   Latest: string;
   MinecraftVersion: string;
+  Version: string;
+  AiSkillTitle: string;
+  AiSkillClose: string;
+  AiSkillCopied: string;
 };
 
 export const messages: Record<Locale, Message> = {
@@ -15,6 +19,10 @@ export const messages: Record<Locale, Message> = {
     IncompleteEvents: "%size% event descriptions are not written.",
     Latest: "latest",
     MinecraftVersion: "Minecraft version",
+    Version: "Version",
+    AiSkillTitle: "Event search skill for agents",
+    AiSkillClose: "Close",
+    AiSkillCopied: "Copied",
   },
   ja: {
     SearchByNameOrDescription: "イベント名・説明文で検索",
@@ -22,6 +30,10 @@ export const messages: Record<Locale, Message> = {
     IncompleteEvents: "%size%個のイベント説明文が書かれていません。",
     Latest: "最新",
     MinecraftVersion: "Minecraft バージョン",
+    Version: "バージョン",
+    AiSkillTitle: "エージェント向けイベント検索スキル",
+    AiSkillClose: "閉じる",
+    AiSkillCopied: "コピー済み",
   },
 };
 
