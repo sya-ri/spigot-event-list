@@ -86,7 +86,7 @@ const EventListPage: FC<EventListPageProps> = ({
                 </span>
               </div>
               <select
-                className="select select-bordered w-full"
+                className="select select-bordered w-full pl-4"
                 value={version || versionOptions[0]}
                 onChange={(event) => setVersion(event.target.value)}
               >
