@@ -31,10 +31,15 @@ const AI_SKILL_BANNER_DISMISSED_KEY = "spigot-event-list.ai-skill.dismissed";
 const AI_SKILL_GH_LABEL = "GitHub CLI";
 const AI_SKILL_SKILLS_LABEL = "vercel-labs/skills";
 
+const subscribeHydration = () => () => {};
+
 const subscribeBannerDismissed = (onStoreChange: () => void) => {
   window.addEventListener("storage", onStoreChange);
   return () => window.removeEventListener("storage", onStoreChange);
 };
+
+const getHydrationSnapshot = () => true;
+const getHydrationServerSnapshot = () => false;
 
 const getBannerDismissedSnapshot = () =>
   window.localStorage.getItem(AI_SKILL_BANNER_DISMISSED_KEY) === "true";
@@ -69,6 +74,11 @@ const EventListPage: FC<EventListPageProps> = ({
   const searchParams = useSearchParams();
   const { versions, latestVersion } = useVersions();
   const currentYear = new Date().getFullYear();
+  const aiSkillHydrated = useSyncExternalStore(
+    subscribeHydration,
+    getHydrationSnapshot,
+    getHydrationServerSnapshot,
+  );
   const aiSkillBannerDismissed = useSyncExternalStore(
     subscribeBannerDismissed,
     getBannerDismissedSnapshot,
@@ -236,7 +246,7 @@ const EventListPage: FC<EventListPageProps> = ({
       <div className="flex justify-end mr-2 mb-2">
         <div className="flex w-full max-w-sm flex-col items-end gap-2">
           <div className="w-full">
-            {!aiSkillBannerDismissed ? (
+            {!aiSkillHydrated ? null : !aiSkillBannerDismissed ? (
               <div className="rounded-2xl border border-base-content/10 bg-base-100 p-4 shadow-lg">
                 <div className="flex items-start justify-between gap-3">
                   <div className="min-w-0">
