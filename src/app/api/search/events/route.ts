@@ -115,11 +115,15 @@ export const GET = async (request: NextRequest) => {
 
   const matches = data.events
     .filter((event) =>
-      sources.length === 0 ? true : sources.includes(event.source as EventSource),
+      sources.length === 0
+        ? true
+        : sources.includes(event.source as EventSource),
     )
     .map((event) => ({
       event,
-      score: searchableTexts(event).some((value) => normalize(value).includes(query))
+      score: searchableTexts(event).some((value) =>
+        normalize(value).includes(query),
+      )
         ? scoreEvent(event, query)
         : 0,
     }))

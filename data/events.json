@@ -146,8 +146,8 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
-        "en": "Experimental phase.",
-        "ja": "実験段階。"
+        "ja": "実験段階。",
+        "en": "Experimental phase."
       },
       "description": {
         "en": "Used to format chat for chat preview.",
@@ -353,8 +353,8 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
-        "en": "Use the BellResonateEvent added to Bukkit",
-        "ja": "Bukkit に追加された BellResonateEvent を使う。"
+        "ja": "Bukkit に追加された BellResonateEvent を使う。",
+        "en": "Use the BellResonateEvent added to Bukkit"
       },
       "description": {
         "en": "Called when a Raider is revealed by a bell.",
@@ -369,8 +369,8 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
-        "en": "Use the BellRingEvent added to Bukkit.",
-        "ja": "Bukkit に追加された BellRingEvent を使う。"
+        "ja": "Bukkit に追加された BellRingEvent を使う。",
+        "en": "Use the BellRingEvent added to Bukkit."
       },
       "description": {
         "en": "Called when a bell is rung.",
@@ -890,8 +890,8 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
-        "en": "Use the AsyncChatEvent to handle processing asynchronously.",
-        "ja": "非同期で処理をする AsyncChatEvent を使う。"
+        "ja": "非同期で処理をする AsyncChatEvent を使う。",
+        "en": "Use the AsyncChatEvent to handle processing asynchronously."
       },
       "description": {
         "en": "An event fired when a Player sends a chat message to the server.",
@@ -984,8 +984,8 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
-        "en": "Use the new Brigadier API.",
-        "ja": "新しい Brigadier API を使う。"
+        "ja": "新しい Brigadier API を使う。",
+        "en": "Use the new Brigadier API."
       },
       "description": {
         "en": "Fired anytime the server synchronizes Bukkit commands to Brigadier.",
@@ -1389,8 +1389,8 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
-        "en": "Use PortalCreateEvent defined as a world-related event.",
-        "ja": "ワールドに関するイベントとして定義された PortalCreateEvent を使う。"
+        "ja": "ワールドに関するイベントとして定義された PortalCreateEvent を使う。",
+        "en": "Use PortalCreateEvent defined as a world-related event."
       },
       "description": {
         "en": "Thrown when a Living Entity creates a portal in a world.",
@@ -1669,8 +1669,8 @@
     },
     {
       "description": {
-        "ja": "生物エンティティが槍で突進しようとした時に呼び出される。",
-        "en": "Called when a living entity tries to lunge with a spear."
+        "en": "Called when a living entity tries to lunge with a spear.",
+        "ja": "生物エンティティが槍で突進しようとした時に呼び出される。"
       },
       "href": "io/papermc/paper/event/entity/EntityLungeEvent.html",
       "javadoc": "Called when a living entity tries to lunge with a spear.",
@@ -1905,8 +1905,8 @@
         "ja": "実験段階。"
       },
       "description": {
-        "ja": "クリーチャーがブロックをターゲットまたはターゲット解除した時に呼び出される。たとえば、銅ゴーレムが特定のチェストへ向かうかどうかを判断する時など。",
-        "en": "Called when a creature targets or untargets a block, for example when a copper golem decides whether to walk to a given chest."
+        "en": "Called when a creature targets or untargets a block, for example when a copper golem decides whether to walk to a given chest.",
+        "ja": "クリーチャーがブロックをターゲットまたはターゲット解除した時に呼び出される。たとえば、銅ゴーレムが特定のチェストへ向かうかどうかを判断する時など。"
       },
       "href": "org/bukkit/event/entity/EntityTargetBlockEvent.html",
       "javadoc": "Called when a creature targets or untargets a block, for example when acopper golem decides whether to walk to a given chest.",
@@ -2316,8 +2316,8 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
-        "en": "This event is no longer used.",
-        "ja": "使われていない。"
+        "ja": "使われていない。",
+        "en": "This event is no longer used."
       },
       "description": {
         "en": "Called when an invalid packet is sent.",
@@ -2441,8 +2441,8 @@
     },
     {
       "description": {
-        "ja": "プレイヤーがクラフトグリッドの結果スロットからクラフト済みアイテムを取り出した時に呼び出される。",
-        "en": "Called when a player picks up a crafted item from the result slot of a crafting grid."
+        "en": "Called when a player picks up a crafted item from the result slot of a crafting grid.",
+        "ja": "プレイヤーがクラフトグリッドの結果スロットからクラフト済みアイテムを取り出した時に呼び出される。"
       },
       "href": "io/papermc/paper/event/inventory/ItemCraftedEvent.html",
       "javadoc": "Called when a player picks up a crafted item from the result slot of a crafting grid.",
@@ -2933,8 +2933,8 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
-        "en": "Use PlayerBucketEntityEvent in Paper.",
-        "ja": "Paper であれば、PlayerBucketEntityEvent を使う。"
+        "ja": "Paper であれば、PlayerBucketEntityEvent を使う。",
+        "en": "Use PlayerBucketEntityEvent in Paper."
       },
       "description": {
         "en": "Called when a player attempts to put a fish in a bucket.",
@@ -3004,8 +3004,8 @@
     },
     {
       "description": {
-        "ja": "クライアント（プレイヤー）が unregister チャンネルを通じてプラグインメッセージを送信した時に発生する。",
-        "en": "This event is fired when a client (player) sends a plugin message through the unregister channel."
+        "en": "This event is fired when a client (player) sends a plugin message through the unregister channel.",
+        "ja": "クライアント（プレイヤー）が unregister チャンネルを通じてプラグインメッセージを送信した時に発生する。"
       },
       "href": "com/velocitypowered/api/event/player/PlayerChannelUnregisterEvent.html",
       "javadoc": "This event is fired when a client (Player) sends a plugin message through the unregister channel. Velocity will not wait on this event to finish firing.",
@@ -3016,8 +3016,8 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
-        "en": "Use AsyncPlayerChatEvent due to chat delays.",
-        "ja": "チャットの遅延が発生するので AsyncPlayerChatEvent を使う。"
+        "ja": "チャットの遅延が発生するので AsyncPlayerChatEvent を使う。",
+        "en": "Use AsyncPlayerChatEvent due to chat delays."
       },
       "description": {
         "en": "Called when a player chats.",
@@ -3043,8 +3043,8 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
-        "en": "This event is no longer fired due to client changes.",
-        "ja": "クライアントの変更により実行されなくなった。"
+        "ja": "クライアントの変更により実行されなくなった。",
+        "en": "This event is no longer fired due to client changes."
       },
       "description": {
         "en": "Called when a player attempts to tab-complete a chat message.",
@@ -3146,8 +3146,8 @@
     },
     {
       "description": {
-        "ja": "プレイヤーの設定フェーズ中、設定完了前の適切なタイミングで呼び出される。",
-        "en": "Called during the player's configuration phase before configuration completes."
+        "en": "Called during the player's configuration phase before configuration completes.",
+        "ja": "プレイヤーの設定フェーズ中、設定完了前の適切なタイミングで呼び出される。"
       },
       "href": "net/md_5/bungee/api/event/PlayerConfigurationEvent.html",
       "javadoc": "Called at an appropriate time during the player's configuration phase. This event will be called at an unspecified time when the player is in the configuration phase, usually towards the end of that phase but always prior to the completion of that phase.",
@@ -3890,8 +3890,8 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
-        "en": "Use EntityPickupItemEvent added to Bukkit.",
-        "ja": "Bukkit に追加された EntityPickupItemEvent を使う。"
+        "ja": "Bukkit に追加された EntityPickupItemEvent を使う。",
+        "en": "Use EntityPickupItemEvent added to Bukkit."
       },
       "description": {
         "en": "Thrown when a player picks an item up from the ground.",
@@ -3928,8 +3928,8 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
-        "en": "Use AsyncPlayerPreLoginEvent for asynchronous processing.",
-        "ja": "非同期で処理をする為に AsyncPlayerPreLoginEvent を使う。"
+        "ja": "非同期で処理をする為に AsyncPlayerPreLoginEvent を使う。",
+        "en": "Use AsyncPlayerPreLoginEvent for asynchronous processing."
       },
       "description": {
         "en": "Called when a player is attempting to log in.",
@@ -4281,8 +4281,8 @@
     },
     {
       "description": {
-        "ja": "プレイヤーがアイテムを装備スロットと入れ替えた時に呼び出される。",
-        "en": "Triggered when a player swaps an item with an equipment slot."
+        "en": "Triggered when a player swaps an item with an equipment slot.",
+        "ja": "プレイヤーがアイテムを装備スロットと入れ替えた時に呼び出される。"
       },
       "href": "io/papermc/paper/event/player/PlayerSwapWithEquipmentSlotEvent.html",
       "javadoc": "Triggered when a Player swaps an item with an equipment slot.",
@@ -4325,8 +4325,8 @@
     },
     {
       "description": {
-        "ja": "プレイヤーがアイテムを使ってエンティティの年齢ロックを切り替えた時に呼び出される。",
-        "en": "Called when a player toggles the age lock of an entity using an item."
+        "en": "Called when a player toggles the age lock of an entity using an item.",
+        "ja": "プレイヤーがアイテムを使ってエンティティの年齢ロックを切り替えた時に呼び出される。"
       },
       "href": "io/papermc/paper/event/player/PlayerToggleEntityAgeLockEvent.html",
       "javadoc": "Called when a player toggles the age lock of an entity using an item.",
@@ -4646,8 +4646,8 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
-        "en": "It is recommended to use PrepareResultEvent instead of this event.",
-        "ja": "このイベントを直接使用せず、PrepareResultEvent を使うことが推奨されている。"
+        "ja": "このイベントを直接使用せず、PrepareResultEvent を使うことが推奨されている。",
+        "en": "It is recommended to use PrepareResultEvent instead of this event."
       },
       "description": {
         "en": "Called when an item is put in a slot for grinding in a Grindstone.",
@@ -4776,8 +4776,8 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
-        "en": "Use ProjectileHitEvent to check if it hits an entity.",
-        "ja": "非推奨。ProjectileHitEvent を使って、エンティティに当たっているかチェックする。"
+        "ja": "非推奨。ProjectileHitEvent を使って、エンティティに当たっているかチェックする。",
+        "en": "Use ProjectileHitEvent to check if it hits an entity."
       },
       "description": {
         "en": "Called when a projectile collides with an entity. This event is called before EntityDamageByEntityEvent, and cancelling it will allow the projectile to continue flying.",
@@ -5657,8 +5657,8 @@
     {
       "deprecate": "@Deprecated",
       "deprecateDescription": {
-        "en": "Use TNTPrimeEvent added to Bukkit.",
-        "ja": "Bukkit に追加された TNTPrimeEvent を使う。"
+        "ja": "Bukkit に追加された TNTPrimeEvent を使う。",
+        "en": "Use TNTPrimeEvent added to Bukkit."
       },
       "description": {
         "en": "Called when TNT block is about to turn into TNTPrimed.",

@@ -345,7 +345,7 @@ const EventListPage: FC<EventListPageProps> = ({
                     <pre className="rounded-xl bg-base-200 p-3 text-sm overflow-x-auto">
                       <code>
                         npx -y skills add sya-ri/spigot-event-list --skill
-                        {" "}spigot-event-search
+                        spigot-event-search
                       </code>
                     </pre>
                   </div>

@@ -1,8 +1,5 @@
 {
-  "lang": [
-    "en",
-    "ja"
-  ],
+  "lang": ["en", "ja"],
   "events": [
     {
       "description": {
@@ -1132,8 +1129,8 @@
     },
     {
       "description": {
-        "ja": "",
-        "en": ""
+        "ja": "プレイヤーが実績を獲得した時に呼び出される。",
+        "en": "Called when a player earns an achievement."
       },
       "href": "org/bukkit/event/player/PlayerAchievementAwardedEvent.html",
       "javadoc": "Called when a player earns an achievement.",
@@ -1388,8 +1385,8 @@
     },
     {
       "description": {
-        "ja": "",
-        "en": ""
+        "ja": "プレイヤーの初期スポーン地点が決定された時に呼び出される。",
+        "en": "Called when a player's initial spawn location is determined."
       },
       "href": "com/destroystokyo/paper/event/player/PlayerInitialSpawnEvent.html",
       "link": "https://jd.papermc.io/paper/1.10.2/com/destroystokyo/paper/event/player/PlayerInitialSpawnEvent.html",
@@ -1431,8 +1428,8 @@
     },
     {
       "description": {
-        "ja": "",
-        "en": ""
+        "ja": "Deprecated. Use InventoryClickEvent or InventoryOpenEvent instead, or one of the other inventory events in org.bukkit.event.inventory.Use InventoryClickEvent or InventoryOpenEvent instead, or one of the other inventory events in org.bukkit.event.inventory.Represents a player related inventory event; note that this event never actually did anything",
+        "en": "Deprecated. Use InventoryClickEvent or InventoryOpenEvent instead, or one of the other inventory events in org.bukkit.event.inventory.Use InventoryClickEvent or InventoryOpenEvent instead, or one of the other inventory events in org.bukkit.event.inventory.Represents a player related inventory event; note that this event never actually did anything"
       },
       "href": "org/bukkit/event/player/PlayerInventoryEvent.html",
       "javadoc": "Deprecated. Use InventoryClickEvent or InventoryOpenEvent instead, or one of the other inventory events in org.bukkit.event.inventory.Use InventoryClickEvent or InventoryOpenEvent instead, or one of the other inventory events in org.bukkit.event.inventory.Represents a player related inventory event; note that this event never actually did anything",
@@ -1529,8 +1526,8 @@
     },
     {
       "description": {
-        "ja": "",
-        "en": ""
+        "ja": "プレイヤーのロケールが変更された時に呼び出される。",
+        "en": "Called when the locale of the player is changed."
       },
       "href": "com/destroystokyo/paper/event/player/PlayerLocaleChangeEvent.html",
       "javadoc": "Called when the locale of the player is changed.",

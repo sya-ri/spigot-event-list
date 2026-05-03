@@ -1,8 +1,5 @@
 {
-  "lang": [
-    "en",
-    "ja"
-  ],
+  "lang": ["en", "ja"],
   "events": [
     {
       "description": {
@@ -1284,8 +1281,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "ja": "プレイヤーが実績を獲得した時に呼び出される。",
+        "en": "Called when a player earns an achievement."
       },
       "href": "org/bukkit/event/player/PlayerAchievementAwardedEvent.html",
       "javadoc": "Called when a player earns an achievement.",
@@ -1573,8 +1570,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "ja": "プレイヤーの初期スポーン地点が決定された時に呼び出される。",
+        "en": "Called when a player's initial spawn location is determined."
       },
       "href": "com/destroystokyo/paper/event/player/PlayerInitialSpawnEvent.html",
       "link": "https://jd.papermc.io/paper/1.12.2/com/destroystokyo/paper/event/player/PlayerInitialSpawnEvent.html",
@@ -1725,8 +1722,8 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "ja": "プレイヤーのロケールが変更された時に呼び出される。",
+        "en": "Called when the locale of the player is changed."
       },
       "href": "com/destroystokyo/paper/event/player/PlayerLocaleChangeEvent.html",
       "javadoc": "Called when the locale of the player is changed.",
