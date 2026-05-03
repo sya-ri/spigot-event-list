@@ -12,6 +12,7 @@ import { useEffect } from "react";
 import { Locale } from "@/i18n/config";
 import { BsTranslate } from "react-icons/bs";
 import { FiPlus } from "react-icons/fi";
+import { FiMenu, FiX } from "react-icons/fi";
 import { translate } from "@/i18n/translation";
 import useLocale from "@/i18n/use-locale";
 import { KoFiButton } from "@/components/ko-fi-button";
@@ -33,6 +34,7 @@ const EventListPage: FC<EventListPageProps> = ({
   const [search, setSearch] = useState(defaultSearch);
   const [tags, setTags] = useState(defaultTags);
   const [version, setVersion] = useState(defaultVersion);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const pathname = usePathname();
   const router = useRouter();
   const searchParams = useSearchParams();
@@ -64,19 +66,57 @@ const EventListPage: FC<EventListPageProps> = ({
       key="header"
       className="z-10 bg-base-300 top-0 sticky border-base-content/10"
     >
-      <div className="w-full max-w-screen-md mx-auto p-2">
-        <div className="flex justify-between items-center flex-col md:flex-row gap-2">
-          <div>
-            <Link href="/" className="flex items-center mx-auto gap-1">
-              <FaFaucet className="size-8 mr-2 fill-current" />
-              <h1 className="font-bold text-2xl">Spigot Event List</h1>
-            </Link>
-          </div>
-          <div className="my-auto flex w-full max-w-md flex-col gap-2">
-            <SearchBox locale={locale} search={search} setSearch={setSearch} />
-            <fieldset className="fieldset w-full">
-              <legend className="fieldset-legend py-0 text-sm font-medium">
-                {translate(locale, "MinecraftVersion")}
+      <div className="w-full max-w-4xl mx-auto p-2">
+        <div className="flex justify-between gap-3 md:hidden">
+          <Link href="/" className="flex items-center gap-1.5 shrink-0">
+            <FaFaucet className="size-8 fill-current" />
+            <h1 className="font-bold text-xl leading-none">
+              Spigot Event List
+            </h1>
+          </Link>
+          <button
+            type="button"
+            className="btn btn-square btn-ghost btn-sm"
+            aria-label="Toggle filters"
+            onClick={() => setMobileMenuOpen((current) => !current)}
+          >
+            {mobileMenuOpen ? (
+              <FiX className="size-5" />
+            ) : (
+              <FiMenu className="size-5" />
+            )}
+          </button>
+        </div>
+        <div className="hidden md:flex md:items-center md:gap-3">
+          <Link href="/" className="flex items-center gap-1.5 shrink-0">
+            <FaFaucet className="size-6 fill-current" />
+            <h1 className="font-bold text-xl leading-none">
+              Spigot Event List
+            </h1>
+          </Link>
+          <div className="flex min-w-0 flex-1 items-end gap-3">
+            <div className="flex min-w-0 flex-1 flex-col gap-2">
+              <SearchBox
+                locale={locale}
+                search={search}
+                setSearch={setSearch}
+              />
+              <div className="flex gap-1 overflow-x-auto">
+                <div className="flex min-w-max gap-1">
+                  {EventSource.map((source) => (
+                    <SelectableSourceTag
+                      key={source}
+                      source={source}
+                      tags={tags}
+                      setTags={setTags}
+                    />
+                  ))}
+                </div>
+              </div>
+            </div>
+            <fieldset className="fieldset w-40 shrink-0">
+              <legend className="fieldset-legend text-xs font-medium">
+                バージョン
               </legend>
               <select
                 className="select select-bordered w-full pl-4"
@@ -92,7 +132,38 @@ const EventListPage: FC<EventListPageProps> = ({
                 ))}
               </select>
             </fieldset>
-            <div className="flex gap-1 mx-auto flex-wrap justify-center">
+          </div>
+        </div>
+        {mobileMenuOpen && (
+          <div className="mt-2 flex flex-col gap-2 md:hidden">
+            <div className="flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+              <div className="min-w-0 flex-1">
+                <SearchBox
+                  locale={locale}
+                  search={search}
+                  setSearch={setSearch}
+                />
+              </div>
+              <fieldset className="fieldset w-full sm:w-40 shrink-0">
+                <legend className="fieldset-legend py-0 text-xs font-medium">
+                  バージョン
+                </legend>
+                <select
+                  className="select select-bordered w-full pl-4"
+                  value={version || versionOptions[0]}
+                  onChange={(event) => setVersion(event.target.value)}
+                >
+                  {versionOptions.map((candidate) => (
+                    <option key={candidate} value={candidate}>
+                      {candidate === "latest"
+                        ? translate(locale, "Latest")
+                        : candidate}
+                    </option>
+                  ))}
+                </select>
+              </fieldset>
+            </div>
+            <div className="flex flex-wrap gap-1">
               {EventSource.map((source) => (
                 <SelectableSourceTag
                   key={source}
@@ -103,7 +174,7 @@ const EventListPage: FC<EventListPageProps> = ({
               ))}
             </div>
           </div>
-        </div>
+        )}
       </div>
     </header>,
     <main key="main" className="w-full max-w-screen-sm mx-auto py-4 px-2 grow">
