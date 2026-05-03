@@ -1921,8 +1921,8 @@
     {
       "deprecate": "@Experimental",
       "deprecateDescription": {
-        "en": "",
-        "ja": ""
+        "en": "Experimental phase.",
+        "ja": "実験段階。"
       },
       "description": {
         "en": "Called when a block with an inventory starts processing.",
@@ -2687,8 +2687,8 @@
     {
       "deprecate": "@Experimental",
       "deprecateDescription": {
-        "en": "",
-        "ja": ""
+        "en": "Experimental phase.",
+        "ja": "実験段階。"
       },
       "description": {
         "en": "Called when a player's experience cooldown changes.",
@@ -2758,8 +2758,8 @@
     {
       "deprecate": "@Experimental",
       "deprecateDescription": {
-        "en": "",
-        "ja": ""
+        "en": "Experimental phase.",
+        "ja": "実験段階。"
       },
       "description": {
         "en": "Called when an entity becomes hidden from a player.",
@@ -3286,8 +3286,8 @@
     {
       "deprecate": "@Experimental",
       "deprecateDescription": {
-        "en": "",
-        "ja": ""
+        "en": "Experimental phase.",
+        "ja": "実験段階。"
       },
       "description": {
         "en": "Called when a hidden entity is shown to a player.",
@@ -3313,8 +3313,8 @@
     {
       "deprecate": "@Experimental",
       "deprecateDescription": {
-        "en": "",
-        "ja": ""
+        "en": "Experimental phase.",
+        "ja": "実験段階。"
       },
       "description": {
         "en": "Called when a player's spawn point is changed.",

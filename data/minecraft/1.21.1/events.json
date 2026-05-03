@@ -1589,8 +1589,8 @@
     {
       "deprecate": "@Experimental",
       "deprecateDescription": {
-        "en": "",
-        "ja": ""
+        "en": "Experimental phase.",
+        "ja": "実験段階。"
       },
       "description": {
         "en": "Called when an Entity is removed. This event should only be used for monitoring.",
@@ -3098,8 +3098,8 @@
     {
       "deprecate": "@Experimental",
       "deprecateDescription": {
-        "en": "",
-        "ja": ""
+        "en": "Experimental phase.",
+        "ja": "実験段階。"
       },
       "description": {
         "en": "Called when the list of links is sent to the player.",
@@ -4067,8 +4067,8 @@
     {
       "deprecate": "@Experimental",
       "deprecateDescription": {
-        "en": "",
-        "ja": ""
+        "en": "Experimental phase.",
+        "ja": "実験段階。"
       },
       "description": {
         "en": "Event object for RegistryEventProvider.entryAdd(). This event is fired right before a specific entry is registered in/added to registry.",
@@ -4083,8 +4083,8 @@
     {
       "deprecate": "@Experimental",
       "deprecateDescription": {
-        "en": "",
-        "ja": ""
+        "en": "Experimental phase.",
+        "ja": "実験段階。"
       },
       "description": {
         "en": "Base type for all registry events.",
@@ -4099,8 +4099,8 @@
     {
       "deprecate": "@Experimental",
       "deprecateDescription": {
-        "en": "",
-        "ja": ""
+        "en": "Experimental phase.",
+        "ja": "実験段階。"
       },
       "description": {
         "ja": "レジストリが凍結され、それ以上変更できなくなる直前に呼び出される。",

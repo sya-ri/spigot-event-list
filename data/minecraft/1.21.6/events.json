@@ -1660,8 +1660,8 @@
     {
       "deprecate": "@Experimental",
       "deprecateDescription": {
-        "en": "",
-        "ja": ""
+        "en": "Experimental phase.",
+        "ja": "実験段階。"
       },
       "description": {
         "en": "Called when an Entity is removed. This event should only be used for monitoring.",
@@ -3234,8 +3234,8 @@
     {
       "deprecate": "@Experimental",
       "deprecateDescription": {
-        "en": "",
-        "ja": ""
+        "en": "Experimental phase.",
+        "ja": "実験段階。"
       },
       "description": {
         "en": "Called when the list of links is sent to the player.",
@@ -4237,8 +4237,8 @@
     {
       "deprecate": "@Experimental",
       "deprecateDescription": {
-        "en": "",
-        "ja": ""
+        "en": "Experimental phase.",
+        "ja": "実験段階。"
       },
       "description": {
         "en": "Called after values defined in vanilla or datapacks are loaded as registry. At this point, plugins can make their own changes to the registry.",

@@ -4,6 +4,11 @@ import path from "path";
 type EventRecord = {
   name: string;
   source: string;
+  deprecate?: string;
+  deprecateDescription?: {
+    ja?: string;
+    en?: string;
+  };
   javadoc?: string;
   description: {
     ja?: string;
@@ -150,6 +155,23 @@ const descriptionOverrides = new Map<string, DescriptionPair>([
   ],
 ]);
 
+const deprecateDescriptionDefaults = new Map<string, DescriptionPair>([
+  [
+    "@Experimental",
+    {
+      ja: "実験段階。",
+      en: "Experimental phase.",
+    },
+  ],
+  [
+    "@Beta",
+    {
+      ja: "ベータ段階。",
+      en: "Beta phase.",
+    },
+  ],
+]);
+
 const eventKey = (event: Pick<EventRecord, "name" | "source">) =>
   `${event.name}|${event.source}`;
 
@@ -158,6 +180,10 @@ const normalizeText = (text: string | undefined) =>
 
 const hasDescription = (description: EventRecord["description"] | undefined) =>
   Boolean(normalizeText(description?.ja) && normalizeText(description?.en));
+
+const hasDeprecateDescription = (
+  description: EventRecord["deprecateDescription"] | undefined,
+) => Boolean(normalizeText(description?.ja) && normalizeText(description?.en));
 
 const scoreDescription = (description: DescriptionPair) =>
   description.ja.length + description.en.length;
@@ -209,6 +235,19 @@ export const fillMissingDescriptionsInData = async (dataRoot: string) => {
   for (const { filePath, data } of parsedFiles) {
     let changed = false;
     for (const event of data.events) {
+      if (
+        event.deprecate &&
+        !hasDeprecateDescription(event.deprecateDescription)
+      ) {
+        const fallback = deprecateDescriptionDefaults.get(event.deprecate);
+        if (fallback) {
+          event.deprecateDescription = {
+            ja: normalizeText(event.deprecateDescription?.ja) || fallback.ja,
+            en: normalizeText(event.deprecateDescription?.en) || fallback.en,
+          };
+          changed = true;
+        }
+      }
       const key = eventKey(event);
       const current = {
         ja: normalizeText(event.description?.ja),

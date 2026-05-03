@@ -1901,8 +1901,8 @@
     {
       "deprecate": "@Experimental",
       "deprecateDescription": {
-        "en": "",
-        "ja": ""
+        "en": "Experimental phase.",
+        "ja": "実験段階。"
       },
       "description": {
         "ja": "クリーチャーがブロックをターゲットまたはターゲット解除した時に呼び出される。たとえば、銅ゴーレムが特定のチェストへ向かうかどうかを判断する時など。",
