@@ -30,10 +30,10 @@ export const GET = async (
       status: 404,
     });
   }
-  const [serverData, proxyData] = await Promise.all([
-    isLatest ? readLatestServerEvents() : readServerEvents(version),
-    readProxyEvents(),
-  ]);
+  const serverData = isLatest
+    ? await readLatestServerEvents()
+    : await readServerEvents(version);
+  const proxyData = isLatest ? null : await readProxyEvents();
   const lang = request.nextUrl.searchParams.get("lang") ?? "ja";
   if (!serverData.lang.includes(lang)) {
     return new NextResponse(`Unsupported lang: ${lang}`, {
@@ -42,7 +42,7 @@ export const GET = async (
   }
   return NextResponse.json(
     pipe(
-      [...serverData.events, ...proxyData.events],
+      [...serverData.events, ...(proxyData?.events ?? [])],
       sortBy([(event) => event.name, "asc"], [(event) => event.source, "asc"]),
       map(
         pick([
