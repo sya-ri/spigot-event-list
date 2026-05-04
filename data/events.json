@@ -2821,12 +2821,17 @@
       "source": "paper"
     },
     {
+      "deprecate": "@Deprecated",
+      "deprecateDescription": {
+        "ja": "In modern Minecraft, this does not properly represent spear attacks and additionally does not cover the wide range of ways that the cooldown may be reset. Additionally, the cancellation of event is misleading as the client will reset the cooldown manually. So there is no way for the server to control this.",
+        "en": "In modern Minecraft, this does not properly represent spear attacks and additionally does not cover the wide range of ways that the cooldown may be reset. Additionally, the cancellation of event is misleading as the client will reset the cooldown manually. So there is no way for the server to control this."
+      },
       "description": {
         "en": "Called when a player's attack cooldown resets.",
         "ja": "プレイヤーの攻撃クールダウンがリセットする時に呼び出される。"
       },
       "href": "com/destroystokyo/paper/event/player/PlayerAttackEntityCooldownResetEvent.html",
-      "javadoc": "Called when processing a player's attack on an entity when the player's attack strength cooldown is reset",
+      "javadoc": "Called when processing a player's attack on an entity when the player's attack strength cooldown is reset.",
       "link": "https://jd.papermc.io/paper/26.1.2/com/destroystokyo/paper/event/player/PlayerAttackEntityCooldownResetEvent.html",
       "name": "PlayerAttackEntityCooldownResetEvent",
       "source": "paper"
