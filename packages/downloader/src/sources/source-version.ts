@@ -55,14 +55,17 @@ type PaperApiVersions = {
   versions: Record<string, string[]>;
 };
 
-const fetchVersionFromPaperApi = async (name: string): Promise<string> => {
+const fetchVersionFromPaperApi = async (
+  name: string,
+  predicate: (version: string) => boolean = stableMinecraftVersion,
+): Promise<string> => {
   const json = await fetchJson<PaperApiVersions>(
     `https://fill.papermc.io/v3/projects/${name}`,
     PAPERMC_HEADERS,
   );
   return (
     sortVersionsAsc(
-      Object.values(json.versions).flat().filter(stableMinecraftVersion),
+      Object.values(json.versions).flat().filter(predicate),
     ).pop() ?? ""
   );
 };
@@ -78,14 +81,15 @@ const fetchBuildNumberFromPaperApi = async (
   return json.builds.shift() ?? 0;
 };
 
-const fetchVersionsFromPaperApi = async (name: string): Promise<string[]> => {
+const fetchVersionsFromPaperApi = async (
+  name: string,
+  predicate: (version: string) => boolean = stableMinecraftVersion,
+): Promise<string[]> => {
   const json = await fetchJson<PaperApiVersions>(
     `https://fill.papermc.io/v3/projects/${name}`,
     PAPERMC_HEADERS,
   );
-  return sortVersionsAsc(
-    Object.values(json.versions).flat().filter(stableMinecraftVersion),
-  );
+  return sortVersionsAsc(Object.values(json.versions).flat().filter(predicate));
 };
 
 type PurpurApiVersions = {
@@ -101,6 +105,9 @@ type PurpurApiVersion = {
     all: string[];
   };
 };
+
+const PURPUR_RELEASE_VERSION = /^\d+(\.\d+){1,2}\.build\.\d+-stable$/;
+const VELOCITY_3X_SNAPSHOT_VERSION = /^3\.\d+\.\d+-SNAPSHOT$/;
 
 const fetchVersionFromPurpurApi = async (name: string): Promise<string> => {
   const json = await fetchJson<PurpurApiVersions>(
@@ -126,6 +133,14 @@ const fetchVersionsFromPurpurApi = async (name: string): Promise<string[]> => {
     `https://api.purpurmc.org/v2/${name}/`,
   );
   return sortVersionsAsc(json.versions.filter(stableMinecraftVersion));
+};
+
+const fetchLatestVersionFromMavenMetadata = async (
+  url: string,
+  predicate: (version: string) => boolean,
+) => {
+  const versions = await fetchVersionsFromMavenMetadata(url, predicate);
+  return versions.pop() ?? "";
 };
 
 const fetchSpigotVersions = async (): Promise<string[]> => {
@@ -218,6 +233,17 @@ export const purpurBuildNumber = async (version: string) => {
   return fetchBuildNumberFromPurpurApi("purpur", version);
 };
 
+export const purpurReleaseVersion = async () =>
+  fetchLatestVersionFromMavenMetadata(
+    "https://repo.purpurmc.org/snapshots/org/purpurmc/purpur/purpur-api/maven-metadata.xml",
+    (value) => PURPUR_RELEASE_VERSION.test(value),
+  );
+
+export const purpurReleaseBuildNumber = (version: string) => {
+  const matched = version.match(/\.build\.(\d+)(?:-|$)/);
+  return matched ? parseInt(matched[1], 10) : 0;
+};
+
 export const spigotBuildNumber = async () => {
   return fetchBuildNumberFromJenkins(
     "https://hub.spigotmc.org/jenkins/job/Spigot-RSS/lastBuild/api/json/",
@@ -229,7 +255,9 @@ export const spigotVersions = async () => {
 };
 
 export const velocityVersion = async () => {
-  return fetchVersionFromPaperApi("velocity");
+  return fetchVersionFromPaperApi("velocity", (value) =>
+    VELOCITY_3X_SNAPSHOT_VERSION.test(value),
+  );
 };
 
 export const velocityBuildNumber = async (version: string) => {

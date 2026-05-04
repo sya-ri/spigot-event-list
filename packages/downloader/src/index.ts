@@ -8,6 +8,7 @@ import { mkdir, readFile, writeFile } from "fs/promises";
 import downloadLatestEvents from "./download-latest-events";
 import EventType from "./types/event-type";
 import { Source } from "./sources/sources";
+import SourceType from "./types/source-type";
 import path from "path";
 import {
   createDataPaths,
@@ -19,6 +20,8 @@ const PROXY_SOURCE_NAMES = ["Bungee", "Velocity"] as const;
 const PROXY_EVENT_SOURCES = ["bungee", "velocity"] as const;
 const { latestDataPath, minecraftVersionDataPath, proxyDataPath } =
   createDataPaths(path.resolve(process.cwd(), "../../data"));
+const publicJavadocPath = (...parts: string[]) =>
+  path.resolve(process.cwd(), "../../public", "javadoc", ...parts);
 
 const parseOptions = (argv: string[]) => {
   const versions: string[] = [];
@@ -106,7 +109,22 @@ const downloadVersionedServerEvents = async (
       toSourceFromRelease(release),
     ]),
   );
-  const [lang, events] = await downloadLatestEvents(sources);
+  const [lang, events] = await downloadLatestEvents(sources, {
+    mirrorDirectoryBySourceName: Object.fromEntries(
+      versionReleases.map((release) => [
+        release.sourceName,
+        publicJavadocPath(sourceNameToEnvironment(release.sourceName), version),
+      ]),
+    ),
+    linkBaseBySourceType: Object.fromEntries(
+      versionReleases.flatMap((release) =>
+        release.downloadSources.map((sourceType) => [
+          sourceType,
+          `/javadoc/${sourceType}/${version}/`,
+        ]),
+      ),
+    ) as Partial<Record<SourceType, string>>,
+  });
   await writeEvents(
     version,
     lang,
@@ -399,5 +417,18 @@ const toVersionMapFromReleases = (releases: ReleaseDiscovery[]) =>
       release.buildNumber == null ? "" : `#${release.buildNumber}`,
     ]),
   );
+
+const sourceNameToEnvironment = (
+  sourceName: ReleaseDiscovery["sourceName"],
+): SourceType => {
+  switch (sourceName) {
+    case "Spigot":
+      return "spigot";
+    case "Paper":
+      return "paper";
+    case "Purpur":
+      return "purpur";
+  }
+};
 
 index();

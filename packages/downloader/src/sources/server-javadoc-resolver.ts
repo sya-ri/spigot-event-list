@@ -140,6 +140,17 @@ export const createPurpurLocation = (version: string): JavadocLocation => {
   );
 };
 
+export const createPurpurReleaseLocation = (version: string): JavadocLocation =>
+  artifactLocation(
+    {
+      groupId: "org.purpurmc.purpur",
+      artifactId: "purpur-api",
+      version,
+      classifier: "javadoc",
+    },
+    "https://repo.purpurmc.org/snapshots/",
+  );
+
 export const createSpigotLocation = (version: string): JavadocLocation =>
   artifactLocation(
     {
@@ -200,7 +211,21 @@ export const resolvePurpurJavadoc = async (
   version: string,
   buildNumber: number,
 ): Promise<ResolvedServerJavadoc> => {
-  const location = createPurpurLocation(version);
+  const location = await (async (): Promise<JavadocLocation> => {
+    if (gteVersion(version, "26.1.2")) {
+      const repository = "https://repo.purpurmc.org/snapshots/";
+      const resolvedVersion = await resolveLatestArtifactVersion(
+        {
+          groupId: "org.purpurmc.purpur",
+          artifactId: "purpur-api",
+        },
+        repository,
+        `${version}.build.`,
+      );
+      return createPurpurReleaseLocation(resolvedVersion);
+    }
+    return createPurpurLocation(version);
+  })();
   const resolvedUrl = await resolveLocationUrl(location);
   return {
     sourceName: "Purpur",
@@ -212,6 +237,27 @@ export const resolvePurpurJavadoc = async (
         ? location.rootUrl
         : "https://purpurmc.org/javadoc/",
     downloadPageUrl: `https://purpurmc.org/download/purpur/${version}`,
+    allClasses: "allclasses-index.html",
+    downloadSources: ["purpur"],
+    buildNumber,
+    resolvedUrl,
+  };
+};
+
+export const resolvePurpurLatestJavadoc = async (
+  minecraftVersion: string,
+  releaseVersion: string,
+  buildNumber: number,
+): Promise<ResolvedServerJavadoc> => {
+  const location = createPurpurReleaseLocation(releaseVersion);
+  const resolvedUrl = await resolveLocationUrl(location);
+  return {
+    sourceName: "Purpur",
+    minecraftVersion,
+    versionLabel: releaseVersion.replace(/\.build\.\d+-stable$/, ""),
+    location,
+    javadocUrl: "https://purpurmc.org/javadoc/",
+    downloadPageUrl: `https://purpurmc.org/download/purpur/${minecraftVersion}`,
     allClasses: "allclasses-index.html",
     downloadSources: ["purpur"],
     buildNumber,

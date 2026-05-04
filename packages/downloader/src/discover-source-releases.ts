@@ -2,6 +2,7 @@ import { Source } from "./sources/sources";
 import {
   type JavadocLocation,
   resolvePaperJavadoc,
+  resolvePurpurLatestJavadoc,
   resolvePurpurJavadoc,
   resolveSpigotJavadoc,
 } from "./sources/server-javadoc-resolver";
@@ -9,6 +10,8 @@ import {
   paperVersion,
   paperVersions,
   purpurBuildNumber,
+  purpurReleaseBuildNumber,
+  purpurReleaseVersion,
   purpurVersion,
   purpurVersions,
   spigotVersion,
@@ -90,19 +93,27 @@ const discoverPurpurReleases = async (
   options: DiscoverOptions,
 ): Promise<ReleaseDiscovery[]> => {
   if (!options.allVersions && options.versions.length === 0) {
-    return discoverLatestResolvable(await purpurVersions(), async (version) =>
-      resolvePurpurJavadoc(version, await purpurBuildNumber(version)),
-    );
+    return [
+      await Promise.all([purpurVersion(), purpurReleaseVersion()]).then(
+        async ([version, releaseVersion]) =>
+          resolvePurpurLatestJavadoc(
+            version,
+            releaseVersion,
+            purpurReleaseBuildNumber(releaseVersion),
+          ),
+      ),
+    ];
   }
-  const versions = await selectVersions(
-    options.allVersions,
-    options.versions,
-    purpurVersion,
-    purpurVersions,
-  );
   return compactReleases(
     await Promise.all(
-      versions.map(async (version): Promise<ReleaseDiscovery | null> => {
+      (
+        await selectVersions(
+          options.allVersions,
+          options.versions,
+          purpurVersion,
+          purpurVersions,
+        )
+      ).map(async (version): Promise<ReleaseDiscovery | null> => {
         try {
           const buildNumber = await purpurBuildNumber(version);
           return await resolvePurpurJavadoc(version, buildNumber);

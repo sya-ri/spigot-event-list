@@ -1,7 +1,7 @@
 import SourceType from "../types/source-type";
 import {
   createPaperLocation,
-  createPurpurLocation,
+  createPurpurReleaseLocation,
   createSpigotLocation,
   type JavadocLocation,
 } from "./server-javadoc-resolver";
@@ -10,7 +10,8 @@ import {
   bungeeVersion,
   paperBuildNumber,
   paperVersion,
-  purpurBuildNumber,
+  purpurReleaseBuildNumber,
+  purpurReleaseVersion,
   purpurVersion,
   spigotBuildNumber,
   spigotVersion,
@@ -20,6 +21,8 @@ import {
 
 const normalizeBungeeVersionLabel = (version: string) =>
   version.replace(/-R0\.\d+$/, "");
+const normalizePurpurVersionLabel = (version: string) =>
+  version.replace(/\.build\.\d+-stable$/, "");
 
 export type Source = {
   location: JavadocLocation;
@@ -60,15 +63,17 @@ export const getSources = async (): Promise<Record<string, Source>> => ({
     javadocUrl: `https://jd.papermc.io/paper/${version}/`,
     buildNumber: await paperBuildNumber(version),
   })),
-  Purpur: await purpurVersion().then(async (version) => ({
-    location: createPurpurLocation(version),
-    versionLabel: version,
-    allClasses: "allclasses-index.html",
-    downloadSources: ["purpur"],
-    downloadUrl: "https://purpurmc.org/downloads",
-    javadocUrl: "https://purpurmc.org/javadoc/",
-    buildNumber: await purpurBuildNumber(version),
-  })),
+  Purpur: await Promise.all([purpurVersion(), purpurReleaseVersion()]).then(
+    async ([minecraftVersion, releaseVersion]) => ({
+      location: createPurpurReleaseLocation(releaseVersion),
+      versionLabel: normalizePurpurVersionLabel(releaseVersion),
+      allClasses: "allclasses-index.html",
+      downloadSources: ["purpur"],
+      downloadUrl: `https://purpurmc.org/download/purpur/${minecraftVersion}`,
+      javadocUrl: "https://purpurmc.org/javadoc/",
+      buildNumber: purpurReleaseBuildNumber(releaseVersion),
+    }),
+  ),
   Spigot: await spigotVersion().then(async (version) => ({
     location: createSpigotLocation(version),
     versionLabel: version,
@@ -90,11 +95,11 @@ export const getSources = async (): Promise<Record<string, Source>> => ({
       },
       repository: "https://repo.papermc.io/repository/maven-public/",
     },
-    versionLabel: version.split("-SNAPSHOT")[0],
+    versionLabel: version,
     allClasses: "allclasses-index.html",
     downloadSources: ["velocity"],
     downloadUrl: "https://papermc.io/downloads/velocity",
-    javadocUrl: "https://jd.papermc.io/velocity/3.4.0/",
+    javadocUrl: `https://jd.papermc.io/velocity/${version}/`,
     buildNumber: await velocityBuildNumber(version),
   })),
 });

@@ -2,6 +2,14 @@ import nextCoreWebVitals from "eslint-config-next/core-web-vitals";
 import prettier from "eslint-config-prettier";
 
 const config = [
+  {
+    ignores: [
+      ".next/**",
+      "data/**/*.json",
+      "public/javadoc/**",
+      "skills/**/*.md",
+    ],
+  },
   ...nextCoreWebVitals,
   {
     rules: prettier.rules,

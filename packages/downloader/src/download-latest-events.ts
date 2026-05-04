@@ -55,16 +55,26 @@ type SourceReader = {
   readPage: (href: string) => Promise<string>;
 };
 
+type DownloadLatestEventsOptions = {
+  mirrorDirectoryBySourceName?: Partial<Record<string, string>>;
+  linkBaseBySourceType?: Partial<Record<SourceType, string>>;
+};
+
 const downloadLatestEvents = async (
   sources: Record<string, Source>,
+  options: DownloadLatestEventsOptions = {},
 ): Promise<[string[], Record<string, EventType>]> => {
-  const readers = await prepareSourceReaders(sources);
+  const readers = await prepareSourceReaders(sources, options);
   const [lang, lastEvents] = await getLastEvents();
-  return [lang, await getLatestEvents(sources, readers, lastEvents, lang)];
+  return [
+    lang,
+    await getLatestEvents(sources, readers, lastEvents, lang, options),
+  ];
 };
 
 const prepareSourceReaders = async (
   sources: Record<string, Source>,
+  options: DownloadLatestEventsOptions,
 ): Promise<Record<string, SourceReader>> => {
   console.info("Download Javadoc:");
   const multiProgress = new MultiProgress();
@@ -73,7 +83,12 @@ const prepareSourceReaders = async (
   const readers = await Promise.all(
     Object.entries(sources).map(async ([name, source]) => [
       name,
-      await prepareSourceReader(multiProgress, name, source),
+      await prepareSourceReader(
+        multiProgress,
+        name,
+        source,
+        options.mirrorDirectoryBySourceName?.[name],
+      ),
     ]),
   );
   return Object.fromEntries(readers);
@@ -109,6 +124,7 @@ const getLatestEvents = async (
   readers: Record<string, SourceReader>,
   lastEvents: Record<string, EventType>,
   lang: string[],
+  options: DownloadLatestEventsOptions,
 ): Promise<Record<string, EventType>> => {
   const events: Record<string, EventType> = {};
   await Promise.all(
@@ -138,9 +154,12 @@ const getLatestEvents = async (
                     ...(lastEvent && lastEvent.description),
                   },
                   href: href,
-                  link: source.javadocUrl + href,
+                  link:
+                    (options.linkBaseBySourceType?.[sourceType] ??
+                      source.javadocUrl) + href,
                   name: eventName || "",
                   source: sourceType,
+                  sourceName: name,
                 };
               }
             } else {
@@ -174,7 +193,8 @@ const applyToSources = (
 ) => {
   return Promise.all(
     Object.values(sources).map(async (eventType) => {
-      const sourceName = getNameFromSourceType(eventType.source);
+      const sourceName =
+        eventType.sourceName ?? getNameFromSourceType(eventType.source);
       const body = await readers[sourceName].readPage(eventType.href);
       try {
         const $ = load(body);
@@ -322,6 +342,7 @@ const prepareSourceReader = async (
   multiProgress: MultiProgress,
   name: string,
   source: Source,
+  mirrorDirectory?: string,
 ): Promise<SourceReader> => {
   if (source.location.kind === "remote") {
     const { rootUrl } = source.location;
@@ -338,7 +359,20 @@ const prepareSourceReader = async (
     javadocPath(`${name}.jar`),
     source.location.repository,
   );
-  await zip.uncompress(javadocPath(`${name}.jar`), javadocPath(name));
+  const extractedDirectory = mirrorDirectory ?? javadocPath(name);
+  await rm(extractedDirectory, { recursive: true, force: true });
+  await mkdir(path.dirname(extractedDirectory), { recursive: true });
+  await zip.uncompress(javadocPath(`${name}.jar`), extractedDirectory);
+  if (mirrorDirectory) {
+    return {
+      readAllClasses: (preferred: string) =>
+        resolveAllClassesPathFromRoot(extractedDirectory, preferred).then(
+          (filePath) => readFile(filePath, "utf8"),
+        ),
+      readPage: (href: string) =>
+        readFile(path.join(extractedDirectory, href), "utf8"),
+    };
+  }
   return {
     readAllClasses: (preferred: string) =>
       resolveAllClassesPath(name, preferred).then((filePath) =>
@@ -347,6 +381,23 @@ const prepareSourceReader = async (
     readPage: (href: string) =>
       readFile(javadocPath([name, href].join("/")), "utf8"),
   };
+};
+
+const resolveAllClassesPathFromRoot = async (
+  rootPath: string,
+  preferred: string,
+) => {
+  const candidates = [preferred, ...allClassesCandidates].filter(
+    (value, index, self) => self.indexOf(value) === index,
+  );
+  for (const candidate of candidates) {
+    const candidatePath = path.join(rootPath, candidate);
+    try {
+      await access(candidatePath);
+      return candidatePath;
+    } catch {}
+  }
+  throw new Error(`All classes file not found for ${rootPath}`);
 };
 
 const getJavadocSelectors = ($: ReturnType<typeof load>) => {

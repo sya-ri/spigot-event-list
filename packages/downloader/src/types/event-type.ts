@@ -8,6 +8,7 @@ type EventType = {
   link: string;
   name: string;
   source: SourceType;
+  sourceName?: string;
   deprecate?: string;
   deprecateDescription?: Record<string, string>;
 };
