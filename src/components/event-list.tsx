@@ -44,6 +44,16 @@ const EventList: FC<EventListProps> = ({
       ),
     [events],
   );
+  const filteredEvents = useMemo(
+    () =>
+      events?.filter(
+        (event) =>
+          tags.includes(event.source as EventSource) &&
+          ((event.name ?? "").match(new RegExp(search, "i")) ||
+            (event.description ?? "").match(new RegExp(search, "i"))),
+      ) ?? [],
+    [events, search, tags],
+  );
   return (
     <div className="flex flex-col gap-4">
       {incompleteEvents && incompleteEvents.length !== 0 && (
@@ -77,74 +87,74 @@ const EventList: FC<EventListProps> = ({
           </div>
         </div>
       )}
-      {events &&
-        events
-          .filter(
-            (event) =>
-              tags.includes(event.source as EventSource) &&
-              ((event.name ?? "").match(new RegExp(search, "i")) ||
-                (event.description ?? "").match(new RegExp(search, "i"))),
-          )
-          .map((event) => (
-            <div key={`${event.source}:${event.name}:${event.link}`}>
-              <div className="flex flex-wrap gap-1 justify-between">
-                <Link
-                  className={clsx(
-                    "font-bold link-hover sm:text-lg link-primary break-all",
-                    event.abstract && "line-through",
-                  )}
-                  href={event.link}
-                  target="_blank"
-                >
-                  {event.name}
-                </Link>
-                <div className="flex gap-2 mr-0 ml-auto flex-wrap justify-end">
-                  {availableInSpigot(event.source) && (
-                    <SelectableSourceTag
-                      source="spigot"
-                      tags={tags}
-                      setTags={setTags}
-                    />
-                  )}
-                  {availableInPaper(event.source) && (
-                    <SelectableSourceTag
-                      source="paper"
-                      tags={tags}
-                      setTags={setTags}
-                    />
-                  )}
-                  {availableInPurpur(event.source) && (
-                    <SelectableSourceTag
-                      source="purpur"
-                      tags={tags}
-                      setTags={setTags}
-                    />
-                  )}
-                  {availableInBungee(event.source) && (
-                    <SelectableSourceTag
-                      source="bungee"
-                      tags={tags}
-                      setTags={setTags}
-                    />
-                  )}
-                  {availableInVelocity(event.source) && (
-                    <SelectableSourceTag
-                      source="velocity"
-                      tags={tags}
-                      setTags={setTags}
-                    />
-                  )}
-                </div>
-              </div>
-              {event.deprecate && (
-                <div className="flex items-center gap-2 text-error mt-1 flex-wrap break-all">
-                  <div>{event.deprecate}</div>
-                  <div>{event.deprecateDescription}</div>
-                </div>
+      {filteredEvents.map((event) => (
+        <div key={`${event.source}:${event.name}:${event.link}`}>
+          <div className="flex flex-wrap gap-1 justify-between">
+            <Link
+              className={clsx(
+                "font-bold link-hover sm:text-lg link-primary break-all",
+                event.abstract && "line-through",
               )}
-              <div className="mt-1 break-all">{event.description}</div>
+              href={event.link}
+              target="_blank"
+            >
+              {event.name}
+            </Link>
+            <div className="flex gap-2 mr-0 ml-auto flex-wrap justify-end">
+              {availableInSpigot(event.source) && (
+                <SelectableSourceTag
+                  source="spigot"
+                  tags={tags}
+                  setTags={setTags}
+                />
+              )}
+              {availableInPaper(event.source) && (
+                <SelectableSourceTag
+                  source="paper"
+                  tags={tags}
+                  setTags={setTags}
+                />
+              )}
+              {availableInPurpur(event.source) && (
+                <SelectableSourceTag
+                  source="purpur"
+                  tags={tags}
+                  setTags={setTags}
+                />
+              )}
+              {availableInBungee(event.source) && (
+                <SelectableSourceTag
+                  source="bungee"
+                  tags={tags}
+                  setTags={setTags}
+                />
+              )}
+              {availableInVelocity(event.source) && (
+                <SelectableSourceTag
+                  source="velocity"
+                  tags={tags}
+                  setTags={setTags}
+                />
+              )}
             </div>
-          ))}
+          </div>
+          {event.deprecate && (
+            <div className="flex items-center gap-2 text-error mt-1 flex-wrap break-all">
+              <div>{event.deprecate}</div>
+              <div>{event.deprecateDescription}</div>
+            </div>
+          )}
+          <div className="mt-1 break-all">{event.description}</div>
+        </div>
+      ))}
+      {events && (
+        <div className="text-sm text-base-content/70 text-center pt-2">
+          {translate(locale, "SearchResultsCount").replace(
+            "%size%",
+            filteredEvents.length.toLocaleString(),
+          )}
+        </div>
+      )}
     </div>
   );
 };
