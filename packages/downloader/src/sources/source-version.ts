@@ -248,7 +248,9 @@ export const purpurBuildCommit = async (version: string, build: number) => {
   );
   const commit = json.commits[json.commits.length - 1]?.hash;
   if (!commit) {
-    throw new Error(`Unable to resolve Purpur commit for ${version} build ${build}`);
+    throw new Error(
+      `Unable to resolve Purpur commit for ${version} build ${build}`,
+    );
   }
   return commit;
 };

@@ -233,13 +233,16 @@ export const loadLegacyPurpurEvents = async ({
     const extractedRoot = path.join(tempRoot, `Purpur-${buildCommit}`);
     const patchFiles = await listPatchFiles(extractedRoot);
     const legacyEvents = (
-      await Promise.all(patchFiles.map((patchPath) => parseLegacyPurpurPatch(patchPath)))
+      await Promise.all(
+        patchFiles.map((patchPath) => parseLegacyPurpurPatch(patchPath)),
+      )
     )
       .flat()
       .filter(
         (entry, index, self) =>
-          self.findIndex((candidate) => candidate.event.href === entry.event.href) ===
-          index,
+          self.findIndex(
+            (candidate) => candidate.event.href === entry.event.href,
+          ) === index,
       );
 
     await mkdir(mirrorDirectory, { recursive: true });
@@ -261,7 +264,10 @@ export const loadLegacyPurpurEvents = async ({
     }
 
     return Object.fromEntries(
-      legacyEvents.map((entry) => [entry.event.name + entry.event.source, entry.event]),
+      legacyEvents.map((entry) => [
+        entry.event.name + entry.event.source,
+        entry.event,
+      ]),
     );
   } finally {
     await rm(tempRoot, { recursive: true, force: true });

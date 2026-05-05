@@ -121,7 +121,10 @@ const downloadVersionedServerEvents = async (
   const mirrorDirectoryBySourceName = Object.fromEntries(
     versionReleases.map((release) => [
       release.sourceName,
-      githubPagesJavadocPath(sourceNameToEnvironment(release.sourceName), version),
+      githubPagesJavadocPath(
+        sourceNameToEnvironment(release.sourceName),
+        version,
+      ),
     ]),
   ) as Partial<Record<string, string>>;
   const [lang, events] = await downloadLatestEvents(sources, {
@@ -149,11 +152,12 @@ const mergeSupplementalEvents = async (
   mirrorDirectoryBySourceName: Partial<Record<string, string>>,
 ) => {
   const supplementalEvents = await Promise.all(
-    versionReleases.map((release) =>
-      release.loadSupplementalEvents?.({
-        linkBaseBySourceType,
-        mirrorDirectoryBySourceName,
-      }) ?? Promise.resolve({}),
+    versionReleases.map(
+      (release) =>
+        release.loadSupplementalEvents?.({
+          linkBaseBySourceType,
+          mirrorDirectoryBySourceName,
+        }) ?? Promise.resolve({}),
     ),
   );
   return Object.assign({}, events, ...supplementalEvents);
