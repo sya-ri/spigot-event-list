@@ -18,10 +18,11 @@ import { fillMissingDescriptionsInData } from "./fill-missing-descriptions";
 
 const PROXY_SOURCE_NAMES = ["Bungee", "Velocity"] as const;
 const PROXY_EVENT_SOURCES = ["bungee", "velocity"] as const;
+const GITHUB_PAGES_BASE_URL = "https://spigot-javadoc.s7a.dev";
 const { latestDataPath, minecraftVersionDataPath, proxyDataPath } =
   createDataPaths(path.resolve(process.cwd(), "../../data"));
-const publicJavadocPath = (...parts: string[]) =>
-  path.resolve(process.cwd(), "../../public", "javadoc", ...parts);
+const githubPagesJavadocPath = (...parts: string[]) =>
+  path.resolve(process.cwd(), "../../spigot-javadoc", "docs", ...parts);
 
 const parseOptions = (argv: string[]) => {
   const versions: string[] = [];
@@ -113,14 +114,17 @@ const downloadVersionedServerEvents = async (
     mirrorDirectoryBySourceName: Object.fromEntries(
       versionReleases.map((release) => [
         release.sourceName,
-        publicJavadocPath(sourceNameToEnvironment(release.sourceName), version),
+        githubPagesJavadocPath(
+          sourceNameToEnvironment(release.sourceName),
+          version,
+        ),
       ]),
     ),
     linkBaseBySourceType: Object.fromEntries(
       versionReleases.flatMap((release) =>
         release.downloadSources.map((sourceType) => [
           sourceType,
-          `/javadoc/${sourceType}/${version}/`,
+          `${GITHUB_PAGES_BASE_URL}/${sourceType}/${version}/`,
         ]),
       ),
     ) as Partial<Record<SourceType, string>>,

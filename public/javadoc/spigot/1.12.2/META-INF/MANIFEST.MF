@@ -1,5 +1,0 @@
-Manifest-Version: 1.0
-Created-By: Apache Maven 3.2.2
-Built-By: jenkins
-Build-Jdk: 10
-
