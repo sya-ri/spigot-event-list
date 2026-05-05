@@ -1,5 +1,8 @@
 {
-  "lang": ["en", "ja"],
+  "lang": [
+    "en",
+    "ja"
+  ],
   "events": [
     {
       "description": {
@@ -376,6 +379,17 @@
       "link": "https://spigot-javadoc.s7a.dev/spigot/1.14.2/org/bukkit/event/block/BlockSpreadEvent.html",
       "name": "BlockSpreadEvent",
       "source": "spigot"
+    },
+    {
+      "description": {
+        "ja": "Called when a block is ticked by the server.",
+        "en": "Called when a block is ticked by the server."
+      },
+      "href": "net/pl3x/purpur/event/block/BlockTickEvent.html",
+      "javadoc": "Called when a block is ticked by the server.",
+      "link": "https://spigot-javadoc.s7a.dev/purpur/1.14.2/net/pl3x/purpur/event/block/BlockTickEvent.html",
+      "name": "BlockTickEvent",
+      "source": "purpur"
     },
     {
       "description": {
@@ -1095,6 +1109,17 @@
     },
     {
       "description": {
+        "ja": "コマンドを実行する時に呼び出される。",
+        "en": "This event is called whenever someone runs a command."
+      },
+      "href": "net/pl3x/purpur/event/ExecuteCommandEvent.html",
+      "javadoc": "This event is called whenever someone runs a command",
+      "link": "https://spigot-javadoc.s7a.dev/purpur/1.14.2/net/pl3x/purpur/event/ExecuteCommandEvent.html",
+      "name": "ExecuteCommandEvent",
+      "source": "purpur"
+    },
+    {
+      "description": {
         "ja": "経験値ボトルから経験値が出る時に呼び出される。",
         "en": "Called when a ThrownExpBottle hits and releases experience."
       },
@@ -1158,6 +1183,17 @@
       "link": "https://spigot-javadoc.s7a.dev/spigot/1.14.2/org/bukkit/event/block/FluidLevelChangeEvent.html",
       "name": "FluidLevelChangeEvent",
       "source": "spigot"
+    },
+    {
+      "description": {
+        "ja": "Called when a fluid is ticked by the server.",
+        "en": "Called when a fluid is ticked by the server."
+      },
+      "href": "net/pl3x/purpur/event/block/FluidTickEvent.html",
+      "javadoc": "Called when a fluid is ticked by the server.",
+      "link": "https://spigot-javadoc.s7a.dev/purpur/1.14.2/net/pl3x/purpur/event/block/FluidTickEvent.html",
+      "name": "FluidTickEvent",
+      "source": "purpur"
     },
     {
       "description": {
@@ -1831,6 +1867,17 @@
       "link": "https://spigot-javadoc.s7a.dev/spigot/1.14.2/org/bukkit/event/player/PlayerExpChangeEvent.html",
       "name": "PlayerExpChangeEvent",
       "source": "spigot"
+    },
+    {
+      "description": {
+        "ja": "",
+        "en": ""
+      },
+      "href": "net/pl3x/purpur/event/PlayerFeedAnimalEvent.html",
+      "javadoc": "",
+      "link": "https://spigot-javadoc.s7a.dev/purpur/1.14.2/net/pl3x/purpur/event/PlayerFeedAnimalEvent.html",
+      "name": "PlayerFeedAnimalEvent",
+      "source": "purpur"
     },
     {
       "description": {

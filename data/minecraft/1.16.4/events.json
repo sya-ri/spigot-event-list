@@ -1,5 +1,8 @@
 {
-  "lang": ["en", "ja"],
+  "lang": [
+    "en",
+    "ja"
+  ],
   "events": [
     {
       "description": {
@@ -11,6 +14,28 @@
       "link": "https://spigot-javadoc.s7a.dev/paper/1.16.4/com/destroystokyo/paper/event/block/AnvilDamagedEvent.html",
       "name": "AnvilDamagedEvent",
       "source": "paper"
+    },
+    {
+      "description": {
+        "ja": "金床から結果アイテムを取り出す時に呼び出される。",
+        "en": "Called when a player takes the result item out of an anvil."
+      },
+      "href": "net/pl3x/purpur/event/inventory/AnvilTakeResultEvent.html",
+      "javadoc": "Called when a player takes the result item out of an anvil",
+      "link": "https://spigot-javadoc.s7a.dev/purpur/1.16.4/net/pl3x/purpur/event/inventory/AnvilTakeResultEvent.html",
+      "name": "AnvilTakeResultEvent",
+      "source": "purpur"
+    },
+    {
+      "description": {
+        "ja": "金床の結果アイテムが更新された時に呼び出される。",
+        "en": "Called when the result item of an anvil is updated."
+      },
+      "href": "net/pl3x/purpur/event/inventory/AnvilUpdateResultEvent.html",
+      "javadoc": "Called when anvil slots change, triggering the result slot to be updated",
+      "link": "https://spigot-javadoc.s7a.dev/purpur/1.16.4/net/pl3x/purpur/event/inventory/AnvilUpdateResultEvent.html",
+      "name": "AnvilUpdateResultEvent",
+      "source": "purpur"
     },
     {
       "description": {
@@ -544,6 +569,17 @@
     },
     {
       "description": {
+        "ja": "",
+        "en": ""
+      },
+      "href": "net/pl3x/purpur/event/block/DragonEggPlaceEvent.html",
+      "javadoc": "",
+      "link": "https://spigot-javadoc.s7a.dev/purpur/1.16.4/net/pl3x/purpur/event/block/DragonEggPlaceEvent.html",
+      "name": "DragonEggPlaceEvent",
+      "source": "purpur"
+    },
+    {
+      "description": {
         "ja": "アイテムにエンチャントした時に呼び出される。",
         "en": "Called when an ItemStack is successfully enchanted."
       },
@@ -896,6 +932,17 @@
     },
     {
       "description": {
+        "ja": "Holds information for living entity movement events",
+        "en": "Holds information for living entity movement events"
+      },
+      "href": "net/pl3x/purpur/event/entity/EntityMoveEvent.html",
+      "javadoc": "Holds information for living entity movement events",
+      "link": "https://spigot-javadoc.s7a.dev/purpur/1.16.4/net/pl3x/purpur/event/entity/EntityMoveEvent.html",
+      "name": "EntityMoveEvent",
+      "source": "purpur"
+    },
+    {
+      "description": {
         "ja": "エンティティが目的の場所への移動を開始する時に呼び出される。",
         "en": "Fired when an Entity decides to start moving towards a location."
       },
@@ -1105,6 +1152,17 @@
     },
     {
       "description": {
+        "ja": "エンティティのテレポートが妨げられた時に発生する。",
+        "en": "Fired when an entity is hindered from teleporting."
+      },
+      "href": "net/pl3x/purpur/event/entity/EntityTeleportHinderedEvent.html",
+      "javadoc": "Fired when an entity is hindered from teleporting.",
+      "link": "https://spigot-javadoc.s7a.dev/purpur/1.16.4/net/pl3x/purpur/event/entity/EntityTeleportHinderedEvent.html",
+      "name": "EntityTeleportHinderedEvent",
+      "source": "purpur"
+    },
+    {
+      "description": {
         "ja": "エンティティの滑空状態が切り替わる時に呼び出される。",
         "en": "Called when an entity's gliding status is toggled with an Elytra."
       },
@@ -1180,6 +1238,17 @@
       "link": "https://spigot-javadoc.s7a.dev/spigot/1.16.4/org/bukkit/event/Event.html",
       "name": "Event",
       "source": "spigot"
+    },
+    {
+      "description": {
+        "ja": "コマンドを実行する時に呼び出される。",
+        "en": "This event is called whenever someone runs a command."
+      },
+      "href": "net/pl3x/purpur/event/ExecuteCommandEvent.html",
+      "javadoc": "This event is called whenever someone runs a command",
+      "link": "https://spigot-javadoc.s7a.dev/purpur/1.16.4/net/pl3x/purpur/event/ExecuteCommandEvent.html",
+      "name": "ExecuteCommandEvent",
+      "source": "purpur"
     },
     {
       "description": {
@@ -1535,6 +1604,28 @@
     },
     {
       "description": {
+        "ja": "ラマがキャラバンに参加する時に呼び出される。",
+        "en": "Called when a Llama tries to join a caravan."
+      },
+      "href": "net/pl3x/purpur/event/entity/LlamaJoinCaravanEvent.html",
+      "javadoc": "Called when a Llama tries to join a caravan. <p> Cancelling the event will not let the Llama join. To prevent future attempts at joining a caravan use {@link Llama#setShouldJoinCaravan(boolean)}.",
+      "link": "https://spigot-javadoc.s7a.dev/purpur/1.16.4/net/pl3x/purpur/event/entity/LlamaJoinCaravanEvent.html",
+      "name": "LlamaJoinCaravanEvent",
+      "source": "purpur"
+    },
+    {
+      "description": {
+        "ja": "ラマがキャラバンから脱退した時に呼び出される。",
+        "en": "Called when a Llama leaves a caravan."
+      },
+      "href": "net/pl3x/purpur/event/entity/LlamaLeaveCaravanEvent.html",
+      "javadoc": "Called when a Llama leaves a caravan",
+      "link": "https://spigot-javadoc.s7a.dev/purpur/1.16.4/net/pl3x/purpur/event/entity/LlamaLeaveCaravanEvent.html",
+      "name": "LlamaLeaveCaravanEvent",
+      "source": "purpur"
+    },
+    {
+      "description": {
         "ja": "Mojang API を用いてプロファイルが検索された時に呼び出される。",
         "en": "Called after a Profile has been looked up from the Mojang API."
       },
@@ -1586,6 +1677,17 @@
       "link": "https://spigot-javadoc.s7a.dev/spigot/1.16.4/org/bukkit/event/block/MoistureChangeEvent.html",
       "name": "MoistureChangeEvent",
       "source": "spigot"
+    },
+    {
+      "description": {
+        "ja": "モンスターエッグによってエンティティがスポーンした時に呼び出される。",
+        "en": "Called when a monster egg spawns an entity."
+      },
+      "href": "net/pl3x/purpur/event/entity/MonsterEggSpawnEvent.html",
+      "javadoc": "",
+      "link": "https://spigot-javadoc.s7a.dev/purpur/1.16.4/net/pl3x/purpur/event/entity/MonsterEggSpawnEvent.html",
+      "name": "MonsterEggSpawnEvent",
+      "source": "purpur"
     },
     {
       "description": {
@@ -1666,6 +1768,17 @@
     },
     {
       "description": {
+        "ja": "プレイヤーのAFKモードに移行する時に呼び出される",
+        "en": "Called when a player enters AFK mode."
+      },
+      "href": "net/pl3x/purpur/event/PlayerAFKEvent.html",
+      "javadoc": "",
+      "link": "https://spigot-javadoc.s7a.dev/purpur/1.16.4/net/pl3x/purpur/event/PlayerAFKEvent.html",
+      "name": "PlayerAFKEvent",
+      "source": "purpur"
+    },
+    {
+      "description": {
         "ja": "プレイヤーのアニメーションに関するイベントであることを表す。",
         "en": "Represents a player animation event."
       },
@@ -1729,6 +1842,17 @@
       "link": "https://spigot-javadoc.s7a.dev/spigot/1.16.4/org/bukkit/event/player/PlayerBedLeaveEvent.html",
       "name": "PlayerBedLeaveEvent",
       "source": "spigot"
+    },
+    {
+      "description": {
+        "ja": "プレイヤーが本の制限を回避しようとした時に呼び出される。",
+        "en": "Called when a player tries to bypass book limitations."
+      },
+      "href": "net/pl3x/purpur/event/player/PlayerBookTooLargeEvent.html",
+      "javadoc": "Called when a player tries to bypass book limitations",
+      "link": "https://spigot-javadoc.s7a.dev/purpur/1.16.4/net/pl3x/purpur/event/player/PlayerBookTooLargeEvent.html",
+      "name": "PlayerBookTooLargeEvent",
+      "source": "purpur"
     },
     {
       "description": {
@@ -2097,6 +2221,17 @@
     },
     {
       "description": {
+        "ja": "",
+        "en": ""
+      },
+      "href": "net/pl3x/purpur/event/player/PlayerItemCooldownEvent.html",
+      "javadoc": "",
+      "link": "https://spigot-javadoc.s7a.dev/purpur/1.16.4/net/pl3x/purpur/event/player/PlayerItemCooldownEvent.html",
+      "name": "PlayerItemCooldownEvent",
+      "source": "purpur"
+    },
+    {
+      "description": {
         "ja": "プレイヤーがアイテムを使用し、その耐久値が減少する時に呼び出される。",
         "en": "Called when an item used by the player takes durability damage as a result of being used."
       },
@@ -2423,6 +2558,17 @@
       "link": "https://spigot-javadoc.s7a.dev/spigot/1.16.4/org/bukkit/event/player/PlayerRiptideEvent.html",
       "name": "PlayerRiptideEvent",
       "source": "spigot"
+    },
+    {
+      "description": {
+        "ja": "モンスターエッグを使い、スポナーの内容を変える時に呼び出される。",
+        "en": "Called when changing the contents of a spawner using a monster egg."
+      },
+      "href": "net/pl3x/purpur/event/PlayerSetSpawnerTypeWithEggEvent.html",
+      "javadoc": "",
+      "link": "https://spigot-javadoc.s7a.dev/purpur/1.16.4/net/pl3x/purpur/event/PlayerSetSpawnerTypeWithEggEvent.html",
+      "name": "PlayerSetSpawnerTypeWithEggEvent",
+      "source": "purpur"
     },
     {
       "description": {
@@ -2899,6 +3045,28 @@
     },
     {
       "description": {
+        "ja": "乗ることが可能なエンティティが乗っているエンティティと共に動く時に呼び出される。",
+        "en": "Triggered when a ridable mob moves with a rider."
+      },
+      "href": "net/pl3x/purpur/event/entity/RidableMoveEvent.html",
+      "javadoc": "Triggered when a ridable mob moves with a rider",
+      "link": "https://spigot-javadoc.s7a.dev/purpur/1.16.4/net/pl3x/purpur/event/entity/RidableMoveEvent.html",
+      "name": "RidableMoveEvent",
+      "source": "purpur"
+    },
+    {
+      "description": {
+        "ja": "乗ることが可能なエンティティに乗っている時にジャンプを試みた時に呼び出される。",
+        "en": "Called when a player attempts to jump while riding a rideable entity."
+      },
+      "href": "net/pl3x/purpur/event/entity/RidableSpacebarEvent.html",
+      "javadoc": "",
+      "link": "https://spigot-javadoc.s7a.dev/purpur/1.16.4/net/pl3x/purpur/event/entity/RidableSpacebarEvent.html",
+      "name": "RidableSpacebarEvent",
+      "source": "purpur"
+    },
+    {
+      "description": {
         "ja": "プレイヤー以外がコマンドを実行する時に呼び出される。",
         "en": "Called when a command is executed by a non-player."
       },
@@ -3172,6 +3340,17 @@
       "link": "https://spigot-javadoc.s7a.dev/spigot/1.16.4/org/bukkit/event/entity/StriderTemperatureChangeEvent.html",
       "name": "StriderTemperatureChangeEvent",
       "source": "spigot"
+    },
+    {
+      "description": {
+        "ja": "構造物が生成された時に呼び出される。",
+        "en": "Called when a structure is generated."
+      },
+      "href": "net/pl3x/purpur/event/world/StructureGenerateEvent.html",
+      "javadoc": "",
+      "link": "https://spigot-javadoc.s7a.dev/purpur/1.16.4/net/pl3x/purpur/event/world/StructureGenerateEvent.html",
+      "name": "StructureGenerateEvent",
+      "source": "purpur"
     },
     {
       "description": {

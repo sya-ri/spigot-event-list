@@ -115,6 +115,8 @@ export const getSourceType = (href: string): SourceType | null => {
     return "paper";
   } else if (href.startsWith("org/purpurmc/purpur")) {
     return "purpur";
+  } else if (href.startsWith("net/pl3x/purpur")) {
+    return "purpur";
   } else if (href.startsWith("net/md_5/bungee/api")) {
     return "bungee";
   } else if (href.startsWith("com/velocitypowered")) {

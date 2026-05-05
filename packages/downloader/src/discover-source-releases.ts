@@ -1,4 +1,5 @@
 import { Source } from "./sources/sources";
+import { loadLegacyPurpurEvents } from "./purpur-patch-events";
 import {
   type JavadocLocation,
   resolvePaperJavadoc,
@@ -9,6 +10,7 @@ import {
 import {
   paperVersion,
   paperVersions,
+  purpurBuildCommit,
   purpurBuildNumber,
   purpurReleaseBuildNumber,
   purpurReleaseVersion,
@@ -17,7 +19,13 @@ import {
   spigotVersion,
   spigotVersions,
 } from "./sources/source-version";
+import EventType from "./types/event-type";
 import SourceType from "./types/source-type";
+
+type ReleaseEventSupplementParams = {
+  linkBaseBySourceType: Partial<Record<SourceType, string>>;
+  mirrorDirectoryBySourceName: Partial<Record<string, string>>;
+};
 
 export type ReleaseDiscovery = {
   sourceName: "Paper" | "Purpur" | "Spigot";
@@ -30,12 +38,21 @@ export type ReleaseDiscovery = {
   downloadSources: SourceType[];
   buildNumber: number | null;
   resolvedUrl: string;
+  loadSupplementalEvents?: (
+    params: ReleaseEventSupplementParams,
+  ) => Promise<Record<string, EventType>>;
 };
 
 type DiscoverOptions = {
   allVersions: boolean;
   versions: string[];
 };
+
+const compareVersions = (left: string, right: string) =>
+  left.localeCompare(right, undefined, {
+    numeric: true,
+    sensitivity: "base",
+  });
 
 const compactReleases = (releases: Array<ReleaseDiscovery | null>) =>
   releases.filter((value): value is ReleaseDiscovery => value != null);
@@ -116,7 +133,9 @@ const discoverPurpurReleases = async (
       ).map(async (version): Promise<ReleaseDiscovery | null> => {
         try {
           const buildNumber = await purpurBuildNumber(version);
-          return await resolvePurpurJavadoc(version, buildNumber);
+          return await resolvePurpurJavadoc(version, buildNumber).then(
+            withPurpurSupplementalEvents,
+          );
         } catch {
           return null;
         }
@@ -163,6 +182,40 @@ export const discoverSourceReleases = async (options: DiscoverOptions) => {
     Paper: paper,
     Purpur: purpur,
     Spigot: spigot,
+  };
+};
+
+const withPurpurSupplementalEvents = async (
+  release: ReleaseDiscovery,
+): Promise<ReleaseDiscovery> => {
+  if (
+    release.sourceName !== "Purpur" ||
+    release.buildNumber == null ||
+    compareVersions(release.minecraftVersion, "1.16.5") >= 0
+  ) {
+    return release;
+  }
+  const buildCommit = await purpurBuildCommit(
+    release.minecraftVersion,
+    release.buildNumber,
+  );
+  return {
+    ...release,
+    loadSupplementalEvents: async ({
+      linkBaseBySourceType,
+      mirrorDirectoryBySourceName,
+    }) => {
+      const linkBase = linkBaseBySourceType.purpur;
+      const mirrorDirectory = mirrorDirectoryBySourceName.Purpur;
+      if (!linkBase || !mirrorDirectory) {
+        return {};
+      }
+      return loadLegacyPurpurEvents({
+        buildCommit,
+        linkBase,
+        mirrorDirectory,
+      });
+    },
   };
 };
 

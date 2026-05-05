@@ -106,6 +106,15 @@ type PurpurApiVersion = {
   };
 };
 
+type PurpurApiBuild = {
+  project: string;
+  version: string;
+  build: string;
+  commits: {
+    hash: string;
+  }[];
+};
+
 const PURPUR_RELEASE_VERSION = /^\d+(\.\d+){1,2}\.build\.\d+-stable$/;
 const VELOCITY_3X_SNAPSHOT_VERSION = /^3\.\d+\.\d+-SNAPSHOT$/;
 
@@ -231,6 +240,17 @@ export const purpurVersions = async () => {
 
 export const purpurBuildNumber = async (version: string) => {
   return fetchBuildNumberFromPurpurApi("purpur", version);
+};
+
+export const purpurBuildCommit = async (version: string, build: number) => {
+  const json = await fetchJson<PurpurApiBuild>(
+    `https://api.purpurmc.org/v2/purpur/${version}/${build}`,
+  );
+  const commit = json.commits[json.commits.length - 1]?.hash;
+  if (!commit) {
+    throw new Error(`Unable to resolve Purpur commit for ${version} build ${build}`);
+  }
+  return commit;
 };
 
 export const purpurReleaseVersion = async () =>

@@ -110,31 +110,53 @@ const downloadVersionedServerEvents = async (
       toSourceFromRelease(release),
     ]),
   );
-  const [lang, events] = await downloadLatestEvents(sources, {
-    mirrorDirectoryBySourceName: Object.fromEntries(
-      versionReleases.map((release) => [
-        release.sourceName,
-        githubPagesJavadocPath(
-          sourceNameToEnvironment(release.sourceName),
-          version,
-        ),
+  const linkBaseBySourceType = Object.fromEntries(
+    versionReleases.flatMap((release) =>
+      release.downloadSources.map((sourceType) => [
+        sourceType,
+        `${GITHUB_PAGES_BASE_URL}/${sourceType}/${version}/`,
       ]),
     ),
-    linkBaseBySourceType: Object.fromEntries(
-      versionReleases.flatMap((release) =>
-        release.downloadSources.map((sourceType) => [
-          sourceType,
-          `${GITHUB_PAGES_BASE_URL}/${sourceType}/${version}/`,
-        ]),
-      ),
-    ) as Partial<Record<SourceType, string>>,
+  ) as Partial<Record<SourceType, string>>;
+  const mirrorDirectoryBySourceName = Object.fromEntries(
+    versionReleases.map((release) => [
+      release.sourceName,
+      githubPagesJavadocPath(sourceNameToEnvironment(release.sourceName), version),
+    ]),
+  ) as Partial<Record<string, string>>;
+  const [lang, events] = await downloadLatestEvents(sources, {
+    mirrorDirectoryBySourceName,
+    linkBaseBySourceType,
   });
+  const eventsWithSupplements = await mergeSupplementalEvents(
+    versionReleases,
+    events,
+    linkBaseBySourceType,
+    mirrorDirectoryBySourceName,
+  );
   await writeEvents(
     version,
     lang,
-    await mergeExistingVersionEvents(version, events),
+    await mergeExistingVersionEvents(version, eventsWithSupplements),
   );
   await writeVersions(version, toVersionMapFromReleases(versionReleases));
+};
+
+const mergeSupplementalEvents = async (
+  versionReleases: ReleaseDiscovery[],
+  events: Record<string, EventType>,
+  linkBaseBySourceType: Partial<Record<SourceType, string>>,
+  mirrorDirectoryBySourceName: Partial<Record<string, string>>,
+) => {
+  const supplementalEvents = await Promise.all(
+    versionReleases.map((release) =>
+      release.loadSupplementalEvents?.({
+        linkBaseBySourceType,
+        mirrorDirectoryBySourceName,
+      }) ?? Promise.resolve({}),
+    ),
+  );
+  return Object.assign({}, events, ...supplementalEvents);
 };
 
 const mergeExistingVersionEvents = async (

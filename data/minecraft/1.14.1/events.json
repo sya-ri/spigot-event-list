@@ -1,5 +1,8 @@
 {
-  "lang": ["en", "ja"],
+  "lang": [
+    "en",
+    "ja"
+  ],
   "events": [
     {
       "description": {
@@ -1831,6 +1834,17 @@
       "link": "https://spigot-javadoc.s7a.dev/spigot/1.14.1/org/bukkit/event/player/PlayerExpChangeEvent.html",
       "name": "PlayerExpChangeEvent",
       "source": "spigot"
+    },
+    {
+      "description": {
+        "ja": "",
+        "en": ""
+      },
+      "href": "net/pl3x/purpur/event/PlayerFeedAnimalEvent.html",
+      "javadoc": "",
+      "link": "https://spigot-javadoc.s7a.dev/purpur/1.14.1/net/pl3x/purpur/event/PlayerFeedAnimalEvent.html",
+      "name": "PlayerFeedAnimalEvent",
+      "source": "purpur"
     },
     {
       "description": {

@@ -1,5 +1,8 @@
 {
-  "lang": ["en", "ja"],
+  "lang": [
+    "en",
+    "ja"
+  ],
   "events": [
     {
       "description": {
@@ -379,6 +382,17 @@
     },
     {
       "description": {
+        "ja": "Called when a block is ticked by the server.",
+        "en": "Called when a block is ticked by the server."
+      },
+      "href": "net/pl3x/purpur/event/block/BlockTickEvent.html",
+      "javadoc": "Called when a block is ticked by the server.",
+      "link": "https://spigot-javadoc.s7a.dev/purpur/1.14.3/net/pl3x/purpur/event/block/BlockTickEvent.html",
+      "name": "BlockTickEvent",
+      "source": "purpur"
+    },
+    {
+      "description": {
         "ja": "醸造が完了する時に呼び出される。",
         "en": "Called when the brewing of the contents inside the Brewing Stand is complete."
       },
@@ -453,6 +467,17 @@
       "link": "https://spigot-javadoc.s7a.dev/spigot/1.14.3/org/bukkit/event/world/ChunkPopulateEvent.html",
       "name": "ChunkPopulateEvent",
       "source": "spigot"
+    },
+    {
+      "description": {
+        "ja": "Called when an oversized chunk loads or saves",
+        "en": "Called when an oversized chunk loads or saves"
+      },
+      "href": "net/pl3x/purpur/event/ChunkTooLargeEvent.html",
+      "javadoc": "Called when an oversized chunk loads or saves",
+      "link": "https://spigot-javadoc.s7a.dev/purpur/1.14.3/net/pl3x/purpur/event/ChunkTooLargeEvent.html",
+      "name": "ChunkTooLargeEvent",
+      "source": "purpur"
     },
     {
       "description": {
@@ -1095,6 +1120,17 @@
     },
     {
       "description": {
+        "ja": "コマンドを実行する時に呼び出される。",
+        "en": "This event is called whenever someone runs a command."
+      },
+      "href": "net/pl3x/purpur/event/ExecuteCommandEvent.html",
+      "javadoc": "This event is called whenever someone runs a command",
+      "link": "https://spigot-javadoc.s7a.dev/purpur/1.14.3/net/pl3x/purpur/event/ExecuteCommandEvent.html",
+      "name": "ExecuteCommandEvent",
+      "source": "purpur"
+    },
+    {
+      "description": {
         "ja": "経験値ボトルから経験値が出る時に呼び出される。",
         "en": "Called when a ThrownExpBottle hits and releases experience."
       },
@@ -1158,6 +1194,17 @@
       "link": "https://spigot-javadoc.s7a.dev/spigot/1.14.3/org/bukkit/event/block/FluidLevelChangeEvent.html",
       "name": "FluidLevelChangeEvent",
       "source": "spigot"
+    },
+    {
+      "description": {
+        "ja": "Called when a fluid is ticked by the server.",
+        "en": "Called when a fluid is ticked by the server."
+      },
+      "href": "net/pl3x/purpur/event/block/FluidTickEvent.html",
+      "javadoc": "Called when a fluid is ticked by the server.",
+      "link": "https://spigot-javadoc.s7a.dev/purpur/1.14.3/net/pl3x/purpur/event/block/FluidTickEvent.html",
+      "name": "FluidTickEvent",
+      "source": "purpur"
     },
     {
       "description": {
@@ -1834,6 +1881,17 @@
     },
     {
       "description": {
+        "ja": "",
+        "en": ""
+      },
+      "href": "net/pl3x/purpur/event/PlayerFeedAnimalEvent.html",
+      "javadoc": "",
+      "link": "https://spigot-javadoc.s7a.dev/purpur/1.14.3/net/pl3x/purpur/event/PlayerFeedAnimalEvent.html",
+      "name": "PlayerFeedAnimalEvent",
+      "source": "purpur"
+    },
+    {
+      "description": {
         "ja": "プレイヤーが釣りをしている時に呼び出される。",
         "en": "Called when a player is fishing."
       },
@@ -2226,6 +2284,17 @@
       "link": "https://spigot-javadoc.s7a.dev/spigot/1.14.3/org/bukkit/event/player/PlayerRiptideEvent.html",
       "name": "PlayerRiptideEvent",
       "source": "spigot"
+    },
+    {
+      "description": {
+        "ja": "モンスターエッグを使い、スポナーの内容を変える時に呼び出される。",
+        "en": "Called when changing the contents of a spawner using a monster egg."
+      },
+      "href": "net/pl3x/purpur/event/PlayerSetSpawnerTypeWithEggEvent.html",
+      "javadoc": "",
+      "link": "https://spigot-javadoc.s7a.dev/purpur/1.14.3/net/pl3x/purpur/event/PlayerSetSpawnerTypeWithEggEvent.html",
+      "name": "PlayerSetSpawnerTypeWithEggEvent",
+      "source": "purpur"
     },
     {
       "description": {
