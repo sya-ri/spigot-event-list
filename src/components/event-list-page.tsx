@@ -251,7 +251,9 @@ const EventListPage: FC<EventListPageProps> = ({
                 <div className="flex items-start justify-between gap-3">
                   <div className="min-w-0">
                     <div className="flex items-center gap-2 font-semibold">
-                      <TbRobotFace className="size-4 shrink-0" />
+                      <span className="inline-flex size-6 shrink-0 items-center justify-center rounded-full bg-base-200">
+                        <TbRobotFace className="size-4" />
+                      </span>
                       {translate(locale, "AiSkillTitle")}
                     </div>
                   </div>
@@ -317,7 +319,9 @@ const EventListPage: FC<EventListPageProps> = ({
                   aria-label={translate(locale, "AiSkillTitle")}
                   onClick={() => updateBannerDismissed(false)}
                 >
-                  <TbRobotFace className="size-5" />
+                  <span className="inline-flex size-8 items-center justify-center rounded-full bg-base-200">
+                    <TbRobotFace className="size-5" />
+                  </span>
                 </button>
               </div>
             )}
