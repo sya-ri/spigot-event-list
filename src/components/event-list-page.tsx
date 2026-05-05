@@ -303,49 +303,7 @@ const EventListPage: FC<EventListPageProps> = ({
                     <pre className="rounded-xl bg-base-200 p-3 text-sm overflow-x-auto">
                       <code>
                         gh skill install sya-ri/spigot-event-list{" "}
-                        spigot-event-search
-                      </code>
-                    </pre>
-                  </div>
-                  <div>
-                    <div className="mb-2 flex items-center justify-between gap-2 text-sm font-semibold">
-                      <div className="flex items-center gap-1">
-                        <span>{AI_SKILL_SKILLS_LABEL}</span>
-                        <Link
-                          className="btn btn-ghost btn-xs"
-                          href="https://github.com/vercel-labs/skills"
-                          target="_blank"
-                          aria-label={AI_SKILL_SKILLS_LABEL}
-                        >
-                          <FiExternalLink className="size-4" />
-                        </Link>
-                      </div>
-                      <button
-                        type="button"
-                        className="btn btn-ghost btn-xs"
-                        aria-label={
-                          copiedCommand === "skills"
-                            ? translate(locale, "AiSkillCopied")
-                            : AI_SKILL_SKILLS_LABEL
-                        }
-                        onClick={() =>
-                          copyCommand(
-                            "skills",
-                            "npx -y skills add sya-ri/spigot-event-list --skill spigot-event-search",
-                          )
-                        }
-                      >
-                        {copiedCommand === "skills" ? (
-                          <FiCheck className="size-4" />
-                        ) : (
-                          <FiCopy className="size-4" />
-                        )}
-                      </button>
-                    </div>
-                    <pre className="rounded-xl bg-base-200 p-3 text-sm overflow-x-auto">
-                      <code>
-                        npx -y skills add sya-ri/spigot-event-list --skill
-                        spigot-event-search
+                        skills/spigot-event-search
                       </code>
                     </pre>
                   </div>

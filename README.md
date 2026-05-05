@@ -54,13 +54,7 @@ It uses the public event search API and supports partial-match search over:
 Install with GitHub CLI:
 
 ```bash
-gh skill install sya-ri/spigot-event-list spigot-event-search
-```
-
-Install with `vercel-labs/skills`:
-
-```bash
-npx -y skills add sya-ri/spigot-event-list --skill spigot-event-search
+gh skill install sya-ri/spigot-event-list skills/spigot-event-search
 ```
 
 ## i18n
