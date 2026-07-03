@@ -1109,8 +1109,8 @@
     },
     {
       "description": {
-        "ja": "Called when a AbstractCubeMob splits into smaller mobs upon death",
-        "en": "Called when a AbstractCubeMob splits into smaller mobs upon death"
+        "en": "Called when a AbstractCubeMob splits into smaller mobs upon death",
+        "ja": "Called when a AbstractCubeMob splits into smaller mobs upon death"
       },
       "href": "org/bukkit/event/entity/CubeMobSplitEvent.html",
       "javadoc": "Called when a AbstractCubeMob splits into smaller mobs upon death",
@@ -1592,8 +1592,8 @@
     },
     {
       "description": {
-        "ja": "Called when an entity is ignited often by fire or redstone power.",
-        "en": "Called when an entity is ignited often by fire or redstone power."
+        "en": "Called when an entity is ignited often by fire or redstone power.",
+        "ja": "Called when an entity is ignited often by fire or redstone power."
       },
       "href": "io/papermc/paper/event/entity/EntityIgniteEvent.html",
       "javadoc": "Called when an entity is ignited often by fire or redstone power.",
