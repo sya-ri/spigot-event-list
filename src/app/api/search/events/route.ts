@@ -15,8 +15,8 @@ type SearchEventResponse = {
   link: string;
   abstract?: true;
   deprecate?: string;
-  description: Record<string, string>;
-  deprecateDescription?: Record<string, string>;
+  description: string;
+  deprecateDescription?: string;
   javadoc?: string;
 };
 
@@ -31,6 +31,75 @@ type QueryClause = {
 const normalize = (value: string | null | undefined) =>
   (value ?? "").replace(/\s+/g, " ").trim().toLocaleLowerCase();
 
+const englishStopWords = new Set([
+  "a",
+  "an",
+  "and",
+  "at",
+  "by",
+  "for",
+  "from",
+  "in",
+  "into",
+  "is",
+  "of",
+  "on",
+  "the",
+  "to",
+  "when",
+]);
+
+const normalizeJapaneseQueryEnding = (value: string) => {
+  const suffixes = [
+    "されていたとき",
+    "されていた時",
+    "していたとき",
+    "していた時",
+    "されたとき",
+    "された時",
+    "するとき",
+    "する時",
+    "したとき",
+    "した時",
+    "である",
+    "でした",
+    "だった",
+    "されていた",
+    "していた",
+    "された",
+    "している",
+    "される",
+    "します",
+    "する",
+    "した",
+    "です",
+    "だ",
+  ];
+  for (const suffix of suffixes) {
+    if (value.endsWith(suffix) && value.length > suffix.length + 1) {
+      return value.slice(0, -suffix.length);
+    }
+  }
+  return value;
+};
+
+const normalizeQueryTerm = (value: string) => {
+  const normalized = normalize(value);
+  if (englishStopWords.has(normalized)) {
+    return "";
+  }
+  if (/^[a-z]+ies$/.test(normalized)) {
+    return `${normalized.slice(0, -3)}y`;
+  }
+  if (/^[a-z]+(?:ches|shes|xes|zes|ses)$/.test(normalized)) {
+    return normalized.slice(0, -2);
+  }
+  if (/^[a-z]{4,}s$/.test(normalized)) {
+    return normalized.slice(0, -1);
+  }
+  return normalizeJapaneseQueryEnding(normalized);
+};
+
 const tokenizeQuery = (value: string) =>
   Array.from(
     value.matchAll(/"([^"]+)"|'([^']+)'|\bAND\b|\bOR\b|[^\s]+/gi),
@@ -40,6 +109,7 @@ const tokenizeQuery = (value: string) =>
 const parseQuery = (value: string): QueryClause[] => {
   const clauses: QueryClause[] = [];
   let currentTerms: QueryTerm[] = [];
+  let pendingAnd = false;
 
   for (const token of tokenizeQuery(value)) {
     const upper = token.toUpperCase();
@@ -48,18 +118,23 @@ const parseQuery = (value: string): QueryClause[] => {
         clauses.push({ terms: currentTerms });
         currentTerms = [];
       }
+      pendingAnd = false;
       continue;
     }
     if (upper === "AND") {
+      pendingAnd = currentTerms.length > 0;
       continue;
     }
-    const normalized = normalize(token);
+    const normalized = normalizeQueryTerm(token);
     if (!normalized) {
       continue;
     }
-    currentTerms.push({
-      normalized,
-    });
+    if (currentTerms.length > 0 && !pendingAnd) {
+      clauses.push({ terms: currentTerms });
+      currentTerms = [];
+    }
+    currentTerms.push({ normalized });
+    pendingAnd = false;
   }
 
   if (currentTerms.length > 0) {
@@ -119,22 +194,19 @@ const matchTermScore = (event: EventType, term: QueryTerm) => {
 };
 
 const scoreEvent = (event: EventType, clauses: QueryClause[]) => {
-  let bestScore = 0;
+  let totalScore = 0;
 
   for (const clause of clauses) {
     const termScores = clause.terms.map((term) => matchTermScore(event, term));
     if (termScores.some((score) => score === 0)) {
       continue;
     }
-    const clauseScore =
+    totalScore +=
       termScores.reduce((total, score) => total + score, 0) +
       clause.terms.length * 25;
-    if (clauseScore > bestScore) {
-      bestScore = clauseScore;
-    }
   }
 
-  return bestScore;
+  return totalScore;
 };
 
 const readEventsForVersion = async (version: string) => {
@@ -169,6 +241,12 @@ export const GET = async (request: NextRequest) => {
   const sources = splitSources(request.nextUrl.searchParams.get("source"));
   const limit = parseLimit(request.nextUrl.searchParams.get("limit"));
   const data = await readEventsForVersion(version);
+  const lang = request.nextUrl.searchParams.get("lang") ?? "ja";
+  if (!data.lang.includes(lang)) {
+    return new NextResponse(`Unsupported lang: ${lang}`, {
+      status: 400,
+    });
+  }
 
   const matches = data.events
     .filter((event) =>
@@ -200,8 +278,8 @@ export const GET = async (request: NextRequest) => {
         link: event.link,
         abstract: event.abstract,
         deprecate: event.deprecate,
-        description: event.description,
-        deprecateDescription: event.deprecateDescription,
+        description: event.description[lang],
+        deprecateDescription: event.deprecateDescription?.[lang],
         javadoc: event.javadoc,
       }),
     );
