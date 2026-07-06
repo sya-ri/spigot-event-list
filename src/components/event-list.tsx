@@ -33,7 +33,7 @@ const EventList: FC<EventListProps> = ({
   locale,
   version,
 }) => {
-  const { events } = useEvents(locale, version);
+  const { events } = useEvents(locale, version, search, tags);
   const incompleteEvents = useMemo(
     () =>
       events?.filter(
@@ -46,13 +46,9 @@ const EventList: FC<EventListProps> = ({
   );
   const filteredEvents = useMemo(
     () =>
-      events?.filter(
-        (event) =>
-          tags.includes(event.source as EventSource) &&
-          ((event.name ?? "").match(new RegExp(search, "i")) ||
-            (event.description ?? "").match(new RegExp(search, "i"))),
-      ) ?? [],
-    [events, search, tags],
+      events?.filter((event) => tags.includes(event.source as EventSource)) ??
+      [],
+    [events, tags],
   );
   return (
     <div className="flex flex-col gap-4">
