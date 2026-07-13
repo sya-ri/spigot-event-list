@@ -225,6 +225,17 @@
       "source": "paper"
     },
     {
+      "description": {
+        "ja": "This event is emitted by the server when the data fixer is removing a block entity associated with a blockdue to the block entity type no longer existing in this minecraft version.Notable examples include the removal of the bed block entity in 26.2.WARNING: While this event is prefixed with 'Async' it is executed as part of the chunk loading process.It may hence either execute on the chunk loading worker threads or the servers main thread, if a chunk loadis executed there. In either case, heavy or blocking work is strongly discouraged to ensure theserver runs smoothly. This is also applicable for the chunk loading worker threads, which the server main threadmight be blocking on.Schedule large amount of work into separate thread pools.",
+        "en": "This event is emitted by the server when the data fixer is removing a block entity associated with a blockdue to the block entity type no longer existing in this minecraft version.Notable examples include the removal of the bed block entity in 26.2.WARNING: While this event is prefixed with 'Async' it is executed as part of the chunk loading process.It may hence either execute on the chunk loading worker threads or the servers main thread, if a chunk loadis executed there. In either case, heavy or blocking work is strongly discouraged to ensure theserver runs smoothly. This is also applicable for the chunk loading worker threads, which the server main threadmight be blocking on.Schedule large amount of work into separate thread pools."
+      },
+      "href": "io/papermc/paper/event/server/AsyncServerDataFixerRemoveBlockEntityEvent.html",
+      "javadoc": "This event is emitted by the server when the data fixer is removing a block entity associated with a blockdue to the block entity type no longer existing in this minecraft version.Notable examples include the removal of the bed block entity in 26.2.WARNING: While this event is prefixed with 'Async' it is executed as part of the chunk loading process.It may hence either execute on the chunk loading worker threads or the servers main thread, if a chunk loadis executed there. In either case, heavy or blocking work is strongly discouraged to ensure theserver runs smoothly. This is also applicable for the chunk loading worker threads, which the server main threadmight be blocking on.Schedule large amount of work into separate thread pools.",
+      "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/server/AsyncServerDataFixerRemoveBlockEntityEvent.html",
+      "name": "AsyncServerDataFixerRemoveBlockEntityEvent",
+      "source": "paper"
+    },
+    {
       "deprecate": "@Experimental",
       "deprecateDescription": {
         "en": "Experimental phase.",
