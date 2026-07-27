@@ -3162,6 +3162,17 @@
     },
     {
       "description": {
+        "ja": "This event is called when the code of conduct is potentially sent to the player.",
+        "en": "This event is called when the code of conduct is potentially sent to the player."
+      },
+      "href": "io/papermc/paper/event/connection/configuration/PlayerCodeOfConductSendEvent.html",
+      "javadoc": "This event is called when the code of conduct is potentially sent to the player.",
+      "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/connection/configuration/PlayerCodeOfConductSendEvent.html",
+      "name": "PlayerCodeOfConductSendEvent",
+      "source": "paper"
+    },
+    {
+      "description": {
         "en": "Called before a player's command is processed.",
         "ja": "プレイヤーが実行したコマンドが処理される前に呼び出される。"
       },
