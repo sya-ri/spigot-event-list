@@ -3162,8 +3162,8 @@
     },
     {
       "description": {
-        "ja": "This event is called when the code of conduct is potentially sent to the player.",
-        "en": "This event is called when the code of conduct is potentially sent to the player."
+        "en": "This event is called when the code of conduct is potentially sent to the player.",
+        "ja": "This event is called when the code of conduct is potentially sent to the player."
       },
       "href": "io/papermc/paper/event/connection/configuration/PlayerCodeOfConductSendEvent.html",
       "javadoc": "This event is called when the code of conduct is potentially sent to the player.",
