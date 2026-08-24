@@ -206,16 +206,8 @@ export const bungeeVersions = async () =>
     (value) => !value.includes("-SNAPSHOT"),
   );
 
-type SpigotBuildData = {
-  minecraftVersion: string;
-  spigotVersion: string;
-};
-
 export const spigotVersion = async (): Promise<string> => {
-  const json = await fetchJson<SpigotBuildData>(
-    "https://hub.spigotmc.org/stash/projects/SPIGOT/repos/builddata/raw/info.json",
-  );
-  return json.minecraftVersion;
+  return (await fetchSpigotVersions()).pop() ?? "";
 };
 
 export const paperVersion = async () => {
