@@ -209,11 +209,6 @@
       "source": "paper"
     },
     {
-      "deprecate": "@Experimental",
-      "deprecateDescription": {
-        "en": "Experimental phase.",
-        "ja": "実験段階。"
-      },
       "description": {
         "en": "Called when selecting a player's spawn location (i.e. joining the server or reconfiguring). The player will be kept in the configuration phase until all event handlers return and the spawn location is loaded.",
         "ja": "プレイヤーのスポーン地点を決定する時に呼び出される。イベントハンドラーが処理を完了し、スポーン地点が読み込まれるまでプレイヤーは設定フェーズのまま留まる。"
@@ -1366,6 +1361,17 @@
     },
     {
       "description": {
+        "ja": "Fired when two entities collide with each other.If cancelled, the entities won't get pushed away from each other.Note that even if cancelled, the client may still run its own collision unlessdisabled via player teams.",
+        "en": "Fired when two entities collide with each other.If cancelled, the entities won't get pushed away from each other.Note that even if cancelled, the client may still run its own collision unlessdisabled via player teams."
+      },
+      "href": "io/papermc/paper/event/entity/EntityCollideWithEntityEvent.html",
+      "javadoc": "Fired when two entities collide with each other.If cancelled, the entities won't get pushed away from each other.Note that even if cancelled, the client may still run its own collision unlessdisabled via player teams.",
+      "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/entity/EntityCollideWithEntityEvent.html",
+      "name": "EntityCollideWithEntityEvent",
+      "source": "paper"
+    },
+    {
+      "description": {
         "en": "Called when a block causes an entity to combust.",
         "ja": "ブロックによってエンティティが炎上する時に呼び出される。"
       },
@@ -1406,6 +1412,17 @@
       "javadoc": "Called when an item is about to be composted by an entity.",
       "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/entity/EntityCompostItemEvent.html",
       "name": "EntityCompostItemEvent",
+      "source": "paper"
+    },
+    {
+      "description": {
+        "ja": "Called just before an Entity spawns due to a pattern of blocks being constructed (golems, the wither, etc.)Note: This event is fired before EntitySpawnEvent, before the entity is added to the world,the success of this event does not guarantee the entity will actually spawn.",
+        "en": "Called just before an Entity spawns due to a pattern of blocks being constructed (golems, the wither, etc.)Note: This event is fired before EntitySpawnEvent, before the entity is added to the world,the success of this event does not guarantee the entity will actually spawn."
+      },
+      "href": "io/papermc/paper/event/entity/EntityConstructEvent.html",
+      "javadoc": "Called just before an Entity spawns due to a pattern of blocks being constructed (golems, the wither, etc.)Note: This event is fired before EntitySpawnEvent, before the entity is added to the world,the success of this event does not guarantee the entity will actually spawn.",
+      "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/entity/EntityConstructEvent.html",
+      "name": "EntityConstructEvent",
       "source": "paper"
     },
     {
@@ -3260,11 +3277,6 @@
       "source": "paper"
     },
     {
-      "deprecate": "@Experimental",
-      "deprecateDescription": {
-        "en": "Experimental phase.",
-        "ja": "実験段階。"
-      },
       "description": {
         "en": "Called for custom click events.",
         "ja": "カスタムクリックイベントに対して呼び出される。"
@@ -5599,6 +5611,17 @@
     },
     {
       "description": {
+        "ja": "Called when a SulfurCube swallows an item.If the ItemStack is modified, the SulfurCube will swallow the new itemand not remove the original one from the player's inventory.If the event is cancelled, the SulfurCube will not swallow the item, andit will not be removed from the player's inventory.",
+        "en": "Called when a SulfurCube swallows an item.If the ItemStack is modified, the SulfurCube will swallow the new itemand not remove the original one from the player's inventory.If the event is cancelled, the SulfurCube will not swallow the item, andit will not be removed from the player's inventory."
+      },
+      "href": "io/papermc/paper/event/entity/SulfurCubeSwallowItemEvent.html",
+      "javadoc": "Called when a SulfurCube swallows an item.If the ItemStack is modified, the SulfurCube will swallow the new itemand not remove the original one from the player's inventory.If the event is cancelled, the SulfurCube will not swallow the item, andit will not be removed from the player's inventory.",
+      "link": "https://jd.papermc.io/paper/26.2/io/papermc/paper/event/entity/SulfurCubeSwallowItemEvent.html",
+      "name": "SulfurCubeSwallowItemEvent",
+      "source": "paper"
+    },
+    {
+      "description": {
         "en": "Event called when a player uses tab completion.",
         "ja": "タブ補完を行う時に呼び出される。"
       },
@@ -5796,11 +5819,6 @@
       "source": "paper"
     },
     {
-      "deprecate": "@Experimental",
-      "deprecateDescription": {
-        "en": "Experimental phase.",
-        "ja": "実験段階。"
-      },
       "description": {
         "en": "Called when a player attempts to change the contents of a sign, before the server checks whether the sign actually exists.",
         "ja": "プレイヤーが看板の内容を変更しようとするとき、サーバーが実際に看板が存在するかを確認する前の段階で呼び出される。"
