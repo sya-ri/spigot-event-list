@@ -1361,8 +1361,8 @@
     },
     {
       "description": {
-        "ja": "Fired when two entities collide with each other.If cancelled, the entities won't get pushed away from each other.Note that even if cancelled, the client may still run its own collision unlessdisabled via player teams.",
-        "en": "Fired when two entities collide with each other.If cancelled, the entities won't get pushed away from each other.Note that even if cancelled, the client may still run its own collision unlessdisabled via player teams."
+        "en": "Fired when two entities collide with each other.If cancelled, the entities won't get pushed away from each other.Note that even if cancelled, the client may still run its own collision unlessdisabled via player teams.",
+        "ja": "Fired when two entities collide with each other.If cancelled, the entities won't get pushed away from each other.Note that even if cancelled, the client may still run its own collision unlessdisabled via player teams."
       },
       "href": "io/papermc/paper/event/entity/EntityCollideWithEntityEvent.html",
       "javadoc": "Fired when two entities collide with each other.If cancelled, the entities won't get pushed away from each other.Note that even if cancelled, the client may still run its own collision unlessdisabled via player teams.",
@@ -1416,8 +1416,8 @@
     },
     {
       "description": {
-        "ja": "Called just before an Entity spawns due to a pattern of blocks being constructed (golems, the wither, etc.)Note: This event is fired before EntitySpawnEvent, before the entity is added to the world,the success of this event does not guarantee the entity will actually spawn.",
-        "en": "Called just before an Entity spawns due to a pattern of blocks being constructed (golems, the wither, etc.)Note: This event is fired before EntitySpawnEvent, before the entity is added to the world,the success of this event does not guarantee the entity will actually spawn."
+        "en": "Called just before an Entity spawns due to a pattern of blocks being constructed (golems, the wither, etc.)Note: This event is fired before EntitySpawnEvent, before the entity is added to the world,the success of this event does not guarantee the entity will actually spawn.",
+        "ja": "Called just before an Entity spawns due to a pattern of blocks being constructed (golems, the wither, etc.)Note: This event is fired before EntitySpawnEvent, before the entity is added to the world,the success of this event does not guarantee the entity will actually spawn."
       },
       "href": "io/papermc/paper/event/entity/EntityConstructEvent.html",
       "javadoc": "Called just before an Entity spawns due to a pattern of blocks being constructed (golems, the wither, etc.)Note: This event is fired before EntitySpawnEvent, before the entity is added to the world,the success of this event does not guarantee the entity will actually spawn.",
@@ -5611,8 +5611,8 @@
     },
     {
       "description": {
-        "ja": "Called when a SulfurCube swallows an item.If the ItemStack is modified, the SulfurCube will swallow the new itemand not remove the original one from the player's inventory.If the event is cancelled, the SulfurCube will not swallow the item, andit will not be removed from the player's inventory.",
-        "en": "Called when a SulfurCube swallows an item.If the ItemStack is modified, the SulfurCube will swallow the new itemand not remove the original one from the player's inventory.If the event is cancelled, the SulfurCube will not swallow the item, andit will not be removed from the player's inventory."
+        "en": "Called when a SulfurCube swallows an item.If the ItemStack is modified, the SulfurCube will swallow the new itemand not remove the original one from the player's inventory.If the event is cancelled, the SulfurCube will not swallow the item, andit will not be removed from the player's inventory.",
+        "ja": "Called when a SulfurCube swallows an item.If the ItemStack is modified, the SulfurCube will swallow the new itemand not remove the original one from the player's inventory.If the event is cancelled, the SulfurCube will not swallow the item, andit will not be removed from the player's inventory."
       },
       "href": "io/papermc/paper/event/entity/SulfurCubeSwallowItemEvent.html",
       "javadoc": "Called when a SulfurCube swallows an item.If the ItemStack is modified, the SulfurCube will swallow the new itemand not remove the original one from the player's inventory.If the event is cancelled, the SulfurCube will not swallow the item, andit will not be removed from the player's inventory.",
