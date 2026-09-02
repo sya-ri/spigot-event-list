@@ -27,6 +27,49 @@ const compareVersions = (left: string, right: string) => {
 const stableMinecraftVersion = (value: string) =>
   /^\d+(\.\d+){1,2}$/.test(value);
 
+const minecraftVersionFromLatestLabel = (value: string | undefined) => {
+  const match = value?.match(/^(\d+(?:\.\d+){1,2})(?: - #\d+)?$/);
+  return match?.[1] ?? null;
+};
+
+export const getLatestMinecraftVersionFromVersions = (
+  versions: Record<string, string>,
+) => {
+  const minecraftVersions = SERVER_VERSION_SOURCES.map((source) =>
+    minecraftVersionFromLatestLabel(versions[source]),
+  );
+  const firstVersion = minecraftVersions[0];
+  if (
+    !firstVersion ||
+    minecraftVersions.some((version) => version !== firstVersion)
+  ) {
+    return null;
+  }
+  return firstVersion;
+};
+
+export type ServerVersionResolution = {
+  requestedVersion: string;
+  resolvedVersion: string;
+};
+
+export const resolveServerVersion = (
+  requestedVersion: string,
+  availableVersions: readonly string[],
+  latestMinecraftVersion: string | null,
+): ServerVersionResolution | null => {
+  if (
+    requestedVersion === "latest" ||
+    requestedVersion === latestMinecraftVersion
+  ) {
+    return { requestedVersion, resolvedVersion: "latest" };
+  }
+  if (availableVersions.includes(requestedVersion)) {
+    return { requestedVersion, resolvedVersion: requestedVersion };
+  }
+  return null;
+};
+
 export const COMPLETE_SERVER_VERSION_RULES: CompleteServerVersionRule[] = [
   {
     max: "1.14.1",
@@ -163,6 +206,9 @@ export const createDataPaths = (rootPath: string) => {
     return JSON.parse(text) as Record<string, string>;
   };
 
+  const getLatestMinecraftVersion = async () =>
+    getLatestMinecraftVersionFromVersions(await readLatestServerVersions());
+
   const proxyDataPath = (...parts: string[]) => dataPath("proxy", ...parts);
   const minecraftVersionDataPath = (...parts: string[]) =>
     minecraftDataPath(...parts);
@@ -187,6 +233,7 @@ export const createDataPaths = (rootPath: string) => {
     readServerVersions,
     readLatestServerEvents,
     readLatestServerVersions,
+    getLatestMinecraftVersion,
     readProxyEvents,
     proxyDataPath,
     minecraftVersionDataPath,
@@ -202,4 +249,5 @@ export const readServerEvents = appDataPaths.readServerEvents;
 export const readServerVersions = appDataPaths.readServerVersions;
 export const readLatestServerEvents = appDataPaths.readLatestServerEvents;
 export const readLatestServerVersions = appDataPaths.readLatestServerVersions;
+export const getLatestMinecraftVersion = appDataPaths.getLatestMinecraftVersion;
 export const readProxyEvents = appDataPaths.readProxyEvents;
