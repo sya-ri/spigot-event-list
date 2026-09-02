@@ -2,7 +2,7 @@ import useSWRImmutable from "swr/immutable";
 
 type VersionsResponse = {
   latest: string;
-  latestMinecraftVersion: string;
+  latestMinecraftVersion: string | null;
   versions: string[];
 };
 

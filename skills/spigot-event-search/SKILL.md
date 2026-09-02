@@ -20,6 +20,8 @@ Use this skill when a user wants to find events from partial text rather than br
 - Searches `javadoc`
 - Searches all supported `deprecateDescription.*` fields
 - Supports `latest` or a fixed Minecraft version such as `1.21.11`
+- Accepts the current `latestMinecraftVersion` as an explicit, non-persistent
+  alias for the latest merged dataset
 - Supports source filtering for `spigot`, `paper`, `purpur`, `bungee`, `velocity`
 
 ## API
@@ -42,6 +44,9 @@ Read [references/api.md](references/api.md) for the full request and response fo
    When expanding likely synonyms or candidate terms, include the user's language when that language is supported by the dataset.
    If the user's language is not supported by the dataset, use English candidate terms only.
 2. Use `version=latest` unless the user asks for a specific version.
+   Discover accepted fixed values from `GET /api/versions`. An explicit value
+   equal to `latestMinecraftVersion` is resolved to the current latest dataset
+   only while those values match.
 3. Add `source=` when the user names a platform such as Paper or Velocity.
 4. Call the API with `curl`.
 5. Summarize the best matches first.

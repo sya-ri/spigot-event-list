@@ -18,6 +18,8 @@ GET https://spigot-event-list.s7a.dev/api/search/events
 - `version` optional
   - `latest` or a fixed Minecraft version such as `1.21.11`
   - Default: `latest`
+  - The current `latestMinecraftVersion` returned by `GET /api/versions` is
+    accepted as an explicit alias for the latest merged dataset.
 - `source` optional
   - Comma-separated list from `spigot,paper,purpur,bungee,velocity`
 - `limit` optional
@@ -76,6 +78,13 @@ curl -fsSL 'https://spigot-event-list.s7a.dev/api/search/events?q=%E5%8F%82%E5%8
 ## Notes
 
 - `latest` returns the latest merged dataset.
+- An explicit version equal to the current `latestMinecraftVersion` also reads
+  the latest merged dataset. The response keeps the explicitly requested
+  version in both the top-level `version` and each result's `version`.
+- The alias is evaluated against the current latest version on every request.
+  After latest advances, the previous version uses its fixed snapshot when one
+  exists, or returns `404 Unsupported version` when one does not; it never
+  follows newer latest data.
 - Fixed versions include the selected Minecraft server data plus the latest proxy data.
 - Results are sorted by relevance, then by name and source.
 - `A B` means `A AND B`.
@@ -83,3 +92,11 @@ curl -fsSL 'https://spigot-event-list.s7a.dev/api/search/events?q=%E5%8F%82%E5%8
 - `A OR B OR C` is useful when you want to try several likely candidate words.
 - Mixing a supported non-English language with English in the same OR query is allowed when it improves recall.
 - If the user's language is not supported by the dataset, use English-only query expansion.
+
+## Version discovery
+
+`GET /api/versions` returns the `latest` alias, `latestMinecraftVersion`, and
+the accepted version values. `latestMinecraftVersion` is only set when the
+latest Paper, Purpur, and Spigot datasets all identify the same stable
+Minecraft version. It is `null`, and no explicit latest-version alias is
+advertised, while those server sources disagree during an update.
