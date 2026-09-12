@@ -1,102 +1,71 @@
 # API Reference
 
-Endpoint:
-
-```text
-GET https://spigot-event-list.s7a.dev/api/search/events
-```
+`GET https://spigot-event-list.s7a.dev/api/search/events`
 
 ## Query parameters
 
-- `q` required
-  - Partial-match search text
-  - Queries in supported dataset languages are supported
-  - Searches event name, descriptions, Javadoc, and deprecation descriptions
-  - Supports `OR` and `AND`
-  - Whitespace-separated terms are treated as `AND`
-  - Quoted phrases such as `"block break"` are supported
-- `version` optional
-  - `latest` or a fixed Minecraft version such as `1.21.11`
-  - Default: `latest`
-  - The current `latestMinecraftVersion` returned by `GET /api/versions` is
-    accepted as an explicit alias for the latest merged dataset.
-- `source` optional
-  - Comma-separated list from `spigot,paper,purpur,bungee,velocity`
-- `limit` optional
-  - Integer from `1` to `100`
-  - Default: `20`
+- `q`: optional partial-match search across event names, all description languages, Javadoc and deprecation descriptions. Omitted or blank queries browse all events.
+  - Whitespace and `AND` require all terms. `OR` separates alternatives.
+  - Quoted phrases stay contiguous; quoted operators are literal text.
+  - A nonempty query containing only ignored words/operators returns zero matches.
+- `version`: `latest` (default) or a value from `GET /api/versions`.
+  - The current `latestMinecraftVersion` is an explicit alias for the latest merged data, only while those values agree.
+  - Historical versions combine their server events with the latest proxy events.
+- `source`: comma-separated values from `spigot,paper,purpur,bungee,velocity`. Omitted selects all; an explicitly empty value selects none. Unknown values do not match.
+- `lang`: response description language, `ja` (default) or `en`. Search still covers all dataset languages.
+- `limit`: page size, 1–100 (default 20).
+- `offset`: nonnegative integer starting position (default 0).
+
+Integer pagination values are clamped to their bounds; malformed/non-integer values use the defaults.
 
 ## Example
 
 ```bash
-curl -fsSL 'https://spigot-event-list.s7a.dev/api/search/events?q=login&source=velocity,bungee&limit=5'
-```
-
-```bash
+curl -fsSL 'https://spigot-event-list.s7a.dev/api/search/events?q=login&source=velocity,bungee&lang=en&limit=5'
 curl -fsSL 'https://spigot-event-list.s7a.dev/api/search/events?q=chat%20OR%20login&version=latest'
-```
-
-```bash
-curl -fsSL 'https://spigot-event-list.s7a.dev/api/search/events?q=%22block%20break%22%20paper'
-```
-
-```bash
-curl -fsSL 'https://spigot-event-list.s7a.dev/api/search/events?q=join%20OR%20login%20OR%20connect'
-```
-
-```bash
-curl -fsSL 'https://spigot-event-list.s7a.dev/api/search/events?q=%E5%8F%82%E5%8A%A0%20OR%20%E3%83%AD%E3%82%B0%E3%82%A4%E3%83%B3%20OR%20join%20OR%20login'
+curl -fsSL 'https://spigot-event-list.s7a.dev/api/search/events?q=%22block%20break%22'
+curl -fsSL 'https://spigot-event-list.s7a.dev/api/search/events?q=player&limit=50&offset=100'
 ```
 
 ## Response
+
+Descriptions are localized strings. `count` is the size of this page; `total` counts all matching events before pagination. Request the same query, filters and limit with `offset=nextOffset` to continue. A null `nextOffset` marks the end.
 
 ```json
 {
   "query": "login",
   "version": "latest",
-  "count": 2,
+  "count": 1,
+  "total": 1,
+  "offset": 0,
+  "nextOffset": null,
   "events": [
     {
       "version": "latest",
       "name": "LoginEvent",
       "source": "velocity",
-      "link": "https://...",
-      "description": {
-        "ja": "...",
-        "en": "..."
-      },
-      "deprecateDescription": {
-        "ja": "...",
-        "en": "..."
-      },
-      "javadoc": "..."
+      "link": "https://example.com/LoginEvent.html",
+      "description": "Localized description",
+      "deprecateDescription": "Optional localized deprecation description",
+      "javadoc": "Optional original Javadoc text"
     }
   ]
 }
 ```
 
-## Notes
+Results sort by relevance, then name, source and link. Browsing uses name, source and link order. An offset beyond the result set returns an empty page with the original total.
 
-- `latest` returns the latest merged dataset.
-- An explicit version equal to the current `latestMinecraftVersion` also reads
-  the latest merged dataset. The response keeps the explicitly requested
-  version in both the top-level `version` and each result's `version`.
-- The alias is evaluated against the current latest version on every request.
-  After latest advances, the previous version uses its fixed snapshot when one
-  exists, or returns `404 Unsupported version` when one does not; it never
-  follows newer latest data.
-- Fixed versions include the selected Minecraft server data plus the latest proxy data.
-- Results are sorted by relevance, then by name and source.
-- `A B` means `A AND B`.
-- `A OR B` means either term may match.
-- `A OR B OR C` is useful when you want to try several likely candidate words.
-- Mixing a supported non-English language with English in the same OR query is allowed when it improves recall.
-- If the user's language is not supported by the dataset, use English-only query expansion.
+Unsupported versions return HTTP 404; unsupported languages return HTTP 400. These errors use plain-text bodies. Other failures can return HTTP 500; check the HTTP status before decoding JSON.
 
-## Version discovery
+## Related endpoints and freshness
 
-`GET /api/versions` returns the `latest` alias, `latestMinecraftVersion`, and
-the accepted version values. `latestMinecraftVersion` is only set when the
-latest Paper, Purpur, and Spigot datasets all identify the same stable
-Minecraft version. It is `null`, and no explicit latest-version alias is
-advertised, while those server sources disagree during an update.
+- `GET /api/versions` returns `latest`, `latestMinecraftVersion` (string or null) and accepted `versions`.
+- `GET /api/versions/{version}/events?lang=ja` returns a localized array of all events for that version.
+- Web server data reads are cached for at most 60 seconds after each successful load, with a bounded cache. Failed loads are retried on the next request. Downloader reads remain uncached.
+
+## Search guidance
+
+- Use `A B` or `A AND B` when both conditions should match.
+- Use `A OR B` for alternatives or synonyms.
+- Mix Japanese and English alternatives when helpful, for example `参加 OR ログイン OR join OR login`.
+- Use English expansion for languages absent from the dataset.

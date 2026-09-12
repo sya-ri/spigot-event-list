@@ -47,7 +47,7 @@ span.kofitext {
   color: #fff;
   text-decoration: none;
 }
-a.kofi-button {
+.kofi-button {
   box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
   line-height: unset;
   display: inline-block;
@@ -70,16 +70,16 @@ a.kofi-button {
   font-weight: 700;
   font-size: 14px;
 }
-a.kofi-button:visited {
+.kofi-button:visited {
   color: #fff;
   text-decoration: none;
 }
-a.kofi-button:hover {
+.kofi-button:hover {
   opacity: 0.85;
   color: #f5f5f5;
   text-decoration: none;
 }
-a.kofi-button:active {
+.kofi-button:active {
   color: #f5f5f5;
   text-decoration: none;
 }

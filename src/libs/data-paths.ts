@@ -1,5 +1,6 @@
 import { readdir, readFile } from "fs/promises";
 import path from "path";
+import { createAsyncCache } from "./async-cache";
 import EventType from "../../packages/downloader/src/types/event-type";
 
 const SERVER_SOURCES = ["spigot", "paper", "purpur"] as const;
@@ -102,7 +103,8 @@ export const hasCompleteServerSources = (
     (source) => source in versions,
   );
 
-export const createDataPaths = (rootPath: string) => {
+export const createDataPaths = (rootPath: string, { cacheTtlMs = 0 } = {}) => {
+  const cached = createAsyncCache(cacheTtlMs);
   const dataPath = (...parts: string[]) => path.join(rootPath, ...parts);
   const minecraftDataPath = (...parts: string[]) =>
     path.join(rootPath, "minecraft", ...parts);
@@ -216,32 +218,46 @@ export const createDataPaths = (rootPath: string) => {
 
   return {
     getLatestServerVersion,
-    getServerVersionsDesc: async () => {
-      const versions = await getServerVersionsDesc();
-      const supported: string[] = [];
-      for (const version of versions) {
-        try {
-          const versionMap = await readServerVersions(version);
-          if (hasCompleteServerSources(version, versionMap)) {
-            supported.push(version);
-          }
-        } catch {}
-      }
-      return supported;
-    },
-    readServerEvents,
+    getServerVersionsDesc: () =>
+      cached("versions", async () => {
+        const versions = await getServerVersionsDesc();
+        const supported = await Promise.all(
+          versions.map(async (version) => {
+            try {
+              return hasCompleteServerSources(
+                version,
+                await readServerVersions(version),
+              )
+                ? version
+                : null;
+            } catch {
+              return null;
+            }
+          }),
+        );
+        return supported.filter(
+          (version): version is string => version !== null,
+        );
+      }),
+    readServerEvents: (version: string) =>
+      cached(`events:${version}`, () => readServerEvents(version)),
     readServerVersions,
-    readLatestServerEvents,
-    readLatestServerVersions,
-    getLatestMinecraftVersion,
-    readProxyEvents,
+    readLatestServerEvents: () =>
+      cached("latest-events", readLatestServerEvents),
+    readLatestServerVersions: () =>
+      cached("latest-versions", readLatestServerVersions),
+    getLatestMinecraftVersion: () =>
+      cached("latest-minecraft-version", getLatestMinecraftVersion),
+    readProxyEvents: () => cached("proxy-events", readProxyEvents),
     proxyDataPath,
     minecraftVersionDataPath,
     latestDataPath,
   };
 };
 
-const appDataPaths = createDataPaths(path.join(process.cwd(), "data"));
+const appDataPaths = createDataPaths(path.join(process.cwd(), "data"), {
+  cacheTtlMs: 60_000,
+});
 
 export const getLatestServerVersion = appDataPaths.getLatestServerVersion;
 export const getServerVersionsDesc = appDataPaths.getServerVersionsDesc;

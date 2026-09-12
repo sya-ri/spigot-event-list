@@ -13,8 +13,10 @@ jobs:
           node-version-file: package.json
       - name: Install Dependencies
         run: |
-          npm install
+          npm ci
       - name: Lint
         run: npm run lint
       - name: Test
         run: npm test
+      - name: Typecheck
+        run: npm run typecheck

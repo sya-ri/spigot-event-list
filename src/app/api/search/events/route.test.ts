@@ -3,6 +3,7 @@ import { test } from "node:test";
 import { NextRequest } from "next/server";
 import EventType from "../../../../../packages/downloader/src/types/event-type";
 import { createSearchEventsHandler } from "./handler";
+import type { SearchEventsResponse } from "@/types/event";
 
 const paperEvent: EventType = {
   description: {
@@ -16,6 +17,110 @@ const paperEvent: EventType = {
 };
 
 const eventData = { lang: ["en", "ja"], events: [paperEvent] };
+
+const makeHandler = (events: EventType[] = [paperEvent]) =>
+  createSearchEventsHandler({
+    getLatestMinecraftVersion: async () => "26.2",
+    getServerVersionsDesc: async () => ["26.1.2"],
+    readLatestServerEvents: async () => ({ lang: ["en", "ja"], events }),
+    readServerEvents: async () => ({ lang: ["en", "ja"], events }),
+    readProxyEvents: async () => ({
+      lang: ["en", "ja"],
+      events: [{ ...paperEvent, name: "ProxyEvent", source: "velocity" }],
+    }),
+  });
+
+test("paginates beyond 100 matches without losing or duplicating events", async () => {
+  const events = Array.from({ length: 137 }, (_, index) => ({
+    ...paperEvent,
+    name: `Event${String(index).padStart(3, "0")}`,
+  }));
+  const handler = makeHandler(events.reverse());
+  const found: string[] = [];
+  let offset: number | null = 0;
+  while (offset !== null) {
+    const response = await handler(
+      new NextRequest(
+        `https://example.test/api/search/events?q=event&limit=50&offset=${offset}`,
+      ),
+    );
+    const data = (await response.json()) as SearchEventsResponse;
+    assert.equal(data.total, 137);
+    assert.equal(data.offset, offset);
+    assert.equal(data.count, data.events.length);
+    found.push(...data.events.map((event) => event.name));
+    offset = data.nextOffset;
+  }
+  assert.equal(found.length, 137);
+  assert.equal(new Set(found).size, 137);
+  assert.deepEqual(found, [...found].sort());
+});
+
+test("browses without a query and applies source filters before pagination", async () => {
+  const handler = makeHandler([
+    { ...paperEvent, source: "spigot" },
+    paperEvent,
+  ]);
+  const response = await handler(
+    new NextRequest(
+      "https://example.test/api/search/events?source=paper&limit=1&lang=en",
+    ),
+  );
+  const data = (await response.json()) as SearchEventsResponse;
+  assert.equal(data.total, 1);
+  assert.equal(data.events[0].source, "paper");
+  assert.equal(data.events[0].description, paperEvent.description.en);
+  assert.equal(data.nextOffset, null);
+});
+
+test("empty selections, stop words and no matches return successful empty results", async () => {
+  for (const query of [
+    "source=",
+    "source=unknown",
+    "q=the",
+    "q=absent",
+    "offset=1000",
+  ]) {
+    const response = await makeHandler()(
+      new NextRequest(`https://example.test/api/search/events?${query}`),
+    );
+    assert.equal(response.status, 200);
+    const data = (await response.json()) as SearchEventsResponse;
+    assert.deepEqual(data.events, []);
+    assert.equal(data.nextOffset, null);
+  }
+});
+
+test("invalid pagination parameters are bounded and unsupported languages fail clearly", async () => {
+  for (const query of [
+    "limit=0&offset=-1",
+    "limit=oops&offset=NaN",
+    "limit=1.5&offset=Infinity",
+  ]) {
+    const response = await makeHandler()(
+      new NextRequest(`https://example.test/api/search/events?${query}`),
+    );
+    const data = (await response.json()) as SearchEventsResponse;
+    assert.equal(data.count, 1);
+    assert.equal(data.offset, 0);
+  }
+  const response = await makeHandler()(
+    new NextRequest("https://example.test/api/search/events?lang=unsupported"),
+  );
+  assert.equal(response.status, 400);
+});
+
+test("historical searches include current proxy events exactly once", async () => {
+  const response = await makeHandler()(
+    new NextRequest("https://example.test/api/search/events?version=26.1.2"),
+  );
+  const data = (await response.json()) as SearchEventsResponse;
+  assert.equal(data.total, 2);
+  assert.deepEqual(
+    data.events.map((event) => event.source),
+    ["paper", "velocity"],
+  );
+});
 
 test("searches the current explicit Minecraft version in latest data without changing the response version", async () => {
   const calls = { latest: 0, proxy: 0, fixed: [] as string[] };

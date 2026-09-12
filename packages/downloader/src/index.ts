@@ -58,8 +58,7 @@ const index = async () => {
   }
   if (options.versions.length === 0) {
     const latestServer = await downloadLatestServerSnapshot(discoveredReleases);
-    const sources = await getSources();
-    const proxySources = pickSources(sources, PROXY_SOURCE_NAMES);
+    const proxySources = await getSources(PROXY_SOURCE_NAMES);
     const [lang, events] = await downloadLatestEvents(proxySources);
     await writeProxyEvents(lang, filterEvents(events, PROXY_EVENT_SOURCES));
     await writeProxyVersions(proxySources);
@@ -347,21 +346,19 @@ const writeVersionedJson = async (
 const normalizeEvents = (sources: Record<string, EventType>) =>
   Object.values(sources)
     .sort((a, b) => (a.name + a.source).localeCompare(b.name + b.source))
-    .map(
-      (value): EventType => ({
-        deprecate: value.deprecate,
-        deprecateDescription: value.deprecate
-          ? value.deprecateDescription
-          : undefined,
-        description: value.description,
-        abstract: value.abstract,
-        href: value.href,
-        javadoc: value.javadoc?.replace(/\n/g, "")?.replace(/\s+/g, " "),
-        link: value.link,
-        name: value.name,
-        source: value.source,
-      }),
-    );
+    .map((value): EventType => ({
+      deprecate: value.deprecate,
+      deprecateDescription: value.deprecate
+        ? value.deprecateDescription
+        : undefined,
+      description: value.description,
+      abstract: value.abstract,
+      href: value.href,
+      javadoc: value.javadoc?.replace(/\n/g, "")?.replace(/\s+/g, " "),
+      link: value.link,
+      name: value.name,
+      source: value.source,
+    }));
 
 const toLatestVersionMap = (sources: Record<string, Source>) =>
   Object.fromEntries(
@@ -371,14 +368,6 @@ const toLatestVersionMap = (sources: Record<string, Source>) =>
         ? source.versionLabel
         : `${source.versionLabel} - #${source.buildNumber}`,
     ]),
-  );
-
-const pickSources = (
-  sources: Record<string, Source>,
-  names: readonly string[],
-): Record<string, Source> =>
-  Object.fromEntries(
-    names.filter((name) => sources[name]).map((name) => [name, sources[name]]),
   );
 
 const filterEvents = (

@@ -34,75 +34,89 @@ export type Source = {
   downloadSources: SourceType[];
 };
 
-export const getSources = async (): Promise<Record<string, Source>> => ({
-  Bungee: await bungeeVersion().then(async (version) => ({
-    location: {
-      kind: "artifact",
-      artifact: {
-        groupId: "net.md-5",
-        artifactId: "bungeecord-api",
-        version: version.split("-SNAPSHOT")[0],
-        classifier: "javadoc",
-        isSnapShot: true,
+const sourceLoaders = {
+  Bungee: () =>
+    bungeeVersion().then(async (version) => ({
+      location: {
+        kind: "artifact",
+        artifact: {
+          groupId: "net.md-5",
+          artifactId: "bungeecord-api",
+          version: version.split("-SNAPSHOT")[0],
+          classifier: "javadoc",
+          isSnapShot: true,
+        },
+        repository: "https://central.sonatype.com/repository/maven-snapshots/",
       },
-      repository: "https://central.sonatype.com/repository/maven-snapshots/",
-    },
-    versionLabel: normalizeBungeeVersionLabel(version.split("-SNAPSHOT")[0]),
-    allClasses: "allclasses-index.html",
-    downloadSources: ["bungee"],
-    downloadUrl: "https://ci.md-5.net/job/BungeeCord/lastBuild",
-    javadocUrl: "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/",
-    buildNumber: await bungeeBuildNumber(),
-  })),
-  Paper: await paperVersion().then(async (version) => ({
-    location: createPaperLocation(version),
-    versionLabel: version,
-    allClasses: "allclasses-index.html",
-    downloadSources: ["paper"],
-    downloadUrl: "https://papermc.io/downloads/paper",
-    javadocUrl: `https://jd.papermc.io/paper/${version}/`,
-    buildNumber: await paperBuildNumber(version),
-  })),
-  Purpur: await Promise.all([purpurVersion(), purpurReleaseVersion()]).then(
-    async ([minecraftVersion, releaseVersion]) => ({
-      location: createPurpurReleaseLocation(releaseVersion),
-      versionLabel: normalizePurpurVersionLabel(releaseVersion),
+      versionLabel: normalizeBungeeVersionLabel(version.split("-SNAPSHOT")[0]),
       allClasses: "allclasses-index.html",
-      downloadSources: ["purpur"],
-      downloadUrl: `https://purpurmc.org/download/purpur/${minecraftVersion}`,
-      javadocUrl: "https://purpurmc.org/javadoc/",
-      buildNumber: purpurReleaseBuildNumber(releaseVersion),
-    }),
-  ),
-  Spigot: await spigotVersion().then(async (version) => ({
-    location: createSpigotLocation(version),
-    versionLabel: version,
-    allClasses: "allclasses-index.html",
-    downloadSources: ["spigot"],
-    downloadUrl: "",
-    javadocUrl: "https://hub.spigotmc.org/javadocs/spigot/",
-    buildNumber: await spigotBuildNumber(),
-  })),
-  Velocity: await velocityVersion().then(async (version) => ({
-    location: {
-      kind: "artifact",
-      artifact: {
-        groupId: "com.velocitypowered",
-        artifactId: "velocity-api",
-        version: version.split("-SNAPSHOT")[0],
-        classifier: "javadoc",
-        isSnapShot: true,
+      downloadSources: ["bungee"],
+      downloadUrl: "https://ci.md-5.net/job/BungeeCord/lastBuild",
+      javadocUrl: "https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/",
+      buildNumber: await bungeeBuildNumber(),
+    })),
+  Paper: () =>
+    paperVersion().then(async (version) => ({
+      location: createPaperLocation(version),
+      versionLabel: version,
+      allClasses: "allclasses-index.html",
+      downloadSources: ["paper"],
+      downloadUrl: "https://papermc.io/downloads/paper",
+      javadocUrl: `https://jd.papermc.io/paper/${version}/`,
+      buildNumber: await paperBuildNumber(version),
+    })),
+  Purpur: () =>
+    Promise.all([purpurVersion(), purpurReleaseVersion()]).then(
+      async ([minecraftVersion, releaseVersion]) => ({
+        location: createPurpurReleaseLocation(releaseVersion),
+        versionLabel: normalizePurpurVersionLabel(releaseVersion),
+        allClasses: "allclasses-index.html",
+        downloadSources: ["purpur"],
+        downloadUrl: `https://purpurmc.org/download/purpur/${minecraftVersion}`,
+        javadocUrl: "https://purpurmc.org/javadoc/",
+        buildNumber: purpurReleaseBuildNumber(releaseVersion),
+      }),
+    ),
+  Spigot: () =>
+    spigotVersion().then(async (version) => ({
+      location: createSpigotLocation(version),
+      versionLabel: version,
+      allClasses: "allclasses-index.html",
+      downloadSources: ["spigot"],
+      downloadUrl: "",
+      javadocUrl: "https://hub.spigotmc.org/javadocs/spigot/",
+      buildNumber: await spigotBuildNumber(),
+    })),
+  Velocity: () =>
+    velocityVersion().then(async (version) => ({
+      location: {
+        kind: "artifact",
+        artifact: {
+          groupId: "com.velocitypowered",
+          artifactId: "velocity-api",
+          version: version.split("-SNAPSHOT")[0],
+          classifier: "javadoc",
+          isSnapShot: true,
+        },
+        repository: "https://repo.papermc.io/repository/maven-public/",
       },
-      repository: "https://repo.papermc.io/repository/maven-public/",
-    },
-    versionLabel: version,
-    allClasses: "allclasses-index.html",
-    downloadSources: ["velocity"],
-    downloadUrl: "https://papermc.io/downloads/velocity",
-    javadocUrl: `https://jd.papermc.io/velocity/${version}/`,
-    buildNumber: await velocityBuildNumber(version),
-  })),
-});
+      versionLabel: version,
+      allClasses: "allclasses-index.html",
+      downloadSources: ["velocity"],
+      downloadUrl: "https://papermc.io/downloads/velocity",
+      javadocUrl: `https://jd.papermc.io/velocity/${version}/`,
+      buildNumber: await velocityBuildNumber(version),
+    })),
+} satisfies Record<string, () => Promise<Source>>;
+
+export const getSources = async (
+  names: readonly (keyof typeof sourceLoaders)[],
+): Promise<Record<string, Source>> =>
+  Object.fromEntries(
+    await Promise.all(
+      names.map(async (name) => [name, await sourceLoaders[name]()]),
+    ),
+  );
 
 export const getSourceType = (href: string): SourceType | null => {
   if (href.startsWith("org/bukkit")) {
