@@ -1,174 +1,78 @@
 import { readdir, readFile, writeFile } from "fs/promises";
 import path from "path";
+import type EventType from "./types/event-type";
+import { eventEvidenceKey, hasLocalizedDescription } from "./event-metadata";
 
-type EventRecord = {
-  name: string;
-  source: string;
-  deprecate?: string;
-  deprecateDescription?: {
-    ja?: string;
-    en?: string;
-  };
-  javadoc?: string;
-  description: {
-    ja?: string;
-    en?: string;
-  };
+type EventFile = { lang: string[]; events: EventType[] };
+
+const deprecationDefaults: Record<string, Record<string, string>> = {
+  "@Experimental": { ja: "実験段階。", en: "Experimental phase." },
+  "@Beta": { ja: "ベータ段階。", en: "Beta phase." },
 };
-
-type EventFile = {
-  lang: string[];
-  events: EventRecord[];
-};
-
-type DescriptionPair = {
-  ja: string;
-  en: string;
-};
-
-const deprecateDescriptionDefaults = new Map<string, DescriptionPair>([
-  [
-    "@Experimental",
-    {
-      ja: "実験段階。",
-      en: "Experimental phase.",
-    },
-  ],
-  [
-    "@Beta",
-    {
-      ja: "ベータ段階。",
-      en: "Beta phase.",
-    },
-  ],
-]);
-
-const eventKey = (event: Pick<EventRecord, "name" | "source">) =>
-  `${event.name}|${event.source}`;
-
-const deprecateKey = (
-  event: Pick<EventRecord, "name" | "source" | "deprecate">,
-) => `${event.name}|${event.source}|${event.deprecate ?? ""}`;
-
-const normalizeText = (text: string | undefined) =>
-  (text ?? "").replace(/\s+/g, " ").trim();
-
-const hasDescription = (description: EventRecord["description"] | undefined) =>
-  Boolean(normalizeText(description?.ja) && normalizeText(description?.en));
-
-const hasDeprecateDescription = (
-  description: EventRecord["deprecateDescription"] | undefined,
-) => Boolean(normalizeText(description?.ja) && normalizeText(description?.en));
-
-const scoreDescription = (description: DescriptionPair) =>
-  description.ja.length + description.en.length;
 
 const walkEventFiles = async (directory: string): Promise<string[]> => {
   const entries = await readdir(directory, { withFileTypes: true });
   const files = await Promise.all(
     entries.map(async (entry) => {
       const entryPath = path.join(directory, entry.name);
-      if (entry.isDirectory()) {
-        return walkEventFiles(entryPath);
-      }
-      return entry.name === "events.json" ? [entryPath] : [];
+      return entry.isDirectory()
+        ? walkEventFiles(entryPath)
+        : entry.name === "events.json"
+          ? [entryPath]
+          : [];
     }),
   );
   return files.flat().sort();
 };
 
 export const fillMissingDescriptionsInData = async (dataRoot: string) => {
-  const eventFiles = await walkEventFiles(dataRoot);
-  const parsedFiles = await Promise.all(
-    eventFiles.map(async (filePath) => ({
+  const parsed = await Promise.all(
+    (await walkEventFiles(dataRoot)).map(async (filePath) => ({
       filePath,
       data: JSON.parse(await readFile(filePath, "utf8")) as EventFile,
     })),
   );
-
-  const canonicalDescriptions = new Map<string, DescriptionPair>();
-  const canonicalDeprecateDescriptions = new Map<string, DescriptionPair>();
-  for (const { data } of parsedFiles) {
+  const candidates = new Map<string, EventType[]>();
+  for (const { data } of parsed)
     for (const event of data.events) {
-      if (
-        event.deprecate &&
-        hasDeprecateDescription(event.deprecateDescription)
-      ) {
-        const key = deprecateKey(event);
-        const candidate = {
-          ja: normalizeText(event.deprecateDescription?.ja),
-          en: normalizeText(event.deprecateDescription?.en),
-        };
-        const current = canonicalDeprecateDescriptions.get(key);
-        if (
-          !current ||
-          scoreDescription(candidate) > scoreDescription(current)
-        ) {
-          canonicalDeprecateDescriptions.set(key, candidate);
-        }
-      }
-      if (!hasDescription(event.description)) {
-        continue;
-      }
-      const key = eventKey(event);
-      const candidate = {
-        ja: normalizeText(event.description.ja),
-        en: normalizeText(event.description.en),
-      };
-      const current = canonicalDescriptions.get(key);
-      if (!current || scoreDescription(candidate) > scoreDescription(current)) {
-        canonicalDescriptions.set(key, candidate);
-      }
+      const key = eventEvidenceKey(event);
+      candidates.set(key, [...(candidates.get(key) ?? []), event]);
     }
-  }
-
-  for (const { filePath, data } of parsedFiles) {
-    let changed = false;
+  for (const { filePath, data } of parsed) {
+    const before = JSON.stringify(data);
     for (const event of data.events) {
-      if (
-        event.deprecate &&
-        !hasDeprecateDescription(event.deprecateDescription)
-      ) {
+      const matches = candidates.get(eventEvidenceKey(event)) ?? [];
+      for (const lang of data.lang) {
+        if (!hasLocalizedDescription(event.description[lang], lang)) {
+          event.description[lang] =
+            matches.find((other) =>
+              hasLocalizedDescription(other.description[lang], lang),
+            )?.description[lang] ?? "";
+        }
+        if (!event.keywords?.[lang]?.length) {
+          const keywords = matches.find(
+            (other) => other.keywords?.[lang]?.length,
+          )?.keywords?.[lang];
+          if (keywords)
+            event.keywords = { ...event.keywords, [lang]: [...keywords] };
+        }
+        // Deprecation reasons can change even when the class summary does not.
+        // Only these annotation-wide defaults are safe to fill automatically.
         const fallback =
-          canonicalDeprecateDescriptions.get(deprecateKey(event)) ??
-          deprecateDescriptionDefaults.get(event.deprecate);
-        if (fallback) {
+          event.deprecate && deprecationDefaults[event.deprecate]?.[lang];
+        if (
+          fallback &&
+          !hasLocalizedDescription(event.deprecateDescription?.[lang], lang)
+        ) {
           event.deprecateDescription = {
-            ja: normalizeText(event.deprecateDescription?.ja) || fallback.ja,
-            en: normalizeText(event.deprecateDescription?.en) || fallback.en,
+            ...event.deprecateDescription,
+            [lang]: fallback,
           };
-          changed = true;
         }
       }
-      const key = eventKey(event);
-      const current = {
-        ja: normalizeText(event.description?.ja),
-        en: normalizeText(event.description?.en),
-      };
-      if (current.ja && current.en) {
-        continue;
-      }
-      const canonical = canonicalDescriptions.get(key);
-      if (canonical) {
-        event.description = {
-          ja: current.ja || canonical.ja,
-          en: current.en || canonical.en,
-        };
-        changed = true;
-        continue;
-      }
-      const javadoc = normalizeText(event.javadoc);
-      if (!javadoc) {
-        continue;
-      }
-      event.description = {
-        ja: current.ja || javadoc,
-        en: current.en || javadoc,
-      };
-      changed = true;
+      // Keep raw Javadoc solely in javadoc; missing translations stay visibly incomplete.
     }
-    if (changed) {
+    if (JSON.stringify(data) !== before)
       await writeFile(filePath, JSON.stringify(data, null, 2) + "\n");
-    }
   }
 };

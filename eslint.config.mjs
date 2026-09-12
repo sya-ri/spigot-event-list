@@ -5,6 +5,7 @@ const config = [
   {
     ignores: [
       ".next/**",
+      ".cache/**",
       "data/**/*.json",
       "spigot-javadoc/docs/**",
       "skills/**/*.md",

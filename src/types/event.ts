@@ -3,6 +3,8 @@ import type EventSource from "./event-source";
 export type EventResponse = {
   name: string;
   description: string;
+  keywords: Record<string, string[]>;
+  javadoc?: string;
   link: string;
   abstract?: true;
   source: EventSource;
@@ -12,7 +14,6 @@ export type EventResponse = {
 
 export type SearchEventResponse = EventResponse & {
   version: string;
-  javadoc?: string;
 };
 
 export type SearchEventsResponse = {

@@ -63,7 +63,6 @@ export const createSearchEventsHandler =
     const events = matches.slice(offset, offset + limit).map(({ event }) => ({
       ...localizeEvent(event, lang),
       version,
-      javadoc: event.javadoc,
     }));
     const result: SearchEventsResponse = {
       query: rawQuery,

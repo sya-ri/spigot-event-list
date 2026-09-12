@@ -29,6 +29,9 @@ type Message = {
   AiSkillTitle: string;
   AiSkillClose: string;
   AiSkillCopied: string;
+  CompareJavadoc: string;
+  OpenJavadoc: string;
+  NoJavadoc: string;
 };
 
 export const messages: Record<Locale, Message> = {
@@ -51,7 +54,7 @@ export const messages: Record<Locale, Message> = {
     AiSkillCopy: "Copy command",
     SkipToResults: "Skip to results",
 
-    SearchByNameOrDescription: "Search by name or description",
+    SearchByNameOrDescription: "Search by name, description, or keyword",
     AddNewLanguage: "Add new language",
     IncompleteEvents: "%size% event descriptions are not written.",
     SearchResultsCount: "%size% events found.",
@@ -61,6 +64,10 @@ export const messages: Record<Locale, Message> = {
     AiSkillTitle: "Event search skill for agents",
     AiSkillClose: "Close",
     AiSkillCopied: "Copied",
+    CompareJavadoc: "Compare with Javadoc",
+    OpenJavadoc: "Open reference documentation",
+    NoJavadoc:
+      "No class summary is available. See the reference documentation or source for details.",
   },
   ja: {
     Search: "検索",
@@ -83,7 +90,7 @@ export const messages: Record<Locale, Message> = {
     AiSkillCopy: "コマンドをコピー",
     SkipToResults: "検索結果へ移動",
 
-    SearchByNameOrDescription: "イベント名・説明文で検索",
+    SearchByNameOrDescription: "イベント名・説明文・キーワードで検索",
     AddNewLanguage: "翻訳を追加する",
     IncompleteEvents: "%size%個のイベント説明文が書かれていません。",
     SearchResultsCount: "%size%件ヒットしました。",
@@ -93,6 +100,10 @@ export const messages: Record<Locale, Message> = {
     AiSkillTitle: "エージェント向けイベント検索スキル",
     AiSkillClose: "閉じる",
     AiSkillCopied: "コピー済み",
+    CompareJavadoc: "Javadoc と見比べる",
+    OpenJavadoc: "参照ドキュメントを開く",
+    NoJavadoc:
+      "クラスの概要文はありません。参照ドキュメントやソースで詳細を確認できます。",
   },
 };
 

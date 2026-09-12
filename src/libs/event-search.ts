@@ -4,7 +4,7 @@ type QueryTerm = { normalized: string };
 type QueryClause = { terms: QueryTerm[] };
 
 const normalize = (value: string | null | undefined) =>
-  (value ?? "").replace(/\s+/g, " ").trim().toLocaleLowerCase();
+  (value ?? "").normalize("NFKC").replace(/\s+/g, " ").trim().toLowerCase();
 
 const englishStopWords = new Set([
   "a",
@@ -79,7 +79,9 @@ const normalizeQueryTerm = (value: string) => {
 export const parseQuery = (value: string): QueryClause[] => {
   const clauses: QueryClause[] = [];
   let terms: QueryTerm[] = [];
-  for (const match of value.matchAll(/"([^"]+)"|'([^']+)'|[^\s]+/g)) {
+  for (const match of value
+    .normalize("NFKC")
+    .matchAll(/"([^"]+)"|'([^']+)'|[^\s]+/g)) {
     const quoted = match[1] !== undefined || match[2] !== undefined;
     const token = match[1] ?? match[2] ?? match[0];
     if (!quoted && token.toUpperCase() === "OR") {
@@ -102,6 +104,7 @@ const normalizedEvents = new WeakMap<
   EventType,
   {
     name: string;
+    keywords: string[];
     description: string[];
     javadoc: string;
     deprecateDescription: string[];
@@ -113,6 +116,9 @@ const normalizedEvent = (event: EventType) => {
   if (!value) {
     value = {
       name: normalize(event.name),
+      keywords: Object.values(event.keywords ?? {})
+        .flat()
+        .map(normalize),
       description: localizedValues(event.description).map(normalize),
       javadoc: normalize(event.javadoc),
       deprecateDescription: localizedValues(event.deprecateDescription).map(
@@ -135,6 +141,10 @@ const matchTermScore = (
   if (lowerName.includes(term.normalized)) {
     return 350;
   }
+
+  if (event.keywords.some((keyword) => keyword === term.normalized)) return 320;
+  if (event.keywords.some((keyword) => keyword.includes(term.normalized)))
+    return 280;
 
   const descriptionMatches = event.description.filter((value) =>
     value.includes(term.normalized),

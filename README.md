@@ -26,7 +26,7 @@
 <br />
 
 - A list of events for Minecraft plugins.
-- Search by event name and filtering by platform.
+- Search by event name, bilingual descriptions, and related keywords, with platform and version filters.
 - Compatible with the latest version and constantly adding new events.
 - Compatible with multiple environments, total number of events exceeds 500.
   - Bukkit
@@ -47,6 +47,7 @@ It uses the public event search API and supports partial-match search over:
 
 - event name
 - description
+- curated Japanese and English keywords
 - Javadoc
 - deprecated description
 - Japanese and English queries
@@ -73,3 +74,13 @@ Edit the file below and create a [pull request](https://github.com/sya-ri/spigot
 - `data/versions.json`
 - `data/minecraft/{version}/events.json`
 - `data/proxy/events.json`
+
+## Description and keyword review
+
+Descriptions and `keywords.ja` / `keywords.en` are edited directly in `data/**/events.json`. Keywords improve matching in the API and Web search and are included in both API responses. The Web app shows descriptions and expandable Javadoc references; keyword lists are not displayed. See the [bilingual API reference](skills/spigot-event-search/references/api.md) and [review coverage and sources](docs/event-description-audit.md).
+
+The downloader preserves editorial metadata only when the event identity and Javadoc evidence agree. Existing version-specific edits take priority. Missing summaries remain empty instead of copying raw English Javadoc into either language; the original Javadoc is still available for inspection. Annotation-wide defaults are limited to `@Experimental` and `@Beta`.
+
+Choose related keywords from the event's documented actions, subjects, and conditions. Include useful synonyms and search phrases in both Japanese and English, while preserving differences between versions.
+
+Run regression checks with `mise exec node@24 -- npm test`, followed by the TypeScript and lint checks documented in `AGENTS.md`.

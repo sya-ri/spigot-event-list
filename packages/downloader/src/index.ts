@@ -15,6 +15,7 @@ import {
   hasCompleteServerSources,
 } from "../../../src/libs/data-paths";
 import { fillMissingDescriptionsInData } from "./fill-missing-descriptions";
+import { reuseEventMetadata } from "./event-metadata";
 
 const PROXY_SOURCE_NAMES = ["Bungee", "Velocity"] as const;
 const PROXY_EVENT_SOURCES = ["bungee", "velocity"] as const;
@@ -179,11 +180,7 @@ const mergeExistingVersionEvents = async (
       return [
         key,
         {
-          ...event,
-          description: {
-            ja: normalizeText(event.description.ja) || previous.description.ja,
-            en: normalizeText(event.description.en) || previous.description.en,
-          },
+          ...reuseEventMetadata(event, previous),
           deprecateDescription: event.deprecate
             ? {
                 ja:
@@ -352,9 +349,10 @@ const normalizeEvents = (sources: Record<string, EventType>) =>
         ? value.deprecateDescription
         : undefined,
       description: value.description,
+      keywords: value.keywords,
       abstract: value.abstract,
       href: value.href,
-      javadoc: value.javadoc?.replace(/\n/g, "")?.replace(/\s+/g, " "),
+      javadoc: value.javadoc?.replace(/\s+/g, " ").trim(),
       link: value.link,
       name: value.name,
       source: value.source,

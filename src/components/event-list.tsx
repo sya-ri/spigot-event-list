@@ -166,6 +166,25 @@ const EventList: FC<EventListProps> = ({
             </div>
           )}
           <div className="mt-1 break-words">{event.description}</div>
+          <details className="mt-2 text-sm">
+            <summary className="cursor-pointer text-base-content/70">
+              {translate(locale, "CompareJavadoc")}
+            </summary>
+            <p
+              lang={event.javadoc ? "en" : locale}
+              className="mt-2 whitespace-pre-wrap break-words"
+            >
+              {event.javadoc || translate(locale, "NoJavadoc")}
+            </p>
+            <Link
+              href={event.link}
+              target="_blank"
+              rel="noreferrer"
+              className="link link-primary"
+            >
+              {translate(locale, "OpenJavadoc")}
+            </Link>
+          </details>
         </div>
       ))}
       {error && (

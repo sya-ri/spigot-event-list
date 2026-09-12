@@ -44,6 +44,8 @@ export const localizeEvent = (
 ): EventResponse => ({
   name: event.name,
   description: event.description[lang] ?? "",
+  keywords: event.keywords ?? {},
+  javadoc: event.javadoc,
   link: event.link,
   abstract: event.abstract,
   source: event.source,

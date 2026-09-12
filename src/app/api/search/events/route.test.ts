@@ -73,6 +73,45 @@ test("browses without a query and applies source filters before pagination", asy
   assert.equal(data.nextOffset, null);
 });
 
+test("cached keyword matches retain bilingual metadata across pages and languages", async () => {
+  const keywords = { ja: ["接続受付"], en: ["connection admission"] };
+  const events = ["AlphaEvent", "BetaEvent"].map((name) => ({
+    ...paperEvent,
+    name,
+    keywords,
+    javadoc: "Original class documentation.",
+  }));
+  const handler = makeHandler(events);
+  for (const [q, lang] of [
+    ["接続受付", "en"],
+    ['"ｃｏｎｎｅｃｔｉｏｎ　ａｄｍｉｓｓｉｏｎ"', "ja"],
+  ]) {
+    let offset: number | null = 0;
+    const names: string[] = [];
+    while (offset !== null) {
+      const params = new URLSearchParams({
+        q,
+        lang,
+        limit: "1",
+        offset: String(offset),
+      });
+      const response = await handler(
+        new NextRequest(`https://example.test/api/search/events?${params}`),
+      );
+      assert.equal(response.status, 200);
+      const data = (await response.json()) as SearchEventsResponse;
+      assert.equal(data.total, 2);
+      assert.equal(data.count, 1);
+      assert.deepEqual(data.events[0].keywords, keywords);
+      assert.equal(data.events[0].javadoc, events[0].javadoc);
+      assert.equal(data.events[0].description, paperEvent.description[lang]);
+      names.push(data.events[0].name);
+      offset = data.nextOffset;
+    }
+    assert.deepEqual(names, ["AlphaEvent", "BetaEvent"]);
+  }
+});
+
 test("empty selections, stop words and no matches return successful empty results", async () => {
   for (const query of [
     "source=",

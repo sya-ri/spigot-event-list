@@ -6,7 +6,7 @@
     "dev": "next dev --webpack",
     "build": "next build --webpack",
     "start": "next start",
-    "test": "tsx --test \"src/**/*.test.ts\" \"packages/downloader/src/**/*.test.ts\"",
+    "test": "tsx --test \"src/**/*.test.ts\" \"packages/downloader/src/**/*.test.ts\" \"tests/*.test.ts\"",
     "lint": "eslint .",
     "format": "eslint . --fix && prettier --write .",
     "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p packages/downloader/tsconfig.json --noEmit",

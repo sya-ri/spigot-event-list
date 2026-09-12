@@ -2,6 +2,7 @@ import SourceType from "./source-type";
 
 type EventType = {
   description: Record<string, string>;
+  keywords?: Record<string, string[]>;
   abstract?: true;
   href: string;
   javadoc?: string;
