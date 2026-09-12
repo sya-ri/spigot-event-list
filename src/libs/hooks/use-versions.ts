@@ -1,4 +1,5 @@
 import useSWRImmutable from "swr/immutable";
+import { fetchJson } from "@/libs/fetch-json";
 
 type VersionsResponse = {
   latest: string;
@@ -7,15 +8,17 @@ type VersionsResponse = {
 };
 
 const useVersions = () => {
-  const { data } = useSWRImmutable("versions", () =>
-    fetch("/api/versions").then(
-      (response) => response.json() as Promise<VersionsResponse>,
-    ),
+  const { data, error, mutate } = useSWRImmutable<VersionsResponse, Error>(
+    "/api/versions",
+    fetchJson,
+    { shouldRetryOnError: false },
   );
   return {
     versions: data?.versions,
     latestVersion: data?.latest,
     latestMinecraftVersion: data?.latestMinecraftVersion,
+    error,
+    retry: () => mutate(),
   };
 };
 

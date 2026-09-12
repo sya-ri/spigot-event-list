@@ -22,6 +22,8 @@ Use this skill when a user wants to find events from partial text rather than br
 - Supports `latest` or a fixed Minecraft version such as `1.21.11`
 - Accepts the current `latestMinecraftVersion` as an explicit, non-persistent
   alias for the latest merged dataset
+- Supports paginated results using `total` and `nextOffset`; continue with the returned offset when more candidates are needed
+- Descriptions are localized strings selected with `lang=ja` or `lang=en`
 - Supports source filtering for `spigot`, `paper`, `purpur`, `bungee`, `velocity`
 
 ## API

@@ -7,11 +7,12 @@ export const KoFiButton = () => {
   return (
     <div className="flex flex-col gap-2">
       {isOpen && (
-        <div className="bg-white rounded-xl">
+        <div id="kofi-panel" className="bg-white rounded-xl">
           <iframe
             src="https://ko-fi.com/sya_ri/?hidefeed=true&widget=true&embed=true&preview=true"
             className="border-none w-full p-1"
             height={650}
+            style={{ maxHeight: "70dvh" }}
             title="Support sya_ri"
           />
           <div className="border-t border-t-gray-300 mx-2" />
@@ -40,14 +41,19 @@ export const KoFiButton = () => {
               <img
                 src="https://ko-fi.com/img/cup-border.png"
                 className="kofiimg"
-                alt="Ko-Fi button"
+                alt=""
+                width={22}
+                height={15}
               />
               Support me on Ko-Fi
             </span>
           </a>
 
           {/* PC : iframe & link */}
-          <a
+          <button
+            type="button"
+            aria-expanded={isOpen}
+            aria-controls="kofi-panel"
             title="Support me on Ko-Fi"
             className="kofi-button rounded-full !hidden sm:!inline-block"
             onClick={() => setIsOpen(!isOpen)}
@@ -56,11 +62,13 @@ export const KoFiButton = () => {
               <img
                 src="https://ko-fi.com/img/cup-border.png"
                 className="kofiimg"
-                alt="Ko-Fi button"
+                alt=""
+                width={22}
+                height={15}
               />
               Support me on Ko-Fi
             </span>
-          </a>
+          </button>
         </div>
       </div>
     </div>

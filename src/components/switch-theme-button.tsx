@@ -2,14 +2,18 @@
 
 import { useTheme } from "next-themes";
 import React from "react";
+import useLocale from "@/i18n/use-locale";
+import { translate } from "@/i18n/translation";
 import { BiMoon, BiSun } from "react-icons/bi";
 
 const SwitchThemeButton = () => {
+  const locale = useLocale();
   const { setTheme } = useTheme();
 
   return (
     <button
       type="button"
+      aria-label={translate(locale, "ToggleTheme")}
       className="btn btn-square btn-ghost theme-toggle"
       onClick={() => {
         const currentTheme =

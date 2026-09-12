@@ -1,3 +1,4 @@
+import { pipeline } from "stream/promises";
 import { tgz } from "compressing";
 import { createWriteStream } from "fs";
 import { mkdir, mkdtemp, readdir, readFile, rm, writeFile } from "fs/promises";
@@ -195,13 +196,7 @@ const parseLegacyPurpurPatch = async (
 
 const downloadArchive = async (url: string, destination: string) => {
   const { stream } = await fetchStream(url);
-  await new Promise<void>((resolve, reject) => {
-    const output = createWriteStream(destination);
-    stream.pipe(output);
-    output.on("close", () => resolve());
-    output.on("error", reject);
-    stream.on("error", reject);
-  });
+  await pipeline(stream, createWriteStream(destination));
 };
 
 const listPatchFiles = async (rootPath: string) => {
