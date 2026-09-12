@@ -1,12 +1,10 @@
-import useSWRImmutable from "swr/immutable";
-import EventSource from "@/types/event-source";
-import { Locale } from "@/i18n/config";
-import type { EventResponse } from "@/libs/event-response";
+import useSWRInfinite from "swr/infinite";
+import type EventSource from "@/types/event-source";
+import type { Locale } from "@/i18n/config";
+import type { SearchEventsResponse } from "@/types/event";
+import { fetchJson } from "@/libs/fetch-json";
 
-type SearchEventsResponse = {
-  events: EventResponse[];
-  total: number;
-};
+const PAGE_SIZE = 50;
 
 const useEvents = (
   locale: Locale,
@@ -14,40 +12,42 @@ const useEvents = (
   search: string,
   tags: EventSource[],
 ) => {
-  const normalizedSearch = search.trim();
-  const source = tags.join(",");
-  const { data: events, error } = useSWRImmutable(
-    version ? ["events", locale, version, normalizedSearch, source] : null,
-    async ([, locale, version, search, source]) => {
-      if (search) {
+  const enabled = Boolean(version && tags.length);
+  const { data, error, isLoading, isValidating, size, setSize, mutate } =
+    useSWRInfinite<SearchEventsResponse, Error>(
+      (index, previous: SearchEventsResponse | null) => {
+        if (!enabled || (previous && previous.nextOffset === null)) return null;
         const params = new URLSearchParams({
-          q: search,
+          q: search.trim(),
           version,
-          source,
+          source: tags.join(","),
           lang: locale,
-          limit: "100",
+          limit: String(PAGE_SIZE),
+          offset: String(index * PAGE_SIZE),
         });
-        const events: EventResponse[] = [];
-        let total = 0;
-        do {
-          params.set("offset", String(events.length));
-          const response = await fetch(`/api/search/events?${params}`);
-          if (!response.ok) throw new Error(await response.text());
-          const data = (await response.json()) as SearchEventsResponse;
-          events.push(...data.events);
-          total = data.total;
-          if (data.events.length === 0) break;
-        } while (events.length < total);
-        return events;
-      }
-      const response = await fetch(
-        `/api/versions/${encodeURIComponent(version)}/events?lang=${locale}`,
-      );
-      if (!response.ok) throw new Error(await response.text());
-      return response.json() as Promise<EventResponse[]>;
-    },
-  );
-  return { events, error };
+        return `/api/search/events?${params}`;
+      },
+      fetchJson<SearchEventsResponse>,
+      {
+        revalidateFirstPage: false,
+        revalidateOnFocus: false,
+        revalidateOnReconnect: false,
+        shouldRetryOnError: false,
+      },
+    );
+  return {
+    events: enabled ? (data?.flatMap((page) => page.events) ?? []) : [],
+    total: enabled ? data?.[0]?.total : 0,
+    error: enabled ? error : undefined,
+    isLoading: enabled && isLoading,
+    isLoadingMore:
+      enabled &&
+      !error &&
+      (isValidating || Boolean(data && size > data.length)),
+    hasMore: enabled && data?.[data.length - 1]?.nextOffset != null,
+    loadMore: () => setSize(size + 1),
+    retry: () => mutate(),
+  };
 };
 
 export default useEvents;

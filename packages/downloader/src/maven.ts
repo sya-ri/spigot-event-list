@@ -1,7 +1,7 @@
 import { format, promisify } from "util";
 import { parseString } from "xml2js";
 import MultiProgress from "multi-progress";
-import { Stream } from "stream";
+import { pipeline } from "stream/promises";
 import { createWriteStream } from "fs";
 import { fetchStream, fetchText } from "./http";
 
@@ -124,26 +124,20 @@ export const downloadArtifact = (
   resolveArtifactUrl(artifact, repository, config).then((url) =>
     fetchStream(url, config).then(({ contentLength: headerValue, stream }) => {
       const contentLength = parseInt(String(headerValue ?? ""), 10);
-      if (Number.isNaN(contentLength)) {
-        throw new Error(
-          `Unable to fetch ${url}. Content-Length: ${String(headerValue ?? "")}`,
-        );
-      }
-      return new Promise<void>((resolve, reject) => {
-        const bar = multiProgress.newBar(
-          `  ${name.padEnd(10, " ")} ${artifact.version.padStart(12, " ")} [:bar] :percent`,
-          {
-            complete: "=",
-            incomplete: " ",
-            width: 20,
-            total: contentLength,
-          },
-        );
-        stream.pipe(createWriteStream(destination));
-        stream.on("data", (chunk: Buffer) => bar.tick(chunk.length));
-        stream.on("end", () => resolve());
-        stream.on("error", () => reject());
-      });
+      const bar =
+        Number.isFinite(contentLength) && contentLength > 0
+          ? multiProgress.newBar(
+              `  ${name.padEnd(10, " ")} ${artifact.version.padStart(12, " ")} [:bar] :percent`,
+              {
+                complete: "=",
+                incomplete: " ",
+                width: 20,
+                total: contentLength,
+              },
+            )
+          : null;
+      if (bar) stream.on("data", (chunk: Buffer) => bar.tick(chunk.length));
+      return pipeline(stream, createWriteStream(destination));
     }),
   );
 

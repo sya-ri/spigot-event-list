@@ -3,12 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "test": "tsx --test \"src/**/*.test.ts\" \"tests/*.test.ts\"",
     "dev": "next dev --webpack",
     "build": "next build --webpack",
     "start": "next start",
+    "test": "tsx --test \"src/**/*.test.ts\" \"packages/downloader/src/**/*.test.ts\" \"tests/*.test.ts\"",
     "lint": "eslint .",
-    "format": "eslint . --fix && prettier --write ."
+    "format": "eslint . --fix && prettier --write .",
+    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p packages/downloader/tsconfig.json --noEmit",
+    "benchmark": "tsx scripts/benchmark-search.ts"
   },
   "dependencies": {
     "@serwist/next": "9.5.12",

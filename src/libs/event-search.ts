@@ -1,12 +1,7 @@
 import type EventType from "../../packages/downloader/src/types/event-type";
 
-type QueryTerm = {
-  normalized: string;
-};
-
-type QueryClause = {
-  terms: QueryTerm[];
-};
+type QueryTerm = { normalized: string };
+type QueryClause = { terms: QueryTerm[] };
 
 const normalize = (value: string | null | undefined) =>
   (value ?? "").normalize("NFKC").replace(/\s+/g, " ").trim().toLowerCase();
@@ -80,52 +75,66 @@ const normalizeQueryTerm = (value: string) => {
   return normalizeJapaneseQueryEnding(normalized);
 };
 
-const tokenizeQuery = (value: string) =>
-  Array.from(
-    value.matchAll(/"([^"]+)"|'([^']+)'|\bAND\b|\bOR\b|[^\s]+/gi),
-    (match) => ({
-      value: match[1] ?? match[2] ?? match[0] ?? "",
-      quoted: match[1] !== undefined || match[2] !== undefined,
-    }),
-  ).filter((token) => token.value.length > 0);
-
+// Whitespace and AND require every term; OR starts an alternative clause.
 export const parseQuery = (value: string): QueryClause[] => {
   const clauses: QueryClause[] = [];
-  let currentTerms: QueryTerm[] = [];
-
-  for (const token of tokenizeQuery(value.normalize("NFKC"))) {
-    const upper = token.value.toUpperCase();
-    if (!token.quoted && upper === "OR") {
-      if (currentTerms.length > 0) {
-        clauses.push({ terms: currentTerms });
-        currentTerms = [];
-      }
+  let terms: QueryTerm[] = [];
+  for (const match of value
+    .normalize("NFKC")
+    .matchAll(/"([^"]+)"|'([^']+)'|[^\s]+/g)) {
+    const quoted = match[1] !== undefined || match[2] !== undefined;
+    const token = match[1] ?? match[2] ?? match[0];
+    if (!quoted && token.toUpperCase() === "OR") {
+      if (terms.length) clauses.push({ terms });
+      terms = [];
       continue;
     }
-    if (!token.quoted && upper === "AND") {
-      continue;
-    }
-    const normalized = token.quoted
-      ? normalize(token.value)
-      : normalizeQueryTerm(token.value);
-    if (!normalized) {
-      continue;
-    }
-    currentTerms.push({ normalized });
+    if (!quoted && token.toUpperCase() === "AND") continue;
+    const normalized = quoted ? normalize(token) : normalizeQueryTerm(token);
+    if (normalized) terms.push({ normalized });
   }
-
-  if (currentTerms.length > 0) {
-    clauses.push({ terms: currentTerms });
-  }
-
+  if (terms.length) clauses.push({ terms });
   return clauses;
 };
 
 const localizedValues = (value: Record<string, string> | undefined) =>
   Object.values(value ?? {});
 
-const matchTermScore = (event: EventType, term: QueryTerm) => {
-  const lowerName = normalize(event.name);
+const normalizedEvents = new WeakMap<
+  EventType,
+  {
+    name: string;
+    keywords: string[];
+    description: string[];
+    javadoc: string;
+    deprecateDescription: string[];
+  }
+>();
+
+const normalizedEvent = (event: EventType) => {
+  let value = normalizedEvents.get(event);
+  if (!value) {
+    value = {
+      name: normalize(event.name),
+      keywords: Object.values(event.keywords ?? {})
+        .flat()
+        .map(normalize),
+      description: localizedValues(event.description).map(normalize),
+      javadoc: normalize(event.javadoc),
+      deprecateDescription: localizedValues(event.deprecateDescription).map(
+        normalize,
+      ),
+    };
+    normalizedEvents.set(event, value);
+  }
+  return value;
+};
+
+const matchTermScore = (
+  event: ReturnType<typeof normalizedEvent>,
+  term: QueryTerm,
+) => {
+  const lowerName = event.name;
   if (lowerName === term.normalized) {
     return 500;
   }
@@ -133,26 +142,24 @@ const matchTermScore = (event: EventType, term: QueryTerm) => {
     return 350;
   }
 
-  const keywords = Object.values(event.keywords ?? {})
-    .flat()
-    .map(normalize);
-  if (keywords.some((keyword) => keyword === term.normalized)) return 320;
-  if (keywords.some((keyword) => keyword.includes(term.normalized))) return 280;
+  if (event.keywords.some((keyword) => keyword === term.normalized)) return 320;
+  if (event.keywords.some((keyword) => keyword.includes(term.normalized)))
+    return 280;
 
-  const descriptionMatches = localizedValues(event.description)
-    .map((value) => normalize(value))
-    .filter((value) => value.includes(term.normalized)).length;
+  const descriptionMatches = event.description.filter((value) =>
+    value.includes(term.normalized),
+  ).length;
   if (descriptionMatches > 0) {
     return 220 + descriptionMatches * 10;
   }
 
-  if (normalize(event.javadoc).includes(term.normalized)) {
+  if (event.javadoc.includes(term.normalized)) {
     return 120;
   }
 
-  const deprecateMatches = localizedValues(event.deprecateDescription)
-    .map((value) => normalize(value))
-    .filter((value) => value.includes(term.normalized)).length;
+  const deprecateMatches = event.deprecateDescription.filter((value) =>
+    value.includes(term.normalized),
+  ).length;
   if (deprecateMatches > 0) {
     return 70 + deprecateMatches * 5;
   }
@@ -161,10 +168,13 @@ const matchTermScore = (event: EventType, term: QueryTerm) => {
 };
 
 export const scoreEvent = (event: EventType, clauses: QueryClause[]) => {
+  const normalized = normalizedEvent(event);
   let totalScore = 0;
 
   for (const clause of clauses) {
-    const termScores = clause.terms.map((term) => matchTermScore(event, term));
+    const termScores = clause.terms.map((term) =>
+      matchTermScore(normalized, term),
+    );
     if (termScores.some((score) => score === 0)) {
       continue;
     }

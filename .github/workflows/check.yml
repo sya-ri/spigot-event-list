@@ -13,12 +13,10 @@ jobs:
           node-version-file: package.json
       - name: Install Dependencies
         run: |
-          npm install
+          npm ci
       - name: Lint
         run: npm run lint
       - name: Test
         run: npm test
-      - name: Type check
-        run: |
-          npx tsc -p tsconfig.json --noEmit
-          npx tsc -p packages/downloader/tsconfig.json --noEmit
+      - name: Typecheck
+        run: npm run typecheck

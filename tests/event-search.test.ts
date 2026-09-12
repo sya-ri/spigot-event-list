@@ -5,7 +5,7 @@ import { readFileSync } from "node:fs";
 import { NextRequest } from "next/server";
 import { GET as search } from "../src/app/api/search/events/route";
 import { GET as list } from "../src/app/api/versions/[version]/events/route";
-import { parseQuery, scoreEvent } from "../src/libs/search-events";
+import { parseQuery, scoreEvent } from "../src/libs/event-search";
 import type EventType from "../packages/downloader/src/types/event-type";
 
 const latest = JSON.parse(readFileSync("data/events.json", "utf8"))
@@ -127,8 +127,12 @@ test("version and source filters, language validation and empty queries", async 
         e.source === "spigot" && e.version === "1.10.2",
     ),
   );
-  assert.equal((await search(request(""))).status, 400);
-  assert.equal((await search(request("the and"))).status, 400);
+  const browsing = await search(request(""));
+  assert.equal(browsing.status, 200);
+  assert.equal((await browsing.json()).total, latest.length);
+  const ignored = await search(request("the and"));
+  assert.equal(ignored.status, 200);
+  assert.equal((await ignored.json()).total, 0);
   assert.equal(
     (await search(request("mining", { version: "../invalid" }))).status,
     404,

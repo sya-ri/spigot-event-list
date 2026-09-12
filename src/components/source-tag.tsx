@@ -8,7 +8,7 @@ export type SourceTagProps = {
 
 const SourceTag: FC<SourceTagProps> = ({ source }) => {
   return (
-    <div
+    <span
       className={clsx(
         "rounded-lg px-1.5 text-sm my-auto font-mono",
         source == "spigot" && "bg-orange-300 text-orange-900",
@@ -19,7 +19,7 @@ const SourceTag: FC<SourceTagProps> = ({ source }) => {
       )}
     >
       {source}
-    </div>
+    </span>
   );
 };
 
