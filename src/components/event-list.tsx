@@ -33,7 +33,7 @@ const EventList: FC<EventListProps> = ({
   locale,
   version,
 }) => {
-  const { events } = useEvents(locale, version, search, tags);
+  const { events, error } = useEvents(locale, version, search, tags);
   const incompleteEvents = useMemo(
     () =>
       events?.filter(
@@ -52,6 +52,11 @@ const EventList: FC<EventListProps> = ({
   );
   return (
     <div className="flex flex-col gap-4">
+      {error && (
+        <p role="alert" className="text-error">
+          {translate(locale, "SearchError")}
+        </p>
+      )}
       {incompleteEvents && incompleteEvents.length !== 0 && (
         <div className="bg-warning text-warning-content rounded-lg">
           <div className="collapse collapse-arrow w-full">
@@ -141,6 +146,35 @@ const EventList: FC<EventListProps> = ({
             </div>
           )}
           <div className="mt-1 break-all">{event.description}</div>
+          <ul
+            aria-label={translate(locale, "Keywords")}
+            className="flex flex-wrap gap-1 mt-2"
+          >
+            {(event.keywords[locale] ?? []).map((keyword) => (
+              <li key={keyword} className="badge badge-outline badge-sm">
+                {keyword}
+              </li>
+            ))}
+          </ul>
+          <details className="mt-2 text-sm">
+            <summary className="cursor-pointer text-base-content/70">
+              {translate(locale, "CompareJavadoc")}
+            </summary>
+            <p
+              lang={event.javadoc ? "en" : locale}
+              className="mt-2 whitespace-pre-wrap break-words"
+            >
+              {event.javadoc || translate(locale, "NoJavadoc")}
+            </p>
+            <Link
+              href={event.link}
+              target="_blank"
+              rel="noreferrer"
+              className="link link-primary"
+            >
+              {translate(locale, "OpenJavadoc")}
+            </Link>
+          </details>
         </div>
       ))}
       {events && (

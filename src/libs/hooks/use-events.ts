@@ -1,19 +1,11 @@
 import useSWRImmutable from "swr/immutable";
 import EventSource from "@/types/event-source";
 import { Locale } from "@/i18n/config";
-
-type Event = {
-  name: string;
-  description: string;
-  link: string;
-  abstract?: true;
-  source: EventSource;
-  deprecate?: string;
-  deprecateDescription?: string;
-};
+import type { EventResponse } from "@/libs/event-response";
 
 type SearchEventsResponse = {
-  events: Event[];
+  events: EventResponse[];
+  total: number;
 };
 
 const useEvents = (
@@ -24,7 +16,7 @@ const useEvents = (
 ) => {
   const normalizedSearch = search.trim();
   const source = tags.join(",");
-  const { data: events } = useSWRImmutable(
+  const { data: events, error } = useSWRImmutable(
     version ? ["events", locale, version, normalizedSearch, source] : null,
     async ([, locale, version, search, source]) => {
       if (search) {
@@ -35,16 +27,27 @@ const useEvents = (
           lang: locale,
           limit: "100",
         });
-        const response = await fetch(`/api/search/events?${params}`);
-        const data = (await response.json()) as SearchEventsResponse;
-        return data.events;
+        const events: EventResponse[] = [];
+        let total = 0;
+        do {
+          params.set("offset", String(events.length));
+          const response = await fetch(`/api/search/events?${params}`);
+          if (!response.ok) throw new Error(await response.text());
+          const data = (await response.json()) as SearchEventsResponse;
+          events.push(...data.events);
+          total = data.total;
+          if (data.events.length === 0) break;
+        } while (events.length < total);
+        return events;
       }
-      return fetch(
+      const response = await fetch(
         `/api/versions/${encodeURIComponent(version)}/events?lang=${locale}`,
-      ).then((response) => response.json() as Promise<Event[]>);
+      );
+      if (!response.ok) throw new Error(await response.text());
+      return response.json() as Promise<EventResponse[]>;
     },
   );
-  return { events };
+  return { events, error };
 };
 
 export default useEvents;

@@ -9,6 +9,8 @@ import { load } from "cheerio";
 import SourceType from "./types/source-type";
 import { createDataPaths } from "../../../src/libs/data-paths";
 import { fetchText } from "./http";
+import { reuseEventMetadata } from "./event-metadata";
+import { extractJavadocText } from "./javadoc-text";
 
 const { proxyDataPath, readLatestServerEvents } = createDataPaths(
   path.resolve(process.cwd(), "../../data"),
@@ -151,7 +153,6 @@ const getLatestEvents = async (
                   },
                   description: {
                     ...Object.fromEntries(lang.map((key) => [key, ""])),
-                    ...(lastEvent && lastEvent.description),
                   },
                   href: href,
                   link:
@@ -172,6 +173,9 @@ const getLatestEvents = async (
   );
   await excludeEvents(events);
   await applyToSources(events, readers);
+  for (const [key, event] of Object.entries(events)) {
+    events[key] = reuseEventMetadata(event, lastEvents[key]);
+  }
   return events;
 };
 
@@ -200,16 +204,11 @@ const applyToSources = (
         const $ = load(body);
         const [descriptionSelector, typeSignatureSelector] =
           getJavadocSelectors($);
-        const javadoc = $(`${descriptionSelector} .block`).text();
+        const javadoc = extractJavadocText($, descriptionSelector);
         if (javadoc) {
           eventType.javadoc = javadoc;
         } else {
-          const legacyJavadoc = $(`${descriptionSelector} > .block`).text();
-          if (legacyJavadoc) {
-            eventType.javadoc = legacyJavadoc;
-          } else {
-            delete eventType.javadoc;
-          }
+          delete eventType.javadoc;
         }
         const abstract = $(`${descriptionSelector} ${typeSignatureSelector}`)
           .text()
@@ -310,7 +309,7 @@ const applyDeprecationDescription = (
 };
 
 const localizeDeprecationDescription = (text: string) =>
-  deprecationTranslations.get(text) ?? text;
+  deprecationTranslations.get(text) ?? "";
 
 const resolveAllClassesPath = async (name: string, preferred: string) => {
   const candidates = [preferred, ...allClassesCandidates].filter(

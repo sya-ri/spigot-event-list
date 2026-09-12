@@ -26,9 +26,9 @@ const stripPatchPrefix = (value: string) => value.replace(/^[ab]\//, "");
 const normalizeDocLine = (line: string) =>
   line.replace(/^\s*\*\s?/, "").trimEnd();
 
-const extractClassJavadoc = (source: string) => {
+export const extractClassJavadoc = (source: string) => {
   const classDeclarationIndex = source.search(
-    /(?:public\s+)?(?:abstract\s+)?class\s+\w+Event\b/,
+    /(?:public\s+)?(?:(?:abstract|final)\s+)*class\s+\w+Event\b/,
   );
   if (classDeclarationIndex < 0) {
     return "";

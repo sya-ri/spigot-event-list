@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "test": "tsx --test \"src/**/*.test.ts\" \"tests/*.test.ts\"",
     "dev": "next dev --webpack",
     "build": "next build --webpack",
     "start": "next start",
-    "test": "tsx --test \"src/**/*.test.ts\"",
     "lint": "eslint .",
     "format": "eslint . --fix && prettier --write ."
   },

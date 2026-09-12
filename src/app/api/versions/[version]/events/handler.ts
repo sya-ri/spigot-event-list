@@ -1,5 +1,4 @@
 import { NextRequest, NextResponse } from "next/server";
-import { map, pick, pipe, sortBy } from "remeda";
 import {
   getLatestMinecraftVersion,
   getServerVersionsDesc,
@@ -8,17 +7,7 @@ import {
   readServerEvents,
   resolveServerVersion,
 } from "@/libs/data-paths";
-import EventSource from "@/types/event-source";
-
-type EventResponse = {
-  name: string;
-  description: string;
-  link: string;
-  abstract?: true;
-  source: EventSource;
-  deprecate?: string;
-  deprecateDescription?: string;
-};
+import { toEventResponse } from "@/libs/event-response";
 
 type VersionEventsDependencies = {
   getLatestMinecraftVersion: typeof getLatestMinecraftVersion;
@@ -61,41 +50,12 @@ export const createVersionEventsHandler =
       });
     }
     return NextResponse.json(
-      pipe(
-        [...serverData.events, ...(proxyData?.events ?? [])],
-        sortBy(
-          [(event) => event.name, "asc"],
-          [(event) => event.source, "asc"],
-        ),
-        map(
-          pick([
-            "name",
-            "description",
-            "link",
-            "abstract",
-            "source",
-            "deprecate",
-            "deprecateDescription",
-          ]),
-        ),
-        map((event): EventResponse => {
-          const description = (event.description as Record<string, string>)[
-            lang
-          ];
-          const deprecateDescription = event.deprecateDescription
-            ? (event.deprecateDescription as Record<string, string>)[lang]
-            : undefined;
-          return {
-            name: event.name as string,
-            description,
-            link: event.link as string,
-            abstract: event.abstract as true | undefined,
-            source: event.source as EventSource,
-            deprecate: event.deprecate as string | undefined,
-            deprecateDescription,
-          };
-        }),
-      ),
+      [...serverData.events, ...(proxyData?.events ?? [])]
+        .sort(
+          (a, b) =>
+            a.name.localeCompare(b.name) || a.source.localeCompare(b.source),
+        )
+        .map((event) => toEventResponse(event, lang)),
     );
   };
 
