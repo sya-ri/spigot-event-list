@@ -12,8 +12,26 @@
       "name": "AsyncEvent",
       "source": "bungee",
       "keywords": {
-        "ja": ["非同期", "処理完了", "基底クラス"],
-        "en": ["asynchronous", "completion", "base class"]
+        "ja": [
+          "非同期",
+          "処理完了",
+          "基底クラス",
+          "非同期イベント",
+          "完了待ち",
+          "処理待機",
+          "コールバック",
+          "親クラス"
+        ],
+        "en": [
+          "asynchronous",
+          "completion",
+          "base class",
+          "async event",
+          "wait for completion",
+          "pending operation",
+          "callback",
+          "parent class"
+        ]
       }
     },
     {
@@ -27,8 +45,26 @@
       "name": "ChatEvent",
       "source": "bungee",
       "keywords": {
-        "ja": ["チャット", "メッセージ", "送信"],
-        "en": ["chat", "message", "send"]
+        "ja": [
+          "チャット",
+          "メッセージ",
+          "送信",
+          "会話",
+          "発言",
+          "チャット送信",
+          "メッセージ送信",
+          "サーバー宛て"
+        ],
+        "en": [
+          "chat",
+          "message",
+          "send",
+          "conversation",
+          "player chat",
+          "send message",
+          "chat submission",
+          "server message"
+        ]
       }
     },
     {
@@ -42,8 +78,26 @@
       "name": "ClientConnectEvent",
       "source": "bungee",
       "keywords": {
-        "ja": ["接続", "初期接続", "クライアント"],
-        "en": ["connection", "initial connection", "client"]
+        "ja": [
+          "接続",
+          "初期接続",
+          "クライアント",
+          "クライアント接続",
+          "接続開始",
+          "接続受付",
+          "ネットワーク接続",
+          "初期通信"
+        ],
+        "en": [
+          "connection",
+          "initial connection",
+          "client",
+          "client connect",
+          "incoming connection",
+          "connection start",
+          "network connection",
+          "initial handshake"
+        ]
       }
     },
     {
@@ -57,8 +111,26 @@
       "name": "CommandExecuteEvent",
       "source": "velocity",
       "keywords": {
-        "ja": ["コマンド実行", "コンソール", "プロキシ"],
-        "en": ["command", "execute", "console"]
+        "ja": [
+          "コマンド実行",
+          "コンソール",
+          "プロキシ",
+          "コマンド入力",
+          "命令実行",
+          "プレイヤーコマンド",
+          "コンソールコマンド",
+          "コマンド処理"
+        ],
+        "en": [
+          "command",
+          "execute",
+          "console",
+          "run command",
+          "command execution",
+          "player command",
+          "console command",
+          "command dispatch"
+        ]
       }
     },
     {
@@ -72,8 +144,26 @@
       "name": "ConnectionHandshakeEvent",
       "source": "velocity",
       "keywords": {
-        "ja": ["ハンドシェイク", "接続", "プロキシ"],
-        "en": ["handshake", "connection", "proxy"]
+        "ja": [
+          "ハンドシェイク",
+          "接続",
+          "プロキシ",
+          "初期通信",
+          "接続確立",
+          "クライアント接続",
+          "プロキシ接続",
+          "通信開始"
+        ],
+        "en": [
+          "handshake",
+          "connection",
+          "proxy",
+          "initial handshake",
+          "client connection",
+          "establish connection",
+          "proxy connection",
+          "handshake complete"
+        ]
       }
     },
     {
@@ -87,8 +177,26 @@
       "name": "CookieReceiveEvent",
       "source": "velocity",
       "keywords": {
-        "ja": ["クッキー", "Cookie", "受信"],
-        "en": ["cookie", "receive", "response"]
+        "ja": [
+          "クッキー",
+          "Cookie",
+          "受信",
+          "クライアントCookie",
+          "応答受信",
+          "保存データ",
+          "クッキー応答",
+          "プロキシ受信"
+        ],
+        "en": [
+          "cookie",
+          "receive",
+          "response",
+          "client cookie",
+          "cookie response",
+          "receive cookie",
+          "stored data",
+          "proxy response"
+        ]
       }
     },
     {
@@ -102,8 +210,25 @@
       "name": "CookieRequestEvent",
       "source": "velocity",
       "keywords": {
-        "ja": ["クッキー", "Cookie", "要求"],
-        "en": ["cookie", "request"]
+        "ja": [
+          "クッキー",
+          "Cookie",
+          "要求",
+          "クライアントCookie",
+          "クッキー取得",
+          "取得要求",
+          "バックエンド要求",
+          "保存データ要求"
+        ],
+        "en": [
+          "cookie",
+          "request",
+          "client cookie",
+          "request cookie",
+          "cookie retrieval",
+          "backend request",
+          "stored data request"
+        ]
       }
     },
     {
@@ -117,8 +242,25 @@
       "name": "CookieStoreEvent",
       "source": "velocity",
       "keywords": {
-        "ja": ["クッキー", "Cookie", "保存"],
-        "en": ["cookie", "store"]
+        "ja": [
+          "クッキー",
+          "Cookie",
+          "保存",
+          "クライアントCookie",
+          "クッキー保存",
+          "データ保存",
+          "クライアント保存",
+          "保存要求"
+        ],
+        "en": [
+          "cookie",
+          "store",
+          "client cookie",
+          "store cookie",
+          "persist cookie",
+          "client storage",
+          "save data"
+        ]
       }
     },
     {
@@ -137,8 +279,26 @@
       "name": "CustomClickEvent",
       "source": "bungee",
       "keywords": {
-        "ja": ["カスタムアクション", "クリック", "フォーム送信"],
-        "en": ["custom action", "click", "form submission"]
+        "ja": [
+          "カスタムアクション",
+          "クリック",
+          "フォーム送信",
+          "カスタムクリック",
+          "チャットアクション",
+          "フォーム操作",
+          "アクション実行",
+          "送信後"
+        ],
+        "en": [
+          "custom action",
+          "click",
+          "form submission",
+          "custom click",
+          "chat action",
+          "form action",
+          "execute action",
+          "after submission"
+        ]
       }
     },
     {
@@ -152,8 +312,26 @@
       "name": "DisconnectEvent",
       "source": "velocity",
       "keywords": {
-        "ja": ["切断", "退出", "プロキシ停止"],
-        "en": ["disconnect", "leave", "proxy shutdown"]
+        "ja": [
+          "切断",
+          "退出",
+          "プロキシ停止",
+          "ログアウト",
+          "接続終了",
+          "プロキシ切断",
+          "プレイヤー退出",
+          "退出処理"
+        ],
+        "en": [
+          "disconnect",
+          "leave",
+          "proxy shutdown",
+          "logout",
+          "connection closed",
+          "proxy disconnect",
+          "player departure",
+          "leave proxy"
+        ]
       }
     },
     {
@@ -168,8 +346,24 @@
       "name": "Event",
       "source": "bungee",
       "keywords": {
-        "ja": ["イベント", "基底クラス"],
-        "en": ["event", "base class"]
+        "ja": [
+          "イベント",
+          "基底クラス",
+          "共通イベント",
+          "親クラス",
+          "イベント継承",
+          "基底イベント",
+          "イベント処理"
+        ],
+        "en": [
+          "event",
+          "base class",
+          "generic event",
+          "parent class",
+          "event inheritance",
+          "base event",
+          "event handling"
+        ]
       }
     },
     {
@@ -183,8 +377,26 @@
       "name": "GameProfileRequestEvent",
       "source": "velocity",
       "keywords": {
-        "ja": ["ゲームプロファイル", "スキン", "ログイン"],
-        "en": ["game profile", "skin", "login"]
+        "ja": [
+          "ゲームプロファイル",
+          "スキン",
+          "ログイン",
+          "ユーザープロファイル",
+          "プロフィール設定",
+          "プレログイン後",
+          "アカウント情報",
+          "プロファイル要求"
+        ],
+        "en": [
+          "game profile",
+          "skin",
+          "login",
+          "user profile",
+          "profile setup",
+          "after prelogin",
+          "player identity",
+          "profile request"
+        ]
       }
     },
     {
@@ -198,8 +410,26 @@
       "name": "KickedFromServerEvent",
       "source": "velocity",
       "keywords": {
-        "ja": ["キック", "追放", "接続先変更"],
-        "en": ["kick", "redirect", "backend server"]
+        "ja": [
+          "キック",
+          "追放",
+          "接続先変更",
+          "サーバー追放",
+          "接続先から切断",
+          "キック処理",
+          "バックエンド切断",
+          "強制退出"
+        ],
+        "en": [
+          "kick",
+          "redirect",
+          "backend server",
+          "server kick",
+          "kicked player",
+          "backend disconnect",
+          "kick handling",
+          "forced departure"
+        ]
       }
     },
     {
@@ -213,8 +443,26 @@
       "name": "ListenerBoundEvent",
       "source": "velocity",
       "keywords": {
-        "ja": ["接続待ち受け", "リスナー", "開始"],
-        "en": ["listener", "bind", "accept connections"]
+        "ja": [
+          "接続待ち受け",
+          "リスナー",
+          "開始",
+          "待ち受け開始",
+          "接続受付",
+          "プロキシ起動",
+          "ポート待受",
+          "リスナーバインド"
+        ],
+        "en": [
+          "listener",
+          "bind",
+          "accept connections",
+          "listener bound",
+          "start listening",
+          "connection acceptance",
+          "bind listener",
+          "proxy listening"
+        ]
       }
     },
     {
@@ -228,8 +476,26 @@
       "name": "ListenerCloseEvent",
       "source": "velocity",
       "keywords": {
-        "ja": ["接続待ち受け", "リスナー", "停止前"],
-        "en": ["listener", "close", "stop accepting"]
+        "ja": [
+          "接続待ち受け",
+          "リスナー",
+          "停止前",
+          "待ち受け停止",
+          "接続受付終了",
+          "リスナー終了",
+          "プロキシ停止前",
+          "ポート待受終了"
+        ],
+        "en": [
+          "listener",
+          "close",
+          "stop accepting",
+          "stop listening",
+          "close listener",
+          "listener shutdown",
+          "connection acceptance stop",
+          "before listener close"
+        ]
       }
     },
     {
@@ -243,8 +509,26 @@
       "name": "LoginEvent",
       "source": "bungee",
       "keywords": {
-        "ja": ["ログイン", "接続", "参加"],
-        "en": ["login", "connect", "join"]
+        "ja": [
+          "ログイン",
+          "接続",
+          "参加",
+          "サインイン",
+          "プレイヤー参加",
+          "ログイン処理",
+          "プレイヤーログイン",
+          "プロキシ参加"
+        ],
+        "en": [
+          "login",
+          "connect",
+          "join",
+          "sign in",
+          "player login",
+          "login process",
+          "logging in",
+          "proxy join"
+        ]
       }
     },
     {
@@ -258,8 +542,26 @@
       "name": "LoginEvent",
       "source": "velocity",
       "keywords": {
-        "ja": ["ログイン", "認証後", "サーバー接続前"],
-        "en": ["login", "authenticated", "before server connection"]
+        "ja": [
+          "ログイン",
+          "認証後",
+          "サーバー接続前",
+          "サインイン",
+          "認証完了",
+          "ログイン処理",
+          "バックエンド接続前",
+          "プレイヤーログイン"
+        ],
+        "en": [
+          "login",
+          "authenticated",
+          "before server connection",
+          "sign in",
+          "authentication complete",
+          "login process",
+          "before backend connect",
+          "player login"
+        ]
       }
     },
     {
@@ -273,8 +575,26 @@
       "name": "PermissionCheckEvent",
       "source": "bungee",
       "keywords": {
-        "ja": ["権限確認", "パーミッション", "コマンド送信者"],
-        "en": ["permission", "check", "command sender"]
+        "ja": [
+          "権限確認",
+          "パーミッション",
+          "コマンド送信者",
+          "権限判定",
+          "権限チェック",
+          "使用権限",
+          "アクセス確認",
+          "実行者権限"
+        ],
+        "en": [
+          "permission",
+          "check",
+          "command sender",
+          "permission check",
+          "access check",
+          "permission query",
+          "authorization",
+          "check permission"
+        ]
       }
     },
     {
@@ -288,8 +608,26 @@
       "name": "PermissionsSetupEvent",
       "source": "velocity",
       "keywords": {
-        "ja": ["権限設定", "初期化", "パーミッション"],
-        "en": ["permissions", "setup", "initialization"]
+        "ja": [
+          "権限設定",
+          "初期化",
+          "パーミッション",
+          "権限初期化",
+          "権限構成",
+          "権限プロバイダー",
+          "アクセス設定",
+          "権限準備"
+        ],
+        "en": [
+          "permissions",
+          "setup",
+          "initialization",
+          "permission initialization",
+          "configure permissions",
+          "permission provider",
+          "access setup",
+          "permission subject"
+        ]
       }
     },
     {
@@ -303,8 +641,26 @@
       "name": "PlayerAvailableCommandsEvent",
       "source": "velocity",
       "keywords": {
-        "ja": ["コマンド一覧", "補完", "コマンドツリー"],
-        "en": ["available commands", "completion", "command tree"]
+        "ja": [
+          "コマンド一覧",
+          "補完",
+          "コマンドツリー",
+          "使用可能コマンド",
+          "入力候補",
+          "コマンド表示",
+          "コマンド送信",
+          "コマンド候補"
+        ],
+        "en": [
+          "available commands",
+          "completion",
+          "command tree",
+          "command list",
+          "client commands",
+          "send commands",
+          "command suggestions",
+          "command visibility"
+        ]
       }
     },
     {
@@ -318,8 +674,26 @@
       "name": "PlayerChannelRegisterEvent",
       "source": "velocity",
       "keywords": {
-        "ja": ["プラグインチャンネル", "登録", "プラグインメッセージ"],
-        "en": ["plugin channel", "register", "plugin message"]
+        "ja": [
+          "プラグインチャンネル",
+          "登録",
+          "プラグインメッセージ",
+          "チャンネル登録",
+          "登録通知",
+          "通信チャンネル",
+          "プラグイン通信",
+          "クライアント登録"
+        ],
+        "en": [
+          "plugin channel",
+          "register",
+          "plugin message",
+          "register channel",
+          "registration message",
+          "messaging channel",
+          "plugin messaging",
+          "client registration"
+        ]
       }
     },
     {
@@ -333,8 +707,26 @@
       "name": "PlayerChannelUnregisterEvent",
       "source": "velocity",
       "keywords": {
-        "ja": ["プラグインチャンネル", "登録解除", "プラグインメッセージ"],
-        "en": ["plugin channel", "unregister", "plugin message"]
+        "ja": [
+          "プラグインチャンネル",
+          "登録解除",
+          "プラグインメッセージ",
+          "チャンネル解除",
+          "解除通知",
+          "通信チャンネル",
+          "プラグイン通信",
+          "クライアント解除"
+        ],
+        "en": [
+          "plugin channel",
+          "unregister",
+          "plugin message",
+          "unregister channel",
+          "unregistration message",
+          "messaging channel",
+          "plugin messaging",
+          "client unregistration"
+        ]
       }
     },
     {
@@ -348,8 +740,26 @@
       "name": "PlayerChatEvent",
       "source": "velocity",
       "keywords": {
-        "ja": ["チャット", "発言", "メッセージ"],
-        "en": ["chat", "message", "speak"]
+        "ja": [
+          "チャット",
+          "発言",
+          "メッセージ",
+          "会話",
+          "チャット入力",
+          "プレイヤー発言",
+          "チャット送信",
+          "入力メッセージ"
+        ],
+        "en": [
+          "chat",
+          "message",
+          "speak",
+          "conversation",
+          "chat input",
+          "player message",
+          "send chat",
+          "typed message"
+        ]
       }
     },
     {
@@ -363,8 +773,26 @@
       "name": "PlayerChooseInitialServerEvent",
       "source": "velocity",
       "keywords": {
-        "ja": ["初期サーバー", "接続先選択", "ログイン"],
-        "en": ["initial server", "server selection", "login"]
+        "ja": [
+          "初期サーバー",
+          "接続先選択",
+          "ログイン",
+          "最初の接続先",
+          "初回接続",
+          "初期接続先",
+          "サーバー振り分け",
+          "ログイン後"
+        ],
+        "en": [
+          "initial server",
+          "server selection",
+          "login",
+          "first server",
+          "initial connection",
+          "choose server",
+          "server routing",
+          "after login"
+        ]
       }
     },
     {
@@ -378,8 +806,24 @@
       "name": "PlayerClientBrandEvent",
       "source": "velocity",
       "keywords": {
-        "ja": ["クライアントブランド", "プラグインメッセージ"],
-        "en": ["client brand", "plugin message"]
+        "ja": [
+          "クライアントブランド",
+          "プラグインメッセージ",
+          "ブランド情報",
+          "クライアント識別",
+          "minecraft:brand",
+          "ブランド通知",
+          "クライアント名"
+        ],
+        "en": [
+          "client brand",
+          "plugin message",
+          "brand message",
+          "client identity",
+          "minecraft:brand",
+          "brand notification",
+          "client name"
+        ]
       }
     },
     {
@@ -393,8 +837,26 @@
       "name": "PlayerConfigurationEvent",
       "source": "bungee",
       "keywords": {
-        "ja": ["設定フェーズ", "接続設定", "完了前"],
-        "en": ["configuration", "connection", "before completion"]
+        "ja": [
+          "設定フェーズ",
+          "接続設定",
+          "完了前",
+          "接続構成",
+          "設定完了前",
+          "構成処理",
+          "クライアント設定",
+          "設定中"
+        ],
+        "en": [
+          "configuration",
+          "connection",
+          "before completion",
+          "connection configuration",
+          "before configuration complete",
+          "configure player",
+          "configuration processing",
+          "configuration phase"
+        ]
       }
     },
     {
@@ -408,8 +870,26 @@
       "name": "PlayerConfigurationEvent",
       "source": "velocity",
       "keywords": {
-        "ja": ["設定フェーズ", "接続設定", "開始"],
-        "en": ["configuration", "connection", "configure"]
+        "ja": [
+          "設定フェーズ",
+          "接続設定",
+          "開始",
+          "接続構成",
+          "設定開始",
+          "構成状態",
+          "クライアント設定",
+          "設定中"
+        ],
+        "en": [
+          "configuration",
+          "connection",
+          "configure",
+          "connection configuration",
+          "start configuration",
+          "configuration state",
+          "configure player",
+          "configuration phase"
+        ]
       }
     },
     {
@@ -423,8 +903,26 @@
       "name": "PlayerDisconnectEvent",
       "source": "bungee",
       "keywords": {
-        "ja": ["切断", "退出", "プロキシ"],
-        "en": ["disconnect", "leave", "proxy"]
+        "ja": [
+          "切断",
+          "退出",
+          "プロキシ",
+          "ログアウト",
+          "プロキシ退出",
+          "接続終了",
+          "プレイヤー切断",
+          "退出完了"
+        ],
+        "en": [
+          "disconnect",
+          "leave",
+          "proxy",
+          "logout",
+          "proxy departure",
+          "connection end",
+          "player disconnect",
+          "left proxy"
+        ]
       }
     },
     {
@@ -438,8 +936,26 @@
       "name": "PlayerEnterConfigurationEvent",
       "source": "velocity",
       "keywords": {
-        "ja": ["設定フェーズ", "再設定", "移行前"],
-        "en": ["configuration", "reconfiguration", "before enter"]
+        "ja": [
+          "設定フェーズ",
+          "再設定",
+          "移行前",
+          "構成開始前",
+          "設定移行前",
+          "接続再設定",
+          "構成状態移行",
+          "設定への切替"
+        ],
+        "en": [
+          "configuration",
+          "reconfiguration",
+          "before enter",
+          "before configuration",
+          "reconfigure player",
+          "enter configuration",
+          "configuration transition",
+          "configuration entry"
+        ]
       }
     },
     {
@@ -453,8 +969,26 @@
       "name": "PlayerEnteredConfigurationEvent",
       "source": "velocity",
       "keywords": {
-        "ja": ["設定フェーズ", "移行完了", "接続"],
-        "en": ["configuration", "entered", "connection"]
+        "ja": [
+          "設定フェーズ",
+          "移行完了",
+          "接続",
+          "構成状態",
+          "設定移行後",
+          "接続構成",
+          "構成に入る",
+          "設定開始済み"
+        ],
+        "en": [
+          "configuration",
+          "entered",
+          "connection",
+          "configuration state",
+          "after configuration entry",
+          "connection configuration",
+          "entered configuration",
+          "configuration transition"
+        ]
       }
     },
     {
@@ -468,8 +1002,26 @@
       "name": "PlayerFinishConfigurationEvent",
       "source": "velocity",
       "keywords": {
-        "ja": ["設定フェーズ", "終了前", "接続"],
-        "en": ["configuration", "before finish", "connection"]
+        "ja": [
+          "設定フェーズ",
+          "終了前",
+          "接続",
+          "設定終了前",
+          "構成完了前",
+          "設定を終える",
+          "設定終了待ち",
+          "構成状態終了"
+        ],
+        "en": [
+          "configuration",
+          "before finish",
+          "connection",
+          "finish configuration",
+          "configuration completion",
+          "before configuration end",
+          "configuration exit",
+          "configuration wait"
+        ]
       }
     },
     {
@@ -483,8 +1035,26 @@
       "name": "PlayerFinishedConfigurationEvent",
       "source": "velocity",
       "keywords": {
-        "ja": ["設定完了", "プレイ状態", "接続"],
-        "en": ["configuration", "finished", "play state"]
+        "ja": [
+          "設定完了",
+          "プレイ状態",
+          "接続",
+          "設定終了後",
+          "構成完了",
+          "設定を終えた",
+          "プレイ移行",
+          "構成状態終了"
+        ],
+        "en": [
+          "configuration",
+          "finished",
+          "play state",
+          "finished configuration",
+          "configuration complete",
+          "after configuration",
+          "enter play",
+          "configuration exit"
+        ]
       }
     },
     {
@@ -498,8 +1068,26 @@
       "name": "PlayerHandshakeEvent",
       "source": "bungee",
       "keywords": {
-        "ja": ["ハンドシェイク", "接続", "ユーザー名"],
-        "en": ["handshake", "connection", "username"]
+        "ja": [
+          "ハンドシェイク",
+          "接続",
+          "ユーザー名",
+          "初期通信",
+          "プレイヤー識別",
+          "接続要求",
+          "ユーザー識別",
+          "最初の通信"
+        ],
+        "en": [
+          "handshake",
+          "connection",
+          "username",
+          "player handshake",
+          "initial communication",
+          "connection request",
+          "player identity",
+          "first contact"
+        ]
       }
     },
     {
@@ -513,8 +1101,26 @@
       "name": "PlayerModInfoEvent",
       "source": "velocity",
       "keywords": {
-        "ja": ["MOD情報", "Forge", "クライアント"],
-        "en": ["mod info", "forge", "client"]
+        "ja": [
+          "MOD情報",
+          "Forge",
+          "クライアント",
+          "MOD一覧",
+          "導入MOD",
+          "クライアントMOD",
+          "MOD通知",
+          "Forge接続"
+        ],
+        "en": [
+          "mod info",
+          "forge",
+          "client",
+          "mod list",
+          "installed mods",
+          "client mods",
+          "mod notification",
+          "forge connection"
+        ]
       }
     },
     {
@@ -528,8 +1134,26 @@
       "name": "PlayerResourcePackStatusEvent",
       "source": "velocity",
       "keywords": {
-        "ja": ["リソースパック", "状態", "プロキシ"],
-        "en": ["resource pack", "status", "proxy"]
+        "ja": [
+          "リソースパック",
+          "状態",
+          "プロキシ",
+          "パック応答",
+          "送信パック",
+          "パック状態変更",
+          "リソースパック通知",
+          "パック処理"
+        ],
+        "en": [
+          "resource pack",
+          "status",
+          "proxy",
+          "pack response",
+          "sent pack",
+          "pack status change",
+          "resource pack notification",
+          "pack processing"
+        ]
       }
     },
     {
@@ -543,8 +1167,24 @@
       "name": "PlayerSettingsChangedEvent",
       "source": "velocity",
       "keywords": {
-        "ja": ["クライアント設定", "設定変更"],
-        "en": ["client settings", "change"]
+        "ja": [
+          "クライアント設定",
+          "設定変更",
+          "設定受信",
+          "オプション変更",
+          "プレイヤー設定",
+          "設定送信",
+          "クライアントオプション"
+        ],
+        "en": [
+          "client settings",
+          "change",
+          "received settings",
+          "option change",
+          "player preferences",
+          "settings sent",
+          "client options"
+        ]
       }
     },
     {
@@ -558,8 +1198,26 @@
       "name": "PluginMessageEvent",
       "source": "bungee",
       "keywords": {
-        "ja": ["プラグインメッセージ", "送信", "チャンネル"],
-        "en": ["plugin message", "send", "channel"]
+        "ja": [
+          "プラグインメッセージ",
+          "送信",
+          "チャンネル",
+          "プラグイン通信",
+          "カスタムペイロード",
+          "チャンネル通信",
+          "メッセージ転送",
+          "サーバー間通信"
+        ],
+        "en": [
+          "plugin message",
+          "send",
+          "channel",
+          "plugin messaging",
+          "custom payload",
+          "channel message",
+          "forward message",
+          "server messaging"
+        ]
       }
     },
     {
@@ -573,8 +1231,26 @@
       "name": "PluginMessageEvent",
       "source": "velocity",
       "keywords": {
-        "ja": ["プラグインメッセージ", "受信", "チャンネル"],
-        "en": ["plugin message", "receive", "channel"]
+        "ja": [
+          "プラグインメッセージ",
+          "受信",
+          "チャンネル",
+          "プラグイン通信",
+          "カスタムペイロード",
+          "チャンネル通信",
+          "メッセージ受信",
+          "サーバー間通信"
+        ],
+        "en": [
+          "plugin message",
+          "receive",
+          "channel",
+          "plugin messaging",
+          "custom payload",
+          "channel message",
+          "incoming message",
+          "server messaging"
+        ]
       }
     },
     {
@@ -588,8 +1264,26 @@
       "name": "PostCommandInvocationEvent",
       "source": "velocity",
       "keywords": {
-        "ja": ["コマンド実行後", "コマンド完了", "プロキシ"],
-        "en": ["command", "after execution", "proxy"]
+        "ja": [
+          "コマンド実行後",
+          "コマンド完了",
+          "プロキシ",
+          "実行完了",
+          "コマンド処理後",
+          "実行結果",
+          "コマンド後処理",
+          "プロキシコマンド"
+        ],
+        "en": [
+          "command",
+          "after execution",
+          "proxy",
+          "command complete",
+          "post command",
+          "execution result",
+          "after command invocation",
+          "proxy command"
+        ]
       }
     },
     {
@@ -603,8 +1297,26 @@
       "name": "PostLoginEvent",
       "source": "bungee",
       "keywords": {
-        "ja": ["ログイン後", "接続準備", "プロキシ"],
-        "en": ["post login", "ready", "proxy"]
+        "ja": [
+          "ログイン後",
+          "接続準備",
+          "プロキシ",
+          "接続準備完了",
+          "ログイン完了",
+          "サーバー接続準備",
+          "プレイヤー利用可能",
+          "初期接続"
+        ],
+        "en": [
+          "post login",
+          "ready",
+          "proxy",
+          "connection ready",
+          "login complete",
+          "server connection ready",
+          "player available",
+          "initial connection"
+        ]
       }
     },
     {
@@ -618,8 +1330,26 @@
       "name": "PostLoginEvent",
       "source": "velocity",
       "keywords": {
-        "ja": ["ログイン後", "初期化完了", "初期サーバー"],
-        "en": ["post login", "initialized", "initial server"]
+        "ja": [
+          "ログイン後",
+          "初期化完了",
+          "初期サーバー",
+          "初回参加",
+          "最初の接続",
+          "ログイン完了",
+          "サーバー参加前",
+          "初期化済み"
+        ],
+        "en": [
+          "post login",
+          "initialized",
+          "initial server",
+          "first join",
+          "first connection",
+          "login complete",
+          "before initial join",
+          "initialized player"
+        ]
       }
     },
     {
@@ -633,8 +1363,26 @@
       "name": "PreLoginEvent",
       "source": "bungee",
       "keywords": {
-        "ja": ["認証前", "ログイン前", "ユーザー名"],
-        "en": ["prelogin", "authentication", "username"]
+        "ja": [
+          "認証前",
+          "ログイン前",
+          "ユーザー名",
+          "サインイン前",
+          "ログイン試行",
+          "未認証",
+          "認証開始前",
+          "プレログイン"
+        ],
+        "en": [
+          "prelogin",
+          "authentication",
+          "username",
+          "before login",
+          "login attempt",
+          "unauthenticated",
+          "before authentication",
+          "pre-login"
+        ]
       }
     },
     {
@@ -648,8 +1396,26 @@
       "name": "PreLoginEvent",
       "source": "velocity",
       "keywords": {
-        "ja": ["認証前", "ログイン前", "プロキシ"],
-        "en": ["prelogin", "authentication", "proxy"]
+        "ja": [
+          "認証前",
+          "ログイン前",
+          "プロキシ",
+          "サインイン前",
+          "ログイン試行",
+          "未認証",
+          "Mojang認証前",
+          "プレログイン"
+        ],
+        "en": [
+          "prelogin",
+          "authentication",
+          "proxy",
+          "before login",
+          "login attempt",
+          "unauthenticated",
+          "before mojang authentication",
+          "pre-login"
+        ]
       }
     },
     {
@@ -668,8 +1434,26 @@
       "name": "PreTransferEvent",
       "source": "velocity",
       "keywords": {
-        "ja": ["ホスト転送", "転送前", "サーバー移動"],
-        "en": ["transfer", "host", "before transfer"]
+        "ja": [
+          "ホスト転送",
+          "転送前",
+          "サーバー移動",
+          "別ホスト",
+          "ホスト移動",
+          "接続転送",
+          "転送先",
+          "プレイヤー転送"
+        ],
+        "en": [
+          "transfer",
+          "host",
+          "before transfer",
+          "another host",
+          "host transfer",
+          "connection transfer",
+          "transfer destination",
+          "player transfer"
+        ]
       }
     },
     {
@@ -683,8 +1467,26 @@
       "name": "ProxyInitializeEvent",
       "source": "velocity",
       "keywords": {
-        "ja": ["プロキシ起動", "初期化", "プラグイン読み込み"],
-        "en": ["proxy", "initialize", "startup"]
+        "ja": [
+          "プロキシ起動",
+          "初期化",
+          "プラグイン読み込み",
+          "初期化完了",
+          "起動準備",
+          "受付開始前",
+          "プラグイン初期化後",
+          "プロキシ初期化"
+        ],
+        "en": [
+          "proxy",
+          "initialize",
+          "startup",
+          "initialization complete",
+          "proxy startup",
+          "before accepting connections",
+          "after plugin load",
+          "proxy initialization"
+        ]
       }
     },
     {
@@ -698,8 +1500,26 @@
       "name": "ProxyPingEvent",
       "source": "bungee",
       "keywords": {
-        "ja": ["サーバーリスト", "Ping", "状態"],
-        "en": ["server list", "ping", "status"]
+        "ja": [
+          "サーバーリスト",
+          "Ping",
+          "状態",
+          "サーバー一覧",
+          "サーバーステータス",
+          "状態問い合わせ",
+          "一覧応答",
+          "Ping応答"
+        ],
+        "en": [
+          "server list",
+          "ping",
+          "status",
+          "server status",
+          "status query",
+          "status ping",
+          "list response",
+          "ping response"
+        ]
       }
     },
     {
@@ -713,8 +1533,26 @@
       "name": "ProxyPingEvent",
       "source": "velocity",
       "keywords": {
-        "ja": ["サーバー情報", "Ping", "MOTD"],
-        "en": ["server information", "ping", "motd"]
+        "ja": [
+          "サーバー情報",
+          "Ping",
+          "MOTD",
+          "サーバーステータス",
+          "アイコン",
+          "サーバー説明",
+          "情報要求",
+          "Ping応答"
+        ],
+        "en": [
+          "server information",
+          "ping",
+          "motd",
+          "server status",
+          "favicon",
+          "server description",
+          "information request",
+          "ping response"
+        ]
       }
     },
     {
@@ -733,8 +1571,26 @@
       "name": "ProxyPreShutdownEvent",
       "source": "velocity",
       "keywords": {
-        "ja": ["プロキシ停止前", "シャットダウン", "終了処理"],
-        "en": ["proxy shutdown", "pre shutdown", "cleanup"]
+        "ja": [
+          "プロキシ停止前",
+          "シャットダウン",
+          "終了処理",
+          "切断前",
+          "終了準備",
+          "プレイヤー転送",
+          "新規受付停止後",
+          "終了前処理"
+        ],
+        "en": [
+          "proxy shutdown",
+          "pre shutdown",
+          "cleanup",
+          "before disconnect",
+          "shutdown preparation",
+          "player transfer",
+          "after listener stop",
+          "shutdown cleanup"
+        ]
       }
     },
     {
@@ -748,8 +1604,26 @@
       "name": "ProxyQueryEvent",
       "source": "velocity",
       "keywords": {
-        "ja": ["クエリ", "サーバー情報", "GS4"],
-        "en": ["query", "server information", "gs4"]
+        "ja": [
+          "クエリ",
+          "サーバー情報",
+          "GS4",
+          "サーバー問い合わせ",
+          "クエリ応答",
+          "GS4クエリ",
+          "状態取得",
+          "プロキシクエリ"
+        ],
+        "en": [
+          "query",
+          "server information",
+          "gs4",
+          "server inquiry",
+          "query response",
+          "gs4 query",
+          "status retrieval",
+          "proxy query"
+        ]
       }
     },
     {
@@ -763,8 +1637,25 @@
       "name": "ProxyReloadEvent",
       "source": "bungee",
       "keywords": {
-        "ja": ["プロキシ", "リロード", "再読み込み"],
-        "en": ["proxy", "reload"]
+        "ja": [
+          "プロキシ",
+          "リロード",
+          "再読み込み",
+          "再ロード",
+          "プロキシ再読込",
+          "リロード処理",
+          "BungeeCordリロード",
+          "設定再読み込み"
+        ],
+        "en": [
+          "proxy",
+          "reload",
+          "reload proxy",
+          "proxy reload",
+          "reload processing",
+          "bungeecord reload",
+          "configuration reload"
+        ]
       }
     },
     {
@@ -778,8 +1669,25 @@
       "name": "ProxyReloadEvent",
       "source": "velocity",
       "keywords": {
-        "ja": ["プロキシ", "リロード", "再読み込み"],
-        "en": ["proxy", "reload"]
+        "ja": [
+          "プロキシ",
+          "リロード",
+          "再読み込み",
+          "再ロード",
+          "プロキシ再読込",
+          "リロード処理",
+          "Velocityリロード",
+          "設定再読み込み"
+        ],
+        "en": [
+          "proxy",
+          "reload",
+          "reload proxy",
+          "proxy reload",
+          "reload processing",
+          "velocity reload",
+          "configuration reload"
+        ]
       }
     },
     {
@@ -793,8 +1701,26 @@
       "name": "ProxyShutdownEvent",
       "source": "velocity",
       "keywords": {
-        "ja": ["プロキシ停止", "シャットダウン", "終了"],
-        "en": ["proxy", "shutdown", "exit"]
+        "ja": [
+          "プロキシ停止",
+          "シャットダウン",
+          "終了",
+          "プロキシ終了",
+          "停止処理",
+          "プロセス終了前",
+          "受付停止後",
+          "シャットダウン処理"
+        ],
+        "en": [
+          "proxy",
+          "shutdown",
+          "exit",
+          "proxy stop",
+          "shutdown handling",
+          "before process exit",
+          "after listener stop",
+          "proxy shutdown"
+        ]
       }
     },
     {
@@ -808,8 +1734,26 @@
       "name": "ResultedEvent",
       "source": "velocity",
       "keywords": {
-        "ja": ["結果", "イベント", "インターフェース"],
-        "en": ["result", "event", "interface"]
+        "ja": [
+          "結果",
+          "イベント",
+          "インターフェース",
+          "結果付きイベント",
+          "処理結果",
+          "イベント結果",
+          "結果保持",
+          "結果取得"
+        ],
+        "en": [
+          "result",
+          "event",
+          "interface",
+          "result-bearing event",
+          "operation result",
+          "event result",
+          "attached result",
+          "result access"
+        ]
       }
     },
     {
@@ -823,8 +1767,26 @@
       "name": "ServerConnectedEvent",
       "source": "bungee",
       "keywords": {
-        "ja": ["サーバー接続完了", "ログイン前", "バックエンド"],
-        "en": ["server connected", "before login", "backend"]
+        "ja": [
+          "サーバー接続完了",
+          "ログイン前",
+          "バックエンド",
+          "バックエンド接続完了",
+          "通信確立",
+          "セッション制御",
+          "ログイン直前",
+          "接続済みサーバー"
+        ],
+        "en": [
+          "server connected",
+          "before login",
+          "backend",
+          "backend connected",
+          "connection operational",
+          "session control",
+          "before player login",
+          "connected backend"
+        ]
       }
     },
     {
@@ -838,8 +1800,26 @@
       "name": "ServerConnectedEvent",
       "source": "velocity",
       "keywords": {
-        "ja": ["サーバー接続完了", "接続先", "サーバー移動"],
-        "en": ["server connected", "target server", "server switch"]
+        "ja": [
+          "サーバー接続完了",
+          "接続先",
+          "サーバー移動",
+          "サーバー移動完了",
+          "接続成功",
+          "バックエンド接続",
+          "接続元切断",
+          "接続先到着"
+        ],
+        "en": [
+          "server connected",
+          "target server",
+          "server switch",
+          "server transfer complete",
+          "connection success",
+          "backend connection",
+          "previous server disconnect",
+          "target connected"
+        ]
       }
     },
     {
@@ -853,8 +1833,26 @@
       "name": "ServerConnectEvent",
       "source": "bungee",
       "keywords": {
-        "ja": ["サーバー接続前", "接続中止", "バックエンド"],
-        "en": ["server connect", "before connection", "cancel connection"]
+        "ja": [
+          "サーバー接続前",
+          "接続中止",
+          "バックエンド",
+          "接続先決定",
+          "サーバー接続試行",
+          "接続許可",
+          "接続キャンセル",
+          "サーバー移動前"
+        ],
+        "en": [
+          "server connect",
+          "before connection",
+          "cancel connection",
+          "choose target server",
+          "connection attempt",
+          "allow connection",
+          "cancel server connect",
+          "before server switch"
+        ]
       }
     },
     {
@@ -868,8 +1866,26 @@
       "name": "ServerDisconnectEvent",
       "source": "bungee",
       "keywords": {
-        "ja": ["サーバー切断", "サーバー移動", "バックエンド"],
-        "en": ["server disconnect", "switch", "backend"]
+        "ja": [
+          "サーバー切断",
+          "サーバー移動",
+          "バックエンド",
+          "バックエンド切断",
+          "接続終了",
+          "サーバーから離れる",
+          "サーバー離脱",
+          "切断通知"
+        ],
+        "en": [
+          "server disconnect",
+          "switch",
+          "backend",
+          "backend disconnect",
+          "connection end",
+          "leave server",
+          "server departure",
+          "disconnect notification"
+        ]
       }
     },
     {
@@ -883,8 +1899,25 @@
       "name": "ServerKickEvent",
       "source": "bungee",
       "keywords": {
-        "ja": ["キック", "追放", "バックエンド"],
-        "en": ["kick", "backend server"]
+        "ja": [
+          "キック",
+          "追放",
+          "バックエンド",
+          "サーバー追放",
+          "強制退出",
+          "バックエンド切断",
+          "キック通知",
+          "追放処理"
+        ],
+        "en": [
+          "kick",
+          "backend server",
+          "server kick",
+          "forced departure",
+          "backend disconnect",
+          "kick notification",
+          "kick handling"
+        ]
       }
     },
     {
@@ -898,8 +1931,26 @@
       "name": "ServerLoginPluginMessageEvent",
       "source": "velocity",
       "keywords": {
-        "ja": ["ログインプラグインメッセージ", "認証", "応答"],
-        "en": ["login plugin message", "login", "response"]
+        "ja": [
+          "ログインプラグインメッセージ",
+          "認証",
+          "応答",
+          "ログイン通信",
+          "認証フェーズ",
+          "プラグイン通信",
+          "バックエンドメッセージ",
+          "ログイン要求"
+        ],
+        "en": [
+          "login plugin message",
+          "login",
+          "response",
+          "login messaging",
+          "login phase",
+          "plugin messaging",
+          "backend message",
+          "login request"
+        ]
       }
     },
     {
@@ -913,8 +1964,26 @@
       "name": "ServerPostConnectEvent",
       "source": "velocity",
       "keywords": {
-        "ja": ["サーバー接続後", "バックエンド", "接続完了"],
-        "en": ["post connect", "backend", "connected"]
+        "ja": [
+          "サーバー接続後",
+          "バックエンド",
+          "接続完了",
+          "接続後処理",
+          "接続成功",
+          "バックエンド接続完了",
+          "サーバー参加後",
+          "接続済み"
+        ],
+        "en": [
+          "post connect",
+          "backend",
+          "connected",
+          "after server connect",
+          "connection success",
+          "backend connected",
+          "after server join",
+          "connected player"
+        ]
       }
     },
     {
@@ -928,8 +1997,26 @@
       "name": "ServerPreConnectEvent",
       "source": "velocity",
       "keywords": {
-        "ja": ["サーバー接続前", "バックエンド", "接続先"],
-        "en": ["pre connect", "backend", "target server"]
+        "ja": [
+          "サーバー接続前",
+          "バックエンド",
+          "接続先",
+          "接続前処理",
+          "サーバー接続試行",
+          "接続先選択",
+          "サーバー参加前",
+          "バックエンド接続前"
+        ],
+        "en": [
+          "pre connect",
+          "backend",
+          "target server",
+          "before server connect",
+          "connection attempt",
+          "select target server",
+          "before server join",
+          "before backend connection"
+        ]
       }
     },
     {
@@ -943,8 +2030,26 @@
       "name": "ServerRegisteredEvent",
       "source": "velocity",
       "keywords": {
-        "ja": ["サーバー登録", "バックエンド", "動的登録"],
-        "en": ["server registration", "backend", "register"]
+        "ja": [
+          "サーバー登録",
+          "バックエンド",
+          "動的登録",
+          "サーバー追加",
+          "接続先登録",
+          "サーバーマップ",
+          "バックエンド追加",
+          "登録完了"
+        ],
+        "en": [
+          "server registration",
+          "backend",
+          "register",
+          "add server",
+          "register backend",
+          "server map",
+          "backend addition",
+          "registration complete"
+        ]
       }
     },
     {
@@ -958,8 +2063,26 @@
       "name": "ServerResourcePackRemoveEvent",
       "source": "velocity",
       "keywords": {
-        "ja": ["リソースパック削除", "リソースパック解除", "全解除"],
-        "en": ["resource pack", "remove", "clear"]
+        "ja": [
+          "リソースパック削除",
+          "リソースパック解除",
+          "全解除",
+          "パック削除",
+          "適用解除",
+          "パック全解除",
+          "ダウンストリーム要求",
+          "リソースパック除去"
+        ],
+        "en": [
+          "resource pack",
+          "remove",
+          "clear",
+          "remove pack",
+          "unapply pack",
+          "clear packs",
+          "downstream request",
+          "resource pack removal"
+        ]
       }
     },
     {
@@ -973,8 +2096,25 @@
       "name": "ServerResourcePackSendEvent",
       "source": "velocity",
       "keywords": {
-        "ja": ["リソースパック送信", "リソースパック要求"],
-        "en": ["resource pack", "send", "request"]
+        "ja": [
+          "リソースパック送信",
+          "リソースパック要求",
+          "パック送信",
+          "パック要求",
+          "クライアントへのパック",
+          "リソースパック配信",
+          "ダウンストリーム送信"
+        ],
+        "en": [
+          "resource pack",
+          "send",
+          "request",
+          "send pack",
+          "pack request",
+          "client resource pack",
+          "resource pack delivery",
+          "downstream send"
+        ]
       }
     },
     {
@@ -988,8 +2128,24 @@
       "name": "ServerSwitchEvent",
       "source": "bungee",
       "keywords": {
-        "ja": ["サーバー移動", "接続先変更"],
-        "en": ["server switch", "server change"]
+        "ja": [
+          "サーバー移動",
+          "接続先変更",
+          "接続先切替",
+          "サーバー切替",
+          "別サーバー",
+          "バックエンド移動",
+          "サーバー変更"
+        ],
+        "en": [
+          "server switch",
+          "server change",
+          "switch server",
+          "change server",
+          "another server",
+          "backend transfer",
+          "server transition"
+        ]
       }
     },
     {
@@ -1003,8 +2159,26 @@
       "name": "ServerUnregisteredEvent",
       "source": "velocity",
       "keywords": {
-        "ja": ["サーバー登録解除", "バックエンド", "削除"],
-        "en": ["server unregister", "backend", "remove"]
+        "ja": [
+          "サーバー登録解除",
+          "バックエンド",
+          "削除",
+          "サーバー削除",
+          "接続先削除",
+          "サーバーマップ",
+          "バックエンド解除",
+          "登録抹消"
+        ],
+        "en": [
+          "server unregister",
+          "backend",
+          "remove",
+          "remove server",
+          "unregister backend",
+          "server map",
+          "backend removal",
+          "registration removal"
+        ]
       }
     },
     {
@@ -1018,8 +2192,26 @@
       "name": "SettingsChangedEvent",
       "source": "bungee",
       "keywords": {
-        "ja": ["クライアント設定", "描画距離", "言語"],
-        "en": ["client settings", "view distance", "locale"]
+        "ja": [
+          "クライアント設定",
+          "描画距離",
+          "言語",
+          "設定変更",
+          "オプション変更",
+          "プレイヤー設定",
+          "設定通知",
+          "クライアントオプション"
+        ],
+        "en": [
+          "client settings",
+          "view distance",
+          "locale",
+          "settings change",
+          "option update",
+          "player preferences",
+          "settings notification",
+          "client options"
+        ]
       }
     },
     {
@@ -1033,8 +2225,26 @@
       "name": "TabCompleteEvent",
       "source": "bungee",
       "keywords": {
-        "ja": ["タブ補完", "コマンド補完", "候補"],
-        "en": ["tab completion", "command", "suggestions"]
+        "ja": [
+          "タブ補完",
+          "コマンド補完",
+          "候補",
+          "入力補完",
+          "オートコンプリート",
+          "補完要求",
+          "入力候補",
+          "コマンド候補"
+        ],
+        "en": [
+          "tab completion",
+          "command",
+          "suggestions",
+          "autocomplete",
+          "completion request",
+          "input suggestions",
+          "command completion",
+          "complete input"
+        ]
       }
     },
     {
@@ -1048,8 +2258,26 @@
       "name": "TabCompleteEvent",
       "source": "velocity",
       "keywords": {
-        "ja": ["タブ補完応答", "旧クライアント", "候補"],
-        "en": ["tab completion", "response", "legacy client"]
+        "ja": [
+          "タブ補完応答",
+          "旧クライアント",
+          "候補",
+          "補完結果",
+          "候補編集",
+          "レガシー補完",
+          "バックエンド応答",
+          "補完転送"
+        ],
+        "en": [
+          "tab completion",
+          "response",
+          "legacy client",
+          "completion results",
+          "edit suggestions",
+          "legacy completion",
+          "backend response",
+          "forward completions"
+        ]
       }
     },
     {
@@ -1063,8 +2291,26 @@
       "name": "TabCompleteResponseEvent",
       "source": "bungee",
       "keywords": {
-        "ja": ["タブ補完応答", "バックエンド", "候補"],
-        "en": ["tab completion", "response", "backend"]
+        "ja": [
+          "タブ補完応答",
+          "バックエンド",
+          "候補",
+          "補完結果",
+          "サーバー補完",
+          "チャット候補",
+          "コマンド候補",
+          "補完要求の応答"
+        ],
+        "en": [
+          "tab completion",
+          "response",
+          "backend",
+          "completion results",
+          "server completion",
+          "chat suggestions",
+          "command suggestions",
+          "completion response"
+        ]
       }
     },
     {
@@ -1079,8 +2325,26 @@
       "name": "TargetedEvent",
       "source": "bungee",
       "keywords": {
-        "ja": ["通信", "送信元", "送信先"],
-        "en": ["communication", "source", "target"]
+        "ja": [
+          "通信",
+          "送信元",
+          "送信先",
+          "ノード間通信",
+          "通信相手",
+          "送信ノード",
+          "受信ノード",
+          "通信イベント"
+        ],
+        "en": [
+          "communication",
+          "source",
+          "target",
+          "node communication",
+          "communication endpoint",
+          "sender",
+          "receiver",
+          "communication event"
+        ]
       }
     }
   ]

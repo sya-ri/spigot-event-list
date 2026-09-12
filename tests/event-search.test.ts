@@ -26,6 +26,29 @@ test("Japanese and English aliases match without depending on display language",
   assert.ok(query(event("TurtleGoHomeEvent"), "帰巣"));
 });
 
+test("expanded everyday phrases find their intended events in either language", async () => {
+  for (const [phrase, name] of [
+    ["掘削", "BlockBreakEvent"],
+    ["オートコンプリート", "AsyncTabCompleteEvent"],
+    ["無操作", "PlayerAFKEvent"],
+    ['"away from keyboard"', "PlayerAFKEvent"],
+    ['"slot swap"', "PlayerPickBlockEvent"],
+    ["入力候補", "AsyncPlayerSendSuggestionsEvent"],
+  ]) {
+    const response = await search(
+      request(phrase, { lang: "en", limit: "100" }),
+    );
+    assert.equal(response.status, 200, phrase);
+    const data = await response.json();
+    assert.ok(
+      data.events.some((e: EventType) => e.name === name),
+      phrase,
+    );
+  }
+  assert.equal(query(event("BlockBreakEvent"), "無操作"), 0);
+  assert.equal(query(event("PlayerAFKEvent"), "掘削"), 0);
+});
+
 test("implicit AND, explicit AND, OR precedence, quoted phrases and literals", () => {
   const e = event("BlockBreakEvent");
   assert.equal(query(e, "採掘 離席"), 0);
@@ -137,7 +160,7 @@ test("every dataset event has actual bilingual descriptions and curated keywords
           label,
         );
         const words = e.keywords?.[lang];
-        assert.ok(words && words.length >= 2, label);
+        assert.ok(words && words.length >= 6, label);
         assert.ok(
           words.every((word) => word.trim() === word && word.length > 0),
           label,
@@ -175,6 +198,30 @@ test("regressions retain accurate event intent and historical distinctions", asy
     old.find((e) => e.name === "VillagerReplenishTradeEvent")!.description.en,
     /maximum uses/,
   );
+  assert.ok(
+    query(
+      old.find((e) => e.name === "VillagerReplenishTradeEvent")!,
+      '"trade limit"',
+    ),
+  );
+  assert.equal(
+    query(
+      old.find((e) => e.name === "VillagerReplenishTradeEvent")!,
+      "リストック",
+    ),
+    0,
+  );
+  const v113 = JSON.parse(
+    await readFile("data/minecraft/1.13.2/events.json", "utf8"),
+  ).events as EventType[];
+  assert.equal(
+    query(
+      v113.find((e) => e.name === "EntityPlaceEvent")!,
+      "ボート",
+    ),
+    0,
+  );
+  assert.ok(query(event("EntityPlaceEvent"), "ボート"));
   const v114 = JSON.parse(
     await readFile("data/minecraft/1.14.4/events.json", "utf8"),
   ).events as EventType[];

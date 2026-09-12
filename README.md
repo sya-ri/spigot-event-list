@@ -77,10 +77,10 @@ Edit the file below and create a [pull request](https://github.com/sya-ri/spigot
 
 ## Description and keyword review
 
-Descriptions and `keywords.ja` / `keywords.en` are edited directly in `data/**/events.json`. The Web app displays related keywords and an expandable Javadoc reference; both API endpoints expose the same metadata. See the [bilingual API reference](skills/spigot-event-search/references/api.md) and [review coverage and sources](docs/event-description-audit.md).
+Descriptions and `keywords.ja` / `keywords.en` are edited directly in `data/**/events.json`. Keywords improve matching in the API and Web search and are included in both API responses. The Web app shows descriptions and expandable Javadoc references; keyword lists are not displayed. See the [bilingual API reference](skills/spigot-event-search/references/api.md) and [review coverage and sources](docs/event-description-audit.md).
 
 The downloader preserves editorial metadata only when the event identity and Javadoc evidence agree. Existing version-specific edits take priority. Missing summaries remain empty instead of copying raw English Javadoc into either language; the original Javadoc is still available for inspection. Annotation-wide defaults are limited to `@Experimental` and `@Beta`.
 
-説明と検索語は `data/**/events.json` を直接編集します。Javadocの内容が異なる版へ説明を自動流用せず、未翻訳欄へ英語原文を自動挿入しません。Web上で説明とJavadocを見比べられます。
+Choose related keywords from the event's documented actions, subjects, and conditions. Include useful synonyms and search phrases in both Japanese and English, while preserving differences between versions.
 
 Run regression checks with `mise exec node@24 -- npm test`, followed by the TypeScript and lint checks documented in `AGENTS.md`.

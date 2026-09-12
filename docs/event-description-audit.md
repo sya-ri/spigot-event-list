@@ -10,6 +10,14 @@ Reviewed the Japanese and English descriptions against the stored Javadoc for al
 
 Short, accurate definitions may retain conventional wording shared with Javadoc. Long copied passages, markup in summaries, untranslated Japanese fields, and semantic or timing mismatches were corrected. Raw Javadoc remains separate reference material.
 
+## Expanded search vocabulary
+
+Each record now has 7–10 keywords per language, up from 2–5. The expansion covers all 592 identities and 18,036 records, using documented subjects and actions, everyday synonyms, and useful multiword search phrases. For example, BlockBreakEvent includes `掘削` and `break blocks`, PlayerAFKEvent includes `無操作` and `away from keyboard`, and tab-completion events include `オートコンプリート` and `autocomplete`.
+
+The keyword counts across all version snapshots increased from 52,660 to 142,918 in Japanese and from 51,488 to 141,753 in English. Existing descriptions and reference links are unchanged by this vocabulary expansion. Keywords remain in the event JSON files; no runtime synonym or override table is required. They are available in API responses and used for Web search, but are not displayed on event cards.
+
+Historical keywords follow the corresponding Javadoc: EntityPlaceEvent has no boat keyword in 1.13.2–1.15, where only armor stands, minecarts, and end crystals are documented. Older VillagerReplenishTradeEvent snapshots use trade-limit and maximum-use vocabulary rather than the newer restocking terminology.
+
 ## 主な訂正 / Notable corrections
 
 | Event                       | Correction / 訂正                                                                                                        |

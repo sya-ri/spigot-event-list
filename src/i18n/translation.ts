@@ -11,7 +11,6 @@ type Message = {
   AiSkillTitle: string;
   AiSkillClose: string;
   AiSkillCopied: string;
-  Keywords: string;
   CompareJavadoc: string;
   OpenJavadoc: string;
   NoJavadoc: string;
@@ -30,7 +29,6 @@ export const messages: Record<Locale, Message> = {
     AiSkillTitle: "Event search skill for agents",
     AiSkillClose: "Close",
     AiSkillCopied: "Copied",
-    Keywords: "Related keywords",
     CompareJavadoc: "Compare with Javadoc",
     OpenJavadoc: "Open reference documentation",
     NoJavadoc:
@@ -49,7 +47,6 @@ export const messages: Record<Locale, Message> = {
     AiSkillTitle: "エージェント向けイベント検索スキル",
     AiSkillClose: "閉じる",
     AiSkillCopied: "コピー済み",
-    Keywords: "関連キーワード",
     CompareJavadoc: "Javadoc と見比べる",
     OpenJavadoc: "参照ドキュメントを開く",
     NoJavadoc:

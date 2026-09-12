@@ -12,8 +12,26 @@
       "name": "AreaEffectCloudApplyEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["残留ポーション", "範囲効果", "効果付与"],
-        "en": ["lingering potion", "area effect", "potion effect"]
+        "ja": [
+          "残留ポーション",
+          "範囲効果",
+          "効果付与",
+          "エリアエフェクトクラウド",
+          "効果雲",
+          "ポーション適用",
+          "ステータス効果",
+          "定期適用"
+        ],
+        "en": [
+          "lingering potion",
+          "area effect",
+          "potion effect",
+          "effect cloud",
+          "status effect",
+          "apply effects",
+          "cloud effect",
+          "periodic application"
+        ]
       }
     },
     {
@@ -27,8 +45,26 @@
       "name": "AsyncPlayerChatEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["チャット", "発言", "非同期"],
-        "en": ["chat", "message", "asynchronous"]
+        "ja": [
+          "チャット",
+          "発言",
+          "非同期",
+          "会話",
+          "チャット送信",
+          "プレイヤー発言",
+          "受信パケット",
+          "同期チャット"
+        ],
+        "en": [
+          "chat",
+          "message",
+          "asynchronous",
+          "conversation",
+          "send chat",
+          "player message",
+          "incoming packet",
+          "synchronous chat"
+        ]
       }
     },
     {
@@ -42,8 +78,26 @@
       "name": "AsyncPlayerPreLoginEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["ログイン", "接続前", "非同期"],
-        "en": ["login", "prelogin", "authentication"]
+        "ja": [
+          "ログイン",
+          "接続前",
+          "非同期",
+          "ログイン前",
+          "参加前",
+          "接続審査",
+          "非同期ログイン",
+          "プレイヤー認証"
+        ],
+        "en": [
+          "login",
+          "prelogin",
+          "authentication",
+          "before login",
+          "player authentication",
+          "async prelogin",
+          "login attempt",
+          "connection check"
+        ]
       }
     },
     {
@@ -57,8 +111,26 @@
       "name": "BeaconEffectEvent",
       "source": "paper",
       "keywords": {
-        "ja": ["ビーコン", "効果付与", "ポーション効果"],
-        "en": ["beacon", "effect", "potion"]
+        "ja": [
+          "ビーコン",
+          "効果付与",
+          "ポーション効果",
+          "ビーコン効果",
+          "プレイヤー効果",
+          "バフ",
+          "ステータス効果",
+          "効果適用"
+        ],
+        "en": [
+          "beacon",
+          "effect",
+          "potion",
+          "beacon buff",
+          "player effect",
+          "status effect",
+          "apply effect",
+          "beacon power"
+        ]
       }
     },
     {
@@ -72,8 +144,28 @@
       "name": "BlockBreakEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["ブロック破壊", "採掘", "掘る"],
-        "en": ["block break", "mining", "dig"]
+        "ja": [
+          "ブロック破壊",
+          "採掘",
+          "掘る",
+          "掘削",
+          "壊す",
+          "ブロックを壊す",
+          "プレイヤーによる破壊",
+          "採鉱",
+          "経験値ドロップ"
+        ],
+        "en": [
+          "block break",
+          "mining",
+          "dig",
+          "excavation",
+          "digging",
+          "break blocks",
+          "player block breaking",
+          "mine block",
+          "experience drops"
+        ]
       }
     },
     {
@@ -87,8 +179,26 @@
       "name": "BlockBurnEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["燃焼", "焼失", "ブロック破壊"],
-        "en": ["burn", "fire", "destruction"]
+        "ja": [
+          "燃焼",
+          "焼失",
+          "ブロック破壊",
+          "燃える",
+          "燃え尽きる",
+          "火災",
+          "焼却",
+          "火による破壊"
+        ],
+        "en": [
+          "burn",
+          "fire",
+          "destruction",
+          "burning block",
+          "burn down",
+          "fire damage",
+          "burnt block",
+          "fire destruction"
+        ]
       }
     },
     {
@@ -102,8 +212,26 @@
       "name": "BlockCanBuildEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["ブロック設置", "建築", "設置可否"],
-        "en": ["block placement", "build", "placement check"]
+        "ja": [
+          "ブロック設置",
+          "建築",
+          "設置可否",
+          "建設",
+          "配置判定",
+          "設置チェック",
+          "ブロックを置く",
+          "設置可能"
+        ],
+        "en": [
+          "block placement",
+          "build",
+          "placement check",
+          "can place",
+          "can build",
+          "placement validation",
+          "build check",
+          "place block"
+        ]
       }
     },
     {
@@ -117,8 +245,26 @@
       "name": "BlockDamageEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["採掘", "掘る", "ブロック損傷"],
-        "en": ["mining", "dig", "block damage"]
+        "ja": [
+          "採掘",
+          "掘る",
+          "ブロック損傷",
+          "掘削",
+          "採掘動作",
+          "ブロックを叩く",
+          "壊し始め",
+          "ブロックダメージ"
+        ],
+        "en": [
+          "mining",
+          "dig",
+          "block damage",
+          "digging",
+          "damage block",
+          "hit block",
+          "block breaking",
+          "player mining"
+        ]
       }
     },
     {
@@ -132,8 +278,26 @@
       "name": "BlockDispenseEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["ディスペンサー", "射出", "排出"],
-        "en": ["dispenser", "dispense", "eject"]
+        "ja": [
+          "ディスペンサー",
+          "射出",
+          "排出",
+          "アイテム排出",
+          "アイテム射出",
+          "吐き出し",
+          "発射装置",
+          "射出アイテム"
+        ],
+        "en": [
+          "dispenser",
+          "dispense",
+          "eject",
+          "dispense item",
+          "item ejection",
+          "item dispensing",
+          "dispenser output",
+          "ejected item"
+        ]
       }
     },
     {
@@ -148,8 +312,24 @@
       "name": "BlockEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["ブロック", "基底クラス"],
-        "en": ["block", "base class"]
+        "ja": [
+          "ブロック",
+          "基底クラス",
+          "ブロックイベント",
+          "ブロック関連",
+          "基底イベント",
+          "親クラス",
+          "ブロック処理"
+        ],
+        "en": [
+          "block",
+          "base class",
+          "block event",
+          "block-related event",
+          "parent class",
+          "base event",
+          "block interaction"
+        ]
       }
     },
     {
@@ -163,8 +343,26 @@
       "name": "BlockExpEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["経験値", "経験値ドロップ", "ブロック"],
-        "en": ["experience", "xp", "block"]
+        "ja": [
+          "経験値",
+          "経験値ドロップ",
+          "ブロック",
+          "XP",
+          "経験値量",
+          "経験値排出",
+          "経験値報酬",
+          "経験値を落とす"
+        ],
+        "en": [
+          "experience",
+          "xp",
+          "block",
+          "experience drop",
+          "xp drop",
+          "experience amount",
+          "block experience",
+          "experience reward"
+        ]
       }
     },
     {
@@ -178,8 +376,26 @@
       "name": "BlockExplodeEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["爆発", "爆破", "ブロック状態"],
-        "en": ["explosion", "blast", "block state"]
+        "ja": [
+          "爆発",
+          "爆破",
+          "ブロック状態",
+          "ブロック爆発",
+          "爆風",
+          "爆発源",
+          "爆発処理",
+          "爆発するブロック"
+        ],
+        "en": [
+          "explosion",
+          "blast",
+          "block state",
+          "block explosion",
+          "exploding block",
+          "blast source",
+          "explosion damage",
+          "block blast"
+        ]
       }
     },
     {
@@ -193,8 +409,27 @@
       "name": "BlockFadeEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["融解", "消滅", "氷", "雪"],
-        "en": ["fade", "melt", "disappear"]
+        "ja": [
+          "融解",
+          "消滅",
+          "氷",
+          "雪",
+          "溶ける",
+          "消える",
+          "雪解け",
+          "氷解",
+          "自然消滅"
+        ],
+        "en": [
+          "fade",
+          "melt",
+          "disappear",
+          "melting",
+          "block fading",
+          "ice melt",
+          "snow melt",
+          "natural disappearance"
+        ]
       }
     },
     {
@@ -208,8 +443,26 @@
       "name": "BlockFormEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["ブロック形成", "氷", "黒曜石"],
-        "en": ["block formation", "ice", "obsidian"]
+        "ja": [
+          "ブロック形成",
+          "氷",
+          "黒曜石",
+          "自然形成",
+          "ブロック生成",
+          "氷結",
+          "形成処理",
+          "自然変化"
+        ],
+        "en": [
+          "block formation",
+          "ice",
+          "obsidian",
+          "natural formation",
+          "form block",
+          "block creation",
+          "world conditions",
+          "ice formation"
+        ]
       }
     },
     {
@@ -223,8 +476,27 @@
       "name": "BlockFromToEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["水流", "溶岩流", "ドラゴンの卵"],
-        "en": ["liquid flow", "water", "lava", "dragon egg"]
+        "ja": [
+          "水流",
+          "溶岩流",
+          "ドラゴンの卵",
+          "流体",
+          "液体移動",
+          "流れる",
+          "流入",
+          "卵のテレポート"
+        ],
+        "en": [
+          "liquid flow",
+          "water",
+          "lava",
+          "dragon egg",
+          "fluid flow",
+          "flowing liquid",
+          "source block",
+          "destination block",
+          "egg teleportation"
+        ]
       }
     },
     {
@@ -238,8 +510,26 @@
       "name": "BlockGrowEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["作物", "自然成長", "農業"],
-        "en": ["crop", "natural growth", "farming"]
+        "ja": [
+          "作物",
+          "自然成長",
+          "農業",
+          "作物成長",
+          "育つ",
+          "生育",
+          "栽培",
+          "成長段階"
+        ],
+        "en": [
+          "crop",
+          "natural growth",
+          "farming",
+          "crop growth",
+          "growing plants",
+          "plant growth",
+          "cultivation",
+          "growth stage"
+        ]
       }
     },
     {
@@ -253,8 +543,26 @@
       "name": "BlockIgniteEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["着火", "発火", "火"],
-        "en": ["ignite", "fire", "ignition"]
+        "ja": [
+          "着火",
+          "発火",
+          "火",
+          "点火",
+          "火が付く",
+          "燃え始め",
+          "ブロック着火",
+          "火の発生"
+        ],
+        "en": [
+          "ignite",
+          "fire",
+          "ignition",
+          "set on fire",
+          "block ignition",
+          "catch fire",
+          "ignite block",
+          "fire start"
+        ]
       }
     },
     {
@@ -268,8 +576,26 @@
       "name": "BlockMultiPlaceEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["複数ブロック設置", "ベッド", "建築"],
-        "en": ["multiple block placement", "bed", "build"]
+        "ja": [
+          "複数ブロック設置",
+          "ベッド",
+          "建築",
+          "まとめて設置",
+          "複数配置",
+          "マルチブロック",
+          "ベッド設置",
+          "連動設置"
+        ],
+        "en": [
+          "multiple block placement",
+          "bed",
+          "build",
+          "multi-block placement",
+          "place bed",
+          "combined placement",
+          "multiple blocks",
+          "single placement action"
+        ]
       }
     },
     {
@@ -283,8 +609,26 @@
       "name": "BlockPhysicsEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["物理更新", "隣接ブロック", "支持ブロック"],
-        "en": ["physics", "neighbor update", "block support"]
+        "ja": [
+          "物理更新",
+          "隣接ブロック",
+          "支持ブロック",
+          "ブロック更新",
+          "物理演算",
+          "周辺更新",
+          "接地判定",
+          "隣接更新"
+        ],
+        "en": [
+          "physics",
+          "neighbor update",
+          "block support",
+          "block physics",
+          "physics check",
+          "adjacent block",
+          "neighbor check",
+          "block update"
+        ]
       }
     },
     {
@@ -299,8 +643,24 @@
       "name": "BlockPistonEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["ピストン", "作動"],
-        "en": ["piston", "trigger"]
+        "ja": [
+          "ピストン",
+          "作動",
+          "ピストン動作",
+          "ピストン作動",
+          "作動開始",
+          "駆動",
+          "可動ブロック"
+        ],
+        "en": [
+          "piston",
+          "trigger",
+          "piston movement",
+          "piston activation",
+          "piston action",
+          "moving piston",
+          "activate piston"
+        ]
       }
     },
     {
@@ -314,8 +674,26 @@
       "name": "BlockPistonExtendEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["ピストン", "伸長", "押す"],
-        "en": ["piston", "extend", "push"]
+        "ja": [
+          "ピストン",
+          "伸長",
+          "押す",
+          "ピストン伸長",
+          "押し出し",
+          "押し伸ばす",
+          "ブロック移動",
+          "ピストン動作"
+        ],
+        "en": [
+          "piston",
+          "extend",
+          "push",
+          "piston extension",
+          "push block",
+          "extend piston",
+          "piston pushing",
+          "block movement"
+        ]
       }
     },
     {
@@ -329,8 +707,26 @@
       "name": "BlockPistonRetractEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["ピストン", "収縮", "引く"],
-        "en": ["piston", "retract", "pull"]
+        "ja": [
+          "ピストン",
+          "収縮",
+          "引く",
+          "ピストン収縮",
+          "引き戻し",
+          "引き寄せ",
+          "ブロック移動",
+          "ピストン動作"
+        ],
+        "en": [
+          "piston",
+          "retract",
+          "pull",
+          "piston retraction",
+          "pull block",
+          "retract piston",
+          "piston pulling",
+          "block movement"
+        ]
       }
     },
     {
@@ -344,8 +740,26 @@
       "name": "BlockPlaceEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["設置", "建築", "ブロック配置"],
-        "en": ["place", "build", "block placement"]
+        "ja": [
+          "設置",
+          "建築",
+          "ブロック配置",
+          "建設",
+          "ブロックを置く",
+          "ブロック設置",
+          "プレイヤーによる配置",
+          "建造"
+        ],
+        "en": [
+          "place",
+          "build",
+          "block placement",
+          "construction",
+          "place blocks",
+          "building",
+          "player placement",
+          "block building"
+        ]
       }
     },
     {
@@ -359,8 +773,26 @@
       "name": "BlockRedstoneEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["レッドストーン", "信号強度", "動力"],
-        "en": ["redstone", "signal", "power"]
+        "ja": [
+          "レッドストーン",
+          "信号強度",
+          "動力",
+          "赤石回路",
+          "回路",
+          "信号変化",
+          "電流",
+          "出力強度"
+        ],
+        "en": [
+          "redstone",
+          "signal",
+          "power",
+          "circuit",
+          "current",
+          "signal strength",
+          "redstone power",
+          "power change"
+        ]
       }
     },
     {
@@ -374,8 +806,26 @@
       "name": "BlockSpreadEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["延焼", "キノコ", "拡散"],
-        "en": ["spread", "fire", "mushroom"]
+        "ja": [
+          "延焼",
+          "キノコ",
+          "拡散",
+          "広がる",
+          "伝播",
+          "増殖",
+          "火の広がり",
+          "ブロック拡散"
+        ],
+        "en": [
+          "spread",
+          "fire",
+          "mushroom",
+          "propagation",
+          "spreading block",
+          "fire spread",
+          "mushroom spread",
+          "block propagation"
+        ]
       }
     },
     {
@@ -389,8 +839,26 @@
       "name": "BrewEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["醸造", "ポーション", "完成"],
-        "en": ["brewing", "potion", "complete"]
+        "ja": [
+          "醸造",
+          "ポーション",
+          "完成",
+          "醸造完了",
+          "醸造台",
+          "調合",
+          "出来上がり",
+          "ポーション完成"
+        ],
+        "en": [
+          "brewing",
+          "potion",
+          "complete",
+          "brew completion",
+          "brewing stand",
+          "finished potion",
+          "potion brewing",
+          "brewing result"
+        ]
       }
     },
     {
@@ -404,8 +872,26 @@
       "name": "BrewingStandFuelEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["醸造台", "燃料", "補充"],
-        "en": ["brewing stand", "fuel", "refill"]
+        "ja": [
+          "醸造台",
+          "燃料",
+          "補充",
+          "燃料追加",
+          "燃料消費",
+          "醸造燃料",
+          "燃料レベル",
+          "補給"
+        ],
+        "en": [
+          "brewing stand",
+          "fuel",
+          "refill",
+          "add fuel",
+          "fuel consumption",
+          "brewing fuel",
+          "fuel level",
+          "fuel supply"
+        ]
       }
     },
     {
@@ -419,8 +905,26 @@
       "name": "BroadcastMessageEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["全体通知", "ブロードキャスト", "メッセージ"],
-        "en": ["broadcast", "announcement", "message"]
+        "ja": [
+          "全体通知",
+          "ブロードキャスト",
+          "メッセージ",
+          "一斉送信",
+          "全体メッセージ",
+          "サーバー通知",
+          "アナウンス",
+          "告知"
+        ],
+        "en": [
+          "broadcast",
+          "announcement",
+          "message",
+          "server message",
+          "global message",
+          "broadcast message",
+          "send announcement",
+          "server announcement"
+        ]
       }
     },
     {
@@ -433,8 +937,26 @@
       "name": "CauldronLevelChangeEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["大釜", "水位", "内容量"],
-        "en": ["cauldron", "level", "contents"]
+        "ja": [
+          "大釜",
+          "水位",
+          "内容量",
+          "大釜の中身",
+          "液面",
+          "充填",
+          "水量",
+          "状態変更"
+        ],
+        "en": [
+          "cauldron",
+          "level",
+          "contents",
+          "cauldron contents",
+          "fluid level",
+          "fill level",
+          "contents change",
+          "cauldron state"
+        ]
       }
     },
     {
@@ -449,8 +971,24 @@
       "name": "ChunkEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["チャンク", "基底クラス"],
-        "en": ["chunk", "base class"]
+        "ja": [
+          "チャンク",
+          "基底クラス",
+          "チャンクイベント",
+          "チャンク関連",
+          "親クラス",
+          "基底イベント",
+          "区画"
+        ],
+        "en": [
+          "chunk",
+          "base class",
+          "chunk event",
+          "chunk-related event",
+          "parent class",
+          "base event",
+          "world chunk"
+        ]
       }
     },
     {
@@ -464,8 +1002,25 @@
       "name": "ChunkLoadEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["チャンク", "読み込み", "ロード"],
-        "en": ["chunk", "load"]
+        "ja": [
+          "チャンク",
+          "読み込み",
+          "ロード",
+          "チャンクロード",
+          "チャンク読込",
+          "地形読み込み",
+          "読み込み完了",
+          "区画読み込み"
+        ],
+        "en": [
+          "chunk",
+          "load",
+          "load chunk",
+          "chunk loading",
+          "loaded chunk",
+          "terrain loading",
+          "chunk availability"
+        ]
       }
     },
     {
@@ -479,8 +1034,26 @@
       "name": "ChunkPopulateEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["チャンク", "生成完了", "地形生成"],
-        "en": ["chunk", "population", "generation"]
+        "ja": [
+          "チャンク",
+          "生成完了",
+          "地形生成",
+          "チャンク装飾",
+          "生成後処理",
+          "地形装飾",
+          "装飾完了",
+          "新規チャンク"
+        ],
+        "en": [
+          "chunk",
+          "population",
+          "generation",
+          "chunk decoration",
+          "populate chunk",
+          "post-generation",
+          "terrain decoration",
+          "new chunk"
+        ]
       }
     },
     {
@@ -494,8 +1067,25 @@
       "name": "ChunkUnloadEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["チャンク", "アンロード", "解放"],
-        "en": ["chunk", "unload"]
+        "ja": [
+          "チャンク",
+          "アンロード",
+          "解放",
+          "チャンク解放",
+          "地形解放",
+          "読み込み解除",
+          "アンロード処理",
+          "区画解放"
+        ],
+        "en": [
+          "chunk",
+          "unload",
+          "unload chunk",
+          "chunk unloading",
+          "unloaded chunk",
+          "release chunk",
+          "terrain unloading"
+        ]
       }
     },
     {
@@ -509,8 +1099,26 @@
       "name": "CraftItemEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["クラフト", "作業台", "レシピ"],
-        "en": ["craft", "crafting table", "recipe"]
+        "ja": [
+          "クラフト",
+          "作業台",
+          "レシピ",
+          "アイテム製作",
+          "合成",
+          "製作完了",
+          "アイテム作成",
+          "クラフト結果"
+        ],
+        "en": [
+          "craft",
+          "crafting table",
+          "recipe",
+          "craft item",
+          "item crafting",
+          "recipe completion",
+          "crafting result",
+          "item creation"
+        ]
       }
     },
     {
@@ -524,8 +1132,25 @@
       "name": "CreatureSpawnEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["スポーン", "出現", "生物"],
-        "en": ["spawn", "creature"]
+        "ja": [
+          "スポーン",
+          "出現",
+          "生物",
+          "モブスポーン",
+          "モブ出現",
+          "生物出現",
+          "スポーン処理",
+          "ワールドへの出現"
+        ],
+        "en": [
+          "spawn",
+          "creature",
+          "mob spawn",
+          "creature spawning",
+          "spawn creature",
+          "mob appearance",
+          "world spawn"
+        ]
       }
     },
     {
@@ -539,8 +1164,26 @@
       "name": "CreeperPowerEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["クリーパー", "帯電", "落雷"],
-        "en": ["creeper", "charged", "lightning"]
+        "ja": [
+          "クリーパー",
+          "帯電",
+          "落雷",
+          "帯電クリーパー",
+          "雷",
+          "雷撃",
+          "クリーパー強化",
+          "落雷による帯電"
+        ],
+        "en": [
+          "creeper",
+          "charged",
+          "lightning",
+          "charged creeper",
+          "lightning strike",
+          "creeper power",
+          "electrified creeper",
+          "creeper charging"
+        ]
       }
     },
     {
@@ -554,8 +1197,25 @@
       "name": "EnchantItemEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["エンチャント", "エンチャントテーブル", "付与"],
-        "en": ["enchant", "enchanting table"]
+        "ja": [
+          "エンチャント",
+          "エンチャントテーブル",
+          "付与",
+          "付呪",
+          "魔法付与",
+          "エンチャント成功",
+          "アイテム強化",
+          "付与完了"
+        ],
+        "en": [
+          "enchant",
+          "enchanting table",
+          "enchantment",
+          "item enchanting",
+          "apply enchantment",
+          "enchant item",
+          "enchanting result"
+        ]
       }
     },
     {
@@ -569,8 +1229,26 @@
       "name": "EnderDragonChangePhaseEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["エンダードラゴン", "行動フェーズ", "変化"],
-        "en": ["ender dragon", "phase", "controller"]
+        "ja": [
+          "エンダードラゴン",
+          "行動フェーズ",
+          "変化",
+          "ドラゴン行動",
+          "フェーズ切替",
+          "行動変更",
+          "ドラゴン制御",
+          "行動状態"
+        ],
+        "en": [
+          "ender dragon",
+          "phase",
+          "controller",
+          "dragon behavior",
+          "phase transition",
+          "controller phase",
+          "behavior change",
+          "dragon state"
+        ]
       }
     },
     {
@@ -584,8 +1262,26 @@
       "name": "EntityAddToWorldEvent",
       "source": "paper",
       "keywords": {
-        "ja": ["エンティティ追加", "ワールド", "チャンク読み込み"],
-        "en": ["entity", "world", "chunk load"]
+        "ja": [
+          "エンティティ追加",
+          "ワールド",
+          "チャンク読み込み",
+          "ワールド追加",
+          "エンティティ登録",
+          "エンティティロード",
+          "追加処理",
+          "ワールド参加"
+        ],
+        "en": [
+          "entity",
+          "world",
+          "chunk load",
+          "add entity",
+          "world insertion",
+          "entity registration",
+          "entity loading",
+          "added to world"
+        ]
       }
     },
     {
@@ -599,8 +1295,26 @@
       "name": "EntityAirChangeEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["酸素", "空気", "呼吸"],
-        "en": ["air", "oxygen", "breathing"]
+        "ja": [
+          "酸素",
+          "空気",
+          "呼吸",
+          "残り酸素",
+          "酸素ゲージ",
+          "息",
+          "空気量",
+          "呼吸残量"
+        ],
+        "en": [
+          "air",
+          "oxygen",
+          "breathing",
+          "remaining air",
+          "air supply",
+          "oxygen level",
+          "breath",
+          "air change"
+        ]
       }
     },
     {
@@ -614,8 +1328,26 @@
       "name": "EntityBlockFormEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["スノーゴーレム", "氷渡り", "ブロック形成"],
-        "en": ["snow golem", "frost walker", "block formation"]
+        "ja": [
+          "スノーゴーレム",
+          "氷渡り",
+          "ブロック形成",
+          "雪の生成",
+          "薄氷",
+          "氷の生成",
+          "エンティティによる形成",
+          "足元のブロック"
+        ],
+        "en": [
+          "snow golem",
+          "frost walker",
+          "block formation",
+          "snow formation",
+          "frosted ice",
+          "entity block formation",
+          "create snow",
+          "freeze water"
+        ]
       }
     },
     {
@@ -629,8 +1361,26 @@
       "name": "EntityBreakDoorEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["ドア破壊", "扉", "エンティティ"],
-        "en": ["door", "break", "entity"]
+        "ja": [
+          "ドア破壊",
+          "扉",
+          "エンティティ",
+          "扉破壊",
+          "ドアを壊す",
+          "扉を壊す",
+          "ドア損壊",
+          "破壊延期"
+        ],
+        "en": [
+          "door",
+          "break",
+          "entity",
+          "break door",
+          "door destruction",
+          "destroy door",
+          "door breaking",
+          "delayed break"
+        ]
       }
     },
     {
@@ -644,8 +1394,26 @@
       "name": "EntityBreedEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["繁殖", "交配", "生物"],
-        "en": ["breed", "breeding", "creature"]
+        "ja": [
+          "繁殖",
+          "交配",
+          "生物",
+          "繁殖処理",
+          "子供",
+          "親",
+          "交配成立",
+          "つがい"
+        ],
+        "en": [
+          "breed",
+          "breeding",
+          "creature",
+          "mating",
+          "offspring",
+          "parent",
+          "breed entities",
+          "animal breeding"
+        ]
       }
     },
     {
@@ -659,8 +1427,25 @@
       "name": "EntityChangeBlockEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["ブロック変更", "エンティティ", "地形変更"],
-        "en": ["block change", "entity"]
+        "ja": [
+          "ブロック変更",
+          "エンティティ",
+          "地形変更",
+          "地形改変",
+          "ブロック変化",
+          "ブロック置換",
+          "エンティティ操作",
+          "環境変化"
+        ],
+        "en": [
+          "block change",
+          "entity",
+          "terrain change",
+          "modify block",
+          "block modification",
+          "entity interaction",
+          "replace block"
+        ]
       }
     },
     {
@@ -674,8 +1459,26 @@
       "name": "EntityCombustByBlockEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["着火", "燃焼", "ブロック"],
-        "en": ["combust", "burn", "block"]
+        "ja": [
+          "着火",
+          "燃焼",
+          "ブロック",
+          "ブロック着火",
+          "火が付く",
+          "炎上原因",
+          "燃え始め",
+          "エンティティ燃焼"
+        ],
+        "en": [
+          "combust",
+          "burn",
+          "block",
+          "block combustion",
+          "catch fire",
+          "block ignition source",
+          "burning entity",
+          "ignite entity"
+        ]
       }
     },
     {
@@ -689,8 +1492,26 @@
       "name": "EntityCombustByEntityEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["着火", "燃焼", "エンティティ"],
-        "en": ["combust", "burn", "entity"]
+        "ja": [
+          "着火",
+          "燃焼",
+          "エンティティ",
+          "他者による着火",
+          "火が付く",
+          "炎上原因",
+          "燃え始め",
+          "エンティティ燃焼"
+        ],
+        "en": [
+          "combust",
+          "burn",
+          "entity",
+          "entity combustion",
+          "catch fire",
+          "entity ignition source",
+          "burning entity",
+          "ignite another entity"
+        ]
       }
     },
     {
@@ -704,8 +1525,26 @@
       "name": "EntityCombustEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["燃焼", "炎上", "着火"],
-        "en": ["combust", "burn", "ignite"]
+        "ja": [
+          "燃焼",
+          "炎上",
+          "着火",
+          "火が付く",
+          "燃え始め",
+          "炎上開始",
+          "燃える",
+          "エンティティ燃焼"
+        ],
+        "en": [
+          "combust",
+          "burn",
+          "ignite",
+          "catch fire",
+          "burning entity",
+          "combustion",
+          "entity ignition",
+          "start burning"
+        ]
       }
     },
     {
@@ -719,8 +1558,26 @@
       "name": "EntityCreatePortalEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["ポータル生成", "生物", "ワールド"],
-        "en": ["portal", "create", "living entity"]
+        "ja": [
+          "ポータル生成",
+          "生物",
+          "ワールド",
+          "ポータル作成",
+          "ゲート生成",
+          "ポータル形成",
+          "エンティティによる生成",
+          "異世界ゲート"
+        ],
+        "en": [
+          "portal",
+          "create",
+          "living entity",
+          "create portal",
+          "portal generation",
+          "portal formation",
+          "entity portal creation",
+          "world portal"
+        ]
       }
     },
     {
@@ -734,8 +1591,26 @@
       "name": "EntityDamageByBlockEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["ダメージ", "ブロック", "被害"],
-        "en": ["damage", "block", "hurt"]
+        "ja": [
+          "ダメージ",
+          "ブロック",
+          "被害",
+          "ブロックダメージ",
+          "被ダメージ",
+          "傷害",
+          "体力減少",
+          "ブロックによる被害"
+        ],
+        "en": [
+          "damage",
+          "block",
+          "hurt",
+          "block damage",
+          "damage source",
+          "take damage",
+          "health loss",
+          "damaged entity"
+        ]
       }
     },
     {
@@ -749,8 +1624,26 @@
       "name": "EntityDamageByEntityEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["ダメージ", "攻撃", "戦闘"],
-        "en": ["damage", "attack", "combat"]
+        "ja": [
+          "ダメージ",
+          "攻撃",
+          "戦闘",
+          "被ダメージ",
+          "加害者",
+          "被害者",
+          "攻撃ダメージ",
+          "殴る"
+        ],
+        "en": [
+          "damage",
+          "attack",
+          "combat",
+          "entity damage",
+          "attacker",
+          "victim",
+          "attack damage",
+          "hit entity"
+        ]
       }
     },
     {
@@ -764,8 +1657,26 @@
       "name": "EntityDamageEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["ダメージ", "体力", "被害"],
-        "en": ["damage", "health", "hurt"]
+        "ja": [
+          "ダメージ",
+          "体力",
+          "被害",
+          "被ダメージ",
+          "負傷",
+          "体力減少",
+          "ダメージ処理",
+          "ダメージ原因"
+        ],
+        "en": [
+          "damage",
+          "health",
+          "hurt",
+          "take damage",
+          "injury",
+          "health loss",
+          "damage cause",
+          "entity damage"
+        ]
       }
     },
     {
@@ -779,8 +1690,26 @@
       "name": "EntityDeathEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["死亡", "倒す", "生物"],
-        "en": ["death", "kill", "living entity"]
+        "ja": [
+          "死亡",
+          "倒す",
+          "生物",
+          "死ぬ",
+          "討伐",
+          "死亡処理",
+          "倒れる",
+          "キル"
+        ],
+        "en": [
+          "death",
+          "kill",
+          "living entity",
+          "entity death",
+          "dying",
+          "slain entity",
+          "death handling",
+          "mob death"
+        ]
       }
     },
     {
@@ -794,8 +1723,26 @@
       "name": "EntityDismountEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["降りる", "下車", "騎乗解除"],
-        "en": ["dismount", "unmount", "stop riding"]
+        "ja": [
+          "降りる",
+          "下車",
+          "騎乗解除",
+          "乗り物から降りる",
+          "騎乗終了",
+          "降車",
+          "降りる操作",
+          "騎乗者"
+        ],
+        "en": [
+          "dismount",
+          "unmount",
+          "stop riding",
+          "stop mounting",
+          "leave mount",
+          "rider",
+          "vehicle exit",
+          "dismount entity"
+        ]
       }
     },
     {
@@ -810,8 +1757,24 @@
       "name": "EntityEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["エンティティ", "基底クラス"],
-        "en": ["entity", "base class"]
+        "ja": [
+          "エンティティ",
+          "基底クラス",
+          "エンティティイベント",
+          "エンティティ関連",
+          "基底イベント",
+          "親クラス",
+          "エンティティ処理"
+        ],
+        "en": [
+          "entity",
+          "base class",
+          "entity event",
+          "entity-related event",
+          "base event",
+          "parent class",
+          "entity handling"
+        ]
       }
     },
     {
@@ -825,8 +1788,26 @@
       "name": "EntityExplodeEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["爆発", "爆破", "エンティティ"],
-        "en": ["explosion", "blast", "entity"]
+        "ja": [
+          "爆発",
+          "爆破",
+          "エンティティ",
+          "エンティティ爆発",
+          "爆風",
+          "爆発源",
+          "爆発処理",
+          "爆発するエンティティ"
+        ],
+        "en": [
+          "explosion",
+          "blast",
+          "entity",
+          "entity explosion",
+          "exploding entity",
+          "blast source",
+          "explosion damage",
+          "entity blast"
+        ]
       }
     },
     {
@@ -840,8 +1821,26 @@
       "name": "EntityInteractEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["相互作用", "ブロック操作", "エンティティ"],
-        "en": ["interact", "interaction", "block"]
+        "ja": [
+          "相互作用",
+          "ブロック操作",
+          "エンティティ",
+          "ブロック接触",
+          "エンティティの作用",
+          "ブロックへの干渉",
+          "操作対象",
+          "ブロック反応"
+        ],
+        "en": [
+          "interact",
+          "interaction",
+          "block",
+          "interact with block",
+          "entity block interaction",
+          "block contact",
+          "block interaction",
+          "interaction target"
+        ]
       }
     },
     {
@@ -855,8 +1854,26 @@
       "name": "EntityMountEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["乗る", "騎乗", "乗車"],
-        "en": ["mount", "ride", "riding"]
+        "ja": [
+          "乗る",
+          "騎乗",
+          "乗車",
+          "乗り物に乗る",
+          "騎乗開始",
+          "乗り込む",
+          "騎乗者",
+          "乗車試行"
+        ],
+        "en": [
+          "mount",
+          "ride",
+          "riding",
+          "start riding",
+          "mount entity",
+          "rider",
+          "board vehicle",
+          "mount attempt"
+        ]
       }
     },
     {
@@ -870,8 +1887,26 @@
       "name": "EntityPathfindEvent",
       "source": "paper",
       "keywords": {
-        "ja": ["経路探索", "移動先", "経路"],
-        "en": ["pathfinding", "destination", "path"]
+        "ja": [
+          "経路探索",
+          "移動先",
+          "経路",
+          "パス探索",
+          "経路決定",
+          "目的地",
+          "移動開始",
+          "ナビゲーション"
+        ],
+        "en": [
+          "pathfinding",
+          "destination",
+          "path",
+          "navigation",
+          "route planning",
+          "path search",
+          "movement decision",
+          "travel destination"
+        ]
       }
     },
     {
@@ -885,8 +1920,26 @@
       "name": "EntityPickupItemEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["拾う", "アイテム回収", "取得"],
-        "en": ["pickup", "collect", "item"]
+        "ja": [
+          "拾う",
+          "アイテム回収",
+          "取得",
+          "アイテムを拾う",
+          "拾得",
+          "地面のアイテム",
+          "拾い上げ",
+          "ドロップ回収"
+        ],
+        "en": [
+          "pickup",
+          "collect",
+          "item",
+          "pick up item",
+          "item collection",
+          "ground item",
+          "collect drops",
+          "item pickup"
+        ]
       }
     },
     {
@@ -900,8 +1953,25 @@
       "name": "EntityPortalEnterEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["ポータル接触", "ポータル進入"],
-        "en": ["portal", "contact", "enter"]
+        "ja": [
+          "ポータル接触",
+          "ポータル進入",
+          "ゲート接触",
+          "ポータルに入る",
+          "ポータル内",
+          "ゲート進入",
+          "ポータル検知"
+        ],
+        "en": [
+          "portal",
+          "contact",
+          "enter",
+          "touch portal",
+          "enter portal",
+          "portal entry",
+          "portal collision",
+          "portal detection"
+        ]
       }
     },
     {
@@ -915,8 +1985,26 @@
       "name": "EntityPortalEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["ポータル移動", "テレポート", "エンティティ"],
-        "en": ["portal", "teleport", "entity"]
+        "ja": [
+          "ポータル移動",
+          "テレポート",
+          "エンティティ",
+          "ポータル転送",
+          "次元移動",
+          "ゲート移動",
+          "ポータル経由",
+          "ワープ"
+        ],
+        "en": [
+          "portal",
+          "teleport",
+          "entity",
+          "portal travel",
+          "portal transfer",
+          "dimension travel",
+          "portal teleport",
+          "warp"
+        ]
       }
     },
     {
@@ -930,8 +2018,26 @@
       "name": "EntityPortalExitEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["ポータル出口", "速度", "テレポート"],
-        "en": ["portal exit", "velocity", "teleport"]
+        "ja": [
+          "ポータル出口",
+          "速度",
+          "テレポート",
+          "ゲート出口",
+          "出口移動",
+          "出る直前",
+          "移動速度",
+          "ポータル退出"
+        ],
+        "en": [
+          "portal exit",
+          "velocity",
+          "teleport",
+          "exit portal",
+          "portal departure",
+          "exit velocity",
+          "leave portal",
+          "portal destination"
+        ]
       }
     },
     {
@@ -945,8 +2051,26 @@
       "name": "EntityRegainHealthEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["回復", "体力", "治癒"],
-        "en": ["heal", "health", "regain"]
+        "ja": [
+          "回復",
+          "体力",
+          "治癒",
+          "体力回復",
+          "HP回復",
+          "治る",
+          "再生",
+          "回復量"
+        ],
+        "en": [
+          "heal",
+          "health",
+          "regain",
+          "healing",
+          "health recovery",
+          "restore health",
+          "regain health",
+          "healing amount"
+        ]
       }
     },
     {
@@ -960,8 +2084,26 @@
       "name": "EntityRemoveFromWorldEvent",
       "source": "paper",
       "keywords": {
-        "ja": ["削除", "ワールド", "チャンクアンロード"],
-        "en": ["remove", "world", "chunk unload"]
+        "ja": [
+          "削除",
+          "ワールド",
+          "チャンクアンロード",
+          "ワールドから削除",
+          "エンティティ解放",
+          "ワールド離脱",
+          "エンティティ除去",
+          "削除処理"
+        ],
+        "en": [
+          "remove",
+          "world",
+          "chunk unload",
+          "remove from world",
+          "world removal",
+          "entity unloading",
+          "entity removal",
+          "world departure"
+        ]
       }
     },
     {
@@ -975,8 +2117,26 @@
       "name": "EntityResurrectEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["復活", "不死のトーテム", "死亡"],
-        "en": ["resurrect", "totem of undying", "death"]
+        "ja": [
+          "復活",
+          "不死のトーテム",
+          "死亡",
+          "蘇生",
+          "生き返る",
+          "死亡回避",
+          "トーテム",
+          "復活処理"
+        ],
+        "en": [
+          "resurrect",
+          "totem of undying",
+          "death",
+          "resurrection",
+          "revive",
+          "avoid death",
+          "undying totem",
+          "return to life"
+        ]
       }
     },
     {
@@ -990,8 +2150,26 @@
       "name": "EntityShootBowEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["弓", "矢", "発射"],
-        "en": ["bow", "arrow", "shoot"]
+        "ja": [
+          "弓",
+          "矢",
+          "発射",
+          "弓矢",
+          "射撃",
+          "矢を放つ",
+          "弓を撃つ",
+          "投射物発射"
+        ],
+        "en": [
+          "bow",
+          "arrow",
+          "shoot",
+          "archery",
+          "shoot arrow",
+          "fire bow",
+          "bow shot",
+          "projectile launch"
+        ]
       }
     },
     {
@@ -1005,8 +2183,25 @@
       "name": "EntitySpawnEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["スポーン", "出現", "エンティティ"],
-        "en": ["spawn", "entity"]
+        "ja": [
+          "スポーン",
+          "出現",
+          "エンティティ",
+          "エンティティ生成",
+          "ワールドに出現",
+          "出現処理",
+          "生成位置",
+          "スポーン判定"
+        ],
+        "en": [
+          "spawn",
+          "entity",
+          "entity spawning",
+          "world spawn",
+          "spawn entity",
+          "entity appearance",
+          "spawn location"
+        ]
       }
     },
     {
@@ -1020,8 +2215,26 @@
       "name": "EntityTameEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["手懐ける", "飼い慣らす", "ペット"],
-        "en": ["tame", "taming", "pet"]
+        "ja": [
+          "手懐ける",
+          "飼い慣らす",
+          "ペット",
+          "手なずけ",
+          "テイム",
+          "飼育",
+          "飼い主",
+          "ペット化"
+        ],
+        "en": [
+          "tame",
+          "taming",
+          "pet",
+          "tame entity",
+          "domestication",
+          "tamed creature",
+          "animal taming",
+          "pet ownership"
+        ]
       }
     },
     {
@@ -1035,8 +2248,26 @@
       "name": "EntityTargetEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["ターゲット", "敵対", "標的解除"],
-        "en": ["target", "aggro", "untarget"]
+        "ja": [
+          "ターゲット",
+          "敵対",
+          "標的解除",
+          "標的選択",
+          "ターゲット変更",
+          "索敵",
+          "対象エンティティ",
+          "敵対解除"
+        ],
+        "en": [
+          "target",
+          "aggro",
+          "untarget",
+          "target selection",
+          "target change",
+          "entity target",
+          "target acquisition",
+          "target removal"
+        ]
       }
     },
     {
@@ -1050,8 +2281,25 @@
       "name": "EntityTargetLivingEntityEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["生物", "ターゲット", "標的"],
-        "en": ["living entity", "target"]
+        "ja": [
+          "生物",
+          "ターゲット",
+          "標的",
+          "生物の標的",
+          "生物選択",
+          "対象生物",
+          "ターゲット変更",
+          "索敵"
+        ],
+        "en": [
+          "living entity",
+          "target",
+          "living target",
+          "target selection",
+          "target living entity",
+          "target change",
+          "creature target"
+        ]
       }
     },
     {
@@ -1065,8 +2313,26 @@
       "name": "EntityTeleportEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["テレポート", "移動", "エンティティ"],
-        "en": ["teleport", "movement", "entity"]
+        "ja": [
+          "テレポート",
+          "移動",
+          "エンティティ",
+          "瞬間移動",
+          "ワープ",
+          "位置変更",
+          "転送",
+          "モブ移動"
+        ],
+        "en": [
+          "teleport",
+          "movement",
+          "entity",
+          "warp",
+          "instant movement",
+          "location change",
+          "entity teleport",
+          "non-player teleport"
+        ]
       }
     },
     {
@@ -1080,8 +2346,26 @@
       "name": "EntityToggleGlideEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["エリトラ", "滑空", "着地"],
-        "en": ["elytra", "glide", "land"]
+        "ja": [
+          "エリトラ",
+          "滑空",
+          "着地",
+          "滑空開始",
+          "滑空終了",
+          "エリトラ飛行",
+          "飛行状態",
+          "グライド"
+        ],
+        "en": [
+          "elytra",
+          "glide",
+          "land",
+          "start gliding",
+          "stop gliding",
+          "elytra flight",
+          "gliding state",
+          "toggle glide"
+        ]
       }
     },
     {
@@ -1095,8 +2379,26 @@
       "name": "EntityUnleashEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["リード", "綱", "解除"],
-        "en": ["unleash", "leash", "lead"]
+        "ja": [
+          "リード",
+          "綱",
+          "解除",
+          "リード解除",
+          "ひも",
+          "綱を外す",
+          "繋留解除",
+          "リードが外れる"
+        ],
+        "en": [
+          "unleash",
+          "leash",
+          "lead",
+          "unleashing",
+          "remove lead",
+          "detach leash",
+          "release leash",
+          "leash removal"
+        ]
       }
     },
     {
@@ -1110,8 +2412,26 @@
       "name": "EntityZapEvent",
       "source": "paper",
       "keywords": {
-        "ja": ["落雷", "雷撃", "稲妻"],
-        "en": ["lightning", "strike", "zap"]
+        "ja": [
+          "落雷",
+          "雷撃",
+          "稲妻",
+          "雷に打たれる",
+          "落雷被害",
+          "エンティティ落雷",
+          "雷が当たる",
+          "雷直撃"
+        ],
+        "en": [
+          "lightning",
+          "strike",
+          "zap",
+          "struck by lightning",
+          "entity lightning",
+          "lightning hit",
+          "lightning impact",
+          "lightning strike"
+        ]
       }
     },
     {
@@ -1126,8 +2446,26 @@
       "name": "Event",
       "source": "spigot",
       "keywords": {
-        "ja": ["イベント", "基底クラス", "ハンドラー"],
-        "en": ["event", "base class", "handler"]
+        "ja": [
+          "イベント",
+          "基底クラス",
+          "ハンドラー",
+          "共通イベント",
+          "親クラス",
+          "イベント継承",
+          "基底イベント",
+          "Bukkitイベント"
+        ],
+        "en": [
+          "event",
+          "base class",
+          "handler",
+          "generic event",
+          "parent class",
+          "event inheritance",
+          "base event",
+          "bukkit event"
+        ]
       }
     },
     {
@@ -1141,8 +2479,26 @@
       "name": "ExpBottleEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["経験値ボトル", "経験値", "衝突"],
-        "en": ["experience bottle", "xp", "impact"]
+        "ja": [
+          "経験値ボトル",
+          "経験値",
+          "衝突",
+          "エンチャントの瓶",
+          "投げた瓶",
+          "経験値放出",
+          "瓶の着弾",
+          "経験値生成"
+        ],
+        "en": [
+          "experience bottle",
+          "xp",
+          "impact",
+          "bottle o enchanting",
+          "thrown bottle",
+          "experience release",
+          "bottle impact",
+          "xp bottle"
+        ]
       }
     },
     {
@@ -1156,8 +2512,26 @@
       "name": "ExplosionPrimeEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["爆発準備", "爆破", "点火"],
-        "en": ["explosion", "prime", "detonate"]
+        "ja": [
+          "爆発準備",
+          "爆破",
+          "点火",
+          "爆発直前",
+          "爆発判定",
+          "起爆",
+          "爆発開始",
+          "爆破準備"
+        ],
+        "en": [
+          "explosion",
+          "prime",
+          "detonate",
+          "prime explosion",
+          "explosion decision",
+          "before explosion",
+          "detonation",
+          "explosion preparation"
+        ]
       }
     },
     {
@@ -1171,8 +2545,25 @@
       "name": "FireworkExplodeEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["花火", "爆発", "炸裂"],
-        "en": ["firework", "explosion"]
+        "ja": [
+          "花火",
+          "爆発",
+          "炸裂",
+          "打ち上げ花火",
+          "花火炸裂",
+          "花火の爆発",
+          "花火演出",
+          "花火の破裂"
+        ],
+        "en": [
+          "firework",
+          "explosion",
+          "firework burst",
+          "firework detonation",
+          "exploding firework",
+          "firework effect",
+          "burst firework"
+        ]
       }
     },
     {
@@ -1186,8 +2577,26 @@
       "name": "FoodLevelChangeEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["満腹度", "空腹", "食料"],
-        "en": ["food level", "hunger", "food"]
+        "ja": [
+          "満腹度",
+          "空腹",
+          "食料",
+          "空腹度",
+          "食料値",
+          "フードレベル",
+          "満腹ゲージ",
+          "空腹ゲージ"
+        ],
+        "en": [
+          "food level",
+          "hunger",
+          "food",
+          "food bar",
+          "hunger level",
+          "food value",
+          "hunger bar",
+          "food level change"
+        ]
       }
     },
     {
@@ -1201,8 +2610,26 @@
       "name": "FurnaceBurnEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["かまど", "燃料", "燃焼"],
-        "en": ["furnace", "fuel", "burn"]
+        "ja": [
+          "かまど",
+          "燃料",
+          "燃焼",
+          "燃料消費",
+          "かまど燃焼",
+          "燃料投入",
+          "燃焼開始",
+          "炉の燃料"
+        ],
+        "en": [
+          "furnace",
+          "fuel",
+          "burn",
+          "burn fuel",
+          "furnace burning",
+          "fuel use",
+          "fuel consumption",
+          "furnace ignition"
+        ]
       }
     },
     {
@@ -1216,8 +2643,26 @@
       "name": "FurnaceExtractEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["かまど", "取り出し", "精錬結果"],
-        "en": ["furnace", "extract", "smelting result"]
+        "ja": [
+          "かまど",
+          "取り出し",
+          "精錬結果",
+          "精錬品回収",
+          "完成品回収",
+          "結果スロット",
+          "取り出す",
+          "炉の出力"
+        ],
+        "en": [
+          "furnace",
+          "extract",
+          "smelting result",
+          "take furnace result",
+          "collect smelted items",
+          "furnace output",
+          "take items",
+          "result extraction"
+        ]
       }
     },
     {
@@ -1231,8 +2676,26 @@
       "name": "FurnaceSmeltEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["かまど", "精錬", "完成"],
-        "en": ["furnace", "smelt", "complete"]
+        "ja": [
+          "かまど",
+          "精錬",
+          "完成",
+          "精錬完了",
+          "精錬品",
+          "焼き上がり",
+          "炉の処理",
+          "完成アイテム"
+        ],
+        "en": [
+          "furnace",
+          "smelt",
+          "complete",
+          "smelting completion",
+          "smelt item",
+          "smelted item",
+          "furnace result",
+          "finished smelting"
+        ]
       }
     },
     {
@@ -1246,8 +2709,26 @@
       "name": "HangingBreakByEntityEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["壁掛け", "破壊", "エンティティ"],
-        "en": ["hanging", "break", "entity"]
+        "ja": [
+          "壁掛け",
+          "破壊",
+          "エンティティ",
+          "壁掛け撤去",
+          "壁掛け破壊",
+          "取り外し",
+          "エンティティによる撤去",
+          "壁掛け除去"
+        ],
+        "en": [
+          "hanging",
+          "break",
+          "entity",
+          "remove hanging entity",
+          "hanging destruction",
+          "break hanging entity",
+          "entity removal",
+          "hanging removal"
+        ]
       }
     },
     {
@@ -1261,8 +2742,26 @@
       "name": "HangingBreakEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["壁掛け", "破壊", "撤去"],
-        "en": ["hanging", "break", "remove"]
+        "ja": [
+          "壁掛け",
+          "破壊",
+          "撤去",
+          "壁掛け撤去",
+          "壁掛け破壊",
+          "取り外し",
+          "壁掛け除去",
+          "壁掛け消失"
+        ],
+        "en": [
+          "hanging",
+          "break",
+          "remove",
+          "remove hanging entity",
+          "hanging destruction",
+          "break hanging entity",
+          "hanging removal",
+          "hanging disappearance"
+        ]
       }
     },
     {
@@ -1277,8 +2776,24 @@
       "name": "HangingEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["壁掛け", "基底クラス"],
-        "en": ["hanging", "base class"]
+        "ja": [
+          "壁掛け",
+          "基底クラス",
+          "壁掛けイベント",
+          "壁掛けエンティティ",
+          "親クラス",
+          "基底イベント",
+          "壁掛け処理"
+        ],
+        "en": [
+          "hanging",
+          "base class",
+          "hanging entity",
+          "hanging event",
+          "parent class",
+          "base event",
+          "hanging interaction"
+        ]
       }
     },
     {
@@ -1292,8 +2807,26 @@
       "name": "HangingPlaceEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["壁掛け", "設置", "配置"],
-        "en": ["hanging", "place", "placement"]
+        "ja": [
+          "壁掛け",
+          "設置",
+          "配置",
+          "壁掛け配置",
+          "壁掛け作成",
+          "壁掛けを置く",
+          "壁への設置",
+          "壁掛け生成"
+        ],
+        "en": [
+          "hanging",
+          "place",
+          "placement",
+          "place hanging entity",
+          "hanging creation",
+          "wall placement",
+          "hanging placement",
+          "create hanging entity"
+        ]
       }
     },
     {
@@ -1307,8 +2840,25 @@
       "name": "HorseJumpEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["馬", "ジャンプ", "跳躍"],
-        "en": ["horse", "jump"]
+        "ja": [
+          "馬",
+          "ジャンプ",
+          "跳躍",
+          "馬の跳躍",
+          "馬ジャンプ",
+          "跳び越える",
+          "馬が跳ぶ",
+          "騎馬ジャンプ"
+        ],
+        "en": [
+          "horse",
+          "jump",
+          "horse jumping",
+          "horse leap",
+          "jumping horse",
+          "equine jump",
+          "horse jump action"
+        ]
       }
     },
     {
@@ -1321,8 +2871,26 @@
       "name": "IllegalPacketEvent",
       "source": "paper",
       "keywords": {
-        "ja": ["不正パケット", "ネットワーク", "受信"],
-        "en": ["illegal packet", "network", "packet"]
+        "ja": [
+          "不正パケット",
+          "ネットワーク",
+          "受信",
+          "無効パケット",
+          "異常パケット",
+          "パケット検証",
+          "不正通信",
+          "受信エラー"
+        ],
+        "en": [
+          "illegal packet",
+          "network",
+          "packet",
+          "invalid packet",
+          "malformed packet",
+          "packet validation",
+          "invalid network data",
+          "packet error"
+        ]
       }
     },
     {
@@ -1336,8 +2904,26 @@
       "name": "InventoryClickEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["インベントリ", "クリック", "スロット"],
-        "en": ["inventory", "click", "slot"]
+        "ja": [
+          "インベントリ",
+          "クリック",
+          "スロット",
+          "アイテムクリック",
+          "スロット操作",
+          "GUI操作",
+          "持ち物操作",
+          "クリック処理"
+        ],
+        "en": [
+          "inventory",
+          "click",
+          "slot",
+          "inventory click",
+          "slot click",
+          "gui interaction",
+          "item click",
+          "inventory action"
+        ]
       }
     },
     {
@@ -1351,8 +2937,26 @@
       "name": "InventoryCloseEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["インベントリ", "閉じる", "画面"],
-        "en": ["inventory", "close", "gui"]
+        "ja": [
+          "インベントリ",
+          "閉じる",
+          "画面",
+          "画面を閉じる",
+          "GUI終了",
+          "持ち物画面終了",
+          "インベントリ終了",
+          "閉じる操作"
+        ],
+        "en": [
+          "inventory",
+          "close",
+          "gui",
+          "close inventory",
+          "close screen",
+          "gui close",
+          "inventory closing",
+          "exit inventory"
+        ]
       }
     },
     {
@@ -1366,8 +2970,26 @@
       "name": "InventoryCreativeEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["クリエイティブ", "インベントリ", "アイテム操作"],
-        "en": ["creative", "inventory", "item manipulation"]
+        "ja": [
+          "クリエイティブ",
+          "インベントリ",
+          "アイテム操作",
+          "クリエイティブ操作",
+          "アイテム持ち上げ",
+          "ホットバー操作",
+          "アイテム配置",
+          "持ち物編集"
+        ],
+        "en": [
+          "creative",
+          "inventory",
+          "item manipulation",
+          "creative inventory",
+          "pick up stack",
+          "hotbar action",
+          "place item",
+          "creative item action"
+        ]
       }
     },
     {
@@ -1381,8 +3003,26 @@
       "name": "InventoryDragEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["インベントリ", "ドラッグ", "スロット分配"],
-        "en": ["inventory", "drag", "distribute"]
+        "ja": [
+          "インベントリ",
+          "ドラッグ",
+          "スロット分配",
+          "ドラッグ操作",
+          "アイテム分配",
+          "複数スロット",
+          "カーソルアイテム",
+          "持ち物整理"
+        ],
+        "en": [
+          "inventory",
+          "drag",
+          "distribute",
+          "drag item",
+          "distribute stack",
+          "multiple slots",
+          "cursor item",
+          "inventory dragging"
+        ]
       }
     },
     {
@@ -1396,8 +3036,24 @@
       "name": "InventoryEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["インベントリ", "基底クラス"],
-        "en": ["inventory", "base class"]
+        "ja": [
+          "インベントリ",
+          "基底クラス",
+          "持ち物画面",
+          "インベントリイベント",
+          "親クラス",
+          "基底イベント",
+          "GUI"
+        ],
+        "en": [
+          "inventory",
+          "base class",
+          "inventory event",
+          "inventory screen",
+          "parent class",
+          "base event",
+          "gui"
+        ]
       }
     },
     {
@@ -1412,8 +3068,26 @@
       "name": "InventoryInteractEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["インベントリ", "操作", "基底クラス"],
-        "en": ["inventory", "interaction", "base class"]
+        "ja": [
+          "インベントリ",
+          "操作",
+          "基底クラス",
+          "持ち物操作",
+          "インベントリ相互作用",
+          "GUI操作",
+          "スロット内容",
+          "親クラス"
+        ],
+        "en": [
+          "inventory",
+          "interaction",
+          "base class",
+          "inventory interaction",
+          "gui interaction",
+          "inventory contents",
+          "human interaction",
+          "parent class"
+        ]
       }
     },
     {
@@ -1427,8 +3101,26 @@
       "name": "InventoryMoveItemEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["ホッパー", "アイテム輸送", "インベントリ間移動"],
-        "en": ["hopper", "item transfer", "inventory movement"]
+        "ja": [
+          "ホッパー",
+          "アイテム輸送",
+          "インベントリ間移動",
+          "アイテム移送",
+          "搬送",
+          "搬入",
+          "搬出",
+          "自動輸送"
+        ],
+        "en": [
+          "hopper",
+          "item transfer",
+          "inventory movement",
+          "move items",
+          "item transport",
+          "source inventory",
+          "destination inventory",
+          "automatic transfer"
+        ]
       }
     },
     {
@@ -1442,8 +3134,26 @@
       "name": "InventoryOpenEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["インベントリ", "開く", "画面"],
-        "en": ["inventory", "open", "gui"]
+        "ja": [
+          "インベントリ",
+          "開く",
+          "画面",
+          "画面を開く",
+          "GUI表示",
+          "持ち物画面表示",
+          "インベントリ表示",
+          "開く操作"
+        ],
+        "en": [
+          "inventory",
+          "open",
+          "gui",
+          "open inventory",
+          "open screen",
+          "gui open",
+          "inventory opening",
+          "display inventory"
+        ]
       }
     },
     {
@@ -1457,8 +3167,26 @@
       "name": "InventoryPickupItemEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["ホッパー", "ホッパー付きトロッコ", "アイテム回収"],
-        "en": ["hopper", "hopper minecart", "pickup"]
+        "ja": [
+          "ホッパー",
+          "ホッパー付きトロッコ",
+          "アイテム回収",
+          "自動回収",
+          "落ちているアイテム",
+          "アイテム吸引",
+          "吸い込み",
+          "ドロップ回収"
+        ],
+        "en": [
+          "hopper",
+          "hopper minecart",
+          "pickup",
+          "automatic pickup",
+          "dropped item",
+          "collect drops",
+          "hopper collection",
+          "item suction"
+        ]
       }
     },
     {
@@ -1472,8 +3200,26 @@
       "name": "ItemDespawnEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["アイテム消滅", "デスポーン", "経過時間"],
-        "en": ["item", "despawn", "timeout"]
+        "ja": [
+          "アイテム消滅",
+          "デスポーン",
+          "経過時間",
+          "ドロップ消失",
+          "時間切れ",
+          "アイテム消去",
+          "自然消滅",
+          "アイテム寿命"
+        ],
+        "en": [
+          "item",
+          "despawn",
+          "timeout",
+          "item expiration",
+          "dropped item removal",
+          "despawning item",
+          "item lifetime",
+          "timed removal"
+        ]
       }
     },
     {
@@ -1486,8 +3232,26 @@
       "name": "ItemMergeEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["アイテム結合", "スタック", "合体"],
-        "en": ["item", "merge", "stack"]
+        "ja": [
+          "アイテム結合",
+          "スタック",
+          "合体",
+          "アイテム合併",
+          "ドロップ結合",
+          "同じアイテム",
+          "まとめる",
+          "スタック統合"
+        ],
+        "en": [
+          "item",
+          "merge",
+          "stack",
+          "combine items",
+          "stack merging",
+          "merge drops",
+          "identical items",
+          "item consolidation"
+        ]
       }
     },
     {
@@ -1501,8 +3265,26 @@
       "name": "ItemSpawnEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["アイテム出現", "ドロップ", "スポーン"],
-        "en": ["item", "spawn", "drop"]
+        "ja": [
+          "アイテム出現",
+          "ドロップ",
+          "スポーン",
+          "落下アイテム",
+          "ドロップ生成",
+          "アイテム生成",
+          "地面のアイテム",
+          "出現処理"
+        ],
+        "en": [
+          "item",
+          "spawn",
+          "drop",
+          "dropped item",
+          "item spawning",
+          "create item entity",
+          "ground item",
+          "item appearance"
+        ]
       }
     },
     {
@@ -1516,8 +3298,25 @@
       "name": "LeavesDecayEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["葉", "自然消滅", "崩壊"],
-        "en": ["leaves", "decay"]
+        "ja": [
+          "葉",
+          "自然消滅",
+          "崩壊",
+          "葉っぱ",
+          "落葉",
+          "葉の消失",
+          "葉の崩壊",
+          "自然崩壊"
+        ],
+        "en": [
+          "leaves",
+          "decay",
+          "leaf decay",
+          "decaying leaves",
+          "natural decay",
+          "leaf disappearance",
+          "foliage decay"
+        ]
       }
     },
     {
@@ -1531,8 +3330,26 @@
       "name": "LightningStrikeEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["落雷", "雷", "天候"],
-        "en": ["lightning", "strike", "weather"]
+        "ja": [
+          "落雷",
+          "雷",
+          "天候",
+          "雷撃",
+          "稲妻",
+          "雷発生",
+          "雷が落ちる",
+          "落雷地点"
+        ],
+        "en": [
+          "lightning",
+          "strike",
+          "weather",
+          "lightning strike",
+          "lightning bolt",
+          "thunderbolt",
+          "strike location",
+          "lightning occurrence"
+        ]
       }
     },
     {
@@ -1546,8 +3363,26 @@
       "name": "LingeringPotionSplashEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["残留ポーション", "着弾", "範囲効果"],
-        "en": ["lingering potion", "impact", "area effect"]
+        "ja": [
+          "残留ポーション",
+          "着弾",
+          "範囲効果",
+          "残留効果",
+          "効果雲",
+          "ポーション衝突",
+          "投げたポーション",
+          "範囲効果雲"
+        ],
+        "en": [
+          "lingering potion",
+          "impact",
+          "area effect",
+          "lingering effect",
+          "effect cloud",
+          "potion impact",
+          "thrown potion",
+          "area effect cloud"
+        ]
       }
     },
     {
@@ -1561,8 +3396,26 @@
       "name": "LookupProfileEvent",
       "source": "paper",
       "keywords": {
-        "ja": ["プロファイル検索", "Mojang", "キャッシュ"],
-        "en": ["profile", "lookup", "cache"]
+        "ja": [
+          "プロファイル検索",
+          "Mojang",
+          "キャッシュ",
+          "プロフィール検索",
+          "プロファイル照会",
+          "検索完了",
+          "アカウント照会",
+          "Mojang API"
+        ],
+        "en": [
+          "profile",
+          "lookup",
+          "cache",
+          "profile search",
+          "profile query",
+          "lookup result",
+          "account lookup",
+          "mojang api"
+        ]
       }
     },
     {
@@ -1575,8 +3428,26 @@
       "name": "LootableInventoryReplenishEvent",
       "source": "paper",
       "keywords": {
-        "ja": ["戦利品補充", "ルートテーブル", "インベントリ"],
-        "en": ["loot", "replenish", "inventory"]
+        "ja": [
+          "戦利品補充",
+          "ルートテーブル",
+          "インベントリ",
+          "再補充",
+          "戦利品再生成",
+          "アイテム補給",
+          "ルート補充",
+          "コンテナ補充"
+        ],
+        "en": [
+          "loot",
+          "replenish",
+          "inventory",
+          "refill loot",
+          "loot replenishment",
+          "restock inventory",
+          "loot refill",
+          "container refill"
+        ]
       }
     },
     {
@@ -1590,8 +3461,25 @@
       "name": "MapInitializeEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["地図", "初期化", "マップ"],
-        "en": ["map", "initialize"]
+        "ja": [
+          "地図",
+          "初期化",
+          "マップ",
+          "地図初期化",
+          "マップ初期化",
+          "地図準備",
+          "地図データ",
+          "初期化完了"
+        ],
+        "en": [
+          "map",
+          "initialize",
+          "map initialization",
+          "initialize map",
+          "map setup",
+          "map data",
+          "map creation"
+        ]
       }
     },
     {
@@ -1605,8 +3493,26 @@
       "name": "NotePlayEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["音符ブロック", "音", "演奏"],
-        "en": ["note block", "sound", "music"]
+        "ja": [
+          "音符ブロック",
+          "音",
+          "演奏",
+          "ノートブロック",
+          "音符",
+          "音を鳴らす",
+          "楽器",
+          "音階"
+        ],
+        "en": [
+          "note block",
+          "sound",
+          "music",
+          "play note",
+          "musical note",
+          "note sound",
+          "instrument",
+          "pitch"
+        ]
       }
     },
     {
@@ -1620,8 +3526,26 @@
       "name": "PigZapEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["豚", "落雷", "雷撃"],
-        "en": ["pig", "lightning", "zap"]
+        "ja": [
+          "豚",
+          "落雷",
+          "雷撃",
+          "ぶた",
+          "豚の落雷",
+          "雷に打たれる",
+          "豚への雷撃",
+          "稲妻"
+        ],
+        "en": [
+          "pig",
+          "lightning",
+          "zap",
+          "struck pig",
+          "pig lightning",
+          "lightning strike",
+          "pig zap",
+          "lightning hit"
+        ]
       }
     },
     {
@@ -1635,8 +3559,26 @@
       "name": "PlayerAchievementAwardedEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["実績", "獲得", "解除"],
-        "en": ["achievement", "award", "unlock"]
+        "ja": [
+          "実績",
+          "獲得",
+          "解除",
+          "実績達成",
+          "実績獲得",
+          "達成通知",
+          "実績解放",
+          "アチーブメント"
+        ],
+        "en": [
+          "achievement",
+          "award",
+          "unlock",
+          "earn achievement",
+          "achievement completion",
+          "achievement notification",
+          "achievement unlock",
+          "awarded achievement"
+        ]
       }
     },
     {
@@ -1650,8 +3592,26 @@
       "name": "PlayerAdvancementDoneEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["進捗達成", "全条件", "完了"],
-        "en": ["advancement", "complete", "criteria"]
+        "ja": [
+          "進捗達成",
+          "全条件",
+          "完了",
+          "進捗完了",
+          "進捗クリア",
+          "全条件達成",
+          "実績達成",
+          "進捗獲得"
+        ],
+        "en": [
+          "advancement",
+          "complete",
+          "criteria",
+          "advancement completion",
+          "finish advancement",
+          "all criteria",
+          "achievement completion",
+          "advancement done"
+        ]
       }
     },
     {
@@ -1665,8 +3625,25 @@
       "name": "PlayerAnimationEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["プレイヤー", "アニメーション", "動作"],
-        "en": ["player", "animation"]
+        "ja": [
+          "プレイヤー",
+          "アニメーション",
+          "動作",
+          "動作表示",
+          "プレイヤー動作",
+          "アニメーション再生",
+          "動作通知",
+          "プレイヤー演出"
+        ],
+        "en": [
+          "player",
+          "animation",
+          "player animation",
+          "animation playback",
+          "player action",
+          "animation event",
+          "animation change"
+        ]
       }
     },
     {
@@ -1680,8 +3657,26 @@
       "name": "PlayerArmorStandManipulateEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["防具立て", "装備交換", "アイテム操作"],
-        "en": ["armor stand", "equipment", "swap"]
+        "ja": [
+          "防具立て",
+          "装備交換",
+          "アイテム操作",
+          "アーマースタンド",
+          "防具立て操作",
+          "アイテム配置",
+          "装備取得",
+          "装備の入れ替え"
+        ],
+        "en": [
+          "armor stand",
+          "equipment",
+          "swap",
+          "armor stand interaction",
+          "manipulate armor stand",
+          "place equipment",
+          "retrieve item",
+          "swap equipment"
+        ]
       }
     },
     {
@@ -1695,8 +3690,26 @@
       "name": "PlayerBedEnterEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["ベッド", "就寝", "寝る"],
-        "en": ["bed", "sleep", "enter"]
+        "ja": [
+          "ベッド",
+          "就寝",
+          "寝る",
+          "ベッドに入る",
+          "睡眠開始",
+          "寝床",
+          "寝ようとする",
+          "就寝操作"
+        ],
+        "en": [
+          "bed",
+          "sleep",
+          "enter",
+          "enter bed",
+          "go to sleep",
+          "bed entry",
+          "start sleeping",
+          "sleep attempt"
+        ]
       }
     },
     {
@@ -1710,8 +3723,26 @@
       "name": "PlayerBedLeaveEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["ベッド", "起床", "出る"],
-        "en": ["bed", "wake", "leave"]
+        "ja": [
+          "ベッド",
+          "起床",
+          "出る",
+          "ベッドから出る",
+          "目覚める",
+          "睡眠終了",
+          "起きる",
+          "離床"
+        ],
+        "en": [
+          "bed",
+          "wake",
+          "leave",
+          "leave bed",
+          "wake up",
+          "end sleep",
+          "bed exit",
+          "stop sleeping"
+        ]
       }
     },
     {
@@ -1725,8 +3756,26 @@
       "name": "PlayerBucketEmptyEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["バケツ", "空にする", "流す"],
-        "en": ["bucket", "empty", "pour"]
+        "ja": [
+          "バケツ",
+          "空にする",
+          "流す",
+          "バケツ使用",
+          "中身を出す",
+          "液体を流す",
+          "注ぐ",
+          "バケツの排出"
+        ],
+        "en": [
+          "bucket",
+          "empty",
+          "pour",
+          "empty bucket",
+          "use bucket",
+          "pour contents",
+          "release contents",
+          "bucket emptying"
+        ]
       }
     },
     {
@@ -1741,8 +3790,24 @@
       "name": "PlayerBucketEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["バケツ", "操作"],
-        "en": ["bucket", "interaction"]
+        "ja": [
+          "バケツ",
+          "操作",
+          "バケツ使用",
+          "バケツ操作",
+          "中身操作",
+          "容器操作",
+          "バケツアクション"
+        ],
+        "en": [
+          "bucket",
+          "interaction",
+          "bucket use",
+          "use bucket",
+          "bucket action",
+          "bucket contents",
+          "interact with bucket"
+        ]
       }
     },
     {
@@ -1756,8 +3821,26 @@
       "name": "PlayerBucketFillEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["バケツ", "汲む", "満たす"],
-        "en": ["bucket", "fill", "scoop"]
+        "ja": [
+          "バケツ",
+          "汲む",
+          "満たす",
+          "水汲み",
+          "汲み取り",
+          "液体回収",
+          "バケツを満たす",
+          "バケツ補充"
+        ],
+        "en": [
+          "bucket",
+          "fill",
+          "scoop",
+          "fill bucket",
+          "scoop liquid",
+          "collect liquid",
+          "bucket filling",
+          "filled bucket"
+        ]
       }
     },
     {
@@ -1771,8 +3854,26 @@
       "name": "PlayerChangedMainHandEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["利き手", "メインハンド", "左右"],
-        "en": ["main hand", "handedness", "client settings"]
+        "ja": [
+          "利き手",
+          "メインハンド",
+          "左右",
+          "右利き",
+          "左利き",
+          "主腕",
+          "利き手変更",
+          "クライアント設定"
+        ],
+        "en": [
+          "main hand",
+          "handedness",
+          "client settings",
+          "right handed",
+          "left handed",
+          "dominant hand",
+          "hand preference",
+          "change main hand"
+        ]
       }
     },
     {
@@ -1786,8 +3887,25 @@
       "name": "PlayerChangedWorldEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["ワールド変更", "世界移動", "移動後"],
-        "en": ["world change", "switch world"]
+        "ja": [
+          "ワールド変更",
+          "世界移動",
+          "移動後",
+          "別世界",
+          "ワールド切替",
+          "移動完了",
+          "世界変更",
+          "次元移動後"
+        ],
+        "en": [
+          "world change",
+          "switch world",
+          "another world",
+          "world switch",
+          "changed world",
+          "after world transfer",
+          "world transition"
+        ]
       }
     },
     {
@@ -1802,8 +3920,26 @@
       "name": "PlayerChannelEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["プラグインチャンネル", "登録", "登録解除"],
-        "en": ["plugin channel", "register", "unregister"]
+        "ja": [
+          "プラグインチャンネル",
+          "登録",
+          "登録解除",
+          "チャンネル登録",
+          "チャンネル解除",
+          "通信チャンネル",
+          "プラグイン通信",
+          "登録状態"
+        ],
+        "en": [
+          "plugin channel",
+          "register",
+          "unregister",
+          "channel registration",
+          "channel removal",
+          "messaging channel",
+          "plugin messaging",
+          "channel state"
+        ]
       }
     },
     {
@@ -1817,8 +3953,26 @@
       "name": "PlayerChatEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["チャット", "コマンド", "メッセージ"],
-        "en": ["chat", "command", "message"]
+        "ja": [
+          "チャット",
+          "コマンド",
+          "メッセージ",
+          "プレイヤー発言",
+          "チャット情報",
+          "コマンド情報",
+          "会話",
+          "チャット入力"
+        ],
+        "en": [
+          "chat",
+          "command",
+          "message",
+          "player chat",
+          "chat input",
+          "command input",
+          "conversation",
+          "player message"
+        ]
       }
     },
     {
@@ -1832,8 +3986,26 @@
       "name": "PlayerChatTabCompleteEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["チャット補完", "タブ補完", "候補"],
-        "en": ["chat", "tab completion", "suggestions"]
+        "ja": [
+          "チャット補完",
+          "タブ補完",
+          "候補",
+          "チャット入力候補",
+          "入力補完",
+          "チャット文字補完",
+          "オートコンプリート",
+          "補完結果"
+        ],
+        "en": [
+          "chat",
+          "tab completion",
+          "suggestions",
+          "chat autocomplete",
+          "chat suggestions",
+          "complete message",
+          "chat completion",
+          "completion results"
+        ]
       }
     },
     {
@@ -1847,8 +4019,26 @@
       "name": "PlayerCommandPreprocessEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["コマンド前処理", "実行前", "コマンド書き換え"],
-        "en": ["command", "preprocess", "rewrite"]
+        "ja": [
+          "コマンド前処理",
+          "実行前",
+          "コマンド書き換え",
+          "コマンド実行前",
+          "コマンド入力",
+          "コマンド処理",
+          "前処理",
+          "実行コマンド"
+        ],
+        "en": [
+          "command",
+          "preprocess",
+          "rewrite",
+          "before command",
+          "command input",
+          "command processing",
+          "preprocessing",
+          "player command"
+        ]
       }
     },
     {
@@ -1862,8 +4052,26 @@
       "name": "PlayerDeathEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["死亡", "倒される", "プレイヤー"],
-        "en": ["death", "player", "killed"]
+        "ja": [
+          "死亡",
+          "倒される",
+          "プレイヤー",
+          "プレイヤー死亡",
+          "死ぬ",
+          "死亡処理",
+          "倒れる",
+          "デス"
+        ],
+        "en": [
+          "death",
+          "player",
+          "killed",
+          "player death",
+          "dying player",
+          "death handling",
+          "player killed",
+          "death event"
+        ]
       }
     },
     {
@@ -1877,8 +4085,26 @@
       "name": "PlayerDropItemEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["捨てる", "アイテムドロップ", "投げる"],
-        "en": ["drop", "item", "throw"]
+        "ja": [
+          "捨てる",
+          "アイテムドロップ",
+          "投げる",
+          "アイテムを捨てる",
+          "持ち物を落とす",
+          "ドロップ操作",
+          "投棄",
+          "アイテム放出"
+        ],
+        "en": [
+          "drop",
+          "item",
+          "throw",
+          "drop item",
+          "discard item",
+          "inventory drop",
+          "throw item",
+          "release item"
+        ]
       }
     },
     {
@@ -1892,8 +4118,26 @@
       "name": "PlayerEditBookEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["本と羽ペン", "編集", "署名"],
-        "en": ["book and quill", "edit", "sign"]
+        "ja": [
+          "本と羽ペン",
+          "編集",
+          "署名",
+          "本編集",
+          "ページ編集",
+          "本の署名",
+          "執筆",
+          "文章編集"
+        ],
+        "en": [
+          "book and quill",
+          "edit",
+          "sign",
+          "edit book",
+          "edit pages",
+          "sign book",
+          "writing",
+          "written content"
+        ]
       }
     },
     {
@@ -1907,8 +4151,26 @@
       "name": "PlayerEggThrowEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["卵", "投げる", "孵化"],
-        "en": ["egg", "throw", "hatch"]
+        "ja": [
+          "卵",
+          "投げる",
+          "孵化",
+          "卵投げ",
+          "投げた卵",
+          "孵化判定",
+          "卵の孵化",
+          "孵る"
+        ],
+        "en": [
+          "egg",
+          "throw",
+          "hatch",
+          "thrown egg",
+          "egg throwing",
+          "hatching check",
+          "egg hatch",
+          "hatch attempt"
+        ]
       }
     },
     {
@@ -1923,8 +4185,24 @@
       "name": "PlayerEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["プレイヤー", "基底クラス"],
-        "en": ["player", "base class"]
+        "ja": [
+          "プレイヤー",
+          "基底クラス",
+          "プレイヤーイベント",
+          "ユーザー",
+          "親クラス",
+          "基底イベント",
+          "プレイヤー操作"
+        ],
+        "en": [
+          "player",
+          "base class",
+          "player event",
+          "user",
+          "parent class",
+          "base event",
+          "player action"
+        ]
       }
     },
     {
@@ -1938,8 +4216,26 @@
       "name": "PlayerExpChangeEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["経験値", "獲得", "変化"],
-        "en": ["experience", "xp", "change"]
+        "ja": [
+          "経験値",
+          "獲得",
+          "変化",
+          "経験値変化",
+          "経験値取得",
+          "経験値増減",
+          "経験値量",
+          "XP変化"
+        ],
+        "en": [
+          "experience",
+          "xp",
+          "change",
+          "experience change",
+          "gain experience",
+          "experience amount",
+          "xp change",
+          "player experience"
+        ]
       }
     },
     {
@@ -1953,8 +4249,26 @@
       "name": "PlayerFishEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["釣り", "釣竿", "魚"],
-        "en": ["fishing", "fishing rod", "fish"]
+        "ja": [
+          "釣り",
+          "釣竿",
+          "魚",
+          "魚釣り",
+          "フィッシング",
+          "釣り竿",
+          "釣り動作",
+          "釣果"
+        ],
+        "en": [
+          "fishing",
+          "fishing rod",
+          "fish",
+          "angling",
+          "catch fish",
+          "rod fishing",
+          "fishing action",
+          "fishing catch"
+        ]
       }
     },
     {
@@ -1968,8 +4282,25 @@
       "name": "PlayerGameModeChangeEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["ゲームモード", "モード変更"],
-        "en": ["game mode", "gamemode", "change"]
+        "ja": [
+          "ゲームモード",
+          "モード変更",
+          "モード切替",
+          "サバイバル",
+          "クリエイティブ",
+          "アドベンチャー",
+          "スペクテイター"
+        ],
+        "en": [
+          "game mode",
+          "gamemode",
+          "change",
+          "switch game mode",
+          "survival",
+          "creative",
+          "adventure",
+          "spectator"
+        ]
       }
     },
     {
@@ -1983,8 +4314,24 @@
       "name": "PlayerHandshakeEvent",
       "source": "paper",
       "keywords": {
-        "ja": ["ハンドシェイク", "接続"],
-        "en": ["handshake", "connection"]
+        "ja": [
+          "ハンドシェイク",
+          "接続",
+          "初期通信",
+          "プレイヤーハンドシェイク",
+          "接続要求",
+          "サーバー接続",
+          "通信開始"
+        ],
+        "en": [
+          "handshake",
+          "connection",
+          "player handshake",
+          "initial communication",
+          "connection request",
+          "server connection",
+          "handshake processing"
+        ]
       }
     },
     {
@@ -1997,8 +4344,24 @@
       "name": "PlayerInitialSpawnEvent",
       "source": "paper",
       "keywords": {
-        "ja": ["初期スポーン", "スポーン地点"],
-        "en": ["initial spawn", "spawn location"]
+        "ja": [
+          "初期スポーン",
+          "スポーン地点",
+          "初期位置",
+          "初回スポーン",
+          "参加位置",
+          "最初の位置",
+          "初期地点決定"
+        ],
+        "en": [
+          "initial spawn",
+          "spawn location",
+          "initial position",
+          "first spawn",
+          "join location",
+          "starting position",
+          "initial location selection"
+        ]
       }
     },
     {
@@ -2012,8 +4375,26 @@
       "name": "PlayerInteractAtEntityEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["エンティティ操作", "右クリック", "クリック位置"],
-        "en": ["entity", "right click", "click position"]
+        "ja": [
+          "エンティティ操作",
+          "右クリック",
+          "クリック位置",
+          "対象クリック",
+          "エンティティ右クリック",
+          "相互作用",
+          "ヒット位置",
+          "クリック座標"
+        ],
+        "en": [
+          "entity",
+          "right click",
+          "click position",
+          "click entity",
+          "entity interaction",
+          "interaction point",
+          "hit position",
+          "clicked location"
+        ]
       }
     },
     {
@@ -2027,8 +4408,25 @@
       "name": "PlayerInteractEntityEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["エンティティ操作", "右クリック"],
-        "en": ["entity", "interact", "right click"]
+        "ja": [
+          "エンティティ操作",
+          "右クリック",
+          "対象クリック",
+          "エンティティ右クリック",
+          "相互作用",
+          "生物操作",
+          "クリック操作"
+        ],
+        "en": [
+          "entity",
+          "interact",
+          "right click",
+          "click entity",
+          "entity interaction",
+          "right-click entity",
+          "interact with entity",
+          "player interaction"
+        ]
       }
     },
     {
@@ -2042,8 +4440,28 @@
       "name": "PlayerInteractEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["操作", "クリック", "空気", "両手"],
-        "en": ["interact", "click", "air", "hand"]
+        "ja": [
+          "操作",
+          "クリック",
+          "空気",
+          "両手",
+          "プレイヤー操作",
+          "クリック操作",
+          "アイテム使用",
+          "ブロック操作",
+          "空中クリック"
+        ],
+        "en": [
+          "interact",
+          "click",
+          "air",
+          "hand",
+          "player interaction",
+          "click action",
+          "use item",
+          "block interaction",
+          "click air"
+        ]
       }
     },
     {
@@ -2057,8 +4475,26 @@
       "name": "PlayerItemBreakEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["アイテム破損", "耐久度", "道具"],
-        "en": ["item break", "durability", "tool"]
+        "ja": [
+          "アイテム破損",
+          "耐久度",
+          "道具",
+          "道具破損",
+          "壊れる",
+          "耐久切れ",
+          "装備破損",
+          "アイテムが壊れる"
+        ],
+        "en": [
+          "item break",
+          "durability",
+          "tool",
+          "broken item",
+          "tool break",
+          "exhausted durability",
+          "equipment break",
+          "item breakage"
+        ]
       }
     },
     {
@@ -2072,8 +4508,26 @@
       "name": "PlayerItemConsumeEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["食べる", "飲む", "アイテム消費"],
-        "en": ["eat", "drink", "consume"]
+        "ja": [
+          "食べる",
+          "飲む",
+          "アイテム消費",
+          "食事",
+          "飲食",
+          "食べ終わる",
+          "飲み終わる",
+          "消費完了"
+        ],
+        "en": [
+          "eat",
+          "drink",
+          "consume",
+          "eating",
+          "drinking",
+          "finish consuming",
+          "food consumption",
+          "item consumption"
+        ]
       }
     },
     {
@@ -2086,8 +4540,26 @@
       "name": "PlayerItemDamageEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["耐久度", "アイテム損傷", "消耗"],
-        "en": ["durability", "item damage", "wear"]
+        "ja": [
+          "耐久度",
+          "アイテム損傷",
+          "消耗",
+          "耐久消費",
+          "道具消耗",
+          "摩耗",
+          "耐久減少",
+          "アイテム耐久"
+        ],
+        "en": [
+          "durability",
+          "item damage",
+          "wear",
+          "durability loss",
+          "tool wear",
+          "wear and tear",
+          "durability decrease",
+          "item durability"
+        ]
       }
     },
     {
@@ -2101,8 +4573,26 @@
       "name": "PlayerItemHeldEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["持ち替え", "ホットバー", "選択スロット"],
-        "en": ["held item", "hotbar", "selection"]
+        "ja": [
+          "持ち替え",
+          "ホットバー",
+          "選択スロット",
+          "手持ち変更",
+          "持つアイテム",
+          "選択変更",
+          "スロット切替",
+          "手持ちスロット"
+        ],
+        "en": [
+          "held item",
+          "hotbar",
+          "selection",
+          "switch held item",
+          "item selection",
+          "selection change",
+          "slot switch",
+          "held slot"
+        ]
       }
     },
     {
@@ -2116,8 +4606,26 @@
       "name": "PlayerJoinEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["参加", "ログイン", "入室"],
-        "en": ["join", "login", "connect"]
+        "ja": [
+          "参加",
+          "ログイン",
+          "入室",
+          "サーバー参加",
+          "入る",
+          "接続完了",
+          "参加通知",
+          "プレイヤー入場"
+        ],
+        "en": [
+          "join",
+          "login",
+          "connect",
+          "join server",
+          "server entry",
+          "player connection",
+          "join notification",
+          "player arrival"
+        ]
       }
     },
     {
@@ -2131,8 +4639,25 @@
       "name": "PlayerKickEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["キック", "追放", "切断"],
-        "en": ["kick", "disconnect"]
+        "ja": [
+          "キック",
+          "追放",
+          "切断",
+          "強制退出",
+          "サーバー追放",
+          "蹴る",
+          "退出処理",
+          "強制切断"
+        ],
+        "en": [
+          "kick",
+          "disconnect",
+          "forced departure",
+          "server kick",
+          "kicked player",
+          "kick handling",
+          "forced disconnect"
+        ]
       }
     },
     {
@@ -2146,8 +4671,26 @@
       "name": "PlayerLeashEntityEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["リード", "綱", "繋ぐ"],
-        "en": ["leash", "lead", "tie"]
+        "ja": [
+          "リード",
+          "綱",
+          "繋ぐ",
+          "リードを付ける",
+          "繋留",
+          "ひも",
+          "リード装着",
+          "繋ぐ操作"
+        ],
+        "en": [
+          "leash",
+          "lead",
+          "tie",
+          "attach lead",
+          "leash entity",
+          "tether creature",
+          "attach leash",
+          "leashing action"
+        ]
       }
     },
     {
@@ -2161,8 +4704,26 @@
       "name": "PlayerLevelChangeEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["経験値レベル", "レベルアップ", "変化"],
-        "en": ["experience level", "level up", "xp"]
+        "ja": [
+          "経験値レベル",
+          "レベルアップ",
+          "変化",
+          "レベル変化",
+          "レベル増減",
+          "レベルダウン",
+          "経験値段階",
+          "プレイヤーレベル"
+        ],
+        "en": [
+          "experience level",
+          "level up",
+          "xp",
+          "level change",
+          "level decrease",
+          "level gain",
+          "player level",
+          "xp level"
+        ]
       }
     },
     {
@@ -2176,8 +4737,26 @@
       "name": "PlayerLocaleChangeEvent",
       "source": "paper",
       "keywords": {
-        "ja": ["言語", "ロケール", "設定"],
-        "en": ["language", "locale", "settings"]
+        "ja": [
+          "言語",
+          "ロケール",
+          "設定",
+          "言語変更",
+          "表示言語",
+          "クライアント言語",
+          "言語切替",
+          "ロケール変更"
+        ],
+        "en": [
+          "language",
+          "locale",
+          "settings",
+          "language change",
+          "display language",
+          "client language",
+          "switch language",
+          "locale change"
+        ]
       }
     },
     {
@@ -2191,8 +4770,26 @@
       "name": "PlayerLocaleChangeEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["言語", "ロケール", "クライアント設定"],
-        "en": ["language", "locale", "client settings"]
+        "ja": [
+          "言語",
+          "ロケール",
+          "クライアント設定",
+          "言語変更",
+          "表示言語",
+          "クライアント言語",
+          "言語切替",
+          "ロケール変更"
+        ],
+        "en": [
+          "language",
+          "locale",
+          "client settings",
+          "language change",
+          "display language",
+          "client language",
+          "switch language",
+          "locale change"
+        ]
       }
     },
     {
@@ -2206,8 +4803,26 @@
       "name": "PlayerLoginEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["ログイン", "接続", "参加前"],
-        "en": ["login", "connection", "before join"]
+        "ja": [
+          "ログイン",
+          "接続",
+          "参加前",
+          "ログイン試行",
+          "参加審査",
+          "接続受付",
+          "プレイヤーログイン",
+          "ログイン初期処理"
+        ],
+        "en": [
+          "login",
+          "connection",
+          "before join",
+          "login attempt",
+          "join check",
+          "incoming player",
+          "player login",
+          "early login"
+        ]
       }
     },
     {
@@ -2221,8 +4836,26 @@
       "name": "PlayerMoveEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["移動", "位置", "プレイヤー"],
-        "en": ["move", "movement", "position"]
+        "ja": [
+          "移動",
+          "位置",
+          "プレイヤー",
+          "歩く",
+          "歩行",
+          "位置変更",
+          "プレイヤー移動",
+          "移動元と移動先"
+        ],
+        "en": [
+          "move",
+          "movement",
+          "position",
+          "walking",
+          "player movement",
+          "location change",
+          "move player",
+          "movement destination"
+        ]
       }
     },
     {
@@ -2236,8 +4869,26 @@
       "name": "PlayerPickupArrowEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["矢", "拾う", "回収"],
-        "en": ["arrow", "pickup", "collect"]
+        "ja": [
+          "矢",
+          "拾う",
+          "回収",
+          "矢を拾う",
+          "地面の矢",
+          "矢回収",
+          "拾得",
+          "落ちた矢"
+        ],
+        "en": [
+          "arrow",
+          "pickup",
+          "collect",
+          "pick up arrow",
+          "ground arrow",
+          "arrow collection",
+          "retrieve arrow",
+          "dropped arrow"
+        ]
       }
     },
     {
@@ -2251,8 +4902,26 @@
       "name": "PlayerPickupItemEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["アイテム", "拾う", "回収"],
-        "en": ["item", "pickup", "collect"]
+        "ja": [
+          "アイテム",
+          "拾う",
+          "回収",
+          "アイテムを拾う",
+          "拾得",
+          "地面のアイテム",
+          "拾い上げ",
+          "ドロップ回収"
+        ],
+        "en": [
+          "item",
+          "pickup",
+          "collect",
+          "pick up item",
+          "item collection",
+          "ground item",
+          "collect drops",
+          "player pickup"
+        ]
       }
     },
     {
@@ -2266,8 +4935,26 @@
       "name": "PlayerPortalEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["ポータル", "テレポート", "ワールド移動"],
-        "en": ["portal", "teleport", "world travel"]
+        "ja": [
+          "ポータル",
+          "テレポート",
+          "ワールド移動",
+          "ゲート移動",
+          "次元移動",
+          "ポータル転送",
+          "ポータル経由",
+          "ワープ"
+        ],
+        "en": [
+          "portal",
+          "teleport",
+          "world travel",
+          "portal travel",
+          "dimension travel",
+          "portal transfer",
+          "portal teleport",
+          "warp"
+        ]
       }
     },
     {
@@ -2281,8 +4968,26 @@
       "name": "PlayerPreLoginEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["ログイン前", "接続", "認証"],
-        "en": ["prelogin", "login", "connection"]
+        "ja": [
+          "ログイン前",
+          "接続",
+          "認証",
+          "ログイン試行",
+          "サインイン",
+          "ログイン準備",
+          "プレイヤー認証",
+          "参加前"
+        ],
+        "en": [
+          "prelogin",
+          "login",
+          "connection",
+          "login attempt",
+          "sign in",
+          "login preparation",
+          "player authentication",
+          "before login"
+        ]
       }
     },
     {
@@ -2296,8 +5001,27 @@
       "name": "PlayerQuitEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["退出", "切断", "ログアウト"],
-        "en": ["quit", "leave", "logout", "disconnect"]
+        "ja": [
+          "退出",
+          "切断",
+          "ログアウト",
+          "サーバー退出",
+          "抜ける",
+          "退室",
+          "接続終了",
+          "退出通知"
+        ],
+        "en": [
+          "quit",
+          "leave",
+          "logout",
+          "disconnect",
+          "leave server",
+          "server departure",
+          "player quit",
+          "connection end",
+          "quit notification"
+        ]
       }
     },
     {
@@ -2311,8 +5035,24 @@
       "name": "PlayerRegisterChannelEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["プラグインチャンネル", "登録"],
-        "en": ["plugin channel", "register"]
+        "ja": [
+          "プラグインチャンネル",
+          "登録",
+          "チャンネル登録",
+          "通信チャンネル",
+          "プラグイン通信",
+          "登録通知",
+          "チャンネル購読"
+        ],
+        "en": [
+          "plugin channel",
+          "register",
+          "register channel",
+          "messaging channel",
+          "plugin messaging",
+          "registration notification",
+          "channel subscription"
+        ]
       }
     },
     {
@@ -2326,8 +5066,26 @@
       "name": "PlayerResourcePackStatusEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["リソースパック", "状態", "応答"],
-        "en": ["resource pack", "status", "response"]
+        "ja": [
+          "リソースパック",
+          "状態",
+          "応答",
+          "パック応答",
+          "パック受信",
+          "リソースパック要求",
+          "パック処理",
+          "パック状態"
+        ],
+        "en": [
+          "resource pack",
+          "status",
+          "response",
+          "pack response",
+          "pack receipt",
+          "resource pack request",
+          "pack processing",
+          "pack status"
+        ]
       }
     },
     {
@@ -2341,8 +5099,25 @@
       "name": "PlayerRespawnEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["リスポーン", "復活", "再出現"],
-        "en": ["respawn", "revive"]
+        "ja": [
+          "リスポーン",
+          "復活",
+          "再出現",
+          "生き返る",
+          "再スポーン",
+          "復活処理",
+          "再出現地点",
+          "プレイヤー復活"
+        ],
+        "en": [
+          "respawn",
+          "revive",
+          "return to life",
+          "respawning",
+          "player revival",
+          "respawn location",
+          "player respawn"
+        ]
       }
     },
     {
@@ -2356,8 +5131,26 @@
       "name": "PlayerShearEntityEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["ハサミ", "毛刈り", "エンティティ"],
-        "en": ["shears", "shear", "entity"]
+        "ja": [
+          "ハサミ",
+          "毛刈り",
+          "エンティティ",
+          "毛を刈る",
+          "ハサミ使用",
+          "刈り取り",
+          "生物の毛刈り",
+          "エンティティを刈る"
+        ],
+        "en": [
+          "shears",
+          "shear",
+          "entity",
+          "shear entity",
+          "use shears",
+          "shearing",
+          "creature shearing",
+          "entity shearing"
+        ]
       }
     },
     {
@@ -2371,8 +5164,26 @@
       "name": "PlayerSpawnLocationEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["初期スポーン", "参加", "スポーン地点"],
-        "en": ["initial spawn", "join", "spawn location"]
+        "ja": [
+          "初期スポーン",
+          "参加",
+          "スポーン地点",
+          "参加時の位置",
+          "初回出現",
+          "スポーン直前",
+          "初期位置",
+          "ワールド参加"
+        ],
+        "en": [
+          "initial spawn",
+          "join",
+          "spawn location",
+          "join location",
+          "first appearance",
+          "before spawn",
+          "initial position",
+          "world entry"
+        ]
       }
     },
     {
@@ -2386,8 +5197,25 @@
       "name": "PlayerStatisticIncrementEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["統計", "増加", "実績記録"],
-        "en": ["statistics", "increment"]
+        "ja": [
+          "統計",
+          "増加",
+          "実績記録",
+          "統計更新",
+          "記録増加",
+          "統計値",
+          "カウンター",
+          "統計カウント"
+        ],
+        "en": [
+          "statistics",
+          "increment",
+          "statistic update",
+          "increase statistic",
+          "statistic value",
+          "counter",
+          "statistic count"
+        ]
       }
     },
     {
@@ -2401,8 +5229,26 @@
       "name": "PlayerSwapHandItemsEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["両手交換", "メインハンド", "オフハンド"],
-        "en": ["swap hands", "main hand", "offhand"]
+        "ja": [
+          "両手交換",
+          "メインハンド",
+          "オフハンド",
+          "左右の手",
+          "手持ち交換",
+          "交換キー",
+          "両手持ち替え",
+          "手のアイテム交換"
+        ],
+        "en": [
+          "swap hands",
+          "main hand",
+          "offhand",
+          "swap hand items",
+          "hand swap",
+          "swap key",
+          "switch hands",
+          "off hand swap"
+        ]
       }
     },
     {
@@ -2416,8 +5262,24 @@
       "name": "PlayerTeleportEndGatewayEvent",
       "source": "paper",
       "keywords": {
-        "ja": ["エンドゲートウェイ", "テレポート"],
-        "en": ["end gateway", "teleport"]
+        "ja": [
+          "エンドゲートウェイ",
+          "テレポート",
+          "ゲートウェイ移動",
+          "エンド移動",
+          "ゲートウェイ転送",
+          "ワープ",
+          "ゲートウェイ使用"
+        ],
+        "en": [
+          "end gateway",
+          "teleport",
+          "gateway travel",
+          "end travel",
+          "gateway transfer",
+          "warp",
+          "use gateway"
+        ]
       }
     },
     {
@@ -2431,8 +5293,25 @@
       "name": "PlayerTeleportEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["テレポート", "瞬間移動", "座標"],
-        "en": ["teleport", "position"]
+        "ja": [
+          "テレポート",
+          "瞬間移動",
+          "座標",
+          "ワープ",
+          "位置転送",
+          "座標変更",
+          "移動先",
+          "TP"
+        ],
+        "en": [
+          "teleport",
+          "position",
+          "warp",
+          "location transfer",
+          "coordinate change",
+          "destination",
+          "tp"
+        ]
       }
     },
     {
@@ -2446,8 +5325,26 @@
       "name": "PlayerToggleFlightEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["飛行", "飛ぶ", "切り替え"],
-        "en": ["flight", "fly", "toggle"]
+        "ja": [
+          "飛行",
+          "飛ぶ",
+          "切り替え",
+          "飛行開始",
+          "飛行終了",
+          "飛行状態",
+          "飛行切替",
+          "空を飛ぶ"
+        ],
+        "en": [
+          "flight",
+          "fly",
+          "toggle",
+          "start flying",
+          "stop flying",
+          "flying state",
+          "toggle flight",
+          "player flight"
+        ]
       }
     },
     {
@@ -2461,8 +5358,25 @@
       "name": "PlayerToggleSneakEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["しゃがむ", "スニーク", "忍び足"],
-        "en": ["sneak", "crouch"]
+        "ja": [
+          "しゃがむ",
+          "スニーク",
+          "忍び足",
+          "かがむ",
+          "しゃがみ開始",
+          "しゃがみ解除",
+          "スニーク状態",
+          "しゃがみ切替"
+        ],
+        "en": [
+          "sneak",
+          "crouch",
+          "crouching",
+          "start sneaking",
+          "stop sneaking",
+          "sneaking state",
+          "toggle crouch"
+        ]
       }
     },
     {
@@ -2476,8 +5390,26 @@
       "name": "PlayerToggleSprintEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["走る", "ダッシュ", "疾走"],
-        "en": ["sprint", "run", "dash"]
+        "ja": [
+          "走る",
+          "ダッシュ",
+          "疾走",
+          "全力疾走",
+          "走り始め",
+          "走るのをやめる",
+          "スプリント状態",
+          "走行切替"
+        ],
+        "en": [
+          "sprint",
+          "run",
+          "dash",
+          "sprinting",
+          "start sprinting",
+          "stop sprinting",
+          "sprinting state",
+          "toggle sprint"
+        ]
       }
     },
     {
@@ -2491,8 +5423,26 @@
       "name": "PlayerUnleashEntityEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["リード", "外す", "綱"],
-        "en": ["leash", "unleash", "lead"]
+        "ja": [
+          "リード",
+          "外す",
+          "綱",
+          "リード解除",
+          "ひもを外す",
+          "繋留解除",
+          "生物を放す",
+          "リード取り外し"
+        ],
+        "en": [
+          "leash",
+          "unleash",
+          "lead",
+          "remove lead",
+          "detach leash",
+          "release creature",
+          "unleash entity",
+          "leash removal"
+        ]
       }
     },
     {
@@ -2506,8 +5456,24 @@
       "name": "PlayerUnregisterChannelEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["プラグインチャンネル", "登録解除"],
-        "en": ["plugin channel", "unregister"]
+        "ja": [
+          "プラグインチャンネル",
+          "登録解除",
+          "チャンネル解除",
+          "通信チャンネル",
+          "プラグイン通信",
+          "解除通知",
+          "チャンネル購読解除"
+        ],
+        "en": [
+          "plugin channel",
+          "unregister",
+          "unregister channel",
+          "messaging channel",
+          "plugin messaging",
+          "unregistration notification",
+          "unsubscribe channel"
+        ]
       }
     },
     {
@@ -2520,8 +5486,26 @@
       "name": "PlayerUseUnknownEntityEvent",
       "source": "paper",
       "keywords": {
-        "ja": ["仮想エンティティ", "クリック", "未知のエンティティ"],
-        "en": ["virtual entity", "unknown entity", "click"]
+        "ja": [
+          "仮想エンティティ",
+          "クリック",
+          "未知のエンティティ",
+          "仮想モブ",
+          "存在しないエンティティ",
+          "パケットエンティティ",
+          "クライアント側エンティティ",
+          "仮想対象操作"
+        ],
+        "en": [
+          "virtual entity",
+          "unknown entity",
+          "click",
+          "fake entity",
+          "nonexistent entity",
+          "packet entity",
+          "client-side entity",
+          "virtual interaction"
+        ]
       }
     },
     {
@@ -2535,8 +5519,26 @@
       "name": "PlayerVelocityEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["速度", "移動ベクトル", "プレイヤー"],
-        "en": ["velocity", "motion", "player"]
+        "ja": [
+          "速度",
+          "移動ベクトル",
+          "プレイヤー",
+          "移動速度",
+          "速度変更",
+          "運動量",
+          "速度ベクトル",
+          "プレイヤー速度"
+        ],
+        "en": [
+          "velocity",
+          "motion",
+          "player",
+          "movement velocity",
+          "velocity change",
+          "player motion",
+          "motion vector",
+          "player velocity"
+        ]
       }
     },
     {
@@ -2550,8 +5552,25 @@
       "name": "PluginDisableEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["プラグイン", "無効化", "停止"],
-        "en": ["plugin", "disable"]
+        "ja": [
+          "プラグイン",
+          "無効化",
+          "停止",
+          "プラグイン停止",
+          "プラグイン無効化",
+          "停止処理",
+          "無効状態",
+          "プラグイン終了"
+        ],
+        "en": [
+          "plugin",
+          "disable",
+          "disable plugin",
+          "plugin shutdown",
+          "plugin deactivation",
+          "disabled plugin",
+          "plugin stop"
+        ]
       }
     },
     {
@@ -2565,8 +5584,25 @@
       "name": "PluginEnableEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["プラグイン", "有効化", "起動"],
-        "en": ["plugin", "enable"]
+        "ja": [
+          "プラグイン",
+          "有効化",
+          "起動",
+          "プラグイン起動",
+          "プラグイン有効化",
+          "起動処理",
+          "有効状態",
+          "プラグイン開始"
+        ],
+        "en": [
+          "plugin",
+          "enable",
+          "enable plugin",
+          "plugin startup",
+          "plugin activation",
+          "enabled plugin",
+          "plugin start"
+        ]
       }
     },
     {
@@ -2581,8 +5617,26 @@
       "name": "PluginEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["プラグイン", "有効化", "無効化"],
-        "en": ["plugin", "enable", "disable"]
+        "ja": [
+          "プラグイン",
+          "有効化",
+          "無効化",
+          "プラグイン状態",
+          "プラグイン起動",
+          "プラグイン停止",
+          "ライフサイクル",
+          "プラグインイベント"
+        ],
+        "en": [
+          "plugin",
+          "enable",
+          "disable",
+          "plugin state",
+          "plugin startup",
+          "plugin shutdown",
+          "plugin lifecycle",
+          "plugin event"
+        ]
       }
     },
     {
@@ -2596,8 +5650,26 @@
       "name": "PortalCreateEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["ポータル", "生成", "作成"],
-        "en": ["portal", "create", "formation"]
+        "ja": [
+          "ポータル",
+          "生成",
+          "作成",
+          "ゲート生成",
+          "ポータル形成",
+          "ポータル作成",
+          "ゲート作成",
+          "ポータルのブロック"
+        ],
+        "en": [
+          "portal",
+          "create",
+          "formation",
+          "portal creation",
+          "generate portal",
+          "create gateway",
+          "portal blocks",
+          "portal formation"
+        ]
       }
     },
     {
@@ -2611,8 +5683,26 @@
       "name": "PotionSplashEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["スプラッシュポーション", "着弾", "ポーション"],
-        "en": ["splash potion", "impact", "potion"]
+        "ja": [
+          "スプラッシュポーション",
+          "着弾",
+          "ポーション",
+          "ポーション投擲",
+          "ポーションが割れる",
+          "効果範囲",
+          "ポーション衝突",
+          "飛散"
+        ],
+        "en": [
+          "splash potion",
+          "impact",
+          "potion",
+          "thrown potion",
+          "potion breaking",
+          "splash area",
+          "potion collision",
+          "potion splash"
+        ]
       }
     },
     {
@@ -2626,8 +5716,26 @@
       "name": "PreLookupProfileEvent",
       "source": "paper",
       "keywords": {
-        "ja": ["プロファイル検索前", "名前検索", "キャッシュ"],
-        "en": ["profile lookup", "name", "cache"]
+        "ja": [
+          "プロファイル検索前",
+          "名前検索",
+          "キャッシュ",
+          "プロフィール照会",
+          "名前による検索",
+          "UUID照会",
+          "検索省略",
+          "検索要求"
+        ],
+        "en": [
+          "profile lookup",
+          "name",
+          "cache",
+          "profile query",
+          "lookup by name",
+          "uuid lookup",
+          "skip lookup",
+          "lookup request"
+        ]
       }
     },
     {
@@ -2641,8 +5749,26 @@
       "name": "PrepareAnvilEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["金床", "修理準備", "スロット"],
-        "en": ["anvil", "repair", "prepare"]
+        "ja": [
+          "金床",
+          "修理準備",
+          "スロット",
+          "金床結果",
+          "修理候補",
+          "完成品表示",
+          "アンビル操作",
+          "結果準備"
+        ],
+        "en": [
+          "anvil",
+          "repair",
+          "prepare",
+          "anvil result",
+          "repair result",
+          "output preview",
+          "anvil interaction",
+          "result preparation"
+        ]
       }
     },
     {
@@ -2655,8 +5781,26 @@
       "name": "PrepareItemCraftEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["クラフト準備", "レシピ", "結果スロット"],
-        "en": ["prepare crafting", "recipe", "result"]
+        "ja": [
+          "クラフト準備",
+          "レシピ",
+          "結果スロット",
+          "クラフト結果",
+          "材料配置",
+          "合成準備",
+          "完成品表示",
+          "レシピ確認"
+        ],
+        "en": [
+          "prepare crafting",
+          "recipe",
+          "result",
+          "crafting result",
+          "arrange ingredients",
+          "craft preparation",
+          "output preview",
+          "recipe check"
+        ]
       }
     },
     {
@@ -2670,8 +5814,26 @@
       "name": "PrepareItemEnchantEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["エンチャント準備", "エンチャントテーブル", "候補"],
-        "en": ["prepare enchant", "enchanting table", "offers"]
+        "ja": [
+          "エンチャント準備",
+          "エンチャントテーブル",
+          "候補",
+          "付呪準備",
+          "エンチャント候補",
+          "アイテム挿入",
+          "候補表示",
+          "付呪テーブル"
+        ],
+        "en": [
+          "prepare enchant",
+          "enchanting table",
+          "offers",
+          "enchantment preparation",
+          "enchantment offers",
+          "insert item",
+          "enchanting preview",
+          "enchanting input"
+        ]
       }
     },
     {
@@ -2685,8 +5847,26 @@
       "name": "ProfileWhitelistVerifyEvent",
       "source": "paper",
       "keywords": {
-        "ja": ["ホワイトリスト", "参加許可", "確認"],
-        "en": ["whitelist", "allowlist", "verify"]
+        "ja": [
+          "ホワイトリスト",
+          "参加許可",
+          "確認",
+          "許可リスト",
+          "ログイン許可",
+          "登録確認",
+          "ホワイトリスト照合",
+          "入場許可"
+        ],
+        "en": [
+          "whitelist",
+          "allowlist",
+          "verify",
+          "allowed players",
+          "login permission",
+          "whitelist check",
+          "allowlist verification",
+          "entry permission"
+        ]
       }
     },
     {
@@ -2700,8 +5880,26 @@
       "name": "ProjectileCollideEvent",
       "source": "paper",
       "keywords": {
-        "ja": ["飛び道具", "衝突", "エンティティ"],
-        "en": ["projectile", "collision", "entity"]
+        "ja": [
+          "飛び道具",
+          "衝突",
+          "エンティティ",
+          "投射物接触",
+          "当たり判定",
+          "投射物衝突",
+          "命中判定",
+          "飛び道具命中"
+        ],
+        "en": [
+          "projectile",
+          "collision",
+          "entity",
+          "projectile contact",
+          "hit detection",
+          "collide with entity",
+          "projectile hit",
+          "collision check"
+        ]
       }
     },
     {
@@ -2715,8 +5913,26 @@
       "name": "ProjectileHitEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["飛び道具", "着弾", "衝突"],
-        "en": ["projectile", "hit", "impact"]
+        "ja": [
+          "飛び道具",
+          "着弾",
+          "衝突",
+          "投射物着弾",
+          "命中",
+          "当たる",
+          "投射物衝突",
+          "着弾処理"
+        ],
+        "en": [
+          "projectile",
+          "hit",
+          "impact",
+          "projectile impact",
+          "hit object",
+          "projectile collision",
+          "impact detection",
+          "projectile landing"
+        ]
       }
     },
     {
@@ -2730,8 +5946,26 @@
       "name": "ProjectileLaunchEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["飛び道具", "発射", "投射物"],
-        "en": ["projectile", "launch", "shoot"]
+        "ja": [
+          "飛び道具",
+          "発射",
+          "投射物",
+          "投射物を飛ばす",
+          "射出",
+          "投げる",
+          "発射処理",
+          "射撃"
+        ],
+        "en": [
+          "projectile",
+          "launch",
+          "shoot",
+          "launch projectile",
+          "projectile firing",
+          "throw projectile",
+          "launch action",
+          "projectile shooting"
+        ]
       }
     },
     {
@@ -2745,8 +5979,26 @@
       "name": "RemoteServerCommandEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["RCON", "リモートコンソール", "コマンド"],
-        "en": ["rcon", "remote console", "command"]
+        "ja": [
+          "RCON",
+          "リモートコンソール",
+          "コマンド",
+          "遠隔コマンド",
+          "リモート操作",
+          "RCON入力",
+          "管理コンソール",
+          "コマンド受信"
+        ],
+        "en": [
+          "rcon",
+          "remote console",
+          "command",
+          "remote command",
+          "remote administration",
+          "rcon input",
+          "administrative console",
+          "received command"
+        ]
       }
     },
     {
@@ -2760,8 +6012,26 @@
       "name": "ServerCommandEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["コンソール", "コマンド", "実行"],
-        "en": ["console", "command", "execute"]
+        "ja": [
+          "コンソール",
+          "コマンド",
+          "実行",
+          "サーバーコマンド",
+          "コンソール入力",
+          "非プレイヤー",
+          "管理コマンド",
+          "命令実行"
+        ],
+        "en": [
+          "console",
+          "command",
+          "execute",
+          "server command",
+          "console input",
+          "non-player command",
+          "administrative command",
+          "run command"
+        ]
       }
     },
     {
@@ -2776,8 +6046,24 @@
       "name": "ServerEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["サーバー", "基底クラス"],
-        "en": ["server", "base class"]
+        "ja": [
+          "サーバー",
+          "基底クラス",
+          "サーバーイベント",
+          "サーバー関連",
+          "親クラス",
+          "基底イベント",
+          "サーバー処理"
+        ],
+        "en": [
+          "server",
+          "base class",
+          "server event",
+          "server-related event",
+          "parent class",
+          "base event",
+          "server handling"
+        ]
       }
     },
     {
@@ -2791,8 +6077,26 @@
       "name": "ServerExceptionEvent",
       "source": "paper",
       "keywords": {
-        "ja": ["例外", "エラー", "回復可能"],
-        "en": ["exception", "error", "recoverable"]
+        "ja": [
+          "例外",
+          "エラー",
+          "回復可能",
+          "例外通知",
+          "例外処理",
+          "障害",
+          "復旧可能",
+          "サーバーエラー"
+        ],
+        "en": [
+          "exception",
+          "error",
+          "recoverable",
+          "exception notification",
+          "exception handling",
+          "failure",
+          "recoverable error",
+          "server error"
+        ]
       }
     },
     {
@@ -2806,8 +6110,26 @@
       "name": "ServerListPingEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["サーバーリスト", "Ping", "MOTD"],
-        "en": ["server list", "ping", "motd"]
+        "ja": [
+          "サーバーリスト",
+          "Ping",
+          "MOTD",
+          "サーバー一覧",
+          "サーバーステータス",
+          "サーバー説明",
+          "一覧応答",
+          "Ping応答"
+        ],
+        "en": [
+          "server list",
+          "ping",
+          "motd",
+          "server status",
+          "status ping",
+          "server description",
+          "list response",
+          "ping response"
+        ]
       }
     },
     {
@@ -2822,8 +6144,26 @@
       "name": "ServiceEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["サービス", "サービス管理", "基底クラス"],
-        "en": ["service", "services manager", "base class"]
+        "ja": [
+          "サービス",
+          "サービス管理",
+          "基底クラス",
+          "サービスイベント",
+          "サービス提供",
+          "サービスプロバイダー",
+          "親クラス",
+          "サービス処理"
+        ],
+        "en": [
+          "service",
+          "services manager",
+          "base class",
+          "service event",
+          "service provision",
+          "service provider",
+          "parent class",
+          "service handling"
+        ]
       }
     },
     {
@@ -2837,8 +6177,25 @@
       "name": "ServiceRegisterEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["サービス登録", "提供者"],
-        "en": ["service", "register", "provider"]
+        "ja": [
+          "サービス登録",
+          "提供者",
+          "サービス追加",
+          "サービス提供者",
+          "登録通知",
+          "サービス公開",
+          "プロバイダー登録"
+        ],
+        "en": [
+          "service",
+          "register",
+          "provider",
+          "register service",
+          "service provider",
+          "registration notification",
+          "publish service",
+          "provider registration"
+        ]
       }
     },
     {
@@ -2852,8 +6209,25 @@
       "name": "ServiceUnregisterEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["サービス登録解除", "提供者"],
-        "en": ["service", "unregister", "provider"]
+        "ja": [
+          "サービス登録解除",
+          "提供者",
+          "サービス削除",
+          "サービス提供者",
+          "解除通知",
+          "サービス終了",
+          "プロバイダー解除"
+        ],
+        "en": [
+          "service",
+          "unregister",
+          "provider",
+          "unregister service",
+          "service provider",
+          "unregistration notification",
+          "remove service",
+          "provider removal"
+        ]
       }
     },
     {
@@ -2867,8 +6241,26 @@
       "name": "SheepDyeWoolEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["羊", "羊毛", "染色"],
-        "en": ["sheep", "wool", "dye"]
+        "ja": [
+          "羊",
+          "羊毛",
+          "染色",
+          "ひつじ",
+          "色付け",
+          "羊の色",
+          "染料使用",
+          "羊毛の色"
+        ],
+        "en": [
+          "sheep",
+          "wool",
+          "dye",
+          "dye wool",
+          "color sheep",
+          "sheep color",
+          "use dye",
+          "wool color"
+        ]
       }
     },
     {
@@ -2882,8 +6274,26 @@
       "name": "SheepRegrowWoolEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["羊", "羊毛再生", "毛"],
-        "en": ["sheep", "wool", "regrow"]
+        "ja": [
+          "羊",
+          "羊毛再生",
+          "毛",
+          "毛が生える",
+          "毛の再生",
+          "羊毛復活",
+          "羊毛が戻る",
+          "毛の成長"
+        ],
+        "en": [
+          "sheep",
+          "wool",
+          "regrow",
+          "wool regrowth",
+          "grow wool",
+          "wool restoration",
+          "regrowing sheep",
+          "wool growth"
+        ]
       }
     },
     {
@@ -2897,8 +6307,26 @@
       "name": "SignChangeEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["看板編集", "文字変更", "テキスト"],
-        "en": ["sign", "edit", "text"]
+        "ja": [
+          "看板編集",
+          "文字変更",
+          "テキスト",
+          "看板の内容",
+          "看板入力",
+          "文章変更",
+          "文字編集",
+          "看板テキスト"
+        ],
+        "en": [
+          "sign",
+          "edit",
+          "text",
+          "sign contents",
+          "sign input",
+          "change text",
+          "edit sign",
+          "sign text"
+        ]
       }
     },
     {
@@ -2912,8 +6340,26 @@
       "name": "SlimeSplitEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["スライム", "分裂", "死亡"],
-        "en": ["slime", "split", "death"]
+        "ja": [
+          "スライム",
+          "分裂",
+          "死亡",
+          "小さなスライム",
+          "死亡時分裂",
+          "スライム増加",
+          "分かれる",
+          "分裂処理"
+        ],
+        "en": [
+          "slime",
+          "split",
+          "death",
+          "smaller slimes",
+          "split on death",
+          "slime splitting",
+          "slime division",
+          "death splitting"
+        ]
       }
     },
     {
@@ -2927,8 +6373,26 @@
       "name": "SpawnChangeEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["ワールドスポーン", "初期スポーン", "位置変更"],
-        "en": ["world spawn", "spawn point", "change"]
+        "ja": [
+          "ワールドスポーン",
+          "初期スポーン",
+          "位置変更",
+          "ワールド初期位置",
+          "初期位置変更",
+          "スポーン設定",
+          "世界のスポーン",
+          "スポーン地点変更"
+        ],
+        "en": [
+          "world spawn",
+          "spawn point",
+          "change",
+          "world spawn location",
+          "change world spawn",
+          "spawn configuration",
+          "global spawn",
+          "spawn point change"
+        ]
       }
     },
     {
@@ -2942,8 +6406,25 @@
       "name": "SpawnerSpawnEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["スポナー", "スポーン", "出現"],
-        "en": ["spawner", "spawn"]
+        "ja": [
+          "スポナー",
+          "スポーン",
+          "出現",
+          "スポナー湧き",
+          "スポナー生成",
+          "モブ出現",
+          "スポナーから出現",
+          "スポーン処理"
+        ],
+        "en": [
+          "spawner",
+          "spawn",
+          "spawner spawning",
+          "spawn from spawner",
+          "mob appearance",
+          "spawner-created entity",
+          "spawning process"
+        ]
       }
     },
     {
@@ -2957,8 +6438,26 @@
       "name": "StructureGrowEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["木の成長", "巨大キノコ", "骨粉"],
-        "en": ["tree growth", "huge mushroom", "bonemeal"]
+        "ja": [
+          "木の成長",
+          "巨大キノコ",
+          "骨粉",
+          "植物成長",
+          "苗木",
+          "樹木生成",
+          "巨大化",
+          "成長処理"
+        ],
+        "en": [
+          "tree growth",
+          "huge mushroom",
+          "bonemeal",
+          "plant growth",
+          "sapling",
+          "tree generation",
+          "organic growth",
+          "structure growth"
+        ]
       }
     },
     {
@@ -2972,8 +6471,26 @@
       "name": "TabCompleteEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["タブ補完", "コマンド引数", "候補"],
-        "en": ["tab completion", "command arguments", "suggestions"]
+        "ja": [
+          "タブ補完",
+          "コマンド引数",
+          "候補",
+          "引数補完",
+          "オートコンプリート",
+          "コマンド入力",
+          "補完要求",
+          "コンソール補完"
+        ],
+        "en": [
+          "tab completion",
+          "command arguments",
+          "suggestions",
+          "argument completion",
+          "autocomplete",
+          "command input",
+          "completion request",
+          "console completion"
+        ]
       }
     },
     {
@@ -2987,8 +6504,26 @@
       "name": "ThunderChangeEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["雷雨", "雷雨終了", "天候変化"],
-        "en": ["thunder", "storm", "weather change"]
+        "ja": [
+          "雷雨",
+          "雷雨終了",
+          "天候変化",
+          "雷雨開始",
+          "雷雨停止",
+          "嵐",
+          "雷雨状態",
+          "雷の天候"
+        ],
+        "en": [
+          "thunder",
+          "storm",
+          "weather change",
+          "thunderstorm",
+          "start thunder",
+          "stop thunder",
+          "thunder state",
+          "storm change"
+        ]
       }
     },
     {
@@ -3002,8 +6537,25 @@
       "name": "VehicleBlockCollisionEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["乗り物", "ブロック衝突"],
-        "en": ["vehicle", "block", "collision"]
+        "ja": [
+          "乗り物",
+          "ブロック衝突",
+          "乗り物接触",
+          "地形衝突",
+          "ブロックに当たる",
+          "衝突判定",
+          "乗り物の衝突"
+        ],
+        "en": [
+          "vehicle",
+          "block",
+          "collision",
+          "vehicle contact",
+          "terrain collision",
+          "hit block",
+          "collision detection",
+          "vehicle block collision"
+        ]
       }
     },
     {
@@ -3018,8 +6570,24 @@
       "name": "VehicleCollisionEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["乗り物", "衝突"],
-        "en": ["vehicle", "collision"]
+        "ja": [
+          "乗り物",
+          "衝突",
+          "乗り物接触",
+          "ぶつかる",
+          "衝突判定",
+          "接触判定",
+          "乗り物の衝突"
+        ],
+        "en": [
+          "vehicle",
+          "collision",
+          "vehicle contact",
+          "collide vehicle",
+          "collision detection",
+          "contact detection",
+          "vehicle collision"
+        ]
       }
     },
     {
@@ -3033,8 +6601,25 @@
       "name": "VehicleCreateEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["乗り物", "作成", "生成"],
-        "en": ["vehicle", "create"]
+        "ja": [
+          "乗り物",
+          "作成",
+          "生成",
+          "乗り物生成",
+          "乗り物出現",
+          "作成処理",
+          "乗り物を作る",
+          "新しい乗り物"
+        ],
+        "en": [
+          "vehicle",
+          "create",
+          "create vehicle",
+          "vehicle creation",
+          "vehicle spawning",
+          "new vehicle",
+          "vehicle appearance"
+        ]
       }
     },
     {
@@ -3048,8 +6633,25 @@
       "name": "VehicleDamageEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["乗り物", "ダメージ", "損傷"],
-        "en": ["vehicle", "damage"]
+        "ja": [
+          "乗り物",
+          "ダメージ",
+          "損傷",
+          "乗り物損傷",
+          "乗り物への攻撃",
+          "被ダメージ",
+          "損傷判定",
+          "乗り物被害"
+        ],
+        "en": [
+          "vehicle",
+          "damage",
+          "vehicle damage",
+          "damaged vehicle",
+          "take damage",
+          "damage vehicle",
+          "vehicle hurt"
+        ]
       }
     },
     {
@@ -3063,8 +6665,24 @@
       "name": "VehicleDestroyEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["乗り物", "破壊"],
-        "en": ["vehicle", "destroy"]
+        "ja": [
+          "乗り物",
+          "破壊",
+          "乗り物破壊",
+          "乗り物が壊れる",
+          "壊す",
+          "破壊処理",
+          "乗り物破損"
+        ],
+        "en": [
+          "vehicle",
+          "destroy",
+          "destroy vehicle",
+          "vehicle destruction",
+          "broken vehicle",
+          "vehicle break",
+          "vehicle destroyed"
+        ]
       }
     },
     {
@@ -3078,8 +6696,26 @@
       "name": "VehicleEnterEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["乗車", "乗る", "乗り物"],
-        "en": ["vehicle", "enter", "ride"]
+        "ja": [
+          "乗車",
+          "乗る",
+          "乗り物",
+          "乗り込む",
+          "乗車開始",
+          "乗り物に入る",
+          "搭乗",
+          "乗り手"
+        ],
+        "en": [
+          "vehicle",
+          "enter",
+          "ride",
+          "board vehicle",
+          "start riding",
+          "enter vehicle",
+          "boarding",
+          "vehicle rider"
+        ]
       }
     },
     {
@@ -3093,8 +6729,25 @@
       "name": "VehicleEntityCollisionEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["乗り物", "エンティティ衝突"],
-        "en": ["vehicle", "entity", "collision"]
+        "ja": [
+          "乗り物",
+          "エンティティ衝突",
+          "乗り物接触",
+          "対象との衝突",
+          "エンティティに当たる",
+          "衝突判定",
+          "乗り物の衝突"
+        ],
+        "en": [
+          "vehicle",
+          "entity",
+          "collision",
+          "vehicle contact",
+          "entity impact",
+          "hit entity",
+          "collision detection",
+          "vehicle entity collision"
+        ]
       }
     },
     {
@@ -3109,8 +6762,24 @@
       "name": "VehicleEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["乗り物", "基底クラス"],
-        "en": ["vehicle", "base class"]
+        "ja": [
+          "乗り物",
+          "基底クラス",
+          "乗り物イベント",
+          "乗り物関連",
+          "親クラス",
+          "基底イベント",
+          "乗り物操作"
+        ],
+        "en": [
+          "vehicle",
+          "base class",
+          "vehicle event",
+          "vehicle-related event",
+          "parent class",
+          "base event",
+          "vehicle interaction"
+        ]
       }
     },
     {
@@ -3124,8 +6793,26 @@
       "name": "VehicleExitEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["下車", "降りる", "乗り物"],
-        "en": ["vehicle", "exit", "dismount"]
+        "ja": [
+          "下車",
+          "降りる",
+          "乗り物",
+          "降車",
+          "乗車終了",
+          "乗り物から出る",
+          "搭乗終了",
+          "降りる操作"
+        ],
+        "en": [
+          "vehicle",
+          "exit",
+          "dismount",
+          "leave vehicle",
+          "stop riding",
+          "exit vehicle",
+          "disembark",
+          "vehicle dismount"
+        ]
       }
     },
     {
@@ -3139,8 +6826,24 @@
       "name": "VehicleMoveEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["乗り物", "移動"],
-        "en": ["vehicle", "move"]
+        "ja": [
+          "乗り物",
+          "移動",
+          "乗り物移動",
+          "走行",
+          "位置変更",
+          "移動処理",
+          "乗り物の位置"
+        ],
+        "en": [
+          "vehicle",
+          "move",
+          "vehicle movement",
+          "vehicle travel",
+          "position change",
+          "move vehicle",
+          "vehicle position"
+        ]
       }
     },
     {
@@ -3154,8 +6857,24 @@
       "name": "VehicleUpdateEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["乗り物", "更新"],
-        "en": ["vehicle", "update"]
+        "ja": [
+          "乗り物",
+          "更新",
+          "乗り物更新",
+          "更新処理",
+          "乗り物の処理",
+          "更新通知",
+          "乗り物状態更新"
+        ],
+        "en": [
+          "vehicle",
+          "update",
+          "vehicle update",
+          "update vehicle",
+          "vehicle processing",
+          "update notification",
+          "vehicle state update"
+        ]
       }
     },
     {
@@ -3169,8 +6888,26 @@
       "name": "VillagerAcquireTradeEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["村人", "取引追加", "交易"],
-        "en": ["villager", "new trade", "acquire trade"]
+        "ja": [
+          "村人",
+          "取引追加",
+          "交易",
+          "新規取引",
+          "取引獲得",
+          "商品追加",
+          "交易品追加",
+          "取引候補追加"
+        ],
+        "en": [
+          "villager",
+          "new trade",
+          "acquire trade",
+          "new offer",
+          "trade acquisition",
+          "add trade",
+          "villager offer",
+          "acquire offer"
+        ]
       }
     },
     {
@@ -3184,8 +6921,26 @@
       "name": "VillagerReplenishTradeEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["村人", "交易", "最大使用回数"],
-        "en": ["villager", "trade", "maximum uses"]
+        "ja": [
+          "村人",
+          "交易",
+          "最大使用回数",
+          "取引上限",
+          "上限拡張",
+          "使用回数増加",
+          "販売枠",
+          "プレイヤーとの交易"
+        ],
+        "en": [
+          "villager",
+          "trade",
+          "maximum uses",
+          "trade limit",
+          "increase maximum uses",
+          "extra trade uses",
+          "offer capacity",
+          "player trading"
+        ]
       }
     },
     {
@@ -3199,8 +6954,26 @@
       "name": "WeatherChangeEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["天候", "雨", "晴れ"],
-        "en": ["weather", "rain", "clear"]
+        "ja": [
+          "天候",
+          "雨",
+          "晴れ",
+          "天気変更",
+          "降雨",
+          "晴天",
+          "雨が降る",
+          "雨が止む"
+        ],
+        "en": [
+          "weather",
+          "rain",
+          "clear",
+          "weather change",
+          "rainfall",
+          "clear weather",
+          "start rain",
+          "stop rain"
+        ]
       }
     },
     {
@@ -3215,8 +6988,24 @@
       "name": "WeatherEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["天候", "基底クラス"],
-        "en": ["weather", "base class"]
+        "ja": [
+          "天候",
+          "基底クラス",
+          "天候イベント",
+          "天気",
+          "親クラス",
+          "基底イベント",
+          "ワールド天候"
+        ],
+        "en": [
+          "weather",
+          "base class",
+          "weather event",
+          "world weather",
+          "parent class",
+          "base event",
+          "weather handling"
+        ]
       }
     },
     {
@@ -3231,8 +7020,24 @@
       "name": "WorldEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["ワールド", "基底クラス"],
-        "en": ["world", "base class"]
+        "ja": [
+          "ワールド",
+          "基底クラス",
+          "ワールドイベント",
+          "世界",
+          "親クラス",
+          "基底イベント",
+          "ワールド処理"
+        ],
+        "en": [
+          "world",
+          "base class",
+          "world event",
+          "game world",
+          "parent class",
+          "base event",
+          "world handling"
+        ]
       }
     },
     {
@@ -3246,8 +7051,24 @@
       "name": "WorldInitEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["ワールド初期化", "初期化中"],
-        "en": ["world", "initialize"]
+        "ja": [
+          "ワールド初期化",
+          "初期化中",
+          "世界の初期化",
+          "ワールド準備",
+          "初期化処理",
+          "初期化開始",
+          "ワールド構築"
+        ],
+        "en": [
+          "world",
+          "initialize",
+          "world initialization",
+          "world setup",
+          "initializing world",
+          "initialization start",
+          "world preparation"
+        ]
       }
     },
     {
@@ -3261,8 +7082,24 @@
       "name": "WorldLoadEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["ワールド読み込み", "ロード"],
-        "en": ["world", "load"]
+        "ja": [
+          "ワールド読み込み",
+          "ロード",
+          "世界の読み込み",
+          "ワールドロード",
+          "読み込み完了",
+          "ワールド利用可能",
+          "ロード処理"
+        ],
+        "en": [
+          "world",
+          "load",
+          "world loading",
+          "load world",
+          "loaded world",
+          "world available",
+          "loading process"
+        ]
       }
     },
     {
@@ -3276,8 +7113,24 @@
       "name": "WorldSaveEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["ワールド保存", "セーブ"],
-        "en": ["world", "save"]
+        "ja": [
+          "ワールド保存",
+          "セーブ",
+          "世界の保存",
+          "保存処理",
+          "ワールドセーブ",
+          "ワールドデータ保存",
+          "保存完了"
+        ],
+        "en": [
+          "world",
+          "save",
+          "world saving",
+          "save world",
+          "saved world",
+          "persist world",
+          "world persistence"
+        ]
       }
     },
     {
@@ -3291,8 +7144,24 @@
       "name": "WorldUnloadEvent",
       "source": "spigot",
       "keywords": {
-        "ja": ["ワールド解放", "アンロード"],
-        "en": ["world", "unload"]
+        "ja": [
+          "ワールド解放",
+          "アンロード",
+          "世界の解放",
+          "読み込み解除",
+          "ワールドアンロード",
+          "ワールド終了",
+          "解放処理"
+        ],
+        "en": [
+          "world",
+          "unload",
+          "world unloading",
+          "unload world",
+          "unloaded world",
+          "world removal",
+          "release world"
+        ]
       }
     }
   ]
