@@ -9,7 +9,7 @@ import {
   availableInSpigot,
   availableInVelocity,
 } from "@/libs/available-in";
-import React, { FC, useMemo } from "react";
+import React, { FC, useEffect, useMemo, useRef } from "react";
 import SelectableSourceTag from "@/components/selectable-source-tag";
 import EventSource from "@/types/event-source";
 import useEvents from "@/libs/hooks/use-events";
@@ -45,6 +45,32 @@ const EventList: FC<EventListProps> = ({
     loadMore,
     retry,
   } = useEvents(locale, version, search, tags);
+  const loadMoreRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const target = loadMoreRef.current;
+    if (
+      !target ||
+      !hasMore ||
+      isLoadingMore ||
+      error ||
+      !window.IntersectionObserver
+    ) {
+      return;
+    }
+    const observer = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((entry) => entry.isIntersecting)) {
+          observer.disconnect();
+          loadMore();
+        }
+      },
+      { rootMargin: "400px 0px" },
+    );
+    observer.observe(target);
+    return () => observer.disconnect();
+  }, [error, hasMore, isLoadingMore, loadMore]);
+
   const incompleteEvents = useMemo(
     () =>
       events?.filter(
@@ -166,25 +192,6 @@ const EventList: FC<EventListProps> = ({
             </div>
           )}
           <div className="mt-1 break-words">{event.description}</div>
-          <details className="mt-2 text-sm">
-            <summary className="cursor-pointer text-base-content/70">
-              {translate(locale, "CompareJavadoc")}
-            </summary>
-            <p
-              lang={event.javadoc ? "en" : locale}
-              className="mt-2 whitespace-pre-wrap break-words"
-            >
-              {event.javadoc || translate(locale, "NoJavadoc")}
-            </p>
-            <Link
-              href={event.link}
-              target="_blank"
-              rel="noreferrer"
-              className="link link-primary"
-            >
-              {translate(locale, "OpenJavadoc")}
-            </Link>
-          </details>
         </div>
       ))}
       {error && (
@@ -209,14 +216,25 @@ const EventList: FC<EventListProps> = ({
         </div>
       )}
       {hasMore && !error && (
-        <button
-          type="button"
-          className="btn btn-outline self-center"
-          disabled={isLoadingMore}
-          onClick={() => void loadMore()}
-        >
-          {translate(locale, isLoadingMore ? "LoadingEvents" : "LoadMore")}
-        </button>
+        <div ref={loadMoreRef} className="flex justify-center py-2">
+          {isLoadingMore ? (
+            <p role="status" className="flex items-center gap-2">
+              <span
+                className="loading loading-spinner loading-sm"
+                aria-hidden="true"
+              />
+              {translate(locale, "LoadingEvents")}
+            </p>
+          ) : (
+            <button
+              type="button"
+              className="btn btn-outline"
+              onClick={loadMore}
+            >
+              {translate(locale, "LoadMore")}
+            </button>
+          )}
+        </div>
       )}
     </div>
   );

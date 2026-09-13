@@ -1,4 +1,5 @@
 import useSWRInfinite from "swr/infinite";
+import { useCallback } from "react";
 import type EventSource from "@/types/event-source";
 import type { Locale } from "@/i18n/config";
 import type { SearchEventsResponse } from "@/types/event";
@@ -35,17 +36,23 @@ const useEvents = (
         shouldRetryOnError: false,
       },
     );
+  const isLoadingMore =
+    enabled && !error && (isValidating || Boolean(data && size > data.length));
+  const hasMore = enabled && data?.[data.length - 1]?.nextOffset != null;
+  const loadMore = useCallback(() => {
+    if (hasMore && !isLoadingMore && !error) {
+      void setSize((current) => current + 1).catch(() => {});
+    }
+  }, [error, hasMore, isLoadingMore, setSize]);
+
   return {
     events: enabled ? (data?.flatMap((page) => page.events) ?? []) : [],
     total: enabled ? data?.[0]?.total : 0,
     error: enabled ? error : undefined,
     isLoading: enabled && isLoading,
-    isLoadingMore:
-      enabled &&
-      !error &&
-      (isValidating || Boolean(data && size > data.length)),
-    hasMore: enabled && data?.[data.length - 1]?.nextOffset != null,
-    loadMore: () => setSize(size + 1),
+    isLoadingMore,
+    hasMore,
+    loadMore,
     retry: () => mutate(),
   };
 };
