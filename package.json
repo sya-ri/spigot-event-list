@@ -21,7 +21,7 @@
     "react": "19.3.0",
     "react-dom": "19.3.0",
     "react-icons": "5.7.0",
-    "remeda": "2.48.0",
+    "remeda": "2.50.0",
     "swr": "2.5.1"
   },
   "devDependencies": {
