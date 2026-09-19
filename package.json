@@ -34,7 +34,7 @@
     "eslint-config-next": "16.3.5",
     "eslint-config-prettier": "10.1.8",
     "postcss": "8.5.28",
-    "prettier": "3.9.6",
+    "prettier": "3.9.8",
     "serwist": "9.5.12",
     "tailwindcss": "4.3.3",
     "tsx": "4.23.13",
