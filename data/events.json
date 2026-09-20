@@ -8131,6 +8131,16 @@
     },
     {
       "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "org/bukkit/event/player/PlayerAdvancementCriterionGrantEvent.html",
+      "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerAdvancementCriterionGrantEvent.html",
+      "name": "PlayerAdvancementCriterionGrantEvent",
+      "source": "spigot"
+    },
+    {
+      "description": {
         "en": "Called when a player has completed all criteria in an advancement.",
         "ja": "プレイヤーが進捗の条件を全て達成した時に呼び出される。"
       },
