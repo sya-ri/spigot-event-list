@@ -14,14 +14,14 @@ jobs:
           node-version-file: package.json
       - name: Install Dependencies
         run: |
-          npm install
+          npm ci --ignore-scripts
       - name: Update event list
         run: |
           npm run start -w packages/downloader
           npm run format
       - name: Import GPG key
         id: import-gpg
-        uses: crazy-max/ghaction-import-gpg@v7
+        uses: crazy-max/ghaction-import-gpg@2dc316deee8e90f13e1a351ab510b4d5bc0c82cd # v7
         with:
           gpg_private_key: ${{ secrets.BOT_GPG_PRIVATE_KEY }}
           passphrase: ${{ secrets.BOT_GPG_PASSPHRASE }}

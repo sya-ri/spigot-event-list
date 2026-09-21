@@ -9,8 +9,10 @@ const PAPERMC_HEADERS = {
 };
 
 const compareVersions = (left: string, right: string) => {
-  const leftParts = left.split(".").map((value) => parseInt(value, 10));
-  const rightParts = right.split(".").map((value) => parseInt(value, 10));
+  const leftParts = left.split(".").map((value) => Number.parseInt(value, 10));
+  const rightParts = right
+    .split(".")
+    .map((value) => Number.parseInt(value, 10));
   const length = Math.max(leftParts.length, rightParts.length);
   for (let index = 0; index < length; index++) {
     const diff = (leftParts[index] ?? 0) - (rightParts[index] ?? 0);
@@ -38,7 +40,7 @@ type JenkinsApi = {
 
 const fetchBuildNumberFromJenkins = async (url: string): Promise<number> => {
   const json = await fetchJson<JenkinsApi>(url);
-  return parseInt(json.id);
+  return Number.parseInt(json.id);
 };
 
 type PaperApiVersion = {
@@ -134,7 +136,7 @@ const fetchBuildNumberFromPurpurApi = async (
   const json = await fetchJson<PurpurApiVersion>(
     `https://api.purpurmc.org/v2/${name}/${version}/`,
   );
-  return parseInt(json.builds.all.pop() ?? "0");
+  return Number.parseInt(json.builds.all.pop() ?? "0");
 };
 
 const fetchVersionsFromPurpurApi = async (name: string): Promise<string[]> => {
@@ -255,7 +257,7 @@ export const purpurReleaseVersion = async () =>
 
 export const purpurReleaseBuildNumber = (version: string) => {
   const matched = version.match(/\.build\.(\d+)(?:-|$)/);
-  return matched ? parseInt(matched[1], 10) : 0;
+  return matched ? Number.parseInt(matched[1], 10) : 0;
 };
 
 export const spigotBuildNumber = async () => {

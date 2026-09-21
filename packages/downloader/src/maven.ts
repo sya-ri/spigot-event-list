@@ -41,7 +41,7 @@ const latestSnapShotVersion = async (
   const snapshot = xml.metadata.versioning[0].snapshot[0];
   return {
     snapshotVersion: snapshot.timestamp[0] + "-" + snapshot.buildNumber[0],
-    buildNumber: parseInt(snapshot.buildNumber[0], 10),
+    buildNumber: Number.parseInt(snapshot.buildNumber[0], 10),
   };
 };
 
@@ -103,7 +103,7 @@ export const resolveArtifactBuildNumber = async (
 ) => {
   if (!artifact.isSnapShot) {
     const matched = artifact.version.match(/\.build\.(\d+)(?:-|$)/);
-    return matched ? parseInt(matched[1], 10) : null;
+    return matched ? Number.parseInt(matched[1], 10) : null;
   }
   const { buildNumber } = await latestSnapShotVersion(
     artifact,
@@ -123,7 +123,7 @@ export const downloadArtifact = (
 ) =>
   resolveArtifactUrl(artifact, repository, config).then((url) =>
     fetchStream(url, config).then(({ contentLength: headerValue, stream }) => {
-      const contentLength = parseInt(String(headerValue ?? ""), 10);
+      const contentLength = Number.parseInt(String(headerValue ?? ""), 10);
       const bar =
         Number.isFinite(contentLength) && contentLength > 0
           ? multiProgress.newBar(
