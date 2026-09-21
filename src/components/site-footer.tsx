@@ -233,7 +233,7 @@ export default function SiteFooter() {
                 <BsTranslate className="size-5" />
               </button>
               <ul
-                tabIndex={0}
+                tabIndex={-1}
                 className="dropdown-content z-10 menu p-2 shadow bg-base-200 rounded-box w-64"
               >
                 {Locale.map((l) => (

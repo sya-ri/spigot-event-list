@@ -1,5 +1,5 @@
-@config "../../tailwind.config.ts";
 @import "tailwindcss";
+@config "../../tailwind.config.ts";
 
 @plugin "daisyui" {
   logs: false;

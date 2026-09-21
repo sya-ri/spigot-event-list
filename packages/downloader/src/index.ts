@@ -415,8 +415,10 @@ const compareMinecraftVersionsAsc = (
 ) => compareVersionStrings(left.minecraftVersion, right.minecraftVersion);
 
 const compareVersionStrings = (left: string, right: string) => {
-  const leftParts = left.split(".").map((value) => parseInt(value, 10));
-  const rightParts = right.split(".").map((value) => parseInt(value, 10));
+  const leftParts = left.split(".").map((value) => Number.parseInt(value, 10));
+  const rightParts = right
+    .split(".")
+    .map((value) => Number.parseInt(value, 10));
   const length = Math.max(leftParts.length, rightParts.length);
   for (let index = 0; index < length; index++) {
     const diff = (leftParts[index] ?? 0) - (rightParts[index] ?? 0);
