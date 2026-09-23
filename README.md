@@ -41,27 +41,10 @@ Inspect the linked Javadoc for the event's contract. Indexed data reflects the s
 
 ## AI Skill
 
-This repository includes a public skill for AI agents:
+The [spigot-event-search skill](skills/spigot-event-search/SKILL.md) lets AI agents query the search API. Install it with either command:
 
-- `spigot-event-search`
-
-It uses the public event search API and supports partial-match search over:
-
-- event name
-- description
-- curated Japanese and English keywords
-- Javadoc
-- deprecated description
-- Japanese and English queries
-
-Install with GitHub CLI:
-
-```bash
-gh skill install sya-ri/spigot-event-list spigot-event-search
-```
-
-Install with `vercel-labs/skills`:
-
-```bash
+```sh
+gh skill install sya-ri/spigot-event-list skills/spigot-event-search
+# Alternative:
 npx -y skills add sya-ri/spigot-event-list --skill spigot-event-search
 ```
