@@ -508,33 +508,11 @@
     },
     {
       "description": {
-        "en": "Called when sending suggestions to the client.",
-        "ja": "補完をクライアントに送信する時に呼び出される。"
-      },
-      "keywords": {
-        "ja": [
-          "補完",
-          "候補",
-          "クライアント送信",
-          "入力候補",
-          "コマンド候補",
-          "タブ補完",
-          "候補送信",
-          "補完結果"
-        ],
-        "en": [
-          "completion",
-          "suggestions",
-          "client",
-          "autocomplete",
-          "command suggestions",
-          "tab suggestions",
-          "send completions",
-          "completion results"
-        ]
+        "en": "",
+        "ja": ""
       },
       "href": "com/destroystokyo/paper/event/brigadier/AsyncPlayerSendSuggestionsEvent.html",
-      "javadoc": "Called when sending Suggestions to the client. Will be called asynchronously if a plugin marks the AsyncTabCompleteEvent event handled asynchronously, otherwise called synchronously.",
+      "javadoc": "Called when sending Suggestions to the client. Will be called asynchronously if a plugin marks the AsyncTabCompleteEvent event handled asynchronously, otherwise called synchronously. If the suggestions are empty after this event has been called, nothing will be sent to the client.",
       "link": "https://jd.papermc.io/paper/26.3/com/destroystokyo/paper/event/brigadier/AsyncPlayerSendSuggestionsEvent.html",
       "name": "AsyncPlayerSendSuggestionsEvent",
       "source": "paper"
