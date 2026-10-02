@@ -18,7 +18,9 @@ Open the local URL printed by Next.js. See [package.json](../package.json) for b
 
 Server event history lives in `data/minecraft/{version}/events.json`.
 `data/events.json` is the latest merged dataset, and `data/proxy/events.json` contains the latest proxy events; proxy history is not maintained.
-The [downloader workflow](../AGENTS.md#downloader-usage) covers latest-only, selected-version, and all-version refreshes.
+The [downloader workflow](../AGENTS.md#downloader-usage) covers latest, selected-version, and all-version refreshes.
+Latest refreshes also retain a fixed server snapshot when all server sources agree on the Minecraft version, so that version remains searchable after the sources advance.
+Fixed-version reference links use the separate `spigot-javadoc` mirror. Downloading event data extracts Javadoc locally but does not publish that mirror; check its public pages separately before claiming reference-link availability.
 Refreshes change tracked data, so select the intended versions and review the resulting diff.
 
 ## i18n

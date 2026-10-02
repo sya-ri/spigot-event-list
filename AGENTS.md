@@ -21,7 +21,7 @@
 
 ## Downloader Usage
 
-- Latest snapshot only:
+- Latest snapshot and complete version retention:
   - `mise exec node@24 -- npm --workspace packages/downloader run start --`
 - All complete Minecraft versions:
   - `mise exec node@24 -- npm --workspace packages/downloader run start -- --all`
@@ -33,6 +33,7 @@ Behavior:
 
 - No flags:
   - Updates latest server snapshot into `data/events.json` and `data/versions.json`
+  - Saves the server snapshot into `data/minecraft/{version}/...` when Paper, Spigot, and Purpur agree on the Minecraft version; mixed snapshots are not saved as a fixed version
   - Updates latest proxy snapshot into `data/proxy/events.json` and `data/proxy/versions.json`
 - `--all`:
   - Downloads historical complete server versions into `data/minecraft/{version}/...`

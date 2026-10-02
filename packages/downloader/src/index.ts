@@ -16,6 +16,7 @@ import {
 } from "../../../src/libs/data-paths";
 import { fillMissingDescriptionsInData } from "./fill-missing-descriptions";
 import { reuseEventMetadata } from "./event-metadata";
+import { retainCompleteServerSnapshot } from "./retain-server-snapshot";
 
 const PROXY_SOURCE_NAMES = ["Bungee", "Velocity"] as const;
 const PROXY_EVENT_SOURCES = ["bungee", "velocity"] as const;
@@ -59,6 +60,12 @@ const index = async () => {
   }
   if (options.versions.length === 0) {
     const latestServer = await downloadLatestServerSnapshot(discoveredReleases);
+    if (latestServer) {
+      await retainCompleteServerSnapshot(latestDataPath(""), {
+        ...latestServer,
+        events: normalizeEvents(latestServer.events),
+      });
+    }
     const proxySources = await getSources(PROXY_SOURCE_NAMES);
     const [lang, events] = await downloadLatestEvents(proxySources);
     await writeProxyEvents(lang, filterEvents(events, PROXY_EVENT_SOURCES));
