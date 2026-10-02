@@ -10,6 +10,21 @@ Reviewed the Japanese and English descriptions against the stored Javadoc for al
 
 Short, accurate definitions may retain conventional wording shared with Javadoc. Long copied passages, markup in summaries, untranslated Japanese fields, and semantic or timing mismatches were corrected. Raw Javadoc remains separate reference material.
 
+## 2026-10-02: 26.2 and 26.3 ingestion
+
+Generated both fixed snapshots with the official downloader's `--version 26.2 --version 26.3` path, using each source's exact-version Maven Javadoc archive.
+
+| Minecraft | Paper       | Spigot        | Purpur               | Events |
+| --------- | ----------- | ------------- | -------------------- | ------ |
+| 26.2      | #129        | #13           | #2633                | 482    |
+| 26.3      | #142 (beta) | #7 (snapshot) | #2642 (experimental) | 485    |
+
+Reviewed the 21 missing bilingual descriptions in 26.2 and the 25 in 26.3 against the downloaded class declarations and member documentation. Reused previously reviewed summaries and keywords where those references support them. New EntityBreakEvent, EntityBreakByEntityEvent, and Spigot PlayerAdvancementCriterionGrantEvent summaries describe the exposed removal causes, remover/damage source, and advancement criterion without inventing undocumented dispatch conditions. IllegalPacketEvent is explicitly described as unused, matching its deprecation note.
+
+Applied the same reviewed metadata to the 17 missing descriptions in the latest dataset's matching 26.3 Paper/Spigot entries. The earlier review counts above remain the September 12 baseline.
+
+Exact event searches are verified independently of the latest source-version alias. At this review date, the separate public Javadoc mirror's 26.2/26.3 event pages return 404; ingestion alone does not publish them. The 26.3 source artifacts are beta/experimental/snapshot builds, not a claim that all three servers have stable releases.
+
 ## Expanded search vocabulary
 
 Each record now has 7–10 keywords per language, up from 2–5. The expansion covers all 592 identities and 18,036 records, using documented subjects and actions, everyday synonyms, and useful multiword search phrases. For example, BlockBreakEvent includes `掘削` and `break blocks`, PlayerAFKEvent includes `無操作` and `away from keyboard`, and tab-completion events include `オートコンプリート` and `autocomplete`.
