@@ -23,7 +23,7 @@ Reviewed the 21 missing bilingual descriptions in 26.2 and the 25 in 26.3 agains
 
 Applied the same reviewed metadata to the 17 missing descriptions in the latest dataset's matching 26.3 Paper/Spigot entries. The earlier review counts above remain the September 12 baseline.
 
-Exact event searches are verified independently of the latest source-version alias. At this review date, the separate public Javadoc mirror's 26.2/26.3 event pages return 404; ingestion alone does not publish them. The 26.3 source artifacts are beta/experimental/snapshot builds, not a claim that all three servers have stable releases.
+Exact event searches are verified independently of the latest source-version alias. The snapshots now use the official versioned Paper pages for 26.2/26.3 and matching current Spigot/Purpur official pages for 26.3. Spigot/Purpur 26.2 remains on the historical mirror, whose publication is tracked in [spigot-javadoc PR #1](https://github.com/sya-ri/spigot-javadoc/pull/1); ingestion alone does not publish it. The moving Spigot/Purpur official URLs need the maintenance described in [development](development.md#event-datasets) when the current version advances. The 26.3 source artifacts are beta/experimental/snapshot builds, not a claim that all three servers have stable releases.
 
 ## Expanded search vocabulary
 

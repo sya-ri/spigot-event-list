@@ -102,3 +102,29 @@ test("preserves reviewed fixed-version metadata when the Javadoc evidence is unc
     "https://spigot-javadoc.s7a.dev/paper/26.2/ExampleEvent.html",
   );
 });
+
+test("retains verified official references instead of rewriting them to unpublished mirrors", async (t) => {
+  const root = await mkdtemp(
+    path.join(os.tmpdir(), "event-official-reference-"),
+  );
+  t.after(() => rm(root, { recursive: true, force: true }));
+  const event: EventType = {
+    name: "ExampleEvent",
+    source: "paper",
+    href: "ExampleEvent.html",
+    link: "https://jd.papermc.io/paper/26.3/ExampleEvent.html",
+    description: { en: "Reviewed description.", ja: "確認済みの説明。" },
+  };
+  await retainCompleteServerSnapshot(root, {
+    ...snapshot,
+    versions: {
+      Paper: "26.3 - #142",
+      Spigot: "26.3 - #7",
+      Purpur: "26.3 - #2642",
+    },
+    events: [event],
+    linkBaseBySourceType: { paper: "https://jd.papermc.io/paper/26.3/" },
+  });
+  const data = await createDataPaths(root).readServerEvents("26.3");
+  assert.equal(data.events[0].link, event.link);
+});

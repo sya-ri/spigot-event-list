@@ -58,6 +58,35 @@ test("reuse preserves keywords and version-specific edits only with matching evi
   );
 });
 
+test("switching equivalent versioned Paper references preserves review without class prose", () => {
+  const previous = {
+    ...base,
+    javadoc: undefined,
+    link: "https://spigot-javadoc.s7a.dev/paper/26.2/sample/SampleEvent.html",
+  };
+  const fresh = {
+    ...previous,
+    description: { ja: "", en: "" },
+    keywords: undefined,
+    link: "https://jd.papermc.io/paper/26.2/sample/SampleEvent.html",
+  };
+  assert.deepEqual(
+    reuseEventMetadata(fresh, previous).description,
+    base.description,
+  );
+  assert.deepEqual(reuseEventMetadata(fresh, previous).keywords, base.keywords);
+  assert.equal(
+    reuseEventMetadata(
+      {
+        ...fresh,
+        link: "https://jd.papermc.io/paper/26.3/sample/SampleEvent.html",
+      },
+      previous,
+    ).description.ja,
+    "",
+  );
+});
+
 test("Javadoc extraction separates class prose from deprecation and preserves word boundaries", () => {
   const $ = load(
     '<section id="class-description"><div class="deprecation-block"><div class="block">Use AnotherEvent.</div></div><div class="block">Called when a block\nchanges.<p>Second paragraph.</p></div></section>',

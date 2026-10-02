@@ -41,6 +41,8 @@ Behavior:
 - `--version`:
   - Downloads only the specified Minecraft versions
 
+Reference links prefer official Javadoc only when its public title confirms the exact source and Minecraft version; otherwise they use the versioned mirror. Spigot/Purpur official URLs follow latest. When they advance, refresh the preceding snapshot and publish its mirror. Generation does not deploy mirrors or continuously verify stored links.
+
 ## Description Editing
 
 - `events.json` is the source of truth for manual description edits.
