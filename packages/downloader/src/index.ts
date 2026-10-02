@@ -17,10 +17,10 @@ import {
 import { fillMissingDescriptionsInData } from "./fill-missing-descriptions";
 import { reuseEventMetadata } from "./event-metadata";
 import { retainCompleteServerSnapshot } from "./retain-server-snapshot";
+import { getServerJavadocLinkBases } from "./server-javadoc-links";
 
 const PROXY_SOURCE_NAMES = ["Bungee", "Velocity"] as const;
 const PROXY_EVENT_SOURCES = ["bungee", "velocity"] as const;
-const GITHUB_PAGES_BASE_URL = "https://spigot-javadoc.s7a.dev";
 const { latestDataPath, minecraftVersionDataPath, proxyDataPath } =
   createDataPaths(path.resolve(process.cwd(), "../../data"));
 const githubPagesJavadocPath = (...parts: string[]) =>
@@ -117,14 +117,7 @@ const downloadVersionedServerEvents = async (
       toSourceFromRelease(release),
     ]),
   );
-  const linkBaseBySourceType = Object.fromEntries(
-    versionReleases.flatMap((release) =>
-      release.downloadSources.map((sourceType) => [
-        sourceType,
-        `${GITHUB_PAGES_BASE_URL}/${sourceType}/${version}/`,
-      ]),
-    ),
-  ) as Partial<Record<SourceType, string>>;
+  const linkBaseBySourceType = await getServerJavadocLinkBases(versionReleases);
   const mirrorDirectoryBySourceName = Object.fromEntries(
     versionReleases.map((release) => [
       release.sourceName,
@@ -239,11 +232,15 @@ const downloadLatestServerSnapshot = async (
       toSourceFromRelease(release),
     ]),
   );
-  const [lang, events] = await downloadLatestEvents(sources);
+  const linkBaseBySourceType = await getServerJavadocLinkBases(latestReleases);
+  const [lang, events] = await downloadLatestEvents(sources, {
+    linkBaseBySourceType,
+  });
   return {
     lang,
     events,
     versions: toLatestVersionMap(sources),
+    linkBaseBySourceType,
   };
 };
 

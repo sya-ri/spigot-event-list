@@ -10,7 +10,8 @@ export const hasLocalizedDescription = (
   );
 
 // Whitespace differences from Javadoc HTML must not discard an editorial review.
-// Without a class summary, reuse metadata only for the same reference URL.
+// Without a class summary, reuse metadata only for the same reference URL,
+// including equivalent official/mirror URLs for the same versioned Paper page.
 const normalizedJavadoc = (event: EventType) => {
   let text = event.javadoc?.replace(/\s+/g, "") ?? "";
   // Older snapshots included the same deprecation notice twice in the summary.
@@ -29,7 +30,13 @@ export const eventEvidenceKey = (event: EventType) =>
   JSON.stringify([
     event.source,
     event.href,
-    normalizedJavadoc(event) || event.link,
+    normalizedJavadoc(event) ||
+      (event.source === "paper"
+        ? event.link.replace(
+            /^https:\/\/spigot-javadoc\.s7a\.dev\/paper\/(\d+(?:\.\d+){1,2})\//,
+            "https://jd.papermc.io/paper/$1/",
+          )
+        : event.link),
   ]);
 
 export const reuseEventMetadata = (

@@ -3,6 +3,7 @@ import path from "node:path";
 import { getLatestMinecraftVersionFromVersions } from "../../../src/libs/data-paths";
 import type EventType from "./types/event-type";
 import { reuseEventMetadata } from "./event-metadata";
+import type SourceType from "./types/source-type";
 
 export const retainCompleteServerSnapshot = async (
   dataRoot: string,
@@ -10,6 +11,7 @@ export const retainCompleteServerSnapshot = async (
     lang: string[];
     events: EventType[];
     versions: Record<string, string>;
+    linkBaseBySourceType?: Partial<Record<SourceType, string>>;
   },
 ) => {
   const version = getLatestMinecraftVersionFromVersions(snapshot.versions);
@@ -34,7 +36,10 @@ export const retainCompleteServerSnapshot = async (
     reuseEventMetadata(
       {
         ...event,
-        link: `https://spigot-javadoc.s7a.dev/${event.source}/${version}/${event.href}`,
+        link:
+          (snapshot.linkBaseBySourceType?.[event.source] ??
+            `https://spigot-javadoc.s7a.dev/${event.source}/${version}/`) +
+          event.href,
       },
       previous.get(event.name + event.source),
     ),

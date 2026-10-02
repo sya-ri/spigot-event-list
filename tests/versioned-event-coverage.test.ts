@@ -16,10 +16,22 @@ for (const version of ["26.2", "26.3"]) {
         throw new Error("Must read the exact snapshot");
       },
     });
-    for (const [source, name] of [
-      ["spigot", "PlayerInteractEvent"],
-      ["paper", "PlayerArmSwingEvent"],
-      ["purpur", "PlayerAFKEvent"],
+    for (const [source, name, href] of [
+      [
+        "spigot",
+        "PlayerInteractEvent",
+        "org/bukkit/event/player/PlayerInteractEvent.html",
+      ],
+      [
+        "paper",
+        "PlayerArmSwingEvent",
+        "io/papermc/paper/event/player/PlayerArmSwingEvent.html",
+      ],
+      [
+        "purpur",
+        "PlayerAFKEvent",
+        "org/purpurmc/purpur/event/PlayerAFKEvent.html",
+      ],
     ]) {
       const response = await handler(
         new NextRequest(
@@ -32,7 +44,15 @@ for (const version of ["26.2", "26.3"]) {
       assert.equal(result.total, 1);
       assert.equal(result.events[0].name, name);
       assert.equal(result.events[0].version, version);
-      assert.ok(result.events[0].link.includes(`/${source}/${version}/`));
+      const referenceBase =
+        source === "paper"
+          ? `https://jd.papermc.io/paper/${version}/`
+          : version === "26.2"
+            ? `https://spigot-javadoc.s7a.dev/${source}/${version}/`
+            : source === "spigot"
+              ? "https://hub.spigotmc.org/javadocs/spigot/"
+              : "https://purpurmc.org/javadoc/";
+      assert.equal(result.events[0].link, referenceBase + href);
     }
   });
 }
