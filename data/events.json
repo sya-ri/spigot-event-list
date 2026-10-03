@@ -37,14 +37,9 @@
     },
     {
       "description": {
-        "ja": "リスポーンに関するイベントであることを表す。",
-        "en": "Represents a respawn-related event."
+        "en": "Represents a respawn-related event.",
+        "ja": "リスポーンに関するイベントであることを表す。"
       },
-      "abstract": true,
-      "href": "io/papermc/paper/event/player/AbstractRespawnEvent.html",
-      "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/player/AbstractRespawnEvent.html",
-      "name": "AbstractRespawnEvent",
-      "source": "paper",
       "keywords": {
         "ja": [
           "リスポーン",
@@ -65,7 +60,12 @@
           "abstract event",
           "parent class"
         ]
-      }
+      },
+      "abstract": true,
+      "href": "io/papermc/paper/event/player/AbstractRespawnEvent.html",
+      "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/player/AbstractRespawnEvent.html",
+      "name": "AbstractRespawnEvent",
+      "source": "paper"
     },
     {
       "description": {
@@ -240,13 +240,9 @@
         "ja": "実験段階。"
       },
       "description": {
-        "ja": "コマンドを介したチャットコンポーネントをサーバーが装飾するときに呼び出される。",
-        "en": "Called when the server decorates a chat component via commands."
+        "en": "Called when the server decorates a chat component via commands.",
+        "ja": "コマンドを介したチャットコンポーネントをサーバーが装飾するときに呼び出される。"
       },
-      "href": "io/papermc/paper/event/player/AsyncChatCommandDecorateEvent.html",
-      "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/player/AsyncChatCommandDecorateEvent.html",
-      "name": "AsyncChatCommandDecorateEvent",
-      "source": "paper",
       "keywords": {
         "ja": [
           "チャット",
@@ -268,7 +264,11 @@
           "text formatting",
           "message decoration"
         ]
-      }
+      },
+      "href": "io/papermc/paper/event/player/AsyncChatCommandDecorateEvent.html",
+      "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/player/AsyncChatCommandDecorateEvent.html",
+      "name": "AsyncChatCommandDecorateEvent",
+      "source": "paper"
     },
     {
       "deprecate": "@Experimental",
@@ -551,14 +551,9 @@
     },
     {
       "description": {
-        "ja": "補完をクライアントに送信する時に呼び出される。",
-        "en": "Called when sending suggestions to the client."
+        "en": "Called when sending suggestions to the client.",
+        "ja": "補完をクライアントに送信する時に呼び出される。"
       },
-      "href": "com/destroystokyo/paper/event/brigadier/AsyncPlayerSendSuggestionsEvent.html",
-      "javadoc": "Called when sending Suggestions to the client. Will be called asynchronously if a plugin marks the AsyncTabCompleteEvent event handled asynchronously, otherwise called synchronously. If the suggestions are empty after this event has been called, nothing will be sent to the client.",
-      "link": "https://jd.papermc.io/paper/26.3/com/destroystokyo/paper/event/brigadier/AsyncPlayerSendSuggestionsEvent.html",
-      "name": "AsyncPlayerSendSuggestionsEvent",
-      "source": "paper",
       "keywords": {
         "ja": [
           "補完",
@@ -580,7 +575,12 @@
           "send completions",
           "completion results"
         ]
-      }
+      },
+      "href": "com/destroystokyo/paper/event/brigadier/AsyncPlayerSendSuggestionsEvent.html",
+      "javadoc": "Called when sending Suggestions to the client. Will be called asynchronously if a plugin marks the AsyncTabCompleteEvent event handled asynchronously, otherwise called synchronously. If the suggestions are empty after this event has been called, nothing will be sent to the client.",
+      "link": "https://jd.papermc.io/paper/26.3/com/destroystokyo/paper/event/brigadier/AsyncPlayerSendSuggestionsEvent.html",
+      "name": "AsyncPlayerSendSuggestionsEvent",
+      "source": "paper"
     },
     {
       "description": {
@@ -2162,13 +2162,9 @@
     },
     {
       "description": {
-        "ja": "ディスペンサーが排出しようとするアイテムと、その元のスロットを扱うキャンセル可能なイベント。",
-        "en": "A cancellable event exposing the item about to be dispensed and its source dispenser slot."
+        "en": "A cancellable event exposing the item about to be dispensed and its source dispenser slot.",
+        "ja": "ディスペンサーが排出しようとするアイテムと、その元のスロットを扱うキャンセル可能なイベント。"
       },
-      "href": "io/papermc/paper/event/block/BlockPreDispenseEvent.html",
-      "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/block/BlockPreDispenseEvent.html",
-      "name": "BlockPreDispenseEvent",
-      "source": "paper",
       "keywords": {
         "ja": [
           "ディスペンサー",
@@ -2189,7 +2185,11 @@
           "dispensed item",
           "pending dispense"
         ]
-      }
+      },
+      "href": "io/papermc/paper/event/block/BlockPreDispenseEvent.html",
+      "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/block/BlockPreDispenseEvent.html",
+      "name": "BlockPreDispenseEvent",
+      "source": "paper"
     },
     {
       "description": {
@@ -3586,13 +3586,9 @@
     },
     {
       "description": {
-        "ja": "エンダーマンが逃げようとする時に呼び出される。",
-        "en": "Fired when an Enderman attempts to escape."
+        "en": "Fired when an Enderman attempts to escape.",
+        "ja": "エンダーマンが逃げようとする時に呼び出される。"
       },
-      "href": "com/destroystokyo/paper/event/entity/EndermanEscapeEvent.html",
-      "link": "https://jd.papermc.io/paper/26.3/com/destroystokyo/paper/event/entity/EndermanEscapeEvent.html",
-      "name": "EndermanEscapeEvent",
-      "source": "paper",
       "keywords": {
         "ja": [
           "エンダーマン",
@@ -3613,7 +3609,11 @@
           "enderman fleeing",
           "attempt escape"
         ]
-      }
+      },
+      "href": "com/destroystokyo/paper/event/entity/EndermanEscapeEvent.html",
+      "link": "https://jd.papermc.io/paper/26.3/com/destroystokyo/paper/event/entity/EndermanEscapeEvent.html",
+      "name": "EndermanEscapeEvent",
+      "source": "paper"
     },
     {
       "description": {
@@ -3844,13 +3844,9 @@
     },
     {
       "description": {
-        "ja": "エンティティの除去に関与したエンティティとダメージ源を扱うイベント。",
-        "en": "Exposes the removing entity and damage source for an entity removal."
+        "en": "Exposes the removing entity and damage source for an entity removal.",
+        "ja": "エンティティの除去に関与したエンティティとダメージ源を扱うイベント。"
       },
-      "href": "io/papermc/paper/event/entity/EntityBreakByEntityEvent.html",
-      "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/entity/EntityBreakByEntityEvent.html",
-      "name": "EntityBreakByEntityEvent",
-      "source": "paper",
       "keywords": {
         "ja": [
           "エンティティ除去",
@@ -3868,7 +3864,11 @@
           "remover",
           "removal cause"
         ]
-      }
+      },
+      "href": "io/papermc/paper/event/entity/EntityBreakByEntityEvent.html",
+      "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/entity/EntityBreakByEntityEvent.html",
+      "name": "EntityBreakByEntityEvent",
+      "source": "paper"
     },
     {
       "description": {
@@ -3905,13 +3905,9 @@
     },
     {
       "description": {
-        "ja": "エンティティの除去理由を扱うキャンセル可能なイベント。",
-        "en": "A cancellable event exposing the cause of an entity's removal."
+        "en": "A cancellable event exposing the cause of an entity's removal.",
+        "ja": "エンティティの除去理由を扱うキャンセル可能なイベント。"
       },
-      "href": "io/papermc/paper/event/entity/EntityBreakEvent.html",
-      "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/entity/EntityBreakEvent.html",
-      "name": "EntityBreakEvent",
-      "source": "paper",
       "keywords": {
         "ja": [
           "エンティティ除去",
@@ -3929,7 +3925,11 @@
           "remove cause",
           "cancellable"
         ]
-      }
+      },
+      "href": "io/papermc/paper/event/entity/EntityBreakEvent.html",
+      "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/entity/EntityBreakEvent.html",
+      "name": "EntityBreakEvent",
+      "source": "paper"
     },
     {
       "description": {
@@ -6979,13 +6979,9 @@
         "en": "This event is no longer used."
       },
       "description": {
-        "ja": "パケットの種類や例外メッセージを扱う、現在は使われていない旧イベント。",
-        "en": "An unused legacy event exposing a packet type and exception message."
+        "en": "An unused legacy event exposing a packet type and exception message.",
+        "ja": "パケットの種類や例外メッセージを扱う、現在は使われていない旧イベント。"
       },
-      "href": "com/destroystokyo/paper/event/player/IllegalPacketEvent.html",
-      "link": "https://jd.papermc.io/paper/26.3/com/destroystokyo/paper/event/player/IllegalPacketEvent.html",
-      "name": "IllegalPacketEvent",
-      "source": "paper",
       "keywords": {
         "ja": [
           "不正パケット",
@@ -7007,7 +7003,11 @@
           "invalid network data",
           "packet error"
         ]
-      }
+      },
+      "href": "com/destroystokyo/paper/event/player/IllegalPacketEvent.html",
+      "link": "https://jd.papermc.io/paper/26.3/com/destroystokyo/paper/event/player/IllegalPacketEvent.html",
+      "name": "IllegalPacketEvent",
+      "source": "paper"
     },
     {
       "description": {
@@ -7869,13 +7869,9 @@
     },
     {
       "description": {
-        "ja": "LootTable によってアイテムが補充される時に呼び出される。",
-        "en": "Called when items are replenished from a LootTable."
+        "en": "Called when items are replenished from a LootTable.",
+        "ja": "LootTable によってアイテムが補充される時に呼び出される。"
       },
-      "href": "com/destroystokyo/paper/loottable/LootableInventoryReplenishEvent.html",
-      "link": "https://jd.papermc.io/paper/26.3/com/destroystokyo/paper/loottable/LootableInventoryReplenishEvent.html",
-      "name": "LootableInventoryReplenishEvent",
-      "source": "paper",
       "keywords": {
         "ja": [
           "戦利品補充",
@@ -7897,7 +7893,11 @@
           "loot refill",
           "container refill"
         ]
-      }
+      },
+      "href": "com/destroystokyo/paper/loottable/LootableInventoryReplenishEvent.html",
+      "link": "https://jd.papermc.io/paper/26.3/com/destroystokyo/paper/loottable/LootableInventoryReplenishEvent.html",
+      "name": "LootableInventoryReplenishEvent",
+      "source": "paper"
     },
     {
       "description": {
@@ -8296,13 +8296,9 @@
     },
     {
       "description": {
-        "ja": "プレイヤーに付与される進捗条件と、その条件に対応する進捗を扱うキャンセル可能なイベント。",
-        "en": "A cancellable event exposing an advancement criterion granted to a player and the affected advancement."
+        "en": "A cancellable event exposing an advancement criterion granted to a player and the affected advancement.",
+        "ja": "プレイヤーに付与される進捗条件と、その条件に対応する進捗を扱うキャンセル可能なイベント。"
       },
-      "href": "org/bukkit/event/player/PlayerAdvancementCriterionGrantEvent.html",
-      "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerAdvancementCriterionGrantEvent.html",
-      "name": "PlayerAdvancementCriterionGrantEvent",
-      "source": "spigot",
       "keywords": {
         "ja": [
           "進捗",
@@ -8320,7 +8316,11 @@
           "criterion granted",
           "criterion progress"
         ]
-      }
+      },
+      "href": "org/bukkit/event/player/PlayerAdvancementCriterionGrantEvent.html",
+      "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerAdvancementCriterionGrantEvent.html",
+      "name": "PlayerAdvancementCriterionGrantEvent",
+      "source": "spigot"
     },
     {
       "description": {
@@ -8491,13 +8491,9 @@
     },
     {
       "description": {
-        "ja": "プレイヤーが腕を振った時に呼び出される。",
-        "en": "Called when a player swings their arm."
+        "en": "Called when a player swings their arm.",
+        "ja": "プレイヤーが腕を振った時に呼び出される。"
       },
-      "href": "io/papermc/paper/event/player/PlayerArmSwingEvent.html",
-      "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/player/PlayerArmSwingEvent.html",
-      "name": "PlayerArmSwingEvent",
-      "source": "paper",
       "keywords": {
         "ja": [
           "腕を振る",
@@ -8519,7 +8515,11 @@
           "player swing",
           "swing action"
         ]
-      }
+      },
+      "href": "io/papermc/paper/event/player/PlayerArmSwingEvent.html",
+      "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/player/PlayerArmSwingEvent.html",
+      "name": "PlayerArmSwingEvent",
+      "source": "paper"
     },
     {
       "deprecate": "@Deprecated",
@@ -8627,13 +8627,9 @@
     },
     {
       "description": {
-        "ja": "ベッドに入れなかった時に呼び出される。",
-        "en": "Called when a player fails to enter a bed."
+        "en": "Called when a player fails to enter a bed.",
+        "ja": "ベッドに入れなかった時に呼び出される。"
       },
-      "href": "io/papermc/paper/event/player/PlayerBedFailEnterEvent.html",
-      "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/player/PlayerBedFailEnterEvent.html",
-      "name": "PlayerBedFailEnterEvent",
-      "source": "paper",
       "keywords": {
         "ja": [
           "ベッド",
@@ -8654,7 +8650,11 @@
           "bed rejection",
           "sleep denial"
         ]
-      }
+      },
+      "href": "io/papermc/paper/event/player/PlayerBedFailEnterEvent.html",
+      "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/player/PlayerBedFailEnterEvent.html",
+      "name": "PlayerBedFailEnterEvent",
+      "source": "paper"
     },
     {
       "description": {
@@ -11114,13 +11114,9 @@
     },
     {
       "description": {
-        "ja": "プレイヤーが書見台に置かれた本のページを変更する時に呼び出される。",
-        "en": "Called when a player changes the page of a book placed on a lectern."
+        "en": "Called when a player changes the page of a book placed on a lectern.",
+        "ja": "プレイヤーが書見台に置かれた本のページを変更する時に呼び出される。"
       },
-      "href": "io/papermc/paper/event/player/PlayerLecternPageChangeEvent.html",
-      "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/player/PlayerLecternPageChangeEvent.html",
-      "name": "PlayerLecternPageChangeEvent",
-      "source": "paper",
       "keywords": {
         "ja": [
           "書見台",
@@ -11142,7 +11138,11 @@
           "lectern interaction",
           "page selection"
         ]
-      }
+      },
+      "href": "io/papermc/paper/event/player/PlayerLecternPageChangeEvent.html",
+      "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/player/PlayerLecternPageChangeEvent.html",
+      "name": "PlayerLecternPageChangeEvent",
+      "source": "paper"
     },
     {
       "description": {
@@ -12696,13 +12696,9 @@
     },
     {
       "description": {
-        "ja": "プレイヤーが石切台のレシピを選択する時に呼び出される。",
-        "en": "Called when a player selects a stonecutter recipe."
+        "en": "Called when a player selects a stonecutter recipe.",
+        "ja": "プレイヤーが石切台のレシピを選択する時に呼び出される。"
       },
-      "href": "io/papermc/paper/event/player/PlayerStonecutterRecipeSelectEvent.html",
-      "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/player/PlayerStonecutterRecipeSelectEvent.html",
-      "name": "PlayerStonecutterRecipeSelectEvent",
-      "source": "paper",
       "keywords": {
         "ja": [
           "石切台",
@@ -12723,7 +12719,11 @@
           "stonecutter interaction",
           "select recipe"
         ]
-      }
+      },
+      "href": "io/papermc/paper/event/player/PlayerStonecutterRecipeSelectEvent.html",
+      "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/player/PlayerStonecutterRecipeSelectEvent.html",
+      "name": "PlayerStonecutterRecipeSelectEvent",
+      "source": "paper"
     },
     {
       "description": {
@@ -15765,13 +15765,9 @@
     },
     {
       "description": {
-        "ja": "サーバーのメインループのティック処理が始まる時に呼び出される。",
-        "en": "Fired when the server starts a main-loop tick."
+        "en": "Fired when the server starts a main-loop tick.",
+        "ja": "サーバーのメインループのティック処理が始まる時に呼び出される。"
       },
-      "href": "com/destroystokyo/paper/event/server/ServerTickStartEvent.html",
-      "link": "https://jd.papermc.io/paper/26.3/com/destroystokyo/paper/event/server/ServerTickStartEvent.html",
-      "name": "ServerTickStartEvent",
-      "source": "paper",
       "keywords": {
         "ja": [
           "ティック開始",
@@ -15793,7 +15789,11 @@
           "server tick start",
           "update start"
         ]
-      }
+      },
+      "href": "com/destroystokyo/paper/event/server/ServerTickStartEvent.html",
+      "link": "https://jd.papermc.io/paper/26.3/com/destroystokyo/paper/event/server/ServerTickStartEvent.html",
+      "name": "ServerTickStartEvent",
+      "source": "paper"
     },
     {
       "description": {
@@ -17981,13 +17981,9 @@
     },
     {
       "description": {
-        "ja": "ウィッチが手に持って使用するポーションを準備する時に呼び出される。",
-        "en": "Fired when a witch readies a potion to hold and use."
+        "en": "Fired when a witch readies a potion to hold and use.",
+        "ja": "ウィッチが手に持って使用するポーションを準備する時に呼び出される。"
       },
-      "href": "com/destroystokyo/paper/event/entity/WitchReadyPotionEvent.html",
-      "link": "https://jd.papermc.io/paper/26.3/com/destroystokyo/paper/event/entity/WitchReadyPotionEvent.html",
-      "name": "WitchReadyPotionEvent",
-      "source": "paper",
       "keywords": {
         "ja": [
           "ウィッチ",
@@ -18009,7 +18005,11 @@
           "ready potion",
           "prepare potion use"
         ]
-      }
+      },
+      "href": "com/destroystokyo/paper/event/entity/WitchReadyPotionEvent.html",
+      "link": "https://jd.papermc.io/paper/26.3/com/destroystokyo/paper/event/entity/WitchReadyPotionEvent.html",
+      "name": "WitchReadyPotionEvent",
+      "source": "paper"
     },
     {
       "description": {
@@ -18145,14 +18145,9 @@
     },
     {
       "description": {
-        "ja": "ワールドボーダーに関するイベントであることを表す。",
-        "en": "Represents a WorldBorder-related event."
+        "en": "Represents a WorldBorder-related event.",
+        "ja": "ワールドボーダーに関するイベントであることを表す。"
       },
-      "abstract": true,
-      "href": "io/papermc/paper/event/world/border/WorldBorderEvent.html",
-      "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/world/border/WorldBorderEvent.html",
-      "name": "WorldBorderEvent",
-      "source": "paper",
       "keywords": {
         "ja": [
           "ワールドボーダー",
@@ -18174,7 +18169,12 @@
           "parent class",
           "border handling"
         ]
-      }
+      },
+      "abstract": true,
+      "href": "io/papermc/paper/event/world/border/WorldBorderEvent.html",
+      "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/world/border/WorldBorderEvent.html",
+      "name": "WorldBorderEvent",
+      "source": "paper"
     },
     {
       "description": {
