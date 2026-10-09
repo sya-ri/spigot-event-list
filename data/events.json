@@ -13086,33 +13086,11 @@
     },
     {
       "description": {
-        "en": "Fired when a player starts tracking an entity. Cancelling hides it and prevents interaction in both directions. Adding or removing entities during the handler is unsupported.",
-        "ja": "プレイヤーがエンティティの追跡を開始する時に呼び出される。キャンセルすると表示されず、双方の操作もできなくなる。処理中のエンティティの追加・削除はサポートされない。"
-      },
-      "keywords": {
-        "ja": [
-          "追跡開始",
-          "エンティティ表示",
-          "可視性",
-          "エンティティ追跡",
-          "表示開始",
-          "トラッキング",
-          "追跡対象",
-          "クライアント表示"
-        ],
-        "en": [
-          "tracking",
-          "visibility",
-          "entity",
-          "track entity",
-          "start tracking",
-          "tracked entity",
-          "tracking target",
-          "client visibility"
-        ]
+        "en": "",
+        "ja": ""
       },
       "href": "io/papermc/paper/event/player/PlayerTrackEntityEvent.html",
-      "javadoc": "Is called when a Player tracks an Entity. If cancelled entity is not shown to the player and interaction in both directions is not possible. Adding or removing entities from the world at the point in time this event is called is completely unsupported and should be avoided.",
+      "javadoc": "Is called when a Player tracks an Entity. If cancelled entity is not shown to the player and interaction in both directions is not possible. Adding or removing entities from the world at the point in time this event is called is completely unsupported and should be avoided. Teleporting entities in the world at the point in time this event is called yields an undefined tracker behavior and should be avoided.",
       "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/player/PlayerTrackEntityEvent.html",
       "name": "PlayerTrackEntityEvent",
       "source": "paper"
@@ -13217,33 +13195,11 @@
     },
     {
       "description": {
-        "en": "Called when a player stops tracking an entity.",
-        "ja": "プレイヤーがエンティティの追跡を終了すると呼び出される。"
-      },
-      "keywords": {
-        "ja": [
-          "追跡終了",
-          "エンティティ",
-          "可視性",
-          "トラッキング終了",
-          "エンティティ追跡終了",
-          "追跡解除",
-          "追跡対象削除",
-          "追跡停止"
-        ],
-        "en": [
-          "untrack",
-          "entity",
-          "visibility",
-          "stop tracking",
-          "entity untracking",
-          "end tracking",
-          "tracking target removal",
-          "tracking stopped"
-        ]
+        "en": "",
+        "ja": ""
       },
       "href": "io/papermc/paper/event/player/PlayerUntrackEntityEvent.html",
-      "javadoc": "Is called when a Player untracks an Entity. Adding or removing entities from the world at the point in time this event is called is completely unsupported and should be avoided.",
+      "javadoc": "Is called when a Player untracks an Entity. Adding or removing entities from the world at the point in time this event is called is completely unsupported and should be avoided. Teleporting entities in the world at the point in time this event is called yields an undefined tracker behavior and should be avoided.",
       "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/player/PlayerUntrackEntityEvent.html",
       "name": "PlayerUntrackEntityEvent",
       "source": "paper"
