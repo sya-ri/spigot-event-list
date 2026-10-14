@@ -236,8 +236,8 @@
     {
       "deprecate": "@Experimental",
       "deprecateDescription": {
-        "ja": "実験段階。",
-        "en": "Experimental phase."
+        "en": "Experimental phase.",
+        "ja": "実験段階。"
       },
       "description": {
         "en": "Called when the server decorates a chat component via commands.",
@@ -273,8 +273,8 @@
     {
       "deprecate": "@Experimental",
       "deprecateDescription": {
-        "ja": "実験段階。",
-        "en": "Experimental phase."
+        "en": "Experimental phase.",
+        "ja": "実験段階。"
       },
       "description": {
         "en": "This event is fired when the server decorates a component for chat purposes.",
@@ -481,8 +481,8 @@
     {
       "deprecate": "@Experimental",
       "deprecateDescription": {
-        "ja": "実験段階。",
-        "en": "Experimental phase."
+        "en": "Experimental phase.",
+        "ja": "実験段階。"
       },
       "description": {
         "en": "Fired when a player's Brigadier command tree is generated for the client. It can fire twice, asynchronously and synchronously; check isAsynchronous() and hasFiredAsync().",
@@ -618,8 +618,8 @@
     {
       "deprecate": "@Experimental",
       "deprecateDescription": {
-        "ja": "実験段階。",
-        "en": "Experimental phase."
+        "en": "Experimental phase.",
+        "ja": "実験段階。"
       },
       "description": {
         "en": "Allows transformers to modify blocks and entities placed by a structure. Natural placement runs asynchronously; placement via /place structure runs synchronously.",
@@ -1196,8 +1196,8 @@
     {
       "deprecate": "@Experimental",
       "deprecateDescription": {
-        "ja": "実験段階。",
-        "en": "Experimental phase."
+        "en": "Experimental phase.",
+        "ja": "実験段階。"
       },
       "description": {
         "en": "Called when a block is brushed by a player.",
@@ -1498,8 +1498,8 @@
     {
       "deprecate": "@Experimental",
       "deprecateDescription": {
-        "ja": "実験段階。",
-        "en": "Experimental phase."
+        "en": "Experimental phase.",
+        "ja": "実験段階。"
       },
       "description": {
         "en": "Fired when a block such as a vault dispenses loot from its loot table. This is distinct from dispensing one inventory item through BlockDispenseEvent.",
@@ -5426,8 +5426,8 @@
     {
       "deprecate": "@Experimental",
       "deprecateDescription": {
-        "ja": "実験段階。",
-        "en": "Experimental phase."
+        "en": "Experimental phase.",
+        "ja": "実験段階。"
       },
       "description": {
         "en": "Called when a creature targets or untargets a block, for example when a copper golem decides whether to walk to a given chest.",
@@ -8833,8 +8833,8 @@
     {
       "deprecate": "@Experimental",
       "deprecateDescription": {
-        "ja": "実験段階。",
-        "en": "Experimental phase."
+        "en": "Experimental phase.",
+        "ja": "実験段階。"
       },
       "description": {
         "en": "Called after a player performs a custom action from a chat event or form submission.",
@@ -9395,8 +9395,8 @@
     {
       "deprecate": "@Experimental",
       "deprecateDescription": {
-        "ja": "実験段階。",
-        "en": "Experimental phase."
+        "en": "Experimental phase.",
+        "ja": "実験段階。"
       },
       "description": {
         "en": "Called when a player updates their input.",
@@ -11900,33 +11900,11 @@
     },
     {
       "description": {
-        "en": "Fired when a player starts tracking an entity. Cancelling hides it and prevents interaction in both directions. Adding or removing entities during the handler is unsupported.",
-        "ja": "プレイヤーがエンティティの追跡を開始する時に呼び出される。キャンセルすると表示されず、双方の操作もできなくなる。処理中のエンティティの追加・削除はサポートされない。"
-      },
-      "keywords": {
-        "ja": [
-          "追跡開始",
-          "エンティティ表示",
-          "可視性",
-          "エンティティ追跡",
-          "表示開始",
-          "トラッキング",
-          "追跡対象",
-          "クライアント表示"
-        ],
-        "en": [
-          "tracking",
-          "visibility",
-          "entity",
-          "track entity",
-          "start tracking",
-          "tracked entity",
-          "tracking target",
-          "client visibility"
-        ]
+        "en": "",
+        "ja": ""
       },
       "href": "io/papermc/paper/event/player/PlayerTrackEntityEvent.html",
-      "javadoc": "Is called when a Player tracks an Entity. If cancelled entity is not shown to the player and interaction in both directions is not possible. Adding or removing entities from the world at the point in time this event is called is completely unsupported and should be avoided.",
+      "javadoc": "Is called when a Player tracks an Entity. If cancelled entity is not shown to the player and interaction in both directions is not possible. Adding or removing entities from the world at the point in time this event is called is completely unsupported and should be avoided. Teleporting entities in the world at the point in time this event is called yields an undefined tracker behavior and should be avoided.",
       "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/player/PlayerTrackEntityEvent.html",
       "name": "PlayerTrackEntityEvent",
       "source": "paper"
@@ -12031,33 +12009,11 @@
     },
     {
       "description": {
-        "en": "Called when a player stops tracking an entity.",
-        "ja": "プレイヤーがエンティティの追跡を終了すると呼び出される。"
-      },
-      "keywords": {
-        "ja": [
-          "追跡終了",
-          "エンティティ",
-          "可視性",
-          "トラッキング終了",
-          "エンティティ追跡終了",
-          "追跡解除",
-          "追跡対象削除",
-          "追跡停止"
-        ],
-        "en": [
-          "untrack",
-          "entity",
-          "visibility",
-          "stop tracking",
-          "entity untracking",
-          "end tracking",
-          "tracking target removal",
-          "tracking stopped"
-        ]
+        "en": "",
+        "ja": ""
       },
       "href": "io/papermc/paper/event/player/PlayerUntrackEntityEvent.html",
-      "javadoc": "Is called when a Player untracks an Entity. Adding or removing entities from the world at the point in time this event is called is completely unsupported and should be avoided.",
+      "javadoc": "Is called when a Player untracks an Entity. Adding or removing entities from the world at the point in time this event is called is completely unsupported and should be avoided. Teleporting entities in the world at the point in time this event is called yields an undefined tracker behavior and should be avoided.",
       "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/player/PlayerUntrackEntityEvent.html",
       "name": "PlayerUntrackEntityEvent",
       "source": "paper"
@@ -14686,8 +14642,8 @@
     {
       "deprecate": "@Experimental",
       "deprecateDescription": {
-        "ja": "実験段階。",
-        "en": "Experimental phase."
+        "en": "Experimental phase.",
+        "ja": "実験段階。"
       },
       "description": {
         "en": "Called when an entity is spawned into a world by a trial spawner.",
@@ -14887,8 +14843,8 @@
     {
       "deprecate": "@Experimental",
       "deprecateDescription": {
-        "ja": "実験段階。",
-        "en": "Experimental phase."
+        "en": "Experimental phase.",
+        "ja": "実験段階。"
       },
       "description": {
         "en": "Called when a vault in a trial chamber is about to display an item.",
