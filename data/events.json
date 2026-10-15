@@ -7474,6 +7474,17 @@
     },
     {
       "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "io/papermc/paper/event/entity/ItemTransportingEntitySortEvent.html",
+      "javadoc": "Called when an item-transporting entity (ex a CopperGolem) is inspecting a destination Container to decide if the item it is holding belongs in said container. This gives plugin developers an opportunity to override the CopperGolem's sorting behavior. Note: This event can be called twice during a single \"interaction\", once before the container is opened, and again before items are added and the container is closed.",
+      "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/entity/ItemTransportingEntitySortEvent.html",
+      "name": "ItemTransportingEntitySortEvent",
+      "source": "paper"
+    },
+    {
+      "description": {
         "en": "Fired when an item-carrying entity searches for or validates a container for taking or depositing items. It can fire several times per tick, so keep checks efficient.",
         "ja": "アイテムを運ぶエンティティが、取り出し先・預け先のコンテナを探すか、既存の候補を確認する時に呼び出される。1ティックに複数回発火し得るため、確認処理は軽く保つ。"
       },
@@ -8890,6 +8901,17 @@
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerBucketFishEvent.html",
       "name": "PlayerBucketFishEvent",
       "source": "spigot"
+    },
+    {
+      "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "io/papermc/paper/event/inventory/PlayerBundleItemSelectEvent.html",
+      "javadoc": "Called when a Player selects an item inside a bundle.",
+      "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/inventory/PlayerBundleItemSelectEvent.html",
+      "name": "PlayerBundleItemSelectEvent",
+      "source": "paper"
     },
     {
       "description": {
