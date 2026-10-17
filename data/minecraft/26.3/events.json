@@ -12541,6 +12541,17 @@
     },
     {
       "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "io/papermc/paper/event/inventory/PrepareHopperTransferEvent.html",
+      "javadoc": "Called when a hopper or hopper minecart is about to choose an item to move, before any InventoryMoveItemEvent. The hopper treats disallowed slots of the source as if they do not exist, so a source with items only in disallowed slots is treated as empty.",
+      "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/inventory/PrepareHopperTransferEvent.html",
+      "name": "PrepareHopperTransferEvent",
+      "source": "paper"
+    },
+    {
+      "description": {
         "en": "Fired when an item is placed in a slot and the result is calculated.",
         "ja": "アイテムがスロットに置かれ、結果アイテムが計算される時に呼び出される。"
       },
