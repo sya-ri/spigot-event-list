@@ -5429,6 +5429,17 @@
     },
     {
       "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "io/papermc/paper/event/entity/EntityPotentSulfurLaunchEvent.html",
+      "javadoc": "Called when an entity is launched upward by a Potent Sulfur geyser.",
+      "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/entity/EntityPotentSulfurLaunchEvent.html",
+      "name": "EntityPotentSulfurLaunchEvent",
+      "source": "paper"
+    },
+    {
+      "description": {
         "en": "Called when a potion effect is modified on an entity.",
         "ja": "エンティティのポーション効果が変更された時に呼び出される。"
       },
