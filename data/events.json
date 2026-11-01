@@ -5032,6 +5032,17 @@
     },
     {
       "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "io/papermc/paper/event/entity/EntityLandEvent.html",
+      "javadoc": "Called when an Entity lands on the block after falling. This event is called before EntityDamageEvent, EntityChangeBlockEvent, PlayerInteractEvent and EntityInteractEvent.",
+      "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/entity/EntityLandEvent.html",
+      "name": "EntityLandEvent",
+      "source": "paper"
+    },
+    {
+      "description": {
         "en": "Called when a living entity loads a crossbow with a projectile.",
         "ja": "エンティティがアイテムをクロスボウに装填する時に呼び出される。"
       },
