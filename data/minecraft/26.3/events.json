@@ -12497,33 +12497,11 @@
         "en": "It is recommended to use PrepareResultEvent instead of this event."
       },
       "description": {
-        "en": "Called when an item is put in a slot for grinding in a Grindstone.",
-        "ja": "砥石の使用準備が出来た時に呼び出される。完成アイテムが表示される毎に発生する。"
-      },
-      "keywords": {
-        "ja": [
-          "砥石",
-          "研磨準備",
-          "スロット",
-          "砥石結果",
-          "研磨候補",
-          "完成品表示",
-          "砥石操作",
-          "結果準備"
-        ],
-        "en": [
-          "grindstone",
-          "grinding",
-          "prepare",
-          "grindstone result",
-          "grinding result",
-          "output preview",
-          "grindstone interaction",
-          "result preparation"
-        ]
+        "en": "",
+        "ja": ""
       },
       "href": "com/destroystokyo/paper/event/inventory/PrepareGrindstoneEvent.html",
-      "javadoc": "Called when an item is put in a slot for grinding in a Grindstone",
+      "javadoc": "Called when an item is put in a slot for grinding in a Grindstone.",
       "link": "https://jd.papermc.io/paper/26.3/com/destroystokyo/paper/event/inventory/PrepareGrindstoneEvent.html",
       "name": "PrepareGrindstoneEvent",
       "source": "paper"
@@ -12672,33 +12650,11 @@
     },
     {
       "description": {
-        "en": "Called when an item is put in an inventory containing a result slot.",
-        "ja": "結果スロットを含むインベントリにアイテムが配置された時に呼び出される。"
-      },
-      "keywords": {
-        "ja": [
-          "結果スロット",
-          "準備",
-          "インベントリ",
-          "完成品スロット",
-          "出力準備",
-          "結果アイテム",
-          "アイテム配置",
-          "結果付きインベントリ"
-        ],
-        "en": [
-          "result slot",
-          "prepare",
-          "inventory",
-          "output slot",
-          "result preparation",
-          "result item",
-          "item placement",
-          "inventory result"
-        ]
+        "en": "",
+        "ja": ""
       },
       "href": "com/destroystokyo/paper/event/inventory/PrepareResultEvent.html",
-      "javadoc": "Called when an item is put in an inventory containing a result slot",
+      "javadoc": "Called when an item is put in an inventory containing a result slot.",
       "link": "https://jd.papermc.io/paper/26.3/com/destroystokyo/paper/event/inventory/PrepareResultEvent.html",
       "name": "PrepareResultEvent",
       "source": "paper"
@@ -13563,33 +13519,11 @@
     },
     {
       "description": {
-        "en": "Called when resources such as datapacks are reloaded.",
-        "ja": "データパックなどのリソースがリロードされた時に呼び出される。カスタムレシピを再登録するために使用することを目的としている。"
-      },
-      "keywords": {
-        "ja": [
-          "データパック",
-          "リロード",
-          "レシピ再登録",
-          "リソース再読み込み",
-          "データパック更新",
-          "リロード完了",
-          "レシピ登録",
-          "データ再読み込み"
-        ],
-        "en": [
-          "datapack",
-          "reload",
-          "recipe",
-          "resource reload",
-          "datapack update",
-          "reload complete",
-          "register recipes",
-          "data reload"
-        ]
+        "en": "",
+        "ja": ""
       },
       "href": "io/papermc/paper/event/server/ServerResourcesReloadedEvent.html",
-      "javadoc": "Called when resources such as datapacks are reloaded (e.g. /minecraft:reload) Intended for use to re-register custom recipes, advancements that may be lost during a reload like this.",
+      "javadoc": "Called when resources such as datapacks are reloaded (e.g. /minecraft:reload). Intended for use to re-register custom recipes, advancements that may be lost during a reload like this.",
       "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/server/ServerResourcesReloadedEvent.html",
       "name": "ServerResourcesReloadedEvent",
       "source": "paper"
@@ -15547,33 +15481,11 @@
     },
     {
       "description": {
-        "en": "Called when the whitelist status of a player is changed.",
-        "ja": "プレイヤーのホワイトリストステータスが変更される時に呼び出される。"
-      },
-      "keywords": {
-        "ja": [
-          "ホワイトリスト",
-          "参加許可",
-          "プレイヤー",
-          "許可リスト",
-          "登録状態",
-          "参加許可変更",
-          "ホワイトリスト更新",
-          "許可状態"
-        ],
-        "en": [
-          "whitelist",
-          "allowlist",
-          "player",
-          "allowlist status",
-          "registration state",
-          "player permission change",
-          "whitelist update",
-          "allowed status"
-        ]
+        "en": "",
+        "ja": ""
       },
       "href": "io/papermc/paper/event/server/WhitelistStateUpdateEvent.html",
-      "javadoc": "This event gets called when the whitelist status of a player is changed",
+      "javadoc": "This event gets called when the whitelist status of a player is changed.",
       "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/server/WhitelistStateUpdateEvent.html",
       "name": "WhitelistStateUpdateEvent",
       "source": "paper"
