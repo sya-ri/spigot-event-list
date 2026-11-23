@@ -7728,6 +7728,17 @@
     },
     {
       "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "io/papermc/paper/event/player/PlayerAdvancementCriterionRevokeEvent.html",
+      "javadoc": "An event fired when a Player has an advancement revoked. If cancelled the criteria will be granted.",
+      "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/player/PlayerAdvancementCriterionRevokeEvent.html",
+      "name": "PlayerAdvancementCriterionRevokeEvent",
+      "source": "paper"
+    },
+    {
+      "description": {
         "en": "Called when a player has completed all criteria in an advancement.",
         "ja": "プレイヤーが進捗の条件を全て達成した時に呼び出される。"
       },
@@ -7758,6 +7769,17 @@
       "link": "https://hub.spigotmc.org/javadocs/spigot/org/bukkit/event/player/PlayerAdvancementDoneEvent.html",
       "name": "PlayerAdvancementDoneEvent",
       "source": "spigot"
+    },
+    {
+      "description": {
+        "en": "",
+        "ja": ""
+      },
+      "href": "io/papermc/paper/event/player/PlayerAdvancementRevokeEvent.html",
+      "javadoc": "An event fired when a Player has an advancement revoked.",
+      "link": "https://jd.papermc.io/paper/26.3/io/papermc/paper/event/player/PlayerAdvancementRevokeEvent.html",
+      "name": "PlayerAdvancementRevokeEvent",
+      "source": "paper"
     },
     {
       "description": {
