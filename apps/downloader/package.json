@@ -10,14 +10,13 @@
     "@spigot-event-list/catalog": "workspace:*",
     "cheerio": "1.2.0",
     "compressing": "2.1.5",
-    "multi-progress": "4.0.0",
-    "xml2js": "0.6.2"
+    "fast-typed-xml": "0.1.2",
+    "multi-progress": "4.0.0"
   },
   "devDependencies": {
     "@types/multi-progress": "2.0.6",
-    "@types/node": "24.19.2",
-    "@types/xml2js": "0.4.14",
+    "@types/node": "26.6.7",
     "tsx": "4.23.15",
-    "typescript": "6.0.3"
+    "typescript": "7.0.2"
   }
 }

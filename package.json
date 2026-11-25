@@ -17,13 +17,13 @@
   "devDependencies": {
     "@astrojs/compiler-rs": "0.5.3",
     "@spigot-event-list/catalog": "workspace:*",
-    "@types/node": "24.19.2",
+    "@types/node": "26.6.7",
     "tsx": "4.23.15",
-    "typescript": "6.0.3",
+    "typescript": "7.0.2",
     "vite-plus": "1.8.0"
   },
   "engines": {
-    "node": ">=24.22.0 <25"
+    "node": ">=26.12.0 <27"
   },
   "packageManager": "pnpm@12.23.0"
 }
