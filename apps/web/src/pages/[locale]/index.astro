@@ -1,0 +1,23 @@
+---
+import Page from "../../layouts/Page.astro";
+import Explorer from "../../components/Explorer";
+import { locales } from "../../lib/locale";
+import { catalog } from "../../lib/catalog";
+import { searchPage } from "@spigot-event-list/catalog/search-page";
+import sources from "@spigot-event-list/catalog/types/source-type";
+export function getStaticPaths() {
+  return locales.map((locale) => ({ params: { locale }, props: { locale } }));
+}
+const { locale } = Astro.props;
+const [snapshot, versions, latest] = await Promise.all([
+  catalog.readLatestServerEvents(),
+  catalog.getServerVersionsDesc(),
+  catalog.getLatestMinecraftVersion(),
+]);
+const initial = searchPage(snapshot.events, "", "latest", locale, sources, 50, 0);
+const choices = Array.from(new Set(["latest", ...(latest ? [latest] : []), ...versions]));
+---
+
+<Page locale={locale}>
+  <Explorer client:load locale={locale} versions={choices} initial={initial} />
+</Page>
