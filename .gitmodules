@@ -1,4 +1,0 @@
-[submodule "spigot-javadoc"]
-	path = spigot-javadoc
-	url = https://github.com/sya-ri/spigot-javadoc.git
-	shallow = true
