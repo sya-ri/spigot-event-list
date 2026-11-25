@@ -1,6 +1,6 @@
 import { load } from "cheerio";
-import type { ReleaseDiscovery } from "./discover-source-releases";
-import { fetchText } from "./http";
+import type { ReleaseDiscovery } from "./discover-source-releases.ts";
+import { fetchText } from "./http.ts";
 import type SourceType from "@spigot-event-list/catalog/types/source-type";
 
 const artifactNames = {

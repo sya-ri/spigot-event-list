@@ -1,5 +1,5 @@
 import * as xml from "fast-typed-xml";
-import { fetchText } from "./http";
+import { fetchText } from "./http.ts";
 
 const versionList = xml.object({
   versioning: xml.object(

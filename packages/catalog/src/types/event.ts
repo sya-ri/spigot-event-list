@@ -1,4 +1,4 @@
-import type EventSource from "./source-type";
+import type EventSource from "./source-type.ts";
 
 export type EventResponse = {
   name: string;

@@ -7,7 +7,7 @@
     "dev": "pnpm --filter @spigot-event-list/web dev",
     "build": "pnpm --filter @spigot-event-list/web build && pnpm --filter @spigot-event-list/api build",
     "preview": "pnpm --filter @spigot-event-list/api preview",
-    "test": "tsx --test \"apps/**/*.test.ts\" \"packages/**/*.test.ts\" \"tests/*.test.ts\"",
+    "test": "node --test \"apps/**/*.test.ts\" \"packages/**/*.test.ts\" \"tests/*.test.ts\"",
     "typecheck": "pnpm --filter @spigot-event-list/web check && tsc -p apps/api --noEmit && tsc -p apps/downloader --noEmit && tsc -p packages/catalog --noEmit && tsc -p tsconfig.json --noEmit",
     "lint": "vp lint",
     "format": "vp fmt",
@@ -17,7 +17,6 @@
     "@astrojs/compiler-rs": "0.5.3",
     "@spigot-event-list/catalog": "workspace:*",
     "@types/node": "26.6.7",
-    "tsx": "4.23.15",
     "typescript": "7.0.2",
     "vite-plus": "1.8.0"
   },

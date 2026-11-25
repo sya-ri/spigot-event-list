@@ -1,6 +1,6 @@
-import type EventType from "./types/event-type";
-import type { EventResponse } from "./types/event";
-import { resolveServerVersion } from "./resolve-version";
+import type EventType from "./types/event-type.ts";
+import type { EventResponse } from "./types/event.ts";
+import { resolveServerVersion } from "./resolve-version.ts";
 
 export interface EventSnapshot {
   lang: string[];

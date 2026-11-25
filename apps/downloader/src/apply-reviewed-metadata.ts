@@ -2,8 +2,8 @@ import { randomUUID } from "node:crypto";
 import { readFile, rename, rm, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import type EventType from "@spigot-event-list/catalog/types/event-type";
-import { reviewTargetKey } from "./changed-descriptions";
-import type { ReviewedEvent } from "./review-report";
+import { reviewTargetKey } from "./changed-descriptions.ts";
+import type { ReviewedEvent } from "./review-report.ts";
 
 export async function applyReviewedMetadata(root: string, reviewed: ReviewedEvent[]) {
   const pending = reviewed.filter(

@@ -1,6 +1,6 @@
-import { createVersionEventsHandler } from "../apps/api/src/events";
+import { createVersionEventsHandler } from "../apps/api/src/events.ts";
 import { createDataPaths } from "@spigot-event-list/catalog/data-paths";
-import { createSearchEventsHandler } from "../apps/api/src/search";
+import { createSearchEventsHandler } from "../apps/api/src/search.ts";
 import assert from "node:assert/strict";
 import test from "node:test";
 import { readFile, readdir } from "node:fs/promises";

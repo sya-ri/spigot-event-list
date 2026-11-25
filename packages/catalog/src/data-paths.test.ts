@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { getLatestMinecraftVersionFromVersions, resolveServerVersion } from "./data-paths";
+import { getLatestMinecraftVersionFromVersions, resolveServerVersion } from "./data-paths.ts";
 
 test("derives the latest Minecraft version only when every server source agrees", () => {
   assert.equal(

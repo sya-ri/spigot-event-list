@@ -3,7 +3,7 @@ import {
   resolveArtifactUrl,
   resolveLatestArtifactVersion,
   type Artifact,
-} from "../maven";
+} from "../maven.ts";
 import SourceType from "@spigot-event-list/catalog/types/source-type";
 
 export type JavadocLocation =

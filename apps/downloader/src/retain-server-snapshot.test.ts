@@ -4,7 +4,7 @@ import os from "node:os";
 import path from "node:path";
 import { test } from "node:test";
 import { createDataPaths } from "@spigot-event-list/catalog/data-paths";
-import { retainCompleteServerSnapshot } from "./retain-server-snapshot";
+import { retainCompleteServerSnapshot } from "./retain-server-snapshot.ts";
 import type EventType from "@spigot-event-list/catalog/types/event-type";
 
 const snapshot = {

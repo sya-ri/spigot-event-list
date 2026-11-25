@@ -2,7 +2,7 @@ import assert from "node:assert/strict";
 import { test } from "node:test";
 import path from "node:path";
 import { createDataPaths } from "@spigot-event-list/catalog/data-paths";
-import { createSearchEventsHandler } from "../apps/api/src/search";
+import { createSearchEventsHandler } from "../apps/api/src/search.ts";
 
 for (const version of ["26.2", "26.3"]) {
   test(`fixed ${version} events remain searchable when latest sources disagree`, async () => {

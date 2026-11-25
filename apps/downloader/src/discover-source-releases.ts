@@ -1,12 +1,12 @@
-import { Source } from "./sources/sources";
-import { loadLegacyPurpurEvents } from "./purpur-patch-events";
+import type { Source } from "./sources/sources.ts";
+import { loadLegacyPurpurEvents } from "./purpur-patch-events.ts";
 import {
   type JavadocLocation,
   resolvePaperJavadoc,
   resolvePurpurLatestJavadoc,
   resolvePurpurJavadoc,
   resolveSpigotJavadoc,
-} from "./sources/server-javadoc-resolver";
+} from "./sources/server-javadoc-resolver.ts";
 import {
   paperVersion,
   paperVersions,
@@ -18,9 +18,9 @@ import {
   purpurVersions,
   spigotVersion,
   spigotVersions,
-} from "./sources/source-version";
-import EventType from "@spigot-event-list/catalog/types/event-type";
-import SourceType from "@spigot-event-list/catalog/types/source-type";
+} from "./sources/source-version.ts";
+import type EventType from "@spigot-event-list/catalog/types/event-type";
+import type SourceType from "@spigot-event-list/catalog/types/source-type";
 
 type ReleaseEventSupplementParams = {
   linkBaseBySourceType: Partial<Record<SourceType, string>>;

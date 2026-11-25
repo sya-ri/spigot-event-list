@@ -9,8 +9,8 @@ import {
   writingModel,
   type Language,
   type ReviewEvent,
-} from "./description-review";
-import { hasLocalizedDescription } from "./event-metadata";
+} from "./description-review.ts";
+import { hasLocalizedDescription } from "./event-metadata.ts";
 
 const keywordArray = { type: "array", items: { type: "string" } };
 

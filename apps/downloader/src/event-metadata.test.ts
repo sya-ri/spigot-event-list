@@ -4,10 +4,10 @@ import { mkdtemp, mkdir, readFile, writeFile, rm } from "node:fs/promises";
 import os from "node:os";
 import path from "node:path";
 import { load } from "cheerio";
-import { extractJavadocText } from "./javadoc-text";
-import { reuseEventMetadata } from "./event-metadata";
-import { fillMissingDescriptionsInData } from "./fill-missing-descriptions";
-import { extractClassJavadoc } from "./purpur-patch-events";
+import { extractJavadocText } from "./javadoc-text.ts";
+import { reuseEventMetadata } from "./event-metadata.ts";
+import { fillMissingDescriptionsInData } from "./fill-missing-descriptions.ts";
+import { extractClassJavadoc } from "./purpur-patch-events.ts";
 import type EventType from "@spigot-event-list/catalog/types/event-type";
 
 const base: EventType = {

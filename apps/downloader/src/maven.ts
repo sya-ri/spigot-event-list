@@ -2,8 +2,8 @@ import { format } from "util";
 import MultiProgress from "multi-progress";
 import { pipeline } from "stream/promises";
 import { createWriteStream } from "fs";
-import { fetchStream } from "./http";
-import { fetchMavenSnapshot, fetchMavenVersions } from "./maven-metadata";
+import { fetchStream } from "./http.ts";
+import { fetchMavenSnapshot, fetchMavenVersions } from "./maven-metadata.ts";
 
 export type Artifact = {
   groupId: string;

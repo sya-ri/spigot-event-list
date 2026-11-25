@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { fetchMavenVersions, fetchMavenSnapshot, fetchPomVersion } from "./maven-metadata";
+import { fetchMavenVersions, fetchMavenSnapshot, fetchPomVersion } from "./maven-metadata.ts";
 
 const url = "https://example.test/maven-metadata.xml";
 

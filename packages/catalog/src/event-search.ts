@@ -1,5 +1,5 @@
 import type EventType from "@spigot-event-list/catalog/types/event-type";
-import { eventNameWords, normalizeSearchText as normalize } from "./search-text";
+import { eventNameWords, normalizeSearchText as normalize } from "./search-text.ts";
 
 type QueryTerm = { normalized: string };
 type QueryClause = { terms: QueryTerm[] };

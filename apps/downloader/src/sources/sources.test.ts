@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { getSources } from "./sources";
+import { getSources } from "./sources.ts";
 
 test("resolves only requested proxy metadata without depending on server endpoints", async (context) => {
   const urls: string[] = [];
