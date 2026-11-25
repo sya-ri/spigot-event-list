@@ -3,8 +3,8 @@
   "events": [
     {
       "description": {
-        "en": "Represents a chat-related event.",
-        "ja": "チャットに関するイベントであることを表す。"
+        "en": "The abstract base class for player chat events.",
+        "ja": "プレイヤーのチャットイベントの抽象基底クラス。"
       },
       "keywords": {
         "ja": [
@@ -37,8 +37,8 @@
     },
     {
       "description": {
-        "en": "Represents a respawn-related event.",
-        "ja": "リスポーンに関するイベントであることを表す。"
+        "en": "Base class for player respawn events.",
+        "ja": "プレイヤーのリスポーンイベントの基底クラス。"
       },
       "keywords": {
         "ja": [
@@ -201,7 +201,7 @@
     },
     {
       "description": {
-        "en": "Fired when the number of arrows in an entity's body changes.",
+        "en": "Fired before an entity's arrow count is updated, allowing the update to be modified or cancelled.",
         "ja": "エンティティの体に刺さっている矢の本数が変化する時に呼び出される。"
       },
       "keywords": {
@@ -381,8 +381,8 @@
         "en": "Experimental phase."
       },
       "description": {
-        "en": "Used to format chat for chat preview.",
-        "ja": "チャットのプレビュー用にフォーマットする時に呼び出される。"
+        "en": "Formerly used to format chat previews; chat previews have been removed.",
+        "ja": "チャットプレビューの表示を整形するために使われていたイベント。対応する AsyncPlayerChatEvent と同じ書式を使う仕様だったが、チャットプレビュー機能はすでに削除されている。"
       },
       "keywords": {
         "ja": [
@@ -689,7 +689,7 @@
     {
       "description": {
         "en": "Allows plugins to compute tab completion results asynchronously.",
-        "ja": "タブ補完を行う時に呼び出される。非同期で処理される。"
+        "ja": "プラグインがタブ補完候補を非同期で生成できるイベント。このイベントが候補を返すと、通常の同期処理による候補生成は行われないが、同期のTabCompleteEventは非同期で得られた候補を使って発火する。候補を生成するのは、非同期イベントと通常の同期処理のどちらか一方のみ。"
       },
       "keywords": {
         "ja": [
@@ -722,7 +722,7 @@
     {
       "description": {
         "en": "Called when a bat attempts to sleep or wake up from its slumber.",
-        "ja": "コウモリが眠ったり起きたりする時に呼び出される。"
+        "ja": "コウモリが眠ろうとしたり、目を覚まそうとしたりするときに呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -754,8 +754,8 @@
     },
     {
       "description": {
-        "en": "Called when a beacon is activated.",
-        "ja": "ビーコンが有効になった時に呼び出される。"
+        "en": "Called when a beacon’s beam becomes visible.",
+        "ja": "ビーコンの光線が見えるようになったときに呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -788,7 +788,7 @@
     {
       "description": {
         "en": "Called when a beacon is deactivated.",
-        "ja": "ビーコンが無効になった時に呼び出される。"
+        "ja": "ビーコンのレベルが正の値から0以下に下がったとき、またはビーコンのブロックエンティティが取り除かれるときに呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -991,8 +991,8 @@
         "en": "Use the BellResonateEvent added to Bukkit"
       },
       "description": {
-        "en": "Fired when a bell reveals a raider's location.",
-        "ja": "鐘によって襲撃者の位置が明らかになる時に呼び出される。"
+        "en": "Fired when a bell is about to reveal a raider's location.",
+        "ja": "鐘が襲撃者の位置を明らかにする直前に呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -1095,7 +1095,7 @@
     {
       "description": {
         "en": "Called when a block forces another block to break and drop items.",
-        "ja": "ブロックがブロックを破壊する時に呼び出される。"
+        "ja": "あるブロックが別のブロックを破壊し、破壊されたブロックがアイテムをドロップするときに呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -1234,7 +1234,7 @@
     {
       "description": {
         "en": "Called when a block is destroyed as a result of being burnt by fire.",
-        "ja": "ブロックが燃え尽きて破壊される時に呼び出される。"
+        "ja": "ブロックが火で焼失する直前に呼び出され、キャンセルすると焼失を防げる。"
       },
       "keywords": {
         "ja": [
@@ -1300,7 +1300,7 @@
     {
       "description": {
         "en": "Called when an ItemStack is successfully cooked in a block.",
-        "ja": "アイテムがブロックを用いて調理される時に呼び出される。"
+        "ja": "ブロック内でItemStackの調理が正常に完了したときに呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -1536,7 +1536,7 @@
     {
       "description": {
         "en": "Called if a block broken by a player drops an item. If the block break is cancelled, this event won't be called.",
-        "ja": "プレイヤーによって破壊されたブロックがアイテムとしてドロップする時に呼び出される。"
+        "ja": "プレイヤーがブロックを破壊してアイテムがドロップする場合に、そのアイテムがワールドに出現する前に呼び出される。ブロックの破壊がキャンセルされた場合は呼び出されない。"
       },
       "keywords": {
         "ja": [
@@ -1667,7 +1667,7 @@
     {
       "description": {
         "en": "Called when a block fades, melts or disappears based on world conditions.",
-        "ja": "自然にブロックが溶けたり消滅したりする時に呼び出される。"
+        "ja": "ワールドの状態に応じて、ブロックが溶けたり、消滅したり、サンゴが死んだサンゴに変わるなどの変化が起きようとするときに呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -1701,7 +1701,7 @@
     {
       "description": {
         "en": "Called when a block tries to dispense an item, but its inventory is empty.",
-        "ja": "ディスペンサーにアイテムが存在せず、射出されなかった時に呼び出される。"
+        "ja": "ブロックがアイテムを射出しようとしたものの、インベントリが空だった場合に呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -1734,7 +1734,7 @@
     {
       "description": {
         "en": "Called with the block changes resulting from a player fertilizing a given block with bonemeal. Will be called after the applicable StructureGrowEvent.",
-        "ja": "プレイヤーが骨粉を使用し、ブロックに変更が生じる時に呼び出される。StructureGrowEvent の後に呼び出される。"
+        "ja": "プレイヤーがブロックに骨粉を使った結果生じたブロックの変更内容とともに呼び出される。該当する StructureGrowEvent がある場合は、その後に呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -1767,7 +1767,7 @@
     {
       "description": {
         "en": "Called when a block is formed or spreads based on world conditions.",
-        "ja": "自然にブロックが形成される時に呼び出される。"
+        "ja": "ワールド内の条件によりブロックが形成されたり広がったりする際に、その変化が確定する前に呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -1933,7 +1933,7 @@
     {
       "description": {
         "en": "Fired when a single block placement action of a player triggers the creation of multiple blocks (e.g. placing a bed block).",
-        "ja": "プレイヤーがマルチブロックを設置する時に呼び出される。"
+        "ja": "プレイヤーが1回のブロック設置操作で複数のブロックを生成したときに発生する（例：ベッドの設置）。"
       },
       "keywords": {
         "ja": [
@@ -2129,8 +2129,8 @@
     },
     {
       "description": {
-        "en": "A cancellable event exposing the item about to be dispensed and its source dispenser slot.",
-        "ja": "ディスペンサーが排出しようとするアイテムと、その元のスロットを扱うキャンセル可能なイベント。"
+        "en": "A cancellable event fired when a dispenser is about to dispense an item or a dropper is about to eject one into the world, exposing the item and its source inventory slot.",
+        "ja": "ディスペンサーがアイテムを排出しようとするとき、またはドロッパーがアイテムをワールドに排出しようとするときに発生し、対象のアイテムと取り出し元のスロットを取得できるキャンセル可能なイベント。"
       },
       "keywords": {
         "ja": [
@@ -2161,7 +2161,7 @@
     {
       "description": {
         "en": "Called when a Sculk sensor receives a game event and hence might activate.",
-        "ja": "スカルクセンサーがゲームイベントを受けとる時に呼び出される。"
+        "ja": "スカルクセンサーがゲームイベントを受け取り、それによって作動する可能性があるときに呼び出される。ブロックが既定の動作でそのゲームイベントを無視する場合は、キャンセルされた状態で呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -2293,7 +2293,7 @@
     {
       "description": {
         "en": "Called when the brewing of the contents inside the Brewing Stand is complete.",
-        "ja": "醸造が完了する時に呼び出される。"
+        "ja": "醸造台で醸造が完了し、その結果が反映される前に呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -2326,7 +2326,7 @@
     {
       "description": {
         "en": "Called when an ItemStack is about to increase the fuel level of a brewing stand.",
-        "ja": "燃料としてアイテムが醸造台に使用される時に呼び出される。"
+        "ja": "ItemStack によって醸造台の燃料レベルが増加する直前に呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -2458,7 +2458,7 @@
     {
       "description": {
         "en": "Called when the recipe of an Item is completed inside a cartography table.",
-        "ja": "製図台でアイテムを作成する時に呼び出される。"
+        "ja": "製図台でアイテムのレシピが完成したときに呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -2490,8 +2490,8 @@
     },
     {
       "description": {
-        "en": "Fired when a cauldron's contents level or state changes.",
-        "ja": "大釜の内容量や状態が変化する時に呼び出される。"
+        "en": "Fired before a proposed change to a cauldron's contents level or state is applied.",
+        "ja": "大釜の内容量や状態が変更される前に呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -2658,7 +2658,7 @@
     {
       "description": {
         "en": "Called when a chunk is unloaded.",
-        "ja": "チャンクの読み込みが停止された時に呼び出される。"
+        "ja": "チャンクがアンロードされたときに呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -2728,7 +2728,7 @@
       },
       "description": {
         "en": "Fired anytime the server synchronizes Bukkit commands to Brigadier.",
-        "ja": "サーバーが Bukkit コマンドを Brigadier に同期する時に呼び出される。"
+        "ja": "Bukkit コマンドを Brigadier に同期する際にコマンドノードを変更するための旧イベント。現在は LifecycleEvents.COMMANDS を使う。"
       },
       "keywords": {
         "ja": [
@@ -2827,7 +2827,7 @@
     {
       "description": {
         "en": "Called when the recipe of an Item is completed inside a crafting matrix.",
-        "ja": "アイテムをクラフトする時に呼び出される。"
+        "ja": "クラフトグリッド内でアイテムのレシピが完成したときに呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -2891,8 +2891,8 @@
     },
     {
       "description": {
-        "en": "Called when a Creeper is ignited.",
-        "ja": "クリーパーの点火状態が切り替わる時に呼び出される。"
+        "en": "Called before a creeper’s ignited state changes. Plugins can cancel the change or set the new state.",
+        "ja": "クリーパーの点火状態が変わる前に呼び出される。プラグインは変更をキャンセルしたり、変更後の点火状態を指定したりできる。"
       },
       "keywords": {
         "ja": [
@@ -3024,7 +3024,7 @@
     {
       "description": {
         "en": "Is called when an ElderGuardian appears in front of a Player.",
-        "ja": "エルダーガーディアンがプレイヤーの画面に表示される時に呼び出される。"
+        "ja": "エルダーガーディアンの出現演出をプレイヤーの画面に表示する前に呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -3056,8 +3056,8 @@
     },
     {
       "description": {
-        "en": "Called when an ItemStack is successfully enchanted.",
-        "ja": "アイテムにエンチャントした時に呼び出される。"
+        "en": "Called when a player attempts to enchant an item at an enchanting table, before any enchantments are applied.",
+        "ja": "プレイヤーがエンチャントテーブルでアイテムをエンチャントするとき、エンチャントが実際に付与される前に呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -3416,8 +3416,8 @@
     },
     {
       "description": {
-        "en": "Called when an entity attempts to perform a smash attack (usually using a mace).",
-        "ja": "エンティティがスマッシュ攻撃(通常メイスを使って)を実行しようとしたときに呼び出される。"
+        "en": "Called when an entity hits another entity with a mace, whether or not the hit qualifies as a smash attack.",
+        "ja": "エンティティがメイスで別のエンティティに攻撃を当てたとき、その攻撃がスマッシュ攻撃の条件を満たしているかどうかに関係なく呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -3511,8 +3511,8 @@
     },
     {
       "description": {
-        "en": "Exposes the removing entity and damage source for an entity removal.",
-        "ja": "エンティティの除去に関与したエンティティとダメージ源を扱うイベント。"
+        "en": "Called when another entity is about to break a block-attached entity. The event identifies the attacker and the damage source.",
+        "ja": "ブロックに取り付けられたエンティティが別のエンティティに壊される直前に呼び出される。攻撃したエンティティとダメージ源を取得できる。"
       },
       "keywords": {
         "ja": [
@@ -3539,8 +3539,8 @@
     },
     {
       "description": {
-        "en": "Called when an Entity breaks a door. Cancelling the event will cause the event to be delayed.",
-        "ja": "エンティティによってドアが破壊される時に呼び出される。"
+        "en": "Called just before a mob breaks a door. Cancelling the event restarts the mob’s attempt to break it.",
+        "ja": "Mob がドアを壊す直前に呼び出される。キャンセルするとドアは残り、Mob は破壊動作を最初からやり直す。"
       },
       "keywords": {
         "ja": [
@@ -3572,8 +3572,8 @@
     },
     {
       "description": {
-        "en": "A cancellable event exposing the cause of an entity's removal.",
-        "ja": "エンティティの除去理由を扱うキャンセル可能なイベント。"
+        "en": "A cancellable event fired when a block-attached entity is about to break, exposing the cause.",
+        "ja": "ブロックに取り付けられたエンティティが壊れる直前に発生する、原因を取得できるキャンセル可能なイベント。"
       },
       "keywords": {
         "ja": [
@@ -3875,7 +3875,7 @@
       },
       "description": {
         "en": "Thrown when a Living Entity creates a portal in a world.",
-        "ja": "エンティティがポータルを作成する時に呼び出される。"
+        "ja": "生きているエンティティがワールド内でポータルを作成したときに発生する。"
       },
       "keywords": {
         "ja": [
@@ -3973,8 +3973,8 @@
     },
     {
       "description": {
-        "en": "Represents damage dealt to an entity.",
-        "ja": "エンティティがダメージを受ける時に呼び出される。"
+        "en": "Called when an entity would take damage, before the damage is applied.",
+        "ja": "エンティティにダメージが適用される前に呼び出され、ダメージの原因と量を確認できる。"
       },
       "keywords": {
         "ja": [
@@ -4040,7 +4040,7 @@
     {
       "description": {
         "en": "Thrown whenever a LivingEntity dies.",
-        "ja": "エンティティが死ぬ時に呼び出される。"
+        "ja": "LivingEntityが死亡するたびに呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -4339,7 +4339,7 @@
     {
       "description": {
         "en": "Fired when a human entity gains exhaustion. An exhaustion level above 4.0 reduces saturation by 1.",
-        "ja": "プレイヤーなどの HumanEntity に疲労が加わる時に呼び出される。疲労値が 4.0 を超えると、隠し満腹度が 1 減少する。"
+        "ja": "プレイヤーなどの HumanEntity に疲労値を加算する前に呼び出され、加算の理由と量を確認できる。"
       },
       "keywords": {
         "ja": [
@@ -4537,7 +4537,7 @@
     {
       "description": {
         "en": "Called when an entity jumps. Cancelling the event will stop the entity from jumping.",
-        "ja": "エンティティがジャンプする時に呼び出される。"
+        "ja": "エンティティがジャンプする時に呼び出される。このイベントをキャンセルすると、エンティティはジャンプしない。"
       },
       "keywords": {
         "ja": [
@@ -4570,7 +4570,7 @@
     {
       "description": {
         "en": "Fired when an Entity is knocked back by the hit of another Entity.",
-        "ja": "エンティティによってエンティティがノックバックする時に呼び出される。"
+        "ja": "エンティティが別のエンティティの攻撃を受けてノックバックする際に呼び出される。加速度ベクトルを変更でき、イベントをキャンセルするとノックバックは発生しない。"
       },
       "keywords": {
         "ja": [
@@ -4699,8 +4699,26 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when an entity lands on a block after falling, before EntityDamageEvent, EntityChangeBlockEvent, PlayerInteractEvent, and EntityInteractEvent.",
+        "ja": "エンティティが落下してブロックに着地したときに呼び出される。EntityDamageEvent、EntityChangeBlockEvent、PlayerInteractEvent、EntityInteractEventより先に呼び出される。"
+      },
+      "keywords": {
+        "ja": [
+          "着地",
+          "落下",
+          "落下距離",
+          "着地したブロック",
+          "着地判定",
+          "落下ダメージ"
+        ],
+        "en": [
+          "landing",
+          "fall",
+          "fall distance",
+          "landing block",
+          "hit the ground",
+          "fall damage"
+        ]
       },
       "href": "io/papermc/paper/event/entity/EntityLandEvent.html",
       "javadoc": "Called when an Entity lands on the block after falling. This event is called before EntityDamageEvent, EntityChangeBlockEvent, PlayerInteractEvent and EntityInteractEvent.",
@@ -4711,7 +4729,7 @@
     {
       "description": {
         "en": "Called when a living entity loads a crossbow with a projectile.",
-        "ja": "エンティティがアイテムをクロスボウに装填する時に呼び出される。"
+        "ja": "生きているエンティティがクロスボウに飛翔体を装填したときに呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -4976,7 +4994,7 @@
     {
       "description": {
         "en": "Called when a non-player entity is about to teleport because it is in contact with a portal.",
-        "ja": "プレイヤー以外のエンティティがポータルでテレポートする時に呼び出される。"
+        "ja": "プレイヤー以外のエンティティがポータルに接触し、そのためにテレポートする直前に呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -5009,7 +5027,7 @@
     {
       "description": {
         "en": "Called before an entity exits a portal.",
-        "ja": "エンティティがポータルを出る時に呼び出される。"
+        "ja": "エンティティがポータルから出る前に呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -5041,8 +5059,8 @@
     },
     {
       "description": {
-        "en": "Called when an entity is ready to be teleported by a plugin.",
-        "ja": "エンティティがプラグインによってテレポートする準備が整った時に呼び出される。"
+        "en": "Called when an entity has waited the required time in a Nether portal and is ready for the portal to teleport it.",
+        "ja": "エンティティがネザーポータル内で必要な待機時間を経過し、ポータルによるテレポートの準備が整ったときに呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -5107,8 +5125,26 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when a Potent Sulfur geyser launches an entity upward.",
+        "ja": "強力な硫黄の間欠泉がエンティティを上方に吹き上げたときに呼び出されます。"
+      },
+      "keywords": {
+        "ja": [
+          "硫黄",
+          "間欠泉",
+          "吹き上げ",
+          "噴出",
+          "打ち上げ",
+          "発射ベクトル"
+        ],
+        "en": [
+          "potent sulfur",
+          "geyser",
+          "launch",
+          "upward motion",
+          "launch vector",
+          "sulfur block"
+        ]
       },
       "href": "io/papermc/paper/event/entity/EntityPotentSulfurLaunchEvent.html",
       "javadoc": "Called when an entity is launched upward by a Potent Sulfur geyser.",
@@ -5185,7 +5221,7 @@
     {
       "description": {
         "en": "Represents an entity regaining health.",
-        "ja": "エンティティが体力を回復する時に呼び出される。"
+        "ja": "体力回復イベントのデータを保持する。"
       },
       "keywords": {
         "ja": [
@@ -5251,7 +5287,7 @@
     {
       "description": {
         "en": "Fired anytime an entity is being removed from a world for any reason.",
-        "ja": "何らかの理由でワールドからエンティティが削除される時に呼び出される。"
+        "ja": "チャンクのアンロードを含め、理由を問わずエンティティがワールドから取り除かれる際に発火する。エンティティは発火前に更新されるため、そのエンティティのワールドは getWorld() の戻り値と一致しない場合がある。"
       },
       "keywords": {
         "ja": [
@@ -5284,7 +5320,7 @@
     {
       "description": {
         "en": "Called when an entity dies and may have the opportunity to be resurrected.",
-        "ja": "エンティティが死亡し、復活できる時に呼び出される。"
+        "ja": "エンティティが死亡する際の復活判定で呼び出され、不死のトーテムを装備していない場合も、キャンセルされた状態で呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -5316,8 +5352,8 @@
     },
     {
       "description": {
-        "en": "Called when a LivingEntity shoots a bow firing an arrow.",
-        "ja": "エンティティが弓で矢を放つ時に呼び出される。"
+        "en": "Called when a living entity fires a projectile from a bow or crossbow, before the projectile is spawned.",
+        "ja": "生きているエンティティが弓やクロスボウを撃ったとき、飛翔体がワールドに出現する前に呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -5382,7 +5418,7 @@
     {
       "description": {
         "en": "Called when a Spellcaster casts a spell.",
-        "ja": "エヴォーカーやイリュージョナーが呪文を唱える時に呼び出される。"
+        "ja": "Spellcasterが呪文を唱えたときに呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -5415,7 +5451,7 @@
     {
       "description": {
         "en": "Thrown when a LivingEntity is tamed.",
-        "ja": "エンティティを飼い慣らす時に呼び出される。"
+        "ja": "LivingEntityが飼い慣らされたときに呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -5518,8 +5554,8 @@
     },
     {
       "description": {
-        "en": "Called when an Entity targets a LivingEntity.",
-        "ja": "EntityTargetEvent において LivingEntity をターゲットとする時に呼び出される。"
+        "en": "Called when an entity is about to target a LivingEntity or clear its target.",
+        "ja": "エンティティが生きているエンティティをターゲットに設定する前、または現在のターゲットを解除する前に呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -5551,7 +5587,7 @@
     {
       "description": {
         "en": "Fired any time an entity attempts to teleport in an end gateway.",
-        "ja": "エンティティがエンドゲートウェイでテレポートする時に呼び出される。"
+        "ja": "エンティティがエンドゲートウェイを通ってテレポートしようとするたびに発火する。"
       },
       "keywords": {
         "ja": [
@@ -5582,7 +5618,7 @@
     {
       "description": {
         "en": "Thrown when a non-player entity is teleported from one location to another.",
-        "ja": "プレイヤーではないエンティティがテレポートする時に呼び出される。"
+        "ja": "プレイヤー以外のエンティティがテレポートする前に呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -5615,7 +5651,7 @@
     {
       "description": {
         "en": "Called when an entity's gliding status is toggled with an Elytra.",
-        "ja": "エンティティの滑空状態が切り替わる時に呼び出される。"
+        "ja": "エンティティがエリトラでの滑空を開始または終了する際に呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -5745,7 +5781,7 @@
     {
       "description": {
         "en": "Called immediately prior to an entity being unleashed.",
-        "ja": "エンティティからリードが外される時に呼び出される。"
+        "ja": "エンティティからリードが外される直前に呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -5975,7 +6011,7 @@
     {
       "description": {
         "en": "Fired once a profile's additional properties (such as textures) have been filled.",
-        "ja": "プロファイルプロパティが追加された時に呼び出される。"
+        "ja": "プロファイルの追加プロパティ（テクスチャなど）の補完が完了した時に発生する。"
       },
       "keywords": {
         "ja": [
@@ -6106,7 +6142,7 @@
     {
       "description": {
         "en": "Called when a human entity's food level changes.",
-        "ja": "空腹度が変化する時に呼び出される。"
+        "ja": "プレイヤーの空腹度が変化する前に呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -6139,7 +6175,7 @@
     {
       "description": {
         "en": "Called when an ItemStack is successfully burned as fuel in a furnace.",
-        "ja": "かまど内でアイテムが燃料として使用される時に呼び出される。"
+        "ja": "かまどでItemStackが燃料として正常に燃焼したときに呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -6205,7 +6241,7 @@
     {
       "description": {
         "en": "Called when an ItemStack is successfully smelted in a furnace.",
-        "ja": "かまど内でアイテムが精錬される時に呼び出される。"
+        "ja": "かまどでアイテムスタックの精錬に成功したときに呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -6270,8 +6306,8 @@
     },
     {
       "description": {
-        "en": "Represents a generic Mojang game event. Specific Bukkit events should be used where possible.",
-        "ja": "一般的なゲームイベントであることを表す。このイベントは主にスカルセンサーの内部で使用される。可能な限りこのイベントを使わないようにする。"
+        "en": "Called before a Mojang game event is broadcast. Specific Bukkit events should be used where possible.",
+        "ja": "Mojangの汎用ゲームイベントを表す。主にスカルクセンサーが内部で使用する。可能な限り、代わりに対応する個別のBukkitイベントを使用する。"
       },
       "keywords": {
         "ja": [
@@ -6370,7 +6406,7 @@
     {
       "description": {
         "en": "This event is fired if server is getting queried over GS4 Query protocol.",
-        "ja": "GS4クエリプロトコルがクエリされた時に呼び出される。"
+        "ja": "GS4クエリプロトコルでサーバーに問い合わせが行われたときに発火する。"
       },
       "keywords": {
         "ja": [
@@ -6403,7 +6439,7 @@
     {
       "description": {
         "en": "Triggered when a hanging entity is removed by an entity.",
-        "ja": "エンティティによって壁掛けエンティティが破壊される時に呼び出される。"
+        "ja": "エンティティによって壁掛けエンティティが破壊される前に呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -6436,7 +6472,7 @@
     {
       "description": {
         "en": "Triggered when a hanging entity is removed.",
-        "ja": "壁掛けエンティティが破壊される時に呼び出される。"
+        "ja": "壁掛けエンティティが取り除かれたときに発生する。"
       },
       "keywords": {
         "ja": [
@@ -6501,7 +6537,7 @@
     {
       "description": {
         "en": "Triggered when a hanging entity is created in the world.",
-        "ja": "壁掛けエンティティが設置される時に呼び出される。"
+        "ja": "壁掛けエンティティがワールド内に作成されたときに発生する。"
       },
       "keywords": {
         "ja": [
@@ -6534,7 +6570,7 @@
     {
       "description": {
         "en": "Event that gets called each time a Hopper attempts to find its source/attached containers.",
-        "ja": "ホッパーが接続されたコンテナを見つけようとする時に呼び出される。"
+        "ja": "ホッパーがアイテムの取得元や接続先のコンテナを探すたびに呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -6635,8 +6671,8 @@
     },
     {
       "description": {
-        "en": "Called when a block with an inventory starts processing.",
-        "ja": "インベントリを持つブロックが処理を開始した時に呼び出される。"
+        "en": "Base event for the start of furnace smelting, brewing stand brewing, or campfire cooking.",
+        "ja": "かまどの製錬、醸造台の醸造、焚き火の調理が始まるときのイベントに共通する基底クラス。"
       },
       "keywords": {
         "ja": [
@@ -6704,8 +6740,8 @@
     },
     {
       "description": {
-        "en": "Called when an inventory is closed.",
-        "ja": "インベントリを閉じる時に呼び出される。"
+        "en": "Called as a player's inventory view is being closed.",
+        "ja": "プレイヤーのインベントリビューが閉じられる際に呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -6803,8 +6839,8 @@
     },
     {
       "description": {
-        "en": "Represents an inventory-related event.",
-        "ja": "インベントリに関するイベントであることを表す。"
+        "en": "Represents an inventory event related to a player.",
+        "ja": "プレイヤーに関するインベントリイベントを表す。"
       },
       "keywords": {
         "ja": [
@@ -6835,7 +6871,7 @@
     {
       "description": {
         "en": "An abstract base class for events that describe an interaction between a HumanEntity and the contents of an Inventory.",
-        "ja": "プレイヤーとインベントリが相互に作用するイベント表す。"
+        "ja": "HumanEntityとInventoryの中身との相互作用を表すイベントの抽象基底クラス。"
       },
       "keywords": {
         "ja": [
@@ -6868,7 +6904,7 @@
     },
     {
       "description": {
-        "en": "Called when an entity or block (e.g., hopper) moves items from one inventory to another.",
+        "en": "Called when an entity or block (e.g., a hopper) attempts to move items directly from one inventory to another.",
         "ja": "エンティティやホッパー等のブロックがインベントリ内のアイテムを別のインベントリに移動させる時に呼び出される。"
       },
       "keywords": {
@@ -6901,8 +6937,8 @@
     },
     {
       "description": {
-        "en": "Called when an inventory is opened.",
-        "ja": "インベントリを開く時に呼び出される。"
+        "en": "Called when a player attempts to open an inventory.",
+        "ja": "プレイヤーがインベントリを開こうとしたときに呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -7001,7 +7037,7 @@
     {
       "description": {
         "en": "Called when an item is removed from the world after existing for 5 minutes.",
-        "ja": "時間によってアイテムが消滅する時に呼び出される。"
+        "ja": "アイテムが5分間存在したためにワールドから削除されるときに呼び出される。イベントをキャンセルすると、アイテムはさらに5分間残るが、この挙動は保証されず、将来のバージョンで変わる可能性がある。"
       },
       "keywords": {
         "ja": [
@@ -7033,8 +7069,8 @@
     },
     {
       "description": {
-        "en": "Called when two of the same item merge.",
-        "ja": "同じアイテムが合わさる時に呼び出される。"
+        "en": "Called when two item entities are about to merge.",
+        "ja": "2つのアイテムエンティティが合体する直前に呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -7098,8 +7134,26 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when an item-transporting entity, such as a CopperGolem, checks whether its held item belongs in the destination container, allowing plugins to override the CopperGolem’s sorting behavior. It can fire twice per interaction: before the container opens and again before items are added and the container closes.",
+        "ja": "CopperGolemなどのアイテム運搬エンティティが、持っているアイテムを運搬先のコンテナに入れるべきか確認するときに呼び出される。プラグインはCopperGolemの仕分け動作を上書きできる。1回の操作で、コンテナを開く前と、アイテムを追加してコンテナを閉じる前の計2回呼び出されることがある。"
+      },
+      "keywords": {
+        "ja": [
+          "銅ゴーレム",
+          "アイテム運搬",
+          "仕分け",
+          "コンテナ",
+          "収納先",
+          "アイテム分類"
+        ],
+        "en": [
+          "copper golem",
+          "item transport",
+          "sorting",
+          "destination container",
+          "item storage",
+          "held item"
+        ]
       },
       "href": "io/papermc/paper/event/entity/ItemTransportingEntitySortEvent.html",
       "javadoc": "Called when an item-transporting entity (ex a CopperGolem) is inspecting a destination Container to decide if the item it is holding belongs in said container. This gives plugin developers an opportunity to override the CopperGolem's sorting behavior. Note: This event can be called twice during a single \"interaction\", once before the container is opened, and again before items are added and the container is closed.",
@@ -7143,7 +7197,7 @@
     {
       "description": {
         "en": "Called when leaves decay naturally.",
-        "ja": "葉が自然に壊れる時に呼び出される。"
+        "ja": "葉が自然に消滅する際に呼び出される。このイベントをキャンセルすると、葉は消滅しない。"
       },
       "keywords": {
         "ja": [
@@ -7175,7 +7229,7 @@
     {
       "description": {
         "en": "Stores data for lightning striking.",
-        "ja": "雷が落ちる時に呼び出される。"
+        "ja": "落雷に関するデータを保持する。"
       },
       "keywords": {
         "ja": [
@@ -7207,8 +7261,8 @@
     },
     {
       "description": {
-        "en": "Fired when a lingering potion hits and produces an area effect cloud.",
-        "ja": "残留ポーションが着弾し、範囲効果の雲が生成される時に呼び出される。"
+        "en": "Fired when a lingering potion hits, before its area effect cloud is added to the world.",
+        "ja": "残留ポーションが着弾し、効果を持つ雲がワールドに追加される前に呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -7241,7 +7295,7 @@
     {
       "description": {
         "en": "Called when a Llama tries to join a caravan.",
-        "ja": "ラマがキャラバンに参加する時に呼び出される。"
+        "ja": "ラマがキャラバンに参加しようとしたときに呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -7307,7 +7361,7 @@
     {
       "description": {
         "en": "Called after a Profile has been looked up from the Mojang API.",
-        "ja": "Mojang API を用いてプロファイルが検索された時に呼び出される。"
+        "ja": "Mojang API でプレイヤープロファイルのUUIDの取得に成功した後に呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -7339,8 +7393,8 @@
     },
     {
       "description": {
-        "en": "Called when items are replenished from a LootTable.",
-        "ja": "LootTable によってアイテムが補充される時に呼び出される。"
+        "en": "Called before a lootable inventory is replenished from its loot table for a player.",
+        "ja": "プレイヤーに対して、ルートテーブルに基づくインベントリの補充が行われる前に呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -7469,8 +7523,8 @@
     },
     {
       "description": {
-        "en": "Called when a note block is played.",
-        "ja": "音符ブロックが音を鳴らす時に呼び出される。"
+        "en": "Called before a note block plays a note in response to player interaction or a redstone signal.",
+        "ja": "プレイヤーの操作やレッドストーン信号によって音符ブロックが音を鳴らす前に呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -7568,8 +7622,8 @@
     },
     {
       "description": {
-        "en": "Called when interacting with a piglin for bartering.",
-        "ja": "ピグリンと物々交換する時に呼び出される。"
+        "en": "Called when bartering with a piglin, which can be triggered when the piglin picks up an item on its bartering list.",
+        "ja": "ピグリンとの物々交換時に呼び出される。ピグリンが物々交換リストにあるアイテムを拾ったときにも発生することがある。"
       },
       "keywords": {
         "ja": [
@@ -7601,8 +7655,8 @@
     },
     {
       "description": {
-        "en": "Called when a pig is struck by lightning.",
-        "ja": "豚が雷に打たれた時に呼び出される。"
+        "en": "Called when lightning strikes a pig and it is about to turn into a zombified piglin.",
+        "ja": "ブタが落雷を受け、ゾンビピグリンに変わる直前に呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -7634,8 +7688,8 @@
     },
     {
       "description": {
-        "en": "Called when a Pig Zombie is angered by another entity.",
-        "ja": "ゾンビ豚が怒る時に呼び出される。"
+        "en": "Called before a zombified piglin’s anger duration is set. Plugins can change the duration or cancel the anger.",
+        "ja": "ゾンビピグリンの怒りの持続時間が決まる前に呼び出される。プラグインは持続時間の変更や怒りのキャンセルができる。"
       },
       "keywords": {
         "ja": [
@@ -7667,8 +7721,8 @@
     },
     {
       "description": {
-        "en": "Called when a player is granted a criteria in an advancement.",
-        "ja": "プレイヤーが進捗の条件を達成した時に呼び出される。"
+        "en": "Called after a player is granted an advancement criterion. Cancelling the event revokes the criterion.",
+        "ja": "プレイヤーが進捗の条件を達成した後に呼び出される。このイベントがキャンセルされると、その条件の達成が取り消される。"
       },
       "keywords": {
         "ja": [
@@ -7700,8 +7754,8 @@
     },
     {
       "description": {
-        "en": "A cancellable event exposing an advancement criterion granted to a player and the affected advancement.",
-        "ja": "プレイヤーに付与される進捗条件と、その条件に対応する進捗を扱うキャンセル可能なイベント。"
+        "en": "A cancellable event fired before an unmet advancement criterion would be granted to a player, identifying the criterion and its advancement.",
+        "ja": "未達成の進捗条件がプレイヤーに付与される前に発生し、その条件と対応する進捗を取得できるキャンセル可能なイベント。"
       },
       "keywords": {
         "ja": [
@@ -7728,8 +7782,26 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when a player loses a single advancement criterion. Cancelling the event restores that criterion.",
+        "ja": "プレイヤーの進捗の達成条件が1つ取り消されたときに呼び出される。キャンセルすると、その条件は達成済みに戻る。"
+      },
+      "keywords": {
+        "ja": [
+          "進捗",
+          "達成条件",
+          "条件取り消し",
+          "条件の復元",
+          "進捗状況",
+          "達成条件の剥奪"
+        ],
+        "en": [
+          "advancement",
+          "criterion",
+          "revoke criterion",
+          "restore criterion",
+          "advancement progress",
+          "remove credit"
+        ]
       },
       "href": "io/papermc/paper/event/player/PlayerAdvancementCriterionRevokeEvent.html",
       "javadoc": "An event fired when a Player has an advancement revoked. If cancelled the criteria will be granted.",
@@ -7772,8 +7844,26 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Fires when a player's advancement is revoked.",
+        "ja": "プレイヤーの進捗が取り消されたときに発生します。"
+      },
+      "keywords": {
+        "ja": [
+          "進捗",
+          "達成取り消し",
+          "進捗剥奪",
+          "未達成",
+          "進捗の取り消し",
+          "達成状態"
+        ],
+        "en": [
+          "advancement",
+          "revocation",
+          "advancement progress",
+          "revoke advancement",
+          "completion lost",
+          "incomplete advancement"
+        ]
       },
       "href": "io/papermc/paper/event/player/PlayerAdvancementRevokeEvent.html",
       "javadoc": "An event fired when a Player has an advancement revoked.",
@@ -7783,8 +7873,8 @@
     },
     {
       "description": {
-        "en": "Fired when a player goes AFK or returns from being AFK.",
-        "ja": "プレイヤーが AFK 状態に入る、または AFK 状態から復帰する時に呼び出される。"
+        "en": "Fired before a player enters or leaves AFK status, while the change can still be cancelled.",
+        "ja": "プレイヤーがAFK状態に入る前、またはAFK状態から復帰する前に発火し、その状態変更をキャンセルできる。"
       },
       "keywords": {
         "ja": [
@@ -7851,8 +7941,8 @@
     },
     {
       "description": {
-        "en": "Called when the player changes their armor items.",
-        "ja": "プレイヤーの鎧が変更された時に呼び出される。"
+        "en": "Called when the server detects an equipment change in a player's armor slot; use EntityEquipmentChangedEvent for new code.",
+        "ja": "プレイヤーの防具スロットの装備変更をサーバーが検出したときに呼び出される。すべての装備変更を扱うには EntityEquipmentChangedEvent を使う。"
       },
       "keywords": {
         "ja": [
@@ -7917,8 +8007,8 @@
     },
     {
       "description": {
-        "en": "Called when a player swings their arm.",
-        "ja": "プレイヤーが腕を振った時に呼び出される。"
+        "en": "Called when a player attempts to swing their arm.",
+        "ja": "プレイヤーが腕を振ろうとしたときに呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -7988,7 +8078,7 @@
     {
       "description": {
         "en": "Called when a player is about to enter a bed.",
-        "ja": "プレイヤーがベッドに入る時に呼び出される。"
+        "ja": "プレイヤーがベッドに入ろうとしたときに発火する。"
       },
       "keywords": {
         "ja": [
@@ -8286,8 +8376,26 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when a player selects an item inside a bundle.",
+        "ja": "プレイヤーがバンドル内のアイテムを選択したときに呼び出されます。"
+      },
+      "keywords": {
+        "ja": [
+          "バンドル",
+          "アイテム選択",
+          "選択スロット",
+          "選択中のアイテム",
+          "収納",
+          "以前の選択"
+        ],
+        "en": [
+          "bundle",
+          "item selection",
+          "selected slot",
+          "selected item",
+          "bundle contents",
+          "previous selection"
+        ]
       },
       "href": "io/papermc/paper/event/inventory/PlayerBundleItemSelectEvent.html",
       "javadoc": "Called when a Player selects an item inside a bundle.",
@@ -8671,7 +8779,7 @@
     {
       "description": {
         "en": "Called before a player's command is processed.",
-        "ja": "プレイヤーが実行したコマンドが処理される前に呼び出される。"
+        "ja": "プレイヤーが入力したコマンドが処理される前に呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -8704,7 +8812,7 @@
     {
       "description": {
         "en": "Called when the list of available commands is sent to the player.",
-        "ja": "使用可能なコマンドをプレイヤーに送信する時に呼び出される。"
+        "ja": "プレイヤーに使用可能なコマンドの一覧を送信する際に呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -9068,8 +9176,8 @@
     },
     {
       "description": {
-        "en": "Called when a player throws an egg that might hatch.",
-        "ja": "プレイヤーが投げた卵が孵化するかの確認をする時に呼び出される。"
+        "en": "Called when an egg thrown by a player hits something and the server determines whether it will hatch.",
+        "ja": "プレイヤーが投げた卵が着弾し、孵化するかどうかを判定するときに呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -9298,7 +9406,7 @@
     },
     {
       "description": {
-        "en": "Called when a player manipulates items in a flower pot.",
+        "en": "Called when a player attempts to place an item in or remove an item from a flowerpot.",
         "ja": "プレイヤーが植木鉢にアイテムを置いたり、植木鉢からアイテムを取り出したりする時に呼び出される。"
       },
       "keywords": {
@@ -9466,7 +9574,7 @@
       },
       "description": {
         "en": "Called when a player updates their input.",
-        "ja": "プレイヤーが操作キーの入力を更新した時に呼び出される。"
+        "ja": "プレイヤーからサーバーに届いた操作入力が前回の入力と異なるときに呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -9498,7 +9606,7 @@
     },
     {
       "description": {
-        "en": "Called when a player inserts a book into a lectern.",
+        "en": "Called when a player clicks a lectern to insert a book. If cancelled, the player keeps the book and the lectern remains empty.",
         "ja": "プレイヤーが書見台に本を挿入する時に呼び出される。"
       },
       "keywords": {
@@ -10091,8 +10199,8 @@
     },
     {
       "description": {
-        "en": "Called when a player changes the page of a book placed on a lectern.",
-        "ja": "プレイヤーが書見台に置かれた本のページを変更する時に呼び出される。"
+        "en": "Called when a player attempts to turn a book’s page using the previous or next page button in a lectern menu.",
+        "ja": "プレイヤーが書見台メニューで前または次のページに移動するボタンを押して、本のページをめくろうとしたときに呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -10222,7 +10330,7 @@
     {
       "description": {
         "en": "Fired early in player login. Defer most operations on the player entity until PlayerJoinEvent.",
-        "ja": "プレイヤーがログインしようとする時に呼び出される。PlayerJoinEvent の前に呼び出される。"
+        "ja": "ログインを試みるプレイヤーの情報を保持するイベント。プレイヤーの初期化の早い段階で呼び出されるため、Player エンティティに関する操作の大半は PlayerJoinEvent まで待つことが推奨される。"
       },
       "keywords": {
         "ja": [
@@ -10255,7 +10363,7 @@
     {
       "description": {
         "en": "Called when a player selects a banner pattern in a loom inventory.",
-        "ja": "プレイヤーが機織り機の旗模様を変更する時に呼び出される。"
+        "ja": "プレイヤーが機織り機のインベントリで旗の模様を選択したときに呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -10321,7 +10429,7 @@
     {
       "description": {
         "en": "Holds information for player movement events.",
-        "ja": "プレイヤーが移動する時に呼び出される。"
+        "ja": "プレイヤーの移動イベントに関する情報を保持する。"
       },
       "keywords": {
         "ja": [
@@ -10354,7 +10462,7 @@
     {
       "description": {
         "en": "Called when the player is attempting to rename a mob.",
-        "ja": "プレイヤーがエンティティの名前を変更する時に呼び出される。"
+        "ja": "プレイヤーが名札でエンティティの名前を変更しようとしたときに呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -10387,7 +10495,7 @@
     {
       "description": {
         "en": "Fired when the server is calculating what chunks to try to spawn monsters in every Monster Spawn Tick event.",
-        "ja": "モンスターをスポーンさせるチャンクを計算する時に呼び出される。"
+        "ja": "サーバーが自然スポーンを試みるチャンクを判定する際に、プレイヤーごとに発生する。"
       },
       "keywords": {
         "ja": [
@@ -10586,7 +10694,7 @@
     {
       "description": {
         "en": "Fired when a player is attempting to pick up an experience orb.",
-        "ja": "プレイヤーが地面から経験値オーブを拾う時に呼び出される。"
+        "ja": "プレイヤーが経験値オーブを拾おうとしたときに発生する。"
       },
       "keywords": {
         "ja": [
@@ -10657,7 +10765,7 @@
     {
       "description": {
         "en": "Called when a player is about to teleport because it is in contact with a portal which will generate an exit portal.",
-        "ja": "プレイヤーがポータルでテレポートする時に呼び出される。"
+        "ja": "プレイヤーが出口ポータルを生成するポータルに触れ、それによってテレポートする直前に呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -10726,7 +10834,7 @@
       },
       "description": {
         "en": "Called when a player is attempting to log in.",
-        "ja": "プレイヤーがログインしようとしている時に呼び出される。"
+        "ja": "プレイヤーがログインを試みると、AsyncPlayerPreLoginEvent の処理後に、このイベントのリスナーが登録されている場合に限り呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -11150,8 +11258,8 @@
     },
     {
       "description": {
-        "en": "Called when changing the contents of a spawner using a monster egg.",
-        "ja": "モンスターエッグを使い、スポナーの内容を変える時に呼び出される。"
+        "en": "Called before a player uses a spawn egg to change the entity type a mob spawner spawns.",
+        "ja": "プレイヤーがスポーンエッグを使ってモンスタースポナーから出現するエンティティの種類を変更する前に呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -11183,7 +11291,7 @@
     {
       "description": {
         "en": "Called when a player's spawn is set.",
-        "ja": "プレイヤーがスポーン地点を設定する時に呼び出される。"
+        "ja": "プレイヤーのリスポーン地点が設定または解除される際に呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -11215,8 +11323,8 @@
     },
     {
       "description": {
-        "en": "Called when a player sets the entity type of a trial spawner using a spawn egg.",
-        "ja": "プレイヤーがスポーンエッグを使用して試練のスポナーのエンティティの種類を設定する時に呼び出される。"
+        "en": "Called when a player attempts to set the entity type of a trial spawner using a spawn egg.",
+        "ja": "プレイヤーがスポーンエッグを使って試練のスポナーのエンティティの種類を設定しようとしたときに呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -11248,7 +11356,7 @@
     {
       "description": {
         "en": "Called when a player uses shears on a block.",
-        "ja": "プレイヤーがブロックに対してハサミを使用する時に呼び出される。"
+        "ja": "プレイヤーがブロックを破壊するのではなく、ドロップを得たりブロックの状態を変えたりするためにハサミを使ったときに呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -11313,8 +11421,8 @@
     },
     {
       "description": {
-        "en": "Called whenever a player's shield is disabled due to an attack from another entity.",
-        "ja": "別のエンティティからの攻撃により、プレイヤーのシールドが無効になるたびに呼び出される。"
+        "en": "Called when another entity's attack would disable a player's shield, before the item goes on cooldown. Cancelling this event prevents the shield from being disabled, so PlayerItemCooldownEvent does not fire.",
+        "ja": "別のエンティティの攻撃によってプレイヤーのシールドを無効化しようとするときに呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -11379,8 +11487,8 @@
     },
     {
       "description": {
-        "en": "Called when a player clicks a sign that triggers a command.",
-        "ja": "プレイヤーがコマンドを実行させる看板をクリックする時に呼び出される。"
+        "en": "Called when a player clicks a side of a sign and triggers a command that runs with elevated permissions.",
+        "ja": "プレイヤーが看板の片面をクリックし、そのクリックによってコマンドが昇格された権限で実行されるときに呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -11739,8 +11847,8 @@
     },
     {
       "description": {
-        "en": "Called when a player takes a book from a lectern.",
-        "ja": "プレイヤーが書見台に置いてある本を取る時に呼び出される。"
+        "en": "Called when a player clicks the button to take a book from a lectern.",
+        "ja": "プレイヤーが書見台から本を取るボタンをクリックしたときに呼び出される。このイベントがキャンセルされると、本は書見台に残る。"
       },
       "keywords": {
         "ja": [
@@ -11772,8 +11880,8 @@
     },
     {
       "description": {
-        "en": "Called when a player teleports using an End Gateway.",
-        "ja": "プレイヤーがエンドゲートウェイを用いてテレポートする時に呼び出される。"
+        "en": "Called when a teleport is triggered for an End Gateway.",
+        "ja": "エンドゲートウェイのテレポートがトリガーされたときに呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -11804,7 +11912,7 @@
     {
       "description": {
         "en": "Called when a player teleports.",
-        "ja": "プレイヤーがテレポートする時に呼び出される。"
+        "ja": "プレイヤーのテレポートが実行される前に呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -11966,8 +12074,26 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when a player tracks an entity. Cancelling the event hides the entity from that player and prevents interaction in either direction. Adding or removing entities from the world during this event is unsupported, and teleporting entities during it causes undefined tracker behavior. Avoid all three operations.",
+        "ja": "プレイヤーがエンティティを追跡するときに呼び出されます。キャンセルすると、そのエンティティはプレイヤーに表示されず、双方向のやり取りもできなくなります。このイベント中にワールドへエンティティを追加したり、ワールドから削除したりする操作はサポートされていません。また、このイベント中にエンティティをテレポートすると追跡処理の挙動が未定義になるため、いずれの操作も避けてください。"
+      },
+      "keywords": {
+        "ja": [
+          "エンティティ追跡",
+          "追跡開始",
+          "プレイヤーへの表示",
+          "可視性",
+          "追跡対象",
+          "エンティティ表示"
+        ],
+        "en": [
+          "entity tracking",
+          "start tracking",
+          "player visibility",
+          "show entity",
+          "tracked entity",
+          "viewer"
+        ]
       },
       "href": "io/papermc/paper/event/player/PlayerTrackEntityEvent.html",
       "javadoc": "Is called when a Player tracks an Entity. If cancelled entity is not shown to the player and interaction in both directions is not possible. Adding or removing entities from the world at the point in time this event is called is completely unsupported and should be avoided. Teleporting entities in the world at the point in time this event is called yields an undefined tracker behavior and should be avoided.",
@@ -12045,7 +12171,7 @@
     {
       "description": {
         "en": "Called immediately after a player unregisters for a plugin channel.",
-        "ja": "プレイヤーがプラグインチャンネルの登録を解除する時に呼び出される。"
+        "ja": "プレイヤーがプラグインチャンネルの登録を解除した直後に呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -12075,8 +12201,26 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when a player stops tracking an entity. Adding or removing entities from the world during this event is unsupported, and teleporting entities causes undefined tracker behavior. Avoid all three operations.",
+        "ja": "プレイヤーがエンティティの追跡をやめたときに呼び出されます。このイベント中にワールドにエンティティを追加したり、ワールドから削除したりする操作はサポートされていません。また、エンティティをテレポートさせた場合、追跡処理の挙動は未定義です。いずれの操作も避けてください。"
+      },
+      "keywords": {
+        "ja": [
+          "エンティティ追跡",
+          "追跡終了",
+          "追跡解除",
+          "プレイヤーへの表示",
+          "可視性",
+          "追跡対象"
+        ],
+        "en": [
+          "entity tracking",
+          "stop tracking",
+          "untrack entity",
+          "player visibility",
+          "tracked entity",
+          "viewer"
+        ]
       },
       "href": "io/papermc/paper/event/player/PlayerUntrackEntityEvent.html",
       "javadoc": "Is called when a Player untracks an Entity. Adding or removing entities from the world at the point in time this event is called is completely unsupported and should be avoided. Teleporting entities in the world at the point in time this event is called yields an undefined tracker behavior and should be avoided.",
@@ -12217,7 +12361,7 @@
     {
       "description": {
         "en": "Represents an event related to plugin enabling and disabling.",
-        "ja": "プラグインに関するイベントであることを表す。"
+        "ja": "プラグインの有効化・無効化イベントに使用される。"
       },
       "keywords": {
         "ja": [
@@ -12284,7 +12428,7 @@
     {
       "description": {
         "en": "Called when a splash potion hits an area.",
-        "ja": "ポーションが割れる時に呼び出される。"
+        "ja": "スプラッシュポーションがある範囲に着弾したときに呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -12416,7 +12560,7 @@
     {
       "description": {
         "en": "Called when the server requests to fill in incomplete profile properties.",
-        "ja": "不完全なプロファイルプロパティの追加を要求している時に呼び出される。"
+        "ja": "サーバーがプロファイルに不足しているプロパティを補おうとするときに呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -12448,8 +12592,8 @@
     },
     {
       "description": {
-        "en": "Fired before a profile lookup by name. Providing a UUID and optionally profile properties can let the server skip the Mojang API lookup.",
-        "ja": "名前によるプロファイル検索を実行する前に呼び出される。UUID と必要に応じてプロパティを設定すると、Mojang API への検索を省略できる。"
+        "en": "Fired before the server looks up a profile’s UUID by name; if a plugin supplies the UUID, the server skips the Mojang API request for that lookup.",
+        "ja": "サーバーが名前からプロファイルの UUID を検索する前に呼び出され、プラグインが UUID を設定すると、その検索に対する Mojang API へのリクエストが省略される。"
       },
       "keywords": {
         "ja": [
@@ -12482,7 +12626,7 @@
     {
       "description": {
         "en": "Called when an item is put in a slot for repair by an anvil.",
-        "ja": "金床の使用準備が出来た時に呼び出される。完成アイテムが表示される毎に発生する。"
+        "ja": "金床で修理するためにアイテムがスロットに置かれたときに呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -12519,8 +12663,26 @@
         "en": "It is recommended to use PrepareResultEvent instead of this event."
       },
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when an item is placed in a grindstone slot for grinding.",
+        "ja": "砥石で研磨するためのスロットにアイテムが入れられたときに呼び出されます。"
+      },
+      "keywords": {
+        "ja": [
+          "砥石",
+          "研磨",
+          "修理",
+          "エンチャント解除",
+          "入力スロット",
+          "処理結果"
+        ],
+        "en": [
+          "grindstone",
+          "grinding",
+          "repair",
+          "disenchant",
+          "input slot",
+          "result slot"
+        ]
       },
       "href": "com/destroystokyo/paper/event/inventory/PrepareGrindstoneEvent.html",
       "javadoc": "Called when an item is put in a slot for grinding in a Grindstone.",
@@ -12531,7 +12693,7 @@
     {
       "description": {
         "en": "Called when an item is put in a slot for repair or unenchanting in a grindstone.",
-        "ja": "砥石のアイテムスロットにアイテムを置く時に呼び出される。"
+        "ja": "修理またはエンチャント解除のために砥石のスロットにアイテムが置かれたときに呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -12563,8 +12725,26 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when a hopper or hopper minecart is about to choose an item to move, before any InventoryMoveItemEvent. Disallowed source slots are ignored, so the source is treated as empty if it contains items only in those slots.",
+        "ja": "ホッパーまたはホッパー付きトロッコが移動するアイテムを選ぶ直前に、InventoryMoveItemEvent に先立って呼び出される。移動元の許可されていないスロットは無視されるため、それらのスロットにしかアイテムがない場合、移動元は空として扱われる。"
+      },
+      "keywords": {
+        "ja": [
+          "ホッパー",
+          "ホッパー付きトロッコ",
+          "搬出",
+          "アイテム移送",
+          "スロット選択",
+          "移動元"
+        ],
+        "en": [
+          "hopper",
+          "hopper minecart",
+          "item transfer",
+          "source inventory",
+          "allowed slots",
+          "slot filter"
+        ]
       },
       "href": "io/papermc/paper/event/inventory/PrepareHopperTransferEvent.html",
       "javadoc": "Called when a hopper or hopper minecart is about to choose an item to move, before any InventoryMoveItemEvent. The hopper treats disallowed slots of the source as if they do not exist, so a source with items only in disallowed slots is treated as empty.",
@@ -12607,8 +12787,8 @@
     },
     {
       "description": {
-        "en": "Called when crafting is prepared. Triggered each time materials are arranged and the resulting item is displayed.",
-        "ja": "クラフトの準備が出来た時に呼び出される。材料を並べ、完成アイテムが表示される毎に発生する。"
+        "en": "Called when a crafting or repair result is prepared, before the final result is returned.",
+        "ja": "クラフトや修理の結果が用意され、最終的な結果が返される前に呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -12672,8 +12852,26 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when an item is placed in an inventory with a result slot.",
+        "ja": "結果スロットのあるインベントリにアイテムが入れられたときに呼び出される。"
+      },
+      "keywords": {
+        "ja": [
+          "結果スロット",
+          "インベントリ",
+          "入力アイテム",
+          "処理結果",
+          "結果アイテム",
+          "出力スロット"
+        ],
+        "en": [
+          "result slot",
+          "inventory",
+          "input item",
+          "result item",
+          "output slot",
+          "prepare result"
+        ]
       },
       "href": "com/destroystokyo/paper/event/inventory/PrepareResultEvent.html",
       "javadoc": "Called when an item is put in an inventory containing a result slot.",
@@ -12717,7 +12915,7 @@
     {
       "description": {
         "en": "Called when the player tries to attack an entity. This occurs before any of the damage logic, so cancelling this event will prevent any sort of sounds from being played when attacking.",
-        "ja": "プレイヤーがエンティティに攻撃する前に呼び出される。このイベントがキャンセルされると攻撃時のサウンドが再生されなくなる。"
+        "ja": "プレイヤーがエンティティを攻撃しようとしたとき、ダメージ処理の前に呼び出される。このイベントをキャンセルすると、攻撃時の効果音は再生されない。"
       },
       "keywords": {
         "ja": [
@@ -12750,7 +12948,7 @@
     {
       "description": {
         "en": "Called before an entity is spawned into a world by a spawner.",
-        "ja": "エンティティがスポナーによってスポーンする前に呼び出される。SpawnerSpawnEvent よりも前に呼び出される。"
+        "ja": "スポナーがワールドにエンティティをスポーンさせる前に呼び出される。パフォーマンス上の理由から、イベントにはスポナーの位置のみが含まれ、完全な BlockState のスナップショットは含まれない。"
       },
       "keywords": {
         "ja": [
@@ -12985,7 +13183,7 @@
     {
       "description": {
         "en": "This event is called when a Raid was complete with a clear result.",
-        "ja": "レイドが終わった時に呼び出される。"
+        "ja": "レイドが明確な結果をもって終了したときに呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -13018,7 +13216,7 @@
     {
       "description": {
         "en": "Called when a raid wave spawns.",
-        "ja": "レイドのウェーブが進んだ時に呼び出される。"
+        "ja": "レイドのウェーブが出現したときに呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -13083,8 +13281,8 @@
     },
     {
       "description": {
-        "en": "Called when a Raid is triggered (e.g: a player with Bad Omen effect enters a village).",
-        "ja": "レイドが始まる時に呼び出される。"
+        "en": "Called when a player is about to trigger a raid or strengthen one already in progress.",
+        "ja": "プレイヤーが襲撃を開始させる前、または進行中の襲撃を強化する前に呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -13149,8 +13347,8 @@
     },
     {
       "description": {
-        "en": "Called after values defined in vanilla or datapacks are loaded as registry. At this point, plugins can make their own changes to the registry.",
-        "ja": "バニラやデータパックで定義された値がレジストリとしてロードされた後に呼び出される。このとき、プラグインはレジストリに独自の変更を加えることができる。"
+        "en": "Called after a registry is populated with its normal values, allowing plugins to add new entries.",
+        "ja": "レジストリに通常の値が読み込まれた後に呼び出され、プラグインは新しいエントリを追加できる。"
       },
       "keywords": {
         "ja": [
@@ -13216,7 +13414,7 @@
     {
       "description": {
         "en": "Base type for all registry events.",
-        "ja": "レジストリに関するイベントであることを表す。"
+        "ja": "すべてのレジストリイベントの基底型。"
       },
       "keywords": {
         "ja": [
@@ -13280,7 +13478,7 @@
     {
       "description": {
         "en": "Triggered when a ridable mob moves with a rider.",
-        "ja": "乗ることが可能なエンティティが乗っているエンティティと共に動く時に呼び出される。"
+        "ja": "騎乗可能なMobが乗り手を乗せた状態で移動したときに発生する。"
       },
       "keywords": {
         "ja": [
@@ -13312,8 +13510,8 @@
     },
     {
       "description": {
-        "en": "Called when a player attempts to jump while riding a rideable entity.",
-        "ja": "乗ることが可能なエンティティに乗っている時にジャンプを試みた時に呼び出される。"
+        "en": "Called when a player presses the jump key while riding a rideable entity.",
+        "ja": "プレイヤーが乗れるエンティティに乗っている間に、ジャンプキーを押すと呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -13476,7 +13674,7 @@
     {
       "description": {
         "en": "Called when a server list ping request is received.",
-        "ja": "サーバーリストの表示内容を送る要求を受けた時に呼び出される。PaperServerListPingEvent を使うことでより詳細の情報を扱うことができる。"
+        "ja": "サーバーリストの ping リクエストを受信したときに呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -13541,8 +13739,26 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when resources such as datapacks are reloaded. Intended for re-registering custom recipes and advancements that may be lost during the reload.",
+        "ja": "データパックなどのリソースが再読み込みされたときに呼び出されます。再読み込みで失われる可能性のあるカスタムレシピや進捗を再登録するためのイベントです。"
+      },
+      "keywords": {
+        "ja": [
+          "リロード",
+          "データパック",
+          "再読み込み",
+          "レシピ再登録",
+          "進捗再登録",
+          "サーバーリソース"
+        ],
+        "en": [
+          "reload",
+          "datapack",
+          "server resources",
+          "recipe registration",
+          "advancement registration",
+          "minecraft:reload"
+        ]
       },
       "href": "io/papermc/paper/event/server/ServerResourcesReloadedEvent.html",
       "javadoc": "Called when resources such as datapacks are reloaded (e.g. /minecraft:reload). Intended for use to re-register custom recipes, advancements that may be lost during a reload like this.",
@@ -13617,8 +13833,8 @@
     },
     {
       "description": {
-        "en": "Represents service-related events.",
-        "ja": "サービスに関するイベントであることを表す。"
+        "en": "Base class for events about a service provider registered with the services manager.",
+        "ja": "サービスマネージャーでのサービスプロバイダーの登録と登録解除に共通する基底クラス。"
       },
       "keywords": {
         "ja": [
@@ -13848,7 +14064,7 @@
     {
       "description": {
         "en": "Called when a player gets close to a skeleton horse and triggers the lightning trap.",
-        "ja": "プレイヤーがスケルトンホースに近づき、落雷が発生する時に呼び出される。"
+        "ja": "プレイヤーがスケルトンホースに近づいて落雷の罠を作動させる際、実際に落雷が発生する前に呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -13914,7 +14130,7 @@
     {
       "description": {
         "en": "Fired when a Slime decides to start pathfinding.",
-        "ja": "スライムが移動を開始しようと決めた時に呼び出される。"
+        "ja": "スライムが経路探索を始めると判断したときのイベントの基底クラス。"
       },
       "keywords": {
         "ja": [
@@ -14020,7 +14236,7 @@
     {
       "description": {
         "en": "Fired when a Slime decides to change direction to target a LivingEntity.",
-        "ja": "スライムがエンティティを標的として移動を開始しようと決めた時に呼び出される。"
+        "ja": "スライムが生きているエンティティ（LivingEntity）を標的にするため、向きを変えて移動を始めると決めた時に発火する。実際に移動する時には発火しない。"
       },
       "keywords": {
         "ja": [
@@ -14053,7 +14269,7 @@
     {
       "description": {
         "en": "Fired when a Slime decides to start wandering.",
-        "ja": "スライムがランダムに移動することを決めた時に呼び出される。"
+        "ja": "スライムが徘徊を始めようとするときに呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -14217,7 +14433,7 @@
     {
       "description": {
         "en": "Called when a Strider's temperature has changed as a result of entering or exiting blocks it considers warm.",
-        "ja": "ストライダーの体温が変化した時に呼び出される。"
+        "ja": "ストライダーが暖かいとみなすブロックに入るか、そこから出ることで体温が変化した時に呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -14315,7 +14531,7 @@
     },
     {
       "description": {
-        "en": "Fired when a SulfurCube accepts an item from a player. Replacing the swallowed item leaves the original in the player’s inventory; cancellation prevents both swallowing and consumption.",
+        "en": "Fired when a SulfurCube attempts to swallow an item offered by a player. Replacing the item leaves the original in the player’s inventory; cancelling the event prevents both swallowing and consumption.",
         "ja": "SulfurCubeがプレイヤーからアイテムを飲み込む時に呼び出される。飲み込むアイテムを差し替えると、元のアイテムはプレイヤーの所持品に残る。キャンセルすると飲み込みとアイテムの消費を防ぐ。"
       },
       "keywords": {
@@ -14449,8 +14665,8 @@
     },
     {
       "description": {
-        "en": "Called when a thrown egg might hatch.",
-        "ja": "投げられた卵が孵化するかの確認をする時に呼び出される。"
+        "en": "Called when any thrown egg might hatch, including eggs thrown by players or dispensers.",
+        "ja": "投げられた卵が孵化する可能性があるときに呼び出される。プレイヤーやディスペンサーなど、卵を投げたものは問わない。"
       },
       "keywords": {
         "ja": [
@@ -14483,7 +14699,7 @@
     {
       "description": {
         "en": "Fired when a world's thunder state changes.",
-        "ja": "ワールドの雷雨状態が切り替わる時に呼び出される。"
+        "ja": "ワールドの雷雨状態が切り替わる前に呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -14516,7 +14732,7 @@
     {
       "description": {
         "en": "Called when the time skips in a world.",
-        "ja": "時間がスキップされる時に呼び出される。"
+        "ja": "ワールド内の時刻がスキップされるときに呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -14554,7 +14770,7 @@
       },
       "description": {
         "en": "Called when TNT block is about to turn into TNTPrimed.",
-        "ja": "TNT に着火する時に呼び出される。"
+        "ja": "TNT ブロックが TNTPrimed に変わる直前に呼び出される。キャンセルすると変化せず、TNT ブロックはそのまま残る。"
       },
       "keywords": {
         "ja": [
@@ -14587,7 +14803,7 @@
     {
       "description": {
         "en": "Called when a block of TNT in the world become primed.",
-        "ja": "TNT に着火する時に呼び出される。"
+        "ja": "ワールド内の TNT ブロックが着火するときに呼び出される。このイベントがキャンセルされると、その TNT ブロックは着火しない。"
       },
       "keywords": {
         "ja": [
@@ -14788,7 +15004,7 @@
     },
     {
       "description": {
-        "en": "Called when a player attempts to change the contents of a sign, before the server checks whether the sign actually exists.",
+        "en": "Called when a client attempts to edit a sign before the server checks whether a sign exists at the target location. Cancelling stops further processing, but the plugin must handle any resulting inconsistency in the client's local world.",
         "ja": "プレイヤーが看板の内容を変更しようとするとき、サーバーが実際に看板が存在するかを確認する前の段階で呼び出される。"
       },
       "keywords": {
@@ -14859,7 +15075,7 @@
       },
       "description": {
         "en": "Called when a vault in a trial chamber is about to display an item.",
-        "ja": "宝物庫がアイテムを表示する時に呼び出される。"
+        "ja": "トライアルチャンバー内の宝物庫がアイテムを表示する直前に呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -15019,8 +15235,8 @@
     },
     {
       "description": {
-        "en": "Called when a vehicle is destroyed.",
-        "ja": "乗り物が破壊される時に呼び出される。"
+        "en": "Called before a vehicle is destroyed, allowing the destruction to be cancelled.",
+        "ja": "乗り物が破壊される直前に呼び出され、破壊をキャンセルできる。"
       },
       "keywords": {
         "ja": [
@@ -15148,7 +15364,7 @@
     {
       "description": {
         "en": "Called when a living entity exits a vehicle.",
-        "ja": "エンティティが乗り物から降りる時に呼び出される。"
+        "ja": "生きているエンティティが乗り物から降りる時に呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -15275,8 +15491,8 @@
     },
     {
       "description": {
-        "en": "Called when a villager's profession changes.",
-        "ja": "村人の職業が変わる時に呼び出される。"
+        "en": "Called before a villager gains or loses a profession.",
+        "ja": "村人が職に就くか職を失う際、その変更が適用される前に呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -15308,7 +15524,7 @@
     {
       "description": {
         "en": "Called when a Villager is about to restock one of its trades.",
-        "ja": "村人が交易品を補充する時に呼び出される。"
+        "ja": "村人が個々の取引の使用回数をリセットして補充する直前に呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -15341,7 +15557,7 @@
     {
       "description": {
         "en": "Called whenever an entity's reputation with a villager changes.",
-        "ja": "エンティティが村人との評判を変更する時に呼び出される。"
+        "ja": "村人から見たエンティティの評判が変わる際に、変更が適用される前に呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -15372,8 +15588,8 @@
     },
     {
       "description": {
-        "en": "Called when a Warden's anger level has changed.",
-        "ja": "ウォーデンの怒りレベルが他のエンティティによって変化する時に呼び出される。"
+        "en": "Called when a Warden's anger level changes due to another entity. Cancelling the event prevents the change.",
+        "ja": "ウォーデンが特定のエンティティに対する怒りレベルを変更する前に呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -15406,7 +15622,7 @@
     {
       "description": {
         "en": "Called when a splash water potion splashes.",
-        "ja": "スプラッシュウォーターポーションが割れる時に呼び出される。"
+        "ja": "スプラッシュウォーターポーションがはじけ、エンティティごとに異なる影響を与えるときに呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -15438,8 +15654,8 @@
     },
     {
       "description": {
-        "en": "Called when weather changes.",
-        "ja": "天気が変わる時に呼び出される。"
+        "en": "Called before a world's rain starts or stops.",
+        "ja": "ワールドで雨が降り始める前、または雨がやむ前に呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -15503,8 +15719,26 @@
     },
     {
       "description": {
-        "en": "",
-        "ja": ""
+        "en": "Called when a player's whitelist status changes.",
+        "ja": "プレイヤーのホワイトリスト登録状態が変更されたときに呼び出される。"
+      },
+      "keywords": {
+        "ja": [
+          "ホワイトリスト",
+          "許可リスト",
+          "参加許可",
+          "リスト追加",
+          "リスト削除",
+          "登録状態"
+        ],
+        "en": [
+          "whitelist",
+          "allowlist",
+          "player profile",
+          "list addition",
+          "list removal",
+          "whitelist status"
+        ]
       },
       "href": "io/papermc/paper/event/server/WhitelistStateUpdateEvent.html",
       "javadoc": "This event gets called when the whitelist status of a player is changed.",
@@ -15612,8 +15846,8 @@
     },
     {
       "description": {
-        "en": "Called when a witch throws a potion.",
-        "ja": "ウィッチがポーションを投げる時に呼び出される。"
+        "en": "Called before a witch throws a splash potion at its target. Plugins can change the potion or cancel the throw.",
+        "ja": "ウィッチが標的にスプラッシュポーションを投げる前に呼び出される。ポーションの変更や投てきのキャンセルができる。"
       },
       "keywords": {
         "ja": [
@@ -15646,7 +15880,7 @@
     {
       "description": {
         "en": "Called when a world border changes its bounds.",
-        "ja": "ワールドボーダーのサイズが変更する時に呼び出される。"
+        "ja": "ワールドボーダーの境界範囲が時間をかけて、または即座に変わるときに呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -15679,7 +15913,7 @@
     {
       "description": {
         "en": "Called when a moving world border has finished its move.",
-        "ja": "ワールドボーダーのサイズが変更した時に呼び出される。"
+        "ja": "ワールドボーダーの移動が完了したときに呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -15744,8 +15978,8 @@
     },
     {
       "description": {
-        "en": "Represents a WorldBorder-related event.",
-        "ja": "ワールドボーダーに関するイベントであることを表す。"
+        "en": "Base class for world border events.",
+        "ja": "ワールドボーダーに関するイベントの基底クラス。"
       },
       "keywords": {
         "ja": [

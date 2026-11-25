@@ -103,7 +103,7 @@
     {
       "description": {
         "en": "This event is fired when someone executes a command.",
-        "ja": "コンソールもしくはプレイヤーがコマンドを実行する時に呼び出される。"
+        "ja": "コマンドが実行されたときに発火する。Velocity は、このイベントの処理が完了してから、コマンドの処理、サーバーへの転送、またはその両方を試みる。"
       },
       "keywords": {
         "ja": [
@@ -202,7 +202,7 @@
     {
       "description": {
         "en": "This event is fired when a cookie from a client is requested either by a proxy plugin or by a backend server.",
-        "ja": "プロキシプラグインまたはバックエンドサーバーがクライアントに Cookie を要求する時に呼び出される。"
+        "ja": "プロキシプラグインまたはバックエンドサーバーがクライアントに Cookie を要求するときに発火する。Velocity はイベントの処理が終わるまで待ち、要求が処理済みなら破棄し、そうでなければクライアントに転送する。"
       },
       "keywords": {
         "ja": [
@@ -234,7 +234,7 @@
     {
       "description": {
         "en": "This event is fired when a cookie should be stored on a player's client.",
-        "ja": "Cookie をクライアントに保存する必要がある時に呼び出される。"
+        "ja": "プレイヤーのクライアントに Cookie を保存する必要があるときに発火するイベント。"
       },
       "keywords": {
         "ja": [
@@ -336,8 +336,8 @@
     },
     {
       "description": {
-        "en": "Represents a generic event that all callable events must extend.",
-        "ja": "イベントを表す。"
+        "en": "A dummy class that all callable events must extend.",
+        "ja": "呼び出し可能なすべてのイベントが継承しなければならないダミークラス。"
       },
       "keywords": {
         "ja": [
@@ -600,7 +600,7 @@
     {
       "description": {
         "en": "Called when a PermissionSubject's permissions are being setup.",
-        "ja": "権限が設定される時に呼び出される。"
+        "ja": "PermissionSubject（プレイヤーやコンソールなど）の権限を初期設定する際に呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -861,8 +861,8 @@
     },
     {
       "description": {
-        "en": "Called when a player enters the configuration state.",
-        "ja": "プレイヤーが構成状態に入った時に呼び出される。"
+        "en": "Called when a player enters the configuration state and can be configured by Velocity. Velocity waits for this event before continuing or ending the configuration state.",
+        "ja": "プレイヤーが構成状態に入り、Velocity がそのプレイヤーを構成できるようになったときに呼び出される。Velocity はこのイベントを待ってから、構成状態を継続または終了する。"
       },
       "keywords": {
         "ja": [
@@ -1059,7 +1059,7 @@
     },
     {
       "description": {
-        "en": "Called when a player first makes their presence known.",
+        "en": "Called when the proxy processes a client's initial handshake.",
         "ja": "ハンドシェイクを行う時に呼び出される。プレイヤーの存在やユーザー名を知る事が出来る最初のイベントである。"
       },
       "keywords": {
@@ -1223,7 +1223,7 @@
     {
       "description": {
         "en": "Called when a plugin message is sent to the proxy from a client or server.",
-        "ja": "プレイヤーまたはサーバーからプラグインメッセージが送信された時に呼び出される。"
+        "ja": "プレイヤーまたはサーバーからプロキシにプラグインメッセージが送信されたときに呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -1288,8 +1288,8 @@
     },
     {
       "description": {
-        "en": "Called when a connection is ready to link to a server.",
-        "ja": "サーバーに接続する準備が出来た時に呼び出される。ProxiedPlayer にアクセスできる最初のイベントである。"
+        "en": "Called when the connection has a ProxiedPlayer and is ready to connect that player to the initial server.",
+        "ja": "接続に対応する ProxiedPlayer が用意され、そのプレイヤーを最初の接続先サーバーに接続できる状態になった時に呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -1321,8 +1321,8 @@
     },
     {
       "description": {
-        "en": "Called when a player attempts to join the first server.",
-        "ja": "プレイヤーが最初のサーバーに参加しようとする時に呼び出される。"
+        "en": "Fires once the player is fully initialized and about to connect to their first server. Velocity waits for this event to finish before firing PlayerChooseInitialServerEvent with any configured default servers.",
+        "ja": "プレイヤーの初期化が完了し、最初のサーバーに接続する直前に発火する。Velocity はこのイベントの処理が完了するまで待ってから、設定にデフォルトサーバーが指定されていればそれらを渡して PlayerChooseInitialServerEvent を発火する。"
       },
       "keywords": {
         "ja": [
@@ -1387,8 +1387,8 @@
     },
     {
       "description": {
-        "en": "Called before the proxy authenticates a player with Mojang.",
-        "ja": "プロキシがプレイヤーを Mojang で認証する前に呼び出される。"
+        "en": "Called after a player initiates a connection to the proxy, but before Mojang authentication or, in offline mode, before the connection is fully established.",
+        "ja": "プレイヤーがプロキシへの接続を開始した後、Mojang による認証が行われる前に呼び出される。オフラインモードでは、接続が完全に確立される前に呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -1426,7 +1426,7 @@
       },
       "description": {
         "en": "Called when a player is sent to another host.",
-        "ja": "プレイヤーが別のホストに送られる時に呼び出される。"
+        "ja": "バックエンドサーバーまたはプラグインがプレイヤーを別のホストへ転送しようとした際に、転送前に呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -1459,7 +1459,7 @@
     {
       "description": {
         "en": "This event is fired by the proxy after plugins have been loaded but before the proxy starts accepting connections.",
-        "ja": "プラグインが初期化された後、接続の受け入れを開始する前に呼び出される。"
+        "ja": "プラグインの読み込み後、プロキシがこのイベントを発火する。Velocity はイベント処理が完了するまで、新規接続の受け入れを開始しない。"
       },
       "keywords": {
         "ja": [
@@ -1596,7 +1596,7 @@
     {
       "description": {
         "en": "This event is fired if the proxy is getting queried over GS4 Query protocol.",
-        "ja": "クエリ要求を受信した時に呼び出される。"
+        "ja": "プロキシが GS4 Query プロトコルで問い合わせを受けると発火する。Velocity はこのイベントが発火するまで待ってからクライアントに応答する。"
       },
       "keywords": {
         "ja": [
@@ -1661,7 +1661,7 @@
     {
       "description": {
         "en": "This event is fired when the proxy is reloaded by the user using /velocity reload.",
-        "ja": "プロキシがリロードした時に呼び出される。"
+        "ja": "ユーザーが /velocity reload でプロキシをリロードしたときに発火する。"
       },
       "keywords": {
         "ja": [
@@ -1693,7 +1693,7 @@
     {
       "description": {
         "en": "This event is fired by the proxy after the proxy has stopped accepting connections but before the proxy process exits.",
-        "ja": "プロキシが接続の受け入れを終了した後、プロセスが終了する前に呼び出される。"
+        "ja": "プロキシが接続の受け入れを停止した後、プロセスが終了する前に、プロキシによって発火される。Velocity はイベントの処理が完了するまで終了を待つ。"
       },
       "keywords": {
         "ja": [
@@ -1825,7 +1825,7 @@
     {
       "description": {
         "en": "Called when deciding to connect to a server, useful for canceling connections.",
-        "ja": "サーバーに接続する時に呼び出される。プレイヤーがサーバーに接続するのをキャンセルする場合等に使う。"
+        "ja": "プレイヤーのサーバーへの接続が決まった時点で、実際に接続する前に発生し、キャンセルするとその接続を中止できる。"
       },
       "keywords": {
         "ja": [
@@ -1858,7 +1858,7 @@
     {
       "description": {
         "en": "Called when a player disconnects from a server.",
-        "ja": "サーバーへの接続を切断した時に呼び出される。"
+        "ja": "サーバーの切り替え時など、プレイヤーとサーバーの接続が切断されたときに呼び出される。プレイヤーがサーバーからキックされた場合は、代わりにServerKickEventが呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -1923,7 +1923,7 @@
     {
       "description": {
         "en": "Called when a server sends a login plugin message to the proxy.",
-        "ja": "サーバーがログインプラグインメッセージを送信した時に呼び出される。"
+        "ja": "サーバーがプロキシにログインプラグインメッセージを送信したときに発火する。プラグインは必要に応じて応答でき、Velocity はイベントの処理が完了するまで待機する。サーバーは、プロキシ側プラグインからの応答または応答がないことを示す通知を受け、続行できると判断した時点でログイン処理を再開する。"
       },
       "keywords": {
         "ja": [
@@ -1955,8 +1955,8 @@
     },
     {
       "description": {
-        "en": "Called when a player connects to the server.",
-        "ja": "プレイヤーがサーバーに接続した時に呼び出される。"
+        "en": "Fired after a player connects to a server. The connected server is available through Player.getCurrentServer(), and Velocity does not wait for the event to finish firing.",
+        "ja": "プレイヤーのサーバーへの接続が完了した後に発火する。"
       },
       "keywords": {
         "ja": [
@@ -1989,7 +1989,7 @@
     {
       "description": {
         "en": "Called before a player connects to a server.",
-        "ja": "プレイヤーがサーバーに接続する時に呼び出される。"
+        "ja": "プレイヤーがサーバーに接続する前に呼び出される。Velocityはイベント処理が完了するまで接続を開始しない。"
       },
       "keywords": {
         "ja": [
@@ -2088,7 +2088,7 @@
     {
       "description": {
         "en": "Called when the downstream server tries to send a player a ResourcePack packet.",
-        "ja": "サーバーがリソースパックパケットを送信する時に呼び出される。"
+        "ja": "接続先サーバーがプレイヤーにリソースパックのパケットを送ろうとしたときに発火する。プロキシはイベントの処理が終わるまで転送を待つ。イベントが拒否されると、プロキシは接続先サーバーに DENIED ステータスを返す。接続先サーバーでリソースパックの適用が必須に設定されている場合は、プレイヤーが強制的に切断される。"
       },
       "keywords": {
         "ja": [
@@ -2184,7 +2184,7 @@
     {
       "description": {
         "en": "Called when client settings are changed.",
-        "ja": "クライアント設定を変更した時に呼び出される。"
+        "ja": "プレイヤーがクライアント側の設定（描画距離、ロケール、表示するスキンの部位、チャットの表示設定、チャットの色、利き手の左右）のうち1つ以上を変更した後に呼び出される。"
       },
       "keywords": {
         "ja": [
@@ -2283,7 +2283,7 @@
     {
       "description": {
         "en": "Event called when a backend server sends a response to a player asking to tab-complete a chat message or command.",
-        "ja": "サーバーがタブ補完を行う時に呼び出される。プロキシによって処理されたタブ補完では呼び出されない。"
+        "ja": "チャットメッセージやコマンドのタブ補完を要求したプレイヤーに、バックエンドサーバーが応答を送信したときに呼び出される。BungeeCordやプラグインが応答する場合は呼び出されないため、その場合はTabCompleteEventを使用する。"
       },
       "keywords": {
         "ja": [
