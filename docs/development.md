@@ -60,3 +60,5 @@ After a refresh, the update workflow reviews additions and changes to class Java
 The workflow leaves the published data at the previous revision if an event needs human review. Download the `description-review` artifact to see the findings, supporting quotations, and verified keywords.
 
 To review a local refresh before committing, run `pnpm --filter @spigot-event-list/downloader run review-updates <output-directory>`. Add `--apply` after the output directory to write verified results to the event data.
+
+If Git is installed outside the standard system location, set `GIT_EXECUTABLE` to the absolute path of the executable before running the review.

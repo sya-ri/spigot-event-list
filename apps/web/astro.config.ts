@@ -19,7 +19,9 @@ export default defineConfig({
           const route = createRouter(catalog);
           server.middlewares.use(async (req, res, next) => {
             if (!req.url) return next();
-            const url = new URL(req.url, "http://" + (req.headers.host ?? "localhost"));
+            const origin = new URL("http://localhost");
+            origin.host = req.headers.host ?? origin.host;
+            const url = new URL(req.url, origin);
             if (url.pathname !== "/" && !url.pathname.startsWith("/api/")) return next();
             try {
               const headers = new Headers();
