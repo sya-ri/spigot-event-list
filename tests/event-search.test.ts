@@ -6,6 +6,10 @@ import test from "node:test";
 import { readFile, readdir } from "node:fs/promises";
 import { readFileSync } from "node:fs";
 import { parseQuery, scoreEvent } from "@spigot-event-list/catalog/event-search";
+import {
+  minimumRelatedKeywords,
+  relatedKeywords,
+} from "@spigot-event-list/catalog/related-keywords";
 import type EventType from "@spigot-event-list/catalog/types/event-type";
 
 const dataPaths = createDataPaths("data", { cacheTtlMs: 60_000 });
@@ -54,6 +58,7 @@ test("implicit AND, explicit AND, OR precedence, quoted phrases and literals", (
   assert.ok(query(e, "採掘 OR 離席"));
   assert.ok(query(e, "採掘 OR 離席 AND nonexistent"));
   assert.ok(query(e, '"block break"'));
+  assert.ok(query(event("PlayerPickBlockEvent"), '"player pick block"'));
   assert.equal(query(e, '"mining block"'), 0);
   assert.deepEqual(parseQuery('"OR"'), [{ terms: [{ normalized: "or" }] }]);
   assert.deepEqual(parseQuery("the and"), []);
@@ -128,7 +133,7 @@ test("version and source filters, language validation and empty queries", async 
   assert.equal((await search(request("mining", { lang: "unknown" }))).status, 400);
 });
 
-test("every dataset event has actual bilingual descriptions and curated keywords", async () => {
+test("every dataset event has bilingual descriptions and distinct related keywords", async () => {
   const files = [
     "data/events.json",
     "data/proxy/events.json",
@@ -143,16 +148,8 @@ test("every dataset event has actual bilingual descriptions and curated keywords
       for (const lang of ["ja", "en"]) {
         assert.doesNotMatch(e.description[lang], /<\/?(?:p|br|div)\b|\{@(?:link|code)/, label);
         const words = e.keywords?.[lang];
-        assert.ok(words && words.length >= 6, label);
-        assert.ok(
-          words.every((word) => word.trim() === word && word.length > 0),
-          label,
-        );
-        assert.equal(
-          new Set(words.map((w) => w.normalize("NFKC").toLowerCase())).size,
-          words.length,
-          label,
-        );
+        assert.ok(words && words.length >= minimumRelatedKeywords, label);
+        assert.deepEqual(relatedKeywords(e, words), words, label);
       }
     }
   }

@@ -49,13 +49,13 @@ Edit the file below and create a [pull request](https://github.com/sya-ri/spigot
 ## Description and keyword review
 
 Edit descriptions and `keywords.ja` / `keywords.en` directly in `data/**/events.json`.
-Use each version's Javadoc to choose accurate summaries, synonyms, and search phrases in both languages; leave unverified summaries empty.
+Use each version's Javadoc to choose accurate summaries and related search terms in both languages. Include at least four useful aliases, synonyms, or short phrases per language that add vocabulary beyond the event name and descriptions. Leave unverified summaries empty.
 The downloader's preservation rules are in [Description Editing](../AGENTS.md#description-editing). It can fill missing descriptions and keywords from another snapshot with the same source, event path and Javadoc evidence.
 The [API reference](../skills/spigot-event-search/references/api.md) explains how search uses these fields.
 
 Run regression checks with `pnpm test`, followed by the TypeScript and lint checks documented in [AGENTS.md](../AGENTS.md).
 
-After a refresh, the update workflow reviews additions and changes to class Javadoc or localized descriptions. It uses the repository Actions secret `OPENAI_API_KEY` to verify bilingual descriptions and search keywords, applies them to the affected snapshots, and runs the dataset tests before committing.
+After a refresh, the update workflow reviews additions and changes to class Javadoc or localized descriptions. It uses the repository Actions secret `OPENAI_API_KEY` to verify the bilingual descriptions and supplement sparse keyword lists. It removes terms already present in the event name or descriptions, applies verified metadata to the affected snapshots, and runs the dataset tests before committing.
 
 The workflow leaves the published data at the previous revision if an event needs human review. Download the `description-review` artifact to see the findings, supporting quotations, and verified keywords.
 

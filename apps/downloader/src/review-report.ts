@@ -52,9 +52,17 @@ export async function writeReviewReport(targets: ReviewTarget[], out: string) {
     const results = await Promise.allSettled(
       group.map(async (target): Promise<ReviewedEvent> => {
         const findings = await reviewEvent(target.event, client);
+        const en = findings.en.description;
+        const ja = findings.ja.description;
         const keywords =
-          client && languages.every((lang) => findings[lang].description)
-            ? await reviewKeywords(target.event, client)
+          client && en && ja
+            ? await reviewKeywords(
+                {
+                  ...target.event,
+                  description: { ...target.event.description, en, ja },
+                },
+                client,
+              )
             : null;
         return { ...target, findings, keywords };
       }),

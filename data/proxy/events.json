@@ -11,9 +11,7 @@
       },
       "keywords": {
         "ja": [
-          "非同期",
           "処理完了",
-          "基底クラス",
           "非同期イベント",
           "完了待ち",
           "処理待機",
@@ -21,10 +19,7 @@
           "親クラス"
         ],
         "en": [
-          "asynchronous",
           "completion",
-          "base class",
-          "async event",
           "wait for completion",
           "pending operation",
           "callback",
@@ -45,8 +40,6 @@
       "keywords": {
         "ja": [
           "チャット",
-          "メッセージ",
-          "送信",
           "会話",
           "発言",
           "チャット送信",
@@ -54,8 +47,6 @@
           "サーバー宛て"
         ],
         "en": [
-          "chat",
-          "message",
           "send",
           "conversation",
           "player chat",
@@ -77,9 +68,7 @@
       },
       "keywords": {
         "ja": [
-          "接続",
           "初期接続",
-          "クライアント",
           "クライアント接続",
           "接続開始",
           "接続受付",
@@ -87,10 +76,7 @@
           "初期通信"
         ],
         "en": [
-          "connection",
           "initial connection",
-          "client",
-          "client connect",
           "incoming connection",
           "connection start",
           "network connection",
@@ -120,8 +106,6 @@
           "コマンド処理"
         ],
         "en": [
-          "command",
-          "execute",
           "console",
           "run command",
           "command execution",
@@ -143,8 +127,6 @@
       },
       "keywords": {
         "ja": [
-          "ハンドシェイク",
-          "接続",
           "プロキシ",
           "初期通信",
           "接続確立",
@@ -153,9 +135,6 @@
           "通信開始"
         ],
         "en": [
-          "handshake",
-          "connection",
-          "proxy",
           "initial handshake",
           "client connection",
           "establish connection",
@@ -177,8 +156,6 @@
       "keywords": {
         "ja": [
           "クッキー",
-          "Cookie",
-          "受信",
           "クライアントCookie",
           "応答受信",
           "保存データ",
@@ -186,11 +163,7 @@
           "プロキシ受信"
         ],
         "en": [
-          "cookie",
-          "receive",
-          "response",
           "client cookie",
-          "cookie response",
           "receive cookie",
           "stored data",
           "proxy response"
@@ -210,8 +183,6 @@
       "keywords": {
         "ja": [
           "クッキー",
-          "Cookie",
-          "要求",
           "クライアントCookie",
           "クッキー取得",
           "取得要求",
@@ -219,8 +190,6 @@
           "保存データ要求"
         ],
         "en": [
-          "cookie",
-          "request",
           "client cookie",
           "request cookie",
           "cookie retrieval",
@@ -242,8 +211,6 @@
       "keywords": {
         "ja": [
           "クッキー",
-          "Cookie",
-          "保存",
           "クライアントCookie",
           "クッキー保存",
           "データ保存",
@@ -251,8 +218,6 @@
           "保存要求"
         ],
         "en": [
-          "cookie",
-          "store",
           "client cookie",
           "store cookie",
           "persist cookie",
@@ -278,9 +243,7 @@
       },
       "keywords": {
         "ja": [
-          "カスタムアクション",
           "クリック",
-          "フォーム送信",
           "カスタムクリック",
           "チャットアクション",
           "フォーム操作",
@@ -288,10 +251,6 @@
           "送信後"
         ],
         "en": [
-          "custom action",
-          "click",
-          "form submission",
-          "custom click",
           "chat action",
           "form action",
           "execute action",
@@ -311,7 +270,6 @@
       },
       "keywords": {
         "ja": [
-          "切断",
           "退出",
           "プロキシ停止",
           "ログアウト",
@@ -321,7 +279,6 @@
           "退出処理"
         ],
         "en": [
-          "disconnect",
           "leave",
           "proxy shutdown",
           "logout",
@@ -344,7 +301,6 @@
       },
       "keywords": {
         "ja": [
-          "イベント",
           "基底クラス",
           "共通イベント",
           "親クラス",
@@ -353,7 +309,6 @@
           "イベント処理"
         ],
         "en": [
-          "event",
           "base class",
           "generic event",
           "parent class",
@@ -376,7 +331,6 @@
       },
       "keywords": {
         "ja": [
-          "ゲームプロファイル",
           "スキン",
           "ログイン",
           "ユーザープロファイル",
@@ -386,14 +340,12 @@
           "プロファイル要求"
         ],
         "en": [
-          "game profile",
           "skin",
           "login",
           "user profile",
           "profile setup",
           "after prelogin",
-          "player identity",
-          "profile request"
+          "player identity"
         ]
       },
       "href": "com/velocitypowered/api/event/player/GameProfileRequestEvent.html",
@@ -409,7 +361,6 @@
       },
       "keywords": {
         "ja": [
-          "キック",
           "追放",
           "接続先変更",
           "サーバー追放",
@@ -419,7 +370,6 @@
           "強制退出"
         ],
         "en": [
-          "kick",
           "redirect",
           "backend server",
           "server kick",
@@ -444,7 +394,6 @@
         "ja": [
           "接続待ち受け",
           "リスナー",
-          "開始",
           "待ち受け開始",
           "接続受付",
           "プロキシ起動",
@@ -452,10 +401,8 @@
           "リスナーバインド"
         ],
         "en": [
-          "listener",
           "bind",
           "accept connections",
-          "listener bound",
           "start listening",
           "connection acceptance",
           "bind listener",
@@ -485,8 +432,6 @@
           "ポート待受終了"
         ],
         "en": [
-          "listener",
-          "close",
           "stop accepting",
           "stop listening",
           "close listener",
@@ -508,7 +453,6 @@
       },
       "keywords": {
         "ja": [
-          "ログイン",
           "接続",
           "参加",
           "サインイン",
@@ -518,13 +462,11 @@
           "プロキシ参加"
         ],
         "en": [
-          "login",
           "connect",
           "join",
           "sign in",
           "player login",
           "login process",
-          "logging in",
           "proxy join"
         ]
       },
@@ -545,14 +487,11 @@
           "認証後",
           "サーバー接続前",
           "サインイン",
-          "認証完了",
           "ログイン処理",
           "バックエンド接続前",
           "プレイヤーログイン"
         ],
         "en": [
-          "login",
-          "authenticated",
           "before server connection",
           "sign in",
           "authentication complete",
@@ -584,10 +523,7 @@
           "実行者権限"
         ],
         "en": [
-          "permission",
-          "check",
           "command sender",
-          "permission check",
           "access check",
           "permission query",
           "authorization",
@@ -617,8 +553,6 @@
           "権限準備"
         ],
         "en": [
-          "permissions",
-          "setup",
           "initialization",
           "permission initialization",
           "configure permissions",
@@ -640,7 +574,6 @@
       },
       "keywords": {
         "ja": [
-          "コマンド一覧",
           "補完",
           "コマンドツリー",
           "使用可能コマンド",
@@ -650,7 +583,6 @@
           "コマンド候補"
         ],
         "en": [
-          "available commands",
           "completion",
           "command tree",
           "command list",
@@ -674,8 +606,6 @@
       "keywords": {
         "ja": [
           "プラグインチャンネル",
-          "登録",
-          "プラグインメッセージ",
           "チャンネル登録",
           "登録通知",
           "通信チャンネル",
@@ -684,9 +614,6 @@
         ],
         "en": [
           "plugin channel",
-          "register",
-          "plugin message",
-          "register channel",
           "registration message",
           "messaging channel",
           "plugin messaging",
@@ -708,7 +635,6 @@
         "ja": [
           "プラグインチャンネル",
           "登録解除",
-          "プラグインメッセージ",
           "チャンネル解除",
           "解除通知",
           "通信チャンネル",
@@ -717,9 +643,6 @@
         ],
         "en": [
           "plugin channel",
-          "unregister",
-          "plugin message",
-          "unregister channel",
           "unregistration message",
           "messaging channel",
           "plugin messaging",
@@ -739,9 +662,7 @@
       },
       "keywords": {
         "ja": [
-          "チャット",
           "発言",
-          "メッセージ",
           "会話",
           "チャット入力",
           "プレイヤー発言",
@@ -749,8 +670,6 @@
           "入力メッセージ"
         ],
         "en": [
-          "chat",
-          "message",
           "speak",
           "conversation",
           "chat input",
@@ -774,7 +693,6 @@
         "ja": [
           "初期サーバー",
           "接続先選択",
-          "ログイン",
           "最初の接続先",
           "初回接続",
           "初期接続先",
@@ -782,10 +700,7 @@
           "ログイン後"
         ],
         "en": [
-          "initial server",
           "server selection",
-          "login",
-          "first server",
           "initial connection",
           "choose server",
           "server routing",
@@ -806,19 +721,14 @@
       "keywords": {
         "ja": [
           "クライアントブランド",
-          "プラグインメッセージ",
           "ブランド情報",
           "クライアント識別",
-          "minecraft:brand",
           "ブランド通知",
           "クライアント名"
         ],
         "en": [
-          "client brand",
-          "plugin message",
           "brand message",
           "client identity",
-          "minecraft:brand",
           "brand notification",
           "client name"
         ]
@@ -836,24 +746,19 @@
       },
       "keywords": {
         "ja": [
-          "設定フェーズ",
           "接続設定",
-          "完了前",
           "接続構成",
-          "設定完了前",
           "構成処理",
           "クライアント設定",
           "設定中"
         ],
         "en": [
-          "configuration",
           "connection",
           "before completion",
           "connection configuration",
           "before configuration complete",
           "configure player",
-          "configuration processing",
-          "configuration phase"
+          "configuration processing"
         ]
       },
       "href": "net/md_5/bungee/api/event/PlayerConfigurationEvent.html",
@@ -874,17 +779,14 @@
           "開始",
           "接続構成",
           "設定開始",
-          "構成状態",
           "クライアント設定",
           "設定中"
         ],
         "en": [
-          "configuration",
           "connection",
           "configure",
           "connection configuration",
           "start configuration",
-          "configuration state",
           "configure player",
           "configuration phase"
         ]
@@ -904,7 +806,6 @@
         "ja": [
           "切断",
           "退出",
-          "プロキシ",
           "ログアウト",
           "プロキシ退出",
           "接続終了",
@@ -912,13 +813,10 @@
           "退出完了"
         ],
         "en": [
-          "disconnect",
           "leave",
-          "proxy",
           "logout",
           "proxy departure",
           "connection end",
-          "player disconnect",
           "left proxy"
         ]
       },
@@ -935,7 +833,6 @@
       },
       "keywords": {
         "ja": [
-          "設定フェーズ",
           "再設定",
           "移行前",
           "構成開始前",
@@ -945,12 +842,10 @@
           "設定への切替"
         ],
         "en": [
-          "configuration",
           "reconfiguration",
           "before enter",
           "before configuration",
           "reconfigure player",
-          "enter configuration",
           "configuration transition",
           "configuration entry"
         ]
@@ -971,20 +866,15 @@
           "設定フェーズ",
           "移行完了",
           "接続",
-          "構成状態",
           "設定移行後",
           "接続構成",
           "構成に入る",
           "設定開始済み"
         ],
         "en": [
-          "configuration",
-          "entered",
           "connection",
-          "configuration state",
           "after configuration entry",
           "connection configuration",
-          "entered configuration",
           "configuration transition"
         ]
       },
@@ -1003,7 +893,6 @@
         "ja": [
           "設定フェーズ",
           "終了前",
-          "接続",
           "設定終了前",
           "構成完了前",
           "設定を終える",
@@ -1011,10 +900,8 @@
           "構成状態終了"
         ],
         "en": [
-          "configuration",
           "before finish",
           "connection",
-          "finish configuration",
           "configuration completion",
           "before configuration end",
           "configuration exit",
@@ -1044,10 +931,7 @@
           "構成状態終了"
         ],
         "en": [
-          "configuration",
-          "finished",
           "play state",
-          "finished configuration",
           "configuration complete",
           "after configuration",
           "enter play",
@@ -1067,9 +951,7 @@
       },
       "keywords": {
         "ja": [
-          "ハンドシェイク",
           "接続",
-          "ユーザー名",
           "初期通信",
           "プレイヤー識別",
           "接続要求",
@@ -1077,10 +959,8 @@
           "最初の通信"
         ],
         "en": [
-          "handshake",
           "connection",
           "username",
-          "player handshake",
           "initial communication",
           "connection request",
           "player identity",
@@ -1101,8 +981,6 @@
       "keywords": {
         "ja": [
           "MOD情報",
-          "Forge",
-          "クライアント",
           "MOD一覧",
           "導入MOD",
           "クライアントMOD",
@@ -1110,9 +988,6 @@
           "Forge接続"
         ],
         "en": [
-          "mod info",
-          "forge",
-          "client",
           "mod list",
           "installed mods",
           "client mods",
@@ -1133,8 +1008,6 @@
       },
       "keywords": {
         "ja": [
-          "リソースパック",
-          "状態",
           "プロキシ",
           "パック応答",
           "送信パック",
@@ -1143,8 +1016,6 @@
           "パック処理"
         ],
         "en": [
-          "resource pack",
-          "status",
           "proxy",
           "pack response",
           "sent pack",
@@ -1166,7 +1037,6 @@
       },
       "keywords": {
         "ja": [
-          "クライアント設定",
           "設定変更",
           "設定受信",
           "オプション変更",
@@ -1175,8 +1045,6 @@
           "クライアントオプション"
         ],
         "en": [
-          "client settings",
-          "change",
           "received settings",
           "option change",
           "player preferences",
@@ -1197,8 +1065,6 @@
       },
       "keywords": {
         "ja": [
-          "プラグインメッセージ",
-          "送信",
           "チャンネル",
           "プラグイン通信",
           "カスタムペイロード",
@@ -1207,7 +1073,6 @@
           "サーバー間通信"
         ],
         "en": [
-          "plugin message",
           "send",
           "channel",
           "plugin messaging",
@@ -1230,7 +1095,6 @@
       },
       "keywords": {
         "ja": [
-          "プラグインメッセージ",
           "受信",
           "チャンネル",
           "プラグイン通信",
@@ -1240,7 +1104,6 @@
           "サーバー間通信"
         ],
         "en": [
-          "plugin message",
           "receive",
           "channel",
           "plugin messaging",
@@ -1273,11 +1136,9 @@
           "プロキシコマンド"
         ],
         "en": [
-          "command",
           "after execution",
           "proxy",
           "command complete",
-          "post command",
           "execution result",
           "after command invocation",
           "proxy command"
@@ -1306,8 +1167,6 @@
           "初期接続"
         ],
         "en": [
-          "post login",
-          "ready",
           "proxy",
           "connection ready",
           "login complete",
@@ -1339,8 +1198,6 @@
           "初期化済み"
         ],
         "en": [
-          "post login",
-          "initialized",
           "initial server",
           "first join",
           "first connection",
@@ -1372,7 +1229,6 @@
           "プレログイン"
         ],
         "en": [
-          "prelogin",
           "authentication",
           "username",
           "before login",
@@ -1397,7 +1253,6 @@
         "ja": [
           "認証前",
           "ログイン前",
-          "プロキシ",
           "サインイン前",
           "ログイン試行",
           "未認証",
@@ -1405,13 +1260,9 @@
           "プレログイン"
         ],
         "en": [
-          "prelogin",
-          "authentication",
-          "proxy",
           "before login",
           "login attempt",
           "unauthenticated",
-          "before mojang authentication",
           "pre-login"
         ]
       },
@@ -1434,7 +1285,6 @@
       "keywords": {
         "ja": [
           "ホスト転送",
-          "転送前",
           "サーバー移動",
           "別ホスト",
           "ホスト移動",
@@ -1443,10 +1293,7 @@
           "プレイヤー転送"
         ],
         "en": [
-          "transfer",
-          "host",
           "before transfer",
-          "another host",
           "host transfer",
           "connection transfer",
           "transfer destination",
@@ -1476,8 +1323,6 @@
           "プロキシ初期化"
         ],
         "en": [
-          "proxy",
-          "initialize",
           "startup",
           "initialization complete",
           "proxy startup",
@@ -1499,8 +1344,6 @@
       },
       "keywords": {
         "ja": [
-          "サーバーリスト",
-          "Ping",
           "状態",
           "サーバー一覧",
           "サーバーステータス",
@@ -1509,9 +1352,6 @@
           "Ping応答"
         ],
         "en": [
-          "server list",
-          "ping",
-          "status",
           "server status",
           "status query",
           "status ping",
@@ -1532,23 +1372,15 @@
       },
       "keywords": {
         "ja": [
-          "サーバー情報",
-          "Ping",
-          "MOTD",
           "サーバーステータス",
-          "アイコン",
           "サーバー説明",
           "情報要求",
           "Ping応答"
         ],
         "en": [
           "server information",
-          "ping",
-          "motd",
           "server status",
-          "favicon",
           "server description",
-          "information request",
           "ping response"
         ]
       },
@@ -1581,8 +1413,6 @@
         ],
         "en": [
           "proxy shutdown",
-          "pre shutdown",
-          "cleanup",
           "before disconnect",
           "shutdown preparation",
           "player transfer",
@@ -1605,7 +1435,6 @@
         "ja": [
           "クエリ",
           "サーバー情報",
-          "GS4",
           "サーバー問い合わせ",
           "クエリ応答",
           "GS4クエリ",
@@ -1613,14 +1442,10 @@
           "プロキシクエリ"
         ],
         "en": [
-          "query",
           "server information",
-          "gs4",
           "server inquiry",
           "query response",
-          "gs4 query",
-          "status retrieval",
-          "proxy query"
+          "status retrieval"
         ]
       },
       "href": "com/velocitypowered/api/event/query/ProxyQueryEvent.html",
@@ -1636,8 +1461,6 @@
       },
       "keywords": {
         "ja": [
-          "プロキシ",
-          "リロード",
           "再読み込み",
           "再ロード",
           "プロキシ再読込",
@@ -1646,10 +1469,7 @@
           "設定再読み込み"
         ],
         "en": [
-          "proxy",
-          "reload",
           "reload proxy",
-          "proxy reload",
           "reload processing",
           "bungeecord reload",
           "configuration reload"
@@ -1668,8 +1488,6 @@
       },
       "keywords": {
         "ja": [
-          "プロキシ",
-          "リロード",
           "再読み込み",
           "再ロード",
           "プロキシ再読込",
@@ -1678,13 +1496,10 @@
           "設定再読み込み"
         ],
         "en": [
-          "proxy",
-          "reload",
           "reload proxy",
-          "proxy reload",
           "reload processing",
-          "velocity reload",
-          "configuration reload"
+          "configuration reload",
+          "configuration refresh"
         ]
       },
       "href": "com/velocitypowered/api/event/proxy/ProxyReloadEvent.html",
@@ -1702,7 +1517,6 @@
         "ja": [
           "プロキシ停止",
           "シャットダウン",
-          "終了",
           "プロキシ終了",
           "停止処理",
           "プロセス終了前",
@@ -1710,14 +1524,11 @@
           "シャットダウン処理"
         ],
         "en": [
-          "proxy",
-          "shutdown",
           "exit",
           "proxy stop",
           "shutdown handling",
           "before process exit",
-          "after listener stop",
-          "proxy shutdown"
+          "after listener stop"
         ]
       },
       "href": "com/velocitypowered/api/event/proxy/ProxyShutdownEvent.html",
@@ -1733,8 +1544,6 @@
       },
       "keywords": {
         "ja": [
-          "結果",
-          "イベント",
           "インターフェース",
           "結果付きイベント",
           "処理結果",
@@ -1743,8 +1552,6 @@
           "結果取得"
         ],
         "en": [
-          "result",
-          "event",
           "interface",
           "result-bearing event",
           "operation result",
@@ -1767,7 +1574,6 @@
       "keywords": {
         "ja": [
           "サーバー接続完了",
-          "ログイン前",
           "バックエンド",
           "バックエンド接続完了",
           "通信確立",
@@ -1776,12 +1582,9 @@
           "接続済みサーバー"
         ],
         "en": [
-          "server connected",
           "before login",
-          "backend",
           "backend connected",
           "connection operational",
-          "session control",
           "before player login",
           "connected backend"
         ]
@@ -1800,7 +1603,6 @@
       "keywords": {
         "ja": [
           "サーバー接続完了",
-          "接続先",
           "サーバー移動",
           "サーバー移動完了",
           "接続成功",
@@ -1809,8 +1611,6 @@
           "接続先到着"
         ],
         "en": [
-          "server connected",
-          "target server",
           "server switch",
           "server transfer complete",
           "connection success",
@@ -1842,7 +1642,6 @@
           "サーバー移動前"
         ],
         "en": [
-          "server connect",
           "before connection",
           "cancel connection",
           "choose target server",
@@ -1875,7 +1674,6 @@
           "切断通知"
         ],
         "en": [
-          "server disconnect",
           "switch",
           "backend",
           "backend disconnect",
@@ -1898,7 +1696,6 @@
       },
       "keywords": {
         "ja": [
-          "キック",
           "追放",
           "バックエンド",
           "サーバー追放",
@@ -1908,9 +1705,7 @@
           "追放処理"
         ],
         "en": [
-          "kick",
           "backend server",
-          "server kick",
           "forced departure",
           "backend disconnect",
           "kick notification",
@@ -1930,9 +1725,7 @@
       },
       "keywords": {
         "ja": [
-          "ログインプラグインメッセージ",
           "認証",
-          "応答",
           "ログイン通信",
           "認証フェーズ",
           "プラグイン通信",
@@ -1940,8 +1733,6 @@
           "ログイン要求"
         ],
         "en": [
-          "login plugin message",
-          "login",
           "response",
           "login messaging",
           "login phase",
@@ -1973,9 +1764,7 @@
           "接続済み"
         ],
         "en": [
-          "post connect",
           "backend",
-          "connected",
           "after server connect",
           "connection success",
           "backend connected",
@@ -2006,7 +1795,6 @@
           "バックエンド接続前"
         ],
         "en": [
-          "pre connect",
           "backend",
           "target server",
           "before server connect",
@@ -2030,21 +1818,16 @@
       "keywords": {
         "ja": [
           "サーバー登録",
-          "バックエンド",
           "動的登録",
           "サーバー追加",
           "接続先登録",
-          "サーバーマップ",
           "バックエンド追加",
           "登録完了"
         ],
         "en": [
           "server registration",
-          "backend",
-          "register",
           "add server",
           "register backend",
-          "server map",
           "backend addition",
           "registration complete"
         ]
@@ -2072,8 +1855,6 @@
           "リソースパック除去"
         ],
         "en": [
-          "resource pack",
-          "remove",
           "clear",
           "remove pack",
           "unapply pack",
@@ -2104,8 +1885,6 @@
           "ダウンストリーム送信"
         ],
         "en": [
-          "resource pack",
-          "send",
           "request",
           "send pack",
           "pack request",
@@ -2136,7 +1915,6 @@
           "サーバー変更"
         ],
         "en": [
-          "server switch",
           "server change",
           "switch server",
           "change server",
@@ -2159,21 +1937,16 @@
       "keywords": {
         "ja": [
           "サーバー登録解除",
-          "バックエンド",
-          "削除",
           "サーバー削除",
           "接続先削除",
-          "サーバーマップ",
           "バックエンド解除",
           "登録抹消"
         ],
         "en": [
           "server unregister",
-          "backend",
           "remove",
           "remove server",
           "unregister backend",
-          "server map",
           "backend removal",
           "registration removal"
         ]
@@ -2192,7 +1965,6 @@
       "keywords": {
         "ja": [
           "クライアント設定",
-          "描画距離",
           "言語",
           "設定変更",
           "オプション変更",
@@ -2201,7 +1973,6 @@
           "クライアントオプション"
         ],
         "en": [
-          "client settings",
           "view distance",
           "locale",
           "settings change",
@@ -2224,7 +1995,6 @@
       },
       "keywords": {
         "ja": [
-          "タブ補完",
           "コマンド補完",
           "候補",
           "入力補完",
@@ -2234,7 +2004,6 @@
           "コマンド候補"
         ],
         "en": [
-          "tab completion",
           "command",
           "suggestions",
           "autocomplete",
@@ -2259,7 +2028,6 @@
         "ja": [
           "タブ補完応答",
           "旧クライアント",
-          "候補",
           "補完結果",
           "候補編集",
           "レガシー補完",
@@ -2270,7 +2038,6 @@
           "tab completion",
           "response",
           "legacy client",
-          "completion results",
           "edit suggestions",
           "legacy completion",
           "backend response",
@@ -2291,7 +2058,6 @@
       "keywords": {
         "ja": [
           "タブ補完応答",
-          "バックエンド",
           "候補",
           "補完結果",
           "サーバー補完",
@@ -2301,8 +2067,6 @@
         ],
         "en": [
           "tab completion",
-          "response",
-          "backend",
           "completion results",
           "server completion",
           "chat suggestions",
@@ -2323,7 +2087,6 @@
       },
       "keywords": {
         "ja": [
-          "通信",
           "送信元",
           "送信先",
           "ノード間通信",
@@ -2333,9 +2096,7 @@
           "通信イベント"
         ],
         "en": [
-          "communication",
           "source",
-          "target",
           "node communication",
           "communication endpoint",
           "sender",

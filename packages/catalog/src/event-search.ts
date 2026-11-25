@@ -1,10 +1,8 @@
 import type EventType from "@spigot-event-list/catalog/types/event-type";
+import { eventNameWords, normalizeSearchText as normalize } from "./search-text";
 
 type QueryTerm = { normalized: string };
 type QueryClause = { terms: QueryTerm[] };
-
-const normalize = (value: string | null | undefined) =>
-  (value ?? "").normalize("NFKC").replace(/\s+/g, " ").trim().toLowerCase();
 
 const englishStopWords = new Set([
   "a",
@@ -101,6 +99,7 @@ const normalizedEvents = new WeakMap<
   EventType,
   {
     name: string;
+    nameWords: string;
     keywords: string[];
     description: string[];
     javadoc: string;
@@ -113,6 +112,7 @@ const normalizedEvent = (event: EventType) => {
   if (!value) {
     value = {
       name: normalize(event.name),
+      nameWords: eventNameWords(event.name),
       keywords: Object.values(event.keywords ?? {})
         .flat()
         .map(normalize),
@@ -130,7 +130,7 @@ const matchTermScore = (event: ReturnType<typeof normalizedEvent>, term: QueryTe
   if (lowerName === term.normalized) {
     return 500;
   }
-  if (lowerName.includes(term.normalized)) {
+  if (lowerName.includes(term.normalized) || event.nameWords.includes(term.normalized)) {
     return 350;
   }
 
