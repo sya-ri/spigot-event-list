@@ -11,8 +11,7 @@
     "typecheck": "pnpm --filter @spigot-event-list/web check && tsc -p apps/api --noEmit && tsc -p apps/downloader --noEmit && tsc -p packages/catalog --noEmit && tsc -p tsconfig.json --noEmit",
     "lint": "vp lint",
     "format": "vp fmt",
-    "format:check": "vp fmt --check",
-    "benchmark": "tsx scripts/benchmark-search.ts"
+    "format:check": "vp fmt --check"
   },
   "devDependencies": {
     "@astrojs/compiler-rs": "0.5.3",
