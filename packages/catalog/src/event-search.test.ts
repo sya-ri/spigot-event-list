@@ -1,6 +1,7 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
 import { parseQuery, scoreEvent } from "./event-search";
+import { relatedKeywords } from "./related-keywords";
 import type EventType from "@spigot-event-list/catalog/types/event-type";
 
 const event: EventType = {
@@ -36,4 +37,18 @@ test("searches Japanese, Javadoc and deprecation text and ranks exact names firs
 });
 test("empty and stop-word-only queries have no searchable clauses", () => {
   for (const query of ["", "  ", "the and when", "AND OR"]) assert.deepEqual(parseQuery(query), []);
+});
+
+test("keeps related phrases while pruning text already indexed by name or description", () => {
+  assert.deepEqual(
+    relatedKeywords(event, [
+      "ＰＬＡＹＥＲ　ＪＯＩＮ",
+      "joins the server",
+      "サーバーに参加",
+      "connect to server",
+      " CONNECT TO SERVER ",
+      "serve",
+    ]),
+    ["connect to server", "serve"],
+  );
 });

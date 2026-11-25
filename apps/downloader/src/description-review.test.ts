@@ -166,8 +166,8 @@ test("missing evidence, refusals and low confidence remain unresolved", async ()
 });
 
 const words = {
-  en: ["loading", "before load", "preload", "start loading", "load start", "load preparation"],
-  ja: ["読み込み", "読込前", "先読み", "読み込み開始", "読み込み準備", "ロード前"],
+  en: ["preload", "start loading", "load start", "load preparation"],
+  ja: ["読込前", "先読み", "読み込み開始", "ロード前"],
 };
 
 test("returns only structurally valid keyword lists independently verified in both languages", async () => {
@@ -195,10 +195,23 @@ test("returns only structurally valid keyword lists independently verified in bo
   assert.deepEqual(
     await reviewKeywords(
       before,
-      mockClient([reply({ ...words, en: [...words.en, "ＬＯＡＤＩＮＧ"] }), answers(0.99)]).client,
+      mockClient([
+        reply({ ...words, en: ["after loading", "Example Event", ...words.en, "ＰＲＥＬＯＡＤ"] }),
+        answers(0.99),
+      ]).client,
     ),
     words,
   );
+  const kept = { ...before, keywords: { ...words, en: ["after loading", ...words.en] } };
+  assert.deepEqual(await reviewKeywords(kept, mockClient([]).client), words);
+
+  const partial = { ...kept, keywords: { ...words, en: words.en.slice(0, 3) } };
+  const { client, calls } = mockClient([
+    reply({ en: ["Example Event", "ＰＲＥＬＯＡＤ", "load preparation"] }),
+    { answers: [{ type: "predicate", name: "en_0", probability: 0.99 }] },
+  ]);
+  assert.deepEqual(await reviewKeywords(partial, client), words);
+  assert.match(String(calls[0].body.input), /"requested":\["en"\]/u);
 });
 
 test("updates all reviewed snapshots and leaves them untouched when a review is incomplete", async (t) => {

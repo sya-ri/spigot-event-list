@@ -11,9 +11,7 @@
       },
       "keywords": {
         "ja": [
-          "チャット",
           "メッセージ",
-          "基底クラス",
           "会話",
           "発言",
           "チャット共通処理",
@@ -21,9 +19,7 @@
           "親クラス"
         ],
         "en": [
-          "chat",
           "message",
-          "base class",
           "conversation",
           "chat message",
           "shared chat logic",
@@ -45,9 +41,7 @@
       },
       "keywords": {
         "ja": [
-          "リスポーン",
           "復活",
-          "基底クラス",
           "再出現",
           "生き返る",
           "リスポーン処理",
@@ -55,8 +49,6 @@
           "親クラス"
         ],
         "en": [
-          "respawn",
-          "base class",
           "revive",
           "return to life",
           "respawning",
@@ -77,8 +69,6 @@
       },
       "keywords": {
         "ja": [
-          "金床",
-          "損傷",
           "耐久度",
           "アンビル",
           "金床使用",
@@ -87,8 +77,6 @@
           "耐久消費"
         ],
         "en": [
-          "anvil",
-          "damage",
           "durability",
           "anvil use",
           "anvil wear",
@@ -110,7 +98,6 @@
       },
       "keywords": {
         "ja": [
-          "金床",
           "取り出し",
           "合成結果",
           "アンビル",
@@ -120,9 +107,6 @@
           "金床操作"
         ],
         "en": [
-          "anvil",
-          "result",
-          "take",
           "anvil output",
           "result slot",
           "collect result",
@@ -143,8 +127,6 @@
       },
       "keywords": {
         "ja": [
-          "金床",
-          "スロット",
           "合成結果",
           "アンビル",
           "結果更新",
@@ -153,10 +135,6 @@
           "金床操作"
         ],
         "en": [
-          "anvil",
-          "slot",
-          "result",
-          "update result",
           "anvil output",
           "input change",
           "slot change",
@@ -186,10 +164,7 @@
           "定期適用"
         ],
         "en": [
-          "lingering potion",
-          "area effect",
           "potion effect",
-          "effect cloud",
           "status effect",
           "apply effects",
           "cloud effect",
@@ -209,20 +184,14 @@
       },
       "keywords": {
         "ja": [
-          "矢",
           "刺さる",
           "抜ける",
-          "矢の本数",
           "矢の表示",
           "被弾",
           "刺さった矢",
-          "本数変更",
-          "エンティティの体"
+          "本数変更"
         ],
         "en": [
-          "arrow",
-          "body",
-          "arrow count",
           "embedded arrows",
           "stuck arrows",
           "arrow removal",
@@ -248,21 +217,14 @@
       },
       "keywords": {
         "ja": [
-          "チャット",
-          "コマンド",
-          "装飾",
           "チャット装飾",
           "コマンド経由",
           "テキスト加工",
-          "コンポーネント",
           "メッセージ装飾"
         ],
         "en": [
-          "chat",
-          "command",
           "decoration",
           "command chat",
-          "chat component",
           "decorate message",
           "text formatting",
           "message decoration"
@@ -285,17 +247,13 @@
       },
       "keywords": {
         "ja": [
-          "チャット",
           "メッセージ",
-          "装飾",
           "チャット装飾",
           "テキスト加工",
-          "コンポーネント",
           "メッセージ装飾",
           "会話"
         ],
         "en": [
-          "chat",
           "message",
           "decoration",
           "chat component",
@@ -318,9 +276,7 @@
       },
       "keywords": {
         "ja": [
-          "チャット",
           "発言",
-          "メッセージ",
           "会話",
           "チャット送信",
           "メッセージ送信",
@@ -328,13 +284,10 @@
           "プレイヤー発言"
         ],
         "en": [
-          "chat",
-          "message",
           "speak",
           "conversation",
           "send chat",
           "player message",
-          "async chat",
           "message submission"
         ]
       },
@@ -351,17 +304,12 @@
       },
       "keywords": {
         "ja": [
-          "チャット",
-          "発言",
-          "非同期",
           "会話",
           "チャット送信",
           "プレイヤー発言",
-          "受信パケット",
           "同期チャット"
         ],
         "en": [
-          "chat",
           "message",
           "asynchronous",
           "conversation",
@@ -389,9 +337,6 @@
       },
       "keywords": {
         "ja": [
-          "チャット",
-          "プレビュー",
-          "書式",
           "チャット装飾",
           "送信前表示",
           "メッセージプレビュー",
@@ -399,9 +344,6 @@
           "事前確認"
         ],
         "en": [
-          "chat",
-          "preview",
-          "format",
           "chat formatting",
           "message preview",
           "preview text",
@@ -424,7 +366,6 @@
         "ja": [
           "接続",
           "設定フェーズ",
-          "非同期",
           "接続設定",
           "プレイヤー接続",
           "ワールド参加前",
@@ -432,11 +373,8 @@
           "設定処理"
         ],
         "en": [
-          "connection",
-          "configuration",
           "asynchronous",
           "configure connection",
-          "player connection",
           "before world entry",
           "configuration phase",
           "async configuration"
@@ -455,7 +393,6 @@
       },
       "keywords": {
         "ja": [
-          "ログイン",
           "接続前",
           "非同期",
           "ログイン前",
@@ -465,8 +402,6 @@
           "プレイヤー認証"
         ],
         "en": [
-          "login",
-          "prelogin",
           "authentication",
           "before login",
           "player authentication",
@@ -493,7 +428,6 @@
       },
       "keywords": {
         "ja": [
-          "コマンドツリー",
           "補完",
           "コマンド送信",
           "利用可能コマンド",
@@ -503,8 +437,6 @@
           "コマンド同期"
         ],
         "en": [
-          "command tree",
-          "brigadier",
           "completion",
           "available commands",
           "command list",
@@ -526,7 +458,6 @@
       },
       "keywords": {
         "ja": [
-          "補完",
           "候補",
           "クライアント送信",
           "入力候補",
@@ -537,8 +468,6 @@
         ],
         "en": [
           "completion",
-          "suggestions",
-          "client",
           "autocomplete",
           "command suggestions",
           "tab suggestions",
@@ -559,19 +488,14 @@
       },
       "keywords": {
         "ja": [
-          "スポーン地点",
           "初期位置",
-          "設定フェーズ",
           "初回スポーン",
           "参加位置",
           "スポーン位置",
-          "接続時の位置",
-          "再設定"
+          "接続時の位置"
         ],
         "en": [
-          "spawn location",
           "join",
-          "configuration",
           "initial spawn",
           "join location",
           "spawn point",
@@ -592,19 +516,12 @@
       },
       "keywords": {
         "ja": [
-          "データフィクサー",
-          "ブロックエンティティ",
-          "チャンク読み込み",
           "旧データ",
           "データ更新",
-          "削除",
           "存在しないブロックエンティティ",
           "互換性"
         ],
         "en": [
-          "data fixer",
-          "block entity",
-          "chunk loading",
           "old data",
           "data migration",
           "removal",
@@ -630,17 +547,13 @@
       },
       "keywords": {
         "ja": [
-          "構造物",
-          "生成",
           "ブロック変換",
           "構造物生成",
           "配置変更",
           "生成変換",
-          "エンティティ配置",
-          "自然生成"
+          "エンティティ配置"
         ],
         "en": [
-          "structure",
           "generation",
           "transformer",
           "structure placement",
@@ -663,8 +576,6 @@
       },
       "keywords": {
         "ja": [
-          "構造物",
-          "自然生成",
           "ワールド生成",
           "構造物スポーン",
           "地形生成",
@@ -673,10 +584,8 @@
           "生成時"
         ],
         "en": [
-          "structure",
           "natural generation",
           "world generation",
-          "structure spawn",
           "terrain generation",
           "natural structure",
           "world population",
@@ -696,9 +605,6 @@
       },
       "keywords": {
         "ja": [
-          "タブ補完",
-          "候補",
-          "非同期",
           "入力補完",
           "オートコンプリート",
           "補完結果",
@@ -706,11 +612,9 @@
           "別スレッド"
         ],
         "en": [
-          "tab completion",
           "suggestions",
           "asynchronous",
           "autocomplete",
-          "completion results",
           "command suggestions",
           "async completion",
           "off-thread completion"
@@ -729,7 +633,6 @@
       },
       "keywords": {
         "ja": [
-          "コウモリ",
           "睡眠",
           "起床",
           "こうもり",
@@ -739,13 +642,9 @@
           "休息"
         ],
         "en": [
-          "bat",
-          "sleep",
-          "wake",
           "bat sleep",
           "bat wake",
           "sleep state",
-          "slumber",
           "resting"
         ]
       },
@@ -762,7 +661,6 @@
       },
       "keywords": {
         "ja": [
-          "ビーコン",
           "ビーム",
           "有効化",
           "ビーコン起動",
@@ -772,8 +670,6 @@
           "ビーコン稼働"
         ],
         "en": [
-          "beacon",
-          "beam",
           "activation",
           "activate beacon",
           "beacon start",
@@ -795,7 +691,6 @@
       },
       "keywords": {
         "ja": [
-          "ビーコン",
           "停止",
           "無効化",
           "ビーコン停止",
@@ -805,7 +700,6 @@
           "ビーコン無効化"
         ],
         "en": [
-          "beacon",
           "deactivation",
           "base",
           "disable beacon",
@@ -828,7 +722,6 @@
       },
       "keywords": {
         "ja": [
-          "ビーコン",
           "効果付与",
           "ポーション効果",
           "ビーコン効果",
@@ -838,8 +731,6 @@
           "効果適用"
         ],
         "en": [
-          "beacon",
-          "effect",
           "potion",
           "beacon buff",
           "player effect",
@@ -861,9 +752,6 @@
       },
       "keywords": {
         "ja": [
-          "ミツバチ",
-          "花",
-          "ターゲット",
           "蜂",
           "ハチ",
           "花探し",
@@ -871,8 +759,6 @@
           "採蜜対象"
         ],
         "en": [
-          "bee",
-          "flower",
           "target",
           "honey bee",
           "find flower",
@@ -894,8 +780,6 @@
       },
       "keywords": {
         "ja": [
-          "ミツバチ",
-          "受粉",
           "開始",
           "蜂",
           "ハチ",
@@ -904,9 +788,7 @@
           "花での作業"
         ],
         "en": [
-          "bee",
           "pollination",
-          "start",
           "honey bee",
           "start pollination",
           "pollinate flower",
@@ -927,8 +809,6 @@
       },
       "keywords": {
         "ja": [
-          "ミツバチ",
-          "受粉",
           "停止",
           "蜂",
           "ハチ",
@@ -937,9 +817,7 @@
           "花での作業"
         ],
         "en": [
-          "bee",
           "pollination",
-          "stop",
           "honey bee",
           "stop pollination",
           "end pollination",
@@ -960,19 +838,13 @@
       },
       "keywords": {
         "ja": [
-          "鐘",
           "ベル",
-          "共鳴",
-          "襲撃者",
-          "襲撃",
           "襲撃者検知",
           "発光",
           "位置表示",
           "鐘の共鳴"
         ],
         "en": [
-          "bell",
-          "resonate",
           "raider",
           "raid",
           "raider detection",
@@ -999,21 +871,15 @@
       },
       "keywords": {
         "ja": [
-          "鐘",
           "ベル",
-          "襲撃者",
           "発光",
-          "襲撃",
           "襲撃者検知",
           "位置表示",
           "索敵",
           "鐘による検知"
         ],
         "en": [
-          "bell",
-          "raider",
           "highlight",
-          "raid",
           "raider detection",
           "reveal location",
           "glowing outline",
@@ -1039,7 +905,6 @@
       "keywords": {
         "ja": [
           "鐘",
-          "ベル",
           "鳴らす",
           "鐘を鳴らす",
           "鐘の音",
@@ -1048,8 +913,6 @@
           "鳴鐘"
         ],
         "en": [
-          "bell",
-          "ring",
           "ring bell",
           "bell sound",
           "bell ringing",
@@ -1071,7 +934,6 @@
       "keywords": {
         "ja": [
           "鐘",
-          "ベル",
           "鳴らす",
           "鐘を鳴らす",
           "鐘の音",
@@ -1080,8 +942,6 @@
           "鳴鐘"
         ],
         "en": [
-          "bell",
-          "ring",
           "ring bell",
           "bell sound",
           "bell ringing",
@@ -1108,11 +968,9 @@
           "ブロック同士",
           "押し壊し",
           "液体による破壊",
-          "ドロップ",
           "連鎖破壊"
         ],
         "en": [
-          "block break",
           "piston",
           "liquid flow",
           "block interaction",
@@ -1139,14 +997,12 @@
           "採掘",
           "掘る",
           "掘削",
-          "壊す",
           "ブロックを壊す",
           "プレイヤーによる破壊",
           "採鉱",
           "経験値ドロップ"
         ],
         "en": [
-          "block break",
           "mining",
           "dig",
           "excavation",
@@ -1180,11 +1036,8 @@
           "進行状況"
         ],
         "en": [
-          "block break",
           "mining",
-          "progress",
           "cracking",
-          "break progress",
           "damage progress",
           "mining progress",
           "block cracking"
@@ -1208,7 +1061,6 @@
       },
       "keywords": {
         "ja": [
-          "ブラシ",
           "考古学",
           "発掘",
           "ブラッシング",
@@ -1218,7 +1070,6 @@
           "発掘作業"
         ],
         "en": [
-          "brush",
           "archaeology",
           "excavation",
           "brushing",
@@ -1242,7 +1093,6 @@
       "keywords": {
         "ja": [
           "燃焼",
-          "焼失",
           "ブロック破壊",
           "燃える",
           "燃え尽きる",
@@ -1251,8 +1101,6 @@
           "火による破壊"
         ],
         "en": [
-          "burn",
-          "fire",
           "destruction",
           "burning block",
           "burn down",
@@ -1285,10 +1133,8 @@
         ],
         "en": [
           "block placement",
-          "build",
           "placement check",
           "can place",
-          "can build",
           "placement validation",
           "build check",
           "place block"
@@ -1307,7 +1153,6 @@
       },
       "keywords": {
         "ja": [
-          "調理",
           "かまど",
           "焚き火",
           "料理",
@@ -1342,7 +1187,6 @@
         "ja": [
           "採掘中断",
           "掘る",
-          "ブロック破壊",
           "掘削中断",
           "破壊中止",
           "採掘停止",
@@ -1351,7 +1195,6 @@
         ],
         "en": [
           "mining",
-          "abort",
           "stop digging",
           "cancel digging",
           "stop mining",
@@ -1385,7 +1228,6 @@
         "en": [
           "mining",
           "dig",
-          "block damage",
           "digging",
           "damage block",
           "hit block",
@@ -1407,7 +1249,6 @@
       "keywords": {
         "ja": [
           "ブロック破壊",
-          "物理更新",
           "破壊音",
           "ブロック消失",
           "ピストン破壊",
@@ -1417,11 +1258,8 @@
         ],
         "en": [
           "block destruction",
-          "physics",
-          "destroy",
           "destroy block",
           "piston destruction",
-          "physics update",
           "block removal",
           "destruction trigger"
         ]
@@ -1439,9 +1277,7 @@
       },
       "keywords": {
         "ja": [
-          "ディスペンサー",
           "防具",
-          "装備",
           "防具装着",
           "自動装備",
           "装備品",
@@ -1450,12 +1286,9 @@
         ],
         "en": [
           "dispenser",
-          "armor",
           "equip",
           "equip armor",
           "automatic equipment",
-          "dispense armor",
-          "equippable item",
           "armor dispensing"
         ]
       },
@@ -1474,7 +1307,6 @@
         "ja": [
           "ディスペンサー",
           "射出",
-          "排出",
           "アイテム排出",
           "アイテム射出",
           "吐き出し",
@@ -1483,7 +1315,6 @@
         ],
         "en": [
           "dispenser",
-          "dispense",
           "eject",
           "dispense item",
           "item ejection",
@@ -1510,9 +1341,6 @@
       },
       "keywords": {
         "ja": [
-          "宝物庫",
-          "戦利品",
-          "ルートテーブル",
           "報酬",
           "お宝",
           "戦利品排出",
@@ -1520,12 +1348,8 @@
           "アイテム報酬"
         ],
         "en": [
-          "vault",
-          "loot",
-          "loot table",
           "rewards",
           "treasure",
-          "dispense loot",
           "loot generation",
           "block loot"
         ]
@@ -1555,7 +1379,6 @@
         "en": [
           "mining",
           "item drop",
-          "block break",
           "dropped items",
           "block drops",
           "drop loot",
@@ -1576,7 +1399,6 @@
       },
       "keywords": {
         "ja": [
-          "ブロック",
           "基底クラス",
           "ブロックイベント",
           "ブロック関連",
@@ -1585,9 +1407,7 @@
           "ブロック処理"
         ],
         "en": [
-          "block",
           "base class",
-          "block event",
           "block-related event",
           "parent class",
           "base event",
@@ -1608,19 +1428,12 @@
       },
       "keywords": {
         "ja": [
-          "経験値",
           "経験値ドロップ",
-          "ブロック",
-          "XP",
           "経験値量",
           "経験値排出",
-          "経験値報酬",
-          "経験値を落とす"
+          "経験値報酬"
         ],
         "en": [
-          "experience",
-          "xp",
-          "block",
           "experience drop",
           "xp drop",
           "experience amount",
@@ -1641,9 +1454,7 @@
       },
       "keywords": {
         "ja": [
-          "爆発",
           "爆破",
-          "ブロック状態",
           "ブロック爆発",
           "爆風",
           "爆発源",
@@ -1651,9 +1462,7 @@
           "爆発するブロック"
         ],
         "en": [
-          "explosion",
           "blast",
-          "block state",
           "block explosion",
           "exploding block",
           "blast source",
@@ -1675,7 +1484,6 @@
       "keywords": {
         "ja": [
           "融解",
-          "消滅",
           "氷",
           "雪",
           "溶ける",
@@ -1685,7 +1493,6 @@
           "自然消滅"
         ],
         "en": [
-          "fade",
           "melt",
           "disappear",
           "melting",
@@ -1709,7 +1516,6 @@
       "keywords": {
         "ja": [
           "ディスペンサー",
-          "空",
           "排出失敗",
           "空のディスペンサー",
           "在庫切れ",
@@ -1719,8 +1525,6 @@
         ],
         "en": [
           "dispenser",
-          "empty",
-          "failed dispense",
           "empty dispenser",
           "no items",
           "dispense failure",
@@ -1741,7 +1545,6 @@
       },
       "keywords": {
         "ja": [
-          "骨粉",
           "肥料",
           "成長",
           "骨粉使用",
@@ -1751,13 +1554,10 @@
           "肥料使用"
         ],
         "en": [
-          "bonemeal",
-          "fertilize",
           "growth",
           "bone meal",
           "apply bonemeal",
           "fertilization",
-          "block changes",
           "plant growth"
         ]
       },
@@ -1790,7 +1590,6 @@
           "natural formation",
           "form block",
           "block creation",
-          "world conditions",
           "ice formation"
         ]
       },
@@ -1809,23 +1608,16 @@
         "ja": [
           "水流",
           "溶岩流",
-          "ドラゴンの卵",
           "流体",
           "液体移動",
-          "流れる",
           "流入",
           "卵のテレポート"
         ],
         "en": [
           "liquid flow",
-          "water",
-          "lava",
-          "dragon egg",
           "fluid flow",
           "flowing liquid",
-          "source block",
-          "destination block",
-          "egg teleportation"
+          "source block"
         ]
       },
       "href": "org/bukkit/event/block/BlockFromToEvent.html",
@@ -1841,7 +1633,6 @@
       },
       "keywords": {
         "ja": [
-          "作物",
           "自然成長",
           "農業",
           "作物成長",
@@ -1876,16 +1667,12 @@
         "ja": [
           "着火",
           "発火",
-          "火",
-          "点火",
           "火が付く",
           "燃え始め",
           "ブロック着火",
           "火の発生"
         ],
         "en": [
-          "ignite",
-          "fire",
           "ignition",
           "set on fire",
           "block ignition",
@@ -1907,9 +1694,6 @@
       },
       "keywords": {
         "ja": [
-          "ロック",
-          "鍵",
-          "ブロックエンティティ",
           "施錠",
           "解錠確認",
           "鍵チェック",
@@ -1917,14 +1701,10 @@
           "鍵付きブロック"
         ],
         "en": [
-          "lock",
           "key",
-          "block entity",
-          "lock check",
           "locked block",
           "key check",
-          "check access",
-          "lockable block"
+          "check access"
         ]
       },
       "href": "io/papermc/paper/event/block/BlockLockCheckEvent.html",
@@ -1941,7 +1721,6 @@
       "keywords": {
         "ja": [
           "複数ブロック設置",
-          "ベッド",
           "建築",
           "まとめて設置",
           "複数配置",
@@ -1951,12 +1730,10 @@
         ],
         "en": [
           "multiple block placement",
-          "bed",
           "build",
           "multi-block placement",
           "place bed",
           "combined placement",
-          "multiple blocks",
           "single placement action"
         ]
       },
@@ -1973,7 +1750,6 @@
       },
       "keywords": {
         "ja": [
-          "物理更新",
           "隣接ブロック",
           "支持ブロック",
           "ブロック更新",
@@ -1983,10 +1759,8 @@
           "隣接更新"
         ],
         "en": [
-          "physics",
           "neighbor update",
           "block support",
-          "block physics",
           "physics check",
           "adjacent block",
           "neighbor check",
@@ -2006,7 +1780,6 @@
       },
       "keywords": {
         "ja": [
-          "ピストン",
           "作動",
           "ピストン動作",
           "ピストン作動",
@@ -2015,7 +1788,6 @@
           "可動ブロック"
         ],
         "en": [
-          "piston",
           "trigger",
           "piston movement",
           "piston activation",
@@ -2038,7 +1810,6 @@
       },
       "keywords": {
         "ja": [
-          "ピストン",
           "伸長",
           "押す",
           "ピストン伸長",
@@ -2048,8 +1819,6 @@
           "ピストン動作"
         ],
         "en": [
-          "piston",
-          "extend",
           "push",
           "piston extension",
           "push block",
@@ -2071,7 +1840,6 @@
       },
       "keywords": {
         "ja": [
-          "ピストン",
           "収縮",
           "引く",
           "ピストン収縮",
@@ -2081,8 +1849,6 @@
           "ピストン動作"
         ],
         "en": [
-          "piston",
-          "retract",
           "pull",
           "piston retraction",
           "pull block",
@@ -2104,7 +1870,6 @@
       },
       "keywords": {
         "ja": [
-          "設置",
           "建築",
           "ブロック配置",
           "建設",
@@ -2114,7 +1879,6 @@
           "建造"
         ],
         "en": [
-          "place",
           "build",
           "block placement",
           "construction",
@@ -2137,7 +1901,6 @@
       },
       "keywords": {
         "ja": [
-          "ディスペンサー",
           "射出前",
           "排出前",
           "排出直前",
@@ -2147,7 +1910,6 @@
           "ディスペンサー操作"
         ],
         "en": [
-          "dispenser",
           "before dispense",
           "pre-dispense",
           "dispenser slot",
@@ -2168,19 +1930,14 @@
       },
       "keywords": {
         "ja": [
-          "スカルクセンサー",
           "振動",
-          "ゲームイベント",
           "振動検知",
           "振動受信",
-          "スカルク",
           "センサー反応",
           "振動イベント"
         ],
         "en": [
-          "sculk sensor",
           "vibration",
-          "game event",
           "detect vibration",
           "receive vibration",
           "sculk activation",
@@ -2201,7 +1958,6 @@
       },
       "keywords": {
         "ja": [
-          "レッドストーン",
           "信号強度",
           "動力",
           "赤石回路",
@@ -2211,11 +1967,9 @@
           "出力強度"
         ],
         "en": [
-          "redstone",
           "signal",
           "power",
           "circuit",
-          "current",
           "signal strength",
           "redstone power",
           "power change"
@@ -2234,19 +1988,14 @@
       },
       "keywords": {
         "ja": [
-          "ディスペンサー",
           "ハサミ",
           "毛刈り",
-          "羊",
           "ひつじ",
           "羊毛",
           "自動毛刈り",
           "刈り取り"
         ],
         "en": [
-          "dispenser",
-          "shears",
-          "sheep",
           "wool",
           "shearing",
           "automatic shearing",
@@ -2267,18 +2016,12 @@
       },
       "keywords": {
         "ja": [
-          "延焼",
-          "キノコ",
           "拡散",
-          "広がる",
           "伝播",
-          "増殖",
           "火の広がり",
           "ブロック拡散"
         ],
         "en": [
-          "spread",
-          "fire",
           "mushroom",
           "propagation",
           "spreading block",
@@ -2300,21 +2043,16 @@
       },
       "keywords": {
         "ja": [
-          "醸造",
           "ポーション",
           "完成",
           "醸造完了",
-          "醸造台",
           "調合",
           "出来上がり",
           "ポーション完成"
         ],
         "en": [
-          "brewing",
           "potion",
-          "complete",
           "brew completion",
-          "brewing stand",
           "finished potion",
           "potion brewing",
           "brewing result"
@@ -2333,23 +2071,17 @@
       },
       "keywords": {
         "ja": [
-          "醸造台",
-          "燃料",
           "補充",
           "燃料追加",
           "燃料消費",
           "醸造燃料",
-          "燃料レベル",
           "補給"
         ],
         "en": [
-          "brewing stand",
-          "fuel",
           "refill",
           "add fuel",
           "fuel consumption",
           "brewing fuel",
-          "fuel level",
           "fuel supply"
         ]
       },
@@ -2366,21 +2098,16 @@
       },
       "keywords": {
         "ja": [
-          "醸造",
           "ポーション",
           "開始",
           "醸造開始",
-          "醸造台",
           "調合開始",
           "ポーション作成",
           "醸造処理"
         ],
         "en": [
-          "brewing",
           "potion",
-          "start",
           "start brewing",
-          "brewing stand",
           "begin brew",
           "potion creation",
           "brewing process"
@@ -2400,8 +2127,6 @@
       "keywords": {
         "ja": [
           "全体通知",
-          "ブロードキャスト",
-          "メッセージ",
           "一斉送信",
           "全体メッセージ",
           "サーバー通知",
@@ -2409,12 +2134,9 @@
           "告知"
         ],
         "en": [
-          "broadcast",
           "announcement",
-          "message",
           "server message",
           "global message",
-          "broadcast message",
           "send announcement",
           "server announcement"
         ]
@@ -2433,18 +2155,13 @@
       "keywords": {
         "ja": [
           "焚き火",
-          "調理",
-          "開始",
-          "キャンプファイア",
           "料理",
           "焚き火調理",
           "調理開始",
           "焼き始め"
         ],
         "en": [
-          "campfire",
           "cooking",
-          "start",
           "start cooking",
           "campfire cooking",
           "begin cooking",
@@ -2465,21 +2182,17 @@
       },
       "keywords": {
         "ja": [
-          "製図台",
           "地図",
           "作成",
           "地図作成",
-          "製図",
           "地図編集",
           "地図アイテム",
           "製図台の結果"
         ],
         "en": [
-          "cartography",
           "map",
           "craft",
           "map creation",
-          "cartography table",
           "map crafting",
           "map item",
           "cartography result"
@@ -2498,9 +2211,7 @@
       },
       "keywords": {
         "ja": [
-          "大釜",
           "水位",
-          "内容量",
           "大釜の中身",
           "液面",
           "充填",
@@ -2508,9 +2219,6 @@
           "状態変更"
         ],
         "en": [
-          "cauldron",
-          "level",
-          "contents",
           "cauldron contents",
           "fluid level",
           "fill level",
@@ -2535,7 +2243,6 @@
       },
       "keywords": {
         "ja": [
-          "チャット",
           "メッセージ",
           "送信",
           "会話",
@@ -2545,8 +2252,6 @@
           "プレイヤーチャット"
         ],
         "en": [
-          "chat",
-          "message",
           "send",
           "conversation",
           "player chat",
@@ -2568,7 +2273,6 @@
       },
       "keywords": {
         "ja": [
-          "チャンク",
           "基底クラス",
           "チャンクイベント",
           "チャンク関連",
@@ -2577,9 +2281,7 @@
           "区画"
         ],
         "en": [
-          "chunk",
           "base class",
-          "chunk event",
           "chunk-related event",
           "parent class",
           "base event",
@@ -2600,7 +2302,6 @@
       },
       "keywords": {
         "ja": [
-          "チャンク",
           "読み込み",
           "ロード",
           "チャンクロード",
@@ -2610,8 +2311,6 @@
           "区画読み込み"
         ],
         "en": [
-          "chunk",
-          "load",
           "load chunk",
           "chunk loading",
           "loaded chunk",
@@ -2632,19 +2331,14 @@
       },
       "keywords": {
         "ja": [
-          "チャンク",
           "生成完了",
           "地形生成",
           "チャンク装飾",
           "生成後処理",
-          "地形装飾",
           "装飾完了",
           "新規チャンク"
         ],
         "en": [
-          "chunk",
-          "population",
-          "generation",
           "chunk decoration",
           "populate chunk",
           "post-generation",
@@ -2665,8 +2359,6 @@
       },
       "keywords": {
         "ja": [
-          "チャンク",
-          "アンロード",
           "解放",
           "チャンク解放",
           "地形解放",
@@ -2675,8 +2367,6 @@
           "区画解放"
         ],
         "en": [
-          "chunk",
-          "unload",
           "unload chunk",
           "chunk unloading",
           "unloaded chunk",
@@ -2698,7 +2388,6 @@
       "keywords": {
         "ja": [
           "クライアントティック",
-          "パケット",
           "ティック終了",
           "ティック完了",
           "クライアント更新",
@@ -2707,9 +2396,6 @@
           "クライアント周期"
         ],
         "en": [
-          "client tick",
-          "packet",
-          "tick end",
           "end client tick",
           "tick completion",
           "client update",
@@ -2737,7 +2423,6 @@
         "ja": [
           "コマンド登録",
           "コマンドツリー",
-          "同期",
           "ブリガディア",
           "コマンド同期",
           "コマンド変換",
@@ -2746,7 +2431,6 @@
         ],
         "en": [
           "command registration",
-          "brigadier",
           "command tree",
           "register command",
           "command sync",
@@ -2768,9 +2452,6 @@
       },
       "keywords": {
         "ja": [
-          "コンポスター",
-          "堆肥",
-          "ホッパー",
           "堆肥化",
           "アイテム投入",
           "自動堆肥化",
@@ -2779,9 +2460,6 @@
         ],
         "en": [
           "composter",
-          "compost",
-          "hopper",
-          "compost item",
           "hopper composting",
           "automatic composting",
           "composting input",
@@ -2801,7 +2479,6 @@
       },
       "keywords": {
         "ja": [
-          "自動作業台",
           "クラフター",
           "自動クラフト",
           "自動製作",
@@ -2811,9 +2488,7 @@
           "自動作成"
         ],
         "en": [
-          "crafter",
           "automatic crafting",
-          "craft",
           "autocrafting",
           "automated crafting",
           "craft item",
@@ -2834,9 +2509,7 @@
       },
       "keywords": {
         "ja": [
-          "クラフト",
           "作業台",
-          "レシピ",
           "アイテム製作",
           "合成",
           "製作完了",
@@ -2844,10 +2517,7 @@
           "クラフト結果"
         ],
         "en": [
-          "craft",
           "crafting table",
-          "recipe",
-          "craft item",
           "item crafting",
           "recipe completion",
           "crafting result",
@@ -2867,7 +2537,6 @@
       },
       "keywords": {
         "ja": [
-          "スポーン",
           "出現",
           "生物",
           "モブスポーン",
@@ -2877,8 +2546,6 @@
           "ワールドへの出現"
         ],
         "en": [
-          "spawn",
-          "creature",
           "mob spawn",
           "creature spawning",
           "spawn creature",
@@ -2899,18 +2566,14 @@
       },
       "keywords": {
         "ja": [
-          "クリーパー",
           "着火",
           "火打石と打ち金",
           "クリーパー点火",
           "起爆準備",
-          "点火状態",
           "起爆状態",
           "着火操作"
         ],
         "en": [
-          "creeper",
-          "ignite",
           "flint and steel",
           "ignite creeper",
           "creeper ignition",
@@ -2932,22 +2595,16 @@
       },
       "keywords": {
         "ja": [
-          "クリーパー",
           "帯電",
           "落雷",
           "帯電クリーパー",
-          "雷",
-          "雷撃",
           "クリーパー強化",
           "落雷による帯電"
         ],
         "en": [
-          "creeper",
           "charged",
-          "lightning",
           "charged creeper",
           "lightning strike",
-          "creeper power",
           "electrified creeper",
           "creeper charging"
         ]
@@ -2965,24 +2622,17 @@
       },
       "keywords": {
         "ja": [
-          "分裂",
-          "死亡",
           "立方体モブ",
           "モブ分裂",
           "小型化",
           "死亡時分裂",
-          "小さなモブ",
           "分かれる"
         ],
         "en": [
-          "split",
-          "death",
-          "cube mob",
-          "mob split",
-          "smaller mobs",
           "split on death",
           "cube splitting",
-          "death splitting"
+          "death splitting",
+          "mob division"
         ]
       },
       "href": "org/bukkit/event/entity/CubeMobSplitEvent.html",
@@ -2998,21 +2648,15 @@
       },
       "keywords": {
         "ja": [
-          "ドラゴンの卵",
-          "討伐",
-          "生成",
           "卵生成",
-          "エンダードラゴン",
           "討伐報酬",
           "ドラゴン討伐",
           "卵の形成"
         ],
         "en": [
-          "dragon egg",
           "defeat",
           "formation",
           "egg formation",
-          "ender dragon",
           "dragon defeat",
           "dragon kill",
           "egg generation"
@@ -3031,18 +2675,13 @@
       },
       "keywords": {
         "ja": [
-          "エルダーガーディアン",
           "画面演出",
-          "出現",
           "ガーディアン演出",
           "画面表示",
-          "出現演出",
           "プレイヤー画面",
           "幻影"
         ],
         "en": [
-          "elder guardian",
-          "appearance",
           "screen",
           "guardian apparition",
           "visual effect",
@@ -3064,9 +2703,6 @@
       },
       "keywords": {
         "ja": [
-          "エンチャント",
-          "エンチャントテーブル",
-          "付与",
           "付呪",
           "魔法付与",
           "エンチャント成功",
@@ -3074,12 +2710,9 @@
           "付与完了"
         ],
         "en": [
-          "enchant",
-          "enchanting table",
           "enchantment",
           "item enchanting",
           "apply enchantment",
-          "enchant item",
           "enchanting result"
         ]
       },
@@ -3096,7 +2729,6 @@
       },
       "keywords": {
         "ja": [
-          "エンダードラゴン",
           "行動フェーズ",
           "変化",
           "ドラゴン行動",
@@ -3106,12 +2738,8 @@
           "行動状態"
         ],
         "en": [
-          "ender dragon",
-          "phase",
-          "controller",
           "dragon behavior",
           "phase transition",
-          "controller phase",
           "behavior change",
           "dragon state"
         ]
@@ -3130,7 +2758,6 @@
       "keywords": {
         "ja": [
           "ドラゴン火球",
-          "衝突",
           "範囲効果",
           "火球着弾",
           "ドラゴンブレス",
@@ -3139,12 +2766,9 @@
           "エンティティ衝突"
         ],
         "en": [
-          "dragon fireball",
           "collision",
-          "area effect",
           "fireball impact",
           "dragon breath",
-          "effect cloud",
           "block hit",
           "entity hit"
         ]
@@ -3163,23 +2787,18 @@
       "keywords": {
         "ja": [
           "ドラゴンブレス",
-          "炎",
           "範囲効果",
           "ブレス攻撃",
           "効果雲",
-          "エンダードラゴン",
           "炎を吐く",
           "範囲攻撃"
         ],
         "en": [
           "dragon breath",
-          "flame",
           "area effect",
           "breath attack",
           "effect cloud",
-          "ender dragon",
-          "shoot flames",
-          "dragon flame"
+          "shoot flames"
         ]
       },
       "href": "com/destroystokyo/paper/event/entity/EnderDragonFlameEvent.html",
@@ -3195,8 +2814,6 @@
       },
       "keywords": {
         "ja": [
-          "エンダードラゴン",
-          "火球",
           "発射",
           "ドラゴン攻撃",
           "火の玉",
@@ -3205,11 +2822,7 @@
           "ドラゴン射撃"
         ],
         "en": [
-          "ender dragon",
-          "fireball",
-          "shoot",
           "dragon attack",
-          "shoot fireball",
           "launch fireball",
           "projectile",
           "dragon shooting"
@@ -3228,9 +2841,7 @@
       },
       "keywords": {
         "ja": [
-          "エンダーマン",
           "敵対",
-          "視線",
           "目を合わせる",
           "にらむ",
           "攻撃判定",
@@ -3238,7 +2849,6 @@
           "カボチャ着用"
         ],
         "en": [
-          "enderman",
           "aggro",
           "eye contact",
           "look at enderman",
@@ -3261,18 +2871,14 @@
       },
       "keywords": {
         "ja": [
-          "エンダーマン",
           "逃走",
           "逃げる",
           "逃避",
           "逃走試行",
           "回避",
-          "退避",
-          "逃げようとする"
+          "退避"
         ],
         "en": [
-          "enderman",
-          "escape",
           "flee",
           "evasion",
           "escape attempt",
@@ -3292,8 +2898,6 @@
       },
       "keywords": {
         "ja": [
-          "エンティティ",
-          "読み込み",
           "ロード",
           "エンティティロード",
           "チャンク内エンティティ",
@@ -3303,8 +2907,6 @@
         ],
         "en": [
           "entity",
-          "load",
-          "chunk",
           "entity loading",
           "loaded entities",
           "chunk entities",
@@ -3325,8 +2927,6 @@
       },
       "keywords": {
         "ja": [
-          "エンティティ",
-          "アンロード",
           "解放",
           "エンティティ解放",
           "チャンク内エンティティ",
@@ -3336,8 +2936,6 @@
         ],
         "en": [
           "entity",
-          "unload",
-          "chunk",
           "entity unloading",
           "unloaded entities",
           "chunk entities",
@@ -3359,7 +2957,6 @@
       "keywords": {
         "ja": [
           "エンティティ追加",
-          "ワールド",
           "チャンク読み込み",
           "ワールド追加",
           "エンティティ登録",
@@ -3368,8 +2965,6 @@
           "ワールド参加"
         ],
         "en": [
-          "entity",
-          "world",
           "chunk load",
           "add entity",
           "world insertion",
@@ -3391,24 +2986,20 @@
       },
       "keywords": {
         "ja": [
-          "酸素",
           "空気",
           "呼吸",
-          "残り酸素",
           "酸素ゲージ",
           "息",
           "空気量",
           "呼吸残量"
         ],
         "en": [
-          "air",
           "oxygen",
           "breathing",
           "remaining air",
           "air supply",
           "oxygen level",
-          "breath",
-          "air change"
+          "breath"
         ]
       },
       "href": "org/bukkit/event/entity/EntityAirChangeEvent.html",
@@ -3424,18 +3015,13 @@
       },
       "keywords": {
         "ja": [
-          "スマッシュ攻撃",
           "攻撃試行",
-          "メイス",
-          "スマッシュ",
           "叩きつけ",
           "メイス攻撃",
           "強打"
         ],
         "en": [
-          "smash attack",
           "attack attempt",
-          "mace",
           "mace attack",
           "smashing",
           "smash attempt",
@@ -3455,19 +3041,14 @@
       },
       "keywords": {
         "ja": [
-          "回転攻撃",
           "攻撃対象",
           "スピン攻撃",
-          "自動回転",
           "回転アタック",
           "攻撃判定",
           "対象エンティティ"
         ],
         "en": [
-          "spin attack",
-          "target",
           "spinning attack",
-          "automatic spin",
           "spin target",
           "attack target",
           "spin attack attempt"
@@ -3486,8 +3067,6 @@
       },
       "keywords": {
         "ja": [
-          "スノーゴーレム",
-          "氷渡り",
           "ブロック形成",
           "雪の生成",
           "薄氷",
@@ -3496,11 +3075,8 @@
           "足元のブロック"
         ],
         "en": [
-          "snow golem",
-          "frost walker",
           "block formation",
           "snow formation",
-          "frosted ice",
           "entity block formation",
           "create snow",
           "freeze water"
@@ -3521,7 +3097,6 @@
         "ja": [
           "エンティティ除去",
           "破壊元",
-          "ダメージ源",
           "エンティティ破壊",
           "除去したエンティティ",
           "除去原因"
@@ -3529,8 +3104,6 @@
         "en": [
           "entity removal",
           "removing entity",
-          "damage source",
-          "entity break",
           "remover",
           "removal cause"
         ]
@@ -3551,16 +3124,11 @@
           "扉",
           "エンティティ",
           "扉破壊",
-          "ドアを壊す",
           "扉を壊す",
           "ドア損壊",
           "破壊延期"
         ],
         "en": [
-          "door",
-          "break",
-          "entity",
-          "break door",
           "door destruction",
           "destroy door",
           "door breaking",
@@ -3579,21 +3147,18 @@
         "ja": "ブロックに取り付けられたエンティティが壊れる直前に発生する、原因を取得できるキャンセル可能なイベント。"
       },
       "keywords": {
+        "en": [
+          "entity removal",
+          "removal cause",
+          "remove cause",
+          "attached entity destruction"
+        ],
         "ja": [
           "エンティティ除去",
           "除去理由",
           "破壊",
           "エンティティ破壊",
-          "除去原因",
-          "キャンセル"
-        ],
-        "en": [
-          "entity removal",
-          "removal cause",
-          "break",
-          "entity break",
-          "remove cause",
-          "cancellable"
+          "除去原因"
         ]
       },
       "href": "io/papermc/paper/event/entity/EntityBreakEvent.html",
@@ -3608,7 +3173,6 @@
       },
       "keywords": {
         "ja": [
-          "繁殖",
           "交配",
           "生物",
           "繁殖処理",
@@ -3618,7 +3182,6 @@
           "つがい"
         ],
         "en": [
-          "breed",
           "breeding",
           "creature",
           "mating",
@@ -3642,7 +3205,6 @@
       "keywords": {
         "ja": [
           "ブロック変更",
-          "エンティティ",
           "地形変更",
           "地形改変",
           "ブロック変化",
@@ -3652,7 +3214,6 @@
         ],
         "en": [
           "block change",
-          "entity",
           "terrain change",
           "modify block",
           "block modification",
@@ -3673,9 +3234,6 @@
       },
       "keywords": {
         "ja": [
-          "衝突",
-          "押し合い",
-          "エンティティ",
           "当たり判定",
           "接触",
           "押しのける",
@@ -3684,9 +3242,6 @@
           "エンティティ同士"
         ],
         "en": [
-          "collision",
-          "pushing",
-          "entity",
           "hitbox",
           "entity collision",
           "body collision",
@@ -3710,7 +3265,6 @@
         "ja": [
           "着火",
           "燃焼",
-          "ブロック",
           "ブロック着火",
           "火が付く",
           "炎上原因",
@@ -3718,9 +3272,7 @@
           "エンティティ燃焼"
         ],
         "en": [
-          "combust",
           "burn",
-          "block",
           "block combustion",
           "catch fire",
           "block ignition source",
@@ -3743,7 +3295,6 @@
         "ja": [
           "着火",
           "燃焼",
-          "エンティティ",
           "他者による着火",
           "火が付く",
           "炎上原因",
@@ -3751,9 +3302,7 @@
           "エンティティ燃焼"
         ],
         "en": [
-          "combust",
           "burn",
-          "entity",
           "entity combustion",
           "catch fire",
           "entity ignition source",
@@ -3775,7 +3324,6 @@
       "keywords": {
         "ja": [
           "燃焼",
-          "炎上",
           "着火",
           "火が付く",
           "燃え始め",
@@ -3784,12 +3332,10 @@
           "エンティティ燃焼"
         ],
         "en": [
-          "combust",
           "burn",
           "ignite",
           "catch fire",
           "burning entity",
-          "combustion",
           "entity ignition",
           "start burning"
         ]
@@ -3807,9 +3353,7 @@
       },
       "keywords": {
         "ja": [
-          "堆肥",
           "コンポスター",
-          "エンティティ",
           "堆肥化",
           "堆肥作成",
           "アイテム投入",
@@ -3817,10 +3361,7 @@
           "コンポスター使用"
         ],
         "en": [
-          "compost",
           "composter",
-          "entity",
-          "compost item",
           "item composting",
           "composting input",
           "entity composting",
@@ -3841,10 +3382,7 @@
       "keywords": {
         "ja": [
           "召喚",
-          "ゴーレム",
-          "ウィザー",
           "ブロック配置",
-          "スポーン",
           "ブロックによる召喚",
           "組み立て",
           "生成前",
@@ -3853,10 +3391,7 @@
         ],
         "en": [
           "summoning",
-          "golem",
-          "wither",
           "block pattern",
-          "spawn",
           "construct entity",
           "block construction",
           "entity assembly",
@@ -3884,7 +3419,6 @@
         "ja": [
           "ポータル生成",
           "生物",
-          "ワールド",
           "ポータル作成",
           "ゲート生成",
           "ポータル形成",
@@ -3892,10 +3426,6 @@
           "異世界ゲート"
         ],
         "en": [
-          "portal",
-          "create",
-          "living entity",
-          "create portal",
           "portal generation",
           "portal formation",
           "entity portal creation",
@@ -3915,8 +3445,6 @@
       },
       "keywords": {
         "ja": [
-          "ダメージ",
-          "ブロック",
           "被害",
           "ブロックダメージ",
           "被ダメージ",
@@ -3925,8 +3453,6 @@
           "ブロックによる被害"
         ],
         "en": [
-          "damage",
-          "block",
           "hurt",
           "block damage",
           "damage source",
@@ -3948,7 +3474,6 @@
       },
       "keywords": {
         "ja": [
-          "ダメージ",
           "攻撃",
           "戦闘",
           "被ダメージ",
@@ -3958,10 +3483,8 @@
           "殴る"
         ],
         "en": [
-          "damage",
           "attack",
           "combat",
-          "entity damage",
           "attacker",
           "victim",
           "attack damage",
@@ -3981,7 +3504,6 @@
       },
       "keywords": {
         "ja": [
-          "ダメージ",
           "体力",
           "被害",
           "被ダメージ",
@@ -3991,14 +3513,11 @@
           "ダメージ原因"
         ],
         "en": [
-          "damage",
           "health",
           "hurt",
-          "take damage",
           "injury",
           "health loss",
-          "damage cause",
-          "entity damage"
+          "damage cause"
         ]
       },
       "href": "org/bukkit/event/entity/EntityDamageEvent.html",
@@ -4014,7 +3533,6 @@
       },
       "keywords": {
         "ja": [
-          "耐久度",
           "装備損傷",
           "アイテム消耗",
           "耐久消費",
@@ -4024,8 +3542,6 @@
           "摩耗"
         ],
         "en": [
-          "durability",
-          "equipment",
           "item damage",
           "durability loss",
           "equipment wear",
@@ -4047,7 +3563,6 @@
       },
       "keywords": {
         "ja": [
-          "死亡",
           "倒す",
           "生物",
           "死ぬ",
@@ -4057,10 +3572,8 @@
           "キル"
         ],
         "en": [
-          "death",
           "kill",
           "living entity",
-          "entity death",
           "dying",
           "slain entity",
           "death handling",
@@ -4080,7 +3593,6 @@
       },
       "keywords": {
         "ja": [
-          "降りる",
           "下車",
           "騎乗解除",
           "乗り物から降りる",
@@ -4090,7 +3602,6 @@
           "騎乗者"
         ],
         "en": [
-          "dismount",
           "unmount",
           "stop riding",
           "stop mounting",
@@ -4115,7 +3626,6 @@
         "ja": [
           "アイテムドロップ",
           "落とす",
-          "エンティティ",
           "ドロップ生成",
           "落下アイテム",
           "アイテムを落とす",
@@ -4123,12 +3633,8 @@
           "ドロップ処理"
         ],
         "en": [
-          "item drop",
-          "drop",
-          "entity",
           "dropped item",
           "create drop",
-          "drop item",
           "item release",
           "entity item drop"
         ]
@@ -4146,19 +3652,13 @@
       },
       "keywords": {
         "ja": [
-          "染色",
           "染料",
-          "羊",
-          "首輪",
           "色変更",
           "色付け",
           "羊の色",
-          "オオカミの首輪",
-          "ネコの首輪"
+          "オオカミの首輪"
         ],
         "en": [
-          "dye",
-          "sheep",
           "collar",
           "recolor",
           "color change",
@@ -4180,9 +3680,6 @@
       },
       "keywords": {
         "ja": [
-          "ポーション効果",
-          "毒",
-          "再生",
           "効果周期",
           "継続効果",
           "即時効果",
@@ -4191,11 +3688,6 @@
           "定期回復"
         ],
         "en": [
-          "potion effect",
-          "poison",
-          "regeneration",
-          "effect tick",
-          "recurring effect",
           "instant effect",
           "status tick",
           "periodic damage",
@@ -4215,24 +3707,20 @@
       },
       "keywords": {
         "ja": [
-          "ミツバチ",
           "巣箱",
           "ブロック格納",
           "蜂の巣",
           "ハチの巣",
           "帰巣",
-          "巣に入る",
           "エンティティ格納"
         ],
         "en": [
-          "bee",
           "beehive",
           "block storage",
           "enter hive",
           "bee nest",
           "hive entry",
-          "stored entity",
-          "enter block"
+          "stored entity"
         ]
       },
       "href": "org/bukkit/event/entity/EntityEnterBlockEvent.html",
@@ -4248,8 +3736,6 @@
       },
       "keywords": {
         "ja": [
-          "繁殖",
-          "発情",
           "餌",
           "ラブモード",
           "ハート",
@@ -4258,10 +3744,7 @@
           "発情開始"
         ],
         "en": [
-          "breeding",
-          "love mode",
           "food",
-          "enter love mode",
           "ready to breed",
           "feeding",
           "mating readiness",
@@ -4283,7 +3766,6 @@
         "ja": [
           "装備変更",
           "持ち替え",
-          "耐久度",
           "装備更新",
           "装備スロット",
           "装備交換",
@@ -4291,9 +3773,7 @@
           "エンチャント効果"
         ],
         "en": [
-          "equipment",
           "held item",
-          "durability",
           "equipment update",
           "equipment slot",
           "equip item",
@@ -4314,7 +3794,6 @@
       },
       "keywords": {
         "ja": [
-          "エンティティ",
           "基底クラス",
           "エンティティイベント",
           "エンティティ関連",
@@ -4323,10 +3802,7 @@
           "エンティティ処理"
         ],
         "en": [
-          "entity",
           "base class",
-          "entity event",
-          "entity-related event",
           "base event",
           "parent class",
           "entity handling"
@@ -4346,20 +3822,15 @@
       },
       "keywords": {
         "ja": [
-          "疲労",
           "隠し満腹度",
           "消耗",
-          "疲労値",
           "疲労増加",
           "空腹消費",
           "消耗値",
           "隠し満腹度消費"
         ],
         "en": [
-          "exhaustion",
-          "saturation",
           "hunger",
-          "exhaustion level",
           "gain exhaustion",
           "hunger exhaustion",
           "saturation loss",
@@ -4379,9 +3850,7 @@
       },
       "keywords": {
         "ja": [
-          "爆発",
           "爆破",
-          "エンティティ",
           "エンティティ爆発",
           "爆風",
           "爆発源",
@@ -4391,7 +3860,6 @@
         "en": [
           "explosion",
           "blast",
-          "entity",
           "entity explosion",
           "exploding entity",
           "blast source",
@@ -4412,22 +3880,15 @@
       },
       "keywords": {
         "ja": [
-          "受精",
           "産卵",
           "繁殖",
-          "交配",
           "受精卵",
-          "両親",
           "繁殖成立",
           "子が生まれる前"
         ],
         "en": [
-          "fertilization",
-          "egg",
           "breeding",
-          "mating",
           "fertilized egg",
-          "parents",
           "offspring preparation",
           "delayed offspring"
         ]
@@ -4445,9 +3906,6 @@
       },
       "keywords": {
         "ja": [
-          "着火",
-          "炎",
-          "レッドストーン",
           "点火",
           "起爆",
           "起爆準備",
@@ -4455,9 +3913,6 @@
           "エンティティ点火"
         ],
         "en": [
-          "ignite",
-          "fire",
-          "redstone",
           "entity ignition",
           "ignition source",
           "priming",
@@ -4479,23 +3934,16 @@
       "keywords": {
         "ja": [
           "ブロック接触",
-          "ヒットボックス",
-          "大釜",
           "ブロック内部",
           "当たり判定",
           "接触判定",
-          "ブロックの反応",
-          "消火"
+          "ブロックの反応"
         ],
         "en": [
           "block collision",
-          "hitbox",
-          "cauldron",
-          "inside block",
           "enter hitbox",
           "block reaction",
-          "entity collision",
-          "extinguishing"
+          "entity collision"
         ]
       },
       "href": "io/papermc/paper/event/entity/EntityInsideBlockEvent.html",
@@ -4513,7 +3961,6 @@
         "ja": [
           "相互作用",
           "ブロック操作",
-          "エンティティ",
           "ブロック接触",
           "エンティティの作用",
           "ブロックへの干渉",
@@ -4521,9 +3968,7 @@
           "ブロック反応"
         ],
         "en": [
-          "interact",
           "interaction",
-          "block",
           "interact with block",
           "entity block interaction",
           "block contact",
@@ -4544,7 +3989,6 @@
       },
       "keywords": {
         "ja": [
-          "ジャンプ",
           "跳躍",
           "生物",
           "跳ぶ",
@@ -4554,11 +3998,8 @@
           "ジャンプ中止"
         ],
         "en": [
-          "jump",
           "leap",
           "living entity",
-          "jumping",
-          "entity jump",
           "jump attempt",
           "leaping",
           "cancel jump"
@@ -4577,8 +4018,6 @@
       },
       "keywords": {
         "ja": [
-          "ノックバック",
-          "攻撃",
           "吹き飛ばす",
           "吹き飛び",
           "後退",
@@ -4587,7 +4026,6 @@
           "押し戻し"
         ],
         "en": [
-          "knockback",
           "attack",
           "push",
           "hit knockback",
@@ -4610,7 +4048,6 @@
       },
       "keywords": {
         "ja": [
-          "ノックバック",
           "攻撃",
           "吹き飛ばす",
           "吹き飛び",
@@ -4620,7 +4057,6 @@
           "押し戻し"
         ],
         "en": [
-          "knockback",
           "attack",
           "push",
           "hit knockback",
@@ -4643,7 +4079,6 @@
       },
       "keywords": {
         "ja": [
-          "ノックバック",
           "吹き飛ばす",
           "吹き飛び",
           "後退",
@@ -4652,12 +4087,10 @@
           "エンティティ移動"
         ],
         "en": [
-          "knockback",
           "push",
           "knock back",
           "recoil",
           "pushback",
-          "entity knockback",
           "knockback force"
         ]
       },
@@ -4674,7 +4107,6 @@
       },
       "keywords": {
         "ja": [
-          "ノックバック",
           "生物",
           "吹き飛ばす",
           "吹き飛び",
@@ -4684,13 +4116,10 @@
           "エンティティ移動"
         ],
         "en": [
-          "knockback",
-          "living entity",
           "push",
           "knock back",
           "recoil",
           "pushback",
-          "entity knockback",
           "knockback force"
         ]
       },
@@ -4707,8 +4136,6 @@
       },
       "keywords": {
         "ja": [
-          "着地",
-          "落下",
           "落下距離",
           "着地したブロック",
           "着地判定",
@@ -4736,8 +4163,6 @@
       },
       "keywords": {
         "ja": [
-          "クロスボウ",
-          "装填",
           "飛び道具",
           "クロスボウ装填",
           "弾込め",
@@ -4746,10 +4171,6 @@
           "射撃準備"
         ],
         "en": [
-          "crossbow",
-          "load",
-          "projectile",
-          "load crossbow",
           "reload",
           "ammunition",
           "projectile loading",
@@ -4769,18 +4190,13 @@
       },
       "keywords": {
         "ja": [
-          "槍",
-          "突進",
           "攻撃",
           "ランジ",
           "槍攻撃",
           "突き出し",
-          "突進試行",
-          "槍で突進"
+          "突進試行"
         ],
         "en": [
-          "spear",
-          "lunge",
           "attack",
           "spear attack",
           "spear lunge",
@@ -4802,7 +4218,6 @@
       },
       "keywords": {
         "ja": [
-          "乗る",
           "騎乗",
           "乗車",
           "乗り物に乗る",
@@ -4812,8 +4227,6 @@
           "乗車試行"
         ],
         "en": [
-          "mount",
-          "ride",
           "riding",
           "start riding",
           "mount entity",
@@ -4835,7 +4248,6 @@
       },
       "keywords": {
         "ja": [
-          "移動",
           "生物",
           "位置",
           "モブ移動",
@@ -4845,8 +4257,6 @@
           "生物移動"
         ],
         "en": [
-          "movement",
-          "living entity",
           "position",
           "mob movement",
           "position change",
@@ -4880,7 +4290,6 @@
         "en": [
           "pathfinding",
           "destination",
-          "path",
           "navigation",
           "route planning",
           "path search",
@@ -4901,19 +4310,15 @@
       },
       "keywords": {
         "ja": [
-          "拾う",
           "アイテム回収",
           "取得",
-          "アイテムを拾う",
           "拾得",
           "地面のアイテム",
           "拾い上げ",
           "ドロップ回収"
         ],
         "en": [
-          "pickup",
           "collect",
-          "item",
           "pick up item",
           "item collection",
           "ground item",
@@ -4935,10 +4340,6 @@
       "keywords": {
         "ja": [
           "エンティティ設置",
-          "防具立て",
-          "ボート",
-          "トロッコ",
-          "エンドクリスタル",
           "アイテム設置",
           "乗り物設置",
           "防具立て設置",
@@ -4946,10 +4347,6 @@
         ],
         "en": [
           "entity placement",
-          "armor stand",
-          "boat",
-          "minecart",
-          "end crystal",
           "place entity",
           "place vehicle",
           "place armor stand",
@@ -4978,9 +4375,6 @@
           "ポータル検知"
         ],
         "en": [
-          "portal",
-          "contact",
-          "enter",
           "touch portal",
           "enter portal",
           "portal entry",
@@ -5002,8 +4396,6 @@
       "keywords": {
         "ja": [
           "ポータル移動",
-          "テレポート",
-          "エンティティ",
           "ポータル転送",
           "次元移動",
           "ゲート移動",
@@ -5011,9 +4403,6 @@
           "ワープ"
         ],
         "en": [
-          "portal",
-          "teleport",
-          "entity",
           "portal travel",
           "portal transfer",
           "dimension travel",
@@ -5044,7 +4433,6 @@
           "ポータル退出"
         ],
         "en": [
-          "portal exit",
           "velocity",
           "teleport",
           "exit portal",
@@ -5067,8 +4455,6 @@
       },
       "keywords": {
         "ja": [
-          "ネザーポータル",
-          "待機時間",
           "テレポート準備",
           "転送準備",
           "ポータル待機",
@@ -5077,7 +4463,6 @@
           "転送待ち"
         ],
         "en": [
-          "nether portal",
           "portal delay",
           "teleport ready",
           "portal readiness",
@@ -5101,7 +4486,6 @@
       "keywords": {
         "ja": [
           "姿勢",
-          "ポーズ",
           "変更",
           "姿勢変更",
           "ポーズ変更",
@@ -5110,13 +4494,9 @@
           "姿勢遷移"
         ],
         "en": [
-          "pose",
           "posture",
-          "change",
-          "pose change",
           "posture change",
           "body pose",
-          "entity pose",
           "pose transition"
         ]
       },
@@ -5133,20 +4513,16 @@
       },
       "keywords": {
         "ja": [
-          "硫黄",
-          "間欠泉",
-          "吹き上げ",
           "噴出",
           "打ち上げ",
-          "発射ベクトル"
+          "発射ベクトル",
+          "跳ね上げ"
         ],
         "en": [
-          "potent sulfur",
-          "geyser",
-          "launch",
           "upward motion",
           "launch vector",
-          "sulfur block"
+          "sulfur block",
+          "vertical propulsion"
         ]
       },
       "href": "io/papermc/paper/event/entity/EntityPotentSulfurLaunchEvent.html",
@@ -5162,9 +4538,7 @@
       },
       "keywords": {
         "ja": [
-          "ポーション効果",
           "状態効果",
-          "変更",
           "ステータス効果",
           "効果変更",
           "効果付与",
@@ -5172,7 +4546,6 @@
           "ポーション状態"
         ],
         "en": [
-          "potion effect",
           "status effect",
           "change",
           "effect modification",
@@ -5195,18 +4568,14 @@
       },
       "keywords": {
         "ja": [
-          "攻撃",
           "押す",
           "加速度",
           "押し出し",
           "打撃反動",
           "攻撃による移動",
-          "吹き飛び",
-          "押される"
+          "吹き飛び"
         ],
         "en": [
-          "attack",
-          "push",
           "acceleration",
           "attack push",
           "hit recoil",
@@ -5228,23 +4597,16 @@
       },
       "keywords": {
         "ja": [
-          "回復",
-          "体力",
           "治癒",
-          "体力回復",
           "HP回復",
           "治る",
           "再生",
           "回復量"
         ],
         "en": [
-          "heal",
-          "health",
-          "regain",
           "healing",
           "health recovery",
           "restore health",
-          "regain health",
           "healing amount"
         ]
       },
@@ -5261,9 +4623,7 @@
       },
       "keywords": {
         "ja": [
-          "削除",
           "消滅",
-          "エンティティ",
           "エンティティ削除",
           "消える",
           "除去",
@@ -5271,9 +4631,7 @@
           "ワールドから消える"
         ],
         "en": [
-          "remove",
           "removal",
-          "entity",
           "entity removal",
           "removed entity",
           "entity disappearance",
@@ -5295,7 +4653,6 @@
       "keywords": {
         "ja": [
           "削除",
-          "ワールド",
           "チャンクアンロード",
           "ワールドから削除",
           "エンティティ解放",
@@ -5304,10 +4661,7 @@
           "削除処理"
         ],
         "en": [
-          "remove",
-          "world",
           "chunk unload",
-          "remove from world",
           "world removal",
           "entity unloading",
           "entity removal",
@@ -5327,17 +4681,12 @@
       },
       "keywords": {
         "ja": [
-          "復活",
-          "不死のトーテム",
-          "死亡",
           "蘇生",
           "生き返る",
           "死亡回避",
-          "トーテム",
           "復活処理"
         ],
         "en": [
-          "resurrect",
           "totem of undying",
           "death",
           "resurrection",
@@ -5360,7 +4709,6 @@
       },
       "keywords": {
         "ja": [
-          "弓",
           "矢",
           "発射",
           "弓矢",
@@ -5370,9 +4718,7 @@
           "投射物発射"
         ],
         "en": [
-          "bow",
           "arrow",
-          "shoot",
           "archery",
           "shoot arrow",
           "fire bow",
@@ -5393,9 +4739,7 @@
       },
       "keywords": {
         "ja": [
-          "スポーン",
           "出現",
-          "エンティティ",
           "エンティティ生成",
           "ワールドに出現",
           "出現処理",
@@ -5403,8 +4747,6 @@
           "スポーン判定"
         ],
         "en": [
-          "spawn",
-          "entity",
           "entity spawning",
           "world spawn",
           "spawn entity",
@@ -5425,7 +4767,6 @@
       },
       "keywords": {
         "ja": [
-          "呪文",
           "魔法",
           "詠唱",
           "呪文詠唱",
@@ -5435,9 +4776,6 @@
           "スペル"
         ],
         "en": [
-          "spell",
-          "cast",
-          "spellcaster",
           "spell casting",
           "cast spell",
           "magic",
@@ -5468,7 +4806,6 @@
           "ペット化"
         ],
         "en": [
-          "tame",
           "taming",
           "pet",
           "tame entity",
@@ -5496,20 +4833,14 @@
       },
       "keywords": {
         "ja": [
-          "銅ゴーレム",
-          "チェスト",
           "ブロックターゲット",
           "ブロック標的",
           "チェスト選択",
           "対象ブロック",
-          "ターゲット解除",
           "移動目標"
         ],
         "en": [
-          "copper golem",
-          "chest",
           "block target",
-          "target block",
           "select chest",
           "untarget block",
           "block selection",
@@ -5529,7 +4860,6 @@
       },
       "keywords": {
         "ja": [
-          "ターゲット",
           "敵対",
           "標的解除",
           "標的選択",
@@ -5539,12 +4869,10 @@
           "敵対解除"
         ],
         "en": [
-          "target",
           "aggro",
           "untarget",
           "target selection",
           "target change",
-          "entity target",
           "target acquisition",
           "target removal"
         ]
@@ -5563,7 +4891,6 @@
       "keywords": {
         "ja": [
           "生物",
-          "ターゲット",
           "標的",
           "生物の標的",
           "生物選択",
@@ -5572,11 +4899,8 @@
           "索敵"
         ],
         "en": [
-          "living entity",
-          "target",
           "living target",
           "target selection",
-          "target living entity",
           "target change",
           "creature target"
         ]
@@ -5594,8 +4918,6 @@
       },
       "keywords": {
         "ja": [
-          "エンドゲートウェイ",
-          "テレポート",
           "ゲートウェイ移動",
           "エンド移動",
           "ゲートウェイ転送",
@@ -5603,8 +4925,6 @@
           "転送試行"
         ],
         "en": [
-          "end gateway",
-          "teleport",
           "gateway travel",
           "gateway teleport",
           "teleport attempt",
@@ -5625,9 +4945,7 @@
       },
       "keywords": {
         "ja": [
-          "テレポート",
           "移動",
-          "エンティティ",
           "瞬間移動",
           "ワープ",
           "位置変更",
@@ -5635,13 +4953,10 @@
           "モブ移動"
         ],
         "en": [
-          "teleport",
           "movement",
-          "entity",
           "warp",
           "instant movement",
           "location change",
-          "entity teleport",
           "non-player teleport"
         ]
       },
@@ -5658,8 +4973,6 @@
       },
       "keywords": {
         "ja": [
-          "エリトラ",
-          "滑空",
           "着地",
           "滑空開始",
           "滑空終了",
@@ -5668,14 +4981,11 @@
           "グライド"
         ],
         "en": [
-          "elytra",
-          "glide",
           "land",
           "start gliding",
           "stop gliding",
           "elytra flight",
-          "gliding state",
-          "toggle glide"
+          "gliding state"
         ]
       },
       "href": "org/bukkit/event/entity/EntityToggleGlideEvent.html",
@@ -5701,7 +5011,6 @@
           "座り込む"
         ],
         "en": [
-          "sit",
           "stand",
           "sitting",
           "standing",
@@ -5725,7 +5034,6 @@
         "ja": [
           "泳ぐ",
           "水泳",
-          "泳ぎ状態",
           "水泳開始",
           "水泳終了",
           "泳ぎ姿勢",
@@ -5733,8 +5041,6 @@
           "水泳切替"
         ],
         "en": [
-          "swim",
-          "swimming",
           "start swimming",
           "stop swimming",
           "swimming state",
@@ -5765,7 +5071,6 @@
           "変換処理"
         ],
         "en": [
-          "transform",
           "convert",
           "replace",
           "entity transformation",
@@ -5788,7 +5093,6 @@
       },
       "keywords": {
         "ja": [
-          "リード",
           "綱",
           "解除",
           "リード解除",
@@ -5798,8 +5102,6 @@
           "リードが外れる"
         ],
         "en": [
-          "unleash",
-          "leash",
           "lead",
           "unleashing",
           "remove lead",
@@ -5821,7 +5123,6 @@
       },
       "keywords": {
         "ja": [
-          "落雷",
           "雷撃",
           "稲妻",
           "雷に打たれる",
@@ -5831,9 +5132,7 @@
           "雷直撃"
         ],
         "en": [
-          "lightning",
           "strike",
-          "zap",
           "struck by lightning",
           "entity lightning",
           "lightning hit",
@@ -5854,8 +5153,6 @@
       },
       "keywords": {
         "ja": [
-          "イベント",
-          "基底クラス",
           "ハンドラー",
           "共通イベント",
           "親クラス",
@@ -5864,14 +5161,11 @@
           "Bukkitイベント"
         ],
         "en": [
-          "event",
-          "base class",
           "handler",
           "generic event",
           "parent class",
           "event inheritance",
-          "base event",
-          "bukkit event"
+          "base event"
         ]
       },
       "abstract": true,
@@ -5888,8 +5182,6 @@
       },
       "keywords": {
         "ja": [
-          "コマンド",
-          "実行",
           "コマンド実行",
           "コマンド入力",
           "命令実行",
@@ -5897,12 +5189,9 @@
           "コマンド発行"
         ],
         "en": [
-          "command",
-          "execute",
           "run command",
           "command execution",
           "command input",
-          "execute command",
           "command dispatch"
         ]
       },
@@ -5919,8 +5208,6 @@
       },
       "keywords": {
         "ja": [
-          "経験値ボトル",
-          "経験値",
           "衝突",
           "エンチャントの瓶",
           "投げた瓶",
@@ -5930,7 +5217,6 @@
         ],
         "en": [
           "experience bottle",
-          "xp",
           "impact",
           "bottle o enchanting",
           "thrown bottle",
@@ -5952,7 +5238,6 @@
       },
       "keywords": {
         "ja": [
-          "経験値オーブ",
           "結合",
           "合体",
           "オーブ合併",
@@ -5962,10 +5247,6 @@
           "経験値結合"
         ],
         "en": [
-          "experience orb",
-          "xp",
-          "merge",
-          "orb merge",
           "combine orbs",
           "xp merging",
           "experience merging",
@@ -5995,8 +5276,6 @@
           "爆破準備"
         ],
         "en": [
-          "explosion",
-          "prime",
           "detonate",
           "prime explosion",
           "explosion decision",
@@ -6018,22 +5297,16 @@
       },
       "keywords": {
         "ja": [
-          "プロファイル",
           "スキン",
-          "テクスチャ",
           "プロフィール",
-          "プロパティ",
           "追加情報",
           "テクスチャ取得",
           "プロファイル補完"
         ],
         "en": [
-          "profile",
           "skin",
-          "textures",
           "player profile",
           "profile properties",
-          "fill profile",
           "texture properties",
           "profile completion"
         ]
@@ -6051,8 +5324,6 @@
       },
       "keywords": {
         "ja": [
-          "花火",
-          "爆発",
           "炸裂",
           "打ち上げ花火",
           "花火炸裂",
@@ -6061,7 +5332,6 @@
           "花火の破裂"
         ],
         "en": [
-          "firework",
           "explosion",
           "firework burst",
           "firework detonation",
@@ -6082,25 +5352,20 @@
         "ja": "浮き(FishHook)の状態(FishHook.HookState)が変更される直前に呼び出される。"
       },
       "keywords": {
+        "en": [
+          "fishing float",
+          "bobber state",
+          "fishing state",
+          "fishing hook transition"
+        ],
         "ja": [
           "釣り",
-          "浮き",
           "状態変更",
           "釣り針",
           "釣り浮き",
           "フック",
           "浮き状態",
           "釣り状態"
-        ],
-        "en": [
-          "fishing",
-          "bobber",
-          "hook state",
-          "fish hook",
-          "fishing float",
-          "hook state change",
-          "bobber state",
-          "fishing state"
         ]
       },
       "href": "io/papermc/paper/event/entity/FishHookStateChangeEvent.html",
@@ -6120,16 +5385,12 @@
           "水位",
           "隣接更新",
           "流体レベル",
-          "液面",
           "水量",
           "液体量",
           "周囲のブロック"
         ],
         "en": [
-          "fluid",
-          "level",
           "neighbor update",
-          "fluid level",
           "liquid level",
           "fluid amount",
           "adjacent block",
@@ -6150,23 +5411,18 @@
       "keywords": {
         "ja": [
           "満腹度",
-          "空腹",
           "食料",
-          "空腹度",
           "食料値",
           "フードレベル",
           "満腹ゲージ",
           "空腹ゲージ"
         ],
         "en": [
-          "food level",
           "hunger",
-          "food",
           "food bar",
           "hunger level",
           "food value",
-          "hunger bar",
-          "food level change"
+          "hunger bar"
         ]
       },
       "href": "org/bukkit/event/entity/FoodLevelChangeEvent.html",
@@ -6182,9 +5438,6 @@
       },
       "keywords": {
         "ja": [
-          "かまど",
-          "燃料",
-          "燃焼",
           "燃料消費",
           "かまど燃焼",
           "燃料投入",
@@ -6192,9 +5445,6 @@
           "炉の燃料"
         ],
         "en": [
-          "furnace",
-          "fuel",
-          "burn",
           "burn fuel",
           "furnace burning",
           "fuel use",
@@ -6215,18 +5465,14 @@
       },
       "keywords": {
         "ja": [
-          "かまど",
           "取り出し",
           "精錬結果",
           "精錬品回収",
           "完成品回収",
           "結果スロット",
-          "取り出す",
           "炉の出力"
         ],
         "en": [
-          "furnace",
-          "extract",
           "smelting result",
           "take furnace result",
           "collect smelted items",
@@ -6248,8 +5494,6 @@
       },
       "keywords": {
         "ja": [
-          "かまど",
-          "精錬",
           "完成",
           "精錬完了",
           "精錬品",
@@ -6258,8 +5502,6 @@
           "完成アイテム"
         ],
         "en": [
-          "furnace",
-          "smelt",
           "complete",
           "smelting completion",
           "smelt item",
@@ -6281,7 +5523,6 @@
       },
       "keywords": {
         "ja": [
-          "かまど",
           "精錬開始",
           "調理",
           "精錬開始時",
@@ -6291,11 +5532,9 @@
           "材料処理"
         ],
         "en": [
-          "furnace",
           "start smelting",
           "cooking",
           "begin smelting",
-          "furnace start",
           "start furnace",
           "smelting process",
           "smelting input"
@@ -6314,9 +5553,7 @@
       },
       "keywords": {
         "ja": [
-          "ゲームイベント",
           "振動",
-          "スカルクセンサー",
           "ゲーム内通知",
           "モヤンイベント",
           "振動通知",
@@ -6324,7 +5561,6 @@
           "ゲームイベント検知"
         ],
         "en": [
-          "game event",
           "vibration",
           "sculk sensor",
           "mojang event",
@@ -6347,9 +5583,7 @@
       },
       "keywords": {
         "ja": [
-          "ヤギ",
           "突進",
-          "衝突",
           "頭突き",
           "ヤギの攻撃",
           "体当たり",
@@ -6357,10 +5591,7 @@
           "ヤギ突進"
         ],
         "en": [
-          "goat",
-          "ram",
           "collision",
-          "goat ram",
           "ram attack",
           "headbutt",
           "goat collision",
@@ -6380,19 +5611,14 @@
       },
       "keywords": {
         "ja": [
-          "砥石",
           "取り出し",
           "研磨結果",
           "砥石操作",
           "完成品",
           "アイテム回収",
-          "結果スロット",
-          "取り出す"
+          "結果スロット"
         ],
         "en": [
-          "grindstone",
-          "result",
-          "take",
           "grindstone output",
           "collect result",
           "take item",
@@ -6414,8 +5640,6 @@
       "keywords": {
         "ja": [
           "サーバー情報",
-          "クエリ",
-          "GS4",
           "サーバークエリ",
           "クエリ応答",
           "サーバー問い合わせ",
@@ -6424,13 +5648,10 @@
         ],
         "en": [
           "server query",
-          "gs4",
           "status",
-          "query protocol",
           "server information",
           "query response",
-          "server inquiry",
-          "gs4 query"
+          "server inquiry"
         ]
       },
       "href": "com/destroystokyo/paper/event/server/GS4QueryEvent.html",
@@ -6446,9 +5667,6 @@
       },
       "keywords": {
         "ja": [
-          "壁掛け",
-          "破壊",
-          "エンティティ",
           "壁掛け撤去",
           "壁掛け破壊",
           "取り外し",
@@ -6456,9 +5674,6 @@
           "壁掛け除去"
         ],
         "en": [
-          "hanging",
-          "break",
-          "entity",
           "remove hanging entity",
           "hanging destruction",
           "break hanging entity",
@@ -6479,7 +5694,6 @@
       },
       "keywords": {
         "ja": [
-          "壁掛け",
           "破壊",
           "撤去",
           "壁掛け撤去",
@@ -6489,8 +5703,6 @@
           "壁掛け消失"
         ],
         "en": [
-          "hanging",
-          "break",
           "remove",
           "remove hanging entity",
           "hanging destruction",
@@ -6512,19 +5724,14 @@
       },
       "keywords": {
         "ja": [
-          "壁掛け",
           "基底クラス",
           "壁掛けイベント",
-          "壁掛けエンティティ",
           "親クラス",
           "基底イベント",
           "壁掛け処理"
         ],
         "en": [
-          "hanging",
           "base class",
-          "hanging entity",
-          "hanging event",
           "parent class",
           "base event",
           "hanging interaction"
@@ -6544,7 +5751,6 @@
       },
       "keywords": {
         "ja": [
-          "壁掛け",
           "設置",
           "配置",
           "壁掛け配置",
@@ -6554,8 +5760,6 @@
           "壁掛け生成"
         ],
         "en": [
-          "hanging",
-          "place",
           "placement",
           "place hanging entity",
           "hanging creation",
@@ -6577,7 +5781,6 @@
       },
       "keywords": {
         "ja": [
-          "ホッパー",
           "コンテナ探索",
           "搬入元",
           "接続コンテナ",
@@ -6587,9 +5790,7 @@
           "インベントリ検出"
         ],
         "en": [
-          "hopper",
           "container",
-          "inventory search",
           "attached container",
           "source inventory",
           "destination inventory",
@@ -6610,8 +5811,6 @@
       },
       "keywords": {
         "ja": [
-          "馬",
-          "ジャンプ",
           "跳躍",
           "馬の跳躍",
           "馬ジャンプ",
@@ -6620,8 +5819,6 @@
           "騎馬ジャンプ"
         ],
         "en": [
-          "horse",
-          "jump",
           "horse jumping",
           "horse leap",
           "jumping horse",
@@ -6657,9 +5854,7 @@
           "受信エラー"
         ],
         "en": [
-          "illegal packet",
           "network",
-          "packet",
           "invalid packet",
           "malformed packet",
           "packet validation",
@@ -6680,9 +5875,6 @@
       "keywords": {
         "ja": [
           "処理開始",
-          "かまど",
-          "醸造台",
-          "焚き火",
           "ブロック処理",
           "材料処理",
           "調理開始",
@@ -6691,14 +5883,9 @@
         ],
         "en": [
           "processing",
-          "start",
-          "smelting",
-          "brewing",
-          "cooking",
           "block processing",
           "process input",
           "begin processing",
-          "inventory block",
           "processing start"
         ]
       },
@@ -6715,8 +5902,6 @@
       },
       "keywords": {
         "ja": [
-          "インベントリ",
-          "クリック",
           "スロット",
           "アイテムクリック",
           "スロット操作",
@@ -6725,10 +5910,7 @@
           "クリック処理"
         ],
         "en": [
-          "inventory",
-          "click",
           "slot",
-          "inventory click",
           "slot click",
           "gui interaction",
           "item click",
@@ -6748,7 +5930,6 @@
       },
       "keywords": {
         "ja": [
-          "インベントリ",
           "閉じる",
           "画面",
           "画面を閉じる",
@@ -6758,8 +5939,6 @@
           "閉じる操作"
         ],
         "en": [
-          "inventory",
-          "close",
           "gui",
           "close inventory",
           "close screen",
@@ -6781,8 +5960,6 @@
       },
       "keywords": {
         "ja": [
-          "クリエイティブ",
-          "インベントリ",
           "アイテム操作",
           "クリエイティブ操作",
           "アイテム持ち上げ",
@@ -6791,8 +5968,6 @@
           "持ち物編集"
         ],
         "en": [
-          "creative",
-          "inventory",
           "item manipulation",
           "creative inventory",
           "pick up stack",
@@ -6814,23 +5989,16 @@
       },
       "keywords": {
         "ja": [
-          "インベントリ",
-          "ドラッグ",
           "スロット分配",
           "ドラッグ操作",
           "アイテム分配",
-          "複数スロット",
           "カーソルアイテム",
           "持ち物整理"
         ],
         "en": [
-          "inventory",
-          "drag",
-          "distribute",
           "drag item",
           "distribute stack",
           "multiple slots",
-          "cursor item",
           "inventory dragging"
         ]
       },
@@ -6847,18 +6015,14 @@
       },
       "keywords": {
         "ja": [
-          "インベントリ",
           "基底クラス",
           "持ち物画面",
-          "インベントリイベント",
           "親クラス",
           "基底イベント",
           "GUI"
         ],
         "en": [
-          "inventory",
           "base class",
-          "inventory event",
           "inventory screen",
           "parent class",
           "base event",
@@ -6880,7 +6044,6 @@
         "ja": [
           "インベントリ",
           "操作",
-          "基底クラス",
           "持ち物操作",
           "インベントリ相互作用",
           "GUI操作",
@@ -6888,9 +6051,6 @@
           "親クラス"
         ],
         "en": [
-          "inventory",
-          "interaction",
-          "base class",
           "inventory interaction",
           "gui interaction",
           "inventory contents",
@@ -6912,7 +6072,6 @@
       },
       "keywords": {
         "ja": [
-          "ホッパー",
           "アイテム輸送",
           "インベントリ間移動",
           "アイテム移送",
@@ -6922,10 +6081,8 @@
           "自動輸送"
         ],
         "en": [
-          "hopper",
           "item transfer",
           "inventory movement",
-          "move items",
           "item transport",
           "source inventory",
           "destination inventory",
@@ -6945,7 +6102,6 @@
       },
       "keywords": {
         "ja": [
-          "インベントリ",
           "開く",
           "画面",
           "画面を開く",
@@ -6955,8 +6111,6 @@
           "開く操作"
         ],
         "en": [
-          "inventory",
-          "open",
           "gui",
           "open inventory",
           "open screen",
@@ -6978,21 +6132,14 @@
       },
       "keywords": {
         "ja": [
-          "ホッパー",
-          "ホッパー付きトロッコ",
           "アイテム回収",
           "自動回収",
-          "落ちているアイテム",
           "アイテム吸引",
           "吸い込み",
           "ドロップ回収"
         ],
         "en": [
-          "hopper",
-          "hopper minecart",
-          "pickup",
           "automatic pickup",
-          "dropped item",
           "collect drops",
           "hopper collection",
           "item suction"
@@ -7010,25 +6157,17 @@
         "ja": "プレイヤーがクラフトグリッドの結果スロットからクラフト済みアイテムを取り出した時に呼び出される。"
       },
       "keywords": {
-        "ja": [
-          "クラフト",
-          "結果スロット",
-          "取り出し",
-          "完成品回収",
-          "クラフト済みアイテム",
-          "製作結果",
-          "アイテム取得",
-          "クラフトグリッド"
-        ],
         "en": [
-          "crafting",
-          "result slot",
           "take",
-          "crafted item",
           "collect crafted item",
           "crafting output",
-          "take result",
-          "crafting grid"
+          "take result"
+        ],
+        "ja": [
+          "完成品回収",
+          "製作結果",
+          "アイテム取得",
+          "完成品の受け取り"
         ]
       },
       "href": "io/papermc/paper/event/inventory/ItemCraftedEvent.html",
@@ -7054,8 +6193,6 @@
           "アイテム寿命"
         ],
         "en": [
-          "item",
-          "despawn",
           "timeout",
           "item expiration",
           "dropped item removal",
@@ -7079,7 +6216,6 @@
         "ja": [
           "アイテム結合",
           "スタック",
-          "合体",
           "アイテム合併",
           "ドロップ結合",
           "同じアイテム",
@@ -7087,8 +6223,6 @@
           "スタック統合"
         ],
         "en": [
-          "item",
-          "merge",
           "stack",
           "combine items",
           "stack merging",
@@ -7111,7 +6245,6 @@
         "ja": [
           "アイテム出現",
           "ドロップ",
-          "スポーン",
           "落下アイテム",
           "ドロップ生成",
           "アイテム生成",
@@ -7119,8 +6252,6 @@
           "出現処理"
         ],
         "en": [
-          "item",
-          "spawn",
           "drop",
           "dropped item",
           "item spawning",
@@ -7141,21 +6272,17 @@
         "ja": "CopperGolemなどのアイテム運搬エンティティが、持っているアイテムを運搬先のコンテナに入れるべきか確認するときに呼び出される。プラグインはCopperGolemの仕分け動作を上書きできる。1回の操作で、コンテナを開く前と、アイテムを追加してコンテナを閉じる前の計2回呼び出されることがある。"
       },
       "keywords": {
-        "ja": [
-          "銅ゴーレム",
-          "アイテム運搬",
-          "仕分け",
-          "コンテナ",
-          "収納先",
-          "アイテム分類"
-        ],
         "en": [
           "copper golem",
           "item transport",
-          "sorting",
-          "destination container",
           "item storage",
-          "held item"
+          "custom sorting rules"
+        ],
+        "ja": [
+          "銅ゴーレム",
+          "収納先",
+          "アイテム分類",
+          "収納可否の判定"
         ]
       },
       "href": "io/papermc/paper/event/entity/ItemTransportingEntitySortEvent.html",
@@ -7177,7 +6304,6 @@
           "運搬先",
           "搬入先",
           "取り出し元",
-          "預け先",
           "輸送対象の確認"
         ],
         "en": [
@@ -7204,7 +6330,6 @@
       },
       "keywords": {
         "ja": [
-          "葉",
           "自然消滅",
           "崩壊",
           "葉っぱ",
@@ -7214,8 +6339,6 @@
           "自然崩壊"
         ],
         "en": [
-          "leaves",
-          "decay",
           "leaf decay",
           "decaying leaves",
           "natural decay",
@@ -7236,8 +6359,6 @@
       },
       "keywords": {
         "ja": [
-          "落雷",
-          "雷",
           "天候",
           "雷撃",
           "稲妻",
@@ -7246,10 +6367,7 @@
           "落雷地点"
         ],
         "en": [
-          "lightning",
-          "strike",
           "weather",
-          "lightning strike",
           "lightning bolt",
           "thunderbolt",
           "strike location",
@@ -7269,8 +6387,6 @@
       },
       "keywords": {
         "ja": [
-          "残留ポーション",
-          "着弾",
           "範囲効果",
           "残留効果",
           "効果雲",
@@ -7279,14 +6395,10 @@
           "範囲効果雲"
         ],
         "en": [
-          "lingering potion",
           "impact",
-          "area effect",
           "lingering effect",
-          "effect cloud",
           "potion impact",
-          "thrown potion",
-          "area effect cloud"
+          "thrown potion"
         ]
       },
       "href": "org/bukkit/event/entity/LingeringPotionSplashEvent.html",
@@ -7302,9 +6414,6 @@
       },
       "keywords": {
         "ja": [
-          "ラマ",
-          "キャラバン",
-          "参加",
           "隊列",
           "ラマの列",
           "隊列参加",
@@ -7312,11 +6421,7 @@
           "追従開始"
         ],
         "en": [
-          "llama",
-          "caravan",
-          "join",
           "llama train",
-          "join caravan",
           "caravan entry",
           "llama following",
           "caravan formation"
@@ -7335,8 +6440,6 @@
       },
       "keywords": {
         "ja": [
-          "ラマ",
-          "キャラバン",
           "離脱",
           "隊列",
           "ラマの列",
@@ -7345,11 +6448,7 @@
           "追従終了"
         ],
         "en": [
-          "llama",
-          "caravan",
-          "leave",
           "llama train",
-          "leave caravan",
           "caravan departure",
           "stop following",
           "caravan exit"
@@ -7369,23 +6468,18 @@
       "keywords": {
         "ja": [
           "プロファイル検索",
-          "Mojang",
           "キャッシュ",
           "プロフィール検索",
           "プロファイル照会",
           "検索完了",
-          "アカウント照会",
-          "Mojang API"
+          "アカウント照会"
         ],
         "en": [
-          "profile",
-          "lookup",
           "cache",
           "profile search",
           "profile query",
           "lookup result",
-          "account lookup",
-          "mojang api"
+          "account lookup"
         ]
       },
       "href": "com/destroystokyo/paper/event/profile/LookupProfileEvent.html",
@@ -7402,8 +6496,6 @@
       "keywords": {
         "ja": [
           "戦利品補充",
-          "ルートテーブル",
-          "インベントリ",
           "再補充",
           "戦利品再生成",
           "アイテム補給",
@@ -7411,9 +6503,6 @@
           "コンテナ補充"
         ],
         "en": [
-          "loot",
-          "replenish",
-          "inventory",
           "refill loot",
           "loot replenishment",
           "restock inventory",
@@ -7434,8 +6523,6 @@
       "keywords": {
         "ja": [
           "戦利品生成",
-          "ルートテーブル",
-          "インベントリ",
           "ルート生成",
           "戦利品作成",
           "コンテナ戦利品",
@@ -7444,13 +6531,10 @@
         ],
         "en": [
           "loot generation",
-          "loot table",
-          "inventory",
           "generate loot",
           "inventory loot",
           "container loot",
-          "loot creation",
-          "inventory holder"
+          "loot creation"
         ]
       },
       "href": "org/bukkit/event/world/LootGenerateEvent.html",
@@ -7467,8 +6551,6 @@
       "keywords": {
         "ja": [
           "地図",
-          "初期化",
-          "マップ",
           "地図初期化",
           "マップ初期化",
           "地図準備",
@@ -7476,8 +6558,6 @@
           "初期化完了"
         ],
         "en": [
-          "map",
-          "initialize",
           "map initialization",
           "initialize map",
           "map setup",
@@ -7498,8 +6578,6 @@
       },
       "keywords": {
         "ja": [
-          "耕地",
-          "水分",
           "農業",
           "土壌水分",
           "湿り気",
@@ -7509,11 +6587,9 @@
         ],
         "en": [
           "farmland",
-          "moisture",
           "farming",
           "soil moisture",
           "hydration",
-          "moisture level",
           "farmland hydration",
           "soil dryness"
         ]
@@ -7531,17 +6607,12 @@
       },
       "keywords": {
         "ja": [
-          "音符ブロック",
-          "音",
           "演奏",
           "ノートブロック",
-          "音符",
-          "音を鳴らす",
           "楽器",
           "音階"
         ],
         "en": [
-          "note block",
           "sound",
           "music",
           "play note",
@@ -7564,8 +6635,6 @@
       },
       "keywords": {
         "ja": [
-          "サーバーリスト",
-          "Ping",
           "MOTD",
           "サーバー一覧",
           "サーバーステータス",
@@ -7574,8 +6643,6 @@
           "Ping応答"
         ],
         "en": [
-          "server list",
-          "ping",
           "motd",
           "server status",
           "status ping",
@@ -7597,9 +6664,7 @@
       },
       "keywords": {
         "ja": [
-          "ファントム",
           "スポーン前",
-          "疲労",
           "寝不足",
           "不眠",
           "ファントム出現",
@@ -7607,14 +6672,11 @@
           "睡眠不足"
         ],
         "en": [
-          "phantom",
-          "pre spawn",
           "exhaustion",
           "insomnia",
           "sleep deprivation",
           "phantom spawning",
-          "before phantom spawn",
-          "exhausted player"
+          "before phantom spawn"
         ]
       },
       "href": "com/destroystokyo/paper/event/entity/PhantomPreSpawnEvent.html",
@@ -7630,20 +6692,14 @@
       },
       "keywords": {
         "ja": [
-          "ピグリン",
-          "物々交換",
           "交易",
-          "交換",
           "バーター",
           "物資交換",
           "ピグリン交換",
           "交換処理"
         ],
         "en": [
-          "piglin",
-          "barter",
           "trade",
-          "bartering",
           "piglin trading",
           "exchange items",
           "piglin exchange",
@@ -7664,7 +6720,6 @@
       "keywords": {
         "ja": [
           "豚",
-          "落雷",
           "雷撃",
           "ぶた",
           "豚の落雷",
@@ -7673,13 +6728,9 @@
           "稲妻"
         ],
         "en": [
-          "pig",
-          "lightning",
-          "zap",
           "struck pig",
           "pig lightning",
           "lightning strike",
-          "pig zap",
           "lightning hit"
         ]
       },
@@ -7698,7 +6749,6 @@
         "ja": [
           "ゾンビピッグマン",
           "ゾンビ豚",
-          "怒り",
           "敵対",
           "激怒",
           "怒らせる",
@@ -7706,11 +6756,8 @@
           "怒り状態"
         ],
         "en": [
-          "pig zombie",
           "zombie pigman",
-          "anger",
           "angered pigman",
-          "pig zombie anger",
           "hostility",
           "anger target",
           "become angry"
@@ -7729,7 +6776,6 @@
       },
       "keywords": {
         "ja": [
-          "進捗",
           "条件達成",
           "クライテリア",
           "進捗条件",
@@ -7739,9 +6785,6 @@
           "条件クリア"
         ],
         "en": [
-          "advancement",
-          "criterion",
-          "grant",
           "advancement criteria",
           "criterion granted",
           "partial advancement",
@@ -7761,21 +6804,17 @@
         "ja": "未達成の進捗条件がプレイヤーに付与される前に発生し、その条件と対応する進捗を取得できるキャンセル可能なイベント。"
       },
       "keywords": {
+        "en": [
+          "advancement criteria",
+          "criterion granted",
+          "criterion progress",
+          "criterion award"
+        ],
         "ja": [
-          "進捗",
           "条件達成",
-          "進捗条件",
           "条件付与",
           "達成条件",
           "クライテリア"
-        ],
-        "en": [
-          "advancement",
-          "criterion",
-          "grant",
-          "advancement criteria",
-          "criterion granted",
-          "criterion progress"
         ]
       },
       "href": "org/bukkit/event/player/PlayerAdvancementCriterionGrantEvent.html",
@@ -7790,16 +6829,12 @@
       },
       "keywords": {
         "ja": [
-          "進捗",
-          "達成条件",
           "条件取り消し",
           "条件の復元",
           "進捗状況",
           "達成条件の剥奪"
         ],
         "en": [
-          "advancement",
-          "criterion",
           "revoke criterion",
           "restore criterion",
           "advancement progress",
@@ -7829,14 +6864,10 @@
           "進捗獲得"
         ],
         "en": [
-          "advancement",
           "complete",
-          "criteria",
           "advancement completion",
           "finish advancement",
-          "all criteria",
-          "achievement completion",
-          "advancement done"
+          "achievement completion"
         ]
       },
       "href": "org/bukkit/event/player/PlayerAdvancementDoneEvent.html",
@@ -7852,7 +6883,6 @@
       },
       "keywords": {
         "ja": [
-          "進捗",
           "達成取り消し",
           "進捗剥奪",
           "未達成",
@@ -7860,7 +6890,6 @@
           "達成状態"
         ],
         "en": [
-          "advancement",
           "revocation",
           "advancement progress",
           "revoke advancement",
@@ -7883,8 +6912,6 @@
         "ja": [
           "放置",
           "離席",
-          "AFK",
-          "復帰",
           "無操作",
           "留守",
           "離席状態",
@@ -7893,7 +6920,6 @@
           "離席から戻る"
         ],
         "en": [
-          "afk",
           "away",
           "idle",
           "return",
@@ -7917,8 +6943,6 @@
       },
       "keywords": {
         "ja": [
-          "プレイヤー",
-          "アニメーション",
           "動作",
           "動作表示",
           "プレイヤー動作",
@@ -7927,13 +6951,10 @@
           "プレイヤー演出"
         ],
         "en": [
-          "player",
-          "animation",
-          "player animation",
           "animation playback",
           "player action",
-          "animation event",
-          "animation change"
+          "animation change",
+          "arm swing"
         ]
       },
       "href": "org/bukkit/event/player/PlayerAnimationEvent.html",
@@ -7948,25 +6969,19 @@
         "ja": "プレイヤーの防具スロットの装備変更をサーバーが検出したときに呼び出される。すべての装備変更を扱うには EntityEquipmentChangedEvent を使う。"
       },
       "keywords": {
+        "en": [
+          "change armor",
+          "equip armor",
+          "armor swap",
+          "armor slot update"
+        ],
         "ja": [
           "防具変更",
-          "装備",
           "鎧",
           "防具交換",
           "着替え",
-          "防具スロット",
           "防具装着",
           "防具脱着"
-        ],
-        "en": [
-          "armor",
-          "equipment",
-          "change",
-          "armor change",
-          "change armor",
-          "armor slot",
-          "equip armor",
-          "armor swap"
         ]
       },
       "href": "com/destroystokyo/paper/event/player/PlayerArmorChangeEvent.html",
@@ -7985,16 +7000,13 @@
           "防具立て",
           "装備交換",
           "アイテム操作",
-          "アーマースタンド",
           "防具立て操作",
           "アイテム配置",
           "装備取得",
           "装備の入れ替え"
         ],
         "en": [
-          "armor stand",
           "equipment",
-          "swap",
           "armor stand interaction",
           "manipulate armor stand",
           "place equipment",
@@ -8025,8 +7037,6 @@
           "腕の動作"
         ],
         "en": [
-          "arm swing",
-          "swing",
           "animation",
           "swing arm",
           "hand swing",
@@ -8052,19 +7062,12 @@
       },
       "keywords": {
         "ja": [
-          "攻撃",
-          "クールダウン",
-          "リセット",
           "攻撃間隔",
-          "攻撃強度",
           "攻撃ゲージ",
           "再攻撃待機",
           "攻撃リセット"
         ],
         "en": [
-          "attack",
-          "cooldown",
-          "reset",
           "attack interval",
           "attack strength",
           "attack meter",
@@ -8085,7 +7088,6 @@
       },
       "keywords": {
         "ja": [
-          "ベッド",
           "就寝",
           "寝る",
           "ベッドに入る",
@@ -8095,9 +7097,7 @@
           "就寝操作"
         ],
         "en": [
-          "bed",
           "sleep",
-          "enter",
           "enter bed",
           "go to sleep",
           "bed entry",
@@ -8118,7 +7118,6 @@
       },
       "keywords": {
         "ja": [
-          "ベッド",
           "就寝失敗",
           "入れない",
           "寝られない",
@@ -8128,7 +7127,6 @@
           "入床失敗"
         ],
         "en": [
-          "bed",
           "sleep failure",
           "cannot sleep",
           "bed entry failure",
@@ -8149,19 +7147,14 @@
       },
       "keywords": {
         "ja": [
-          "ベッド",
           "起床",
-          "出る",
-          "ベッドから出る",
           "目覚める",
           "睡眠終了",
           "起きる",
           "離床"
         ],
         "en": [
-          "bed",
           "wake",
-          "leave",
           "leave bed",
           "wake up",
           "end sleep",
@@ -8182,7 +7175,6 @@
       },
       "keywords": {
         "ja": [
-          "本",
           "制限超過",
           "ページ",
           "大きすぎる本",
@@ -8192,7 +7184,6 @@
           "制限回避"
         ],
         "en": [
-          "book",
           "limit",
           "oversized",
           "oversized book",
@@ -8215,8 +7206,6 @@
       },
       "keywords": {
         "ja": [
-          "バケツ",
-          "空にする",
           "流す",
           "バケツ使用",
           "中身を出す",
@@ -8225,8 +7214,6 @@
           "バケツの排出"
         ],
         "en": [
-          "bucket",
-          "empty",
           "pour",
           "empty bucket",
           "use bucket",
@@ -8248,9 +7235,6 @@
       },
       "keywords": {
         "ja": [
-          "バケツ",
-          "捕獲",
-          "エンティティ",
           "生き物をすくう",
           "バケツ捕獲",
           "生物回収",
@@ -8258,11 +7242,8 @@
           "エンティティ回収"
         ],
         "en": [
-          "bucket",
           "capture",
-          "entity",
           "capture in bucket",
-          "bucket entity",
           "scoop entity",
           "collect creature",
           "entity capture"
@@ -8281,8 +7262,6 @@
       },
       "keywords": {
         "ja": [
-          "バケツ",
-          "操作",
           "バケツ使用",
           "バケツ操作",
           "中身操作",
@@ -8290,7 +7269,6 @@
           "バケツアクション"
         ],
         "en": [
-          "bucket",
           "interaction",
           "bucket use",
           "use bucket",
@@ -8313,18 +7291,13 @@
       },
       "keywords": {
         "ja": [
-          "バケツ",
           "汲む",
-          "満たす",
           "水汲み",
           "汲み取り",
           "液体回収",
-          "バケツを満たす",
           "バケツ補充"
         ],
         "en": [
-          "bucket",
-          "fill",
           "scoop",
           "fill bucket",
           "scoop liquid",
@@ -8351,23 +7324,17 @@
       },
       "keywords": {
         "ja": [
-          "バケツ",
-          "魚",
           "捕獲",
           "魚すくい",
           "魚入りバケツ",
           "バケツで魚を捕る",
-          "魚の回収",
-          "魚を入れる"
+          "魚の回収"
         ],
         "en": [
-          "bucket",
-          "fish",
           "capture",
           "catch fish",
           "fish bucket",
           "scoop fish",
-          "bucket fish",
           "fish capture"
         ]
       },
@@ -8384,7 +7351,6 @@
       },
       "keywords": {
         "ja": [
-          "バンドル",
           "アイテム選択",
           "選択スロット",
           "選択中のアイテム",
@@ -8392,7 +7358,6 @@
           "以前の選択"
         ],
         "en": [
-          "bundle",
           "item selection",
           "selected slot",
           "selected item",
@@ -8413,7 +7378,6 @@
       },
       "keywords": {
         "ja": [
-          "ビーコン",
           "効果選択",
           "効果変更",
           "ビーコン設定",
@@ -8423,8 +7387,6 @@
           "ポーション効果選択"
         ],
         "en": [
-          "beacon",
-          "effect",
           "selection",
           "beacon configuration",
           "set beacon effect",
@@ -8447,8 +7409,6 @@
       "keywords": {
         "ja": [
           "利き手",
-          "メインハンド",
-          "左右",
           "右利き",
           "左利き",
           "主腕",
@@ -8456,9 +7416,7 @@
           "クライアント設定"
         ],
         "en": [
-          "main hand",
           "handedness",
-          "client settings",
           "right handed",
           "left handed",
           "dominant hand",
@@ -8491,9 +7449,7 @@
         "en": [
           "world change",
           "switch world",
-          "another world",
           "world switch",
-          "changed world",
           "after world transfer",
           "world transition"
         ]
@@ -8511,9 +7467,6 @@
       },
       "keywords": {
         "ja": [
-          "プラグインチャンネル",
-          "登録",
-          "登録解除",
           "チャンネル登録",
           "チャンネル解除",
           "通信チャンネル",
@@ -8521,7 +7474,6 @@
           "登録状態"
         ],
         "en": [
-          "plugin channel",
           "register",
           "unregister",
           "channel registration",
@@ -8550,8 +7502,6 @@
       },
       "keywords": {
         "ja": [
-          "チャット",
-          "コマンド",
           "メッセージ",
           "プレイヤー発言",
           "チャット情報",
@@ -8560,10 +7510,8 @@
           "チャット入力"
         ],
         "en": [
-          "chat",
           "command",
           "message",
-          "player chat",
           "chat input",
           "command input",
           "conversation",
@@ -8589,7 +7537,6 @@
       "keywords": {
         "ja": [
           "チャット補完",
-          "タブ補完",
           "候補",
           "チャット入力候補",
           "入力補完",
@@ -8598,7 +7545,6 @@
           "補完結果"
         ],
         "en": [
-          "chat",
           "tab completion",
           "suggestions",
           "chat autocomplete",
@@ -8622,8 +7568,6 @@
       "keywords": {
         "ja": [
           "チャンク受信",
-          "クライアント",
-          "パケット",
           "チャンク送信",
           "クライアントロード",
           "地形受信",
@@ -8631,9 +7575,6 @@
           "クライアント向け処理"
         ],
         "en": [
-          "chunk",
-          "client",
-          "packet",
           "chunk delivery",
           "client chunk load",
           "receive chunk",
@@ -8654,9 +7595,6 @@
       },
       "keywords": {
         "ja": [
-          "チャンクアンロード",
-          "クライアント",
-          "パケット",
           "チャンク解放通知",
           "クライアントアンロード",
           "地形解放",
@@ -8664,11 +7602,7 @@
           "クライアント向け処理"
         ],
         "en": [
-          "chunk unload",
-          "client",
-          "packet",
           "client chunk unload",
-          "unload packet",
           "receive unload",
           "client-side unloading",
           "chunk removal packet"
@@ -8687,14 +7621,12 @@
       },
       "keywords": {
         "ja": [
-          "ワールド読み込み完了",
           "地形読み込み",
           "タイムアウト",
           "読み込み通知",
           "ロード完了",
           "クライアント準備完了",
-          "参加後",
-          "リスポーン後"
+          "参加後"
         ],
         "en": [
           "world loaded",
@@ -8720,9 +7652,7 @@
       },
       "keywords": {
         "ja": [
-          "クライアント設定",
           "オプション",
-          "変更",
           "設定変更",
           "クライアントオプション",
           "プレイヤー設定",
@@ -8730,11 +7660,7 @@
           "オプション変更"
         ],
         "en": [
-          "client settings",
-          "options",
-          "change",
           "settings change",
-          "client options",
           "player preferences",
           "settings notification",
           "option update"
@@ -8753,9 +7679,7 @@
       },
       "keywords": {
         "ja": [
-          "行動規範",
           "ルール",
-          "送信",
           "サーバールール",
           "規約表示",
           "行動ルール",
@@ -8763,9 +7687,7 @@
           "ルール送信"
         ],
         "en": [
-          "code of conduct",
           "rules",
-          "send",
           "server rules",
           "conduct rules",
           "rules display",
@@ -8796,14 +7718,11 @@
           "実行コマンド"
         ],
         "en": [
-          "command",
-          "preprocess",
           "rewrite",
           "before command",
           "command input",
           "command processing",
-          "preprocessing",
-          "player command"
+          "preprocessing"
         ]
       },
       "href": "org/bukkit/event/player/PlayerCommandPreprocessEvent.html",
@@ -8830,9 +7749,7 @@
         ],
         "en": [
           "command list",
-          "send",
           "display",
-          "available commands",
           "command suggestions",
           "command visibility",
           "client commands",
@@ -8852,7 +7769,6 @@
       },
       "keywords": {
         "ja": [
-          "切断",
           "接続終了",
           "ログイン前",
           "接続クローズ",
@@ -8863,7 +7779,6 @@
         ],
         "en": [
           "disconnect",
-          "connection close",
           "prelogin",
           "close connection",
           "connection ended",
@@ -8896,7 +7811,6 @@
         ],
         "en": [
           "initial configuration",
-          "connection",
           "first configuration",
           "connection setup",
           "start configuration",
@@ -8917,9 +7831,7 @@
       },
       "keywords": {
         "ja": [
-          "再設定",
           "再構成",
-          "設定フェーズ",
           "接続再設定",
           "構成やり直し",
           "再設定完了待ち",
@@ -8928,7 +7840,6 @@
         ],
         "en": [
           "reconfiguration",
-          "configuration",
           "reconfigure connection",
           "reconfigure player",
           "configuration wait",
@@ -8960,11 +7871,9 @@
         ],
         "en": [
           "login validation",
-          "connection",
           "configuration",
           "allow login",
           "login check",
-          "can login",
           "validate connection",
           "login eligibility"
         ]
@@ -8982,22 +7891,18 @@
       },
       "keywords": {
         "ja": [
-          "カスタムクリック",
           "アクション",
           "カスタムアクション",
           "クリック操作",
           "アクション通知",
-          "プレイヤー操作",
-          "クリックイベント"
+          "プレイヤー操作"
         ],
         "en": [
-          "custom click",
           "action",
           "custom action",
           "click action",
           "action notification",
-          "player action",
-          "click event"
+          "player action"
         ]
       },
       "abstract": true,
@@ -9019,8 +7924,6 @@
       },
       "keywords": {
         "ja": [
-          "カスタムアクション",
-          "フォーム送信",
           "クリック",
           "カスタムクリック",
           "チャットアクション",
@@ -9029,10 +7932,6 @@
           "送信後"
         ],
         "en": [
-          "custom action",
-          "form submission",
-          "click",
-          "custom click",
           "chat action",
           "form action",
           "execute action",
@@ -9054,7 +7953,6 @@
         "ja": [
           "死亡",
           "倒される",
-          "プレイヤー",
           "プレイヤー死亡",
           "死ぬ",
           "死亡処理",
@@ -9062,14 +7960,10 @@
           "デス"
         ],
         "en": [
-          "death",
-          "player",
           "killed",
-          "player death",
           "dying player",
           "death handling",
-          "player killed",
-          "death event"
+          "player killed"
         ]
       },
       "href": "org/bukkit/event/entity/PlayerDeathEvent.html",
@@ -9085,17 +7979,14 @@
       },
       "keywords": {
         "ja": [
-          "睡眠",
           "夜スキップ",
           "嵐スキップ",
-          "深い睡眠",
           "睡眠人数",
           "夜を飛ばす",
           "嵐を飛ばす",
           "睡眠カウント"
         ],
         "en": [
-          "deep sleep",
           "skip night",
           "skip storm",
           "sleeping count",
@@ -9128,10 +8019,7 @@
           "アイテム放出"
         ],
         "en": [
-          "drop",
-          "item",
           "throw",
-          "drop item",
           "discard item",
           "inventory drop",
           "throw item",
@@ -9151,9 +8039,6 @@
       },
       "keywords": {
         "ja": [
-          "本と羽ペン",
-          "編集",
-          "署名",
           "本編集",
           "ページ編集",
           "本の署名",
@@ -9161,10 +8046,7 @@
           "文章編集"
         ],
         "en": [
-          "book and quill",
-          "edit",
           "sign",
-          "edit book",
           "edit pages",
           "sign book",
           "writing",
@@ -9184,19 +8066,13 @@
       },
       "keywords": {
         "ja": [
-          "卵",
           "投げる",
-          "孵化",
           "卵投げ",
-          "投げた卵",
           "孵化判定",
           "卵の孵化",
           "孵る"
         ],
         "en": [
-          "egg",
-          "throw",
-          "hatch",
           "thrown egg",
           "egg throwing",
           "hatching check",
@@ -9217,8 +8093,6 @@
       },
       "keywords": {
         "ja": [
-          "エリトラ",
-          "花火",
           "加速",
           "花火加速",
           "ロケット花火",
@@ -9227,9 +8101,6 @@
           "エリトラ推進"
         ],
         "en": [
-          "elytra",
-          "firework",
-          "boost",
           "firework boost",
           "firework rocket",
           "flight boost",
@@ -9250,7 +8121,6 @@
       },
       "keywords": {
         "ja": [
-          "プレイヤー",
           "基底クラス",
           "プレイヤーイベント",
           "ユーザー",
@@ -9259,9 +8129,7 @@
           "プレイヤー操作"
         ],
         "en": [
-          "player",
           "base class",
-          "player event",
           "user",
           "parent class",
           "base event",
@@ -9282,9 +8150,7 @@
       },
       "keywords": {
         "ja": [
-          "経験値",
           "獲得",
-          "変化",
           "経験値変化",
           "経験値取得",
           "経験値増減",
@@ -9292,9 +8158,6 @@
           "XP変化"
         ],
         "en": [
-          "experience",
-          "xp",
-          "change",
           "experience change",
           "gain experience",
           "experience amount",
@@ -9314,25 +8177,19 @@
         "ja": "プレイヤーの経験値のクールダウンが変更される時に呼び出される。"
       },
       "keywords": {
+        "en": [
+          "experience delay",
+          "xp pickup delay",
+          "xp collection interval",
+          "xp cooldown"
+        ],
         "ja": [
-          "経験値",
-          "クールダウン",
           "待機時間",
           "経験値待機",
           "経験値取得間隔",
           "経験値回収待ち",
           "クールダウン変更",
           "経験値取得制限"
-        ],
-        "en": [
-          "experience",
-          "xp",
-          "cooldown",
-          "experience delay",
-          "xp pickup delay",
-          "experience cooldown",
-          "cooldown change",
-          "xp collection interval"
         ]
       },
       "href": "org/bukkit/event/player/PlayerExpCooldownChangeEvent.html",
@@ -9350,7 +8207,6 @@
         "ja": [
           "移動失敗",
           "移動阻止",
-          "プレイヤー",
           "移動拒否",
           "移動できない",
           "位置補正",
@@ -9358,9 +8214,7 @@
           "移動制限"
         ],
         "en": [
-          "movement",
           "failed move",
-          "prevented",
           "movement rejection",
           "blocked movement",
           "move failure",
@@ -9381,7 +8235,6 @@
       },
       "keywords": {
         "ja": [
-          "釣り",
           "釣竿",
           "魚",
           "魚釣り",
@@ -9391,9 +8244,7 @@
           "釣果"
         ],
         "en": [
-          "fishing",
           "fishing rod",
-          "fish",
           "angling",
           "catch fish",
           "rod fishing",
@@ -9414,7 +8265,6 @@
       },
       "keywords": {
         "ja": [
-          "植木鉢",
           "置く",
           "取り出す",
           "植木鉢操作",
@@ -9424,8 +8274,6 @@
           "植木鉢の中身"
         ],
         "en": [
-          "flower pot",
-          "place",
           "take",
           "pot interaction",
           "potted item",
@@ -9447,7 +8295,6 @@
       },
       "keywords": {
         "ja": [
-          "ゲームモード",
           "モード変更",
           "モード切替",
           "サバイバル",
@@ -9456,9 +8303,6 @@
           "スペクテイター"
         ],
         "en": [
-          "game mode",
-          "gamemode",
-          "change",
           "switch game mode",
           "survival",
           "creative",
@@ -9479,7 +8323,6 @@
       },
       "keywords": {
         "ja": [
-          "ハンドシェイク",
           "接続",
           "初期通信",
           "プレイヤーハンドシェイク",
@@ -9488,9 +8331,7 @@
           "通信開始"
         ],
         "en": [
-          "handshake",
           "connection",
-          "player handshake",
           "initial communication",
           "connection request",
           "server connection",
@@ -9510,17 +8351,14 @@
       },
       "keywords": {
         "ja": [
-          "収穫",
           "作物",
           "右クリック",
           "刈り取り",
           "作物回収",
           "壊さず収穫",
-          "収穫アイテム",
-          "収穫操作"
+          "収穫アイテム"
         ],
         "en": [
-          "harvest",
           "crop",
           "pick",
           "harvesting",
@@ -9543,7 +8381,6 @@
       },
       "keywords": {
         "ja": [
-          "非表示",
           "隠す",
           "可視性",
           "エンティティを隠す",
@@ -9553,10 +8390,7 @@
           "プレイヤーから隠す"
         ],
         "en": [
-          "hide",
           "visibility",
-          "entity",
-          "hide entity",
           "hidden entity",
           "visibility removal",
           "conceal entity",
@@ -9582,19 +8416,15 @@
       "keywords": {
         "ja": [
           "キー入力",
-          "操作",
           "入力更新",
-          "操作入力",
           "入力状態",
           "キー状態",
           "プレイヤー入力",
           "入力変更"
         ],
         "en": [
-          "input",
           "key",
           "controls",
-          "player input",
           "input state",
           "key state",
           "control input",
@@ -9614,9 +8444,6 @@
       },
       "keywords": {
         "ja": [
-          "書見台",
-          "本",
-          "挿入",
           "本を置く",
           "書見台に置く",
           "本の設置",
@@ -9624,9 +8451,6 @@
           "読書台"
         ],
         "en": [
-          "lectern",
-          "book",
-          "insert",
           "place book",
           "insert book",
           "lectern insertion",
@@ -9648,8 +8472,6 @@
       "keywords": {
         "ja": [
           "エンティティ操作",
-          "右クリック",
-          "クリック位置",
           "対象クリック",
           "エンティティ右クリック",
           "相互作用",
@@ -9657,7 +8479,6 @@
           "クリック座標"
         ],
         "en": [
-          "entity",
           "right click",
           "click position",
           "click entity",
@@ -9681,7 +8502,6 @@
       "keywords": {
         "ja": [
           "エンティティ操作",
-          "右クリック",
           "対象クリック",
           "エンティティ右クリック",
           "相互作用",
@@ -9689,8 +8509,6 @@
           "クリック操作"
         ],
         "en": [
-          "entity",
-          "interact",
           "right click",
           "click entity",
           "entity interaction",
@@ -9712,9 +8530,7 @@
       },
       "keywords": {
         "ja": [
-          "操作",
           "クリック",
-          "空気",
           "両手",
           "プレイヤー操作",
           "クリック操作",
@@ -9723,10 +8539,7 @@
           "空中クリック"
         ],
         "en": [
-          "interact",
           "click",
-          "air",
-          "hand",
           "player interaction",
           "click action",
           "use item",
@@ -9747,7 +8560,6 @@
       },
       "keywords": {
         "ja": [
-          "インベントリ",
           "スロット変更",
           "内容変更",
           "所持品変更",
@@ -9757,14 +8569,10 @@
           "持ち物変化"
         ],
         "en": [
-          "inventory",
-          "slot",
-          "contents change",
           "inventory change",
           "slot update",
           "item change",
-          "contents update",
-          "inventory slot change"
+          "contents update"
         ]
       },
       "href": "io/papermc/paper/event/player/PlayerInventorySlotChangeEvent.html",
@@ -9784,13 +8592,10 @@
           "耐久度",
           "道具",
           "道具破損",
-          "壊れる",
           "耐久切れ",
-          "装備破損",
-          "アイテムが壊れる"
+          "装備破損"
         ],
         "en": [
-          "item break",
           "durability",
           "tool",
           "broken item",
@@ -9825,12 +8630,10 @@
         "en": [
           "eat",
           "drink",
-          "consume",
           "eating",
           "drinking",
           "finish consuming",
-          "food consumption",
-          "item consumption"
+          "food consumption"
         ]
       },
       "href": "org/bukkit/event/player/PlayerItemConsumeEvent.html",
@@ -9847,7 +8650,6 @@
       "keywords": {
         "ja": [
           "アイテム使用",
-          "クールダウン",
           "待機時間",
           "再使用待ち",
           "使用間隔",
@@ -9857,10 +8659,8 @@
         ],
         "en": [
           "item use",
-          "cooldown",
           "reuse delay",
           "use interval",
-          "item cooldown",
           "recharge time",
           "item delay"
         ]
@@ -9888,8 +8688,6 @@
           "アイテム耐久"
         ],
         "en": [
-          "durability",
-          "item damage",
           "wear",
           "durability loss",
           "tool wear",
@@ -9911,8 +8709,6 @@
       },
       "keywords": {
         "ja": [
-          "額縁",
-          "回転",
           "アイテム交換",
           "額縁操作",
           "額縁の中身",
@@ -9921,7 +8717,6 @@
           "向き変更"
         ],
         "en": [
-          "item frame",
           "rotate",
           "item change",
           "frame interaction",
@@ -9945,7 +8740,6 @@
       "keywords": {
         "ja": [
           "クールダウングループ",
-          "アイテム",
           "待機時間",
           "グループ待機",
           "共有クールダウン",
@@ -9955,9 +8749,6 @@
         ],
         "en": [
           "cooldown group",
-          "item",
-          "cooldown",
-          "group cooldown",
           "shared cooldown",
           "reuse delay",
           "recharge time",
@@ -9981,13 +8772,11 @@
           "ホットバー",
           "選択スロット",
           "手持ち変更",
-          "持つアイテム",
           "選択変更",
           "スロット切替",
           "手持ちスロット"
         ],
         "en": [
-          "held item",
           "hotbar",
           "selection",
           "switch held item",
@@ -10010,9 +8799,7 @@
       },
       "keywords": {
         "ja": [
-          "修繕",
           "耐久度回復",
-          "エンチャント",
           "修理",
           "メンディング",
           "道具修繕",
@@ -10020,11 +8807,9 @@
           "耐久回復"
         ],
         "en": [
-          "mending",
           "repair",
           "durability",
           "repair item",
-          "mending enchantment",
           "tool repair",
           "equipment repair",
           "restore durability"
@@ -10043,7 +8828,6 @@
       },
       "keywords": {
         "ja": [
-          "参加",
           "ログイン",
           "入室",
           "サーバー参加",
@@ -10053,7 +8837,6 @@
           "プレイヤー入場"
         ],
         "en": [
-          "join",
           "login",
           "connect",
           "join server",
@@ -10076,9 +8859,7 @@
       },
       "keywords": {
         "ja": [
-          "ジャンプ",
           "跳躍",
-          "プレイヤー",
           "跳ぶ",
           "飛び跳ねる",
           "ジャンプ検知",
@@ -10086,11 +8867,7 @@
           "プレイヤー跳躍"
         ],
         "en": [
-          "jump",
           "leap",
-          "player",
-          "jumping",
-          "player jump",
           "jump detection",
           "leaping",
           "jump action"
@@ -10109,7 +8886,6 @@
       },
       "keywords": {
         "ja": [
-          "キック",
           "追放",
           "切断",
           "強制退出",
@@ -10119,7 +8895,6 @@
           "強制切断"
         ],
         "en": [
-          "kick",
           "disconnect",
           "forced departure",
           "server kick",
@@ -10141,9 +8916,7 @@
       },
       "keywords": {
         "ja": [
-          "飛び道具",
           "投射物",
-          "発射",
           "投げる",
           "投射物発射",
           "射出",
@@ -10151,8 +8924,6 @@
           "投射物を飛ばす"
         ],
         "en": [
-          "projectile",
-          "launch",
           "shoot",
           "throw projectile",
           "projectile launch",
@@ -10174,7 +8945,6 @@
       },
       "keywords": {
         "ja": [
-          "リード",
           "綱",
           "繋ぐ",
           "リードを付ける",
@@ -10184,11 +8954,9 @@
           "繋ぐ操作"
         ],
         "en": [
-          "leash",
           "lead",
           "tie",
           "attach lead",
-          "leash entity",
           "tether creature",
           "attach leash",
           "leashing action"
@@ -10207,9 +8975,7 @@
       },
       "keywords": {
         "ja": [
-          "書見台",
           "ページ変更",
-          "本",
           "ページ送り",
           "ページめくり",
           "読書",
@@ -10217,9 +8983,6 @@
           "ページ切替"
         ],
         "en": [
-          "lectern",
-          "page",
-          "book",
           "turn page",
           "page turn",
           "reading",
@@ -10239,7 +9002,6 @@
       },
       "keywords": {
         "ja": [
-          "経験値レベル",
           "レベルアップ",
           "変化",
           "レベル変化",
@@ -10249,13 +9011,10 @@
           "プレイヤーレベル"
         ],
         "en": [
-          "experience level",
           "level up",
           "xp",
-          "level change",
           "level decrease",
           "level gain",
-          "player level",
           "xp level"
         ]
       },
@@ -10282,8 +9041,6 @@
         ],
         "en": [
           "server links",
-          "links",
-          "send",
           "link list",
           "server navigation",
           "display links",
@@ -10304,7 +9061,6 @@
       },
       "keywords": {
         "ja": [
-          "言語",
           "ロケール",
           "クライアント設定",
           "言語変更",
@@ -10315,13 +9071,10 @@
         ],
         "en": [
           "language",
-          "locale",
-          "client settings",
           "language change",
           "display language",
           "client language",
-          "switch language",
-          "locale change"
+          "switch language"
         ]
       },
       "href": "org/bukkit/event/player/PlayerLocaleChangeEvent.html",
@@ -10337,7 +9090,6 @@
       },
       "keywords": {
         "ja": [
-          "ログイン",
           "接続",
           "参加前",
           "ログイン試行",
@@ -10347,13 +9099,11 @@
           "ログイン初期処理"
         ],
         "en": [
-          "login",
           "connection",
           "before join",
           "login attempt",
           "join check",
           "incoming player",
-          "player login",
           "early login"
         ]
       },
@@ -10370,20 +9120,14 @@
       },
       "keywords": {
         "ja": [
-          "機織り機",
           "旗模様",
           "パターン",
-          "旗の模様",
           "模様選択",
           "旗デザイン",
           "機織り操作",
           "バナーパターン"
         ],
         "en": [
-          "loom",
-          "banner",
-          "pattern",
-          "banner pattern",
           "select pattern",
           "banner design",
           "loom interaction",
@@ -10403,18 +9147,13 @@
       },
       "keywords": {
         "ja": [
-          "白紙の地図",
           "地図作成",
-          "右クリック",
           "地図を埋める",
           "新規地図",
           "白地図使用",
-          "記入済みの地図",
           "地図使用"
         ],
         "en": [
-          "empty map",
-          "filled map",
           "right click",
           "fill map",
           "new map",
@@ -10436,9 +9175,7 @@
       },
       "keywords": {
         "ja": [
-          "移動",
           "位置",
-          "プレイヤー",
           "歩く",
           "歩行",
           "位置変更",
@@ -10446,11 +9183,8 @@
           "移動元と移動先"
         ],
         "en": [
-          "move",
-          "movement",
           "position",
           "walking",
-          "player movement",
           "location change",
           "move player",
           "movement destination"
@@ -10479,10 +9213,6 @@
           "エンティティ名"
         ],
         "en": [
-          "name",
-          "rename",
-          "mob",
-          "name entity",
           "mob name",
           "rename entity",
           "set name",
@@ -10502,9 +9232,7 @@
       },
       "keywords": {
         "ja": [
-          "自然スポーン",
           "モンスター",
-          "チャンク",
           "スポーン範囲",
           "湧き範囲",
           "スポーンチャンク",
@@ -10513,7 +9241,6 @@
         ],
         "en": [
           "natural spawn",
-          "monster",
           "chunk",
           "spawn area",
           "spawning range",
@@ -10536,8 +9263,6 @@
       "keywords": {
         "ja": [
           "看板編集",
-          "編集画面",
-          "開く",
           "看板入力",
           "看板編集開始",
           "テキスト編集",
@@ -10545,13 +9270,10 @@
           "看板GUI"
         ],
         "en": [
-          "sign",
           "edit",
-          "open",
           "sign input",
           "start sign editing",
           "edit sign text",
-          "editing menu",
           "sign editor"
         ]
       },
@@ -10570,7 +9292,6 @@
         "ja": [
           "ブロック選択",
           "中クリック",
-          "ホットバー",
           "ブロックを選ぶ",
           "対応アイテム",
           "ピックブロック",
@@ -10578,11 +9299,8 @@
           "ホットバー選択"
         ],
         "en": [
-          "pick block",
           "middle click",
-          "hotbar",
           "select block",
-          "corresponding item",
           "block picker",
           "slot swap",
           "hotbar selection"
@@ -10603,7 +9321,6 @@
         "ja": [
           "エンティティ選択",
           "中クリック",
-          "ホットバー",
           "対象を選ぶ",
           "対応アイテム",
           "ピックエンティティ",
@@ -10611,11 +9328,8 @@
           "ホットバー選択"
         ],
         "en": [
-          "pick entity",
           "middle click",
-          "hotbar",
           "select entity",
-          "corresponding item",
           "entity picker",
           "slot swap",
           "hotbar selection"
@@ -10634,9 +9348,7 @@
       },
       "keywords": {
         "ja": [
-          "アイテム選択",
           "中クリック",
-          "ホットバー",
           "アイテムを選ぶ",
           "アイテムピック",
           "所持品から選択",
@@ -10644,9 +9356,7 @@
           "ホットバー選択"
         ],
         "en": [
-          "pick item",
           "middle click",
-          "hotbar",
           "select item",
           "item picker",
           "inventory selection",
@@ -10668,18 +9378,13 @@
       },
       "keywords": {
         "ja": [
-          "矢",
-          "拾う",
           "回収",
-          "矢を拾う",
           "地面の矢",
           "矢回収",
           "拾得",
           "落ちた矢"
         ],
         "en": [
-          "arrow",
-          "pickup",
           "collect",
           "pick up arrow",
           "ground arrow",
@@ -10701,7 +9406,6 @@
       },
       "keywords": {
         "ja": [
-          "経験値オーブ",
           "拾う",
           "経験値回収",
           "経験値取得",
@@ -10711,9 +9415,6 @@
           "経験値吸収"
         ],
         "en": [
-          "experience orb",
-          "pickup",
-          "xp",
           "gain experience",
           "collect xp",
           "orb pickup",
@@ -10739,24 +9440,18 @@
       },
       "keywords": {
         "ja": [
-          "アイテム",
-          "拾う",
           "回収",
-          "アイテムを拾う",
           "拾得",
           "地面のアイテム",
           "拾い上げ",
           "ドロップ回収"
         ],
         "en": [
-          "item",
-          "pickup",
           "collect",
           "pick up item",
           "item collection",
           "ground item",
-          "collect drops",
-          "player pickup"
+          "collect drops"
         ]
       },
       "href": "org/bukkit/event/player/PlayerPickupItemEvent.html",
@@ -10772,8 +9467,6 @@
       },
       "keywords": {
         "ja": [
-          "ポータル",
-          "テレポート",
           "ワールド移動",
           "ゲート移動",
           "次元移動",
@@ -10782,8 +9475,6 @@
           "ワープ"
         ],
         "en": [
-          "portal",
-          "teleport",
           "world travel",
           "portal travel",
           "dimension travel",
@@ -10814,10 +9505,8 @@
           "復活後処理"
         ],
         "en": [
-          "respawn",
           "after respawn",
           "respawn complete",
-          "post respawn",
           "revival complete",
           "after revival",
           "post-respawn handling"
@@ -10851,8 +9540,6 @@
           "参加前"
         ],
         "en": [
-          "prelogin",
-          "login",
           "connection",
           "login attempt",
           "sign in",
@@ -10874,8 +9561,6 @@
       },
       "keywords": {
         "ja": [
-          "取引画面",
-          "独立した商人",
           "購入",
           "購入処理",
           "商人GUI",
@@ -10884,11 +9569,8 @@
           "商品購入"
         ],
         "en": [
-          "standalone merchant",
           "trading gui",
-          "purchase",
           "purchase item",
-          "merchant gui",
           "virtual merchant",
           "buy item",
           "merchant transaction"
@@ -10907,7 +9589,6 @@
       },
       "keywords": {
         "ja": [
-          "退出",
           "切断",
           "ログアウト",
           "サーバー退出",
@@ -10917,13 +9598,11 @@
           "退出通知"
         ],
         "en": [
-          "quit",
           "leave",
           "logout",
           "disconnect",
           "leave server",
           "server departure",
-          "player quit",
           "connection end",
           "quit notification"
         ]
@@ -10941,19 +9620,15 @@
       },
       "keywords": {
         "ja": [
-          "弓",
           "矢の選択",
           "発射準備",
           "矢の準備",
-          "使用する矢",
           "矢選び",
           "射撃準備",
           "弓矢選択"
         ],
         "en": [
-          "bow",
           "arrow selection",
-          "ready",
           "prepare arrow",
           "choose ammunition",
           "select arrow",
@@ -10974,9 +9649,7 @@
       },
       "keywords": {
         "ja": [
-          "レシピブック",
           "レシピ選択",
-          "クリック",
           "レシピを選ぶ",
           "クラフト候補",
           "レシピ選択操作",
@@ -10984,9 +9657,6 @@
           "レシピクリック"
         ],
         "en": [
-          "recipe book",
-          "recipe",
-          "click",
           "select recipe",
           "crafting suggestion",
           "recipe selection",
@@ -11007,9 +9677,7 @@
       },
       "keywords": {
         "ja": [
-          "レシピブック",
           "レシピ選択",
-          "クリック",
           "レシピを選ぶ",
           "クラフト候補",
           "レシピ選択操作",
@@ -11017,9 +9685,6 @@
           "レシピクリック"
         ],
         "en": [
-          "recipe book",
-          "recipe",
-          "click",
           "select recipe",
           "crafting suggestion",
           "recipe selection",
@@ -11040,7 +9705,6 @@
       },
       "keywords": {
         "ja": [
-          "レシピブック",
           "設定変更",
           "レシピ設定",
           "製作案内設定",
@@ -11049,8 +9713,6 @@
           "レシピ表示設定"
         ],
         "en": [
-          "recipe book",
-          "settings",
           "recipe settings",
           "crafting guide settings",
           "recipe book options",
@@ -11081,10 +9743,7 @@
           "レシピを覚える"
         ],
         "en": [
-          "recipe",
-          "discover",
           "unlock",
-          "new recipe",
           "learn recipe",
           "unlock crafting",
           "add recipe",
@@ -11104,8 +9763,6 @@
       },
       "keywords": {
         "ja": [
-          "プラグインチャンネル",
-          "登録",
           "チャンネル登録",
           "通信チャンネル",
           "プラグイン通信",
@@ -11113,9 +9770,6 @@
           "チャンネル購読"
         ],
         "en": [
-          "plugin channel",
-          "register",
-          "register channel",
           "messaging channel",
           "plugin messaging",
           "registration notification",
@@ -11135,7 +9789,6 @@
       },
       "keywords": {
         "ja": [
-          "リソースパック",
           "状態",
           "応答",
           "パック応答",
@@ -11145,14 +9798,10 @@
           "パック状態"
         ],
         "en": [
-          "resource pack",
-          "status",
           "response",
           "pack response",
           "pack receipt",
-          "resource pack request",
-          "pack processing",
-          "pack status"
+          "pack processing"
         ]
       },
       "href": "org/bukkit/event/player/PlayerResourcePackStatusEvent.html",
@@ -11168,7 +9817,6 @@
       },
       "keywords": {
         "ja": [
-          "リスポーン",
           "復活",
           "再出現",
           "生き返る",
@@ -11178,13 +9826,11 @@
           "プレイヤー復活"
         ],
         "en": [
-          "respawn",
           "revive",
           "return to life",
           "respawning",
           "player revival",
-          "respawn location",
-          "player respawn"
+          "respawn location"
         ]
       },
       "href": "org/bukkit/event/player/PlayerRespawnEvent.html",
@@ -11200,7 +9846,6 @@
       },
       "keywords": {
         "ja": [
-          "激流",
           "トライデント",
           "推進",
           "激流使用",
@@ -11210,7 +9855,6 @@
           "突進"
         ],
         "en": [
-          "riptide",
           "trident",
           "propel",
           "activate riptide",
@@ -11233,7 +9877,6 @@
       },
       "keywords": {
         "ja": [
-          "満員",
           "人数制限",
           "参加可否",
           "満員判定",
@@ -11243,7 +9886,6 @@
           "接続枠"
         ],
         "en": [
-          "server full",
           "player limit",
           "capacity",
           "full server check",
@@ -11266,8 +9908,6 @@
       },
       "keywords": {
         "ja": [
-          "スポーンエッグ",
-          "スポナー",
           "種類変更",
           "スポナー変更",
           "湧くモブ",
@@ -11276,9 +9916,6 @@
           "卵で変更"
         ],
         "en": [
-          "spawn egg",
-          "spawner",
-          "entity type",
           "change spawner",
           "spawned mob",
           "mob type",
@@ -11298,9 +9935,7 @@
       },
       "keywords": {
         "ja": [
-          "スポーン地点",
           "復活地点",
-          "設定",
           "復活位置",
           "再出現位置",
           "スポーン設定",
@@ -11310,11 +9945,9 @@
         "en": [
           "spawn point",
           "respawn location",
-          "set",
           "respawn point",
           "spawn location",
           "spawn configuration",
-          "set spawn",
           "revival location"
         ]
       },
@@ -11331,8 +9964,6 @@
       },
       "keywords": {
         "ja": [
-          "スポーンエッグ",
-          "試練のスポナー",
           "種類変更",
           "試練スポナー変更",
           "トライアルスポナー",
@@ -11341,9 +9972,6 @@
           "卵で変更"
         ],
         "en": [
-          "spawn egg",
-          "trial spawner",
-          "entity type",
           "change trial spawner",
           "trial spawning",
           "mob type",
@@ -11363,7 +9991,6 @@
       },
       "keywords": {
         "ja": [
-          "ハサミ",
           "カボチャ",
           "ハニカム",
           "ブロックを刈る",
@@ -11373,10 +10000,8 @@
           "ハニカム採取"
         ],
         "en": [
-          "shears",
           "pumpkin",
           "honeycomb",
-          "shear block",
           "use shears",
           "block shearing",
           "pumpkin carving",
@@ -11396,9 +10021,7 @@
       },
       "keywords": {
         "ja": [
-          "ハサミ",
           "毛刈り",
-          "エンティティ",
           "毛を刈る",
           "ハサミ使用",
           "刈り取り",
@@ -11406,10 +10029,6 @@
           "エンティティを刈る"
         ],
         "en": [
-          "shears",
-          "shear",
-          "entity",
-          "shear entity",
           "use shears",
           "shearing",
           "creature shearing",
@@ -11430,7 +10049,6 @@
       "keywords": {
         "ja": [
           "盾",
-          "無効化",
           "斧",
           "盾破り",
           "シールド無効",
@@ -11439,8 +10057,6 @@
           "攻撃による無効化"
         ],
         "en": [
-          "shield",
-          "disable",
           "axe",
           "shield break",
           "disable shield",
@@ -11462,9 +10078,7 @@
       },
       "keywords": {
         "ja": [
-          "表示",
           "可視性",
-          "エンティティ",
           "エンティティを見せる",
           "表示復帰",
           "再表示",
@@ -11472,10 +10086,7 @@
           "見えるようにする"
         ],
         "en": [
-          "show",
           "visibility",
-          "entity",
-          "show entity",
           "reveal entity",
           "visible again",
           "unhide entity",
@@ -11496,7 +10107,6 @@
       "keywords": {
         "ja": [
           "看板コマンド",
-          "クリック",
           "前処理",
           "看板クリック",
           "看板から実行",
@@ -11505,9 +10115,7 @@
           "看板コマンド前処理"
         ],
         "en": [
-          "sign command",
           "click",
-          "preprocess",
           "click sign",
           "command from sign",
           "trigger command",
@@ -11528,19 +10136,12 @@
       },
       "keywords": {
         "ja": [
-          "看板",
-          "開く",
-          "プレイヤー",
-          "看板を開く",
           "看板操作",
           "看板表示",
           "看板画面",
           "開く操作"
         ],
         "en": [
-          "sign",
-          "open",
-          "player",
           "open sign",
           "sign interaction",
           "sign display",
@@ -11561,9 +10162,7 @@
       },
       "keywords": {
         "ja": [
-          "スポーン地点",
           "復活地点",
-          "変更",
           "復活位置変更",
           "再出現位置",
           "スポーン設定変更",
@@ -11571,9 +10170,7 @@
           "スポーン更新"
         ],
         "en": [
-          "spawn point",
           "respawn location",
-          "change",
           "respawn point change",
           "spawn location",
           "change spawn",
@@ -11595,7 +10192,6 @@
       "keywords": {
         "ja": [
           "初期スポーン",
-          "参加",
           "スポーン地点",
           "参加時の位置",
           "初回出現",
@@ -11606,7 +10202,6 @@
         "en": [
           "initial spawn",
           "join",
-          "spawn location",
           "join location",
           "first appearance",
           "before spawn",
@@ -11627,20 +10222,15 @@
       },
       "keywords": {
         "ja": [
-          "スペクテイター",
           "観戦",
           "視点変更",
           "観戦開始",
           "視点切替",
-          "エンティティ視点",
           "観察対象",
           "カメラ切替"
         ],
         "en": [
-          "spectator",
           "spectate",
-          "start",
-          "start spectating",
           "view switch",
           "entity viewpoint",
           "spectator target",
@@ -11660,8 +10250,6 @@
       },
       "keywords": {
         "ja": [
-          "統計",
-          "増加",
           "実績記録",
           "統計更新",
           "記録増加",
@@ -11671,7 +10259,6 @@
         ],
         "en": [
           "statistics",
-          "increment",
           "statistic update",
           "increase statistic",
           "statistic value",
@@ -11692,7 +10279,6 @@
       },
       "keywords": {
         "ja": [
-          "石切台",
           "レシピ選択",
           "石切り台",
           "石加工",
@@ -11701,8 +10287,6 @@
           "レシピを選ぶ"
         ],
         "en": [
-          "stonecutter",
-          "recipe",
           "selection",
           "stone cutting",
           "stone processing",
@@ -11723,7 +10307,6 @@
       },
       "keywords": {
         "ja": [
-          "スペクテイター",
           "観戦終了",
           "視点解除",
           "観戦停止",
@@ -11733,9 +10316,6 @@
           "観戦対象解除"
         ],
         "en": [
-          "spectator",
-          "stop spectating",
-          "stop spectating entity",
           "restore viewpoint",
           "end entity view",
           "release camera",
@@ -11765,8 +10345,6 @@
           "使用解除"
         ],
         "en": [
-          "stop using",
-          "item",
           "bow",
           "spyglass",
           "stop item use",
@@ -11790,8 +10368,6 @@
       "keywords": {
         "ja": [
           "両手交換",
-          "メインハンド",
-          "オフハンド",
           "左右の手",
           "手持ち交換",
           "交換キー",
@@ -11800,9 +10376,7 @@
         ],
         "en": [
           "swap hands",
-          "main hand",
           "offhand",
-          "swap hand items",
           "hand swap",
           "swap key",
           "switch hands",
@@ -11822,9 +10396,7 @@
       },
       "keywords": {
         "ja": [
-          "装備スロット",
           "交換",
-          "アイテム",
           "装備交換",
           "スロット入れ替え",
           "装備持ち替え",
@@ -11832,9 +10404,6 @@
           "装備操作"
         ],
         "en": [
-          "equipment slot",
-          "swap",
-          "item",
           "equipment swap",
           "swap slot",
           "change equipment",
@@ -11855,19 +10424,13 @@
       },
       "keywords": {
         "ja": [
-          "書見台",
-          "本",
           "取り出し",
-          "本を取る",
           "書見台から回収",
           "本回収",
           "書見台操作",
           "読書台"
         ],
         "en": [
-          "lectern",
-          "book",
-          "take",
           "take book",
           "remove lectern book",
           "collect book",
@@ -11888,8 +10451,6 @@
       },
       "keywords": {
         "ja": [
-          "エンドゲートウェイ",
-          "テレポート",
           "ゲートウェイ移動",
           "エンド移動",
           "ゲートウェイ転送",
@@ -11897,8 +10458,6 @@
           "ゲートウェイ使用"
         ],
         "en": [
-          "end gateway",
-          "teleport",
           "gateway travel",
           "end travel",
           "gateway transfer",
@@ -11919,7 +10478,6 @@
       },
       "keywords": {
         "ja": [
-          "テレポート",
           "瞬間移動",
           "座標",
           "ワープ",
@@ -11929,7 +10487,6 @@
           "TP"
         ],
         "en": [
-          "teleport",
           "position",
           "warp",
           "location transfer",
@@ -11953,17 +10510,13 @@
         "ja": [
           "年齢固定",
           "成長停止",
-          "切り替え",
-          "年齢ロック",
           "成長固定",
           "成長制御",
           "年齢固定切替",
           "アイテム操作"
         ],
         "en": [
-          "age lock",
           "growth",
-          "toggle",
           "lock age",
           "freeze growth",
           "age control",
@@ -11984,23 +10537,16 @@
       },
       "keywords": {
         "ja": [
-          "飛行",
           "飛ぶ",
-          "切り替え",
           "飛行開始",
           "飛行終了",
-          "飛行状態",
           "飛行切替",
           "空を飛ぶ"
         ],
         "en": [
-          "flight",
           "fly",
-          "toggle",
           "start flying",
           "stop flying",
-          "flying state",
-          "toggle flight",
           "player flight"
         ]
       },
@@ -12027,12 +10573,10 @@
           "しゃがみ切替"
         ],
         "en": [
-          "sneak",
           "crouch",
           "crouching",
           "start sneaking",
           "stop sneaking",
-          "sneaking state",
           "toggle crouch"
         ]
       },
@@ -12059,14 +10603,10 @@
           "走行切替"
         ],
         "en": [
-          "sprint",
           "run",
           "dash",
-          "sprinting",
           "start sprinting",
-          "stop sprinting",
-          "sprinting state",
-          "toggle sprint"
+          "stop sprinting"
         ]
       },
       "href": "org/bukkit/event/player/PlayerToggleSprintEvent.html",
@@ -12111,10 +10651,7 @@
       },
       "keywords": {
         "ja": [
-          "村人",
-          "行商人",
           "取引",
-          "交易",
           "売買",
           "商品購入",
           "商人取引",
@@ -12122,9 +10659,6 @@
           "取引実行"
         ],
         "en": [
-          "villager",
-          "wandering trader",
-          "trade",
           "buy items",
           "sell items",
           "merchant trade",
@@ -12145,7 +10679,6 @@
       },
       "keywords": {
         "ja": [
-          "リード",
           "外す",
           "綱",
           "リード解除",
@@ -12155,13 +10688,10 @@
           "リード取り外し"
         ],
         "en": [
-          "leash",
-          "unleash",
           "lead",
           "remove lead",
           "detach leash",
           "release creature",
-          "unleash entity",
           "leash removal"
         ]
       },
@@ -12178,7 +10708,6 @@
       },
       "keywords": {
         "ja": [
-          "プラグインチャンネル",
           "登録解除",
           "チャンネル解除",
           "通信チャンネル",
@@ -12187,9 +10716,6 @@
           "チャンネル購読解除"
         ],
         "en": [
-          "plugin channel",
-          "unregister",
-          "unregister channel",
           "messaging channel",
           "plugin messaging",
           "unregistration notification",
@@ -12219,7 +10745,6 @@
         "en": [
           "entity tracking",
           "stop tracking",
-          "untrack entity",
           "player visibility",
           "tracked entity",
           "viewer"
@@ -12238,18 +10763,14 @@
       },
       "keywords": {
         "ja": [
-          "仮想エンティティ",
-          "クリック",
           "未知のエンティティ",
           "仮想モブ",
-          "存在しないエンティティ",
           "パケットエンティティ",
           "クライアント側エンティティ",
           "仮想対象操作"
         ],
         "en": [
           "virtual entity",
-          "unknown entity",
           "click",
           "fake entity",
           "nonexistent entity",
@@ -12271,9 +10792,7 @@
       },
       "keywords": {
         "ja": [
-          "速度",
           "移動ベクトル",
-          "プレイヤー",
           "移動速度",
           "速度変更",
           "運動量",
@@ -12281,14 +10800,11 @@
           "プレイヤー速度"
         ],
         "en": [
-          "velocity",
           "motion",
-          "player",
           "movement velocity",
           "velocity change",
           "player motion",
-          "motion vector",
-          "player velocity"
+          "motion vector"
         ]
       },
       "href": "org/bukkit/event/player/PlayerVelocityEvent.html",
@@ -12304,7 +10820,6 @@
       },
       "keywords": {
         "ja": [
-          "プラグイン",
           "無効化",
           "停止",
           "プラグイン停止",
@@ -12314,8 +10829,6 @@
           "プラグイン終了"
         ],
         "en": [
-          "plugin",
-          "disable",
           "disable plugin",
           "plugin shutdown",
           "plugin deactivation",
@@ -12336,7 +10849,6 @@
       },
       "keywords": {
         "ja": [
-          "プラグイン",
           "有効化",
           "起動",
           "プラグイン起動",
@@ -12346,8 +10858,6 @@
           "プラグイン開始"
         ],
         "en": [
-          "plugin",
-          "enable",
           "enable plugin",
           "plugin startup",
           "plugin activation",
@@ -12368,9 +10878,6 @@
       },
       "keywords": {
         "ja": [
-          "プラグイン",
-          "有効化",
-          "無効化",
           "プラグイン状態",
           "プラグイン起動",
           "プラグイン停止",
@@ -12378,14 +10885,12 @@
           "プラグインイベント"
         ],
         "en": [
-          "plugin",
           "enable",
           "disable",
           "plugin state",
           "plugin startup",
           "plugin shutdown",
-          "plugin lifecycle",
-          "plugin event"
+          "plugin lifecycle"
         ]
       },
       "abstract": true,
@@ -12402,9 +10907,7 @@
       },
       "keywords": {
         "ja": [
-          "ポータル",
           "生成",
-          "作成",
           "ゲート生成",
           "ポータル形成",
           "ポータル作成",
@@ -12412,8 +10915,6 @@
           "ポータルのブロック"
         ],
         "en": [
-          "portal",
-          "create",
           "formation",
           "portal creation",
           "generate portal",
@@ -12435,9 +10936,6 @@
       },
       "keywords": {
         "ja": [
-          "スプラッシュポーション",
-          "着弾",
-          "ポーション",
           "ポーション投擲",
           "ポーションが割れる",
           "効果範囲",
@@ -12445,14 +10943,11 @@
           "飛散"
         ],
         "en": [
-          "splash potion",
           "impact",
-          "potion",
           "thrown potion",
           "potion breaking",
           "splash area",
-          "potion collision",
-          "potion splash"
+          "potion collision"
         ]
       },
       "href": "org/bukkit/event/entity/PotionSplashEvent.html",
@@ -12469,7 +10964,6 @@
       "keywords": {
         "ja": [
           "爆発前",
-          "ブロック",
           "爆破",
           "ブロック爆発前",
           "起爆前",
@@ -12479,7 +10973,6 @@
         ],
         "en": [
           "before explosion",
-          "block",
           "blast",
           "pre block explosion",
           "before block blast",
@@ -12535,7 +11028,6 @@
       "keywords": {
         "ja": [
           "爆発前",
-          "エンティティ",
           "爆破",
           "エンティティ爆発前",
           "起爆前",
@@ -12545,7 +11037,6 @@
         ],
         "en": [
           "before explosion",
-          "entity",
           "blast",
           "pre entity explosion",
           "before entity blast",
@@ -12566,6 +11057,12 @@
         "ja": "サーバーがプロファイルに不足しているプロパティを補おうとするときに呼び出される。"
       },
       "keywords": {
+        "en": [
+          "cache",
+          "profile request",
+          "property request",
+          "profile completion"
+        ],
         "ja": [
           "プロファイル補完",
           "スキン",
@@ -12575,16 +11072,6 @@
           "不足情報",
           "プロファイル要求",
           "追加情報要求"
-        ],
-        "en": [
-          "profile",
-          "fill",
-          "cache",
-          "fill profile",
-          "profile properties",
-          "incomplete profile",
-          "profile request",
-          "property request"
         ]
       },
       "href": "com/destroystokyo/paper/event/profile/PreFillProfileEvent.html",
@@ -12611,7 +11098,6 @@
         ],
         "en": [
           "profile lookup",
-          "name",
           "cache",
           "profile query",
           "lookup by name",
@@ -12633,9 +11119,7 @@
       },
       "keywords": {
         "ja": [
-          "金床",
           "修理準備",
-          "スロット",
           "金床結果",
           "修理候補",
           "完成品表示",
@@ -12643,9 +11127,6 @@
           "結果準備"
         ],
         "en": [
-          "anvil",
-          "repair",
-          "prepare",
           "anvil result",
           "repair result",
           "output preview",
@@ -12671,16 +11152,12 @@
       },
       "keywords": {
         "ja": [
-          "砥石",
-          "研磨",
           "修理",
           "エンチャント解除",
           "入力スロット",
           "処理結果"
         ],
         "en": [
-          "grindstone",
-          "grinding",
           "repair",
           "disenchant",
           "input slot",
@@ -12700,8 +11177,6 @@
       },
       "keywords": {
         "ja": [
-          "砥石",
-          "修理",
           "エンチャント除去",
           "付呪除去",
           "砥石結果",
@@ -12710,8 +11185,6 @@
           "結果準備"
         ],
         "en": [
-          "grindstone",
-          "repair",
           "disenchant",
           "remove enchantment",
           "grindstone result",
@@ -12732,21 +11205,17 @@
         "ja": "ホッパーまたはホッパー付きトロッコが移動するアイテムを選ぶ直前に、InventoryMoveItemEvent に先立って呼び出される。移動元の許可されていないスロットは無視されるため、それらのスロットにしかアイテムがない場合、移動元は空として扱われる。"
       },
       "keywords": {
-        "ja": [
-          "ホッパー",
-          "ホッパー付きトロッコ",
-          "搬出",
-          "アイテム移送",
-          "スロット選択",
-          "移動元"
-        ],
         "en": [
-          "hopper",
-          "hopper minecart",
           "item transfer",
           "source inventory",
           "allowed slots",
           "slot filter"
+        ],
+        "ja": [
+          "搬出",
+          "アイテム移送",
+          "スロット選択",
+          "除外スロット"
         ]
       },
       "href": "io/papermc/paper/event/inventory/PrepareHopperTransferEvent.html",
@@ -12767,14 +11236,11 @@
           "インベントリ",
           "出力計算",
           "完成品計算",
-          "結果アイテム",
           "スロット配置",
           "出力準備"
         ],
         "en": [
-          "result",
           "calculate",
-          "inventory",
           "calculate output",
           "calculate result",
           "result item",
@@ -12807,7 +11273,6 @@
         "en": [
           "prepare crafting",
           "recipe",
-          "result",
           "crafting result",
           "arrange ingredients",
           "craft preparation",
@@ -12828,7 +11293,6 @@
       "keywords": {
         "ja": [
           "エンチャント準備",
-          "エンチャントテーブル",
           "候補",
           "付呪準備",
           "エンチャント候補",
@@ -12838,7 +11302,6 @@
         ],
         "en": [
           "prepare enchant",
-          "enchanting table",
           "offers",
           "enchantment preparation",
           "enchantment offers",
@@ -12860,20 +11323,16 @@
       },
       "keywords": {
         "ja": [
-          "結果スロット",
-          "インベントリ",
           "入力アイテム",
           "処理結果",
           "結果アイテム",
           "出力スロット"
         ],
         "en": [
-          "result slot",
-          "inventory",
           "input item",
           "result item",
           "output slot",
-          "prepare result"
+          "output preparation"
         ]
       },
       "href": "com/destroystokyo/paper/event/inventory/PrepareResultEvent.html",
@@ -12889,8 +11348,6 @@
       },
       "keywords": {
         "ja": [
-          "鍛冶台",
-          "強化",
           "準備",
           "鍛冶準備",
           "鍛冶台操作",
@@ -12899,9 +11356,7 @@
           "鍛冶結果"
         ],
         "en": [
-          "smithing table",
           "upgrade",
-          "prepare",
           "smithing preparation",
           "smithing interaction",
           "upgrade result",
@@ -12933,12 +11388,10 @@
         ],
         "en": [
           "pre attack",
-          "attack",
           "before damage",
           "attack attempt",
           "before hit",
           "attack sound",
-          "attack entity",
           "before damage processing"
         ]
       },
@@ -12955,7 +11408,6 @@
       },
       "keywords": {
         "ja": [
-          "スポナー",
           "スポーン前",
           "出現",
           "スポナー湧き",
@@ -12965,7 +11417,6 @@
           "スポーン試行"
         ],
         "en": [
-          "spawner",
           "pre spawn",
           "spawner spawning",
           "before spawner spawn",
@@ -12987,9 +11438,7 @@
       },
       "keywords": {
         "ja": [
-          "ホワイトリスト",
           "参加許可",
-          "確認",
           "許可リスト",
           "ログイン許可",
           "登録確認",
@@ -12997,9 +11446,7 @@
           "入場許可"
         ],
         "en": [
-          "whitelist",
           "allowlist",
-          "verify",
           "allowed players",
           "login permission",
           "whitelist check",
@@ -13026,8 +11473,6 @@
       "keywords": {
         "ja": [
           "飛び道具",
-          "衝突",
-          "エンティティ",
           "投射物接触",
           "当たり判定",
           "投射物衝突",
@@ -13035,9 +11480,7 @@
           "飛び道具命中"
         ],
         "en": [
-          "projectile",
           "collision",
-          "entity",
           "projectile contact",
           "hit detection",
           "collide with entity",
@@ -13058,18 +11501,14 @@
       },
       "keywords": {
         "ja": [
-          "飛び道具",
           "着弾",
           "衝突",
           "投射物着弾",
           "命中",
-          "当たる",
           "投射物衝突",
           "着弾処理"
         ],
         "en": [
-          "projectile",
-          "hit",
           "impact",
           "projectile impact",
           "hit object",
@@ -13092,7 +11531,6 @@
       "keywords": {
         "ja": [
           "飛び道具",
-          "発射",
           "投射物",
           "投射物を飛ばす",
           "射出",
@@ -13101,8 +11539,6 @@
           "射撃"
         ],
         "en": [
-          "projectile",
-          "launch",
           "shoot",
           "launch projectile",
           "projectile firing",
@@ -13124,17 +11560,13 @@
       },
       "keywords": {
         "ja": [
-          "フグ",
-          "膨らむ",
           "縮む",
           "ふぐ",
           "膨張",
           "収縮",
-          "膨らみ状態",
-          "しぼむ"
+          "膨らみ状態"
         ],
         "en": [
-          "pufferfish",
           "inflate",
           "deflate",
           "puff up",
@@ -13158,7 +11590,6 @@
       "keywords": {
         "ja": [
           "襲撃",
-          "レイド",
           "基底クラス",
           "襲撃イベント",
           "村の襲撃",
@@ -13167,9 +11598,7 @@
           "襲撃処理"
         ],
         "en": [
-          "raid",
           "base class",
-          "raid event",
           "village raid",
           "raid-related event",
           "parent class",
@@ -13191,7 +11620,6 @@
       "keywords": {
         "ja": [
           "襲撃終了",
-          "レイド",
           "結果確定",
           "襲撃完了",
           "決着",
@@ -13200,9 +11628,6 @@
           "終了結果"
         ],
         "en": [
-          "raid",
-          "finish",
-          "result",
           "raid completion",
           "raid outcome",
           "completed raid",
@@ -13224,7 +11649,6 @@
       "keywords": {
         "ja": [
           "襲撃ウェーブ",
-          "レイド",
           "スポーン",
           "襲撃の波",
           "次のウェーブ",
@@ -13233,10 +11657,6 @@
           "レイド進行"
         ],
         "en": [
-          "raid",
-          "wave",
-          "spawn",
-          "raid wave",
           "next wave",
           "raider spawning",
           "wave generation",
@@ -13257,8 +11677,6 @@
       "keywords": {
         "ja": [
           "襲撃停止",
-          "レイド",
-          "終了",
           "襲撃中止",
           "レイド停止",
           "襲撃終結",
@@ -13266,8 +11684,6 @@
           "レイド終了"
         ],
         "en": [
-          "raid",
-          "stop",
           "end",
           "stop raid",
           "raid stopped",
@@ -13291,7 +11707,6 @@
         "ja": [
           "襲撃開始",
           "レイド",
-          "開始",
           "襲撃発生",
           "村の襲撃",
           "レイド開始",
@@ -13299,8 +11714,6 @@
           "襲撃起動"
         ],
         "en": [
-          "raid",
-          "trigger",
           "start",
           "start raid",
           "village raid",
@@ -13323,7 +11736,6 @@
       "keywords": {
         "ja": [
           "サーバー初期化",
-          "リージョン",
           "並列処理前",
           "リージョン初期化",
           "並列ティック前",
@@ -13332,8 +11744,6 @@
           "初期化完了"
         ],
         "en": [
-          "server initialization",
-          "region",
           "parallel ticking",
           "region initialization",
           "before parallel ticks",
@@ -13355,7 +11765,6 @@
       },
       "keywords": {
         "ja": [
-          "レジストリ",
           "登録",
           "データパック",
           "レジストリ構築",
@@ -13365,8 +11774,6 @@
           "データ定義"
         ],
         "en": [
-          "registry",
-          "compose",
           "datapack",
           "registry composition",
           "modify registry",
@@ -13398,7 +11805,6 @@
           "レジストリ変更"
         ],
         "en": [
-          "registry entry",
           "before registration",
           "modify",
           "add entry",
@@ -13421,18 +11827,13 @@
       },
       "keywords": {
         "ja": [
-          "レジストリ",
           "基底クラス",
-          "レジストリイベント",
           "登録情報",
           "基底イベント",
           "親インターフェース",
           "レジストリ処理"
         ],
         "en": [
-          "registry",
-          "base type",
-          "registry event",
           "registration data",
           "base event",
           "parent interface",
@@ -13452,9 +11853,7 @@
       },
       "keywords": {
         "ja": [
-          "RCON",
           "リモートコンソール",
-          "コマンド",
           "遠隔コマンド",
           "リモート操作",
           "RCON入力",
@@ -13462,9 +11861,7 @@
           "コマンド受信"
         ],
         "en": [
-          "rcon",
           "remote console",
-          "command",
           "remote command",
           "remote administration",
           "rcon input",
@@ -13485,9 +11882,7 @@
       },
       "keywords": {
         "ja": [
-          "騎乗",
           "モブ移動",
-          "乗り手",
           "騎乗移動",
           "乗ったまま移動",
           "乗り物移動",
@@ -13495,9 +11890,7 @@
           "騎乗モブ"
         ],
         "en": [
-          "ridable",
           "mob movement",
-          "rider",
           "ridden movement",
           "move with rider",
           "mount movement",
@@ -13520,7 +11913,6 @@
         "ja": [
           "騎乗",
           "スペースキー",
-          "ジャンプ",
           "騎乗ジャンプ",
           "乗ったまま跳ぶ",
           "ジャンプ試行",
@@ -13528,9 +11920,6 @@
           "騎乗中の入力"
         ],
         "en": [
-          "riding",
-          "spacebar",
-          "jump",
           "riding jump",
           "mounted jump",
           "jump attempt",
@@ -13550,7 +11939,6 @@
       },
       "keywords": {
         "ja": [
-          "スカルクカタリスト",
           "スカルク拡散",
           "経験値",
           "拡散カーソル",
@@ -13560,14 +11948,11 @@
           "スカルク繁殖"
         ],
         "en": [
-          "sculk catalyst",
           "spread",
           "experience",
           "sculk cursor",
           "sculk generation",
-          "catalyst reaction",
-          "new cursor",
-          "sculk bloom"
+          "catalyst reaction"
         ]
       },
       "href": "org/bukkit/event/block/SculkBloomEvent.html",
@@ -13584,8 +11969,6 @@
       "keywords": {
         "ja": [
           "コンソール",
-          "コマンド",
-          "実行",
           "サーバーコマンド",
           "コンソール入力",
           "非プレイヤー",
@@ -13594,9 +11977,7 @@
         ],
         "en": [
           "console",
-          "command",
           "execute",
-          "server command",
           "console input",
           "non-player command",
           "administrative command",
@@ -13616,7 +11997,6 @@
       },
       "keywords": {
         "ja": [
-          "サーバー",
           "基底クラス",
           "サーバーイベント",
           "サーバー関連",
@@ -13625,9 +12005,7 @@
           "サーバー処理"
         ],
         "en": [
-          "server",
           "base class",
-          "server event",
           "server-related event",
           "parent class",
           "base event",
@@ -13648,9 +12026,7 @@
       },
       "keywords": {
         "ja": [
-          "例外",
           "エラー",
-          "回復可能",
           "例外通知",
           "例外処理",
           "障害",
@@ -13658,9 +12034,7 @@
           "サーバーエラー"
         ],
         "en": [
-          "exception",
           "error",
-          "recoverable",
           "exception notification",
           "exception handling",
           "failure",
@@ -13681,8 +12055,6 @@
       },
       "keywords": {
         "ja": [
-          "サーバーリスト",
-          "Ping",
           "MOTD",
           "サーバー一覧",
           "サーバーステータス",
@@ -13691,8 +12063,6 @@
           "Ping応答"
         ],
         "en": [
-          "server list",
-          "ping",
           "motd",
           "server status",
           "status ping",
@@ -13726,7 +12096,6 @@
         "en": [
           "startup complete",
           "reload complete",
-          "server load",
           "after startup",
           "loading complete",
           "after reload",
@@ -13748,16 +12117,12 @@
       "keywords": {
         "ja": [
           "リロード",
-          "データパック",
-          "再読み込み",
           "レシピ再登録",
           "進捗再登録",
           "サーバーリソース"
         ],
         "en": [
-          "reload",
           "datapack",
-          "server resources",
           "recipe registration",
           "advancement registration",
           "minecraft:reload"
@@ -13777,7 +12142,6 @@
       "keywords": {
         "ja": [
           "ティック終了",
-          "メインループ",
           "サーバー処理",
           "ティック完了",
           "ループ終了",
@@ -13786,13 +12150,10 @@
           "更新終了"
         ],
         "en": [
-          "tick end",
           "main loop",
-          "server tick",
           "tick completion",
           "end tick",
           "loop end",
-          "server tick end",
           "update complete"
         ]
       },
@@ -13810,7 +12171,6 @@
       "keywords": {
         "ja": [
           "ティック開始",
-          "メインループ",
           "サーバー処理",
           "ティック開始時",
           "ループ開始",
@@ -13819,13 +12179,10 @@
           "更新開始"
         ],
         "en": [
-          "tick start",
           "main loop",
-          "server tick",
           "begin tick",
           "start tick",
           "loop start",
-          "server tick start",
           "update start"
         ]
       },
@@ -13840,25 +12197,18 @@
         "ja": "サービスマネージャーでのサービスプロバイダーの登録と登録解除に共通する基底クラス。"
       },
       "keywords": {
+        "en": [
+          "service provision",
+          "parent class",
+          "service handling",
+          "service registration"
+        ],
         "ja": [
-          "サービス",
           "サービス管理",
-          "基底クラス",
           "サービスイベント",
           "サービス提供",
-          "サービスプロバイダー",
           "親クラス",
           "サービス処理"
-        ],
-        "en": [
-          "service",
-          "services manager",
-          "base class",
-          "service event",
-          "service provision",
-          "service provider",
-          "parent class",
-          "service handling"
         ]
       },
       "abstract": true,
@@ -13884,8 +12234,6 @@
           "プロバイダー登録"
         ],
         "en": [
-          "service",
-          "register",
           "provider",
           "register service",
           "service provider",
@@ -13916,8 +12264,6 @@
           "プロバイダー解除"
         ],
         "en": [
-          "service",
-          "unregister",
           "provider",
           "unregister service",
           "service provider",
@@ -13939,9 +12285,7 @@
       },
       "keywords": {
         "ja": [
-          "羊",
           "羊毛",
-          "染色",
           "ひつじ",
           "色付け",
           "羊の色",
@@ -13949,10 +12293,6 @@
           "羊毛の色"
         ],
         "en": [
-          "sheep",
-          "wool",
-          "dye",
-          "dye wool",
           "color sheep",
           "sheep color",
           "use dye",
@@ -13972,9 +12312,7 @@
       },
       "keywords": {
         "ja": [
-          "羊",
           "羊毛再生",
-          "毛",
           "毛が生える",
           "毛の再生",
           "羊毛復活",
@@ -13982,9 +12320,6 @@
           "毛の成長"
         ],
         "en": [
-          "sheep",
-          "wool",
-          "regrow",
           "wool regrowth",
           "grow wool",
           "wool restoration",
@@ -14005,22 +12340,17 @@
       },
       "keywords": {
         "ja": [
-          "シュルカー",
           "複製",
           "増殖",
           "シュルカー増殖",
           "自己複製",
-          "新しいシュルカー",
           "複製スポーン",
           "分身"
         ],
         "en": [
-          "shulker",
-          "duplicate",
           "spawn",
           "shulker duplication",
           "self duplication",
-          "new shulker",
           "duplicate spawn",
           "shulker reproduction"
         ]
@@ -14041,14 +12371,12 @@
           "看板編集",
           "文字変更",
           "テキスト",
-          "看板の内容",
           "看板入力",
           "文章変更",
           "文字編集",
           "看板テキスト"
         ],
         "en": [
-          "sign",
           "edit",
           "text",
           "sign contents",
@@ -14070,25 +12398,19 @@
         "ja": "プレイヤーがスケルトンホースに近づいて落雷の罠を作動させる際、実際に落雷が発生する前に呼び出される。"
       },
       "keywords": {
+        "en": [
+          "player proximity",
+          "trigger trap",
+          "lightning trigger",
+          "proximity-activated trap"
+        ],
         "ja": [
-          "スケルトンホース",
           "トラップ",
-          "落雷",
           "スケルトン馬",
           "雷トラップ",
           "接近判定",
           "罠起動",
           "落雷トリガー"
-        ],
-        "en": [
-          "skeleton horse",
-          "trap",
-          "lightning",
-          "skeleton horse trap",
-          "lightning trap",
-          "player proximity",
-          "trigger trap",
-          "lightning trigger"
         ]
       },
       "href": "com/destroystokyo/paper/event/entity/SkeletonHorseTrapEvent.html",
@@ -14104,7 +12426,6 @@
       },
       "keywords": {
         "ja": [
-          "スライム",
           "向き変更",
           "方向",
           "スライム方向",
@@ -14114,12 +12435,8 @@
           "向き選択"
         ],
         "en": [
-          "slime",
-          "direction",
-          "facing",
           "slime facing",
           "turn slime",
-          "change direction",
           "turning",
           "facing selection"
         ]
@@ -14137,8 +12454,6 @@
       },
       "keywords": {
         "ja": [
-          "スライム",
-          "経路探索",
           "移動開始",
           "スライム移動",
           "パス探索",
@@ -14147,14 +12462,11 @@
           "経路開始"
         ],
         "en": [
-          "slime",
-          "pathfinding",
           "start moving",
           "slime movement",
           "path search",
           "movement decision",
-          "navigation",
-          "start pathfinding"
+          "navigation"
         ]
       },
       "href": "com/destroystokyo/paper/event/entity/SlimePathfindEvent.html",
@@ -14175,8 +12487,6 @@
       },
       "keywords": {
         "ja": [
-          "スライム",
-          "分裂",
           "死亡",
           "小さなスライム",
           "死亡時分裂",
@@ -14185,10 +12495,6 @@
           "分裂処理"
         ],
         "en": [
-          "slime",
-          "split",
-          "death",
-          "smaller slimes",
           "split on death",
           "slime splitting",
           "slime division",
@@ -14208,10 +12514,7 @@
       },
       "keywords": {
         "ja": [
-          "スライム",
           "水泳",
-          "溶岩",
-          "ジャンプ",
           "泳ぎ中ジャンプ",
           "水中移動",
           "溶岩遊泳",
@@ -14219,9 +12522,6 @@
           "スライム遊泳"
         ],
         "en": [
-          "slime",
-          "swim",
-          "lava",
           "jump",
           "swimming jump",
           "water movement",
@@ -14243,7 +12543,6 @@
       },
       "keywords": {
         "ja": [
-          "スライム",
           "ターゲット",
           "方向変更",
           "生物の標的",
@@ -14253,9 +12552,6 @@
           "攻撃対象"
         ],
         "en": [
-          "slime",
-          "target",
-          "direction",
           "living target",
           "target selection",
           "slime targeting",
@@ -14276,8 +12572,6 @@
       },
       "keywords": {
         "ja": [
-          "スライム",
-          "徘徊",
           "ランダム移動",
           "ランダム歩行",
           "うろつく",
@@ -14286,14 +12580,11 @@
           "徘徊開始"
         ],
         "en": [
-          "slime",
-          "wander",
           "random movement",
           "random walking",
           "roaming",
           "wandering slime",
-          "movement choice",
-          "start wandering"
+          "movement choice"
         ]
       },
       "href": "com/destroystokyo/paper/event/entity/SlimeWanderEvent.html",
@@ -14309,9 +12600,7 @@
       },
       "keywords": {
         "ja": [
-          "鍛冶台",
           "強化",
-          "完成",
           "鍛冶完了",
           "鍛冶結果",
           "強化完了",
@@ -14319,7 +12608,6 @@
           "鍛冶レシピ"
         ],
         "en": [
-          "smithing table",
           "upgrade",
           "result",
           "smithing completion",
@@ -14354,7 +12642,6 @@
         "en": [
           "world spawn",
           "spawn point",
-          "change",
           "world spawn location",
           "change world spawn",
           "spawn configuration",
@@ -14375,8 +12662,6 @@
       },
       "keywords": {
         "ja": [
-          "スポナー",
-          "スポーン",
           "出現",
           "スポナー湧き",
           "スポナー生成",
@@ -14385,8 +12670,6 @@
           "スポーン処理"
         ],
         "en": [
-          "spawner",
-          "spawn",
           "spawner spawning",
           "spawn from spawner",
           "mob appearance",
@@ -14407,9 +12690,7 @@
       },
       "keywords": {
         "ja": [
-          "スポンジ",
           "吸水",
-          "水",
           "水を吸う",
           "排水",
           "吸収範囲",
@@ -14417,9 +12698,6 @@
           "水抜き"
         ],
         "en": [
-          "sponge",
-          "absorb",
-          "water",
           "absorb water",
           "drain water",
           "absorption area",
@@ -14440,21 +12718,16 @@
       },
       "keywords": {
         "ja": [
-          "ストライダー",
           "温度",
           "暖かさ",
-          "体温",
           "温度変化",
           "暖かいブロック",
           "冷える",
           "温まる"
         ],
         "en": [
-          "strider",
-          "temperature",
           "warmth",
           "body temperature",
-          "temperature change",
           "warm block",
           "cooling",
           "warming"
@@ -14474,20 +12747,14 @@
       "keywords": {
         "ja": [
           "木の成長",
-          "巨大キノコ",
-          "骨粉",
           "植物成長",
-          "苗木",
           "樹木生成",
           "巨大化",
           "成長処理"
         ],
         "en": [
           "tree growth",
-          "huge mushroom",
-          "bonemeal",
           "plant growth",
-          "sapling",
           "tree generation",
           "organic growth",
           "structure growth"
@@ -14507,9 +12774,6 @@
       "keywords": {
         "ja": [
           "構造物探索",
-          "エンダーアイ",
-          "探検家の地図",
-          "構造物の位置",
           "位置特定",
           "建造物探索",
           "探索先",
@@ -14517,12 +12781,9 @@
         ],
         "en": [
           "locate structure",
-          "eye of ender",
-          "explorer map",
           "structure location",
           "find structure",
           "structure search",
-          "locating",
           "locate command"
         ]
       },
@@ -14539,21 +12800,12 @@
       },
       "keywords": {
         "ja": [
-          "SulfurCube",
-          "飲み込み",
-          "アイテム",
-          "消費",
-          "飲み込むアイテム",
           "アイテム差し替え",
           "所持品消費",
           "プレイヤー操作",
           "アイテムを与える"
         ],
         "en": [
-          "sulfur cube",
-          "swallow",
-          "item",
-          "consumption",
           "swallowed item",
           "replace swallowed item",
           "inventory consumption",
@@ -14574,8 +12826,6 @@
       },
       "keywords": {
         "ja": [
-          "タブ補完",
-          "コマンド引数",
           "候補",
           "引数補完",
           "オートコンプリート",
@@ -14618,8 +12868,6 @@
         ],
         "en": [
           "pet death",
-          "death message",
-          "tameable",
           "tamed mob death",
           "pet death notification",
           "death notification",
@@ -14641,7 +12889,6 @@
       "keywords": {
         "ja": [
           "的",
-          "ターゲットブロック",
           "飛び道具",
           "的に当たる",
           "的ブロック",
@@ -14650,14 +12897,10 @@
           "ターゲット命中"
         ],
         "en": [
-          "target block",
-          "projectile",
-          "hit",
           "hit target",
           "target impact",
           "shooting target",
-          "projectile impact",
-          "target hit"
+          "projectile impact"
         ]
       },
       "href": "io/papermc/paper/event/block/TargetHitEvent.html",
@@ -14673,8 +12916,6 @@
       },
       "keywords": {
         "ja": [
-          "卵",
-          "孵化",
           "投げる",
           "投げた卵",
           "卵の孵化",
@@ -14683,10 +12924,6 @@
           "卵投げ"
         ],
         "en": [
-          "egg",
-          "hatch",
-          "throw",
-          "thrown egg",
           "egg hatching",
           "hatching check",
           "hatch attempt",
@@ -14706,23 +12943,19 @@
       },
       "keywords": {
         "ja": [
-          "雷雨",
           "雷雨終了",
           "天候変化",
           "雷雨開始",
           "雷雨停止",
           "嵐",
-          "雷雨状態",
           "雷の天候"
         ],
         "en": [
-          "thunder",
           "storm",
           "weather change",
           "thunderstorm",
           "start thunder",
           "stop thunder",
-          "thunder state",
           "storm change"
         ]
       },
@@ -14741,7 +12974,6 @@
         "ja": [
           "時間スキップ",
           "時間変更",
-          "ワールド",
           "時刻変更",
           "時間を飛ばす",
           "時刻ジャンプ",
@@ -14749,9 +12981,6 @@
           "ワールド時間"
         ],
         "en": [
-          "time",
-          "skip",
-          "world",
           "time change",
           "skip time",
           "time jump",
@@ -14777,7 +13006,6 @@
       },
       "keywords": {
         "ja": [
-          "TNT",
           "着火",
           "点火",
           "TNT起爆",
@@ -14787,8 +13015,6 @@
           "起爆処理"
         ],
         "en": [
-          "tnt",
-          "prime",
           "ignite",
           "prime tnt",
           "explosive",
@@ -14810,8 +13036,6 @@
       },
       "keywords": {
         "ja": [
-          "TNT",
-          "着火",
           "点火",
           "TNT起爆",
           "爆薬",
@@ -14820,8 +13044,6 @@
           "起爆処理"
         ],
         "en": [
-          "tnt",
-          "prime",
           "ignite",
           "prime tnt",
           "explosive",
@@ -14849,16 +13071,12 @@
           "取引メニュー",
           "商品選択",
           "取引サイドバー",
-          "別の取引",
           "取引切替"
         ],
         "en": [
-          "trade",
-          "select",
           "merchant",
           "trade menu",
           "offer selection",
-          "trades sidebar",
           "select offer",
           "trade switch"
         ]
@@ -14881,8 +13099,6 @@
       },
       "keywords": {
         "ja": [
-          "試練のスポナー",
-          "スポーン",
           "出現",
           "試練スポナー湧き",
           "トライアルスポナー",
@@ -14891,8 +13107,6 @@
           "スポーン処理"
         ],
         "en": [
-          "trial spawner",
-          "spawn",
           "trial spawning",
           "spawn from trial spawner",
           "mob appearance",
@@ -14913,21 +13127,15 @@
       },
       "keywords": {
         "ja": [
-          "カメ",
           "帰巣",
-          "帰る",
           "亀",
           "かめ",
-          "家に帰る",
           "帰宅",
           "巣へ戻る"
         ],
         "en": [
-          "turtle",
-          "home",
           "return",
           "sea turtle",
-          "go home",
           "homeward travel",
           "home location",
           "return home"
@@ -14946,9 +13154,7 @@
       },
       "keywords": {
         "ja": [
-          "カメ",
           "産卵",
-          "卵を産む",
           "亀",
           "かめ",
           "卵生成",
@@ -14956,7 +13162,6 @@
           "産み落とす"
         ],
         "en": [
-          "turtle",
           "lay eggs",
           "egg laying",
           "sea turtle",
@@ -14979,22 +13184,15 @@
       },
       "keywords": {
         "ja": [
-          "カメ",
           "穴掘り",
-          "産卵",
           "亀",
           "かめ",
           "産卵準備",
-          "掘り始め",
           "巣作り"
         ],
         "en": [
-          "turtle",
-          "dig",
-          "lay eggs",
           "sea turtle",
           "prepare egg laying",
-          "start digging",
           "egg-laying preparation",
           "nest digging"
         ]
@@ -15022,9 +13220,6 @@
           "テキスト変更"
         ],
         "en": [
-          "sign change",
-          "client",
-          "unchecked",
           "before sign validation",
           "sign edit packet",
           "unverified sign",
@@ -15045,7 +13240,6 @@
       },
       "keywords": {
         "ja": [
-          "宝物庫",
           "状態変化",
           "宝物庫状態",
           "状態切替",
@@ -15054,9 +13248,6 @@
           "宝物庫更新"
         ],
         "en": [
-          "vault",
-          "state",
-          "change",
           "vault state",
           "state transition",
           "vault transition",
@@ -15082,9 +13273,7 @@
       },
       "keywords": {
         "ja": [
-          "宝物庫",
           "展示アイテム",
-          "表示",
           "宝物庫プレビュー",
           "表示予定アイテム",
           "展示品",
@@ -15092,14 +13281,11 @@
           "試練の間"
         ],
         "en": [
-          "vault",
-          "display item",
           "preview",
           "vault preview",
           "displayed item",
           "item showcase",
-          "reward display",
-          "trial chamber"
+          "reward display"
         ]
       },
       "href": "org/bukkit/event/block/VaultDisplayItemEvent.html",
@@ -15115,7 +13301,6 @@
       },
       "keywords": {
         "ja": [
-          "乗り物",
           "ブロック衝突",
           "乗り物接触",
           "地形衝突",
@@ -15124,14 +13309,10 @@
           "乗り物の衝突"
         ],
         "en": [
-          "vehicle",
-          "block",
-          "collision",
           "vehicle contact",
           "terrain collision",
           "hit block",
-          "collision detection",
-          "vehicle block collision"
+          "collision detection"
         ]
       },
       "href": "org/bukkit/event/vehicle/VehicleBlockCollisionEvent.html",
@@ -15147,8 +13328,6 @@
       },
       "keywords": {
         "ja": [
-          "乗り物",
-          "衝突",
           "乗り物接触",
           "ぶつかる",
           "衝突判定",
@@ -15156,13 +13335,10 @@
           "乗り物の衝突"
         ],
         "en": [
-          "vehicle",
-          "collision",
           "vehicle contact",
           "collide vehicle",
           "collision detection",
-          "contact detection",
-          "vehicle collision"
+          "contact detection"
         ]
       },
       "abstract": true,
@@ -15179,8 +13355,6 @@
       },
       "keywords": {
         "ja": [
-          "乗り物",
-          "作成",
           "生成",
           "乗り物生成",
           "乗り物出現",
@@ -15189,8 +13363,6 @@
           "新しい乗り物"
         ],
         "en": [
-          "vehicle",
-          "create",
           "create vehicle",
           "vehicle creation",
           "vehicle spawning",
@@ -15211,8 +13383,6 @@
       },
       "keywords": {
         "ja": [
-          "乗り物",
-          "ダメージ",
           "損傷",
           "乗り物損傷",
           "乗り物への攻撃",
@@ -15221,9 +13391,6 @@
           "乗り物被害"
         ],
         "en": [
-          "vehicle",
-          "damage",
-          "vehicle damage",
           "damaged vehicle",
           "take damage",
           "damage vehicle",
@@ -15243,8 +13410,6 @@
       },
       "keywords": {
         "ja": [
-          "乗り物",
-          "破壊",
           "乗り物破壊",
           "乗り物が壊れる",
           "壊す",
@@ -15252,8 +13417,6 @@
           "乗り物破損"
         ],
         "en": [
-          "vehicle",
-          "destroy",
           "destroy vehicle",
           "vehicle destruction",
           "broken vehicle",
@@ -15275,8 +13438,6 @@
       "keywords": {
         "ja": [
           "乗車",
-          "乗る",
-          "乗り物",
           "乗り込む",
           "乗車開始",
           "乗り物に入る",
@@ -15284,8 +13445,6 @@
           "乗り手"
         ],
         "en": [
-          "vehicle",
-          "enter",
           "ride",
           "board vehicle",
           "start riding",
@@ -15307,7 +13466,6 @@
       },
       "keywords": {
         "ja": [
-          "乗り物",
           "エンティティ衝突",
           "乗り物接触",
           "対象との衝突",
@@ -15316,14 +13474,10 @@
           "乗り物の衝突"
         ],
         "en": [
-          "vehicle",
-          "entity",
-          "collision",
           "vehicle contact",
           "entity impact",
           "hit entity",
-          "collision detection",
-          "vehicle entity collision"
+          "collision detection"
         ]
       },
       "href": "org/bukkit/event/vehicle/VehicleEntityCollisionEvent.html",
@@ -15339,7 +13493,6 @@
       },
       "keywords": {
         "ja": [
-          "乗り物",
           "基底クラス",
           "乗り物イベント",
           "乗り物関連",
@@ -15348,10 +13501,7 @@
           "乗り物操作"
         ],
         "en": [
-          "vehicle",
           "base class",
-          "vehicle event",
-          "vehicle-related event",
           "parent class",
           "base event",
           "vehicle interaction"
@@ -15372,8 +13522,6 @@
       "keywords": {
         "ja": [
           "下車",
-          "降りる",
-          "乗り物",
           "降車",
           "乗車終了",
           "乗り物から出る",
@@ -15381,8 +13529,6 @@
           "降りる操作"
         ],
         "en": [
-          "vehicle",
-          "exit",
           "dismount",
           "leave vehicle",
           "stop riding",
@@ -15404,7 +13550,6 @@
       },
       "keywords": {
         "ja": [
-          "乗り物",
           "移動",
           "乗り物移動",
           "走行",
@@ -15413,8 +13558,6 @@
           "乗り物の位置"
         ],
         "en": [
-          "vehicle",
-          "move",
           "vehicle movement",
           "vehicle travel",
           "position change",
@@ -15435,8 +13578,6 @@
       },
       "keywords": {
         "ja": [
-          "乗り物",
-          "更新",
           "乗り物更新",
           "更新処理",
           "乗り物の処理",
@@ -15444,9 +13585,6 @@
           "乗り物状態更新"
         ],
         "en": [
-          "vehicle",
-          "update",
-          "vehicle update",
           "update vehicle",
           "vehicle processing",
           "update notification",
@@ -15466,9 +13604,7 @@
       },
       "keywords": {
         "ja": [
-          "村人",
           "取引追加",
-          "交易",
           "新規取引",
           "取引獲得",
           "商品追加",
@@ -15476,9 +13612,6 @@
           "取引候補追加"
         ],
         "en": [
-          "villager",
-          "new trade",
-          "acquire trade",
           "new offer",
           "trade acquisition",
           "add trade",
@@ -15499,7 +13632,6 @@
       },
       "keywords": {
         "ja": [
-          "村人",
           "職業変更",
           "転職",
           "職替え",
@@ -15509,11 +13641,7 @@
           "職の変更"
         ],
         "en": [
-          "villager",
-          "profession",
-          "career",
           "change profession",
-          "career change",
           "villager job",
           "profession assignment",
           "job change"
@@ -15531,7 +13659,6 @@
       },
       "keywords": {
         "ja": [
-          "村人",
           "交易補充",
           "在庫",
           "取引補充",
@@ -15541,10 +13668,6 @@
           "リストック"
         ],
         "en": [
-          "villager",
-          "restock",
-          "trade",
-          "replenish trade",
           "renew offer",
           "trade uses",
           "restore stock",
@@ -15564,8 +13687,6 @@
       },
       "keywords": {
         "ja": [
-          "村人",
-          "評判",
           "評価",
           "評判変更",
           "村人との関係",
@@ -15574,9 +13695,6 @@
           "評価変更"
         ],
         "en": [
-          "villager",
-          "reputation",
-          "reputation change",
           "villager relationship",
           "reputation value",
           "standing",
@@ -15596,24 +13714,17 @@
       },
       "keywords": {
         "ja": [
-          "ウォーデン",
-          "怒り",
           "敵対",
-          "怒りレベル",
           "ウォーデン敵対",
           "怒り値",
           "敵対度",
           "怒り変化"
         ],
         "en": [
-          "warden",
-          "anger",
           "aggro",
-          "anger level",
           "warden hostility",
           "anger value",
-          "aggro level",
-          "anger change"
+          "aggro level"
         ]
       },
       "href": "io/papermc/paper/event/entity/WardenAngerChangeEvent.html",
@@ -15640,13 +13751,9 @@
         ],
         "en": [
           "splash water bottle",
-          "water potion",
-          "splash",
-          "water bottle",
           "water splash",
           "water potion impact",
-          "thrown water bottle",
-          "splash water"
+          "thrown water bottle"
         ]
       },
       "href": "io/papermc/paper/event/entity/WaterBottleSplashEvent.html",
@@ -15663,7 +13770,6 @@
       "keywords": {
         "ja": [
           "天候",
-          "雨",
           "晴れ",
           "天気変更",
           "降雨",
@@ -15672,10 +13778,7 @@
           "雨が止む"
         ],
         "en": [
-          "weather",
-          "rain",
           "clear",
-          "weather change",
           "rainfall",
           "clear weather",
           "start rain",
@@ -15698,15 +13801,12 @@
           "天候",
           "基底クラス",
           "天候イベント",
-          "天気",
           "親クラス",
           "基底イベント",
           "ワールド天候"
         ],
         "en": [
-          "weather",
           "base class",
-          "weather event",
           "world weather",
           "parent class",
           "base event",
@@ -15727,20 +13827,16 @@
       },
       "keywords": {
         "ja": [
-          "ホワイトリスト",
           "許可リスト",
           "参加許可",
           "リスト追加",
-          "リスト削除",
-          "登録状態"
+          "リスト削除"
         ],
         "en": [
-          "whitelist",
           "allowlist",
           "player profile",
           "list addition",
-          "list removal",
-          "whitelist status"
+          "list removal"
         ]
       },
       "href": "io/papermc/paper/event/server/WhitelistStateUpdateEvent.html",
@@ -15756,7 +13852,6 @@
       },
       "keywords": {
         "ja": [
-          "ホワイトリスト",
           "有効化",
           "無効化",
           "許可リスト",
@@ -15766,9 +13861,7 @@
           "ホワイトリスト停止"
         ],
         "en": [
-          "whitelist",
           "allowlist",
-          "toggle",
           "toggle whitelist",
           "enable whitelist",
           "disable whitelist",
@@ -15789,8 +13882,6 @@
       },
       "keywords": {
         "ja": [
-          "ウィッチ",
-          "ポーション",
           "飲む",
           "魔女",
           "ポーション消費",
@@ -15799,11 +13890,8 @@
           "手持ちポーション"
         ],
         "en": [
-          "witch",
-          "potion",
           "drink",
           "witch drinking",
-          "consume potion",
           "drink potion",
           "potion consumption",
           "held potion"
@@ -15822,23 +13910,17 @@
       },
       "keywords": {
         "ja": [
-          "ウィッチ",
           "ポーション準備",
           "手持ち",
           "魔女",
           "使用準備",
           "ポーションを持つ",
-          "使用するポーション",
           "薬の準備"
         ],
         "en": [
-          "witch",
-          "potion",
-          "ready",
           "witch potion",
           "potion preparation",
           "hold potion",
-          "ready potion",
           "prepare potion use"
         ]
       },
@@ -15854,9 +13936,7 @@
       },
       "keywords": {
         "ja": [
-          "ウィッチ",
           "ポーション投擲",
-          "投げる",
           "魔女",
           "薬を投げる",
           "ポーション射撃",
@@ -15864,11 +13944,7 @@
           "ポーション発射"
         ],
         "en": [
-          "witch",
-          "potion",
-          "throw",
           "witch throwing",
-          "throw potion",
           "potion projectile",
           "thrown potion",
           "potion launch"
@@ -15887,8 +13963,6 @@
       },
       "keywords": {
         "ja": [
-          "ワールドボーダー",
-          "境界",
           "サイズ変更",
           "境界サイズ",
           "ボーダー拡縮",
@@ -15897,12 +13971,9 @@
           "サイズ調整"
         ],
         "en": [
-          "world border",
-          "bounds",
           "size",
           "border size",
           "border resizing",
-          "bounds change",
           "world boundary",
           "resize border"
         ]
@@ -15920,7 +13991,6 @@
       },
       "keywords": {
         "ja": [
-          "ワールドボーダー",
           "移動完了",
           "境界",
           "境界移動完了",
@@ -15930,9 +14000,6 @@
           "ボーダー停止"
         ],
         "en": [
-          "world border",
-          "finished",
-          "bounds",
           "border movement complete",
           "border transition finished",
           "resize complete",
@@ -15953,8 +14020,6 @@
       },
       "keywords": {
         "ja": [
-          "ワールドボーダー",
-          "中心",
           "位置変更",
           "境界中心",
           "ボーダー中心",
@@ -15963,12 +14028,8 @@
           "中心移動"
         ],
         "en": [
-          "world border",
-          "center",
           "position",
-          "border center",
           "center coordinates",
-          "center change",
           "world boundary",
           "move center"
         ]
@@ -15986,9 +14047,7 @@
       },
       "keywords": {
         "ja": [
-          "ワールドボーダー",
           "境界",
-          "基底クラス",
           "ワールド境界",
           "ボーダーイベント",
           "境界関連",
@@ -15996,11 +14055,7 @@
           "境界処理"
         ],
         "en": [
-          "world border",
-          "border",
-          "base class",
           "world boundary",
-          "border event",
           "border-related event",
           "parent class",
           "border handling"
@@ -16018,25 +14073,18 @@
         "ja": "ワールドの難易度がコマンドまたはAPIによって変更されたときに呼び出される。ワールドがハードコアの場合、結果の難易度は常にorg.bukkit.Difficulty.HARDになる。"
       },
       "keywords": {
+        "en": [
+          "set difficulty",
+          "difficulty setting",
+          "hard difficulty",
+          "difficulty update"
+        ],
         "ja": [
-          "難易度",
-          "ハードコア",
-          "ワールド",
           "難易度変更",
           "ワールド難易度",
           "難しさ",
           "難易度設定",
           "ハード固定"
-        ],
-        "en": [
-          "difficulty",
-          "hardcore",
-          "world",
-          "difficulty change",
-          "world difficulty",
-          "set difficulty",
-          "difficulty setting",
-          "hard difficulty"
         ]
       },
       "href": "io/papermc/paper/event/world/WorldDifficultyChangeEvent.html",
@@ -16052,7 +14100,6 @@
       },
       "keywords": {
         "ja": [
-          "ワールド",
           "基底クラス",
           "ワールドイベント",
           "世界",
@@ -16061,9 +14108,7 @@
           "ワールド処理"
         ],
         "en": [
-          "world",
           "base class",
-          "world event",
           "game world",
           "parent class",
           "base event",
@@ -16084,7 +14129,6 @@
       },
       "keywords": {
         "ja": [
-          "ゲームルール",
           "ルール変更",
           "ワールドルール",
           "ルール設定",
@@ -16093,9 +14137,6 @@
           "ゲームルール更新"
         ],
         "en": [
-          "gamerule",
-          "game rule",
-          "change",
           "world rule",
           "rule configuration",
           "game settings",
@@ -16125,7 +14166,6 @@
           "ワールド構築"
         ],
         "en": [
-          "world",
           "initialize",
           "world initialization",
           "world setup",
@@ -16148,7 +14188,6 @@
       "keywords": {
         "ja": [
           "ワールド読み込み",
-          "ロード",
           "世界の読み込み",
           "ワールドロード",
           "読み込み完了",
@@ -16156,8 +14195,6 @@
           "ロード処理"
         ],
         "en": [
-          "world",
-          "load",
           "world loading",
           "load world",
           "loaded world",
@@ -16187,8 +14224,6 @@
           "保存完了"
         ],
         "en": [
-          "world",
-          "save",
           "world saving",
           "save world",
           "saved world",
@@ -16210,7 +14245,6 @@
       "keywords": {
         "ja": [
           "ワールド解放",
-          "アンロード",
           "世界の解放",
           "読み込み解除",
           "ワールドアンロード",
@@ -16218,8 +14252,6 @@
           "解放処理"
         ],
         "en": [
-          "world",
-          "unload",
           "world unloading",
           "unload world",
           "unloaded world",
