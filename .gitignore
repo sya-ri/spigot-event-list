@@ -236,6 +236,7 @@ $RECYCLE.BIN/
 # End of https://www.toptal.com/developers/gitignore/api/yarn,linux,macos,windows,node
 
 .vercel/
+/spigot-javadoc/
 packages/downloader/javadoc/
 apps/downloader/javadoc/
 .astro/
