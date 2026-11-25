@@ -24,8 +24,6 @@ The development server runs the same API handlers as the production Worker and r
 
 The build writes the initial 50 events into each language page and packages the snapshots as Workers Static Assets. API requests read snapshots through the Worker's `ASSETS` binding.
 
-For Workers Builds, connect the repository at its root, use `master` as the production branch, set the build command to `pnpm build` and the deploy command to `pnpm --filter @spigot-event-list/api run deploy`. This also rebuilds the site when the scheduled downloader commits new data. Check the Worker URL before assigning the production custom domain.
-
 ## Event datasets
 
 Server event history lives in `data/minecraft/{version}/events.json`.
