@@ -1,22 +1,22 @@
+import { createVersionEventsHandler } from "../apps/api/src/events";
+import { createDataPaths } from "@spigot-event-list/catalog/data-paths";
+import { createSearchEventsHandler } from "../apps/api/src/search";
 import assert from "node:assert/strict";
 import test from "node:test";
 import { readFile, readdir } from "node:fs/promises";
 import { readFileSync } from "node:fs";
-import { NextRequest } from "next/server";
-import { GET as search } from "../src/app/api/search/events/route";
-import { GET as list } from "../src/app/api/versions/[version]/events/route";
-import { parseQuery, scoreEvent } from "../src/libs/event-search";
-import type EventType from "../packages/downloader/src/types/event-type";
+import { parseQuery, scoreEvent } from "@spigot-event-list/catalog/event-search";
+import type EventType from "@spigot-event-list/catalog/types/event-type";
 
-const latest = JSON.parse(readFileSync("data/events.json", "utf8"))
-  .events as EventType[];
+const dataPaths = createDataPaths("data", { cacheTtlMs: 60_000 });
+const search = createSearchEventsHandler(dataPaths);
+const list = createVersionEventsHandler(dataPaths);
+const latest = JSON.parse(readFileSync("data/events.json", "utf8")).events as EventType[];
 const event = (name: string, source?: string) =>
   latest.find((e) => e.name === name && (!source || e.source === source))!;
 const query = (e: EventType, q: string) => scoreEvent(e, parseQuery(q));
 const request = (q: string, extra: Record<string, string> = {}) =>
-  new NextRequest(
-    `http://localhost/api/search/events?${new URLSearchParams({ q, ...extra })}`,
-  );
+  new Request(`http://localhost/api/search/events?${new URLSearchParams({ q, ...extra })}`);
 
 test("Japanese and English aliases match without depending on display language", () => {
   assert.ok(query(event("BlockBreakEvent"), "採掘"));
@@ -35,9 +35,7 @@ test("expanded everyday phrases find their intended events in either language", 
     ['"slot swap"', "PlayerPickBlockEvent"],
     ["入力候補", "AsyncPlayerSendSuggestionsEvent"],
   ]) {
-    const response = await search(
-      request(phrase, { lang: "en", limit: "100" }),
-    );
+    const response = await search(request(phrase, { lang: "en", limit: "100" }));
     assert.equal(response.status, 200, phrase);
     const data = await response.json();
     assert.ok(
@@ -74,9 +72,7 @@ test("exact identifiers rank above aliases, and aliases above incidental prose",
 });
 
 test("search exposes localized descriptions, bilingual keywords and Javadoc", async () => {
-  const response = await search(
-    request("離席", { source: "purpur", lang: "en" }),
-  );
+  const response = await search(request("離席", { source: "purpur", lang: "en" }));
   assert.equal(response.status, 200);
   const data = await response.json();
   const afk = data.events.find((e: EventType) => e.name === "PlayerAFKEvent");
@@ -84,12 +80,10 @@ test("search exposes localized descriptions, bilingual keywords and Javadoc", as
   assert.ok(afk.keywords.ja.includes("離席"));
   assert.ok(afk.keywords.en.includes("idle"));
   const all = await list(
-    new NextRequest("http://localhost/api/versions/latest/events?lang=ja"),
-    { params: Promise.resolve({ version: "latest" }) },
+    new Request("http://localhost/api/versions/latest/events?lang=ja"),
+    "latest",
   );
-  const block = (await all.json()).find(
-    (e: EventType) => e.name === "BlockBreakEvent",
-  );
+  const block = (await all.json()).find((e: EventType) => e.name === "BlockBreakEvent");
   assert.ok(block.javadoc);
   assert.ok(block.keywords.ja.includes("採掘"));
 });
@@ -116,15 +110,12 @@ test("pagination provides all matches beyond 100 without duplicates", async () =
 
 test("version and source filters, language validation and empty queries", async () => {
   const data = await (
-    await search(
-      request("採掘", { version: "1.10.2", source: "spigot", lang: "ja" }),
-    )
+    await search(request("採掘", { version: "1.10.2", source: "spigot", lang: "ja" }))
   ).json();
   assert.ok(data.events.length > 0);
   assert.ok(
     data.events.every(
-      (e: EventType & { version: string }) =>
-        e.source === "spigot" && e.version === "1.10.2",
+      (e: EventType & { version: string }) => e.source === "spigot" && e.version === "1.10.2",
     ),
   );
   const browsing = await search(request(""));
@@ -133,23 +124,15 @@ test("version and source filters, language validation and empty queries", async 
   const ignored = await search(request("the and"));
   assert.equal(ignored.status, 200);
   assert.equal((await ignored.json()).total, 0);
-  assert.equal(
-    (await search(request("mining", { version: "../invalid" }))).status,
-    404,
-  );
-  assert.equal(
-    (await search(request("mining", { lang: "unknown" }))).status,
-    400,
-  );
+  assert.equal((await search(request("mining", { version: "../invalid" }))).status, 404);
+  assert.equal((await search(request("mining", { lang: "unknown" }))).status, 400);
 });
 
 test("every dataset event has actual bilingual descriptions and curated keywords", async () => {
   const files = [
     "data/events.json",
     "data/proxy/events.json",
-    ...(await readdir("data/minecraft")).map(
-      (version) => `data/minecraft/${version}/events.json`,
-    ),
+    ...(await readdir("data/minecraft")).map((version) => `data/minecraft/${version}/events.json`),
   ];
   for (const file of files) {
     const data = JSON.parse(await readFile(file, "utf8"));
@@ -158,11 +141,7 @@ test("every dataset event has actual bilingual descriptions and curated keywords
       assert.match(e.description.ja, /[\u3040-\u30ff\u3400-\u9fff]/, label);
       assert.ok(e.description.en.trim(), label);
       for (const lang of ["ja", "en"]) {
-        assert.doesNotMatch(
-          e.description[lang],
-          /<\/?(?:p|br|div)\b|\{@(?:link|code)/,
-          label,
-        );
+        assert.doesNotMatch(e.description[lang], /<\/?(?:p|br|div)\b|\{@(?:link|code)/, label);
         const words = e.keywords?.[lang];
         assert.ok(words && words.length >= 6, label);
         assert.ok(
@@ -181,19 +160,12 @@ test("every dataset event has actual bilingual descriptions and curated keywords
 
 test("regressions retain accurate event intent and historical distinctions", async () => {
   assert.match(event("ProxyPreShutdownEvent").description.ja, /切断する前/);
-  assert.match(
-    event("RegionizedServerInitEvent").description.en,
-    /before regions begin ticking/,
-  );
+  assert.match(event("RegionizedServerInitEvent").description.en, /before regions begin ticking/);
   assert.match(event("TurtleLayEggEvent").description.ja, /卵を産む/);
   assert.doesNotMatch(event("WitchReadyPotionEvent").description.en, /brew/i);
-  assert.match(
-    event("PlayerPurchaseEvent").description.en,
-    /standalone merchant/,
-  );
-  const old = JSON.parse(
-    await readFile("data/minecraft/1.10.2/events.json", "utf8"),
-  ).events as EventType[];
+  assert.match(event("PlayerPurchaseEvent").description.en, /standalone merchant/);
+  const old = JSON.parse(await readFile("data/minecraft/1.10.2/events.json", "utf8"))
+    .events as EventType[];
   assert.doesNotMatch(
     old.find((e) => e.name === "BlockExplodeEvent")!.description.en,
     /getExplodedBlockState/,
@@ -215,9 +187,8 @@ test("regressions retain accurate event intent and historical distinctions", asy
     ),
     0,
   );
-  const v113 = JSON.parse(
-    await readFile("data/minecraft/1.13.2/events.json", "utf8"),
-  ).events as EventType[];
+  const v113 = JSON.parse(await readFile("data/minecraft/1.13.2/events.json", "utf8"))
+    .events as EventType[];
   assert.equal(
     query(
       v113.find((e) => e.name === "EntityPlaceEvent")!,
@@ -226,20 +197,16 @@ test("regressions retain accurate event intent and historical distinctions", asy
     0,
   );
   assert.ok(query(event("EntityPlaceEvent"), "ボート"));
-  const v114 = JSON.parse(
-    await readFile("data/minecraft/1.14.4/events.json", "utf8"),
-  ).events as EventType[];
-  const v115 = JSON.parse(
-    await readFile("data/minecraft/1.15.2/events.json", "utf8"),
-  ).events as EventType[];
+  const v114 = JSON.parse(await readFile("data/minecraft/1.14.4/events.json", "utf8"))
+    .events as EventType[];
+  const v115 = JSON.parse(await readFile("data/minecraft/1.15.2/events.json", "utf8"))
+    .events as EventType[];
   assert.match(
-    v114.find((e) => e.name === "LootableInventoryFirstFillEvent")!.description
-      .en,
+    v114.find((e) => e.name === "LootableInventoryFirstFillEvent")!.description.en,
     /does not dispatch/,
   );
   assert.match(
-    v115.find((e) => e.name === "LootableInventoryFirstFillEvent")!.description
-      .en,
+    v115.find((e) => e.name === "LootableInventoryFirstFillEvent")!.description.en,
     /Fired when/,
   );
 });

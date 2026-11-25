@@ -7,16 +7,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
-      - name: Setup Node.js
-        uses: actions/setup-node@v7
-        with:
-          node-version-file: package.json
-      - name: Install Dependencies
-        run: |
-          npm ci --ignore-scripts
-      - name: Lint
-        run: npm run lint
-      - name: Test
-        run: npm test
-      - name: Typecheck
-        run: npm run typecheck
+      - uses: jdx/mise-action@v5
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm format:check
+      - run: pnpm lint
+      - run: pnpm typecheck
+      - run: pnpm build
+      - run: pnpm test

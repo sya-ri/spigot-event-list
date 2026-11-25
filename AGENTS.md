@@ -2,32 +2,28 @@
 
 ## Overview
 
-- Web app: Next.js 16
-- Downloader workspace: `packages/downloader`
+- Web app: Astro with React in `apps/web`
+- HTTP API and Cloudflare Worker: `apps/api`
+- Shared event model, search, and snapshot reader: `packages/catalog`
+- Downloader workspace: `apps/downloader`
 - Historical Minecraft server data: `data/minecraft/{version}/events.json`
 - Proxy latest-only data: `data/proxy/events.json`
 - Latest merged data: `data/events.json`
 
 ## Environment
 
-- Use `mise` for Node:
-  - `mise exec node@24 -- npm install`
-- Root scripts:
-  - `mise exec node@24 -- npm run dev`
-  - `mise exec node@24 -- npm run build`
-  - `mise exec node@24 -- npm run lint`
-- Downloader:
-  - `mise exec node@24 -- npm --workspace packages/downloader run start --`
+Install the tools in `mise.toml`, then run `pnpm install --frozen-lockfile` at the repository root.
+Use `pnpm dev` for the web and API, `pnpm build` to build both applications, and `pnpm preview` to run the Worker locally.
 
 ## Downloader Usage
 
 - Latest snapshot and complete version retention:
-  - `mise exec node@24 -- npm --workspace packages/downloader run start --`
+  - `pnpm --filter @spigot-event-list/downloader run start`
 - All complete Minecraft versions:
-  - `mise exec node@24 -- npm --workspace packages/downloader run start -- --all`
+  - `pnpm --filter @spigot-event-list/downloader run start --all`
 - Selected Minecraft versions:
-  - `mise exec node@24 -- npm --workspace packages/downloader run start -- --version 1.21.11`
-  - `mise exec node@24 -- npm --workspace packages/downloader run start -- --version 1.20.6 --version 1.21.11`
+  - `pnpm --filter @spigot-event-list/downloader run start --version 1.21.11`
+  - `pnpm --filter @spigot-event-list/downloader run start --version 1.20.6 --version 1.21.11`
 
 Behavior:
 
@@ -59,46 +55,7 @@ Recommended editing targets:
 - Latest proxy event: `data/proxy/events.json`
 - Historical server event: `data/minecraft/{version}/events.json`
 
-## Dependency Updates
+## Checks
 
-- Check root updates:
-  - `mise exec node@24 -- npx -y npm-check-updates`
-- Apply root updates:
-  - `mise exec node@24 -- npx -y npm-check-updates -u`
-  - `mise exec node@24 -- npm install`
-- Check downloader updates:
-  - `cd packages/downloader && mise exec node@24 -- npx -y npm-check-updates`
-
-Notes:
-
-- `packages/downloader` currently has no newer direct dependencies as of 2026-05-03.
-- `eslint` 10 is listed by `ncu` but is currently not usable with `eslint-config-next 16.2.4` in this repo.
-- `@serwist/next` is in use instead of `next-pwa`.
-
-## Formatting
-
-- After generating or editing files, run formatting before commit.
-- Root:
-  - `mise exec node@24 -- npm run format`
-- If you only need lint autofix without full formatting:
-  - `mise exec node@24 -- npm run lint -- --fix`
-
-## Verification
-
-Minimum verification after code or data changes:
-
-- TypeScript:
-  - `mise exec node@24 -- ./node_modules/.bin/tsc -p tsconfig.json --noEmit`
-  - `mise exec node@24 -- ./node_modules/.bin/tsc -p packages/downloader/tsconfig.json --noEmit`
-- Lint:
-  - `mise exec node@24 -- npm run lint`
-
-Current known lint warnings:
-
-- `src/components/ko-fi-button.tsx` uses `<img>` and triggers `@next/next/no-img-element`
-
-Build notes:
-
-- Use `mise exec node@24 -- npm run build`
-- The project currently uses `next build --webpack` because `@serwist/next` is webpack-based and not Turbopack-compatible.
-- In restricted environments, build may fail on Google Fonts fetch for `M PLUS 1p`.
+Run `pnpm format` after editing source code. Before submitting a PR, run `pnpm format:check`, `pnpm lint`, `pnpm typecheck`, `pnpm test`, and `pnpm build`.
+Update dependencies in the workspace that imports them and commit the root `pnpm-lock.yaml`.

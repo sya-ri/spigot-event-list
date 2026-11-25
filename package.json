@@ -2,48 +2,28 @@
   "name": "spigot-event-list",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "next dev --webpack",
-    "build": "next build --webpack",
-    "start": "next start",
-    "test": "tsx --test \"src/**/*.test.ts\" \"packages/downloader/src/**/*.test.ts\" \"tests/*.test.ts\"",
-    "lint": "eslint .",
-    "format": "eslint . --fix && prettier --write .",
-    "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p packages/downloader/tsconfig.json --noEmit",
+    "dev": "pnpm --filter @spigot-event-list/web dev",
+    "build": "pnpm --filter @spigot-event-list/web build && pnpm --filter @spigot-event-list/api build",
+    "preview": "pnpm --filter @spigot-event-list/api preview",
+    "test": "tsx --test \"apps/**/*.test.ts\" \"packages/**/*.test.ts\" \"tests/*.test.ts\"",
+    "typecheck": "pnpm --filter @spigot-event-list/web check && tsc -p apps/api --noEmit && tsc -p apps/downloader --noEmit && tsc -p packages/catalog --noEmit && tsc -p tsconfig.json --noEmit",
+    "lint": "vp lint",
+    "format": "vp fmt",
+    "format:check": "vp fmt --check",
     "benchmark": "tsx scripts/benchmark-search.ts"
   },
-  "dependencies": {
-    "@serwist/next": "9.5.13",
-    "clsx": "2.1.1",
-    "next": "16.4.0",
-    "next-i18n-router": "5.5.8",
-    "next-themes": "0.4.6",
-    "react": "19.3.0",
-    "react-dom": "19.3.0",
-    "react-icons": "5.7.0",
-    "remeda": "2.51.0",
-    "swr": "2.5.1"
-  },
   "devDependencies": {
-    "@tailwindcss/postcss": "4.3.3",
-    "@types/node": "25.9.9",
-    "@types/react": "19.3.0",
-    "@types/react-dom": "19.3.0",
-    "daisyui": "5.7.47",
-    "eslint": "9.39.5",
-    "eslint-config-next": "16.4.0",
-    "eslint-config-prettier": "10.1.8",
-    "postcss": "8.5.29",
-    "prettier": "3.9.9",
-    "serwist": "9.5.13",
-    "tailwindcss": "4.3.3",
+    "@astrojs/compiler-rs": "0.5.3",
+    "@spigot-event-list/catalog": "workspace:*",
+    "@types/node": "24.19.2",
     "tsx": "4.23.15",
-    "typescript": "6.0.3"
+    "typescript": "6.0.3",
+    "vite-plus": "1.8.0"
   },
   "engines": {
-    "node": "24.x"
+    "node": ">=24.22.0 <25"
   },
-  "workspaces": [
-    "packages/downloader"
-  ]
+  "packageManager": "pnpm@12.23.0"
 }

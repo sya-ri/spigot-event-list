@@ -8,17 +8,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
-      - name: Setup Node.js
-        uses: actions/setup-node@v7
-        with:
-          node-version-file: package.json
-      - name: Install Dependencies
-        run: |
-          npm ci --ignore-scripts
+      - uses: jdx/mise-action@v5
+      - run: pnpm install --frozen-lockfile
       - name: Update event list
-        run: |
-          npm run start -w packages/downloader
-          npm run format
+        run: pnpm --filter @spigot-event-list/downloader run start
       - name: Import GPG key
         id: import-gpg
         uses: crazy-max/ghaction-import-gpg@2dc316deee8e90f13e1a351ab510b4d5bc0c82cd # v7
@@ -31,6 +24,7 @@ jobs:
       - name: Commit changes
         run: |
           git add data
+          if git diff --cached --quiet; then exit 0; fi
           git commit -m "chore: Update event list"
           git push
         env:

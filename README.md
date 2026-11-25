@@ -1,6 +1,6 @@
 <h1 align="center">
   <a href="https://spigot-event-list.s7a.dev">
-    <img src="public/logo.png" alt="spigot-event-list"/>
+    <img src="apps/web/public/logo.png" alt="spigot-event-list"/>
   </a>
 </h1>
 
