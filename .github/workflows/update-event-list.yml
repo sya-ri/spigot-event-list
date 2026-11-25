@@ -7,14 +7,14 @@ jobs:
   update:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v7
-      - uses: jdx/mise-action@v5
+      - uses: actions/checkout@v7.0.1
+      - uses: jdx/mise-action@v5.3.0
       - run: pnpm install --frozen-lockfile
       - name: Update event list
         run: pnpm --filter @spigot-event-list/downloader run start
       - name: Import GPG key
         id: import-gpg
-        uses: crazy-max/ghaction-import-gpg@2dc316deee8e90f13e1a351ab510b4d5bc0c82cd # v7
+        uses: crazy-max/ghaction-import-gpg@v7.0.0
         with:
           gpg_private_key: ${{ secrets.BOT_GPG_PRIVATE_KEY }}
           passphrase: ${{ secrets.BOT_GPG_PASSPHRASE }}

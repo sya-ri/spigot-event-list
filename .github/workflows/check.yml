@@ -6,8 +6,8 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v7
-      - uses: jdx/mise-action@v5
+      - uses: actions/checkout@v7.0.1
+      - uses: jdx/mise-action@v5.3.0
       - run: pnpm install --frozen-lockfile
       - run: pnpm format:check
       - run: pnpm lint
