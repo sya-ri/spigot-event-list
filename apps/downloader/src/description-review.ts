@@ -3,12 +3,15 @@ import type EventType from "@spigot-event-list/catalog/types/event-type";
 import { hasLocalizedDescription } from "./event-metadata";
 
 export const languages = ["en", "ja"] as const;
-type Language = (typeof languages)[number];
+export type Language = (typeof languages)[number];
 export const decisionModel = "gpt-6-luna";
 export const writingModel = "gpt-6.2-sol";
 const minimumConfidence = 0.9;
 
-export type ReviewEvent = Pick<EventType, "source" | "name" | "href" | "description" | "javadoc">;
+export type ReviewEvent = Pick<
+  EventType,
+  "source" | "name" | "href" | "description" | "javadoc" | "keywords"
+>;
 export type ReviewTarget = {
   event: ReviewEvent;
   references: { file: string; link: string }[];

@@ -13,6 +13,8 @@ const contents = (e: ReviewEvent) =>
     normalize(e.description.en),
     normalize(e.description.ja),
   ]);
+export const reviewTargetKey = (event: ReviewEvent) =>
+  JSON.stringify([identity(event), contents(event), event.keywords?.en, event.keywords?.ja]);
 
 export function selectChanges(
   file: string,
@@ -25,11 +27,11 @@ export function selectChanges(
     const id = identity(e);
     const fingerprint = contents(e);
     if (previousById.get(id) === fingerprint) continue;
-    const key = JSON.stringify([id, fingerprint]);
+    const key = reviewTargetKey(e);
     let target = targets.get(key);
     if (!target) {
-      const { source, name, href, javadoc, description } = e;
-      target = { event: { source, name, href, javadoc, description }, references: [] };
+      const { source, name, href, javadoc, description, keywords } = e;
+      target = { event: { source, name, href, javadoc, description, keywords }, references: [] };
       targets.set(key, target);
     }
     target.references.push({ file, link: e.link });

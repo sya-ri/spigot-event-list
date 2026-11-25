@@ -1,13 +1,16 @@
 import assert from "node:assert/strict";
 import { execFileSync } from "node:child_process";
-import { mkdir, mkdtemp, rm, writeFile } from "node:fs/promises";
+import { mkdir, mkdtemp, readFile, rm, writeFile } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { dirname, join } from "node:path";
 import test from "node:test";
 import OpenAI from "openai";
 import type EventType from "@spigot-event-list/catalog/types/event-type";
+import { applyReviewedMetadata } from "./apply-reviewed-metadata";
 import { changedDescriptions, selectChanges } from "./changed-descriptions";
 import { reviewEvent, type ReviewTarget } from "./description-review";
+import { reviewKeywords } from "./keyword-review";
+import type { ReviewedEvent } from "./review-report";
 
 const before: EventType = {
   source: "paper",
@@ -160,4 +163,96 @@ test("missing evidence, refusals and low confidence remain unresolved", async ()
   assert.equal(result.en.description, null);
   assert.equal(result.ja.description, null);
   assert.equal(calls.length, 2);
+});
+
+const words = {
+  en: ["loading", "before load", "preload", "start loading", "load start", "load preparation"],
+  ja: ["読み込み", "読込前", "先読み", "読み込み開始", "読み込み準備", "ロード前"],
+};
+
+test("returns only structurally valid keyword lists independently verified in both languages", async () => {
+  const reply = (keywords: unknown) => ({
+    object: "response",
+    status: "completed",
+    output: [
+      { type: "message", content: [{ type: "output_text", text: JSON.stringify(keywords) }] },
+    ],
+  });
+  const answers = (probability: number) => ({
+    answers: Object.entries(words).flatMap(([lang, list]) =>
+      list.map((_, index) => ({
+        type: "predicate",
+        name: `${lang}_${index}`,
+        probability: lang === "en" && index === 0 ? probability : 0.99,
+      })),
+    ),
+  });
+  assert.deepEqual(
+    await reviewKeywords(before, mockClient([reply(words), answers(0.99)]).client),
+    words,
+  );
+  assert.equal(await reviewKeywords(before, mockClient([reply(words), answers(0.7)]).client), null);
+  assert.deepEqual(
+    await reviewKeywords(
+      before,
+      mockClient([reply({ ...words, en: [...words.en, "ＬＯＡＤＩＮＧ"] }), answers(0.99)]).client,
+    ),
+    words,
+  );
+});
+
+test("updates all reviewed snapshots and leaves them untouched when a review is incomplete", async (t) => {
+  const root = await mkdtemp(join(tmpdir(), "apply-review-"));
+  t.after(() => rm(root, { recursive: true, force: true }));
+  const files = ["data/events.json", "data/minecraft/1.2.3/events.json"];
+  const unrelated = { ...before, name: "UnrelatedEvent", href: "mock/UnrelatedEvent.html" };
+  const original = JSON.stringify({ lang: ["en", "ja"], events: [before, unrelated] });
+  for (const file of files) {
+    const path = join(root, file);
+    await mkdir(dirname(path), { recursive: true });
+    await writeFile(path, original);
+  }
+  const review: ReviewedEvent = {
+    event: before,
+    references: files.map((file) => ({ file, link: before.link })),
+    findings: {
+      en: {
+        status: "verified_suggestion",
+        assessment: { verdict: "mismatch" },
+        description: "Called before loading.",
+      },
+      ja: {
+        status: "supported",
+        assessment: { verdict: "supported" },
+        description: before.description.ja,
+      },
+    },
+    keywords: words,
+  };
+  await assert.rejects(
+    applyReviewedMetadata(root, [review, { ...review, event: unrelated, keywords: null }]),
+    /Review incomplete/u,
+  );
+  for (const file of files) assert.equal(await readFile(join(root, file), "utf8"), original);
+
+  const other = join(root, files[1]);
+  await writeFile(other, JSON.stringify({ events: [unrelated] }));
+  await assert.rejects(applyReviewedMetadata(root, [review]), /Event data changed/u);
+  assert.equal(await readFile(join(root, files[0]), "utf8"), original);
+
+  await writeFile(other, original);
+  assert.equal(await applyReviewedMetadata(root, [review]), 2);
+  for (const file of files) {
+    const { events } = JSON.parse(await readFile(join(root, file), "utf8")) as {
+      events: EventType[];
+    };
+    assert.deepEqual(events, [
+      {
+        ...before,
+        description: { ...before.description, en: "Called before loading." },
+        keywords: words,
+      },
+      unrelated,
+    ]);
+  }
 });
