@@ -456,10 +456,7 @@ legend {
   margin: 0;
   white-space: pre-line;
 }
-.deprecated {
-  color: var(--notice);
-}
-.experimental {
+.event-notice {
   display: flex;
   align-items: baseline;
   gap: 0.5rem;
@@ -470,16 +467,22 @@ legend {
   background: color-mix(in srgb, var(--notice) 8%, var(--page));
   font-size: 0.875rem;
 }
-.experimental svg {
+.event-notice[data-annotation="@Deprecated"] {
+  --notice: light-dark(#963625, #ffad99);
+}
+.event-notice[data-annotation="@Beta"] {
+  --notice: light-dark(#415690, #b6c8ff);
+}
+.event-notice svg {
   flex: none;
   align-self: flex-start;
   margin-top: 0.2em;
   color: var(--notice);
 }
-.experimental strong {
+.event-notice strong {
   color: var(--notice);
 }
-.experimental p {
+.event-notice p {
   margin-top: 0.15rem;
 }
 .missing {

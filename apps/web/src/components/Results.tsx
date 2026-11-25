@@ -1,5 +1,6 @@
 import { useEffect, useRef } from "react";
 import { BiTestTube } from "react-icons/bi";
+import { FiAlertTriangle, FiInfo } from "react-icons/fi";
 import type EventSource from "@spigot-event-list/catalog/types/source-type";
 import type { SearchEventsResponse } from "@spigot-event-list/catalog/types/event";
 import {
@@ -100,9 +101,6 @@ export default function Results({ locale, version, search, tags, initial, toggle
                   {sourceNames[s]}
                 </button>
               ))}
-            {e.deprecate && e.deprecate !== "@Experimental" && (
-              <span className="deprecated">{e.deprecate}</span>
-            )}
           </div>
           {e.description && <p>{e.description}</p>}
           {e.javadoc && (
@@ -110,16 +108,20 @@ export default function Results({ locale, version, search, tags, initial, toggle
               <p>{e.javadoc}</p>
             </blockquote>
           )}
-          {e.deprecate === "@Experimental" ? (
-            <div className="experimental" role="note">
-              <BiTestTube aria-hidden="true" />
+          {(e.deprecate || e.deprecateDescription) && (
+            <div className="event-notice" data-annotation={e.deprecate} role="note">
+              {e.deprecate === "@Deprecated" ? (
+                <FiAlertTriangle aria-hidden="true" />
+              ) : e.deprecate === "@Experimental" ? (
+                <BiTestTube aria-hidden="true" />
+              ) : (
+                <FiInfo aria-hidden="true" />
+              )}
               <div>
-                <strong translate="no">{e.deprecate}</strong>
+                {e.deprecate && <strong translate="no">{e.deprecate}</strong>}
                 {e.deprecateDescription && <p>{e.deprecateDescription}</p>}
               </div>
             </div>
-          ) : (
-            e.deprecateDescription && <p className="deprecated">{e.deprecateDescription}</p>
           )}
         </article>
       ))}
