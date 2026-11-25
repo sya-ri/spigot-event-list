@@ -25,20 +25,22 @@ service.addEventListener("fetch", (event) => {
   if (url.pathname.startsWith("/api/")) {
     event.respondWith(
       (async () => {
-        const cache = await caches.open(apiCache);
-        try {
-          const response = await fetch(req);
-          if (response.ok) {
+        const response = await fetch(req).catch(async (error) => {
+          const previous = await (await caches.open(apiCache)).match(req);
+          if (previous) return previous;
+          throw error;
+        });
+        if (response.ok) {
+          try {
+            const cache = await caches.open(apiCache);
             await cache.put(req, response.clone());
             const keys = await cache.keys();
             for (const key of keys.slice(0, Math.max(0, keys.length - 32))) await cache.delete(key);
+          } catch {
+            // A full or disabled cache must not interrupt a successful search.
           }
-          return response;
-        } catch (error) {
-          const previous = await cache.match(req);
-          if (previous) return previous;
-          throw error;
         }
+        return response;
       })(),
     );
   } else if (req.mode === "navigate") {

@@ -1,7 +1,8 @@
 import { readdir, readFile } from "fs/promises";
 import path from "path";
 import { createAsyncCache } from "./async-cache";
-import EventType from "@spigot-event-list/catalog/types/event-type";
+import type EventType from "./types/event-type";
+import type { EventSnapshot } from "./event-data";
 
 const SERVER_SOURCES = ["spigot", "paper", "purpur"] as const;
 const SERVER_VERSION_SOURCES = ["Spigot", "Paper", "Purpur"] as const;
@@ -86,10 +87,7 @@ export const createDataPaths = (rootPath: string, { cacheTtlMs = 0 } = {}) => {
 
   const readServerEvents = async (version: string) => {
     const text = await readFile(minecraftDataPath(version, "events.json"), "utf8");
-    return JSON.parse(text) as {
-      lang: string[];
-      events: EventType[];
-    };
+    return JSON.parse(text) as EventSnapshot;
   };
 
   const readServerVersions = async (version: string) => {
@@ -115,16 +113,10 @@ export const createDataPaths = (rootPath: string, { cacheTtlMs = 0 } = {}) => {
     return latestVersion;
   };
 
-  const readLatestServerEvents = async (): Promise<{
-    lang: string[];
-    events: EventType[];
-  }> => {
+  const readLatestServerEvents = async (): Promise<EventSnapshot> => {
     try {
       const text = await readFile(dataPath("events.json"), "utf8");
-      return JSON.parse(text) as {
-        lang: string[];
-        events: EventType[];
-      };
+      return JSON.parse(text) as EventSnapshot;
     } catch {}
     const coveredSources = new Set<string>();
     const events: EventType[] = [];
@@ -156,10 +148,7 @@ export const createDataPaths = (rootPath: string, { cacheTtlMs = 0 } = {}) => {
 
   const readProxyEvents = async () => {
     const text = await readFile(dataPath("proxy", "events.json"), "utf8");
-    return JSON.parse(text) as {
-      lang: string[];
-      events: EventType[];
-    };
+    return JSON.parse(text) as EventSnapshot;
   };
 
   const readLatestServerVersions = async () => {

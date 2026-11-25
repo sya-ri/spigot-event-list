@@ -127,7 +127,7 @@ export default function Explorer({ locale, versions, initial }: Props) {
           <SearchBox
             locale={locale}
             search={search}
-            setSearch={(value) => update({ search: value || null })}
+            setSearch={(value) => update({ search: value.trim() || null })}
           />
           <details className="search-help">
             <summary>{ja ? "検索のヒント" : "Search syntax"}</summary>

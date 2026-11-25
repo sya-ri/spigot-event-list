@@ -1,16 +1,19 @@
 import type EventType from "./types/event-type";
 import type { EventResponse } from "./types/event";
-import type { createDataPaths } from "./data-paths";
 import { resolveServerVersion } from "./resolve-version";
 
-export type EventDataDependencies = Pick<
-  ReturnType<typeof createDataPaths>,
-  | "getLatestMinecraftVersion"
-  | "getServerVersionsDesc"
-  | "readLatestServerEvents"
-  | "readProxyEvents"
-  | "readServerEvents"
->;
+export interface EventSnapshot {
+  lang: string[];
+  events: EventType[];
+}
+
+export interface EventDataDependencies {
+  getLatestMinecraftVersion(): Promise<string | null>;
+  getServerVersionsDesc(): Promise<string[]>;
+  readLatestServerEvents(): Promise<EventSnapshot>;
+  readProxyEvents(): Promise<EventSnapshot>;
+  readServerEvents(version: string): Promise<EventSnapshot>;
+}
 
 export const readEventData = async (version: string, dependencies: EventDataDependencies) => {
   const [versions, latest] = await Promise.all([
