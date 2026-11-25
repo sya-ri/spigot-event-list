@@ -1,0 +1,116 @@
+---
+import { FiCheck, FiGithub, FiGlobe, FiMoon, FiSun } from "react-icons/fi";
+import { locales, type Locale } from "../lib/locale";
+import { translate } from "../lib/translation";
+interface Props {
+  locale: Locale;
+}
+const { locale } = Astro.props;
+const names = { en: "English", ja: "日本語" };
+---
+
+<header class="mast">
+  <div class="shell mast-inner">
+    <a class="brand" href={"/" + locale} translate="no">
+      <img src="/mark.svg" width="32" height="32" alt="" />
+      Spigot Event List
+    </a>
+    <nav aria-label={locale === "ja" ? "サイトメニュー" : "Site navigation"}>
+      <details class="languages">
+        <summary
+          class="icon-button"
+          aria-label={translate(locale, "Language")}
+          title={translate(locale, "Language")}
+        >
+          <FiGlobe aria-hidden="true" />
+        </summary>
+        <ul>
+          {locales.map((lang) => (
+            <li>
+              <a
+                href={"/" + lang}
+                hreflang={lang}
+                lang={lang}
+                aria-current={locale === lang ? "page" : undefined}
+              >
+                {names[lang]}
+                {locale === lang && <FiCheck aria-hidden="true" />}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </details>
+      <button
+        type="button"
+        class="icon-button theme-toggle"
+        aria-label={translate(locale, "ToggleTheme")}
+        title={translate(locale, "ToggleTheme")}
+      >
+        <FiSun className="sun" aria-hidden="true" />
+        <FiMoon className="moon" aria-hidden="true" />
+      </button>
+      <a
+        class="icon-button"
+        href="https://github.com/sya-ri/spigot-event-list"
+        aria-label="GitHub"
+        title="GitHub"
+      >
+        <FiGithub aria-hidden="true" />
+      </a>
+    </nav>
+  </div>
+</header>
+<script>
+  const menu = document.querySelector<HTMLDetailsElement>(".languages")!;
+  const trigger = menu.querySelector("summary")!;
+  const links = menu.querySelectorAll<HTMLAnchorElement>("a[hreflang]");
+  let hoverOpened = false;
+  menu.addEventListener("pointerenter", (event) => {
+    if (event.pointerType === "mouse" && !menu.open) {
+      menu.open = true;
+      hoverOpened = true;
+    }
+  });
+  menu.addEventListener("pointerleave", () => {
+    if (hoverOpened && !menu.contains(document.activeElement)) menu.open = false;
+  });
+  trigger.addEventListener("click", (event) => {
+    if (menu.open && hoverOpened) event.preventDefault();
+    hoverOpened = false;
+  });
+  menu.addEventListener("focusout", (event) => {
+    if (!menu.contains(event.relatedTarget as Node | null)) menu.open = false;
+  });
+  document.addEventListener("pointerdown", (event) => {
+    if (!menu.contains(event.target as Node)) menu.open = false;
+  });
+  document.addEventListener("keydown", (event) => {
+    if (event.key !== "Escape" || !menu.open) return;
+    if (menu.contains(document.activeElement)) trigger.focus();
+    menu.open = false;
+    hoverOpened = false;
+  });
+  function syncLinks() {
+    for (const link of links) link.search = location.search;
+  }
+  syncLinks();
+  window.addEventListener("popstate", syncLinks);
+  window.addEventListener("filterschange", syncLinks);
+  for (const link of links) {
+    link.addEventListener("click", () => {
+      document.cookie = "NEXT_LOCALE=" + link.hreflang + "; Path=/; Max-Age=31536000; SameSite=Lax";
+    });
+  }
+  document.querySelector(".theme-toggle")!.addEventListener("click", () => {
+    const root = document.documentElement;
+    const dark = root.dataset.theme
+      ? root.dataset.theme === "dark"
+      : matchMedia("(prefers-color-scheme: dark)").matches;
+    root.dataset.theme = dark ? "light" : "dark";
+    try {
+      localStorage.setItem("theme", root.dataset.theme);
+    } catch {
+      /* The choice still applies to the current page. */
+    }
+  });
+</script>

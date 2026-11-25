@@ -1,5 +1,3 @@
-"use client";
-
 import { BiSearch, BiX } from "react-icons/bi";
 import { useEffect, useState } from "react";
 import { translate } from "../lib/translation";
@@ -45,6 +43,9 @@ const SearchBox = ({ locale, search, setSearch }: SearchBoxProps) => {
     >
       <input
         type="search"
+        name="search"
+        autoComplete="off"
+        spellCheck={false}
         className="query"
         aria-label={translate(locale, "SearchByNameOrDescription")}
         placeholder={locale === "ja" ? "名前・説明・キーワード" : "Name, description, or keyword"}
@@ -70,11 +71,11 @@ const SearchBox = ({ locale, search, setSearch }: SearchBoxProps) => {
             setSearch("");
           }}
         >
-          <BiX className="size-5" />
+          <BiX aria-hidden="true" />
         </button>
       )}
       <button type="submit" className="submit-search" aria-label={translate(locale, "Search")}>
-        <BiSearch className="size-4" />
+        <BiSearch aria-hidden="true" />
       </button>
     </form>
   );

@@ -31,7 +31,7 @@ type Props = {
   reset: () => void;
 };
 export default function Results({ locale, version, search, tags, initial, toggle, reset }: Props) {
-  const { events, total, error, isLoading, isLoadingMore, hasMore, loadMore, retry } = useEvents(
+  const { events, error, isLoading, isLoadingMore, hasMore, loadMore, retry } = useEvents(
     locale,
     version,
     search,
@@ -58,15 +58,7 @@ export default function Results({ locale, version, search, tags, initial, toggle
   const incomplete = events.filter((e) => !e.description || e.deprecateDescription === "");
   return (
     <section id="results" tabIndex={-1} aria-label={locale === "ja" ? "検索結果" : "Results"}>
-      <div className="result-bar" role="status">
-        {total !== undefined
-          ? t("ShowingEvents")
-              .replace("%shown%", events.length.toLocaleString(locale))
-              .replace("%total%", total.toLocaleString(locale))
-          : isLoading
-            ? t("LoadingEvents")
-            : t("Search")}
-      </div>
+      {isLoading && !events.length && <p role="status">{t("LoadingEvents")}</p>}
       {incomplete.length > 0 && (
         <details className="missing">
           <summary>{t("IncompleteEvents").replace("%size%", String(incomplete.length))}</summary>
@@ -82,7 +74,7 @@ export default function Results({ locale, version, search, tags, initial, toggle
       {events.map((e) => (
         <article key={e.source + e.link} className="event">
           <h2>
-            <a href={e.link} target="_blank" rel="noopener noreferrer">
+            <a translate="no" href={e.link} target="_blank" rel="noopener noreferrer">
               {e.name}
             </a>
           </h2>
@@ -94,6 +86,8 @@ export default function Results({ locale, version, search, tags, initial, toggle
                 <button
                   key={s}
                   className="platform"
+                  data-source={s}
+                  translate="no"
                   aria-pressed={tags.includes(s)}
                   onClick={() => toggle(s)}
                 >
@@ -105,10 +99,10 @@ export default function Results({ locale, version, search, tags, initial, toggle
           </div>
           {e.deprecateDescription && <p className="deprecated">{e.deprecateDescription}</p>}
           {e.javadoc && (
-            <details className="javadoc">
-              <summary>Javadoc</summary>
+            <div className="javadoc" lang="en">
+              <strong>Javadoc</strong>
               <p>{e.javadoc}</p>
-            </details>
+            </div>
           )}
         </article>
       ))}

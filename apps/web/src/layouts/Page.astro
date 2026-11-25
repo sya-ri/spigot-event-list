@@ -20,13 +20,14 @@ const canonical = new URL(Astro.url.pathname.replace(/\/$/, ""), Astro.site);
 <html lang={locale}>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="description" content={description} />
     <title>{title}</title>
     <link rel="canonical" href={canonical} />
     <meta name="color-scheme" content="light dark" />
     <link rel="manifest" href="/manifest.json" />
-    <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" href="/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="/mark.svg" type="image/svg+xml" sizes="any" />
     <link rel="apple-touch-icon" href="/icon-192x192.png" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />

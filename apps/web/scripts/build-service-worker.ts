@@ -10,7 +10,7 @@ export async function buildServiceWorker(output: string) {
     "/ja",
     "/manifest.json",
     "/favicon.ico",
-    "/favicon-32x32.png",
+    "/mark.svg",
     "/icon-192x192.png",
     "/icon-512x512.png",
     ...paths,

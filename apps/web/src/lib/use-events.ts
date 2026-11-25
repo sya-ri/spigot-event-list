@@ -52,7 +52,6 @@ const useEvents = (
 
   return {
     events: enabled ? (data?.flatMap((page) => page.events) ?? []) : [],
-    total: enabled ? data?.[0]?.total : 0,
     error: enabled ? error : undefined,
     isLoading: enabled && isLoading,
     isLoadingMore,

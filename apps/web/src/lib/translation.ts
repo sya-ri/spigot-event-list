@@ -12,23 +12,17 @@ type Message = {
   NoSources: string;
   ResetFilters: string;
   LoadMore: string;
-  ShowingEvents: string;
   Language: string;
   ToggleTheme: string;
-  AiSkillCopyFailed: string;
-  AiSkillCopy: string;
   SkipToResults: string;
 
   SearchByNameOrDescription: string;
   AddNewLanguage: string;
   IncompleteEvents: string;
-  SearchResultsCount: string;
   Latest: string;
   MinecraftVersion: string;
   Version: string;
   AiSkillTitle: string;
-  AiSkillClose: string;
-  AiSkillCopied: string;
 };
 
 export const messages: Record<Locale, Message> = {
@@ -44,23 +38,17 @@ export const messages: Record<Locale, Message> = {
     NoSources: "Select at least one platform to see events.",
     ResetFilters: "Reset filters",
     LoadMore: "Load more",
-    ShowingEvents: "Showing %shown% of %total% events.",
     Language: "Change language",
     ToggleTheme: "Switch theme",
-    AiSkillCopyFailed: "Could not copy. Select and copy the command below.",
-    AiSkillCopy: "Copy command",
     SkipToResults: "Skip to results",
 
     SearchByNameOrDescription: "Search by name, description, or keyword",
-    AddNewLanguage: "Add new language",
+    AddNewLanguage: "Contribute a translation",
     IncompleteEvents: "%size% event descriptions are not written.",
-    SearchResultsCount: "%size% events found.",
     Latest: "latest",
     MinecraftVersion: "Minecraft version",
     Version: "Version",
-    AiSkillTitle: "Event search skill for agents",
-    AiSkillClose: "Close",
-    AiSkillCopied: "Copied",
+    AiSkillTitle: "Agent skill",
   },
   ja: {
     Search: "検索",
@@ -74,23 +62,17 @@ export const messages: Record<Locale, Message> = {
     NoSources: "イベントを表示するプラットフォームを選択してください。",
     ResetFilters: "絞り込みをリセット",
     LoadMore: "さらに表示",
-    ShowingEvents: "%total%件中%shown%件を表示しています。",
     Language: "言語を変更",
     ToggleTheme: "テーマを切り替え",
-    AiSkillCopyFailed: "コピーできませんでした。下のコマンドを選択してコピーしてください。",
-    AiSkillCopy: "コマンドをコピー",
     SkipToResults: "検索結果へ移動",
 
     SearchByNameOrDescription: "イベント名・説明文・キーワードで検索",
-    AddNewLanguage: "翻訳を追加する",
+    AddNewLanguage: "翻訳に参加",
     IncompleteEvents: "%size%個のイベント説明文が書かれていません。",
-    SearchResultsCount: "%size%件ヒットしました。",
     Latest: "最新",
     MinecraftVersion: "Minecraft バージョン",
     Version: "バージョン",
-    AiSkillTitle: "エージェント向けイベント検索スキル",
-    AiSkillClose: "閉じる",
-    AiSkillCopied: "コピー済み",
+    AiSkillTitle: "AI スキル",
   },
 };
 
