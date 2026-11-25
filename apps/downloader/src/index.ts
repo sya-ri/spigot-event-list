@@ -401,4 +401,4 @@ const sourceNameToEnvironment = (sourceName: ReleaseDiscovery["sourceName"]): So
   }
 };
 
-index();
+await index();

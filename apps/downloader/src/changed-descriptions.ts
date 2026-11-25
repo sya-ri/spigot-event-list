@@ -1,6 +1,6 @@
 import { execFileSync } from "node:child_process";
 import { readFile } from "node:fs/promises";
-import { resolve } from "node:path";
+import { isAbsolute, join, resolve } from "node:path";
 import type EventType from "@spigot-event-list/catalog/types/event-type";
 import type { ReviewEvent, ReviewTarget } from "./description-review";
 
@@ -38,9 +38,24 @@ export function selectChanges(
   }
 }
 
+function gitExecutable() {
+  const configured = process.env.GIT_EXECUTABLE;
+  if (configured) {
+    if (!isAbsolute(configured)) throw new Error("GIT_EXECUTABLE must be an absolute path.");
+    return configured;
+  }
+  if (process.platform === "win32") {
+    const programFiles =
+      process.env.ProgramW6432 ?? process.env.ProgramFiles ?? "C:\\Program Files";
+    return join(programFiles, "Git", "cmd", "git.exe");
+  }
+  return "/usr/bin/git";
+}
+
 export async function changedDescriptions(root: string) {
+  const executable = gitExecutable();
   const git = (...args: string[]) =>
-    execFileSync("git", args, { cwd: root, encoding: "utf8", maxBuffer: 32 * 1024 * 1024 });
+    execFileSync(executable, args, { cwd: root, encoding: "utf8", maxBuffer: 32 * 1024 * 1024 });
   const files = new Set(
     [
       ...git("diff", "--name-only", "-z", "--diff-filter=ACMRT", "HEAD", "--", "data").split("\0"),
@@ -53,7 +68,7 @@ export async function changedDescriptions(root: string) {
     git("ls-tree", "-r", "--name-only", "-z", "HEAD", "--", "data").split("\0"),
   );
   const readEvents = (text: string): EventType[] => JSON.parse(text).events;
-  for (const file of [...files].sort()) {
+  for (const file of [...files].sort((left, right) => left.localeCompare(right, "en"))) {
     // New fixed snapshots often duplicate the previous latest release. Only review new evidence.
     const base = tracked.has(file) ? file : "data/events.json";
     const previous = tracked.has(base) ? readEvents(git("show", "HEAD:" + base)) : [];
