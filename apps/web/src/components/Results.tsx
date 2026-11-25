@@ -74,8 +74,14 @@ export default function Results({ locale, version, search, tags, initial, toggle
       {events.map((e) => (
         <article key={e.source + e.link} className="event">
           <h2>
-            <a translate="no" href={e.link} target="_blank" rel="noopener noreferrer">
-              {e.name}
+            <a
+              translate="no"
+              href={e.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-description={e.abstract ? t("AbstractEvent") : undefined}
+            >
+              {e.abstract ? <s>{e.name}</s> : e.name}
             </a>
           </h2>
           {e.description && <p>{e.description}</p>}
@@ -88,21 +94,19 @@ export default function Results({ locale, version, search, tags, initial, toggle
                   className="platform"
                   data-source={s}
                   translate="no"
-                  aria-pressed={tags.includes(s)}
+                  aria-pressed={tags.length < platforms.length && tags.includes(s)}
                   onClick={() => toggle(s)}
                 >
                   {sourceNames[s]}
                 </button>
               ))}
-            {e.abstract && <span>abstract</span>}
             {e.deprecate && <span className="deprecated">{e.deprecate}</span>}
           </div>
           {e.deprecateDescription && <p className="deprecated">{e.deprecateDescription}</p>}
           {e.javadoc && (
-            <div className="javadoc" lang="en">
-              <strong>Javadoc</strong>
+            <blockquote cite={e.link} lang="en">
               <p>{e.javadoc}</p>
-            </div>
+            </blockquote>
           )}
         </article>
       ))}
