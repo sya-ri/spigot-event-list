@@ -1,9 +1,9 @@
-import { format, promisify } from "util";
-import { parseString } from "xml2js";
+import { format } from "util";
 import MultiProgress from "multi-progress";
 import { pipeline } from "stream/promises";
 import { createWriteStream } from "fs";
-import { fetchStream, fetchText } from "./http";
+import { fetchStream } from "./http";
+import { fetchMavenSnapshot, fetchMavenVersions } from "./maven-metadata";
 
 export type Artifact = {
   groupId: string;
@@ -24,22 +24,13 @@ const groupPath = (artifact: Artifact) =>
 
 const artifactPath = (artifact: Artifact) => groupPath(artifact) + "/" + fileName(artifact);
 
-const parseMetadata = async (metadataUrl: string, config?: RequestInit) => {
-  return (await promisify(parseString)(await fetchText(metadataUrl, config))) as any;
-};
-
 const latestSnapShotVersion = async (
   artifact: Artifact,
   basePath: string,
   config?: RequestInit,
 ) => {
   const metadataUrl = basePath + groupPath(artifact) + "/maven-metadata.xml";
-  const xml = await parseMetadata(metadataUrl, config);
-  const snapshot = xml.metadata.versioning[0].snapshot[0];
-  return {
-    snapshotVersion: snapshot.timestamp[0] + "-" + snapshot.buildNumber[0],
-    buildNumber: Number.parseInt(snapshot.buildNumber[0], 10),
-  };
+  return fetchMavenSnapshot(metadataUrl, config);
 };
 
 const compareReleaseVersions = (left: string, right: string) =>
@@ -57,10 +48,8 @@ export const resolveLatestArtifactVersion = async (
   const metadataUrl =
     basePath +
     [artifact.groupId.replace(/\./g, "/"), artifact.artifactId, "maven-metadata.xml"].join("/");
-  const xml = await parseMetadata(metadataUrl, config);
-  const versions = (xml.metadata.versioning?.[0]?.versions?.[0]?.version ?? []) as string[];
+  const versions = await fetchMavenVersions(metadataUrl, config);
   const latestVersion = versions
-    .map((value) => String(value))
     .filter((value) => value.startsWith(prefix))
     .sort(compareReleaseVersions)
     .pop();

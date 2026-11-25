@@ -1,5 +1,5 @@
-import { load } from "cheerio";
-import { fetchJson, fetchText } from "../http";
+import { fetchJson } from "../http";
+import { fetchMavenVersions, fetchPomVersion } from "../maven-metadata";
 
 const PAPERMC_HEADERS = {
   headers: {
@@ -25,11 +25,6 @@ const stableMinecraftVersion = (value: string) => /^\d+(\.\d+){1,2}$/.test(value
 
 const sortVersionsAsc = (versions: string[]) =>
   [...versions].sort((left, right) => compareVersions(left, right));
-
-const fetchVersionFromPom = async (url: string): Promise<string> => {
-  const $ = load(await fetchText(url));
-  return $("version").first().text();
-};
 
 type JenkinsApi = {
   id: string;
@@ -134,13 +129,11 @@ const fetchLatestVersionFromMavenMetadata = async (
 };
 
 const fetchSpigotVersions = async (): Promise<string[]> => {
-  const body = await fetchText(
+  const versions = await fetchMavenVersions(
     "https://hub.spigotmc.org/nexus/content/repositories/snapshots/org/spigotmc/spigot-api/maven-metadata.xml",
   );
-  const matches = body.match(/<version>([^<]+)<\/version>/g) ?? [];
   return sortVersionsAsc(
-    matches
-      .map((value) => value.replace("</version>", "").replace("<version>", ""))
+    versions
       .filter((value) => value.endsWith("-R0.1-SNAPSHOT"))
       .map((value) => value.replace(/-R0\.1-SNAPSHOT$/, ""))
       .filter(stableMinecraftVersion),
@@ -151,14 +144,8 @@ const fetchVersionsFromMavenMetadata = async (
   url: string,
   predicate: (version: string) => boolean,
 ) => {
-  const matches = (await fetchText(url)).match(/<version>([^<]+)<\/version>/g) ?? [];
-  return Array.from(
-    new Set(
-      matches
-        .map((value) => value.replace("</version>", "").replace("<version>", ""))
-        .filter(predicate),
-    ),
-  ).sort((left, right) =>
+  const versions = await fetchMavenVersions(url);
+  return Array.from(new Set(versions.filter(predicate))).sort((left, right) =>
     left.localeCompare(right, undefined, {
       numeric: true,
       sensitivity: "base",
@@ -167,7 +154,7 @@ const fetchVersionsFromMavenMetadata = async (
 };
 
 export const bungeeVersion = async () => {
-  return fetchVersionFromPom("https://github.com/SpigotMC/BungeeCord/raw/master/pom.xml");
+  return fetchPomVersion("https://github.com/SpigotMC/BungeeCord/raw/master/pom.xml");
 };
 
 export const bungeeBuildNumber = async () => {
