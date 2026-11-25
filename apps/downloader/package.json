@@ -1,0 +1,23 @@
+{
+  "name": "@spigot-event-list/downloader",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "check": "tsx src/check.ts"
+  },
+  "dependencies": {
+    "@spigot-event-list/catalog": "workspace:*",
+    "cheerio": "1.2.0",
+    "compressing": "2.1.5",
+    "multi-progress": "4.0.0",
+    "xml2js": "0.6.2"
+  },
+  "devDependencies": {
+    "@types/multi-progress": "2.0.6",
+    "@types/node": "24.19.2",
+    "@types/xml2js": "0.4.14",
+    "tsx": "4.23.15",
+    "typescript": "6.0.3"
+  }
+}

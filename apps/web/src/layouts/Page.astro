@@ -1,0 +1,54 @@
+---
+import "../styles/site.css";
+import type { Locale } from "../lib/locale";
+interface Props {
+  locale: Locale;
+  title?: string;
+  description?: string;
+}
+const {
+  locale,
+  title = "Spigot Event List",
+  description = locale === "ja"
+    ? "Minecraft プラグインのイベントを名前・説明・対応バージョンで検索できます。"
+    : "Find Minecraft plugin events by name, description, platform and version.",
+} = Astro.props;
+const canonical = new URL(Astro.url.pathname.replace(/\/$/, ""), Astro.site);
+---
+
+<!doctype html>
+<html lang={locale}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+    <link rel="canonical" href={canonical} />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/icon-192x192.png" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={new URL("/logo.png", Astro.site)} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script is:inline>
+      try {
+        const c = localStorage.getItem("theme");
+        if (c === "dark" || c === "light") document.documentElement.dataset.theme = c;
+      } catch {}
+    </script>
+  </head>
+  <body>
+    <slot />
+    <script>
+      if (import.meta.env.PROD && "serviceWorker" in navigator) {
+        const register = () => navigator.serviceWorker.register("/sw.js").catch(() => {});
+        if (document.readyState === "complete") void register();
+        else window.addEventListener("load", register, { once: true });
+      }
+    </script>
+  </body>
+</html>

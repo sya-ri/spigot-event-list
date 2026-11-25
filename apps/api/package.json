@@ -1,0 +1,26 @@
+{
+  "name": "@spigot-event-list/api",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./router": "./src/router.ts"
+  },
+  "scripts": {
+    "dev": "cf dev",
+    "build": "cf build",
+    "preview": "cf dev",
+    "deploy": "cf deploy"
+  },
+  "dependencies": {
+    "@spigot-event-list/catalog": "workspace:*"
+  },
+  "devDependencies": {
+    "@cloudflare/vite-plugin": "2.0.0-rc.5",
+    "@cloudflare/workers-types": "5.20261125.1",
+    "@types/node": "24.19.2",
+    "cf": "1.0.0-rc.5",
+    "typescript": "6.0.3",
+    "vite": "8.3.8",
+    "vite-plus": "1.8.0"
+  }
+}
