@@ -3,6 +3,8 @@ import { bindings, defineConfig } from "cf/config";
 export default defineConfig({
   worker: {
     name: "spigot-event-list",
+    domains: ["spigot-event-list.s7a.dev"],
+    workersDev: true,
     entrypoint: "./src/index.ts",
     compatibilityDate: "2026-11-01",
     assets: {
