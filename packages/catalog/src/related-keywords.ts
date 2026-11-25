@@ -1,5 +1,5 @@
-import { eventNameWords, normalizeSearchText } from "./search-text";
-import type EventType from "./types/event-type";
+import { eventNameWords, normalizeSearchText } from "./search-text.ts";
+import type EventType from "./types/event-type.ts";
 
 const asciiWord = /[a-z\d_]/u;
 export const minimumRelatedKeywords = 4;

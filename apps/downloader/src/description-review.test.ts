@@ -6,11 +6,11 @@ import { dirname, join } from "node:path";
 import test from "node:test";
 import OpenAI from "openai";
 import type EventType from "@spigot-event-list/catalog/types/event-type";
-import { applyReviewedMetadata } from "./apply-reviewed-metadata";
-import { changedDescriptions, selectChanges } from "./changed-descriptions";
-import { reviewEvent, type ReviewTarget } from "./description-review";
-import { reviewKeywords } from "./keyword-review";
-import type { ReviewedEvent } from "./review-report";
+import { applyReviewedMetadata } from "./apply-reviewed-metadata.ts";
+import { changedDescriptions, selectChanges } from "./changed-descriptions.ts";
+import { reviewEvent, type ReviewTarget } from "./description-review.ts";
+import { reviewKeywords } from "./keyword-review.ts";
+import type { ReviewedEvent } from "./review-report.ts";
 
 const before: EventType = {
   source: "paper",

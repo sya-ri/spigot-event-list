@@ -1,7 +1,7 @@
-import type EventType from "./types/event-type";
-import type { SearchEventsResponse } from "./types/event";
-import { parseQuery, scoreEvent } from "./event-search";
-import { compareEvents, localizeEvent } from "./event-data";
+import type EventType from "./types/event-type.ts";
+import type { SearchEventsResponse } from "./types/event.ts";
+import { parseQuery, scoreEvent } from "./event-search.ts";
+import { compareEvents, localizeEvent } from "./event-data.ts";
 
 export function searchPage(
   eventsIn: EventType[],

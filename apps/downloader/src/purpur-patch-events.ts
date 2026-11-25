@@ -4,8 +4,8 @@ import { createWriteStream } from "fs";
 import { mkdir, mkdtemp, readdir, readFile, rm, writeFile } from "fs/promises";
 import os from "os";
 import path from "path";
-import EventType from "@spigot-event-list/catalog/types/event-type";
-import { fetchStream } from "./http";
+import type EventType from "@spigot-event-list/catalog/types/event-type";
+import { fetchStream } from "./http.ts";
 
 const LEGACY_PURPUR_PACKAGE_PREFIXES = ["net.pl3x.purpur", "org.purpurmc.purpur"] as const;
 

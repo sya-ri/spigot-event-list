@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { createRouter } from "./router";
-import { assetCatalog, type Assets } from "./assets";
+import { createRouter } from "./router.ts";
+import { assetCatalog, type Assets } from "./assets.ts";
 
 const loads = new Map<string, number>();
 const assets: Assets = {

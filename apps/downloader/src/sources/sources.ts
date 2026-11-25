@@ -4,7 +4,7 @@ import {
   createPurpurReleaseLocation,
   createSpigotLocation,
   type JavadocLocation,
-} from "./server-javadoc-resolver";
+} from "./server-javadoc-resolver.ts";
 import {
   bungeeBuildNumber,
   bungeeVersion,
@@ -17,7 +17,7 @@ import {
   spigotVersion,
   velocityBuildNumber,
   velocityVersion,
-} from "./source-version";
+} from "./source-version.ts";
 
 const normalizeBungeeVersionLabel = (version: string) => version.replace(/-R0\.\d+$/, "");
 const normalizePurpurVersionLabel = (version: string) =>

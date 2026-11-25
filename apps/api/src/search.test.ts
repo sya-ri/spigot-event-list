@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import EventType from "@spigot-event-list/catalog/types/event-type";
-import { createSearchEventsHandler } from "./search";
+import type EventType from "@spigot-event-list/catalog/types/event-type";
+import { createSearchEventsHandler } from "./search.ts";
 import type { SearchEventsResponse } from "@spigot-event-list/catalog/types/event";
 
 const paperEvent: EventType = {

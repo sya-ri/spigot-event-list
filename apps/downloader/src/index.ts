@@ -1,20 +1,19 @@
 import {
   discoverSourceReleases,
-  ReleaseDiscovery,
+  type ReleaseDiscovery,
   toSourceFromRelease,
-} from "./discover-source-releases";
-import { getSources } from "./sources/sources";
+} from "./discover-source-releases.ts";
+import { getSources, type Source } from "./sources/sources.ts";
 import { mkdir, readFile, writeFile } from "fs/promises";
-import downloadLatestEvents from "./download-latest-events";
-import EventType from "@spigot-event-list/catalog/types/event-type";
-import { Source } from "./sources/sources";
-import SourceType from "@spigot-event-list/catalog/types/source-type";
+import downloadLatestEvents from "./download-latest-events.ts";
+import type EventType from "@spigot-event-list/catalog/types/event-type";
+import type SourceType from "@spigot-event-list/catalog/types/source-type";
 import path from "path";
 import { createDataPaths, hasCompleteServerSources } from "@spigot-event-list/catalog/data-paths";
-import { fillMissingDescriptionsInData } from "./fill-missing-descriptions";
-import { reuseEventMetadata } from "./event-metadata";
-import { retainCompleteServerSnapshot } from "./retain-server-snapshot";
-import { getServerJavadocLinkBases } from "./server-javadoc-links";
+import { fillMissingDescriptionsInData } from "./fill-missing-descriptions.ts";
+import { reuseEventMetadata } from "./event-metadata.ts";
+import { retainCompleteServerSnapshot } from "./retain-server-snapshot.ts";
+import { getServerJavadocLinkBases } from "./server-javadoc-links.ts";
 
 const PROXY_SOURCE_NAMES = ["Bungee", "Velocity"] as const;
 const PROXY_EVENT_SOURCES = ["bungee", "velocity"] as const;

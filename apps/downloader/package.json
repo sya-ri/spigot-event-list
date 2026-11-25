@@ -3,8 +3,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "review-updates": "tsx src/review-updates.ts",
-    "start": "tsx src/index.ts"
+    "review-updates": "node src/review-updates.ts",
+    "start": "node src/index.ts"
   },
   "dependencies": {
     "@spigot-event-list/catalog": "workspace:*",
@@ -17,7 +17,6 @@
   "devDependencies": {
     "@types/multi-progress": "2.0.6",
     "@types/node": "26.6.7",
-    "tsx": "4.23.15",
     "typescript": "7.0.2"
   }
 }

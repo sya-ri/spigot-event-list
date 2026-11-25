@@ -1,5 +1,5 @@
-import { assetCatalog, type Assets } from "./assets";
-import { createRouter } from "./router";
+import { assetCatalog, type Assets } from "./assets.ts";
+import { createRouter } from "./router.ts";
 
 interface Env {
   ASSETS: Assets;

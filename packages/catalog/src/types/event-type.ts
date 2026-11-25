@@ -1,4 +1,4 @@
-import SourceType from "./source-type";
+import type SourceType from "./source-type.ts";
 
 type EventType = {
   description: Record<string, string>;
@@ -14,4 +14,4 @@ type EventType = {
   deprecateDescription?: Record<string, string>;
 };
 
-export default EventType;
+export type { EventType as default };

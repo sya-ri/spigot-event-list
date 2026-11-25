@@ -1,7 +1,7 @@
 import type { EventDataDependencies } from "@spigot-event-list/catalog/event-data";
-import { createSearchEventsHandler } from "./search";
-import { createVersionsHandler } from "./versions";
-import { createVersionEventsHandler } from "./events";
+import { createSearchEventsHandler } from "./search.ts";
+import { createVersionsHandler } from "./versions.ts";
+import { createVersionEventsHandler } from "./events.ts";
 
 function preferredLocale(request: Request) {
   const stored = /(?:^|;\s*)NEXT_LOCALE=(ja|en)(?:;|$)/.exec(request.headers.get("cookie") ?? "");

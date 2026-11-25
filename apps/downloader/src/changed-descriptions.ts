@@ -2,7 +2,7 @@ import { execFileSync } from "node:child_process";
 import { readFile } from "node:fs/promises";
 import { isAbsolute, join, resolve } from "node:path";
 import type EventType from "@spigot-event-list/catalog/types/event-type";
-import type { ReviewEvent, ReviewTarget } from "./description-review";
+import type { ReviewEvent, ReviewTarget } from "./description-review.ts";
 
 const identity = (event: ReviewEvent) => JSON.stringify([event.source, event.href]);
 const normalize = (text?: string) => text?.trim().replace(/\s+/gu, " ") ?? "";

@@ -1,6 +1,6 @@
 import OpenAI from "openai";
 import type EventType from "@spigot-event-list/catalog/types/event-type";
-import { hasLocalizedDescription } from "./event-metadata";
+import { hasLocalizedDescription } from "./event-metadata.ts";
 
 export const languages = ["en", "ja"] as const;
 export type Language = (typeof languages)[number];

@@ -1,7 +1,7 @@
 import { resolve } from "node:path";
-import { applyReviewedMetadata } from "./apply-reviewed-metadata";
-import { changedDescriptions } from "./changed-descriptions";
-import { writeReviewReport } from "./review-report";
+import { applyReviewedMetadata } from "./apply-reviewed-metadata.ts";
+import { changedDescriptions } from "./changed-descriptions.ts";
+import { writeReviewReport } from "./review-report.ts";
 
 const [out, mode, ...extra] = process.argv.slice(2);
 if (!out || (mode && mode !== "--apply") || extra.length)

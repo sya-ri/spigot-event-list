@@ -1,8 +1,8 @@
 import { readdir, readFile } from "fs/promises";
 import path from "path";
-import { createAsyncCache } from "./async-cache";
-import type EventType from "./types/event-type";
-import type { EventSnapshot } from "./event-data";
+import { createAsyncCache } from "./async-cache.ts";
+import type EventType from "./types/event-type.ts";
+import type { EventSnapshot } from "./event-data.ts";
 
 const SERVER_SOURCES = ["spigot", "paper", "purpur"] as const;
 const SERVER_VERSION_SOURCES = ["Spigot", "Paper", "Purpur"] as const;
@@ -44,7 +44,7 @@ export const getLatestMinecraftVersionFromVersions = (versions: Record<string, s
   return firstVersion;
 };
 
-export { resolveServerVersion } from "./resolve-version";
+export { resolveServerVersion } from "./resolve-version.ts";
 
 export const COMPLETE_SERVER_VERSION_RULES: CompleteServerVersionRule[] = [
   {

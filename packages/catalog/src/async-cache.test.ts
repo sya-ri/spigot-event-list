@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { createAsyncCache } from "./async-cache";
+import { createAsyncCache } from "./async-cache.ts";
 
 test("coalesces in-flight reads and reloads only after expiry", async () => {
   let now = 0,

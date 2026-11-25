@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import EventType from "@spigot-event-list/catalog/types/event-type";
-import { createVersionEventsHandler } from "./events";
+import type EventType from "@spigot-event-list/catalog/types/event-type";
+import { createVersionEventsHandler } from "./events.ts";
 
 const paperEvent: EventType = {
   description: {

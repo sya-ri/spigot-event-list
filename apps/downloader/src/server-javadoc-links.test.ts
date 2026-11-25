@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { getServerJavadocLinkBases } from "./server-javadoc-links";
+import { getServerJavadocLinkBases } from "./server-javadoc-links.ts";
 
 const releases = [
   {

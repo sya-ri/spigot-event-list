@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { createVersionsHandler } from "./versions";
+import { createVersionsHandler } from "./versions.ts";
 
 test("lists the current latest Minecraft version as an explicit alias", async () => {
   const response = await createVersionsHandler({

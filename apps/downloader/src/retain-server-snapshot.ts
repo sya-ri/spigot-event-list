@@ -2,7 +2,7 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { getLatestMinecraftVersionFromVersions } from "@spigot-event-list/catalog/data-paths";
 import type EventType from "@spigot-event-list/catalog/types/event-type";
-import { reuseEventMetadata } from "./event-metadata";
+import { reuseEventMetadata } from "./event-metadata.ts";
 import type SourceType from "@spigot-event-list/catalog/types/source-type";
 
 export const retainCompleteServerSnapshot = async (

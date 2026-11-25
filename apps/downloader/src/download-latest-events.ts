@@ -2,15 +2,15 @@ import MultiProgress from "multi-progress";
 import { access, mkdir, readFile, rm } from "fs/promises";
 import { zip } from "compressing";
 import path from "path";
-import { downloadArtifact } from "./maven";
-import { getSourceType, Source } from "./sources/sources";
-import EventType from "@spigot-event-list/catalog/types/event-type";
+import { downloadArtifact } from "./maven.ts";
+import { getSourceType, type Source } from "./sources/sources.ts";
+import type EventType from "@spigot-event-list/catalog/types/event-type";
 import { load } from "cheerio";
-import SourceType from "@spigot-event-list/catalog/types/source-type";
+import type SourceType from "@spigot-event-list/catalog/types/source-type";
 import { createDataPaths } from "@spigot-event-list/catalog/data-paths";
-import { fetchText } from "./http";
-import { reuseEventMetadata } from "./event-metadata";
-import { extractJavadocText } from "./javadoc-text";
+import { fetchText } from "./http.ts";
+import { reuseEventMetadata } from "./event-metadata.ts";
+import { extractJavadocText } from "./javadoc-text.ts";
 
 const { proxyDataPath, readLatestServerEvents } = createDataPaths(
   path.resolve(process.cwd(), "../../data"),

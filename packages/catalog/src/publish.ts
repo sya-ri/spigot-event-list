@@ -1,6 +1,6 @@
 import { writeFile, mkdir } from "node:fs/promises";
 import { join } from "node:path";
-import { createDataPaths } from "./data-paths";
+import { createDataPaths } from "./data-paths.ts";
 
 export async function publishCatalog(dataRoot: string, target: string) {
   const data = createDataPaths(dataRoot);

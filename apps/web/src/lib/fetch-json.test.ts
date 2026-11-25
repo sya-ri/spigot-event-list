@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { fetchJson, HttpError } from "./fetch-json";
+import { fetchJson, HttpError } from "./fetch-json.ts";
 
 test("returns successful JSON and surfaces HTTP failures before parsing plain text", async (context) => {
   context.mock.method(globalThis, "fetch", async () => new Response('{"events":[]}'));

@@ -1,7 +1,7 @@
 import { readdir, readFile, writeFile } from "fs/promises";
 import path from "path";
 import type EventType from "@spigot-event-list/catalog/types/event-type";
-import { eventEvidenceKey, hasLocalizedDescription } from "./event-metadata";
+import { eventEvidenceKey, hasLocalizedDescription } from "./event-metadata.ts";
 
 type EventFile = { lang: string[]; events: EventType[] };
 

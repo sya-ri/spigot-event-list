@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
-import { parseQuery, scoreEvent } from "./event-search";
-import { relatedKeywords } from "./related-keywords";
+import { parseQuery, scoreEvent } from "./event-search.ts";
+import { relatedKeywords } from "./related-keywords.ts";
 import type EventType from "@spigot-event-list/catalog/types/event-type";
 
 const event: EventType = {

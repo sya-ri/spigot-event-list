@@ -4,7 +4,7 @@ import { mkdtemp, readFile, rm } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import path from "node:path";
 import type MultiProgress from "multi-progress";
-import { downloadArtifact } from "./maven";
+import { downloadArtifact } from "./maven.ts";
 
 const artifact = { groupId: "example", artifactId: "api", version: "1.0" };
 const progress = {

@@ -1,5 +1,5 @@
-import { fetchJson } from "../http";
-import { fetchMavenVersions, fetchPomVersion } from "../maven-metadata";
+import { fetchJson } from "../http.ts";
+import { fetchMavenVersions, fetchPomVersion } from "../maven-metadata.ts";
 
 const PAPERMC_HEADERS = {
   headers: {

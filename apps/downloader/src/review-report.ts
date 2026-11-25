@@ -9,8 +9,8 @@ import {
   type Finding,
   type Language,
   type ReviewTarget,
-} from "./description-review";
-import { reviewKeywords } from "./keyword-review";
+} from "./description-review.ts";
+import { reviewKeywords } from "./keyword-review.ts";
 
 export type ReviewedEvent = ReviewTarget & {
   findings: Record<Language, Finding>;
