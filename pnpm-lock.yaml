@@ -252,6 +252,9 @@ importers:
       multi-progress:
         specifier: 4.0.0
         version: 4.0.0(progress@2.0.3)
+      openai:
+        specifier: 7.64.0
+        version: 7.64.0(undici@8.13.1)(ws@8.23.0)(zod@4.6.7)
     devDependencies:
       '@types/multi-progress':
         specifier: 2.0.6
@@ -2748,6 +2751,33 @@ packages:
 
   oniguruma-to-es@4.3.6:
     resolution: {integrity: sha512-csuQ9x3Yr0cEIs/Zgx/OEt9iBw9vqIunAPQkx19R/fiMq2oGVTgcMqO/V3Ybqefr1TBvosI6jU539ksaBULJyA==}
+
+  openai@7.64.0:
+    resolution: {integrity: sha512-2CpWvKic4bayEcX1uHhYc1KWauVIlV9e/8K8VVnvbosqL4En0OtesbY2qFCZHFF9X4dT1BKW4Dr+ncep9bh3Dw==}
+    engines: {node: '>=22.0.0'}
+    peerDependencies:
+      '@aws-sdk/credential-provider-node': '>=3.972.0 <4'
+      '@smithy/hash-node': '>=4.3.0 <5'
+      '@smithy/signature-v4': '>=5.4.0 <6'
+      google-auth-library: '>=9.15.1 <12'
+      undici: '>=5 <9'
+      ws: ^8.21.0
+      zod: ^3.25 || ^4.0
+    peerDependenciesMeta:
+      '@aws-sdk/credential-provider-node':
+        optional: true
+      '@smithy/hash-node':
+        optional: true
+      '@smithy/signature-v4':
+        optional: true
+      google-auth-library:
+        optional: true
+      undici:
+        optional: true
+      ws:
+        optional: true
+      zod:
+        optional: true
 
   oxfmt@0.79.0:
     resolution: {integrity: sha512-92iLHGxAgtYk6jLp/1ZBnEeABveNduHZgMDQj7tyqO9iafuJG3q+YHJq0R5Aa4YT+E6xswMQXdmPZYMwynS8ig==}
@@ -5575,6 +5605,12 @@ snapshots:
       oniguruma-parser: 0.12.2
       regex: 6.1.0
       regex-recursion: 6.0.2
+
+  openai@7.64.0(undici@8.13.1)(ws@8.23.0)(zod@4.6.7):
+    optionalDependencies:
+      undici: 8.13.1
+      ws: 8.23.0
+      zod: 4.6.7
 
   oxfmt@0.79.0(@astrojs/compiler-rs@0.5.3)(vite-plus@1.8.0(@astrojs/compiler-rs@0.5.3)(@types/node@26.6.7)(@vitest/ui@5.1.1)(esbuild@0.28.2)(tsx@4.23.15)(typescript@7.0.2)(yaml@2.9.1)):
     dependencies:

@@ -3,6 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "review-updates": "tsx src/review-updates.ts",
     "start": "tsx src/index.ts",
     "check": "tsx src/check.ts"
   },
@@ -11,7 +12,8 @@
     "cheerio": "1.2.0",
     "compressing": "2.1.5",
     "fast-typed-xml": "0.1.2",
-    "multi-progress": "4.0.0"
+    "multi-progress": "4.0.0",
+    "openai": "7.64.0"
   },
   "devDependencies": {
     "@types/multi-progress": "2.0.6",

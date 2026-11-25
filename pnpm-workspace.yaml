@@ -25,6 +25,7 @@ minimumReleaseAgeExclude:
   - vite-plus@1.8.0
   - "@types/node@26.6.7"
   - fast-typed-xml@0.1.2
+  - openai@7.64.0
 
 overrides:
   vite: npm:@voidzero-dev/vite-plus-core@8.3.8001
