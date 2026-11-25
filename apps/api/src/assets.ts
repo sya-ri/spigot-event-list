@@ -1,10 +1,9 @@
 import { createAsyncCache } from "@spigot-event-list/catalog/async-cache";
-import type { EventDataDependencies } from "@spigot-event-list/catalog/event-data";
+import type { EventDataDependencies, EventSnapshot } from "@spigot-event-list/catalog/event-data";
 
 export interface Assets {
   fetch(request: Request): Promise<Response>;
 }
-type Dataset = Awaited<ReturnType<EventDataDependencies["readLatestServerEvents"]>>;
 type Manifest = { versions: string[]; latest: string | null };
 
 // Only resolved JSON can be shared by different Worker requests.
@@ -34,8 +33,8 @@ export function assetCatalog(
   return {
     getLatestMinecraftVersion: async () => (await read<Manifest>("manifest")).latest,
     getServerVersionsDesc: async () => (await read<Manifest>("manifest")).versions,
-    readLatestServerEvents: () => read<Dataset>("latest"),
-    readProxyEvents: () => read<Dataset>("proxy"),
-    readServerEvents: (version) => read<Dataset>(version),
+    readLatestServerEvents: () => read<EventSnapshot>("latest"),
+    readProxyEvents: () => read<EventSnapshot>("proxy"),
+    readServerEvents: (version) => read<EventSnapshot>(version),
   };
 }

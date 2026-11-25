@@ -1,13 +1,5 @@
 {
   "extends": ["config:recommended"],
   "automerge": true,
-  "prHourlyLimit": 0,
-  "packageRules": [
-    {
-      "description": "ESLint 10 is not yet compatible with eslint-config-next",
-      "matchPackageNames": ["eslint"],
-      "matchUpdateTypes": ["major"],
-      "enabled": false
-    }
-  ]
+  "prHourlyLimit": 0
 }
