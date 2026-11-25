@@ -441,8 +441,9 @@ legend {
 .platform[aria-pressed="true"] {
   border-color: var(--tag-ink);
 }
-.platform:hover {
-  text-decoration: underline;
+.platform:is(:hover, :focus-visible) {
+  background: var(--tag-ink);
+  color: var(--tag);
 }
 .event blockquote {
   margin: 0.85rem 0 0;
@@ -457,6 +458,29 @@ legend {
 }
 .deprecated {
   color: var(--notice);
+}
+.experimental {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+  max-width: 75ch;
+  margin-top: 0.85rem;
+  padding: 0.65rem 0.85rem;
+  border-inline-start: 3px solid var(--notice);
+  background: color-mix(in srgb, var(--notice) 8%, var(--page));
+  font-size: 0.875rem;
+}
+.experimental svg {
+  flex: none;
+  align-self: flex-start;
+  margin-top: 0.2em;
+  color: var(--notice);
+}
+.experimental strong {
+  color: var(--notice);
+}
+.experimental p {
+  margin-top: 0.15rem;
 }
 .missing {
   color: var(--secondary);
