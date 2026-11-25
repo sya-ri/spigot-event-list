@@ -12,8 +12,8 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - name: Update event list
         run: pnpm --filter @spigot-event-list/downloader run start
-      - name: Review changed descriptions against Javadoc
-        run: pnpm --filter @spigot-event-list/downloader run review-updates "$RUNNER_TEMP/description-review"
+      - name: Review and apply event metadata
+        run: pnpm --filter @spigot-event-list/downloader run review-updates "$RUNNER_TEMP/description-review" --apply
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       - name: Upload description review
@@ -23,6 +23,8 @@ jobs:
           name: description-review
           path: ${{ runner.temp }}/description-review/
           if-no-files-found: ignore
+      - name: Validate updated event data
+        run: pnpm test
       - name: Import GPG key
         id: import-gpg
         uses: crazy-max/ghaction-import-gpg@v7.0.0

@@ -55,6 +55,8 @@ The [API reference](../skills/spigot-event-search/references/api.md) explains ho
 
 Run regression checks with `pnpm test`, followed by the TypeScript and lint checks documented in [AGENTS.md](../AGENTS.md).
 
-After a refresh, the update workflow reviews additions and changes to class Javadoc or localized descriptions. It groups identical changes across snapshots. Set the repository Actions secret `OPENAI_API_KEY` to enable the review. To review a local refresh, run `pnpm --filter @spigot-event-list/downloader run review-updates <output-directory>` before committing.
+After a refresh, the update workflow reviews additions and changes to class Javadoc or localized descriptions. It uses the repository Actions secret `OPENAI_API_KEY` to verify bilingual descriptions and search keywords, applies them to the affected snapshots, and runs the dataset tests before committing.
 
-The `description-review` artifact contains bilingual findings, verified description suggestions with supporting quotations, and cases that need human review. Apply accepted suggestions and add new keywords in the event data.
+The workflow leaves the published data at the previous revision if an event needs human review. Download the `description-review` artifact to see the findings, supporting quotations, and verified keywords.
+
+To review a local refresh before committing, run `pnpm --filter @spigot-event-list/downloader run review-updates <output-directory>`. Add `--apply` after the output directory to write verified results to the event data.
