@@ -1,6 +1,7 @@
 import { Locale } from "./locale";
 
 type Message = {
+  AbstractEvent: string;
   Search: string;
   ClearSearch: string;
   Filters: string;
@@ -11,22 +12,22 @@ type Message = {
   NoEvents: string;
   NoSources: string;
   ResetFilters: string;
+  RemoveFilter: string;
   LoadMore: string;
   Language: string;
   ToggleTheme: string;
   SkipToResults: string;
 
   SearchByNameOrDescription: string;
-  AddNewLanguage: string;
   IncompleteEvents: string;
   Latest: string;
   MinecraftVersion: string;
   Version: string;
-  AiSkillTitle: string;
 };
 
 export const messages: Record<Locale, Message> = {
   en: {
+    AbstractEvent: "Abstract event",
     Search: "Search",
     ClearSearch: "Clear search",
     Filters: "Filters",
@@ -37,20 +38,20 @@ export const messages: Record<Locale, Message> = {
     NoEvents: "No events match your search. Try different words or filters.",
     NoSources: "Select at least one platform to see events.",
     ResetFilters: "Reset filters",
+    RemoveFilter: "Remove %filter% filter",
     LoadMore: "Load more",
     Language: "Change language",
     ToggleTheme: "Switch theme",
     SkipToResults: "Skip to results",
 
     SearchByNameOrDescription: "Search by name, description, or keyword",
-    AddNewLanguage: "Contribute a translation",
     IncompleteEvents: "%size% event descriptions are not written.",
     Latest: "latest",
     MinecraftVersion: "Minecraft version",
     Version: "Version",
-    AiSkillTitle: "Agent skill",
   },
   ja: {
+    AbstractEvent: "抽象イベント",
     Search: "検索",
     ClearSearch: "検索をクリア",
     Filters: "絞り込み",
@@ -61,18 +62,17 @@ export const messages: Record<Locale, Message> = {
     NoEvents: "一致するイベントがありません。検索語や絞り込み条件を変えてみてください。",
     NoSources: "イベントを表示するプラットフォームを選択してください。",
     ResetFilters: "絞り込みをリセット",
+    RemoveFilter: "%filter% の絞り込みを解除",
     LoadMore: "さらに表示",
     Language: "言語を変更",
     ToggleTheme: "テーマを切り替え",
     SkipToResults: "検索結果へ移動",
 
     SearchByNameOrDescription: "イベント名・説明文・キーワードで検索",
-    AddNewLanguage: "翻訳に参加",
     IncompleteEvents: "%size%個のイベント説明文が書かれていません。",
     Latest: "最新",
     MinecraftVersion: "Minecraft バージョン",
     Version: "バージョン",
-    AiSkillTitle: "AI スキル",
   },
 };
 

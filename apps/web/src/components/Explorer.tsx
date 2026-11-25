@@ -1,4 +1,5 @@
-import { useEffect, useState, useSyncExternalStore } from "react";
+import { useSyncExternalStore } from "react";
+import { FiSliders, FiX } from "react-icons/fi";
 import type { SearchEventsResponse } from "@spigot-event-list/catalog/types/event";
 import sources from "@spigot-event-list/catalog/types/source-type";
 import type { Locale } from "../lib/locale";
@@ -39,78 +40,110 @@ export default function Explorer({ locale, versions, initial }: Props) {
   const search = params.get("search") ?? "";
   const version = params.get("version") || "latest";
   const tags = splitTags(params.get("tags"));
-  const [filtersOpen, setFiltersOpen] = useState(true);
-  useEffect(() => {
-    const narrow = matchMedia("(max-width: 700px)");
-    const syncFilters = () => setFiltersOpen(!narrow.matches);
-    syncFilters();
-    narrow.addEventListener("change", syncFilters);
-    return () => narrow.removeEventListener("change", syncFilters);
-  }, []);
+  const allPlatforms = tags.length === sources.length;
+  const selected = allPlatforms ? [] : tags;
   const toggle = (source: (typeof sources)[number]) => {
-    const next = tags.includes(source) ? removeTag(tags, source) : addTag(tags, source);
-    update({ tags: next.length === sources.length ? null : joinTags(next) });
+    const next = selected.includes(source) ? removeTag(selected, source) : addTag(selected, source);
+    update({ tags: next.length && next.length < sources.length ? joinTags(next) : null });
   };
   const t = (key: Parameters<typeof translate>[1]) => translate(locale, key);
   const ja = locale === "ja";
-  const filtered = Boolean(search || version !== "latest" || tags.length !== sources.length);
+  const hasFilters = version !== "latest" || !allPlatforms;
   return (
     <>
-      <SearchBox
-        locale={locale}
-        search={search}
-        setSearch={(value) => update({ search: value.trim() || null })}
-      />
-      <div className="index-layout">
-        <details
-          className="filters"
-          open={filtersOpen}
-          onToggle={(e) => setFiltersOpen(e.currentTarget.open)}
-        >
-          <summary>{t("Filters")}</summary>
-          <div className="filter-body">
-            <label htmlFor="version">{t("MinecraftVersion")}</label>
-            <select
-              id="version"
-              value={version}
-              onChange={(e) =>
-                update({ version: e.target.value === "latest" ? null : e.target.value })
-              }
-            >
-              {Array.from(new Set([...versions, version])).map((v) => (
-                <option key={v} value={v}>
-                  {v === "latest" ? t("Latest") : v}
-                </option>
-              ))}
-            </select>
-            <fieldset>
-              <legend>{ja ? "プラットフォーム" : "Platforms"}</legend>
-              {sources.map((s) => (
-                <label className="source-choice" key={s}>
-                  <input type="checkbox" checked={tags.includes(s)} onChange={() => toggle(s)} />
-                  <span className="source-dot" data-source={s} aria-hidden="true" />
-                  {sourceNames[s]}
-                </label>
-              ))}
-            </fieldset>
-            {filtered && (
-              <button className="text-button" onClick={reset}>
-                {t("ResetFilters")}
-              </button>
-            )}
-          </div>
-        </details>
-        <Results
-          key={JSON.stringify([search, version, tags])}
+      <div className="search-tools">
+        <SearchBox
           locale={locale}
-          version={version}
           search={search}
-          tags={tags}
-          initial={!filtered ? initial : undefined}
-          toggle={toggle}
-          reset={reset}
+          setSearch={(value) => update({ search: value.trim() || null })}
         />
+        <button
+          type="button"
+          className="filter-toggle"
+          popoverTarget="event-filters"
+          aria-label={t("Filters")}
+        >
+          <FiSliders aria-hidden="true" />
+          <span>{t("Filters")}</span>
+        </button>
+        <div
+          id="event-filters"
+          className="filter-menu"
+          popover="auto"
+          role="group"
+          aria-label={t("Filters")}
+        >
+          <label htmlFor="version">{t("MinecraftVersion")}</label>
+          <select
+            id="version"
+            value={version}
+            onChange={(e) =>
+              update({ version: e.target.value === "latest" ? null : e.target.value })
+            }
+          >
+            {Array.from(new Set([...versions, version])).map((v) => (
+              <option key={v} value={v}>
+                {v === "latest" ? t("Latest") : v}
+              </option>
+            ))}
+          </select>
+          <fieldset>
+            <legend>{ja ? "プラットフォーム" : "Platforms"}</legend>
+            {sources.map((s) => (
+              <label className="source-choice" key={s}>
+                <input type="checkbox" checked={selected.includes(s)} onChange={() => toggle(s)} />
+                <span className="source-dot" data-source={s} aria-hidden="true" />
+                {sourceNames[s]}
+              </label>
+            ))}
+          </fieldset>
+          {hasFilters && (
+            <button className="text-button" onClick={() => update({ version: null, tags: null })}>
+              {t("ResetFilters")}
+            </button>
+          )}
+        </div>
       </div>
+      {(version !== "latest" || selected.length > 0) && (
+        <ul className="active-filters" aria-label={t("Filters")}>
+          {version !== "latest" && (
+            <li>
+              <button
+                type="button"
+                onClick={() => update({ version: null })}
+                aria-label={t("RemoveFilter").replace("%filter%", "Minecraft " + version)}
+              >
+                Minecraft {version}
+                <FiX aria-hidden="true" />
+              </button>
+            </li>
+          )}
+          {selected.map((s) => (
+            <li key={s}>
+              <button
+                type="button"
+                data-source={s}
+                onClick={() => toggle(s)}
+                aria-label={t("RemoveFilter").replace("%filter%", sourceNames[s])}
+              >
+                <span className="source-dot" aria-hidden="true" />
+                {sourceNames[s]}
+                <FiX aria-hidden="true" />
+              </button>
+            </li>
+          ))}
+        </ul>
+      )}
+      <Results
+        key={JSON.stringify([search, version, tags])}
+        locale={locale}
+        version={version}
+        search={search}
+        tags={tags}
+        initial={!search && !hasFilters ? initial : undefined}
+        toggle={toggle}
+        reset={reset}
+      />
     </>
   );
 }

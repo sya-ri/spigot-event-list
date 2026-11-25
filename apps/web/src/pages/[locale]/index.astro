@@ -1,7 +1,6 @@
 ---
 import Page from "../../layouts/Page.astro";
 import SiteHeader from "../../components/SiteHeader.astro";
-import SiteFooter from "../../components/SiteFooter.astro";
 import { translate } from "../../lib/translation";
 import Explorer from "../../components/Explorer";
 import { locales } from "../../lib/locale";
@@ -22,17 +21,14 @@ const choices = Array.from(new Set(["latest", ...(latest ? [latest] : []), ...ve
 ---
 
 <Page locale={locale}>
-  <div class="explorer">
-    <a class="skip" href="#results">
-      {translate(locale, "SkipToResults")}
-    </a>
-    <SiteHeader locale={locale} />
-    <main class="workspace" tabindex="-1">
-      <div class="shell index-shell">
-        <h1>{locale === "ja" ? "イベントを探す" : "Find an event"}</h1>
-        <Explorer client:load locale={locale} versions={choices} initial={initial} />
-      </div>
-    </main>
-    <SiteFooter locale={locale} />
-  </div>
+  <a class="skip" href="#results">
+    {translate(locale, "SkipToResults")}
+  </a>
+  <SiteHeader locale={locale} />
+  <main class="shell index-shell">
+    <h1 class="sr-only" translate="no">
+      Spigot Event List
+    </h1>
+    <Explorer client:load locale={locale} versions={choices} initial={initial} />
+  </main>
 </Page>
