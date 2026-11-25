@@ -85,7 +85,7 @@ Request the same query, filters and limit with `offset=nextOffset` to continue. 
 - An offset beyond the result set returns an empty page with the original total.
 - Unsupported versions return HTTP 404; unsupported languages return HTTP 400. These errors use plain-text bodies. Other failures can return HTTP 500; check the HTTP status before decoding JSON.
 - `GET /api/versions/{version}/events?lang=ja` exposes the same event fields without the per-event `version` field and returns an array without pagination.
-- Web server data reads are cached for at most 60 seconds after each successful load, with a bounded cache. Failed loads are retried on the next request. Downloader reads remain uncached.
+- Worker snapshot reads use a bounded 60-second cache. Failed loads are retried on the next request. Downloader reads remain uncached.
 
 結果はイベント名・キーワード・説明・Javadoc・非推奨理由の順に関連度を評価し、同点なら名前・ソース・リンク順で並べます。通常のイベント一覧APIもキーワードとJavadocを返します。説明の根拠は `link` から確認でき、WebではJavadoc本文を展開して比較できます。
 

@@ -5,14 +5,26 @@ This guide is for contributors changing the web app or its event data.
 
 ## Run locally
 
-From the repository root, install dependencies with Node.js 24 and start the development server:
+From the repository root, install the versions of Node.js and pnpm listed in `mise.toml` and start Astro:
 
 ```sh
-mise exec node@24 -- npm ci
-mise exec node@24 -- npm run dev
+mise install
+pnpm install --frozen-lockfile
+pnpm dev
 ```
 
-Open the local URL printed by Next.js. See [package.json](../package.json) for build, test, lint, and typecheck commands.
+The development server runs the same API handlers as the production Worker and reads the repository snapshots. Run `pnpm build` followed by `pnpm preview` to exercise the Cloudflare runtime with the generated assets.
+
+| Workspace          | Responsibility                                                                       |
+| ------------------ | ------------------------------------------------------------------------------------ |
+| `apps/web`         | English and Japanese HTML, React search controls, offline service worker             |
+| `apps/api`         | Public HTTP routes, language negotiation and the Workers deployment                  |
+| `apps/downloader`  | Discover source releases and update the versioned datasets                           |
+| `packages/catalog` | Event types, snapshot selection, ranking and localization shared by the applications |
+
+The build writes the initial 50 events into each language page and packages the snapshots as Workers Static Assets. API requests read snapshots through the Worker's `ASSETS` binding.
+
+For Workers Builds, connect the repository at its root, use `master` as the production branch, set the build command to `pnpm build` and the deploy command to `pnpm --filter @spigot-event-list/api run deploy`. This also rebuilds the site when the scheduled downloader commits new data. Check the Worker URL before assigning the production custom domain.
 
 ## Event datasets
 
@@ -28,8 +40,8 @@ Refreshes change tracked data, so select the intended versions and review the re
 
 Edit the file below and create a [pull request](https://github.com/sya-ri/spigot-event-list/pulls).
 
-- [src/i18n/config.ts](../src/i18n/config.ts)
-- [src/i18n/translation.ts](../src/i18n/translation.ts)
+- [apps/web/src/lib/locale.ts](../apps/web/src/lib/locale.ts)
+- [apps/web/src/lib/translation.ts](../apps/web/src/lib/translation.ts)
 - `data/events.json`
 - `data/versions.json`
 - `data/minecraft/{version}/events.json`
@@ -42,4 +54,4 @@ Use each version's Javadoc to choose accurate summaries, synonyms, and search ph
 The downloader's preservation rules are in [Description Editing](../AGENTS.md#description-editing), and [review coverage](event-description-audit.md) records checked sources.
 The [API reference](../skills/spigot-event-search/references/api.md) explains how search uses these fields.
 
-Run regression checks with `mise exec node@24 -- npm test`, followed by the TypeScript and lint checks documented in [AGENTS.md](../AGENTS.md).
+Run regression checks with `pnpm test`, followed by the TypeScript and lint checks documented in [AGENTS.md](../AGENTS.md).

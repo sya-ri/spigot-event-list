@@ -1,9 +1,8 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
 import path from "node:path";
-import { NextRequest } from "next/server";
-import { createDataPaths } from "../src/libs/data-paths";
-import { createSearchEventsHandler } from "../src/app/api/search/events/handler";
+import { createDataPaths } from "@spigot-event-list/catalog/data-paths";
+import { createSearchEventsHandler } from "../apps/api/src/search";
 
 for (const version of ["26.2", "26.3"]) {
   test(`fixed ${version} events remain searchable when latest sources disagree`, async () => {
@@ -17,24 +16,12 @@ for (const version of ["26.2", "26.3"]) {
       },
     });
     for (const [source, name, href] of [
-      [
-        "spigot",
-        "PlayerInteractEvent",
-        "org/bukkit/event/player/PlayerInteractEvent.html",
-      ],
-      [
-        "paper",
-        "PlayerArmSwingEvent",
-        "io/papermc/paper/event/player/PlayerArmSwingEvent.html",
-      ],
-      [
-        "purpur",
-        "PlayerAFKEvent",
-        "org/purpurmc/purpur/event/PlayerAFKEvent.html",
-      ],
+      ["spigot", "PlayerInteractEvent", "org/bukkit/event/player/PlayerInteractEvent.html"],
+      ["paper", "PlayerArmSwingEvent", "io/papermc/paper/event/player/PlayerArmSwingEvent.html"],
+      ["purpur", "PlayerAFKEvent", "org/purpurmc/purpur/event/PlayerAFKEvent.html"],
     ]) {
       const response = await handler(
-        new NextRequest(
+        new Request(
           `https://example.test/api/search/events?q=${name}&version=${version}&source=${source}&lang=en`,
         ),
       );

@@ -1,8 +1,11 @@
+import { createVersionsHandler } from "../apps/api/src/versions";
+import { createDataPaths } from "@spigot-event-list/catalog/data-paths";
+import { createSearchEventsHandler } from "../apps/api/src/search";
 import { performance } from "node:perf_hooks";
-import { NextRequest } from "next/server";
-import { searchEvents } from "../src/app/api/search/events/handler";
-import { versionsResponse } from "../src/app/api/versions/handler";
 
+const dataPaths = createDataPaths("data", { cacheTtlMs: 60_000 });
+const searchEvents = createSearchEventsHandler(dataPaths);
+const versionsResponse = createVersionsHandler(dataPaths);
 async function measure() {
   for (const q of ["player", "join OR login OR connect", "チャット OR chat"]) {
     const samples: number[] = [];
@@ -10,7 +13,7 @@ async function measure() {
     for (let i = 0; i < 25; i++) {
       const start = performance.now();
       const response = await searchEvents(
-        new NextRequest(
+        new Request(
           `http://localhost/api/search/events?q=${encodeURIComponent(q)}&lang=ja&limit=50`,
         ),
       );
@@ -18,14 +21,10 @@ async function measure() {
       samples.push(performance.now() - start);
     }
     samples.sort((a, b) => a - b);
-    console.log(
-      JSON.stringify({ q, medianMs: samples[12], p95Ms: samples[23], bytes }),
-    );
+    console.log(JSON.stringify({ q, medianMs: samples[12], p95Ms: samples[23], bytes }));
   }
   const start = performance.now();
   for (let i = 0; i < 25; i++) await (await versionsResponse()).text();
-  console.log(
-    JSON.stringify({ versionsMeanMs: (performance.now() - start) / 25 }),
-  );
+  console.log(JSON.stringify({ versionsMeanMs: (performance.now() - start) / 25 }));
 }
 void measure();
