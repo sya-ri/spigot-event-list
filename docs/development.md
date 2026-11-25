@@ -50,11 +50,11 @@ Edit the file below and create a [pull request](https://github.com/sya-ri/spigot
 
 Edit descriptions and `keywords.ja` / `keywords.en` directly in `data/**/events.json`.
 Use each version's Javadoc to choose accurate summaries, synonyms, and search phrases in both languages; leave unverified summaries empty.
-The downloader's preservation rules are in [Description Editing](../AGENTS.md#description-editing), and [review coverage](event-description-audit.md) records checked sources.
+The downloader's preservation rules are in [Description Editing](../AGENTS.md#description-editing). It can fill missing descriptions and keywords from another snapshot with the same source, event path and Javadoc evidence.
 The [API reference](../skills/spigot-event-search/references/api.md) explains how search uses these fields.
 
 Run regression checks with `pnpm test`, followed by the TypeScript and lint checks documented in [AGENTS.md](../AGENTS.md).
 
-After a refresh, the update workflow checks added events and changes to the class Javadoc or localized descriptions against the checkout's original snapshots. It groups identical changes across datasets. Set the repository Actions secret `OPENAI_API_KEY` to enable calls to OpenAI. To review a local refresh, run `pnpm --filter @spigot-event-list/downloader run review-updates <output-directory>` before committing.
+After a refresh, the update workflow reviews additions and changes to class Javadoc or localized descriptions. It groups identical changes across snapshots. Set the repository Actions secret `OPENAI_API_KEY` to enable the review. To review a local refresh, run `pnpm --filter @spigot-event-list/downloader run review-updates <output-directory>` before committing.
 
-Download the `description-review` artifact for the totals and one JSON Lines record per reviewed event, including snapshot paths, reference URLs, original text and language-specific findings. Decisions evaluates English and Japanese independently against the stored class summary. For a missing description or a possible mismatch, Responses drafts a correction with a verbatim quotation. A second Decisions request checks the candidate against the same Javadoc. The first decision accepts a supported description at confidence 0.90 or above. Lower-confidence matches and candidate corrections require a separate support probability of at least 0.90. Missing evidence, refusals and ambiguous cases are marked for human review. These are model judgments. Contributors apply any accepted edits to the datasets.
+The `description-review` artifact contains bilingual findings, verified description suggestions with supporting quotations, and cases that need human review. Apply accepted suggestions and add new keywords in the event data.

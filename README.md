@@ -37,7 +37,6 @@ Inspect the linked Javadoc for the event's contract. Indexed data reflects the s
 
 - [Search API reference](skills/spigot-event-search/references/api.md): parameters, examples, pagination, and bilingual responses.
 - [Development and event descriptions](docs/development.md): run locally, choose datasets, and contribute translations or keywords.
-- [Description review coverage](docs/event-description-audit.md): recorded review scope and evidence sources.
 
 ## AI Skill
 

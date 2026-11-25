@@ -4,8 +4,7 @@
   "type": "module",
   "scripts": {
     "review-updates": "tsx src/review-updates.ts",
-    "start": "tsx src/index.ts",
-    "check": "tsx src/check.ts"
+    "start": "tsx src/index.ts"
   },
   "dependencies": {
     "@spigot-event-list/catalog": "workspace:*",
