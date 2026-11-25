@@ -1,5 +1,8 @@
 {
-  "lang": ["en", "ja"],
+  "lang": [
+    "en",
+    "ja"
+  ],
   "events": [
     {
       "description": {
