@@ -89,8 +89,12 @@
     const root = document.documentElement;
     let availableWidth = 0;
     let currentWidth = 0;
+    let shouldExpand = !wasDismissed();
+    let bannerImage: HTMLImageElement | undefined;
+    let trackingPixel: HTMLImageElement | null = null;
 
     function setExpanded(expanded: boolean) {
+      if (drawer.inert === !expanded) return;
       toggle.setAttribute("aria-expanded", String(expanded));
       toggle.setAttribute("aria-label", expanded ? "広告を閉じる" : "広告を再表示");
       drawer.inert = !expanded;
@@ -98,22 +102,38 @@
 
     const updateBanner = () => {
       const width = availableWidth >= 640 ? 468 : availableWidth >= 320 ? 320 : 0;
-      panel.hidden = width === 0;
 
-      if (!drawer.inert && width && width !== currentWidth) {
+      if (shouldExpand && width && width !== currentWidth) {
         const template = anchor.querySelector<HTMLTemplateElement>(
           `template[data-campaign="${campaign}"][data-width="${width}"]`,
         )!;
         const content = template.content.cloneNode(true) as DocumentFragment;
-        content.querySelector("a")!.setAttribute("aria-label", "広告のリンク先を開く");
-        creative.replaceChildren(content);
+        const link = content.querySelector("a")!;
+        link.setAttribute("aria-label", "広告のリンク先を開く");
+        bannerImage = link.querySelector("img")!;
+        trackingPixel = content.querySelector('img[width="1"]');
+        bannerImage.addEventListener("load", updateBanner, { once: true });
+        bannerImage.addEventListener("error", updateBanner, { once: true });
         currentWidth = width;
+        creative.replaceChildren(link);
       }
 
+      const loaded =
+        bannerImage?.complete && bannerImage.naturalWidth > 1 && bannerImage.naturalHeight > 1;
+      const failed = bannerImage?.complete && !loaded;
+      const keepToggle = !shouldExpand || !panel.hidden;
+      panel.hidden = width === 0 || !!failed || (!keepToggle && !loaded);
+
+      if (shouldExpand && loaded && bannerImage?.checkVisibility() === false) panel.hidden = true;
+      const expanded = shouldExpand && !panel.hidden && !!loaded;
+      setExpanded(expanded);
+      if (expanded && trackingPixel) {
+        creative.append(trackingPixel);
+        trackingPixel = null;
+      }
       root.style.setProperty("--affiliate-inset", `${anchor.getBoundingClientRect().height}px`);
     };
 
-    setExpanded(!wasDismissed());
     const resize = new ResizeObserver(([entry]) => {
       availableWidth = entry.contentRect.width;
       updateBanner();
@@ -121,11 +141,10 @@
     resize.observe(anchor);
 
     toggle.addEventListener("click", () => {
-      const expanded = drawer.inert;
-      setExpanded(expanded);
+      shouldExpand = !shouldExpand;
       updateBanner();
       try {
-        if (expanded) sessionStorage.removeItem(dismissalKey);
+        if (shouldExpand) sessionStorage.removeItem(dismissalKey);
         else sessionStorage.setItem(dismissalKey, "true");
       } catch {
         // The toggle still works for the current page.
