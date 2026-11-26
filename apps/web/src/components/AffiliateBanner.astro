@@ -29,6 +29,26 @@
 <img border="0" width="320" height="50" alt="" src="https://www23.a8.net/svt/bgt?aid=261126353484&wid=001&eno=01&mid=s00000001642016005000&mc=1"></a>
 <img border="0" width="1" height="1" src="https://www16.a8.net/0.gif?a8mat=4BGUDT+805TKI+CO4+2NAFDD" alt="">
   </template>
+  <template data-campaign="2" data-width="468" is:raw>
+<a href="https://px.a8.net/svt/ejp?a8mat=4BGUDT+BUADWY+3YFI+61Z81" rel="nofollow">
+<img border="0" width="468" height="60" alt="" src="https://www20.a8.net/svt/bgt?aid=261126353716&wid=001&eno=01&mid=s00000018459001017000&mc=1"></a>
+<img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=4BGUDT+BUADWY+3YFI+61Z81" alt="">
+  </template>
+  <template data-campaign="2" data-width="320" is:raw>
+<a href="https://px.a8.net/svt/ejp?a8mat=4BGUDT+BUADWY+3YFI+626XT" rel="nofollow">
+<img border="0" width="320" height="50" alt="" src="https://www23.a8.net/svt/bgt?aid=261126353716&wid=001&eno=01&mid=s00000018459001018000&mc=1"></a>
+<img border="0" width="1" height="1" src="https://www17.a8.net/0.gif?a8mat=4BGUDT+BUADWY+3YFI+626XT" alt="">
+  </template>
+  <template data-campaign="3" data-width="468" is:raw>
+<a href="https://px.a8.net/svt/ejp?a8mat=4BGUDT+DQR8HE+CO4+15THJ5" rel="nofollow">
+<img border="0" width="468" height="60" alt="" src="https://www22.a8.net/svt/bgt?aid=261126353831&wid=001&eno=01&mid=s00000001642007024000&mc=1"></a>
+<img border="0" width="1" height="1" src="https://www12.a8.net/0.gif?a8mat=4BGUDT+DQR8HE+CO4+15THJ5" alt="">
+  </template>
+  <template data-campaign="3" data-width="320" is:raw>
+<a href="https://px.a8.net/svt/ejp?a8mat=4BGUDT+DQR8HE+CO4+15Y7A9" rel="nofollow">
+<img border="0" width="320" height="50" alt="" src="https://www20.a8.net/svt/bgt?aid=261126353831&wid=001&eno=01&mid=s00000001642007046000&mc=1"></a>
+<img border="0" width="1" height="1" src="https://www10.a8.net/0.gif?a8mat=4BGUDT+DQR8HE+CO4+15Y7A9" alt="">
+  </template>
 </div>
 
 <script>
@@ -44,7 +64,8 @@
   }
 
   if (anchor && !wasDismissed()) {
-    const campaign = Math.floor(Math.random() * 2);
+    const campaigns = anchor.querySelectorAll<HTMLTemplateElement>('template[data-width="468"]');
+    const { campaign } = campaigns[Math.floor(Math.random() * campaigns.length)].dataset;
     const panel = anchor.querySelector<HTMLElement>(".affiliate-panel")!;
     const creative = anchor.querySelector<HTMLElement>(".affiliate-creative")!;
     const close = anchor.querySelector<HTMLButtonElement>(".affiliate-close")!;
