@@ -1,0 +1,32 @@
+name: Deploy Worker
+on:
+  workflow_call:
+    inputs:
+      commit_sha:
+        required: true
+        type: string
+    secrets:
+      CLOUDFLARE_WORKERS_DEPLOY_HOOK:
+        required: true
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    concurrency: cloudflare-workers-production
+    permissions:
+      contents: read
+    steps:
+      - name: Start the production build
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EXPECTED_COMMIT: ${{ inputs.commit_sha }}
+          DEPLOY_HOOK: ${{ secrets.CLOUDFLARE_WORKERS_DEPLOY_HOOK }}
+        run: |
+          latest_commit=$(gh api "repos/$GITHUB_REPOSITORY/git/ref/heads/master" --jq '.object.sha')
+          if [ "$latest_commit" != "$EXPECTED_COMMIT" ]; then
+            echo "A newer commit is on master. Skipping this deployment."
+            exit 0
+          fi
+
+          response=$(curl --fail --silent --show-error --max-time 30 --request POST "$DEPLOY_HOOK")
+          build_id=$(jq --exit-status --raw-output 'select(.success) | .result.build_uuid | strings' <<<"$response")
+          echo "Cloudflare Workers build: $build_id"
