@@ -1,12 +1,18 @@
 <div class="affiliate-anchor">
   <aside class="affiliate-panel" aria-label="アフィリエイト広告" hidden>
-    <div class="affiliate-toolbar">
-      <span>PR</span>
-      <button type="button" class="icon-button affiliate-close" aria-label="広告を閉じる">
-        <span aria-hidden="true">×</span>
-      </button>
+    <button
+      type="button"
+      class="icon-button affiliate-toggle"
+      aria-controls="affiliate-drawer"
+      aria-expanded="false"
+      aria-label="広告を再表示"
+    ></button>
+    <div id="affiliate-drawer" class="affiliate-drawer" inert>
+      <div class="affiliate-artwork">
+        <div class="affiliate-creative"></div>
+        <span class="affiliate-label">PR</span>
+      </div>
     </div>
-    <div class="affiliate-creative"></div>
   </aside>
 
   <template data-campaign="0" data-width="468" is:raw>
@@ -73,21 +79,28 @@
     }
   }
 
-  if (anchor && !wasDismissed()) {
+  if (anchor) {
     const campaigns = anchor.querySelectorAll<HTMLTemplateElement>('template[data-width="468"]');
     const { campaign } = campaigns[Math.floor(Math.random() * campaigns.length)].dataset;
     const panel = anchor.querySelector<HTMLElement>(".affiliate-panel")!;
     const creative = anchor.querySelector<HTMLElement>(".affiliate-creative")!;
-    const close = anchor.querySelector<HTMLButtonElement>(".affiliate-close")!;
+    const toggle = anchor.querySelector<HTMLButtonElement>(".affiliate-toggle")!;
+    const drawer = anchor.querySelector<HTMLElement>(".affiliate-drawer")!;
     const root = document.documentElement;
+    let availableWidth = 0;
     let currentWidth = 0;
 
-    const resize = new ResizeObserver(([entry]) => {
-      const available = entry.contentRect.width;
-      const width = available >= 640 ? 468 : available >= 320 ? 320 : 0;
+    function setExpanded(expanded: boolean) {
+      toggle.setAttribute("aria-expanded", String(expanded));
+      toggle.setAttribute("aria-label", expanded ? "広告を閉じる" : "広告を再表示");
+      drawer.inert = !expanded;
+    }
+
+    const updateBanner = () => {
+      const width = availableWidth >= 640 ? 468 : availableWidth >= 320 ? 320 : 0;
       panel.hidden = width === 0;
 
-      if (width && width !== currentWidth) {
+      if (!drawer.inert && width && width !== currentWidth) {
         const template = anchor.querySelector<HTMLTemplateElement>(
           `template[data-campaign="${campaign}"][data-width="${width}"]`,
         )!;
@@ -98,17 +111,24 @@
       }
 
       root.style.setProperty("--affiliate-inset", `${anchor.getBoundingClientRect().height}px`);
+    };
+
+    setExpanded(!wasDismissed());
+    const resize = new ResizeObserver(([entry]) => {
+      availableWidth = entry.contentRect.width;
+      updateBanner();
     });
     resize.observe(anchor);
 
-    close.addEventListener("click", () => {
-      resize.disconnect();
-      anchor.remove();
-      root.style.removeProperty("--affiliate-inset");
+    toggle.addEventListener("click", () => {
+      const expanded = drawer.inert;
+      setExpanded(expanded);
+      updateBanner();
       try {
-        sessionStorage.setItem(dismissalKey, "true");
+        if (expanded) sessionStorage.removeItem(dismissalKey);
+        else sessionStorage.setItem(dismissalKey, "true");
       } catch {
-        // The banner is still dismissed for the current page.
+        // The toggle still works for the current page.
       }
     });
   }
@@ -121,29 +141,69 @@
     inset-block-end: 0;
     z-index: 1;
     padding-inline: env(safe-area-inset-left) env(safe-area-inset-right);
-  }
-  .affiliate-anchor:has(.affiliate-panel:not([hidden])) {
-    border-block-start: 1px solid var(--line);
-    padding-block-end: calc(0.5rem + env(safe-area-inset-bottom));
-    background: var(--surface);
+    pointer-events: none;
   }
   .affiliate-panel {
     inline-size: max-content;
     margin-inline: auto;
+    padding-block-end: env(safe-area-inset-bottom);
   }
-  .affiliate-toolbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-block-end: 0.25rem;
-    color: var(--secondary);
-    font-size: 0.75rem;
+  .affiliate-toggle {
+    display: grid;
+    inline-size: 2.25rem;
+    min-block-size: 1.5rem;
+    margin-inline: auto;
+    border: 1px solid var(--line);
+    border-block-end: 0;
+    border-radius: 0.375rem 0.375rem 0 0;
+    background: var(--surface);
+    pointer-events: auto;
   }
-  .affiliate-close {
-    inline-size: 2rem;
-    min-height: 2rem;
-    font-size: 1.25rem;
-    line-height: 1;
+  .affiliate-toggle:focus-visible {
+    outline-offset: -3px;
+  }
+  .affiliate-toggle::before {
+    content: "";
+    inline-size: 0.45rem;
+    block-size: 0.45rem;
+    border-inline-end: 1.5px solid currentColor;
+    border-block-end: 1.5px solid currentColor;
+    transform: translateY(-1px) rotate(45deg);
+    transition: transform 180ms ease-out;
+  }
+  .affiliate-toggle[aria-expanded="false"]::before {
+    transform: translateY(1px) rotate(225deg);
+  }
+  .affiliate-drawer {
+    display: grid;
+    grid-template-rows: 1fr;
+    transition: grid-template-rows 180ms ease-out;
+  }
+  .affiliate-toggle[aria-expanded="false"] + .affiliate-drawer {
+    grid-template-rows: 0fr;
+  }
+  .affiliate-artwork {
+    position: relative;
+    min-block-size: 0;
+    overflow: clip;
+  }
+  .affiliate-label {
+    position: absolute;
+    inset-block-start: 0.25rem;
+    inset-inline-start: 0.25rem;
+    padding: 0.0625rem 0.3125rem;
+    border-radius: 0.1875rem;
+    background: rgb(0 0 0 / 68%);
+    color: #fff;
+    font-size: 0.6875rem;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+  .affiliate-creative :global(a) {
+    pointer-events: auto;
+  }
+  .affiliate-creative :global(a:focus-visible) {
+    outline-offset: -3px;
   }
   .affiliate-creative :global(a),
   .affiliate-creative :global(a img) {
@@ -151,6 +211,12 @@
   }
   .affiliate-creative > :global(img) {
     position: absolute;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .affiliate-drawer,
+    .affiliate-toggle::before {
+      transition: none;
+    }
   }
   @media (pointer: coarse) {
     :global(body:has(.search-tools input:focus)) .affiliate-anchor {
