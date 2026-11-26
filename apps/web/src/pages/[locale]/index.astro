@@ -1,5 +1,6 @@
 ---
 import Page from "../../layouts/Page.astro";
+import AffiliateBanner from "../../components/AffiliateBanner.astro";
 import SiteHeader from "../../components/SiteHeader.astro";
 import { translate } from "../../lib/translation";
 import Explorer from "../../components/Explorer";
@@ -31,4 +32,5 @@ const choices = Array.from(new Set(["latest", ...(latest ? [latest] : []), ...ve
     </h1>
     <Explorer client:load locale={locale} versions={choices} initial={initial} />
   </main>
+  {locale === "ja" && <AffiliateBanner />}
 </Page>
