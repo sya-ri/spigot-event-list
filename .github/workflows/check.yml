@@ -14,3 +14,11 @@ jobs:
       - run: pnpm typecheck
       - run: pnpm build
       - run: pnpm test
+  deploy:
+    if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+    needs: check
+    uses: ./.github/workflows/deploy-worker.yml
+    with:
+      commit_sha: ${{ github.sha }}
+    secrets:
+      CLOUDFLARE_WORKERS_DEPLOY_HOOK: ${{ secrets.CLOUDFLARE_WORKERS_DEPLOY_HOOK }}

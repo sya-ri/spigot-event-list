@@ -6,6 +6,8 @@ on:
 jobs:
   update:
     runs-on: ubuntu-latest
+    outputs:
+      commit_sha: ${{ steps.commit.outputs.commit_sha }}
     steps:
       - uses: actions/checkout@v7.0.1
       - uses: jdx/mise-action@v5.3.0
@@ -35,14 +37,24 @@ jobs:
           git_user_signingkey: true
           git_commit_gpgsign: true
       - name: Commit changes
+        id: commit
         run: |
           git add data
           if git diff --cached --quiet; then exit 0; fi
           git commit -m "chore: Update event list"
           git push
+          echo "commit_sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
         env:
           GITHUB_TOKEN: ${{ secrets.OSLASH_BOT_GITHUB_TOKEN }}
           GIT_AUTHOR_NAME: ${{ steps.import-gpg.outputs.name }}
           GIT_AUTHOR_EMAIL: ${{ steps.import-gpg.outputs.email }}
           GIT_COMMITTER_NAME: ${{ steps.import-gpg.outputs.name }}
           GIT_COMMITTER_EMAIL: ${{ steps.import-gpg.outputs.email }}
+  deploy:
+    if: github.ref == 'refs/heads/master' && needs.update.outputs.commit_sha != ''
+    needs: update
+    uses: ./.github/workflows/deploy-worker.yml
+    with:
+      commit_sha: ${{ needs.update.outputs.commit_sha }}
+    secrets:
+      CLOUDFLARE_WORKERS_DEPLOY_HOOK: ${{ secrets.CLOUDFLARE_WORKERS_DEPLOY_HOOK }}
