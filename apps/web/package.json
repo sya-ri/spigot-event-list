@@ -19,7 +19,7 @@
   "devDependencies": {
     "@astrojs/check": "0.9.12",
     "@spigot-event-list/api": "workspace:*",
-    "@types/node": "26.6.7",
+    "@types/node": "26.6.11",
     "@types/react": "19.3.3",
     "@types/react-dom": "19.3.0",
     "typescript": "6.0.3",
