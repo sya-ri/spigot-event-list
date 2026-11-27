@@ -12,7 +12,7 @@
     "compressing": "2.1.5",
     "fast-typed-xml": "0.1.2",
     "multi-progress": "4.0.0",
-    "openai": "7.64.0"
+    "openai": "7.65.0"
   },
   "devDependencies": {
     "@types/multi-progress": "2.0.6",
