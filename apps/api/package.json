@@ -18,7 +18,7 @@
     "@cloudflare/vite-plugin": "2.0.0-rc.5",
     "@cloudflare/workers-types": "5.20261125.1",
     "@types/node": "26.6.11",
-    "cf": "1.0.0-rc.5",
+    "cf": "1.0.0-rc.6",
     "typescript": "7.0.2",
     "vite": "8.4.0",
     "vite-plus": "1.8.0"

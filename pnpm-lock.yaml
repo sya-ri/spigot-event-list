@@ -220,8 +220,8 @@ importers:
         specifier: 26.6.11
         version: 26.6.11
       cf:
-        specifier: 1.0.0-rc.5
-        version: 1.0.0-rc.5(@types/node@26.6.11)
+        specifier: 1.0.0-rc.6
+        version: 1.0.0-rc.6(@types/node@26.6.11)
       typescript:
         specifier: 7.0.2
         version: 7.0.2
@@ -2160,8 +2160,8 @@ packages:
   ccount@2.0.1:
     resolution: {integrity: sha512-eyrF0jiFpY+3drT6383f1qhkbGsLSifNAjA61IUjZjmLCWjItY6LB9ft9YhoDgwfmclB2zhu51Lc7+95b8NRAg==}
 
-  cf@1.0.0-rc.5:
-    resolution: {integrity: sha512-p+dWu7YK40uQBXlJQ12xR3oYZPxSHZwr+hUaesq+Cy61p8nj0Mfk2XH/+s2AC/Vis96GgQExtyZLDbYyIQvFOw==}
+  cf@1.0.0-rc.6:
+    resolution: {integrity: sha512-w/L+DmEPrcOVJ9TrqtVJiZ2htnx+/fctGlDMrUZhuuEJSxayfc9QuEk2k3yaeXHPZIF5srovQLFxwB3YfVuwig==}
     engines: {node: ^22.23.0 || ^24.22.0 || ^26.12.0}
     hasBin: true
 
@@ -5020,7 +5020,7 @@ snapshots:
 
   ccount@2.0.1: {}
 
-  cf@1.0.0-rc.5(@types/node@26.6.11):
+  cf@1.0.0-rc.6(@types/node@26.6.11):
     dependencies:
       '@cloudflare/build-output-utils': 1.0.0-rc.4
       '@cloudflare/config': 1.0.0-rc.4
