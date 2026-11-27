@@ -16,7 +16,7 @@
   "devDependencies": {
     "@astrojs/compiler-rs": "0.5.3",
     "@spigot-event-list/catalog": "workspace:*",
-    "@types/node": "26.6.7",
+    "@types/node": "26.6.11",
     "typescript": "7.0.2",
     "vite-plus": "1.8.0"
   },
